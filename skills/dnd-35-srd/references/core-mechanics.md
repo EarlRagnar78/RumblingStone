@@ -7,7 +7,7 @@
 - Armor Class
 - Size Modifiers
 - Skills (Complete SRD List)
-- Feats: Key Categories
+- Feats (key categories)
 - Ability Score Increases
 - Experience Points and Level Progression
 - Carrying Capacity (Medium Creature, STR-based)
@@ -117,7 +117,7 @@ Note: Natural 1/20 do NOT auto-fail/succeed skill checks in RAW 3.5.
 
 ---
 
-## Feats: Key Categories
+## Feats (key categories)
 
 **Fighter Bonus Feats** (subset): Combat Expertise, Dodge, Great Cleave, Improved Critical, Power Attack, Spring Attack, Weapon Finesse, Weapon Focus, Weapon Specialization…
 

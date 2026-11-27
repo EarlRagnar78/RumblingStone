@@ -33,6 +33,9 @@ import argparse
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import provenienza_immagini  # noqa: E402
+
 INSTALLA = """\
 Serve Pillow per ridimensionare le immagini:
 
@@ -100,6 +103,12 @@ def main() -> int:
             # e un fascicolo di sei ritratti passava da 300 KB a 10 MB.
             dest = out / f"{master.stem}.jpg"
             im.save(dest, "JPEG", quality=args.quality, optimize=True, progressive=True)
+        # La copia tiene la dichiarazione di provenienza del master (ADR-0132):
+        # ricomprimere la perde, quindi si riscrive come XMP IPTC.
+        firmata, sorgente = provenienza_immagini.sorgente_del_master(master)
+        if sorgente:
+            dest.write_bytes(provenienza_immagini.etichetta_jpeg(
+                dest.read_bytes(), provenienza_immagini.pacchetto_xmp(sorgente, master)))
         tot_prima += master.stat().st_size
         tot_dopo += dest.stat().st_size
         n += 1

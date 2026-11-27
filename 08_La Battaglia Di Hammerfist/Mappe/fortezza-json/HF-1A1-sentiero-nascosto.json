@@ -1,0 +1,298 @@
+{
+  "schema_version": "1.0",
+  "title": "MAPPA 1A-1 REVISED: Il Sentiero Nascosto (canyon completo)",
+  "scale_m_per_square": 1.5,
+  "units_in": "squares",
+  "map_size": [
+    20,
+    100
+  ],
+  "base_terrain": "🟩",
+  "north": "N",
+  "regions": [
+    {
+      "terrain": "⛰",
+      "rect": [
+        0,
+        0,
+        6,
+        4
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "⛰",
+      "rect": [
+        14,
+        0,
+        6,
+        2
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "⛰",
+      "rect": [
+        18,
+        2,
+        2,
+        98
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "⛰",
+      "rect": [
+        0,
+        4,
+        2,
+        96
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "⛰",
+      "rect": [
+        2,
+        9,
+        5,
+        5
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "⛰",
+      "rect": [
+        13,
+        9,
+        5,
+        5
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "⛰",
+      "rect": [
+        2,
+        96,
+        3,
+        4
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        8,
+        0,
+        4,
+        4
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        8,
+        5,
+        4,
+        32
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        9,
+        37,
+        3,
+        14
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        8,
+        40,
+        1,
+        31
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        9,
+        51,
+        1,
+        20
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        10,
+        52,
+        1,
+        46
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        11,
+        53,
+        1,
+        47
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        8,
+        74,
+        2,
+        17
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        9,
+        91,
+        1,
+        7
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        8,
+        94,
+        1,
+        4
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        8,
+        99,
+        3,
+        1
+      ],
+      "label": "Terra battuta / sentiero"
+    }
+  ],
+  "structures": [
+    {
+      "type": "🪨",
+      "rect": [
+        6,
+        37,
+        3,
+        3
+      ]
+    },
+    {
+      "type": "🪨",
+      "rect": [
+        6,
+        91,
+        3,
+        3
+      ]
+    },
+    {
+      "type": "🪨",
+      "rect": [
+        7,
+        4,
+        5,
+        1
+      ]
+    },
+    {
+      "type": "🪨",
+      "rect": [
+        7,
+        71,
+        3,
+        3
+      ]
+    },
+    {
+      "type": "🪨",
+      "rect": [
+        13,
+        14,
+        3,
+        3
+      ]
+    },
+    {
+      "type": "🪨",
+      "rect": [
+        13,
+        81,
+        3,
+        3
+      ]
+    },
+    {
+      "type": "🪨",
+      "rect": [
+        14,
+        59,
+        3,
+        3
+      ]
+    }
+  ],
+  "units": [
+    {
+      "token": "⚫",
+      "at": [
+        11,
+        52
+      ],
+      "name": "Boss / comandante"
+    },
+    {
+      "token": "🔴",
+      "area": {
+        "rect": [
+          10,
+          51,
+          2,
+          1
+        ]
+      },
+      "quantity": 2,
+      "name": "Nemico standard"
+    },
+    {
+      "token": "🔵",
+      "area": {
+        "rect": [
+          7,
+          98,
+          4,
+          1
+        ]
+      },
+      "quantity": 4,
+      "name": "PG / alleati"
+    }
+  ],
+  "notes": [
+    "Contratto ricavato il 2026-11-09 dalla griglia di `08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L1-REVISED-Ultra-Clear.md` (mappa 2) con `import_ultraclear.py`. Griglia e contratto restano identici: lo controlla `scripts/tests/test_contratti_mappe.py`. Chi cambia la mappa cambia questo file e rigenera la griglia con `compile_map_json.py`."
+  ]
+}

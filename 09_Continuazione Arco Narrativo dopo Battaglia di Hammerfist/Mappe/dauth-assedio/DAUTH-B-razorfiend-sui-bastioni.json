@@ -117,10 +117,12 @@
    "effect": "Arma d'assedio riusabile dai PG (Artiglieria): colpo 4d6, TS Riflessi; danneggiabile (la carta)"
   }
  ],
+ "taglie": [{"at": [8, 1], "taglia": "Grande"}],
  "units": [
   {
    "faction": "Vanguard della Mano Rossa",
    "name": "Razorfiend rosso, in volo basso a 9 m (razorfiend-red-cr9)",
+   "scheda": "Bestiario/mostri/razorfiend-red-cr9.md",
    "token": "⚫",
    "at": [
     8,
@@ -159,6 +161,7 @@
   {
    "faction": "Vanguard della Mano Rossa",
    "name": "Cavalcatore gnoll col rampino, solo se il party è numeroso (gnoll-hyenodon-rider-cr4)",
+   "scheda": "Bestiario/mostri/gnoll-hyenodon-rider-cr4.md",
    "token": "🔴",
    "at": [
     5,
@@ -169,6 +172,7 @@
   {
    "faction": "Vanguard della Mano Rossa",
    "name": "Cavalcatore gnoll col rampino, solo se il party è numeroso (gnoll-hyenodon-rider-cr4)",
+   "scheda": "Bestiario/mostri/gnoll-hyenodon-rider-cr4.md",
    "token": "🔴",
    "at": [
     9,

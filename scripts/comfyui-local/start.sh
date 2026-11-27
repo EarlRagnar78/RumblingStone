@@ -10,7 +10,7 @@ ls "$DEST"/models/checkpoints/*.safetensors >/dev/null 2>&1 || \
   echo "AVVISO: nessun checkpoint in $DEST/models/checkpoints: esegui scarica-pesi.sh" >&2
 
 echo "==> avvio ComfyUI su http://127.0.0.1:8188 (Ctrl-C per fermare)"
-distrobox enter "$BOX" -- bash -lc "
+nel_box "$BOX" bash -lc "
   cd '$DEST'
   . venv/bin/activate
   python main.py --listen 127.0.0.1 --port 8188 --lowvram

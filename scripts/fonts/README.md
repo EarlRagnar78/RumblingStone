@@ -13,6 +13,7 @@ un'altra macchina, e un manuale si riconosce dal carattere prima che dal testo.
 | `EBGaramond[wght].ttf` · `EBGaramond-Italic[wght].ttf` | testo corrente | OFL 1.1 (`OFL-EBGaramond.txt`) | progetto EB Garamond (Georg Duffner, Octavio Pardo) |
 | `Cinzel[wght].ttf` | titoli, medaglioni, frontespizio | OFL 1.1 (`OFL-Cinzel.txt`) | Natanael Gama |
 | `Inconsolata[wdth,wght].ttf` | blocchi di codice e griglie monospaziate | OFL 1.1 (`OFL-Inconsolata.txt`) | Raph Levien — `google/fonts`, `ofl/inconsolata/` |
+| `NotoColorEmoji.ttf` | le emoji dell'edizione da stampa, a colori ([ADR-0130](../../plans/adr/ADR-0130-le-emoji-del-volume-vengono-dal-repo.md)) | OFL 1.1 (`OFL-NotoColorEmoji.txt`) | Google, progetto Noto — versione 2.051 bitmap (CBDT), dal pacchetto Debian `fonts-noto-color-emoji_2.051-0+deb13u1` (SHA-256 del `.deb` `03141cd5…54e8c`) |
 | `web/*.woff2` | la catena HTML, incorporati in base64 nel CSS | come sopra | derivati dai `.ttf` qui accanto |
 | `mappe/*.woff2` · `mappe/copertura.json` | le mappe SVG: EB Garamond 400 e Cinzel 700 a peso fisso, solo latino, incorporati in ogni mappa ([ADR-0085](../../plans/adr/ADR-0085-la-resa-delle-mappe-e-uguale-su-ogni-macchina.md)); `copertura.json` porta caratteri e larghezze | come sopra | `python3 scripts/build_font_mappe.py`, mai a mano |
 
@@ -48,8 +49,11 @@ PY
 
 Il sottoinsieme è **latino esteso** (l'italiano ha le accentate) più la
 punteggiatura tipografica e i pochi simboli che i temi usano davvero (`§ ⬦ ❦ ·
-† ‡ …`). Emoji e simboli fuori elenco restano al font di sistema: in un booklet
-sono decorazione, non testo.
+† ‡ …`). Emoji e simboli fuori elenco, nella catena HTML, restano al font di sistema.
+Nell'edizione da stampa no: le emoji vengono da `NotoColorEmoji.ttf` e i simboli
+dai font che typst porta con sé, perché `export_booklet_typst` compila con i soli
+font del repo (ADR-0130). La versione vettoriale (COLRv1) di Noto Color Emoji
+non va: typst non la disegna dentro le immagini SVG.
 
 ## Aggiungere un carattere
 

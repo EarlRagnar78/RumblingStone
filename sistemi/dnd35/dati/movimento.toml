@@ -1,0 +1,61 @@
+# sistemi/dnd35/dati/movimento.toml — la velocità a terra 3.5 (ADR-0126, lotto 7)
+#
+# GENERATO da plans/esperimenti/regole-senza-omissioni-2026-11-12/estrai_movimento.py
+# dall'SRD 3.5 (olimot/srd-v3.5-md@c7f30a0c, OGL). Non si corregge a mano. Velocità in piedi.
+
+[movimento]
+# SRD, «Armor and Shields»: l'armatura media o pesante riduce la velocità a quella di
+# `[movimento.ridotta]`; `non_rallenta`: le razze che in armatura non rallentano.
+# SRD, «Special Materials»: un'armatura di mithral conta una categoria più leggera.
+non_rallenta = ["dwarf", "duergar"]
+rallentano = ["media", "pesante"]
+piedi_per_metro_e_mezzo = 5
+
+[movimento.razze]
+"human" = 30
+"dwarf" = 20
+"elf" = 30
+"gnome" = 20
+"half-elf" = 30
+"half-orc" = 30
+"halfling" = 20
+"aasimar" = 30
+"goblin" = 30
+"hobgoblin" = 30
+"kobold" = 30
+"orc" = 30
+"tiefling" = 30
+"drow" = 30
+"duergar" = 20
+"svirfneblin" = 20
+
+[movimento.armature]
+"padded" = { ca = 1, des_max = 8, categoria = "leggera" }
+"leather" = { ca = 2, des_max = 6, categoria = "leggera" }
+"studded leather" = { ca = 3, des_max = 5, categoria = "leggera" }
+"chain shirt" = { ca = 4, des_max = 4, categoria = "leggera" }
+"hide" = { ca = 3, des_max = 4, categoria = "media" }
+"scale mail" = { ca = 4, des_max = 3, categoria = "media" }
+"chainmail" = { ca = 5, des_max = 2, categoria = "media" }
+"breastplate" = { ca = 5, des_max = 3, categoria = "media" }
+"splint mail" = { ca = 6, des_max = 0, categoria = "pesante" }
+"banded mail" = { ca = 6, des_max = 1, categoria = "pesante" }
+"half-plate" = { ca = 7, des_max = 0, categoria = "pesante" }
+"full plate" = { ca = 8, des_max = 1, categoria = "pesante" }
+
+[movimento.ridotta]
+"20" = 15
+"30" = 20
+"40" = 30
+"50" = 35
+"60" = 40
+"70" = 50
+"80" = 55
+"90" = 60
+"100" = 70
+
+[movimento.classi]
+# barbaro: «Fast Movement», non in armatura pesante; monaco: «Unarmored Speed Bonus» per
+# livello (dal 1° al 20°), solo senza armatura e senza scudo
+barbarian = { piu = 10, non_in = ["pesante"] }
+monk = { per_livello = [0, 0, 10, 10, 10, 20, 20, 20, 30, 30, 30, 40, 40, 40, 50, 50, 50, 60, 60, 60] }

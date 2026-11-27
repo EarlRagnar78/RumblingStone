@@ -5,8 +5,11 @@
 ```statblocco
 gs: 12
 tipo: Medium humanoid (dwarf, Shield Dwarf), Cleric 12, LG
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 23
-ca-dettaglio: touch 10, flat-footed 23 (armatura completa +1, Ottimizzazione dell'Armatura Pesante +1, scudo pesante +1, anello di protezione +1, −1 Des)
+ca-dettaglio: touch 10, flat-footed 23 (armatura completa +1, Ottimizzazione delle Armature Pesanti +1, scudo pesante +1, anello di protezione +1, −1 Des)
 pf: 93
 pf-dado: 12d8+36
 ts: Temp +13, Rifl +5, Vol +14
@@ -18,8 +21,8 @@ attacchi:
   - Mischia colpo di scudo pesante +12 (1d4+3)
   - Distanza balestra pesante +1 +9/+4 (1d10+1/19-20)
 voci:
-  - Talenti: Creare Armi e Armature Magiche, Incantare in Combattimento, Ottimizzazione dell'Armatura Pesante, Arma Focalizzata (martello da guerra), Attacco Poderoso
-  - Incantesimi: chierico 12, LI 12, 6/6+1/5+1/6+1/5+1/3+1/2+1, CD 14 + livello
+  - Talenti: Creare Armi e Armature Magiche, Incantare in Combattimento, Ottimizzazione delle Armature Pesanti, Arma Focalizzata (martello da guerra), Attacco Poderoso
+  - Incantesimi: chierico 12, LI 12, 6/6+1/5+1/5+1/4+1/3+1/2+1, CD 14 + livello
 ```
 
 > **Caratteristiche trascritte a mano dall'export PCGen** (le stesse che `genera_attributi.py` aveva copiato). La CA di contatto 10 con Des 8 non è un errore: è l'anello di protezione +1 che l'export elenca fra gli oggetti (10 −1 +1). For 16 e Sag 19 vengono dai guanti della potenza dell'orco e dal periapto della saggezza +2.
@@ -35,24 +38,24 @@ voci:
 **Attacco** Vel 6 m · **Mischia** martello da guerra +2 +15/+10 (1d8+7/x3); con Attacco Poderoso a −3, +12/+7 (1d8+10) · colpo di scudo pesante +12 (1d4+3) · **Distanza** balestra pesante +1 +9/+4 (1d10+1/19-20) · **Attacchi speciali** punire i giganti 4/giorno (+3 al colpire, +12 ai danni) · **Incantesimi preparati** (chierico 12, LI 12, incantesimi del bene a LI 13; CD 14 + livello; D = dominio):
 - 6° — *guarigione*, *dissolvi magie superiore*, *barriera di lame* (D)
 - 5° — *colpo infuocato* (CD 19), *spezzare incantamento*, *giusto potere*, *dissolvi il male* (D)
-- 4° — *potere divino*, *arma magica superiore*, *libertà di movimento*, *neutralizzare veleno*, *cura ferite critiche*, *punizione sacra* (D, CD 18)
-- 3° — *dissolvi magie*, *cerchio magico contro il male* (D), *luce incandescente*, *preghiera*, *veste magica*, *cura ferite gravi*, *anello di lame* [Private source — supplemento WotC non SRD]
+- 4° — *potere divino*, *arma magica superiore*, *libertà di movimento*, *cura ferite critiche*, *punizione sacra* (D, CD 18)
+- 3° — *dissolvi magie*, *cerchio magico contro il male* (D), *luce incandescente*, *preghiera*, *veste magica*, *cura ferite gravi*
 - 2° — *aiuto* (D), *blocca persone* (CD 16), *resistere all'energia*, *arma spirituale*, *forza del toro*, *silenzio* (uno slot in meno: lo prende lo specialista del martello)
 - 1° — *benedizione*, *comando* (CD 15), *favore divino*, *protezione dal male* (D), *scudo della fede*, *rimuovi paura*, *santuario*
-- 0 — *individuazione del magico*, *individuazione del veleno*, *guida*, *lettura del magico*, *evocare simbolo sacro* [Private source — supplemento WotC non SRD], *resistenza*
+- 0 — *individuazione del magico*, *individuazione del veleno*, *guida*, *lettura del magico*, *evocare simbolo sacro* [Private source — Complete Champion, p. 128], *resistenza*
 
-**Statistiche** For 16, Des 8, Cos 16, Int 10, Sag 19, Car 10 · BAB +9; Lotta +12 · **Talenti** **Creare Armi e Armature Magiche**, Incantare in Combattimento, Ottimizzazione dell'Armatura Pesante [Private source — Player's Handbook II], Arma Focalizzata (martello da guerra), Attacco Poderoso; gratuiti: Abilità Focalizzata (Artigianato, fabbro), competenze in armature pesanti e martello da guerra · **Abilità** Concentrazione +18 (+22 sulla difensiva), Artigianato (fabbro) +20, Artigianato (armaiolo) +2, Trattare le Ferite +4, Ascoltare +4, Osservare +4 (30 punti: 15 gradi in Concentrazione, 15 nel fabbro; +2 razziale al lavoro del metallo) · **Linguaggi** Comune, Nanico · **Equipaggiamento** armatura completa +1, scudo pesante di metallo +1, martello da guerra +2, balestra pesante +1 e 20 quadrelli, periapto della saggezza +2, anello di protezione +1, guanti della potenza dell'orco, mantello della resistenza +2, pozioni (2 *cura ferite leggere*, 2 *cura ferite moderate*, 1 *cura ferite gravi*, 1 *volare*), 2 pergamene di *cura ferite moderate*
+**Tattiche**
+- *Prima del combattimento*: è un fabbro prima che un guerriero, e lo scontro gli arriva in bottega o sulle mura. Se ha dieci minuti si lancia *cerchio magico contro il male* e *aiuto*; se ha un round, *scudo della fede* (CA 25) e *benedizione* sugli alleati.
+- *Durante il combattimento*: al primo round *arma spirituale* sull'incantatore nemico, che lo tiene impegnato senza bisogno di Morlin. Poi avanza col martello: contro un gigante usa punire i giganti (+18, 1d8+19), contro un goblinoide il +1 razziale. *Blocca persone* sul guerriero umanoide più pericoloso, *luce incandescente* sui non morti, *dissolvi magie* su un nemico pieno di protezioni. Lancia sulla difensiva senza paura (Concentrazione +22). Contro un drago o un gigante apre con *potere divino* e *giusto potere*; se il gruppo è a terra, *guarigione* sul più ferito e *barriera di lame* fra i nemici e i feriti. Contro chi vola tira con la balestra, o beve *volare* se il bersaglio è un incantatore.
+- *Morale*: sotto i 30 pf beve *cura ferite gravi* e si ritira di un passo verso la forgia, dove ci sono armi da dare a chi combatte. Non lascia i feriti a terra: li cura spontaneamente anche a costo degli slot d'attacco. Si arrende solo a un altro nano che giura su Moradin.
+
+**Statistiche** For 16, Des 8, Cos 16, Int 10, Sag 19, Car 10 · BAB +9; Lotta +12 · **Talenti** **Creare Armi e Armature Magiche**, Incantare in Combattimento, Ottimizzazione delle Armature Pesanti [Private source — Races of Stone, p. 141], Arma Focalizzata (martello da guerra), Attacco Poderoso; gratuiti: Abilità Focalizzata (Artigianato, fabbro), competenze in armature pesanti e martello da guerra · **Abilità** Concentrazione +18 (+22 sulla difensiva), Artigianato (fabbro) +20, Artigianato (armaiolo) +2, Trattare le Ferite +4, Ascoltare +4, Osservare +4 (30 punti: 15 gradi in Concentrazione, 15 nel fabbro; +2 razziale al lavoro del metallo) · **Linguaggi** Comune, Nanico · **Equipaggiamento** armatura completa +1, scudo pesante di metallo +1, martello da guerra +2, balestra pesante +1 e 20 quadrelli, periapto della saggezza +2, anello di protezione +1, guanti della potenza dell'orco, mantello della resistenza +2, pozioni (2 *cura ferite leggere*, 2 *cura ferite moderate*, 1 *cura ferite gravi*, 1 *volare*), 2 pergamene di *cura ferite moderate*
 
 **Capacità speciali**
 - **Chierico 12 di Moradin**: domini **Artigianato** [Private source — Forgotten Realms Campaign Setting] (incantesimi di creazione a +1 LI, Abilità Focalizzata nell'Artigianato) e **Bene** (SRD: incantesimi del bene a +1 LI); lancio spontaneo delle *cure*.
 - **Livelli di sostituzione razziali del chierico nano** [Private source — Races of Stone]: al 1° **punire i giganti** (Sop; 1 + mod Cos volte al giorno: + mod Cos al colpire, + livello da chierico ai danni) al posto di scacciare i non morti; al 4° **specialista del martello** (+2 ai danni col martello da guerra in mischia, competenza nel martello) al posto di uno slot di 2° livello.
 - Le abilità del fabbro vengono dal dominio dell'Artigianato, che fa dell'Artigianato un'abilità di classe, e dai 15 gradi nel fabbro: col +2 razziale e Abilità Focalizzata è +20, più di prima.
 - Tratti nanici (nano dello scudo): scurovisione 18 m, esperto minatore, stabilità, +1 contro orchi e goblinoidi, +4 schivare contro i giganti.
-
-**Tattiche**
-- *Prima del combattimento*: è un fabbro prima che un guerriero, e lo scontro gli arriva in bottega o sulle mura. Se ha dieci minuti si lancia *cerchio magico contro il male* e *aiuto*; se ha un round, *scudo della fede* (CA 25) e *benedizione* sugli alleati.
-- *Durante il combattimento*: al primo round *arma spirituale* sull'incantatore nemico, che lo tiene impegnato senza bisogno di Morlin. Poi avanza col martello: contro un gigante usa punire i giganti (+18, 1d8+19), contro un goblinoide il +1 razziale. *Blocca persone* sul guerriero umanoide più pericoloso, *luce incandescente* sui non morti, *dissolvi magie* su un nemico pieno di protezioni. Lancia sulla difensiva senza paura (Concentrazione +22). Contro un drago o un gigante apre con *potere divino* e *giusto potere*; se il gruppo è a terra, *guarigione* sul più ferito e *barriera di lame* fra i nemici e i feriti. Contro chi vola tira con la balestra, o beve *volare* se il bersaglio è un incantatore.
-- *Morale*: sotto i 30 pf beve *cura ferite gravi* e si ritira di un passo verso la forgia, dove ci sono armi da dare a chi combatte. Non lascia i feriti a terra: li cura spontaneamente anche a costo degli slot d'attacco. Si arrende solo a un altro nano che giura su Moradin.
 
 
 **Benchmark**: PF T1-1 riga 12 (CA 27, pf 160, att +21, danno 55, CD 21): CA 23 (−4), pf 93 (−67), att +15 (−6), CD primaria 20 col 6° livello (−1). Sotto sulla difesa e sui pf, come un chierico SRD di 12° che non è un guerriero; pari sulle CD e sopra negli incantesimi, che adesso arrivano al 6°.

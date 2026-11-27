@@ -1,6 +1,6 @@
 # ADR-0049 — L'edizione commerciale è un Adventure Path **originale autonomo**, mai un'espansione di *Red Hand of Doom*
 
-**Stato**: 🔵 **proposta** — gate: **decisione del DM + verifica di un avvocato IP**
+**Stato**: 🔵 **proposta** — gate: ~~decisione del DM~~ ✅ (2026-11-08, perimetro adottato con il `Bestiario/` dentro) + **verifica di un avvocato IP**
 
 > ⚠️ **Non è accettata, ed è voluto.** Nasceva come ADR-0018 nella PR #72 (26
 > luglio 2026) già in stato «proposta», e recuperarla non la promuove: sposta la
@@ -79,7 +79,7 @@ trasparente e non serve a niente.
 | **Arco 06** | ⚠️ **riscrittura** | Undermountain a **3,9** — dimezzata da luglio (era 8,8) ma ancora la più alta del repo per quella fonte |
 | **Arco 09** | **fuori dalla v1** | 178.338 parole a 5,6. Rientra solo dopo riscrittura sostanziale |
 | **Arco 00** | si **rigenera** originale | impalcatura, 21,2 |
-| 🆕 **`Bestiario/`** | **da decidere: la #72 non l'aveva guardato** | **3,0** su 74.978 parole, e **esce col modulo**. Un perimetro che dice «07+08 dentro» e tace sul bestiario lascia fuori il conto una dipendenza vera |
+| 🆕 **`Bestiario/`** | **dentro, da pulire** (DM, 2026-11-08): lotto 2.1 di `PIANO-VENDIBILITA`, sotto 1,0 senza togliere creature. La #72 non l'aveva guardato | **3,0** su 74.978 parole, e **esce col modulo**. Un perimetro che dice «07+08 dentro» e tace sul bestiario lascia fuori il conto una dipendenza vera |
 | 🆕 **Moduli autoconclusivi** | **già puliti** | `10-stand-alone` **0,0**, il Drappo **0,0** (3 occorrenze in 63.870 parole). Su quest'asse il prodotto della linea 3 di `PIANO-VENDIBILITA` **è pronto** |
 | `campaign/`, `state.md`, i log, i booklet | **privati per sempre** | ed è il corpo più denso di tutti: **7,6** |
 
@@ -128,6 +128,6 @@ Una bonifica fatta a mano si erode alla prima sessione; una verificata in CI no.
 - se un avvocato giudicasse insufficiente la trasformazione di 07-08, il
   perimetro si restringe — e la decisione va presa **prima** della produzione
   editoriale;
-- la posizione del **bestiario** nel perimetro (§4) è una domanda aperta che la
-  #72 non si era posta;
+- il **bestiario** sta dentro il perimetro (§4, deciso dal DM il 2026-11-08), quindi
+  la sua pulizia sotto 1,0 diventa un prerequisito della v1;
 - l'arco 09 si rivaluta a sé, dopo la v1.

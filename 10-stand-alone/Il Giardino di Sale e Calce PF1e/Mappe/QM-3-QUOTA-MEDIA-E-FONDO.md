@@ -46,9 +46,9 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @collega AM23 ; QM-2-QUOTA-ALTA.md AM23
 @collega B14 ; fuori mappa ; murata da tre mesi: abbatterla (durezza 8, 90 pf) fa rumore e allerta la Torre
 @collega U15 ; QM-5-SANTUARIO-DI-SALE.md Q04
-@taglia J19 ; Enorme
-@taglia AC21 ; Enorme
-@taglia AD7 ; Enorme
+@taglia J19 ; Grande
+@taglia AC21 ; Grande
+@taglia AD7 ; Grande
 @mark 1 ; D14 ; I PG, dal ponte ovest o dalle scale
 @mark 2 ; J19 ; Chuul avanzato (GS 8), sott'acqua nella navata sud
 @mark 3 ; AC21 ; Chuul avanzato

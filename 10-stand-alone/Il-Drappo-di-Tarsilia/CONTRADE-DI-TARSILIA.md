@@ -140,8 +140,7 @@ Testo giocabile, da cantare male e in coro:
 fine della Corsa, per chi lo canta.
 
 **Bruco — *Il filo*** — cantata piano, quasi parlata. Tema: la minaccia
-detta con gentilezza. Chi perde contro questo canto subisce **−2 a Percepire
-Intenzioni** per il resto della serata: dopo, non si fida più di nessuno e sbaglia
+detta con gentilezza. Chi perde contro questo canto subisce **−2 a Intuizione** per il resto della serata: dopo, non si fida più di nessuno e sbaglia
 bersaglio.
 
 **Oca — *La conta*** — è letteralmente un elenco di cifre in rima, e

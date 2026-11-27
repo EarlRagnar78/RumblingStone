@@ -307,7 +307,7 @@ class TestSorgenti(unittest.TestCase):
             self.assertTrue(vd._e_generato(rel), f"{rel} andrebbe escluso")
 
     def test_tiene_i_sorgenti(self):
-        for rel in ("plans/CHANGELOG.md", "docs/guides/GUIDA-MAPPE.md",
+        for rel in ("plans/CHANGELOG.md", "docs/how-to/GUIDA-MAPPE.md",
                     ".github/workflows/ci.yml"):
             self.assertFalse(vd._e_generato(rel), f"{rel} andrebbe tenuto")
 

@@ -1,0 +1,68 @@
+{
+ "prova-serata-25-09-PRIMA.pdf": {
+  "pagine": 157,
+  "persone": {
+   "balvar": {
+    "pagine_azione": 18,
+    "pagine_numeri": 2,
+    "mediana": 28.5,
+    "massima": 118,
+    "entro_una": 0
+   },
+   "durin": {
+    "pagine_azione": 7,
+    "pagine_numeri": 2,
+    "mediana": 53,
+    "massima": 61,
+    "entro_una": 0
+   },
+   "skullcrusher": {
+    "pagine_azione": 17,
+    "pagine_numeri": 4,
+    "mediana": 21,
+    "massima": 123,
+    "entro_una": 3
+   },
+   "zogtar": {
+    "pagine_azione": 20,
+    "pagine_numeri": 3,
+    "mediana": 23.5,
+    "massima": 118,
+    "entro_una": 2
+   }
+  }
+ },
+ "prova-serata-25-09-DOPO.pdf": {
+  "pagine": 172,
+  "persone": {
+   "balvar": {
+    "pagine_azione": 18,
+    "pagine_numeri": 4,
+    "mediana": 5.5,
+    "massima": 94,
+    "entro_una": 1
+   },
+   "durin": {
+    "pagine_azione": 8,
+    "pagine_numeri": 3,
+    "mediana": 4.5,
+    "massima": 18,
+    "entro_una": 3
+   },
+   "skullcrusher": {
+    "pagine_azione": 19,
+    "pagine_numeri": 6,
+    "mediana": 4,
+    "massima": 106,
+    "entro_una": 5
+   },
+   "zogtar": {
+    "pagine_azione": 21,
+    "pagine_numeri": 6,
+    "mediana": 5,
+    "massima": 94,
+    "entro_una": 4
+   }
+  }
+ }
+}

@@ -144,7 +144,7 @@ d'oro pagate a Cassomir.
 | G1 | offre l'anticipo del Peso a Vanna, con la clausola | se i PG **leggono il foglio**, la clausola è lì, scritta piccola |
 | G2 | compra da Sirena Occo la storia delle quaranta monete di Nocca | Percezione CD 15 per vederli parlare al mercato del grano |
 | G3 mattina | usa la storia in pubblico (`03-GIORNO-3` §3) | se Nocca ha confessato, la carta è bruciata |
-| G3 corsa | il suo fantino scudiscia alla Curva Sud, dove il palco non vede | un PG che *testimonia* dal palco (Percepire Intenzioni CD 15) |
+| G3 corsa | il suo fantino scudiscia alla Curva Sud, dove il palco non vede | un PG che *testimonia* dal palco (Intuizione CD 15) |
 | G3 sera | se ha perso: **la piena**. Cinquecento sacchi di grano assicurato e il fiume che sale | è rovinato, e nessuno se ne accorgerà per mesi |
 
 ---
@@ -289,7 +289,7 @@ Capita, se il gruppo arriva da un'altra avventura. Tre correzioni e basta:
 | Scontro | pf da togliere | **Round previsti** | Chi rischia |
 |---|---|---|---|
 | **La rissa alla fontana** (5 tintori, pf 6, CA 12) | 30, e sono CA 12: si colpisce quasi sempre | **2 round** | nessuno: è **danno non letale**, e si fermano appena vedono una lama vera |
-| **L'assalto alle stalle** (Sfregio 26 pf CA 18 + 4 bravacci 13 pf CA 16) | 78 | **5-6 round** — è il vero scontro del modulo | vedi sotto ⚠ |
+| **L'assalto alle stalle** (Sfregio 26 pf CA 19 + 4 bravacci 16 pf CA 16) | 90 | **5-6 round** — è il vero scontro del modulo | vedi sotto ⚠ |
 | **La curva nord** | — | non è un incontro: è un **hazard a costo di azioni** (§7.4) | chi resta sul transennato |
 
 ### ⚠️ Le tre cose che l'aritmetica dice e la lettura no

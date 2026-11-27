@@ -8,6 +8,9 @@
 nome: Karkator, aboleth mezzo-immondo avanzato
 gs: 16
 tipo: Aberrazione Mastodontica (acquatica, esterno nativo per l'archetipo) · LM
+taglia: Mastodontica
+spazio: 6 m
+portata: 4,5 m
 ca: 20
 ca-dettaglio: contatto 8, colto alla sprovvista 18; 28 con aura sacrilega e il Cuore (contatto 12, colto alla sprovvista 26)
 pf: 324
@@ -26,7 +29,9 @@ attacchi:
 
 **Attacco** spazio 6 m, portata 4,5 m · BAB +18, lotta +44
 
-**Statistiche** **Talenti** Allerta, Arma Naturale Migliorata (tentacolo), Attacco Poderoso, Abilità Focalizzata (*asservire*), Incantesimi in Combattimento, Iniziativa Migliorata, Riflessi Fulminei, Riflessi in Combattimento, Volontà di Ferro
+**Tattiche** Round per round, avviso, gravità invertita e fine dello scontro sono in S1 del modulo. In breve: *asservire* il combattente più forte, *blasfemia* o *avvizzimento orrendo* sui gruppi, *inversione della gravità* al terzo round, poi tentacoli e trascinamento sott'acqua. Con il Cuore acceso il danno che non è fuoco né sacro è non letale e la rigenerazione ne toglie 15 a ogni suo turno; Karkator fugge quando il non letale accumulato arriva a 260, o sotto i 65 pf se il Cuore è spento.
+
+**Statistiche** **Talenti** Allerta, Attacco Naturale Migliorato (tentacolo), Attacco Poderoso, Abilità Focalizzata (*asservire*), Incantare in Combattimento, Iniziativa Migliorata, Riflessi Fulminei, Riflessi in Combattimento, Volontà di Ferro
 
 **Capacità speciali**
 - **Asservire** (Sop, 3/giorno, 9 m): Volontà CD 29. L'asservito obbedisce ai comandi telepatici finché non lo libera *rimuovi maledizione*; un nuovo TS ogni 24 ore, e il legame si rompe se Karkator muore o si allontana più di 1,5 km (SRD).
@@ -36,14 +41,15 @@ attacchi:
 - **Capacità magiche del mezzo-immondo** (LI 16°, come gli psionici; l'SRD direbbe LI 24°, e al LI 24° la *blasfemia* uccide senza tiro salvezza i PG di 13°: **regola del modulo**, dalla simulazione degli scontri): *oscurità* 3/giorno, *aura sacrilega* 3/giorno (già addosso solo se è stato avvisato), *veleno* 3/giorno (CD 19); una volta al giorno *dissacrare*, *flagello sacrilego* (19), *contagio* (18), *blasfemia* (22), *profanare*, *avvizzimento orrendo* (23), *evoca mostri IX* (solo immondi), *distruzione* (22). *Punire il bene* 1/giorno (+20 danni).
 - **Il Cuore di Selenite** (finché è nei perni e Karkator è entro 18 m): rigenerazione 15, *armatura magica* permanente, volo 9 m buono, una volta al giorno *inversione della gravità* (LI 15°). **Regola del modulo.** Senza il Cuore torna GS 15.
 
-**Tattiche** Round per round, avviso, gravità invertita e fine dello scontro sono in S1 del modulo. In breve: *asservire* il combattente più forte, *blasfemia* o *avvizzimento orrendo* sui gruppi, *inversione della gravità* al terzo round, poi tentacoli e trascinamento sott'acqua. Con il Cuore acceso il danno che non è fuoco né sacro è non letale e la rigenerazione ne toglie 15 a ogni suo turno; Karkator fugge quando il non letale accumulato arriva a 260, o sotto i 65 pf se il Cuore è spento.
-
 ## Ragno delle Catene
 
 ```statblocco
 nome: Ragno delle Catene (ragno fase avanzato)
 gs: 10
 tipo: Bestia magica Enorme · N
+taglia: Enorme
+spazio: 4,5 m
+portata: 3 m
 ca: 16
 ca-dettaglio: contatto 10, colto alla sprovvista 14
 pf: 147
@@ -58,6 +64,8 @@ attacchi:
 ```
 **Attacco** spazio 4,5 m, portata 3 m · BAB +14, lotta +30
 
+**Tattiche** Sulla mappa GS-2: entrano dall'Etereo alle spalle del PG isolato, lo ancorano, poi vanno sul volatore. Si ritirano sotto il 25% dei pf. Due ragni: EL 12.
+
 **Statistiche** **Talenti** Abilità Focalizzata (veleno), Attacco Poderoso, Iniziativa Migliorata, Tiro Preciso, Tiro Ravvicinato
 
 **Capacità speciali**
@@ -67,14 +75,15 @@ attacchi:
 - **Scalare sulle catene** (Str): 12 m lungo le catene sospese. **Originale del modulo.**
 - **Risonanza delle catene** (Sop, azione standard): chi vola entro 12 m fa Tempra CD 22 o è assordato per 1d4 round. **Originale del modulo.**
 
-**Tattiche** Sulla mappa GS-2: entrano dall'Etereo alle spalle del PG isolato, lo ancorano, poi vanno sul volatore. Si ritirano sotto il 25% dei pf. Due ragni: EL 12.
-
 ## Mastro Tariq
 
 ```statblocco
 nome: Mastro Tariq, ingegnere delle acque
 gs: 13
 tipo: Umano chierico 13 di Umberlee · CM Medio
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 24
 ca-dettaglio: contatto 11, colto alla sprovvista 24; 27 con veste magica ×2
 pf: 84
@@ -88,14 +97,14 @@ attacchi:
 ```
 **Attacco** BAB +9, lotta +10 · *punire* 1/giorno (+4 al colpire, +13 danni)
 
-**Statistiche** **Talenti** Estendere Incantesimi, Incantesimi in Combattimento, Incantesimi Inarrestabili, Incantesimi Inarrestabili Superiore, Incantesimi Rapidi, Iniziativa Migliorata · **Equipaggiamento** armatura completa +2, scudo pesante di metallo +1, tridente +1, *periapto della Saggezza +4*, *mantello della resistenza +2*, *anello di protezione +1*, simbolo sacro (conchiglia nera), chiavi della Torre e dello studio
+**Tattiche** In T1 del modulo, round per round e con la Torre tranquilla o allertata. Sotto i 30 pf scende la scala verso Karkator. Si arrende se gli si dimostra che lo scavo dei drow farà crollare la vasca (Raggirare o Diplomazia CD 25). Con *resistenza dell'orso* ha 97 pf.
+
+**Statistiche** **Talenti** Incantesimi Estesi, Incantare in Combattimento, Incantesimi Inarrestabili, Incantesimi Inarrestabili Superiore, Incantesimi Rapidi, Iniziativa Migliorata · **Equipaggiamento** armatura completa +2, scudo pesante di metallo +1, tridente +1, *periapto della Saggezza +4*, *mantello della resistenza +2*, *anello di protezione +1*, simbolo sacro (conchiglia nera), chiavi della Torre e dello studio
 
 **Capacità speciali**
 - **Domini** Acqua (intimorire le creature dell'acqua, 2/giorno) e Distruzione.
 - **Incantesimi preparati** (LI 13°, CD 16 + livello): l'elenco è nel riquadro qui sotto.
 - **La nebbia di calce** è *nube acida*; **la pioggia di calce** è *tempesta di ghiaccio*: grandine di calce nel racconto, regole SRD.
-
-**Tattiche** In T1 del modulo, round per round e con la Torre tranquilla o allertata. Sotto i 30 pf scende la scala verso Karkator. Si arrende se gli si dimostra che lo scavo dei drow farà crollare la vasca (Raggirare o Diplomazia CD 25). Con *resistenza dell'orso* ha 97 pf.
 
 {{note
 **Gli incantesimi di Tariq** (D = dominio). 7° *blasfemia*, D *nube acida* · 6° *dissolvi magie superiore* ×2, *barriera di lame*, D *ferire* · 5° *giusto potere*, *colpo infuocato*, *uccidere i viventi*, *resistenza agli incantesimi*, D *tempesta di ghiaccio* · 4° *libertà di movimento*, *ancora dimensionale*, *veleno*, *camminare nell'aria*, D *controllare acqua* · 3° *veste magica* ×2 (già lanciate), *dissolvi magie*, *preghiera*, *protezione dall'energia*, D *contagio* · 2° *blocca persone* ×2, *silenzio*, *resistenza all'energia*, *resistenza dell'orso*, *esplosione sonora*, D *frantumare* · 1° *favore divino*, *scudo della fede*, *scudo entropico*, *anatema*, *comando* ×2, *santuario*, D *foschia occultante* · 0 *individuazione del magico*, *guida* ×2, *resistenza* ×2, *lettura del magico*.
@@ -107,6 +116,9 @@ attacchi:
 nome: Skum guerriero 8
 gs: 10
 tipo: Aberrazione Media (acquatica) · LM
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 24
 ca-dettaglio: contatto 11, colto alla sprovvista 23
 pf: 63
@@ -122,12 +134,12 @@ attacchi:
 ```
 **Attacco** BAB +9, lotta +14 · sott'acqua due rastrellate +9 (1d6+2)
 
-**Statistiche** **Talenti** Allerta, Arma Focalizzata (tridente), Arma Focalizzata Superiore (tridente), Attacco Poderoso, Iniziativa Migliorata, Riflessi in Combattimento, Specializzazione in un'Arma (tridente), Spingere Migliorato, Volontà di Ferro · **Equipaggiamento** armatura completa +1, scudo leggero +1, tridente +1
+**Tattiche** Tengono la porta della Torre e spingono chi passa verso la tromba della scala. Due skum e Tariq: EL 15.
+
+**Statistiche** **Talenti** Allerta, Arma Focalizzata (tridente), Arma Focalizzata Superiore (tridente), Attacco Poderoso, Iniziativa Migliorata, Riflessi in Combattimento, Arma Specializzata (tridente), Spingere Migliorato, Volontà di Ferro · **Equipaggiamento** armatura completa +1, scudo leggero +1, tridente +1
 
 **Capacità speciali**
 - **Anfibio** e **Spingere Migliorato**: spingono senza attacco d'opportunità, d20 + 9.
-
-**Tattiche** Tengono la porta della Torre e spingono chi passa verso la tromba della scala. Due skum e Tariq: EL 15.
 
 ## Chuul avanzato
 
@@ -135,6 +147,9 @@ attacchi:
 nome: Chuul avanzato a 17 DV
 gs: 9
 tipo: Aberrazione Enorme (acquatica) · CM
+taglia: Enorme
+spazio: 4,5 m
+portata: 3 m
 ca: 23
 ca-dettaglio: contatto 10, colto alla sprovvista 21
 pf: 178
@@ -151,7 +166,9 @@ attacchi:
 
 **Attacco** spazio 4,5 m, portata 3 m · BAB +12, lotta +30
 
-**Statistiche** **Talenti** Allerta, Arma Naturale Migliorata (chela), Attacco Poderoso, Combattere alla Cieca, Iniziativa Migliorata, Riflessi in Combattimento
+**Tattiche** Stanno sul fondo e salgono su chi scende in acqua o ci cade. Non arrivano al ponte maestro.
+
+**Statistiche** **Talenti** Allerta, Attacco Naturale Migliorato (chela), Attacco Poderoso, Combattere alla Cieca, Iniziativa Migliorata, Riflessi in Combattimento
 
 **Capacità speciali**
 - **Presa migliorata** con le chele; **stritolare** 4d6+10 con una prova di lotta riuscita.
@@ -160,14 +177,15 @@ attacchi:
 
 **Conti.** Chuul SRD (11 DV, GS 7) avanzato a 17 DV: Enorme (For +8, Des −2, Cos +4, armatura naturale +3), due aumenti su For; GS +1 per 6 DV d'aberrazione e +1 per la taglia. Tre chuul: EL 12.
 
-**Tattiche** Stanno sul fondo e salgono su chi scende in acqua o ci cade. Non arrivano al ponte maestro.
-
 ## Uomo di Sal
 
 ```statblocco
 nome: Uomo di Sal, facchino della gilda
 gs: 6
 tipo: Umano guerriero 6 · NM Medio
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 17
 ca-dettaglio: contatto 12, colto alla sprovvista 15
 pf: 45
@@ -177,12 +195,12 @@ attributi: For 16 Des 14 Cos 14 Int 10 Sag 10 Car 8
 velocita: 9 m
 iniziativa: +2
 attacchi:
-  - Spada corta +11/+6 (1d6+5, 19-20)
+  - Spada corta perfetta +11/+6 (1d6+5, 19-20)
   - Balestra leggera +8 (1d8, 19-20)
 ```
-**Statistiche** **Equipaggiamento** giaco di maglia sotto il grembiule da facchino, spada corta perfetta, balestra leggera, 2 pozioni di *cura ferite moderate*, 30 mo
-
 **Tattiche** Non attaccano per primi. Seguono, contano, riferiscono; tagliano la fune della gabbia se i PG scendono senza averli tolti di mezzo, di giorno o di notte (C2).
+
+**Statistiche** BAB +6 · **Talenti** Arma Focalizzata (spada corta), Arma Specializzata (spada corta) · **Equipaggiamento** giaco di maglia sotto il grembiule da facchino, spada corta perfetta, balestra leggera, 2 pozioni di *cura ferite moderate*, 30 mo
 
 ## Asservito armato
 
@@ -190,6 +208,9 @@ attacchi:
 nome: Asservito armato
 gs: 3
 tipo: Umano combattente 4 asservito · N Medio
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m (3 m con la lancia lunga, e allora non i quadretti adiacenti)
 ca: 15
 ca-dettaglio: contatto 11, colto alla sprovvista 14
 pf: 26
@@ -201,10 +222,10 @@ iniziativa: +1
 attacchi:
   - Lancia lunga +6 (1d8+3, ×3)
 ```
+**Tattiche** Fanno da muro fra i PG e l'isolotto del Cuore.
+
 **Capacità speciali**
 - **Asservito**: obbedisce a Karkator. Ucciderlo o lasciarlo vivo è la scelta 8 o 9: sono guardie della gilda e miliziani di Rethmar.
-
-**Tattiche** Fanno da muro fra i PG e l'isolotto del Cuore.
 
 ## Il Cuore di Selenite
 

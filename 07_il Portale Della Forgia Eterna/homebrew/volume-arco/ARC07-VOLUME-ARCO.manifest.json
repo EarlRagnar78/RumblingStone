@@ -1,0 +1,258 @@
+{
+  "brand": "RUMBLING STONE · ARC-07",
+  "title": "Il Portale della Forgia Eterna",
+  "subtitle": "Il Piano della Terra · gli affreschi · la resurrezione di Hella · Hammerfist mille anni fa · il ritorno del Rubino",
+  "banner": "VOLUME D'ARCO",
+  "meta": "Avventura D&D 3.5 per 3-4 personaggi di 13° livello · Faerûn, 1372 DR e ≈372 DR · Campagna privata RumblingStone · i cinque master dell'arco in ordine di gioco, il barile sulla tenda, la tabella delle ferite, le schede e le mappe in appendice",
+  "header": "Il volume d'arco: i cinque master in ordine di gioco, con le schede e le mappe in appendice.",
+  "footer": "Il Portale della Forgia Eterna",
+  "player_footer": "Le Cronache dei Quattro Eroi",
+  "colophon": {
+    "edizione": "Volume d'arco",
+    "versione": "v1",
+    "data": "2026-11-19",
+    "autori": "Il DM di RumblingStone, con l'agente di scrittura del repo",
+    "basato_su": "D&D 3.5 SRD (OGL 1.0a); adattamento privato di Red Hand of Doom (Wizards of the Coast, 2006)",
+    "licenza": "materiale del DM, uso privato del tavolo, non diffondere",
+    "nota": "La stampa completa dell'arco, da leggere e preparare. Al tavolo si usa il booklet della serata, che prende da qui solo le scene che si giocano"
+  },
+  "cover_image": "../../Immagini/web/Sala Forgia Eterna - Camera Ottagono con 8 Affreschi Divini (Parte 2).jpg",
+  "out": "ARC07-VOLUME-ARCO.html",
+  "chapters": [
+    {
+      "title": "I · Il Piano della Terra e Terros",
+      "file": "../../ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+      "tag": "dm",
+      "quando": "prima di scendere nel Piano della Terra: la serata di Terros",
+      "ruolo": "gioco",
+      "parte": true
+    },
+    {
+      "title": "II · Il ritorno e gli affreschi",
+      "file": "../../ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+      "tag": "dm",
+      "quando": "al ritorno nella Sala, senza combattere: gli affreschi e il sonno",
+      "ruolo": "gioco",
+      "parte": true
+    },
+    {
+      "title": "III · La resurrezione di Hella",
+      "file": "../../ARC07-DEF-3-RESURREZIONE-HELLA.md",
+      "tag": "dm",
+      "quando": "la serata del rito: Hella torna, Durik si lega a lei",
+      "ruolo": "gioco",
+      "parte": true
+    },
+    {
+      "title": "IV · Il viaggio a mille anni fa: il tramonto e la notte",
+      "file": "../../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "tag": "dm",
+      "sezioni": [
+        "Il Portale della Forgia Eterna — Hammerfist",
+        "INDICE DEL MODULO",
+        "§0 —",
+        "§0-bis",
+        "§0-ter",
+        "§1 —",
+        "§2 —",
+        "testa:§3",
+        "C.1",
+        "SCENA 1 —",
+        "SCENA 2",
+        "SCENA 3",
+        "SCENA 4",
+        "testa:§4",
+        "⏳",
+        "C.2",
+        "SCENA 5",
+        "SCENA 6"
+      ],
+      "quando": "il tramonto e la notte del −1000: il consiglio, le scelte, il campo",
+      "ruolo": "gioco",
+      "parte": true
+    },
+    {
+      "title": "V · Il barile sulla tenda di Zog'tar",
+      "file": "../../ARC07-BARILE-SULLA-TENDA.md",
+      "tag": "dm",
+      "sezioni": [
+        "testa:ARC-07 · Il barile",
+        "La scheda da tavolo",
+        "1.",
+        "7.",
+        "2.",
+        "2-bis.",
+        "3.",
+        "4.",
+        "5.",
+        "6.",
+        "8.",
+        "9.",
+        "10.",
+        "11.",
+        "13.",
+        "Fonti"
+      ],
+      "quando": "la notte, quando il gruppo vola sul campo con la botte",
+      "ruolo": "gioco",
+      "parte": true
+    },
+    {
+      "title": "VI · La tenda, Vatore, le mura e il duello",
+      "file": "../../ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+      "tag": "dm",
+      "sezioni": [
+        "SCENA 7",
+        "SCENA 8",
+        "SCENA 9",
+        "testa:§5",
+        "SCENA 10",
+        "C.3",
+        "SCENA 11",
+        "§6 —",
+        "§7 —",
+        "§8 —",
+        "§9 —",
+        "APPENDICE A",
+        "APPENDICE B",
+        "APPENDICE D"
+      ],
+      "quando": "dopo il barile e all'alba: la tenda, Vatore, le mura, il duello",
+      "ruolo": "gioco",
+      "parte": true
+    },
+    {
+      "title": "VII · Il ritorno a Hammerfist",
+      "file": "../../ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+      "tag": "dm",
+      "quando": "la serata dopo il duello: il Rubino, il Cuore della Montagna",
+      "ruolo": "gioco",
+      "parte": true
+    },
+    {
+      "title": "VIII · La Forgia ricorda le ferite",
+      "file": "../../PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md",
+      "tag": "dm",
+      "quando": "dopo il duello, per preparare Fauci di Palude (ARC-08)",
+      "ruolo": "fuori-serata",
+      "parte": true
+    },
+    {
+      "title": "IX · Conseguenze ed echi dell'arco",
+      "file": "../../ARC07-CONSEGUENZE-ECHI.md",
+      "tag": "dm",
+      "quando": "a fine arco, prima di aprire gli archi 8 e 9",
+      "ruolo": "fuori-serata",
+      "parte": true
+    },
+    {
+      "title": "X · Durik, il compagno di Hella",
+      "file": "../sessione-resurrezione-mille-anni/08-SCHEDA-DURIK.md",
+      "tag": "dm",
+      "quando": "ogni serata dopo la resurrezione: è sempre al tavolo",
+      "ruolo": "riferimento"
+    },
+    {
+      "title": "XI · La cassetta del DM: cast, pronuncia, read-aloud, suoni",
+      "file": "../../ARC07-CASSETTA-DEL-DM.md",
+      "tag": "dm",
+      "quando": "prima di ogni serata: chi c'è, come si pronuncia, che suoni",
+      "ruolo": "riferimento"
+    }
+  ],
+  "fregio": "../../../docs/assets/fregi/fregio-arco-07-forgia.svg",
+  "schede": "entrambe",
+  "chi_si_incontra": true,
+  "indice_analitico": true,
+  "pagine_nei_rimandi": true,
+  "intro_md": "00-INTRO-VOLUME.md",
+  "indice_profondita": 1,
+  "ruoli_sezioni": [
+    {
+      "titolo": "^Il quadro dell'arco|^L'arco in breve|^Come si usa questo volume",
+      "ruolo": "avvio"
+    },
+    {
+      "titolo": "^Il Portale della Forgia Eterna —",
+      "ruolo": "avvio"
+    },
+    {
+      "titolo": "^INDICE DEL MODULO",
+      "ruolo": "avvio"
+    },
+    {
+      "titolo": "^§0(-bis)? — Q",
+      "ruolo": "avvio"
+    },
+    {
+      "titolo": "^§0-ter",
+      "ruolo": "preparazione"
+    },
+    {
+      "titolo": "^§1 — HIGHLIGHT",
+      "ruolo": "preparazione"
+    },
+    {
+      "titolo": "ZONE",
+      "ruolo": "preparazione"
+    },
+    {
+      "titolo": "^Chi si incontra",
+      "ruolo": "preparazione"
+    },
+    {
+      "titolo": "HANDOUT",
+      "ruolo": "riferimento",
+      "nota": "gli AP Paizo stampano gli handout in fondo al volume o alla parte: in coda non è un difetto"
+    },
+    {
+      "titolo": "CONTINGENZE",
+      "ruolo": "gioco"
+    },
+    {
+      "titolo": "ECHO LEDGER|^§11 — ECHI|CONSEGUENZE NEGLI AFFRESCHI",
+      "ruolo": "fuori-serata"
+    },
+    {
+      "titolo": "AVANZAMENTO",
+      "ruolo": "fuori-serata"
+    },
+    {
+      "titolo": "^§12 — RITORNO|^§11 — PONTE|^§12 — PONTE|^§9 — PONTE",
+      "ruolo": "fuori-serata"
+    },
+    {
+      "titolo": "^10\\. Che cosa cambia|^12\\. Domande al DM|^13\\. Le trovate|^Fonti$",
+      "ruolo": "fuori-serata"
+    },
+    {
+      "titolo": "^7\\. Che cosa succede, in numeri",
+      "ruolo": "sintesi",
+      "riassume": "^[2-6](-bis)?\\. "
+    },
+    {
+      "titolo": "^C\\.1 ·",
+      "ruolo": "sintesi",
+      "riassume": "^SCENA [234] "
+    },
+    {
+      "titolo": "^C\\.2 ·",
+      "ruolo": "sintesi",
+      "riassume": "^SCENA [678] "
+    },
+    {
+      "titolo": "^C\\.3 ·",
+      "ruolo": "sintesi",
+      "riassume": "^SCENA 11 "
+    },
+    {
+      "titolo": "^APPENDICE C — LE VERSIONI VELOCI",
+      "ruolo": "sintesi",
+      "riassume": "^SCENA (7|8|11) "
+    },
+    {
+      "titolo": "^APPENDICE|^MAPPE|^11\\. Le mappe",
+      "ruolo": "riferimento"
+    }
+  ]
+}

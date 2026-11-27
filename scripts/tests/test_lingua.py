@@ -18,6 +18,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "scripts"))
 
+import validate_lingua  # noqa: E402
 from validate_lingua import controlla  # noqa: E402
 
 
@@ -44,6 +45,21 @@ class TestRefusiVeri(unittest.TestCase):
         errori, _ = _testo("Non si sa qual'è la porta.")
         self.assertTrue(errori)
 
+    def test_d_eufonica_che_manca(self):
+        for riga in ("Il tuo spirito, legato a Aegis Fang.", "Armi e equipaggiamento.",
+                     "Usano *fulmine* e *esplosione*.", "Ascoltava tutto e **è sparita**."):
+            errori, _ = _testo(riga)
+            self.assertTrue(errori, riga)
+
+    def test_d_eufonica_che_avanza(self):
+        for riga in ("Canta ad ogni notte.", "Dall'anno -5000 ad oggi.", "Ladri ed assassini."):
+            errori, _ = _testo(riga)
+            self.assertTrue(errori, riga)
+
+    def test_d_eufonica_a_capo(self):
+        errori, _ = _testo("Riforgiato in Guardiano di Pietra e\nevocato dal 3° livello.")
+        self.assertTrue(errori)
+
     def test_d_eufonica_davanti_a_consonante(self):
         errori, _ = _testo("# Gran Finale ad Damarath")
         self.assertTrue(errori)
@@ -67,8 +83,92 @@ class TestRefusiVeri(unittest.TestCase):
         self.assertTrue(errori)
 
 
+class TestDEufonicaStable(unittest.TestCase):
+    """ADR-0120 promossa a stable il 2026-11-25 (ADR-0099): la d eufonica fuori
+    norma è sempre un errore, senza opzioni, e il passo separato in CI è uscito."""
+
+    def test_la_d_eufonica_e_sempre_un_errore(self):
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "prova.md"
+            f.write_text("Canta ad ogni notte.", encoding="utf-8")
+            errori, avvisi = controlla(f)
+        self.assertTrue(any("d eufonica" in e for e in errori))
+        self.assertFalse(any("d eufonica" in a for a in avvisi))
+
+    def test_il_validatore_esce_1_senza_opzioni(self):
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "prova.md"
+            f.write_text("Ladri ed assassini.", encoding="utf-8")
+            self.assertEqual(validate_lingua.main([str(f)]), 1)
+
+    def test_l_opzione_del_canale_testing_non_c_e_piu(self):
+        with self.assertRaises(SystemExit):
+            validate_lingua.main(["--d-eufonica"])
+
+
+class TestProsaRientrata(unittest.TestCase):
+    """Una riga rientrata è codice solo se CommonMark la legge così (ADR-0120,
+    emendamento 2026-11-11). Ogni caso gira col parser e con la regola di ripiego."""
+
+    PROSA = ("- Tattiche: usano la carica\n    ed intercettano il colpo.",
+             "Un paragrafo che va a capo\n    ad ogni riga rientrata.",
+             "1. Primo passo.\n\n    Il seguito della voce, ad ogni modo, è prosa.")
+    CODICE = ("Testo.\n\n    x = leggi ad ogni giro\n\nAltro.",
+              "Testo.\n\n```\npasso ad ogni giro\n```\n")
+
+    def _con_e_senza_parser(self):
+        yield "ripiego", None
+        if validate_lingua._MD is not None:
+            yield "markdown-it-py", validate_lingua._MD
+
+    def test_il_seguito_di_un_elenco_o_di_un_paragrafo_si_legge(self):
+        vero = validate_lingua._MD
+        try:
+            for nome, parser in self._con_e_senza_parser():
+                validate_lingua._MD = parser
+                for testo in self.PROSA:
+                    with self.subTest(parser=nome, testo=testo):
+                        errori, _ = _testo(testo)
+                        self.assertTrue(errori)
+        finally:
+            validate_lingua._MD = vero
+
+    def test_il_codice_rientrato_e_il_recinto_si_saltano(self):
+        vero = validate_lingua._MD
+        try:
+            for nome, parser in self._con_e_senza_parser():
+                validate_lingua._MD = parser
+                for testo in self.CODICE:
+                    with self.subTest(parser=nome, testo=testo):
+                        errori, _ = _testo(testo)
+                        self.assertEqual(errori, [])
+        finally:
+            validate_lingua._MD = vero
+
+
+class TestSic(unittest.TestCase):
+
+    def test_una_citazione_marcata_non_si_segnala(self):
+        errori, _ = _testo("> «Canta ad ogni notte», scrive il cronista. <!-- sic -->")
+        self.assertEqual(errori, [])
+
+    def test_il_marchio_vale_solo_per_la_sua_riga(self):
+        errori, _ = _testo("> «Canta ad ogni notte». <!-- sic -->\n\nE poi canta ad ogni alba.")
+        self.assertEqual(len(errori), 1)
+
+    def test_il_marchio_non_copre_gli_altri_refusi(self):
+        errori, _ = _testo("> Non si sa perchè, ad ogni modo. <!-- sic -->")
+        self.assertEqual(len(errori), 1)
+
+
 class TestFalsiPositivi(unittest.TestCase):
     """Ogni caso qui sotto è una riga corretta che NON deve produrre un rilievo."""
+
+    def test_d_eufonica_in_norma(self):
+        for riga in ("Legato ad Aegis Fang ed esperto.", "Ad esempio, a ogni round.",
+                     "Quando Unità A attacca Unità B.", "Pietra o osso.", "Ad es. un nano."):
+            errori, _ = _testo(riga)
+            self.assertEqual(errori, [], riga)
 
     def test_una_riga_pulita(self):
         errori, avvisi = _testo("Perché la porta è chiusa, né si apre.")
@@ -99,7 +199,7 @@ class TestFalsiPositivi(unittest.TestCase):
         self.assertEqual(errori, [])
 
     def test_un_link_markdown_non_e_prosa(self):
-        errori, _ = _testo("Vedi [la guida](docs/guides/GUIDA-MAPPE.md) e prosegui.")
+        errori, _ = _testo("Vedi [la guida](docs/how-to/GUIDA-MAPPE.md) e prosegui.")
         self.assertEqual(errori, [])
 
     def test_i_due_spazi_prima_di_unancora_non_sono_un_refuso(self):

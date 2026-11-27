@@ -47,7 +47,7 @@ For 10, Des 16, Cos 20, Int 20, Sag 16, Car 24 (20 + 4 intrinseco da un *tomo de
 
 **Fase 2 (50–25% pf)**:  
 
-- Scende in mischia, priorita *Extract Brain* su target con basso pf o senza alleati vicini.  
+- Non scende in mischia `[CANONE — DM 2026-11-15, card]`: resta sulla piattaforma e continua con *Mind Blast*. Se due combattenti gli arrivano addosso, usa *dimension door* e torna in alto. Estrae il cervello solo a chi è già stordito o confuso e gli è vicino (vedi «Tattiche» qui sotto).  
 - Usa *slow* per ridurre mobilità.  
 
 **Fase 3 (<25% pf)**:  
@@ -57,11 +57,19 @@ For 10, Des 16, Cos 20, Int 20, Sag 16, Car 24 (20 + 4 intrinseco da un *tomo de
 
 ### Tattiche: prima del combattimento e morale
 
-- *Con Ozyrrandion*: il drago verde aspetta invisibile sotto la volta (DM 2026-10-18, EL 16). Zalkatar parla per primo e lascia al drago la *suggestione* su chi tratta; quando i PG salgono una rampa, il drago li stacca dal gruppo e Zalkatar usa *Extract Brain* sul PG rimasto solo.
-- *Prima del combattimento*: la Torre lo avverte quando i PG superano il Livello 4. Aspetta sulla piattaforma, con *black tentacles* già sulle rampe e *dimension door* tenuta per il primo PG che sale.  
+- *Con Ozyrrandion*: il drago verde aspetta invisibile sotto la volta (DM 2026-10-18, EL 16). Zalkatar parla per primo e lascia al drago la *suggestione* su chi tratta; quando i PG salgono una rampa, il drago li stacca dal gruppo e Zalkatar usa *Extract Brain* sul PG rimasto solo, se è stordito o confuso (come in «Tattiche» qui sotto; scelta del DM del 19/11).
+- *Prima del combattimento*: la Torre lo avverte quando i PG superano il Livello 4. Aspetta sulla piattaforma, con *black tentacles* già sulle rampe e le tre *dimension door* tenute per tornare in alto (vedi sotto).  
 - *Morale*: sotto il 10% dei pf, se ha *greater teleport*, fugge (vedi «Fuga Zalkatar» qui sotto). Se il *teletrasporto* è speso o bloccato, tratta: offre le informazioni sulla Red Hand in cambio della vita, come nell'opzione di negoziazione del finale.
 
-> Tattiche scritte da un agente sui poteri della scheda.
+**Tattiche: resta in alto, mai in mischia** `[CANONE — DM 2026-11-15, card]` (schema dei draghi)
+- *Carattere*: uno studioso che tratta i PG come cavie. Non rischia il proprio cervello in mischia: lo considera l'unica cosa insostituibile della Torre.
+- *Obiettivo*: tenere la piattaforma e logorare il gruppo con *Mind Blast* finché qualcuno resta stordito o confuso, poi prendersi quel cervello.
+- *Cosa sa dei PG*: sa che la Corona di Adamantio chiude la mente di Thorik (*mente vuota* permanente, `campaign/state.md` r.407), quindi non lo conta mai nel cono e non spreca su di lui *dominate monster*. Se Sethrax è fuggito dal Torneo col seme, sa chi è Artemis e com'è fatto il gruppo (Bestiario `Sethrax.md` r.92 e r.189). Se Sethrax è stato catturato, non sa niente del gruppo e lo legge nel primo round.
+- *Ambiente*: la piattaforma, le rampe con *black tentacles*, i cristalli ambientali. Non vuole stare a terra con due combattenti in mischia.
+- *Round 1*: *Mind Blast* sul cono che prende più PG, escluso Thorik.
+- *Round 2 e dopo*: *Mind Blast* ogni round. Se due combattenti gli sono addosso, *dimension door* (3/giorno) di nuovo in alto, e per un round non lo raggiungono. Se un PG stordito o confuso gli è vicino, una volta su due lo afferra con i tentacoli e gli estrae il cervello il round dopo.
+- *Adattamento*: finite le *dimension door*, resta dov'è e combatte; sotto il 10% vale la fuga (Morale).
+- *Misura* (Monte Carlo, `plans/esperimenti/tattiche-2026-11-15/profili_villain.py`, scontro `zalkatar-sanctum`, 20.000 prove, senza Ozyrrandion): con le fasi di prima Zalkatar muore nell'81% dei casi e nessun PG muore; con questa tattica muore nel 65% dei casi, e almeno un PG muore nel 40% dei combattimenti, che durano 6,8 round invece di 4,4. È una STIMA sui PG del 05/11.
 
 Benchmark: PF T1-1 riga 14: CA 24 (−5), pf 130 (−70), att +13 (−10), CD 24 (+2). Sopra sulle CD, sotto su difesa e attacco; la RI 25, la RD e le resistenze tengono il GS.
 
@@ -69,6 +77,8 @@ Boost log: correzione dei conti 3.5 — GS 13 → 14 — 14d4 non sono i dadi di
 
 <!-- storico -->
 - era: «DV: 14d4+70 (126 pf)», GS 13
+- era: Fase 2 «Scende in mischia, priorita *Extract Brain* su target con basso pf o senza alleati vicini»; *dimension door* «tenuta per il primo PG che sale»; «Tattiche scritte da un agente sui poteri della scheda» (fino al 2026-11-15)
+- era: con Ozyrrandion «Zalkatar usa *Extract Brain* sul PG rimasto solo», anche se non stordito né confuso (fino al 2026-11-19, card del DM)
 - era: iniziativa +6; tentacoli +10; TS Temp +10, Rif +11, Vol +17
 - era: *black tentacles* CD 22 (l'incantesimo non ha TS: 22 è la sua lotta al LI 14); *slow* CD 22 (con Car 20 la CD sarebbe 18: tenuta a 22 col tomo e Abilità Focalizzata)
 - era: Car 20; esplosione mentale, vampiro psichico e collasso planare CD 22; *dominate monster* CD 24

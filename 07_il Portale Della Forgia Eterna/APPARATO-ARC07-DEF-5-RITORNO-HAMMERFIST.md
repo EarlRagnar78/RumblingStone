@@ -9,9 +9,10 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | Chi | Dove si incontra | Vuole | Come parla |
 |---|---|---|---|
 | **Re Thorek Hammerfist** | SCENA 2 | che la fortezza regga. Subito dopo, sapere chi porta la Corona | a fiato corto, per frasi spezzate: *«Tu… portatore… degno.»* In piedi comanda senza alzare la voce |
-| **Madre Superiora Dana Forgiapietra** | SCENA 2 | tenere vivo il re, e dopo di lui i novanta | sussurra le preghiere e tuona le benedizioni. Legge tutto come profezia: *«Sono tornati»* |
+| **Madre Superiora Dagmar Forgiapietra** | SCENA 2 | tenere vivo il re, e dopo di lui i novanta | sussurra le preghiere e tuona le benedizioni. Legge tutto come profezia: *«Sono tornati»* |
 | i novanta nani | SCENA 2 | — | fino all'apparizione non parlano, contano. Dopo gridano tutti insieme una parola sola, il nome della fortezza |
 | gli orchi | SCENA 2 | — | urlano per farsi coraggio. Quando la luce li colpisce smettono, e chi scappa scappa senza voltarsi |
+| Hrolf Spaccascudi e Yrsa Portastendardo | SCENA 2 | — | Hrolf non parla, si mette davanti. Yrsa grida il nome della fortezza per prima, e gli altri le vanno dietro |
 | il capo degli orchi | SCENA 2 | — | urla ordini in orchesco finché ha qualcuno a cui darli, poi niente |
 | gli hobgoblin sergenti | SCENA 3 | — | non urlano. Gli ordini li dà un fischietto, e a ogni fischio la fila cambia forma |
 | Aegis Fang | SCENA 3 | — | canta, non parla: frasi brevi e in maiuscolo, che tutti nella caverna sentono (pagina dell'artefatto) |
@@ -21,6 +22,8 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | Scena | Prova | CD |
 |---|---|---:|
 | SCENA 1 | All'arrivo, Volontà | 15 |
+| SCENA 1 | è un nano, tira anche Tempra | 20 |
+| SCENA 1 | da Artemis con Usare Oggetti Magici | 27 |
 | SCENA 2 | si sale con Scalare | 15 |
 | SCENA 2 | niente con Saltare o Acrobazia | 15 |
 | SCENA 2 | 1/giorno, comando | 15 |

@@ -1,0 +1,114 @@
+[
+ {
+  "id": "C10",
+  "lettera": "x",
+  "inventati_non_marcati": 0,
+  "marcati": 8,
+  "marcati_con_domanda_e_base": 7,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [],
+  "versione": "rifatta"
+ },
+ {
+  "id": "C10",
+  "lettera": "y",
+  "inventati_non_marcati": 5,
+  "marcati": 3,
+  "marcati_con_domanda_e_base": 3,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "Talenti nuovi scelti senza marca: «Iniziativa Migliorata, Spingere Migliorato, Arma Focalizzata Superiore»",
+   "Tattica come fatto: «Non fugge finché ha sergenti in piedi»",
+   "TS e attacco senza conto: «Temp +10, Rifl +5, Vol +4» / «spada lunga +1 +14/+9 (1d8+6/19-20)»"
+  ],
+  "versione": "vecchio-p"
+ },
+ {
+  "id": "C10",
+  "lettera": "z",
+  "inventati_non_marcati": 4,
+  "marcati": 1,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "Budget sbagliato e non marcato: «budget da PNG di 8° livello, circa 27.000 mo (DMG Tabella 4-23)» (nel repo 27.000 mo è il PNG di 13°)",
+   "Equipaggiamento scelto senza marca: «gauntlets of ogre power +2 (4.000), cloak of resistance +2 (4.000), ring of protection +1 ... potion of haste (750)»",
+   "Tattica come fatto: «Con un round di preavviso beve la pozione di velocità ... arretra dietro la seconda fila»"
+  ],
+  "versione": "vecchio-q"
+ },
+ {
+  "id": "C11",
+  "lettera": "x",
+  "inventati_non_marcati": 0,
+  "marcati": 4,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [],
+  "versione": "vecchio-p"
+ },
+ {
+  "id": "C11",
+  "lettera": "y",
+  "inventati_non_marcati": 2,
+  "marcati": 3,
+  "marcati_con_domanda_e_base": 3,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "Talenti nuovi senza marca: «ho aggiunto Attacco Naturale Migliorato, Attacco Poderoso, Iniziativa Migliorata e Robustezza»",
+   "Comportamento dato per certo: «il lupo combatte da solo e va dove va il suo padrone»"
+  ],
+  "versione": "vecchio-q"
+ },
+ {
+  "id": "C11",
+  "lettera": "z",
+  "inventati_non_marcati": 0,
+  "marcati": 10,
+  "marcati_con_domanda_e_base": 10,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [],
+  "versione": "rifatta"
+ },
+ {
+  "id": "C16",
+  "lettera": "x",
+  "inventati_non_marcati": 6,
+  "marcati": 14,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "«una donna che beve acqua (la Civetta)»: agente della Civetta, fuori dall'elenco degli inventati e senza marca",
+   "«Una pattuglia della Torre passa sotto l'arco ogni dieci minuti»",
+   "«la Torre trova nel registro altri due carri con lo stesso sigillo, passati il mese prima»"
+  ],
+  "versione": "vecchio-q"
+ },
+ {
+  "id": "C16",
+  "lettera": "y",
+  "inventati_non_marcati": 2,
+  "marcati": 27,
+  "marcati_con_domanda_e_base": 27,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "«Morale: tutte e due si arrendono alla prima ferita o al primo incantesimo visibile»",
+   "«la sera stessa la guardia giovane non c'è più ... ‹Il ragazzo mi ha chiesto se le casse di pietra respirano›»"
+  ],
+  "versione": "rifatta"
+ },
+ {
+  "id": "C16",
+  "lettera": "z",
+  "inventati_non_marcati": 10,
+  "marcati": 20,
+  "marcati_con_domanda_e_base": 20,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "«Nello è nella cantina, sotto i piedi di tutti. L'oste, Tobia Rasca, lo nasconde da stamattina»",
+   "«un uomo dalle mani morbide, coi modi della Civetta, gli ha dato 10 mo per tenere la ronda lontana»",
+   "«La donna delle noccioline ... Lavora per la Civetta»"
+  ],
+  "versione": "vecchio-p"
+ }
+]

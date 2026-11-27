@@ -1,0 +1,20 @@
+{
+  "brand": "IL DRAPPO DI TARSILIA · PF1e",
+  "title": "Le carte da tavolo del Drappo",
+  "subtitle": "Segnaposto delle contrade, ordine alle funi, tratti della Ruota, posti e patti",
+  "banner": "DA STAMPARE E RITAGLIARE",
+  "meta": "Trentasei carte 63 × 88 mm, nove per foglio A4",
+  "footer": "Il Drappo di Tarsilia · carte da tavolo",
+  "player_footer": "Il Drappo di Tarsilia",
+  "front_matter": false,
+  "out": "DRAPPO-CARTE-DA-TAVOLO.html",
+  "chapters": [
+    {
+      "title": "✉ Le carte da tavolo",
+      "file": "../REGOLE-DELLA-CORSA-PF1E.md",
+      "contrade": "../CONTRADE-DI-TARSILIA.md",
+      "tag": "player",
+      "layout": "carte"
+    }
+  ]
+}

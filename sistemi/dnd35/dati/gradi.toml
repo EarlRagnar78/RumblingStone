@@ -1,0 +1,448 @@
+# sistemi/dnd35/dati/gradi.toml — i gradi delle abilità 3.5 (ADR-0124)
+# Generato da plans/esperimenti/verifica-scheda-2026-11-12/estrai_gradi.py dall'SRD 3.5
+# (olimot/srd-v3.5-md@c7f30a0c): «Skills Summary», la riga «Skill Points at Each
+# Additional Level» di ogni classe, «Skill points equal to» di ogni tipo.
+
+[regole]
+# gradi massimi in un'abilità di classe = dadi vita + 3; il primo dado vita vale 4 volte;
+# almeno 1 punto per dado vita; gli umani hanno 1 punto in più per livello
+massimo_piu = 3
+primo_dado = 4
+minimo_per_dado = 1
+umano_per_livello = 1
+
+[chiave]
+"appraise" = "Int"
+"balance" = "Des"
+"bluff" = "Car"
+"climb" = "For"
+"concentration" = "Cos"
+"craft" = "Int"
+"decipher script" = "Int"
+"diplomacy" = "Car"
+"disable device" = "Int"
+"disguise" = "Car"
+"escape artist" = "Des"
+"forgery" = "Int"
+"gather information" = "Car"
+"handle animal" = "Car"
+"heal" = "Sag"
+"hide" = "Des"
+"intimidate" = "Car"
+"jump" = "For"
+"knowledge" = "Int"
+"listen" = "Sag"
+"move silently" = "Des"
+"open lock" = "Des"
+"perform" = "Car"
+"profession" = "Sag"
+"psicraft" = "Int"
+"ride" = "Des"
+"search" = "Int"
+"sense motive" = "Sag"
+"sleight of hand" = "Des"
+"speak language" = ""
+"spellcraft" = "Int"
+"spot" = "Sag"
+"survival" = "Sag"
+"swim" = "For"
+"tumble" = "Des"
+"use magic device" = "Car"
+"use psionic device" = "Car"
+"use rope" = "Des"
+
+[classi]
+"adept" = 2
+"agent retriever" = 6
+"arcane archer" = 4
+"arcane trickster" = 4
+"archmage" = 2
+"aristocrat" = 4
+"assassin" = 4
+"barbarian" = 4
+"bard" = 6
+"blackguard" = 2
+"cerebremancer" = 2
+"cleric" = 2
+"commoner" = 2
+"cosmic descryer" = 2
+"divine emissary" = 4
+"dragon disciple" = 2
+"druid" = 4
+"duelist" = 4
+"dwarven defender" = 2
+"eldritch knight" = 2
+"elocater" = 6
+"epic arcane archer" = 4
+"epic arcane trickster" = 4
+"epic assassin" = 4
+"epic blackguard" = 2
+"epic dragon disciple" = 2
+"epic duelist" = 4
+"epic dwarven defender" = 2
+"epic eldritch knight" = 2
+"epic horizon walker" = 4
+"epic infiltrator" = 8
+"epic loremaster" = 4
+"epic mystic theurge" = 2
+"epic shadowdancer" = 6
+"expert" = 6
+"fighter" = 2
+"guardian paramount" = 4
+"hierophant" = 2
+"high proselytizer" = 2
+"horizon walker" = 4
+"legendary dreadnought" = 2
+"loremaster" = 4
+"metamind" = 2
+"monk" = 4
+"mystic theurge" = 2
+"paladin" = 2
+"perfect wight" = 8
+"psion" = 2
+"psion uncarnate" = 2
+"psionic fist" = 4
+"psychic warrior" = 2
+"pyrokineticist" = 2
+"ranger" = 6
+"rogue" = 8
+"shadowdancer" = 6
+"slayer" = 4
+"sorcerer" = 2
+"soulknife" = 4
+"thaumaturgist" = 2
+"thrallherd" = 2
+"union sentinel" = 2
+"war mind" = 2
+"warrior" = 2
+"wilder" = 4
+"wizard" = 2
+
+[tipi]
+"aberration" = 2
+"animal" = 2
+"construct" = 2
+"dragon" = 6
+"elemental" = 2
+"fey" = 6
+"giant" = 2
+"humanoid" = 2
+"magical beast" = 2
+"monstrous humanoid" = 2
+"ooze" = 2
+"outsider" = 8
+"plant" = 2
+"undead" = 4
+"vermin" = 2
+
+# le abilità di classe, dal paragrafo «Class Skills» (lotto 6 di ADR-0126). «knowledge»
+# senza parentesi vuol dire tutte le Conoscenze. Una classe che qui manca non ha un
+# elenco leggibile nella fonte (l'esperto ne sceglie dieci): per lei nessuna abilità si
+# giudica fuori classe.
+[di_classe]
+"adept" = ["concentration", "craft", "handle animal", "heal", "knowledge", "profession", "spellcraft", "survival"]
+"agent retriever" = ["appraise", "decipher script", "diplomacy", "forgery", "gather information", "knowledge (arcana)", "knowledge (geography)", "knowledge (history)", "knowledge (local)", "knowledge (the planes)", "listen", "search", "spot", "survival"]
+"arcane archer" = ["craft", "hide", "listen", "move silently", "ride", "spot", "survival", "use rope"]
+"arcane trickster" = ["appraise", "balance", "bluff", "climb", "concentration", "craft", "decipher script", "diplomacy", "disable device", "disguise", "escape artist", "gather information", "hide", "jump", "knowledge", "listen", "move silently", "open lock", "profession", "search", "sense motive", "sleight of hand", "speak language", "spellcraft", "spot", "swim", "tumble", "use rope"]
+"archmage" = ["concentration", "craft (alchemy)", "knowledge", "profession", "search", "spellcraft"]
+"aristocrat" = ["appraise", "bluff", "diplomacy", "disguise", "forgery", "gather information", "handle animal", "intimidate", "knowledge", "listen", "perform", "ride", "sense motive", "speak language", "spot", "survival", "swim"]
+"assassin" = ["balance", "bluff", "climb", "craft", "decipher script", "diplomacy", "disable device", "disguise", "escape artist", "forgery", "gather information", "hide", "intimidate", "jump", "listen", "move silently", "open lock", "search", "sense motive", "sleight of hand", "spot", "swim", "tumble", "use magic device", "use rope"]
+"barbarian" = ["climb", "craft", "handle animal", "intimidate", "jump", "listen", "ride", "survival", "swim"]
+"bard" = ["appraise", "balance", "bluff", "climb", "concentration", "craft", "decipher script", "diplomacy", "disguise", "escape artist", "gather information", "hide", "jump", "knowledge", "listen", "move silently", "perform", "profession", "sense motive", "sleight of hand", "speak language", "spellcraft", "swim", "tumble", "use magic device"]
+"blackguard" = ["concentration", "craft", "diplomacy", "handle animal", "heal", "hide", "intimidate", "knowledge (religion)", "profession", "ride"]
+"cerebremancer" = ["concentration", "craft", "decipher script", "knowledge (arcana) int", "knowledge (psionics)", "profession", "psicraft", "spellcraft"]
+"cleric" = ["concentration", "craft", "diplomacy", "heal", "knowledge (arcana)", "knowledge (history)", "knowledge (religion)", "knowledge (the planes)", "profession", "spellcraft"]
+"commoner" = ["climb", "craft", "handle animal", "jump", "listen", "profession", "ride", "spot", "swim", "use rope"]
+"cosmic descryer" = ["bluff", "concentration", "craft", "diplomacy", "knowledge (arcana)", "knowledge (religion)", "knowledge (the planes)", "profession", "sense motive", "spellcraft"]
+"druid" = ["concentration", "craft", "diplomacy", "handle animal", "heal", "knowledge (nature)", "listen", "profession", "ride", "spellcraft", "spot", "survival", "swim"]
+"duelist" = ["balance", "bluff", "escape artist", "jump", "listen", "perform", "sense motive", "spot", "tumble"]
+"dwarven defender" = ["craft", "listen", "sense motive", "spot"]
+"eldritch knight" = ["concentration", "craft", "decipher script", "jump", "knowledge (arcana)", "knowledge (nobility and royalty)", "ride", "sense motive", "spellcraft", "swim"]
+"epic infiltrator" = ["appraise", "balance", "bluff", "climb", "craft", "decipher script", "diplomacy", "disable device", "disguise", "escape artist", "forgery", "gather information", "hide", "intimidate", "jump", "listen", "move silently", "open lock", "profession", "sense motive", "sleight of hand", "spot"]
+"fighter" = ["climb", "craft", "handle animal", "intimidate", "jump", "ride", "swim"]
+"guardian paramount" = ["bluff", "climb", "diplomacy", "intimidate", "jump", "listen", "profession", "spot"]
+"hierophant" = ["concentration", "craft", "diplomacy", "heal", "knowledge (arcana)", "knowledge (religion)", "profession", "spellcraft"]
+"high proselytizer" = ["concentration", "craft", "diplomacy", "heal", "knowledge (arcana)", "knowledge (religion)", "profession", "sense motive", "spellcraft"]
+"horizon walker" = ["balance", "climb", "diplomacy", "handle animal", "hide", "knowledge (geography)", "listen", "move silently", "profession", "ride", "speak language (none)", "spot", "survival"]
+"legendary dreadnought" = ["climb", "craft", "intimidate", "jump", "swim"]
+"monk" = ["balance", "climb", "concentration", "craft", "diplomacy", "escape artist", "hide", "jump", "knowledge (arcana)", "knowledge (religion)", "listen", "move silently", "perform", "profession", "sense motive", "spot", "swim", "tumble"]
+"mystic theurge" = ["concentration", "craft", "decipher script", "knowledge (arcana)", "knowledge (religion)", "profession", "sense motive", "spellcraft"]
+"paladin" = ["concentration", "craft", "diplomacy", "handle animal", "heal", "knowledge (nobility and royalty)", "knowledge (religion)", "profession", "ride", "sense motive"]
+"pyrokineticist" = ["climb", "concentration", "craft", "intimidate", "jump", "psicraft"]
+"ranger" = ["climb", "concentration", "craft", "handle animal", "heal", "hide", "jump", "knowledge (dungeoneering)", "knowledge (geography)", "knowledge (nature)", "listen", "move silently", "profession", "ride", "search", "spot", "survival", "swim", "use rope"]
+"rogue" = ["appraise", "balance", "bluff", "climb", "craft", "decipher script", "diplomacy", "disable device", "disguise", "escape artist", "forgery", "gather information", "hide", "intimidate", "jump", "knowledge (local)", "listen", "move silently", "open lock", "perform", "profession", "search", "sense motive", "sleight of hand", "spot", "swim", "tumble", "use magic device", "use rope"]
+"shadowdancer" = ["balance", "bluff", "decipher script", "diplomacy", "disguise", "escape artist", "hide", "jump", "listen", "move silently", "perform", "profession", "search", "sleight of hand", "spot", "tumble", "use rope"]
+"slayer" = ["bluff", "concentration", "knowledge (dungeoneering)", "listen", "psicraft", "sense motive", "spot", "survival"]
+"sorcerer" = ["bluff", "concentration", "craft", "knowledge (arcana)", "profession", "spellcraft"]
+"thaumaturgist" = ["concentration", "craft", "diplomacy", "knowledge (religion)", "knowledge (the planes)", "profession", "sense motive", "speak language (none)", "spellcraft"]
+"union sentinel" = ["diplomacy", "gather information", "intimidate", "knowledge (local)", "listen", "profession", "search", "sense motive", "spot"]
+"warrior" = ["climb", "handle animal", "intimidate", "jump", "ride", "swim"]
+"wizard" = ["concentration", "craft", "decipher script", "knowledge", "profession", "spellcraft"]
+
+# le abilità che un dominio aggiunge a quelle di classe del chierico (SRD, «Cleric Domains»)
+[di_dominio]
+"animal" = ["knowledge (nature)"]
+"knowledge" = ["knowledge"]
+"plant" = ["knowledge (nature)"]
+"travel" = ["survival"]
+"trickery" = ["bluff", "disguise", "hide"]
+
+# chi con 5 gradi dà +2 a un'abilità (SRD, «Synergy» di ogni abilità): abilità → fonti
+[sinergie]
+"appraise" = ["craft"]
+"balance" = ["tumble"]
+"climb" = ["use rope"]
+"diplomacy" = ["bluff", "knowledge", "sense motive"]
+"disguise" = ["bluff"]
+"escape artist" = ["use rope"]
+"gather information" = ["knowledge"]
+"intimidate" = ["bluff"]
+"jump" = ["tumble"]
+"knowledge" = ["survival"]
+"ride" = ["handle animal"]
+"search" = ["knowledge"]
+"sleight of hand" = ["bluff"]
+"spellcraft" = ["knowledge", "use magic device"]
+"survival" = ["knowledge", "search"]
+"tumble" = ["jump"]
+"use magic device" = ["decipher script", "spellcraft"]
+"use rope" = ["escape artist"]
+
+# il bonus di razza e di taglia alle abilità (anche se vale solo in certi casi): le sette razze
+# dell'SRD e le nove senza dadi vita razziali del capitolo dei mostri (le chiavi di mdl.toml)
+[razze."aasimar"]
+"listen" = 2
+"spot" = 2
+
+[razze."drow"]
+"listen" = 2
+"search" = 2
+"spot" = 2
+
+[razze."duergar"]
+"appraise" = 2
+"craft" = 2
+"listen" = 1
+"move silently" = 4
+"search" = 2
+"spot" = 1
+
+[razze."dwarf"]
+"appraise" = 2
+"craft" = 2
+"search" = 2
+
+[razze."elf"]
+"listen" = 2
+"search" = 2
+"spot" = 2
+
+[razze."gnome"]
+"craft" = 2
+"hide" = 4
+"listen" = 2
+
+[razze."goblin"]
+"hide" = 4
+"move silently" = 4
+"ride" = 4
+
+[razze."half-elf"]
+"diplomacy" = 2
+"gather information" = 2
+"listen" = 1
+"search" = 1
+"spot" = 1
+
+[razze."half-orc"]
+
+[razze."halfling"]
+"climb" = 2
+"hide" = 4
+"jump" = 2
+"listen" = 2
+"move silently" = 2
+
+[razze."hobgoblin"]
+"move silently" = 4
+
+[razze."human"]
+
+[razze."kobold"]
+"craft" = 2
+"hide" = 4
+"profession" = 2
+"search" = 2
+
+[razze."orc"]
+
+[razze."svirfneblin"]
+"craft" = 2
+"hide" = 8
+"listen" = 2
+"search" = 2
+
+[razze."tiefling"]
+"bluff" = 2
+"hide" = 2
+
+# il bonus razziale alle abilità delle creature coi dadi vita razziali che avanzano per
+# classe (paragrafo «Skills» del loro capitolo dei mostri); tabella vuota = nessun bonus
+[razze_dv."annis"]
+
+[razze_dv."aranea"]
+"climb" = 8
+"jump" = 2
+"listen" = 2
+"spot" = 2
+
+[razze_dv."azer"]
+
+[razze_dv."bugbear"]
+"move silently" = 4
+
+[razze_dv."centaur"]
+
+[razze_dv."cloud giant"]
+
+[razze_dv."derro"]
+"hide" = 4
+"move silently" = 4
+
+[razze_dv."doppelganger"]
+"bluff" = 4
+"disguise" = 4
+
+[razze_dv."drider"]
+"climb" = 8
+"hide" = 4
+"move silently" = 4
+
+[razze_dv."dryad"]
+
+[razze_dv."ettin"]
+"listen" = 2
+"search" = 2
+"spot" = 2
+
+[razze_dv."fire giant"]
+
+[razze_dv."frost giant"]
+
+[razze_dv."gnoll"]
+
+[razze_dv."green hag"]
+"swim" = 8
+
+[razze_dv."grimlock"]
+"hide" = 10
+
+[razze_dv."harpy"]
+"bluff" = 4
+"listen" = 4
+
+[razze_dv."hill giant"]
+
+[razze_dv."lizardfolk"]
+"balance" = 4
+"jump" = 4
+"swim" = 4
+
+[razze_dv."locathah"]
+"swim" = 8
+
+[razze_dv."medusa"]
+
+[razze_dv."minotaur"]
+"listen" = 4
+"search" = 4
+"spot" = 4
+
+[razze_dv."ogre"]
+
+[razze_dv."ogre mage"]
+
+[razze_dv."rakshasa"]
+"bluff" = 4
+"disguise" = 4
+
+[razze_dv."sahuagin"]
+"swim" = 8
+
+[razze_dv."sea hag"]
+"swim" = 8
+
+[razze_dv."stone giant"]
+"hide" = 8
+
+[razze_dv."storm giant"]
+"swim" = 8
+
+[razze_dv."troglodyte"]
+"hide" = 8
+
+[razze_dv."troll"]
+
+# come una scheda nomina le sette razze (espressioni regolari, italiano e inglese); una
+# sottorazza (drow, duergar…) ha i suoi bonus in un'altra pagina e non è qui
+[razze_nomi]
+"dwarf" = ["dwarf", "nan[oaie]"]
+"elf" = ["elf", "elf[oaie]"]
+"gnome" = ["gnome", "gnom[oaie]"]
+"half-elf" = ["half-elf", "mezzelf[oaie]"]
+"half-orc" = ["half-orc", "mezzorc[ohie]+"]
+"halfling" = ["halfling"]
+"human" = ["human", "uman[oaie]"]
+altre = ["drow", "duergar", "svirfneblin", "derro", "aasimar", "tiefling", "githyanki", "githzerai", "orog", "tanarukk", "fey'ri", "goblin", "hobgoblin", "bugbear", "kobold", "cobold[oi]", "(?<!half-)orc", "orc[ohie]+", "grigi[oa]", "scur[oa]", "profond[oa]", "selvaggi[oa]", "acquatic[oa]"]
+
+[margine]
+# quanto un oggetto può aggiungere senza che la scheda lo dica (attrezzi perfetti: +2 di
+# circostanza, SRD «Tools and Skill Kits»); `sinergia` è il +2 di ogni fonte con 5 gradi
+oggetto = 2
+sinergia = 2
+
+# SRD, Saltare: la velocità diversa da `velocita` piedi toglie `meno` o dà `piu` ogni `ogni` piedi
+[salto]
+velocita = 30
+ogni = 10
+meno = 6
+piu = 4
+
+[fuori_classe]
+# SRD, «Skills Summary»: un grado in un'abilità fuori classe costa 2 punti e il massimo
+# è la metà di quello di classe
+costo = 2
+massimo_diviso = 2
+
+[penalita_di_prova]
+# SRD, «Armor Check Penalty»: la penalità dell'armatura e dello scudo si sommano e vanno
+# alle abilità di `abilita`; a quelle di `doppia` vanno due volte. `perfetta`: quanto
+# un'armatura perfetta (e ogni armatura magica lo è) la riduce; `mithral` e `legnoscuro`:
+# quanto la riducono i materiali speciali, perfetta compresa.
+abilita = ["balance", "climb", "escape artist", "hide", "jump", "move silently", "sleight of hand", "swim", "tumble"]
+doppia = ["swim"]
+perfetta = 1
+mithral = 3
+legnoscuro = 2
+
+[penalita_di_prova.armature]
+"padded" = { ca = 1, des_max = 8, penalita = 0 }
+"leather" = { ca = 2, des_max = 6, penalita = 0 }
+"studded leather" = { ca = 3, des_max = 5, penalita = 1 }
+"chain shirt" = { ca = 4, des_max = 4, penalita = 2 }
+"hide" = { ca = 3, des_max = 4, penalita = 3 }
+"scale mail" = { ca = 4, des_max = 3, penalita = 4 }
+"chainmail" = { ca = 5, des_max = 2, penalita = 5 }
+"breastplate" = { ca = 5, des_max = 3, penalita = 4 }
+"splint mail" = { ca = 6, des_max = 0, penalita = 7 }
+"banded mail" = { ca = 6, des_max = 1, penalita = 6 }
+"half-plate" = { ca = 7, des_max = 0, penalita = 7 }
+"full plate" = { ca = 8, des_max = 1, penalita = 6 }
+
+[penalita_di_prova.scudi]
+"buckler" = { ca = 1, penalita = 1 }
+"shield, light wooden" = { ca = 1, penalita = 1 }
+"shield, light steel" = { ca = 1, penalita = 1 }
+"shield, heavy wooden" = { ca = 2, penalita = 2 }
+"shield, heavy steel" = { ca = 2, penalita = 2 }
+"shield, tower" = { ca = 4, penalita = 10 }

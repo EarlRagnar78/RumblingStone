@@ -120,13 +120,13 @@ la comparsa di Durik è `dm` finché non accade).
 
 La procedura passo-passo (generatori, scrittura del prompt, flusso su un
 arco, salvataggio e aggancio, troubleshooting) sta in
-[`docs/guides/GUIDA-IMMAGINI.md`](../../docs/guides/GUIDA-IMMAGINI.md).
+[`docs/how-to/GUIDA-IMMAGINI.md`](../../docs/how-to/GUIDA-IMMAGINI.md).
 Questo ADR fissa **le regole**; la guida spiega **come si eseguono**.
 
 ## Copertura skill / docs
 
 - `scripts/README-automation.md`: tool map (`extract_scene_prompts`, `dm.py prompts`).
-- [`docs/guides/GUIDA-MAPPE.md`](../../docs/guides/GUIDA-MAPPE.md) §4 — modalità
+- [`docs/how-to/GUIDA-MAPPE.md`](../../docs/how-to/GUIDA-MAPPE.md) §4 — modalità
   cinematografica: rimando a questo flusso.
 - `skills/rumblingstone-mapmaking/references/stile-illustrazione-handout.md`: il vocabolario di stile che i prompt usano.
 

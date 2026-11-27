@@ -1,0 +1,22 @@
+volume                                      pag  S1 intro S1 vol   S2 cod  S3 ≤1p S3 nome S4 reg/png  S5 ritr
+ARC07-NOTTE-E-ALBA-BOOKLET.manifest.json    158       1/8     sì      0/0       —      8%        0/3      4/4
+-SERATA-RESURREZIONE-BOOKLET.manifest.json  172       0/6     sì      0/8       —      9%        0/4      4/4
+ARC07-RITORNO-FORGIA-BOOKLET.manifest.json   29       1/2     sì      0/8       —     13%        0/0      0/0
+RC07-SESSIONE-TERROS-BOOKLET.manifest.json   65       2/9     sì      0/0       —     12%        0/3      0/1
+ARC07-MILLE-ANNI-VOLUME.manifest.json       105       0/4     no      0/0       —     11%        0/4      4/4
+PALIO-BOOKLET.manifest.json                  65      7/16     no      0/0       —       —        0/1      0/0
+giardino-sale-calce.manifest.json            40       1/2     sì     0/17       —      4%        0/2      0/0
+giardino-sale-calce-pf1e.manifest.json       25       1/2     sì     0/14       —      4%        0/2      0/0
+DRAPPO-BOOKLET-DM.manifest.json              87      6/18     no      0/8       —       —        0/2      0/0
+abbazia-rotta-sicura.manifest.json           43       1/1     sì      0/0       —       —       0/14      0/0
+36
+ARC07-NOTTE-E-ALBA-BOOKLET.m ['S1', 'S3', 'S4']
+ARC07-SERATA-RESURREZIONE-BO ['S1', 'S2', 'S3', 'S4']
+ARC07-RITORNO-FORGIA-BOOKLET ['S1', 'S2', 'S3', 'S4', 'S4']
+ARC07-SESSIONE-TERROS-BOOKLE ['S1', 'S3', 'S4', 'S5']
+ARC07-MILLE-ANNI-VOLUME.mani ['S1', 'S1', 'S3', 'S4']
+PALIO-BOOKLET.manifest.json ['S1', 'S1', 'S4']
+giardino-sale-calce.manifest ['S1', 'S2', 'S3', 'S4']
+giardino-sale-calce-pf1e.man ['S1', 'S2', 'S3', 'S4']
+DRAPPO-BOOKLET-DM.manifest.j ['S1', 'S1', 'S2', 'S4']
+abbazia-rotta-sicura.manifes ['S4']

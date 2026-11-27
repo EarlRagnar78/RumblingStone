@@ -74,6 +74,7 @@ T47, T60):
 - una trappola annulla una tacca **del giorno 1 o del giorno 2** (decisione
   del DM; prima valeva il solo giorno 1, e dalla terza trappola in poi non
   cambiava niente);
+- **2026-11-09 (ADR-0118):** la carta dei giganti è ora **due macigni per settore a d20 + 9** (`MACIGNI = (2, 9)` nello script; `(1, 14)` rifà la carta di prima). Orda feroce, 3000 battaglie: nessuna breccia 50% → 54%, posizioni tenute 74% → 73%. Un macigno solo a +9 darebbe 61% e 82%.
 - la carta dei giganti tira **un macigno per settore** al round 2 dei giorni
   1 e 2: lo script lo faceva già, ora lo dice anche il libretto;
 - il macigno conta il +1 del primo giorno e il morale, **non le merlature**

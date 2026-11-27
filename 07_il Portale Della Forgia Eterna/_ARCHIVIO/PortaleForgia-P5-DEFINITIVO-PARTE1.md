@@ -285,7 +285,7 @@ Se Thorik usa potere Cuore Moradin (Benedizione della Forgia - crea aura luce do
 
 *Numero anni: 182 (vecchio perfino per nano). Barba bianca, intrecciata con filo ORO puro, lunga fino pavimento. Occhi grigio acciaio che hanno VISTO millenni di battaglie. Muscoli ancora massicci sotto armatura mithral +2 anticata ma magnificente.*
 
-*In mano: AXE LEGGENDARIA - **Frostcleaver** (simile design a Aegis Fang ma diversa - forgiata prioria, antecessore).*
+*In mano: AXE LEGGENDARIA - **Frostcleaver** (simile design ad Aegis Fang ma diversa - forgiata prioria, antecessore).*
 
 *Intorno lui, su trono: AURA. Non magica - semplicemente potere di presenza. Un nano che ha governato, guerreggiato, sacrificato per popolo suo.*
 

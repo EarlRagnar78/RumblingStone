@@ -317,7 +317,7 @@ PG PARTONO:
 - Col T, Riga 05 (appena entrati dalla porta nord)
 - Formation suggerita:
   🔵 Hella: Col T, Riga 05 (frontline, deve reach centro!)
-  🔵 Borin (Aegis Fang): Col S, Riga 05 (left flank, tank)
+  🔵 Borin Giuraferro (Martello degli Avi): Col S, Riga 05 (left flank, tank)
   🔵 Artemis (Ranged): Col U, Riga 04 (backline, cover fire)
   🔵 PG4: Col T, Riga 04 (support/buff)
 
@@ -341,21 +341,15 @@ NEMICI ROUND 4 (Animated Trees):
 
 ## INTERAZIONI ARTEFATTI DURANTE COMBATTIMENTO
 
-### Aegis Fang (Borin)
+### Il Martello degli Avi (Borin Giuraferro)
 
-**Attivazione Automatica quando Treant appare:**
-> L'ascia **VIBRA VIOLENTEMENTE** nella mano di Borin. Le rune naniche brillano rosso-arancio. La voce: "Corruzione... drago taint... sento! Natura... malata... purificare devi!"
+> **Borin Giuraferro** `[CANONE — DM 2026-11-15]`: è il pregen di Hammerfist sopravvissuto, che accompagna il gruppo; porta il suo *Martello da Guerra degli Avi +2* (ritornante), non Aegis Fang. Statistiche: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` §PNG giocabili e `Bestiario/png/Borin_Giuraferro.md` (CA 25, 142 pf, +21/+16/+11, 1d8+9/×3; Colpo Devastante +4d6 3/giorno, Postura Difensiva 3/giorno, Presenza Comandante +2 morale entro 9 m; talenti Incalzare e Riflessi in Combattimento). Se Borin è morto nel flashback, la scena va rifatta per il PG che ne prende il posto.
+> <!-- storico -->Fino al 2026-11-15 questa parte la teneva un «Borin» con Aegis Fang, che è l'ascia di Thorik: il DM ha scelto sulla card del 15/11 che sia il pregen Borin Giuraferro, col suo martello. Tolti i poteri dell'ascia (Purifying Strike, senso della corruzione, Defensive Stand, dragon bane).<!-- /storico -->
 
-**Abilità Speciale Sbloccata:**
-- **Purifying Strike (1/day):** Full-round action melee attack vs Treant
-  - Attack roll +25 (normale +5 bonus purificazione)
-  - Danni: normal + 4d6 holy (bypassa DR!)
-  - Se colpisce e Treant <60 HP: Fort save DC 22 or **Stunned 1 round**
-  - Visual: Colpo lascia scia luce dorata, corteccia nera brucia via rivelando legno sano sotto
-
-**Benefit Continuo:**
-- +2 bonus attacchi vs creature corrupted/tainted (Treant incluso)
-- Immune Treant's **Aura Corruzione** (no -2 penalty)
+**Contro il Treant:** il martello non ha poteri contro la corruzione. Borin ha i suoi:
+- **Colpo Devastante (3/giorno):** dichiarato prima dell'attacco, +4d6 ai danni se colpisce. È il colpo da tenere per il Treant.
+- **Postura Difensiva (3/giorno, azione standard, 3 round):** +4 For e Cos, +2 TS Volontà. Tiene la linea mentre Hella raggiunge il centro.
+- **Aura di Corruzione:** Borin la subisce come gli altri (−2), nessuna immunità.
 
 ### Corona di Adamantio
 
@@ -403,7 +397,7 @@ NEMICI ROUND 4 (Animated Trees):
 - **Summon Treant Allies (1/day, se Treant purificato):**
   - Alla fine combattimento, se Treant salvato
   - Collana può summon 1d4+1 Treant minori (Small/Medium) che si uniscono a Hella
-  - Disponibili per battaglia finale Brindol!
+  - Disponibili per battaglia finale Rethmar!
 
 **Ability durante Rituale (vedi sotto):**
 - Se Hella usa Collana durante FASE 3 rituale: ottiene +5 bonus tutti ritual checks
@@ -435,12 +429,12 @@ NEMICI ROUND 4 (Animated Trees):
 **Se Tutti Successi:**
 - Corruzione purificata! Treant ritorna sano (corteccia argento, occhi verde smeraldo)
 - **Nome Rivelato:** "Io sono... Radicesaggio... guardiano questo cerchio da 800 anni..."
-- **Alleato Permanente:** Radicesaggio + 20 Treant minori si uniscono difesa Brindol (battaglia finale!)
+- **Alleato Permanente:** Radicesaggio + 20 Treant minori si uniscono difesa Rethmar (battaglia finale!)
 - **Benedizione:** Hella ottiene **Blessing of the Ancient Guardian**
   - +4 bonus permanente tutti saves vs corruzione/taint
   - 1/day può cast *Heal* come spell-like ability
 - **Intel Prezioso:** Radicesaggio conosce posizioni 3 campi drow (hex map dettagliata)
-  - Rivela: "Drow... servono Wyrmlord Saarvith... drago nero comanda... Blackfens è base..."
+  - Rivela: "Drow... servono Wyrmlord Saarvith... drago nero comanda... Lhespenbog è base..."
 
 ### OPZIONE B: Purificazione Parziale
 

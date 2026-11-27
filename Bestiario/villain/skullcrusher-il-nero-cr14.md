@@ -6,7 +6,7 @@
 > prima della Mano Rossa: tenerli insieme farebbe proporre a `suggest_encounter`
 > un incontro che mescola due ere e non può esistere. `orda-antica-372dr`
 > esisteva già per Balvar Fuocospento, il consigliere della stessa orda.
-**Source**: `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` Appendice A.1 e `07_il Portale Della Forgia Eterna/ERRATA-ARC07-35-Verification.md` §2.3 (statblocco nel master DEFINITIVO, Appendice A.1 — GS 14 Avanzato, vale 15: CA 33, 37 con *armatura magica* già addosso al duello, 297 pf, soffio acido 14d4 Riflessi CD 30, aderente a scelta; il duello della battaglia antica di ~372 DR, Scena 11. Al duello si usa il Vecchio dell'Appendice A.1-bis, GS 17, 337 pf, con le 2 wyvern; l'Adulto resta l'alternativa. I numeri di ERRATA §2.3, GS 12, sono superati dal master)
+**Source**: `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` Appendice A.1 e `07_il Portale Della Forgia Eterna/ERRATA-ARC07-35-Verification.md` §2.3 (statblocco nel master DEFINITIVO, Appendice A.1 — GS 14 Avanzato, vale 15: CA 33, 37 con *armatura magica* già addosso al duello, 297 pf, soffio acido 14d4 Riflessi CD 30, aderente a scelta; il duello della battaglia antica di ~372 DR, Scena 11. Al duello si usa il Vecchio dell'Appendice A.1-bis, GS 17, 337 pf, con le 2 wyvern; l'Adulto resta l'alternativa. ERRATA §2.3 è allineata al master dal 2026-10-31)
 **Status**: POINTER — NON duplicare lo statblock qui. Usare sempre il file d'arco.
 
 ## Summary
@@ -20,9 +20,9 @@ Questa voce esiste perché `build_monster_catalog.py` e `suggest_encounter.py` s
 
 Boost log: 2026-10-07 — template Avanzato PF1e, versione completa (+4 a tutte le caratteristiche, +2 di armatura naturale; SRD drago nero adulto maturo sotto) — CR 14 → 14 (vale 15, il GS non sale per scelta del DM, Q37) — più forte senza salire di EL. Numeri nel file d'arco, Appendice A.1.
 
-Boost log: 2026-10-19 — due talenti, scelti fra le versioni più forti del 3.5 completo e dell'SRD — CR 14 → 14 (vale 15), EL invariato — il DM vuole la versione più terrificante: *Virata* → Capacità Focalizzata (soffio) (SRD, soffio CD 28 → 30) e *Attacco Poderoso* → Soffio Aderente `[Private source — Draconomicon, p. 67]`, fuori dall'SRD. Numeri e nota di divergenza nel file d'arco, Appendice A.1.
+Boost log: 2026-10-19 — due talenti, scelti fra le versioni più forti del 3.5 completo e dell'SRD — CR 14 → 14 (vale 15), EL invariato — il DM vuole la versione più terrificante: *Virare* → Capacità Focalizzata (soffio) (SRD, soffio CD 28 → 30) e *Attacco Poderoso* → Soffio Impregnante `[Private source — Draconomicon, p. 67]`, fuori dall'SRD. Numeri e nota di divergenza nel file d'arco, Appendice A.1.
 
-Boost log: 2026-10-19 — un talento: *Ghermire* → *Virata* (SRD, *Wingover*), sull'Adulto (A.1) e sul Vecchio (A.1-bis), che ne ha i talenti — CR 14 → 14 (vale 15); il Vecchio resta GS 17 — la presa in bocca è la firma di Fauci di Palude contro Thorik. Skullcrusher combatte in passata e dice il nome prima di colpire, con *colpo accurato*; *Fluttuare* una volta sola, alla prima paura; *oscurità* solo per la fuga `[CANONE — DM 2026-10-19]`. Numeri nel file d'arco, Appendici A.1 e A.1-bis.
+Boost log: 2026-10-19 — un talento: *Ghermire* → *Virare* (SRD, *Wingover*), sull'Adulto (A.1) e sul Vecchio (A.1-bis), che ne ha i talenti — CR 14 → 14 (vale 15); il Vecchio resta GS 17 — la presa in bocca è la firma di Fauci di Palude contro Thorik. Skullcrusher combatte in passata e dice il nome prima di colpire, con *colpo accurato*; *Fluttuare* una volta sola, alla prima paura; *oscurità* solo per la fuga `[CANONE — DM 2026-10-19]`. Numeri nel file d'arco, Appendici A.1 e A.1-bis.
 
 Boost log: 2026-10-19 — il Vecchio (A.1-bis, GS 17) si usa anche con il gruppo di 13°, con le 2 wyvern: EL 17 = APL+4, il tetto esatto. L'Adulto (A.1, GS 14) resta l'alternativa per i gruppi più deboli `[CANONE — DM 2026-10-19: D60 esteso al gruppo di 13°]`. Il campo `CR` di questa voce resta 14, il blocco base.
 

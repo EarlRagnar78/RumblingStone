@@ -165,7 +165,7 @@ degli Otto** a Rethmar (INTEGRAZIONE §4).
 > il fumo e sussurra il nome di chi ha perso a Drellin's Ferry. Il Palio finisce; la guerra
 > comincia.
 
-**→ Esiti dettagliati e echi: `...P2D-PALIO-CONSEGUENZE-ECHI.md`.**
+**→ Esiti dettagliati ed echi: `...P2D-PALIO-CONSEGUENZE-ECHI.md`.**
 
 ---
 

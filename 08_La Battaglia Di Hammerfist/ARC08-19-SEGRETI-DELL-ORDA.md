@@ -20,11 +20,11 @@ spiegare la regola.
 
 | Reparto | Capacità | Effetto nel libretto | Fonte |
 |---|---|---|---|
-| **Orchi** | **Carica selvaggia** | nel round in cui arrivano sul fronte: **+1** AU e **−2** DU | `ARC08-02`, unità orchi (AU +8 e DU 12 al primo round) |
-| **Orchi** | **Furia** | a 4 PFU o meno: **+1** AU | `ARC08-02`, unità orchi (AU +8 a ≤4 PFU) |
+| **Orchi** | **Carica selvaggia** | nel round in cui arrivano sul fronte: **+1** AU e **−2** DU | `ARC08-02`, unità orchi (AU +7 e DU 12 al primo round) |
+| **Orchi** | **Furia** | a 4 PFU o meno: **+1** AU | `ARC08-02`, unità orchi (AU +7 a ≤4 PFU) |
 | **Hobgoblin** | **Formazione tattica** | se sul fronte ci sono due o più reparti di hobgoblin (i guerrieri non contano: non marciano al tamburo), ognuno ha **+1** DU | `ARC08-02` e `ARC08-01`, unità hobgoblin |
 | **Lupi e goblin** | **Sbilanciare** | il reparto nanico che hanno davanti ha **−2** al bianco, una volta sola anche con due reparti di lupi davanti | `ARC08-02`, unità worg (−2 DU al bersaglio) |
-| **Giganti** | **Bombardamento** | un macigno per settore; ignora le merlature delle Mura | `ARC08-02`, giganti |
+| **Giganti** | **Bombardamento** | due macigni per settore; ignora le merlature delle Mura | `ARC08-02`, giganti |
 
 Come si raccontano, la prima volta:
 
@@ -146,9 +146,11 @@ foglio e si cancella a matita.
 |---|---|---|---|---|---|
 | Borin (Guardia) | ______ □□□□□□□□□□ | ______ □□□□□□□□□□ | □□□ | □□□□□□ | □ |
 | Dara (balestrieri) | ______ □□□□□□□□□□ | ______ □□□□□□□□□□ | □□□ | □□□□□□ | □ |
-| Thorin (veterani) | ______ □□□□□□□□□□ | ______ □□□□□□□□□□ | □□□ | □□□□□□ | □ |
+| Harbek (veterani) | ______ □□□□□□□□□□ | ______ □□□□□□□□□□ | □□□ | □□□□□□ | □ |
 | Nala (veterani) | ______ □□□□□□□□□□ | ______ □□□□□□□□□□ | □□□ | □□□□□□ | □ |
 | capitano (veterani) | ______ □□□□□□□□□□ | ______ □□□□□□□□□□ | □□□ | □□□□□□ | □ |
+
+<!-- storico -->Fino al 2026-11-14 la terza squadra era di «Thorin»: il pregen chierico si chiama Harbek Runaforte per scelta del DM (card del 14/11).<!-- /storico -->
 
 Sotto: round □□□□□□ · sergente in campo □ · sergente fuggito □ · corno □ ·
 morale della rocca ____.
@@ -161,9 +163,9 @@ giro.
 
 | Cosa | Le versioni | Scelta del libretto |
 |---|---|---|
-| Massi dei giganti | AU +14 (`ARC08-02`), 3d8 dal gomito della strada a ~100 m, incremento 36 m (`Mappe` L2), 2d8+12 (scontri) | la carta usa **AU +14**, la scheda dell'unità |
-| Riserva | 30 nani senza postazione nel cortile esterno, che il DM manda alla breccia (DM, 2026-10-22; `Mappe` L2, MAPPA 2) | nel libretto (§1) entra nel settore che cede come terzo reparto della schiera, e non torna indietro `[INFERRED]` |
-| Baliste | 6 con AU +10 (`ARC08-02`), 10 a +18 (`Mappe` L2), 12 (archivio) | una per torre, **d20 + 10**, perché nel libretto le altre stanno sui settori senza giocatore |
+| Massi dei giganti | AU +14 (`ARC08-02` fino al 2026-11-09: era l'attacco col randello), +8 (il masso dell'SRD: BAB +9, Des −1, taglia −1, +1 razziale; ADR-0118), 3d8 dal gomito della strada a ~100 m, incremento 36 m (`Mappe` L2), 2d8+12 (scontri) | **due macigni per settore a d20 + 9** (+8 e il morale +1 dei giganti). Fino al 2026-11-09 la carta era un macigno a d20 + 14; la simulazione `tre_giorni.py` dà la stessa battaglia con le due forme (orda feroce, nessuna breccia: 50% prima, 54% ora; posizioni tenute 74% e 73%), mentre un macigno solo a +9 la rende più facile (61%) |
+| Riserva | 30 nani senza postazione nel cortile esterno, che il DM manda alla breccia (DM, 2026-10-22; `Mappe` L2, MAPPA 2) | nel libretto (§1) entra nel settore che cede come terzo reparto della schiera, e non torna indietro `[CANONE — DM 2026-11-04, P16, la ritirata e i tunnel]` |
+| Baliste | 6 con AU +10 (`ARC08-02`; dal 2026-11-09 il +10 è il conto del mastro artigliere, ADR-0118), 10 a +18 (`Mappe` L2, corretto a +10), 12 (archivio) | una per torre, **d20 + 10**, perché nel libretto le altre stanno sui settori senza giocatore |
 | Carica | +2 att/−1 CA, +2 att/+2 danni/+1 morale (due righe di `mass_combat_guide_Dm.md`) | l'ordine **Caricare**: +2 al rosso, −2 al bianco |
 | Comandare | Car CD 15 (`ARC08-02`), Diplomazia CD 18 (`ARC08-01`) | il gesto **Comandare** senza prova |
 | Trappole | 2d6, +2 danni, 4d6 ×3, −2 CA in quattro file | una trappola **annulla una tacca del Giorno 1 o del Giorno 2**, nel settore che i giocatori vogliono |
@@ -206,7 +208,7 @@ tarano al primo tavolo. Le capacità dell'orda sono al §1.
 
 | Giorno | Carta | Effetto |
 |---|---|---|
-| 1-2 | **I giganti** | round 2: **un macigno per settore**. Per ognuno il DM tira d20 + 14 contro la DU di un reparto (con il +1 del primo giorno e il morale; le merlature delle Mura non contano), e usa la tabella del rosso |
+| 1-2 | **I giganti** | round 2: **due macigni per settore** (otto giganti, quattro settori). Per ognuno il DM tira d20 + 9 contro la DU di un reparto del settore, anche lo stesso (con il +1 del primo giorno e il morale; le merlature delle Mura non contano), e usa la tabella del rosso |
 | 1-2 | **Gorthak al cancello** | comandante: il Cancello può **Sfidare**. Finché c'è, il fronte del Cancello sale di uno |
 | 1-2 | **La palla di fuoco** | 1d4+1 PFU a un reparto; il giocatore tira d20 + 5 contro 16, se riesce dimezza |
 | 2 | **La breccia del cancello** | non occupa un round: dall'inizio del giorno il fronte del Cancello sale di uno. Con Gorthak sale di due |
@@ -220,7 +222,7 @@ tarano al primo tavolo. Le capacità dell'orda sono al §1.
 | Obiettivo | Pieno | Parziale | Fallito |
 |---|---|---|---|
 | **Breccia contenuta** (§5.2) | nessuna breccia nei giorni 1 e 2 | una | due o più |
-| **Comandanti logorati** (§5.2) | Gorthak e Grimjaw fuggiti feriti | uno dei due | nessuno |
+| **Comandanti logorati** (§5.2) | Gorthak e Grimjaw fuggiti feriti o abbattuti (`ARC08-DEF-2`, §0-bis, «Il comandante a 0 pf o meno») | uno dei due (Grimjaw ricacciato dal Re non conta) | nessuno |
 | **Cantitrici protette** (§5.2) | le Mura non cedono il giorno 2 | cedono al round 4 o 5 | cedono entro il round 3 |
 | **Posizioni tenute** (§5.3) | alla ritirata restano tre quarti dei reparti o più | da un terzo a tre quarti | meno di un terzo |
 | **Re Thorek** ed **evacuazione** (§5.3) | come nel master, nella resistenza al Cuore | | |

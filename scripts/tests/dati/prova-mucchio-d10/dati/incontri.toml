@@ -1,0 +1,11 @@
+# Come si misura un incontro nel sistema a mucchio di d10 di prova.
+# Non c'è GS: al suo posto ogni creatura porta il numero di dadi del suo
+# attacco migliore, e la minaccia è la somma dei successi attesi in un turno.
+fonte = "regola di prova (nessun manuale)"
+metodo = "minaccia"
+
+# Il tiro: ogni dado ≥ soglia è un successo, ogni dado ≥ rilancio si tira
+# ancora; con uno_annulla ogni 1 toglie un successo.
+soglia = 8
+rilancio = 10
+uno_annulla = false

@@ -340,7 +340,7 @@
   },
   {
    "faction": "Nani",
-   "name": "Thorin Runaforte (Clr)",
+   "name": "Harbek Runaforte (Clr)",
    "token": "🔵",
    "at": [
     48.0,
@@ -349,7 +349,7 @@
   },
   {
    "faction": "Nani",
-   "name": "Borin Ferropugno (Ftr)",
+   "name": "Borin Giuraferro (Ftr)",
    "token": "🔵",
    "at": [
     45.0,
@@ -504,7 +504,7 @@
   }
  ],
  "luogo": "Hammerfist, cortile interno",
- "quota": "970 m ; s.l.m., il cortile interno",
+ "quota": "620 m ; s.l.m., il cortile interno",
  "dislivello": "+20 m ; sul cortile esterno, oltre la scarpa",
  "deroghe": [
   {

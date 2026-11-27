@@ -39,10 +39,27 @@ Scopo
            salta le righe di storico (→, «prima della correzione», errata,
            barrato) e le frasi condizionali per vivo/morto. Non decide chi ha
            ragione: dice dove guardare.
+           Con --state aggiunge le regole che hanno l'atteso in
+           campaign/state.yaml (ADR-0125, canale testing):
+             S1  giorno d'arrivo dell'orda a Rethmar = march_clock.giorno_arrivo
+             S5  chi porta quale artefatto           = artefatti[].portatore
+             S6  modifiche permanenti di un PG: stesso segno e nessuna
+                 caratteristica che party[].hp non tocca
+             S7  ogni eco `armato` è citato per ID in almeno un file d'arco
+             T2  chi informa un PNG (`conoscenze[].informato_da`) sa qualcosa
+                 non dopo di lui (`dal_giorno`)
+           e conta ciò che non si può verificare («chi sa cosa» senza giorno).
+           Con --tattiche aggiunge la regola che ha l'atteso nella scheda
+           (ADR-0125, aggiunta del 2026-11-13, canale testing):
+             S8  un incantesimo (in corsivo) o un talento (con le maiuscole,
+                 o di più parole) che le «Tattiche» di una scheda del
+                 Bestiario nominano sta nella scheda: fra i fatti di
+                 `verifica_scheda --fatti` o scritto altrove nel file
+                 (un file con più schede si giudica scheda per scheda)
 
 Uso
   python3 scripts/coerenza_campagna.py fronti FILE.yaml [FILE.yaml ...] [--state] [--json]
-  python3 scripts/coerenza_campagna.py fatti DIR [DIR ...] [--bestiario] [--json]
+  python3 scripts/coerenza_campagna.py fatti DIR [DIR ...] [--bestiario] [--state] [--tattiche] [--json]
   python3 scripts/coerenza_campagna.py tutto --fronti F.yaml ... --archi DIR ... --out DIR [--bestiario]
 
 Exit  0 = nessuna violazione (fronti) o misura eseguita (fatti, tutto)
@@ -58,6 +75,7 @@ import re
 import sys
 import unicodedata
 from collections import OrderedDict
+from functools import lru_cache
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -318,22 +336,14 @@ NON_ENTITA = re.compile(
     r"analisi|sidebar|come |cosa |chi |se |quando |perch|il giro|le cd|i nemici|"
     r"supporto|armi|regola|riepilogo|struttura|rapporto|composizione|interazione|"
     r"effetti|eventi|opzioni|azioni|errata|a\.|b\.|c\.)")
-CLASSI = {
-    "guerriero", "guerriera", "chierico", "chierica", "mago", "maga", "stregone", "strega",
-    "ladro", "ladra", "ranger", "druido", "druida", "bardo", "barda", "monaco", "monaca",
-    "paladino", "barbaro", "warlock", "nobile", "nera", "guerra", "divina", "divino",
-    "tempeste", "nanico", "picchi", "rune", "maestra", "maestro", "illusionista", "ombre",
-    "esperto", "popolano", "combattente", "adepto", "aristocratico", "warpriest",
-    "fighter", "cleric", "wizard", "sorcerer", "rogue", "monk", "druid", "bard",
-    "barbarian", "paladin", "blackguard", "assassino", "assassin", "psion", "gish",
-    "esploratore", "esploratrice", "difensore", "campione", "sacerdote", "spia",
-    "danzatrice", "teurgo", "arcano", "runaio", "fabbro", "berserker", "templare",
-}
+from dmcore import sistemi as _S  # noqa: E402
+
+_ENTITA_35 = _S.dati(_S.predefinito(), "lessico.entita")
+CLASSI = set(_ENTITA_35["classi"])
 """L'ultima parola di una classe o di una classe di prestigio, come la scrivono
-gli archi: senza questo filtro «APL 13» e «CA 28» diventavano classi."""
-RAZZE = {"nano", "nana", "umano", "umana", "elfo", "elfa", "mezzelfo", "mezzelfa",
-         "mezzorco", "orog", "drow", "gnomo", "halfling", "hobgoblin", "goblin",
-         "orco", "dwarf", "human", "dream", "mezzo-ogre", "ogre", "dello", "scudo"}
+gli archi: senza questo filtro «APL 13» e «CA 28» diventavano classi. Dal
+plugin del sistema predefinito (sistemi/dnd35/dati/entita.toml, ADR-0111 L3)."""
+RAZZE = set(_ENTITA_35["razze"])
 
 STORICO_RIGA = re.compile(
     r"→|->|~~|prima della correzione|diceva|superat|storico|errata|boost log|"
@@ -418,15 +428,50 @@ def chiave_entita(nome: str) -> tuple[str | None, str | None]:
     return s, titolo
 
 
-def classi_da_paren(paren: str) -> str | None:
+@lru_cache(maxsize=None)
+def entita_di(sistema: str = "dnd35") -> "tuple[frozenset, frozenset]":
+    """(classi, razze) che chiudono un nome nel sistema (capacità lessico.entita).
+
+    Il 3.5 è CLASSI/RAZZE, lette dal suo plugin (ADR-0111, L3). Un altro sistema
+    in modo «dati» aggiunge l'ultima parola di ogni sua classe, classe di prestigio e
+    razza dal lessico italiano (italiano, inglese, tipo): un modulo PF1e scrive
+    «Inquisitore 9» o «Fattucchiere 12», che il 3.5 non conosce."""
+    if sistema == "dnd35":
+        return frozenset(CLASSI), frozenset(RAZZE)
+    from dmcore import sistemi as S
+    c = S.capacita(sistema, "lessico.entita")
+    if c.modo != "dati":
+        return frozenset(CLASSI), frozenset(RAZZE)
+    from lessico_regole import tabella_pf1
+
+    def ultime(tipo: str) -> set:
+        fuori = set()
+        for v in (x for x in c.voci if x.endswith(".tsv")):
+            for voce in tabella_pf1(ROOT / v, tipo).values():
+                parole = re.findall(r"[A-Za-zÀ-ÿ]+", voce["it"].lower())
+                if parole:
+                    fuori.add(parole[-1])
+        return fuori
+    return (frozenset(CLASSI | ultime("classe") | ultime("classe di prestigio")),
+            frozenset(RAZZE | ultime("razza")))
+
+
+@lru_cache(maxsize=None)
+def _sistema_del_file(rel: str) -> str:
+    from dmcore import sistemi as S
+    return S.sistema_di(rel)
+
+
+def classi_da_paren(paren: str, rel: str = "") -> str | None:
     """«Nano Guerriero 15°/Nobile 2°, GS 16» → «guerriero 15/nobile 2».
 
     Conta solo le parole che chiudono il nome di una classe (CLASSI): «APL 13»,
     «CA 28» e «Aegis Fang +21» non sono classi."""
     parti = set()
+    classi = entita_di(_sistema_del_file(rel))[0] if rel else CLASSI
     for mm in re.finditer(r"([A-Za-zÀ-ÿ]+)\s+(\d{1,2})°?(?![\d+])(?!/[+-])", _pulisci(paren)):
         parola = mm.group(1).lower()
-        if parola in CLASSI:
+        if parola in classi:
             parti.add(f"{parola} {int(mm.group(2))}")
     return "/".join(sorted(parti)) if parti else None
 
@@ -562,7 +607,7 @@ def estrai_file(path: Path, rac: Raccolta, entita_note: dict) -> None:
                     if len(gs) == 1:
                         rac.add(ent, "GS", gs[0], rel, n, sez, r)
                         visti_blocco.add("GS")
-                    rac.add(ent, "classi", classi_da_paren(paren.group(1)), rel, n, sez, r)
+                    rac.add(ent, "classi", classi_da_paren(paren.group(1), rel), rel, n, sez, r)
                 if tit:
                     rac.add(ent, "titolo", tit, rel, n, sez, r)
             continue
@@ -619,7 +664,7 @@ def estrai_file(path: Path, rac: Raccolta, entita_note: dict) -> None:
             gs = F_GS.findall(mm.group(2))
             if len(gs) == 1:
                 rac.add(ent, "GS", gs[0], rel, n, sez, r)
-            rac.add(ent, "classi", classi_da_paren(mm.group(2)), rel, n, sez, r)
+            rac.add(ent, "classi", classi_da_paren(mm.group(2), rel), rel, n, sez, r)
 
 
 def _frasi(riga: str) -> list[str]:
@@ -691,7 +736,7 @@ def estrai_prosa(path: Path, rac: Raccolta, nomi: dict[str, str],
                 gs = F_GS.findall(mm.group(1))
                 if len(gs) == 1:
                     rac.add(k, "GS", gs[0], rel, n, sez, r)
-                rac.add(k, "classi", classi_da_paren(mm.group(1)), rel, n, sez, r)
+                rac.add(k, "classi", classi_da_paren(mm.group(1), rel), rel, n, sez, r)
             for fr in _frasi(bassa):
                 if not re.search(r"\b" + nome + r"\b", fr):
                     continue
@@ -858,6 +903,342 @@ def rileva_contraddizioni(dirs: list[Path], bestiario: bool = False,
 
 
 # =========================================================================== #
+# 3 · La storia contro state.yaml (ADR-0125)
+# =========================================================================== #
+# `fatti` confronta la prosa con la prosa e non sa chi ha ragione. Con --state
+# si aggiungono le regole che hanno un'àncora in campaign/state.yaml (il master
+# dei fatti, ADR-0050), e quindi un `atteso`: è il pattern di ADR-0124 (regola,
+# atteso, ha, file:riga) applicato alla storia. Solo le quattro regole precise
+# della misura del 2026-11-12 (plans/esperimenti/coerenza-storia-2026-11-12/):
+# S2 (waypoint), S3 (finestre delle quest) e S4 (livello del party) restano nel
+# laboratorio finché la precisione non passa. Misura, non cancello: una frase
+# d'autore sfugge quasi sempre (1 parafrasi su 18).
+REGOLE_STORIA = ("S1", "S5", "S6", "S7", "T2")
+STAT = {"FOR": "FOR", "DES": "DES", "COS": "COS", "INT": "INT", "SAG": "SAG", "CAR": "CAR",
+        "STR": "FOR", "DEX": "DES", "CON": "COS", "WIS": "SAG", "CHA": "CAR"}
+COND_STORIA = re.compile(
+    r"\bse\b|\bqualora\b|\bram[oi]\b|alternativ|ritard|rallent|anticip|"
+    r"\bdelay|\bslow|\bif\b|\bunless\b|\boppure\b|\bin caso\b|\bnel caso\b|"
+    r"\bdefault\b|\?|\bsenza\b|\bfallisc|\bfail", re.I)
+"""Condizionale STRETTO: la marcia si può ritardare, un ramo può cambiare chi porta cosa."""
+GIORNO_STORIA = re.compile(r"\b(?:day|giorno|g\.)\s*\**\s*(\d{1,2})(?:\s*[-–]\s*(\d{1,2}))?\b", re.I)
+GIORNO_LOCALE = re.compile(r"da giorni|days ago|dell'assedio|d'assedio|di battaglia|del torneo|"
+                           r"of the siege|giorno\s+\d\s+(?:del|di)\b", re.I)
+"""«Giorno 2 dell'assedio» conta un altro tempo, non il March Clock."""
+RETHMAR = re.compile(r"\b(rethmar|rethman|brindol)\b", re.I)
+ARRIVO = re.compile(r"arriv|giung|reach|encamp|accamp|si accampa|alle porte|under siege|"
+                    r"cinge d'assedio|inizia l'assedio|assault begins|arrives", re.I)
+ORDA = re.compile(r"\b(orda|horde|azarr|mano rossa|red hand|armata|army|hobgoblin)\b", re.I)
+MOD_PERMANENTE = re.compile(r"([+−-])\s*(\d)\s*(FOR|DES|COS|INT|SAG|CAR|STR|DEX|CON|WIS|CHA)\b")
+
+
+def ancore_state(path: Path | None = None) -> dict:
+    """I campi di state.yaml che fanno da `atteso` per S1, S5, S6 e S7."""
+    path = STATE if path is None else path   # letto alla chiamata: i test possono cambiare STATE
+    d = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    an: dict = {"giorno_arrivo": (d.get("march_clock") or {}).get("giorno_arrivo"),
+                "portatori": {}, "modifiche": {}, "echi": [], "fonte": _rel(path)}
+    for a in d.get("artefatti") or []:
+        port = str(a.get("portatore", ""))
+        pg = next((p for p in PG if re.match(p + r"\b", port)), None)
+        if pg:
+            an["portatori"][str(a.get("artefatto", "")).split(" (")[0]] = pg
+    # separatore «/» obbligatorio fra le voci: nessun backtracking esponenziale
+    # (CodeQL py/redos sulla forma con «\s*/?\s*» ripetuta)
+    voce = r"[+−-] ?\d ?(?:FOR|DES|COS|INT|SAG|CAR)"
+    elenco = re.compile(r"(" + voce + r"(?: ?/ ?" + voce + r")*)\**\s*permanent")
+    for p in d.get("party") or []:
+        hp = str(p.get("hp", ""))
+        m = elenco.search(hp)
+        if m:
+            an["modifiche"][p["pg"]] = {
+                st: (-1 if seg in "−-" else 1) * int(val)
+                for seg, val, st in re.findall(r"([+−-])\s*(\d)\s*(FOR|DES|COS|INT|SAG|CAR)", m.group(1))}
+        elif re.search(r"nessun malus permanente", hp, re.I):
+            an["modifiche"][p["pg"]] = {}
+    an["echi"] = [{"id": e["id"], "miccia": e.get("miccia")}
+                  for e in d.get("echi") or [] if e.get("stato") == "armato"]
+    con = d.get("conoscenze") or []
+    an["conoscenze"] = len(con)
+    # il tempo di una conoscenza è il giorno del March Clock (`dal_giorno`, dal 2026-11-13)
+    an["conoscenze_senza_tempo"] = sum(1 for c in con if c.get("dal_giorno") is None)
+    an["chi_sa"] = [{"png_id": c.get("png_id"), "dal_giorno": c.get("dal_giorno"),
+                     "informato_da": c.get("informato_da"), "indice": i} for i, c in enumerate(con)]
+    return an
+
+
+def _frasi_storia(riga: str) -> list[str]:
+    return [f for f in re.split(r"(?<=[.;!])\s+|\s+\|\s+", riga) if f.strip()]
+
+
+def dirs_echi(root: Path = ROOT) -> list[Path]:
+    """Dove cercare la scena di un eco: tutti gli archi e campaign/, in profondità."""
+    return sorted(d for d in root.iterdir() if d.is_dir() and re.match(r"\d\d_", d.name)) + [root / "campaign"]
+
+
+def verifica_storia(files: list[Path], an: dict, echi_in: list[Path] | None = None) -> dict:
+    """S1, S5, S6, S7: per ogni violazione regola, atteso, ha, file, riga, testo."""
+    viol: list[dict] = []
+
+    def v(regola, atteso, ha, rel, n, testo):
+        viol.append({"regola": regola, "atteso": atteso, "ha": ha, "file": rel, "riga": n,
+                     "testo": testo.strip()[:240]})
+
+    ga = an.get("giorno_arrivo")
+    for p in files:
+        rel = _rel(p)
+        fence, titolo = False, ""
+        for n, riga in enumerate(p.read_text(encoding="utf-8", errors="replace").splitlines(), 1):
+            if riga.lstrip().startswith("```"):
+                fence = not fence
+                continue
+            # le cronologie stanno spesso in un blocco ``` e si leggono per S1;
+            # il titolo di sezione è il contesto della riga
+            if not fence and HEADING.match(riga):
+                titolo = riga
+            if STORICO_RIGA.search(riga):
+                continue
+            for fr in _frasi_storia(riga):
+                if COND_STORIA.search(fr):
+                    continue
+                # S1 arrivo dell'orda a Rethmar
+                if ga and (RETHMAR.search(fr) or RETHMAR.search(titolo) or RETHMAR.search(rel)) \
+                        and ARRIVO.search(fr) and (ORDA.search(fr) or ORDA.search(titolo)):
+                    gg = [m for m in GIORNO_STORIA.finditer(fr)
+                          if not GIORNO_LOCALE.search(fr[m.start():m.end() + 20])]
+                    # una riga che nomina già il giorno giusto è un confronto, non un errore;
+                    # un intervallo («Giorno 38-42») non afferma un arrivo
+                    if not any(int(m.group(1)) == ga for m in gg):
+                        for m in gg:
+                            g = int(m.group(1))
+                            if not m.group(2) and g >= 30:
+                                v("S1 arrivo dell'orda", f"Giorno {ga}", f"Giorno {g}", rel, n, riga)
+                if fence:
+                    continue
+                # S6 modifiche permanenti alle caratteristiche di un PG
+                if not re.search(r"permanent", fr, re.I):
+                    continue
+                for pg, mods in an["modifiche"].items():
+                    if not re.search(r"\b" + pg + r"\b", fr) or any(
+                            x != pg and re.search(r"\b" + x + r"\b", fr) for x in PG):
+                        continue
+                    for seg, val, st in MOD_PERMANENTE.findall(fr):
+                        st = STAT[st]
+                        x = (-1 if seg in "−-" else 1) * int(val)
+                        c = mods.get(st)
+                        if c is None or (c > 0) != (x > 0) or abs(x) > abs(c):
+                            canone = " / ".join(f"{k} {'+' if w > 0 else '−'}{abs(w)}"
+                                                for k, w in mods.items()) or "nessuna"
+                            v("S6 modifica permanente", f"{pg}: {canone}",
+                              f"{st} {'+' if x > 0 else '−'}{abs(x)}", rel, n, riga)
+    # S5 chi porta quale artefatto: lo stesso estrattore di `fatti`
+    rac = Raccolta()
+    for p in files:
+        estrai_prosa(p, rac, {k.lower(): k for k in PG})
+    for (ent, attr), valori in rac.occ.items():
+        if attr != "portatore":
+            continue
+        nome = rac.nomi.get(ent, ent)
+        att = next((pg for art, pg in an["portatori"].items()
+                    if art.lower().startswith(nome.lower()[:12])), None)
+        if not att:
+            continue
+        for val, occ in valori.items():
+            if val != att:
+                for o in occ:
+                    v("S5 portatore dell'artefatto", f"{nome}: {att}", val, o["file"], o["riga"], o["testo"])
+    # S7 ogni eco armato ha una scena che lo cita per ID (A12 di ARC-08)
+    if an["echi"]:
+        testi = []
+        for d in echi_in if echi_in is not None else dirs_echi():
+            for q in sorted(d.rglob("*.md")) if d.is_dir() else []:
+                if not q.name.startswith("state") and "changelog" not in q.name.lower():
+                    testi.append(q.read_text(encoding="utf-8", errors="replace"))
+        corpus = "\n".join(testi)
+        for e in an["echi"]:
+            if not re.search(r"(?<![\w-])" + re.escape(e["id"]) + r"(?!\w)", corpus):
+                v("S7 eco armato senza scena", f"{e['id']} citato in almeno un file d'arco "
+                  f"(miccia: {e['miccia']})", "0 file", an.get("fonte", _rel(STATE)), 0, "")
+    # T2 catena rotta: chi informa deve sapere qualcosa non dopo di chi è informato.
+    # state.yaml non ha una chiave per il fatto, quindi il confronto è fra PNG, non
+    # fra fatti: la regola vede l'informatore che non sa nulla in tempo, non quello
+    # che sa in tempo un'altra cosa.
+    primo: dict[str, int] = {}
+    for c in an.get("chi_sa", []):
+        if c["dal_giorno"] is not None:
+            primo[c["png_id"]] = min(c["dal_giorno"], primo.get(c["png_id"], c["dal_giorno"]))
+    for c in an.get("chi_sa", []):
+        chi, g = c["informato_da"], c["dal_giorno"]
+        if not chi or g is None:
+            continue
+        if chi not in primo:
+            v("T2 catena rotta", f"{chi} sa qualcosa entro il Giorno {g}", "nessuna riga con un giorno",
+              an.get("fonte", _rel(STATE)), 0, f"conoscenze[{c['indice']}] {c['png_id']} informato_da {chi}")
+        elif primo[chi] > g:
+            v("T2 catena rotta", f"{chi} sa qualcosa entro il Giorno {g}", f"dal Giorno {primo[chi]}",
+              an.get("fonte", _rel(STATE)), 0, f"conoscenze[{c['indice']}] {c['png_id']} informato_da {chi}")
+    return {
+        "regole": list(REGOLE_STORIA),
+        "violazioni": viol,
+        "non_verificabili": {"chi sa cosa (conoscenze senza giorno)":
+                             f"{an.get('conoscenze_senza_tempo', 0)} su {an.get('conoscenze', 0)}"}
+        | ({} if ga else {"S1 arrivo dell'orda": "state.yaml senza march_clock.giorno_arrivo"}),
+        "ancore": {k: an[k] for k in ("giorno_arrivo", "portatori", "modifiche")} | {
+            "echi_armati": [e["id"] for e in an["echi"]]},
+    }
+
+
+# ---------------------------------------------------------------------------
+# S8 — le «Tattiche» di una scheda contro la scheda stessa. L'àncora non è
+# state.yaml ma la scheda: `verifica_scheda --fatti` (ADR-0126) dà talenti e
+# incantesimi col nome canonico e le righe delle «Tattiche». Una tattica che
+# nomina un incantesimo (in corsivo) o un talento (con le maiuscole, o di più
+# parole anche in minuscolo) che la
+# scheda non ha, né fra i fatti né scritto altrove nel file (pozioni, pergamene,
+# capacità magiche), è una violazione. Misura, non cancello (ADR-0125, aggiunta
+# del 2026-11-13; banco in plans/esperimenti/coerenza-storia-2026-11-12/).
+_S8_CORSIVO = re.compile(r"(?<![*\w])\*(?!\*)([^*\n]{3,60}?)\*(?!\*)")
+_S8_MAIUSCOLE = re.compile(
+    r"\b[A-ZÀ-Ý][a-zà-ÿ']+(?:\s+(?:(?:in|di|del|della|dei|con|a|al|su|e|da|il|la|the|of|con le|a due)\s+)?"
+    r"[A-ZÀ-Ý][a-zà-ÿ']+)*")
+_S8_ALTRUI = re.compile(r"(?:\bcontro|\bimmun[ei] a|\bsubisce|\bsotto)\s+(?:un[oa']?\s+|il\s+|la\s+|l')?$", re.I)
+"""«Contro *polvere luccicante*»: l'incantesimo è di chi attacca la creatura."""
+_S8_CONDIVISI = re.compile(r"condivi\w+ (?:gli )?incantesimi|share spells", re.I)
+"""Condividere incantesimi (SRD): l'incantesimo è del padrone, non della cavalcatura."""
+_S8_TOGLI = re.compile(r"`[^`]*`|\[INFERRED[^\]]*\]")
+
+
+def _piatto(t: str) -> str:
+    """Come `lessico_regole.norma`, ma tiene il contenuto delle parentesi: gli
+    incantesimi preparati e le pozioni di una scheda stanno quasi sempre lì."""
+    t = unicodedata.normalize("NFKD", t).encode("ascii", "ignore").decode().lower()
+    return " " + re.sub(r"[^a-z0-9+]+", " ", re.sub(r"['`*_]", "", t)).strip() + " "
+
+
+def schede_con_tattiche(radice: Path | None = None) -> list[Path]:
+    radice = ROOT / "Bestiario" if radice is None else radice
+    return sorted(q for q in radice.rglob("*.md") if q.is_file())
+
+
+def verifica_tattiche(files: list[Path]) -> dict:
+    """S8: per ogni incantesimo o talento che le «Tattiche» nominano e la scheda
+    non ha: regola, atteso, ha, file, riga, testo. Un file con più schede si
+    giudica scheda per scheda, coi blocchi di `--fatti`: le «Tattiche» di un
+    blocco contro i talenti, gli incantesimi e il testo di quel blocco. In un
+    file con più schede, un blocco senza riga «Talenti» non giudica i talenti e
+    le «Tattiche» fuori da ogni blocco non si giudicano: restano contate."""
+    import lessico_regole as LR
+    import verifica_scheda as VS
+    import verifica_talenti as VT
+    viol, lette, menzioni = [], 0, 0
+    saltate = {"senza tattiche": 0, "tattiche fuori da una scheda": 0, "blocchi senza riga Talenti": 0}
+    for p in files:
+        righe = p.read_text(encoding="utf-8", errors="replace").splitlines()
+        f = VS.fatti(p)
+        if not f["tattiche"]:
+            saltate["senza tattiche"] += 1
+            continue
+        sis = f["sistema"]
+        try:
+            nomi = VS._liste(sis)[2]
+        except Exception:                                    # un sistema senza liste di incantesimi
+            nomi = {}
+        it = VS._incantesimi_it() if sis == "dnd35" else {}
+        multi = [k for k in VT._lessici()[0] if " " in k] if sis == "dnd35" else []
+        if len(f["blocchi"]) <= 1:
+            unita = [(f["tattiche"], range(1, len(righe) + 1), f["talenti"], f["incantesimi"], True)]
+        else:
+            di = {id(t): VS.blocco_di(f["blocchi"], t["inizio"]) for t in f["tattiche"]}
+            saltate["tattiche fuori da una scheda"] += sum(1 for k in di.values() if k is None)
+            unita = []
+            for k, b in enumerate(f["blocchi"]):
+                sue = [t for t in f["tattiche"] if di[id(t)] == k]
+                if not sue:
+                    continue
+                if not b["talenti"]:
+                    saltate["blocchi senza riga Talenti"] += 1
+                unita.append((sue, range(b["inizio"], b["fine"] + 1), b["talenti"],
+                              [x for x in f["incantesimi"] if b["inizio"] <= x["riga"] <= b["fine"]], bool(b["talenti"])))
+        for tattiche, campo, talenti, incantesimi, giudica_talenti in unita:
+            lette += 1
+            dentro: set[int] = set()
+            for t in tattiche:
+                dentro |= set(range(t["inizio"], t["fine"] + 1))
+            fuori = _piatto("\n".join(righe[i - 1] for i in campo if i not in dentro))
+            ha_inc = {LR.norma(x["canonico"]) for x in incantesimi if x["canonico"]}
+            ha_tal = {x["canonico"] for x in talenti if x["canonico"]}
+            visti: set[tuple[str, str]] = set()
+
+            def v(tipo, nome, canonico, n, dove):
+                if (tipo, canonico) in visti:
+                    return
+                visti.add((tipo, canonico))
+                viol.append({"regola": "S8 tattica senza riscontro in scheda",
+                             "atteso": f"{nome} ({canonico}) {dove} della scheda",
+                             "ha": "assente", "file": _rel(p), "riga": n,
+                             "testo": righe[n - 1].strip()[:240]})
+
+            for n in sorted(dentro):
+                r = _S8_TOGLI.sub("", righe[n - 1])
+                if r.lstrip().startswith(">"):                   # le note del DM non sono tattica
+                    continue
+                for m in _S8_CORSIVO.finditer(r):
+                    nome = m.group(1).strip(" .,;:")
+                    k = LR.norma(nome)
+                    k = LR.norma(it[k]) if k in it else k
+                    if k not in nomi or _S8_ALTRUI.search(r[:m.start()]) or _S8_CONDIVISI.search(r):
+                        continue
+                    menzioni += 1
+                    if k not in ha_inc and _piatto(nome) not in fuori and f" {k} " not in fuori:
+                        v("incantesimo", nome, nomi[k], n, "fra incantesimi, capacità magiche od oggetti")
+                contati: set[str] = set()
+                if not giudica_talenti:
+                    continue
+                for m in _S8_MAIUSCOLE.finditer(r.replace("*", "")):
+                    nome = m.group(0)
+                    x = VT.risolvi(sis, nome)
+                    # una parola sola («Corona») conta solo se è un talento dei dati del sistema
+                    if not x or (" " not in nome and not x["verificabile"]):
+                        continue
+                    menzioni += 1
+                    contati.add(x["en"])
+                    if x["en"] not in ha_tal and _piatto(nome) not in fuori and _piatto(x["en"]) not in fuori:
+                        v("talento", nome, x["en"], n, "fra i talenti")
+                # un talento di più parole si riconosce anche in minuscolo («attacco poderoso»):
+                # misurato su main, 50 menzioni e nessun falso allarme
+                piana = _piatto(r)
+                for k in multi:
+                    if f" {k} " not in piana:
+                        continue
+                    x = VT.risolvi(sis, k)
+                    if not x or x["en"] in contati:
+                        continue
+                    menzioni += 1
+                    if x["en"] not in ha_tal and f" {k} " not in fuori and _piatto(x["en"]) not in fuori:
+                        v("talento", k, x["en"], n, "fra i talenti")
+    return {"regole": ["S8"], "violazioni": viol,
+            "letti": {"schede": lette, "menzioni": menzioni},
+            "non_verificabili": {k: (f"{n} file" if k == "senza tattiche" else n) for k, n in saltate.items() if n}}
+
+
+def testo_storia(s: dict) -> str:
+    out = [f"== Storia contro state.yaml ({', '.join(s['regole'])}): {len(s['violazioni'])} violazioni"
+           f" · non verificabili: {s['non_verificabili']}"]
+    for x in s["violazioni"]:
+        out.append(f"   ✗ {x['regola']} · atteso {x['atteso']} · ha {x['ha']} · {x['file']}:{x['riga']}")
+    return "\n".join(out)
+
+
+def testo_tattiche(s: dict) -> str:
+    out = [f"== Tattiche contro la scheda (S8): {len(s['violazioni'])} violazioni su "
+           f"{s['letti']['menzioni']} menzioni in {s['letti']['schede']} schede"
+           f" · non verificabili: {s['non_verificabili']}"]
+    for x in s["violazioni"]:
+        out.append(f"   ✗ {x['regola']} · atteso {x['atteso']} · ha {x['ha']} · {x['file']}:{x['riga']}")
+    return "\n".join(out)
+
+
+# =========================================================================== #
 # Uscita
 # =========================================================================== #
 def testo_fronti(esiti: list[dict], state: list[dict] | None) -> str:
@@ -931,6 +1312,14 @@ def main(argv: list[str] | None = None) -> int:
     b.add_argument("archi", nargs="+", type=Path)
     b.add_argument("--bestiario", action="store_true")
     b.add_argument("--tutti", action="store_true", help="legge anche i file fuori perimetro")
+    b.add_argument("--state", action="store_true",
+                   help="aggiunge le regole con l'àncora in campaign/state.yaml (S1 arrivo "
+                        "dell'orda, S5 portatore, S6 modifiche permanenti, T2 chi informa chi, S7 echi armati "
+                        "senza scena): regola, atteso, ha, file:riga (ADR-0125)")
+    b.add_argument("--tattiche", action="store_true",
+                   help="aggiunge la regola S8: un incantesimo (in corsivo) o un talento (con le "
+                        "maiuscole) che le «Tattiche» di una scheda del Bestiario nominano e la "
+                        "scheda non ha. Misura in sola lettura (ADR-0125)")
     b.add_argument("--json", action="store_true")
     b.add_argument("--check", type=Path, metavar="RESIDUI",
                    help="cancello: exit 1 se c'è una contraddizione che RESIDUI non "
@@ -965,7 +1354,15 @@ def main(argv: list[str] | None = None) -> int:
 
     if args.cmd == "fatti":
         r = rileva_contraddizioni(args.archi, args.bestiario, args.tutti)
-        print(json.dumps(r, ensure_ascii=False, indent=2) if args.json else testo_fatti(r))
+        if args.state:
+            r["storia"] = verifica_storia(file_degli_archi(args.archi, args.tutti), ancore_state())
+        if args.tattiche:
+            r["tattiche"] = verifica_tattiche(schede_con_tattiche())
+        if args.json:
+            print(json.dumps(r, ensure_ascii=False, indent=2))
+        else:
+            print(testo_fatti(r) + ("\n" + testo_storia(r["storia"]) if args.state else "")
+                  + ("\n" + testo_tattiche(r["tattiche"]) if args.tattiche else ""))
         return controlla_residui(r, args.check) if args.check else 0
 
     esiti = [controlla_fronti(carica(p)) for p in args.fronti]

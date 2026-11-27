@@ -30,7 +30,7 @@
 | Elder Fire Elemental (P3) | 14 | ~4.200/PG | GS = APL+2, "impegnativo" |
 | Terros / Golem di Mithral (P4) | **CR 15+ "Hard"** (power-up voluto, D8) | ~4.800-6.000/PG | tienilo duro (§2.2) |
 | Zog'tar (P5) | 14 | ~4.200/PG | risoluzione veloce (fast-play) |
-| Skullcrusher (DEF-4 Scena 11) | **14** (Avanzato, vale 15) | **~1.460/PG**: 5.850 PX per un gruppo di 13° diviso per 4; con le 2 wyvern 6.500 → **1.625/PG** | Hella è tornata → 4 PG. Era GS 12 a ~2.700-2.925/PG; ricalcolato il 2026-10-19 sulla tabella PX del DMG (tab. 2-6), come in DEF-4 §8 A (D40) |
+| Skullcrusher (DEF-4 Scena 11) | **17** (Vecchio e Avanzato) con le 2 wyvern: **EL 17** | **≈ 4.060/PG**: 15.600 PX per il drago e 650 per le wyvern, per un gruppo di 13° diviso per 4 `[CANONE — DM 2026-10-19, giro 4 n. 16]`. Con l'Adulto di A.1 (GS 14) **1.460/PG**, con le wyvern **1.625/PG** | Hella è tornata → 4 PG. Era GS 12 a ~2.700-2.925/PG; ricalcolato il 2026-10-19 sulla tabella PX del DMG (tab. 2-6), come in DEF-4 §8 A (D40); il Vecchio è il duello di serie dal 2026-10-19 (§2.3) |
 
 - **ERRORE da correggere**: `CORREZIONE-Boss-Fauci.md` assegna a un **GS 12**
   "**8.000 XP (2.000/PG)**". Per PG di 13° vs GS 12 il valore corretto è
@@ -63,14 +63,23 @@
   quindi per i gruppi futuri vale lo statblocco del master. La versione vecchia
   resta in `_ARCHIVIO/Terros.md` §3/§5.
 
-### 2.3 Skullcrusher il Nero (duello, DEF-4 Scena 11) — GS 14 Avanzato
-- **Statblock in vigore**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md`, Appendice A.1
-  `[CANONE — DM 2026-09-27; Q37 del 2026-10-07]`. Drago nero adulto maturo
-  dell'SRD con il template **Avanzato** di PF1e, **GS 14**, CA 33 (contatto 10,
-  impreparato 31), **37 con *armatura magica***, che al duello è già addosso;
-  **297 pf** (22d12+154), morso +30 (2d8+10), soffio acido **14d4**, linea di
-  30 m, **Riflessi CD 30** ½ (Capacità Focalizzata), aderente a scelta (*Soffio Aderente*, `[Private source — Draconomicon, p. 67]`, Boost log del 2026-10-19). Per il party straripante c'è il Vecchio e Avanzato
-  di A.1-bis (GS 17). Per i numeri fa fede il master, non questa riga.
+### 2.3 Skullcrusher il Nero (duello, DEF-4 Scena 11) — GS 14 l'Adulto, GS 17 il Vecchio che si usa di serie
+- **Il duello che si gioca**: Skullcrusher **Vecchio e Avanzato** (GS 17),
+  `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` Appendice A.1-bis
+  `[CANONE — DM 2026-10-12, D60; esteso al 13° il 2026-10-19]`: 337 pf, CA 39, contatto 13
+  (43 con *armatura magica*, che al duello è già addosso) `[CANONE — DM 2026-11-21]`, morso +34 (2d8+11),
+  soffio acido **16d4**, linea di 30 m, **Riflessi CD 31** ½, aderente a scelta,
+  Presenza Terrificante CD 26. Dal round 2 lo accompagnano le **2 wyvern** di
+  A.6 (SRD, GS 6). Per un gruppo di 13° fanno **EL 17**, il tetto esatto di
+  APL+4; per uno di 14°, APL+3 `[CANONE — DM 2026-10-19]`. Combatte in passata
+  con *Virare* al posto di *Ghermire*: la presa in bocca è di Fauci contro
+  Thorik in ARC-08 (D71).<!-- storico --> Fino al 2026-11-21: CA 36 (40 con *armatura magica*).<!-- /storico -->
+- **L'alternativa**: l'**Adulto** di A.1 (drago nero adulto maturo dell'SRD con
+  il template Avanzato di PF1e, **GS 14**, CA 33, 37 con *armatura magica*,
+  297 pf, soffio 14d4 Riflessi CD 30 ½), con le stesse wyvern: per un gruppo di
+  13° logorato o senza tutti gli artefatti, per tre PG, o se il DM non conferma
+  il Vecchio. EL 14 sulla carta, 15 al tavolo.
+- Per i numeri fa fede il master, non queste righe.
 - **Versione precedente, superata**: fino al giro del 2026-10-19 questa sezione
   riportava lo statblock del `_ARCHIVIO/PortaleForgia-P5-FASTPLAY.md`, un drago
   nero adulto potenziato a **GS 12**, CA 27 (contatto 8, impreparato 25),

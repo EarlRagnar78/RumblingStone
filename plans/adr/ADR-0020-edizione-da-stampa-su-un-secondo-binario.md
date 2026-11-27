@@ -124,9 +124,9 @@ Tre cose emerse solo montando la pipeline, e che vale la pena aver scritto:
 - `scripts/fonts/`: EB Garamond, Cinzel **e Inconsolata**, ognuno col suo
   OFL.txt, più i `.woff2` per la catena HTML: la tipografia è embedded su
   **entrambe** le catene, quindi il PDF e la pagina hanno la stessa faccia ovunque
-- [`docs/guides/GUIDA-FLUSSO-LOCALE.md`](../../docs/guides/GUIDA-FLUSSO-LOCALE.md)
+- [`docs/explanation/GUIDA-FLUSSO-LOCALE.md`](../../docs/explanation/GUIDA-FLUSSO-LOCALE.md)
   — come le due catene lavorano insieme
-- [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](../../docs/guides/GUIDA-BOOKLET-E-PDF.md)
+- [`docs/how-to/GUIDA-BOOKLET-E-PDF.md`](../../docs/how-to/GUIDA-BOOKLET-E-PDF.md)
   — la traccia stampa accanto a quella schermo
 - [ADR-0013](ADR-0013-standard-generazione-booklet-sessioni.md) — la catena HTML,
   che resta

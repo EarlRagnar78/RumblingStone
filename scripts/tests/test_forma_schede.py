@@ -23,9 +23,9 @@ STAT_OK = """# Tizio — prova (umano, Guerriero 1)
 
 **Difesa** CA 10
 **Attacco** Vel 9 m
+**Tattiche** [DA SCRIVERE — prova]
 **Statistiche** For 10
 **Capacità speciali** Nessuna.
-**Tattiche** [DA SCRIVERE — prova]
 """
 
 DOSSIER_OK = """# Tizio [RIMANDO]
@@ -68,6 +68,14 @@ class TestForma(unittest.TestCase):
         testo = STAT_OK.replace("**Difesa** CA 10\n", "") + "**Difesa** CA 10\n"
         f = V.forma(self.scrivi("tizio-cr1.md", testo))
         self.assertEqual(f["fuori_ordine"], ["Difesa"])
+
+    def test_tattiche_in_fondo_mordono(self):
+        """Dal 2026-11-13 le Tattiche stanno fra Attacco e Statistiche, come
+        nelle AP PF1e (ADR-0091, aggiornamento): in fondo sono fuori ordine."""
+        riga = "**Tattiche** [DA SCRIVERE — prova]\n"
+        testo = STAT_OK.replace(riga, "") + riga
+        f = V.forma(self.scrivi("tizio-cr1.md", testo))
+        self.assertEqual(f["fuori_ordine"], ["Tattiche"])
 
     def test_pointer_non_si_conta(self):
         testo = "# Tizio [POINTER — canonical file]\n**Status**: POINTER\n"

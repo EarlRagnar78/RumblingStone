@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 126,
+  "tool_count": 160,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -153,6 +153,12 @@
         "network": false
       },
       "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "incontri.livello",
+          "creature.costruzione"
+        ]
+      },
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": "python scripts/suggest_encounter.py --help",
@@ -276,6 +282,11 @@
         "network": false
       },
       "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "tesoro.per_livello"
+        ]
+      },
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": "python scripts/suggest_loot.py --help",
@@ -469,7 +480,7 @@
         "scripts/tests/test_asset_2mtt.py"
       ],
       "docs": [
-        "docs/guides/GUIDA-MAPPE.md",
+        "docs/how-to/GUIDA-MAPPE.md",
         "plans/PIANO-RESA-E-ASSET-DELLE-MAPPE.md"
       ]
     },
@@ -938,7 +949,7 @@
         "scripts/tests/test_oggetti_cc0.py"
       ],
       "docs": [
-        "docs/guides/GUIDA-MAPPE.md",
+        "docs/how-to/GUIDA-MAPPE.md",
         "plans/PIANO-RESA-E-ASSET-DELLE-MAPPE.md"
       ]
     },
@@ -1017,7 +1028,7 @@
         "scripts/tests/test_texture_cc0.py"
       ],
       "docs": [
-        "docs/guides/GUIDA-MAPPE.md",
+        "docs/how-to/GUIDA-MAPPE.md",
         "plans/PIANO-RESA-E-ASSET-DELLE-MAPPE.md"
       ]
     },
@@ -1674,7 +1685,7 @@
         "scripts/tests/test_tema_pianta.py"
       ],
       "docs": [
-        "docs/guides/GUIDA-MAPPE.md",
+        "docs/how-to/GUIDA-MAPPE.md",
         "plans/adr/ADR-0102-lo-stile-delle-piante-e-i-generatori-delle-citta-nel-repo.md"
       ]
     },
@@ -2044,7 +2055,7 @@
         "scripts/tests/test_misura_resa.py"
       ],
       "docs": [
-        "docs/guides/GUIDA-MAPPE.md",
+        "docs/how-to/GUIDA-MAPPE.md",
         "plans/adr/ADR-0086-una-sostituzione-nella-resa-entra-solo-se-misurata-e-preferita.md"
       ]
     },
@@ -2598,7 +2609,7 @@
       ],
       "docs": [
         "plans/adr/ADR-0106-ogni-mappa-si-stampa-in-pianta.md",
-        "docs/guides/GUIDA-MAPPE.md"
+        "docs/how-to/GUIDA-MAPPE.md"
       ]
     },
     {
@@ -2758,7 +2769,7 @@
         "scripts/tests/test_watabou_citta.py"
       ],
       "docs": [
-        "docs/guides/GUIDA-MAPPE.md",
+        "docs/how-to/GUIDA-MAPPE.md",
         "plans/PIANO-RESA-E-ASSET-DELLE-MAPPE.md"
       ]
     },
@@ -3444,6 +3455,11 @@
         "notes": "xp-ledger e' un file derivato, non canone editato a mano."
       },
       "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "pe.soglie"
+        ]
+      },
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": "python scripts/update_xp.py --check",
@@ -3704,7 +3720,12 @@
       "tests": [],
       "docs": [
         "scripts/README-automation.md"
-      ]
+      ],
+      "sistema": {
+        "capacita": [
+          "stampa.etichette"
+        ]
+      }
     },
     {
       "id": "build_chapter_marks",
@@ -3786,7 +3807,7 @@
       "ci_smoke": "python scripts/build_chapter_marks.py --help",
       "tests": [],
       "docs": [
-        "docs/guides/GUIDA-BOOKLET-E-PDF.md"
+        "docs/how-to/GUIDA-BOOKLET-E-PDF.md"
       ]
     },
     {
@@ -3867,7 +3888,7 @@
       "ci_smoke": "python scripts/build_image_derivatives.py --help",
       "tests": [],
       "docs": [
-        "docs/guides/GUIDA-IMMAGINI.md"
+        "docs/how-to/GUIDA-IMMAGINI.md"
       ]
     },
     {
@@ -4277,7 +4298,7 @@
       "category": "D-materials",
       "language": "python",
       "invocation": "python3 scripts/export_booklet_typst.py MANIFEST.json --all",
-      "summary": "Edizione da stampa (ADR-0020): dallo stesso manifest dei booklet produce UN volume PDF con tipografia OFL embedded, due colonne, fregi di capitolo e segnalibri. Un capitolo marcato \"layout\": \"schede\" viene invece impaginato come scheda pregenerata — una pagina A4 per personaggio, ritratto, statblocco e background — leggendo i master PREGEN-*.md e FASCICOLO-*.md. Affianca export_booklet_pdf.py senza sostituirlo.",
+      "summary": "Edizione da stampa (ADR-0020): dallo stesso manifest dei booklet produce UN volume PDF con tipografia OFL embedded, due colonne, fregi di capitolo e segnalibri. Un capitolo marcato \"layout\": \"schede\" viene invece impaginato come scheda pregenerata — una pagina A4 per personaggio, ritratto, statblocco e background — leggendo i master PREGEN-*.md e FASCICOLO-*.md. Un capitolo \"layout\": \"carte\" esce in carte da tavolo 63 × 88 mm, nove per foglio A4, coi dati delle tabelle dei master (le carte della corsa del Drappo). Affianca export_booklet_pdf.py senza sostituirlo.",
       "use_case": "«Voglio un volume unico da rilegare, con segnalibri veri e tipografia decente: da dove esce?»",
       "stability": "beta",
       "stdlib_only": true,
@@ -4408,11 +4429,16 @@
         "scripts/tests/test_schede.py"
       ],
       "docs": [
-        "docs/guides/GUIDA-BOOKLET-E-PDF.md",
-        "docs/guides/GUIDA-FLUSSO-LOCALE.md",
+        "docs/how-to/GUIDA-BOOKLET-E-PDF.md",
+        "docs/explanation/GUIDA-FLUSSO-LOCALE.md",
         "plans/adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md",
         "scripts/README-automation.md"
-      ]
+      ],
+      "sistema": {
+        "capacita": [
+          "stampa.etichette"
+        ]
+      }
     },
     {
       "id": "extract_scene_prompts",
@@ -4680,6 +4706,594 @@
       ]
     },
     {
+      "id": "misura_box_telecomando",
+      "path": "scripts/misura_box_telecomando.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/misura_box_telecomando.py [FILE.md ...] [--check]",
+      "summary": "I box read-aloud che decidono per il gruppo cosa capisce, sa o prova (seconda persona plurale, fuori dalle battute). Il 2026-11-03 i 2 veri corretti nel testo (4 → 2 colpi, i 2 rimasti accettati); --check è il cancello, in CI da test_misure_rigorose. Deterministico.",
+      "use_case": "«C'è un box che dice ai giocatori cosa pensano?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_deps": [],
+      "external_bins": [],
+      "args": [
+        {
+          "name": "file",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "file markdown (default: i file vivi)"
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "cancello: esce con 1 se c'è un colpo fuori da ACCETTATI"
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "nessun colpo nuovo (o senza --check: elenco stampato)",
+        "1": "con --check: un box nuovo dice al gruppo cosa capisce o sa"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "espressione regolare"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "tests": [
+        "scripts/tests/test_misure_rigorose.py"
+      ],
+      "docs": [
+        "plans/RICERCA-GUARDRAIL-E-TECNICHE-2026-11.md",
+        "plans/adr/ADR-0108-i-cancelli-deterministici-stanno-in-ogni-skill.md"
+      ]
+    },
+    {
+      "id": "misura_distanza_pagine",
+      "path": "scripts/misura_distanza_pagine.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/misura_distanza_pagine.py VOLUME.pdf",
+      "summary": "Legge il PDF stampato con PyMuPDF e, per ogni persona che ha un riquadro nel repo, misura quante pagine separano le pagine dove agisce (nominata almeno 3 volte) dalla pagina con la sua CA e i suoi pf. È la misura della lettura a mano della prova ADR-0107 resa ripetibile. Indicatore, non cancello. Con --volume misura lo standard del volume (ADR-0122): introduzione di capitolo, chiavi d'area fra testo e mappa, mappa entro una pagina, appendice di regione e PNG, ritratto dei PNG principali, contro le soglie di Burnt Offerings e Red Hand of Doom.",
+      "use_case": "«Quante pagine sfoglia il DM, nel volume stampato, per trovare i numeri di chi ha davanti?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_deps": [
+        "pymupdf"
+      ],
+      "external_bins": [],
+      "args": [
+        {
+          "name": "pdf",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "uno o più PDF da confrontare (con --volume, oppure --tutti o --manifest)"
+        },
+        {
+          "name": "--nomi",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "nomi separati da virgola (default: chi ha un riquadro nel repo)"
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Tutto in JSON."
+        },
+        {
+          "name": "--volume",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "lo standard del volume, S1-S5 (ADR-0122)"
+        },
+        {
+          "name": "--riferimento",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "annotazione di un PDF di riferimento (mappe raster, appendici)"
+        },
+        {
+          "name": "--tutti",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "con --volume: ogni booklet del DM"
+        },
+        {
+          "name": "--manifest",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "con --volume: il booklet di questo manifest (compilato come misura_stampa)"
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "con --volume: esce 1 se un booklet è sotto soglia"
+        }
+      ],
+      "inputs": [
+        {
+          "path": "build/**/*.pdf",
+          "kind": "pdf",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "**/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "docs/audit/volume-booklet.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "la misura è stampata: è un indicatore",
+        "2": "manca PyMuPDF",
+        "1": "con --volume --check: almeno una misura sotto le soglie dei riferimenti"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "legge il testo delle pagine, nessun modello"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "tests": [
+        "scripts/tests/test_misura_distanza_pagine.py"
+      ],
+      "docs": [
+        "plans/RICERCA-GUARDRAIL-E-TECNICHE-2026-11.md",
+        "plans/adr/ADR-0108-i-cancelli-deterministici-stanno-in-ogni-skill.md",
+        "plans/adr/ADR-0122-il-volume-segue-lo-schema-degli-adventure-path.md"
+      ]
+    },
+    {
+      "id": "misura_fedelta_nli",
+      "path": "scripts/misura_fedelta_nli.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/misura_fedelta_nli.py ORIGINALE RISCRITTO | --rif REV FILE... [--ripara] [--soglia 0.5] [--json]",
+      "summary": "Il riscritto contraddice l'originale? Coppie (riga tolta, riga messa) del diff, modello NLI mDeBERTa multilingue (MIT), massimo dei due sensi sopra 0,5. Sulle 26 coppie del DM alla cieca F1 0,83 contro 0,62 dei soli numeri. Con --ripara (e dentro ciclo_prosa revisione/misura) le righe che contraddicono tornano all'originale in automatico. Canale unstable (ADR-0099).",
+      "use_case": "«La riscrittura ha cambiato un fatto che i numeri non vedono, tipo nord diventato sud?»",
+      "stability": "local-only",
+      "stdlib_only": false,
+      "external_deps": [
+        "transformers",
+        "torch"
+      ],
+      "external_bins": [],
+      "args": [
+        {
+          "name": "file",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "ORIGINALE RISCRITTO, oppure con --rif i file da confrontare"
+        },
+        {
+          "name": "--rif",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "il commit o il ramo di prima"
+        },
+        {
+          "name": "--soglia",
+          "type": "float",
+          "required": false,
+          "default": 0.5,
+          "choices": null,
+          "repeatable": false,
+          "desc": "probabilità di contraddizione oltre cui segnalare"
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Tutto in JSON."
+        },
+        {
+          "name": "--ripara",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "riscrive il file: le righe che contraddicono tornano all'originale"
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "**/*.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "nessuna contraddizione, o con --ripara le righe sono state rimesse",
+        "1": "righe che contraddicono l'originale (senza --ripara)",
+        "2": "mancano transformers/torch o il modello"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "modello fisso, inferenza senza campionamento"
+      },
+      "side_effects": {
+        "writes_canon": true,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "tests": [
+        "scripts/tests/test_fedelta_nli.py"
+      ],
+      "docs": [
+        "plans/RICERCA-GUARDRAIL-E-TECNICHE-2026-11.md",
+        "plans/adr/ADR-0108-i-cancelli-deterministici-stanno-in-ogni-skill.md"
+      ]
+    },
+    {
+      "id": "misura_mappe_schede",
+      "path": "scripts/misura_mappe_schede.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/misura_mappe_schede.py --dettaglio",
+      "summary": "Le pedine delle mappe JSON contro le schede: quante unità nemiche con un nome dichiarano `scheda`, i collegamenti rotti, le taglie della pianta che non sono quelle della scheda, le mappe senza scala. Con --booklet, per ogni booklet, le unità delle mappe stampate la cui scheda non è nel booklet. In prova (ADR-0128): avvisa, non ferma.",
+      "use_case": "«Sulla pianta la creatura Grande occupa i suoi quadretti, e nello scontro esce la sua scheda?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_deps": [],
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--dettaglio",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca collegamenti rotti e taglie discordi, mappa per mappa."
+        },
+        {
+          "name": "--proponi",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "I collegamenti certi (id del Bestiario fra parentesi, o nome intero di una scheda dello stesso modulo), senza scrivere."
+        },
+        {
+          "name": "--scrivi",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive i collegamenti certi nei JSON e porta `taglie` alla taglia della scheda."
+        },
+        {
+          "name": "--booklet",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Per ogni booklet, le unità delle mappe stampate la cui scheda non è nel booklet."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Avvisa se una misura peggiora rispetto al registro; esce 0."
+        },
+        {
+          "name": "--aggiorna",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Riscrive docs/audit/mappe-schede.json."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Tutto in JSON."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/Mappe/**/*.json",
+          "kind": "json",
+          "required": true,
+          "schema": "scripts/schemas/tactical_map.schema.json"
+        },
+        {
+          "path": "**/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "sempre: è una misura in prova"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "legge le mappe JSON e i recinti statblocco seguiti da git"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "tests": [
+        "scripts/tests/test_misure_in_prova.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0107-chi-si-incontra-sta-nel-capitolo.md",
+        "plans/RICERCA-USABILITA-AL-TAVOLO-2026-11.md"
+      ]
+    },
+    {
+      "id": "misura_ordine",
+      "path": "scripts/misura_ordine.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/misura_ordine.py PDF RUOLI.json",
+      "summary": "Misura l'ordine dei capitoli di un booklet dal suo PDF (ADR-0145): legge l'indice, dà un ruolo a ogni sezione con le regole di un file di ruoli (avvio, preparazione, gioco, sintesi, fuori serata, riferimento) e conta i difetti R2-R8 (preparazione dopo il gioco, scene fuori ordine, riassunto dopo il dettaglio, dopo-serata fra le scene, doppioni, guida ai capitoli sbagliata). Con una regola \"parte\": true misura un volume d'arco: in più V1 (quadro del volume prima della Parte I), V2 (indice oltre due pagine), V3 (parti senza gioco fra parti giocate), e le regole R parte per parte. Serve PyMuPDF.",
+      "use_case": "«L'ordine del booklet regge al tavolo, o il DM dovrà cercare e andare a braccio?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_deps": [],
+      "external_bins": [],
+      "args": [
+        {
+          "name": "pdf",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il PDF composto del booklet."
+        },
+        {
+          "name": "ruoli",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il file JSON dei ruoli delle sezioni (regole sul titolo)."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Misure e sezioni in JSON."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.pdf",
+          "kind": "pdf",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/esperimenti/ordine-*/ruoli-*.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un booklet sopra un suo tetto o non registrato (--check)",
+        "2": "manca PyMuPDF"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "typst e font fissati: stesso sorgente, stesso PDF, stesse misure"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/misura_stampa.py --help",
+      "tests": [
+        "scripts/tests/test_misura_stampa.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0105-ogni-creatura-esce-nello-stesso-riquadro.md"
+      ]
+    },
+    {
+      "id": "misura_ripetizioni_frasi",
+      "path": "scripts/misura_ripetizioni_frasi.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/misura_ripetizioni_frasi.py [--soglia 0.80] [--json] [--check]",
+      "summary": "Le immagini ripetute fra i box read-aloud, frase per frase, con embedding multilingue (MiniLM, Apache 2.0). Il 2026-11-03 le 2 vere nei master corrette (21 → 19 coppie), le altre lette e scritte in plans/scrittura/ripetizioni-accettate.json; --check è il cancello locale. Canale unstable (ADR-0099).",
+      "use_case": "«Quali immagini ho già usato in un altro box, anche con parole diverse?»",
+      "stability": "local-only",
+      "stdlib_only": false,
+      "external_deps": [
+        "sentence-transformers"
+      ],
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--soglia",
+          "type": "float",
+          "required": false,
+          "default": 0.8,
+          "choices": null,
+          "repeatable": false,
+          "desc": "coseno minimo"
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Tutto in JSON."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "cancello: esce con 1 se c'è una coppia fuori da ripetizioni-accettate.json"
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/scrittura/ripetizioni-accettate.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "nessuna coppia nuova (o senza --check: elenco stampato)",
+        "1": "con --check: una ripetizione nuova fra box",
+        "2": "manca sentence-transformers"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "modello fisso, inferenza senza campionamento"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "tests": [
+        "scripts/tests/test_misure_rigorose.py"
+      ],
+      "docs": [
+        "plans/RICERCA-GUARDRAIL-E-TECNICHE-2026-11.md",
+        "plans/adr/ADR-0108-i-cancelli-deterministici-stanno-in-ogni-skill.md"
+      ]
+    },
+    {
       "id": "misura_stampa",
       "path": "scripts/misura_stampa.py",
       "category": "D-materials",
@@ -4806,6 +5420,105 @@
       ]
     },
     {
+      "id": "misura_standard_tavolo",
+      "path": "scripts/misura_standard_tavolo.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/misura_standard_tavolo.py --dettaglio",
+      "summary": "Per ogni booklet del DM e ogni capitolo, le persone con un nome che ci compaiono e se nello stesso capitolo ci sono numeri, aspetto, ritratto, chi è, cosa vuole e tattica (lo standard minimo del DM del 2026-11-02, ADR-0107); per ogni capitolo con uno scontro, se la mappa è nel capitolo vicino a dove serve. Con --prova misura il capitolo arricchito da dmcore.chi_si_incontra. Indicatore, non cancello.",
+      "use_case": "«Al tavolo trovo chi ho davanti, la sua faccia e la mappa nel capitolo che sto giocando?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_deps": [],
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--dettaglio",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenca ogni coppia capitolo × persona con quello che manca, e i capitoli con uno scontro senza mappa."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Tutto in JSON."
+        },
+        {
+          "name": "--manifest",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "un booklet solo"
+        },
+        {
+          "name": "--soglia",
+          "type": "int",
+          "required": false,
+          "default": 3,
+          "choices": null,
+          "repeatable": false,
+          "desc": "citazioni minime per dire che una persona compare"
+        },
+        {
+          "name": "--prova",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Misura ogni booklet come se il manifest avesse «schede»: «entrambe» e «chi_si_incontra»: true (ADR-0107), cioè il capitolo come lo stamperebbe l'esportatore con le persone e le mappe portate dal master."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.manifest.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "**/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "sempre: è un indicatore"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "legge solo i master e i manifest"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "tests": [
+        "scripts/tests/test_misura_standard_tavolo.py",
+        "scripts/tests/test_chi_si_incontra.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0107-chi-si-incontra-sta-nel-capitolo.md",
+        "plans/RICERCA-USABILITA-AL-TAVOLO-2026-11.md"
+      ]
+    },
+    {
       "id": "misura_statblocchi_booklet",
       "path": "scripts/misura_statblocchi_booklet.py",
       "category": "D-materials",
@@ -4910,6 +5623,103 @@
       ],
       "docs": [
         "plans/adr/ADR-0105-ogni-creatura-esce-nello-stesso-riquadro.md"
+      ]
+    },
+    {
+      "id": "provenienza_immagini",
+      "path": "scripts/provenienza_immagini.py",
+      "category": "D-materials",
+      "language": "python",
+      "invocation": "python3 scripts/provenienza_immagini.py [cartella ...] [--scrivi] [--check] [--json]",
+      "summary": "Etichetta di provenienza nelle copie web/ delle immagini: legge la sorgente digitale dal manifesto C2PA firmato del master e la scrive nella copia JPEG come XMP IPTC (DigitalSourceType), senza ricomprimerla. Non indovina: senza manifesto firmato la copia resta senza.",
+      "use_case": "«Le immagini generate che finiscono nei booklet dicono ancora di essere generate, come i loro master?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "cartelle",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Cartelle dei master (default: tutte quelle con una web/ tracciata)."
+        },
+        {
+          "name": "--scrivi",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Scrive l'etichetta nelle copie che non l'hanno."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se un'etichetta manca o non torna col master."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Rapporto in JSON."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "<cartella>/*.png",
+          "kind": "png",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "<cartella>/web/*.jpg",
+          "kind": "png",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<cartella>/web/*.jpg",
+          "kind": "png",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "--check: un'etichetta manca o non torna"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Stesso master, stessa etichetta; i pixel della copia non cambiano."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/provenienza_immagini.py --check",
+      "tests": [
+        "scripts/tests/test_provenienza_immagini.py"
+      ],
+      "docs": [
+        "docs/how-to/GUIDA-IMMAGINI.md"
       ]
     },
     {
@@ -5130,7 +5940,7 @@
         "scripts/tests/test_booklets.py"
       ],
       "docs": [
-        "docs/guides/GUIDA-BOOKLET-E-PDF.md",
+        "docs/how-to/GUIDA-BOOKLET-E-PDF.md",
         "plans/adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md",
         "scripts/README-automation.md"
       ]
@@ -5416,6 +6226,11 @@
         "network": false
       },
       "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "statblocco.campi"
+        ]
+      },
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": "python scripts/build_monster_catalog.py --help",
@@ -5480,6 +6295,33 @@
           "choices": null,
           "repeatable": false,
           "desc": "Gate: ogni `pf-dado` registra i dadi vita e ogni correzione è riproducibile."
+        },
+        {
+          "name": "--cancello-moduli",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cancello (in CI): le schede dei moduli di un altro sistema (Drappo e Giardino PF1e) tornano con le regole del loro sistema; i conti senza regola si saltano e si dicono."
+        },
+        {
+          "name": "--cancello-numeri",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cancello (ADR-0118): ogni numero che la regola sa calcolare (pf, TS, lotta, attacco, AU delle unità = attacco uno contro uno + 2) torna esatto su Bestiario, master, recinti e stand alone; cricchetto su docs/audit/numeri-baseline.json, anche per i file con numeri che nessun conto legge."
+        },
+        {
+          "name": "--aggiorna-numeri",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Toglie dalla baseline dei numeri gli scarti risolti e i file ora coperti; non aggiunge niente e fallisce se c'è uno scarto nuovo."
         }
       ],
       "inputs": [
@@ -5533,6 +6375,14 @@
         "network": false
       },
       "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "creature.costruzione",
+          "creature.regole_di_tipo",
+          "statblocco.campi",
+          "creature.conformita"
+        ]
+      },
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": "python scripts/conformita_statblocchi.py --help",
@@ -5621,7 +6471,13 @@
         "git_commit": false,
         "network": false
       },
-      "idempotent": true
+      "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "creature.costruzione",
+          "creature.statistiche_per_gs"
+        ]
+      }
     },
     {
       "id": "extract_statblocks",
@@ -5712,6 +6568,11 @@
         "network": false
       },
       "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "statblocco.campi"
+        ]
+      },
       "consumes_schema": "scripts/schemas/statblock.schema.json",
       "produces_schema": "scripts/schemas/statblock.schema.json",
       "ci_smoke": "python scripts/extract_statblocks.py --help",
@@ -5719,7 +6580,7 @@
         "scripts/tests/test_statblock.py"
       ],
       "docs": [
-        "docs/guides/GUIDA-BESTIARIO.md",
+        "docs/how-to/GUIDA-BESTIARIO.md",
         "plans/adr/ADR-0021-statblocchi-machine-readable.md"
       ]
     },
@@ -5817,6 +6678,11 @@
         "network": false
       },
       "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "creature.costruzione"
+        ]
+      },
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": "python scripts/genera_attributi.py --help",
@@ -5990,7 +6856,18 @@
         "git_commit": false,
         "network": false
       },
-      "idempotent": true
+      "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "creature.costruzione",
+          "creature.incantesimi",
+          "creature.liste_incantesimi",
+          "creature.statistiche_per_gs",
+          "creature.talenti",
+          "formule.regole",
+          "statblocco.campi"
+        ]
+      }
     },
     {
       "id": "impronta_creature",
@@ -6076,7 +6953,12 @@
       ],
       "docs": [
         "plans/PIANO-QUALITA-DEL-CODICE.md"
-      ]
+      ],
+      "sistema": {
+        "capacita": [
+          "creature.costruzione"
+        ]
+      }
     },
     {
       "id": "validate_bestiario",
@@ -6153,6 +7035,12 @@
         "network": false
       },
       "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "creature.statistiche_per_gs",
+          "statblocco.campi"
+        ]
+      },
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": "python scripts/validate_bestiario.py --help",
@@ -6576,6 +7464,248 @@
       ]
     },
     {
+      "id": "prove_skill",
+      "path": "scripts/prove_skill.py",
+      "category": "F-skill-pipeline",
+      "language": "python",
+      "invocation": "python3 scripts/prove_skill.py controlla [--agenti] | esempi | valuta CASO ESECUZIONE | impronta | esegui | registra | cricchetto",
+      "summary": "Le prove con trappola delle skill (ADR-0114): controlla la forma dei casi in skills/<nome>/evals/ (quella di claude plugin eval), prepara il piano alla cieca di una prova A/B vecchia/nuova e ne scrive l'esito con il test del segno. Non chiama modelli: le esecuzioni le fa un workflow o claude plugin eval. Dal ADR-0148 anche gli agenti di .claude/agents/: casi in .claude/agent-evals/<agente>/<caso>/ con almeno un giudice deterministico (regex, tool_used, tool_order, file_exists) ed esempi fissi buona/cattiva; esempi controlla in CI che ogni giudice promuova la buona e bocci la cattiva; valuta giudica un'esecuzione registrata senza modelli; impronta lega agente, skill precaricate e casi; esegui lancia claude -p --agent (costa token, mai in CI); registra scrive l'esito in .claude/agent-evals/ESITI.jsonl; cricchetto chiede, per ogni agente toccato dal diff, un esito con l'impronta nuova non peggiore del precedente (testing: avvisa; --rigoroso: blocca).",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [
+        "git",
+        "claude"
+      ],
+      "args": [
+        {
+          "name": "comando",
+          "type": "subcommand",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "controlla · prepara · esito · valuta · esempi · impronta · esegui · registra · cricchetto"
+        },
+        {
+          "name": "--minimo",
+          "type": "int",
+          "required": false,
+          "default": 3,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Casi minimi per skill (controlla)."
+        },
+        {
+          "name": "--uscita",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella del piano A/B (prepara)."
+        },
+        {
+          "name": "--skill",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Solo questa skill (prepara), ripetibile."
+        },
+        {
+          "name": "--seme",
+          "type": "int",
+          "required": false,
+          "default": 7,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Seme delle lettere alla cieca (prepara)."
+        },
+        {
+          "name": "--piano",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella del piano con chiave.json e giudizi.json (esito)."
+        },
+        {
+          "name": "--giudizi",
+          "type": "str",
+          "required": false,
+          "default": "giudizi.json",
+          "choices": null,
+          "repeatable": false,
+          "desc": "File dei giudizi dentro --piano (esito)."
+        },
+        {
+          "name": "--agenti",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con controlla: i casi degli agenti in .claude/agent-evals/."
+        },
+        {
+          "name": "--agente",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Agente su cui lavorare (esempi, impronta, esegui, registra, cricchetto)."
+        },
+        {
+          "name": "--caso",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Con esegui: solo questi casi; ripetibile."
+        },
+        {
+          "name": "--modello",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con esegui e registra: il modello usato."
+        },
+        {
+          "name": "--cartella-lavoro",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con esegui: il git worktree usa e getta dove l'agente lavora (obbligatorio)."
+        },
+        {
+          "name": "--esecuzioni",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con registra: la cartella scritta da esegui."
+        },
+        {
+          "name": "--data",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con registra: la data dell'esito."
+        },
+        {
+          "name": "--nota",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con registra: una nota libera."
+        },
+        {
+          "name": "--base",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con cricchetto: il ref di confronto (default origin/main)."
+        },
+        {
+          "name": "--rigoroso",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con cricchetto: esce 1 invece di avvisare."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/*/evals/*/",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": ".claude/agent-evals/*/*/",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<uscita>/piano.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "<piano>/ESITO.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": ".claude/agent-evals/ESITI.jsonl",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "<uscita>/<caso>/ (risposta.md, trace.jsonl, files/, cli.txt)",
+          "kind": "directory",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "casi in forma, giudici che discriminano, esito non peggiore",
+        "1": "un caso malformato, un giudice che non discrimina, un'esecuzione fallita, o (con --rigoroso) un agente toccato senza esito valido",
+        "2": "errore d'uso, git diff fallito o --cartella-lavoro uguale al repo"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": "--seme",
+        "notes": "le lettere alla cieca dipendono dal seme; `esegui` non è deterministico (chiama un modello) e non gira in CI"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true,
+        "notes": "`esegui` chiama `claude -p` (rete, token, scrive nel worktree usa e getta indicato) e `registra` aggiunge una riga a .claude/agent-evals/ESITI.jsonl: tutti e due non partono dal server MCP (mcp_vietati). Gli altri comandi sono sola lettura.",
+        "mcp_vietati": [
+          "esegui",
+          "registra"
+        ]
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/prove_skill.py controlla",
+      "tests": [
+        "scripts/tests/test_prove_skill.py"
+      ],
+      "docs": [
+        "docs/reference/GUIDA-SCHEDE-PROMPT.md",
+        "plans/adr/ADR-0114-ogni-prompt-ha-una-scheda-e-le-sue-prove.md"
+      ],
+      "use_case": "«Questa skill ha le sue prove con trappola, e la versione nuova inventa meno della vecchia?»",
+      "optional_deps": []
+    },
+    {
       "language": "python",
       "stability": "beta",
       "stdlib_only": true,
@@ -6983,7 +8113,7 @@
       ],
       "docs": [
         "plans/PIANO-AMBIENTE-RIPRODUCIBILE.md",
-        "docs/guides/GUIDA-SETUP-MACCHINA.md"
+        "docs/tutorials/GUIDA-SETUP-MACCHINA.md"
       ]
     },
     {
@@ -7392,6 +8522,107 @@
       ]
     },
     {
+      "id": "bundle_offline",
+      "path": "scripts/bundle_offline.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/bundle_offline.py costruisci --uscita dist",
+      "summary": "Il bundle offline del rilascio (ADR-0116, sul modello di iemod-fetch): per ogni piattaforma pip download delle wheel di requirements.txt, che portano anche typst e pdfimpose, in un zip riproducibile con BUNDLE.json (sha256 di ogni file). installa verifica ogni wheel contro BUNDLE.json e fa pip install --no-index: si stampa senza rete. Sostituisce strumenti.py e mise.",
+      "use_case": "«Devo stampare su una macchina senza rete: cosa scarico dal rilascio e come lo installo?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "azione",
+          "type": "choice",
+          "required": true,
+          "default": null,
+          "choices": [
+            "costruisci",
+            "installa",
+            "elenco"
+          ],
+          "repeatable": false,
+          "desc": "costruisci · installa · elenco"
+        },
+        {
+          "name": "--piattaforma",
+          "type": "choice",
+          "required": false,
+          "default": null,
+          "choices": [
+            "linux-arm64",
+            "linux-x64",
+            "macos-arm64",
+            "windows-x64"
+          ],
+          "repeatable": true,
+          "desc": "costruisci: ripetibile; default tutte."
+        },
+        {
+          "name": "--uscita",
+          "type": "path",
+          "required": false,
+          "default": "dist",
+          "choices": null,
+          "repeatable": false,
+          "desc": "costruisci: dove scrivere i zip."
+        },
+        {
+          "name": "bundle",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "installa: il rumblingstone-offline-<piattaforma>-<tag>.zip."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "requirements.txt",
+          "kind": "text",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "dist/",
+          "kind": "directory",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "fatto",
+        "1": "una wheel con lo sha256 sbagliato, o pip fallito"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "con SOURCE_DATE_EPOCH e le stesse wheel, lo stesso zip byte per byte"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true,
+        "notes": "costruisci scarica da PyPI; installa non usa la rete"
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/bundle_offline.py elenco",
+      "tests": [
+        "scripts/tests/test_bundle_offline.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0116-typst-si-installa-da-pypi.md"
+      ]
+    },
+    {
       "id": "check_plans_discipline",
       "path": "scripts/check_plans_discipline.py",
       "category": "G-orchestration-governance",
@@ -7712,13 +8943,144 @@
       ]
     },
     {
+      "id": "claude-progetto",
+      "path": "scripts/claude-progetto.sh",
+      "category": "G-orchestration-governance",
+      "language": "bash",
+      "invocation": "./scripts/claude-progetto.sh [cartella]",
+      "summary": "Scrive nella cartella che contiene il clone un CLAUDE.md corto, il settings.json e il .mcp.json del repo a percorsi assoluti (ADR-0140).",
+      "use_case": "«Perché nei thread del progetto non girano l'hook, le skill del repo e rumblingstone-tools?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [
+        "bash",
+        "python3"
+      ],
+      "args": [
+        {
+          "name": "cartella",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Dove scrivere; di default la cartella che contiene il repo."
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "path": "<cartella>/CLAUDE.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        },
+        {
+          "path": "<cartella>/.claude/settings.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "<cartella>/.mcp.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": null,
+      "tests": [
+        "scripts/tests/test_claude_progetto.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md"
+      ]
+    },
+    {
+      "id": "claudeignore-deny",
+      "path": "scripts/claudeignore_deny.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/claudeignore_deny.py [--check]",
+      "summary": "Traduce .claudeignore (che Claude Code non legge) in regole Read di permissions.deny in .claude/settings.json (ADR-0142).",
+      "use_case": "«Ho aggiunto una voce a .claudeignore: Claude Code la rispetta davvero?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se permissions.deny non è allineato a .claudeignore."
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "path": ".claude/settings.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "regole non allineate (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": null,
+      "tests": [
+        "scripts/tests/test_claude_progetto.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md"
+      ]
+    },
+    {
       "id": "coerenza_campagna",
       "path": "scripts/coerenza_campagna.py",
       "category": "G-orchestration-governance",
       "language": "python",
-      "invocation": "python3 scripts/coerenza_campagna.py {fronti FILE.yaml... [--state] | fatti DIR... [--bestiario] [--tutti] | tutto --fronti F... --archi D... --out DIR}",
-      "summary": "Lotto 7c, coerenza. `fronti`: un file di fronti e orologi contro scripts/schemas/fronti_orologi.schema.json e le regole del mestiere (2-3 pericoli, presagi 1-3 o 3-5 scritti in un master, 1-3 domande, segmenti 4/6/8, riempiti <= totale, quando si riempie), e conta i campi che il master scrive contro quelli dedotti; con --state misura gli orologi dei villain di state.yaml. `fatti`: il rilevatore prudente di contraddizioni fra scene e archi (GS, pf, CA, TS, CD, classi, titolo, eta', anni DR, vivo/morto, portatore d'artefatto, giorno del March Clock), con file:riga di ogni valore. Misura, non cancello.",
-      "use_case": "«Lo stesso PNG ha due GS in due file dell'arco? Gli orologi di questo arco hanno 4, 6 o 8 segmenti e un presagio scritto?»",
+      "invocation": "python3 scripts/coerenza_campagna.py {fronti FILE.yaml... [--state] | fatti DIR... [--bestiario] [--tutti] [--state] | tutto --fronti F... --archi D... --out DIR}",
+      "summary": "Lotto 7c, coerenza. `fronti`: un file di fronti e orologi contro scripts/schemas/fronti_orologi.schema.json e le regole del mestiere (2-3 pericoli, presagi 1-3 o 3-5 scritti in un master, 1-3 domande, segmenti 4/6/8, riempiti <= totale, quando si riempie), e conta i campi che il master scrive contro quelli dedotti; con --state misura gli orologi dei villain di state.yaml. `fatti`: il rilevatore prudente di contraddizioni fra scene e archi (GS, pf, CA, TS, CD, classi, titolo, eta', anni DR, vivo/morto, portatore d'artefatto, giorno del March Clock), con file:riga di ogni valore. Con `fatti --state` (ADR-0125, canale testing) aggiunge le regole con l'atteso in campaign/state.yaml: S1 giorno d'arrivo dell'orda a Rethmar, S5 chi porta quale artefatto, S6 modifiche permanenti di un PG, S7 echi armati senza un file che li cita; ogni violazione dice regola, atteso, ha e file:riga, e \"chi sa cosa\" senza tempo esce fra i non verificabili. Misura, non cancello.",
+      "use_case": "«Lo stesso PNG ha due GS in due file dell'arco? Gli orologi di questo arco hanno 4, 6 o 8 segmenti e un presagio scritto? Questo master contraddice state.yaml sul giorno d'arrivo dell'orda o su chi porta l'ascia?»",
       "stability": "beta",
       "stdlib_only": false,
       "external_bins": [
@@ -7742,13 +9104,31 @@
           "desc": "fronti = controlla fronti e orologi; fatti = contraddizioni; tutto = entrambi, con JSON e riassunto in --out."
         },
         {
+          "name": "percorsi",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "(fronti) i file YAML di fronti e orologi; (fatti) le cartelle d'arco da leggere, per esempio campaign o 09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist."
+        },
+        {
           "name": "--state",
           "type": "bool",
           "required": false,
           "default": false,
           "choices": null,
           "repeatable": false,
-          "desc": "(fronti) Misura anche gli orologi dei villain di campaign/state.yaml, in sola lettura."
+          "desc": "(fronti) Misura anche gli orologi dei villain di campaign/state.yaml, in sola lettura. (fatti) Aggiunge le regole S1, S5, S6, S7 e T2 (catena di chi informa chi) contro campaign/state.yaml, con regola, atteso, ha e file:riga (ADR-0125)."
+        },
+        {
+          "name": "--tattiche",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "(fatti) Aggiunge la regola S8: un incantesimo (in corsivo) o un talento che le Tattiche di una scheda del Bestiario nominano e la scheda non ha. Misura in sola lettura, circa 20 secondi (ADR-0125)."
         },
         {
           "name": "--bestiario",
@@ -7846,6 +9226,11 @@
         "notes": "Scrive solo con `tutto`, nella cartella --out."
       },
       "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "lessico.entita"
+        ]
+      },
       "consumes_schema": "scripts/schemas/fronti_orologi.schema.json",
       "produces_schema": null,
       "ci_smoke": "python3 scripts/coerenza_campagna.py --help",
@@ -7853,7 +9238,8 @@
         "scripts/tests/test_coerenza_campagna.py"
       ],
       "docs": [
-        "plans/RICERCA-QUALITA-MISURABILE-2026-10.md"
+        "plans/RICERCA-QUALITA-MISURABILE-2026-10.md",
+        "plans/adr/ADR-0125-la-coerenza-della-storia-si-verifica-contro-state-yaml-solo-sui-fatti-strutturati.md"
       ]
     },
     {
@@ -8058,6 +9444,76 @@
       "idempotent": true
     },
     {
+      "id": "controlla_marche",
+      "path": "scripts/controlla_marche.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/controlla_marche.py --base origin/main",
+      "summary": "I due cancelli delle marche sulle righe cambiate (ADR-0109, scheda 4): una marca INFERRED aggiunta senza domanda e base, e un INFERRED tolto senza CANONE, GENERATO o blocco storico nello stesso file. Guarda solo il diff contro la base; salta plans/, changelog, righe di regola e volumi di stampa. Bloccante in CI sulle PR dal 2026-11-25, dopo il canale testing di ADR-0099.",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--base",
+          "type": "str",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Ref di confronto, es. origin/main."
+        },
+        {
+          "name": "--rigido",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Exit 1 se c'è almeno un avviso."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "**/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "nessun avviso, o avvisi senza --rigido",
+        "1": "avvisi con --rigido",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "dipende dal diff fra --base e HEAD"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/controlla_marche.py --help",
+      "tests": [
+        "scripts/tests/test_controlla_marche.py"
+      ],
+      "docs": [
+        "docs/reference/GUIDA-MARCATURE.md",
+        "plans/adr/ADR-0109-una-marcatura-sola-e-il-dm-decide-il-canone.md"
+      ],
+      "use_case": "«In questa PR ho aggiunto una marca senza domanda, o tolto un INFERRED senza dire chi l'ha deciso?»",
+      "optional_deps": []
+    },
+    {
       "id": "copertura_scene",
       "path": "scripts/copertura_scene.py",
       "category": "G-orchestration-governance",
@@ -8141,6 +9597,75 @@
       ]
     },
     {
+      "id": "cricchetto_prosa",
+      "path": "scripts/cricchetto_prosa.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/cricchetto_prosa.py --rispetto-a origin/main",
+      "summary": "Sui file di gioco cambiati da una revisione (prosa pura sempre, file misti solo se ricevono un box) nessuna norma MQM ha più difetti di prima; esce 1 altrimenti (ADR-0146).",
+      "use_case": "«Questa PR ha peggiorato la prosa che tocca?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_deps": [
+        "pyyaml"
+      ],
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--rispetto-a",
+          "type": "str",
+          "required": false,
+          "default": "origin/main",
+          "choices": null,
+          "repeatable": false,
+          "desc": "La revisione di confronto."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "scripts/specifiche-qualita.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "nessuna norma peggiorata",
+        "1": "almeno una norma peggiorata"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": null,
+      "tests": [
+        "scripts/tests/test_cricchetto_prosa.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md"
+      ]
+    },
+    {
       "id": "decisioni_dm",
       "path": "scripts/decisioni_dm.py",
       "category": "G-orchestration-governance",
@@ -8211,7 +9736,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/dm.py",
-      "summary": "Entrypoint unico: orchestra tutti gli script per fase del Playbook (prep/post/session/recap/handout/maps/hype/dossier/skills/doctor/bestiario/prosa). ADR-0002. Il sottocomando «volume» (ADR-0031) esegue la catena editoriale in ordine da un manifest a un volume, e chiude ricordando il cancello d'uscita IP: non e' automatizzabile, ma e' il momento in cui va detto. «corredo» fa lo stesso per tutti i volumi e i fogli di una serata.",
+      "summary": "Entrypoint unico: orchestra tutti gli script per fase del Playbook (prep/post/session/recap/handout/maps/hype/dossier/skills/doctor/bestiario/prosa/sistemi). ADR-0002. Il sottocomando «volume» (ADR-0031) esegue la catena editoriale in ordine da un manifest a un volume, e chiude ricordando il cancello d'uscita IP: non e' automatizzabile, ma e' il momento in cui va detto. «corredo» fa lo stesso per tutti i volumi e i fogli di una serata.",
       "use_case": "«Devo fare una cosa con il repo e non ricordo quale script: da dove passo?»",
       "stability": "stable",
       "stdlib_only": true,
@@ -8220,7 +9745,7 @@
       ],
       "args": [
         {
-          "name": "prep|post|session|recap|handout|maps|hype|dossier|skills|doctor|volume|corredo|bestiario|prosa",
+          "name": "prep|post|session|recap|handout|maps|hype|dossier|skills|doctor|volume|corredo|bestiario|prosa|asset|ambiente|booklet|prompts|gruppo|sistemi",
           "type": "subcommand",
           "required": true,
           "default": null,
@@ -8238,10 +9763,16 @@
             "volume",
             "corredo",
             "bestiario",
-            "prosa"
+            "prosa",
+            "asset",
+            "ambiente",
+            "booklet",
+            "prompts",
+            "gruppo",
+            "sistemi"
           ],
           "repeatable": false,
-          "desc": "Sottocomando di fase; i flag sono inoltrati allo script sottostante. «volume» e' la catena dei mestieri in ordine (prosa, lingua, manifest, colophon, schermo, stampa, imposizione) e assorbe il «dm.py stampa» mai fatto. «bestiario» passa i flag a uno dei cinque script delle creature (estrai, deriva, attributi, creatura, conformita). «corredo» fa l'intero corredo della serata da un *.corredo.json: controlla i pezzi, fa ogni volume con la catena di «volume» e misura i PDF. «prosa» passa i flag a uno degli script della catena della prosa (ADR-0101), in ordine d'uso: misura, ciclo, mqm, sintassi, coerenza, domande, migliora, cieco, banco, voto."
+          "desc": "Sottocomando di fase; i flag sono inoltrati allo script sottostante. «volume» e' la catena dei mestieri in ordine (prosa, lingua, manifest, colophon, schermo, stampa, imposizione) e assorbe il «dm.py stampa» mai fatto. «bestiario» passa i flag a uno dei cinque script delle creature (estrai, deriva, attributi, creatura, conformita). «corredo» fa l'intero corredo della serata da un *.corredo.json: controlla i pezzi, fa ogni volume con la catena di «volume» e misura i PDF. «prosa» passa i flag a uno degli script della catena della prosa (ADR-0101), in ordine d'uso: misura, ciclo, mqm, sintassi, coerenza, domande, migliora, cieco, banco, voto. «sistemi» passa i flag a scripts/sistemi.py (ADR-0111): i sistemi attivi, il sistema di un file con --di, la matrice strumenti × sistemi, il cancello con --check."
         }
       ],
       "inputs": [
@@ -8286,6 +9817,115 @@
       ],
       "docs": [
         "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "documentazione_allineata",
+      "path": "scripts/documentazione_allineata.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/documentazione_allineata.py --rispetto-a origin/main",
+      "summary": "La documentazione segue la struttura (ADR-0153): un agente, uno script, un workflow o un hook aggiunti rispetto a una revisione sono citati nel loro indice (AGENTS.md, docs/INDEX.md, GUIDA-CONFIGURAZIONE-CLAUDE.md), o esce 1; con --debito conta tutto il repo, gli ADR fuori indice di validate_docs e l'ultimo ADR citato in ARCHITETTURA.md, e con --check lo confronta con il tetto di plans/debito-documentazione.json. Con --attiva (la routine del lunedì) dice se serve chiamare autore-documenti, perché e con quale lista di lavoro, e stima il costo in token; esce sempre 0.",
+      "use_case": "«Questa PR aggiunge struttura che nessun indice cita? Quanto debito di documentazione ha il repo? Questa settimana serve chiamare autore-documenti?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--rispetto-a",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Solo gli elementi aggiunti rispetto a questa revisione (CI sulle PR)."
+        },
+        {
+          "name": "--debito",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Tutto il repo."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --debito: uscita JSON."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --debito: esce 1 se il totale supera il tetto."
+        },
+        {
+          "name": "--attiva",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Se serve un'attivazione di autore-documenti: motivi, lista di lavoro e stima_token (esce 0; leggere il campo attiva)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/debito-documentazione.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": ".claude/settings.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "niente di nuovo scoperto, o debito entro il tetto; con --attiva sempre",
+        "1": "un elemento nuovo non citato, o debito oltre il tetto",
+        "2": "errore d'uso (revisione inesistente, git assente, tetto illeggibile)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/documentazione_allineata.py --help",
+      "tests": [
+        "scripts/tests/test_documentazione_allineata.py"
+      ],
+      "docs": [
+        "docs/INDEX.md"
       ]
     },
     {
@@ -8365,6 +10005,11 @@
         "network": false
       },
       "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "lessico.abilita"
+        ]
+      },
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": "python scripts/domande_developer.py --check",
@@ -8531,7 +10176,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/gate_locale.py --rapido",
-      "summary": "I gate del job validate della CI eseguiti sulla macchina, letti da .github/workflows/ci.yml e non da una lista copiata: un gate nuovo in CI entra da solo. Salta, dicendolo, i passi che installano e quelli con espressioni di GitHub che qui non hanno valore; continue-on-error vale come avviso; --rapido salta i corridori dei test.",
+      "summary": "I gate del job validate della CI eseguiti sulla macchina, letti da .github/workflows/ci.yml e non da una lista copiata: un gate nuovo in CI entra da solo. Salta, dicendolo, i passi che installano e quelli con espressioni di GitHub che qui non hanno valore; continue-on-error vale come avviso; --rapido salta i corridori dei test. --pre-push tiene solo i gate bloccanti e veloci: è il hook pre-push (ADR-0143).",
       "use_case": "«Prima di spingere: la CI tornerà verde?»",
       "stability": "beta",
       "stdlib_only": false,
@@ -8551,6 +10196,15 @@
           "choices": null,
           "repeatable": false,
           "desc": "Salta i corridori dei test (unittest, pytest)."
+        },
+        {
+          "name": "--pre-push",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Come --rapido, senza i passi non bloccanti né quelli lenti di LENTI: è il hook pre-push (ADR-0143)."
         },
         {
           "name": "--elenco",
@@ -8620,7 +10274,8 @@
         "scripts/tests/test_gate_locale.py"
       ],
       "docs": [
-        "plans/PIANO-AMBIENTE-RIPRODUCIBILE.md"
+        "plans/PIANO-AMBIENTE-RIPRODUCIBILE.md",
+        "plans/adr/ADR-0143-i-gate-veloci-girano-prima-del-push.md"
       ]
     },
     {
@@ -8844,6 +10499,159 @@
       ]
     },
     {
+      "id": "instradamento_agenti",
+      "path": "scripts/instradamento_agenti.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/instradamento_agenti.py --riepilogo",
+      "summary": "Gli hook UserPromptSubmit, PreToolUse e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e suggerisce agente e catena; se le istruzioni scrivono una riga «Catena: …», ferma push e PR finché la sessione non ha chiamato quegli agenti e autore-documenti, salvo una deroga con motivo; ferma sempre, anche nei sottoagenti, un push (comandi git, sh -c, opzioni globali, HEAD risolto) o una scrittura con gli strumenti MCP di GitHub che riscrive o cancella un ramo campaign-group-*, tocca un ramo morto del registro o porta canone su main (ADR-0007, ADR-0090); a fine turno registra se gli agenti sono stati chiamati (ADR-0146); con --eval e --check misura il primo agente suggerito contro il set d'oro di plans/instradamento/agenti-oro.json, con le metriche di eval_metriche (scikit-learn e scipy, importati solo da --eval e --check, mai dagli hook), a cricchetto sullo split test su interi e frazioni esatte (ADR-0154).",
+      "use_case": "«Il thread chiama l'agente giusto per questo lavoro?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--prompt",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Evento UserPromptSubmit su stdin; scrive il contesto da aggiungere."
+        },
+        {
+          "name": "--stop",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Evento Stop su stdin; registra se gli agenti suggeriti sono stati chiamati."
+        },
+        {
+          "name": "--cancello",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Evento PreToolUse su push e PR su stdin; esce 2 per bloccare."
+        },
+        {
+          "name": "--deroga",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Via d'uscita dal cancello, con un motivo di almeno 15 caratteri."
+        },
+        {
+          "name": "--prova",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Mostra l'instradamento di un testo."
+        },
+        {
+          "name": "--riepilogo",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Suggerimenti dati e quanti seguiti."
+        },
+        {
+          "name": "--eval",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Misura il primo agente suggerito contro il set d'oro, per split dev, test e tutto (accuracy con Wilson, indulgente, macro-F1, baseline maggioritaria, matrice, P/R/F1)."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cricchetto sullo split test: esce 1 se giusti, giusti indulgenti o macro-F1 scendono sotto il tetto del set d'oro; avvisa se salgono."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --eval: l'uscita in JSON, identica byte per byte fra due esecuzioni."
+        },
+        {
+          "name": "--oro",
+          "type": "path",
+          "required": false,
+          "default": "plans/instradamento/agenti-oro.json",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il set d'oro da usare."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "skills/*/SKILL.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/instradamento/agenti-oro.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": ".claude/.uso-agenti.jsonl",
+          "kind": "json",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "passa (con o senza suggerimento)",
+        "1": "deroga senza motivo; --check: regressione sotto il tetto o tetto mancante",
+        "2": "push o PR bloccati (--cancello)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": false,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/instradamento_agenti.py --prova \"riscrivi il box della forgia\"",
+      "tests": [
+        "scripts/tests/test_instradamento_agenti.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md",
+        "plans/adr/ADR-0154-l-instradamento-degli-agenti-si-misura-su-messaggi-veri.md"
+      ]
+    },
+    {
       "id": "instradamento_skill",
       "path": "scripts/instradamento_skill.py",
       "category": "G-orchestration-governance",
@@ -8949,7 +10757,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/inventory_inferred.py",
-      "summary": "Inventario e ratchet dei marcatori INFERRED: separa i marcatori dei documenti vivi (debito aperto, sorvegliato) da quelli di plans/ e dei changelog (storici) e di docs/audit/ (meta), perché contati insieme darebbero un numero che non può scendere. Ripreso dalla PR #99 (lotto G4, ADR-0088); canale testing (ADR-0099), --check non bloccante in CI.",
+      "summary": "Inventario e ratchet dei marcatori INFERRED: separa i marcatori dei documenti vivi (debito aperto, sorvegliato) da quelli di plans/ e dei changelog (storici) e di docs/audit/, skill, modelli, README e fixture (meta), perché contati insieme darebbero un numero che non può scendere. Ripreso dalla PR #99 (lotto G4, ADR-0088); canale testing (ADR-0099), --check non bloccante in CI. Ogni marcatore ha anche la forma (con domanda e base, vecchia, nuda) secondo GUIDA-MARCATURE (ADR-0109).",
       "stability": "beta",
       "stdlib_only": true,
       "external_bins": [],
@@ -9059,11 +10867,303 @@
         "scripts/tests/test_inventory_inferred.py"
       ],
       "docs": [
-        "plans/adr/ADR-0088-la-pr-99-si-chiude-e-le-schede-pg-ripartono-da-main.md"
+        "plans/adr/ADR-0088-la-pr-99-si-chiude-e-le-schede-pg-ripartono-da-main.md",
+        "docs/reference/GUIDA-MARCATURE.md"
       ],
       "use_case": "«Quanti marcatori INFERRED aperti ha il repo, dove stanno, e quanti ne ho tolti con questo lotto?»",
       "optional_deps": [
         "pyyaml"
+      ]
+    },
+    {
+      "id": "lavoro_in_corso",
+      "path": "scripts/lavoro_in_corso.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/lavoro_in_corso.py [--fetch] [--offline] [--stdout|--json] | --check",
+      "summary": "L'istantanea dal vivo del lavoro in sviluppo fuori da main, complementare a MEMORIA.md (che resta il cancello deterministico di ciò che è su main). Legge il registro curato plans/lavoro-in-corso.json (filoni con thread, PR, rami, cartelle condivise, che cosa aspettano, il passo dopo), le PR aperte dalla REST di GitHub o da --pr-json (formato REST o gh pr list --json), i rami di origin e le cartelle di primo livello di /mnt/project-files (solo nome, data e primo titolo del LEGGIMI). Attacca una PR a un filone per numero, ramo o thread=cmsg_… nel corpo; segnala PR, rami claude/* recenti e cartelle senza filone, PR del registro non più aperte, PR ferme da oltre 30 giorni e filoni non aggiornati da 14. Conta anche i canali di ADR-0099 (stable, testing, unstable…) dalle tabelle di §2 di plans/PIANO-PIATTAFORMA-DI-SVILUPPO.md, scritte a mano fino al lotto P1, e il campo facoltativo canale dei filoni. Scrive plans/LAVORO-IN-CORSO.md. --check valida solo il registro, offline.",
+      "use_case": "«Che lavoro c'è in sviluppo, dove sta (PR, rami, cartelle dei thread) e che cosa aspetta me?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "git"
+      ],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Valida solo il registro, offline e deterministico; esce 1 sugli errori."
+        },
+        {
+          "name": "--pr-json",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "PR aperte da file (REST /pulls o gh pr list --json number,title,headRefName,isDraft,updatedAt,url,body) invece della rete."
+        },
+        {
+          "name": "--offline",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Niente rete: le PR non si leggono e la pagina lo dice."
+        },
+        {
+          "name": "--fetch",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Prima scarica i rami di origin (rete)."
+        },
+        {
+          "name": "--mnt",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La cartella condivisa dei thread (default /mnt/project-files se esiste)."
+        },
+        {
+          "name": "--giorni",
+          "type": "int",
+          "required": false,
+          "default": 14,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Finestra di rami e cartelle ed età massima di un filone."
+        },
+        {
+          "name": "--stdout",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La pagina a video, senza scrivere il file."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il rapporto in JSON, senza scrivere il file."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/lavoro-in-corso.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/contenuti-nei-rami.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "plans/PIANO-PIATTAFORMA-DI-SVILUPPO.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "/mnt/project-files/*/",
+          "kind": "directory",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "plans/LAVORO-IN-CORSO.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        },
+        {
+          "path": "<stdout>",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "pagina scritta (anche con la rete giù: lo dice la pagina) o registro valido (--check)",
+        "1": "registro illeggibile o malformato",
+        "2": "uso errato"
+      },
+      "determinism": {
+        "deterministic": false,
+        "seed_flag": "--ora",
+        "notes": "La pagina porta la data UTC e dipende da PR aperte, rami del clone e cartelle della macchina: non è un cancello di CI. --check invece è deterministico e offline."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true,
+        "notes": "Scrive plans/LAVORO-IN-CORSO.md (non canone, rigenerabile) salvo con --stdout, --json o --check. Rete: GET della REST /pulls di GitHub (token facoltativo da GITHUB_TOKEN o GH_TOKEN) salvo con --offline o --pr-json, e git fetch con --fetch."
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/lavoro_in_corso.py --check",
+      "tests": [
+        "scripts/tests/test_lavoro_in_corso.py"
+      ],
+      "docs": []
+    },
+    {
+      "id": "lessico_regole",
+      "path": "scripts/lessico_regole.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/lessico_regole.py [--offline] {indice|cerca NOME|verifica-tabella|casi FILE|controlla PERCORSI [--tutto] [--campi] [--check]}",
+      "summary": "I termini ufficiali di D&D 3.5 e PF1e e chi li usa male (ADR-0110). Genera dall'SRD 3.5 e dal PRD PF1e in cache l'indice dei termini; legge le tabelle italiano → SRD 3.5 (scripts/lessico_it.yaml, scripts/lessico_it_35.tsv) e italiano → PRD PF1e (scripts/lessico_it_pf1.tsv, per i moduli PF1e senza passare dalla 3.5); controlla le righe dei talenti delle schede e, con --campi, incantesimi, abilità e oggetti, segnalando varianti non ufficiali, nomi 3.5 nei moduli PF1e e termini sconosciuti non marcati.",
+      "use_case": "«Questo talento, incantesimo o oggetto della scheda si chiama così nel manuale italiano?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "optional_deps": [],
+      "args": [
+        {
+          "name": "--cache",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella della cache delle fonti (come riscontro_srd.py)."
+        },
+        {
+          "name": "--offline",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Non scarica: solo la cache."
+        },
+        {
+          "name": "comando",
+          "type": "subcommand",
+          "required": true,
+          "default": null,
+          "choices": [
+            "indice",
+            "cerca",
+            "verifica-tabella",
+            "casi",
+            "controlla"
+          ],
+          "repeatable": false,
+          "desc": "indice | cerca | verifica-tabella | casi | controlla."
+        },
+        {
+          "name": "--campi",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con controlla: anche incantesimi, abilità e oggetti magici dei campi dello statblocco."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "scripts/lessico_it.yaml",
+          "kind": "yaml",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "scripts/lessico_it_35.tsv",
+          "kind": "text",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "scripts/lessico_it_pf1.tsv",
+          "kind": "text",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "**/*.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "<cache>/",
+          "kind": "directory",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "<cache>/lessico-indice.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "rapporto prodotto",
+        "1": "con --check: termini sbagliati o sconosciuti oltre il massimo; verifica-tabella con nomi fuori fonte; casi sbagliati",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Fonti fissate per commit; tabelle nel repo; output nell'ordine dei file."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true
+      },
+      "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "lessico.italiano",
+          "fonti.regole"
+        ]
+      },
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/lessico_regole.py --help",
+      "tests": [
+        "scripts/tests/test_lessico_regole.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0110-i-termini-ufficiali-hanno-una-tabella-e-un-cancello.md"
       ]
     },
     {
@@ -9283,6 +11383,466 @@
       "idempotent": true
     },
     {
+      "id": "memoria_coda",
+      "path": "scripts/memoria_coda.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/memoria_coda.py DIR [--check] [--thread TITOLO ...] [--threads JSON] [--dal DATA] [--piega] [--nome TITOLO] [--json]",
+      "summary": "ADR-0138: il cancello della coda della memoria storica. Ogni thread scrive in un file suo (cartella condivisa, fuori dal repo) la voce del lavoro che non finisce in una PR: scelte su card, dati verificati, thread risolti (ADR-0137). --check controlla la forma di ogni voce in coda; --thread esce 1 se un thread non ha una voce, né in coda né già nel repo; --threads fa lo stesso per i thread risolti di un elenco JSON; --piega porta le voci nuove in plans/MEMORIA-STORICA.md numerandole, solo se il file risultante passa memoria_storica.py --check. La CI del repo non vede la coda: lo lancia chi risolve un thread e la routine del lunedì.",
+      "use_case": "«Sto per risolvere un thread, o è lunedì: le scelte prese su card e il lavoro senza PR hanno la loro voce di memoria storica, scritta bene?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "cartella",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La cartella della coda, un file .md per thread."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La forma di tutte le voci in coda: exit 1 se una è scritta male."
+        },
+        {
+          "name": "--thread",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Titolo di un thread che deve avere una voce (in coda o già piegata)."
+        },
+        {
+          "name": "--threads",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Elenco JSON dei thread (forma di list_threads): exit 1 se un thread risolto da --dal non ha voce."
+        },
+        {
+          "name": "--dal",
+          "type": "str",
+          "required": false,
+          "default": "2026-11-18",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --threads: solo i thread risolti da questo giorno (AAAA-MM-GG)."
+        },
+        {
+          "name": "--piega",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Porta in plans/MEMORIA-STORICA.md le voci della coda non ancora presenti, numerate."
+        },
+        {
+          "name": "--nome",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Stampa il nome del file di coda per un titolo ed esce."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita machine-readable: file, voci, errori, thread senza voce, voci piegate."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/MEMORIA-STORICA.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<stdout>",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "plans/MEMORIA-STORICA.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "coda in forma e nessun thread senza voce",
+        "1": "una voce scritta male, un thread senza voce, o piega che romperebbe il file storico",
+        "2": "errore d'uso: cartella, file o elenco mancante, data non valida"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Regex e ordine per data, file e riga; nessun modello, nessuna data di sistema."
+      },
+      "side_effects": {
+        "writes_canon": true,
+        "git_commit": false,
+        "network": false,
+        "notes": "Scrive plans/MEMORIA-STORICA.md solo con --piega; il resto è sola lettura."
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/memoria_coda.py --nome prova",
+      "tests": [
+        "scripts/tests/test_memoria_coda.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0138-la-coda-della-memoria-storica-ha-un-cancello.md"
+      ]
+    },
+    {
+      "id": "memoria_custode",
+      "path": "scripts/memoria_custode.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/memoria_custode.py specchia | verifica [--json] | archivia [--thread TITOLO] | cerca PAROLE... [--tema T] [--senza-link] [--json] | redigi --uscita DIR | --hook-merge | --hook-scrittura | --riepilogo",
+      "summary": "ADR-0151: la memoria del progetto dei thread (MEMORY.md e note, cartella fuori dal repo) ha uno specchio e un custode. specchia scrive un'istantanea completa con MANIFEST.json (sha256) in /mnt/project-files/memoria-progetto-specchio/ quando il contenuto cambia, in modo atomico e con un lucchetto. verifica confronta la memoria con l'ultima istantanea: ogni riga tolta deve avere i suoi gettoni nel repo, nel file storico o in coda, e le sue parole sparite (al più 2) in una voce MS o di coda (almeno il 70%); esce 1 se no, o se MEMORY.md supera 16 KB, e se passa fa avanzare l'istantanea; tetto di 12 KB e forma della coda sono avvisi. archivia scrive in coda la voce con le righe tolte (rifiuta le righe con termini riservati o email, che restano nello specchio) e fallisce chiuso, uscita 1 senza toccare la coda, se RISERVATI.txt manca, è vuoto o non si legge; verifica lo dice fra gli avvisi, insieme ai link [[nome]] rotti fra le note (leciti, non cambiano l'uscita). cerca risponde da memoria del progetto, file storico e coda con il campo fonte, e per ogni nota trovata aggiunge le note collegate a un passo con [[nome]], in uscita e in entrata (fonte memoria-link; --senza-link le toglie). redigi copia la memoria con le righe riservate sostituite da un'impronta. --hook-merge (PreToolUse sul merge di gsamuele78/RumblingStone, da mcp__github__merge_pull_request o da Bash con gh pr merge o gh api -X PUT .../pulls/N/merge; ogni altro Bash esce 0 senza leggere niente) esce 2 se la verifica fallisce; --hook-scrittura (Write/Edit/MultiEdit dentro la memoria) avvisa senza bloccare (canale testing). Gli esiti degli hook vanno in .claude/.custode-memoria.jsonl.",
+      "use_case": "«Sto per togliere righe dalla memoria del progetto o per fare il merge di un thread: ogni riga tolta è archiviata da qualche parte, e che cosa sanno insieme memoria, file storico e coda di questo tema?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "python3",
+        "git"
+      ],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "comando",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": [
+            "specchia",
+            "verifica",
+            "archivia",
+            "cerca",
+            "redigi"
+          ],
+          "repeatable": false,
+          "desc": "specchia · verifica · archivia · cerca · redigi (specchia, archivia e redigi non partono dal server MCP)."
+        },
+        {
+          "name": "parole",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Con cerca: le parole, tutte presenti (senza badare a maiuscole e accenti)."
+        },
+        {
+          "name": "--tema",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con cerca: un tema (campo Temi nel file storico e in coda; una parola in più nella memoria)."
+        },
+        {
+          "name": "--senza-link",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con cerca: non aggiungere le note collegate a un passo con [[nome]] (fonte memoria-link)."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita per un agente."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "/tmp/claude/memory/team/<mount>/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/MEMORIA-STORICA.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "/mnt/project-files/memoria-storica-coda/*.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "/mnt/project-files/memoria-progetto-specchio/RISERVATI.txt",
+          "kind": "text",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<stdout>",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "/mnt/project-files/memoria-progetto-specchio/istantanee/<AAAAMMGGTHHMMSSZ>/",
+          "kind": "markdown",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "/mnt/project-files/memoria-storica-coda/<thread>.md",
+          "kind": "markdown",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": ".claude/.custode-memoria.jsonl",
+          "kind": "json",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "verifica passata, istantanea scritta o invariata, ricerca eseguita; nei modi hook anche cartella assente o errore interno",
+        "1": "verifica: righe tolte non archiviate o MEMORY.md oltre 16 KB; archivia e redigi: RISERVATI.txt manca, è vuoto o non si legge",
+        "2": "--hook-merge: merge fermato; errore d'uso (cartella della memoria assente fuori dai modi hook)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Confronto per righe e parole con soglie fisse; il nome dell'istantanea e la data della voce di coda vengono dall'orologio."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": "Scrive fuori dal repo: le istantanee nello specchio (specchia, e verifica quando passa), la voce di coda (archivia), il registro degli hook in .claude/ (ignorato da git). redigi scrive la cartella data con --uscita, pensata per plans/memoria-progetto/ in una PR di sola storia. Dal server MCP in sola lettura escono solo cerca e verifica: specchia, archivia e redigi sono in mcp_vietati, e le cartelle (--memoria, --specchio, --coda, --radice, --uscita) non sono fra gli argomenti esposti, quindi un client non può puntarle altrove.",
+        "mcp_vietati": [
+          "specchia",
+          "archivia",
+          "redigi"
+        ]
+      },
+      "idempotent": false,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/memoria_custode.py --help",
+      "tests": [
+        "scripts/tests/test_memoria_custode.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0151-la-memoria-del-progetto-ha-uno-specchio-e-un-custode.md"
+      ]
+    },
+    {
+      "id": "memoria_storica",
+      "path": "scripts/memoria_storica.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/memoria_storica.py [PAROLE ...] [--pr N] [--adr N] [--tema T] [--da DATA] [--a DATA] [--id MS-NNNN] [--elenco] [--json] [--check] [--confronta-memoria DIR]",
+      "summary": "ADR-0127: la storia del lavoro che esce dalla memoria corta delle sessioni. Legge plans/MEMORIA-STORICA.md (una voce MS-NNNN per riga tolta dalla memoria del progetto, con data, PR, ADR, temi, testo intero, dove il fatto si ritrova nel repo e cosa c'è solo lì) e restituisce le voci che passano tutti i filtri: PR, ADR, tema, intervallo di date, id, parole (senza badare a maiuscole e accenti). --json è l'uscita per un agente. --check è il cancello della CI: numeri consecutivi, date valide, campi obbligatori, collegamento da plans/CHANGELOG.md. --pr trova anche le voci col campo PR «—», dal merge che le ha portate su main (git). --confronta-memoria DIR dice quali righe della memoria delle sessioni hanno numeri o percorsi che il repo non ha (ADR-0137). Sola lettura.",
+      "use_case": "«Sto rivedendo una soluzione già adottata o cercando la causa di una regressione: che cosa si sapeva allora di questa PR, di questo ADR, di questo tema?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "parole",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Parole che devono comparire tutte nella voce."
+        },
+        {
+          "name": "--pr",
+          "type": "int",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Numero della PR, senza #."
+        },
+        {
+          "name": "--adr",
+          "type": "int",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Numero dell'ADR, anche senza zeri (93 = ADR-0093)."
+        },
+        {
+          "name": "--tema",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Un tema della voce (campo Temi), per esempio prosa, regole, arc07."
+        },
+        {
+          "name": "--da",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Prima data, AAAA-MM-GG compresa."
+        },
+        {
+          "name": "--a",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Ultima data, AAAA-MM-GG compresa."
+        },
+        {
+          "name": "--id",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Una voce sola, per esempio MS-0042."
+        },
+        {
+          "name": "--elenco",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Solo id, data e titolo delle voci trovate."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita machine-readable: le voci con id, data, titolo, riga, campi e testo."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il cancello: exit 1 se il file è scritto male o il CHANGELOG dei piani non lo collega."
+        },
+        {
+          "name": "--confronta-memoria",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella della memoria delle sessioni (MEMORY.md e note): elenca le righe con PR, ADR, SHA o percorsi che il repo non ha, e le note che la memoria storica non cita. Rapporto, non cancello: exit 0 (ADR-0137)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/MEMORIA-STORICA.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/CHANGELOG.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<stdout>",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ricerca eseguita (anche senza voci trovate) o file in forma con --check",
+        "1": "file scritto male o non collegato, solo con --check",
+        "2": "errore d'uso: data non valida, file mancante"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Regex e ordine del file; nessun modello, nessuna data."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": "Sola lettura."
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/memoria_storica.py --check",
+      "tests": [
+        "scripts/tests/test_memoria_storica.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0127-la-memoria-corta-archivia-nel-repo-prima-di-togliere.md"
+      ]
+    },
+    {
       "id": "migliora_prosa",
       "path": "scripts/migliora_prosa.py",
       "category": "G-orchestration-governance",
@@ -9416,6 +11976,128 @@
         "plans/esperimenti/qualita-misurabile-2026-10-22/pipeline/README.md",
         "plans/adr/ADR-0093-la-prosa-migliora-se-la-sceglie-il-dm-alla-cieca.md",
         "plans/esperimenti/qualita-misurabile-2026-10-22/languagetool/README.md"
+      ]
+    },
+    {
+      "id": "milestone_pronte",
+      "path": "scripts/milestone_pronte.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/milestone_pronte.py --json",
+      "summary": "Valuta i criteri d'uscita delle milestone della roadmap registrati in plans/milestone.json (comando che esce 0, regex che compaiono o mancano in un file, conferma del DM con data e luogo) e dice per ognuna pronta, non pronta (con gli id dei criteri falsi) o rilasciata; pronta vuol dire tutto vero tranne fatto-changelog, fatto-versione e fatto-tag. Esce 2 se il registro è rotto. Misura, non scrive niente (ADR-0099, canale testing).",
+      "use_case": "«Quale milestone è pronta per il rilascio?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Ogni milestone con stato, criteri ed esito, in JSON."
+        },
+        {
+          "name": "--pronte",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Solo le versioni pronte e non rilasciate, una per riga."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 2 se il registro è rotto, 0 altrimenti (anche se niente è pronto)."
+        },
+        {
+          "name": "--solo-integrita",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Controlla il registro senza eseguire i comandi dei criteri."
+        },
+        {
+          "name": "--github",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Confronta numero e titolo con le milestone di GitHub via gh; senza gh, non misurato."
+        },
+        {
+          "name": "--registro",
+          "type": "path",
+          "required": false,
+          "default": "plans/milestone.json",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il registro delle milestone."
+        },
+        {
+          "name": "--radice",
+          "type": "path",
+          "required": false,
+          "default": ".",
+          "choices": null,
+          "repeatable": false,
+          "desc": "La radice del repo da cui si lanciano i comandi e si leggono i file."
+        },
+        {
+          "name": "--timeout",
+          "type": "float",
+          "required": false,
+          "default": 300,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Secondi per ogni comando; oltre, il criterio è falso."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/milestone.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "registro integro (qualunque sia lo stato delle milestone)",
+        "2": "registro rotto o errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "dipende dall'albero e dai tag del clone; --github dalla rete"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/milestone_pronte.py --check --solo-integrita",
+      "tests": [
+        "scripts/tests/test_milestone_pronte.py"
+      ],
+      "docs": [
+        "plans/milestone.json",
+        ".github/workflows/milestone.yml"
       ]
     },
     {
@@ -9995,6 +12677,153 @@
       ]
     },
     {
+      "id": "raccogli_casi_agenti",
+      "path": "scripts/raccogli_casi_agenti.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/raccogli_casi_agenti.py proponi IN.json --coda DIR | cieco DIR/AAAA-Www.json | annota DIR/AAAA-Www.json ANNOTAZIONI.tsv | applica DIR/AAAA-Www.json SCELTE.tsv | --check",
+      "summary": "ADR-0154, scelta di Jfs del 2026-11-27: ogni thread nuovo porta un caso al set d'oro degli agenti, e Jfs ne conferma l'etichetta una volta a settimana. «proponi» legge i messaggi esportati dalla routine del lunedì, scarta i duplicati (stesso id o stesso testo normalizzato, nel set o in coda) e i testi con segreti, email o percorsi con un nome utente, etichetta ogni caso con la predizione dell'hook (instradamento_agenti.predici) come proposta e scrive DIR/AAAA-Www.json e DIR/CARD.md, una card per caso con la consigliata, le alternative e la catena di ognuna. «applica» porta nel set i casi confermati in SCELTE.tsv, con lo split per hash sha256 dell'id (50/50 dev/test, stabile come in TFDS e Hugging Face), rimette il tetto con l'hook invariato e stampa la misura prima e dopo. --check valida la forma del set (campi, split, etichette, duplicati, testo non vuoto, nessun dato da non pubblicare). «cieco» e «annota» danno la consigliata da un annotatore che non vede la proposta dell'hook. La CI non legge i thread: lo lancia la routine dalla shell, perché la coda e i messaggi esportati stanno in /mnt/project-files/instradamento-coda/, fuori dal repo, e contengono prompt che nel repo non vanno. Il server MCP rifiuta i percorsi fuori dal repo e gli strumenti che scrivono: da lì la raccolta non si lancia.",
+      "use_case": "«È lunedì: quali messaggi dei thread nuovi entrano nel set d'oro degli agenti, con che etichetta da confermare, e com'è cambiata la misura dopo le mie scelte?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [
+        "scikit-learn",
+        "scipy"
+      ],
+      "args": [
+        {
+          "name": "proponi|cieco|annota|applica",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": [
+            "proponi",
+            "cieco",
+            "annota",
+            "applica"
+          ],
+          "repeatable": false,
+          "desc": "proponi = le proposte della settimana dai messaggi esportati; cieco = id e testo per l'annotatore cieco, senza la proposta; annota = le sue etichette come consigliate; applica = i casi confermati nel set d'oro, con il tetto rimesso."
+        },
+        {
+          "name": "ingresso",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con proponi: IN.json, elenco di {data, fonte, tipo, testo, id_messaggio}."
+        },
+        {
+          "name": "--coda",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con proponi: la cartella della coda, dove vanno AAAA-Www.json e CARD.md."
+        },
+        {
+          "name": "settimana",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con applica: il file DIR/AAAA-Www.json della settimana."
+        },
+        {
+          "name": "scelte",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con applica: SCELTE.tsv, colonne id_messaggio, atteso, accettabili (virgole), azione tieni|togli."
+        },
+        {
+          "name": "--oggi",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La data di oggi AAAA-MM-GG: sceglie la settimana e va nella nota del tetto."
+        },
+        {
+          "name": "--oro",
+          "type": "path",
+          "required": false,
+          "default": "plans/instradamento/agenti-oro.json",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il set d'oro."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "La forma del set d'oro: exit 1 se un caso è scritto male."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/instradamento/agenti-oro.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "skills/*/SKILL.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "plans/instradamento/agenti-oro.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "--check: set non in forma; applica: scelte che non tornano, niente scritto",
+        "2": "ingresso malformato o nessun sottocomando"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "split per hash sha256 dell'id; --oggi fissa la settimana"
+      },
+      "side_effects": {
+        "writes_canon": true,
+        "git_commit": false,
+        "network": false,
+        "notes": "Scrive plans/instradamento/agenti-oro.json solo con applica; proponi scrive nella cartella della coda, fuori dal repo; --check è sola lettura."
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/raccogli_casi_agenti.py --check",
+      "tests": [
+        "scripts/tests/test_raccogli_casi_agenti.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0154-l-instradamento-degli-agenti-si-misura-su-messaggi-veri.md",
+        "plans/PIANO-MISURA-AGENTI-E-AUTOMATISMI.md"
+      ]
+    },
+    {
       "id": "registro_letture",
       "path": "scripts/registro_letture.py",
       "category": "G-orchestration-governance",
@@ -10087,6 +12916,72 @@
       ]
     },
     {
+      "id": "regole-claude",
+      "path": "scripts/regole_claude.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/regole_claude.py [--check | --misura]",
+      "summary": "Ricava da AGENTS.md le regole .claude/rules/rs-*.md di Claude Code, ognuna caricata solo con i file a cui serve (ADR-0141).",
+      "use_case": "«Ho modificato AGENTS.md: le regole di Claude Code sono ancora allineate?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 se .claude/rules/ non è allineata ad AGENTS.md."
+        },
+        {
+          "name": "--misura",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Caratteri caricati per compito tipo, contro AGENTS.md intero."
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "path": ".claude/rules/rs-*.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": true,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "regole non allineate (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": null,
+      "tests": [
+        "scripts/tests/test_claude_progetto.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md"
+      ]
+    },
+    {
       "category": "G-orchestration-governance",
       "language": "python",
       "stability": "beta",
@@ -10104,7 +12999,7 @@
       ],
       "docs": [
         "plans/adr/ADR-0100-il-rilascio-e-una-pr.md",
-        "docs/RILASCIO.md"
+        "docs/how-to/RILASCIO.md"
       ],
       "id": "release_notes",
       "path": "scripts/release_notes.py",
@@ -10169,7 +13064,7 @@
       ],
       "docs": [
         "plans/adr/ADR-0100-il-rilascio-e-una-pr.md",
-        "docs/RILASCIO.md"
+        "docs/how-to/RILASCIO.md"
       ],
       "id": "release_plan",
       "path": "scripts/release_plan.py",
@@ -10422,6 +13317,11 @@
         "network": true
       },
       "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "fonti.regole"
+        ]
+      },
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": "python scripts/riscontro_srd.py --help",
@@ -10431,7 +13331,313 @@
       "docs": [
         "plans/adr/ADR-0103-le-regole-si-riscontrano-sull-srd-in-cache.md",
         "plans/esperimenti/ricerca-rete-2026-10-23/RICERCA.md",
-        "docs/ARCHITETTURA.md"
+        "docs/explanation/ARCHITETTURA.md"
+      ]
+    },
+    {
+      "id": "sincronia_giocato",
+      "path": "scripts/sincronia_giocato.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/sincronia_giocato.py --check",
+      "summary": "Misura se il giocato è arrivato sul ramo di gruppo e se main ci è entrato, senza checkout né scritture: S1 rami campaign-group-* non registrati in plans/rami-di-gruppo.json, S2 commit di main mancanti e da quanti giorni (non misurabile su un clone shallow), S3 patch del canone ferme nelle cartelle scansionate (applicata per apply inverso o patch-id, in altra forma, da verificare, da applicare, in conflitto), S4 campi aperti al DM, S5 serata più recente dell'ultima sessione registrata, S6 campi chiusi senza decisione datata del DM (patch, o REF da spingere con --ref), S7 righe di main perse nel merge (--dopo-merge) (ADR-0007, ADR-0090).",
+      "use_case": "«Il ramo di gruppo ha tutto il giocato, e main è dentro?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--repo",
+          "type": "path",
+          "required": false,
+          "default": ".",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il clone da misurare (default: la radice del repo)."
+        },
+        {
+          "name": "--registro",
+          "type": "path",
+          "required": false,
+          "default": "plans/rami-di-gruppo.json",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il registro dei rami di gruppo."
+        },
+        {
+          "name": "--remoto",
+          "type": "str",
+          "required": false,
+          "default": "origin",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il remoto dei rami."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 con un 🔴, 2 se qualcosa non è misurabile."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "L'esito in JSON."
+        },
+        {
+          "name": "--avviso",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Modalità hook: poche righe solo con rosso o giallo, esce sempre 0."
+        },
+        {
+          "name": "--aggiorna",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "git fetch di main e dei rami vivi prima di misurare (rete)."
+        },
+        {
+          "name": "--scansiona",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Cartella dove cercare patch, fino a profondità 3; ripetibile."
+        },
+        {
+          "name": "--giorni-rosso",
+          "type": "int",
+          "required": false,
+          "default": 14,
+          "choices": null,
+          "repeatable": false,
+          "desc": "S2: giorni oltre i quali main fuori dal ramo è rosso."
+        },
+        {
+          "name": "--ore-patch",
+          "type": "float",
+          "required": false,
+          "default": 48,
+          "choices": null,
+          "repeatable": false,
+          "desc": "S3: ore oltre le quali una patch da applicare è rossa."
+        },
+        {
+          "name": "--senza-campi-aperti",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Salta la regola S4."
+        },
+        {
+          "name": "--ora",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Istante della misura in ISO 8601, per le prove."
+        },
+        {
+          "name": "--ref",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Misura questo albero (es. HEAD prima del push) al posto del ramo remoto; S6 guarda il diff fra il remoto e REF."
+        },
+        {
+          "name": "--dopo-merge",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "S7: ogni riga che main ha aggiunto ai file di partita c'è nel risultato del merge."
+        },
+        {
+          "name": "--prima",
+          "type": "str",
+          "required": false,
+          "default": "ORIG_HEAD",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --dopo-merge: il ramo prima del merge."
+        },
+        {
+          "name": "--main",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --dopo-merge: il main fuso (default <remoto>/main)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/rami-di-gruppo.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "nessun rosso (o --avviso, o senza --check)",
+        "1": "almeno un rilievo rosso (--check)",
+        "2": "non misurabile: clone shallow, ramo o main assenti (--check)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": "--ora",
+        "notes": "l'età delle patch e dei commit dipende dall'ora della misura"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/sincronia_giocato.py --avviso",
+      "tests": [
+        "scripts/tests/test_sincronia_giocato.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0090-la-partita-riparte-su-un-ramo-di-gruppo-nuovo.md"
+      ]
+    },
+    {
+      "id": "sistemi",
+      "path": "scripts/sistemi.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/sistemi.py [--di FILE | --skill | --json | --check]",
+      "summary": "I sistemi di gioco come plugin di dati (ADR-0111): legge sistemi.toml, i plugin in sistemi/<id>/sistema.toml e il campo sistema.capacita del manifest, e stampa i sistemi supportati (attivi, spenti, di rinforzo), la matrice strumenti × sistemi (dati, ancora nel codice con il lotto, ereditata, non supportata, mancante) e le skill da installare. Con --di dice il sistema di un file (il percorso più lungo di [moduli], altrimenti il predefinito); con --check fa da cancello.",
+      "use_case": "«Quali sistemi di gioco supporta il repo, quali sono accesi, e questo strumento funziona su un modulo PF1e?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "--di",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Stampa il sistema del file."
+        },
+        {
+          "name": "--skill",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Le skill da installare: sistemi attivi e di rinforzo, con la loro famiglia."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Tutto il rapporto in JSON."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cancello: esce 1 se configurazione, plugin o manifest non tornano."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "sistemi.toml",
+          "kind": "text",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "sistemi/*/sistema.toml",
+          "kind": "text",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "sistemi/catalogo.toml",
+          "kind": "text",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "scripts/tools.manifest.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "--check: problemi nella configurazione, nei plugin o nel manifest",
+        "2": "configurazione illeggibile"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Solo tomllib e ordinamenti fissi."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/sistemi.py --check",
+      "tests": [
+        "scripts/tests/test_sistemi.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0111-il-sistema-di-gioco-e-un-plugin-di-dati.md",
+        "plans/PIANO-SISTEMI-DI-GIOCO-PLUGIN.md"
       ]
     },
     {
@@ -10537,7 +13743,7 @@
         "scripts/tests/test_tools_manifest.py"
       ],
       "docs": [
-        "docs/guides/TOOL-AUTHORING-STANDARD.md"
+        "docs/reference/TOOL-AUTHORING-STANDARD.md"
       ]
     },
     {
@@ -10633,11 +13839,14 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/validate_lingua.py",
-      "summary": "Refusi meccanici dell'italiano nel contenuto: accenti (perche' -> perche acuto, ne', se stesso), po' con apostrofo, qual e', d eufonica davanti a consonante, spazio prima della punteggiatura, doppi spazi. Salta blocchi di codice, inline, URL, front-matter e guide alla pronuncia. Bloccante in CI sugli errori dal 2026-09-24; gli avvisi no, e --strict li alza a errori.",
+      "summary": "Refusi meccanici dell'italiano nel contenuto: accenti (perche' -> perche acuto, ne', se stesso), po' con apostrofo, qual e', d eufonica davanti a consonante, spazio prima della punteggiatura, doppi spazi. Salta blocchi di codice (come li legge CommonMark: markdown-it-py se disponibile, altrimenti una regola stdlib), inline, URL, front-matter e guide alla pronuncia; legge le righe rientrate che sono prosa. `<!-- sic -->` marca una citazione alla lettera. Bloccante in CI sugli errori dal 2026-09-24; gli avvisi no, e --strict li alza a errori.",
       "use_case": "«Ci sono refusi meccanici di italiano, del tipo che una macchina trova meglio di me?»",
       "stability": "stable",
       "stdlib_only": true,
       "external_bins": [],
+      "optional_deps": [
+        "markdown-it-py"
+      ],
       "args": [
         {
           "name": "files",
@@ -10770,6 +13979,11 @@
         "network": false
       },
       "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "termini.vietati"
+        ]
+      },
       "consumes_schema": null,
       "produces_schema": null,
       "ci_smoke": "python scripts/validate_modules.py",
@@ -10957,7 +14171,12 @@
         "git_commit": false,
         "network": false
       },
-      "idempotent": true
+      "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "lessico.abilita"
+        ]
+      }
     },
     {
       "id": "validate_standalone",
@@ -11018,7 +14237,12 @@
         "git_commit": false,
         "network": false
       },
-      "idempotent": true
+      "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "termini.vietati"
+        ]
+      }
     },
     {
       "id": "validate_tipografia",
@@ -11101,6 +14325,320 @@
       "idempotent": true
     },
     {
+      "id": "verifica_px",
+      "path": "scripts/verifica_px.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/verifica_px.py [REGISTRO] [--state STATE] [--json]",
+      "summary": "ADR-0148. Il registro dei PX (campaign/REGISTRO-PX.md) torna con quattro regole deterministiche: R1 la somma delle righe per colonna è il totale PX; R2 il livello dai PX è quello della tabella dei PX (PHB 3.5, Table 3–2, non SRD); R3 un livello alla volta (PX sotto la soglia del livello al tavolo + 2); R3 anche il limite inferiore (PX non sotto la soglia del livello al tavolo); R4 il livello al tavolo è il livello effettivo di campaign/state.yaml (ECL se scritto, altrimenti livelli di classe più LA) e ogni PG dei totali ha la sua riga. Ogni violazione dice regola, PG, atteso, ha, fonte e file:riga. Sola lettura; esce 1 su una violazione. Cancello in CI.",
+      "use_case": "«I PX e i livelli del gruppo tornano con le righe del registro e con lo stato?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [
+        "pyyaml"
+      ],
+      "args": [
+        {
+          "name": "registro",
+          "type": "path",
+          "required": false,
+          "default": "campaign/REGISTRO-PX.md",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il registro da verificare."
+        },
+        {
+          "name": "--state",
+          "type": "path",
+          "required": false,
+          "default": "campaign/state.yaml",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Lo stato da cui leggere i livelli di classe."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Violazioni in JSON: regola, colonna, atteso, ha, fonte, dove."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "campaign/REGISTRO-PX.md",
+          "kind": "markdown",
+          "required": true
+        },
+        {
+          "path": "campaign/state.yaml",
+          "kind": "yaml",
+          "required": false
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<stdout>",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false
+        }
+      ],
+      "exit_codes": {
+        "0": "il registro torna",
+        "1": "almeno una violazione di R1-R4 o di forma",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Somme e soglie su un file; nessun modello."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": "Sola lettura."
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/verifica_px.py",
+      "tests": [
+        "scripts/tests/test_verifica_px.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0148-i-fatti-si-verificano-con-script-e-gli-agenti-con-prove-fisse.md"
+      ]
+    },
+    {
+      "id": "verifica_rimandi",
+      "path": "scripts/verifica_rimandi.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/verifica_rimandi.py [PERCORSI ...] [--json] [--check]",
+      "summary": "ADR-0148. I rimandi per sezione dei file di gioco («`ARC08-02` §1», «state.md §2», «vedi §4») puntano a un titolo che esiste nel bersaglio (titolo con «§N» o che inizia con il numero). Il bersaglio si risolve solo se il nome individua un solo .md del repo; un nome ambiguo, una riga che nomina un altro documento o un elenco di § finiscono fra i non verificabili, mai fra le violazioni. Le violazioni già portate al DM stanno in IN_ATTESA. Solo stdlib; --check esce 1 su una violazione nuova. Canale testing in CI (continue-on-error) fino al 2026-12-04.",
+      "use_case": "«Questo §N esiste ancora nel file a cui rimanda?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "percorsi",
+          "type": "path",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "File .md da leggere; senza, gli archi, campaign/ e Bestiario/."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Rimandi non verificati in JSON, con motivo."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 1 su una violazione nuova."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "0*_*/, 10-stand-alone/, campaign/, Bestiario/ (*.md)",
+          "kind": "markdown",
+          "required": true
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<stdout>",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false
+        }
+      ],
+      "exit_codes": {
+        "0": "misura eseguita (o nessuna violazione nuova con --check)",
+        "1": "violazione nuova, solo con --check",
+        "2": "errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Regex sui titoli e sui rimandi; nessun modello."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": "Sola lettura."
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/verifica_rimandi.py --help",
+      "tests": [
+        "scripts/tests/test_verifica_rimandi.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0148-i-fatti-si-verificano-con-script-e-gli-agenti-con-prove-fisse.md"
+      ]
+    },
+    {
+      "id": "verifica_scheda",
+      "path": "scripts/verifica_scheda.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/verifica_scheda.py SCHEDA|CARTELLA ... [--json] [--check] [--tolleranza] [--fatti]",
+      "summary": "ADR-0124. Tutte le verifiche di regola di una scheda in una chiamata, sola lettura: i prerequisiti dei talenti (verifica_talenti, fonti nell'ordine SRD d20, manuali 3.5, PF1e) e i numeri (conformita_statblocchi.giudica: pf nella fascia dei dadi vita, BAB, tiri salvezza, lotta, attacco, iniziativa) e i gradi delle abilita' (massimo per abilita' e punti disponibili, capacita' creature.gradi del plugin) e gli incantesimi scritti per livello (nella lista della classe o in un dominio, non sotto il loro livello: capacita' creature.liste_incantesimi, SRD e poi liste dei manuali 3.5). Ogni violazione dice file:riga, verifica, regola, atteso, ha e fonte; con --json e' l'uscita che un agente legge per correggere e richiamare. Cio' che le regole del plugin non sanno giudicare (classi che la lettura non conosce, schede a dossier, talenti senza prerequisiti nel repo) va in non_verificabili, non fra le violazioni. Dal lotto 1 di ADR-0126 tiri salvezza e attacco si giudicano senza tolleranza: ogni punto sopra la base deve venire da un bonus che la scheda dichiara (capacita' bonus.cumulo: due bonus dello stesso tipo non si sommano); --tolleranza rimette la fascia di prima. Dal lotto 1-bis la CA del 3.5 si ricostruisce dalle voci di ca-dettaglio (armature e scudi dalla tabella, bonus per tipo, contatto e sprovvista: regole numero.CA e numero.CA.*), e si controllano i sensi della razza (numero.sensi) e la CD delle capacita' speciali (numero.CD_*); una scheda senza le voci della CA va in non_verificabili. Dal lotto 2 il danno delle armi della tabella (capacita' creature.armi): dado per taglia, bonus di Forza, potenziamento e talenti, critico (regole numero.danno.dado, numero.danno.bonus, numero.danno.critico); attacchi naturali e armi fuori tabella vanno in non_verificabili. Dal lotto 3 gli incantatori (capacita' creature.incantatori, 3.5 dall'SRD e PF1e dal PRD): incantesimi al giorno dalla tabella della classe piu' gli incantesimi bonus e lo slot di dominio o di scuola, conosciuti di bardo e stregone, livello massimo lanciabile e CD (regole numero.incantesimi.al_giorno, .conosciuti, .livello, .cd); una lista di cui non si leggono classe, livello o caratteristica va in non_verificabili, e cosi' la tabella PF1e del bardo scelta dal DM (numero.incantesimi.variante). Canale testing (ADR-0099): misura, non cancello. Lotto 3-bis: i requisiti delle classi di prestigio (capacita' creature.prestigio: 493 classi 3.5 dall'SRD e dai manuali, 10 PF1e dal PRD, solo nomi e numeri): bonus di attacco base delle altre classi, gradi, talenti, razza, allineamento, livello d'incantesimo; i requisiti speciali escono fra i non verificabili. Lotto 4: il numero dei talenti (regola numero.talenti): per dadi vita, talenti bonus di classe, talento dell'umano; fuori dal conto i concessi dalla classe e quelli dichiarati accanto al nome ((B), razziale, dominio, difetto); di piu' o di meno e' una violazione, con una classe senza talenti bonus nel plugin un dubbio. Dal lotto 5, seconda parte: il grado di sfida scritto contro livelli di classe (da PG o da PNG), eccezioni di razza e creatura base (regola numero.gs, tabella [gs] di creature.costruzione).",
+      "use_case": "«Che cosa non torna in questa scheda, con quale regola e quale valore dovrebbe avere?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "percorsi",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Schede .md o cartelle da leggere."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita machine-readable: violazioni con verifica, regola, atteso, ha, fonte, file e riga."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Exit 1 se c'e' almeno una violazione."
+        },
+        {
+          "name": "--tolleranza",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Rimette la tolleranza di prima su tiri salvezza (+4) e attacco (-1..+2)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "Bestiario/",
+          "kind": "directory",
+          "required": false
+        },
+        {
+          "path": "sistemi/dnd35/dati/talenti.toml",
+          "kind": "text",
+          "required": true
+        },
+        {
+          "path": "sistemi/pf1e/dati/talenti.toml",
+          "kind": "text",
+          "required": true
+        },
+        {
+          "path": "sistemi/dnd35/dati/gradi.toml",
+          "kind": "text",
+          "required": true
+        },
+        {
+          "path": "sistemi/pf1e/dati/gradi.toml",
+          "kind": "text",
+          "required": true
+        },
+        {
+          "path": "sistemi/d20/dati/bonus.toml",
+          "kind": "text",
+          "required": true
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<stdout>",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false
+        }
+      ],
+      "exit_codes": {
+        "0": "misura eseguita (o nessuna violazione con --check)",
+        "1": "violazioni, solo con --check",
+        "2": "errore d'uso, percorso inesistente"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Regex, dati TOML e ordinamenti stabili; nessun modello."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": "Sola lettura."
+      },
+      "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "bonus.cumulo",
+          "creature.armi",
+          "creature.base",
+          "creature.conformita",
+          "creature.costruzione",
+          "creature.gradi",
+          "creature.incantatori",
+          "creature.liste_incantesimi",
+          "creature.prestigio",
+          "creature.regole_di_tipo",
+          "creature.talenti",
+          "fonti.regole",
+          "formule.regole",
+          "statblocco.campi"
+        ]
+      },
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/verifica_talenti.py --help",
+      "tests": [
+        "scripts/tests/test_verifica_talenti.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0124-le-regole-si-verificano-in-python-e-l-llm-riceve-regola-e-controesempio.md"
+      ]
+    },
+    {
       "id": "verifica_sezione6",
       "path": "scripts/verifica_sezione6.py",
       "category": "G-orchestration-governance",
@@ -11155,6 +14693,200 @@
       ],
       "docs": [
         "plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md"
+      ]
+    },
+    {
+      "id": "verifica_talenti",
+      "path": "scripts/verifica_talenti.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/verifica_talenti.py [SCHEDA|CARTELLA ...] [--json] [--check]",
+      "summary": "ADR-0124. I prerequisiti dei talenti delle schede che esistono (difetto: Bestiario/), con la stessa regola del generatore (dmcore.talenti.violazioni). Per ogni violazione dice file:riga, talento, regola (car.X, bab, lic, classe.X, talento, capacita), valore atteso e valore che la scheda ha: con --json e' l'uscita che un agente legge per correggere la scheda e richiamare. Esclude i talenti bonus senza prerequisiti (monaco, ranger) e le competenze date dalla classe; senza classi dichiarate, lic/capacita/classe vanno fra i non verificabili. Canale testing (ADR-0099): misura, non cancello.",
+      "use_case": "«Questa scheda puo' avere Incalzare Potenziato? Quale prerequisito manca, e quanto vale quello che ha?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "python3"
+      ],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "percorsi",
+          "type": "path",
+          "required": false,
+          "default": "Bestiario",
+          "choices": null,
+          "repeatable": true,
+          "desc": "Schede .md o cartelle da leggere (difetto: Bestiario/)."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita machine-readable: violazioni con regola, atteso, ha, file e riga."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Exit 1 se c'e' almeno una violazione."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "Bestiario/",
+          "kind": "directory",
+          "required": false
+        },
+        {
+          "path": "sistemi/dnd35/dati/talenti.toml",
+          "kind": "text",
+          "required": true
+        },
+        {
+          "path": "sistemi/pf1e/dati/talenti.toml",
+          "kind": "text",
+          "required": true
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<stdout>",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false
+        }
+      ],
+      "exit_codes": {
+        "0": "misura eseguita (o nessuna violazione con --check)",
+        "1": "violazioni, solo con --check",
+        "2": "errore d'uso, percorso inesistente"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Regex, dati TOML e ordinamenti stabili; nessun modello."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": "Sola lettura."
+      },
+      "idempotent": true,
+      "sistema": {
+        "capacita": [
+          "creature.talenti"
+        ]
+      },
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/verifica_talenti.py --help",
+      "tests": [
+        "scripts/tests/test_verifica_talenti.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0124-le-regole-si-verificano-in-python-e-l-llm-riceve-regola-e-controesempio.md"
+      ]
+    },
+    {
+      "id": "vincolo_skill",
+      "path": "scripts/vincolo_skill.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/vincolo_skill.py --riepilogo",
+      "summary": "L'hook PreToolUse di Claude Code che ferma la scrittura di prosa di gioco (handout, recap, introduzioni dei volumi, box read-aloud nei file misti) se la sessione non ha caricato rumblingstone-narrative-style, e ricorda prosa-documenti sui documenti. Registra ogni decisione in .claude/.uso-skill.jsonl (ADR-0146).",
+      "use_case": "«Gli agenti caricano davvero la skill di stile prima di scrivere?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--hook",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Evento PreToolUse su stdin; esce 2 per bloccare."
+        },
+        {
+          "name": "--riepilogo",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Quanti blocchi, passaggi e promemoria nel registro."
+        },
+        {
+          "name": "--classe",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "La classe di ogni file (prosa, misto, documento)."
+        },
+        {
+          "name": "--cambiati",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "I file di prosa o misti cambiati da una revisione."
+        }
+      ],
+      "inputs": [
+        {
+          "path": ".claude/agents/*.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": ".claude/.uso-skill.jsonl",
+          "kind": "json",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "passa (con o senza promemoria)",
+        "2": "scrittura bloccata (--hook)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": false,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/vincolo_skill.py --classe campaign/recaps/x.md",
+      "tests": [
+        "scripts/tests/test_vincolo_skill.py",
+        "scripts/tests/test_agenti.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md"
       ]
     },
     {
@@ -11579,12 +15311,115 @@
       "idempotent": false
     },
     {
+      "id": "importa_gemini",
+      "path": "scripts/importa_gemini.py",
+      "category": "I-converters",
+      "language": "python",
+      "invocation": "python3 scripts/importa_gemini.py {aistudio|takeout} SORGENTE --out CARTELLA [--parole N1,N2]",
+      "summary": "Chat di Gemini esportate a mano dal DM (cartella «Google AI Studio» di Drive, JSON con chunkedPrompt; Google Takeout «La mia attività → App Gemini», JSON o HTML) → un Markdown per chat o per giorno, senza i pensieri del modello, e INDICE.md ordinato per quante volte nominano la campagna. Nessuna chiamata a Google, nessuna chiave; rifiuta una cartella di uscita dentro il repo (le chat restano fuori, PR #284).",
+      "use_case": "«Ho esportato le chat di Gemini: quali parlano della campagna e cosa c'è dentro, senza aprirle una per una?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "fonte",
+          "type": "choice",
+          "required": true,
+          "default": null,
+          "choices": [
+            "aistudio",
+            "takeout"
+          ],
+          "repeatable": false,
+          "desc": "aistudio o takeout"
+        },
+        {
+          "name": "sorgente",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella, zip o file esportato."
+        },
+        {
+          "name": "--out",
+          "type": "path",
+          "required": true,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cartella di uscita, fuori dal repo."
+        },
+        {
+          "name": "--parole",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Nomi da contare nell'indice, separati da virgole (default: i nomi della campagna)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "<esportazione>.zip",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<out>/*.md",
+          "kind": "markdown",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "<out>/indice.json",
+          "kind": "json",
+          "overwrites": true,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "2": "errore d'uso (sorgente assente, uscita dentro il repo)",
+        "3": "nessuna chat riconosciuta"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Stessa esportazione, stessi file."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/importa_gemini.py --help",
+      "tests": [
+        "scripts/tests/test_importa_gemini.py"
+      ],
+      "docs": [
+        "docs/how-to/GUIDA-PROVE-PORTATILE-4050.md"
+      ]
+    },
+    {
       "id": "binari",
       "path": "scripts/binari.py",
       "category": "lib",
       "language": "python",
       "invocation": "python3 scripts/binari.py",
-      "summary": "Le dipendenze binarie accettate con un ADR (typst — ADR-0020; pdfcpu — ADR-0027) e la regola di degradazione pulita che le governa: se il binario manca, si stampa come installarlo e si esce con 2 PRIMA di aprire qualunque file di destinazione, invece di fallire a meta' lasciando un PDF troncato. Ogni voce dichiara anche il ripiego, cioe' cosa resta possibile senza. Eseguito da solo, elenca cosa c'e' e cosa manca.",
+      "summary": "Le dipendenze binarie accettate con un ADR (la CLI typst come ripiego — ADR-0020; typst e pdfimpose arrivano da PyPI — ADR-0116) e la regola di degradazione pulita che le governa: se il binario manca, si stampa come installarlo e si esce con 2 PRIMA di aprire qualunque file di destinazione, invece di fallire a meta' lasciando un PDF troncato. Ogni voce dichiara anche il ripiego, cioe' cosa resta possibile senza. Eseguito da solo, elenca cosa c'e' e cosa manca.",
       "use_case": "«Cosa devo avere installato perché stasera parta la catena che mi serve, e cosa succede se manca?»",
       "stability": "stable",
       "stdlib_only": true,
@@ -11660,6 +15495,62 @@
       ],
       "docs": [
         "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "eval_metriche",
+      "path": "scripts/eval_metriche.py",
+      "category": "lib",
+      "language": "python",
+      "invocation": "python3 scripts/eval_metriche.py",
+      "summary": "Involucro sottile di scikit-learn e scipy per misurare un classificatore del repo (instradamento, rilevatori, verificatori) contro un set d'oro: confusion_matrix con labels esplicite, precision_recall_fscore_support, f1_score macro e micro, accuracy_score, cohen_kappa_score, classification_report (tutti con zero_division=0 e labels l'unione ordinata di oro e predizioni), baseline DummyClassifier most_frequent addestrata sul dev, Wilson al 95% da scipy.stats.binomtest e bootstrap percentile della macro-F1 da scipy.stats.bootstrap con seme fisso. Restano nostre solo l'accuracy indulgente con le accettabili, la macro-F1 come frazione esatta dai conteggi interi della matrice (i cancelli non confrontano float) e il formato del rapporto, con i float a quattro cifre. sklearn e scipy si importano dentro le funzioni, così gli hook che importano il modulo non li caricano (ADR-0154). Eseguita da sola stampa l'esempio a tre classi dei test.",
+      "use_case": "«Quanto sbaglia davvero questo rilevatore, e il numero regge con così pochi casi?»",
+      "stability": "beta",
+      "stdlib_only": false,
+      "external_bins": [],
+      "args": [
+        {
+          "name": "--testo",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il rapporto leggibile invece del JSON."
+        }
+      ],
+      "inputs": [],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "json",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "esempio stampato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "bootstrap di scipy.stats.bootstrap con numpy default_rng(seme): stabile a parità di numpy; per questo resta fuori dal JSON dei cancelli"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": null,
+      "tests": [
+        "scripts/tests/test_eval_metriche.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0154-l-instradamento-degli-agenti-si-misura-su-messaggi-veri.md"
       ]
     },
     {
@@ -11743,9 +15634,49 @@
         "scripts/tests/test_tema_pianta.py"
       ],
       "docs": [
-        "docs/guides/GUIDA-MAPPE.md",
+        "docs/how-to/GUIDA-MAPPE.md",
         "plans/adr/ADR-0102-lo-stile-delle-piante-e-i-generatori-delle-citta-nel-repo.md"
       ]
+    },
+    {
+      "id": "typst_motore",
+      "path": "scripts/typst_motore.py",
+      "category": "lib",
+      "language": "python",
+      "invocation": "python3 scripts/typst_motore.py",
+      "summary": "Un solo modo di compilare e interrogare un .typ (ADR-0116): il pacchetto PyPI «typst» di requirements.txt è lo standard, una CLI typst nel PATH il ripiego (RUMBLINGSTONE_TYPST=cli la chiede, =pypi vieta il ripiego). Porta il ripiego senza tag PDF per il bug di typst 0.15.1. Lo usano export_booklet_typst, misura_stampa, varianti_stampa, validate_booklets e validate_corredo. Eseguito da solo, dice chi compila e quale versione.",
+      "use_case": "«Con cosa compila typst su questa macchina, e perché proprio quello?»",
+      "stability": "stable",
+      "stdlib_only": true,
+      "external_bins": [
+        "typst"
+      ],
+      "args": [],
+      "inputs": [],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "motore trovato e stampato",
+        "2": "MANCA: né il pacchetto PyPI né la CLI"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "dipende da cosa è installato e da RUMBLINGSTONE_TYPST"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true
     }
   ]
 }

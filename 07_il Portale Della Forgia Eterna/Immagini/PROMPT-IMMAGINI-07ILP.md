@@ -18,46 +18,10 @@
 - **Coerenza**: genera prima la scena-madre, poi le altre chiedendo
   *«same world, same palette and lighting as the previous image»*.
 
-## Schede-personaggio (skill `rumblingstone-art-direction` §3)
-
-> Aggiunte il 2026-09-24. Si copiano **parola per parola** in ogni prompt in
-> cui il personaggio compare.
-
-```
-HELLA — nana adulta · bassa, spalle larghe, proporzioni naniche
-VOLTO      viso tondo · occhi ambra dorata · pelle con un sottotono verde muschio ·
-           orecchie A PUNTA, come foglie giovani (Ibrido Treant)
-CAPELLI    biondi, mossi, con foglie e una venatura sottile di corteccia
-INDOSSA    armatura di pietra grigia screpolata e foglie di quercia · colore: verde muschio
-SEGNO      il torc vivo di legno e metallo con tre semi; Durik al fianco
-```
-
-✅ **Decisione del DM, 2026-09-24**: l'aspetto di Hella è **quello dei ritratti
-esistenti** (`PG/Immagini/Hella*.webp|png`, dal prompt master
-`campaign/ai-media-prompts/11_PG_E_VILLAIN_PROMPTS.md` §2.3): bionda, orecchie a
-punta. `ARC07-DEF-3` §7 è stato allineato. I ritratti entrano nei booklet
-(`PG/Immagini/web/Hella.jpg` apre la sua scheda); `Hella_elementale.png` mostra
-l'Avatar della Radice.
-
-```
-DURIK — cane da galoppo, maschio · levriero da caccia, non un mastino
-CORPO      pietra scura porosa intrecciata a vene di mithral, come muscolo su osso
-OCCHI      topazio, oro-arancio: l'unica nota calda
-INDOSSA    niente: nessun collare, nessuna bardatura
-SEGNO      si mette sempre FRA qualcuno e il pericolo
-```
-
-✅ `PG/Immagini/durik2.png` e `DurikFront2.png` rispettano la scheda (occhi di
-topazio accesi) e sono quelle del booklet. `Durik1.png`/`Duric.png` (lo
-stesso file due volte) e `duricFront.png` sono varianti della stessa serie,
-con gli occhi spenti.
-
----
-
 ## Copertura attuale
 
-- Scene con read-aloud trovate: **46**
-- Immagini già presenti in `Immagini/`: **18**
+- Scene con read-aloud trovate: **117**
+- Immagini già presenti in `Immagini/`: **26**
 
 <details><summary>Immagini esistenti</summary>
 
@@ -79,6 +43,14 @@ con gli occhi spenti.
 - `Sala-Forgia-Eterna.webp`
 - `camera-nodo-terra.webp`
 - `ilCuoreDiMoradin.png`
+- `tavola-cuore-di-moradin.jpg`
+- `tavola-custode-delle-radici.jpg`
+- `tavola-durik-e-hella.jpg`
+- `tavola-hammerfist-giovane-porta.jpg`
+- `tavola-hammerfist-giovane.jpg`
+- `tavola-portale-del-tempo.jpg`
+- `tavola-risveglio-di-hella.jpg`
+- `tavola-skullcrusher-nel-cortile.webp`
 
 </details>
 
@@ -86,15 +58,15 @@ con gli occhi spenti.
 
 ## Schede-scena
 
-### 01 · §2 — INGRESSO E BENEDIZIONE (Gravità 2× «Iraconda»)  `[2-ingresso-e-benedizione-gravita-2-iraconda]`
+### 01 · SCENA 1 — Il risveglio nella Sala, e l'affresco che si apre  `[scena-1-il-risveglio-nella-sala-e-l-affresco-che-si-apre]`
 
-- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — §2 — INGRESSO E BENEDIZIONE (Gravità 2× «Iraconda»)
-- **Etichetta regia**: LotR + Salvatore).
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — SCENA 1 — Il risveglio nella Sala, e l'affresco che si apre
+- **Etichetta regia**: LotR lead, Salvatore support — la Sala
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Otto ore di sonno vero, il primo da giorni. La Sala non è cambiata di un riflesso: è la costanza di un'incudine in un mondo che frana. Pregate dieci minuti all'Altare e le Benedizioni si riaccendono come brace ravvivata. Poi Moradin parla — non con le orecchie, ma con le ossa. MORADIN (attraverso Corona/Aegis): «Figli. Il Piano della Terra non vi odierà col calore, come il Fuoco. Vi opprimerà col PESO. È portare una montagna sulle spalle. Ma ho preparato: la vostra Pelle di Pietra diventerà Forza di Pietra. Reggerete. Cercate il Tempio di Mithral, al centro. Là l'Altare della Forza custodisce 
+> Il primo sonno vero da giorni. La Sala non è cambiata di un riflesso: ha la costanza di un'incudine in un mondo che frana. Davanti all'Altare le Benedizioni sono brace sotto la cenere, e aspettano soltanto una preghiera per riaccendersi. Quando la preghiera tace, parla Moradin. La voce passa per le ossa.
 
 **Prompt (EN)**
 ```text
@@ -109,12 +81,12 @@ artisti viventi]
 ### 02 · L'apertura dell'Affresco A5 (recuperato dall'Interludio — non tagliare)  `[l-apertura-dell-affresco-a5-recuperato-dall-interludio-non-t]`
 
 - **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — L'apertura dell'Affresco A5 (recuperato dall'Interludio — non tagliare)
-- **Etichetta regia**: Salvatore + LotR).
+- **Etichetta regia**: Salvatore lead, LotR support — l'affresco A5 e la Corona
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Un rombo basso, profondo. Non viene dai muri: viene dalle OSSA. Le colonne tremano — non di paura, di risonanza. L'Affresco Est, finora grigia pietra inerte, comincia a SGRETOLARSI: ma non cade a pezzi. La pietra dipinta diventa VERA pietra. Vi arriva l'odore — terra umida, caverne profonde, il sentore metallico di minerali preziosi. Una gravità pesante inizia a tirarvi verso l'affresco. Le rune della Corona di Thorik cambiano colore, dall'arancione del Fuoco al VERDE SMERALDO profondo. E Aegis Fang, da sola, batte a terra. TUMP. TUMP. Come un passo pesante che scende una scala infinita.
+> Un rombo basso sale dal pavimento ed entra nelle ossa; le colonne tremano tutte sulla stessa nota, come le corde di un'arpa sotto una mano sola. L'Affresco Est, pietra grigia e inerte, si sgretola senza cadere, e la pietra dipinta si fa pietra vera. Arriva l'odore di terra umida, di caverne profonde, il sentore metallico dei minerali preziosi. Un peso nuovo tira verso l'affresco. Le rune della Corona di Thorik cambiano colore, dall'arancione del Fuoco al verde di uno smeraldo profondo. Aegis Fang batte a terra da sola: tump, tump, come un passo pesante che scende una scala senza fondo.
 
 **Prompt (EN)**
 ```text
@@ -126,15 +98,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 03 · §4 — IL VIAGGIO VERSO IL TEMPIO (~2,5 ore, movimento rallentato)  `[4-il-viaggio-verso-il-tempio-2-5-ore-movimento-rallentato]`
+### 03 · L'apertura dell'Affresco A5 (recuperato dall'Interludio — non tagliare)  `[l-apertura-dell-affresco-a5-recuperato-dall-interludio-non-t-2]`
 
-- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — §4 — IL VIAGGIO VERSO IL TEMPIO (~2,5 ore, movimento rallentato)
-- **Etichetta regia**: orizzonte).
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — L'apertura dell'Affresco A5 (recuperato dall'Interludio — non tagliare)
+- **Etichetta regia**: Salvatore lead — l'attraversamento
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Davanti, nella direzione che indica Aegis Fang: a portata di mano, piattaforme di cristallo unite da ponti di pietra galleggiante. Più in là, una FORESTA di cristalli alti come torri, trenta, sessanta metri, che brillano di luce interna. Oltre ancora, un OCEANO di roccia — non è una metafora: roccia grigia liquida che scorre lenta, impossibile. E lontanissimo, sopra quell'oceano, un cubo d'argento perfetto, cento metri di lato, che ruota piano su sé stesso: il TEMPIO DI MITHRAL.
+> Il passaggio è fango denso e freddo, poi il peso arriva tutto insieme, uno zaino di pietre posato senza preavviso. Le ginocchia cedono un istante, respirare costa fatica, l'aria è sciroppo. Poi la Benedizione morde: la pelle indurisce, le ossa si fanno dense, il peso resta. Mai comodo. Sopportabile. Benvenuti nell'Incudine del Mondo.
 
 **Prompt (EN)**
 ```text
@@ -146,15 +118,35 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 04 · ZONA 1 — Le Piattaforme di Cristallo (0–300 m)  `[zona-1-le-piattaforme-di-cristallo-0300-m]`
+### 04 · SCENA 2 — Le piattaforme di cristallo  `[scena-2-le-piattaforme-di-cristallo]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — SCENA 2 — Le piattaforme di cristallo
+- **Etichetta regia**: LotR lead — le piattaforme, l'orizzonte
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Aegis Fang tira il braccio da una parte sola. Da quella parte, a portata di mano, piattaforme di cristallo unite da ponti di pietra che galleggiano. Più in là una foresta di cristalli alti come torri, accesi di luce interna. Oltre ancora, in silenzio, scorre lento un oceano di roccia grigia, liquida. E lontanissimo, sopra quell'oceano, un cubo d'argento perfetto ruota piano su sé stesso: il Tempio di Mithral.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 05 · ZONA 1 — Le Piattaforme di Cristallo (0–300 m)  `[zona-1-le-piattaforme-di-cristallo-0-300-m]`
 
 - **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — ZONA 1 — Le Piattaforme di Cristallo (0–300 m)
-- **Etichetta regia**: .
+- **Etichetta regia**: Salvatore lead — le piattaforme
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Il primo passo fuori dal portale è come camminare sul dorso di una bestia addormentata. Le piattaforme di cristallo grigio-verde si susseguono nel buio, unite da ponti di pietra che galleggiano senza fune né pilastro — trattenuti da una volontà che non è la vostra. Sotto, sopra, intorno: nulla. Solo cristalli lontani che brillano come stelle affogate. Ogni ponte oscilla appena quando lo caricate del vostro peso raddoppiato, e il cristallo, sotto gli stivali, RISPONDE: un tono basso, breve, come una campana che prova la voce. Il piano sa che siete arrivati.
+> Il primo passo fuori dal portale è come camminare sul dorso di una bestia addormentata. Da vicino il cristallo è grigio-verde e venato come un'unghia, e il primo ponte non ha né fune né pilastro: sta su e basta. Sotto, sopra, intorno: nulla, solo cristalli lontani che brillano come stelle affogate. Ogni ponte oscilla appena sotto il peso raddoppiato, e il cristallo, sotto gli stivali, risponde: un suono basso, breve, come una campana che prova la voce.
 
 **Prompt (EN)**
 ```text
@@ -166,15 +158,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 05 · ZONA 2 — La Foresta dei Cristalli Giganti (300 m–1 km)  `[zona-2-la-foresta-dei-cristalli-giganti-300-m1-km]`
+### 06 · SCENA 3 — La foresta, e gli Xorn al pilastro  `[scena-3-la-foresta-e-gli-xorn-al-pilastro]`
 
-- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — ZONA 2 — La Foresta dei Cristalli Giganti (300 m–1 km)
-- **Etichetta regia**: .
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — SCENA 3 — La foresta, e gli Xorn al pilastro
+- **Etichetta regia**: LotR lead, Salvatore support — la foresta
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Poi le piattaforme finiscono, e comincia la foresta. Nessun albero è mai cresciuto così: colonne di cristallo alte trenta, sessanta metri, spesse come torri di guardia, che salgono nel buio finché la vista si arrende. Dentro ognuna, una luce lenta pulsa e migra, come sangue luminoso in vene di vetro. I vostri passi rimbalzano tra le colonne in echi che tornano sbagliati — più lenti, più gravi, come se la foresta li masticasse prima di restituirli. E in alto, dove le colonne si perdono, qualcosa scricchiola: il peso di ere che si assestano. Qui non siete cacciatori. Qui siete piccoli.
+> Le piattaforme finiscono e comincia la foresta. Nessun albero è mai cresciuto così: colonne di cristallo spesse come torri di guardia, che salgono nel buio finché la vista si arrende. Dentro ognuna una luce lenta pulsa e migra, sangue luminoso in vene di vetro. I passi rimbalzano fra le colonne e tornano sbagliati, più lenti, più gravi, come se la foresta li masticasse prima di restituirli. In alto, dove le colonne si perdono, qualcosa scricchiola: il peso di ere che si assestano.
 
 **Prompt (EN)**
 ```text
@@ -186,15 +178,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 06 · ZONA 3 — Il Campo dei Cristalli Viventi (1–1,5 km)  `[zona-3-il-campo-dei-cristalli-viventi-11-5-km]`
+### 07 · SCENA 3 — La foresta, e gli Xorn al pilastro  `[scena-3-la-foresta-e-gli-xorn-al-pilastro-2]`
 
-- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — ZONA 3 — Il Campo dei Cristalli Viventi (1–1,5 km)
-- **Etichetta regia**: .
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — SCENA 3 — La foresta, e gli Xorn al pilastro
+- **Etichetta regia**: Salvatore lead, Mercer support — il pilastro corroso
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> La foresta si apre di colpo, e il buio si accende. Davanti a voi, un giardino: migliaia di cristalli non più alti di un nano, cresciuti in triangoli, esagoni, cerchi concentrici — la geometria di una mente, non del caso. E si MUOVONO: si inclinano verso di voi come girasoli verso un sole che non c'è, e cantano. Non è metafora: ogni cristallo tiene una nota, e le migliaia di note insieme formano un accordo così vasto che lo sentite nello sterno prima che nelle orecchie. Al centro del giardino, alta come tre nani, una madre di luce: sfaccettature a migliaia, e dietro ognuna, un pensiero.
+> A metà foresta una colonna geme. Alla base il cristallo è roso a morsi, e dalle ferite pendono vene d'argento masticate. Sotto i piedi sale un rumore di macina, lento e paziente: qualcosa mastica la pietra, e si avvicina. Che fate?
 
 **Prompt (EN)**
 ```text
@@ -206,15 +198,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 07 · ZONA 4 — L'Oceano di Roccia e il Tempio (1,5–2 km)  `[zona-4-l-oceano-di-roccia-e-il-tempio-1-52-km]`
+### 08 · SCENA 4 — Il giardino che canta  `[scena-4-il-giardino-che-canta]`
 
-- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — ZONA 4 — L'Oceano di Roccia e il Tempio (1,5–2 km)
-- **Etichetta regia**: .
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — SCENA 4 — Il giardino che canta
+- **Etichetta regia**: BG3 lead, Salvatore support — il giardino dei cristalli
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> L'ultima riva non è una riva: è il punto dove il suolo smette di fingere di essere solido. Davanti a voi, fino all'orizzonte che non esiste, si stende un oceano di roccia grigia — onde lente come pensieri di montagna, creste che impiegano un'ora a rompersi, correnti di granito liquido che scorrono senza suono. Toccarlo è come toccare il fianco di un toro: cede, e sotto senti il muscolo. E là, sospeso a cinquanta metri sopra le onde, RUOTA il Tempio: un cubo d'argento di cento metri di lato, perfetto come un dado lanciato da un dio e mai atterrato. Aegis Fang, nella mano di Thorik, vibra così f
+> La foresta si apre di colpo, e il buio si accende. Davanti a voi, un giardino: migliaia di cristalli non più alti di un nano, cresciuti in triangoli, esagoni, cerchi concentrici — la geometria di una mente, non del caso. E si MUOVONO: si inclinano verso di voi come girasoli verso un sole che non c'è, e cantano. Non è metafora: ogni cristallo tiene una nota, e le migliaia di note insieme formano un accordo così vasto che arriva allo sterno prima che alle orecchie. Al centro del giardino, alta come tre nani, una madre di luce: sfaccettature a migliaia, e dietro ognuna, un pensiero.
 
 **Prompt (EN)**
 ```text
@@ -226,15 +218,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 08 · §6-bis — IL SEME-MERCATO DI VARIS (quest personale di Artemis, NEL TEMPIO) [CANONE — DM 2026-07-23; posizione aggiornata DM 2026-07-30; l'esito (accetta/rifiuta) si gioca]  `[6-bis-il-seme-mercato-di-varis-quest-personale-di-artemis-ne]`
+### 09 · SCENA 5 — Il Seme-Mercato (si gioca dopo la Scena 7)  `[scena-5-il-seme-mercato-si-gioca-dopo-la-scena-7]`
 
-- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — §6-bis — IL SEME-MERCATO DI VARIS (quest personale di Artemis, NEL TEMPIO) [CANONE — DM 2026-07-23; posizione aggiornata DM 2026-07-30; l'esito (accetta/rifiuta) si gioca]
-- **Etichetta regia**: solo per Artemis — Salvatore).
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — SCENA 5 — Il Seme-Mercato (si gioca dopo la Scena 7)
+- **Etichetta regia**: Salvatore lead, solo per Artemis — il corridoio, 1 di 2
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Il corridoio riprende a scendere, e i tuoi compagni sono già avanti: il nano coi guanti nuovi cammina come se il pavimento gli dovesse dei soldi. Tu resti mezzo passo indietro — e l'Anello ti morde il dito. Quel morso lì. Nella parete, dove il duello ha aperto una crepa nel mithral, qualcosa cattura la luce in un modo che il metallo non fa: un cabochon violetto, grande come l'unghia del pollice, incastonato nella pietra come una zecca nel cuoio. È caldo. In un piano dove tutto è freddo educato, quella cosa è tiepida come una mano appena tolta da una tasca. E tu sai leggere i tagli delle gemme 
+> Il corridoio riprende a scendere, e i compagni sono già avanti: il nano coi guanti nuovi cammina come se il pavimento gli dovesse dei soldi. Mezzo passo indietro, l'Anello, freddo, ti morde il dito. Quel morso lì.
 
 **Prompt (EN)**
 ```text
@@ -246,15 +238,115 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 09 · 7b. ⚒️ ANTICAMERA DELLA MAGNETITE — La Sentinella (risveglio pieno dei Bracieri)  `[7b-anticamera-della-magnetite-la-sentinella-risveglio-pieno-]`
+### 10 · SCENA 5 — Il Seme-Mercato (si gioca dopo la Scena 7)  `[scena-5-il-seme-mercato-si-gioca-dopo-la-scena-7-2]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — SCENA 5 — Il Seme-Mercato (si gioca dopo la Scena 7)
+- **Etichetta regia**: Salvatore lead, Andor support — il corridoio, 2 di 2
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Nella crepa che il duello ha aperto nel mithral, qualcosa cattura la luce in un modo che il metallo non fa: un cabochon violetto, grande come l'unghia del pollice, incastonato nella pietra come una zecca nel cuoio. È caldo. In un piano dove tutto è freddo educato, quella cosa è tiepida come una mano appena tolta da una tasca. Tu sai leggere i tagli delle gemme come altri leggono le insegne delle locande. Quel taglio l'hanno fatto mani civili, in un posto dove esistono i banchi e i registri. Qualcuno l'ha lasciata qui per qualcuno come te. Che fai?
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 11 · La scena al tavolo — l'ora della pergamena  `[la-scena-al-tavolo-l-ora-della-pergamena]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — La scena al tavolo — l'ora della pergamena
+- **Etichetta regia**: Andor lead — per Artemis, alla fine dell'ora
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> La pergamena si accartoccia in cenere tiepida. Sotto il guanto la gemma pesa e scalda come prima, ma dentro la pietra c'è una scrittura fitta e ordinata, da libro mastro. In fondo alla pagina, una bilancia con un filo d'argento avvolto al giogo. Per tutta l'ora hai aspettato una voce, e dall'altra parte del filo non c'è ancora nessuno.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 12 · SCENA 6 — L'oceano di roccia, e il salto verso il Tempio  `[scena-6-l-oceano-di-roccia-e-il-salto-verso-il-tempio]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — SCENA 6 — L'oceano di roccia, e il salto verso il Tempio
+- **Etichetta regia**: LotR lead, Salvatore support — l'oceano di roccia e il cubo sospeso
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Qui il suolo smette di fingere di essere solido. Fino a un orizzonte che non esiste si stende un oceano di roccia grigia: onde lente come pensieri di montagna, creste che impiegano un'ora a rompersi, correnti di granito liquido senza suono. Toccarlo è come toccare il fianco di un toro: cede, e sotto c'è il muscolo. Sopra le onde, sospeso nel vuoto, ruota il Tempio: un cubo d'argento perfetto come un dado lanciato da un dio e mai atterrato. Aegis Fang, nella mano di Thorik, vibra così forte che il braccio duole. Fra la riva e la porta del Tempio c'è soltanto aria. Che fate?
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 13 · 7a. Raggiungere il Tempio (co-op: Ancora, Traghettatore, Navigatore)  `[7a-raggiungere-il-tempio-co-op-ancora-traghettatore-navigato]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — 7a. Raggiungere il Tempio (co-op: Ancora, Traghettatore, Navigatore)
+- **Etichetta regia**: LotR lead — il muro
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Sotto le dita il mithral è tiepido, e vibra appena, come un'incudine che ricorda ancora l'ultimo colpo.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 14 · 7a. Raggiungere il Tempio (co-op: Ancora, Traghettatore, Navigatore)  `[7a-raggiungere-il-tempio-co-op-ancora-traghettatore-navigato-2]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — 7a. Raggiungere il Tempio (co-op: Ancora, Traghettatore, Navigatore)
+- **Etichetta regia**: LotR lead — la Scoria Santa
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Questo Tempio fu forgiato in un solo colpo, quando Moradin batté qui il primo mithral del creato: la scoria, raffreddandosi, prese la forma di un cubo perfetto. Nei canti più vecchi i nani la chiamano la Scoria Santa, e nessuno l'ha mai vista da vicino. Qui dentro si cammina in un colpo di martello di un dio.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 15 · 7b. ⚒️ ANTICAMERA DELLA MAGNETITE — La Sentinella (risveglio pieno dei Bracieri)  `[7b-anticamera-della-magnetite-la-sentinella-risveglio-pieno]`
 
 - **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — 7b. ⚒️ ANTICAMERA DELLA MAGNETITE — La Sentinella (risveglio pieno dei Bracieri)
-- **Etichetta regia**: isolamento).
+- **Etichetta regia**: Salvatore lead, per Thorik — l'anticamera
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> THORIK — «Il metallo chiama il metallo.» Armatura, scudo, ascia: di colpo pesano tonnellate, non verso il basso, ma verso le pareti. Sei scagliato contro la parete nord e la Magnetite ti tiene incollato come una mosca sulla carta moschicida. Immobilizzato (FOR CD 28 per liberare un braccio 1 round; non puoi muoverti). Fuori dallo scontro, costretto a guardare. ARTEMIS — «Ciò che sfida la terra dev'essere abbattuto.» La gravità qui si concentra: non 2×, ma DIECI volte. Le ali d'ombra si frantumano. Prono e indifeso, a malapena sollevi la testa; la magia richiede gesti che pesano troppo. TORDEK 
+> «Il metallo chiama il metallo.» Armatura, scudo e ascia pesano di colpo tonnellate, e tirano di lato, verso le pareti. Sei scagliato contro la parete nord, nera e venata di viola, e la Magnetite ti tiene incollato come una mosca nel miele.
 
 **Prompt (EN)**
 ```text
@@ -266,10 +358,70 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 10 · 8a. L'ARRIVO — la soglia, l'attracco e i primi sei secondi  `[8a-l-arrivo-la-soglia-l-attracco-e-i-primi-sei-secondi]`
+### 16 · 7b. ⚒️ ANTICAMERA DELLA MAGNETITE — La Sentinella (risveglio pieno dei Bracieri)  `[7b-anticamera-della-magnetite-la-sentinella-risveglio-pieno-2]`
 
-- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — §8a «I sei secondi della soglia»
-- **Etichetta regia**: LotR + Salvatore
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — 7b. ⚒️ ANTICAMERA DELLA MAGNETITE — La Sentinella (risveglio pieno dei Bracieri)
+- **Etichetta regia**: Salvatore lead, per Artemis — l'anticamera
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> «Ciò che sfida la terra dev'essere abbattuto.» Qui la gravità si stringe, dieci volte la sua forza. Le ali d'ombra si frantumano, a malapena sollevi la testa, e i gesti della magia pesano troppo.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 17 · 7b. ⚒️ ANTICAMERA DELLA MAGNETITE — La Sentinella (risveglio pieno dei Bracieri)  `[7b-anticamera-della-magnetite-la-sentinella-risveglio-pieno-3]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — 7b. ⚒️ ANTICAMERA DELLA MAGNETITE — La Sentinella (risveglio pieno dei Bracieri)
+- **Etichetta regia**: Salvatore lead, per Tordek — l'anticamera
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Le ossa reggono, temprate dal Vigore della Montagna, e addosso non hai metallo che ti tradisca. Attorno a te i Bracieri accendono una bolla calda di stabilità: sei l'unico in piedi. Nel ronzio, gli occhi senza volto della Sentinella si girano verso di te. Che fate?
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 18 · 7b. ⚒️ ANTICAMERA DELLA MAGNETITE — La Sentinella (risveglio pieno dei Bracieri)  `[7b-anticamera-della-magnetite-la-sentinella-risveglio-pieno-4]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — 7b. ⚒️ ANTICAMERA DELLA MAGNETITE — La Sentinella (risveglio pieno dei Bracieri)
+- **Etichetta regia**: LotR lead, Salvatore support, per Tordek — la visione
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> La stanza svanisce. Sepolto vivo nella roccia, la terra fredda nei polmoni. Poi una voce tettonica, nello scheletro: Moradin. «Il fuoco brucia in fretta e muore. La roccia attende. La roccia sostiene. La roccia vince perché non ha fretta.» Ere geologiche in pochi battiti: montagne che nascono dallo scontro dei continenti, magma che si fa granito indistruttibile. Un nano solitario, grande come una catena montuosa, batte sull'incudine del mondo: ogni colpo apre una valle, ogni scintilla un filone di mithral. «Hai il fuoco, figlio. Ma il fuoco senza controllo è distruzione. Serve il peso per dare
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 19 · 8a. L'ARRIVO — la soglia, l'attracco e i primi sei secondi  `[8a-l-arrivo-la-soglia-l-attracco-e-i-primi-sei-secondi]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — 8a. L'ARRIVO — la soglia, l'attracco e i primi sei secondi
+- **Etichetta regia**: LotR lead, Salvatore support — i sei secondi della soglia, 1 di 2
 - **Destinatario**: `pg` (mostrabile all'ingresso: il guardiano sembra solo roccia) · **Formato**: `16:9 splash`
 - **Stato**: ✅ prompt scritto — **scena-madre dell'arco**: generarla per prima e agganciarci le altre
 
@@ -316,16 +468,15 @@ breath, awe with a thread of dread. Wide cinematic composition.
 **Varianti**: *il risveglio* → aggiungi *«a fissure along its flank has become an eyelid, revealing a rough crystal iris lit with cold mineral light — no hatred in it, only weight»*; *il distacco* → *«the silver slab has unmoored and drifted to the exact centre of the sphere; the doorway is a distant circle of light»*.
 
 **Note di coerenza d'arco**: è la **scena-madre**. Per le altre chiedi *«same world, same palette and lighting as the previous image»*.
-
-### 11 · 8a. L'ARRIVO — la soglia, l'attracco e i primi sei secondi  `[8a-l-arrivo-la-soglia-l-attracco-e-i-primi-sei-secondi-2]`
+### 20 · 8a. L'ARRIVO — la soglia, l'attracco e i primi sei secondi  `[8a-l-arrivo-la-soglia-l-attracco-e-i-primi-sei-secondi-2]`
 
 - **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — 8a. L'ARRIVO — la soglia, l'attracco e i primi sei secondi
-- **Etichetta regia**: il risveglio del guardiano — LotR + Salvatore).
+- **Etichetta regia**: Salvatore lead, LotR support — la soglia, 2 di 2
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> All'inizio lo scambiate per una formazione della caverna: una collina di roccia stratificata, ere sovrapposte come pagine di un libro di pietra. Poi la collina RESPIRA. Una fenditura si apre lungo quella che credevate una parete — è una palpebra. Due occhi di cristallo grezzo si accendono di una luce minerale, fredda, priva di odio e priva di pietà, come lo sguarderebbe una montagna. Non c'è collera: c'è PESO. Terros si erge, e ogni suo movimento è il suono di una faglia che si assesta, un boato basso che sentite nei denti prima che nelle orecchie. La gravità della sala si inclina verso di lui
+> Davanti agli stivali, una lastra d'argento vivo larga quanto la sala comune di una locanda, incisa di rune verdi che pulsano piano. Oltre il bordo non c'è un pavimento, c'è niente: il «sotto» finisce dove finisce la lastra. Sopra il centro pende una luce verde senza catena: una gemma grande come un pugno di nano, che gira lentissima e tinge le mani del suo colore. All'altro capo, una collina. Roccia a strati, basalto, granito, marmo e una vena scura dal lucore d'adamantio, accatastati come pagine di un libro chiuso da troppo tempo. Non si muove, non respira, e occupa un terzo della piattaforma
 
 **Prompt (EN)**
 ```text
@@ -337,15 +488,35 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 12 · 8b. IL DISTACCO — l'Altare si centra sul guardiano [CANONE — DM 2026-07-30]  `[8b-il-distacco-l-altare-si-centra-sul-guardiano-canone-dm-20]`
+### 21 · 8a. L'ARRIVO — la soglia, l'attracco e i primi sei secondi  `[8a-l-arrivo-la-soglia-l-attracco-e-i-primi-sei-secondi-3]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — 8a. L'ARRIVO — la soglia, l'attracco e i primi sei secondi
+- **Etichetta regia**: LotR lead, Salvatore support — il risveglio del guardiano
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Poi la collina respira. Una fenditura si apre lungo la parete di roccia, e la parete è una palpebra: due occhi di cristallo grezzo si accendono di una luce minerale, fredda, senza odio e senza pietà, come guarderebbe una montagna. Terros si erge, e ogni suo movimento è il suono di una faglia che si assesta, un boato basso che fa tremare i denti. La gravità della sala si piega verso di lui, come verso il padrone. Aegis Fang, nella mano di Thorik, si fa fredda e tace di colpo: davanti all'Incudine del Mondo anche una voce antica abbassa il capo.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 22 · 8b. IL DISTACCO — l'Altare si centra sul guardiano [CANONE — DM 2026-07-30]  `[8b-il-distacco-l-altare-si-centra-sul-guardiano-canone-dm-20]`
 
 - **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — 8b. IL DISTACCO — l'Altare si centra sul guardiano [CANONE — DM 2026-07-30]
-- **Etichetta regia**: — IL DISTACCO (Salvatore).
+- **Etichetta regia**: Salvatore lead — il distacco, l'Altare
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Non è la collina a muoversi per prima: è il bordo. Con un suono di ghiaccio che si stacca da un tetto, la lastra si scolla dalla soglia — e la soglia comincia ad allontanarsi. Piano. Con la calma con cui una chiatta lascia il molo mentre tu sei ancora mezzo sul molo e mezzo sulla chiatta. Le rune verdi sotto i vostri stivali si accendono tutte insieme, e per un istante avete la sensazione insopportabile che il mondo abbia deciso dove deve stare il suo centro — e che il centro sia il posto dove state voi. L'Altare si ferma. È esattamente in mezzo alla bolla, sospeso in un nulla che da qui pare 
+> Prima della collina si muove il bordo. Con un suono di ghiaccio che si stacca da un tetto, la lastra si scolla dalla soglia, e la soglia comincia ad allontanarsi: piano, con la calma di una chiatta che lascia il molo mentre tu sei ancora mezzo sul molo e mezzo sulla chiatta. Le rune verdi sotto gli stivali si accendono tutte insieme: il mondo ha deciso dove deve stare il suo centro, e il centro è il posto dove state voi. L'Altare si ferma proprio in mezzo alla bolla, sospeso in un nulla più largo di prima. La porta d'ingresso è un cerchio di luce lontano, di là da un vuoto senza appigli, e la 
 
 **Prompt (EN)**
 ```text
@@ -357,15 +528,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 13 · 8b. IL DISTACCO — l'Altare si centra sul guardiano [CANONE — DM 2026-07-30]  `[8b-il-distacco-l-altare-si-centra-sul-guardiano-canone-dm-20-2]`
+### 23 · 8b. IL DISTACCO — l'Altare si centra sul guardiano [CANONE — DM 2026-07-30]  `[8b-il-distacco-l-altare-si-centra-sul-guardiano-canone-dm-20-2]`
 
 - **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — 8b. IL DISTACCO — l'Altare si centra sul guardiano [CANONE — DM 2026-07-30]
-- **Etichetta regia**: — il primo scambio (coreografia, Salvatore).
+- **Etichetta regia**: Salvatore lead, Mercer support — il primo scambio
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Terros non carica: si LASCIA CADERE in avanti, e la camera intera cade con lui — l'Onda Gravitazionale vi strappa l'Altare da sotto i piedi come una tovaglia. Thorik, tu senti l'armatura diventare àncora e bandiera insieme: Aegis Fang morde il bordo dell'Altare, il braccio urla, ma tieni. Tordek, il mondo ruota e tu ruoti con lui — i Bracieri sussurrano una parola sola, «peso», e i tuoi piedi trovano il muro come fosse pavimento. Artemis, tu sei l'unico per cui nulla è cambiato: le Ali d'Ombra non obbediscono alla terra. Da lassù vedi tutto — il boss, l'Altare, i tuoi compagni aggrappati al mo
+> Terros si lascia cadere in avanti, e la camera intera cade con lui: l'Onda strappa l'Altare da sotto i piedi come una tovaglia. Thorik, l'armatura è àncora e bandiera insieme: Aegis Fang morde il bordo dell'Altare con un suono di ferro, il braccio urla, e il morso tiene e vibra fino alla spalla. Tordek, il mondo ruota e tu con lui: i Bracieri sussurrano una parola sola, «peso», e i piedi restano piantati sull'Altare come su un pavimento. Artemis, per te nulla è cambiato: le ali d'ombra non obbediscono alla terra. Sotto di te restano Terros, l'Altare, i compagni aggrappati a un mondo capovolto.
 
 **Prompt (EN)**
 ```text
@@ -377,10 +548,130 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 14 · FASE 3 — L'Incastonatura e il Ritorno di Durik  `[fase-3-l-incastonatura-e-il-ritorno-di-durik]`
+### 24 · ROUND 1 — «Il contatto»  `[round-1-il-contatto]`
 
-- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — §9 Fase 3 (+ canone: `_ARCHIVIO/…IL-VIAGGIO…-risultati.md` §0/§5, `01_Collana_dei_Semi_Eterni.md`)
-- **Etichetta regia**: Salvatore — dal canone v2 §6
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — ROUND 1 — «Il contatto»
+- **Etichetta regia**: Salvatore lead — apertura del round 1
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Lo Smeraldo galleggia sopra l'Altare e non proietta ombra: la sua luce verde va all'indietro, dentro le cose. Quando Thorik alza la Corona verso la gemma, l'aria fra le due si fa densa, lo spazio fra due calamite che si rifiutano. E la sala, d'un tratto, non ha più un rumore.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 25 · ROUND 1 — «Il contatto»  `[round-1-il-contatto-2]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — ROUND 1 — «Il contatto»
+- **Etichetta regia**: Salvatore lead — chiusura del round 1
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> La gemma è entrata di un'unghia nel castone della Corona. Un'unghia. Dalla lastra sale un ronzio basso, e la polvere del rito non ricade: resta ferma a mezz'aria, in attesa.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 26 · ROUND 2 — «La resistenza»  `[round-2-la-resistenza]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — ROUND 2 — «La resistenza»
+- **Etichetta regia**: Salvatore lead — apertura del round 2
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Al secondo giro la sala ha scelto da che parte stare, e non è la vostra. La polvere sospesa gira attorno all'Altare in un cerchio lento; le rune verdi sotto i piedi brillano tutte, calde attraverso il cuoio. Lo Smeraldo adesso tira: vuole la Corona, e vuole anche le mani che la tengono.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 27 · ROUND 2 — «La resistenza»  `[round-2-la-resistenza-2]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — ROUND 2 — «La resistenza»
+- **Etichetta regia**: Salvatore lead — chiusura del round 2
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Metà. Sulla Corona il Topazio della fronte e il verde della tempia si guardano. La polvere gira più veloce. Sulla parete di cristallo della sfera, fuori, il buio del Piano si è avvicinato a guardare.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 28 · ROUND 3 — «L'assestamento»  `[round-3-l-assestamento]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — ROUND 3 — «L'assestamento»
+- **Etichetta regia**: LotR lead, Salvatore support — apertura del round 3
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Il terzo giro arriva come l'ultimo tratto di una salita, quando le gambe hanno già dato tutto. La luce verde ha riempito la camera fino a farne un fondale, e ogni cosa, le mani, il metallo, la polvere ferma, ha lo stesso colore. Il respiro non si sente più. Resta il peso.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 29 · ROUND 3 — «L'assestamento»  `[round-3-l-assestamento-2]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — ROUND 3 — «L'assestamento»
+- **Etichetta regia**: LotR lead — chiusura, l'assestamento
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Poi, semplicemente, smette, con il rumore di una montagna che trova la sua posizione e decide di restarci per sempre. Lo Smeraldo è dentro la Corona. La polvere sospesa cade tutta insieme, in silenzio, come neve che ha aspettato tutto il giorno. Per un istante la luce verde disegna sopra l'Altare la forma di qualcosa con quattro zampe; poi non c'è più.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 30 · FASE 3 — L'Incastonatura e il Ritorno di Durik  `[fase-3-l-incastonatura-e-il-ritorno-di-durik]`
+
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — FASE 3 — L'Incastonatura e il Ritorno di Durik
+- **Etichetta regia**: Salvatore lead, Casa di Davide support — l'Altare, Durik prende forma
 - **Destinatario**: `dm` (diventa `pg` **dopo** la scena: è il momento in cui i PG lo vedono) · **Formato**: `16:9 splash` (variante `1:1` per il token)
 - **Stato**: ✅ prompt scritto
 
@@ -446,16 +737,15 @@ dog, chibi, modern dog breed look`
 **Note di coerenza d'arco**: stessa luce e palette della scheda `08` (la camera
 dell'Altare): genera prima quella, poi chiedi *«same world, same palette and
 lighting as the previous image»*.
+### 31 · SCENA 10 — Il ritorno alla Sala  `[scena-10-il-ritorno-alla-sala]`
 
-### 15 · §12 — RITORNO ALLA SALA (ponte al master #2)  `[12-ritorno-alla-sala-ponte-al-master-2]`
-
-- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — §12 — RITORNO ALLA SALA (ponte al master #2)
-- **Etichetta regia**: .
+- **Fonte**: `ARC07-DEF-1-PIANO-TERRA-TERROS.md` — SCENA 10 — Il ritorno alla Sala
+- **Etichetta regia**: LotR lead — la Sala
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Attraversate il portale a ritroso. La Sala della Forgia vi accoglie con la sua luce dorata immutabile — ma qualcosa È mutato. L'affresco di Est si è chiuso come una porta; quello del Tempo brucia nitido; e nella nebbia della parete di Nord-Ovest, la quarta figura ha ora un contorno. La Corona di Thorik pesa di una gemma in più.
+> Dall'altra parte del portale la luce dorata della Sala è quella di sempre, immutabile. Il resto no. L'affresco di Est si è chiuso come una porta; quello del Tempo brucia nitido; nella nebbia della parete di Nord-Ovest, la quarta figura ha un contorno. Sulla fronte di Thorik la Corona pesa di una gemma in più.
 
 **Prompt (EN)**
 ```text
@@ -467,15 +757,35 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 16 · ZONA A — La Sala della Forgia Eterna (l'ottagono divino)  `[zona-a-la-sala-della-forgia-eterna-l-ottagono-divino]`
+### 32 · Cosa mostra A7, valore per valore  `[cosa-mostra-a7-valore-per-valore]`
+
+- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — Cosa mostra A7, valore per valore
+- **Etichetta regia**: Andor lead — l'affresco A7, ogni volta che il timer scende
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> I numeri nanici nell'angolo dell'affresco sono cambiati, senza un rintocco: la volta prima erano altri. Nella pietra dipinta qualcosa si è mosso mentre nessuno guardava, una torre più vicina nel fumo, un tratto di camminamento vuoto che prima non lo era. La battaglia non aspetta nessuno.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 33 · ZONA A — La Sala della Forgia Eterna (l'ottagono divino)  `[zona-a-la-sala-della-forgia-eterna-l-ottagono-divino]`
 
 - **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — ZONA A — La Sala della Forgia Eterna (l'ottagono divino)
-- **Etichetta regia**: LotR lead + Salvatore).
+- **Etichetta regia**: LotR lead, Salvatore support — la Sala, l'arrivo
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Il portale vi deposita sul pavimento di adamantio fresco, e la Sala vi accoglie come una madre accoglie i figli tornati dalla guerra: senza una parola, solo con la sua immutabile luce dorata. Otto pareti, otto affreschi grandi come porte di titani, e al centro — sempre, eterno — l'Altare del Cuore di Moradin, dove la Forgia arde di un fuoco che non consuma. Dopo il peso del Piano della Terra, respirare qui è come bere acqua di fonte: l'aria sa di ozono e di pietra pulita, e per un istante il mondo non frana. Ma qualcosa È cambiato. Le pareti non sono più quelle di prima. La Sala ha guardato ci
+> Il portale vi posa sul pavimento di adamantio tiepido, e la Sala vi accoglie come una madre i figli tornati dalla guerra: senza una parola, con la luce dorata di sempre. Intorno, otto pareti e otto affreschi grandi come porte di titani; al centro l'Altare del Cuore di Moradin, dove la Forgia arde di un fuoco che non consuma. Dopo il peso del Piano della Terra, respirare qui è come bere acqua di fonte: l'aria sa di ozono e di pietra pulita, e per un istante il mondo non frana. Ma le pareti sono cambiate: la Sala ha guardato ciò che avete fatto, e lo ha scritto. Che fate?
 
 **Prompt (EN)**
 ```text
@@ -487,35 +797,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 17 · ZONA B — La Stanza della Corona (il luogo della morte)  `[zona-b-la-stanza-della-corona-il-luogo-della-morte]`
-
-- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — ZONA B — La Stanza della Corona (il luogo della morte)
-- **Etichetta regia**: Salvatore + Casa di Davide).
-- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
-- **Stato**: ⬜ prompt da scrivere
-
-> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Il Portale P1 è sempre aperto, e oltre di esso c'è il posto da cui tutto è cominciato: la Stanza della Corona, nel cuore del Sottosuolo, dove Hella è morta. Ma non è più la stanza che avete lasciato. L'aura corrotta del santuario di Karrn il Senza-Volto — il gelo, i muschi viola, le ragnatele dei drow — si sta ritirando come marea. La luce sacra che scorre dal Portale sta agendo come candeggina sull'anima della pietra: dove c'era muffa, ora c'è polvere di roccia pulita che brilla. E sull'arco di pietra, la runa del Fuoco arde di un arancione permanente — un faro. Avete riconquistato una testa 
-
-**Prompt (EN)**
-```text
-[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
-artistica; scala per paragone, materiali, luce, mood; niente nomi di
-artisti viventi]
-```
-
-**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
-**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
-
-### 18 · A1 — «L'Alba del Mondo» (NORD · statico)  `[a1-l-alba-del-mondo-nord-statico]`
+### 34 · A1 — «L'Alba del Mondo» (NORD · statico)  `[a1-l-alba-del-mondo-nord-statico]`
 
 - **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — A1 — «L'Alba del Mondo» (NORD · statico)
-- **Etichetta regia**: LotR lead — deep time).
+- **Etichetta regia**: LotR lead, Casa di Davide support — gli affreschi, A1 «L'Alba del Mondo»
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Il primo affresco mostra un'era in cui il mondo era ancora caos. Al centro, alto dieci metri, MORADIN: muscoli di granito, barba intrecciata d'oro, mithral e adamantio, e negli occhi le fiamme della creazione. Davanti a lui un'incudine titanica, grande quanto una montagna. Nella sinistra, Frostforge — il martello leggendario, testa di adamantio stellare, manico di ferro grezzo. Nella destra, la CORONA DI ADAMANTIO in fase di nascita, che brilla come una stella appena accesa. Intorno, il caos primordiale: fiamme alte chilometri, fulmini che spaccano la realtà, pietra liquida che ribolle, ombre 
+> Il primo affresco mostra un'era in cui il mondo era ancora caos. Al centro, alto dieci metri, MORADIN: muscoli di granito, barba intrecciata d'oro, mithral e adamantio, e negli occhi le fiamme della creazione. Davanti a lui un'incudine titanica, grande quanto una montagna. Nella sinistra, Frostforge — il martello leggendario, testa di adamantio stellare, manico di ferro grezzo. Nella destra, la CORONA DI ADAMANTIO in fase di nascita, che brilla come una stella appena accesa.
 
 **Prompt (EN)**
 ```text
@@ -527,15 +817,35 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 19 · A2 — «I Quattro Eroi Predestinati» (NORD-OVEST · progressivo → 80%)  `[a2-i-quattro-eroi-predestinati-nord-ovest-progressivo-80]`
+### 35 · A1 — «L'Alba del Mondo» (NORD · statico)  `[a1-l-alba-del-mondo-nord-statico-2]`
+
+- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — A1 — «L'Alba del Mondo» (NORD · statico)
+- **Etichetta regia**: LotR lead, Casa di Davide support — gli affreschi, A1, dopo che hanno guardato
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Intorno, il caos primordiale: fiamme alte chilometri, fulmini che spaccano il cielo, pietra liquida che ribolle, ombre antiche che tentano di avvolgere tutto. Ma Moradin è calmo. Guarda la Corona con amore paterno, e forgia per proteggere figli nanici che ancora non esistono. Thorik, quella Corona sulla tua fronte è la stessa. Diecimila anni non l'hanno cambiata. Cambia solo chi la porta.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 36 · A2 — «I Quattro Eroi Predestinati» (NORD-OVEST · progressivo → 80%)  `[a2-i-quattro-eroi-predestinati-nord-ovest-progressivo-80]`
 
 - **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — A2 — «I Quattro Eroi Predestinati» (NORD-OVEST · progressivo → 80%)
-- **Etichetta regia**: Casa di Davide — l'anointing dipinto).
+- **Etichetta regia**: Casa di Davide lead, LotR support — gli affreschi, A2
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Quando siete partiti, questo affresco era nebbia: quattro sagome vaghe che combattevano qualcosa di indistinto. Ora — dopo il Fuoco, dopo la Terra — la nebbia si è quasi diradata. Riconoscete voi stessi. Un nano con una stella sulla fronte e un'ascia che canta. Un nano più snello, le mani avvolte di ki dorato. Un umano con un anello pulsante che scaglia raggi viola. E la quarta figura — che fino a ieri non c'era — comincia ad avere un contorno: una druida cinta di luce verde, tre treant attorno a lei come guardie. Hella. La parete la sta disegnando mentre voi la state riportando indietro. Non 
+> Quando siete partiti, questo affresco era nebbia: quattro sagome vaghe contro qualcosa di indistinto. Dopo il Fuoco e la Terra la nebbia si è quasi diradata, e le sagome hanno una faccia. Un nano con una stella sulla fronte e un'ascia che vibra e canta; un nano più snello, le mani avvolte di ki dorato; un umano con un anello che pulsa e scaglia raggi viola. La quarta figura, che fino a ieri non c'era, prende contorno: una druida cinta di luce verde, tre treant attorno a lei come guardie. È Hella. La parete la disegna un colpo di scalpello alla volta, mentre voi la riportate indietro.
 
 **Prompt (EN)**
 ```text
@@ -547,15 +857,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 20 · A3 — «La Visione del Risveglio» (NORD-EST · personale Thorik)  `[a3-la-visione-del-risveglio-nord-est-personale-thorik]`
+### 37 · A3 — «La Visione del Risveglio» (NORD-EST · personale Thorik)  `[a3-la-visione-del-risveglio-nord-est-personale-thorik]`
 
 - **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — A3 — «La Visione del Risveglio» (NORD-EST · personale Thorik)
-- **Etichetta regia**: Salvatore — la memoria che sanguina).
+- **Etichetta regia**: Salvatore lead, Casa di Davide support — gli affreschi, A3
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Questo affresco mostra eventi di poche ore fa. Thorik, sei TU. Ti vedi avvicinare esitante al trono nella Stanza della Corona. Ti vedi toccare la Corona. Il flash di luce dorata, la transizione — e poi il campo di battaglia dove hai combattuto fianco a fianco con gli eroi che ti hanno preceduto. Uno lo riconosci: THORGRIM BARBADIFERRO, portatore della Corona otto secoli fa, il Frostcleaver in pugno. Nel frastuono senza suono dell'affresco, leggi le sue labbra: «Portala bene, fratello. Ora è tua.» E all'alba, quando la luce dorata inonda il campo, ti vedi con la Corona FUSA alla fronte, diventa
+> Questo affresco mostra eventi di pochi giorni fa, e la figura dipinta sei tu, Thorik. Si avvicina esitante al trono della Stanza della Corona e tocca la Corona. Poi il lampo di luce dorata, e il campo di battaglia dove hai combattuto fianco a fianco con gli eroi che ti hanno preceduto. Fra loro c'è Thorgrim Barbadiferro, barba grigia, che mille anni fa portò la tua stessa ascia. Nel frastuono senza suono dell'affresco muove le labbra: «Portala bene, fratello. Ora è tua.» All'alba la luce dorata inonda il campo, e la Corona non è più posata: è fusa alla fronte, calda come pelle. L'affresco si f
 
 **Prompt (EN)**
 ```text
@@ -567,15 +877,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 21 · A5 — «Il Portale della Terra» (EST · portale che si CHIUDE ORA) → «La Forza Sostenuta»  `[a5-il-portale-della-terra-est-portale-che-si-chiude-ora-la-f]`
+### 38 · A5 — «Il Portale della Terra» (EST · portale che si CHIUDE ORA) → «La Forza Sostenuta»  `[a5-il-portale-della-terra-est-portale-che-si-chiude-ora-la-f]`
 
 - **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — A5 — «Il Portale della Terra» (EST · portale che si CHIUDE ORA) → «La Forza Sostenuta»
-- **Etichetta regia**: .
+- **Etichetta regia**: LotR lead, Mercer support — gli affreschi, A5, la Terra che si chiude
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> L'affresco di Est, che era una finestra di gravità e cristallo, si raffredda come metallo temprato. La scena si fissa: tre figure che reggono un altare mentre una montagna vivente si dissolve in polvere di stelle. E sul margine — piccola, quasi nascosta — una zampa di pietra che si solidifica, occhi di topazio. La Forgia ha visto anche lui.
+> L'affresco di est, che era una finestra di gravità e cristallo, si raffredda come un ferro tolto dal fuoco, dal rosso al grigio. La scena si fissa: tre figure reggono un altare mentre una montagna vivente si dissolve in polvere di stelle che brilla. Sul margine, piccola e quasi nascosta, una zampa di pietra si solidifica, con occhi di topazio. La Forgia ha visto anche lui.
 
 **Prompt (EN)**
 ```text
@@ -587,10 +897,10 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 22 · A6 — «Il Viaggio Attraverso il Tempo» (SUD-OVEST · temporale → 80%)  `[a6-il-viaggio-attraverso-il-tempo-sud-ovest-temporale-80]`
+### 39 · A6 — «Il Viaggio Attraverso il Tempo» (SUD-OVEST · temporale → 80%)  `[a6-il-viaggio-attraverso-il-tempo-sud-ovest-temporale-80]`
 
 - **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — A6 — «Il Viaggio Attraverso il Tempo» (SUD-OVEST · temporale → 80%)
-- **Etichetta regia**: Andor lead — il tempo incerto).
+- **Etichetta regia**: Andor lead, LotR support — gli affreschi, A6 «Il Viaggio Attraverso il Tempo», 1 di 2
 - **Destinatario**: `pg` · **Formato**: `16:9 splash` (sostituisce `PortaleDellaForgiaEterna.webp`, che è un'immagine di testo)
 - **Stato**: ✅ generata con Canva AI il 2026-09-25, nel repo come `Immagini/tavola-portale-del-tempo.jpg` (1600 × 899) e in `DEF-4` Scena 1
 
@@ -599,16 +909,35 @@ artisti viventi]
 
 **Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-portale-del-tempo` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+### 40 · A6 — «Il Viaggio Attraverso il Tempo» (SUD-OVEST · temporale → 80%)  `[a6-il-viaggio-attraverso-il-tempo-sud-ovest-temporale-80-2]`
 
-### 23 · A8 — «Il Ritorno Trionfale» (SUD · vuoto → 60%)  `[a8-il-ritorno-trionfale-sud-vuoto-60]`
+- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — A6 — «Il Viaggio Attraverso il Tempo» (SUD-OVEST · temporale → 80%)
+- **Etichetta regia**: Andor lead, LotR support — gli affreschi, A6, 2 di 2, dopo tre battiti
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Dopo la Terra le immagini si mettono a fuoco, e al centro della doppia esposizione pulsa un portale dorato. Una porta. Sul passato. La Corona sulla fronte di Thorik, con due gemme accese, risponde al suo battito e si scalda. Che fate?
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 41 · A8 — «Il Ritorno Trionfale» (SUD · vuoto → 60%)  `[a8-il-ritorno-trionfale-sud-vuoto-60]`
 
 - **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — A8 — «Il Ritorno Trionfale» (SUD · vuoto → 60%)
-- **Etichetta regia**: .
+- **Etichetta regia**: Casa di Davide lead, Salvatore support — gli affreschi, A8, la manifestazione
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Quando posate il corpo di Hella davanti alla tela, la luce verde della sua anima druidica esce dalle ossa e tocca il vetro. Per dieci battiti del cuore, Hella appare nell'affresco — semitrasparente, serena, bellissima. Non parla. Preme una mano contro il vetro dall'interno, come chi saluta attraverso una finestra ghiacciata. E dove tocca, lascia un segno inciso: una quercia e un martello intrecciati. Poi svanisce. È una promessa, non un discorso: «tornerò».
+> Il corpo di Hella è davanti alla tela, e la luce verde della sua anima druidica esce dalle ossa e tocca il vetro nel silenzio. Per dieci battiti del cuore Hella appare nell'affresco, semitrasparente e serena. Non parla. Preme una mano contro il vetro freddo dall'interno, come chi saluta attraverso una finestra ghiacciata, e dove tocca lascia un segno inciso, una quercia e un martello intrecciati che brillano. Poi svanisce, e il segno resta sul vetro a dire una cosa sola: tornerò.
 
 **Prompt (EN)**
 ```text
@@ -620,15 +949,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 24 · §5 — LA VISIONE CONDIVISA (rito corale dei Quattro Eroi — A2)  `[5-la-visione-condivisa-rito-corale-dei-quattro-eroi-a2]`
+### 42 · SCENA 3 — La Visione Condivisa  `[scena-3-la-visione-condivisa]`
 
-- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — §5 — LA VISIONE CONDIVISA (rito corale dei Quattro Eroi — A2)
-- **Etichetta regia**: .
+- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — SCENA 3 — La Visione Condivisa
+- **Etichetta regia**: Casa di Davide lead, LotR support — l'affresco A2, la visione
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> L'affresco esplode di chiarezza per dieci secondi, e vedete un futuro POSSIBILE, non promesso: Hammerfist salva, le bandiere naniche al vento; voi quattro — Hella viva — davanti a Re Thorek; la mano di lei nella mano di Thorik; Artemis con le ali d'ombra spiegate; Tordek in meditazione, l'aura di ki visibile; e sotto il balcone, mille nani che gridano: «Eroi! Salvatori!». Poi la visione svanisce. Ma la sensazione resta, incisa più a fondo di qualsiasi affresco: QUESTO È POSSIBILE. Dipende da voi.
+> Per dieci battiti l'affresco si fa limpido come vetro lavato, e mostra un futuro che nessuno ha promesso. Hammerfist è salva, le bandiere naniche al vento. Voi quattro siete davanti a Re Thorek, e Hella è viva, la mano nella mano di Thorik; accanto, Artemis ha le ali d'ombra spiegate e Tordek medita, l'aura di ki visibile intorno. Sotto il balcone mille nani gridano fino a far tremare la pietra: «Eroi! Salvatori!» Poi la visione svanisce, e nel vetro tornano a specchiarsi tre facce.
 
 **Prompt (EN)**
 ```text
@@ -640,15 +969,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 25 · §6 — LA STANZA DELLA CORONA (le incisioni-specchio)  `[6-la-stanza-della-corona-le-incisioni-specchio]`
+### 43 · SCENA 4 — La Stanza della Corona  `[scena-4-la-stanza-della-corona]`
 
-- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — §6 — LA STANZA DELLA CORONA (le incisioni-specchio)
-- **Etichetta regia**: posando lo sguardo sull'incisione).
+- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — SCENA 4 — La Stanza della Corona
+- **Etichetta regia**: Salvatore lead, Casa di Davide support — la Stanza della Corona, l'ingresso
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Thorik, tu ricordi questa parete coperta del sangue di Hella. Ora il sangue non c'è più: al suo posto, la pietra si sta scolpendo da sola. Vedi la Corona incisa, due gemme che ardono. E vedi lei — o l'ombra di lei — scavata nel granito il giorno in cui è caduta. Ma l'ombra si sta chiudendo, come una ferita che rimargina dal fondo. La montagna sta ricordando Hella viva prima ancora che lo sia.
+> Oltre il Portale sempre aperto c'è il posto da cui tutto è cominciato: la Stanza della Corona, nel cuore del Sottosuolo, dove Hella è morta. Ma non è più la stanza che avete lasciato. Il gelo, i muschi viola, le ragnatele dei drow si ritirano lentamente, come una marea, e la luce sacra che scende dal Portale lavora sulla pietra come lisciva: dove c'era muffa ora c'è polvere di roccia pulita che brilla. Sull'arco la runa del Fuoco arde di un arancione fermo, come un faro. E dietro il trono, dove il sangue di Hella si è asciugato, la pietra si incide da sola, lettera dopo lettera.
 
 **Prompt (EN)**
 ```text
@@ -660,15 +989,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 26 · §2 — LA SCENA: L'ALTARE DEL CUORE (Atlante)  `[2-la-scena-l-altare-del-cuore-atlante]`
+### 44 · SCENA 4 — La Stanza della Corona  `[scena-4-la-stanza-della-corona-2]`
 
-- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §2 — LA SCENA: L'ALTARE DEL CUORE (Atlante)
-- **Etichetta regia**: LotR lead + liturgia).
+- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — SCENA 4 — La Stanza della Corona
+- **Etichetta regia**: Salvatore lead, Casa di Davide support — la Stanza della Corona, l'incisione, per Thorik
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> La Sala della Forgia si è fatta silenziosa in un modo nuovo. Non il silenzio del vuoto: il silenzio di una sala che trattiene il fiato. Gli otto affreschi vi guardano dalle pareti — Moradin che forgia, i Quattro Eroi che prendono contorno, Hammerfist che brucia nel suo riquadro. Al centro, l'Altare del Cuore di Moradin arde della sua fiamma dorata che non consuma. E lì, sulla pietra di mithral, giace il corpo di Hella: le mani incrociate sul petto, la pelle color cera, i tre semi di treant posati — uno su ciascuna mano, uno sulla fronte — che pulsano piano, come se già sapessero. Therysol si s
+> Thorik, questa parete la ricordi coperta del sangue di Hella. Ora il sangue non c'è più, e la pietra si scolpisce da sola: la Corona, con due gemme che ardono, e accanto lei, o la sua ombra, scavata nel granito il giorno in cui è caduta. L'ombra si chiude dal fondo, come una ferita che rimargina. La montagna ricorda Hella viva prima ancora che lo sia.
 
 **Prompt (EN)**
 ```text
@@ -680,54 +1009,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 27 · §3 — IL CUORE DI MORADIN (rivelazione del reliquiario)  `[3-il-cuore-di-moradin-rivelazione-del-reliquiario]`
+### 45 · Prima la regola, perché è la domanda che nasce sempre  `[prima-la-regola-perche-e-la-domanda-che-nasce-sempre]`
 
-- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §3 — IL CUORE DI MORADIN (rivelazione del reliquiario)
-- **Etichetta regia**: Salvatore — il sacro che si sente nel corpo).
-- **Destinatario**: `pg` **dopo** il box del §3 · **Formato**: `16:9 splash`
-- **Stato**: ✅ generata con Canva AI il 2026-09-25, nel repo come `Immagini/tavola-cuore-di-moradin.jpg` (1600 × 899). **Sostituisce `ilCuoreDiMoradin.png` al §3**: il box dice che il Cuore sta *dentro* l'Altare che si apre, e la vecchia immagine lo mette sopra. La vecchia resta per la copertina del booklet e per `DEF-2` e `DEF-5`
-
-> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Thorik, posi le mani sulla superficie di mithral, e l'Altare SI APRE. Non c'erano cuciture, un istante fa: ora una camera interna di trenta centimetri si schiude come un fiore di metallo. Dentro, sospeso nella luce dorata, un cristallo di rubino sanguigno grande come il tuo pugno — e ha la forma ESATTA di un cuore nanico: quattro camere, i vasi visibili, tutto scolpito in rubino divino trasparente. E pulsa. Sessanta battiti al minuto. Il ritmo di un cuore a riposo. Quando lo sfiori, senti calore. Vita. Creazione pura. E capisci, senza che nessuno te lo dica, che questo si spenderà UNA volta so
-
-**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-cuore-di-moradin` (`serie=extra`) — stile del Drappo. Esiste già `ilCuoreDiMoradin.png`, che lo mostra sull'Altare; questa è la versione del reliquiario che si apre, fedele a `DEF-3` §3.
-**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
-
-### 28 · §6 — IL DEBITO DELLA RADICE (il filo grigio del piano spirituale) [CANONE — DM 2026-07-23; il ramo (A/B/C) si gioca]  `[6-il-debito-della-radice-il-filo-grigio-del-piano-spirituale]`
-
-- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §6 — IL DEBITO DELLA RADICE (il filo grigio del piano spirituale) [CANONE — DM 2026-07-23; il ramo (A/B/C) si gioca]
-- **Etichetta regia**: GoT lead — la creditrice paziente).
-- **Destinatario**: `dm` (la Custode non si mostra prima dello Step 5) · **Formato**: `3:4 handout`
-- **Stato**: ✅ generata con Canva AI il 2026-09-25, nel repo come `Immagini/tavola-custode-delle-radici.jpg` e in `DEF-3` §6, a 533 × 800: è la copia arrivata dalla chat, non l'originale Canva. Da sostituire con l'esportazione a piena risoluzione
-
-> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Nel momento in cui lo spirito di Hella varca la soglia tra i mondi, la luce dorata dell'Altare vacilla — e qualcos'altro è nella Sala con voi. Non un mostro: una PRESENZA. Ha la forma di una donna di radici e pietra, alta come Therysol, gli occhi due nodi di legno antico. Non è ostile. Non è gentile. È come la montagna: c'è, e aspetta. Parla, e la sua voce è il rumore di una faglia che si assesta: LA CUSTODE DELLE RADICI: «Una radice strappata lascia un vuoto. Il vuoto va colmato — è legge, non capriccio. Non oggi. Non con lei: il Forgiatore la protegge, e io non discuto col Forgiatore. Ma il 
-
-**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-custode-delle-radici` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
-**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
-
-### 29 · §7 — IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)  `[7-il-risveglio-hella-torna-durik-si-lega-la-collana-nasce]`
-
-- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §7 — IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)
-- **Etichetta regia**: Salvatore — il ritorno).
-- **Destinatario**: `pg` **dopo** la scena (è il ritorno: mostrarla prima lo brucia) · **Formato**: `16:9 splash`
-- **Stato**: ✅ generata con Canva AI il 2026-09-25, **seconda versione** (`MAHWL21y19U`); nel repo come `Immagini/tavola-risveglio-di-hella.jpg` (1600 × 899), in `DEF-3` §7
-
-> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Silenzio. Cinque secondi. Dieci. Il Cuore di Moradin, sopra il petto di Hella, rallenta: novanta battiti… sessanta… si ferma. E poi — lei INSPIRA. Netto. Improvviso. Profondo, come chi riemerge dall'acqua un istante prima di annegare. Il petto si alza. Ricade. RESPIRA. E gli occhi si aprono — non più marroni: ambra dorata. La pelle ha un sottotono di muschio pallido; tra i capelli rossi corre una venatura di corteccia sottile; e attorno a lei l'aria sa di terra bagnata e di linfa. È Hella. È cambiata. È VIVA.
-
-**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-risveglio-di-hella` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
-**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
-
-### 30 · §7 — IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)  `[7-il-risveglio-hella-torna-durik-si-lega-la-collana-nasce-2]`
-
-- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §7 — IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)
-- **Etichetta regia**: — le prime parole (voce rauca, non usata da settimane).
+- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — Prima la regola, perché è la domanda che nasce sempre
+- **Etichetta regia**: Salvatore lead, LotR support — la Sala, l'addormentarsi
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> «Io… dove… respirare è… difficile.» Gli occhi ambra cercano, si fermano su Tordek. «Tordek? Sei… reale? O sto ancora sognando? Ero sotto terra. Buio. Freddo. Ma sentivo te. La tua voce. Chiamavi. E sono tornata.» Si porta una mano al petto, sente il cuore battere sotto le dita, e la voce le si spezza: «Viva. VIVA? Come?»
+> Il basalto è tiepido sotto la schiena, e la Sala fa una cosa che nessuna locanda ha mai fatto: abbassa il tono. La luce dorata non si spegne, si ritira come una brace coperta per la notte. L'ultima cosa prima di andare giù è un rumore minutissimo, uno scalpello che lavora molto lontano, dall'altra parte di una parete che non esiste. Poi dormite. E il sonno è lungo, molto più lungo di una notte.
 
 **Prompt (EN)**
 ```text
@@ -739,23 +1029,450 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 31 · §7 — IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)  `[7-il-risveglio-hella-torna-durik-si-lega-la-collana-nasce-3]`
+### 46 · 🛡️ THORIK — le mani fredde sotto la trave  `[thorik-le-mani-fredde-sotto-la-trave]`
 
-- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §7 — IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)
-- **Etichetta regia**: Salvatore — il ritorno del fedele).
-- **Destinatario**: `pg` dopo il risveglio · **Formato**: `3:4 handout` (è la copertina della scheda di Durik)
-- **Stato**: ✅ generata con Canva AI il 2026-09-25, **seconda versione** (`MAHWL6svafI`): Durik levriero in piedi, lo stesso di `durik2`. Nel repo come `Immagini/tavola-durik-e-hella.jpg` (533 × 800, copia della chat), copertina di `08-SCHEDA-DURIK`
+- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — 🛡️ THORIK — le mani fredde sotto la trave
+- **Etichetta regia**: Salvatore lead — la Sala, il sogno di Thorik
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Prima che qualcuno possa rispondere, un rumore di pietra su pietra: il grande cane di mithral e roccia scura — quello che ha preso forma nel Piano della Terra e da allora non si è mai allontanato dal corpo — si fa avanti. Non abbaia: non sa più farlo. Appoggia la testa massiccia sul petto di Hella, gli occhi di topazio socchiusi, e resta così. Lei alza una mano tremante e la posa tra le sue orecchie di granito. «…Durik?» Il cane emette un suono che non è un verso: è il click lontano di una faglia che si assesta. È tornato anche lui. Non l'aveva mai davvero lasciata.
+> Sogni di essere ancora in ginocchio sull'Altare, col peso addosso, ma non lo porti da solo: sotto la trave c'è un secondo paio di mani, più piccole delle tue, fredde come pietra all'ombra, e non tremano. Provi a girare la testa per sapere di chi sono. E il sogno, con la gentilezza ottusa dei sogni, ti gira la testa dall'altra parte.
 
-**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-durik-e-hella` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 32 · §8 — IL RACCONTO DELLE PROVE (l'asimmetria si scioglie) — spotlight di Hella  `[8-il-racconto-delle-prove-l-asimmetria-si-scioglie-spotlight]`
+### 47 · ⚒️ TORDEK — lo zaino  `[tordek-lo-zaino]`
 
-- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §8 — IL RACCONTO DELLE PROVE (l'asimmetria si scioglie) — spotlight di Hella
-- **Etichetta regia**: Casa di Davide — il debito che si scioglie).
+- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — ⚒️ TORDEK — lo zaino
+- **Etichetta regia**: Andor lead, Salvatore support — la Sala, il sogno di Tordek
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Sogni una fiera, e non è una fiera nanica: banchi bassi, teli chiari, una lingua che non conosci e che capisci lo stesso, un odore di spezie che non crescono in nessun posto in cui sei stato. Nessuno ti guarda: sei un cliente come un altro, e qualcuno ti pesta un piede senza chiedere scusa. In fondo al vicolo dei banchi c'è un tavolino, e sopra c'è il tuo zaino, aperto. Un uomo che non riesci a mettere a fuoco conta le tue cose una per una e le scrive in un registro, in un sussurro, con la pazienza di chi fa l'inventario. Non ne prende nessuna. Ti svegli con la mano già sulla cinghia.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 48 · 🔮 ARTEMIS — la porta, dopo che hai già visto il negozio  `[artemis-la-porta-dopo-che-hai-gia-visto-il-negozio]`
+
+- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — 🔮 ARTEMIS — la porta, dopo che hai già visto il negozio
+- **Etichetta regia**: Andor lead, BG3 support — la Sala, il sogno di Artemis, 1 di 2
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Il bazar te lo ricordi ancora: i teli bianchi, i registri, tutto quel disordine ricchissimo e rumoroso tenuto in ordine da qualcuno molto bravo. Nel sogno ci torni, ma da fuori, e la porta del mercato ha la cornice d'oro e adamantio dell'affresco del Tempo.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 49 · 🔮 ARTEMIS — la porta, dopo che hai già visto il negozio  `[artemis-la-porta-dopo-che-hai-gia-visto-il-negozio-2]`
+
+- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — 🔮 ARTEMIS — la porta, dopo che hai già visto il negozio
+- **Etichetta regia**: Andor lead, BG3 support — la Sala, il sogno di Artemis, 2 di 2, quando ha riconosciuto la porta
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> È socchiusa, e dallo spiraglio viene aria vera che sa di fumo di forgia e di neve: mille anni di aria. Oltre c'è tutto quello che il mondo ha dimenticato di aver perso. E qualcuno l'ha già aperta prima di te, perché sullo stipite, all'altezza della mano, il legno è consumato da un pollice che ci si è appoggiato molte volte.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 50 · 🔮 ARTEMIS — la porta, dopo che hai già visto il negozio  `[artemis-la-porta-dopo-che-hai-gia-visto-il-negozio-3]`
+
+- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — 🔮 ARTEMIS — la porta, dopo che hai già visto il negozio
+- **Etichetta regia**: Andor lead — la Sala, il sogno di Artemis, senza il bazar
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Sogni l'affresco del Tempo, e nel sogno l'affresco è una porta.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 51 · 🌙 HELLA — dall'altra parte [handout per la sua giocatrice]  `[hella-dall-altra-parte-handout-per-la-sua-giocatrice]`
+
+- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — 🌙 HELLA — dall'altra parte [handout per la sua giocatrice]
+- **Etichetta regia**: Casa di Davide lead, LotR support — la Sala, il sogno di Hella, dall'altra parte, 1 di 2
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Tu non dormi più, e questo non è un sogno. Ma per la prima volta da quando sei qui qualcuno dorme vicino a te: nel silenzio, tre respiri lenti che conosci come conosci il tuo nome. Accanto a te c'è una quarta cosa che non respira, una forma di polvere e mithral scuro che aspetta, con la pazienza dei cani, di essere chiamata.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 52 · 🌙 HELLA — dall'altra parte [handout per la sua giocatrice]  `[hella-dall-altra-parte-handout-per-la-sua-giocatrice-2]`
+
+- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — 🌙 HELLA — dall'altra parte [handout per la sua giocatrice]
+- **Etichetta regia**: Casa di Davide lead, LotR support — la Sala, il sogno di Hella, dall'altra parte, 2 di 2
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Tu non l'hai ancora chiamata. Non sai come. Poi, lontanissima, la voce di un nano che hai tenuto per mano dice il tuo nome nel sonno, in un sussurro. E per la prima volta da quando sei morta hai freddo. È bellissimo. Il freddo è dei vivi.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 53 · Al risveglio  `[al-risveglio]`
+
+- **Fonte**: `ARC07-DEF-2-RITORNO-E-AFFRESCHI.md` — Al risveglio
+- **Etichetta regia**: LotR lead — la Sala, il risveglio
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Vi svegliate insieme, e per un po' c'è solo silenzio. Sulla parete di sud-est i numeri nanici sono cambiati, e molto meno del previsto. Il basalto è ancora tiepido nel punto esatto in cui avete dormito, e da nessun'altra parte. Che fate?
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 54 · SCENA 1 — L'Altare del Cuore  `[scena-1-l-altare-del-cuore]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — SCENA 1 — L'Altare del Cuore
+- **Etichetta regia**: LotR lead — l'Altare
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> La Sala della Forgia si è fatta silenziosa in un modo nuovo. Non il silenzio del vuoto: il silenzio di una sala che trattiene il fiato. Gli otto affreschi guardano dalle pareti — Moradin che forgia, i Quattro Eroi che prendono contorno, Hammerfist che brucia nel suo riquadro. Al centro, l'Altare arde di una fiamma dorata che non consuma. E lì, sulla pietra di mithral, giace il corpo di Hella: le mani incrociate sul petto, la pelle color cera, i tre semi di treant posati, uno su ciascuna mano e uno sulla fronte, che pulsano piano come se già sapessero. Therysol si scosta dalla veglia. Per la pr
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 55 · La riga che nessuno ha ancora detto a Thorik  `[la-riga-che-nessuno-ha-ancora-detto-a-thorik]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — La riga che nessuno ha ancora detto a Thorik
+- **Etichetta regia**: Casa di Davide lead — solo se un PG guarda la Corona
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> La Corona sulla fronte di Thorik ha due pietre vive e un vuoto. Il topazio è caldo come la sala, lo smeraldo è freddo, e in mezzo l'incasso scoperto resta nero: la luce gli arriva addosso e non ne torna indietro niente. È un difetto di un'unghia su un oggetto che ha attraversato due ere, e chi lo fissa abbastanza a lungo finisce per non vedere altro.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 56 · SCENA 2 — Il Cuore di Moradin  `[scena-2-il-cuore-di-moradin]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — SCENA 2 — Il Cuore di Moradin
+- **Etichetta regia**: Salvatore lead — l'Altare, il reliquiario
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Sotto le mani di Thorik il mithral si apre lentamente, lungo cuciture che un istante fa non c'erano. Una camera si schiude come un fiore di metallo, un petalo dopo l'altro. Dentro, sospeso nella luce dorata, c'è un cristallo di rubino sanguigno grande come un pugno, trasparente, con la forma di un cuore nanico: le quattro camere, i vasi visibili. Pulsa sessanta volte al minuto, il ritmo di un cuore a riposo, e a ogni battito il rosso si schiarisce. A chinarsi, il calore arriva in faccia asciutto, come dalla bocca di un forno appena aperto.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 57 · ⚙️ Come si gioca questo rito: la regia<!-- apparato --> (ADR-0014)<!-- /apparato -->  `[come-si-gioca-questo-rito-la-regia-apparato-adr-0014-apparat]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — ⚙️ Come si gioca questo rito: la regia<!-- apparato --> (ADR-0014)<!-- /apparato -->
+- **Etichetta regia**: Mercer lead — il cerchio, lo Step 2
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Il respiro di Tordek rallenta da sé. Nel silenzio c'è un battito, quello del Cuore di Moradin, e il suo ki lo prende come misura. La vita passa dal Cuore, attraverso di lui, verso Hella. Dall'altra parte qualcosa tira: lo spirito vuole tornare, e la morte non molla la presa. La corda è tesa fra le due.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 58 · ⚙️ Come si gioca questo rito: la regia<!-- apparato --> (ADR-0014)<!-- /apparato -->  `[come-si-gioca-questo-rito-la-regia-apparato-adr-0014-apparat-2]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — ⚙️ Come si gioca questo rito: la regia<!-- apparato --> (ADR-0014)<!-- /apparato -->
+- **Etichetta regia**: Andor support — lo Step 3
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Nell'Anello di Artemis c'è una luce d'oro e una d'argento, accese insieme. Le ferite del corpo si richiudono dall'interno, e il colore torna alla pelle dal petto verso le dita. Il respiro, non ancora. Ma quasi.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 59 · 🔨 Come lo chiede Moradin: il perché, lo scopo, il prezzo<!-- storico --> [riscritto 2026-09-25 su richiesta del DM]<!-- /storico -->  `[come-lo-chiede-moradin-il-perche-lo-scopo-il-prezzo-storico]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — 🔨 Come lo chiede Moradin: il perché, lo scopo, il prezzo<!-- storico --> [riscritto 2026-09-25 su richiesta del DM]<!-- /storico -->
+- **Etichetta regia**: Casa di Davide lead — il cerchio, battuta 1 di 4
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Sul petto di Hella il Cuore batte una volta, più forte degli altri. La voce che segue non passa dall'aria: arriva nello sterno e lo fa vibrare, come il colpo di un maglio dall'altra parte della montagna.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 60 · DONO 1 — THORIK: «La Forza» → Lo Scudo del Custode  `[dono-1-thorik-la-forza-lo-scudo-del-custode]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — DONO 1 — THORIK: «La Forza» → Lo Scudo del Custode
+- **Etichetta regia**: Casa di Davide lead — il primo Dono
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Thorik si toglie la corona, la seconda volta da quando la porta, e la posa sul petto freddo della druida. Non prega. Dice soltanto: «Io so come si sta davanti. Adesso lo sai anche tu.»
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 61 · DONO 2 — TORDEK: «Il Respiro» → Pelle di Adamantio  `[dono-2-tordek-il-respiro-pelle-di-adamantio]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — DONO 2 — TORDEK: «Il Respiro» → Pelle di Adamantio
+- **Etichetta regia**: Mercer lead — il secondo Dono
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Tordek non parla. Preme i palmi sulla pietra ai due lati del corpo, e i bracieri si spengono di un tono. Quando li rialza, il calore è passato in lei, e la pelle della druida è tiepida.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 62 · DONO 3 — ARTEMIS: «La Scintilla» → Il Rovo Eldritch  `[dono-3-artemis-la-scintilla-il-rovo-eldritch]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — DONO 3 — ARTEMIS: «La Scintilla» → Il Rovo Eldritch
+- **Etichetta regia**: Andor lead — il terzo Dono
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Artemis apre la mano sopra il cuore fermo e lascia andare una scheggia della sua fiamma. L'Anello, per la prima volta da quando lo porta, non commenta.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 63 · SCENA 5 — La Custode delle Radici  `[scena-5-la-custode-delle-radici]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — SCENA 5 — La Custode delle Radici
+- **Etichetta regia**: GoT lead — la Sala, la soglia fra i mondi
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Lo spirito di Hella varca la soglia, e la luce dorata dell'altare vacilla come la fiamma di una lucerna quando qualcuno apre la porta. Al sud del cerchio, dove non stava nessuno, adesso c'è qualcuno. Ha la forma di una donna di radici e di pietra, alta come Therysol, e gli occhi sono due nodi di legno antico. Non ha fretta. È come la montagna: c'è, e aspetta. Quando parla, la voce è il rumore di una faglia che si assesta.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 64 · SCENA 6 — Il risveglio  `[scena-6-il-risveglio]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — SCENA 6 — Il risveglio
+- **Etichetta regia**: Casa di Davide lead — l'Altare, lo Step 6
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> La luce esplode dall'altare. Per tre secondi, sopra il corpo, c'è Moradin: traslucido, più alto di chiunque. Stavolta la voce passa dall'aria, e la sala trema.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 65 · SCENA 6 — Il risveglio  `[scena-6-il-risveglio-2]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — SCENA 6 — Il risveglio
+- **Etichetta regia**: Salvatore lead — il ritorno
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Cinque secondi. Dieci. Il Cuore di Moradin, sul petto di Hella, rallenta, novanta battiti, sessanta, e si ferma. Poi lei inspira, di colpo e a fondo, come chi riemerge dall'acqua un istante prima di annegare. Il petto si alza e ricade. Gli occhi si aprono alla luce. Erano marroni; adesso sono color ambra. La pelle ha un sottotono di muschio pallido, fra i capelli biondi corre una venatura di corteccia, e l'aria sa di terra bagnata e di linfa. Hella respira.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 66 · SCENA 6 — Il risveglio  `[scena-6-il-risveglio-3]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — SCENA 6 — Il risveglio
+- **Etichetta regia**: Mercer lead — le prime parole, con la voce rauca
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> «Io… dove… respirare è difficile.» Gli occhi ambra cercano, e si fermano su Tordek. «Tordek? Sei vero, o sto ancora sognando? Ero sotto terra. Buio. Freddo. Ma sentivo te. La voce era la tua. Chiamavi. E sono tornata.» Si porta una mano al petto, sente il battito sotto le dita, e la voce le si spezza. «Viva? Come?»
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 67 · SCENA 6 — Il risveglio  `[scena-6-il-risveglio-4]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — SCENA 6 — Il risveglio
+- **Etichetta regia**: Salvatore lead — il ritorno del fedele
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Un rumore di pietra su pietra. Il grande cane di mithral e roccia scura, che non si è mai allontanato dal corpo, si fa avanti. Non abbaia: non sa più farlo. Appoggia la testa massiccia sul petto di Hella, gli occhi di topazio socchiusi, e resta così. Lei alza una mano che trema e la posa fra le orecchie di granito. «Durik?» Il cane risponde con il click lontano di una faglia che si assesta. Quel suono, lo conosce solo lei.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 68 · SCENA 7 — Il racconto delle prove  `[scena-7-il-racconto-delle-prove]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — SCENA 7 — Il racconto delle prove
+- **Etichetta regia**: Casa di Davide lead — la Sala, il debito che si scioglie
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
@@ -772,28 +1489,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 33 · ZONA 1 — La Fortezza Giovane (Hammerfist appena eretta)  `[zona-1-la-fortezza-giovane-hammerfist-appena-eretta]`
+### 69 · §8-bis — LA PRIMA ORA DOPO IL RITO  `[8-bis-la-prima-ora-dopo-il-rito]`
 
-- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — ZONA 1 — La Fortezza Giovane (Hammerfist appena eretta)
-- **Etichetta regia**: LotR lead — deep time al contrario).
-- **Destinatario**: `pg` all'arrivo · **Formato**: `16:9 splash`
-- **Stato**: ✅ generata con Canva AI il 2026-09-25, in due immagini: `Immagini/tavola-hammerfist-giovane.jpg` per l'arrivo (Scena 1, i fuochi dell'orda) e `Immagini/tavola-hammerfist-giovane-porta.jpg` per la porta e la targa (Scena 3)
-
-> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Conoscete Hammerfist: le sue sale annerite dai secoli, le statue consumate, i nomi dei re incisi e riincisi. Ma QUESTA Hammerfist non ha ancora storia. Le mura sono bianche di pietra appena tagliata, gli spigoli ancora vivi. Le statue dei re sono una sola. E sulla porta, la targa di bronzo con la profezia dei Quattro Eroi è stata incisa OGGI, l'inchiostro del cesello ancora fresco. Camminate dentro la vostra stessa leggenda mentre viene scritta. È vertiginoso: ogni pietra che toccate, tra mille anni, la toccherete di nuovo — vecchia di un millennio.
-
-**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-hammerfist-giovane` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
-**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
-
-### 34 · ZONA 2 — Il Mare di Tende (l'orda, di notte)  `[zona-2-il-mare-di-tende-l-orda-di-notte]`
-
-- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — ZONA 2 — Il Mare di Tende (l'orda, di notte)
-- **Etichetta regia**: Salvatore — l'infiltrazione).
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §8-bis — LA PRIMA ORA DOPO IL RITO
+- **Etichetta regia**: Salvatore support — la fiamma
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Fuori dalle mura, il buio è vivo. Diecimila nemici dormono attorno a mille fuochi — orchetti, hobgoblin, cose peggiori — e il campo si stende fino all'orizzonte come un mare in cui ogni onda è una gola che russa. L'aria sa di grasso bruciato, di ferro e di bestia. Da qualche parte, al centro, la tenda del generale. Un passo falso e il mare si sveglia tutto insieme.
+> Hella apre la mano, e la fiamma viene, verde e oro. Arde come deve. Ma è calda sul palmo più del giusto, e lei la tiene lontana dal viso, come si tiene un cane che non la conosce ancora.
 
 **Prompt (EN)**
 ```text
@@ -805,15 +1509,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 35 · ZONA 3 — Le Mura all'Alba (l'assalto)  `[zona-3-le-mura-all-alba-l-assalto]`
+### 70 · SCENA 8 — La soglia  `[scena-8-la-soglia]`
 
-- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — ZONA 3 — Le Mura all'Alba (l'assalto)
-- **Etichetta regia**: LotR + Salvatore — la linea che tiene).
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — SCENA 8 — La soglia
+- **Etichetta regia**: Andor lead, la tensione che non alza la voce — l'affresco A6
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> All'alba l'orda si getta contro le mura come una marea contro uno scoglio. Scale, arieti, il boato di diecimila gole che diventa una cosa sola. I nani reggono, a malapena, spalla contro spalla sui camminamenti. E voi siete quattro — ma quattro leggende venute dal futuro a compiere una promessa. Dove vi gettate, la linea tiene. Dove passate, i nani rialzano il capo e gridano il nome che la targa di bronzo ha appena inciso.
+> L'affresco A6 non è cambiato in mille anni, ma adesso ha tre punti di luce e due sono accesi. Il terzo resta un cerchio inciso e vuoto, alto sulla parete, alla stessa altezza dell'incasso scoperto sulla Corona. Nel silenzio nessuno lo nomina, e la luce degli altri due si ferma sul bordo.
 
 **Prompt (EN)**
 ```text
@@ -825,15 +1529,35 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 36 · SCENA 1 — L'Arrivo e le Cronache dei Quattro Eroi  `[scena-1-l-arrivo-e-le-cronache-dei-quattro-eroi]`
+### 71 · SCENA 8 — La soglia  `[scena-8-la-soglia-2]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — SCENA 8 — La soglia
+- **Etichetta regia**: Andor lead — la chiusura
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Il portale è chiuso. La Corona è pronta, e due pietre su tre brillano nel silenzio. Quattro persone stanno in piedi davanti a un affresco, e una di loro respira da un'ora. Che fate?
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 72 · SCENA 1 — Il portale e il bosco al tramonto  `[scena-1-il-portale-e-il-bosco-al-tramonto]`
 
 - **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 1 — Il portale e il bosco al tramonto
-- **Etichetta regia**: .
+- **Etichetta regia**: LotR lead — il passaggio
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Il portale vi risucchia — colori invertiti, mille vite in un istante — e poi fango, fumo, corni di guerra. Su una targa di bronzo alle porte, una profezia nanica già incisa: «Quattro Eroi dal futuro salveranno la fortezza dalla Mano Rossa e dal drago Skullcrusher il Nero». Quei Quattro Eroi… siete VOI.
+> Per un istante lunghissimo i colori si rovesciano, e vi passano davanti vite intere di nani: nascono, battono il ferro, invecchiano, in un tempo più corto di un respiro. Poi torna il peso, e con il peso il freddo. Le ferite non ci sono più. Siete in piedi in un bosco. Gli alberi sono vecchi, le radici grosse come un uomo sdraiato, e l'aria sa di foglie marce e di fumo lontano. Il sole è già dietro il crinale. Uno di voi ha le ginocchia bagnate e non si ricorda di essere caduto.
 
 **Prompt (EN)**
 ```text
@@ -845,15 +1569,95 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 37 · SCENA 2 — Thorgrim Barbadiferro e gli Antenati [FAST-PLAY — assorbita in 1-bis se giochi le scene complete]  `[scena-2-thorgrim-barbadiferro-e-gli-antenati-fast-play-assor]`
+### 73 · SCENA 1 — Il portale e il bosco al tramonto  `[scena-1-il-portale-e-il-bosco-al-tramonto-2]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 1 — Il portale e il bosco al tramonto
+- **Etichetta regia**: LotR lead — la fortezza, da lontano
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> A ovest, fra i tronchi, si vedono le torri di una fortezza che conoscete, più basse di come le ricordate. Più in là, verso sud, i fuochi dell'orda cominciano ad accendersi uno alla volta, e non finiscono. Sopra le mura gira un'ombra con le ali. Fa un cerchio lento, poi un altro, e non scende.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 74 · SCENA 2 — La pattuglia di Durin  `[scena-2-la-pattuglia-di-durin]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 2 — La pattuglia di Durin
+- **Etichetta regia**: Andor lead — il bosco
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Fra gli abeti sale una nebbia bassa, e il sentiero scende verso le mura. Dal sottobosco si alzano sette elmi: sette nani in armatura completa, gli scudi accostati, le asce basse. Quello davanti è più vecchio degli altri e stringe l'ascia così forte che ha le nocche bianche, e da lontano arriva il tonfo sordo dei tamburi dell'orda. Poi il vecchio grida, e la voce gli scappa in alto: «Fermi, chi siete?» Che fate?
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 75 · SCENA 3 — La porta e la targa di bronzo  `[scena-3-la-porta-e-la-targa-di-bronzo]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 3 — La porta e la targa di bronzo
+- **Etichetta regia**: LotR lead — la porta, deep time al contrario
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Conoscete Hammerfist: le sale annerite dai secoli, le statue consumate, i nomi dei re incisi e reincisi. Questa Hammerfist non ha ancora storia. Le mura sono bianche di pietra appena tagliata, gli spigoli ancora vivi, e nel cortile c'è la statua di un re, una sola. Dietro le mura le forge battono giorno e notte. Accanto al battente è appesa una targa di bronzo lucida come una pentola nuova, e sotto, sul selciato, qualcosa luccica.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 76 · SCENA 3 — La porta e la targa di bronzo  `[scena-3-la-porta-e-la-targa-di-bronzo-2]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 3 — La porta e la targa di bronzo
+- **Etichetta regia**: Casa di Davide lead — la targa
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> «Quando il nero verrà dal cielo e il ferro dal piano, quattro eroi dal fuoco e dalla pietra staranno sulle mura. Uno porta la pietra in fronte, uno il fuoco nei pugni. Uno tiene in mano la luce e l'ombra, e una ha passato la morte. Moradin li ha visti.»
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 77 · SCENA 4 — Il consiglio di guerra di Re Thorek I  `[scena-4-il-consiglio-di-guerra-di-re-thorek-i]`
 
 - **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 4 — Il consiglio di guerra di Re Thorek I
-- **Etichetta regia**: .
+- **Etichetta regia**: Casa di Davide lead — la sala del consiglio, il re
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Vi conducono da Thorgrim Barbadiferro, antico portatore di Aegis Fang, e da Re Thorek I. Il vecchio guerriero fissa la Corona sulla vostra fronte: «Quella gemma… mio nonno la perse contro Skullcrusher. Se dite il vero, mostratela.» Aegis Fang, nelle vostre mani e nelle sue, canta la stessa nota — a mille anni di distanza.
+> Lungo il corridoio i bambini e i vecchi scendono verso le miniere con un fagotto ciascuno, e al vostro passaggio la gente smette di parlare. La sala è lunga quanto una strada, e i pilastri sono ancora bianchi. In fondo, su un seggio di pietra fredda senza cuscino, c'è un nano vecchissimo in armatura. Tiene una grande ascia appoggiata al ginocchio, e sulla lama c'è un disegno di brina che non si scioglie. Il vecchio si alza piano, un pezzo alla volta, come si carica un carro, e guarda solo la fronte di chi porta la corona. Sulla panca accanto, un altro vecchio resta seduto.
 
 **Prompt (EN)**
 ```text
@@ -865,15 +1669,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 38 · SCENA 3 — Infiltrazione e Zog'tar [FAST-PLAY / COMBATTIMENTO COMPLETO]  `[scena-3-infiltrazione-e-zog-tar-fast-play-combattimento-comp]`
+### 78 · SCENA 4 — Il consiglio di guerra di Re Thorek I  `[scena-4-il-consiglio-di-guerra-di-re-thorek-i-2]`
 
-- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENE 7-8 — La tenda del comando, Zog'tar
-- **Etichetta regia**: .
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 4 — Il consiglio di guerra di Re Thorek I
+- **Etichetta regia**: Mercer lead, Casa di Davide support — il vecchio sulla panca
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Notte. Diecimila nemici dormono attorno a mille fuochi. Vi muovete invisibili tra le tende verso quella, enorme, di pelle nera e ossa di nani: la tenda del generale Zog'tar Deatheye. Un passo falso e il mare si sveglia tutto insieme. Ma se cade lui, il coro di diecimila perde il direttore.
+> Il vecchio sulla panca non si è mosso. Tiene le mani aperte verso la luce, i palmi in su, e sono mani che hanno tenuto la stessa ascia di Thorik: si vede dal callo, nello stesso punto. Guarda la corona sulla fronte di Thorik per il tempo di tre respiri. Poi gli occhi gli si riempiono, e lui non se ne accorge, perché sta già parlando, e la voce non trema: «Mio nonno ha perso la corona. L'ascia no. Se dite il vero, fatemi tenere la vostra.»
 
 **Prompt (EN)**
 ```text
@@ -885,15 +1689,375 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 39 · SCENA 4 — Le Mura sotto Assalto (alba)  `[scena-4-le-mura-sotto-assalto-alba]`
+### 79 · SCENA 4 — Il consiglio di guerra di Re Thorek I  `[scena-4-il-consiglio-di-guerra-di-re-thorek-i-3]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 4 — Il consiglio di guerra di Re Thorek I
+- **Etichetta regia**: Mercer lead — le due prese
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> L'ascia passa da una mano all'altra, e per un istante le due prese si toccano sul legno. E il legno suona.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 80 · SCENA 5 — La notte nella fortezza  `[scena-5-la-notte-nella-fortezza]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 5 — La notte nella fortezza
+- **Etichetta regia**: LotR lead — i quartieri ospiti
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Una sala bassa e fredda, scavata nella roccia: il soffitto porta ancora i colpi dello scalpello, dritti e fitti come le righe di un registro. Sei brande di legno nuovo lungo il muro, e su ognuna una coperta piegata in quattro da qualcuno che aveva fretta. In fondo un focolare che tira male. Nel soffitto c'è una crepa chiusa col piombo, e sotto non ci dorme nessuno. Dalla porta aperta entra il rumore della fortezza che non dorme: martelli, passi, un bambino che piange e poi smette.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 81 · SCENA 5 — La notte nella fortezza  `[scena-5-la-notte-nella-fortezza-2]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 5 — La notte nella fortezza
+- **Etichetta regia**: Casa di Davide lead — la cappella
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Al posto dell'altare c'è un'incudine vecchia, portata giù dalla prima forgia, e intorno ai piedi la pietra è consumata a conca da generazioni di ginocchia. Venti chierici dormono seduti, con la schiena al muro freddo, per essere già in piedi quando li chiameranno. Una sola è sveglia: conta fiale su un panno in un sussurro, e ricomincia da capo ogni volta che arriva a trenta.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 82 · SCENA 5 — La notte nella fortezza  `[scena-5-la-notte-nella-fortezza-3]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 5 — La notte nella fortezza
+- **Etichetta regia**: Andor lead — la bottega
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Una porta bassa, foderata di piombo. Dentro l'aria sa di zolfo e punge gli occhi. Sul banco, in fila come soldati, fiasche di terracotta tappate con la cera, e sotto il banco una cassa di sabbia per quando qualcosa va storto. Una nana senza sopracciglia riempie una fiasca col cucchiaio, piano. A metà il cucchiaio le trema, e lei ride.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 83 · I Treant: come lo viene a sapere Hella, e dove possono andare [CANONE — DM 2026-10-12, D54]  `[i-treant-come-lo-viene-a-sapere-hella-e-dove-possono-andare]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — I Treant: come lo viene a sapere Hella, e dove possono andare [CANONE — DM 2026-10-12, D54]
+- **Etichetta regia**: Andor lead — le gallerie
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Sotto la fucina il caldo finisce di colpo. Le gallerie sono strette, puntellate con travi nuove che sanno ancora di resina, e ogni dieci passi una lampada a olio fa il suo cerchio di luce e poi niente. Sulle pareti ci sono segni a gesso, e metà sono stati cancellati col pollice. Da un punto più in fondo arriva il suono paziente di un martelletto su pietra.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 84 · ⚒️ La fucina di notte — Gunnvor, e lo scambio (1 tacca)  `[la-fucina-di-notte-gunnvor-e-lo-scambio-1-tacca]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — ⚒️ La fucina di notte — Gunnvor, e lo scambio (1 tacca)
+- **Etichetta regia**: Salvatore lead, Andor support — la fucina e il banco
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> La fucina è l'unico posto della fortezza dove nessuno parla sottovoce, e l'aria sa di carbone e di scoria. Davanti a tre forge accese aspettano file di ragazzi con quello che hanno trovato: un piccone, una vanga, la spada del padre. Una nana con le braccia bruciate fino al gomito guarda ogni lama di taglio contro la brace e la mette in uno di due mucchi, senza dire quale sia il buono. Sul banco dietro di lei, poco: qualche fiasca chiusa con la cera, un mazzo di frecce, un'ascia avvolta in un panno grigio che nessuno tocca. La nana non smette di lavorare quando la porta si apre. Alza il mento v
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 85 · SCENA 6 — Il mare di tende  `[scena-6-il-mare-di-tende]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 6 — Il mare di tende
+- **Etichetta regia**: Andor lead — la postierla
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> A notte fonda si apre una feritoia bassa nella roccia viva, di quelle che gli esploratori usano da sempre e che nessun cronista mette per iscritto. Il fiato esce bianco nel freddo. Durin vi accompagna fino all'imboccatura, vi mette una mano guantata sul braccio, apre la bocca e la richiude.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 86 · SCENA 6 — Il mare di tende  `[scena-6-il-mare-di-tende-2]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 6 — Il mare di tende
+- **Etichetta regia**: Salvatore lead — il campo
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Fuori dalle mura il buio è vivo. Diecimila fra orchetti, hobgoblin e cose peggiori dormono attorno a mille fuochi, e il campo si stende fino all'orizzonte: un mare in cui ogni onda è una gola che russa. L'aria sa di grasso bruciato, di ferro e di bestia, e da qualche parte, al centro, c'è la tenda del generale. Fra i fuochi passano le ronde, e lontano ulula un lupo. Un passo falso, e il mare si sveglia tutto insieme. Che fate?
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 87 · ✈️ Variante — dall'alto, invisibili e in silenzio  `[variante-dall-alto-invisibili-e-in-silenzio]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — ✈️ Variante — dall'alto, invisibili e in silenzio
+- **Etichetta regia**: Salvatore lead — il volo
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Da quassù il campo è una brace sparsa sulla piana. I fuochi mandano tutti lo stesso odore di grasso, e nessuno, laggiù, guarda in alto. Un russare sale fin qui, forte come se venisse dalla tenda accanto. Poi la pietra fa il suo lavoro, e il mondo si spegne: niente russare, niente vento, nemmeno il fiato.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 88 · SCENA 7 — La tenda del comando  `[scena-7-la-tenda-del-comando]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 7 — La tenda del comando
+- **Etichetta regia**: Andor lead — la tenda
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Al centro del campo, una tenda più alta delle altre, di pelle nera, con ossa ai tiranti che battono nel vento. Le pattuglie qui non passano. Dentro si ride.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 89 · SCENA 7 — La tenda del comando  `[scena-7-la-tenda-del-comando-2]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 7 — La tenda del comando
+- **Etichetta regia**: Salvatore lead — dentro
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Fa caldo, e c'è puzza di sangue secco e di carne mezza cruda. Sulla tavola, una mappa di Hammerfist piena di croci rosse. In fondo, su un seggio di vertebre e di teschi inchiodati, c'è un mezzo-ogre grande quanto una porta di stalla. Ha una pietra nera al posto dell'occhio destro e l'ascia appoggiata alla spalla. Racconta alle guardie come impalerà il re sul bastione più alto, e ride da solo. Quattro hobgoblin in armatura nera ascoltano, le mani sulle armi.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 90 · ⚖️ Il grigio — perché crede di aver ragione (pilastro GoT)  `[il-grigio-perche-crede-di-aver-ragione-pilastro-got]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — ⚖️ Il grigio — perché crede di aver ragione (pilastro GoT)
+- **Etichetta regia**: Andor lead — il primo incontro, 1 di 3, poi FERMATI
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> In fondo alla tenda, dove la luce dei bracieri non arriva, un vecchio è seduto su uno sgabello da bottega. Grembiule di cuoio. Sulle ginocchia una lastra di ardesia che sta incidendo con una punta di ferro, piano, come se fuori non ci fossero diecimila tende e un drago.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 91 · ⚖️ Il grigio — perché crede di aver ragione (pilastro GoT)  `[il-grigio-perche-crede-di-aver-ragione-pilastro-got-2]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — ⚖️ Il grigio — perché crede di aver ragione (pilastro GoT)
+- **Etichetta regia**: Andor lead — 2 di 3, dopo che qualcuno ha reagito
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Alza la testa e vi guarda lentamente, uno per uno. Sulla gemma del vostro capo si ferma un istante di troppo. Poi torna a incidere. Non chiama la guardia.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 92 · ⚖️ Il grigio — perché crede di aver ragione (pilastro GoT)  `[il-grigio-perche-crede-di-aver-ragione-pilastro-got-3]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — ⚖️ Il grigio — perché crede di aver ragione (pilastro GoT)
+- **Etichetta regia**: Andor lead — 3 di 3, solo quando il silenzio diventa scomodo
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Il vecchio parla piano, da artigiano, senza fretta: «Quella corona la finirono con tre gemme. Tu ne hai due.» Un colpo di punta sull'ardesia. «Quindi non è oggi.»
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 93 · Come si combatte, se si arriva a combatterlo  `[come-si-combatte-se-si-arriva-a-combatterlo]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — Come si combatte, se si arriva a combatterlo
+- **Etichetta regia**: Salvatore
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Tre rune nane, tutte spezzate a metà dallo stesso colpo di punta. Sotto, inciso più a fondo, un nome: Hald. Poi una freccia, verso nord.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 94 · SCENA 8 — Zog'tar  `[scena-8-zog-tar]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 8 — Zog'tar
+- **Etichetta regia**: Salvatore lead — la tenda, il seggio
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Il mezzo-ogre si alza dal seggio, e i teschi inchiodati sbattono fra loro come nacchere. Non grida subito. Prima gira la testa, e la pietra nera dove dovrebbe esserci l'occhio si ferma sul più vicino di voi. Poi l'ascia scende dalla spalla. Che fate?
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 95 · SCENA 9 — Vatore, fra le tende  `[scena-9-vatore-fra-le-tende]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 9 — Vatore, fra le tende
+- **Etichetta regia**: Andor lead — fra le tende, l'incontro che non capiscono
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Tra due tende c'è un uomo che non è dell'orda. Veste ombre cucite bene, e stringe al petto qualcosa avvolto in un panno. Non attacca. E non scappa, non subito. Vi fissa come si fissa una cosa che non dovrebbe esistere, e sussurra, più a sé stesso che a voi: «…quattro. Eravate davvero in quattro.» Poi gli torna la maschera: un sorriso freddo, e un passo indietro verso l'ombra. Che fate?
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 96 · SCENA 9 — Vatore, fra le tende  `[scena-9-vatore-fra-le-tende-2]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 9 — Vatore, fra le tende
+- **Etichetta regia**: Andor lead — l'anello
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Artemis, l'anello che porti al dito è diventato gelido.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 97 · SCENA 10 — Le mura all'alba  `[scena-10-le-mura-all-alba]`
 
 - **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 10 — Le mura all'alba
-- **Etichetta regia**: .
+- **Etichetta regia**: Salvatore lead, LotR support — le mura
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> All'alba l'orda si getta contro le mura. Voi siete quattro, ma dove vi gettate la linea tiene.
+> Il primo ariete arriva alle mura che il sole non è ancora sopra il crinale, e il legno prende la pietra con un rimbombo che arriva allo sterno prima che alle orecchie. Il camminamento vi si muove sotto i piedi di un dito. Un nano accanto a voi si sputa nelle mani e riprende l'ascia senza dire niente; quello dopo di lui ha la barba incastrata nella cinghia dell'elmo, e non ha il tempo di liberarla. In basso, le scale salgono. Che fate?
 
 **Prompt (EN)**
 ```text
@@ -905,15 +2069,175 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 40 · SCENA 6 — Il Rubino e il Ritorno  `[scena-6-il-rubino-e-il-ritorno]`
+### 98 · SCENA 10 — Le mura all'alba  `[scena-10-le-mura-all-alba-2]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 10 — Le mura all'alba
+- **Etichetta regia**: Salvatore lead — il camminamento
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Il camminamento è largo quanto un tavolo da pranzo e lungo quanto la fortezza. Sotto, l'orda non urla più: ha smesso quando ha cominciato a salire, e il silenzio che ha lasciato è peggio. Un uncino morde la pietra a tre passi da voi, poi un altro, poi sei insieme. Il capitano delle mura guarda voi, non i suoi. Che fate?
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 99 · SCENA 11 — Il duello con Skullcrusher  `[scena-11-il-duello-con-skullcrusher]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 11 — Il duello con Skullcrusher
+- **Etichetta regia**: Salvatore lead — il cortile
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Prima arriva il freddo: passa un'ombra, e l'aria del cortile perde dieci gradi in un respiro, e la pelle lo sa prima di voi. Poi il rumore, un risucchio come quello del mare che si tira indietro, e le braci della forgia si piegano tutte nella stessa direzione. Un nano vicino a voi lascia cadere lo scudo e non si china a raccoglierlo. Dove il drago passa basso, la pietra fuma. L'acido gli cola dalle fauci chiuse e si mangia il selciato come acqua nella neve. Che fate?
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 100 · SCENA 11 — Il duello con Skullcrusher  `[scena-11-il-duello-con-skullcrusher-2]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 11 — Il duello con Skullcrusher
+- **Etichetta regia**: Mercer lead — la visione, solo per Thorik
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Per un istante la Corona ti mostra due immagini sovrapposte: questo drago adesso, e un altro drago sopra mura che bruciano, mura che non hai mai visto.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 101 · Tattiche di Skullcrusher — regia round per round (stile RHoD, aggancio M7-B)  `[tattiche-di-skullcrusher-regia-round-per-round-stile-rhod-ag]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — Tattiche di Skullcrusher — regia round per round (stile RHoD, aggancio M7-B)
+- **Etichetta regia**: Salvatore lead — la runa sotto la scaglia
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Sotto la scaglia calda del petto, più pallida delle altre, corrono righe di rune naniche incise a punta, fitte come i conti di un mercante. L'ultima riga è più piccola e più fonda delle altre, ed è quella che il drago non ha mai letto.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 102 · La scena, i primi tre momenti  `[la-scena-i-primi-tre-momenti]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — La scena, i primi tre momenti
+- **Etichetta regia**: LotR lead — l'incudine, e l'incasso che si chiude
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> L'altare è un'incudine, e si vede: il piano è segnato da mille anni di martelli. Intorno, il cortile è pieno di feriti. Nessuno l'ha toccata, eppure sul ferro, dove un attimo fa non c'era niente, adesso c'è una pietra rossa grande come una noce, calda come se uscisse in quel momento dal fuoco. I nani più vicini fanno un passo indietro, e nessuno spiega niente. Tutti guardano la corona, e l'incasso vuoto si riempie. La pietra nuova non si mescola alla luce delle altre due: batte da sola, come un secondo cuore, e tira verso un punto che nessuno nel cortile vede. Il metallo si scalda contro la fr
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 103 · La scena, i primi tre momenti  `[la-scena-i-primi-tre-momenti-2]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — La scena, i primi tre momenti
+- **Etichetta regia**: Mercer lead — l'ascia prende la parola
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> L'ascia si scalda nella mano di Thorik, e non è il calore della forgia. Per la prima volta in tre anni si fa sentire senza che nessuno l'abbia interrogata. Nel cortile nessuno guarda le armi.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 104 · Momento 4 — l'Aura della Forgia Eterna [CANONE — DM 2026-09-20]  `[momento-4-l-aura-della-forgia-eterna-canone-dm-2026-09-20]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — Momento 4 — l'Aura della Forgia Eterna [CANONE — DM 2026-09-20]
+- **Etichetta regia**: LotR lead — l'aura
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Il vecchio accanto all'incudine alza la testa e guarda la luce dietro Thorik. In tutto il cortile i feriti smettono di essere feriti: un fabbro con una gamba sola si tira su contro il muro, il muro gli si apre sotto la mano come argilla, e lui ci infila la gamba e resta in piedi. Nessuno grida. Ottocento nani guardano un nano con una corona, e per un lungo momento, nel cortile, c'è solo il respiro della forgia.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 105 · Momento 5 — il torque del re [CANONE — DM 2026-10-11]  `[momento-5-il-torque-del-re-canone-dm-2026-10-11]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — Momento 5 — il torque del re [CANONE — DM 2026-10-11]
+- **Etichetta regia**: Casa di Davide lead — il torque
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Il re si fa avanti, e per la prima volta da ieri sera non ha l'ascia in pugno. Porta le mani al collo e apre il fermaglio: oro vecchio, ritorto come una corda, consumato liscio dove la barba lo sfrega da cent'anni. Non chiama il sergente. Lo chiude lui attorno al collo di Thorik, e il metallo è ancora caldo del re.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 106 · SCENA 13 — Il Rubino e il ritorno  `[scena-13-il-rubino-e-il-ritorno]`
 
 - **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 13 — Il Rubino e il ritorno
-- **Etichetta regia**: Casa di Davide — la profezia compiuta).
+- **Etichetta regia**: Casa di Davide lead — l'incudine, 1 di 3: la profezia compiuta
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> L'orda, senza generale e senza drago a spronarla, si sfalda come sabbia. Hammerfist regge. E sulla vostra fronte il Rubino — la terza gemma, muta da sempre — si accende per la prima volta, e la sua luce è calda come sangue e antica come la pietra: «Cuore della Leggenda». La vittoria che credevate storia era la vostra, adesso, con le vostre mani. Non avete cambiato il passato. Il passato ha sempre avuto il vostro volto. La luce del Rubino vi avvolge — e vi strappa via, verso casa, verso una fortezza che brucia mille anni più in là.
+> L'orda, senza generale e senza drago a spronarla, si sfalda come sabbia, e Hammerfist regge. All'incudine il Rubino ha preso la luce; adesso, sulla fronte di Thorik, la dà: calda come sangue, e non si abbassa. Un nano vicino alla forgia si toglie l'elmo e non sa perché.
 
 **Prompt (EN)**
 ```text
@@ -925,28 +2249,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 41 · §4 — BOSS: SKULLCRUSHER IL NERO (il duello — unico scontro tattico)  `[4-boss-skullcrusher-il-nero-il-duello-unico-scontro-tattico]`
+### 107 · SCENA 13 — Il Rubino e il ritorno  `[scena-13-il-rubino-e-il-ritorno-2]`
 
-- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — §4 — BOSS: SKULLCRUSHER IL NERO (il duello — unico scontro tattico)
-- **Etichetta regia**: Salvatore — l'ingresso del mostro).
-- **Destinatario**: `dm` fino al duello, poi `pg` · **Formato**: `16:9 splash`
-- **Stato**: 🟡 generata con Canva AI il 2026-09-25, nel repo come `Immagini/tavola-skullcrusher-nel-cortile.webp` (1600 × 899) con la derivata in `web/`. **Difetto noto**: il cane di Hella è una bestia massiccia di pietra, non il levriero Durik. Si vede di spalle e piccolo; da rigenerare se il DM lo vuole fedele
-
-> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Il cielo si spezza. Skullcrusher il Nero cala come una montagna alata, e l'acido gli sfrigola dalle fauci prima ancora che apra la bocca. Dove atterra, la pietra fuma. Aegis Fang urla nella mente di Thorik — non canta, URLA: «SANGUE ANTICO. ARTEFICE DI LACRIME. IL PRIMO NERO.» E la Corona vi mostra due immagini sovrapposte, tremanti l'una sull'altra: questo drago, adesso — e Fauci di Palude, mille anni nel futuro, sopra le mura di una Hammerfist che brucia. Sono lo stesso sangue. E voi state per insegnare a quel sangue, per la prima volta, che cosa vuol dire aver paura.
-
-**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-skullcrusher-nel-cortile` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
-**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
-
-### 42 · §5 — VATORE (Sal a −1000: la scena grigia + la sincronizzazione)  `[5-vatore-sal-a-1000-la-scena-grigia-la-sincronizzazione]`
-
-- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — §5 — VATORE (Sal a −1000: la scena grigia + la sincronizzazione)
-- **Etichetta regia**: Andor lead — l'incontro che non capiscono).
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 13 — Il Rubino e il ritorno
+- **Etichetta regia**: Salvatore — l'incudine, 2 di 3: il canto
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Tra due tende, un uomo. Non è dell'orda: veste ombre cucite bene, e stringe al petto qualcosa avvolto in un panno. Vi guarda — e nei suoi occhi non c'è l'odio del nemico: c'è TERRORE. Il terrore di chi ha appena visto un mito camminare. Non attacca. Non scappa nemmeno, subito. Vi fissa come si fissa qualcosa che non dovrebbe esistere, e sussurra, più a sé stesso che a voi: «…quattro. Eravate davvero in quattro.» Poi la maschera torna: un sorriso freddo, un passo indietro verso l'ombra. Artemis — il tuo Anello è diventato gelido. Quell'uomo non è di qui. Non di QUESTO tempo.
+> Poi la pietra prende fuoco. È un fuoco rosso e oro che non brucia: canta, una nota sola, lunga, che vi risuona nel cranio. Thorik sente nelle ossa una forza che non è sua, e davanti agli occhi gli passano dei lampi: il generale che cade nella tenda, due alberi in marcia che travolgono una fila di nemici, il momento in cui ognuno di voi ha scelto. La pietra li tiene tutti, uno per uno, come si tiene una cosa che servirà.
 
 **Prompt (EN)**
 ```text
@@ -958,15 +2269,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 43 · ZONA 1 — Lo Strappo fra le Ere (il ritorno)  `[zona-1-lo-strappo-fra-le-ere-il-ritorno]`
+### 108 · SCENA 13 — Il Rubino e il ritorno  `[scena-13-il-rubino-e-il-ritorno-3]`
 
-- **Fonte**: `ARC07-DEF-5-RITORNO-HAMMERFIST.md` — ZONA 1 — Lo Strappo fra le Ere (il ritorno)
-- **Etichetta regia**: Salvatore — il viaggio a ritroso).
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — SCENA 13 — Il Rubino e il ritorno
+- **Etichetta regia**: LotR lead — l'incudine, 3 di 3: la voce
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> La luce del Rubino vi avvolge, e il mondo si frantuma in rosso. Vi sentite allungare, strappare, compressi in un filo sottile di esistenza tirato attraverso mille anni. Non c'è dolore — solo una vertigine cosmica, e VITE che vi lampeggiano davanti al contrario: il drago che risale in cielo, Zog'tar che si rialza, le mura di Hammerfist che si anneriscono di secoli in pochi battiti, cinque generazioni che nascono e muoiono a ritroso. Vedete Thorek I diventare polvere, e la sua stirpe fiorire fino a un re che non conoscete ancora, curvo su un trono, che muore. Poi — pietra. Fuoco. Il rombo di una
+> Poi una voce, come una campana che batte una volta sola: «Ben fatto, figli miei. Avete salvato la fortezza come doveva accadere. Avete chiuso il cerchio.» Nessuno ha visto muoversi una bocca: la voce è nei denti, e ci resta. La luce comincia a tirare e vi porta via, verso casa, verso una fortezza che brucia mille anni più in là.
 
 **Prompt (EN)**
 ```text
@@ -978,15 +2289,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 44 · ZONA 2 — Il Cuore della Montagna (la caverna sacra sotto Hammerfist, 1372)  `[zona-2-il-cuore-della-montagna-la-caverna-sacra-sotto-hammer]`
+### 109 · SCENA 1 — Lo strappo fra le ere  `[scena-1-lo-strappo-fra-le-ere]`
 
-- **Fonte**: `ARC07-DEF-5-RITORNO-HAMMERFIST.md` — ZONA 2 — Il Cuore della Montagna (la caverna sacra sotto Hammerfist, 1372)
-- **Etichetta regia**: LotR + Salvatore — l'ultima resistenza).
+- **Fonte**: `ARC07-DEF-5-RITORNO-HAMMERFIST.md` — SCENA 1 — Lo strappo fra le ere
+- **Etichetta regia**: Salvatore lead — lo strappo, il filo
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Il Cuore della Montagna è la caverna più sacra di Hammerfist: l'altare di Moradin al centro, cinto da dieci statue dei re ancestrali con occhi di rubino, il fumo dei bracieri, il canto rotto dei chierici. Ma oggi è un mattatoio. Novanta nani — di trecento — reggono un semicerchio davanti alle porte di mithral che gemono sotto gli arieti. Re Thorek giace ai piedi dell'altare, la barba imbrattata di sangue e acido, il respiro un sibilo: il soffio del drago lo sta uccidendo, e Madre Dana prega su di lui con le mani che tremano. Le rune difensive sulle porte si spengono una a una. Fuori, migliaia 
+> Il rosso vi stringe in un filo tirato attraverso mille anni, e non fa male: è una vertigine calda, in cui le cose accadono al contrario. Il drago risale in cielo, il generale si rialza dalla polvere, le mura anneriscono di secoli in pochi battiti, e un re torna polvere mentre la sua stirpe arriva fino a un altro re, steso su una pietra. Poi fumo, e il rombo di una battaglia. Siete tornati, e siete tornati nel momento peggiore.
 
 **Prompt (EN)**
 ```text
@@ -998,15 +2309,15 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 45 · §3 — L'ACCENSIONE DEL RUBINO & IL RITORNO (la regia del salto)  `[3-l-accensione-del-rubino-il-ritorno-la-regia-del-salto]`
+### 110 · SCENA 2 — L'apparizione  `[scena-2-l-apparizione]`
 
-- **Fonte**: `ARC07-DEF-5-RITORNO-HAMMERFIST.md` — §3 — L'ACCENSIONE DEL RUBINO & IL RITORNO (la regia del salto)
-- **Etichetta regia**: Casa di Davide — la leggenda registrata).
+- **Fonte**: `ARC07-DEF-5-RITORNO-HAMMERFIST.md` — SCENA 2 — L'apparizione
+- **Etichetta regia**: LotR lead — la caverna, sotto la luce
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Sulle mura di Hammerfist antica, all'alba, il sole colpisce la Corona. Topazio. Smeraldo. E il Rubino — finora nero come ossidiana — prende fuoco: un fuoco rosso-oro che non brucia ma CANTA, una nota pura e lunga che risuona nel cranio di tutti. Thorik sente nelle ossa una forza che non è sua, e vede dei flash — Zog'tar che cade, i Treant di Hella che travolgono una linea di ogre, il momento in cui ognuno di voi ha scelto. Il Rubino li registra tutti. Li trasforma in LEGGENDA. E la voce di Moradin, questa volta, non è un sussurro: è una campana che rintocca. «BEN FATTO, FIGLI MIEI. AVETE SALVA
+> Sotto la luce che vi porta si apre una caverna grande come una cattedrale. Le stalattiti fanno luce da sole, fredda, fino agli angoli. Al centro c'è un altare di basalto, e intorno dieci statue di re con gli occhi di rubino. A nord le porte di mithral gemono sotto gli arieti, e le rune incise sui battenti si spengono una alla volta.
 
 **Prompt (EN)**
 ```text
@@ -1018,15 +2329,135 @@ artisti viventi]
 **Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
 **Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
-### 46 · §4 — LA MANIFESTAZIONE (l'arrivo che ribalta la disfatta) — il momento corale  `[4-la-manifestazione-l-arrivo-che-ribalta-la-disfatta-il-mome]`
+### 111 · SCENA 2 — L'apparizione  `[scena-2-l-apparizione-2]`
 
-- **Fonte**: `ARC07-DEF-5-RITORNO-HAMMERFIST.md` — §4 — LA MANIFESTAZIONE (l'arrivo che ribalta la disfatta) — il momento corale
-- **Etichetta regia**: Salvatore — l'apparizione).
+- **Fonte**: `ARC07-DEF-5-RITORNO-HAMMERFIST.md` — SCENA 2 — L'apparizione
+- **Etichetta regia**: Andor lead — la caverna, l'ultima resistenza
 - **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
 - **Stato**: ⬜ prompt da scrivere
 
 > *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
-> Le porte di mithral gemono l'ultimo lamento. Le rune si spengono. Gli orchi urlano «SFONDATELE!» e le porte si aprono con un BOOM. E in quell'istante, al centro della caverna, sopra l'altare di Moradin, LUCE. Non luce normale: luce DIVINA. Oro, verde, rosso — i tre colori spiraleggiano in una sfera di metallo fuso che levita e pulsa come un cuore. Tutti — nani e nemici — si bloccano. Madre Dana sussurra, la voce rotta di speranza: «La profezia… la Corona di Adamantio… sono… TORNATI.» E la sfera si apre. Quattro figure toccano l'altare coi piedi. Quando la luce si dissipa — VOI. I Rumbling Ston
+> Oggi la caverna è un mattatoio: novanta nani, di trecento, fanno muro davanti all'altare, e la prima fila guarda le porte. Sull'altare è steso un re, la barba impastata di sangue e d'acido, il respiro un sibilo. Una sacerdotessa anziana prega su di lui, e le mani le tremano. È il terzo giorno, l'ora in cui la fortezza doveva cadere. Le porte di mithral cedono con un colpo solo, e gli orchi entrano urlando. In quell'istante, sopra l'altare, la luce: oro, verde e rosso che girano in una sfera di metallo fuso che pulsa come un cuore.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 112 · SCENA 2 — L'apparizione  `[scena-2-l-apparizione-3]`
+
+- **Fonte**: `ARC07-DEF-5-RITORNO-HAMMERFIST.md` — SCENA 2 — L'apparizione
+- **Etichetta regia**: Salvatore lead — la caverna, sono tornati
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Nani e orchi si fermano nello stesso respiro. Nel silenzio la sacerdotessa alza la testa, e dice piano: «Sono tornati.»
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 113 · SCENA 2 — L'apparizione  `[scena-2-l-apparizione-4]`
+
+- **Fonte**: `ARC07-DEF-5-RITORNO-HAMMERFIST.md` — SCENA 2 — L'apparizione
+- **Etichetta regia**: Mercer lead — la caverna, voi
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> La sfera si apre, e i vostri piedi toccano la pietra dell'altare. Sulla fronte di Thorik brillano tre gemme e l'ascia canta una nota di guerra che risuona nella pietra; i pugni di Tordek ardono, l'anello di Artemis pulsa fra luce e ombra, intorno a Hella spuntano dalla pietra radici di cristallo. Novanta nani rialzano la testa tutti insieme, e gli orchi no. Che fate?
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 114 · La Corona si completa, dopo l'uso [CANONE — DM, D6]  `[la-corona-si-completa-dopo-l-uso-canone-dm-d6]`
+
+- **Fonte**: `ARC07-DEF-5-RITORNO-HAMMERFIST.md` — La Corona si completa, dopo l'uso [CANONE — DM, D6]
+- **Etichetta regia**: Salvatore lead — la corona intera
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> La pietra nuova ha smesso di battere da sola. Per la prima volta da quando Thorik l'ha in testa, l'oro torna indietro da tutte e tre le pietre, e la luce che ne esce non è di nessuna delle tre: è di quello che adesso sono insieme. Il metallo gli si raffredda contro la fronte, e resta caldo come una mano.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 115 · SCENA 3 — La pulizia e il passaggio  `[scena-3-la-pulizia-e-il-passaggio]`
+
+- **Fonte**: `ARC07-DEF-5-RITORNO-HAMMERFIST.md` — SCENA 3 — La pulizia e il passaggio
+- **Etichetta regia**: Salvatore lead — la caverna, il primo round
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Gli orchi scappano verso la porta, e ne restano due, con le lame alte e le gambe che tremano. Dietro i fuggiaschi, nel varco, compare uno scudo, poi un altro: una fila che non scappa e non urla, e avanza al passo, in silenzio. Un fischio, e gli scudi si chiudono. Che fate?
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 116 · Se i PG…  `[se-i-pg]`
+
+- **Fonte**: `ARC07-DEF-5-RITORNO-HAMMERFIST.md` — Se i PG…
+- **Etichetta regia**: Andor lead — la caverna, il silenzio
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> L'ultimo nemico sparisce nel corridoio nord, e il rumore se ne va con lui. Restano il fumo dei bracieri, il respiro dei feriti, e novanta nani che guardano voi e non sanno cosa dire. Poi il re, da terra, alza un braccio verso il soffitto.
+
+**Prompt (EN)**
+```text
+[DA SCRIVERE — vedi ADR-0015 §2: paragrafo scena + paragrafo direzione
+artistica; scala per paragone, materiali, luce, mood; niente nomi di
+artisti viventi]
+```
+
+**Da evitare**: `text, letters, watermark, signature, modern objects, cartoon`
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 117 · Il passaggio di consegne  `[il-passaggio-di-consegne]`
+
+- **Fonte**: `ARC07-DEF-5-RITORNO-HAMMERFIST.md` — Il passaggio di consegne
+- **Etichetta regia**: LotR lead — la caverna, il portale
+- **Destinatario**: `[da decidere: pg | dm]`  ·  **Formato**: `[16:9 splash | 3:4 handout | 1:1 token]`
+- **Stato**: ⬜ prompt da scrivere
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Dana prega per il tempo di un respiro, e sulla parete si apre un arco di luce dorata. Dall'altra parte entrano il vento e il fumo dei bastioni, con un odore di pietra bruciata. Lassù, attraverso la roccia, arriva un boato lungo, poi un altro, e Aegis Fang ha smesso di cantare: ascolta. Che fate?
 
 **Prompt (EN)**
 ```text
@@ -1041,6 +2472,84 @@ artisti viventi]
 ---
 
 ## Schede aggiunte a mano (oggetti, artefatti, ritratti)
+
+### 27 · §3 — IL CUORE DI MORADIN (rivelazione del reliquiario)  `[3-il-cuore-di-moradin-rivelazione-del-reliquiario]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §3 — IL CUORE DI MORADIN (rivelazione del reliquiario)
+- **Etichetta regia**: Salvatore — il sacro che si sente nel corpo
+- **Destinatario**: `pg` **dopo** il box del §3 · **Formato**: `16:9 splash`
+- **Stato**: ✅ generata con Canva AI il 2026-09-25, nel repo come `Immagini/tavola-cuore-di-moradin.jpg` (1600 × 899). **Sostituisce `ilCuoreDiMoradin.png` al §3**: il box dice che il Cuore sta *dentro* l'Altare che si apre, e la vecchia immagine lo mette sopra. La vecchia resta per la copertina del booklet e per `DEF-2` e `DEF-5`
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Thorik, posi le mani sulla superficie di mithral, e l'Altare SI APRE. Non c'erano cuciture, un istante fa: ora una camera interna di trenta centimetri si schiude come un fiore di metallo. Dentro, sospeso nella luce dorata, un cristallo di rubino sanguigno grande come il tuo pugno — e ha la forma ESATTA di un cuore nanico: quattro camere, i vasi visibili, tutto scolpito in rubino divino trasparente. E pulsa. Sessanta battiti al minuto. Il ritmo di un cuore a riposo. Quando lo sfiori, senti calore. Vita. Creazione pura. E capisci, senza che nessuno te lo dica, che questo si spenderà UNA volta so
+
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-cuore-di-moradin` (`serie=extra`) — stile del Drappo. Esiste già `ilCuoreDiMoradin.png`, che lo mostra sull'Altare; questa è la versione del reliquiario che si apre, fedele a `DEF-3` §3.
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 28 · §6 — IL DEBITO DELLA RADICE (il filo grigio del piano spirituale) [CANONE — DM 2026-07-23; il ramo (A/B/C) si gioca]  `[6-il-debito-della-radice-il-filo-grigio-del-piano-spirituale]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §6 — IL DEBITO DELLA RADICE (il filo grigio del piano spirituale) [CANONE — DM 2026-07-23; il ramo (A/B/C) si gioca]
+- **Etichetta regia**: GoT lead — la creditrice paziente
+- **Destinatario**: `dm` (la Custode non si mostra prima dello Step 5) · **Formato**: `3:4 handout`
+- **Stato**: ✅ generata con Canva AI il 2026-09-25, nel repo come `Immagini/tavola-custode-delle-radici.jpg` e in `DEF-3` §6, a 533 × 800: è la copia arrivata dalla chat, non l'originale Canva. Da sostituire con l'esportazione a piena risoluzione
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Nel momento in cui lo spirito di Hella varca la soglia tra i mondi, la luce dorata dell'Altare vacilla — e qualcos'altro è nella Sala con voi. Non un mostro: una PRESENZA. Ha la forma di una donna di radici e pietra, alta come Therysol, gli occhi due nodi di legno antico. Non è ostile. Non è gentile. È come la montagna: c'è, e aspetta. Parla, e la sua voce è il rumore di una faglia che si assesta: LA CUSTODE DELLE RADICI: «Una radice strappata lascia un vuoto. Il vuoto va colmato — è legge, non capriccio. Non oggi. Non con lei: il Forgiatore la protegge, e io non discuto col Forgiatore. Ma il 
+
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-custode-delle-radici` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 29 · §7 — IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)  `[7-il-risveglio-hella-torna-durik-si-lega-la-collana-nasce]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §7 — IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)
+- **Etichetta regia**: Salvatore — il ritorno
+- **Destinatario**: `pg` **dopo** la scena (è il ritorno: mostrarla prima lo brucia) · **Formato**: `16:9 splash`
+- **Stato**: ✅ generata con Canva AI il 2026-09-25, **seconda versione** (`MAHWL21y19U`); nel repo come `Immagini/tavola-risveglio-di-hella.jpg` (1600 × 899), in `DEF-3` §7
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Silenzio. Cinque secondi. Dieci. Il Cuore di Moradin, sopra il petto di Hella, rallenta: novanta battiti… sessanta… si ferma. E poi — lei INSPIRA. Netto. Improvviso. Profondo, come chi riemerge dall'acqua un istante prima di annegare. Il petto si alza. Ricade. RESPIRA. E gli occhi si aprono — non più marroni: ambra dorata. La pelle ha un sottotono di muschio pallido; tra i capelli rossi corre una venatura di corteccia sottile; e attorno a lei l'aria sa di terra bagnata e di linfa. È Hella. È cambiata. È VIVA.
+
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-risveglio-di-hella` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 31 · §7 — IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)  `[7-il-risveglio-hella-torna-durik-si-lega-la-collana-nasce-3]`
+
+- **Fonte**: `ARC07-DEF-3-RESURREZIONE-HELLA.md` — §7 — IL RISVEGLIO (Hella torna, Durik si lega, la Collana nasce)
+- **Etichetta regia**: Salvatore — il ritorno del fedele
+- **Destinatario**: `pg` dopo il risveglio · **Formato**: `3:4 handout` (è la copertina della scheda di Durik)
+- **Stato**: ✅ generata con Canva AI il 2026-09-25, **seconda versione** (`MAHWL6svafI`): Durik levriero in piedi, lo stesso di `durik2`. Nel repo come `Immagini/tavola-durik-e-hella.jpg` (533 × 800, copia della chat), copertina di `08-SCHEDA-DURIK`
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Prima che qualcuno possa rispondere, un rumore di pietra su pietra: il grande cane di mithral e roccia scura — quello che ha preso forma nel Piano della Terra e da allora non si è mai allontanato dal corpo — si fa avanti. Non abbaia: non sa più farlo. Appoggia la testa massiccia sul petto di Hella, gli occhi di topazio socchiusi, e resta così. Lei alza una mano tremante e la posa tra le sue orecchie di granito. «…Durik?» Il cane emette un suono che non è un verso: è il click lontano di una faglia che si assesta. È tornato anche lui. Non l'aveva mai davvero lasciata.
+
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-durik-e-hella` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 33 · ZONA 1 — La Fortezza Giovane (Hammerfist appena eretta)  `[zona-1-la-fortezza-giovane-hammerfist-appena-eretta]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — ZONA 1 — La Fortezza Giovane (Hammerfist appena eretta)
+- **Etichetta regia**: LotR lead — deep time al contrario
+- **Destinatario**: `pg` all'arrivo · **Formato**: `16:9 splash`
+- **Stato**: ✅ generata con Canva AI il 2026-09-25, in due immagini: `Immagini/tavola-hammerfist-giovane.jpg` per l'arrivo (Scena 1, i fuochi dell'orda) e `Immagini/tavola-hammerfist-giovane-porta.jpg` per la porta e la targa (Scena 3)
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Conoscete Hammerfist: le sue sale annerite dai secoli, le statue consumate, i nomi dei re incisi e riincisi. Ma QUESTA Hammerfist non ha ancora storia. Le mura sono bianche di pietra appena tagliata, gli spigoli ancora vivi. Le statue dei re sono una sola. E sulla porta, la targa di bronzo con la profezia dei Quattro Eroi è stata incisa OGGI, l'inchiostro del cesello ancora fresco. Camminate dentro la vostra stessa leggenda mentre viene scritta. È vertiginoso: ogni pietra che toccate, tra mille anni, la toccherete di nuovo — vecchia di un millennio.
+
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-hammerfist-giovane` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
+
+### 41 · §4 — BOSS: SKULLCRUSHER IL NERO (il duello — unico scontro tattico)  `[4-boss-skullcrusher-il-nero-il-duello-unico-scontro-tattico]`
+
+- **Fonte**: `ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` — §4 — BOSS: SKULLCRUSHER IL NERO (il duello — unico scontro tattico)
+- **Etichetta regia**: Salvatore — l'ingresso del mostro
+- **Destinatario**: `dm` fino al duello, poi `pg` · **Formato**: `16:9 splash`
+- **Stato**: 🟡 generata con Canva AI il 2026-09-25, nel repo come `Immagini/tavola-skullcrusher-nel-cortile.webp` (1600 × 899) con la derivata in `web/`. **Difetto noto**: il cane di Hella è una bestia massiccia di pietra, non il levriero Durik. Si vede di spalle e piccolo; da rigenerare se il DM lo vuole fedele
+
+> *Estratto sorgente (da cui ricavare il prompt — non è il prompt):*
+> Il cielo si spezza. Skullcrusher il Nero cala come una montagna alata, e l'acido gli sfrigola dalle fauci prima ancora che apra la bocca. Dove atterra, la pietra fuma. Aegis Fang urla nella mente di Thorik — non canta, URLA: «SANGUE ANTICO. ARTEFICE DI LACRIME. IL PRIMO NERO.» E la Corona vi mostra due immagini sovrapposte, tremanti l'una sull'altra: questo drago, adesso — e Fauci di Palude, mille anni nel futuro, sopra le mura di una Hammerfist che brucia. Sono lo stesso sangue. E voi state per insegnare a quel sangue, per la prima volta, che cosa vuol dire aver paura.
+
+**Prompt**: eseguibile in [`PROMPT-RITRATTI-E-TAVOLE-ARC07.md`](PROMPT-RITRATTI-E-TAVOLE-ARC07.md), `id=tavola-skullcrusher-nel-cortile` — stesso stile del Drappo di Tarsilia (look comune, ancora fiamminga, negativi). Si genera con `comfyui_batch.py --prompts`.
+**Note di coerenza d'arco**: vedi «Bibbia visiva» in testa a questo file.
 
 ### A1 · Lo Smeraldo della Forza (artefatto)  `[artefatto-smeraldo-della-forza]`
 
@@ -1078,26 +2587,6 @@ human hands, faceted gemstone cut like a jewel, cartoon, neon glow, bokeh hearts
 *«same world, same palette and lighting as the previous image»*.
 
 ---
-
-## Ritratti del cast di mille anni fa
-
-> Aggiunti il 2026-09-24 per il volume `homebrew/volume-mille-anni/`. Qui
-> stanno le **schede-personaggio**; i prompt eseguibili, nello **stile del
-> Drappo di Tarsilia** (832 × 1216, look comune e ancora fiamminga), stanno in
-> `PROMPT-RITRATTI-E-TAVOLE-ARC07.md`. Si genera prima **R5 Balvar** (è il volto che conta di più) e gli
-> altri chiedendo *«same painting style, same lighting as the previous
-> image»*. Il file si salva in `Immagini/ritratti/<nome>.jpg`, poi nella scheda
-> d'entrata di `ARC07-DEF-4` la riga «Ritratto» diventa
-> l'immagine. **Gate di rifiuto** (skill `rumblingstone-art-direction` §6): le
-> mani, la luce da sinistra, il segno del personaggio ben visibile, nessuna
-> scritta. Skullcrusher ha già la scheda **41**, la Custode la **28**.
->
-> ⚠️ **Cosa è canone.** Ruolo, abiti, armi e segno vengono dai master e dal
-> Bestiario. **I tratti del volto** sono canone anche loro, e li fissano i sette
-> ritratti in `Immagini/ritratti/`: dove una scheda e il ritratto non
-> coincidevano ha vinto il ritratto. Un ritratto nuovo si fa su queste schede.
-> L'arma resta quella dello statblocco anche quando il ritratto la disegna
-> diversa (Durin: ascia doppia nel master, a una lama nel ritratto).
 
 ### R1 · Durin Rocciadura  `[ritratto-durin-rocciadura]`
 

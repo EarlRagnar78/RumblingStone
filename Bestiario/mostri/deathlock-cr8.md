@@ -1,16 +1,21 @@
-# Deathlock (Ghostlord mage) [ACCEPTED — DM-canon 2026-05-05]
+# Deathlock (Ghostlord mage) [CANONE — DM 2026-05-05]
 **Faction**: ghostlord-undead | **Role**: arcane-caster | **Environment**: any | **CR**: 8 | **Source**: MM III Deathlock | **Status**: inferred
 
 
 ```statblocco
 gs: 8
 tipo: Medium undead HD 8d12 (52 HP)
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 17
 ca-dettaglio: (+3 Dex, +4 natural)
 pf: 52
 pf-dado: 8d12
 ts: Temp +2, Rifl +5, Vol +8
 attributi: For 12 Des 16 Cos — Int 15 Sag 14 Car 16
+voci:
+  - Tratti dei non morti
 ```
 
 > [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.

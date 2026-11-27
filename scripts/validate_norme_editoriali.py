@@ -215,7 +215,7 @@ NORME_SCOPERTE = (
         "norma": "npc-villain-boosting — EL <= APL+4, e oltre il tetto un `Boost log:`",
         "prerequisito": "gli incontri dichiarano il loro EL nella forma prescritta",
         "forma": r"\*\*EL\*\*:\s*\[?\d",
-        "dove": "AGENTS.md riga 352 prescrive `**EL**: [N]`",
+        "dove": "AGENTS.md (formato degli incontri) prescrive `**EL**: [N]`",
         "rilevatore_pronto": "validate_modules.py --tetto-el",
         "sblocca": "PIANO-MARCATURA-DEGLI-INCONTRI M1-M3",
     },
@@ -315,6 +315,17 @@ NORME_SCOPERTE = (
                 "tonico in posizione di soggetto dà 3 colpi in tutti i box, tutti cambi "
                 "di soggetto legittimi. Serve sapere chi era il soggetto prima",
         "rilevatore_pronto": None,
+        "sblocca": None,
+    },
+    {
+        "chiave": "chiusa_enfatica_resta",
+        "norma": "read-aloud-adulti.md §2-ter regola 3 — una riscrittura non toglie la "
+                 "chiusa enfatica (scelta propria del repo, editorial-standards.md §4-bis)",
+        "prerequisito": None,
+        "forma": None,
+        "dove": "manca lo **strumento**: quale frase finale «spiega» lo dice solo il "
+                "cieco fra due versioni dello stesso box (4 su 4 nel voto del 2026-10-22)",
+        "rilevatore_pronto": "cieco_versioni.py esito",
         "sblocca": None,
     },
     {

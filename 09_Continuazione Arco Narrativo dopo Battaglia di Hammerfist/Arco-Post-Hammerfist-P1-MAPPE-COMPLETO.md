@@ -269,7 +269,7 @@ Caster effettivo livello 7, CR 7.
 - BAB/Grapple: +5 / +6.  
 - Attacchi: arco lungo +9, 1d8+2; spada corta +7, 1d6+1.  
 - TS: Temp +6, Rif +6, Vol +2.  
-- Talenti: Tiro Rapido, Movimento Silenzioso migli.  
+- Talenti: Tiro Rapido. Abilità: Muoversi Silenziosamente (migliorata)  
 
 ---
 
@@ -290,7 +290,7 @@ Esempio Guerriero 6 (CR 6):
 - PF: ~63 (8d6+3d6+11).  
 - CA: 22 (armatura leggera + Des + eventuale anello).  
 - Attacchi: 2× pugnali o spade corte, furtivo +5d6.  
-- Talenti e capacità: Death Attack (studio 3 round, CD 18), Schivare Prodigioso, Evasione migliorata.  
+- Talenti e capacità: Death Attack (studio 3 round, CD 18), Schivare Prodigioso, Evasione Migliorata.  
 
 ---
 
@@ -311,4 +311,4 @@ Esempio Guerriero 6 (CR 6):
 
 ---
 
-Tutti i blocchi sono pensati come base 3.5 “pulita” su cui puoi rifinire dettagli di flavour, incantesimi precisi e equipaggiamento caso per caso.
+Tutti i blocchi sono pensati come base 3.5 “pulita” su cui puoi rifinire dettagli di flavour, incantesimi precisi ed equipaggiamento caso per caso.

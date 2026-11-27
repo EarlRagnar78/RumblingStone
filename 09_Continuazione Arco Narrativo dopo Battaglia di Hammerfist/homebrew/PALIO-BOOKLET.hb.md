@@ -1214,8 +1214,8 @@ tesoriere di Waukeen; guardie del tempio.
 
 **Read-aloud**
 > *Sethis parla piano, come se le parole costassero. — "Nel tempio del Denaro c'è un libro
-> che dice troppo. Portatemelo. O, se preferite… scrivetene uno che dica di meno." Sorride,
-> e capite che qualunque cosa facciate, lui ne guadagnerà.*
+> che dice troppo. Portatemelo. O, se preferite… scrivetene uno che dica di meno." Sorride
+> come chi ha già fatto i conti di tutte e due le strade, e li ha chiusi in attivo.*
 
 **Beat 1 — L'ingresso**: infiltrazione (Furtività DC 22) o inganno (Raggirare DC 22,
 travestiti da esattori) nel tempio. La cassaforte-archivio è dietro una **serratura** (Aprire
@@ -1718,6 +1718,14 @@ Il fantino è un mercenario: **corruttibile**. Durante la Cena:
   (Diplomazia: trattarlo da persona, non da strumento — molto Salvatore).
 - **Rapimento**: se la corruzione fallisce, i rivali tentano di **rapire** il fantino
   (combattimento urbano notturno, GS 10–11: 2–3 sicari + 1 mago di supporto).
+  Un solo rapimento a notte: lo fa chi arriva prima. Se i rivali hanno già preso il fantino,
+  i drow puntano solo al cavallo, anche se nella stalla dorme la riserva (§3.3, MAPPE); se
+  l'hanno preso i drow, i rivali non tentano.
+- **Posta — Fantino fuggito o rapito dai rivali** →
+  come per il rapimento dei drow (§3.3): se i PG non lo riprendono prima della corsa, corre il
+  **fantino di riserva**, e quella notte dorme lui nella stalla, accanto al box, al posto del
+  fantino (MAPPE); se i PG riprendono un fantino rapito, corre lui e vale «rapito e salvato»
+  per l'Onore del Fantino (§5).
 
 ### 3.3 Fronte C — La Stalla e i Drow di Sonjak *(aggancio campagna)*
 
@@ -1741,12 +1749,17 @@ Il **Barbaresco PG** difende il cavallo. Questa notte, **Matrona Sonjak** (clock
 invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/Torre,
 **corrompere/rapire** il fantino e **coprire** il trasbordo notturno delle statue al porto.
 
-- **L'incontro** (GS 11–12, mappa stalla in MAPPE): **2 Drow Assassini** (GS 9) + **1 Drow
+- **L'incontro** (EL 13, mappa stalla in MAPPE): **2 Drow Assassine di Lolth** (GS 10) + **1 Drow
   Chierica di Lolth** (GS 10) + un **innesto fungino** (Servitore della Spora, GS 3) come
-  ariete vivente. Tattica: buio magico, veleno CD 16, colpire il cavallo (non i PG).
+  ariete vivente. Tattica: buio magico; il cavallo col *sangue nero di Lolth* (Tempra CD 17, 1d6 Cos), il fantino paralizzato con l'Attacco Mortale (Tempra CD 17) e portato via; colpire il cavallo o rapire il fantino, a scelta del DM; gli altri PG non sono il bersaglio (STATBLOCCHI §3.1).
 - **Poste**:
-  - Cavallo avvelenato → **−4 Cavalcare** in corsa (o morte del cavallo → si corre scossi
-    o con una brenna di riserva).
+  - Cavallo avvelenato (fallisce la Tempra CD 17) → **−4 ai tiri di Zona** in corsa; con una
+    seconda dose muore → si corre scossi o con una brenna di riserva. Se supera la Tempra,
+    corre senza malus. È una regola della casa: per l'SRD due dosi non bastano sempre.
+  - Fantino rapito →
+    se i PG non lo riprendono prima della corsa, si corre con un fantino di riserva; se lo
+    riprendono, vale «rapito e salvato» per l'Onore del Fantino (§5).
+    Un solo rapimento a notte: se i rivali l'hanno già preso (§3.2), i drow puntano solo al cavallo.
   - **Catturare un drow vivo** → intel su **Fase 0 (Notte dei Drow)** di Rethmar e
     **−1 clock Sonjak** (INTEGRAZIONE §3.2).
   - Fallire del tutto → **+1 clock Sonjak**, e la coalizione parte demoralizzata.
@@ -1759,6 +1772,7 @@ invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/
 > frappone tra il veleno e la bestia è un momento eroico da incorniciare.
 
 ---
+
 
 ## 4. Sottotrame notturne opzionali (allungano a 4–5 sessioni)
 - **La Maledizione della Nonna**: la contrada che non vince da più tempo (a scelta del DM,
@@ -1960,7 +1974,7 @@ degli Otto** a Rethmar (INTEGRAZIONE §4).
 > il fumo e sussurra il nome di chi ha perso a Drellin's Ferry. Il Palio finisce; la guerra
 > comincia.
 
-**→ Esiti dettagliati e echi: cap. XII.**
+**→ Esiti dettagliati ed echi: cap. XII.**
 
 ---
 
@@ -2154,12 +2168,14 @@ Morale del Rione**; l'**Onore del Fantino** è il TS contro le offerte di corruz
 | S1 sera | Gli 8 emissari fanno la loro offerta | Scelta della contrada |
 | S2 mezzogiorno | La Tratta pubblica del Gonfaloniere | Truffa dell'urna |
 | S2 sera | Prima staffetta ferita da Rethmar | Pressione temporale |
-| S3 sera | La Cena; **assalto drow di Sonjak** alla stalla | Difesa cavallo/fantino |
-| S3 notte | Tentata corruzione del fantino | Sorveglianza/ricatto |
+| S3 sera | La Cena; **tentata corruzione del fantino** (GIORNO2 §3.2) | Sorveglianza/ricatto |
+| S3 notte | **Assalto drow di Sonjak** alla stalla (GIORNO2 §3.3); eventuale rapimento dei rivali, uno solo a notte (GIORNO2 §3.2) | Difesa cavallo/fantino |
 | S4 alba | Benedizione + corteo + sbandierata | Morale finale |
 | S4 mezzogiorno | **La Mossa** | Finte, nerbate, iniziativa |
 | S4 pomeriggio | **La Corsa** (3 giri) | Chase set-piece |
 | S4 tramonto | Esito → decreto del Gonfaloniere | Meraviglia + rinforzi + voto |
+
+
 
 ---
 
@@ -2783,7 +2799,7 @@ rottura del Mythal) · vittoria dell'Oca = **−2 VP** + Fase 0-bis.
 
 ### 7.3 XP (a milestone, consigliato)
 - Fine **Giorno 1** (contrada scelta + Prova + Tratta): quota di un incontro **EL 12**.
-- Fine **Giorno 2** (partiti + Cena + stalla drow GS 11-12): quota **EL 13**.
+- Fine **Giorno 2** (partiti + Cena + stalla drow EL 13): quota **EL 13**.
 - Fine **Corsa + Decreto**: quota **EL 14** (piena se l'esito evita la resa).
 - Bonus da story-award: maledizione della Nonna spezzata, rete Halveth scoperta, drow
   catturato vivo — **EL 11** ciascuno.
@@ -2820,6 +2836,8 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 Cariche pulite, tiene la corda interna, nerba solo per difendersi. Onore alto.  
 }}
 
+> RC-001: il giaco di maglia +1 è l'armatura leggera che spiega la CA 18 (10, +3 Des, +5 armatura); le pozioni vengono dal PNG dei Codex PF1e «Adventuring Blacksmith» (Guerriero 6), che per il resto porta armatura completa e martelli e non entra. Il nerbo è l'arma della scheda e non ha un prezzo nell'SRD. Valore 1.650 mo contro i 5.600 del 6° livello (DMG 3.5, Tabella 4-23).
+
 ### 1.2 Fantino Ladro — "corsa assassina" (GS 8)
 {{note
 ##### Fantino Ladro · GS 8
@@ -2828,6 +2846,8 @@ Cariche pulite, tiene la corda interna, nerba solo per difendersi. Onore alto.
 **TATTICHE**
 Sta dietro, colpisce nelle curve cieche, punta a **disarcionare** più che a vincere.  
 }}
+
+> RC-001: il cuoio borchiato +1 e l'anello di protezione +1 spiegano la CA 19 (10, +4 Des, +4 armatura, +1 deviazione); l'anello, la pozione e gli arnesi da scasso vengono dal PNG dei Codex PF1e «Trapsmith» (Ladro 8), che per il resto porta pugnale, balestra, mantello e occhiali e non entra. Il nerbo con aghi è l'arma della scheda e non ha un prezzo nell'SRD; il veleno non è contato. Valore 3.505 mo contro i 9.400 dell'8° livello (DMG 3.5, Tabella 4-23).
 
 ---
 
@@ -2871,16 +2891,31 @@ Statistiche-corsa astratte (mod. applicato ai tiri di Zona del fantino):
 
 ---
 
-## 3. I Sicari di Sonjak (assalto alla stalla, Giorno 2 notte, GS 11–12)
+## 3. I Sicari di Sonjak (assalto alla stalla, Giorno 2 notte, EL 12–13)
 
-### 3.1 Drow Assassino ×2 (GS 9 cad.)
+EL 12 con i due sicari, EL 13 se c'è anche la chierica di §3.2 (tre creature di GS 10).
+
+### 3.1 Drow Assassina di Lolth ×2 (GS 10 cad.)
+<!-- include: Bestiario/mostri/drow-assassina-lolth-cr10.md#statblocco -->
 {{note
-##### Drow Assassino (2) · GS 9
-**CA** 21 · **pf** 58 · *scheda in appendice*
-
-**TATTICHE**
-**Obiettivo**: **il cavallo**, non i PG: colpire e sparire. Se scoperti, coprono la fuga.  
+##### 3.1 Drow Assassina di Lolth ×2 (GS 10 cad.) · GS 10
+**CA** 20, (+4 Des, +5 giaco di maglia mithral +1, +1 anello), contatto 15, colto alla sprovvista 20 · **pf** 34 (9d6) · *scheda in appendice*
 }}
+
+<!-- /include -->
+
+**Talenti** Iniziativa Migliorata, Tiro Ravvicinato, Tiro Preciso, Arma Accurata (spada corta)
+
+**Tattiche** **Obiettivo**: **il cavallo** o **il fantino**, quale dei due lo sceglie il DM; se i rivali hanno già rapito il fantino, solo il cavallo (GIORNO2 §3.2); gli altri PG non sono il bersaglio. Il cavallo prende il *sangue nero di Lolth*, il fantino l'Attacco Mortale con la paralisi: il veleno drow (CD 13) resta per le guardie. Colpire e sparire. Se scoperti, coprono la fuga.
+
+**Capacità speciali**
+- **Attacco Mortale**: dopo 3 round di studio, Tempra CD 17 o morte, oppure paralisi per 1d6+4 round.
+- **Veleni**: veleno drow (Tempra CD 13, privo di sensi); 3 dosi di *sangue nero di Lolth* (Tempra CD 17, 1d6 Cos / 1d6 Cos), veleno della casa che non ha prezzo e non entra nel bottino.
+- **Capacità magiche** 1/giorno: *luci danzanti*, *oscurità*, *fuoco fatuo*.
+- **Incantesimi da Assassino** 4/2 al giorno, fra cui *invisibilità*.
+
+
+*Cosa sanno dei PG e in che stato li trovano*: Sonjak gli ha detto quale stalla e quale cavallo, non chi la guarda. Arrivano la notte del Giorno 2, dopo la Cena della Prova Generale e gli intrighi dei Partiti, quando i PG dormono o fanno la guardia a turno: uno sveglio, gli altri con quello che resta degli incantesimi del giorno. L'obiettivo resta il cavallo o il fantino, anche quando il fantino è un PG (AVVENTURA §4): chi è di guardia lo evitano, e lo colpiscono solo se sta fra loro e il bersaglio o se li scopre, per coprire la fuga. Se il DM sceglie il fantino, lo studiano tre round dal buio e lo paralizzano con l'Attacco Mortale, poi lo portano via; se il DM sceglie il cavallo, gli danno il *sangue nero di Lolth*: se fallisce la Tempra, la mattina dopo ha la Costituzione ferita e il −4 ai tiri di Zona, e una seconda dose lo uccide (GIORNO2 §3.3); la sua scorta la trattano come la guardia della stalla. <!-- [INFERRED — Sonjak sa chi fa la guardia alla stalla?; base: §3.1 e la scheda di Sonjak dicono il mandante, non che cosa sa dei PG] (marca tolta dal booklet stampato) -->
 
 
 ### 3.2 Drow Chierica di Lolth (GS 10)
@@ -2891,6 +2926,10 @@ Statistiche-corsa astratte (mod. applicato ai tiri di Zona del fantino):
 **TATTICHE**
 Comanda l'assalto; usa **Silenzio** per soffocare gli allarmi, **Ragnatela** in stalla. **Cattura viva** = intel Fase 0 Rethmar + −1 clock Sonjak.  
 }}
+
+*Cosa sa dei PG*: quello che sanno gli assassini, e in più che uno dei PG cura (Hella): *Silenzio* va su un punto accanto a lei, se è sveglia: soffoca l'allarme e i suoi incantesimi insieme. <!-- [INFERRED — La chierica sa che Hella è la guaritrice?; base: lo sa se qualcuno ha visto Hella curare alla Tratta o alla Cena, nessuna scena lo dice] (marca tolta dal booklet stampato) -->
+
+> RC-001: armatura completa +1 e scudo pesante di acciaio spiegano la CA 22 se la Destrezza è 12 (10, +9 armatura, +2 scudo, +1 Des); la scheda non scrive la Destrezza e questa è una lettura. Mantello, perla, pugnale e balestra vengono dal PNG dei Codex PF1e «Death Priest» (Chierico 9); il suo giaco di maglia +1, l'anello di protezione +1 e la fascia della saggezza non entrano. Il mantello non cambia numeri perché la scheda non scrive i tiri salvezza. Valore 4.709 mo contro i 21.000 dell'11° livello effettivo (9 livelli di classe + 2 di modificatore di livello dei drow; DMG 3.5, Tabella 4-23); anche senza il modificatore resta sotto i 12.000 del 9°.
 
 
 ### 3.3 Servitore della Spora (GS 3, ariete vivente)
@@ -3033,14 +3072,15 @@ La **sincronizzazione** col fronte (INTEGRAZIONE §3): due vie per i rinforzi vi
 
 ![Stalla — assalto drow](../P2D-Palio-Allegati/mappe/stalla-assalto-drow.svg)
 
-Griglia **1 quadretto = 5 ft**, GS 11–12 (statblocchi in cap. XIII §3).
+Griglia **1 quadretto = 5 ft**, EL 12–13 (statblocchi in cap. XIII §3).
 - I drow entrano dalla **botola/fogna** (angolo SO) con *Oscurità*; puntano al **BOX** del
-  cavallo (obiettivo: avvelenarlo), usano *Silenzio* per soffocare gli allarmi.
-- Il **Barbaresco (B)** è accanto al cavallo; la **scorta PG (P)** copre la porta principale.
+  cavallo (obiettivo: avvelenare il cavallo o rapire il fantino), usano *Silenzio* per soffocare gli allarmi.
+- Il **Barbaresco (B)** è accanto al cavallo; il **fantino (F)**, se è un PNG ancora lì, dorme nella stalla, accanto al box: se è fuggito o i rivali l'hanno rapito, al suo posto dorme il fantino di riserva (GIORNO2 §3.2), e se i rivali l'hanno rapito i drow puntano solo al cavallo, anche con la riserva lì (un solo rapimento a notte); se nella stalla non dorme nessun fantino, ignora la F della mappa e i drow puntano solo al cavallo; se è un PG il segnalino va dove lo mette il giocatore; la **scorta PG (P)** copre la porta principale.
   Sorpresa se non di guardia: Ascoltare DC 20.
 - Buio totale (torce spente): **Scurovisione**/luce = cruciale.
-- Token in mappa: **D** Drow Assassino · **C** Chierica di Lolth · **S** Servitore della Spora.
+- Token in mappa: **D** Drow Assassina di Lolth · **C** Chierica di Lolth · **S** Servitore della Spora · **F** fantino.
 - **Catturare un drow vivo** = intel Fase 0 Rethmar **−1 clock Sonjak** (INTEGRAZIONE §3.2).
+
 
 ---
 
@@ -3056,7 +3096,7 @@ per mappa. Companion di raccordo:*
 | **Channathgate città** | `channathgate-citta.svg` | 8 rioni-contrada, Porta dell'Alba/del Porto, Darsena; spostamenti dei partiti, infiltrazione Civetta, porto |
 | **Channathgate in scala** | `channathgate-pianta.svg` | la pianta che vale per le misure: arg (Palazzo dei Nove), maidan (il Campo), bazar coperto, giardini murati, qanat, Darsena e chiuse; città aperta di circa 250 ha e 25.000 abitanti: mura e torri solo all'arg (828 m, 27 torri e 2 alla porta), fossi e muri di rione con porte di quartiere |
 | **Rotta di soccorso** | `rotta-soccorso.svg` | Dawn Way (~35 mi, 1,5 gg, cavalleria) vs Fiume Cannath (~1 gg, flotta); **deadline Day 38** per la Fase 1 |
-| **Stalla — assalto drow** | `stalla-assalto-drow.svg` | 1 quadretto = 5 ft, GS 11-12; drow dalla botola SO con *Oscurità/Silenzio*, buio totale |
+| **Stalla — assalto drow** | `stalla-assalto-drow.svg` | 1 quadretto = 5 ft, EL 12-13; drow dalla botola SO con *Oscurità/Silenzio*, buio totale |
 
 ### ⚔️ TATTICHE (companion T5c)
 
@@ -3082,31 +3122,30 @@ per mappa. Companion di raccordo:*
 # Appendice: le creature
 
 {{monster,frame
-## Drow Assassino (2)
-*Drow Ladro 5 / Assassino 4* · GS 9
+## 3.1 Drow Assassina di Lolth ×2 (GS 10 cad.)
+*Medium humanoid (elf), NE, Ladro 5 / Assassino 4* · GS 10
 ___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) · **Portata** 1,5 m (1 quadretto)
 
 **DIFESA**
 ___
-**CA 21** · **pf 58** · TS Riflessi +12  
+**CA 20**, contatto 15, colto alla sprovvista 20 · **pf 34** (9d6) · TS Temp +4, Rifl +14, Vol +4 · RI 20  
 
 **ATTACCO**
 ___
-Balestra a mano + veleno drow (sonno, CD 17) · **Attacco Furtivo** +6d6  
+spada corta +1 +11/+6 (1d6+2/19-20); balestra a mano perfetta +11 (1d4 + veleno), +12 entro 9 m (1d4+1 + veleno) · **Attacco furtivo** +5d6  
 
 **STATISTICHE**
 ___
-Des 20  
-
-**CAPACITÀ SPECIALI**
-___
-- **Morte Improvvisa** (CD 18), *Nascondersi nelle Ombre*.  
-- **Innata**: *Oscurità*, *Fuoco delle Fate*.  
+For 12 Des 19 Cos 11 Int 16 Sag 10 Car 10  
+Equipaggiamento da combattimento: veleno drow, sangue nero di Lolth (3 dosi)  
+Altro equipaggiamento: giaco di maglia in mithral +1, anello di protezione +1, mantello della resistenza +2, spada corta +1, balestra a mano perfetta con 10 quadrelli  
 }}
 {{monster,frame
 ## Drow Chierica di Lolth
 *Drow Chierico 9* · GS 10
 ___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) · **Portata** 1,5 m (1 quadretto)
 
 **DIFESA**
 ___
@@ -3114,7 +3153,7 @@ ___
 
 **STATISTICHE**
 ___
-Sag 18  
+Sag 18 · **Equipaggiamento** armatura completa +1, scudo pesante di acciaio, mantello della resistenza +1, perla del potere 1°, pugnale, balestra leggera con 20 quadrelli  
 
 **CAPACITÀ SPECIALI**
 ___
@@ -3124,6 +3163,7 @@ ___
 ## Fantino Cavaliere
 *Umano Guerriero 6 / Cavaliere-ish · corsa pulita* · GS 8
 ___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) · **Portata** 1,5 m (1 quadretto)
 
 **DIFESA**
 ___
@@ -3135,7 +3175,7 @@ ___
 
 **STATISTICHE**
 ___
-For 14, Des 16, Cos 13 · **Abilità** Cavalcare +16 (foco: corsa) · **Talenti** *Combattere in Sella*, *Cavalcata Poderosa*, *Attacco in Corsa*  
+For 14, Des 16, Cos 13 · **Abilità** Cavalcare +16 (foco: corsa) · **Talenti** *Combattere in Sella*, *Carica Devastante*, *Attacco in Sella* · **Equipaggiamento** pozione di cura ferite moderate, pozioni di contrastare elementi (2); giaco di maglia +1, nerbo  
 
 **CAPACITÀ SPECIALI**
 ___
@@ -3145,6 +3185,7 @@ ___
 ## Fantino Ladro
 *Mezzelfo Ladro 8 · corsa assassina* · GS 8
 ___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) · **Portata** 1,5 m (1 quadretto)
 
 **DIFESA**
 ___
@@ -3156,7 +3197,7 @@ ___
 
 **STATISTICHE**
 ___
-Des 18 · **Abilità** Cavalcare +12, Raggirare +14, Furtività +14  
+Des 18 · **Abilità** Cavalcare +12, Raggirare +14, Furtività +14 · **Equipaggiamento** pozione di cura ferite moderate; cuoio borchiato +1, anello di protezione +1, nerbo con aghi, arnesi da scasso  
 
 **CAPACITÀ SPECIALI**
 ___
@@ -3167,6 +3208,7 @@ ___
 ## Servitore della Spora (1-2)
 *Umanoide fungino mindless, ariete vivente (dall'esperimento di Sonjak, §2.4a CALCOLI)* · GS 3
 ___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) ciascuno · **Portata** 1,5 m (1 quadretto)
 
 **DIFESA**
 ___

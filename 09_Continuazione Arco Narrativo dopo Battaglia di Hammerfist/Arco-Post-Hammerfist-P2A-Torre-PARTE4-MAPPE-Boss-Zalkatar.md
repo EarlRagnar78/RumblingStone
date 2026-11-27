@@ -23,7 +23,7 @@ Posizioni iniziali:
 
 ---
 
-## 3. Bracci e elementi ambientali
+## 3. Bracci ed elementi ambientali
 
 - **Braccio Nord**: cristalli di memoria (copertura parziale, possibili effetti psionici).  
 - **Braccio Sud**: vasca di energia liquida (terreno difficile, danni acidi 2d6/round).  

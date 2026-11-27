@@ -35,7 +35,7 @@ cupo, come brace sotto la cenere.
   senza crescendo `[CANONE — DM 2026-10-18]`. ⚠ Non SRD: oggetto custom sul
   modello dei *Devastation Gauntlets* `[Private source — Magic Item Compendium]`.
 - **Sinergia forgia (P2, resa permanente)**: dall'ARC-07, dopo il rito della
-  Sala della Forgia, le cariche salgono a **4/giorno**, **per sempre** (decisione DM 2026-07-04: la Benedizione della Forgia è permanente; «fino a fine avventura» era la stesura precedente)
+  Sala della Forgia, le cariche salgono a **4/giorno**, **per sempre** [CANONE — DM 2026-07-04: la Benedizione della Forgia è permanente; «fino a fine avventura» era la stesura precedente]
   (potenziamento narrato in `PortaleForgia-P2-REVISED-Corretta-PARTE1.md`).
 - **Limite tematico (P5)**: la Cintura **rifiuta** di spendere cariche contro
   un avversario "non destinato a cadere in quel giorno" (es. Skullcrusher nel

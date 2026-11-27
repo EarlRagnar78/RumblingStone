@@ -5,8 +5,8 @@
   "ambiente": "abitato",
   "vista": "giocatori",
   "luogo": "Tarsilia, la Ruota",
-  "quota": "3 m ; sopra il pelo del Sellen in magra [INFERRED — needs DM confirmation]",
-  "dislivello": "+1,5 m ; sul canale del Ponte Storto, a nord della pista [INFERRED — needs DM confirmation]",
+  "quota": "1,5 m ; sopra il pelo del Sellen in magra: la piena del G3 sera entra in piazza [CANONE — DM 2026-11-05, P16, quota]",
+  "dislivello": "+1,5 m ; sul canale del Ponte Storto, a nord della pista (3 m sul Sellen in magra) [CANONE — DM 2026-11-05, P16, quota]",
   "scale_m_per_square": 1.5,
   "map_size": [
     64,

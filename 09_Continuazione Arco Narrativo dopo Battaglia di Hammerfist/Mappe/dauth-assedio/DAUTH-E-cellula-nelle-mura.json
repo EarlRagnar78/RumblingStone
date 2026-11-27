@@ -115,6 +115,7 @@
   {
    "faction": "Guastatori",
    "name": "Guerriero drow (drow-fighter3-cr4); in alternativa un deathlock-cr8",
+   "scheda": "Bestiario/mostri/drow-fighter3-cr4.md",
    "token": "🔴",
    "area": {
     "rect": [

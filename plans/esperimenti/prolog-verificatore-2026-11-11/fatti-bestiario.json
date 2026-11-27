@@ -1,0 +1,1896 @@
+[
+ {
+  "file": "Bestiario/mostri/abishai-azzurro-mano-cr11.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 20,
+   "Des": 18,
+   "Cos": 22,
+   "Int": 14,
+   "Sag": 16,
+   "Car": 18
+  },
+  "bab": 14,
+  "livelli": {},
+  "dv": 14,
+  "lic": 0,
+  "talenti": [
+   "Combat Reflexes",
+   "Improved Initiative",
+   "Weapon Focus"
+  ],
+  "ignoti": [
+   "Multiattacco",
+   "Attacco in Volo"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/bruto-deforme-sottosuolo-cr11.md",
+  "sistema": "pf1e",
+  "car": {
+   "For": 31,
+   "Des": 13,
+   "Cos": 23,
+   "Int": 10,
+   "Sag": 12,
+   "Car": 11
+  },
+  "bab": 12,
+  "livelli": {
+   "barbarian": 2
+  },
+  "dv": 16,
+  "lic": 0,
+  "talenti": [
+   "Combat Reflexes",
+   "Improved Grapple",
+   "Improved Trip",
+   "Iron Will",
+   "Power Attack",
+   "Toughness"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 17,
+   "Des": 17,
+   "Cos": 14,
+   "Int": 18,
+   "Sag": 10,
+   "Car": 6
+  },
+  "bab": 6,
+  "livelli": {
+   "rogue": 5,
+   "assassino": 2
+  },
+  "dv": 10,
+  "lic": 0,
+  "talenti": [
+   "Alertness",
+   "Improved Initiative",
+   "Stealthy",
+   "Weapon Focus"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/chierico-gruumsh-cr11.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 16,
+   "Des": 12,
+   "Cos": 14,
+   "Int": 8,
+   "Sag": 19,
+   "Car": 6
+  },
+  "bab": 8,
+  "livelli": {
+   "cleric": 11
+  },
+  "dv": 11,
+  "lic": 11,
+  "talenti": [
+   "Combat Casting",
+   "Greater Spell Focus",
+   "Toughness"
+  ],
+  "ignoti": [
+   "Incantesimi Focalizzati"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/drow-assassina-lolth-cr10.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 12,
+   "Des": 20,
+   "Cos": 10,
+   "Int": 18,
+   "Sag": 12,
+   "Car": 14
+  },
+  "bab": 6,
+  "livelli": {
+   "rogue": 4,
+   "assassino": 5
+  },
+  "dv": 9,
+  "lic": 0,
+  "talenti": [
+   "Improved Initiative",
+   "Precise Shot",
+   "Spring Attack",
+   "Stealthy",
+   "Weapon Finesse"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/drow-fighter3-cr4.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 14,
+   "Des": 16,
+   "Cos": 12,
+   "Int": 12,
+   "Sag": 13,
+   "Car": 12
+  },
+  "bab": 3,
+  "livelli": {
+   "fighter": 3
+  },
+  "dv": 3,
+  "lic": 0,
+  "talenti": [
+   "Dodge",
+   "Two-Weapon Fighting",
+   "Weapon Finesse",
+   "Weapon Focus"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/drow-noble-guard-cr5.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 14,
+   "Des": 18,
+   "Cos": 14,
+   "Int": 13,
+   "Sag": 12,
+   "Car": 14
+  },
+  "bab": 3,
+  "livelli": {
+   "fighter": 2,
+   "rogue": 2
+  },
+  "dv": 4,
+  "lic": 0,
+  "talenti": [
+   "Dodge",
+   "Improved Two-Weapon Fighting",
+   "Two-Weapon Fighting",
+   "Weapon Finesse"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/drow-priestess9-cr11.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 12,
+   "Des": 16,
+   "Cos": 12,
+   "Int": 14,
+   "Sag": 19,
+   "Car": 16
+  },
+  "bab": 6,
+  "livelli": {},
+  "dv": 9,
+  "lic": 0,
+  "talenti": [
+   "Combat Casting",
+   "Extra Turning",
+   "Improved Counterspell",
+   "Spell Focus"
+  ],
+  "ignoti": [
+   "Divine Metamagic"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/drow-trickster-arcano-cr11.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 8,
+   "Des": 18,
+   "Cos": 12,
+   "Int": 20,
+   "Sag": 12,
+   "Car": 14
+  },
+  "bab": 5,
+  "livelli": {
+   "rogue": 3,
+   "wizard": 5
+  },
+  "dv": 10,
+  "lic": 5,
+  "talenti": [
+   "Improved Initiative",
+   "Precise Shot",
+   "Scribe Scroll",
+   "Stealthy"
+  ],
+  "ignoti": [
+   "Incantesimi Focalizzati"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/drow-wizard7-cr8.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 10,
+   "Des": 16,
+   "Cos": 12,
+   "Int": 19,
+   "Sag": 13,
+   "Car": 12
+  },
+  "bab": 3,
+  "livelli": {
+   "wizard": 7
+  },
+  "dv": 7,
+  "lic": 7,
+  "talenti": [
+   "Combat Casting",
+   "Empower Spell",
+   "Extend Spell",
+   "Greater Spell Focus",
+   "Scribe Scroll",
+   "Spell Focus"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/duergar-chierico3-cr4.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 15,
+   "Des": 8,
+   "Cos": 16,
+   "Int": 10,
+   "Sag": 13,
+   "Car": 10
+  },
+  "bab": 2,
+  "livelli": {
+   "cleric": 3
+  },
+  "dv": 3,
+  "lic": 3,
+  "talenti": [
+   "Combat Casting",
+   "Improved Initiative",
+   "Improved Turning",
+   "Weapon Focus"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/duergar-guerriero2-cr3.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 17,
+   "Des": 13,
+   "Cos": 16,
+   "Int": 10,
+   "Sag": 10,
+   "Car": 6
+  },
+  "bab": 2,
+  "livelli": {
+   "fighter": 2
+  },
+  "dv": 2,
+  "lic": 0,
+  "talenti": [
+   "Exotic Weapon Proficiency",
+   "Improved Initiative"
+  ],
+  "ignoti": [
+   "Robustezza Migliorata"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/duergar-ladro1-cr1.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 12,
+   "Des": 15,
+   "Cos": 15,
+   "Int": 14,
+   "Sag": 10,
+   "Car": 4
+  },
+  "bab": 0,
+  "livelli": {
+   "rogue": 1
+  },
+  "dv": 1,
+  "lic": 0,
+  "talenti": [
+   "Dodge",
+   "Improved Initiative"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/duergar-mago-ladro8-cr7.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 10,
+   "Des": 14,
+   "Cos": 14,
+   "Int": 16,
+   "Sag": 10,
+   "Car": 9
+  },
+  "bab": 4,
+  "livelli": {
+   "rogue": 3,
+   "wizard": 4
+  },
+  "dv": 7,
+  "lic": 4,
+  "talenti": [
+   "Improved Initiative",
+   "Scribe Scroll",
+   "Silent Spell",
+   "Weapon Finesse"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/duergar-mago3-cr4.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 8,
+   "Des": 14,
+   "Cos": 14,
+   "Int": 16,
+   "Sag": 10,
+   "Car": 8
+  },
+  "bab": 1,
+  "livelli": {
+   "wizard": 3
+  },
+  "dv": 3,
+  "lic": 3,
+  "talenti": [
+   "Combat Casting",
+   "Enlarge Spell"
+  ],
+  "ignoti": [
+   "Incantesimi Focalizzati"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/furia-della-mano-cr10.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 21,
+   "Des": 15,
+   "Cos": 18,
+   "Int": 10,
+   "Sag": 12,
+   "Car": 8
+  },
+  "bab": 10,
+  "livelli": {
+   "barbarian": 10
+  },
+  "dv": 10,
+  "lic": 0,
+  "talenti": [
+   "Cleave",
+   "Improved Initiative",
+   "Power Attack",
+   "Weapon Focus"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/githyanki-captain-gish-cr12.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 17,
+   "Des": 14,
+   "Cos": 14,
+   "Int": 16,
+   "Sag": 13,
+   "Car": 12
+  },
+  "bab": 9,
+  "livelli": {
+   "fighter": 8,
+   "wizard": 3
+  },
+  "dv": 11,
+  "lic": 3,
+  "talenti": [],
+  "ignoti": [
+   ": era «many",
+   "incl Combat Casting",
+   "Spell Sword synergy»",
+   "che non è un talento"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/gnoll-hyenodon-rider-cr4.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 15,
+   "Des": 10,
+   "Cos": 13,
+   "Int": 8,
+   "Sag": 11,
+   "Car": 8
+  },
+  "bab": null,
+  "livelli": {},
+  "dv": 2,
+  "lic": 0,
+  "talenti": [
+   "Mounted Combat",
+   "Ride-by Attack"
+  ],
+  "ignoti": [
+   "Carica Poderosa"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/goblin-warrior1-cr05.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 11,
+   "Des": 13,
+   "Cos": 12,
+   "Int": 10,
+   "Sag": 9,
+   "Car": 6
+  },
+  "bab": 1,
+  "livelli": {
+   "warrior": 1
+  },
+  "dv": 1,
+  "lic": 0,
+  "talenti": [
+   "Alertness"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/goblin-worg-raider-ftr5-cr5.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 11,
+   "Des": 18,
+   "Cos": 14,
+   "Int": 12,
+   "Sag": 10,
+   "Car": 6
+  },
+  "bab": 5,
+  "livelli": {
+   "fighter": 5
+  },
+  "dv": 5,
+  "lic": 0,
+  "talenti": [
+   "Mounted Archery",
+   "Mounted Combat",
+   "Point Blank Shot",
+   "Precise Shot",
+   "Weapon Focus"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/gufo-gigante-celestiale-cr6.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 18,
+   "Des": 18,
+   "Cos": 12,
+   "Int": 10,
+   "Sag": 14,
+   "Car": 10
+  },
+  "bab": 8,
+  "livelli": {},
+  "dv": 8,
+  "lic": 0,
+  "talenti": [
+   "Alertness"
+  ],
+  "ignoti": [
+   "Virata",
+   "Attacco in Volo"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/hell-hound-mezzoimmondo-cr4.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 15,
+   "Des": 13,
+   "Cos": 15,
+   "Int": 6,
+   "Sag": 10,
+   "Car": 8
+  },
+  "bab": 4,
+  "livelli": {},
+  "dv": 4,
+  "lic": 0,
+  "talenti": [
+   "Improved Initiative",
+   "Track"
+  ],
+  "ignoti": [
+   "Clinging Breath"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/hobgoblin-doom-hand-cleric5-cr5.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 13,
+   "Des": 10,
+   "Cos": 16,
+   "Int": 10,
+   "Sag": 16,
+   "Car": 12
+  },
+  "bab": 3,
+  "livelli": {
+   "cleric": 5
+  },
+  "dv": 5,
+  "lic": 5,
+  "talenti": [
+   "Combat Casting",
+   "Weapon Focus"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/hobgoblin-portalame-ftr7-cr7.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 16,
+   "Des": 16,
+   "Cos": 15,
+   "Int": 10,
+   "Sag": 12,
+   "Car": 8
+  },
+  "bab": 7,
+  "livelli": {
+   "fighter": 7
+  },
+  "dv": 7,
+  "lic": 0,
+  "talenti": [
+   "Mobility",
+   "Two-Weapon Defense",
+   "Two-Weapon Fighting"
+  ],
+  "ignoti": [
+   "Expeditious Dodge",
+   "Two-Weapon Pounce",
+   "Arma Focalizzata e Arma Specializzata"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/hobgoblin-regular-warrior3-cr2.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 13,
+   "Des": 13,
+   "Cos": 14,
+   "Int": 10,
+   "Sag": 9,
+   "Car": 8
+  },
+  "bab": 3,
+  "livelli": {
+   "warrior": 3
+  },
+  "dv": 3,
+  "lic": 0,
+  "talenti": [
+   "Alertness",
+   "Weapon Focus"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/hobgoblin-sergente-cr5.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 14,
+   "Des": 12,
+   "Cos": 14,
+   "Int": 10,
+   "Sag": 10,
+   "Car": 8
+  },
+  "bab": 5,
+  "livelli": {
+   "fighter": 5
+  },
+  "dv": 5,
+  "lic": 0,
+  "talenti": [
+   "Cleave",
+   "Combat Reflexes",
+   "Power Attack",
+   "Weapon Focus",
+   "Weapon Specialization"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/hobgoblin-veterans-warrior6-cr5.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 14,
+   "Des": 13,
+   "Cos": 14,
+   "Int": 10,
+   "Sag": 9,
+   "Car": 8
+  },
+  "bab": 6,
+  "livelli": {
+   "warrior": 6
+  },
+  "dv": 6,
+  "lic": 0,
+  "talenti": [
+   "Alertness",
+   "Weapon Focus"
+  ],
+  "ignoti": [
+   "Critico Potente"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/kulkorzhul-war-adept-cr7.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 10,
+   "Des": 16,
+   "Cos": 15,
+   "Int": 12,
+   "Sag": 8,
+   "Car": 16
+  },
+  "bab": 3,
+  "livelli": {
+   "sorcerer": 7
+  },
+  "dv": 7,
+  "lic": 7,
+  "talenti": [],
+  "ignoti": [
+   "Draconic Heritage",
+   "Draconic Power",
+   "Draconic Vigor"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/lucertola-del-tuono-cr10.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 26,
+   "Des": 10,
+   "Cos": 21,
+   "Int": 6,
+   "Sag": 12,
+   "Car": 8
+  },
+  "bab": 12,
+  "livelli": {},
+  "dv": 12,
+  "lic": 0,
+  "talenti": [
+   "Cleave",
+   "Improved Initiative",
+   "Power Attack",
+   "Weapon Focus"
+  ],
+  "ignoti": [
+   "Multiattacco"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/monaco-pugno-del-destino-cr7.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 16,
+   "Des": 14,
+   "Cos": 15,
+   "Int": 10,
+   "Sag": 14,
+   "Car": 8
+  },
+  "bab": 5,
+  "livelli": {
+   "monk": 7
+  },
+  "dv": 7,
+  "lic": 0,
+  "talenti": [
+   "Combat Reflexes",
+   "Exotic Weapon Proficiency",
+   "Improved Grapple",
+   "Improved Trip",
+   "Stunning Fist",
+   "Weapon Focus"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/myconid-elite-guard-cr5.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 24,
+   "Des": 14,
+   "Cos": 18,
+   "Int": 10,
+   "Sag": 14,
+   "Car": 12
+  },
+  "bab": 7,
+  "livelli": {},
+  "dv": 10,
+  "lic": 0,
+  "talenti": [
+   "Alertness",
+   "Cleave",
+   "Improved Initiative",
+   "Power Attack"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/myconid-guard-cr4.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 22,
+   "Des": 12,
+   "Cos": 18,
+   "Int": 10,
+   "Sag": 14,
+   "Car": 12
+  },
+  "bab": 6,
+  "livelli": {},
+  "dv": 8,
+  "lic": 0,
+  "talenti": [
+   "Alertness",
+   "Cleave",
+   "Power Attack"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/myconid-sovereign-cr7.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 26,
+   "Des": 10,
+   "Cos": 18,
+   "Int": 14,
+   "Sag": 16,
+   "Car": 16
+  },
+  "bab": 10,
+  "livelli": {},
+  "dv": 14,
+  "lic": 0,
+  "talenti": [
+   "Alertness",
+   "Great Fortitude",
+   "Improved Bull Rush",
+   "Improved Initiative",
+   "Iron Will",
+   "Power Attack"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/myconid-worker-cr2.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 12,
+   "Des": 10,
+   "Cos": 18,
+   "Int": 8,
+   "Sag": 12,
+   "Car": 10
+  },
+  "bab": 3,
+  "livelli": {},
+  "dv": 4,
+  "lic": 0,
+  "talenti": [
+   "Alertness",
+   "Endurance"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/nano-mastro-artigliere-guerriero8-cr8.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 13,
+   "Des": 17,
+   "Cos": 16,
+   "Int": 12,
+   "Sag": 10,
+   "Car": 6
+  },
+  "bab": 8,
+  "livelli": {
+   "fighter": 8
+  },
+  "dv": 8,
+  "lic": 0,
+  "talenti": [
+   "Alertness",
+   "Far Shot",
+   "Greater Weapon Focus",
+   "Point Blank Shot",
+   "Precise Shot",
+   "Rapid Reload",
+   "Weapon Focus",
+   "Weapon Specialization"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/ogre-frantumapietra-barbaro6-cr9.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 25,
+   "Des": 8,
+   "Cos": 15,
+   "Int": 6,
+   "Sag": 10,
+   "Car": 7
+  },
+  "bab": 9,
+  "livelli": {
+   "barbarian": 6
+  },
+  "dv": 10,
+  "lic": 0,
+  "talenti": [
+   "Great Cleave",
+   "Power Attack",
+   "Toughness"
+  ],
+  "ignoti": [
+   "Colpo Terrificante"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/ogre-micelio-sporeborn-cr8.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 25,
+   "Des": 8,
+   "Cos": 17,
+   "Int": 4,
+   "Sag": 10,
+   "Car": 5
+  },
+  "bab": 7,
+  "livelli": {
+   "barbarian": 4
+  },
+  "dv": 8,
+  "lic": 0,
+  "talenti": [
+   "Improved Grapple",
+   "Power Attack",
+   "Toughness"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/ogre-skullcrusher-cr5.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 25,
+   "Des": 11,
+   "Cos": 17,
+   "Int": 10,
+   "Sag": 10,
+   "Car": 9
+  },
+  "bab": 6,
+  "livelli": {},
+  "dv": 8,
+  "lic": 0,
+  "talenti": [
+   "Improved Grapple",
+   "Improved Shield Bash",
+   "Mounted Combat",
+   "Power Attack",
+   "Two-Weapon Fighting"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/orco-berserk-barbaro2-cr2.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 23,
+   "Des": 13,
+   "Cos": 18,
+   "Int": 8,
+   "Sag": 10,
+   "Car": 6
+  },
+  "bab": 2,
+  "livelli": {
+   "barbarian": 2
+  },
+  "dv": 2,
+  "lic": 0,
+  "talenti": [
+   "Spirited Charge"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 20,
+   "Des": 10,
+   "Cos": 20,
+   "Int": 12,
+   "Sag": 11,
+   "Car": 8
+  },
+  "bab": 6,
+  "livelli": {
+   "fighter": 6
+  },
+  "dv": 6,
+  "lic": 0,
+  "talenti": [
+   "Cleave",
+   "Great Cleave",
+   "Improved Initiative",
+   "Iron Will",
+   "Power Attack",
+   "Weapon Focus",
+   "Weapon Specialization"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/razorfiend-blackspawn-alfa-cr13.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 30,
+   "Des": 10,
+   "Cos": 24,
+   "Int": 8,
+   "Sag": 13,
+   "Car": 12
+  },
+  "bab": 16,
+  "livelli": {},
+  "dv": 16,
+  "lic": 0,
+  "talenti": [
+   "Improved Initiative",
+   "Power Attack"
+  ],
+  "ignoti": [
+   "Multiattacco",
+   "Armatura Naturale Migliorata",
+   "Sventrare",
+   "Fluttuare"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/spezzamente-kulkor-zhul-cr12.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 8,
+   "Des": 15,
+   "Cos": 16,
+   "Int": 22,
+   "Sag": 12,
+   "Car": 10
+  },
+  "bab": 6,
+  "livelli": {
+   "wizard": 12
+  },
+  "dv": 12,
+  "lic": 12,
+  "talenti": [
+   "Extend Spell",
+   "Greater Spell Focus",
+   "Improved Initiative",
+   "Iron Will",
+   "Quicken Spell",
+   "Scribe Scroll",
+   "Spell Penetration"
+  ],
+  "ignoti": [
+   "Incantesimi Focalizzati"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/underdark-cleric-ainin-cr5.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 13,
+   "Des": 8,
+   "Cos": 16,
+   "Int": 10,
+   "Sag": 16,
+   "Car": 10
+  },
+  "bab": 3,
+  "livelli": {
+   "cleric": 5
+  },
+  "dv": 5,
+  "lic": 5,
+  "talenti": [
+   "Combat Casting",
+   "Great Fortitude",
+   "Martial Weapon Proficiency",
+   "Weapon Focus"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/underdark-dovil-runecaster-cr7.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 12,
+   "Des": 14,
+   "Cos": 15,
+   "Int": 16,
+   "Sag": 10,
+   "Car": 6
+  },
+  "bab": 3,
+  "livelli": {
+   "fighter": 1
+  },
+  "dv": 1,
+  "lic": 0,
+  "talenti": [
+   "Combat Casting",
+   "Improved Initiative",
+   "Weapon Focus"
+  ],
+  "ignoti": [
+   "Incidere Rune",
+   "Smiting Spell",
+   "Incantesimi Focalizzati"
+  ]
+ },
+ {
+  "file": "Bestiario/mostri/warpriest-tiamat-cr7.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 14,
+   "Des": 12,
+   "Cos": 14,
+   "Int": 10,
+   "Sag": 17,
+   "Car": 13
+  },
+  "bab": 5,
+  "livelli": {
+   "cleric": 7
+  },
+  "dv": 7,
+  "lic": 7,
+  "talenti": [
+   "Combat Casting",
+   "Extra Turning",
+   "Spell Focus",
+   "Weapon Focus"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/mostri/worg-cavalcatura-cr2.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 17,
+   "Des": 15,
+   "Cos": 15,
+   "Int": 6,
+   "Sag": 14,
+   "Car": 10
+  },
+  "bab": 6,
+  "livelli": {},
+  "dv": 6,
+  "lic": 0,
+  "talenti": [
+   "Alertness"
+  ],
+  "ignoti": [
+   "Attacco Naturale Migliorato",
+   "Robustezza Migliorata"
+  ]
+ },
+ {
+  "file": "Bestiario/png/Khorn/khorn-ufficiale-hammerfist-cr8.md",
+  "sistema": "pf1e",
+  "car": {
+   "For": 16,
+   "Des": 12,
+   "Cos": 16,
+   "Int": 10,
+   "Sag": 14,
+   "Car": 15
+  },
+  "bab": 8,
+  "livelli": {
+   "fighter": 8
+  },
+  "dv": 8,
+  "lic": 0,
+  "talenti": [
+   "Cleave",
+   "Improved Initiative",
+   "Improved Shield Bash",
+   "Leadership",
+   "Power Attack",
+   "Weapon Focus"
+  ],
+  "ignoti": [
+   "Arma Focalizzata Superiore e Arma Specializzata"
+  ]
+ },
+ {
+  "file": "Bestiario/png/Lorana/capitana-lorana-cr7.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 16,
+   "Des": 14,
+   "Cos": 14,
+   "Int": 13,
+   "Sag": 15,
+   "Car": 14
+  },
+  "bab": 7,
+  "livelli": {
+   "fighter": 6,
+   "esperto": 2
+  },
+  "dv": 8,
+  "lic": 0,
+  "talenti": [
+   "Combat Reflexes",
+   "Endurance",
+   "Improved Initiative",
+   "Iron Will",
+   "Leadership",
+   "Power Attack",
+   "Weapon Focus",
+   "Weapon Specialization"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/png/Therysol/Therysol/Therysol.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 16,
+   "Des": 18,
+   "Cos": 14,
+   "Int": 14,
+   "Sag": 13,
+   "Car": 19
+  },
+  "bab": null,
+  "livelli": {
+   "esperto": 2
+  },
+  "dv": 2,
+  "lic": 0,
+  "talenti": [],
+  "ignoti": [
+   "1"
+  ]
+ },
+ {
+  "file": "Bestiario/png/Varis_Seta_Argento/Varis_Seta_Argento.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 10,
+   "Des": 14,
+   "Cos": 14,
+   "Int": 16,
+   "Sag": 14,
+   "Car": 18
+  },
+  "bab": 6,
+  "livelli": {
+   "rogue": 4,
+   "esperto": 4
+  },
+  "dv": 8,
+  "lic": 0,
+  "talenti": [
+   "Lightning Reflexes",
+   "Negotiator",
+   "Persuasive"
+  ],
+  "ignoti": [
+   "Volontà di Ferro La scheda non ne elencava nessuno",
+   "e un umano di 8° livello ne ha quattro: Persuasivo spiega il +2 a Raggirare",
+   "Riflessi Fulminei i Riflessi +9 che la scheda già scriveva",
+   "e gli altri due vengono dal personaggio"
+  ]
+ },
+ {
+  "file": "Bestiario/png/avarthel-druido-cr9.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 12,
+   "Des": 14,
+   "Cos": 13,
+   "Int": 12,
+   "Sag": 21,
+   "Car": 8
+  },
+  "bab": 6,
+  "livelli": {
+   "druid": 9
+  },
+  "dv": 9,
+  "lic": 9,
+  "talenti": [
+   "Scribe Scroll",
+   "Track"
+  ],
+  "ignoti": [
+   "Iniziato della Natura",
+   "Anima Forte"
+  ]
+ },
+ {
+  "file": "Bestiario/png/bothor-malvur-cr6.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 20,
+   "Des": 13,
+   "Cos": 16,
+   "Int": 10,
+   "Sag": 12,
+   "Car": 6
+  },
+  "bab": 6,
+  "livelli": {
+   "fighter": 6
+  },
+  "dv": 6,
+  "lic": 0,
+  "talenti": [
+   "Cleave",
+   "Improved Initiative",
+   "Power Attack"
+  ],
+  "ignoti": [
+   "Specializzazione nello Scudo",
+   "Ottimizzazione delle Armature Pesanti",
+   "Arma Focalizzata e Arma Specializzata"
+  ]
+ },
+ {
+  "file": "Bestiario/png/cavalcatura-ariete-moradin-cr5.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 20,
+   "Des": 13,
+   "Cos": 17,
+   "Int": 7,
+   "Sag": 13,
+   "Car": 6
+  },
+  "bab": 6,
+  "livelli": {},
+  "dv": 8,
+  "lic": 0,
+  "talenti": [
+   "Endurance",
+   "Run"
+  ],
+  "ignoti": [
+   "Armatura Naturale Migliorata"
+  ]
+ },
+ {
+  "file": "Bestiario/png/jorr-natherson-cr8.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 10,
+   "Des": 16,
+   "Cos": 14,
+   "Int": 13,
+   "Sag": 13,
+   "Car": 8
+  },
+  "bab": 7,
+  "livelli": {
+   "ranger": 5,
+   "rogue": 3
+  },
+  "dv": 8,
+  "lic": 2,
+  "talenti": [
+   "Endurance",
+   "Improved Initiative",
+   "Rapid Shot",
+   "Self-Sufficient",
+   "Stealthy",
+   "Track",
+   "Weapon Focus"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/png/lomyn-redtongue-bardo8-cr8.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 10,
+   "Des": 13,
+   "Cos": 12,
+   "Int": 14,
+   "Sag": 8,
+   "Car": 19
+  },
+  "bab": 6,
+  "livelli": {
+   "bard": 8
+  },
+  "dv": 8,
+  "lic": 8,
+  "talenti": [
+   "Combat Casting",
+   "Improved Initiative"
+  ],
+  "ignoti": [
+   "Incantesimi Focalizzati"
+  ]
+ },
+ {
+  "file": "Bestiario/png/morlin-coalhewer-cr12.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 16,
+   "Des": 8,
+   "Cos": 16,
+   "Int": 10,
+   "Sag": 19,
+   "Car": 10
+  },
+  "bab": 9,
+  "livelli": {
+   "cleric": 12
+  },
+  "dv": 12,
+  "lic": 12,
+  "talenti": [
+   "Combat Casting",
+   "Craft Magic Arms and Armor",
+   "Power Attack",
+   "Weapon Focus"
+  ],
+  "ignoti": [
+   "Ottimizzazione delle Armature Pesanti"
+  ]
+ },
+ {
+  "file": "Bestiario/png/rurik-gorunn-cr10.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 14,
+   "Des": 8,
+   "Cos": 14,
+   "Int": 10,
+   "Sag": 14,
+   "Car": 14
+  },
+  "bab": 10,
+  "livelli": {
+   "paladin": 8
+  },
+  "dv": 8,
+  "lic": 4,
+  "talenti": [
+   "Iron Will",
+   "Weapon Focus"
+  ],
+  "ignoti": [
+   "Celestial Mount",
+   "Divine Armor"
+  ]
+ },
+ {
+  "file": "Bestiario/villain/Mira_Serani/mira-serani-aranea-cr8.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 11,
+   "Des": 15,
+   "Cos": 14,
+   "Int": 14,
+   "Sag": 13,
+   "Car": 16
+  },
+  "bab": 6,
+  "livelli": {
+   "sorcerer": 6
+  },
+  "dv": 9,
+  "lic": 6,
+  "talenti": [
+   "Combat Casting",
+   "Improved Initiative",
+   "Iron Will",
+   "Weapon Finesse"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/villain/Tyrgarun/tyrgarun-blue-old-cr18.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 33,
+   "Des": 10,
+   "Cos": 25,
+   "Int": 18,
+   "Sag": 19,
+   "Car": 18
+  },
+  "bab": 30,
+  "livelli": {},
+  "dv": 30,
+  "lic": 0,
+  "talenti": [
+   "Cleave",
+   "Improved Initiative",
+   "Iron Will",
+   "Lightning Reflexes",
+   "Power Attack"
+  ],
+  "ignoti": [
+   "Flyby Attack",
+   "Hover",
+   "Wingover",
+   "Multiattack",
+   "Snatch",
+   "Wingstorm"
+  ]
+ },
+ {
+  "file": "Bestiario/villain/Wyrmlord_Karruk/wyrmlord-karruk-cr13.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 24,
+   "Des": 10,
+   "Cos": 20,
+   "Int": 10,
+   "Sag": 12,
+   "Car": 10
+  },
+  "bab": 14,
+  "livelli": {
+   "barbarian": 5
+  },
+  "dv": 18,
+  "lic": 0,
+  "talenti": [
+   "Cleave",
+   "Great Cleave",
+   "Improved Sunder",
+   "Leadership",
+   "Power Attack",
+   "Weapon Focus"
+  ],
+  "ignoti": [
+   "Intimidating Rage"
+  ]
+ },
+ {
+  "file": "Bestiario/villain/Zin_thara_Vel_Ryn/zin-thara-vel-ryn-cr12.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 8,
+   "Des": 18,
+   "Cos": 12,
+   "Int": 22,
+   "Sag": 12,
+   "Car": 16
+  },
+  "bab": 5,
+  "livelli": {},
+  "dv": 11,
+  "lic": 0,
+  "talenti": [
+   "Combat Reflexes",
+   "Dodge",
+   "Greater Spell Focus",
+   "Mobility",
+   "Scribe Scroll",
+   "Silent Spell"
+  ],
+  "ignoti": [
+   "Incantesimi Focalizzati"
+  ]
+ },
+ {
+  "file": "Bestiario/villain/abbathor-blackguard-cr10.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 18,
+   "Des": 12,
+   "Cos": 16,
+   "Int": 10,
+   "Sag": 16,
+   "Car": 16
+  },
+  "bab": 10,
+  "livelli": {
+   "blackguard": 10
+  },
+  "dv": 10,
+  "lic": 0,
+  "talenti": [
+   "Cleave",
+   "Improved Sunder",
+   "Power Attack",
+   "Weapon Focus"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/villain/abbathor-cleric11-cr11.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 16,
+   "Des": 10,
+   "Cos": 16,
+   "Int": 12,
+   "Sag": 18,
+   "Car": 14
+  },
+  "bab": 8,
+  "livelli": {
+   "cleric": 11
+  },
+  "dv": 11,
+  "lic": 11,
+  "talenti": [
+   "Combat Casting",
+   "Improved Initiative",
+   "Quicken Spell",
+   "Spell Penetration"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/villain/arbitrax-drago-rosso-cr15.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 31,
+   "Des": 10,
+   "Cos": 23,
+   "Int": 14,
+   "Sag": 15,
+   "Car": 20
+  },
+  "bab": 19,
+  "livelli": {},
+  "dv": 19,
+  "lic": 0,
+  "talenti": [
+   "Improved Bull Rush",
+   "Improved Initiative",
+   "Power Attack"
+  ],
+  "ignoti": [
+   "Colpo Terrificante",
+   "Attacco in Volo",
+   "Ghermire",
+   "Virata"
+  ]
+ },
+ {
+  "file": "Bestiario/villain/balvar-fuocospento-cr13.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 12,
+   "Des": 14,
+   "Cos": 16,
+   "Int": 16,
+   "Sag": 20,
+   "Car": 14
+  },
+  "bab": 9,
+  "livelli": {
+   "cleric": 9
+  },
+  "dv": 9,
+  "lic": 9,
+  "talenti": [
+   "Combat Casting",
+   "Iron Will",
+   "Lightning Reflexes",
+   "Scribe Scroll"
+  ],
+  "ignoti": [
+   "Incidere Rune"
+  ]
+ },
+ {
+  "file": "Bestiario/villain/bebilith-guardiano-cr10.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 28,
+   "Des": 12,
+   "Cos": 26,
+   "Int": 11,
+   "Sag": 13,
+   "Car": 13
+  },
+  "bab": 12,
+  "livelli": {},
+  "dv": 12,
+  "lic": 0,
+  "talenti": [
+   "Cleave",
+   "Improved Grapple",
+   "Improved Initiative",
+   "Power Attack",
+   "Track"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/villain/draxoksus-shamano-draconico-cr8.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 20,
+   "Des": 16,
+   "Cos": 16,
+   "Int": 13,
+   "Sag": 8,
+   "Car": 15
+  },
+  "bab": 4,
+  "livelli": {},
+  "dv": 6,
+  "lic": 0,
+  "talenti": [
+   "Weapon Focus"
+  ],
+  "ignoti": [
+   "Diving Charge",
+   "Powerful Charge"
+  ]
+ },
+ {
+  "file": "Bestiario/villain/koth-signore-dei-dragoni-cr8.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 16,
+   "Des": 15,
+   "Cos": 16,
+   "Int": 8,
+   "Sag": 10,
+   "Car": 17
+  },
+  "bab": 6,
+  "livelli": {
+   "sorcerer": 8
+  },
+  "dv": 11,
+  "lic": 8,
+  "talenti": [
+   "Improved Initiative",
+   "Iron Will",
+   "Lightning Reflexes",
+   "Persuasive"
+  ],
+  "ignoti": [
+   "Sudden Enlarge"
+  ]
+ },
+ {
+  "file": "Bestiario/villain/krusk-sfondacancelli-cr14.md",
+  "sistema": "pf1e",
+  "car": {
+   "For": 30,
+   "Des": 11,
+   "Cos": 22,
+   "Int": 8,
+   "Sag": 12,
+   "Car": 6
+  },
+  "bab": 13,
+  "livelli": {
+   "barbarian": 5,
+   "fighter": 1
+  },
+  "dv": 6,
+  "lic": 0,
+  "talenti": [
+   "Cleave",
+   "Diehard",
+   "Great Cleave",
+   "Improved Initiative",
+   "Power Attack"
+  ],
+  "ignoti": [
+   "Ira Distruttiva",
+   "Ira Intimidatoria"
+  ]
+ },
+ {
+  "file": "Bestiario/villain/minotauro-karkilan-cr5.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 23,
+   "Des": 10,
+   "Cos": 19,
+   "Int": 7,
+   "Sag": 10,
+   "Car": 8
+  },
+  "bab": 7,
+  "livelli": {
+   "barbarian": 1
+  },
+  "dv": 1,
+  "lic": 0,
+  "talenti": [
+   "Great Fortitude",
+   "Iron Will",
+   "Power Attack"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/villain/ozyrrandion-drago-verde-cr14.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 27,
+   "Des": 10,
+   "Cos": 23,
+   "Int": 16,
+   "Sag": 17,
+   "Car": 16
+  },
+  "bab": 22,
+  "livelli": {},
+  "dv": 22,
+  "lic": 0,
+  "talenti": [
+   "Improved Initiative",
+   "Power Attack"
+  ],
+  "ignoti": [
+   "Attacco in Volo",
+   "Fluttuare",
+   "Multiattacco",
+   "Multiattacco Migliorato",
+   "Armatura Naturale Migliorata",
+   "Virata"
+  ]
+ },
+ {
+  "file": "Bestiario/villain/phantom-fungus-cr3.md",
+  "sistema": "dnd35",
+  "car": {
+   "For": 14,
+   "Des": 10,
+   "Cos": 16,
+   "Int": 2,
+   "Sag": 11,
+   "Car": 9
+  },
+  "bab": 1,
+  "livelli": {},
+  "dv": 2,
+  "lic": 0,
+  "talenti": [
+   "Alertness"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/villain/ur-vrax-voce-del-drago-cr10.md",
+  "sistema": "pf1e",
+  "car": {
+   "For": 21,
+   "Des": 14,
+   "Cos": 18,
+   "Int": 10,
+   "Sag": 23,
+   "Car": 14
+  },
+  "bab": 6,
+  "livelli": {
+   "cleric": 9
+  },
+  "dv": 9,
+  "lic": 9,
+  "talenti": [
+   "Combat Casting",
+   "Greater Spell Focus",
+   "Spell Focus",
+   "Toughness"
+  ],
+  "ignoti": []
+ },
+ {
+  "file": "Bestiario/villain/vreek-volto-fantasma-cr10.md",
+  "sistema": "pf1e",
+  "car": {
+   "For": 20,
+   "Des": 25,
+   "Cos": 18,
+   "Int": 17,
+   "Sag": 12,
+   "Car": 10
+  },
+  "bab": 6,
+  "livelli": {
+   "rogue": 7,
+   "assassino": 2
+  },
+  "dv": 9,
+  "lic": 0,
+  "talenti": [
+   "Improved Initiative",
+   "Improved Two-Weapon Fighting",
+   "Two-Weapon Fighting",
+   "Weapon Finesse"
+  ],
+  "ignoti": []
+ }
+]

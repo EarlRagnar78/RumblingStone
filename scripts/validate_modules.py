@@ -47,24 +47,25 @@ REQUIRED = [
 # --- Termini banditi (5e / canone deprecato) ---------------------------------
 # Una riga che contiene un termine bandito è ESENTE se contiene anche un
 # marcatore di divieto/deprecazione (es. la frase che vieta il termine stesso).
-#: Condiviso con `validate_standalone`: una norma, un rilevatore. «lungo il
-#: muro» è una preposizione, non un riposo.
-RIPOSO_5E = (r"(?i)\bripos[oi]\b[^.\n]{0,25}?\**\b(?:brev[ei]|cort[oi]|lung[oh]i?)\b"
-             r"(?!\s+(?:il|lo|la|i|gli|le|l'|un|una|tutt)\b)"
-             r"|\b(?:brev[ei]|cort[oi]|lung[oh]i?)\s+ripos[oi]\b|\b(?:short|long)[\s-]+rests?\b")
-BANNED = [
-    (r"\bbonus action\b", "terminologia 5e (bonus action → azione veloce/swift)"),
-    (r"\blair action", "terminologia 5e (lair action → attacco speciale con ricarica)"),
-    (r"\bazioni? del covo\b", "terminologia 5e (azione del covo)"),
-    (r"\bDC\s?[0-9]", "usare CD, non DC (convenzione repo)"),
-    # Il riposo breve e il riposo lungo sono della 5e. In 3.5 e in PF1e ci sono le
-    # otto ore di sonno (incantesimi, capacità al giorno, 1 pf per livello) e il
-    # tempo che passa. Il DM, 2026-09-27: «non esistono riposi lunghi e corti».
-    (RIPOSO_5E, "riposo breve/lungo (5e) → otto ore di sonno, guarigione naturale SRD"),
+# Le meccaniche 5e vengono dal plugin della famiglia d20 (una lista sola, letta
+# anche da validate_standalone: ADR-0111, L3). Qui restano solo le voci del
+# canone della campagna, che non sono una regola del sistema.
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore.sistemi import sistema_di, termini_vietati  # noqa: E402
+
+CANONE_DEPRECATO = [
     (r"\bNymeria\b", "canone deprecato (il compagno è DURIK, D14)"),
     (r"\bSkulldark\b|\bInfernotooth\b", "canone deprecato (il drago è SKULLCRUSHER, D6)"),
     (r"[Cc]ane da [Gg]uerra .*(COSTRUTTO|animato)", "canone deprecato (Durik è compagno VIVENTE riforgiato)"),
 ]
+
+
+def banditi(path: "Path | None" = None) -> "list[tuple[str, str]]":
+    """I termini banditi per un file: quelli del suo sistema, poi il canone."""
+    sis = sistema_di(path) if path is not None else None
+    return termini_vietati(sis) + CANONE_DEPRECATO
+
+
 EXEMPT = re.compile(
     r"niente|MAI 5e|mai 5e|rimoss|vietat|deprecat|non usare|→|banditi|Errato"
     r"|errato|convenzione|usava|avevano|superat|storic|fonte|era(no)? ",
@@ -86,7 +87,7 @@ def check_file(path: Path, verbose: bool) -> tuple[list[str], list[str]]:
         if not re.search(pattern, text, re.MULTILINE):
             errors.append(f"sezione mancante: {label} (pattern /{pattern}/)")
 
-    for pattern, label in BANNED:
+    for pattern, label in banditi(path):
         rx = re.compile(pattern)
         for i, line in enumerate(lines, 1):
             if rx.search(line) and not EXEMPT.search(line):

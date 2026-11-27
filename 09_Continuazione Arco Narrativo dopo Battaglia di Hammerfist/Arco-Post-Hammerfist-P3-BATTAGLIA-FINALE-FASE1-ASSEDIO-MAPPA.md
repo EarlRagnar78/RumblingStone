@@ -21,7 +21,10 @@ La mappa della città può essere astratta in **settori**, ognuno associato a un
   - torri agli angoli,  
   - quartieri interni (tempio, piazza centrale, magazzini, residenziale).
 - Pianta della città, con le porte, la breccia sud e la poterna: `Mappe/rethmar/rethmar-pianta.svg`. Quattro porte a torri gemelle (Nord sul ponte, Ovest, Est, Sud) e la poterna; mura alte 6 m, senza fossato, con il Cannath a nord. È una grande città di circa 18.000 abitanti (110 ha dentro le mura), più della Brindol del libro, perché regga l'orda di circa 10.000 (scelta del DM, 2026-10-22) `[CANONE — DM 2026-10-23]`.
-- Quanti uomini servono sulle mura `[INFERRED — needs DM confirmation]`: la cinta della pianta è lunga 4,3 km, con 95 torri (1,2 km sono il muro sul fiume). Con la regola del Burghal Hidage (0,8 uomini per metro di mura) servono circa 3.400 difensori. Gli uomini abili, il 18% di 18.000 abitanti, sono circa 3.240: la sola leva non basta di poco. Sommata ai difensori degli scenari di `...ARMATE-SYNC.md` §3 (da circa 1.280 nel peggiore a circa 3.980 nel leggendario) fa da circa 4.500 a circa 7.200 uomini, e le mura si coprono in ogni scenario; quanti reggono davvero l'urto lo dicono gli scenari, non questa regola.
+- Quanti uomini servono sulle mura `[CANONE — DM 2026-11-05, P16, mura]`: la cinta della pianta è lunga 4,3 km, con 95 torri (1,2 km sono il muro sul fiume). Con la regola del Burghal Hidage (0,8 uomini per metro di mura) servono circa 3.400 difensori. La leva degli uomini abili (circa 3.240, il 18% di 18.000 abitanti) **non sale sulle mura**: porta l'acqua, tiene le cisterne e spegne i fuochi. Sulle mura combattono solo i difensori degli scenari di `...ARMATE-SYNC.md` §3 (da circa 1.280 nel peggiore a circa 3.980 nel leggendario), e i rapporti di forza di quella tabella restano quelli. Solo nel leggendario si copre l'intero giro: negli altri scenari i difensori scelgono quali tratti tenere, e i PG decidono quale fronte rinforzare.
+  <!-- storico -->
+  *Prima del 2026-11-05 la leva si sommava agli scenari (da circa 4.500 a circa 7.200 uomini, mura coperte in ogni scenario).*
+  <!-- /storico -->
 
 Non serve mappare tutto in dettaglio: puoi creare **3 mappe tattiche separate** per:
 

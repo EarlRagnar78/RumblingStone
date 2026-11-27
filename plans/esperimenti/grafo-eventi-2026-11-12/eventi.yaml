@@ -1,0 +1,132 @@
+# Il grafo degli eventi con i punti chiave, per la misura del 2026-11-12.
+# NON è canone: è la lettura di campaign/state.yaml (§4 «chi sa cosa», §8
+# march_clock, archi) con un giorno del March Clock su ogni fatto. Dove
+# state.yaml non lo scrive, il giorno è [INFERRED] e dice da dove viene.
+# Il canone lo decide il DM (ADR-0125, «Da rivedere se»).
+
+# --- I fatti: quando diventano veri (origine) e come si riconoscono in prosa
+fatti:
+  F_custodi:   {origine: 21, fonte: "ARC08-12-CRONOLOGIA-MARCH-CLOCK nota 1: Cerimonia delle 100 Asce = Day 21, dove Re Thorek li nomina (ARC-08 E5)",
+                chiavi: ["custodi eterni", "eternal guardians"]}
+  F_guerrieri: {origine: 0, fonte: "archi 01 Miniera, giocato prima del Day 1",
+                chiavi: ["guerrieri di cristallo", "cristal warriors", "crystal warriors"]}
+  F_gemme:     {origine: 0, fonte: "archi 06 Corona, giocato prima del Day 1",
+                chiavi: ["tre gemme", "3 gemme", "all 3 crown gems", "tutte e tre le gemme", "gemme della corona"]}
+  F_corona:    {origine: 0, fonte: "archi 06 Corona",
+                chiavi: ["corona di adamantio", "crown of adamantine", "la corona"]}
+  F_artefatti_quali: {origine: 0, fonte: "state §6 artefatti",
+                chiavi: ["aegis fang", "corona di adamantio", "anello dell'illuminazione caotica",
+                         "collana dei semi eterni", "quali artefatti"]}
+  F_sal_vatore: {origine: 0, fonte: "segreto del DM su Salvatore",
+                chiavi: ["vatore", "identità temporale", "temporal identity"]}
+  F_anello:    {origine: 0, fonte: "archi 04 Belkram",
+                chiavi: ["anello caotico", "anello dell'illuminazione caotica", "ring of chaotic"]}
+  F_bracieri:  {origine: 0, fonte: "INFERRED: ARC-07 Forgia (prima del Day 19)",
+                chiavi: ["bracieri gemelli", "twin braziers", "bracieri"]}
+  F_lorana_viva: {origine: 16, fonte: "INFERRED: Lorana a Rethmar con l'ondata dei profughi, Day 16-18 (state, Norro Wiston)",
+                chiavi: ["lorana è viva", "lorana viva", "lorana è a rethmar", "lorana alive"]}
+  F_mira_impostora: {origine: 0, fonte: "segreto del DM (Bestiario/png/Lorana)",
+                chiavi: ["aranea", "impostora", "impostor", "mira è morta", "uccisa e sostituita"]}
+  F_rete_varis: {origine: 0, fonte: "segreto del DM",
+                chiavi: ["rete porta a varis", "dietro c'è varis", "varis e sal", "network leads"]}
+  F_xal_piano: {origine: 0, fonte: "state §4 Sethrax",
+                chiavi: ["piano d'invasione", "invasion plan", "invasione di xal'thor"]}
+  F_thorik_risorto: {origine: 0, fonte: "archi 00 Guado",
+                chiavi: ["thorik è morto e risorto", "resuscitato al guado", "risorto al guado"]}
+  F_seme_porta: {origine: 25, fonte: "INFERRED: inizio finestra del Torneo (archi 09 P2B, Day 25-34)",
+                chiavi: ["seme di porta"]}
+  F_aeleth_morto: {origine: 0, fonte: "state §4 Maewen", chiavi: ["aeleth è morto", "aeleth verdebronzo è morto", "morte di aeleth"]}
+
+# --- Chi sa cosa, da quando (giorno = punto chiave) e da chi
+# giorno: il primo giorno in cui il PNG può saperlo. informato_da: arco del grafo
+# (ricorsivo: l'informatore deve saperlo prima, più il ritardo).
+sa:
+  - {png: sonjak,          fatto: F_guerrieri,  giorno: 0,  fonte: "come: scout drow all'assalto della miniera"}
+  - {png: zin-thara,       fatto: F_guerrieri,  giorno: 0,  fonte: "come Sonjak"}
+  - {png: zin-thara,       fatto: F_custodi,    giorno: 21, fonte: "il titolo nasce alla Cerimonia, Day 21"}
+  - {png: ghaurush,        fatto: F_custodi,    giorno: 21, fonte: "INFERRED: dopo la Cerimonia (Day 21)"}
+  - {png: ushgar,          fatto: F_custodi,    giorno: 21, fonte: "INFERRED: dopo la Cerimonia"}
+  - {png: azarr-kul,       fatto: F_custodi,    giorno: 21, fonte: "INFERRED: scout della Mano Rossa, dopo la Cerimonia"}
+  - {png: re-thorek,       fatto: F_custodi,    giorno: 21, fonte: "li nomina lui alla Cerimonia (Day 21)"}
+  - {png: tempestas,       fatto: F_custodi,    giorno: 21, fonte: "INFERRED: dopo la Cerimonia"}
+  - {png: norro-wiston,    fatto: F_custodi,    giorno: 21, fonte: "INFERRED: dopo la Cerimonia"}
+  - {png: norro-wiston,    fatto: F_thorik_risorto, giorno: 0, fonte: "testimone al Guado (Arco 00)"}
+  - {png: xal-thor,        fatto: F_bracieri,   giorno: 0,  fonte: "osservazione planare"}
+  - {png: sethrax,         fatto: F_seme_porta, giorno: 26, fonte: "come: Day 1-2 del Torneo (INFERRED: Torneo da Day 25)"}
+  - {png: zalkatar,        fatto: F_seme_porta, informato_da: sethrax, ritardo: 0, fonte: "dispaccio telepatico, ogni giorno"}
+  - {png: il-collezionista, fatto: F_anello,    giorno: 0,  fonte: "visto nella tana del minotauro"}
+  - {png: salvatore,       fatto: F_custodi,    informato_da: il-collezionista, ritardo: 1, fonte: "briefing del Collezionista"}
+  - {png: salvatore,       fatto: F_artefatti_quali, informato_da: il-collezionista, ritardo: 1, fonte: "briefing del Collezionista"}
+  - {png: salvatore,       fatto: F_anello,     informato_da: il-collezionista, ritardo: 1, fonte: "briefing del Collezionista"}
+  - {png: brenna-sorvane,  fatto: F_custodi,    informato_da: tempestas, ritardo: 2, fonte: "rapporti di Tempestas"}
+  - {png: brenna-sorvane,  fatto: F_lorana_viva, informato_da: tempestas, ritardo: 2, fonte: "rapporti di Tempestas"}
+  - {png: lathander-mask,  fatto: F_anello,     giorno: 0,  fonte: "consapevolezza divina"}
+  - {png: maewen,          fatto: F_aeleth_morto, giorno: 24, fonte: "lo scopre all'arrivo, Day 24"}
+  - {png: mira-serani,     fatto: F_artefatti_quali, giorno: 12, fonte: "INFERRED: spia da Drellin's Ferry (Day 12-13); ne sa frammenti"}
+
+# --- Chi NON sa (finché il canone non dice altro)
+non_sa:
+  - {png: sonjak,          fatto: F_gemme}
+  - {png: sonjak,          fatto: F_sal_vatore}
+  - {png: ghaurush,        fatto: F_artefatti_quali}
+  - {png: zin-thara,       fatto: F_corona}
+  - {png: ushgar,          fatto: F_artefatti_quali}
+  - {png: ghostlord,       fatto: F_custodi}
+  - {png: conte-valerius,  fatto: F_corona}
+  - {png: conte-valerius,  fatto: F_sal_vatore}
+  - {png: azarr-kul,       fatto: F_artefatti_quali}
+  - {png: sethrax,         fatto: F_xal_piano}
+  - {png: varis,           fatto: F_rete_varis}
+  - {png: lirien,          fatto: F_rete_varis}
+  - {png: mira-serani,     fatto: F_lorana_viva}
+  - {png: lorana,          fatto: F_mira_impostora}
+  - {png: tiri-kitor,      fatto: F_custodi}
+  - {png: maewen,          fatto: F_aeleth_morto, fino_a: 24}
+
+# --- Come la prosa nomina i PNG (alias a parola intera)
+alias:
+  sonjak: ["sonjak", "sajak", "matrona sajak"]
+  salvatore: ["salvatore", "sal"]
+  il-collezionista: ["collezionista"]
+  zalkatar: ["zalkatar"]
+  xal-thor: ["xal'thor", "xal’thor"]
+  sethrax: ["sethrax"]
+  azarr-kul: ["azarr kul", "azarr"]
+  conte-valerius: ["valerius"]
+  mira-serani: ["mira serani", "mira"]
+  ghaurush: ["ghaurush", "cenerevento"]
+  zin-thara: ["zin'thara", "zin’thara"]
+  ushgar: ["ushgar"]
+  ghostlord: ["ghostlord", "zeth"]
+  varis: ["varis"]
+  re-thorek: ["re thorek", "thorek"]
+  lythiel: ["lythiel"]
+  tempestas: ["tempestas"]
+  maewen: ["maewen"]
+  therysol: ["therysol"]
+  lirien: ["lirien"]
+  lorana: ["lorana"]
+  brenna-sorvane: ["brenna"]
+  norro-wiston: ["norro"]
+  sertieren: ["sertieren"]
+  tiri-kitor: ["tiri-kitor", "tiri kitor"]
+  lathander-mask: ["lathander", "mask"]
+
+# --- Il giorno della scena: dal file (finestra dell'arco in state.yaml)
+# Prima regola che combacia col nome del file vince. ARC-07 [INFERRED]: tutto prima del Day 19.
+finestre_file:
+  - {rx: "^07_", giorni: [14, 19], fonte: "ARC07-00-INDICE, cronologia approvata dal DM il 2026-07-03: Day 14-15 → 18-19"}
+  - {rx: "^08_", giorni: [1, 21], fonte: "ARC08-12-CRONOLOGIA-MARCH-CLOCK: Day 1 (avanguardia) → Day 21 (Cerimonia)"}
+  - {rx: "P1A", giorni: [20, 30]}
+  - {rx: "P1B", giorni: [22, 28]}
+  - {rx: "P1C", giorni: [25, 30]}
+  - {rx: "P2A|Torre", giorni: [28, 35]}
+  - {rx: "P2B|Torneo", giorni: [25, 34]}
+  - {rx: "P2C|Salvatore", giorni: [28, 36]}
+  - {rx: "P2-RHEST|Rhest", giorni: [25, 32]}
+  - {rx: "Starsong", giorni: [30, 35]}
+  - {rx: "Ghostlord", giorni: [25, 32]}
+  - {rx: "Sabotaggio", giorni: [30, 36]}
+  - {rx: "Missioni", giorni: [30, 38]}
+  - {rx: "BATTAGLIA-FINALE", giorni: [42, 42]}
+  - {rx: "^09_", giorni: [20, 41], fonte: "march_clock.finestra: Arc 09, Days 20-41"}

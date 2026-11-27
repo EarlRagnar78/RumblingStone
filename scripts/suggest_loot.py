@@ -192,6 +192,23 @@ def pick_mundane(budget: float, pool: list[dict], rng, limit: int = 3):
 
 
 # ───────────────────────── Output formatting ─────────────────────────
+# Tesoro di un sistema diverso dal 3.5 (ADR-0111): (APL → mo, etichetta).
+# None = DMG 3.5 Tab. 3-5, come sempre.
+TESORO_SISTEMA: "tuple[dict[int, int], str] | None" = None
+
+
+def tesoro_di(sistema: str, velocita: str | None = None) -> "tuple[dict[int, int], str]":
+    sys.path.insert(0, str(HERE))
+    from dmcore import sistemi as S
+    if sistema not in S.attivi():
+        raise SystemExit(f"[suggest_loot] sistema «{sistema}» non attivo in sistemi.toml")
+    velocita = velocita or S.opzione(sistema, "velocita_tesoro", "media")
+    tab = S.dati(sistema, "tesoro.per_livello").get("mo_per_incontro", {})
+    if velocita not in tab:
+        raise SystemExit(f"[suggest_loot] {sistema}: velocità «{velocita}» assente")
+    return {int(k): int(v) for k, v in tab[velocita].items()}, f"{sistema}, velocità {velocita}"
+
+
 def render_loot(el: float, factions: list[str], loot_tag: str, pcs: int,
                 density: float, seed_hint: int | None, rng, no_magic: bool,
                 include_fr: bool) -> str:
@@ -221,6 +238,10 @@ def render_loot(el: float, factions: list[str], loot_tag: str, pcs: int,
         out.append(f"> ⚠ EL {el_int} fuori range tabella (1-20).")
         return "\n".join(out)
 
+    if TESORO_SISTEMA is not None:
+        # Il PRD dà solo il valore per incontro: la ripartizione fra monete,
+        # gemme e oggetti resta quella della riga 3.5 dello stesso livello.
+        tbl = dict(tbl, gp=TESORO_SISTEMA[0][el_int])
     gp_total, coins_gp, goods_gp, items_gp = split_treasure(tbl, density)
 
     # Coins
@@ -276,8 +297,13 @@ def render_loot(el: float, factions: list[str], loot_tag: str, pcs: int,
     out.append(f"- Valore totale atteso: ~{int(gp_total)} gp")
     out.append(f"- Quota a testa (se dividono tutto): ~{int(gp_total/pcs)} gp")
 
-    out.append(f"\n---\n*Generato da `suggest_loot.py` · DMG 3.5 Tab. 3-5 · "
-               f"magic items solo meccanica SRD*")
+    if TESORO_SISTEMA is not None:
+        out.append(f"\n---\n*Generato da `suggest_loot.py` · {TESORO_SISTEMA[1]}: valore per "
+                   f"incontro dal PRD (Treasure Values per Encounter, APL {el_int}) · "
+                   f"ripartizione e oggetti dalle tabelle 3.5 · magic items solo meccanica SRD*")
+    else:
+        out.append(f"\n---\n*Generato da `suggest_loot.py` · DMG 3.5 Tab. 3-5 · "
+                   f"magic items solo meccanica SRD*")
     return "\n".join(out)
 
 
@@ -300,7 +326,19 @@ def main():
     ap.add_argument("--seed", type=int, default=None)
     ap.add_argument("--all-proposals", action="store_true",
                     help="Generate loot for every proposal in the encounter file.")
+    ap.add_argument("--sistema", default=None,
+                    help="sistema di gioco del valore del tesoro (sistemi.toml; predefinito dnd35)")
+    ap.add_argument("--velocita", choices=("lenta", "media", "veloce"), default=None,
+                    help="velocità PF1e (predefinita: opzioni.pf1e.velocita_tesoro)")
     args = ap.parse_args()
+
+    global TESORO_SISTEMA
+    sys.path.insert(0, str(HERE))
+    from dmcore import sistemi as S
+    # Il predefinito (3.5) ha le tabelle per EL di loot_tables.yaml; un altro
+    # sistema il valore per incontro del suo plugin (tesoro.per_livello).
+    if args.sistema and args.sistema != S.predefinito():
+        TESORO_SISTEMA = tesoro_di(args.sistema, args.velocita)
 
     rng = random.Random(args.seed)
     density_cfg = load_yaml(LOOT_TABLES).get("density_modifiers") or {

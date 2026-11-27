@@ -1,10 +1,13 @@
-# Ghaurush «Cenerevento» — Generale Elementalista della Mano Rossa [ACCEPTED — DM-canon]
+# Ghaurush «Cenerevento» — Generale Elementalista della Mano Rossa [CANONE — DM 2026-08-05]
 **Faction**: mano-rossa | **Role**: boss-caster-brute | **Environment**: any (colline/accampamenti/assedio) | **CR**: 16 | **Source**: SRD *Ogre Mage* (base CR 8) + livelli di Stregone (SRD PHB); template PF1e *Advanced* per la variante | **Status**: accepted
 
 
 ```statblocco
 gs: 16
 tipo: Large giant (ogre magi), LE
+taglia: Grande
+spazio: 3 m
+portata: 3 m
 ca: 22
 ca-dettaglio: (−1 taglia, +5 naturale, +6 giaco di maglia +2 Large, +2 deflessione), contatto 11, colto alla sprovvista 22 — 26 con *scudo* attivo
 pf: 107
@@ -13,7 +16,7 @@ ts: Temp +11, Rifl +3, Vol +11
 attributi: For 21 Des 10 Cos 21 Int 14 Sag 14 Car 22
 velocita: 12 m (9 m in armatura), volo 12 m (perfetto/buono, Sop, a volontà)
 attacchi:
-  - Mischia spadone Large +11/+6 (3d6+7)
+  - Mischia spadone Large +11/+6 (3d6+7/19-20)
 ```
 
 > Correzione 3.5 da `scripts/conformita_statblocchi.py`, superata dalla nota qui sotto: variante «Cenere Piena», CA 23 → **25** (29 con *scudo*): il template Advanced dà +2 di armatura naturale **e** +4 Des, cioè altri +2 alla CA. La regola rapida PF1e dice lo stesso: +4 alla CA.
@@ -31,7 +34,7 @@ Large giant (ogre magi), LE.
 
 **Difesa** **CA 22** (−1 taglia, +5 naturale, +6 giaco di maglia +2 Large, +2 deflessione), contatto 11, colto alla sprovvista 22 — **26 con *scudo* attivo** · **hp 107** (**DV 5d8 + 8d4**, Stregone 8; Con 21 con *amuleto di salute +4*) · **TS** Temp +11, Rifl +3, Vol +11 · **RI 19**, **Rigenerazione 5** (fuoco e acido infliggono danni normali)
 
-**Attacco** Vel 12 m (9 m in armatura), **volo 12 m (perfetto/buono, Sop, a volontà)** · **Mischia** spadone Large +11/+6 (3d6+7) · **Distanza** — usa incantesimi.
+**Attacco** Vel 12 m (9 m in armatura), **volo 12 m (perfetto/buono, Sop, a volontà)** · **Mischia** spadone Large +11/+6 (3d6+7/19-20) · **Distanza** — usa incantesimi.
 
 **Incantesimi da Stregone 8** (CL 8; CD 10 + livello + 6, +1 per Invocazione)
 | Liv | Al giorno | Conosciuti (SRD) |
@@ -45,17 +48,6 @@ Large giant (ogre magi), LE.
 > Gli slot sono quelli dello Stregone 8 più i bonus di Car 22 (+6): 6/8/8/6/4. Uno Stregone 8 conosce 8/5/3/2/1 incantesimi: la tabella ne scrive 6/4/3/2/1, quindi due trucchetti e un incantesimo di 1° sono ancora da scegliere [DA SCRIVERE].
 
 > ⚠️ Uno Stregone 8 **conosce un solo incantesimo di 4° livello**. La varietà elementale di Ghaurush viene dall'**equipaggiamento**, non da slot inventati.
-
-**Statistiche** For 21, Des 10, Cos 21, Int 14, Sag 14, Car 22 (20 base + *mantello del carisma +2*) · **BAB/Lotta** +7/**+16** · **Talenti** Iniziativa Migliorata, Volontà di Ferro, Incantesimi in Combattimento, Incantesimi Focalizzati (Invocazione), Incantesimo Esteso · **Qualità speciali** tratti dei giganti
-
-**Equipaggiamento** (tabella PNG livello 16, DMG): *amuleto di salute +4*, *mantello del carisma +2*, giaco di maglia +2 (Large), *anello di protezione +2*, **bastone del fuoco** (*mani brucianti*, *palla di fuoco*, **muro di fuoco** — 10 cariche), 2 pergamene di **assorbimento vitale** (*enervation*: tocco a distanza, 1d4 livelli negativi, **nessun TS**), 2 pergamene di *dissolvi magie*, spadone Large.
-
-**Capacità speciali**
-
-**Capacità magiche (CL 9, CD basata su Car)**: *a volontà* — **oscurità**, **invisibilità**; *1/giorno* — **charme su persone** (CD 17), **cono di freddo** (9d6, **CD 21**), **forma gassosa**, **metamorfosi**, **sonno** (CD 17).
-
-**Il puzzle dell'adamantio (la parte memorabile)**: con *pelle di pietra* attiva ha **RD 10/adamantio**. I pugni di Tordek (Bracieri, adamantio) e i Treant Adamantini di Hella la **superano**; **Aegis Fang no** (è sacra, non adamantina). Il tank del gruppo scopre di essere l'unico che non buca — e la soluzione è il compagno che di solito sta dietro.
-**Il puzzle del fuoco**: la Rigenerazione 5 si spegne **solo** con fuoco o acido. L'unico fuoco affidabile del party è quello di Tordek e Artemis — e ogni fiamma che accendono è una minaccia per Hella (vulnerabilità ×1,5). **Ucciderlo costa a Hella lo spazio in cui stare.**
 
 **Tattiche** — *Ghaurush non viene mai sorpreso e non combatte mai a terra.*
 
@@ -74,6 +66,17 @@ Large giant (ogre magi), LE.
 
 6. **Fuga** (≤ 25% pf o RD superata): *metamorfosi* in qualcosa di piccolo + *invisibilità*, oppure forma gassosa nei camini/crepacci. **Ghaurush è progettato per tornare.**
 
+**Statistiche** For 21, Des 10, Cos 21, Int 14, Sag 14, Car 22 (20 base + *mantello del carisma +2*) · **BAB/Lotta** +7/**+16** · **Talenti** Iniziativa Migliorata, Volontà di Ferro, Incantare in Combattimento, Incantesimi Focalizzati (Invocazione), Incantesimi Estesi · **Qualità speciali** tratti dei giganti
+
+**Equipaggiamento** (tabella PNG livello 16, DMG): *amuleto di salute +4*, *mantello del carisma +2*, giaco di maglia +2 (Large), *anello di protezione +2*, **bastone del fuoco** (*mani brucianti*, *palla di fuoco*, **muro di fuoco** — 10 cariche), 2 pergamene di **assorbimento vitale** (*enervation*: tocco a distanza, 1d4 livelli negativi, **nessun TS**), 2 pergamene di *dissolvi magie*, spadone Large.
+
+**Capacità speciali**
+
+**Capacità magiche (CL 9, CD basata su Car)**: *a volontà* — **oscurità**, **invisibilità**; *1/giorno* — **charme su persone** (CD 17), **cono di freddo** (9d6, **CD 21**), **forma gassosa**, **metamorfosi**, **sonno** (CD 17).
+
+**Il puzzle dell'adamantio (la parte memorabile)**: con *pelle di pietra* attiva ha **RD 10/adamantio**. I pugni di Tordek (Bracieri, adamantio) e i Treant Adamantini di Hella la **superano**; **Aegis Fang no** (è sacra, non adamantina). Il tank del gruppo scopre di essere l'unico che non buca — e la soluzione è il compagno che di solito sta dietro.
+**Il puzzle del fuoco**: la Rigenerazione 5 si spegne **solo** con fuoco o acido. L'unico fuoco affidabile del party è quello di Tordek e Artemis — e ogni fiamma che accendono è una minaccia per Hella (vulnerabilità ×1,5). **Ucciderlo costa a Hella lo spazio in cui stare.**
+
 **Variante «Cenere Piena» (Advanced, template semplice PF1e) — CR 17**: +4 a tutte le caratteristiche, +2 CA naturale, +2 a tiri per colpire, TS e CD. Risultato: **hp 133, CA 26** (30 con *scudo*), For 25 → spadone +13/+8 (3d6+10), **cono di freddo CD 23**, *palla di fuoco* CD 22. Usare questa versione **solo se Ghaurush combatte da solo** (EL 17 = APL+4, tetto della skill di boosting).
 
 Benchmark: PF T1-1 riga 16: CA 22 (−9), pf 107 (−133), att +11 (−15), CD 21 (−3) → **CA molto sotto, pf sotto, CD sotto**. Questo è atteso e voluto: un PNG-incantatore 3.5 non regge i benchmark PF sui numeri puri. La sua CS reale viene da **negazione del contatto** (volo + dislocamento + forma gassosa), **danni senza TS** (muro di fuoco, assorbimento vitale) e **rigenerazione**. Se il DM lo vuole "solido" a numeri, usare la variante *Advanced*.
@@ -91,3 +94,5 @@ Boost log: correzione dei conti (armatura naturale +5 e scurovisione 27 m dell'o
 - era: variante «Cenere Piena» spadone 3d6+9
 - era: benchmark letto sulla riga 16 con pf 200 e attacco +25 (la tabella del repo dà 240 e +26)
 <!-- /storico -->
+
+> correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12, lotto 2 di ADR-0126): critico di «Mischia spadone Large» scritto (19-20, tabella delle armi dell'SRD).

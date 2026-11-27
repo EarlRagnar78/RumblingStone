@@ -1,0 +1,88 @@
+{
+  "python": "3.13.18",
+  "liste": 4494,
+  "risultati": [
+    {
+      "nome": "importlib (registro per nome, libreria standard)",
+      "dipendenze": "nessuna (libreria standard)",
+      "righe_caricatore": 14,
+      "correttezza": {
+        "dnd35": "4494/4494",
+        "pf1e": "4494/4494"
+      },
+      "isolamento": true,
+      "ostili_rifiutate": "12/12",
+      "ostili_accettate": [],
+      "rifiuti": [
+        "risale con ..: ValueError",
+        "percorso assoluto: ValueError",
+        "modulo della libreria standard: ValueError",
+        "modulo builtins: ValueError",
+        "modulo con punto: ValueError",
+        "funzione dunder: ValueError",
+        "attributo di un attributo: ValueError",
+        "funzione che non c'è: ValueError",
+        "non chiamabile: ValueError",
+        "modulo che non c'è: ValueError",
+        "symlink fuori dalla cartella: ValueError",
+        "vuota: ValueError"
+      ],
+      "determinismo": true
+    },
+    {
+      "nome": "entry point (importlib.metadata, PyPA)",
+      "dipendenze": "nessuna, ma serve un dist-info installato per ogni plugin",
+      "righe_caricatore": 16,
+      "correttezza": {
+        "dnd35": "4494/4494",
+        "pf1e": "72/4494"
+      },
+      "isolamento": false,
+      "ostili_rifiutate": "8/12",
+      "ostili_accettate": [
+        "modulo della libreria standard → posix.system",
+        "modulo builtins → builtins.exec",
+        "attributo di un attributo → math.sqrt",
+        "symlink fuori dalla cartella → fuori.combine_el"
+      ],
+      "rifiuti": [
+        "risale con ..: AttributeError",
+        "percorso assoluto: AttributeError",
+        "modulo con punto: ModuleNotFoundError (dopo aver eseguito ['metodi'])",
+        "funzione dunder: ValueError (dopo aver eseguito ['metodi'])",
+        "funzione che non c'è: AttributeError (dopo aver eseguito ['metodi'])",
+        "non chiamabile: ValueError (dopo aver eseguito ['metodi'])",
+        "modulo che non c'è: ModuleNotFoundError",
+        "vuota: AttributeError"
+      ],
+      "determinismo": true
+    },
+    {
+      "nome": "pluggy 1.7 (ganci) sopra importlib",
+      "dipendenze": "pluggy (MIT, puro Python, 2.094 righe)",
+      "righe_caricatore": 19,
+      "correttezza": {
+        "dnd35": "4494/4494",
+        "pf1e": "4494/4494"
+      },
+      "isolamento": true,
+      "ostili_rifiutate": "12/12",
+      "ostili_accettate": [],
+      "rifiuti": [
+        "risale con ..: ValueError",
+        "percorso assoluto: ValueError",
+        "modulo della libreria standard: ValueError",
+        "modulo builtins: ValueError",
+        "modulo con punto: ValueError",
+        "funzione dunder: ValueError",
+        "attributo di un attributo: ValueError",
+        "funzione che non c'è: ValueError",
+        "non chiamabile: ValueError",
+        "modulo che non c'è: ValueError",
+        "symlink fuori dalla cartella: ValueError",
+        "vuota: ValueError"
+      ],
+      "determinismo": true
+    }
+  ]
+}

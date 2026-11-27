@@ -1,0 +1,949 @@
+{
+ "07_il Portale Della Forgia Eterna/homebrew/sessione-notte-e-alba/ARC07-NOTTE-E-ALBA-BOOKLET.manifest.json": {
+  "pagine": 158,
+  "S1": {
+   "capitoli": 8,
+   "intro_volume": true,
+   "intro_caratteri": [
+    0,
+    0,
+    12,
+    0,
+    0,
+    17,
+    190,
+    1913
+   ],
+   "intro_mediana": 6.0,
+   "dettaglio": [
+    {
+     "titolo": "I · Regia della serata",
+     "intro": 0,
+     "primo": "§0 · La serata in una tabella"
+    },
+    {
+     "titolo": "II · Chi c'è stanotte: i cattivi, le schede, le mappe",
+     "intro": 0,
+     "primo": "Zog'tar Deatheye, il generale"
+    },
+    {
+     "titolo": "III · Il barile sulla tenda di Zog'tar: la serata comincia qui",
+     "intro": 12,
+     "primo": "Chi si incontra in questo capitolo"
+    },
+    {
+     "titolo": "IV · Il Seme-Mercato: l'ora della pergamena",
+     "intro": 0,
+     "primo": "Chi si incontra in questo capitolo"
+    },
+    {
+     "titolo": "V · La cassetta del DM: cast, pronuncia, read-aloud, suoni",
+     "intro": 0,
+     "primo": "§1 · Il foglio del cast"
+    },
+    {
+     "titolo": "VI · Il Viaggio a Mille Anni fa",
+     "intro": 17,
+     "primo": "Il Portale della Forgia Eterna — Hammerfist ≈372 DR, il duello con Skullcrusher, il Rubino"
+    },
+    {
+     "titolo": "VII · La Forgia ricorda le ferite",
+     "intro": 190,
+     "primo": "Chi si incontra in questo capitolo"
+    },
+    {
+     "titolo": "VIII · Durik, il compagno di Hella",
+     "intro": 1913,
+     "primo": "Le statistiche"
+    }
+   ],
+   "con_intro": 1
+  },
+  "S2": {
+   "nel_testo": 0,
+   "sulla_mappa": 0,
+   "comuni": 0,
+   "solo_testo": [],
+   "solo_mappa": [],
+   "quota_testo_con_mappa": null
+  },
+  "S3": {
+   "n": 0,
+   "entro_una": null,
+   "mediana": null,
+   "per_nome_mappa": {
+    "n": 47,
+    "entro_una": 0.085,
+    "mediana": 11,
+    "massima": 107
+   },
+   "mappe": 12
+  },
+  "S4": {
+   "regione": false,
+   "png": true,
+   "pagine_regione": 0,
+   "pagine_png": 3,
+   "quota": 0.019,
+   "fonte": "indice del PDF"
+  },
+  "S5": {
+   "principali": 4,
+   "con_ritratto": 4,
+   "quota": 1.0,
+   "senza": [],
+   "fonte": "PDF"
+  }
+ },
+ "07_il Portale Della Forgia Eterna/homebrew/sessione-resurrezione-mille-anni/ARC07-SERATA-RESURREZIONE-BOOKLET.manifest.json": {
+  "pagine": 172,
+  "S1": {
+   "capitoli": 6,
+   "intro_volume": true,
+   "intro_caratteri": [
+    0,
+    0,
+    121,
+    129,
+    17,
+    0
+   ],
+   "intro_mediana": 8.5,
+   "dettaglio": [
+    {
+     "titolo": "I · Regia della serata",
+     "intro": 0,
+     "primo": "§0 · La serata in una tabella"
+    },
+    {
+     "titolo": "II · La cassetta del DM: cast, pronuncia, read-aloud, suoni",
+     "intro": 0,
+     "primo": "§1 · Il foglio del cast"
+    },
+    {
+     "titolo": "III · Il Ritorno e gli Affreschi",
+     "intro": 121,
+     "primo": "Il Portale della Forgia Eterna — la Sala, gli Otto Affreschi, la Stanza della Corona"
+    },
+    {
+     "titolo": "IV · La Resurrezione di Hella",
+     "intro": 129,
+     "primo": "Il Portale della Forgia Eterna — il Cuore di Moradin, i Doni, il Debito della Radice"
+    },
+    {
+     "titolo": "V · Il Viaggio a Mille Anni fa",
+     "intro": 17,
+     "primo": "Il Portale della Forgia Eterna — Hammerfist ≈372 DR, il duello con Skullcrusher, il Rubino"
+    },
+    {
+     "titolo": "VI · La Collana dei Semi Eterni",
+     "intro": 0,
+     "primo": "Chi si incontra in questo capitolo"
+    }
+   ],
+   "con_intro": 0
+  },
+  "S2": {
+   "nel_testo": 8,
+   "sulla_mappa": 0,
+   "comuni": 0,
+   "solo_testo": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "solo_mappa": [],
+   "quota_testo_con_mappa": 0.0
+  },
+  "S3": {
+   "n": 0,
+   "entro_una": null,
+   "mediana": null,
+   "per_nome_mappa": {
+    "n": 45,
+    "entro_una": 0.089,
+    "mediana": 17,
+    "massima": 100
+   },
+   "mappe": 12
+  },
+  "S4": {
+   "regione": false,
+   "png": true,
+   "pagine_regione": 0,
+   "pagine_png": 4,
+   "quota": 0.023,
+   "fonte": "indice del PDF"
+  },
+  "S5": {
+   "principali": 4,
+   "con_ritratto": 4,
+   "quota": 1.0,
+   "senza": [],
+   "fonte": "PDF"
+  }
+ },
+ "07_il Portale Della Forgia Eterna/homebrew/sessione-ritorno-forgia/ARC07-RITORNO-FORGIA-BOOKLET.manifest.json": {
+  "pagine": 29,
+  "S1": {
+   "capitoli": 2,
+   "intro_volume": true,
+   "intro_caratteri": [
+    703,
+    121
+   ],
+   "intro_mediana": 412.0,
+   "dettaglio": [
+    {
+     "titolo": "I · Regia del Ritorno",
+     "intro": 703,
+     "primo": "0. Che tipo di serata è questa"
+    },
+    {
+     "titolo": "II · Il Ritorno e gli Affreschi",
+     "intro": 121,
+     "primo": "Il Portale della Forgia Eterna — la Sala, gli Otto Affreschi, la Stanza della Corona"
+    }
+   ],
+   "con_intro": 1
+  },
+  "S2": {
+   "nel_testo": 8,
+   "sulla_mappa": 0,
+   "comuni": 0,
+   "solo_testo": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8"
+   ],
+   "solo_mappa": [],
+   "quota_testo_con_mappa": 0.0
+  },
+  "S3": {
+   "n": 0,
+   "entro_una": null,
+   "mediana": null,
+   "per_nome_mappa": {
+    "n": 15,
+    "entro_una": 0.133,
+    "mediana": 17,
+    "massima": 23
+   },
+   "mappe": 2
+  },
+  "S4": {
+   "regione": false,
+   "png": false,
+   "pagine_regione": 0,
+   "pagine_png": 0,
+   "quota": 0.0,
+   "fonte": "indice del PDF"
+  },
+  "S5": {
+   "principali": 0,
+   "con_ritratto": 0,
+   "quota": null,
+   "senza": [],
+   "fonte": "PDF"
+  }
+ },
+ "07_il Portale Della Forgia Eterna/homebrew/sessione-terros/ARC07-SESSIONE-TERROS-BOOKLET.manifest.json": {
+  "pagine": 65,
+  "S1": {
+   "capitoli": 9,
+   "intro_volume": true,
+   "intro_caratteri": [
+    null,
+    null,
+    0,
+    680,
+    251,
+    211,
+    281,
+    173,
+    570
+   ],
+   "intro_mediana": 251,
+   "dettaglio": [
+    {
+     "titolo": "✉ Teaser giocatori — «L'Ultima Porta»",
+     "intro": null,
+     "primo": null
+    },
+    {
+     "titolo": "Domani: L'Ultima Porta",
+     "intro": null,
+     "primo": null
+    },
+    {
+     "titolo": "La cassetta del DM — cast, pronuncia, read-aloud, suoni",
+     "intro": 0,
+     "primo": "§1 · Il foglio del cast"
+    },
+    {
+     "titolo": "I · Regia della Sessione",
+     "intro": 680,
+     "primo": "0. Fotografia della vigilia (canone)"
+    },
+    {
+     "titolo": "II · Master integrale — Piano della Terra & Terros",
+     "intro": 251,
+     "primo": "Il Portale della Forgia Eterna — Seconda Gemma (Smeraldo della Forza)"
+    },
+    {
+     "titolo": "✉ Hint — Thorik",
+     "intro": 211,
+     "primo": "Ciò che porti (e che nessuno ti ha chiesto di portare)"
+    },
+    {
+     "titolo": "✉ Hint — Tordek",
+     "intro": 281,
+     "primo": "Ciò che è accaduto (fresco come una cicatrice)"
+    },
+    {
+     "titolo": "✉ Hint — Artemis",
+     "intro": 173,
+     "primo": "Ciò che vedi (che gli altri non vedono)"
+    },
+    {
+     "titolo": "✉ Echi — Hella",
+     "intro": 570,
+     "primo": "Primo eco"
+    }
+   ],
+   "con_intro": 2
+  },
+  "S2": {
+   "nel_testo": 0,
+   "sulla_mappa": 0,
+   "comuni": 0,
+   "solo_testo": [],
+   "solo_mappa": [],
+   "quota_testo_con_mappa": null
+  },
+  "S3": {
+   "n": 0,
+   "entro_una": null,
+   "mediana": null,
+   "per_nome_mappa": {
+    "n": 26,
+    "entro_una": 0.115,
+    "mediana": 29.0,
+    "massima": 53
+   },
+   "mappe": 4
+  },
+  "S4": {
+   "regione": false,
+   "png": true,
+   "pagine_regione": 0,
+   "pagine_png": 3,
+   "quota": 0.046,
+   "fonte": "indice del PDF"
+  },
+  "S5": {
+   "principali": 1,
+   "con_ritratto": 0,
+   "quota": 0.0,
+   "senza": [
+    "terros"
+   ],
+   "fonte": "PDF"
+  }
+ },
+ "07_il Portale Della Forgia Eterna/homebrew/volume-mille-anni/ARC07-MILLE-ANNI-VOLUME.manifest.json": {
+  "pagine": 105,
+  "S1": {
+   "capitoli": 4,
+   "intro_volume": false,
+   "intro_caratteri": [
+    null,
+    17,
+    null,
+    189
+   ],
+   "intro_mediana": 103.0,
+   "dettaglio": [
+    {
+     "titolo": "Il viaggio a mille anni fa — il volume",
+     "intro": null,
+     "primo": null
+    },
+    {
+     "titolo": "I · Il Viaggio a Mille Anni fa",
+     "intro": 17,
+     "primo": "Il Portale della Forgia Eterna — Hammerfist ≈372 DR, il duello con Skullcrusher, il Rubino"
+    },
+    {
+     "titolo": "II · Balvar Fuocospento",
+     "intro": null,
+     "primo": null
+    },
+    {
+     "titolo": "III · La Forgia ricorda le ferite",
+     "intro": 189,
+     "primo": "Chi si incontra in questo capitolo"
+    }
+   ],
+   "con_intro": 0
+  },
+  "S2": {
+   "nel_testo": 0,
+   "sulla_mappa": 0,
+   "comuni": 0,
+   "solo_testo": [],
+   "solo_mappa": [],
+   "quota_testo_con_mappa": null
+  },
+  "S3": {
+   "n": 0,
+   "entro_una": null,
+   "mediana": null,
+   "per_nome_mappa": {
+    "n": 28,
+    "entro_una": 0.107,
+    "mediana": 20.5,
+    "massima": 72
+   },
+   "mappe": 8
+  },
+  "S4": {
+   "regione": false,
+   "png": true,
+   "pagine_regione": 0,
+   "pagine_png": 4,
+   "quota": 0.038,
+   "fonte": "indice del PDF"
+  },
+  "S5": {
+   "principali": 4,
+   "con_ritratto": 4,
+   "quota": 1.0,
+   "senza": [],
+   "fonte": "PDF"
+  }
+ },
+ "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/homebrew/PALIO-BOOKLET.manifest.json": {
+  "pagine": 65,
+  "S1": {
+   "capitoli": 16,
+   "intro_volume": false,
+   "intro_caratteri": [
+    null,
+    null,
+    1594,
+    1673,
+    0,
+    1316,
+    158,
+    417,
+    1323,
+    498,
+    470,
+    2261,
+    1224,
+    663,
+    470,
+    148
+   ],
+   "intro_mediana": 580.5,
+   "dettaglio": [
+    {
+     "titolo": "Channathgate, la Porta del Cannath",
+     "intro": null,
+     "primo": null
+    },
+    {
+     "titolo": "✉ Teaser giocatori — «Novanta Secondi»",
+     "intro": null,
+     "primo": null
+    },
+    {
+     "titolo": "I · La Città e i Distretti",
+     "intro": 1594,
+     "primo": "Tavola delle corrispondenze (quartiere ↔ contrada)"
+    },
+    {
+     "titolo": "II · L'Avventura (regole base)",
+     "intro": 1673,
+     "primo": "0. Cos'è il Palio (e cosa NON è)"
+    },
+    {
+     "titolo": "III · Le Contrade — Stemmi e Canti",
+     "intro": 0,
+     "primo": "Tavola sinottica"
+    },
+    {
+     "titolo": "IV · Le Ballate (i Ritornelli)",
+     "intro": 1316,
+     "primo": "Il Duello di Canto a 3 Scambi (regola completa, stile Ultimate Intrigue)"
+    },
+    {
+     "titolo": "V · Le Prove di Ammissione",
+     "intro": 158,
+     "primo": "1 · L'OCA — \"La Cena delle Lame Cortesi\""
+    },
+    {
+     "titolo": "VI · Giorno 1 — La Tratta",
+     "intro": 417,
+     "primo": "0. Lettura d'apertura (read-aloud)"
+    },
+    {
+     "titolo": "VII · Le Prove di Batteria",
+     "intro": 1323,
+     "primo": "1. Il menù del Barbaresco & dei Mangini (cosa si può fare in una prova)"
+    },
+    {
+     "titolo": "VIII · Giorno 2 — Partiti, Cena, Sabotaggi",
+     "intro": 498,
+     "primo": "1. Mattino/Pomeriggio — I PARTITI (diplomazia segreta)"
+    },
+    {
+     "titolo": "IX · Giorni 3-4 — La Corsa e gli Esiti",
+     "intro": 470,
+     "primo": "1. Alba — La Benedizione del Cavallo"
+    },
+    {
+     "titolo": "X · DM Master Reference",
+     "intro": 2261,
+     "primo": "1. Cos'è il Palio (per il DM)"
+    },
+    {
+     "titolo": "XI · Integrazione di Campagna",
+     "intro": 1224,
+     "primo": "0. Principio di design (leggere prima di tutto)"
+    },
+    {
+     "titolo": "XII · Conseguenze ed Echi",
+     "intro": 663,
+     "primo": "1. Come si calcola l'esito"
+    },
+    {
+     "titolo": "XIII · Statblocchi",
+     "intro": 470,
+     "primo": "1. I Fantini (i due archetipi)"
+    },
+    {
+     "titolo": "XIV · Le Mappe",
+     "intro": 148,
+     "primo": "1. La Piazza del Palio — pista e Zone di inseguimento"
+    }
+   ],
+   "con_intro": 7
+  },
+  "S2": {
+   "nel_testo": 0,
+   "sulla_mappa": 0,
+   "comuni": 0,
+   "solo_testo": [],
+   "solo_mappa": [],
+   "quota_testo_con_mappa": null
+  },
+  "S3": {
+   "n": 0,
+   "entro_una": null,
+   "mediana": null,
+   "per_nome_mappa": {
+    "n": 0,
+    "entro_una": null,
+    "mediana": null
+   },
+   "mappe": 0
+  },
+  "S4": {
+   "regione": false,
+   "png": true,
+   "pagine_regione": 0,
+   "pagine_png": 1,
+   "quota": 0.015,
+   "fonte": "indice del PDF"
+  },
+  "S5": {
+   "principali": 0,
+   "con_ritratto": 0,
+   "quota": null,
+   "senza": [],
+   "fonte": "PDF"
+  }
+ },
+ "10-stand-alone/Il Giardino di Sale e Calce/homebrew/giardino-sale-calce.manifest.json": {
+  "pagine": 40,
+  "S1": {
+   "capitoli": 2,
+   "intro_volume": true,
+   "intro_caratteri": [
+    2214,
+    250
+   ],
+   "intro_mediana": 1232.0,
+   "dettaglio": [
+    {
+     "titolo": "Il Giardino di Sale e Calce",
+     "intro": 2214,
+     "primo": "La verità"
+    },
+    {
+     "titolo": "Guida al tavolo",
+     "intro": 250,
+     "primo": "Avvio rapido"
+    }
+   ],
+   "con_intro": 1
+  },
+  "S2": {
+   "nel_testo": 17,
+   "sulla_mappa": 0,
+   "comuni": 0,
+   "solo_testo": [
+    "A1",
+    "A2",
+    "B1",
+    "B2",
+    "B3",
+    "C1",
+    "C2",
+    "G1",
+    "G4",
+    "G5",
+    "G6",
+    "G7",
+    "S1",
+    "S2",
+    "T1",
+    "T2",
+    "T3"
+   ],
+   "solo_mappa": [],
+   "quota_testo_con_mappa": 0.0
+  },
+  "S3": {
+   "n": 0,
+   "entro_una": null,
+   "mediana": null,
+   "per_nome_mappa": {
+    "n": 27,
+    "entro_una": 0.037,
+    "mediana": 11,
+    "massima": 27
+   },
+   "mappe": 8
+  },
+  "S4": {
+   "regione": false,
+   "png": true,
+   "pagine_regione": 0,
+   "pagine_png": 2,
+   "quota": 0.05,
+   "fonte": "indice del PDF"
+  },
+  "S5": {
+   "principali": 0,
+   "con_ritratto": 0,
+   "quota": null,
+   "senza": [],
+   "fonte": "PDF"
+  }
+ },
+ "10-stand-alone/Il Giardino di Sale e Calce PF1e/homebrew/giardino-sale-calce-pf1e.manifest.json": {
+  "pagine": 25,
+  "S1": {
+   "capitoli": 2,
+   "intro_volume": true,
+   "intro_caratteri": [
+    1648,
+    214
+   ],
+   "intro_mediana": 931.0,
+   "dettaglio": [
+    {
+     "titolo": "Il Giardino di Sale e Calce",
+     "intro": 1648,
+     "primo": "La verità"
+    },
+    {
+     "titolo": "Guida al tavolo",
+     "intro": 214,
+     "primo": "Avvio rapido"
+    }
+   ],
+   "con_intro": 1
+  },
+  "S2": {
+   "nel_testo": 14,
+   "sulla_mappa": 0,
+   "comuni": 0,
+   "solo_testo": [
+    "G1",
+    "G4",
+    "G5",
+    "G6",
+    "G7",
+    "P1",
+    "P2",
+    "S1",
+    "S2",
+    "T1",
+    "T2",
+    "T3",
+    "W1",
+    "W2"
+   ],
+   "solo_mappa": [],
+   "quota_testo_con_mappa": 0.0
+  },
+  "S3": {
+   "n": 0,
+   "entro_una": null,
+   "mediana": null,
+   "per_nome_mappa": {
+    "n": 25,
+    "entro_una": 0.04,
+    "mediana": 7,
+    "massima": 15
+   },
+   "mappe": 6
+  },
+  "S4": {
+   "regione": false,
+   "png": true,
+   "pagine_regione": 0,
+   "pagine_png": 2,
+   "quota": 0.08,
+   "fonte": "indice del PDF"
+  },
+  "S5": {
+   "principali": 0,
+   "con_ritratto": 0,
+   "quota": null,
+   "senza": [],
+   "fonte": "PDF"
+  }
+ },
+ "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.manifest.json": {
+  "pagine": 87,
+  "S1": {
+   "capitoli": 18,
+   "intro_volume": false,
+   "intro_caratteri": [
+    543,
+    494,
+    832,
+    0,
+    697,
+    0,
+    0,
+    0,
+    95,
+    0,
+    378,
+    812,
+    0,
+    0,
+    0,
+    0,
+    1660,
+    1304
+   ],
+   "intro_mediana": 47.5,
+   "dettaglio": [
+    {
+     "titolo": "Il Drappo di Tarsilia",
+     "intro": 543,
+     "primo": "Cosa sono i PG"
+    },
+    {
+     "titolo": "✉ Benvenuti a Tarsilia",
+     "intro": 494,
+     "primo": "Dove siete"
+    },
+    {
+     "titolo": "I · Hub e quickstart",
+     "intro": 832,
+     "primo": "Indice del modulo"
+    },
+    {
+     "titolo": "II · La regia, minuto per minuto",
+     "intro": 0,
+     "primo": "§0 · Il metodo in mezza pagina"
+    },
+    {
+     "titolo": "III · La cassetta del DM — cast, pronuncia, read-aloud, schermo, suoni",
+     "intro": 697,
+     "primo": "§1 · Il foglio del cast"
+    },
+    {
+     "titolo": "III-bis · Kit anti-improvvisazione",
+     "intro": 0,
+     "primo": "§1 · I nomi — quando chiedono come si chiama il garzone"
+    },
+    {
+     "titolo": "III-ter · Il dossier delle piste",
+     "intro": 0,
+     "primo": "§0 · Come si leggono i nodi"
+    },
+    {
+     "titolo": "IV · Le otto contrade",
+     "intro": 0,
+     "primo": "§1 · Il volantino (per i giocatori)"
+    },
+    {
+     "titolo": "V · Regole della corsa",
+     "intro": 95,
+     "primo": "§1 · I due contatori"
+    },
+    {
+     "titolo": "VI · L'Investitura e i diciotto eventi",
+     "intro": 0,
+     "primo": "§1 · Come si entra in una contrada, a Tarsilia"
+    },
+    {
+     "titolo": "VII · I luoghi dove si complotta",
+     "intro": 378,
+     "primo": "Come si usa al tavolo"
+    },
+    {
+     "titolo": "VIII · Le agende dei villain",
+     "intro": 812,
+     "primo": "§1 · Ottavia Vesca — Capitana del Bruco"
+    },
+    {
+     "titolo": "IX · Giorno 1 — La Sorte",
+     "intro": 0,
+     "primo": "§0 · Quickstart della serata"
+    },
+    {
+     "titolo": "X · Giorno 2 — I Partiti e la Cena",
+     "intro": 0,
+     "primo": "§0 · Quickstart della serata"
+    },
+    {
+     "titolo": "XI · Giorno 3 — Lo Stacco e la Corsa",
+     "intro": 0,
+     "primo": "§0 · Quickstart della serata"
+    },
+    {
+     "titolo": "XII · Statblocchi PF1e",
+     "intro": 0,
+     "primo": "§1 · Vidalia Roncetti — Sovrintendente al Drappo"
+    },
+    {
+     "titolo": "XIII · Le sei schede",
+     "intro": 1660,
+     "primo": "1 · VANNA CORSARI — il Capitano"
+    },
+    {
+     "titolo": "XIV · Le mappe",
+     "intro": 1304,
+     "primo": "Rigenerare"
+    }
+   ],
+   "con_intro": 6
+  },
+  "S2": {
+   "nel_testo": 8,
+   "sulla_mappa": 0,
+   "comuni": 0,
+   "solo_testo": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "B1",
+    "B2",
+    "B3"
+   ],
+   "solo_mappa": [],
+   "quota_testo_con_mappa": 0.0
+  },
+  "S3": {
+   "n": 0,
+   "entro_una": null,
+   "mediana": null,
+   "per_nome_mappa": {
+    "n": 0,
+    "entro_una": null,
+    "mediana": null
+   },
+   "mappe": 0
+  },
+  "S4": {
+   "regione": false,
+   "png": true,
+   "pagine_regione": 0,
+   "pagine_png": 2,
+   "quota": 0.023,
+   "fonte": "indice del PDF"
+  },
+  "S5": {
+   "principali": 0,
+   "con_ritratto": 0,
+   "quota": null,
+   "senza": [],
+   "fonte": "PDF"
+  }
+ },
+ "10-stand-alone/L'abbazia Della Rotta Sicura/homebrew/abbazia-rotta-sicura.manifest.json": {
+  "pagine": 43,
+  "S1": {
+   "capitoli": 1,
+   "intro_volume": true,
+   "intro_caratteri": [
+    2023
+   ],
+   "intro_mediana": 2023,
+   "dettaglio": [
+    {
+     "titolo": "L'Abbazia della Rotta Sicura",
+     "intro": 2023,
+     "primo": "La verità"
+    }
+   ],
+   "con_intro": 1
+  },
+  "S2": {
+   "nel_testo": 0,
+   "sulla_mappa": 0,
+   "comuni": 0,
+   "solo_testo": [],
+   "solo_mappa": [],
+   "quota_testo_con_mappa": null
+  },
+  "S3": {
+   "n": 0,
+   "entro_una": null,
+   "mediana": null,
+   "per_nome_mappa": {
+    "n": 0,
+    "entro_una": null,
+    "mediana": null
+   },
+   "mappe": 0
+  },
+  "S4": {
+   "regione": false,
+   "png": true,
+   "pagine_regione": 0,
+   "pagine_png": 14,
+   "quota": 0.326,
+   "fonte": "indice del PDF"
+  },
+  "S5": {
+   "principali": 0,
+   "con_ritratto": 0,
+   "quota": null,
+   "senza": [],
+   "fonte": "PDF"
+  }
+ }
+}

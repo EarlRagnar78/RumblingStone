@@ -1,0 +1,17 @@
+# sistemi/pf1e/dati/gs.toml — il grado di sfida (ADR-0126, lotto 5, seconda parte). Scritto a mano, con la fonte di ogni voce.
+
+[gs]  # grado di sfida di chi è fatto di livelli di classe (ADR-0126, lotto 5, seconda parte)
+# PF1e (PRD, Core Rulebook, «Creating NPCs», passo 7): classe da PG = livello −1,
+# classe da PNG = livello −2; sotto 1 si scende per gradini.
+classi_png = ["warrior", "adept", "expert", "aristocrat", "commoner"]
+pg = -1
+png = -2
+gradini = ["1/2", "1/3", "1/4", "1/6", "1/8"]
+non_associato = 0.5
+modelli = ["half-(?!orc|elf)", "mezz[oa]?[- ]?(?:immond|drag|celest|demon|diavol|ogre|fatat)", "template", "archetipo", "advanced", "avanzat", "skeleton", "scheletr", "zombi", "celestial", "fiendish", "immond", "augmented", "lycanthrop", "licantrop", "mannar", "vampir", "\\blich\\b", "\\bghost\\b", "fantasma", "in sella", "graft", "innest", "pseudonatural", "spettral"]  # espressioni regolari
+# le razze da un dado vita della fonte (PRD) a cui la regola generale si applica; una razza che
+# non è qui (o è in `fuori_fonte`) ha la sua riga in un manuale che i dati non hanno: non verificabile
+razze_fonte = ["human", "uman[oaie]", "dwarf", "nan[oaie]", "elf", "elf[oaie]", "gnome", "gnom[oaie]", "halfling", "half-elf", "mezzelf[oaie]", "half-orc", "mezzorc[ohie]+", "orc", "orc[ohie]+", "hobgoblin", "goblin", "kobold", "cobold[oi]", "drow", "duergar", "svirfneblin", "aasimar", "tiefling"]
+fuori_fonte = ["orog", "githyanki", "githzerai", "tanarukk", "fey'ri", "loxo", "gigante"]
+
+[gs.razze]

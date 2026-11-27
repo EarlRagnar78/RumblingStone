@@ -147,7 +147,7 @@ transennato), il **15** (le bandiere). Sono i tre punti in cui il tavolo tace.
 | Chiamare il cavallo (Add. Animali, curva nord) | 15 |
 | Il canto sopra il rumore (Intrattenere, dal carro) | 16 |
 | Protestare dal palco (Diplomazia) | 18 |
-| Testimoniare un fallo (Percepire Intenzioni) | 15 |
+| Testimoniare un fallo (Intuizione) | 15 |
 | Urlare un ordine (Intimidire, alle funi) | 15 |
 | **Truccare la Sorte** (per prova) | 14-18 |
 | Patto normale / che costa una posizione | atteggiamento / **+5** |

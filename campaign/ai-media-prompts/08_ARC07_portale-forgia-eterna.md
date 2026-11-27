@@ -10,7 +10,7 @@
 >
 > **Atmosfera visiva:** Il portale si apre come un anello di fuoco dorato nella pietra solida. La Forgia Eterna è un ambiente metafisico, un misto tra architettura nanica assoluta e spazio siderale. Il Piano del Fuoco è un inferno di magma, cieli di cenere e tempeste di fiamme. Il Piano della Terra è una distesa infinita di cristalli giganti, caverne di diamante e pressione schiacciante.
 >
-> **Tono:** Viaggio interdimensionale cosmico + Dante's Inferno (Piano del Fuoco) + Viaggio al Centro della Terra (Piano della Terra). L'epica scala dall'Underdark al multiverso.
+> **Tono:** Viaggio interdimensionale cosmico + discesa in un abisso infernale a gironi (Piano del Fuoco) + esplorazione scientifica ottocentesca di un mondo sotterraneo di cristalli e mari interni (Piano della Terra). L'epica scala dall'Underdark al multiverso.
 
 ---
 
@@ -20,8 +20,9 @@
 
 ```
 [STILE] Cinematic high fantasy, magical realism, intense particle 
-effects, 4K, visual style of Doctor Strange (portal magic) mixed 
-with Lord of the Rings dwarven aesthetics.
+effects, 4K, spinning rings of sparking spell-fire opening 
+portals, mixed 
+with weathered, monumental dwarven halls of carved basalt and bronze.
 
 [SCENA] An underground chamber with walls of black basalt. Three 
 adventurers stand before a solid stone wall: a dwarf fighter wearing 
@@ -45,7 +46,7 @@ magical gold, intense amber, and star-white light from the portal.
 
 ### 🎵 NOTE MUSICA/MOOD
 - Strumenti: Coro epico a bocca chiusa (canto nanico) + ottoni crescenti + boato finale
-- Riferimento: "Thor: Ragnarok" o "Doctor Strange" portal themes
+- Riferimento: fanfara di ottoni ascendente su ostinato rapido di archi, sintetizzatori analogici pulsanti dentro l'orchestra, coro che esplode sull'apertura; crescendo continuo
 - Il suono della pietra che si sgretola sostituito dal ruggito di fiamme dimensionali
 
 ---
@@ -95,7 +96,7 @@ space and floating dwarven architecture. Three tiny mortal figures
 out at the cosmic forge. Floating gateways of fire and crystal lead 
 to other dimensions.
 
-[STILE] Cosmic fantasy, surreal architecture, M.C. Escher meets 
+[STILE] Cosmic fantasy, surreal architecture, impossible looping staircases meet 
 deep space dwarven mythology. Breathtaking scale.
 
 [PALETTE] Nebula purples and blues, star-white, forge-fire orange, 
@@ -120,7 +121,7 @@ narrow obsidian bridge over a massive lava fall. Fire elementals —
 creatures made entirely of dancing flame — emerge from the magma ocean 
 below. The heat distortion in the air blurs the background. 
 
-[STILE] Apocalyptic elemental fantasy, Dante's Inferno, extreme 
+[STILE] Apocalyptic elemental fantasy, infernal abyss of descending rings, extreme 
 heat visualization. Dramatic, aggressive, terrifying environment.
 
 [PALETTE] Blinding magma orange, intense yellow, charcoal black 
@@ -147,7 +148,8 @@ humanoids formed of bedrock and glowing gems — patrol the distance.
 The air is thick with diamond dust catching the refracted light.
 
 [STILE] Geologic fantasy landscape, crystalline geometry, overwhelming 
-pressure and weight. Journey to the Center of the Earth aesthetic.
+pressure and weight. 19th-century scientific-romance 
+subterranean-world aesthetic.
 
 [PALETTE] Deep emerald green, amethyst purple, raw diamond white, 
 earthy browns and greys. Cool, hard, mineral tones.

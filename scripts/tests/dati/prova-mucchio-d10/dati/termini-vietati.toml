@@ -1,0 +1,16 @@
+# Le meccaniche d20 che in un modulo a mucchio di d10 non hanno posto.
+[[vietato]]
+regex = '(?i)\btir[oi] salvezza\b'
+perche = "meccanica d20: qui si tira un mucchio di Vigore o Fermezza"
+
+[[vietato]]
+regex = '(?<![A-Za-z])(?:CA|GS|DV|BAB)\s?[0-9]'
+perche = "sigla d20 (CA, GS, DV, BAB) in un modulo a mucchio di d10"
+
+[[vietato]]
+regex = '(?i)\bpunti ferita\b|(?<![A-Za-z])pf\s?[0-9]'
+perche = "qui ci sono caselle di salute, non punti ferita"
+
+[[vietato]]
+regex = '(?i)\bd20\b'
+perche = "in questo sistema non si tira il d20"

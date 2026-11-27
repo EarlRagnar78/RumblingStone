@@ -5,6 +5,9 @@
 ```statblocco
 gs: 8
 tipo: Medium outsider (native), hobgoblin mezzo-immondo, Dragon Shaman 6, LE
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 22
 ca-dettaglio: contatto 13, colto alla sprovvista 19 (giaco di maglia +1, scudo pesante +1, +3 Des, +1 naturale)
 pf: 56
@@ -35,14 +38,6 @@ Medium outsider (native), hobgoblin mezzo-immondo Dragon Shaman 6 `[Private sour
 
 **Attacco** Vel 9 m, Volare 9 m (media) · **Mischia** morning star +1 +11 (1d8+6) e morso +4 (1d6+2); oppure 2 artigli +9 (1d4+5) e morso +4 (1d6+2) (con *forza del toro*) · **Soffio** (Sop) linea di 9 m, 3d6 elettricità, Rifl CD 16 dimezza, 1d4 round di ricarica · **Colpire il bene** 1/giorno (+6 ai danni) · **Capacità magiche** (LI 6°): 3/giorno — *oscurità*; 1/giorno — *profanare*, *empietà* (CD 16); a volontà — *ventriloquio* (CD 13, adattamento del totem blu)
 
-**Statistiche** For 20 (16 senza pozione), Des 16, Cos 16, Int 13, Sag 8, Car 15 · BAB +4; Lotta +9 · **Talenti** Diving Charge `[Private source — non SRD]`, Powerful Charge `[Private source — non SRD]`, Arma Focalizzata (morning star); Abilità Focalizzata (Sapienza Magica) di classe · **Abilità** Raggirare +7, Intimidire +8, Sapienza Magica +9, Muoversi Silenziosamente +5 · **Equipaggiamento** morning star +1, giaco di maglia +1, scudo pesante di metallo +1, pozione di *scudo della fede* +2, pozione di *cura ferite moderate*, pozione di *forza del toro*, gemme
-
-**Capacità speciali**
-- **Aura draconica** (Sop, azione veloce): +2 a sé e agli alleati entro 9 m; una sola aura attiva per volta. Qui la tiene sulla potenza (ai danni in mischia).
-- **Tocco di vitalità** (Sop, 6°): cura fino a 24 pf al giorno col tocco (2 × livello × mod Car).
-- **Risolutezza draconica** (Str): immune a sonno, paralisi e presenza terrificante dei draghi.
-- **Ali da mezzo-immondo**: vola alla sua velocità sul terreno, manovrabilità media.
-
 **Tattiche**
 - *Prima del combattimento*: appena sente l'allarme beve *forza del toro* (i numeri del blocco) e *scudo della fede* (CA 24), e accende l'aura draconica.
 - *Durante il combattimento*:
@@ -50,6 +45,14 @@ Medium outsider (native), hobgoblin mezzo-immondo Dragon Shaman 6 `[Private sour
   - **Round 2**: *empietà* sui PG buoni raggruppati, poi la carica in picchiata dall'alto (Diving Charge e Powerful Charge), con colpire il bene su chi porta un simbolo sacro.
   - **Round 3 e seguenti**: mischia con morning star e morso accanto agli hobgoblin, soffio di nuovo appena si ricarica; *tocco di vitalità* sul sergente o su sé stesso.
 - *Morale*: sotto 15 pf lancia *oscurità* su di sé e vola via verso il resto dell'orda. Non si arrende: chi serve Tiamat e perde davanti ai suoi viene ucciso dai suoi.
+
+**Statistiche** For 20 (16 senza pozione), Des 16, Cos 16, Int 13, Sag 8, Car 15 · BAB +4; Lotta +9 · **Talenti** Diving Charge `[Private source — Races of the Wild, p. 150]`, Powerful Charge `[Private source — Miniatures Handbook, p. 27]`, Arma Focalizzata (morning star); Abilità Focalizzata (Sapienza Magica) di classe · **Abilità** Raggirare +7, Intimidire +8, Sapienza Magica +9, Muoversi Silenziosamente +5 · **Equipaggiamento** morning star +1, giaco di maglia +1, scudo pesante di metallo +1, pozione di *scudo della fede* +2, pozione di *cura ferite moderate*, pozione di *forza del toro*, gemme
+
+**Capacità speciali**
+- **Aura draconica** (Sop, azione veloce): +2 a sé e agli alleati entro 9 m; una sola aura attiva per volta. Qui la tiene sulla potenza (ai danni in mischia).
+- **Tocco di vitalità** (Sop, 6°): cura fino a 24 pf al giorno col tocco (2 × livello × mod Car).
+- **Risolutezza draconica** (Str): immune a sonno, paralisi e presenza terrificante dei draghi.
+- **Ali da mezzo-immondo**: vola alla sua velocità sul terreno, manovrabilità media.
 
 > ⚠ Classe non SRD: il Dragon Shaman è del *Player's Handbook II*. PF1e: nessuna classe base fa la stessa cosa. Il **Bloodrager** con la stirpe draconica (ACG, OGL) ha soffio, resistenza e ali, ma è un guerriero d'ira e perde l'aura di supporto: stravolge. Lo **Stregone** con la stirpe draconica tiene il drago e perde la mischia: stravolge anche lui. Si tiene la classe del PHB II.
 

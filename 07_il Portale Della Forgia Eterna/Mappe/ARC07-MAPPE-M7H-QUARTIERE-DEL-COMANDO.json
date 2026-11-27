@@ -11,7 +11,7 @@
   "tipo": "tattica",
   "ambiente": "esterno",
   "luogo": "Hammerfist ≈372 DR, la tenda del comando sulla piana dell'orda",
-  "quota": "870 m ; s.l.m., la piana dell'orda [INFERRED — needs DM confirmation: il DM ha fissato la piana a quota 0, non la quota sul mare]",
+  "quota": "520 m ; s.l.m., la piana dell'orda [CANONE — DM 2026-11-04: la piana a 520 m sul mare]",
   "dislivello": "0 m ; sulla piana dell'orda: porta e cortile sono 100 m più in alto, a nord, a circa 1 km di cammino dalla postierla",
   "regions": [
     {
@@ -158,7 +158,8 @@
         1,
         5
       ],
-      "label": "Telo est: «il telo a sinistra» di Balvar"
+      "label": "Telo est: «il telo a sinistra» di Balvar",
+      "codice": "C1"
     },
     {
       "type": "🎪",
@@ -168,7 +169,8 @@
         3,
         1
       ],
-      "label": "Telo del glifo"
+      "label": "Telo del glifo",
+      "codice": "C2"
     },
     {
       "type": "🚪",
@@ -202,7 +204,8 @@
         1,
         1
       ],
-      "label": "Palo centrale, di legno"
+      "label": "Palo centrale, di legno",
+      "codice": "C3"
     },
     {
       "type": "🟪",
@@ -277,7 +280,8 @@
         2,
         2
       ],
-      "label": "Tende dei servi e del bottino del capo: dentro non ci sono soldati"
+      "label": "Tende dei servi e del bottino del capo: dentro non ci sono soldati",
+      "codice": "C4"
     },
     {
       "type": "🎪",
@@ -368,7 +372,8 @@
         2,
         2
       ],
-      "label": "Tenda del turno dopo"
+      "label": "Tenda del turno dopo",
+      "codice": "C5"
     },
     {
       "type": "🗿",
@@ -402,7 +407,8 @@
         2,
         2
       ],
-      "label": "Tende della Guardia della Mano, otto hobgoblin per tenda, a gruppi attorno al fuoco"
+      "label": "Tende della Guardia della Mano, otto hobgoblin per tenda, a gruppi attorno al fuoco",
+      "codice": "H1"
     },
     {
       "type": "🎪",
@@ -993,7 +999,8 @@
         ]
       },
       "cr": "GS 15",
-      "note": "Grande: il master compilato porta «@taglia P14 ; Grande»"
+      "note": "Grande: il master compilato porta «@taglia P14 ; Grande»",
+      "scheda": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#Zog'tar Deatheye, generale dell'orda antica"
     },
     {
       "faction": "Orda",
@@ -1003,7 +1010,8 @@
         25,
         21
       ],
-      "cr": "GS 13"
+      "cr": "GS 13",
+      "scheda": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#Balvar Fuocospento, il Consigliere dell'Orda"
     },
     {
       "faction": "Orda",
@@ -1013,7 +1021,8 @@
         20,
         20
       ],
-      "cr": "Guerriero 8"
+      "cr": "Guerriero 8",
+      "scheda": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#Guardia di Zog'tar (4)"
     },
     {
       "faction": "Orda",
@@ -1023,7 +1032,8 @@
         21,
         20
       ],
-      "cr": "Guerriero 8"
+      "cr": "Guerriero 8",
+      "scheda": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#Guardia di Zog'tar (4)"
     },
     {
       "faction": "Orda",
@@ -1033,7 +1043,8 @@
         24,
         21
       ],
-      "cr": "Guerriero 8"
+      "cr": "Guerriero 8",
+      "scheda": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#Guardia di Zog'tar (4)"
     },
     {
       "faction": "Orda",
@@ -1043,7 +1054,8 @@
         20,
         21
       ],
-      "cr": "Guerriero 8"
+      "cr": "Guerriero 8",
+      "scheda": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#Guardia di Zog'tar (4)"
     },
     {
       "faction": "Orda",
@@ -1063,7 +1075,8 @@
         21,
         21
       ],
-      "cr": "GS 6, adepto 7"
+      "cr": "GS 6, adepto 7",
+      "scheda": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#Sacerdote dell'orda"
     },
     {
       "faction": "Orda",

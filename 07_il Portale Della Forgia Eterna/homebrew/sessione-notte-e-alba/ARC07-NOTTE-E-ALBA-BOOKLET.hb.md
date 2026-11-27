@@ -16,27 +16,29 @@ ___
 {{banner BOOKLET DI SESSIONE}}
 
 {{footnote
-  Sessione D&D 3.5 di circa tre ore per 4 personaggi di 13° livello · Faerûn, ≈372 DR · Campagna privata RumblingStone · regia della serata, cast e voci, il viaggio a mille anni fa dalla Scena 5 al duello, la tabella delle ferite. Le pagine ✉ sono nel volume dei giocatori
+  Sessione D&D 3.5 di circa tre ore per 4 personaggi di 13° livello · Faerûn, ≈372 DR · Campagna privata RumblingStone · regia della serata, cast e voci, il barile sulla tenda di Zog'tar, il viaggio a mille anni fa dal campo al duello, la tabella delle ferite. Le pagine ✉ sono nel volume dei giocatori
 }}
 
 \page
 
-# Dove siamo — la notte del campo e il drago all'alba
+# Dove siamo — il barile sulla tenda e il drago all'alba
 
-> *La fucina si è raffreddata, e la fortezza no. Sui camminamenti si cambia la
-> guardia ogni ora, e nessuno dorme davvero. Dalla postierla est entra un filo
-> d'aria che sa di fumo di tende e di bestie. Fuori, oltre le mura, l'orda
-> tiene accesi i suoi fuochi fino all'orizzonte.*
+> *Quassù l'aria è fredda e non sa di niente. Sotto, il campo è una brace
+> sparsa sulla piana, e in mezzo alla brace c'è una macchia nera, la tenda di
+> Zog'tar, con i due falò della guardia accesi ai lati. Le corde della botte
+> segano le dita. Il vento porta su un russare, il nitrito di un lupo, una
+> risata che si spegne. Laggiù nessuno guarda in alto.*
 
-**Questa è la serata che segue quella del 25 settembre.** Si riprende a
-Hammerfist, mille anni fa, nella notte prima dell'assalto, e si gioca fino
-all'esito del duello con il drago:
+**Questa serata riprende dal cielo sopra il campo**.
+Le scelte nella fortezza e il giro delle pozioni di Kettra sono giocati. Il
+gruppo è in volo, invisibile, con la botte d'olio e i due barilotti, e si
+rigioca lo sgancio. Poi:
 
-1. **Le ultime scelte nella fortezza**, la coda di cap. IV Scena 5: quello che
-   resta della notte prima di uscire.
-2. **Il campo**, cap. IV Scene 6-9: il mare di tende, la tenda del comando,
-   Balvar, Zog'tar, Vatore al ritorno.
-3. **L'alba**, cap. IV Scene 10 e 11: le mura e il duello con Skullcrusher.
+1. **Il barile**, cap. III e cap. VI Scena 6, «Variante — il barile sulla
+   tenda»: lo sgancio, i round nel fuoco, il corno.
+2. **Dopo il barile**, cap. VI Scene 6 e 9: il ritorno, Vatore fra le tende,
+   e le Scene 7-8 solo se qualcuno scende a finire il lavoro.
+3. **L'alba**, cap. VI Scene 10 e 11: le mura e il duello con Skullcrusher.
    **Ci si ferma sull'esito del duello**, prima del rito all'incudine. Il
    Rubino, il torque del re e il ritorno sono della serata dopo.
 
@@ -46,46 +48,49 @@ all'esito del duello con il drago:
 |---|---|---|
 | **N1** | Circa **tre ore** al tavolo. La regia ha la versione da tre ore e quella intera, scena per scena | regia, §0 |
 | **N2** | Lo stop è **prima della Scena 12**: niente Rubino, niente torque. Si chiude sull'esito del duello | regia, Atto III |
-| **N3** | Il **Torque di Thorek I** non è stato consegnato al consiglio: lo dà il re di persona alla Scena 12, Momento 5. Stasera resta al collo del re | cap. IV Scena 12 |
-| **N4** | **Durik è sempre presente**, come nella serata del 25, tranne nel campo: non vola, e resta alla postierla o nel terzo seme della Collana fino all'alba (cap. IV Scena 6) | scheda di Durik |
+| **N3** | Il **Torque di Thorek I** non è stato consegnato al consiglio: lo dà il re di persona alla Scena 12, Momento 5. Stasera resta al collo del re | cap. VI Scena 12 |
+| **N4** | **Durik è sempre presente**, come nella serata del 25, tranne nel campo: non vola, e resta alla postierla o nel terzo seme della Collana fino all'alba (cap. VI Scena 6) | scheda di Durik |
 
-**Stato al tavolo, entrando**. Il dettaglio è nel log della serata del 25
-settembre, sul ramo del gruppo. Qui ci sono solo le cose che servono prima
-del primo tiro:
+**Stato al tavolo, entrando**. Il log scritto sul ramo del gruppo si ferma
+alla serata del 25 settembre: quello che è successo dopo, fino al volo, lo sai
+tu. Qui ci sono solo le cose che servono prima del primo tiro:
 
-- **Orologio della notte**: **3 tacche** su 8 già segnate (il consiglio, il
-  giro della fortezza, le gallerie di Zeth). Ne restano **5**. Nessuno ha
-  dormito.
+- **Orologio della notte**: alla fine del 25 erano **3 tacche** su 8 (il
+  consiglio, il giro della fortezza, le gallerie di Zeth). Da allora si sono
+  aggiunte quelle delle scelte in fortezza e la tacca del volo: contale col
+  tavolo prima dello sgancio, perché lo stato di Grask dipende da lì.
 - **Re Thorek I**: fiducia piena. Le pozioni del re sono arrivate per mano del
   sergente, cinque di *volare* e quattro di *cura ferite gravi*; il torque no.
   **Nessuna pozione d'invisibilità del re**: al campo valgono le due comprate
   e la n. 10 delle boccette, da 3 minuti l'una. Il resto di quello che hanno
   in mano è nella regia, §1.
-- **Hella**: risorta, con i tre Doni. È il suo primo scontro da risorta, e
-  Durik è al suo fianco.
+- **Hella**: risorta, con i tre Doni. Durik non vola: è alla postierla o nel
+  terzo seme della Collana, e torna all'alba per il duello.
 - **Thorik**: porta il Debito della Radice, senza sapere quale sia il prezzo.
   Stasera non si incassa: è un'eco lunga.
 - **La Corona**: Topazio e Smeraldo accesi, l'incasso del Rubino vuoto.
-- **Le dieci boccette** sono state identificate da Kettra: il foglio è nel
-  volume dei giocatori.
+- **Le dieci boccette** sono state identificate da Kettra, e il giro è
+  giocato: il foglio ce l'hanno. Nel volume dei giocatori c'è una copia.
 
 **Come usare questo booklet e il volume dei giocatori.**
 
 | Capitolo | Per chi | Quando |
 |---|---|---|
 | I · Regia della serata | ⚠ DM | da leggere prima, da tenere aperto durante |
-| II · Il Seme-Mercato | ⚠ DM | all'inizio: è la prima cosa che chiederanno, insieme alle boccette |
-| III · La cassetta del DM | ⚠ DM | pronuncia, suoni, indice dei read-aloud dell'arco |
-| IV · Il Viaggio a Mille Anni fa | ⚠ DM | si legge dalla Scena 5 in avanti. Statistiche, versioni veloci e mappe sono nelle appendici A, C e D |
-| V · La Forgia ricorda le ferite | ⚠ DM | la tabella delle ferite del duello, da tenere aperta durante la Scena 11 |
-| VI · Durik | ⚠ DM | la scheda del compagno di Hella, accanto alla giocatrice |
+| II · Chi c'è stanotte | ⚠ DM | i cattivi uno per uno, con chi è, cosa vuole, aspetto, ritratto e scheda intera, e le mappe M7-C e M7-H |
+| III · Il barile sulla tenda | ⚠ DM | **la serata comincia qui**: la scheda da tavolo, le quote, le tattiche round per round, che cosa cambia |
+| IV · Il Seme-Mercato | ⚠ DM | al ritorno, se non è ancora stato giocato |
+| V · La cassetta del DM | ⚠ DM | pronuncia, suoni, indice dei read-aloud dell'arco |
+| VI · Il Viaggio a Mille Anni fa | ⚠ DM | stasera dalla Scena 6 («Variante — il barile sulla tenda») in avanti. Statistiche, versioni veloci e mappe sono nelle appendici A, C e D |
+| VII · La Forgia ricorda le ferite | ⚠ DM | la tabella delle ferite del duello, da tenere aperta durante la Scena 11 |
+| VIII · Durik | ⚠ DM | la scheda del compagno di Hella, accanto alla giocatrice |
 | **Il volume dei giocatori** | ✉ | gli echi della serata, il contratto del Seme e le dieci boccette |
 
 | Pagina ✉ del volume dei giocatori | A chi | Quando |
 |---|---|---|
-| Echi della notte | uno a testa | all'inizio, prima del primo tiro. Si legge ad alta voce solo il riquadro; la riga «Solo per te» resta del giocatore |
-| Il contratto del Seme | ad Artemis, e il tavolo lo rilegge | solo dopo il box che chiude l'ora della pergamena e il contratto letto a voce (cap. II). Se il Seme si rinvia, la pagina resta nel volume |
-| Le dieci boccette | a tutti | all'inizio, se il tavolo non l'ha già avuta il 25 |
+| Echi della notte | uno a testa | se non li hanno già avuti in fortezza: prima dello sgancio. Si legge ad alta voce solo il riquadro; la riga «Solo per te» resta del giocatore |
+| Il contratto del Seme | ad Artemis, e il tavolo lo rilegge | solo se il Seme si gioca al ritorno, dopo il box che chiude l'ora della pergamena e il contratto letto a voce (cap. IV). Se si rinvia, la pagina resta nel volume |
+| Le dieci boccette | a tutti | già consegnate: è la copia di riserva |
 
 
 
@@ -98,13 +103,18 @@ del primo tiro:
 Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 }}
 
-# Regia della serata — dalla postierla al drago
+# Regia della serata — dal barile al drago
 
 > **Cos'è.** La scaletta della serata, in ordine di gioco. Non riscrive il
 > master: dice **quale paragrafo aprire, quando, per quanto**, cosa consegnare
 > e cosa annotare. Per l'ordine della serata e per cosa leggere prima vale
-> questa regia, anche contro la lista «La vostra serata» del §0 di cap. IV.
+> questa regia, anche contro la lista «La vostra serata» del §0 di cap. VI.
 > Per le regole vince il master, e prima ancora vince lo stato della campagna.
+>
+> **Stasera**. Le scelte nella fortezza
+> e il giro delle pozioni di Kettra sono giocati. Il gruppo è in volo sopra il
+> campo, invisibile, con la botte e i due barilotti, e **si rigioca lo
+> sgancio** sulla tenda di Zog'tar. La serata comincia lì: Atto I, il barile.
 >
 > **Pilastri della serata**: Andor guida la notte (un orologio, una tenda, un
 > ladro che non è di qui), Salvatore guida l'alba (le mura e il duello), Mercer
@@ -121,30 +131,29 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 | Atto | Cosa | Master | Tre ore | Intera | Si consegna |
 |---|---|---|---:|---:|---|
-| **0** | Prima di cominciare | questa pagina, e il box in testa al booklet | 10 | 10 | ✉ gli echi, uno a testa · ✉ le dieci boccette |
-| **I** | Le ultime scelte nella fortezza | questa regia §2, poi cap. IV §4 l'orologio e Scena 5 | 15 | 20 | ✉ il contratto del Seme, solo dopo il box dell'ora della pergamena (cap. II); se il Seme si rinvia, resta nel volume |
-| **II** | Il campo, andata e ritorno | cap. IV Scene 6-9 | 90 | 115 | — |
+| **0** | Prima di cominciare: dove sono, cosa tengono in mano, le tacche | questa pagina | 5 | 10 | ✉ gli echi, se non li hanno già |
+| **I** | Il barile: lo sgancio e i round nel fuoco | cap. II per chi c'è e le mappe; cap. III, la scheda da tavolo, §2-bis e §8; cap. VI Scena 6, «Variante — il barile sulla tenda» | 45 | 60 | — |
+| **II** | Dopo il barile: il ritorno, Vatore, la notte che resta | cap. VI Scene 6 («Il ritorno», «Se il corno suona di notte») e 9; Scene 7-8 solo se scendono | 30 | 45 | ✉ il contratto del Seme, solo se il Seme si gioca al ritorno |
 | — | Pausa | | 10 | 15 | |
-| **III** | L'alba | cap. IV Scene 10 e 11 | 75 | 90 | — |
-| **Stop** | L'esito del duello | cap. IV Scena 11, fine | 5 | 5 | |
+| **III** | L'alba | cap. VI Scene 10 e 11 | 75 | 90 | — |
+| **Stop** | L'esito del duello | cap. VI Scena 11, fine | 5 | 5 | |
 
-**Totale**: circa **3 ore e 25** nella colonna «tre ore», **4 ore e 15** in
-quella intera. Il ritorno dalla tenda è dentro l'Atto II. La differenza sta in
-due scelte, scritte sotto ogni atto alla voce **«Per stare nelle tre ore»**: il
-mare di tende a montaggio e il duello con la regia veloce se il tavolo è
-stanco. Per stare davvero nelle tre ore si tolgono altri 25 minuti, in
-quest'ordine: il Seme rinviato al 1372 (dieci minuti), poi il duello in tre
-scambi, cap. IV Appendice C.3, al posto della Scena 11. **Balvar e Zog'tar non si
-tagliano**: sono le due scene che cambiano il duello.
+**Totale**: circa **2 ore e 50** nella colonna «tre ore», **3 ore e 45** in
+quella intera. Per stare nelle tre ore si taglia, in quest'ordine: il ritorno
+in un tiro solo (cap. VI Appendice C.2), poi il duello in tre scambi (cap. VI
+Appendice C.3). **Il barile non si taglia**: è la scena che il tavolo ha
+costruito, e da lì vengono le mura e il duello.
 
 **Le immagini e la musica**, nell'ordine in cui servono:
 
-- Balvar e Zog'tar, Scene 7 e 8: i ritratti sotto le loro schede d'entrata, da
-  mostrare **dopo** l'incontro, non prima;
-- Skullcrusher nel cortile, Scena 11:
-  `Immagini/web/tavola-skullcrusher-nel-cortile.jpg`, solo quando il drago
-  scende;
-- la mappa **M7-C** per la tenda e la **M7-B** per il cortile, Appendice D;
+- la mappa **M7-H**, il campo attorno allo spiazzo, e la **M7-C**, lo spiazzo
+  e la tenda, in fondo al cap. II: dall'alto i PG vedono tutte e due, con
+  i fuochi accesi;
+- Balvar e Zog'tar: i ritratti nel cap. II, accanto alle loro schede, da
+  mostrare solo se uno dei due si fa vedere nella luce dell'incendio;
+- Skullcrusher nel cortile, Scena 11: la tavola è nel cap. II, solo
+  quando il drago scende;
+- la **M7-B** per il cortile, la stessa del master (cap. VI Appendice D);
 - *La canzone delle pietre* non si usa stasera: è del Rubino, la serata dopo.
 
 ---
@@ -152,45 +161,50 @@ tagliano**: sono le due scene che cambiano il duello.
 ## §1 · Atto 0 — Prima di cominciare
 
 **Cosa leggere prima, in un'ora.** Questa lista sostituisce quella del §0 di
-cap. IV, che conta anche la Scena 6 a piedi e non sta nell'ora. Il gruppo
-vola, quindi lo skill challenge a piedi si apre solo se scendono.
+cap. VI.
 
 | Minuti | Cosa |
 |---:|---|
 | 10 | questa regia, per intero |
-| 5 | cap. IV §4, l'orologio e la tabella d'uscita |
-| 3 | cap. IV Scena 5: la tabella «I Treant: come lo viene a sapere Hella, e dove possono andare», e la riga dei Treant in A.6 |
-| 5 | cap. IV Scena 6: la variante dall'alto, le rune di Balvar alla tenda, Grask, «Come torna il drago» |
-| 20 | cap. IV Scene 7 e 8: le schede d'entrata, «Da dove entrano», «Cosa fa quando comincia lo scontro», la Catena, le tattiche di Zog'tar, «Come si decide», la mappa M7-C, le Appendici A.2 e A.4 |
-| 3 | cap. IV Scena 9: la tabella di Vatore e «Se tornano in volo» |
-| 5 | cap. IV Scena 10: la tabella «Dalla notte», le tre vie, la tabella dei successi |
-| 9 | cap. IV Scena 11: la scheda d'entrata, il giro round per round, «Chi sceglie», «Chi non vola», la sidebar di scala, l'Appendice A.1 e le wyvern in A.6 |
+| 5 | cap. III, «La scheda da tavolo»: i dieci passi dello sgancio |
+| 5 | cap. III §2-bis: la tabella delle quote e chi vede il colmo |
+| 12 | cap. III §8: chi li può trovare, l'iniziativa, le rune, le tattiche round per round, chi suona il corno, l'orda |
+| 3 | cap. III §9 (i barilotti) e §10 (che cosa cambia) |
+| 5 | cap. VI Scena 6: «Variante — il barile sulla tenda», «Il ritorno», «Come torna il drago», «Se il corno suona di notte» |
+| 3 | cap. VI Scena 9: «Dopo il barile» e «Se tornano in volo» |
+| 5 | cap. VI Scena 10: la tabella «Dalla notte», con le righe del barile, le tre vie, la tabella dei successi |
+| 9 | cap. VI Scena 11: «Dopo il barile», la scheda d'entrata, il giro round per round, «Chi sceglie», «Chi non vola», la sidebar di scala, l'Appendice A.1-bis e le wyvern in A.6 |
 
-Il Seme (capitolo II) si legge al tavolo, con il giocatore di Artemis. La
-Forgia ricorda (capitolo V) si apre durante il duello.
+Il Seme (cap. IV), se non è ancora stato giocato, si fa al ritorno: §3. La
+Forgia ricorda (cap. VII) si apre durante il duello.
 
-**Sul tavolo**: il foglio dell'orologio della notte con **3 tacche** segnate e
-5 vuote, in vista; la mappa M7-C coperta; la scheda di Durik vicino alla
-giocatrice di Hella. Nel volume dei giocatori di stasera non c'è: lei usa la
-sua copia della sessione del 25, e se non l'ha più le passi il
-capitolo VI del tuo volume. La lavagna del banco di Gunnvor (cap. IV §9) non serve: le richieste
-aperte si chiudono a voce al passo 0 dell'Atto I.
+**Sul tavolo**: il foglio dell'orologio della notte con le tacche segnate come
+le ha il tavolo, compresa quella del volo; le mappe M7-H e M7-C scoperte,
+perché dall'alto il campo si vede; un d8 e i dadi della quota per la
+deviazione; la scheda di Durik vicino alla giocatrice di Hella. Durik non
+vola: è alla postierla o nel terzo seme della Collana (cap. VI Scena 6). La scheda di Durik nel volume dei giocatori non c'è: lei usa la
+sua copia della sessione del 25, e se non l'ha più le passi la
+scheda del tuo volume, cap. VIII.
 
-**Le schede che contano stasera**, da tenere a portata:
+**Le schede che contano stasera**, da tenere a portata. Quelle dei cattivi
+sono tutte nel cap. II, nell'ordine in cui arrivano, con chi è, cosa
+vuole, l'aspetto e il ritratto accanto ai numeri:
 
 | Scheda | Perché |
 |---|---|
-| Skullcrusher, cap. IV Appendice A.1 | il duello. Il soffio contro Durik è nella Scena 11, riga 4-bis |
-| Le due wyvern, cap. IV Appendice A.6 | questo gruppo conta come straripante: ci sono, dal round 2 del duello |
-| Durik, capitolo VI | +50% di danni dall'acido: il soffio lo prende in pieno. Con la runa prima il +50%, poi −20 (cap. IV §1, Hella). Senza runa il soffio gli fa in media più di 50: Tempra CD 15 o torna polvere, e la carica rimasta dopo i Treant dell'alba lo riporta per un'ora (Scena 11, riga 4-bis) |
-| Zog'tar e le quattro guardie, Appendice A.2 | la tenda, o le mura se Zog'tar è vivo all'alba |
-| Balvar, Appendice A.4 | parla prima di combattere, o durante |
-| La Forgia ricorda le ferite, capitolo V | si segnano le ferite durante il duello, non dopo |
+| Skullcrusher Vecchio, cap. II | il duello. Il soffio contro Durik è nella Scena 11, riga 4-bis |
+| Le due wyvern, cap. II | questo gruppo conta come straripante: ci sono, dal round 2 del duello |
+| Durik, cap. VIII | +50% di danni dall'acido: il soffio lo prende in pieno. Con la runa prima il +50%, poi −20 (cap. VI §1, Hella). Senza runa il soffio gli fa in media più di 50: Tempra CD 15 o torna polvere, e la carica rimasta dopo i Treant dell'alba lo riporta per un'ora (Scena 11, riga 4-bis) |
+| cap. III, la scheda da tavolo e il §8 | lo sgancio e i round nel fuoco: è lo scontro con cui si apre |
+| Zog'tar, le quattro guardie, il sacerdote e Grask, cap. II | i round nel fuoco, o le mura se Zog'tar è vivo all'alba |
+| Balvar, cap. II | il *dissolvi* al round 4. Dopo il barile non tratta più da solo, ma chi gli parla per primo del nipote Hald lo trova ancora aperto (cap. III §10) |
+| La Forgia ricorda le ferite, cap. VII | si segnano le ferite durante il duello, non dopo |
 
-**Leggi il box in testa al booklet**, poi **consegna gli echi**, uno a testa,
-piegati. Di' solo: *«Questo è quello che vi è rimasto addosso della notte.
-Leggetelo quando ve lo dico.»* All'inizio dell'Atto I li fai leggere ad alta
-voce, uno per giocatore, prima delle scelte: **solo il riquadro**. Dillo così:
+**Gli echi.** Se il tavolo li ha già avuti in fortezza, salta questo
+paragrafo. Se no, **consegnali** adesso, uno a testa, piegati. Di' solo:
+*«Questo è quello che vi è rimasto addosso della notte. Leggetelo quando ve lo
+dico.»* Li fai leggere ad alta voce, uno per giocatore, prima dello sgancio:
+**solo il riquadro**. Dillo così:
 *«Leggete il riquadro. La riga sotto, quella che comincia con "Solo per te",
 è vostra: non leggetela.»* La pagina stampata lo dice anche lei, sopra il
 riquadro e sulla riga privata, ma dillo tu: chi legge ad alta voce di solito
@@ -200,173 +214,154 @@ Prima di consegnare l'eco di Thorik, chiedi al giocatore se alla Scena 4 ha
 porto l'ascia a Thorgrim: la riga privata lo dà per avvenuto, e il registro
 della sessione 4 non lo dice.
 
-Tre cose da fissare prima di cominciare, perché il testo non le decide:
+Tre cose da fissare prima di cominciare, se non le hai già fissate nelle
+serate passate, perché il testo non le decide:
 
-- **il Seme, capitolo II**: il tono dell'Anello (A o B) lo scegli adesso;
+- **il Seme, cap. IV**, se si gioca al ritorno: il tono dell'Anello (A o B) lo scegli adesso;
   i Bracieri, se Tordek li interroga, rispondono con una frase sola e mai
   sul Seme. Il testo copiato nel
-  capitolo II dice ancora «non commentano» e «in base a come Artemis ha
+  cap. IV dice ancora «non commentano» e «in base a come Artemis ha
   gestito»: valgono queste due righe;
-- **il dono a metà di Hella** (cap. IV §1): dipende dai successi dello Step 5
+- **il dono a metà di Hella** (cap. VI §1): dipende dai successi dello Step 5
   del rito, e il log del 25 dice solo che i tre Doni sono stati dati tutti.
   Fissa adesso se sono stati tre su tre o due su tre;
 - **lo Smeraldo della Corona**, 1 a settimana: il passaggio nel tempo ricarica
-  solo gli usi giornalieri (cap. IV Scena 1). Il registro non dice quando
+  solo gli usi giornalieri (cap. VI Scena 1). Il registro non dice quando
   Thorik l'ha usato l'ultima volta: chiedilo al giocatore.
 
-**Le dieci boccette**: se il tavolo non ha ancora il foglio di Kettra, va dato
-adesso. Le pozioni identificate sono già nel loro inventario.
+**Le dieci boccette**: il giro di Kettra è giocato, quindi il foglio ce
+l'hanno. Le pozioni identificate sono già nel loro inventario.
 
 **Cosa hanno in mano**, dal log del 25 settembre. Chi porta cosa non è stato
-registrato: lo si chiede al tavolo al passo 0 dell'Atto I.
+registrato: lo si chiede al tavolo al passo 0 dell'Atto I. Quello che hanno
+bevuto o comprato dopo il 25 lo sanno loro: la tabella è il punto di
+partenza, non il conto.
 
 | Cosa | Quante, e cosa fa | Quando conta |
 |---|---|---|
 | *Volare*, dal re | 5 pozioni, 5 minuti, 12 m di velocità in armatura | andata e ritorno (§2). Artemis vola a volontà, Hella da aquila con la forma selvatica: per andata e ritorno di Thorik e Tordek ne bastano 4 |
-| *Invisibilità* | **3** pozioni da 3 minuti: le due comprate da Brynja e la n. 10 delle boccette. Nessuna è del re | ognuna copre mezzo blocco: a piedi si tira Nascondersi CD 22 dal primo blocco (cap. IV Scena 6). In volo coprono l'atterraggio |
+| *Invisibilità* | **3** pozioni da 3 minuti: le due comprate da Brynja e la n. 10 delle boccette. Nessuna è del re | ognuna copre mezzo blocco: a piedi si tira Nascondersi CD 22 dal primo blocco (cap. VI Scena 6). In volo coprono l'atterraggio |
 | *Velocità* | 3 pozioni di Kettra, 5 round | il round di sorpresa alla tenda, o il duello |
 | Rune di *resistere all'energia*, acido 20 | 2, di Zeth: 70 minuti dall'attivazione, azione standard | si attivano al corno dell'alba o dopo: il drago arriva 70 round dopo il corno, e la runa dura 70 minuti. Uscendo dalla postierla, invece, all'alba sono scadute |
 | Cure in pozione e bacchetta | 4 «di CFC» del re e la quinta comprata (3d8+11); 3 di *cura ferite gravi*; 10 bacchette di *cura ferite leggere*; 5 pozioni di *neutralizza veleno* | il veleno delle wyvern è Tempra CD 17 (A.6) |
-| Pergamene | 4 *ristorare*, 3 *cura ferite critiche*, 5 *cura ferite gravi*, 3 *neutralizza veleno* | nel gruppo non c'è un chierico. *Ristorare* è della lista del chierico e del paladino, non del druido: la legge Artemis, Usare Oggetti Magici CD 27 (20 + livello dell'incantatore, 7°: lo stesso conto del *silenzio* a CD 23 in cap. IV Scena 5). Le cure e *neutralizza veleno* le legge **Hella** senza tiro: sono sulla lista del druido dell'SRD, *neutralizza veleno* al 3°, *cura ferite gravi* al 4°, *cura ferite critiche* al 5°, e lei è druida di 12°. Se Hella è a terra le legge Artemis, Usare Oggetti Magici CD 25 per le *gravi* e 27 per le altre |
-| Le Benedizioni della Sala | Pelle di Pietra (resistenza al fuoco 10, al freddo 5), Cuore Incrollabile, *Vigore della Forgia*: 3 cariche a PG, 3d8+5 | durano 24 ore vissute dalla preghiera all'Altare (cap. IV §0-bis). Quando il gruppo ha pregato l'ultima volta lo chiedi al tavolo prima dell'Atto I: se ha pregato all'ingresso nella Sala, di solito all'alba ci sono ancora |
-| La benedizione dei chierici | +2 morale al colpire e ai danni, 12 ore dal consiglio: viene con la fiducia piena (cap. IV Scena 4) | copre la notte e il duello. Rende **gratis** la Sapienza Magica della Via A contro Zog'tar (Scena 8). Non vale sui TS |
+| Pergamene | 4 *ristorare*, 3 *cura ferite critiche*, 5 *cura ferite gravi*, 3 *neutralizza veleno* | nel gruppo non c'è un chierico. *Ristorare* è della lista del chierico e del paladino, non del druido: la legge Artemis, Usare Oggetti Magici CD 27 (20 + livello dell'incantatore, 7°: lo stesso conto del *silenzio* a CD 23 in cap. VI Scena 5). Le cure e *neutralizza veleno* le legge **Hella** senza tiro: sono sulla lista del druido dell'SRD, *neutralizza veleno* al 3°, *cura ferite gravi* al 4°, *cura ferite critiche* al 5°, e lei è druida di 12°. Se Hella è a terra le legge Artemis, Usare Oggetti Magici CD 25 per le *gravi* e 27 per le altre |
+| Le Benedizioni della Sala | Pelle di Pietra (resistenza al fuoco 10, al freddo 5), Cuore Incrollabile, *Vigore della Forgia*: 3 cariche a PG, 3d8+5 | durano 24 ore vissute dalla preghiera all'Altare (cap. VI §0-bis). Quando il gruppo ha pregato l'ultima volta lo chiedi al tavolo prima dell'Atto I: se ha pregato all'ingresso nella Sala, di solito all'alba ci sono ancora |
+| La benedizione dei chierici | +2 morale al colpire e ai danni, 12 ore dal consiglio: viene con la fiducia piena (cap. VI Scena 4) | copre la notte e il duello. Rende **gratis** la Sapienza Magica della Via A contro Zog'tar (Scena 8). Non vale sui TS |
 | I Doni di Hella | *Scudo del Custode* (1 al giorno, azione immediata: prende su di sé, dimezzato, il danno di un alleato entro 9 m); RD 3/adamantino; *Rovo Eldritch* a volontà, 2d6 a 18 m. Guarigione rapida 1 su terra o pietra, sospesa nel round dopo un danno da fuoco | lo Scudo vale contro il soffio, su Durik o sul re. La RD ferma i colpi, non l'acido. Ogni volta che Hella usa lo Scudo, Thorik è accelerato per 3 round verso chi lei ha protetto (l'Eco del Custode) |
 | Artemis | *eldritch blast* a **6d6**: un dado è andato a Hella, al rito | — |
 | Tordek | l'Ancoraggio della Montagna non ce l'ha più: è il Dono passato a Hella al rito (log del 25). Contro il drago la Cintura rifiuta. I Bracieri no: Castigo del Drago (+2 al potenziamento e +2d6 contro i draghi), Salto Fiammeggiante 3 al giorno, e la Collina, che la prima volta scatta da sola quando una creatura Enorme lo porta sotto metà pf (scheda dei Bracieri) | Skullcrusher è Enorme: la prima Collina può arrivare stasera, senza preavviso |
-| Aegis Fang | *Dragondoom* vale contro Skullcrusher (cap. IV Scena 11). Il Bane contro Fauci (+2, +3d6, critico ×4, Scosso 1 volta a incontro CD 22) è per Fauci nel 1372 | contro il capostipite il Bane **non vale** |
+| Aegis Fang | *Dragondoom* vale contro Skullcrusher (cap. VI Scena 11). Il Bane contro Fauci (+2, +3d6, critico ×4, Scosso 1 volta a incontro CD 22) è per Fauci nel 1372 | contro il capostipite il Bane **non vale** |
 | Thorik | porta il Debito della Radice: stasera non si incassa (eco E-07g). Il **Torque** è ancora al collo del re: lo dà lui alla Scena 12, fuori da stasera | — |
 | Il dado dei caduti | quattro tiri di 1d4 alla Scena 10: le bacchette, *ristorare*, *cura ferite critiche*, *neutralizza veleno* | i nomi vanno fra i caduti del 372 |
 
 ---
 
-## §2 · Atto I — Le ultime scelte nella fortezza
+## §2 · Atto I — Il barile
 
-**Chi parla per primo.** Dopo gli echi entra **Durin**, con la mappa del campo
-arrotolata sotto il braccio, e chiede una cosa sola: *«Quando uscite?»*
- (cap. IV §0). Poi, in quest'ordine:
+**Già giocato, e non si rigioca**: le richieste aperte, le scelte in
+fortezza, il giro delle pozioni di Kettra, la partenza in volo dalla
+postierla. Il volo ha già la sua tacca.
 
-**0 · Le richieste aperte, e chi porta cosa** (due minuti). Chiudi la tabella
-«Le richieste rimaste aperte» di cap. IV Scena 5. Si pagano in monete del
-1372, dentro la tacca della fucina già segnata, quindi non costano tacche. Il
-conto del 25 è stato pagato senza la trattenuta del pesatore; per
-quello di stasera vale lo stesso `[INFERRED — needs DM confirmation]`:
+**0 · Prima del primo tiro** (cinque minuti). Fai dire al tavolo, e segna:
 
-- *silenzio*: 2 pergamene a 150 mo, oppure la pietra di Brynja a 160, che dura
-  8 minuti e copre il volo e l'atterraggio;
-- *identificare*: 1 pergamena a 125 mo, quella che serve al Seme;
-- *rimuovi paralisi*: 3 pergamene a 150 mo; *rimuovi maledizione*: l'ultima, a
-  375 mo;
-- il piccone d'adamantio solo in scambio, con Zeth; *ingrandire persona* non ce
-  n'è.
+- **chi tiene che cosa**: la botte (in due, è pesante), i due barilotti, chi
+  è invisibile e con quale pozione, quanti round di *volare* e di
+  *invisibilità* restano (il volo dura 50 round, le invisibilità comprate 30);
+- **la quota** da cui sganciano. La sceglie il tavolo, e prima di sceglierla
+  il tavolo può sapere solo quello che vede: dì quali fuochi illuminano la
+  tenda e chi di loro vede il colmo a quella quota (cap. III §2-bis). Da
+  48 m la botte fa 15d6 e devia poco; più in basso devia meno, fa meno male, e
+  dal round dopo i PG sono a portata del campo;
+- **le tacche**: lo stato di Grask si fissa adesso. Sveglio se l'ultima tacca
+  segnata è la 4ª, addormentato dalla 5ª (B9). Non dirlo al tavolo.
 
-Poi ognuno dice cosa porta, pozione per pozione, e lo segni.
+**1 · Lo sgancio.** L'iniziativa si tira quando decidono di sganciare. Il round
+di sorpresa è solo loro, e lasciar cadere è un'azione gratuita: botte e
+barilotti possono andare giù nello stesso round, e nessuno diventa visibile.
+Poi la scheda da tavolo di cap. III, passo per passo: dove cade (d8 e il
+dado della quota), che cosa prende, le fiale, l'olio, chi brucia. Tira i
+danni ad alta voce e descrivi la tenda che si accende: la luce dell'incendio
+è intensa entro 12 m e fioca fino a 24 m (B24).
 
-**1 · Il conto delle tacche.** **Apri** cap. IV §4, la tabella dell'orologio e
-la tabella d'uscita sotto. Restano **5 tacche**. Dillo con i numeri, è la
-regola dell'orologio: il tavolo deve sapere quanto ha in mano. Questo gruppo
-vola, e i conti sono due:
+**Se chiedono dove far cadere i barilotti**, la risposta è in
+cap. III §9: su Grask, prima che suoni. È l'unico modo di tenere lontano il drago
+senza scendere. Dillo solo se lo chiedono.
 
-- **in volo**: l'andata costa 1 e il ritorno in volo 1. 3 + 1 + 1 fa **5**, e
-  resta **una tacca libera** prima del 6, che è ancora «in tempo»;
-- **a piedi**: 2 per il mare di tende e 1 per il ritorno, più 1 per ogni
-  blocco fallito. 3 + 3 fa **6**, e non avanza niente.
+**2 · I round nel fuoco.** Segui la tabella «Le tattiche, round per round»
+(cap. III §8) per Zog'tar, le guardie, il sacerdote, Balvar e Grask, e
+la tabella «L'orda» per il campo. Le quattro cose che possono far male a chi
+è in alto, e che hanno un nome:
 
-Parlare con Balvar prima di colpire costa 1; parlargli durante lo scontro, 0.
-Una tacca spesa qui, col volo, porta a **6**: si arriva in tempo. Due tacche
-qui, o una sola col campo a piedi, portano a 7: si rientra di corsa, con −1 ai
-TS del primo round del duello. Oltre, l'alba li coglie fuori.
+- **il corno**: Grask suona entro 1d4 round dal boato. Se è morto, la parola
+  di Balvar, Zog'tar che strappa la custodia, o il primo capolancia (B19). Il
+  drago arriva 70 round dopo il primo suono;
+- **il giavellotto con la luce**, al round 3, se il sacerdote è vivo: mostra
+  chi è entro 6 m dal punto più alto del tiro, a 45 m sopra la tenda;
+- **il *dissolvi magie* di Balvar**, al round 4, dove il giavellotto li ha
+  mostrati o alla cieca sulla verticale, una volta su sei. Chi perde il volo
+  scende di 18 m a round per 1d6 round: da 48 m arriva illeso 4 volte su 6,
+  altrimenti cade da 12 m (4d6) o da 30 m (10d6) (B13, corretta il 15/11);
+- **il drago**, se il corno ha suonato e sono ancora lì al round 70.
 
-**Grask, l'araldo col corno, è tuo**: il conto delle tacche si dice, lui no
-(cap. IV §0 e Scena 6). La tacca del volo si segna alla partenza, e lo stato
-di Grask si fissa quando atterrano: sveglio se l'ultima tacca segnata è la 4ª,
-addormentato dalla 5ª.
+Ricorda ai giocatori i round che restano di *volare* e di *invisibilità*
+quando li chiedono, non prima.
 
-- Con 3 tacche e il volo subito, atterrano alla 4ª: **Grask è sveglio**, e chi
-  scende tira contro il suo Osservare o il suo Ascoltare.
-- Con una tacca spesa prima in fortezza, o con il campo a piedi, arrivano alla
-  5ª: **Grask dorme**.
+**3 · Il danno massiccio** è attivo: 50 o più da un solo attacco, Tempra CD 15
+o si muore, e le palle di fuoco nate insieme contano come un attacco solo
+(B5). Due colpi diretti su tre, da 48 m, superano i 50.
 
-Qui una tacca spesa in fortezza **aiuta** alla tenda, e il tavolo non lo sa.
+**4 · Quando lasciano il cielo sopra la tenda**, chiudi con una frase su
+quello che vedono da lassù: chi è uscito dal fuoco, chi no, se il corno ha
+suonato. Poi segna nel registro (§6) chi è morto, il corno e la quota.
 
-E sveglio o no, Grask ha il corno al polso: **quello che si dice lì vicino lo
-sente il drago**. All'alba Skullcrusher grida i nomi che i PG si sono detti
-alla tenda, e non li chiede mai (cap. IV Scena 6 e Scena 7, «Che cosa muove
-Skullcrusher»). Segna quali nomi sono stati detti
-fuori dal telo.
+**I PE per la trovata** sono nel §13 di cap. III (B15): la fascia di
+mezzo, o quella alta se il corno non suona. Si danno a fine serata, insieme a
+quelli dei nemici caduti davvero.
 
-**2 · Il Seme.** Insieme alle boccette, è la prima cosa che il tavolo
-chiederà: Artemis vuole sapere cos'è la gemma nello zaino di Tordek. La scena
-è il capitolo II di questo booklet, «L'ora della pergamena», e vuole la
-pergamena di *identificare* del passo 0. Costa **1 tacca**: col volo porta a
-6, in tempo. Dillo prima che scelgano. La si può rimandare: al ritorno dalla
-tenda, con le tacche che restano prima dell'8 (riga «≤ 6» della tabella
-d'uscita), oppure nel 1372. Il passo 3 della scena dice «verso le 7 tacche»:
-è il conto a piedi.
-
-**3 · Le scelte che valgono una tacca stasera**, dalla tabella:
-
-- Hella veglia i semi della Collana: all'alba i due Treant caricano il fianco
-  dell'orda (Scena 10, un successo in più alle mura);
-- il banchetto e le benedizioni: +1 morale per 12 ore;
-- una sosta di tre ore costa **2**: col volo porta a 7, cioè di corsa; con il
-  campo a piedi porta a 8, l'alba fuori dalle mura. Va detto prima che la
-  scelgano.
-
-⚠️ **L'orologio corre sulle scelte, non sul tempo reale.** Un tavolo che
-discute non spende tacche.
-
-**Per stare nelle tre ore**: se il tavolo esita, proponi tu le due opzioni da
-una tacca e chiedi un sì o un no a testa.
+**Per stare nelle tre ore**: se lo scontro si allunga, dal round 5 in poi
+racconta l'orda a blocchi di due round, e tira solo l'olio e il fuoco su chi
+conta (Zog'tar, Balvar, il sacerdote, Grask).
 
 ---
 
-## §3 · Atto II — Il campo
+## §3 · Atto II — Dopo il barile
 
-**Scena 6, il mare di tende** (cap. IV Scena 6). Il gruppo vola quasi di
-sicuro: è la **variante dall'alto**, 1 tacca invece di 2 e nessuna prova di
-gruppo. Il rischio si sposta all'atterraggio, ed è Grask (§2). Durik non vola:
-resta alla postierla, o Hella lo rimanda nel terzo seme per la notte. Se
-qualcuno va a piedi, la prova di gruppo a CD fissa costa **2 tacche**, più 1
-per ogni fallimento. Le tre pozioni d'invisibilità coprono mezzo blocco
-l'una, quindi a piedi si tira **Nascondersi CD 22** dal primo blocco.
+**Il ritorno** (cap. VI Scena 6, «Il ritorno»). Si torna in volo finché
+bastano pozioni e pergamene; quando finiscono, a piedi o portati da Artemis.
+Il ritorno in volo costa **1 tacca**, come quello a piedi. Chi torna a piedi
+tira il viaggio della Scena 6 a **CD +2**: dopo il barile i lupi si sono
+stretti sotto le vie (B25). Se il corno ha suonato, vale «Se il corno suona di
+notte»: chi riparte in volo subito è dentro le mura prima del drago.
 
-**Le quote, in una riga**. La postierla è 100 m sopra la
-piana dell'orda: dalla soglia il campo si vede dall'alto, ed è lì che si cerca
-la tenda nera. In volo si parte già sopra il campo e si scende al doppio della
-velocità; a piedi il primo blocco è la discesa del fianco est, senza Scalare
-(cap. IV Scena 6, «La discesa»).
+**Se scendono a finire il lavoro** (cap. VI Scene 7 e 8, mappa M7-C,
+Appendice A.2). La Scena 8 si gioca com'è, ma con la tenda in fiamme o
+crollata, il campo sveglio e i rinforzi della tabella «L'orda»
+(cap. III §8) già in strada. Balvar, se è vivo, non tratta più da solo: è stato
+attaccato (cap. III §10). Resta la lastra d'ardesia col nome di Hald: chi
+gli parla del ragazzo per primo lo trova ancora aperto. La Cintura di Tordek qui funziona. Il danno massiccio è
+attivo.
 
-**Scena 7, la tenda del comando** (cap. IV Scena 7). **Balvar** è nella tenda.
-Parlargli prima di colpire costa **1 tacca**; parlargli durante lo scontro
-**0**. La trattativa di una tacca dura più di ogni invisibilità del gruppo: a
-metà finisce, e chi torna visibile fuori dalle coperture (i tre pali, la
-tavola, lo schienale del seggio) è visto. È la scena che si ricorda: se il
-tavolo ha poco tempo, si taglia altro.
+**Il Seme**, se non è stato giocato: si fa al ritorno, con le tacche che
+restano prima dell'8 (riga «≤ 6» della tabella d'uscita), oppure si rinvia al
+1372. Costa **1 tacca**. Il contratto ✉ si consegna solo dopo il box dell'ora
+della pergamena (cap. IV).
 
-**Scena 8, Zog'tar** (cap. IV Scena 8, mappa M7-C, Appendice A.2). La Cintura
-di Tordek qui funziona. Il danno massiccio è attivo: regola SRD, tenuta dalle
-regole della casa. 50 danni in un colpo, e il bersaglio tira Tempra CD 15 o muore. Il ritorno a
-piedi alle mura costa **1 tacca**, quello in volo anche. A piedi l'ultimo
-blocco è la salita del fianco est: dura il doppio, e la tacca resta una.
-
-**Scena 9, Vatore** (cap. IV Scena 9). Dieci minuti, al ritorno. L'Anello di
+**Scena 9, Vatore** (cap. VI Scena 9). Dieci minuti, al ritorno. L'Anello di
 Artemis lo sente prima di chiunque: dagli lo spotlight. Se tornano in volo e
 non scendono, Vatore è sulle mura all'alba, nel caos della Scena 10 («Se
 tornano in volo»).
 
 **Gli scontri che possono capitare per strada**, tutti con la loro tattica nel
 master: la pattuglia dei tre fallimenti e la squadra dei lupi (Scena 6), lo
-sciamano che vede l'invisibile al ritorno (Scena 6, dopo il corno), le quattro
-guardie della tenda (Scena 8). Lo scontro con la pattuglia o con i lupi costa
+sciamano che vede l'invisibile al ritorno (Scena 6, dopo il corno), Zog'tar e
+le guardie se scendono (Scena 8). Lo scontro con la pattuglia o con i lupi costa
 una tacca in più. Le tattiche sono canone.
 
 **Quando escono dalla tenda**, conta le tacche e leggi la riga della tabella
 d'uscita: ≤ 6 in tempo, 7 di corsa, 8 o più l'alba li coglie fuori.
 
-**Per stare nelle tre ore**: il mare di tende passa alla versione veloce,
-cap. IV Appendice C.2, la parte «Infiltrazione»: tre tiri e dieci minuti,
-2 tacche più 1 per ogni tiro fallito, e il ritorno in un tiro solo. Zog'tar
-resta completo.
+**Per stare nelle tre ore**: il ritorno passa alla versione veloce, cap. VI
+Appendice C.2, un tiro solo.
 
 **Gli scontri senza griglia.** La pattuglia dei tre fallimenti e i lupi della
 Scena 6 non hanno una mappa in scala: M7-A non lo è. Giocali su M7-H, il
@@ -377,9 +372,12 @@ loro fuochi, i ripari dei clan degli orchi a ovest.
 
 ## §4 · Atto III — L'alba
 
-**Scena 10, le mura** (cap. IV Scena 10). Il box, poi **«Che fate?»**: una via
+**Scena 10, le mura** (cap. VI Scena 10). Il box, poi **«Che fate?»**: una via
 su tre, prova collettiva. **Prima di contare i successi**, applica la tabella
-«Dalla notte»: i Treant, il campo allertato, Zog'tar vivo o morto. E tira il
+«Dalla notte»: i Treant, il campo allertato, Zog'tar vivo o morto, e le tre
+righe del barile. Il boato è un allarme (un successo in meno); Zog'tar
+tirato fuori dal fuoco davanti ai suoi vale «umiliato» e lo annulla (B11);
+Zog'tar vivo all'alba è un altro successo in meno. E tira il
 **dado dei caduti**: quattro tiri di 1d4, uno per ogni tipo di cura comprata
 alla cappella; il numero è quanti difensori con un nome muoiono sulle mura, e
 i nomi vanno fra i caduti del 372. Se Zog'tar è vivo all'alba, con 0-1
@@ -389,9 +387,12 @@ tabella «Dalla notte».
 Se le tacche sono 8 o più, la Scena 10 **non si gioca**: il dado dei caduti si
 tira all'alba, prima del duello, e il duello comincia con i PG fuori dalle mura.
 
-**Scena 11, il duello** (cap. IV Scena 11, mappa M7-B, Appendice A.1-bis: stasera il drago è il **Vecchio**; l'Adulto di A.1 resta per un gruppo più debole). La
-prima battuta del drago usa uno dei nomi che hai segnato alla tenda; se non ne
-hai, un epiteto. Poi cinque cose da tenere davanti:
+**Scena 11, il duello** (cap. VI Scena 11, mappa M7-B, Appendice A.1-bis: stasera il drago è il **Vecchio**; l'Adulto di A.1 resta per un gruppo più debole). Dopo il
+barile il drago **guarda in alto**: ha sentito i gridi della notte
+attraverso la Catena, e sa che i nani volano (B21). Se il corno ha suonato di
+notte, parte già in quota; se nessuno l'ha suonato, arriva a metà mattina,
+furioso. La prima battuta del drago usa uno dei nomi che ha sentito gridare
+vicino al corno; se non ne ha, un epiteto. Poi cinque cose da tenere davanti:
 
 - la **Cintura di Tordek** si rifiuta contro il drago (§1 del master): dillo
   al primo tentativo, in una riga, e non spiegarlo. I Bracieri invece valgono;
@@ -400,23 +401,23 @@ hai, un epiteto. Poi cinque cose da tenere davanti:
   del gruppo;
 - **le wyvern**: dal round 2, due wyvern (sidebar di scala, statistiche in
   A.6) vanno su chi tiene la corda e su chi vola. Fuggono quando il drago fugge
-  o muore. Il duello è EL 17, il tetto, e vale circa 4.060 PX a testa (cap. IV §8);
+  o muore. Il duello è EL 17, il tetto, e vale circa 4.060 PX a testa (cap. VI §8);
 - **la passata e il nome**: il drago non si ferma in aria. Attraversa il
-  cortile con Attacco in Volo e Virata, e a metà passata soffia o grida un
+  cortile con Attacco in Volo e Virare, e a metà passata soffia o grida un
   nome; al turno dopo morde chi ha nominato. Non ghermisce nessuno: la presa
   in bocca è di Fauci, nel 1372. Si ferma in aria una volta sola, a ⅓ dei pf,
-  ed è la prima paura (cap. IV Scena 11);
+  ed è la prima paura (cap. VI Scena 11);
 - **Aegis Fang** scaglia la Cicatrice Ancestrale: segna la ferita nella tabella
   della Forgia nel momento in cui succede.
 
 Il finisher, se il drago muore, **va al giocatore** (`[HDYWTDT]`, §0-ter).
 
 Gli esiti della Scena 11 sono tre (ucciso, ferito grave, fuggito). Il quarto,
-**vinto sporco**, sta nel cap. IV §6, ultima riga: scatta se due PG cadono
+**vinto sporco**, sta nel cap. VI §6, ultima riga: scatta se due PG cadono
 nello stesso round o se il gruppo si ritira.
 
 **Per stare nelle tre ore**: se il tavolo è stanco dopo Zog'tar, il duello
-passa alla regia veloce, cap. IV Appendice C.3, tre scambi. Le ferite si
+passa alla regia veloce, cap. VI Appendice C.3, tre scambi. Le ferite si
 registrano lo stesso.
 
 **Gli scontri senza griglia.** Zog'tar sulla breccia (Scena 10) si gioca su un
@@ -448,13 +449,14 @@ gruppo**.
 
 | | Cosa | Esito |
 |---|---|---|
-| ☐ | Le richieste aperte comprate, e chi porta cosa | |
-| ☐ | Il Seme: identificato · estirpato · tenuto · dato · firmato (e da chi); cosa ha detto Artemis a Tordek | |
-| ☐ | Scelte in fortezza: semi vegliati · banchetto · sosta | |
-| ☐ | Mare di tende: fallimenti · dall'alto o a piedi · Grask sveglio o addormentato all'atterraggio | |
-| ☐ | Balvar: ascoltato · ucciso · ignorato · «dite che c'ero»: promesso? Portato dentro le mura? Hald l'ha visto? | |
-| ☐ | Zog'tar: ucciso in silenzio · spettacolare · umiliato e vivo · vivo all'alba | |
-| ☐ | Il corno: rubato · suonato · lasciato | |
+| ☐ | Il barile: la quota, dove sono caduti botte e barilotti, Grask sveglio o addormentato | |
+| ☐ | Chi è morto nel fuoco: Zog'tar · Balvar · il sacerdote · Grask · le guardie (quante) | |
+| ☐ | Zog'tar tirato fuori dal fuoco davanti ai suoi? Vivo all'alba? | |
+| ☐ | Il giavellotto con la luce e il *dissolvi* di Balvar: chi è stato visto, chi è caduto | |
+| ☐ | I PE per la trovata (cap. III §13): fascia | |
+| ☐ | Il Seme, se giocato al ritorno: identificato · estirpato · tenuto · dato · firmato (e da chi) | |
+| ☐ | Balvar, se è sceso qualcuno: ucciso · ignorato · «dite che c'ero»? Hald l'ha visto? | |
+| ☐ | Il corno: suonato (da chi, a che round) · rubato · rimasto nella custodia | |
 | ☐ | I Treant: dove sono andati (tenda, fianco, duello) | |
 | ☐ | Vatore: ignorato · parlato · derubato · ferito · tentato di uccidere. Chi ha bevuto la n. 4, e se Vatore ha visto il segno | |
 | ☐ | Tacche spese all'arrivo alle mura | … su 8 |
@@ -473,12 +475,1300 @@ gruppo**.
 | E-07h | Balvar, «dite che c'ero» | grigio, lunga |
 | E-07i | Vatore, qualunque esito | grigio, lunga (ARC-09) |
 | E-07j | Zog'tar vivo all'alba | scuro, ARC-08 |
+| E-07l | la notte del barile: chi è morto nel fuoco, e la lastra di Hald se Balvar è morto | grigio, ARC-09 |
 | E-07k | la frase del finisher | intimo |
 
 
 \page
 
-# II · Il Seme-Mercato: l'ora della pergamena
+# II · Chi c'è stanotte: i cattivi, le schede, le mappe
+
+{{note
+##### ⚠ SOLO DM
+Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
+}}
+
+# Chi c'è stanotte, e dove sta
+
+> **Cos'è.** Le facce della serata, una per una, nell'ordine in cui arrivano:
+> chi è, cosa vuole, com'è, come parla, il ritratto e la scheda intera, uno
+> accanto all'altro. Le mappe della tenda e del campo sono in fondo al
+> capitolo. È lo stesso testo del master (cap. VI), copiato qui perché al
+> tavolo non si sfoglia: se cambia il master, cambia anche questo capitolo.
+
+## Zog'tar Deatheye, il generale
+
+<!-- include: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#zogtar-chi -->
+| | |
+|---|---|
+| **Aspetto** | mezzo-ogre, grande quanto una porta di stalla, armatura completa di mithral annerita, di fattura nanica, presa ai nani. L'ascia a due mani appoggiata alla spalla. Al posto dell'occhio destro, una pietra nera levigata: l'**Occhio di Ossidiana**, un occhio vero |
+| **Vuole** | Hammerfist. Sa uccidere diecimila uomini, non sa dove colpire le mura: per quello c'è Balvar |
+| **Suona** | conta, sempre: *«due file», «tre ore», «cento»*. In ira: *«A ME, CANI! ABBATTETE LE OMBRE!»* |
+| **Sa** | niente dei PG, a meno che il corridore non sia arrivato |
+| **Eco** | come muore decide come comincia il duello. Se viene **umiliato e non ucciso**, l'orda che mille anni dopo sarà la Mano Rossa ha un generale in più nei suoi canti |
+| **Ritratto** | qui sotto. Ai giocatori si mostra dopo l'incontro, non prima |
+<!-- /include -->
+
+![Zog'tar Deatheye, il generale](../../Immagini/web/zogtar-deatheye.jpg)
+
+<!-- include: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#zogtar-scheda -->
+{{monster,frame
+## Zog'tar Deatheye, generale dell'orda antica
+*Mezzo-Ogre/Orco Grande, caotico malvagio · Barbaro 14 / Guerriero 1* · GS 15 (Avanzato)
+___
+**Taglia** Grande · **Spazio** 3 m (2×2 quadretti) · **Portata** 3 m (2 quadretti)
+**Iniziativa** +9 · **Sensi** scurovisione 18 m (ogre e mezzorco, SRD); Ascoltare +11, Osservare +3
+
+**DIFESA**
+___
+**CA 26** (−1 taglia, +10 arm. completa di mithral +2, +3 DES, +4 nat), contatto 12, impreparato 26 (Schivare Prodigioso Migliorato); 24 in Ira. Il mithral alza la DES massima a +3 (SRD); è preda presa ai nani, e i nani la riconoscono · **pf 283** (15 DV, massimi per dado), 328 in Ira Superiore · TS Tempra +18 (+21 in Ira), Riflessi +9, Volontà +9 (+12 in Ira; +16 contro gli ammaliamenti, Volontà Indomita) · RD 3/— (barbaro 13) · Schivare Prodigioso Migliorato · Percepire Trappole +4 · Volontà Indomita (14°)  
+
+**ATTACCO**
+___
+Vel 12 m · **Mischia** in Ira, ascia a due mani +1 +29/+24/+19 (3d6+20, 20/×3); fuori dall'Ira (round di sorpresa) +26/+21/+16 (3d6+16) · **Distanza** 3 giavellotti Grandi +19 (BAB 15, DES +5, −1 taglia) (1d8+13 in Ira, 1d8+10 fuori dall'Ira), incremento 9 m · **Colpo Terrificante** (azione standard) +25 in Ira, 3d6+20; Riflessi con CD pari al danno, o vola via di 3 m e cade prono (+1d6 a lui e all'ostacolo se ne incontra uno) · **Attacco Poderoso** a due mani: fino a −15 al colpire per +30 ai danni  
+
+**TATTICHE**
+___
+La tenda della Scena 8: le quattro guardie gli tengono la CA, il sacerdote sta nella tenda.  
+
+**STATISTICHE**
+___
+For 30 (36 in Ira), Des 20, Cos 24 (30 in Ira), Int 16, Sag 16, Car 18 · BAB +15; Lotta +29 (+32 in Ira) · **Talenti** (7) Attacco Poderoso, Spingere Migliorato, Colpo Terrificante (talento da mostro, SRD), Ira Extra, Iniziativa Migliorata, Volontà di Ferro, Arma Focalizzata (ascia) · **Abilità** Ascoltare +11, Osservare +3, Intimidire +14 (8 gradi in Ascoltare, 10 in Intimidire, nessuno in Osservare) · **Altro equipaggiamento** armatura completa di mithral +2, ascia a due mani +1, 3 giavellotti (tutto di taglia Grande), 2 pozioni di *cura ferite gravi* (LI 5, 3d8+5, 750 mo l'una); Occhio di Ossidiana (sotto)  
+
+**CAPACITÀ SPECIALI**
+___
+- **Ira Barbarica Superiore** (6/giorno, con Ira Extra): +6 FOR, +6 COS, +3 Volontà, −2 CA, 13 round. Dopo l'Ira è affaticato (l'Ira Instancabile arriva al 17°).  
+- **Presenza Minacciosa**: entro 9 m, quando attacca o carica, Volontà CD 21 o scosso 1d4 round; chi supera il TS è immune per 24 ore (10 + ½ DV + CAR, e il resto come la presenza terrificante dei draghi; D57).  
+- **Occhio di Ossidiana** (artefatto minore maledetto, incastonato al posto dell'occhio destro, canone del DM): 3/giorno, azione di movimento, marca un bersaglio: −2 CA contro Zog'tar e +2 danni subiti da lui, 5 round. Prezzo: Zog'tar è **vulnerabile alla luce divina** (Luce di Lathander, Corona).  
+}}
+<!-- /include -->
+
+## Le quattro guardie della tenda
+
+Hobgoblin in armatura nera laccata, tutti uguali di proposito. Vogliono che
+Zog'tar non li veda mai esitare, perché l'ultimo che ha esitato è sul seggio,
+fra i teschi. Non parlano: al generale rispondono battendo il piatto dello
+spadone per terra, una volta sì, due no. Ritratto: nessuno.
+
+<!-- include: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#guardie-scheda -->
+{{monster,frame
+## Guardia di Zog'tar (4)
+*Hobgoblin Medio · Guerriero 8 SRD sulle caratteristiche dell'hobgoblin* · GS 8
+___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) ciascuno · **Portata** 1,5 m (1 quadretto)
+**Iniziativa** +1 · **Sensi** scurovisione 18 m; Ascoltare +1, Osservare +1 (senza gradi nelle due abilità)
+
+**DIFESA**
+___
+**CA** 19, +8 arm. completa, +1 DES, il massimo che l'armatura lascia; spadone, niente scudo  
+**pf** 60  
+**TS** Temp +8, Rifl +3, Vol +1  
+
+**ATTACCO**
+___
+**Velocità** 6 m (armatura pesante)  
+**Mischia** spadone +14 (2d6+6/19-20)  
+**Distanza** giavellotti +9 (1d6+4), incremento 9 m  
+
+**STATISTICHE**
+___
+Linguaggi: Comune, Goblin  
+Altro equipaggiamento: armatura completa, spadone, giavellotti  
+}}
+<!-- /include -->
+
+## Il sacerdote dell'orda
+
+Hobgoblin secco, dagli occhi gialli, la mano sinistra nera di fuliggine fino
+al polso, un bastone ferrato con appese ossa di dita. Canta invece di
+parlare, sempre la stessa cantilena, e la interrompe solo per dare ordini.
+Dorme sulla sua stuoia a N14. Dopo il barile è lui che mette la *luce* sul
+giavellotto, al round 3 (cap. III §8). Ritratto: nessuno.
+
+<!-- include: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#sacerdote-scheda -->
+{{monster,frame
+## Sacerdote dell'orda
+*Hobgoblin Medio · Adepto 7* · GS 6
+___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) · **Portata** 1,5 m (1 quadretto)
+**Iniziativa** +2 · **Sensi** scurovisione 18 m; Ascoltare +2, Osservare +2
+
+**DIFESA**
+___
+**CA 12** (+2 DES) · **pf 38** (7d6+14) · TS Temp +4, Rifl +4, Vol +7  
+
+**ATTACCO**
+___
+Vel 9 m · **Mischia** bastone ferrato +3 (1d6) · **Incantesimi** (3/4/3; CD 12 + livello): 0 *guida, individuazione del magico, luce*; 1° *benedizione, causare paura, comando, protezione dal bene*; 2° *vedere invisibilità, oscurità, forza del toro*  
+
+**TATTICHE**
+___
+Sta nella tenda di Zog'tar (Scena 8).  
+
+**STATISTICHE**
+___
+For 10, Des 14, Cos 15, Int 14, Sag 15, Car 8 · **Abilità** Ascoltare +2, Osservare +2, Concentrazione +12 · **Linguaggi** Comune, Goblin · **Altro equipaggiamento** bastone ferrato  
+}}
+<!-- /include -->
+
+## Grask, l'araldo col corno
+
+Hobgoblin di quindici anni, magro. Il corno sta nella custodia col glifo,
+incatenata al suo polso. Dorme seduto fuori dalla tenda, a P16, col braccio
+sopra la custodia. Vuole una cosa sola: non perderlo più. Non parla, soffia.
+Sveglio se l'ultima tacca segnata all'arrivo è la 4ª, addormentato dalla 5ª.
+Ritratto: nessuno.
+
+**Numeri** (combattente 1 dell'SRD): **CA 15** · **pf 6** · Riflessi +1 ·
+Ascoltare e Osservare +2, −10 ad Ascoltare finché dorme. Dopo il barile suona
+entro **1d4 round** dal boato, se è vivo (cap. III §8).
+
+## Balvar Fuocospento, il runaio esiliato
+
+<!-- include: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#balvar-chi -->
+| | |
+|---|---|
+| **Aspetto** | nano dello scudo vecchio, grembiule di cuoio, seduto su uno sgabello da bottega. Sulle ginocchia una lastra d'ardesia, in mano una punta di ferro |
+| **Vuole** | che Hammerfist cada **in fretta**, perché un assedio lungo è fame, e lui l'ha già vista. E che qualcuno dica che c'era |
+| **Suona** | non smette di incidere mentre parla. La punta sull'ardesia continua sotto le frasi |
+| **Sa** | **che i PG non sono di questo secolo**, unico in tutta Hammerfist. Dove vanno colpite le mura. La runa-vincolo sulla scaglia del drago, perché l'ha incisa lui |
+| **Non dice** | che ha un nipote di diciannove anni sul camminamento. Mai per primo |
+| **Ritratto** | qui sotto. Ai giocatori si mostra dopo l'incontro, non prima |
+<!-- /include -->
+
+![Balvar Fuocospento, il runaio esiliato](../../Immagini/ritratti/balvar-fuocospento.jpg)
+
+<!-- include: Bestiario/villain/balvar-fuocospento-cr13.md#scheda -->
+{{monster,frame
+## Balvar Fuocospento, il Consigliere dell'Orda
+*Umanoide Medio (nano), Chierico 9 di Abbathor / Runecaster 4, NE* · GS 13
+___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) · **Portata** 1,5 m (1 quadretto)
+**Iniziativa** +2 · **Sensi** scurovisione 18 m; Ascoltare +5, Osservare +5
+
+**DIFESA**
+___
+**CA 24**, contatto 14, colto 22 (armatura completa di mithral +2, anello di protezione +2, DES +2) · **pf 101** (13 DV) · TS Temp +13, Rifl +8, **Vol +17** (+2 razziale vs magia) · immune a paura (patto con Abbathor) · **Debolezza** le sue rune sono **scritte** — chi legge il nanico antico e le vede può contrastarle (vedi il modulo).  
+
+**ATTACCO**
+___
+Vel 6 m · **Mischia** martello da guerra runico +1 +11/+6 (1d8+2/x3) · Domini **Inganno** e **Runa** (dominio Runa = FRCS). Incantesimi da **chierico di 13° livello**: è chierico 9 **e** Runecaster 4, e il Runecaster avanza il lancio (per questo ha *blade barrier*, che è di 6°). CD 15+liv: tipici *dispel magic, magic circle against good, greater magic weapon, divination, righteous might, blade barrier, slay living, silence, invisibility purge, glyph of warding, dimensional anchor*, *greater command* (uno slot di 5° libero).  
+
+**TATTICHE**
+___
+Dipendono da come è andata con lui prima dello scontro: il viaggio a mille anni fa, Scena 7, «Cosa fa quando comincia lo scontro» (recuperato non combatte e indica la runa della Catena; trattativa aperta guarda un round e poi sta con chi vince; minacciato combatte con Zog'tar, come dice «Come si combatte, se si arriva a combatterlo» nella stessa scena). **Morale**: sotto 30 pf non fugge e non implora, finisce di incidere la lastra con un'azione di round completo, l'ultima, e in quel turno non attacca e non lancia (decisioni D52 e D71 del DM, nella stessa scena).  
+
+**STATISTICHE**
+___
+For 12, Des 14, Cos 16, Int 16, **Sag 20**, Car 14 · BAB +9; Lotta +10 · **Abilità** Percepire Intenzioni +13, Concentrazione +19, Sapienza Magica +19, Conoscenze (storia) +19, Artigianato (incidere rune) +19 (il conto dei gradi è nella nota in testa) · **Talenti** Incidere Rune `[Private source — FRCS]`, Volontà di Ferro, Riflessi Fulminei, Incantare in Combattimento, Scrivere Pergamene · **Equipaggiamento** armatura completa di mithral +2, anello di protezione +2, martello da guerra runico +1, *cintura della forza del gigante +2*, *guanti della destrezza +2*, *fascia dell'intelletto +2*, *periapto della saggezza +2*, *mantello del carisma +2*, polvere di diamante per i glifi Equipaggiamento sopra la tabella: scelta del DM: almeno 44.812 mo contro i 35.000 della Tabella 4-23 del DMG 3.5 al livello effettivo 13; il GS resta 13.  
+
+**CAPACITÀ SPECIALI**
+___
+- **Rune incise (Runecaster 4)**: incide fino a **4 rune persistenti** su superfici o creature consenzienti/legate; una runa incisa **non consuma slot al momento dell'uso** e scatta alla condizione scritta. Alla tenda di Zog'tar (ARC-07 cap. VI, Scene 6 e 7): *invisibility purge* sulla soglia, *blade barrier* sul palo centrale, *silence* su sé stesso, **la Catena** (sotto). *Dimensional anchor* lo lancia, non lo incide.  
+- **La Catena di Skullcrusher (Su, unica)**: la runa-vincolo incisa nella scaglia sternale del drago. Finché regge, **Skullcrusher combatte per l'orda**. Non è dominazione — è un **contratto scritto nella carne**, e il drago lo sa.  
+- **Leggere il Fuori-Posto (Su, 3/giorno)**: come *detect magic* ma sulle **anomalie temporali**: percepisce chi non appartiene a questo secolo. **È il solo, in tutta Hammerfist ≈372 DR, che sa cosa sono i PG.**  
+}}
+<!-- /include -->
+
+## All'alba: Skullcrusher il Nero e le wyvern
+
+<!-- include: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#skullcrusher-chi -->
+| | |
+|---|---|
+| **Aspetto** | drago nero vecchio (adulto maturo, se si usa l'Appendice A.1), snello e arrogante: collo lungo, cranio stretto e cornuto, scaglie nere opache con un riflesso verde d'olio. L'acido gli cola dalle fauci chiuse |
+| **Vuole** | vincere **davanti all'orda**, perché per lui il potere è quello che gli altri hanno visto |
+| **Teme** | che l'orda veda il guinzaglio. Chi dice la Catena ad alta voce se lo tira addosso (Scena 7, «Che cosa muove Skullcrusher») |
+| **Suona** | dice **il nome** dell'avversario prima di colpire, ogni volta. Il nome è l'incantesimo, *colpo accurato*: il morso arriva al round dopo. Non lo chiede: lo sa dal corno, o mette un epiteto al suo posto (Scena 7, «Che cosa muove Skullcrusher»). Per il resto provoca e commenta, e se il tavolo ci sta ci si parla |
+| **Eco** | la tabella B4 (§7): ogni ferita che gli fate, la Forgia la ricorderà contro **Fauci di Palude** nel 1372 |
+| **Ritratto** | la tavola qui sotto. Solo per il DM fino al duello |
+<!-- /include -->
+
+![Skullcrusher nel cortile](../../Immagini/web/tavola-skullcrusher-nel-cortile.jpg)
+
+Stasera il drago è il **Vecchio**, e la scheda qui sotto è intera. L'Adulto
+di cap. VI Appendice A.1, per un gruppo più debole, resta nel volume d'arco.
+
+<!-- nuova-pagina -->
+
+<!-- include: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#skullcrusher-vecchio-scheda -->
+{{monster,frame
+## Skullcrusher Vecchio
+*Drago Enorme (acqua), caotico malvagio · drago nero Vecchio dell'SRD, Avanzato* · GS 17 (Vecchio GS 16, +1 Avanzato)
+___
+**Taglia** Enorme · **Spazio** 4,5 m (3×3 quadretti) · **Portata** 3 m (2 quadretti); 4,5 m (3 quadretti) con il morso
+**Iniziativa** +6 · **Sensi** percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4; Ascoltare +31, Osservare +31 (Allerta, +2: SRD)
+
+**DIFESA**
+___
+**CA 39** (−2 taglia, +2 DES, +26 nat, +3 deflessione), contatto 13, impreparato 37; **43 con *armatura magica***, come al duello · **pf 337** (25d12+175) · TS Temp +24, Rifl +21, Vol +23 (con il mantello; senza oggetti CA 36, contatto 10, TS +21/+18/+20) · RD 10/magia · RI 22 · immune acido, sonno, paralisi  
+
+**ATTACCO**
+___
+Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** (Sop) linea di 30 m, 16d4, Riflessi CD 31 dimezza, di nuovo dopo 1d4 round (1d4+1 se impregnante, sotto) · **Capacità magiche** (incantatore di 7°) 3/giorno *oscurità* (raggio 24 m); 1/giorno *corrompere l'acqua* (gittata 72 m, quella della Presenza; CD 26, la CD della sua Presenza Terrificante, come nell'SRD: rovina anche le pozioni che un PG ha addosso, se falliscono il TS); 1/giorno *crescita vegetale* (gittata 204 m) · **Incantesimi da stregone** (incantatore di 7°, CD 14 + livello; gittata vicina 12 m, media 51 m, lunga 204 m): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, messaggio, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, causare paura* (CD 15), *colpo accurato, dardo incantato, scudo*; 2° (7/giorno) *immagine speculare, spaventare* (CD 16), *vedere invisibilità*; 3° (5/giorno) *dissolvi magie, lentezza* (CD 17). Conosciuti 7/5/3/2, come lo stregone di 7° dell'SRD: ai conosciuti dell'Adulto più i due di 3° (D64, scelta di Jfs del 19/11) mancavano tre posti, e il DM li ha riempiti con *messaggio*, *causare paura* e *spaventare*  
+
+**STATISTICHE**
+___
+For 33 Des 14 Cos 25 Int 18 Sag 19 Car 18  
+}}
+
+**Oggetti al duello** Dal suo tesoro triplo (SRD: 36.000 mo al GS 17, × 3 = 108.000), circa 51.900 mo a prezzo SRD: **anello di protezione +3** (18.000), **mantello della resistenza +3** (9.000), **bacchetta di *paura*** (incantatore di 7°, 21.000: cono di 9 m, Volontà CD 16, panico per 7 round, scosso per 1 round chi riesce), **2 pergamene di *dominare persone*** (incantatore di 9°, 1.125 l'una: 13,5 m, Volontà CD 17) e **1 pergamena di *suggestione di massa*** (incantatore di 11°, 1.650: gittata media, 63 m, fino a 11 creature entro 9 m l'una dall'altra, Volontà CD 19). Bacchetta e pergamene sono tutte sulla lista dello stregone: la bacchetta non chiede prove, le pergamene una prova d'incantatore, d20+7 contro CD 10 e 12 (SRD, *Pergamene*). Bacchetta e *suggestione di massa* costano un'azione standard, presa con l'artiglio: quel round non morde e non soffia. *Dominare persone* ha tempo di lancio 1 round (SRD), quindi in passata non si legge: solo da fermo o fluttuando, e l'effetto arriva all'inizio del suo turno dopo. *Dominare persone* prende solo gli umanoidi: Thorik è immune per la Mente Vuota, Hella in forma animale non è una persona
+
+**Tattiche** Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf, circa **112 pf**. Al corno, prima di partire, lancia *vedere invisibilità* e *immagine speculare* (1d4+2 immagini, 7 minuti). In passata chiude ogni turno a più di 18 m da tutti i PG, fuori dalle cariche: in mischia lo si prende solo con un'azione preparata quando passa. Mentre il soffio ricarica usa la bacchetta sul gruppo più fitto; la prima pergamena di *dominare* (un round fermo o fluttuando, quindi dopo la prima paura) va sul PG che fa più danno e non è Thorik, la *suggestione di massa* sui nani delle corde («lasciate le corde e salvatevi»). In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.
+
+**Statistiche** For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** Ascoltare +31, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +31, Sapienza Magica +29, Nuotare +18: come l'Adulto più Allerta (il blocco non spende i gradi dei tre DV in più)
+
+**Capacità speciali**
+- **Presenza Terrificante**: raggio 72 m, Volontà CD 26 (meno di 25 DV).
+- **Soffio impregnante**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 31 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.
+- **Respirare sott'acqua** (Str).
+<!-- /include -->
+
+<!-- include: 07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#wyvern-scheda -->
+{{monster,frame
+## Wyvern (2)
+*Drago Grande · wyvern SRD* · GS 6
+___
+**Taglia** Grande · **Spazio** 3 m (2×2 quadretti) ciascuno · **Portata** 1,5 m (1 quadretto)
+**Iniziativa** +1 · **Sensi** scurovisione 18 m, visione crepuscolare, fiuto
+
+**DIFESA**
+___
+**CA** 18  
+**pf** 59  
+**TS** Temp +7, Rifl +6, Vol +6  
+
+**ATTACCO**
+___
+**Velocità** 6 m, volare 18 m (scarsa)  
+**Mischia** pungiglione +10 (1d6+4 e veleno, Tempra CD 17, 2d6 COS), morso +8 (2d8+4)  
+
+**TATTICHE**
+___
+Vanno su chi tiene la corda dell'ala e su chi vola.  
+
+**STATISTICHE**
+___
+Lotta: +15  
+Talenti: Allerta, Attacco in Volo, Capacità Focalizzata (veleno), Multiattacco  
+
+*wyvern dell'SRD; i tiri salvezza sono quelli della sua scheda SRD*
+}}
+<!-- /include -->
+
+<!-- nuova-pagina -->
+
+## Le mappe: lo spiazzo, la tenda, il campo
+
+Le aree hanno le chiavi stampate sulle due piante, che seguono: C1-C6 stanno su M7-C, C1-C5 anche su M7-H, H1 solo su M7-H. I numeri delle piante restano le pedine.
+
+### C1 · Il telo est, «il telo a sinistra» di Balvar
+
+S10–S14 su M7-C. È il telo che Balvar consiglia: da qui si entra e si resta invisibili, senza runa né glifo. Chi taglia la tenda altrove resta invisibile, ma il taglio fa rumore: le guardie tirano Ascoltare contro il suo Muoversi Silenziosamente.
+
+### C2 · Il telo del glifo
+
+N15–P15 su M7-C, il telo sopra il seggio. Porta un *glifo di interdizione* legato ai nani: scoppio sonoro 5d8, Riflessi CD 18 dimezza, e il boato è l'allarme. Nella bolla di *silenzio* non fa danni e non esce (Scena 6).
+
+### C3 · Il palo centrale
+
+N12 su M7-C. Di legno, alto 6 m come gli altri due: è il palo maestro, e le due metà del colmo si incastrano su di lui. Regge la runa della barriera di lame: Balvar la attiva e il muro corre lungo la riga 12, da J12 a R12, 13d6, Riflessi CD 21 per evitarla (Scena 7). Zog'tar lo abbatte con Forza CD 20, azione standard: il telo crolla su J10–R14 e chi vola sotto finisce a terra, intralciato, finché non supera Riflessi CD 15 (Scena 8).
+
+### C4 · Le tende dei servi e del bottino
+
+B2–C3 su M7-C. Stanno sul bordo dello spiazzo, staccate l'una dall'altra, e dentro non ci sono soldati.
+
+### C5 · La tenda del turno dopo
+
+X4–Y5 su M7-C, a 9 m dal telo. Ci dormono le due guardie del turno dopo; se Balvar sta con i PG entrano dal telo del seggio al round 2.
+
+### C6 · Il fondo buio
+
+Q13–R14 su M7-C, più la striscia R10–R12 lungo il telo est: dove i bracieri non arrivano. Non dà occultamento contro le guardie hobgoblin né contro Balvar, che vedono al buio fino a 18 m. Ci si nasconde solo dietro una copertura (i tre pali, la tavola, lo schienale del seggio), con Nascondersi contro il loro Osservare.
+
+<!-- nuova-pagina -->
+
+![M7-C — La tenda del comando](../../Mappe/rendered-stampa-pianta/ARC07-MAPPE-M7C-TENDA-DEL-COMANDO_map01_m7-c-la-tenda-del-comando-di-zog-tar-notte-372-d.svg)
+
+![M7-C — Indicazioni e legenda](../../Mappe/rendered-stampa-pianta/ARC07-MAPPE-M7C-TENDA-DEL-COMANDO_map01_m7-c-la-tenda-del-comando-di-zog-tar-notte-372-d_legenda.svg)
+
+### H1 · Le tende della Guardia della Mano
+
+J4–K5 su M7-H, a 20-30 m dalla tenda del capo. Quattro tende da otto hobgoblin attorno al fuoco della lancia, a gruppi staccati: chi entra nella cella del fuoco prende 1d6 da fuoco.
+
+<!-- nuova-pagina -->
+
+![M7-H — Il campo del capo: lo spiazzo, la Guardia della Mano e i clan](../../Mappe/rendered-stampa-pianta/ARC07-MAPPE-M7H-QUARTIERE-DEL-COMANDO_map01_m7-h-il-campo-del-capo-lo-spiazzo-la-guardia-del.svg)
+
+![M7-H — Indicazioni e legenda: i numeri, le lettere delle zone e i simboli della mappa](../../Mappe/rendered-stampa-pianta/ARC07-MAPPE-M7H-QUARTIERE-DEL-COMANDO_map01_m7-h-il-campo-del-capo-lo-spiazzo-la-guardia-del_legenda.svg)
+
+
+\page
+
+# III · Il barile sulla tenda di Zog'tar: la serata comincia qui
+
+{{note
+##### ⚠ SOLO DM
+Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
+}}
+
+# ARC-07 · Il barile sulla tenda di Zog'tar
+
+> **Che cos'è.** Il supplemento alle Scene 7 e 8 di cap. VI
+> per quello che il tavolo ha fatto davvero: invece di entrare nella tenda del
+> comando, i PG ci hanno lasciato cadere sopra, da 48 m e invisibili, una botte
+> d'olio piena di sassi, con i rostri dei fabbri nanici sotto e le fiale della
+> fenice legate con le corde. In apertura c'è la **scheda da tavolo**, dieci
+> passi da tirare senza improvvisare; poi la caduta e la deviazione, i danni
+> della caduta, dell'olio e delle palle di fuoco e l'area che coprono, tutto
+> rifatto per la quota da cui il tavolo rigioca lo sgancio, il telo e i rostri, le 25
+> cadute possibili sopra il palo centrale, che cosa vedono i PG da 48 m e chi
+> li può trovare, quando si tira l'iniziativa e che cosa fanno le rune, le
+> tattiche di chi è dentro e del campo, round per round, chi suona il corno se
+> Grask muore, i
+> due barilotti da 10 litri e una procedura, con i PE, per le trovate dei
+> giocatori delle prossime volte.
+>
+> **Le mappe** sono M7-C, lo spiazzo del capo con la tenda, e M7-H, il campo
+> attorno. Le coordinate di questo documento sono quelle di M7-C; su
+> M7-H si sommano otto colonne e otto righe.
+>
+> **Da dove vengono i numeri.** Dall'SRD 3.5. Dove l'SRD non ha una regola per
+> quello che è successo, c'è una **variazione**, segnata come tale e costruita
+> su una regola dell'SRD vicina; quando le letture possibili sono due, vale la
+> più forte, come vuole il DM. Le probabilità vengono da 20.000 prove di una
+> simulazione che usa queste stesse regole.
+
+**In tre righe**
+- **Succede**: in volo e invisibili sopra lo spiazzo del capo, i PG sganciano la botte e i barilotti sulla tenda di Zog'tar; si tirano i dieci passi della scheda, nell'ordine.
+- **Chi vuole cosa**: dentro, Zog'tar racconta alle guardie come impalerà il re, Balvar incide, il sacerdote dorme; fuori Grask tiene il corno, e il campo intorno dorme finché non brucia.
+- **Come finisce**: la tenda in fiamme o crollata, il corno suonato o no, i PG ancora in aria; poi il ritorno o la discesa (Scene 6-8 di cap. VI), e i conti per le mura all'alba (§10).
+
+## La scheda da tavolo
+
+Dieci passi, nell'ordine in cui si tirano. Ogni riga dice da quale regola
+dell'SRD viene; le variazioni sono segnate ◆ e sono le scelte del DM B4, B5, B6,
+B12 e B16. I dadi delle righe 2 e 3 dipendono dalla quota da cui i PG
+sganciano: la tabella è nel §2-bis. Con questa scheda il DM non deve inventare niente: tira i dadi
+della colonna di destra.
+
+<!-- pagina: una-colonna -->
+
+| # | Che cosa | Regola | Si tira |
+|---|---|---|---|
+| 1 | **Lo sgancio** | Non è un attacco (SRD, *invisibilità*: chi causa danno in modo indiretto non attacca). È un'azione gratuita, e chi sgancia resta invisibile. Si può fare nel round di sorpresa, e tutti e quattro i PG possono sganciare nello stesso round | niente |
+| 2 | **Dove cade** | Non si mira: la deviazione è l'attrito dell'aria più quanto chi sgancia era spostato dalla verticale. Come l'arma a spargimento che manca (SRD): 1d8 per la direzione, 1 = nord e poi in senso orario. ◆ La distanza dipende dalla **quota**, dal peso e da che cosa vede chi sgancia (§2 e §2-bis): da 48 m la botte, sopra la tenda illuminata dai fuochi, 1d4−1 quadretti, un barilotto 1d6−1; se chi sgancia non vede il bersaglio, un dado in più. Se si è mosso in quel round, in più 6 quadretti nella direzione del volo | **1d8** e il dado della quota (§2-bis); da 48 m **1d4−1**, barilotto **1d6−1** |
+| 3 | **Che cosa prende** | Il telo non la ferma: i rostri lo tagliano e toglie solo 3 danni (§3). Una creatura nella casella: oggetto in caduta (SRD), senza TS, meno la RD; ◆ in più le lame dei rostri, 1d4 lame da 1d8, nello stesso colpo. La riga 12, cioè un palo in cima (K12, N12, Q12) o la trave del colmo: la botte prende il legno, durezza 5 e 60 pf (SRD, §3). Se lo spezza, la tenda crolla subito; se no gli si apre sopra, e sotto nessuno prende il colpo diretto | i dadi della quota (§2-bis): da 48 m **15d6** − 3 + **1d4 × 1d8** (barilotto 3d6 − 3); sul legno **13d6 + 1d4 × 1d8 − 5**, si spezza a 60 |
+| 4 | **Le fiale** | Si rompono sempre: prendono anche loro i 15d6 della caduta, e il vetro ha 1 pf. Ogni fiala è una *palla di fuoco* (SRD). L'origine è un angolo della casella d'impatto (d4, o quello che sceglie il DM). ◆ Sotto il telo la tenda fa da forno: chi è dentro la tenda è nell'area. Fuori dal telo valgono i 6 m dall'angolo | **6d6 per fiala**, **Riflessi CD 14** dimezza, un TS per fiala |
+| 5 | **L'olio, subito** | Il **cuore** è la casella d'impatto e le otto attorno: chi c'è è colpito in pieno, come da un'ampolla d'olio (SRD, fuoco dell'alchimista), e prende fuoco ◆ senza TS. Il resto dell'olio copre **tutto il pavimento della tenda** (all'aperto: fino a 7 m): chi c'è prende lo spruzzo | cuore **1d6**; resto **1** |
+| 6 | **L'olio, ogni round** | La palla di fuoco lo accende tutto nello stesso istante. Chi sta nell'olio che brucia prende 1d3 (SRD, la pinta versata) e tira per non prendere fuoco (SRD, «Catching on Fire»). Chi è nel cuore prende il secondo 1d6 dell'ampolla al round dopo l'impatto. ◆ Il cuore brucia 10 round, il resto del pavimento 3 (all'aperto 2) | **1d3**, **Riflessi CD 15** |
+| 7 | **Chi brucia** | SRD, «Catching on Fire»: 1d6 a round, un TS a round per spegnersi; rotolarsi a terra dà +4, ma non dentro l'olio, che riaccende. Un mantello addosso, gettato da un altro, dà +4 come il rotolarsi | **1d6** a round, **Riflessi CD 15** |
+| 8 | **Il crollo** | Se non è già crollata, la tenda crolla alla fine del round 1d4+1. Chi è sotto il telo che cade prende il fuoco del telo, è intralciato e per uscire tira un TS a round, con 1d6 a ogni round sotto `[Regola della casa, costruita sullo stato F di M7-C]` | **2d6**, **Riflessi CD 15** |
+| 9 | **Il fumo** | SRD, «Smoke Effects», sotto il telo: chi fallisce passa il round a tossire, due round di fila fanno 1d6 non letali; occultamento 20% per tutti | **Tempra CD 15**, +1 per prova |
+| 10 | **Il danno massiccio** | SRD 3.5: 50 danni o più da un solo attacco, e chi fallisce muore; un 1 naturale fallisce sempre. ◆ Le palle di fuoco nate insieme contano come un attacco solo; il colpo diretto e l'olio restano a parte | **Tempra CD 15** |
+
+<!-- /pagina -->
+
+**Due conti da avere in testa.** Il colpo diretto da 15d6 fa 50 o più due
+volte su tre. Due palle di fuoco fanno 42 in media a chi fallisce tutti e due i
+TS, 21 a chi li supera.
+
+## 1. Che cosa hanno fatto, e che cosa si suppone
+
+Il racconto del DM, messo in ordine:
+
+- I PG volano sopra il campo, invisibili, a **48 m** di quota, in una notte
+  stellata. Partono dalla postierla in volo, come nella variante «dall'alto»
+  della Scena 6.
+- Lasciano cadere **una botte da 59 litri**: in fondo sassi, sopra **50 litri
+  d'olio**, e sotto il fondo i **rostri**, lame forgiate dai fabbri nanici di
+  Hammerfist. Alla botte sono legate con le corde le **fiale della fenice**, da
+  6d6 con l'effetto di una *palla di fuoco*.
+- Tengono in mano **due barilotti da 10 litri**, senza rostri e senza sassi,
+  ciascuno con le sue fiale della fenice legate.
+- Vogliono squarciare la tenda di Zog'tar.
+
+Quello che il racconto non dice si suppone così, e ogni supposizione è una
+scelta del DM:
+
+- Le fiale sulla botte sono **due**. Le tabelle danno anche una e tre.
+- Una fiala della fenice **scoppia quando si rompe**: il vetro che va in pezzi
+  è l'innesco, come per un'ampolla di fuoco dell'alchimista.
+- Nella tenda c'è la **disposizione A** di M7-C (Scena 7): Zog'tar sul seggio
+  che racconta, le quattro guardie attorno, Balvar che incide, il sacerdote
+  che dorme, Grask fuori.
+- Chi sgancia **sta fermo in aria**. La pozione di *volare* dà manovrabilità
+  buona, e con la manovrabilità buona si resta sospesi (SRD, movimento
+  aereo).
+
+## 2. La caduta e dove finisce il barile
+
+| | Botte (circa 93 kg, 205 libbre) | Barilotto (circa 14 kg, 31 libbre) |
+|---|---|---|
+| Quota | 48 m, 157 piedi | 48 m |
+| Tempo di caduta | 3,15 s | 3,18 s |
+| Velocità all'impatto | 30 m/s, 109 km/h | 29 m/s |
+| Energia | 40 kJ | 6 kJ |
+| Deriva con 5 m/s di vento laterale | 20 cm | 40 cm |
+| Spostamento se chi sgancia vola a 18 m per round | 9,5 m in avanti | 9,5 m |
+
+L'aria quasi non frena una botte così pesante: la velocità finale è il 98%
+di quella nel vuoto, e il vento di una notte di pianura la sposta meno di un
+quadretto. Contano due cose: se chi sgancia si muove, e quanto l'attrito e il
+buio lo portano lontano dalla verticale.
+
+**Nessun tiro per colpire.** L'SRD dice che chi è invisibile e «causa danno in
+modo indiretto» non attacca: l'esempio è chi taglia le corde di un ponte con i
+nemici sopra. Lasciar cadere un barile è lo stesso gesto. Non è un attacco,
+quindi non c'è tiro per colpire, l'invisibilità resta, e lasciarlo andare è
+un'azione gratuita.
+
+**La deviazione** `[Variazione sull'SRD, B4]`.
+I PG non mirano: lasciano andare. Il barile finisce lontano dalla verticale
+per due ragioni, e la regola le mette tutte e due in un dado solo.
+
+- **L'attrito.** Un oggetto pesante e compatto cade quasi dritto; uno leggero
+  e storto si gira, e l'aria lo spinge di lato. La botte coi sassi in fondo
+  cade sui rostri come una freccia sulla punta: a 30 m/s l'aria la frena del
+  12% del suo peso, e se la spinge di lato la sposta di 0,5-2 m. Un barilotto
+  da 14 kg senza sassi rotola: l'aria lo frena del 30%, e lo sposta di 1,5-4
+  m.
+- **La luce.** Chi sgancia sa di essere sopra il bersaglio solo se lo vede. A
+  48 m la scurovisione non arriva (18 m) e le stelle non bastano: si vedono
+  solo i fuochi, e ciò che illuminano. La tenda si vede, nera in mezzo ai due
+  falò della guardia e al fuoco del consiglio. Un punto fuori dalla luce non
+  si vede, e si sgancia a stima.
+
+L'SRD ha una regola sola per un oggetto che cade dove non si voleva, l'arma a
+spargimento che manca: **1d8 per la direzione** (1 è il nord, poi in senso
+orario) e una distanza in quadretti. La distanza, da 48 m, è questa:
+
+| Che cosa cade (le fasce di peso degli oggetti in caduta, SRD) | Bersaglio nella luce di un fuoco | Bersaglio al buio |
+|---|---|---|
+| pesante e compatto, 200 libbre (91 kg) o più: la botte con i sassi | **1d4−1** quadretti (0-4,5 m) | 1d6−1 (0-7,5 m) |
+| medio, da 31 a 200 libbre: i barilotti da 14 kg | **1d6−1** (0-7,5 m) | 1d8−1 (0-10,5 m) |
+| leggero o storto, sotto le 31 libbre | 1d8−1 (0-10,5 m) | 1d10−1 (0-13,5 m) |
+
+- Da più in alto o più in basso: un dado in più o in meno ogni 15 m di
+  differenza dai 48 (sotto i 15 m non si devia).
+- In diagonale lo stesso numero di quadretti è più lontano: tre quadretti in
+  diagonale sono 6,4 m.
+- Se chi sgancia si è mosso in quel round, la botte conserva la sua velocità:
+  in più, 6 quadretti nella direzione del volo, e la tenda si manca.
+
+Il conto della fisica sta nella simulazione; la regola lo arrotonda per
+eccesso, perché al buio si sbaglia anche il punto da cui si parte.
+
+## 2-bis. Rigiocare lo sgancio: tutto dalla quota
+
+Il DM farà rigiocare lo sgancio, e la quota la scelgono i PG. Da quella
+dipendono tre cose: quanti dadi fa la botte a chi sta sotto, quanto devia, e
+chi dei PG vede davvero dove la lascia andare. Più in basso si vede meglio e
+si sbaglia meno, ma la botte fa meno male, e dal round dopo i PG sono a
+portata del campo.
+
+**Prima: chi vede che cosa, al buio.** La notte è stellata, ma le stelle non
+fanno luce per l'SRD: a occhio nudo si vedono le sagome contro i fuochi, non il
+punto dove lasciar andare la botte. Le luci attorno alla tenda, su M7-C:
+
+| Fuoco | Luce (come una torcia dell'SRD) | Che cosa illumina della tenda |
+|---|---|---|
+| i due falò della guardia, H17 e T17 | intensa entro 6 m, fioca fino a 12 m | gli angoli sud del telo. La cima del palo centrale è a 11,7 m da ciascuno in pianta e a 6 m d'altezza: **13,2 m, appena fuori**. Grask, a P16, è a 4 m da T17: in piena luce |
+| i fuochi delle sentinelle, D12 e X12 | intensa entro 6 m, fioca fino a 12 m | il bordo ovest e il bordo est del telo, non il colmo (15 m) |
+| il fuoco del consiglio, N5 | brace: fioca entro 3 m | niente: il telo è a 6 m |
+| i due bracieri, L10 e K14 | dentro, sotto il telo nero | da fuori non si vedono |
+
+Chi ha la **visione crepuscolare** vede il doppio lontano con la stessa luce
+(SRD): per lui i falò fanno luce fioca fino a 24 m, e il colmo ci sta dentro.
+La **scurovisione** si misura fino al colmo, che è a 6 m da terra: chi ha 18 m
+di scurovisione vede il colmo da 24 m di quota.
+
+| PG | Che cosa ha | Vede il colmo, da che quota |
+|---|---|---|
+| **Artemis** | scurovisione 36 m, Vista del Diavolo 18 m e visione crepuscolare, dall'Anello dell'Illuminazione Caotica | **da qualunque quota**, nella luce doppia dei falò; col solo buio fino a 42 m |
+| **Thorik** | *Visione del Vero* della Corona, 1 volta al giorno per 10 minuti: vede nel buio, anche magico, e vede gli invisibili | **42 m**, se la attiva prima |
+| **Hella** | nana dei sogni, scurovisione 27 m | **33 m** |
+| **Tordek** | nano, scurovisione 18 m | **24 m** |
+
+Chi sgancia e vede il colmo usa la colonna «chi vede» della tabella; chi non lo
+vede, quella «al buio», un dado in più.
+
+**Lo sgancio guidato**. Se Tordek
+tiene la botte e Artemis guida, c'è un problema che al tavolo non si vede
+subito: **Artemis vede la tenda, ma non vede Tordek**, perché anche lui è
+invisibile. Può dirgli «ora», non «un metro a sinistra».
+
+| Chi sgancia | Chi lo guida | Che colonna usa |
+|---|---|---|
+| vede il colmo | nessuno | «chi vede» |
+| non lo vede | **Thorik con la Visione del Vero**, che vede il colmo e vede anche lui | «chi vede» |
+| non lo vede | **Artemis**, che lo tiene per la spalla o è legata a lui con una corda corta | «chi vede», e **1 quadretto in più** nella direzione del d8: lei sa dov'è la sua mano, non dov'è la botte |
+| non lo vede | Artemis a voce, senza toccarlo | «al buio»: lei non sa dov'è lui |
+| tengono la botte in due, e la lascia andare chi vede | | quella di chi lascia andare |
+
+Da 48 m, Tordek guidato da Artemis con la mano sulla spalla sbaglia di **1d4**
+quadretti (da 1 a 4); da solo, al buio, di 1d6−1 (da 0 a 5). Conviene l'ultima
+riga: la botte la tengono in due, e la lascia andare Artemis.
+
+Parlare si sente: Ascoltare ha −1 ogni 3 m (SRD). Un sussurro è CD 15:
+da 48 m diventa CD 31, e Zog'tar con +11 non lo sente; da 18 m è
+CD 21, e lo sente una volta su due.
+
+**La tabella.** Danno dell'oggetto in caduta dall'SRD: la botte con i sassi
+pesa 205 libbre, quindi 1d6 più 1d6 ogni 3 m oltre i primi; il barilotto da
+31 libbre fa 1d6 ogni 12 m. La botte si apre se il danno della sua stessa
+caduta (1d6 ogni 3 m, come chi cade) passa durezza 5 e 10 pf. Deviazione: un
+gradino di dado ogni 15 m di caduta, uno in più per il barilotto, uno in più
+se chi sgancia non vede il bersaglio (§2).
+
+| Quota | Caduta | Botte: danno a chi sta sotto | 50 o più | La botte si apre | Spezza un palo o la trave | Deviazione: botte nella luce / al buio | Barilotto: danno, deviazione nella luce |
+|---|---|---|---:|---:|---:|---|---|
+| 48 m | 3,2 s | **15d6** | 68% | 100% | 19% | 1d4−1 / 1d6−1 | 3d6 · 1d6−1 |
+| 42 m | 3,0 s | **13d6** | 26% | 100% | 4% | 1d3−1 / 1d4−1 | 3d6 · 1d4−1 |
+| 36 m | 2,7 s | **11d6** | 2% | 100% | 0% | 1d3−1 / 1d4−1 | 2d6 · 1d4−1 |
+| 30 m | 2,5 s | **9d6** | 0% | 100% | 0% | 1d3−1 / 1d4−1 | 2d6 · 1d4−1 |
+| 27 m | 2,4 s | **8d6** | 0% | 100% | 0% | 1d2−1 / 1d3−1 | 2d6 · 1d3−1 |
+| 24 m | 2,2 s | **7d6** | 0% | 99% | 0% | 1d2−1 / 1d3−1 | 1d6 · 1d3−1 |
+| 18 m | 1,9 s | **5d6** | 0% | 78% | 0% | 1d2−1 / 1d3−1 | 1d6 · 1d3−1 |
+| 12 m | 1,6 s | **3d6** | 0% | 9% | 0% | nessuna / 1d2−1 | niente · 1d2−1 |
+| 9 m | 1,4 s | **2d6** | 0% | 0% | 0% | nessuna / 1d2−1 | niente · 1d2−1 |
+
+- **Sotto i 18 m la botte può restare intera.** Le fiale si rompono lo stesso
+  (il vetro ha 1 pf) e le palle di fuoco scoppiano. Il fuoco apre la botte
+  alla fine del round, e l'olio esce al round dopo: niente cuore e niente
+  pavimento inzuppato al primo round, solo una pozza di 3 × 3 quadretti attorno
+  alla botte che brucia per 10 round.
+- **Sopra un palo o sulla trave** la botte cade 6 m in meno, e il danno va al
+  legno (§3): da 48 m lo spezza una volta su cinque, da 42 m una volta su
+  venticinque, più in basso mai. Se il legno regge, la botte gli si apre sopra.
+- **Il danno massiccio** arriva solo dall'alto: due volte su tre da 48 m, una
+  volta su quattro da 42, quasi mai sotto.
+
+**Che cosa rischiano i PG, quota per quota.** Al momento dello sgancio
+nessuno sta guardando in alto; i rischi valgono dal round dopo.
+
+| Quota | Che cosa li raggiunge |
+|---|---|
+| sopra i 45 m | niente. Fuori dalla gittata massima dei giavellotti, fuori da ogni scurovisione |
+| da 45 a 37 m | i giavellotti, ma solo se qualcuno li vede (il giavellotto con la *luce*, §8) |
+| 36 m e sotto | la scurovisione di Skullcrusher, se arriva |
+| 19,5 m e sotto | l'*epurare invisibilità* di Balvar: raggio 19,5 m attorno a lui. Se lo lancia, chi è dentro torna visibile |
+| 18 m e sotto | la scurovisione di tutto il campo: visibili, li vedono tutti; invisibili, li vede il sacerdote con *vedere invisibilità*. *Comando* del sacerdote a 12 m |
+| 9 m e sotto | Osservare CD 20 per notare un invisibile che si muove (SRD) |
+| 6 m e sotto | sono dentro la loro stessa palla di fuoco |
+
+**Che cosa succede, quota per quota.** Il barile lasciato cadere sopra il palo
+centrale da chi vede il colmo, due fiale; 20.000 prove per riga, fino alla
+fine del primo round.
+
+| Quota | La tenda giù subito | La botte resta intera | Zog'tar, pf (mediana) | Il sacerdote morto | Una guardia a terra (M13) | Grask morto |
+|---|---:|---:|---:|---:|---:|---:|
+| 48 m | 8% | 0% | 250 | 34% | 6% | 30% |
+| 42 m | 2% | 0% | 249 | 32% | 7% | 30% |
+| 36 m | 0% | 0% | 249 | 33% | 7% | 31% |
+| 30 m | 0% | 1% | 249 | 31% | 7% | 29% |
+| 27 m | 0% | 4% | 249 | 30% | 9% | 28% |
+| 24 m | 0% | 15% | 250 | 29% | 9% | 28% |
+| 18 m | 0% | 65% | 257 | 18% | 5% | 28% |
+| 12 m | 0% | 100% | 260 | 8% | 0% | 25% |
+| 9 m | 0% | 100% | 260 | 9% | 0% | 25% |
+
+**Che cosa vuol dire.** Il danno della botte conta poco: sotto il palo
+centrale non c'è nessuno, e quello che uccide è il fuoco, che non dipende dalla
+quota. Scendere serve a sbagliare meno, non a fare più male a Zog'tar. Il
+crollo subito è raro (una volta su dodici da 48 m, mai sotto i 36), ma la tenda
+crolla comunque alla fine del round 1d4+1. Sotto i 24 m la botte resta intera
+sempre più spesso, l'olio esce un round dopo, e il sacerdote se la cava: da 18 m
+muore una volta su cinque invece di una su tre. La quota buona, se il
+DM vuole un consiglio da dare, è **fra 30 e 36 m**, con Artemis o Thorik che
+sgancia: vedono la tenda anche dove i falò non arrivano, la deviazione scende a
+1d3−1, la botte si apre sempre, e restano fuori da tutto quello che il campo può
+fare.
+
+## 3. Il telo, il colmo e i rostri
+
+**Il telo non la ferma, e non la rallenta.** La botte arriva a 30 m/s con
+40 kJ. Per tagliare un telo di pelle con la punta di una lama bastano poche
+centinaia di joule: il telo le toglie meno dell'1% dell'energia, mezzo punto
+percentuale di velocità. Nell'SRD la pelle ha durezza 2 e 5 pf per pollice di
+spessore; un telo di 6 mm ha 1 pf. Al tavolo vale così: **il telo toglie 3 danni
+al colpo diretto** (durezza 2 più 1 pf), e la botte arriva a terra come se il
+telo non ci fosse.
+
+**Che cosa fanno i rostri.** Sono lame di spada piantate nel fondo della
+botte, con le punte in giù. Tre cose:
+
+- **Tagliano invece di tirare.** Una botte senza rostri sfonderebbe il telo
+  lo stesso, ma lo trascinerebbe giù con sé, e tirerebbe i pali: la tenda
+  crollerebbe più spesso. Con i rostri lo squarcio è pulito, largo un metro e
+  mezzo, e il telo attorno resta su.
+- **Tengono la botte dritta e la piantano.** Con i sassi sul fondo la botte
+  cade sulle punte come una freccia, e le punte entrano nella terra battuta:
+  non rotola e non rimbalza.
+- **Feriscono chi è sotto**. L'SRD ha la fossa con gli spuntoni, dove chi cade
+  finisce su 1d4 punte. Qui è rovesciato: le punte cadono su chi sta sotto.
+  Chi prende il colpo diretto prende anche **1d4 lame da 1d8**, nello stesso
+  colpo, quindi contano per i 50 danni del danno massiccio.
+
+**Lacera tutto, lacera in parte, rotola al bordo?** Le tre possibilità che il
+DM ha chiesto di pesare, con i numeri:
+
+| Dove tocca il telo | Che cosa succede alla botte | Al tavolo |
+|---|---|---|
+| sulla falda, fra il colmo e il bordo | taglia e passa: la falda scende di 50° circa, ma a 30 m/s la botte non scivola, e le punte mordono prima che la pelle ceda | arriva a terra nella casella tirata: il caso normale |
+| sulla riga 12: un palo in cima (K12, N12, Q12) o la trave del colmo | prende il legno, a 6 m da terra | il danno della caduta va al legno (qui sotto): se lo spezza, la tenda crolla subito; se no la botte gli si apre sopra, e olio e fiale cadono da lì. Sotto nessuno prende il colpo diretto; il fuoco e l'olio sono gli stessi |
+| sul bordo del telo, l'anello esterno di M7-C | taglia il telo dove scende verso terra, a un metro e mezzo d'altezza | arriva a terra contro la parete: metà dell'olio resta dentro, metà esce, e fuori arriva fino a 3 m |
+| un barilotto, sulla falda | senza rostri e senza sassi cade storto, di piatto o di spigolo | d6: con 1-2 rimbalza sulla falda, scivola giù e si apre fuori, nella casella oltre il bordo, dalla parte della falda (nord se è sopra la riga 12, sud se è sotto). Con 3-6 sfonda e cade dentro |
+
+**I pali e la trave reggono la botte?** Prima quanto devono reggere. Il telo
+copre 16,5 × 10,5 m: con le due falde sono circa 230 m² di pelle, a 2 kg al
+metro quadro 450 kg. La trave del colmo, quercia di 15 × 20 cm lunga 16,5 m,
+pesa 300 kg. Metà del telo tira sui picchetti del bordo, e sui tre pali vanno
+circa 180 kg ciascuno. Un palo di legno alto 6 m regge quel peso cinque volte,
+con il vento e il telo bagnato, se ha almeno 10-12 cm di diametro; il padiglione
+di un capo ha pali da **15 cm**, e la trave ha lo stesso spessore.
+Nell'SRD il legno ha durezza 5 e 10 pf ogni 2,5 cm di spessore: palo e trave
+hanno **60 pf**.
+
+La botte che cade sul palo o sulla trave fa al legno il danno della sua caduta
+fino a 6 m da terra, più le lame dei rostri (B16). Se, tolta la durezza, arriva
+a 60, il legno si spezza.
+
+| Quota di sgancio | Danno al legno | Il palo o la trave si spezza |
+|---|---|---|
+| 48 m | 13d6 + 1d4 × 1d8 | **19%**, una volta su cinque |
+| 42 m | 11d6 + 1d4 × 1d8 | 4% |
+| 36 m e sotto | 9d6 + lame, o meno | mai |
+| un barilotto, da qualunque quota | 3d6 al massimo | mai: si apre sul legno |
+
+**La fisica, su questo, non è d'accordo del tutto, e va detto** (B22). In punta
+il palo lavora di compressione, e la botte ci si infilza sopra: SRD e fisica
+dicono la stessa cosa, il palo regge quasi sempre. Una trave presa in mezzo,
+fra due pali, invece si piega: assorbe un paio di kJ prima di rompersi, e la
+botte ne porta 40. Per la fisica la trave presa fra due pali si spezza sempre.
+
+**Le palle di fuoco scoppiano sotto il telo.** Le fiale si rompono quando la
+botte tocca terra, o la trave, e tutte e due stanno sotto il telo. L'olio e il
+fuoco nascono dentro la tenda, mai sopra; solo al bordo metà resta fuori. Se una
+fiala si rompesse sul telo, la palla di fuoco nascerebbe sul tetto: la tenda fa
+da forno lo stesso, e chi è dentro è comunque nell'area.
+
+La runa della barriera di lame è incisa sul palo centrale, N12. Se il palo si
+spezza, la runa si spezza con lui **senza scattare**: scatta solo quando la
+attiva Balvar.
+
+## 4. La botte e le fiale toccano terra
+
+Nell'SRD un oggetto che cade prende anche lui il danno della caduta, 1d6 ogni
+3 m, e la durezza lo riduce. La botte e le fiale cadono da 48 m: **15d6**, in
+media 52.
+
+| Che cosa | Durezza e pf (SRD) | Che fine fa |
+|---|---|---|
+| La botte, doghe di quercia e cerchi di ferro | durezza 5, 10 pf, come una porta di legno semplice | si apre sempre: anche il minimo, 15, passa la durezza e i punti ferita |
+| Le fiale della fenice, legate alle doghe | vetro: durezza 1, 1 pf | si rompono sempre, nella casella dell'impatto, e scoppiano insieme |
+| I barilotti | durezza 5, 5 pf | si aprono sempre |
+
+I sassi tengono il fondo in basso, quindi la botte cade dritta, sui rostri, e
+i rostri la piantano nel terreno: non rotola. Che il barile non scoppi o che
+una fiala resti intera non succede con le regole dell'SRD: la versione di
+prima, con il d20 per la tenuta, è tolta.
+
+## 5. I danni
+
+### Il colpo diretto: l'oggetto in caduta
+
+Chi sta nella casella dove cade la botte prende il danno di un **oggetto in
+caduta** (SRD 3.5, «Falling Objects»): un oggetto da 200 libbre in su fa 1d6
+ogni 200 libbre, più 1d6 per ogni 3 m di caduta oltre i primi, fino a 20d6. Da
+48 m sono **15d6**, in media 52. L'SRD non dà un TS e non chiede un tiro per
+colpire: lo prende chi sta sotto. La riduzione del danno conta (Zog'tar ha RD
+3/—). Il telo toglie 3 danni, e i rostri aggiungono 1d4 lame da 1d8 nello
+stesso colpo (§3, variazione B16). Da 48 m, quindi, chi è sotto prende 15d6 − 3
++ 1d4 × 1d8, in media 60. Da un'altra quota, i dadi del §2-bis.
+
+Una creatura sola prende il colpo diretto, quella della casella. Per Zog'tar,
+che è Grande, basta una delle sue quattro caselle.
+
+> **Il peso sta sul filo.** Botte di quercia da 59 litri con i cerchi di ferro
+> 14-16 kg, olio 45,5 kg, sassi 15-24 kg (al massimo i 9 litri che l'olio
+> lascia liberi), rostri 4-6 kg, fiale e corde 2 kg: da **80 a 93 kg**. Dalle
+> 200 libbre (91 kg) in su l'SRD dà 15d6; sotto, nella fascia da 101 a 200
+> libbre, dà 1d6 ogni 6 m, cioè **7d6**. Con i sassi fino all'orlo la botte
+> pesa 93 kg e vale la prima riga: 15d6. La fisica è d'accordo: 40 kJ uccidono
+> un uomo, e 7d6 non ucciderebbero una guardia hobgoblin.
+> 
+
+### Le palle di fuoco, e perché non si allargano
+
+Ogni fiala rotta è una *palla di fuoco* da 6d6. L'SRD fa partire un'area da un
+incrocio della griglia: l'origine è **un angolo della casella d'impatto**, a
+scelta del DM o con 1d4. La palla è uno spargimento di **6 m di raggio, 4
+quadretti**. Riflessi **CD 14** dimezza: è la CD dell'SRD per un oggetto con un
+incantesimo di 3° livello, 10 + 3 + 1. Due fiale sono due palle di fuoco dallo
+stesso angolo, con due TS, e i danni si sommano. Nessuno nella tenda ha
+Eludere.
+
+**Perché non si allarga.** Nel 3.5 la *palla di fuoco* ha un raggio fisso: se
+trova un muro si ferma, se trova un angolo lo gira, ma non riempie il volume
+che le manca. Era l'AD&D a farla allargare nei luoghi chiusi. Due palle di
+fuoco nello stesso punto non fanno un'area più grande: fanno due volte il
+danno nella stessa area.
+
+**La tenda fa da forno** `[Variazione — la versione più terribile, B12]`. Il
+telo è chiuso su quattro lati e alto da 3 a 6 m: le fiamme non hanno dove
+andare, e riempiono tutto quello che c'è sotto prima di squarciarlo. **Chi è
+sotto il telo è nell'area, dovunque sia**, anche oltre i 6 m. Dal palo
+centrale cambia poco, perché la palla da 6 m copre già quasi tutto il
+pavimento: aggiunge Balvar nel fondo buio e la guardia Q14, che l'SRD puro
+lascia fuori con tre angoli d'origine su quattro. Fuori dal telo valgono i 6 m
+dell'SRD: Grask, a P16, è dentro o fuori secondo l'angolo.
+
+### L'olio: quanto ne cade e dove arriva
+
+L'SRD dà due regole per l'olio, e qui servono tutte e due.
+
+- **La pinta versata.** Mezzo litro d'olio (una pinta) copre un quadretto, se
+  il terreno è liscio; acceso, brucia **2 round** e fa **1d3 da fuoco** a round
+  a chi ci sta.
+- **L'ampolla lanciata.** Un'ampolla d'olio è un'arma a spargimento, con le
+  regole del fuoco dell'alchimista: chi è colpito in pieno prende **1d6**, e
+  **1d6 ancora il round dopo**; chi è vicino prende lo **spruzzo, 1 danno**.
+
+La botte ha 50 litri, cioè **105 pinte**. Una botte che si apre a 110 all'ora
+schizza l'olio tutto attorno, e il conto delle pinte dice fin dove arriva
+`[Variazione sull'SRD, B6]`:
+
+| Zona | All'aperto | Dentro la tenda | Olio | Brucia |
+|---|---|---|---|---|
+| **Cuore** | la casella d'impatto e le otto attorno, 3 × 3 | lo stesso | 5 pinte a quadretto, 45 in tutto | 10 round |
+| **Il resto** | fino a **7 m** dall'impatto: 60 quadretti | **tutto il pavimento**, J10–R14, e le pareti del telo inzuppate fino a 3 m: il telo ferma gli schizzi | 1 pinta a quadretto all'aperto, quasi 2 dentro | 2 round all'aperto, 3 dentro |
+
+**Quanto va oltre la palla di fuoco.** All'aperto l'olio arriva a 7 m e la
+palla di fuoco a 6: **un metro in più**, un anello sottile di un quadretto,
+che prende fuoco nello stesso istante, perché il velo d'olio è tutto unito e
+la fiammata lo corre in un attimo. Dentro la tenda la domanda non si pone: dal
+palo centrale il telo è a 4,5 m a nord e a sud e a 7,5 m a est e a ovest,
+quindi l'olio si ferma sul telo e copre ogni quadretto del pavimento. Se il
+barile cade sul bordo del telo (le cadute da 4,5 m del §6), metà dell'olio va
+fuori, in una striscia di un quadretto lungo il telo da quella parte.
+
+La variazione è una sola: le pinte nello stesso quadretto si sommano, e ogni
+pinta in più fa bruciare il quadretto 2 round in più, non più forte. Il resto
+è l'SRD.
+
+### L'olio acceso
+
+- **Si accende subito**, tutto: la palla di fuoco accende i combustibili
+  nell'area (SRD), e la fiammata corre il velo d'olio fino al bordo.
+- **Chi sta nell'olio che brucia** prende **1d3 da fuoco** a round (SRD, la
+  pinta) e tira **Riflessi CD 15** per non prendere fuoco (SRD, «Catching on
+  Fire»: chi è esposto a olio in fiamme).
+- **Chi era nel cuore è inzuppato**: prende il secondo 1d6 dell'ampolla e
+  prende fuoco **senza TS** `[Variazione — la versione più terribile; per l'SRD
+  tira anche lui Riflessi CD 15]`.
+- **Chi brucia** prende **1d6 a round** finché non riesce Riflessi CD 15;
+  rotolarsi a terra dà +4, ma non dentro l'olio, che riaccende. Una palla di
+  fuoco da sola non accende i vestiti (SRD: gli effetti istantanei non lo
+  fanno); l'olio sì.
+
+### Il fumo e il crollo
+
+- **Fumo**, da subito, sotto il telo: Tempra CD 15, +1 per ogni prova
+  precedente, o il round si passa a tossire; due round di fila fanno 1d6 non
+  letali. Il fumo dà occultamento (20%) a tutti quelli dentro (SRD, «Smoke
+  Effects»).
+- **Il telo brucia** dal primo round. Alla fine del round **1d4+1** crolla, se
+  non è crollato prima per il colmo: chi è ancora sotto prende 2d6 da fuoco, è
+  intralciato e tira Riflessi CD 15 per uscire, un tentativo per round, con 1d6
+  da fuoco a ogni round sotto il telo che brucia `[Regola della casa, costruita
+  sullo stato F di M7-C]`.
+- **La luce**: la tenda che brucia illumina lo spiazzo come un falò grande. Il
+  fondo buio di M7-C non c'è più.
+
+### Il danno massiccio
+
+Nel 3.5 chi prende **50 danni o più da un solo attacco** e non è già morto tira
+**Tempra CD 15**: se fallisce, muore, quali che siano i suoi punti ferita. Un 1
+naturale fallisce sempre, quindi anche Zog'tar, con Tempra +18, ha il 5%.
+
+- Il **colpo diretto** da 15d6 arriva a 50 due volte su tre.
+- **Le due palle di fuoco contano come un attacco solo**: si sommano, e la
+  somma è quella che conta per i 50 `[Variazione, la versione più terribile —
+  B5: per l'SRD ogni palla di fuoco è un attacco a sé, e 6d6 non
+  arrivano mai a 50]`. Con due fiale e il TS fallito, la somma
+  arriva a 50 una volta su dieci.
+- Il colpo diretto, il fuoco e l'olio restano attacchi diversi.
+
+### Le cose
+
+| Che cosa | Che fine fa |
+|---|---|
+| La mappa di Hammerfist con le croci rosse, sulla tavola a J10 | brucia nel primo round se J10 è nella palla di fuoco; chi la vuole la prende prima |
+| La lastra d'ardesia di Balvar | non brucia. La ha in mano, e la porta fuori con sé |
+| Il corno di ferro nero, nella custodia al polso di Grask | non brucia. La custodia è di cuoio e ferro, e il glifo resta |
+| Le armature delle guardie | niente: l'SRD fa danneggiare gli oggetti indossati solo con un 1 naturale al TS |
+
+## 6. Il palo centrale, caduta per caduta
+
+I PG non hanno mirato: stavano più o meno sopra il palo centrale, N12, e hanno
+lasciato andare il barile. La deviazione del §2 dice quanto erano spostati
+dalla verticale. Una volta su quattro erano proprio sopra il palo; le altre
+volte il barile cade da 1,5 a 4,5 m più in là, nella direzione del d8, e in
+diagonale un po' di più, fino a 6,4 m.
+
+Le 25 cadute possibili, con quello che prende il barile, chi sta nel cuore
+dell'olio (colpito in pieno, prende fuoco) e chi resta fuori dalle palle di
+fuoco con la tenda che fa da forno. Chi non è nominato nelle ultime due colonne
+è nell'area: prende le palle di fuoco e l'olio del pavimento.
+
+<!-- pagina: una-colonna -->
+
+| d8 · metri | Casella | Probabilità | Che cosa prende | Nel cuore dell'olio | Fuori dalle palle di fuoco |
+|---|---|---:|---|---|---|
+| nessuna deviazione | N12 | 25% | il palo centrale, in cima: lo spezza il 19%, e la tenda crolla; se no la botte gli si apre sopra | Zog'tar, Guardia M13, Guardia N13 | nessuno · secondo l'angolo: Grask |
+| 1 nord · 1,5 m | N11 | 3,1% | il pavimento | nessuno | Grask |
+| 2 nord-est · 2,1 m | O11 | 3,1% | il pavimento | nessuno | Grask |
+| 3 est · 1,5 m | O12 | 3,1% | la trave del colmo: la spezza il 19%, e la tenda crolla; se no la botte le si apre sopra, e sotto niente colpo diretto | Zog'tar, Guardia N13 | nessuno · secondo l'angolo: Grask |
+| 4 sud-est · 2,1 m | O13 | 3,1% | **Zog'tar**, 15d6 − 3 + 1d4 × 1d8 | Zog'tar, Guardia N13, Sacerdote | nessuno |
+| 5 sud · 1,5 m | N13 | 3,1% | **Guardia N13**, 15d6 − 3 + 1d4 × 1d8 | Zog'tar, Guardia M13, Guardia N13, Guardia M14, Sacerdote | nessuno · secondo l'angolo: Grask |
+| 6 sud-ovest · 2,1 m | M13 | 3,1% | **Guardia M13**, 15d6 − 3 + 1d4 × 1d8 | Guardia M13, Guardia N13, Guardia M14, Sacerdote | nessuno · secondo l'angolo: Grask |
+| 7 ovest · 1,5 m | M12 | 3,1% | la trave del colmo: la spezza il 19%, e la tenda crolla; se no la botte le si apre sopra, e sotto niente colpo diretto | Guardia M13, Guardia N13 | Grask |
+| 8 nord-ovest · 2,1 m | M11 | 3,1% | il pavimento | nessuno | Grask |
+| 1 nord · 3,0 m | N10 | 3,1% | il pavimento | nessuno | Grask |
+| 2 nord-est · 4,2 m | P10 | 3,1% | il pavimento | nessuno | Grask |
+| 3 est · 3,0 m | P12 | 3,1% | la trave del colmo: la spezza il 19%, e la tenda crolla; se no la botte le si apre sopra, e sotto niente colpo diretto | Zog'tar | nessuno · secondo l'angolo: Grask |
+| 4 sud-est · 4,2 m | P14 | 3,1% | **Zog'tar**, 15d6 − 3 + 1d4 × 1d8 | Zog'tar, Guardia Q14 | nessuno |
+| 5 sud · 3,0 m | N14 | 3,1% | **Sacerdote**, 15d6 − 3 + 1d4 × 1d8 | Zog'tar, Guardia M13, Guardia N13, Guardia M14, Sacerdote | nessuno |
+| 6 sud-ovest · 4,2 m | L14 | 3,1% | il pavimento | Guardia M13, Guardia M14 | nessuno · secondo l'angolo: Grask |
+| 7 ovest · 3,0 m | L12 | 3,1% | la trave del colmo: la spezza il 19%, e la tenda crolla; se no la botte le si apre sopra, e sotto niente colpo diretto | Guardia M13 | Grask |
+| 8 nord-ovest · 4,2 m | L10 | 3,1% | il pavimento | nessuno | Grask |
+| 1 nord · 4,5 m | N9 | 3,1% | il telo, sul bordo: metà olio fuori | nessuno | Grask |
+| 2 nord-est · 6,4 m | Q9 | 3,1% | il telo, sul bordo: metà olio fuori | nessuno | Grask |
+| 3 est · 4,5 m | Q12 | 3,1% | il palo est, in cima: lo spezza il 19%, e la tenda crolla; se no la botte gli si apre sopra | Zog'tar | nessuno · secondo l'angolo: Grask |
+| 4 sud-est · 6,4 m | Q15 | 3,1% | il telo, sul bordo: metà olio fuori | Zog'tar, Guardia Q14, Balvar, Grask | nessuno |
+| 5 sud · 4,5 m | N15 | 3,1% | il telo, sul bordo: metà olio fuori | Zog'tar, Guardia M14, Sacerdote | nessuno |
+| 6 sud-ovest · 6,4 m | K15 | 3,1% | il telo, sul bordo: metà olio fuori | nessuno | Grask |
+| 7 ovest · 4,5 m | K12 | 3,1% | il palo ovest, in cima: lo spezza il 19%, e la tenda crolla; se no la botte gli si apre sopra | nessuno | Grask |
+| 8 nord-ovest · 6,4 m | K9 | 3,1% | il telo, sul bordo: metà olio fuori | nessuno | Grask |
+
+<!-- /pagina -->
+
+**Come si legge al tavolo.** Si tirano il d4 e il d8, si trova la riga, e la
+riga dice tutto: chi prende i 15d6, se la tenda crolla subito, chi è
+inzuppato. Poi si tirano i TS della scheda per tutti gli altri.
+
+**Che cosa dice la tabella.** Il caso più probabile, una volta su quattro, è
+la botte che si schianta in cima al palo centrale. Una volta su cinque lo
+spezza, e il colmo viene giù con il telo in fiamme; le altre volte gli si apre
+sopra, e l'olio e le fiale cadono da 6 m sullo stesso punto. Nessuno prende il
+colpo diretto, perché sotto il palo non c'è nessuno. Zog'tar lo prende solo con
+due righe su 25 (O13 e P14), una volta su sedici.
+
+## 7. Che cosa succede, in numeri
+
+Venti mila prove con le regole della scheda, la disposizione A, il barile
+lasciato cadere sopra il palo centrale e due fiale. Il conto va fino alla fine
+del primo round: lo scoppio, l'olio che brucia una volta, chi prende fuoco, il
+telo che crolla addosso se il palo o il colmo si sono spezzati.
+
+| Chi | pf pieni | pf alla fine del round 1 (mediana) | in fiamme | a 0 pf o meno | morto |
+|---|---:|---:|---:|---:|---:|
+| Zog'tar | 283 | 249 | 65% | 0% | 0% |
+| Guardia M13, N13 (ciascuna) | 60 | 20 | 71% | 6-7% | 4% |
+| Guardia Q14, M14 (ciascuna) | 60 | 22-23 | 60% | 1% | 1% |
+| Il sacerdote, che dorme | 38 | −5 | 66% | 71% | 34% |
+| Balvar | 101 | 72 | 33% | 0% | 0% |
+| Grask, fuori a P16 | 6 | 6 | 0% | 30% | 30% |
+
+- La tenda crolla subito l'**8%** delle volte, quando la botte spezza il palo o la trave (§3). Le altre volte crolla alla fine del round 1d4+1.
+- Il sacerdote dorme: è indifeso, la sua Destrezza conta 0 (SRD), e i suoi
+  Riflessi scendono da +4 a −1. Per questo è il primo a cadere.
+- Con **una fiala** il sacerdote muore il 3% delle volte e le guardie
+  restano a metà; con **tre fiale** il sacerdote muore nove volte su dieci e
+  ogni guardia una volta su quattro.
+- **Con la lettura SRD pura** (le palle di fuoco sono attacchi separati,
+  l'inzuppato tira il TS, la palla resta di 6 m anche sotto il telo) il
+  sacerdote muore il 28% delle volte, Balvar resta quasi intatto e Zog'tar
+  brucia una volta su quattro invece di due su tre.
+- **Se fossero stati sopra il seggio** invece che sopra il palo, Grask
+  sarebbe morto l'83% delle volte e Zog'tar avrebbe preso i 15d6 una volta su
+  tre.
+
+**Che cosa vuol dire.** Il barile **non uccide Zog'tar**: 283 punti ferita, RD
+3 e Riflessi +9 reggono anche il colpo in pieno. Gli toglie un quinto dei punti
+ferita prima ancora di cominciare, gli brucia la tenda, la mappa dell'assalto
+e la scena di Balvar, e una volta su tre gli toglie il sacerdote. Lascia vivo Grask
+due volte su tre, e Grask suona il corno: per questo i barilotti contano (§9).
+Con 50 litri d'olio in una tenda di 100 metri quadri un giocatore si aspetta
+una strage, e per Zog'tar questa non è una strage: va detto al tavolo prima di
+tirare.
+
+## 8. Chi vede che cosa, e le tattiche round per round
+
+### Che cosa vedono e possono fare i PG da 48 m
+
+| Che cosa | Regola | Al tavolo |
+|---|---|---|
+| **Vedere giù** | La scurovisione dei nani arriva a 18 m: a 48 m non serve. Si vede solo quello che è illuminato. Osservare ha −1 ogni 3 m di distanza (SRD), qui −15 | Si vedono i fuochi, i bracieri, e dal round 1 la tenda che brucia, che illumina lo spiazzo come un falò grande. Contare le sagome è facile; dire chi è chi chiede **Osservare CD 25** (10 + 15). Grask si riconosce perché sta dove sta |
+| **Restare invisibili** | Lasciar cadere un barile o un barilotto non è un attacco. Lanciare un incantesimo che colpisce un nemico, o tirare con l'arco, rompe l'invisibilità (SRD) | Anche visibili, a 48 m nel buio nessuno li vede: sono fuori dalla luce del fuoco e oltre la scurovisione. Rompere l'invisibilità quassù costa poco, finché nessuno illumina il cielo |
+| **Farsi sentire** | Ascoltare: −1 ogni 3 m (SRD), −15. *Volare* non fa rumore. Parlare a voce normale è CD 0, quindi 15 | **Non parlate.** Zog'tar ha Ascoltare +11: sente voci dall'alto una volta su tre, e da quel momento sa dove guardare. Le componenti verbali degli incantesimi si sentono allo stesso modo |
+| **Colpire da quassù** | Gittata media: 30 m + 3 m per livello, al 13° 69 m. Gittata corta (7,5 m + 1,5 m ogni due livelli, 16,5 m al 13°) non arriva. Arco lungo: 48 m sono due incrementi, −2 | Incantesimi a gittata media e lunga sì, a contatto e corta no. Le frecce arrivano, ma chi le prende capisce che vengono dall'alto |
+| **Il tempo** | Pozione di *volare* dell'incantatore di 5°: 5 minuti, 50 round. Pozione di *invisibilità* del 3°: 3 minuti, 30 round | L'invisibilità finisce prima del volo. Il viaggio di ritorno è quello della Scena 6. Se il corno suona, il drago arriva al round 70: chi è ancora in aria lì sopra non c'è più, perché il volo è finito da un pezzo |
+
+### Chi può trovarli
+
+| Chi | Che cosa ha | Che cosa può fare contro chi sta a 48 m |
+|---|---|---|
+| Guardie, orchi, lance della Guardia | scurovisione 18 m, Osservare e Ascoltare +1/+2 | niente. Notare un invisibile che si muove si fa solo entro 9 m (SRD, *invisibilità*, Osservare CD 20) |
+| **Zog'tar** | scurovisione 18 m, Ascoltare +11, Int 16, tre giavellotti Grandi (incremento 9 m, al massimo cinque incrementi: 45 m) | capisce subito che il barile è venuto dall'alto. Non vede niente, ma sa dove guardare e non sta mai fermo nella luce |
+| **Il sacerdote** (adepto 7) | *vedere invisibilità*, *luce*, *comando* (gittata corta, 12 m) | *vedere invisibilità* fa vedere gli invisibili, ma non fa luce: a 48 m nel buio non vede nessuno. Con *luce* su un giavellotto che Zog'tar scaglia verso l'alto illumina per un istante 6 m attorno al punto più alto del tiro, a 45 m: se un PG è lì vicino, lo vede (sotto) |
+| **Balvar** (chierico 13) | *Leggere il Fuori-Posto* (18 m), *epurare invisibilità* (19,5 m), *dissolvi magie* (gittata media, 69 m, area di 6 m di raggio) | le prime due non arrivano a 48 m. *Dissolvi magie* ad area sì: può lanciarlo alla cieca sopra la tenda, o sul punto che il giavellotto ha illuminato (sotto, e B13) |
+| Gli sciamani dei clan (15 adepti di 5°) | *vedere invisibilità*, *luce* | arrivano solo dopo il corno; stessi limiti del sacerdote |
+| **Skullcrusher** | scurovisione 36 m, percezione cieca 18 m, *vedere invisibilità*, Osservare +29, vola | l'unico che li trova davvero. Arriva 70 round dopo il primo suono del corno (Scena 6) |
+
+**Il giavellotto con la luce**. Se il
+sacerdote è sopravvissuto ed è sveglio, al round 3 ha già *vedere invisibilità* addosso e
+lancia *luce* su un giavellotto di Zog'tar (azione standard tutti e due). Zog'tar
+lo scaglia dritto in alto sopra la tenda: arriva a 45 m e illumina 6 m attorno
+per un round. Se i PG sono ancora sulla verticale della tenda (entro 6 m dal
+punto), il sacerdote li vede, e li indica. Se si sono spostati anche solo di
+dieci metri, il giavellotto illumina il vuoto. È la ragione per cui, dopo lo
+sgancio, conviene allontanarsi.
+
+**Il dissolvi di Balvar**. *Dissolvi
+magie* ad area ha 6 m di raggio. Se il giavellotto ha mostrato i PG, Balvar lo
+lancia lì al round 4. Se non li ha mostrati, può lanciarlo alla cieca sopra la
+tenda, e prende chi è rimasto sulla verticale una volta su sei. Ogni PG nell'area
+tira la prova del dissolvi contro ogni effetto: d20 + 10 contro **CD 16** per il
+*volare* della pozione (11 + 5) e **CD 14** per l'invisibilità (11 + 3).
+
+**Chi perde il volo** non cade di colpo: scende di **18 m a round per 1d6 round**, e
+se tocca terra in quel tempo atterra illeso; altrimenti cade per il tratto che
+resta, 1d6 ogni 3 m (SRD, *volare*: dissolto, si comporta come quando scade).
+Da 48 m: con 3 round o più arriva a terra illeso (4 volte su 6); con 2 round
+cade da 12 m, 4d6; con 1 round da 30 m, 10d6.
+
+Balvar lancia il *dissolvi* solo se è in
+modalità «minacciato, o attaccato» della Scena 7, ed è il caso: il barile è un
+attacco.
+
+### Quando si tira l'iniziativa, e che cosa fanno le rune
+
+**L'iniziativa si tira quando i PG decidono di sganciare**, prima di tirare i
+dadi della caduta: per l'SRD il combattimento comincia quando una parte agisce
+contro l'altra, e i PG sono gli unici che sanno che sta cominciando. Tirano tutti,
+PG e PNG. Poi:
+
+1. **Il round di sorpresa è solo dei PG.** Nessuno nel campo sa che sono lì.
+   Ognuno ha un'azione standard o di movimento, e lasciar cadere qualcosa è
+   un'azione gratuita: la botte e i due barilotti possono andare giù nello stesso
+   round. La botte cade in 3 secondi, meno di mezzo round: **arriva nel turno di
+   chi l'ha lasciata**, e il DM risolve subito la scheda, dal passo 2 al 5.
+2. **Il round 1 comincia in ordine d'iniziativa.** Chi è nella tenda è colto alla
+   sprovvista fino al suo primo turno: niente Destrezza alla CA, che quassù conta
+   poco. I TS contro le palle di fuoco li tira con il suo bonus pieno: l'SRD toglie
+   la Destrezza alla CA, non ai Riflessi.
+3. **L'olio che brucia** (passo 6 della scheda) si tira alla fine di ogni round,
+   per tutti insieme. È lì che chi brucia perde i punti ferita.
+
+**Balvar non è colto alla sprovvista**. Il suo *Leggere il Fuori-Posto* è acceso, un cono di 18 m verso la
+soglia, e il palo centrale ci sta dentro. Le fiale della fenice sono magiche:
+Balvar le sente arrivare un battito prima dell'urto. Non fa in tempo a fare
+niente, il round di sorpresa resta dei PG, ma al round 1 non è colto alla
+sprovvista, e sa che cosa è caduto prima di vederlo.
+
+**Le rune non scattano con il barile.** Una per una, con la regola di ciascuna:
+
+| La runa o il glifo | Scatta? | Perché, e la versione più forte |
+|---|---|---|
+| La soglia, *epurare invisibilità* | no | scatta quando un nano varca la soglia: la botte non è una creatura, e i PG sono a 48 m. Se dopo uno di loro scende sotto i 19,5 m sopra la soglia, scatta su di lui |
+| Il palo centrale, *barriera di lame* | no | la attiva Balvar. Se il palo si spezza, la runa si spezza senza scattare (B7) |
+| Su Balvar, *silenzio* | non da sola | la accende lui, a comando. Contro chi è a 48 m non serve: la tiene per dopo |
+| Il glifo sul telo sopra il seggio, 5d8 sonori | no, per l'SRD | il glifo scatta solo per una creatura che lo varca o lo tocca. La versione più forte, scelta dal DM: **scatta quando il telo che lo porta brucia o crolla**, alla fine del round 1 o al crollo. Scoppio sonoro di 5d8, Riflessi CD 18 dimezza, su chi sta entro 1,5 m dal punto del telo sopra il seggio: Zog'tar, se è ancora lì, e la guardia Q14 |
+| La custodia del corno, al polso di Grask | no | cuoio e ferro: il fuoco non la apre, e il glifo scatta solo per chi la apre senza la parola |
+| La gemella della Catena, sul corno | non scatta, ma **ascolta** | tutto quello che si grida vicino a Grask arriva a Skullcrusher sulle colline (Scena 6). Il boato, «A ME, CANI! IL CORNO!» e «Dall'alto. Hanno ali.»: all'alba il drago sa che i nani volano, e guarda in alto |
+
+### Le tattiche, round per round
+
+Le righe valgono per i due casi del §6: la tenda crollata subito (8%) e la
+tenda in piedi che brucia.
+
+| Chi | Round 1 | Round 2-3 | Dal round 4 |
+|---|---|---|---|
+| **Zog'tar** (Iniz +9) | Ira Superiore, azione gratuita, e il grido *«A ME, CANI! IL CORNO!»*. Se la tenda è crollata è sotto il telo in fiamme: lo squarcia con l'ascia ed esce in un round (Riflessi CD 15, ha +9). Se è in piedi esce dal lato più corto, tagliando il telo. Prende fuoco quasi sempre: si getta a terra fuori dall'olio (+4) | Fuori, guarda in alto e non vede niente. Capisce: *«Dall'alto. Hanno ali.»* Esce dalla luce del fuoco e non ci rientra: non sta mai fermo dove un secondo barile lo troverebbe. Al round 3 scaglia il giavellotto con la *luce* del sacerdote, se il sacerdote è vivo. Se Grask è morto va al corpo e strappa la custodia: il glifo gli scoppia addosso, 5d8 sonori, Riflessi CD 18, e lui suona lo stesso (B8) | Raduna le guardie nel buio, lontano dalla tenda, e manda le lance a cercare per il campo chi ha portato il fuoco. Se un PG scende sotto i 45 m e si fa vedere, i giavellotti; se scende sotto i 3 m, la carica |
+| **Le quattro guardie** (Iniz +1) | Chi brucia si getta a terra fuori dall'olio (+4). Chi non brucia trascina fuori il sacerdote, se è vivo, oppure spegne Zog'tar con il mantello | Spengono chi brucia con i mantelli (+4, un'azione standard ciascuno), poi si mettono attorno al generale, spadoni in pugno, nel buio | Come Zog'tar. Non tirano verso l'alto finché nessuno indica un bersaglio |
+| **Il sacerdote** (se è vivo) | Si sveglia nel fuoco, indifeso fino al suo turno. Striscia fuori, quasi sempre in fiamme | Round 2 si spegne. Round 3 *vedere invisibilità* e *luce* sul giavellotto di Zog'tar | Spegne chi brucia (non ha cure preparate, cap. VI A.2). Se vede un PG, lo indica a Balvar; *comando* arriva solo a 12 m |
+| **Balvar** (se è vivo) | Esce dal telo est, quello a sinistra, e si spegne. Guarda la botte squarciata e i rostri: lavoro dei fabbri di Hammerfist, lo riconosce al primo sguardo | Va da Zog'tar: *«Nani. Dall'alto.»* E la parola che conta: *«Chiamate il drago.»* Se Grask è morto e la custodia è intera, dà a Zog'tar la parola che la apre senza glifo | Il barile è un attacco: Balvar è «minacciato, o attaccato» (Scena 7). Al round 4 *dissolvi magie* ad area dove il giavellotto ha mostrato i PG, o alla cieca sopra la tenda (B13) |
+| **Grask**, il suonatore del corno | Se è vivo, sveglio o no, il boato lo sveglia: suona il corno entro **1d4 round**, come al primo grido di Zog'tar (Scena 6) | Suona finché qualcuno non gli dice di smettere. Sta dove sta: è lui il bersaglio più facile del campo | |
+| **Le due guardie del turno dopo** | Si svegliano nella loro tenda, a X4–Y5 | Arrivano al round 2, armate, da Zog'tar | Con le altre |
+| **Il campo** (M7-H) | Le sentinelle dei fuochi gridano. I clan degli orchi si svegliano tutti insieme | Le ronde d'orchi arrivano dalla via ovest in 1d4+2 round, le lance della Guardia della Mano dalle vie nord e sud in 2d4+2. Finché Zog'tar è in piedi non vanno addosso alla tenda: fanno quadrato nello spiazzo, a una decina di metri dal telo, e portano acqua e pelli bagnate | Gli sciamani, se il corno ha suonato, cercano con *vedere invisibilità* e *luce*; nessuno vede a 48 m. Il campo resta sveglio fino all'alba |
+| **Skullcrusher** | | | Se il corno ha suonato, arriva **70 round** dopo il primo suono e caccia sopra il campo (Scena 6, «Se il corno suona di notte») |
+
+### Chi suona il corno, se Grask muore
+
+Il corno chiama il drago chiunque lo suoni: la Catena è incisa sul corno, non su
+Grask. Il problema è la custodia, chiusa da un glifo e incatenata al polso del
+ragazzo morto. In ordine, chi ci prova:
+
+| Chi | Quando | Come |
+|---|---|---|
+| **Balvar**, se è vivo | round 2-3 | non apre la custodia: dà la parola a Zog'tar, o a una guardia, e il corno suona senza glifo **al round 3-4** |
+| **Zog'tar**, se Balvar è morto o lontano | round 2-3 | va al corpo, spezza la catena e strappa la custodia: il glifo gli scoppia addosso, 5d8 sonori, Riflessi CD 18, e lui suona lo stesso **al round 3** (B8) |
+| **La guardia più vicina**, se Zog'tar è a terra | appena Zog'tar lo ordina, anche da a terra | come Zog'tar, ma con 60 pf e Riflessi +3 il glifo la può uccidere: una guardia già bruciata muore una volta su tre. Se muore, il corno resta nella custodia aperta, e lo prende la seguente |
+| **Il primo capolancia della Guardia della Mano** | quando arriva, round 4-10 (2d4+2) | se nella tenda nessuno è in piedi a dare ordini, il capolancia sa che il corno è il segnale dell'alba e del drago. Lo fa suonare |
+| **Nessuno** | | se sono morti Grask, Zog'tar e Balvar, e le guardie sono tutte a terra prima che arrivino le lance. È il caso «se rubano o rompono il corno» della Scena 6: il drago arriva a metà mattina, furioso |
+
+Il drago arriva 70 round dopo il primo suono, chiunque abbia suonato.
+
+### Se sopravvivono: che cosa fanno dopo la notte
+
+| Chi | Che cosa fa fino all'alba | All'alba |
+|---|---|---|
+| **Zog'tar** | brucia di rabbia, ma non perde la testa: dorme al buio, fuori dalla luce, e ogni ora in un posto diverso. Fa spegnere i fuochi dello spiazzo e mette due guardie a guardare il cielo. Manda le lance a cercare per il campo, perché pensa a un traditore prima che a dei nani in volo. Prima di dormire beve le sue due pozioni di *cura ferite gravi* (cap. VI, A.2) | guida l'assalto (§10) con i pf pieni, 283, e il segno delle ustioni addosso. Ai suoi dice che il fuoco era un segno: chi l'ha attraversato vince |
+| **Balvar** | è stato attaccato: non tratta più da solo (§10). Incide di nuovo i glifi scattati, rifà la custodia, e ricorda la botte di Hammerfist | resta al campo, nella tenda o in quello che ne resta, come nel canone (cap. VI, «Se l'alba arriva prima della tenda» e Scena 10). Ha capito che i nani vengono dall'alto, e lo dice al drago attraverso la Catena |
+| **Il sacerdote** | spegne e fascia chi brucia: cure non ne ha, perché la sua scheda (cap. VI, Appendice A.2) non ne prepara. Prepara *vedere invisibilità* e *luce* per la notte dopo | resta al campo: sulla breccia Zog'tar sale senza di lui e senza Balvar (cap. VI, Scena 10) |
+| **Le guardie** | stanno attorno al generale, con gli spadoni in pugno, al buio. Chi ha visto morire i compagni nel fuoco odia i nani in un modo nuovo | combattono con Zog'tar sulla breccia |
+| **Grask**, se è vivo | non lascia più il corno. Dorme in piedi | suona all'alba, e il drago arriva sull'assalto |
+
+### L'orda: che cosa fa, che cosa vede, che cosa può fare
+
+Il campo è un'orda di circa diecimila: la Guardia della Mano, che è
+disciplinata, le bande d'orchi, che non lo sono, i goblin sui carri, i lupi fuori.
+Una tenda che scoppia nel cuore del campo, di notte, senza un nemico in vista,
+non è una cosa che l'orda abbia mai visto. Su M7-H, attorno allo spiazzo, ci
+sono otto lance della Guardia (quattro tende da otto attorno a ogni fuoco) e
+quattro bande d'orchi a ovest, una ventina ciascuna con il loro sciamano.
+
+| Chi | Che cosa fa | Che cosa vede, e fin dove | Che cosa può fare a chi vola |
+|---|---|---|---|
+| **Le sentinelle** dei fuochi e dei falò | round 1 gridano, round 2 corrono alla tenda e tirano fuori chi possono | scurovisione 18 m, e tutto quello che i fuochi illuminano: la tenda in fiamme, nessun nemico | giavellotti, solo se vedono qualcuno |
+| **La Guardia della Mano**, otto lance | escono armate al round 2, arrivano nello spiazzo in 2d4+2 round. Quattro lance fanno quadrato a 10 m dal telo, portano acqua e pelli bagnate e tengono indietro gli orchi; le altre chiudono le quattro vie battute e cercano tenda per tenda chi ha portato il fuoco | come le sentinelle. Ascoltare e Osservare +2 | giavellotti: incremento 9 m, al massimo 45 m, −2 a incremento |
+| **Le bande d'orchi** | non capiscono, e si infuriano. Un fuoco dal cielo senza nemici: gli sciamani gridano che è l'occhio di Gruumsh, e le quattro bande corrono armate allo spiazzo con le torce, urlando al cielo. Arrivano in 1d4+2 round, come le ronde, senza ritardo: fanno muro attorno alla Guardia, e ogni torcia è un occhio in più che guarda in alto | scurovisione 18 m, Ascoltare e Osservare +1. Le torce fanno luce fino a 12 m da terra | giavellotti alla cieca contro il cielo: chi è invisibile ha occultamento totale, 50% di mancare, e l'orco deve indovinare il quadretto (SRD) |
+| **Le vedette goblin** sui carri | strillano, e non scendono | scurovisione 18 m | niente |
+| **I lupi**, fuori dal campo | le sei squadre si stringono verso il campo e girano sotto le vie del ritorno: il viaggio a piedi della Scena 6 si tira a CD +2 | fiuto a 9 m (18 col vento): chi vola sopra i 20 m ne resta fuori | i goblin in sella tirano giavellotti; i worg aspettano l'atterraggio |
+| **Gli sciamani**, quindici adepti di 5° | dopo il corno: *vedere invisibilità*, e *luce* sulle punte dei giavellotti | vedono gli invisibili, ma solo dove vedono: 18 m di scurovisione, o la luce | *raggio rovente* (4d6, gittata corta: 10,5 m). La *ragnatela* arriva a 45 m ma in aria non ha dove attaccarsi, e non si forma (SRD) |
+
+**Chi li vede, e chi li colpisce, quota per quota.** La tenda che brucia fa
+luce come un falò grande: intensa entro 12 m, fioca fino a 24 m, finché non
+crolla. I numeri dei giavellotti
+sono per un hobgoblin o un orco con +1 a distanza.
+
+| Quota sopra la tenda | Visibili | Invisibili | Che cosa arriva |
+|---|---|---|---|
+| sopra i 45 m | nessuno li vede | nessuno li vede | niente: oltre la gittata dei giavellotti |
+| da 45 a 25 m | nessuno, se non li illumina il giavellotto con la *luce* (§8) | nessuno | giavellotti a −4/−8 (−2 ogni 9 m): colpiscono solo col 20 naturale, 1d6+1 |
+| da 24 a 19 m | **tutti**, nella luce dell'incendio | nessuno, finché non suona il corno; dopo, gli sciamani | giavellotti a −4: raffiche di 20-30, colpisce un giavellotto ogni venti |
+| 18 m e sotto | tutti, anche al buio | gli sciamani dopo il corno, e il sacerdote. *Comando* del sacerdote a 12 m | giavellotti a −2 o senza penalità; Zog'tar con i giavellotti Grandi |
+| 10,5 m e sotto | | | il *raggio rovente* degli sciamani, 4d6 |
+
+Il conto che conta: l'orda non può far male a chi resta in alto. Quello che
+temere sono quattro cose sole, e tutte hanno un nome: il *dissolvi* di Balvar,
+il giavellotto con la *luce* di Zog'tar, il corno, e il drago.
+
+**Che cosa rischiano i PG.** Finché restano a 48 m, zitti, e si allontanano
+dalla verticale della tenda dopo lo sgancio, niente: nessuno nel campo vede
+così in alto al buio. Restano sopra la tenda a guardarla bruciare, e dal round
+3-4 rischiano il giavellotto con la luce e il dissolvi di Balvar, cioè una
+caduta da 48 m. Il resto è tempo: il volo dura 50 round, l'invisibilità 30, e
+se il corno ha suonato il drago è lì al round 70.
+
+**La mossa migliore, se la chiedono.** Nel round di sorpresa, insieme alla
+botte, un barilotto su Grask. Ha 6 pf e Riflessi +1: una palla di fuoco lo
+uccide anche se il TS gli riesce (3d6, in media 10). Grask sta nella luce del
+falò della guardia, quindi il barilotto devia di 1d6−1 quadretti: lasciato
+cadere sopra P16, la palla di fuoco lo prende due volte su tre. Tutti e due i
+barilotti su di lui, nello stesso round: nove volte su dieci. Senza
+Grask il corno resta nella custodia col glifo, e la notte resta senza drago.
+
+## 9. I due barilotti da 10 litri
+
+| | Il numero | Da dove |
+|---|---|---|
+| Peso | circa 14 kg, 31 libbre: 9 kg d'olio, 5 di doghe e cerchi | |
+| Dove cade | 1d8 per la direzione, **1d6−1 quadretti** nella luce di un fuoco, 1d8−1 al buio: senza sassi rotola, e l'aria lo sposta | §2 |
+| Colpo diretto | oggetto in caduta da 31 a 50 libbre: 1d6 ogni 12 m, da 48 m **3d6** | SRD |
+| Tenuta | si apre sempre: 15d6 contro durezza 5 e 5 pf | §4 |
+| Fiale | una per barilotto: una *palla di fuoco* da 6d6, 6 m di raggio, Riflessi CD 14 | §5 |
+| Olio | 21 pinte: il cuore è la sola casella d'impatto (5 pinte, 10 round, colpito in pieno chi c'è), il resto i quadretti entro 3 m (16, una pinta l'uno, 2 round, lo spruzzo): l'olio va 3 m, la palla di fuoco 6 | §5, con la stessa variazione |
+
+La palla di fuoco del barilotto è grande quanto quella della botte; l'olio
+copre un quarto dell'area.
+
+Dove fanno più male, in ordine:
+
+1. **Su Grask, prima che suoni.** Ha 6 pf e Riflessi +1: una palla di fuoco lo
+   uccide quasi sempre, e senza Grask il corno resta nella custodia col glifo.
+   È l'unico modo di tenere lontano il drago senza scendere. Dal round 1 Grask
+   è a P16, nella luce del falò: lasciato cadere sopra di lui, il barilotto lo
+   prende due volte su tre; tutti e due, nove volte su dieci (§8).
+2. **Su una via battuta quando arrivano i rinforzi.** Le ronde d'orchi
+   arrivano in fila dalla via ovest: gli orchi hanno 5 pf, e una palla di
+   fuoco ne ammazza una ronda intera. Le lance della Guardia (guerrieri di 4°,
+   30 pf) passano bruciate ma vive.
+3. **Su Zog'tar fuori dalla tenda.** Fa poco: 3d6 se lo prende in pieno, 6d6
+   di fuoco, e lo trova già in Ira.
+4. **Sulla tenda del turno dopo**, a X4–Y5, prima che le due guardie escano.
+
+Un consiglio da dire al tavolo solo se lo chiedono: i barilotti valgono di più
+**contro il corno** che contro Zog'tar.
+
+## 10. Che cosa cambia per la storia
+
+- **Balvar.** Se è vivo, è stato attaccato: non tratta più da solo. La
+  Diplomazia CD 18 del nipote funziona solo con chi non l'ha minacciato, e
+  bruciargli la tenda è una minaccia. Resta la lastra d'ardesia, che porta
+  fuori dal fuoco: chi la guarda (Osservare CD 20, da vicino) legge il nome di
+  Hald, e chi gli parla del ragazzo per primo lo trova ancora aperto, perché
+  quella leva non dipende da come lo si è trattato (Scena 7, «Ricattabile»).
+  Se è morto nel fuoco è il caso «ucciso senza ascoltarlo» della Scena 7: la
+  lastra resta fra le ceneri della tenda, e qualcuno la trova in ARC-09. La
+  Catena sul drago e la sua gemella sul corno restano: le rune incise
+  sopravvivono al runaio.
+- **Il corno e il drago.** Se Grask muore e nessuno apre la custodia, all'alba
+  nessuno chiama il drago, ed è il caso «se rubano o rompono il corno» della
+  Scena 6: arriva tardi, a metà mattina, furioso. Se il corno suona di notte,
+  vale «se il corno suona di notte»: il duello all'alba si fa senza sorpresa,
+  con il drago già in quota.
+- **L'assalto dell'alba.** Le mura contano quello che arriva dalla notte
+  (Scena 10), e il barile ci porta due righe del canone: il boato è un
+  **allarme**, quindi un successo in meno, e Zog'tar quasi sempre è **vivo
+  all'alba**, quindi un altro successo in meno, e guida l'assalto. Tutte e due
+  valgono anche se la tenda è bruciata. Per bilanciarle propongo di leggere la
+  tenda in fiamme come la riga «Zog'tar umiliato davanti alle guardie»: il
+  generale tirato fuori dal fuoco davanti ai suoi annulla il successo in meno
+  dell'allarme. Se il barile uccide il
+  sacerdote, Zog'tar sale sulla breccia senza di lui, come il canone prevede
+  già (EL 16, senza Balvar e senza il sacerdote).
+- **Hammerfist vede.** Dalle mura le sentinelle vedono la tenda nera prendere
+  fuoco a un chilometro, nel mezzo del campo. Re Thorek lo sa prima che i PG
+  rientrino.
+- **Il nemico impara.** Dopo questa notte Zog'tar sa che i nani volano. Per il
+  resto dell'assedio dorme ogni notte in un posto diverso, al buio, e non sotto
+  una tenda; i fuochi dello spiazzo si spengono; gli sciamani tengono pronti
+  *vedere invisibilità* e *luce* sui giavellotti, e due di loro guardano il
+  cielo. Un secondo barile non trova più
+  niente di così facile.
+- **I PE per la trovata**: §13.
+- **Echo Ledger** (§7 di cap. VI): «la notte del barile», con chi è morto e se il
+  corno ha suonato.
+
+## 11. Le mappe
+
+**Perché al tavolo la tenda sembrava enorme.** Il ramo di gruppo
+`campaign-group-rumblingstone` e il booklet stampato il 12 ottobre hanno
+ancora la vecchia M7-C: un salone da 18 × 16,5 m su un palo solo, con sette
+croci di tendine attaccate. Su `main` la tenda è stata rifatta il 21 ottobre
+(PR #261) come padiglione a tre pali, 13,5 × 7,5 m di pavimento, ed è quella
+del booklet ristampato il 22. Questa PR fa un passo in più, e toglie lo
+steccato che la #261 ci aveva messo attorno: orchi e hobgoblin dell'orda sono
+un'orda nomade, non una legione.
+
+Il modello è il campo di un capo nomade: l'ordo di un khan mongolo, con la
+tenda del capo sola in mezzo e gli anelli di tende attorno; il khalasar di un
+khal, senza mura, dove il capo dorme al centro e i suoi fedeli più vicini; il
+campo di una banda gota o gallica, raccolta attorno al fuoco del capo e ai
+pali dei trofei, con i carri del bottino lasciati dove si sono fermati.
+
+- **M7-C** è lo **spiazzo del capo**: terra battuta senza recinto, larga una
+  quarantina di metri, con la tenda sola nel mezzo. Davanti alla soglia il
+  fuoco del consiglio, a notte fonda ridotto a brace (luce fioca solo entro 3
+  m, così l'avvicinamento della Scena 6 non cambia), e i due pali dei trofei
+  con lo stendardo della Mano Rossa; il bottino della valle ammucchiato
+  davanti al capo. Sul bordo, staccate l'una dall'altra, le tende dei servi e
+  del bottino, senza soldati, e la tenda del turno dopo a 9 m (X4–Y5). La
+  tenda, le persone e tutte le coordinate delle scene **non cambiano**.
+- **M7-H** è il **campo attorno**, 66 × 60 m. A 20-30 m dal telo le lance della
+  Guardia della Mano: quattro tende da otto attorno al fuoco della lancia, a
+  gruppi staccati, con 3 m fra il fuoco e i teli; a ovest i clan degli orchi,
+  ripari storti attorno al fuoco della banda, con il vuoto fra un clan e
+  l'altro; i lupi da guerra ai picchetti, i carri del bottino, il palo degli
+  sciamani. Le vie sono solo terra battuta, a raggiera dallo spiazzo, e i
+  rinforzi arrivano da lì. Nessuna tenda della Guardia è dentro i 6 m del
+  barile.
+
+Le misure vengono dalla ricerca sugli accampamenti, nelle parti sui campi
+mongoli e d'avventura. Le due mappe passano il collaudo senza
+errori, con voto di qualità 100 tutte e due.
+
+
+## 13. Le trovate dei giocatori: come gestirle le prossime volte
+
+Il barile non è stato un incidente: il tavolo ha guardato quello che aveva
+(olio, botti, fabbri nanici, pozioni, volo e invisibilità) e ha costruito
+un'arma che il modulo non prevedeva. Succederà ancora, ed è una cosa da
+premiare, non da contenere. Perché il DM non debba improvvisare, serve una
+procedura breve e sempre uguale `[Proposta — B14 e B15]`.
+
+**La procedura, in cinque passi.**
+
+1. **La regola più vicina dell'SRD.** Quasi tutto quello che i giocatori
+   costruiscono è già nell'SRD sotto un altro nome: oggetto in caduta, arma a
+   spargimento, olio e fuoco dell'alchimista, danni agli oggetti (durezza e
+   pf), trappole, crolli, fumo, annegamento. Si parte da lì e si scrive la
+   variazione, una sola, accanto.
+2. **Un tiro per l'imprevisto, non di più.** Se la trovata non è un attacco,
+   non c'è tiro per colpire. L'imprevisto si tira con un dado solo, come la
+   deviazione di questo documento (1d8 per la direzione, un dado per la
+   distanza), o con una prova di abilità del PG che l'ha costruita
+   (Artigianato, Conoscenze (architettura e ingegneria), Disattivare
+   Congegni) contro **CD 15 / 20 / 25** per una cosa semplice, ingegnosa o al
+   limite.
+3. **Il danno dalle tabelle.** Se la trovata fa danno, si prende la tabella
+   SRD più vicina (oggetti in caduta, trappole) e si sta dentro il tetto
+   delle trappole dell'SRD per il livello del gruppo: al 13° una trappola
+   seria fa in media 50-70 danni e ha CD 20-25. Il barile di questa notte,
+   15d6 + 12d6 di fuoco, sta proprio lì.
+4. **Le reazioni, da una tabella fissa.** Ogni scena di un modulo dovrebbe
+   avere tre righe pronte: chi è colpito e che cosa fa al suo primo turno, chi
+   se ne accorge e in quanti round, e che cosa arriva (allarme, rinforzi,
+   incantatori). È quello che il §8 fa per questa scena.
+5. **La conseguenza e il premio.** Una riga di canone (che cosa cambia nel
+   mondo) e i PE.
+
+**I PE per l'ingegno.** Il 3.5 lascia al DM i premi fuori dagli scontri. La
+proposta è dare per la trovata, oltre ai PE dei nemici che cadono davvero, i
+PE di uno scontro immaginario, con il GS legato a quanto la trovata pesa:
+
+| La trovata | GS dello scontro immaginario | Al 13°, PE da dividere fra i quattro |
+|---|---|---|
+| risolve una scena in un modo che il modulo non prevedeva | livello del gruppo −4 | 975, cioè 244 a testa |
+| cambia l'arco: tocca il canone, toglie un pezzo al nemico | livello del gruppo −2 | 1.950, cioè 487 a testa |
+| ribalta l'arco: salva un luogo, abbatte un boss prima del tempo | livello del gruppo | 3.900, cioè 975 a testa |
+
+Per il barile, la proposta è la seconda riga: brucia la tenda del comando, la
+mappa dell'assalto e quasi sempre il sacerdote, e tocca le mura all'alba. Se
+uccide Grask e il corno non suona, sale alla terza. I PE si segnano a mano: il
+registro PE dello script parte da zero, e senza un punto di partenza non va
+usato.
+
+**Lasciare che i PG stravolgano le cose.** Il modulo non deve difendere le sue
+scene. Due cose aiutano. La prima: nei master dei prossimi archi, accanto alle
+risorse che i PG trovano, una riga «se ci fanno l'ingegnere», con la regola SRD
+più vicina già scritta (la botte d'olio, la diga, il ponte, il forno della
+forgia). La seconda: i nemici intelligenti imparano. Dopo questa notte Zog'tar
+sa che i nani volano, e il resto dell'assedio lo mostra (§10).
+
+## Fonti
+
+- SRD 3.5, «Falling Objects», «Catching on Fire», «Smoke Effects»:
+  <https://www.d20srd.org/srd/environment.htm>
+- SRD 3.5, olio (la pinta versata, l'ampolla lanciata, la miccia) e fuoco
+  dell'alchimista: <https://www.d20srd.org/srd/equipment/goodsAndServices.htm>
+- SRD 3.5, armi a spargimento e deviazione:
+  <https://www.d20srd.org/srd/combat/specialAttacks.htm>
+- SRD 3.5, danni agli oggetti, durezza e punti ferita:
+  <https://www.d20srd.org/srd/combat/specialAttacks.htm>
+- SRD 3.5, *invisibilità* («causing harm indirectly is not an attack»), *palla
+  di fuoco*, aree e incroci della griglia, danno massiccio, CD degli oggetti
+  magici: d20srd.org, voci omonime
+- La fisica della caduta:
+  densità dell'olio 0,91 kg/l, aria a 520 m 1,17 kg/m³, coefficiente di
+  resistenza 0,9.
+
+
+\page
+
+# IV · Il Seme-Mercato: l'ora della pergamena
 
 {{note
 ##### ⚠ SOLO DM
@@ -512,8 +1802,8 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 > nuda firma, l'anticipo arriva subito, e filo, voce e riscossione si
 > accendono al ritorno nel 1372.
 >
-> **I rimandi del testo copiato.** «Echo Ledger (§11)» è, in questo booklet,
-> il cap. IV §7; «il #4» è il cap. IV, e Vatore è alla sua Scena 9.
+> **I rimandi del testo copiato.** «Echo Ledger (§11)» è il §7 di cap. VI;
+> «il #4» è cap. VI, e Vatore è alla sua Scena 9 (cap. VI Scena 9).
 >
 > **Dove eravamo**. Il Seme nessuno l'ha toccato a
 > mani nude: è nello zaino di Tordek dal 31 luglio. Le dieci pozioni le
@@ -775,7 +2065,7 @@ anni prima di lui, e per un mercante non c'è niente di più interessante.
    sopra, con la correzione del paragrafo «A ≈372 DR il creditore non c'è
    ancora» per chi firma a ≈372 DR.
 
-> **Read-aloud (Andor lead) — per Artemis, alla fine dell'ora.** *La pergamena
+> **Read-aloud — per Artemis, alla fine dell'ora.** *La pergamena
 > si accartoccia in cenere tiepida. Sotto il guanto la gemma pesa e scalda
 > come prima, ma dentro la pietra c'è una scrittura fitta e ordinata, da libro
 > mastro. In fondo alla
@@ -786,7 +2076,7 @@ anni prima di lui, e per un mercante non c'è niente di più interessante.
 
 \page
 
-# III · La cassetta del DM: cast, pronuncia, read-aloud, suoni
+# V · La cassetta del DM: cast, pronuncia, read-aloud, suoni
 
 {{note
 ##### ⚠ SOLO DM
@@ -828,11 +2118,11 @@ prima.
 |---|---|---|---|
 | **Terros l'Antico** — guardiano del Nodo di Terra, GS 15 | che nessuno tocchi lo Smeraldo. Non odia: **custodisce** | parla **lentissimo**, come chi non ha mai avuto fretta in diecimila anni. Non alza mai la voce, nemmeno quando colpisce | «Il Piano della Terra & Terros l'Antico» §8 |
 | **La Sentinella di Mithral** — l'anticamera | verificare chi entra. Non uccide chi supera la prova | **non parla**: risponde battendo. Un colpo = no, due = passa. | «Il Piano della Terra & Terros l'Antico» §7b |
-| **Skullcrusher il Nero** — il duello a −1000 | vincere davanti all'orda, perché il potere è ciò che gli altri hanno visto | dice **il nome** dell'avversario prima di colpire, ogni volta | cap. IV Scena 11 |
-| **Zog'tar** — il generale dell'orda | prendere Hammerfist. Sa uccidere diecimila uomini | parla ai suoi **contando**: «due file», «tre ore», «cento» | cap. IV Scena 8 |
-| **Balvar Fuocospento** — il runaio esiliato, consigliere | incidere di nuovo, per chi glielo lascia fare | **non smette di lavorare mentre ti parla**. La punta sull'ardesia continua sotto le sue frasi | cap. IV Scena 7 |
-| **Grask** — l'araldo col corno, fuori dalla tenda | non perdere più il corno | **non parla: soffia** | cap. IV Scene 6-8 |
-| **Vatore** (Sal a −1000) | la stessa cosa che vuole Sal oggi, mille anni prima | il tono del **collega**, non del nemico. Riconosce una firma, non un debito | cap. IV Scena 9 |
+| **Skullcrusher il Nero** — il duello a −1000 | vincere davanti all'orda, perché il potere è ciò che gli altri hanno visto | dice **il nome** dell'avversario prima di colpire, ogni volta | cap. VI Scena 11 |
+| **Zog'tar** — il generale dell'orda | prendere Hammerfist. Sa uccidere diecimila uomini | parla ai suoi **contando**: «due file», «tre ore», «cento» | cap. VI Scena 8 |
+| **Balvar Fuocospento** — il runaio esiliato, consigliere | incidere di nuovo, per chi glielo lascia fare | **non smette di lavorare mentre ti parla**. La punta sull'ardesia continua sotto le sue frasi | cap. VI Scena 7 |
+| **Grask** — l'araldo col corno, fuori dalla tenda | non perdere più il corno | **non parla: soffia** | cap. VI Scene 6-8 |
+| **Vatore** (Sal a −1000) | la stessa cosa che vuole Sal oggi, mille anni prima | il tono del **collega**, non del nemico. Riconosce una firma, non un debito | cap. VI Scena 9 |
 
 ### Chi sta dalla vostra
 
@@ -840,14 +2130,14 @@ prima.
 |---|---|---|---|
 | **Durik** — il cane di pietra di Hella, nato dalla polvere di Terros al rito dello Smeraldo | stare fra Hella e il pericolo («Protegge Hella», la risposta data a Moradin nel viaggio) | **non parla e non abbaia**: suoni di pietra, un click, uno strofinio, una faglia lontana. Il click vuol dire che qualcosa si muove sotto i piedi | «Il Piano della Terra & Terros l'Antico» §9 fase 3 · «La Resurrezione di Hella» §7 |
 | **Therysol** — veglia il corpo di Hella | che qualcuno resti col morto. Non scende: veglia | frasi **corte e complete**. Non chiede mai niente | «Il Ritorno e gli Affreschi», «La Resurrezione di Hella» |
-| **Re Thorek I** — Hammerfist ≈372 DR | reggere le mura fino all'alba | parla **al plurale** anche quando parla di sé: «la fortezza pensa» | cap. IV Scena 4 |
-| **Durin** — la pattuglia, di notte | portare a casa i suoi | ride **prima** di dire una cosa seria | cap. IV Scena 2, Appendice A |
-| **Thorgrim Barbadiferro** — l'antenato | che l'ascia torni in una mano che sa perché | nomina **il sangue**, mai la persona: «il sangue riconosce il sangue» | cap. IV Scena 4 |
-| **Sorella Brynja** — la cappella della fortezza | che all'alba ci siano incantesimi per le mura | **conta ad alta voce**, sempre; fa ogni domanda due volte, la seconda più piano | cap. IV Scena 5 |
-| **Kettra** — l'alchimista del re | finire le fiasche per le mura prima dell'alba | **ride** quando qualcosa sta quasi per andare storto, e solo allora | cap. IV Scena 5 |
-| **Gunnvor** — la maestra armaiola | che i duecento vecchi e ragazzi vadano sulle mura con un'arma vera | conta tutto in **braccia**: una pozione «vale un braccio» | cap. IV Scena 5 |
-| **Hrodgar** — il capitano delle mura | tenere il tratto est finché il re non gli dice di lasciarlo | dà gli ordini con **una parola sola** | cap. IV Scena 10 |
-| **Hald** — il nipote di Balvar, di guardia | il master non lo dice: è una recluta di diciannove anni, e non sa che lo zio esiliato è vivo, né che è nel campo | poco e **a bassa voce**; si drizza quando passa il capitano | cap. IV Scena 10 |
+| **Re Thorek I** — Hammerfist ≈372 DR | reggere le mura fino all'alba | parla **al plurale** anche quando parla di sé: «la fortezza pensa» | cap. VI Scena 4 |
+| **Durin** — la pattuglia, di notte | portare a casa i suoi | ride **prima** di dire una cosa seria | cap. VI Scena 2, Appendice A |
+| **Thorgrim Barbadiferro** — l'antenato | che l'ascia torni in una mano che sa perché | nomina **il sangue**, mai la persona: «il sangue riconosce il sangue» | cap. VI Scena 4 |
+| **Sorella Brynja** — la cappella della fortezza | che all'alba ci siano incantesimi per le mura | **conta ad alta voce**, sempre; fa ogni domanda due volte, la seconda più piano | cap. VI Scena 5 |
+| **Kettra** — l'alchimista del re | finire le fiasche per le mura prima dell'alba | **ride** quando qualcosa sta quasi per andare storto, e solo allora | cap. VI Scena 5 |
+| **Gunnvor** — la maestra armaiola | che i duecento vecchi e ragazzi vadano sulle mura con un'arma vera | conta tutto in **braccia**: una pozione «vale un braccio» | cap. VI Scena 5 |
+| **Hrodgar** — il capitano delle mura | tenere il tratto est finché il re non gli dice di lasciarlo | dà gli ordini con **una parola sola** | cap. VI Scena 10 |
+| **Hald** — il nipote di Balvar, di guardia | il master non lo dice: è una recluta di diciannove anni, e non sa che lo zio esiliato è vivo, né che è nel campo | poco e **a bassa voce**; si drizza quando passa il capitano | cap. VI Scena 10 |
 | **Il Custode** (ruolo, non persona) | leggere i pannelli e ricordare un fatto vero | — (è una funzione: la assume un PG) | «Il Ritorno e gli Affreschi» §3-4 |
 
 ⚠️ **Fauci** e **Skullcrusher** arrivano da prima di quest'arco e tornano dopo:
@@ -950,7 +2240,7 @@ giocherai e leggile a voce. Tre. Non trenta.
 ## §4 · I suoni dell'arco
 
 **Descrizioni, mai titoli di brani**: ognuno usa quello che ha, e il file non
-invecchia con le piattaforme (ADR-0018 «regola dei suoni»).
+invecchia con le piattaforme.
 
 > **La regola di quest'arco**, e non è quella dell'ARC-08. Là il fragore era lo
 > stato di riposo e i suoni si spegnevano per fare spazio. **Qui il silenzio è lo
@@ -968,9 +2258,9 @@ invecchia con le piattaforme (ADR-0018 «regola dei suoni»).
 | **Il Rituale dello Smeraldo** («Il Piano della Terra & Terros l'Antico» §9) | qui, e **solo qui**, un tono che cresce per tre round e si chiude di colpo sull'incastonatura |
 | **La Sala e gli Affreschi** («Il Ritorno e gli Affreschi») | eco lunga di stanza vuota. Le voci dei PG tornano indietro: falle tornare anche quando parlano piano |
 | **Il Cuore di Moradin** («La Resurrezione di Hella» §3-4) | **un battito.** Uno solo, lento, che si sente col corpo più che con l'orecchio. Smette quando Hella apre gli occhi |
-| **Hammerfist ≈372 DR, di notte** (cap. IV zona 2) | diecimila tende: cuoio, ferro, e voci in una lingua che non si capisce. **Mai grida**: è un accampamento che dorme |
-| **Le mura all'alba** (cap. IV Scena 10) | tamburi, e sotto i tamburi **il drago che non si vede ancora** |
-| **Il duello con Skullcrusher** (cap. IV Scena 11) | il pubblico. Non i colpi: **la folla che reagisce ai colpi** |
+| **Hammerfist ≈372 DR, di notte** (cap. VI zona 2) | diecimila tende: cuoio, ferro, e voci in una lingua che non si capisce. **Mai grida**: è un accampamento che dorme |
+| **Le mura all'alba** (cap. VI Scena 10) | tamburi, e sotto i tamburi **il drago che non si vede ancora** |
+| **Il duello con Skullcrusher** (cap. VI Scena 11) | il pubblico. Non i colpi: **la folla che reagisce ai colpi** |
 | **Il ritorno e la manifestazione** («Il Ritorno a Hammerfist» §4) | silenzio pieno, poi **una voce sola** che riconosce chi è arrivato |
 
 ---
@@ -984,7 +2274,7 @@ Uno per master: il picco che il DM sa in anticipo, e che non manda di fretta.
 | «Il Piano della Terra & Terros l'Antico» | **Il Distacco** — l'Altare si centra sul guardiano (§8b) | è il round in cui il tavolo capisce che la stanza combatte con loro, non contro |
 | «Il Ritorno e gli Affreschi» | **La Visione Condivisa** dei Quattro Eroi (§5) | l'unico momento dell'arco in cui i quattro vedono **la stessa cosa** |
 | «La Resurrezione di Hella» | **Hella apre gli occhi** (§7) | tre sessioni di lutto si chiudono in una riga. Non aggiungere niente dopo |
-| cap. IV | **Il colpo finale del duello** (Scena 11): chi abbatte Skullcrusher, e *«com'è che lo fai?»* | il drago di mille anni fa cade per mano loro, o fugge ferito. Il gesto di Thorgrim con l'ascia di Thorik (Scena 4) è già stato giocato |
+| cap. VI | **Il colpo finale del duello** (Scena 11): chi abbatte Skullcrusher, e *«com'è che lo fai?»* | il drago di mille anni fa cade per mano loro, o fugge ferito. Il gesto di Thorgrim con l'ascia di Thorik (Scena 4) è già stato giocato |
 | «Il Ritorno a Hammerfist» | **La manifestazione** (§4) | la disfatta che si ribalta davanti a chi l'aveva già data per persa |
 
 ⚠️ **La regola**: un beat che non sa qual è il suo picco lo brucia correndo. Se la
@@ -1013,7 +2303,7 @@ serata è in ritardo, **si taglia altro** — non questo.
 
 \page
 
-# IV · Il Viaggio a Mille Anni fa
+# VI · Il Viaggio a Mille Anni fa
 
 {{note
 ##### ⚠ SOLO DM
@@ -1074,15 +2364,11 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 > affrontare **all'alba il drago Skullcrusher**. Se falliscono, la fortezza
 > regge lo stesso, perché la profezia è già incisa: la salvano gli avi, e il
 > prezzo lo pagano loro.
-> Il gruppo di oggi non parte dal tramonto: riprende dalla notte, con 3 tacche
-> segnate sul foglio: si apre con Durin nel cortile, *«Quando uscite?»*, poi
-> gli acquisti al banco e la scelta fra fermarsi, dormire o uscire; chi vola
-> subito atterra alla tenda con Grask sveglio, tratta con Balvar o colpisce
-> Zog'tar, e la serata si ferma sull'esito del duello all'alba. L'ordine
-> della serata, chi parla per primo e la lista di lettura da un'ora stanno
-> nella regia della serata, il primo capitolo del booklet: per questo gruppo
-> vince su questo riquadro. La lista qui sotto è per chi prepara senza la
-> regia.
+> Un gruppo che riprende a metà dell'atto parte dal punto in cui si è fermato,
+> e quel punto sta nel log e nel registro del suo ramo di gruppo. L'ordine della
+> sua serata sta nella regia, il primo capitolo del suo booklet, e per quel
+> gruppo vince su questo riquadro. La lista qui sotto è per chi
+> prepara senza la regia.
 
 > 🗓️ **La vostra serata** — per il gruppo che riparte dalla notte del 372.
 > **Senza la regia della serata, leggi solo questo, in quest'ordine, in un'ora e dieci minuti**: §4 «L'orologio della
@@ -1142,9 +2428,9 @@ la scena riesce, altrimenti riesce lo stesso ma con una **complicazione**. Ogni
 scena registra un **esito** (► Esito), e gli esiti alimentano il carry-over B4
 verso Fauci di Palude (§7).
 
-> 🎚️ **Se hai poco tempo**, ogni scena lunga ha la sua **versione veloce in
-> Appendice C**: è la stessa scena a montaggio, in 10-15 minuti. Si possono
-> mescolare, scena per scena.
+> 🎚️ **Se hai poco tempo**, ogni scena lunga ha la sua **versione veloce**,
+> C.1 per l'Atto I, C.2 per la tenda, C.3 per il duello: è la stessa scena a
+> montaggio, in 10-15 minuti. Si possono mescolare, scena per scena.
 
 **Chi c'è, nell'ordine in cui entra.** Durin Rocciadura (Scena 2) · Re Thorek I
 e Thorgrim Barbadiferro (Scena 4) · Mastro Costruttore Zeth (Scena 5) · Balvar
@@ -1202,18 +2488,18 @@ Benedizioni ci sono ancora.
   (+25), 2 ali +29 (+25), coda +29 (+25).
 - **La passata e il nome.** Non si ferma mai in aria, finché non ha paura.
   Con Attacco in Volo attraversa il cortile e a metà della passata soffia, o
-  morde, o grida il nome di un PG (*colpo accurato*); con *Virata* torna
+  morde, o grida il nome di un PG (*colpo accurato*); con *Virare* torna
   indietro sulla stessa linea. Il PG nominato lo morde al round dopo, a +54
   (+50), e l'occultamento non lo salva. Il nome non lo chiede: lo ha sentito
   di notte attraverso il corno, o usa un epiteto.
-  Fra un turno e l'altro sta a circa 15 m (Scena 11, «La passata, il nome,
+  Fra un turno e l'altro sta a più di 18 m da tutti i PG col Vecchio, a circa 15 m con l'Adulto (Scena 11, «La passata, il nome,
   la prima paura»).
-- ***Fluttuare*** **una volta sola**, a ⅓ dei pf: è la prima paura.
+- ***Fluttuare*** **una volta sola**, a ⅓ dei pf: è la prima paura. Se Balvar è morto, a metà dei pf.
   ***Oscurità*** **una volta sola**, per coprire la fuga verso le paludi.
 - **Dal round 2, due wyvern** (Appendice A.6) su chi tiene la corda e su chi
   vola. Fuggono quando il drago fugge o muore. Il duello è EL 17 col Vecchio,
   EL 14 con l'Adulto.
-- **La Catena**: la runa sotto la scaglia si colpisce contro **CA 44** (41), e il
+- **La Catena**: la runa sotto la scaglia si colpisce contro **CA 47** (in pratica il 20 naturale) (41), e il
   primo colpo a segno la spezza: il drago se ne va (Scena 11).
 - **Aegis Fang**: il Bane contro Fauci qui **non vale**; la *Dragondoom* sì.
 - **Presenza Terrificante** CD 26 (25) all'ingresso (Volontà o scossi), raggio 72 m (63).
@@ -1291,7 +2577,7 @@ descrivi tu in una riga e vai avanti: è un regalo, non un compito.
 
 ## §1 — HIGHLIGHT ASIMMETRICI PER PG (i QUATTRO, Hella è tornata)
 
-### 🛡️ THORIK — la profezia fatta carne (Casa di Davide lead)
+### 🛡️ THORIK — la profezia fatta carne
 - È la SUA leggenda: la Corona che porta è la stessa che il nonno di Thorgrim
   perse contro Skullcrusher. Aegis Fang, nelle sue mani e in quelle di Thorgrim,
   **canta la stessa nota** attraverso mille anni. Thorik non compie la profezia:
@@ -1299,7 +2585,7 @@ descrivi tu in una riga e vai avanti: è un regalo, non un compito.
 - Al duello, **Aegis Fang scaglia la Cicatrice Ancestrale** (Scena 11): è il gesto che
   segna Skullcrusher e, mille anni dopo, Fauci (carry-over B4).
 
-### 🌙 HELLA — la seconda vita alla prova (BG3 lead — il ritorno che conta)
+### 🌙 HELLA — la seconda vita alla prova (il ritorno che conta)
 - È il suo **primo scontro da risorta**: Ibrido Treant, Collana, Durik al
   fianco. Il DM lo faccia pesare — la morte l'ha cambiata, e ora combatte in un
   passato dove non è mai esistita.
@@ -1321,7 +2607,7 @@ descrivi tu in una riga e vai avanti: è un regalo, non un compito.
   tentativo**. Risponde al secondo. Dillo in una riga, nel momento peggiore, e
   non spiegarlo.
 
-### ⚒️ TORDEK — il pugno che deve trattenersi (Andor support)
+### ⚒️ TORDEK — il pugno che deve trattenersi
 - La **Cintura della Devastazione rifiuta di attivarsi** contro Skullcrusher,
   nella Scena 11 (*«il vero scontro appartiene al futuro»*); contro Zog'tar, nella
   Scena 8, funziona: è coerenza, non nerf — Tordek deve vincere **senza**
@@ -1329,7 +2615,7 @@ descrivi tu in una riga e vai avanti: è un regalo, non un compito.
 - I **Bracieri** (coscienza) riconoscono la fucina antica di Hammerfist: *«Qui
   è dove tutto è cominciato, ragazzo. Batti bene.»*
 
-### 🔮 ARTEMIS — il predone davanti al ladro (Andor lead)
+### 🔮 ARTEMIS — il predone davanti al ladro
 - **Vatore** (Scena 9) è il suo specchio oscuro: un ladro che ruba attraverso il
   tempo. L'Anello lo **percepisce** (aura temporale) prima di chiunque. È il PG
   giusto per fiutare che quel ladro «non è di qui» — e per decidere cosa farne
@@ -1352,8 +2638,7 @@ descrivi tu in una riga e vai avanti: è un regalo, non un compito.
 ### 🎚️ Scheda sensoriale delle tre zone — e cosa NON dire
 
 > **Come si usa.** Le prime tre colonne sono quello che i PG colgono **in sei
-> secondi** senza tirare. La quarta è **vincolante quanto le altre**
-> ([ADR-0057](../../../plans/adr/ADR-0057-la-quarta-colonna-e-di-tutto-il-repo.md)):
+> secondi** senza tirare. La quarta è **vincolante quanto le altre**:
 > sono le cose che il tavolo deve **scoprire**, e che l'atmosfera, se ti scaldi,
 > racconta al posto loro.
 
@@ -1413,7 +2698,7 @@ sessioni del viaggio.
 arieti mordono; scale d'assedio (Forza per rovesciarle); il cortile interno
 dove, alla fine, Skullcrusher cala. Vedi M7-B (arena del duello).
 
-**Dove sale l'assalto** `[INFERRED — needs DM confirmation]`. Gli arieti si
+**Dove sale l'assalto**. Gli arieti si
 montano sulla spianata degli arieti, a +80, e salgono alla porta, a +100, per
 una rampa addossata al gradone. Le scale salgono sul tratto est, dove il fianco
 della montagna arriva al piede delle mura; sul fronte sud le mura stanno sul
@@ -1441,7 +2726,7 @@ ciglio, 24,5 m sopra la spianata, e le scale non ci arrivano.
 
 ![Il portale del Tempo](../../Immagini/tavola-portale-del-tempo.jpg)
 
-> **Read-aloud (LotR lead) — il passaggio.** *Per un istante lunghissimo i
+> **Read-aloud — il passaggio.** *Per un istante lunghissimo i
 > colori si rovesciano, e vi passano davanti vite intere di nani: nascono,
 > battono il ferro, invecchiano, in un tempo più corto di un respiro. Poi torna
 > il peso, e con il peso il freddo. Le ferite non ci sono più.*
@@ -1481,7 +2766,7 @@ Quando la testa torna a posto, guardano dove sono.
 
 ![La fortezza giovane, da lontano](../../Immagini/tavola-hammerfist-giovane.jpg)
 
-> **Read-aloud (LotR lead) — la fortezza, da lontano.** *A ovest, fra i
+> **Read-aloud — la fortezza, da lontano.** *A ovest, fra i
 > tronchi, si vedono le torri di una fortezza che conoscete, più basse di come
 > le ricordate. Più in là, verso sud, i fuochi dell'orda cominciano ad
 > accendersi uno alla volta, e non finiscono. Sopra le mura gira un'ombra con le
@@ -1490,8 +2775,8 @@ Quando la testa torna a posto, guardano dove sono.
 **Dati per il DM (non da leggere).** Il portale li lascia **a circa 500 m a est
 delle mura**, un quarto d'ora prima del buio. Il bosco copre la spalla della
 montagna a est: dove il portale li lascia è poco sopra la quota delle mura, e
-da lì scende fino al margine del campo, sulla piana, 100 m più in basso
-`[INFERRED — needs DM confirmation]`. È autunno inoltrato: **5 °C**, il
+da lì scende fino al margine del campo, sulla piana, 100 m più in basso.
+È autunno inoltrato: **5 °C**, il
 fiato si vede, una nebbia bassa comincia a salire dal bosco. Dall'arrivo
 all'alba mancano **circa dodici ore**; l'orologio della notte (§4) comincia a
 contare con il consiglio, che è la prima delle sue otto tacche: le prime
@@ -1510,7 +2795,7 @@ rumore arriva fin qui.
 
 **In scena** — Dove: il bosco — Chi: Durin · i sei veterani
 
-> **Read-aloud (Andor lead) — il bosco.** *Fra gli abeti sale una nebbia bassa,
+> **Read-aloud — il bosco.** *Fra gli abeti sale una nebbia bassa,
 > e il sentiero scende verso le mura. Dal sottobosco si alzano sette elmi:
 > sette nani in armatura completa, gli scudi accostati, le asce basse. Quello davanti è più
 > vecchio degli altri e stringe l'ascia così forte che ha le nocche bianche, e
@@ -1585,7 +2870,7 @@ toccano nessuno. Prima di entrare c'è la targa.
 
 ![La porta e la targa di bronzo](../../Immagini/tavola-hammerfist-giovane-porta.jpg)
 
-> **Read-aloud (LotR lead) — la porta, deep time al contrario.** *Conoscete Hammerfist:
+> **Read-aloud — la porta, deep time al contrario.** *Conoscete Hammerfist:
 > le sale annerite dai secoli, le statue consumate, i nomi dei re incisi e
 > reincisi. Questa Hammerfist non ha ancora storia. Le mura sono bianche di
 > pietra appena tagliata, gli spigoli ancora vivi, e nel cortile c'è la statua
@@ -1596,7 +2881,7 @@ toccano nessuno. Prima di entrare c'è la targa.
 
 **Il testo intero della targa**, per chi la legge da vicino:
 
-> **Read-aloud (Casa di Davide lead) — la targa.** *«Quando il nero verrà dal
+> **Read-aloud — la targa.** *«Quando il nero verrà dal
 > cielo e il ferro dal piano, quattro eroi dal fuoco e dalla pietra staranno
 > sulle mura. Uno porta la pietra in fronte, uno il fuoco nei pugni. Uno tiene
 > in mano la luce e l'ombra, e una ha passato la morte. Moradin li ha visti.»*
@@ -1649,7 +2934,7 @@ all'assedio: i bambini e i vecchi scendono verso le miniere con un fagotto
 ciascuno, le forge delle stanze laterali non si fermano, e dove passano i PG
 la gente smette di parlare.
 
-> **Read-aloud (Casa di Davide lead) — la sala del consiglio, il re.** *Lungo il corridoio
+> **Read-aloud — la sala del consiglio, il re.** *Lungo il corridoio
 > i bambini e i vecchi scendono verso le miniere con un fagotto ciascuno, e al
 > vostro passaggio la gente smette di parlare. La sala è lunga quanto una
 > strada, e i pilastri sono ancora bianchi. In fondo, su un seggio di pietra
@@ -1705,7 +2990,7 @@ e i futuri.»*
 **Thorgrim.** Mentre il re recita, il vecchio sulla panca guarda l'ascia di
 Thorik, e quando il re tace parla lui.
 
-> **Read-aloud (Mercer lead, Casa di Davide support) — il vecchio sulla panca.** *Il vecchio sulla panca
+> **Read-aloud — il vecchio sulla panca.** *Il vecchio sulla panca
 > non si è mosso. Tiene le mani aperte verso la luce, i palmi in su, e sono mani
 > che hanno tenuto la stessa ascia di Thorik: si vede dal callo, nello stesso
 > punto. Guarda la corona sulla fronte di Thorik per il tempo di tre respiri. Poi gli occhi gli si riempiono, e lui non se ne accorge,
@@ -1714,7 +2999,7 @@ Thorik, e quando il re tace parla lui.
 
 **Se Thorik gliela porge**, e solo allora:
 
-> **Read-aloud (Mercer lead) — le due prese.** *L'ascia passa da una mano
+> **Read-aloud — le due prese.** *L'ascia passa da una mano
 > all'altra, e per un istante le due prese si toccano sul legno. E il legno
 > suona.*
 
@@ -1847,7 +3132,7 @@ tacca è mezz'ora scarsa di gioco reale.
 | Ogni **fallimento** nello skill challenge | **+1** |
 | Parlare con Balvar prima dello scontro (Scena 7) · parlargli **durante** lo scontro nella tenda costa **0** | **1** · **0** |
 | Spogliare la tenda delle armature (Scena 8, solo se nessuno ha dato l'allarme) | **1** |
-| Curarsi nella tenda con più di 20 cariche di bacchetta, prima di ripartire (Scena 8) `[INFERRED — needs DM confirmation]` | **1** |
+| Curarsi nella tenda con più di 20 cariche di bacchetta, prima di ripartire (Scena 8) | **1** |
 | Tornare a piedi dalla tenda alle mura (Scena 8) | **1** |
 | … e ogni blocco **fallito** del ritorno | **+1** |
 | Tornare in volo dalla tenda alle mura, al posto del ritorno a piedi (serve un secondo *volare*) | **1** |
@@ -1875,7 +3160,7 @@ incontrato, non si perde: il filo [VATORE/SAL] passa ad ARC-09.
 
 ⚠️ **L'orologio corre sulle SCELTE, non sul tempo reale.** Un tavolo che discute
 mezz'ora su cosa fare non spende una tacca; un tavolo che decide di andare a
-cercare Zeth sì. È la regola dell'Abbazia (`ADR-10` interno: *l'oppressione
+cercare Zeth sì. È la regola dell'Abbazia (*l'oppressione
 avanza sulle scoperte*), e serve a non punire proprio il comportamento che
 questo master vuole ottenere — **guardarsi intorno**.
 
@@ -1910,7 +3195,7 @@ loro: ogni cosa costa tacche. Nei quartieri ci sono il banchetto (+1 morale ai T
 mangiano: il +2 morale della benedizione dei chierici di Hammerfist non vale sui TS, quindi i due non si
 sommano sullo stesso tiro), fabbri che affilano le armi, chierici che benedicono.
 
-> **Read-aloud (LotR lead) — i quartieri ospiti.** *Una sala bassa e fredda,
+> **Read-aloud — i quartieri ospiti.** *Una sala bassa e fredda,
 > scavata nella roccia: il soffitto porta ancora i colpi dello scalpello, dritti e
 > fitti come le righe di un registro. Sei brande di legno nuovo lungo il muro,
 > e su ognuna una coperta piegata in quattro da qualcuno che aveva fretta.
@@ -1927,7 +3212,7 @@ piombo, del primo crollo, e nessuno ci dorme sotto.
 corridoio. È qui che si comprano pozioni, bacchette e incantesimi (il banco
 della fucina, più sotto, ha i prezzi).
 
-> **Read-aloud (Casa di Davide lead) — la cappella.** *Al posto dell'altare
+> **Read-aloud — la cappella.** *Al posto dell'altare
 > c'è un'incudine vecchia, portata giù dalla prima forgia, e intorno ai piedi
 > la pietra è consumata a conca da generazioni di ginocchia. Venti chierici
 > dormono seduti, con la schiena al muro freddo, per essere già in piedi quando
@@ -1950,7 +3235,7 @@ della fucina, più sotto, ha i prezzi).
 **La bottega dell'alchimista.** In fondo al corridoio della fucina, dove
 l'odore di zolfo copre quello del carbone.
 
-> **Read-aloud (Andor lead) — la bottega.** *Una porta bassa, foderata di
+> **Read-aloud — la bottega.** *Una porta bassa, foderata di
 > piombo. Dentro l'aria sa di zolfo e punge gli occhi. Sul banco, in fila come
 > soldati, fiasche di terracotta tappate con la cera, e sotto il banco una cassa di
 > sabbia per quando qualcosa va storto. Una nana senza sopracciglia riempie
@@ -1967,7 +3252,7 @@ l'odore di zolfo copre quello del carbone.
 | **Eco** | le bombe sono una sua invenzione, e nel 1372 nessuno sa più farle così |
 
 - **HELLA — i Treant dell'alba.** All'alba Hella usa l'**Evocazione dei Guardiani** sui semi
-  I e II: **due Treant di Adamantio** (statblocco in «La Resurrezione di Hella» Appendice A.2: Grandi, 90 pf, RD
+  I e II: **due Treant di Adamantio** (statblocco in «La Resurrezione di Hella» Appendice A.2: Grandi, 95 pf, RD
   10/adamantio, CA 24, Vel 9 m, 2 schianti +18 (2d8+9), danni doppi alle
   strutture, durano 1 ora; FOR 29, TS Temp +12, Rifl +3, Vol +8, vulnerabili al fuoco, come in «La Resurrezione di Hella» A.2) che caricano il
   fianco dell'orda. Costa **due** delle tre cariche del giorno, e la tacca della
@@ -2002,7 +3287,7 @@ all'alba. Le scelte, con quello che cambiano:
 | Dove | Cosa cambia | Quanto costa |
 |---|---|---|
 | **Fuori dalla tenda, contro i rinforzi** (Scena 8, dopo un allarme) | la RD 10/adamantio rende un Treant quasi intoccabile per le ronde (orchi combattenti, falchion 2d4+4, Appendice A.6) e per gli squadroni (spada lunga 1d8+3). **Uno** tiene un lato: le ronde arrivano in **2d4+2** round invece di 1d4+2, gli squadroni in **3d4+2**. **Due** tengono la tenda: dentro non entra nessuno finché restano in piedi, e lo scontro resta contro il generale. Gli sciamani passano, perché la RD non ferma un incantesimo | un Treant nel campo si vede da tutto il pendio: è l'allarme, anche se il corno non ha ancora suonato. **Due** chiamati insieme di notte spengono l'Evocazione per un mese. Il drago arriva al corno come sempre, in 70 round, e sui Treant soffia per primo |
-| **Dentro la tenda, contro Zog'tar** (Scena 8) | un Treant Grande sotto il colmo da 6 m ci sta. Fa da compagno per il fiancheggiamento e prende i colpi: l'ascia di Zog'tar (3d6+20) perde 10 sulla RD. Il **Colpo Devastante** su di lui non funziona, perché l'SRD lo vuole contro un avversario più piccolo e il Treant è Grande come Zog'tar: il generale lo colpisce con l'Attacco Poderoso e tiene il Colpo Devastante per i PG. La *barriera di lame* di Balvar sul palo centrale lo taglia come chiunque (13d6). Con due Treant dentro, chi si muove nella tenda ha poco spazio: i PG che volano restano sotto i 6 m del telo | lo scontro si accorcia, e Zog'tar cade prima. Il colpo finale resta al giocatore che lo dà, mai al Treant (`[HDYWTDT]`) |
+| **Dentro la tenda, contro Zog'tar** (Scena 8) | un Treant Grande sotto il colmo da 6 m ci sta. Fa da compagno per il fiancheggiamento e prende i colpi: l'ascia di Zog'tar (3d6+20) perde 10 sulla RD. Il **Colpo Terrificante** su di lui non funziona, perché l'SRD lo vuole contro un avversario più piccolo e il Treant è Grande come Zog'tar: il generale lo colpisce con l'Attacco Poderoso e tiene il Colpo Terrificante per i PG. La *barriera di lame* di Balvar sul palo centrale lo taglia come chiunque (13d6). Con due Treant dentro, chi si muove nella tenda ha poco spazio: i PG che volano restano sotto i 6 m del telo | lo scontro si accorcia, e Zog'tar cade prima. Il colpo finale resta al giocatore che lo dà, mai al Treant (`[HDYWTDT]`) |
 | **Sul fianco dell'orda, all'alba** (come scritto qui sopra) | **un successo in più** sulle mura (Scena 10, Q49), solo con **tutti e due** sul fianco | i Treant non sono nel duello |
 | **Nel duello con Skullcrusher** (Scena 11), uno o due | il drago vola, e un Treant non lo raggiunge finché resta in quota. Conta quando lo tirano giù: un Treant che tira la **corda** dell'ala (Scena 11, Forza CD 25) dà il suo aiuto +2 come chiunque, e quando il drago è a terra picchia con i colpi d'adamantio. Un albero non ha un nome da gridare (Scena 11, «Chi sceglie»): il drago li ignora finché non tengono la corda, e allora il soffio va sulla linea della corda | un Treant al duello è un Treant tolto al fianco: con uno solo sul fianco, niente successo in più. Il duello diventa più facile, ed è il prezzo pagato sulle mura |
 
@@ -2017,7 +3302,7 @@ tutti e tre, come dice la scheda della Collana in «La Resurrezione di Hella» �
 Un Treant solo, chiamato alla tenda, non
 toglie quindi niente ai due dell'alba.
 
-> **Read-aloud (Andor lead) — le gallerie.** *Sotto la fucina il caldo finisce
+> **Read-aloud — le gallerie.** *Sotto la fucina il caldo finisce
 > di colpo. Le gallerie sono strette, puntellate con travi nuove che sanno
 > ancora di resina, e ogni dieci passi una lampada a olio fa il suo cerchio di
 > luce e poi niente. Sulle pareti ci sono segni a gesso, e metà sono stati
@@ -2078,7 +3363,23 @@ gallerie sotto la fucina; cercarlo costa una tacca)*
   e la runa dura 70 minuti. Prezzo di pergamena SRD, 350 mo. Per
   **Durik** vale di più: la sua scheda gli dà +50% di danni dall'acido. La
   attiva chi la porta, toccando il bersaglio, perché *resistere all'energia*
-  è a contatto (SRD): su Durik la mette Hella `[INFERRED — needs DM confirmation]`.
+  è a contatto (SRD): su Durik la mette Hella.
+  Al tavolo nessuna era attiva prima dell'alba: alla vista del drago ne hanno
+  attivata **una, su Durik**, e l'altra resta da usare; Hella si è lanciata
+  addosso *protezione dall'energia* (acido).
+- **Il martello di Balvar a Zeth.** Se dopo la tenda i PG regalano a Zeth il
+  martello da guerra runico di Balvar (Scena 8, tesoro), Zeth ricambia con una
+  runa sua, incisa su un'arma che i PG scelgono: **+2 ai tiri per colpire
+  contro i draghi**. Delle rune che incide quella notte se ne attiva una sola,
+  questa, su un'arma delle mura che sceglie il gruppo (dove la incide un
+  gruppo che ha giocato lo dice il ramo della sua campagna, ADR-0156). È una regola della casa: l'SRD non ha una runa così, e il bonus più
+  vicino è il +2 al colpire di un'arma *anatema* contro il suo nemico, senza i
+  dadi in più. Vale **per un colpo solo**, come il potere contro i draghi dei
+  Bracieri: chi la attiva dichiara il tiro, e la runa si spegne dopo quello,
+  a segno o a vuoto. Per quel colpo l'arma conta
+  come magica e supera la RD/magia; se è una balestra la supera il dardo, come
+  le munizioni di un'arma con un bonus di potenziamento (SRD, *Damage
+  Reduction*). La runa si attiva una volta sola.
 - **Fermarsi o dormire — scelta.** In 3.5 ci sono solo le otto ore di sonno
   e il tempo che passa. **Tre ore di sosta** (2
   tacche) non ridanno incantesimi, perché l'SRD li restituisce solo dopo otto
@@ -2112,7 +3413,7 @@ Si arriva qui se i PG vogliono comprare, vendere o barattare. La fortezza
 non ha un mercato: ha una fucina che lavora per l'alba, e una maestra armaiola
 che decide cosa ne esce.
 
-> **Read-aloud (Salvatore lead, Andor support) — la fucina e il banco.** *La
+> **Read-aloud — la fucina e il banco.** *La
 > fucina è l'unico posto della fortezza dove nessuno parla sottovoce, e l'aria
 > sa di carbone e di scoria. Davanti a
 > tre forge accese aspettano file di ragazzi con quello che hanno trovato: un piccone,
@@ -2322,7 +3623,7 @@ quell'altro. Ai giocatori si dà l'handout «Le dieci boccette», che sta nel vo
 | 2 | stesso carro | **brodaglia degli sciamani**, vedi sotto | la riconosce subito e smette di ridere |
 | 3 | i quattro gnoll pompati | *forza del toro*, LI 3: +4 For per 3 minuti | pulita. È il motivo per cui gli gnoll erano pompati, con la *grazia del gatto* trovata insieme |
 | 4 | i minotauri | *cura ferite gravi*, LI 5: 3d8+5 | funziona, **ma c'è dell'altro**. Tappo di **cera nera**. Brynja: Divinazione. Vedi sotto |
-| 5 | stessi minotauri | *eroismo*, LI 5: +2 morale a attacchi, TS e prove di abilità per 50 minuti | pulita |
+| 5 | stessi minotauri | *eroismo*, LI 5: +2 morale ad attacchi, TS e prove di abilità per 50 minuti | pulita |
 | 6 | i nani sulla piattaforma d'osso | *cura ferite moderate*, LI 3: 2d8+3 | pulita. Stessa partita di quelle di Adrick Garthun |
 | 7 | il trono | *resistere all'energia* (fuoco), LI 3: resistenza 10 per 30 minuti | pulita. Vetro verde e spesso, tappo piombato, rune Dethek sul collo. Kettra ci passa il pollice sopra più del necessario: è il segno **della fucina del re**, la sua. Il vetro però non l'ha soffiato lei |
 | 8-9 | la stanza sotto la tomba, la chierica drow | *cura ferite moderate* ×2, LI 3 | pulite. È il kit personale della chierica, dalla sua scheda |
@@ -2480,8 +3781,11 @@ per questo conto il pesatore non ha trattenuto niente.
 della lista del chierico e del paladino, non del druido: la legge Artemis con
 Usare Oggetti Magici, CD 27 (20 più il 7° livello dell'incantatore, come il
 *silenzio* a CD 23 qui sopra). Le *cure* e *neutralizza veleno* le legge Hella
-se sono sulla lista del druido, che il mirror SRD del repo non riporta intera
-(da verificare); altrimenti Artemis, a CD 25 le *gravi* e a CD 27 le altre.
+senza prove di Usare Oggetti Magici: sono nella lista del druido (SRD 3.5:
+*cura ferite gravi* 4°, *cura ferite critiche* 5°, *neutralizza veleno* 3°)
+. Le serve solo una prova di livello
+dell'incantatore (CD pari al livello della pergamena più 1) se la pergamena è di
+livello più alto del suo (SRD 3.5, «Scrolls»).
 
 L'ascia e lo scudo **non sono stati fatti stanotte**: erano già nella forgia,
 pezzi rari che il capo fabbro teneva da parte. Tornano nel 1372 con i PG, che li
@@ -2553,7 +3857,12 @@ qui. Quello che hanno **venduto** resta qui, e ritorna come **reliquia** (§7).
 
 **In scena** — Dove: la postierla · il campo — Chi: Durin · Grask · i cavalieri dei lupi · la pattuglia di quattro orchi · le vedette goblin · lo squadrone hobgoblin · il corridore
 
-> **Read-aloud (Andor lead) — la postierla.** *A notte fonda si apre una
+**In tre righe**
+- **Succede**: dalla postierla al centro del campo, di notte, con la prova di gruppo del viaggio; ogni fallimento costa una tacca, e il terzo porta la pattuglia (EL 10).
+- **Chi vuole cosa**: l'orda dorme e non aspetta nessuno; Grask non lascia il corno, il corridore porta le notizie alla tenda.
+- **Come finisce**: davanti alla tenda senza farsi vedere, con una pattuglia alle calcagna o con il campo pre-allertato; dopo la tenda, il ritorno, che cambia se il corno ha suonato.
+
+> **Read-aloud — la postierla.** *A notte fonda si apre una
 > feritoia bassa nella roccia viva, di quelle che gli esploratori usano da
 > sempre e che nessun cronista mette per iscritto. Il fiato esce bianco nel
 > freddo. Durin vi accompagna fino all'imboccatura, vi mette una mano guantata
@@ -2591,7 +3900,7 @@ La terza riga è un **errore fecondo**: un tavolo che va a «salvare il nano
 prigioniero» trova Balvar lo stesso, e la trattativa della Scena 7 comincia con
 un equivoco che gli conviene.
 
-> **Read-aloud (Salvatore lead) — il campo.** *Fuori dalle mura il buio è vivo.
+> **Read-aloud — il campo.** *Fuori dalle mura il buio è vivo.
 > Diecimila fra orchetti, hobgoblin e cose peggiori dormono attorno a mille
 > fuochi, e il campo si stende fino all'orizzonte: un mare in cui ogni onda è
 > una gola che russa. L'aria sa di grasso bruciato, di ferro e di bestia, e da
@@ -2654,8 +3963,8 @@ gira l'anello dei lupi.
   tacca in più.
 - **Come combatte la pattuglia**. Sono
   soldati, non predoni: marciano in due file da quattro e combattono in coppia,
-  due su ogni PG che vedono, spalla a spalla per darsi il fiancheggiamento
-  (+2, SRD). **Non gridano**, perché in un campo che dorme un grido sveglia il
+  due su ogni PG che vedono, ai due lati opposti del PG per darsi il
+  fiancheggiamento (+2, SRD). **Non gridano**, perché in un campo che dorme un grido sveglia il
   generale, e il generale frusta chi l'ha svegliato. Per questo mandano un
   corridore, ed è il tiro di 1d6 qui sopra.
   - *Contro chi è invisibile* colpiscono il quadretto da cui è venuto il colpo,
@@ -2778,7 +4087,7 @@ qualche pozione d'*invisibilità* della cappella e una pietra che porta il
 in mezzo. È un buon piano, e il modulo lo premia: **niente prova di gruppo**.
 Il rischio non sparisce, si sposta alla tenda e sull'orologio del drago.
 
-> **Read-aloud (Salvatore lead) — il volo.** *Da quassù il campo è una
+> **Read-aloud — il volo.** *Da quassù il campo è una
 > brace sparsa sulla piana. I fuochi mandano tutti lo stesso odore di
 > grasso, e nessuno, laggiù, guarda in alto. Un russare sale fin qui, forte
 > come se venisse dalla tenda accanto. Poi la pietra fa il suo lavoro, e il mondo si
@@ -2875,7 +4184,7 @@ usa due cose diverse, e tutte e due si possono fare:
   come un visibile. Chi nel gruppo non è nano passa senza niente. Hella in
   forma selvatica resta una nana per la runa: la forma selvatica funziona
   come la forma alternativa dell'SRD, che conserva tipo e sottotipo. Da
-  aquila la fa scattare come da nana `[INFERRED — needs DM confirmation]`.
+  aquila la fa scattare come da nana.
 - **Il silenzio spegne i glifi, non la soglia.** Dentro la bolla della pietra
   nessuno subisce danni sonori e il boato non esce. *Epurare* invece non fa
   rumore, e il silenzio non lo ferma: chi varca la soglia invisibile si ritrova
@@ -2896,6 +4205,44 @@ usa due cose diverse, e tutte e due si possono fare:
   seggio che porta il glifo. Il consiglio non gli
   costa niente, e d'ora in poi i PG gli devono qualcosa.
 
+#### 💣 Variante — il barile sulla tenda
+
+Il gruppo del 25 settembre non è sceso: ha lasciato cadere sulla tenda una
+botte d'olio con i rostri e le fiale della fenice, e tiene in mano due
+barilotti. Le regole sono tutte nel supplemento «Il barile sulla tenda»
+(capitolo a sé nel booklet della serata); qui c'è solo dove si innesta nelle
+scene di questo master.
+
+- **Al posto delle Scene 7 e 8.** Niente soglia, niente trattativa, niente
+  scontro nella tenda: lo scontro è il barile, e si gioca con la scheda da
+  tavolo del supplemento, i dieci passi in ordine. La quota la scelgono i PG
+  (§2-bis del supplemento), e da lì vengono danno, deviazione e chi vede il
+  colmo. Le schede di Zog'tar, delle guardie e di Balvar restano quelle delle
+  Appendici A.2 e A.4.
+- **Le tacche.** Lo sgancio sta dentro la tacca del volo: non costa altro.
+  Grask è sveglio o addormentato secondo la tacca segnata all'arrivo sopra la
+  tenda (B9), come per chi atterra.
+- **L'iniziativa** si tira quando i PG decidono di sganciare. Il round di
+  sorpresa è solo loro; Balvar al round 1 non è colto alla sprovvista (B18).
+- **Le reazioni** sono la tabella «Le tattiche, round per round» del §8 del
+  supplemento: Zog'tar esce dal fuoco e grida al corno, il sacerdote al round
+  3 mette la *luce* sul giavellotto, Balvar al round 4 lancia *dissolvi
+  magie* ad area sul punto illuminato o alla cieca sulla verticale (B13: chi
+  perde il volo scende di 18 m a round per 1d6 round, e cade solo per
+  il tratto che resta). Grask suona entro 1d4 round dal boato,
+  se è vivo; se è morto il corno lo suona qualcun altro (§8, «Chi suona il
+  corno»). L'orda corre allo spiazzo con le torce (B25).
+- **Che cosa rischiano.** Chi resta sopra i 45 m, zitto, e si allontana dalla
+  verticale dopo lo sgancio, niente. Chi resta a guardare rischia il
+  giavellotto con la luce e il dissolvi. Chi scende sotto i 24 m nella luce
+  dell'incendio è visto (B24).
+- **Dopo il barile** valgono le righe del §10 del supplemento, cucite nelle
+  scene che seguono: il ritorno (Scena 9), le mura (Scena 10, tabella «Dalla
+  notte»), il duello (Scena 11, «Dopo il barile») e l'Echo Ledger (§7).
+- **Se scendono dopo il barile** per finire il lavoro, la Scena 8 si gioca
+  com'è, ma con la tenda in fiamme o crollata, il campo sveglio e i rinforzi
+  della tabella «L'orda» del §8 del supplemento già in strada.
+
 **Come torna il drago**. Il **corno da
 guerra di ferro nero** (§8 B) non è una curiosità: Balvar ci ha inciso la runa
 gemella di quella sulla scaglia sternale. Quando il corno suona, la Catena tira
@@ -2908,7 +4255,7 @@ Dalla gemella sul corno, Skullcrusher ascolta: quello che si dice vicino a
 Grask gli arriva sulle colline come un sussurro, e all'alba sa i nomi che i
 PG si sono detti alla tenda (Scena 7, «Che cosa muove Skullcrusher»). Fuori
 dal telo sente anche chi parla sottovoce; da dentro la tenda, come Grask,
-solo i gridi `[INFERRED — needs DM confirmation: la portata del sussurro]`.
+solo i gridi.
 
 **Comparse**
 
@@ -2959,11 +4306,16 @@ solo i gridi `[INFERRED — needs DM confirmation: la portata del sussurro]`.
 
 **In scena** — Dove: la tenda — Chi: Zog'tar · Balvar · le quattro guardie
 
-> **Read-aloud (Andor lead) — la tenda.** *Al centro del campo, una tenda più
+**In tre righe**
+- **Succede**: i PG entrano nella tenda di Zog'tar, dove Balvar incide sullo sgabello in fondo; se parlano prima di colpire, Balvar tratta.
+- **Chi vuole cosa**: Zog'tar vuole Hammerfist e racconta come impalerà il re; Balvar vuole che la fortezza cada in fretta, perché ha già visto la fame di un assedio lungo.
+- **Come finisce**: con Balvar che parla o tace, e con Zog'tar che si alza dal seggio: è la Scena 8.
+
+> **Read-aloud — la tenda.** *Al centro del campo, una tenda più
 > alta delle altre, di pelle nera, con ossa ai tiranti che battono nel vento.
 > Le pattuglie qui non passano. Dentro si ride.*
 
-> **Read-aloud (Salvatore lead) — dentro.** *Fa caldo, e c'è puzza di sangue
+> **Read-aloud — dentro.** *Fa caldo, e c'è puzza di sangue
 > secco e di carne mezza cruda. Sulla tavola, una mappa di Hammerfist piena di
 > croci rosse. In fondo, su un seggio di vertebre e di teschi inchiodati, c'è un
 > mezzo-ogre grande quanto una porta di stalla. Ha una pietra nera al posto
@@ -2973,6 +4325,7 @@ solo i gridi `[INFERRED — needs DM confirmation: la portata del sussurro]`.
 
 **Scheda d'entrata — Zog'tar Deatheye, il generale** *(statistiche: Appendice A)*
 
+<!-- blocco: zogtar-chi -->
 | | |
 |---|---|
 | **Aspetto** | mezzo-ogre, grande quanto una porta di stalla, armatura completa di mithral annerita, di fattura nanica, presa ai nani. L'ascia a due mani appoggiata alla spalla. Al posto dell'occhio destro, una pietra nera levigata: l'**Occhio di Ossidiana**, un occhio vero |
@@ -2981,6 +4334,7 @@ solo i gridi `[INFERRED — needs DM confirmation: la portata del sussurro]`.
 | **Sa** | niente dei PG, a meno che il corridore non sia arrivato |
 | **Eco** | come muore decide come comincia il duello. Se viene **umiliato e non ucciso**, l'orda che mille anni dopo sarà la Mano Rossa ha un generale in più nei suoi canti |
 | **Ritratto** | qui sotto. Ai giocatori si mostra dopo l'incontro, non prima |
+<!-- /blocco -->
 
 ![Zog'tar Deatheye, il generale](../../Immagini/web/zogtar-deatheye.jpg)
 
@@ -3060,6 +4414,7 @@ Corona lo è più di tutto il resto. Nel box 2 qui sotto, allora, non guarda
 **Scheda d'entrata — Balvar Fuocospento, il runaio esiliato** *(statistiche:
 Appendice A)*
 
+<!-- blocco: balvar-chi -->
 | | |
 |---|---|
 | **Aspetto** | nano dello scudo vecchio, grembiule di cuoio, seduto su uno sgabello da bottega. Sulle ginocchia una lastra d'ardesia, in mano una punta di ferro |
@@ -3068,6 +4423,7 @@ Appendice A)*
 | **Sa** | **che i PG non sono di questo secolo**, unico in tutta Hammerfist. Dove vanno colpite le mura. La runa-vincolo sulla scaglia del drago, perché l'ha incisa lui |
 | **Non dice** | che ha un nipote di diciannove anni sul camminamento. Mai per primo |
 | **Ritratto** | qui sotto. Ai giocatori si mostra dopo l'incontro, non prima |
+<!-- /blocco -->
 
 ![Balvar Fuocospento, il runaio esiliato](../../Immagini/ritratti/balvar-fuocospento.jpg)
 
@@ -3088,7 +4444,7 @@ mano ferma.
 Non comanda l'orda. **Consiglia**, e per questo è più pericoloso del generale:
 Zog'tar sa uccidere diecimila uomini, Balvar sa **dove** vanno colpite le mura.
 
-#### ⚖️ Il grigio — perché **crede di aver ragione** *(pilastro GoT)*
+#### ⚖️ Il grigio — perché **crede di aver ragione**
 
 
 | | |
@@ -3123,17 +4479,17 @@ Hald è il figlio di sua sorella), oppure se
 un PG nano gli chiede chi ha lasciato a Hammerfist — **Diplomazia CD 18**, e
 funziona solo se non l'hanno ancora minacciato.
 
-> **Read-aloud (Andor lead) — il primo incontro, 1 di 3, poi FERMATI.** *In fondo alla tenda, dove
+> **Read-aloud — il primo incontro, 1 di 3, poi FERMATI.** *In fondo alla tenda, dove
 > la luce dei bracieri non arriva, un vecchio è seduto su uno sgabello da
 > bottega. Grembiule di cuoio. Sulle ginocchia una lastra di ardesia che sta
 > incidendo con una punta di ferro, piano, come se fuori non ci fossero
 > diecimila tende e un drago.*
 
-> **Read-aloud (Andor lead) — 2 di 3, dopo che qualcuno ha reagito.** *Alza la
+> **Read-aloud — 2 di 3, dopo che qualcuno ha reagito.** *Alza la
 > testa e vi guarda lentamente, uno per uno. Sulla gemma del vostro capo si
 > ferma un istante di troppo. Poi torna a incidere. Non chiama la guardia.*
 
-> **Read-aloud (Andor lead) — 3 di 3, solo quando il silenzio diventa scomodo.** *Il vecchio parla piano, da artigiano, senza fretta: «Quella
+> **Read-aloud — 3 di 3, solo quando il silenzio diventa scomodo.** *Il vecchio parla piano, da artigiano, senza fretta: «Quella
 > corona la finirono con tre gemme. Tu ne hai due.» Un colpo di punta
 > sull'ardesia. «Quindi non è oggi.»*
 
@@ -3241,7 +4597,7 @@ paura»). I nomi non li chiede: un PG sano di mente non glieli darebbe.
 | **Vuole** | il tesoro di Hammerfist, e uccidere un secondo re **davanti all'orda**, con diecimila bocche che poi lo raccontano |
 | **Teme** | che si veda il guinzaglio: che l'orda capisca che il suo drago torna quando lo chiamano |
 | **Ha in mano** | le ali. Senza di lui l'assalto è una scala appoggiata alla pietra, e Zog'tar lo sa |
-| **Prossimo passo** | all'alba, al corno, cala sul cortile dove sta il re |
+| **Prossimo passo** | all'alba, al corno, cala sul cortile dietro la porta principale: è la porta che gli arieti battono, e il re la difende da dentro. Se la apre, l'orda la vede cedere, e il tesoro è suo |
 
 **Cosa ne fa il tavolo.** Quattro leve, e nessun numero nuovo:
 
@@ -3291,7 +4647,7 @@ incantesimi: se qualcuno prova a teletrasportarsi fuori, la lancia.
 **Tattica**: *righteous might* al round 1 e *slay living* (Tempra CD 20) sul
 più fragile al round 2, **prima** del silenzio, perché tutti e due hanno la
 componente verbale. Chi fallisce il TS contro *slay living* muore davvero,
-come nell'SRD: la cattura del Q29 vale per chi cade a 0 pf, non per chi muore.
+come nell'SRD: la cattura («Se va male nella tenda») vale per chi cade a 0 pf, non per chi muore.
 Si torna con *rianimare morti* alla cappella, che ha l'unico diamante della
 fortezza (5.450 mo, Scena 5), o con *reincarnazione*, se Hella l'ha preparata.
 Dal round 3 attiva la runa del *silenzio* su di sé e usa
@@ -3365,9 +4721,14 @@ Balvar è morto da mille anni comunque vada. Ma:
 
 **In scena** — Dove: la tenda — Chi: Zog'tar · le quattro guardie · Balvar · il sacerdote dell'orda
 
+**In tre righe**
+- **Succede**: lo scontro nella tenda con Zog'tar, le quattro guardie, il sacerdote e Balvar, se non è passato ai PG.
+- **Chi vuole cosa**: Zog'tar vuole uccidere chi è entrato davanti ai suoi, le guardie lo coprono, Grask non lascia il corno.
+- **Come finisce**: Zog'tar ucciso in silenzio, ucciso in modo spettacolare o umiliato e vivo (Via A); l'esito va nell'Echo Ledger (§7) e pesa sulle mura e sul drago.
+
 *La scheda d'entrata di Zog'tar è nella Scena 7, dove i PG lo vedono per la prima volta.*
 
-> **Read-aloud (Salvatore lead) — la tenda, il seggio.** *Il mezzo-ogre si alza
+> **Read-aloud — la tenda, il seggio.** *Il mezzo-ogre si alza
 > dal seggio, e i teschi inchiodati sbattono fra loro come nacchere. Non grida
 > subito. Prima gira la testa, e la pietra nera dove dovrebbe esserci l'occhio
 > si ferma sul più vicino di voi. Poi l'ascia scende dalla spalla.*
@@ -3415,7 +4776,7 @@ motivo per cui la Scena 7 viene prima.
     distanza, 1d8+13 in Ira, incremento 9 m. E se il volo dura, **abbatte il
     palo centrale** (Forza **CD 20**, azione standard): il colmo è fatto di due
     travi incastrate sul palo centrale, e senza quello cadono e si portano
-    dietro i pali di testa `[INFERRED — needs DM confirmation]`. Il telo crolla, e chi è
+    dietro i pali di testa. Il telo crolla, e chi è
     in volo sotto finisce a terra, intralciato, finché non supera Riflessi
     **CD 15** (un tentativo per round). Le guardie e lui escono dal telo in un
     round;
@@ -3480,14 +4841,14 @@ motivo per cui la Scena 7 viene prima.
 - **Round 2-3**: carica il bersaglio che fa più danni, **Attacco Poderoso**
   moderato (−5/+10) se ha colpito bene.
   Contro chi porta armatura leggera o niente (Artemis, Hella in forma
-  normale) non alza l'Attacco Poderoso: usa il **Colpo Devastante** e lo
+  normale) non alza l'Attacco Poderoso: usa il **Colpo Terrificante** e lo
   scaglia lontano, contro un palo o fuori dal telo. Un nano scagliato contro
   il telo del seggio (N15–P15) fa scattare il glifo legato ai nani,
   e il boato è un allarme. Separa il gruppo e lascia
   vivo il bersaglio. Se Artemis lo martella, si gira su di lui.
 - **Danno massiccio** (regola SRD, attiva nelle regole della casa). Con
   l'Attacco Poderoso pieno o un critico l'ascia supera spesso i 50 danni: il
-  bersaglio tira Tempra CD 15 o muore. La cattura del Q29 vale per chi cade a
+  bersaglio tira Tempra CD 15 o muore. La cattura («Se va male nella tenda») vale per chi cade a
   0 pf, non per chi fallisce questo TS.
 - **Soglia 30% pf**: combatte disperato, cerca di **portare un PG con sé** nella
   morte (un ultimo Attacco Poderoso pieno, −15/+30, Appendice A.2).
@@ -3520,7 +4881,7 @@ motivo per cui la Scena 7 viene prima.
 - **Il bottino e il tempo**: le armature della tenda, quanto pesano, quando
   si possono togliere e dove stanno nel buco portatile sono in §8 B, «Il
   bottino della tenda e il tempo».
-- **Curarsi prima di ripartire** `[INFERRED — needs DM confirmation]`. Le
+- **Curarsi prima di ripartire**. Le
   bacchette di cura funzionano anche nella tenda, ma la tenda è circondata
   dalle ronde, e ogni carica è il round di chi la usa. Se il gruppo, in tutto,
   spende **più di 20 cariche** di bacchetta prima di ripartire dalla tenda,
@@ -3717,6 +5078,11 @@ si gioca su M7-B.
 
 **In scena** — Dove: fra le tende — Chi: Vatore
 
+**In tre righe**
+- **Succede**: al ritorno, fra le tende, i PG incrociano Vatore, il ladro che diventerà Sal; dieci minuti.
+- **Chi vuole cosa**: Vatore vuole potere e che il conto lo paghino altri, e ha paura di quattro persone che non dovrebbero esistere.
+- **Come finisce**: Vatore sopravvive comunque (il Cronolito lo salva a 1 pf); se i PG tornano in volo senza scendere, lo si ritrova sulle mura all'alba.
+
 **Scheda d'entrata — Vatore, il ladro che diventerà Sal**
 
 | | |
@@ -3753,7 +5119,7 @@ con un **terrore reverenziale mal mascherato**.
 > renderlo **Sal**. Nella scena non è un innocente ingenuo: è un uomo che ha
 > già scelto l'ombra, e che ora vede in VOI un potere che vorrebbe rubare.
 
-> **Read-aloud (Andor lead) — fra le tende, l'incontro che non capiscono.** *Tra due tende c'è un uomo che non è dell'orda.
+> **Read-aloud — fra le tende, l'incontro che non capiscono.** *Tra due tende c'è un uomo che non è dell'orda.
 > Veste ombre cucite bene, e stringe al petto qualcosa avvolto in un panno.
 > Non attacca. E non scappa, non subito. Vi fissa come si fissa una cosa che
 > non dovrebbe esistere, e sussurra, più a sé stesso che a voi: «…quattro.
@@ -3763,7 +5129,7 @@ con un **terrore reverenziale mal mascherato**.
 
 **A parte, al giocatore di Artemis**, subito dopo:
 
-> **Read-aloud (Andor lead) — l'anello.** *Artemis, l'anello che porti al dito
+> **Read-aloud — l'anello.** *Artemis, l'anello che porti al dito
 > è diventato gelido.*
 
 **Le risposte del party (grigie — non sanno cosa diventerà):**
@@ -3807,13 +5173,19 @@ al 12° non ha gradi: chiedi al tavolo, prima della scena, se qualcuno li ha
 comprati. Per chi non li ha, il fagotto si strappa di mano: lo afferra chi
 gli mette le mani addosso, Vatore attiva il Cronolito come quando lo tengono,
 e chi stringeva il fagotto se lo ritrova in mano. Vale la riga «Lo derubano»
-riuscita, e Vatore sa chi è stato `[INFERRED — needs DM confirmation]`.
+riuscita, e Vatore sa chi è stato.
 
 **Se uno di loro porta il segno** (la cura con la cera nera, Scena 5). Vatore
 guarda quel polso prima di quel volto. Per lui quel PG è della gilda, e il
 terrore diventa complicità: parla a lui per primo, a voce bassa, e con lui la
 riga «Gli parlano» riesce con **CD 14**. Il segno resta il suo ricordo di loro:
 in ARC-09 Sal lo cerca su quel polso.
+
+**Dopo il barile**. Il campo è sveglio e le
+bande d'orchi corrono allo spiazzo con le torce: Vatore si ferma fra due tende
+a guardare il fuoco, e la scena dall'alto comincia lì. Chi torna a piedi tira
+il ritorno della Scena 6 a **CD +2**, perché i lupi si sono stretti sotto le
+vie. Se il corno ha suonato, vale anche «Se il corno suona di notte» (Scena 6).
 
 **Se tornano in volo.** Sopra i 20 m nessuno ha motivo di scendere fra le
 tende. Lo vedono dall'alto, un incappucciato che si ferma fra due tende e
@@ -3855,9 +5227,9 @@ L'artefatto che stringe al petto è in **Appendice B**.
 > cala sul cortile, il rito all'incudine, la luce del Rubino.
 >
 > 🛑 **Dove si ferma una serata**: per chi gioca l'arco da capo, la prima serata si ferma al primo box della Scena 10,
-> e il resto dell'atto è della sessione dopo. Il gruppo di oggi si è fermato
-> prima, alla Scena 5 (§4, «Dove si riprende»), e la sua serata dopo si ferma
-> sull'esito del duello, prima della Scena 12.
+> e il resto dell'atto è della sessione dopo. Un gruppo che riprende a metà
+> si ferma dove dice la regia della sua serata, sul suo ramo di gruppo.
+> 
 
 | Scena | Dove | Chi entra | Prova | Se fanno l'inatteso | Al tavolo |
 |---|---|---|---|---|---:|
@@ -3869,13 +5241,18 @@ L'artefatto che stringe al petto è in **Appendice B**.
 
 ### SCENA 10 — Le mura all'alba
 
-**In scena** — Dove: le mura — Chi: Hrodgar · Re Thorek I
+**In scena** — Dove: le mura — Chi: Hrodgar · Re Thorek I · Zog'tar Deatheye, se è vivo all'alba
+
+**In tre righe**
+- **Succede**: il primo ariete arriva alle mura e il gruppo sceglie una via su tre per una prova collettiva, dopo la tabella «Dalla notte».
+- **Chi vuole cosa**: l'orda vuole la breccia prima che il sole superi il crinale; Re Thorek I e il capitano delle mura vogliono tenere il camminamento est.
+- **Come finisce**: mura tenute saldamente, a stento o breccia ceduta; il dado dei caduti dice quanti difensori con un nome muoiono, poi il drago cala sul cortile.
 
 Si arriva qui **dove le tacche hanno lasciato i PG** (tabella di uscita
 dell'orologio, §4). Se Hella ha vegliato i semi, i **due Treant di Adamantio**
 caricano il fianco dell'orda mentre il primo ariete arriva (Scena 5).
 
-> **Read-aloud (Salvatore lead, LotR support) — le mura.** *Il primo ariete
+> **Read-aloud — le mura.** *Il primo ariete
 > arriva alle mura che il sole non è ancora sopra il crinale, e il legno prende
 > la pietra con un rimbombo che arriva allo sterno prima che alle orecchie. Il
 > camminamento vi si muove sotto i piedi di un dito. Un nano accanto a voi si sputa
@@ -3889,7 +5266,7 @@ caricano il fianco dell'orda mentre il primo ariete arriva (Scena 5).
 piana si vede tutta, 100 m sotto. Il primo ariete sale dalla spianata alla
 porta per la rampa del fronte sud; le scale arrivano sul tratto est, dove il
 fianco della montagna tocca il piede delle mura, ed è lì che sta Hrodgar
-`[INFERRED — needs DM confirmation]` (M7-A, «La rampa della porta»).
+ (M7-A, «La rampa della porta»).
 
 Poi, quando le prime scale arrivano in cima, arriva il capitano delle mura.
 
@@ -3899,8 +5276,9 @@ Poi, quando le prime scale arrivano in cima, arriva il capitano delle mura.
 |---|---|---|
 | **Hrodgar, il capitano delle mura** | nano con la barba bruciata da un lato, di un'altra battaglia, e un elmo senza cresta perché la cresta si vede da lontano. Vuole tenere il tratto est fino a che il re non gli dice di lasciarlo, e sa dove la pietra è più giovane: lo stesso punto che Balvar ha segnato sulla mappa di Zog'tar | dà gli ordini con una parola sola |
 | **Hald, il nipote di Balvar** | nano di diciannove anni, di guardia sul camminamento est col gruppo di Hrodgar; la barba ancora corta, l'ascia troppo nuova. Non sa che lo zio esiliato è vivo, né che è nel campo di Zog'tar | poco e a bassa voce, da recluta; si drizza quando passa il capitano |
+| **Zog'tar Deatheye, se è vivo all'alba** | il generale mezzo-ogre, l'ascia in mano e la pietra nera al posto dell'occhio destro, che guida l'orda sotto le mura; con 0-1 successi sale sulla breccia (la tattica sul camminamento è sotto la tabella «Dalla notte», la scheda d'entrata nella Scena 7) | conta, sempre: *«due file», «tre ore», «cento»*. In ira: *«A ME, CANI! ABBATTETE LE OMBRE!»* |
 
-> **Read-aloud (Salvatore lead) — il camminamento.** *Il camminamento è largo
+> **Read-aloud — il camminamento.** *Il camminamento è largo
 > quanto un tavolo da pranzo e lungo quanto la fortezza. Sotto, l'orda non
 > urla più: ha smesso quando ha cominciato a salire, e il silenzio che ha
 > lasciato è peggio. Un uncino morde la pietra a tre passi da voi, poi un
@@ -3933,6 +5311,9 @@ un successo in più o in meno, e si applica dopo i tiri:
 | cure comprate alla cappella (Scena 5) | nessuno sulla prova. Si tira il **dado dei caduti**: 1d4 per ogni tipo di cura comprata (per il gruppo del 25 settembre, quattro tiri). Il numero è quanti difensori con un nome muoiono sulle mura per quella cura mancata; il DM li annota fra i caduti del 372. Non tocca ARC-08 |
 | i due Treant dell'alba caricano il fianco dell'orda (Scena 5) | **un successo in più** |
 | **Zog'tar è vivo all'alba** (il gruppo ha dormito, o non è arrivato alla tenda) | **un successo in meno**, e Zog'tar guida l'assalto: vedi sotto |
+| **il barile sulla tenda**: il boato è un allarme (supplemento, §10) | **un successo in meno**, anche se la tenda è bruciata |
+| **il barile, e Zog'tar tirato fuori dal fuoco davanti ai suoi** | vale «umiliato davanti alle guardie»: annulla il successo in meno dell'allarme (B11) |
+| **il barile, e Zog'tar vivo** (quasi sempre: §7 del supplemento) | la riga «Zog'tar è vivo all'alba» qui sopra, un successo in meno. Se il barile ha ucciso il sacerdote, sulla breccia sale senza di lui, come già scritto |
 
 **Se Zog'tar è vivo all'alba**. Guida l'orda sotto le mura. Con
 **0-1 successi** sale sulla breccia del camminamento est con le sue quattro
@@ -3951,21 +5332,49 @@ camminamento è largo quanto un tavolo da pranzo: ci si sta in uno, al massimo
 in due. Zog'tar è Grande e arriva a 3 m, quindi colpisce oltre il primo nano. Lassù
 **si stringe** (SRD): −4 al colpire e −4 alla CA finché resta sul camminamento,
 ed è per questo che vuole buttare giù chi ha davanti.
-- **Round 1**: Ira, e l'Occhio di Ossidiana su chi porta la Corona. Le quattro
-  guardie tengono la testa delle scale alle sue spalle: chi vuole arrivargli
-  dietro deve passare da loro.
-- **Round 2 e dopo**: il **Colpo Devastante** (Appendice A.2) su chi gli sta
-  davanti, perché non deve entrare nel suo spazio; **Spingere Migliorato** solo
-  se il bersaglio è già al bordo. Thorik e Tordek hanno la stabilità dei nani,
+
+**Che cosa sa all'alba.** Il generale che sale sulla breccia non è quello della
+tenda: porta addosso la notte. Ha INT 16, ed è arrogante, non stupido.
+
+| Che cosa è successo di notte | Da dove lo sa | Che cosa cambia lassù |
+|---|---|---|
+| Il barile | il boato e la botte di Hammerfist nel fuoco (BARILE §8) | sa che i nani volano e vengono dall'alto («Dall'alto. Hanno ali.», B21). Le guardie in fondo alla scala guardano in alto e tengono i giavellotti per chi vola |
+| È ustionato | il fuoco della tenda | parte da **283 pf**, pieni: 249 dopo il fuoco (mediana, BARILE §7), più 15 di riposo (SRD), più le due pozioni di *cura ferite gravi* che beve di notte (in media 37, A.2). Il sacerdote non ha cure preparate (A.2) e non lo cura. Gli restano i segni delle ustioni |
+| Le guardie sono bruciate | il fuoco della tenda | 20-23 pf l'una, più 8 di riposo: chi scende alle spalle le trova a metà |
+| Thorik non si piega | lo vede al round 1: la Presenza Minacciosa gli scivola addosso (Mente Vuota della Corona) | sa chi deve togliere dalla linea per primo |
+
+Sale lo stesso: ai suoi ha detto che chi ha attraversato il fuoco vince (BARILE
+§8), e davanti all'orda non può tirarsi indietro. Lassù gioca per separare.
+
+- **Round 1**: Ira, e l'Occhio di Ossidiana su **Tordek**, che la sua Presenza
+  può piegare e che in ira ha la CA più bassa dei due nani; con l'azione che
+  resta, un colpo d'ascia. Le quattro guardie tengono la testa delle scale alle
+  sue spalle: chi vuole arrivargli dietro deve passare da loro.
+- **Round 2 e dopo: separa e finisce**. Se i
+  due nani gli stanno davanti, il **Colpo Terrificante** (Appendice A.2) butta
+  **Thorik** giù dal camminamento: è quello che non si piega, e senza di lui
+  Tordek resta solo. Con Thorik nel cortile (due round per rialzarsi e
+  risalire la scala), l'**attacco completo** con Attacco Poderoso −5/+10 su chi
+  resta davanti, Tordek se è in piedi. Quando Thorik torna in linea, lo butta
+  giù di nuovo. **Spingere Migliorato** solo se il bersaglio è già al bordo. Thorik e Tordek hanno la stabilità dei nani,
   +4 contro la spinta (SRD). Sul camminamento non c'è dove arretrare, e un PG
   scagliato oltre il bordo cade nel cortile o fuori, fra l'orda: le mura sono
   alte **4,5 m** (mappa M7-B), cioè 1d6 di caduta (SRD). Fa poco male; il
   guaio è dove si atterra. Chi cade fuori ha un round per rialzarsi, e intorno
   ci sono scale e uncini. Vale per il tratto est, dove fuori c'è il pendio. Dal
   muro sud, che sta sul ciglio del gradone, si cade sulla spianata, 24,5 m più
-  in basso: 8d6 `[INFERRED — needs DM confirmation]`.
+  in basso: 8d6.
 - **Contro chi vola**: i giavellotti, come nella tenda. Non lascia la breccia
   per inseguire nessuno: la breccia è sua.
+- **Quanto dura, misurato** (20.000 prove, PG della carta del 05/11, bonus
+  d'attacco dei nani stimati). Stretto
+  a CA 20, con Artemis e Hella che lo colpiscono dall'alto, Zog'tar muore
+  **quasi sempre, in circa 3 round**. Con «separa e finisce» e i 283 pf delle
+  due pozioni un PG muore in una prova su tre (35%); con 264 pf ai PG
+  restava circa il 76% dei pf per il drago; con il
+  solo Colpo su chi ha davanti era l'11% e l'81%. **Se combatte fuori dal
+  camminamento**, dove non si stringe, le morti salgono al 69%: sulla breccia
+  il generale è forte quanto lo spazio che ha.
 - **Sotto il 30% dei pf** fa come nella tenda: cerca di portarsi via qualcuno.
 - **Se il drago cala mentre lui è vivo**, Zog'tar scende dalla scala e resta
   sotto le mura a guardare: vuole vedere il drago finirli. Il duello della
@@ -4010,6 +5419,21 @@ successo in più o in meno, si applica allo stesso modo.
 
 **In scena** — Dove: il cortile — Chi: Skullcrusher · Re Thorek I · Aegis Fang
 
+**In tre righe**
+- **Succede**: Skullcrusher il Nero cala sul cortile con due wyvern e combatte in passate, gridando i nomi che ha sentito di notte attraverso la Catena.
+- **Chi vuole cosa**: il drago vuole vincere davanti all'orda, perché per lui il potere è quello che gli altri hanno visto; Re Thorek I è nel cortile con i PG.
+- **Come finisce**: drago ucciso, ferito grave, fuggito, o vinto sporco (§6); con l'esito la serata si ferma, prima della Scena 12.
+
+**Dopo il barile**. Attraverso la
+gemella sul corno il drago ha sentito i gridi della notte, «Dall'alto. Hanno
+ali.» compreso: all'alba sa che i nani volano e **guarda in alto**. Chi lo
+aspetta in volo sopra il cortile non ha la sorpresa. La Catena regge anche se
+Balvar è morto nel fuoco: le rune incise sopravvivono al runaio. Se il corno
+ha suonato di notte vale «Se il corno suona di notte» (Scena 6): il drago parte
+già in quota e conosce il loro odore. Se nessuno l'ha suonato, perché Grask è
+morto e nessuno ha aperto la custodia, il drago arriva a metà mattina,
+furioso (Scena 6, «Se rubano o rompono il corno»).
+
 **Comparse**
 
 | Chi | Com'è | Come parla |
@@ -4019,6 +5443,7 @@ successo in più o in meno, si applica allo stesso modo.
 **Scheda d'entrata — Skullcrusher il Nero, il capostipite** *(statistiche:
 Appendice A)*
 
+<!-- blocco: skullcrusher-chi -->
 | | |
 |---|---|
 | **Aspetto** | drago nero vecchio (adulto maturo, se si usa l'Appendice A.1), snello e arrogante: collo lungo, cranio stretto e cornuto, scaglie nere opache con un riflesso verde d'olio. L'acido gli cola dalle fauci chiuse |
@@ -4027,6 +5452,7 @@ Appendice A)*
 | **Suona** | dice **il nome** dell'avversario prima di colpire, ogni volta. Il nome è l'incantesimo, *colpo accurato*: il morso arriva al round dopo. Non lo chiede: lo sa dal corno, o mette un epiteto al suo posto (Scena 7, «Che cosa muove Skullcrusher»). Per il resto provoca e commenta, e se il tavolo ci sta ci si parla |
 | **Eco** | la tabella B4 (§7): ogni ferita che gli fate, la Forgia la ricorderà contro **Fauci di Palude** nel 1372 |
 | **Ritratto** | la tavola qui sotto. Solo per il DM fino al duello |
+<!-- /blocco -->
 
 **SKULLCRUSHER (lento, divertito, forte perché lo sentano le mura):** *«Un re
 l'ho già mangiato, qui. Thorik. I tuoi amici lo dicono troppo forte, il tuo
@@ -4065,7 +5491,7 @@ le balestre tirano da lì. La fucina, la cisterna e le campane
 della tabella del cortile qui sotto non ci sono; le corde sì, quelle degli arieti
 rovesciati, con la stessa prova.
 
-> **Read-aloud (Salvatore lead) — il cortile.** *Prima arriva il freddo: passa
+> **Read-aloud — il cortile.** *Prima arriva il freddo: passa
 > un'ombra, e l'aria del cortile perde dieci gradi in un respiro, e la pelle
 > lo sa prima di voi. Poi il rumore, un risucchio come quello del mare che si
 > tira indietro, e le braci della forgia si piegano tutte nella stessa
@@ -4083,7 +5509,7 @@ a lui soltanto.
 **AEGIS FANG (non canta: urla, dentro il cranio):** *«SANGUE ANTICO. ARTEFICE
 DI LACRIME.»*
 
-> **Read-aloud (Mercer lead) — la visione, solo per Thorik.** *Per un istante
+> **Read-aloud — la visione, solo per Thorik.** *Per un istante
 > la Corona ti mostra due immagini sovrapposte: questo drago adesso, e un altro
 > drago sopra mura che bruciano, mura che non hai mai visto.*
 
@@ -4120,9 +5546,10 @@ accorcia, il primo passo indietro che il drago fa senza volerlo.
 > **Che fate?**
 
 ⚠️ **Dal round 3 si smette.** La regia serve a far **atterrare** l'inizio; se la
-tieni per otto round diventa una lettura e il combattimento si ferma. Dal terzo
-round si torna alle tattiche del drago, più sopra, e si descrive solo quello che
-cambia davvero.
+tieni per otto round diventa una lettura e il combattimento si ferma.
+
+Dal terzo round si torna alle tattiche del drago, più sopra, e si descrive solo
+quello che cambia davvero.
 
 #### Tattiche di Skullcrusher — regia round per round (stile RHoD, aggancio M7-B)
 > Scritte dal punto di vista del drago. Skullcrusher è **giovane nella sua
@@ -4146,9 +5573,12 @@ cambia davvero.
   soffio, se è tornato, lungo la linea più lunga che trova; il morso su chi
   ha nominato il turno prima; oppure il nome di un altro. Poi va oltre e
   risale. Punisce chi non ha gittata o volo. Bersaglio: «Chi sceglie», qui
-  sotto. Fra un turno e l'altro resta a circa 15 m sopra il cortile: Aegis Fang
-  scagliata, cinque incrementi da 3 m, ci arriva al limite, e il blast di
-  Artemis sempre. *Corrompere l'acqua* sulle
+  sotto. Fra un turno e l'altro resta a più di 18 m da tutti i PG col Vecchio,
+  a circa 15 m con l'Adulto: il blast di Artemis
+  ci arriva sempre, Aegis Fang
+  scagliata no. Cinque incrementi da 3 m fanno 15 m (SRD, armi da lancio), e
+  a fine passata il Vecchio è più lontano. Con l'Adulto, a circa 15 m, ci
+  arriva al limite. *Corrompere l'acqua* sulle
   pozioni: un uso prende le pozioni
   di un solo PG, perché l'SRD guasta 10 piedi cubi, poco più di un quarto di
   metro cubo, entro il raggio della Presenza. Ognuna tira a parte Volontà
@@ -4160,13 +5590,13 @@ cambia davvero.
     movimento e un'azione standard in un punto qualsiasi del movimento. Il
     soffio è un'azione standard: lo usa a metà della passata e continua a
     volare. Il morso in passata è un attacco solo.
-  - ***Virata*** (SRD, *Wingover*). Una volta per round, con un'azione
+  - ***Virare*** (SRD, *Wingover*). Una volta per round, con un'azione
     gratuita, gira fino a 180° nonostante la manovrabilità scarsa. La virata
     costa 3 m di volo, e nel round in cui vira non sale: resta in quota o
     scende. È il talento che gli fa girare un drago Enorme dentro un cortile
     di 36 m: entra, soffia, e torna indietro sulla stessa linea quando il
-    gruppo pensava di averlo alle spalle. 🔎 Il testo è quello dell'SRD letto
-    su una trascrizione: va riscontrato su d20srd.org.
+    gruppo pensava di averlo alle spalle. Riscontrato sull'SRD 3.5
+    («Monster Feats», *Wingover*): prerequisito velocità di volare.
   - ***Colpo accurato*** (SRD, *true strike*, stregone di 1°). Azione
     standard: +20 di intuizione al prossimo tiro per colpire, entro la fine
     del round dopo, e niente probabilità di mancare per occultamento. La
@@ -4178,14 +5608,14 @@ cambia davvero.
     sente il nome un round prima: chi è nominato sa che sarà colpito, e gli
     altri sanno su chi preparare la corda. Oltre all'*armatura magica* ha sei
     slot di 1°. ⚠ Non SRD: l'incantesimo vuole anche un fuoco, un piccolo
-    bersaglio di legno, e il drago non lo porta `[INFERRED — needs DM confirmation: il nome gridato vale da fuoco]`.
+    bersaglio di legno, e il drago non lo porta.
   - ***Fluttuare*** (SRD, *Hover*), **una volta sola**: alla prima paura, a
     ⅓ dei pf (la soglia qui sotto). Con un'azione di movimento si ferma in
-    aria, e da fermo si sposta in ogni direzione, anche in verticale, a metà
-    velocità, nonostante la manovrabilità scarsa. Se comincia il turno fermo
-    in aria può fare un'azione di round completo: niente attacchi d'ala, ma
-    morso, artigli e coda come in un attacco completo, oppure il soffio o un
-    incantesimo. Sotto i 6 m dal suolo, sopra le macerie e la cenere del
+    aria entro 15 m dai PG, e da fermo si sposta in ogni direzione, anche in verticale, a metà
+    velocità, nonostante la manovrabilità scarsa. La regola gli darebbe,
+    se comincia il turno fermo in aria, un'azione di round completo (morso,
+    artigli e coda); alla prima paura **non la usa**: esita, guarda, e in quel
+    round non attacca, né soffia, né lancia. Sotto i 6 m dal suolo, sopra le macerie e la cenere del
     cortile, alza una nube di 18 m di raggio: dentro si vede a 3 m, chi è a
     4,5-6 m ha occultamento (20%), chi è a 7,5 m o più occultamento totale
     (50%), e per lanciare un incantesimo nella nube serve Concentrazione
@@ -4206,15 +5636,23 @@ cambia davvero.
   un'arma da mischia lanciata, −4 al tiro e incremento 3 m, e torna in mano a
   Thorik prima del suo turno successivo (SRD, *da ritorno*). «Colpisce in
   volo» vuol dire un tiro a distanza a segno mentre il drago è in quota.
+  Col Vecchio, che chiude le passate a più di 18 m, l'ascia scagliata lo
+  raggiunge solo quando lui si avvicina: con un'azione preparata su «quando
+  picchia» entro 15 m, che è lo stesso innesco delle corde, o nel round
+  della prima paura: lì si ferma in aria entro 15 m, sopra i PG (sopra il
+  camminamento, se sono sulle mura), perché la sua paura la sentano, e l'ascia
+  ci arriva. Nel round in cui le
+  corde lo inchiodano è a terra, e il colpo non conta «in volo».
 - **La Catena, in ogni round.** Se i PG sanno della runa (Scena 7), leggerla
   sulla scaglia è un'azione di movimento entro 9 m, e colpirla è un attacco
-  contro **CA 44** col Vecchio e **41** con l'Adulto: la CA con l'armatura magica, 40 o 37, più 4 perché il bersaglio è piccolo; la runa è sotto la scaglia, e un attacco di contatto non la raggiunge: il primo colpo a segno la spezza, e il drago se ne va. Se
-  Balvar è morto prima dell'alba, il drago combatte a **−2** e fugge a metà pf.
+  contro **CA 47** col Vecchio (in pratica il 20 naturale) e **41** con l'Adulto: la CA con l'armatura magica, 43 o 37, più 4 perché il bersaglio è piccolo; la runa è sotto la scaglia, e un attacco di contatto non la raggiunge: il primo colpo a segno la spezza, e il drago se ne va. Se
+  Balvar è morto prima dell'alba, il drago combatte a **−2** e fugge a metà pf;
+  con la fuga si sposta tutta la soglia, prima paura e due colpi compresi.
 
 **Quando qualcuno la legge**, la prima volta:
 
 
-> **Read-aloud (Salvatore lead) — la runa sotto la scaglia.** *Sotto la scaglia
+> **Read-aloud — la runa sotto la scaglia.** *Sotto la scaglia
 > calda del petto, più pallida delle altre, corrono righe di rune naniche
 > incise a punta, fitte come i conti di un mercante. L'ultima riga è più piccola e
 > più fonda delle altre, ed è quella che il drago non ha mai letto.*
@@ -4227,7 +5665,9 @@ cambia davvero.
   chiede: o l'ha sentito al corno, o mette al suo posto un epiteto preso da
   quello che vede, che vale lo stesso. Fra
   quelli che lo chiamano, nell'ordine: chi ha detto la Catena ad alta voce;
-  chi tiene la corda dell'ala; chi lo ha ferito di più. A parità decide
+  chi colpisce l'orda o gli arieti dall'alto, perché gli toglie il tesoro
+  davanti a tutti; chi tiene la corda dell'ala;
+  chi lo ha ferito di più. A parità decide
   l'arroganza: sceglie quello la cui caduta fa più orrore agli altri, la
   druida appena tornata dalla morte o chi porta la Corona, e lo nomina in modo
   che lo sentano tutti.
@@ -4240,8 +5680,9 @@ cambia davvero.
   quei round le fa tacere con la coda, in passata (2d6+16 o 2d6+15), e viene
   prima del re. Il soffio lo tiene per i PG.
 - **Il re**. Re Thorek sta nel cortile alle spalle
-  dei PG. Se in un round nessun PG ha chiamato il drago (la Catena detta, la
-  corda, le ferite) e nessuno ha tirato con le balestre o
+  dei PG, davanti alla porta principale che gli arieti battono: è per la porta
+  e per lui che il drago cala lì, e non sulle mura. Se in un round nessun PG ha chiamato il drago (la Catena detta, l'orda
+  colpita dall'alto, la corda, le ferite) e nessuno ha tirato con le balestre o
   suonato le campane, Skullcrusher va su di lui: è il secondo re
   che vuole mangiare davanti all'orda. Chi sta sulla linea del soffio o
   accanto al re prende il colpo al posto suo. ⚠ Non SRD: in 3.5 non c'è
@@ -4256,7 +5697,7 @@ cambia davvero.
   giorno in cui il re è caduto.
 - **Soglia: quando gli resta un terzo dei pf, ~112 col Vecchio e ~100 con l'Adulto — la prima paura.** Per la prima volta nella sua vita,
   Skullcrusher **esita**, e **si ferma in aria** (*Fluttuare*): è l'unica
-  volta nel duello. È il momento dei tre esiti (sotto). Al suo turno
+  volta nel duello, e in quel round **non attacca**. È il momento dei tre esiti (sotto). Al suo turno
   fugge nelle paludi sotto la sua *oscurità*, a meno che nel round prima abbia preso **almeno due
   colpi**: allora resta fermo lì un round ancora, e lì si può uccidere (le soglie,
   più sotto). *«Qualcosa in lui — nel
@@ -4285,6 +5726,92 @@ cambia davvero.
   13). Se Skullcrusher ha **visto** Aegis Fang scagliata, il terrore di
   quell'arma entra nel sangue: Fauci, mille anni dopo, la riconoscerà (gancio
   inverso B4).
+
+#### 🧭 Dove sono i PG all'alba — dove cala il drago, e come
+
+> **Perché c'è.** Le tattiche qui sopra danno per scontato che i PG siano nel
+> cortile, accanto al re. Il tavolo può essere altrove: sulle mura dopo la
+> Scena 10, fuori, in volo, invisibile, o nemmeno lì. Il drago non li cerca per
+> nome: il nome è la componente di *colpo accurato*, non un motivo. Cala sul suo
+> obiettivo, e i PG diventano bersaglio quando ci stanno in mezzo o quando lo
+> chiamano («Chi sceglie», qui sopra). Tutto quello che usa è nella sua scheda
+> (Appendice A.1-bis): niente numeri nuovi.
+
+**Perché va sui PG, e non solo sul re.** Tre motivi, e nessuno è il nome:
+
+- **La Corona.** Il drago ha già mangiato un re in questa valle. Un nano con
+  una corona in testa, per lui, è un re: Thorik è un bersaglio come Re Thorek.
+- **Il barile.** Dai gridi della notte, attraverso il corno, sa che i nani
+  volanti hanno bruciato la tenda del generale (B21). Se l'assalto fallisce,
+  il tesoro che il patto gli promette non arriva mai.
+- **La strada.** Chi sta fra lui e il suo obiettivo, lo sta fermando.
+
+**Il round 1.** Il soffio d'apertura va sul gruppo più fitto **attorno al suo
+obiettivo**, cioè al re o alla porta. I PG lontani da lì non li cerca finché
+non lo chiamano.
+
+**Prima di partire, al corno.** Dopo il barile sa che i nani volano: lancia
+*vedere invisibilità* prima di lasciare le colline. Col Vecchio dura 70
+minuti (incantatore di 7°), quindi copre il volo di 70 round e tutto il
+duello. Le wyvern no: non vedono gli invisibili, li fiutano entro 9 m.
+
+<!-- tabella: larga -->
+
+| Dove sono i PG | Dove cala | Come combatte |
+|---|---|---|
+| **Nel cortile, col re** | il cortile, M7-B | come scritto qui sopra |
+| **Sulle mura**, dopo la Scena 10 | dietro la porta principale, sul cortile: è lì che apre la strada agli arieti, ed è lì che il re la difende | la prima passata la fa lungo il camminamento sud, se i PG ci stanno in fila: è largo un quadretto, e la linea di 30 m del soffio li prende tutti. Poi va alla porta. I PG scelgono: restare in alto, con la gittata e le gru (le corde partono dal camminamento), o scendere nel cortile (4,5 m di scala). Da lì vale M7-B |
+| **Fuori dalle mura** | la spianata davanti alla porta | come «Se il duello comincia fuori dalle mura», più sopra |
+| **In volo, visibili** | dove sono loro, se lo intercettano prima della fortezza; altrimenti la porta | **La quota è sua.** Vola a 45 m, loro a 18 (12 in armatura media o pesante): decide lui quando ingaggiare, e sta sempre più in alto. **Il soffio** in linea sui volanti allineati. ***Dissolvi magie* ad area**, solo su chi in aria lo minaccia: chi lancia incantesimi o deflagra, chi porta un barile. I nani in volo che non lo raggiungono li lascia stare, perché a terra tornerebbero utili. Raggio 6 m, gittata 51 m, prova d20+7: contro il *volare* della pozione (CD 16) riesce 6 volte su 10, contro l'invisibilità comprata (CD 14) 7 su 10, contro quella del re (incantatore di 12°, CD 23) 1 su 4. La forma selvatica di Hella è soprannaturale e non si dissolve; per le Ali d'Ombra dell'Anello di Artemis decide il DM, perché la scheda dell'Anello non lo dice. **Chi perde il volo** scende di 18 m a round per 1d6 round e atterra illeso se tocca terra in tempo; altrimenti cade per il resto, 1d6 ogni 3 m (SRD, *volare*). Sopra la piana scende in mezzo all'orda. ***Lentezza*** (Volontà CD 17, gittata 12 m) su chi lo insegue. ***Virare*** per tornare sulla stessa linea. Le **wyvern** su chi vola, come scritto. Non si ferma in aria: *Fluttuare* resta per la prima paura |
+| **In volo, invisibili** | come sopra | con *vedere invisibilità* già addosso li vede come visibili, e vale la riga sopra. Il nome gridato li trova comunque: *colpo accurato* ignora l'occultamento |
+| **Con il corno rubato** | dov'è il corno | come «Se suonano loro il corno rubato» (Scena 6): va prima su chi lo tiene |
+| **Non ci sono**: ancora nel campo, dispersi, colti fuori dall'alba | dietro la porta | fa il suo lavoro. Due colpi mettono a terra il re, stabile (il re non muore). La porta cede: su M7-B vale la riga «0 successi» della Scena 10, sei quadretti di terreno difficile e due nani a terra. Quando i PG arrivano il duello comincia dove sono, e il drago non è sorpreso |
+
+#### 🧠 Quando il tavolo fa una cosa che qui non è scritta — come ragiona il drago
+
+> **Perché c'è.** Il barile sulla tenda non era previsto da nessuna pagina, e il
+> modulo ha dovuto inseguirlo con un supplemento intero. Il prossimo colpo di
+> genio del tavolo arriverà all'alba, contro il drago. Qui non ci sono le
+> risposte: c'è **come pensa**, così il DM risponde in un minuto e sempre allo
+> stesso modo. Vale il §0-ter: assorbi, poi rilancia.
+
+**Le sue quattro domande, nell'ordine.** Davanti a una cosa nuova Skullcrusher
+non si chiede «che cos'è», ma:
+
+1. **Mi fa perdere davanti all'orda?** È la cosa che teme di più dopo il
+   guinzaglio. Quello che lo umilia in pubblico lo fa tornare su chi l'ha
+   fatto, subito, anche contro il suo interesse.
+2. **Mi toglie il tesoro?** Il patto paga solo se la fortezza cade. Quello
+   che ferma l'assalto (gli arieti, la porta, l'orda colpita) è un bersaglio
+   anche se a lui non fa niente.
+3. **Mi tira giù?** Tutto quello che lo porta a terra o lo inchioda (le corde,
+   la perdita di quota) per lui è la morte: sale. È arrogante, non stupido.
+4. **Mi tocca la Catena?** Chi la nomina o la sfiora diventa il suo bersaglio
+   (Scena 7).
+
+**Come legge una sorpresa.** INT 18, SAG 19, Sapienza Magica +29,
+*individuazione del magico* fra i trucchetti. La **prima** volta una trovata
+funziona per intero: è il premio del tavolo, e il DM non la attenua. Al suo
+turno dopo il drago sale fuori portata, guarda e capisce che cos'era. La
+**seconda** volta la stessa trovata non lo prende più alla sprovvista: la
+evita, o la punisce su chi l'ha fatta. È lo stesso principio di «Il nemico
+impara» del supplemento del barile, applicato a lui. Una trovata nuova, invece,
+vale di nuovo per intero.
+
+**Cosa non fa mai.** Non tratta davanti all'orda (Scena 7). Non si ferma in
+aria prima della prima paura. Non insegue nessuno lontano dalla fortezza
+finché l'assalto è aperto: il tesoro è lì.
+
+**Gli esempi, a partire dal barile**
+
+| La trovata | Come la legge | Che cosa fa |
+|---|---|---|
+| **Un barile, o un altro oggetto pesante, lasciato cadere sul drago** | domanda 3: lo vuole tirare giù | Finché vola non lo si prende: da 48 m l'oggetto cade in circa 3 secondi, e in quel tempo lui si sposta di una ventina di metri. Funziona solo quando è fermo: inchiodato dalle corde o fermo in aria alla prima paura. Allora vale l'oggetto in caduta del supplemento (15d6 da 48 m, senza TS), e le fiale della fenice gli bruciano addosso, perché è immune all'acido, non al fuoco. Dopo il primo, sale sopra chi tiene i barili e lo morde dall'alto |
+| **Un barile sull'orda o sugli arieti, all'alba** | domanda 2, e anche la 1: è il colpo che ferma l'assalto, davanti a tutti | chi l'ha sganciato entra in «Chi sceglie», subito dopo chi ha detto la Catena: il drago gli va addosso in quota, con il soffio in linea e il *dissolvi magie* della tabella qui sopra, sopra la piana |
+| **Un'illusione** (un drago finto, un re finto, un esercito sulle mura) | nessuna delle quattro, finché non la tocca | interagendoci tira Volontà (+20) per non crederci; la prima volta ci casca se fallisce, poi la riconosce. Il *suono fantasma* lo conosce anche lui |
+| **Attirarlo lontano dagli occhi dell'orda** (il corno rubato, una trappola fuori vista) | domanda 1 al contrario: lì nessuno lo guarda | ci viene, furioso (Scena 6). Lontano dall'orda è l'unico posto dove ascolterebbe un'offerta sulla Catena (Scena 7): se il tavolo ci arriva, la scena è del DM |
+| **Colpire il re, la porta o gli arieti invece di lui** | domande 2 e 1 | non cambia obiettivo: va dove il suo tesoro è in pericolo, e la scelta del tavolo diventa una corsa |
+| **Una cosa che non è in nessuna riga** | le quattro domande, nell'ordine | la prima risposta «sì» dice che cosa fa. Se sono tutti «no», la ignora e continua la passata |
 
 #### 🏟️ IL CORTILE — cosa c'è, e cosa ci si può fare che qui non è scritto
 
@@ -4329,7 +5856,7 @@ Per tutti, tre cose SRD:
   il drago picchia sotto i 9 m»*, cioè ogni volta che scende a mordere qualcuno
   nel cortile. I ruoli:
   - **chi lancia il gancio** (sul camminamento, accanto alla gru): attacco di
-    contatto a distanza, incremento 3 m, contro la CA di contatto del drago (**10**).
+    contatto a distanza, incremento 3 m, contro la CA di contatto del drago (**13** col Vecchio, che ha l'anello di protezione; **10** con l'Adulto).
     È un'arma da lancio, quindi arriva a cinque incrementi, 15 m, con −2 al
     tiro per ogni incremento intero di distanza (SRD, gittata): dalle gru in
     B10 e W10 il gancio prende il drago quando picchia entro 15 m da una
@@ -4374,13 +5901,15 @@ aspetta. È il momento più grosso della campagna finora: non riempirlo tu.]`
    fragile (fugge sotto 75 pf invece di 50) (B4).
 **Le soglie**: a ⅓ dei pf fugge al suo turno, a meno che nel round
 prima abbia subito almeno due colpi (allora resta un round ancora). Se Balvar è
-morto e il drago fugge a **metà** pf, l'esito è **FERITO GRAVE**.
+morto si sposta tutta la soglia a **metà** pf, circa 168 col Vecchio e 149 con
+l'Adulto: la prima paura, il round fermo in aria e i due colpi. Se il
+drago fugge lì, l'esito è **FERITO GRAVE**.
 *Registra esito + N ferite + se Aegis Fang colpì in volo.*
 
 #### Sidebar — Scalare lo scontro (stile RHoD)
 | Situazione | Aggiustamento |
 |---|---|
-| Il gruppo di stasera, e ogni party **straripante** (4 PG di 13° con la fiducia piena del consiglio, tutti gli artefatti e il banco della fucina speso, o 4 PG di 14°) | Skullcrusher **Vecchio e Avanzato** (GS 17): **337 pf**, CA 36 (40 con *armatura magica*), soffio 16d4 CD 31, Presenza CD 26, morso +34; statistiche in Appendice A.1-bis. Con lui, dal round 2, le 2 **wyvern** (SRD, *Wyvern*: GS 6, 59 pf, CA 18, volare 18 m, pungiglione +10 con veleno Tempra CD 17, 2d6 COS, morso +8 2d8+4; Appendice A.6). Per un gruppo di 13° fanno EL 17, il tetto esatto di APL+4; per uno di 14°, APL+3. Le wyvern vanno su chi tiene la corda dell'ala e su chi vola; quando il drago fugge o muore, fuggono anche loro. Il gruppo di 13° straripante ha le wyvern |
+| Il gruppo di stasera, e ogni party **straripante** (4 PG di 13° con la fiducia piena del consiglio, tutti gli artefatti e il banco della fucina speso, o 4 PG di 14°) | Skullcrusher **Vecchio e Avanzato** (GS 17): **337 pf**, CA 39 (43 con *armatura magica*), contatto 13, soffio 16d4 CD 31, Presenza CD 26, morso +34; statistiche in Appendice A.1-bis. Con lui, dal round 2, le 2 **wyvern** (SRD, *Wyvern*: GS 6, 59 pf, CA 18, volare 18 m, pungiglione +10 con veleno Tempra CD 17, 2d6 COS, morso +8 2d8+4; Appendice A.6). Per un gruppo di 13° fanno EL 17, il tetto esatto di APL+4; per uno di 14°, APL+3. Le wyvern vanno su chi tiene la corda dell'ala e su chi vola; quando il drago fugge o muore, fuggono anche loro. Il gruppo di 13° straripante ha le wyvern |
 | Un gruppo di 13° che non è straripante, o il DM non conferma il Vecchio | l'**Adulto** dell'Appendice A.1, con le 2 wyvern: EL 14 sulla carta, 15 al tavolo |
 | Party **logorato** (il campo e le mura andati male, risorse spese, Hella ancora fragile) | Skullcrusher NON usa il soffio 2 volte di fila; quando gli restano ~100 pf **fugge subito**, senza il round in più (esito FERITO GRAVE garantito) |
 | **Hella appena risorta** — vuoi proteggerla | Riga da scegliere, non di base: il drago la ignora finché non lo ferisce (predatore: va per la minaccia, non per la novità). Senza questa scelta vale «Chi sceglie», che la mette fra i preferiti — dà alla giocatrice spazio per il suo primo scontro |
@@ -4424,7 +5953,7 @@ che l'incontro ha appena scelto.
 > Thorek guardano come tutti gli altri. Se il tavolo chiede «chi l'ha messo lì?»,
 > la risposta vera è «nessuno», e il silenzio del cortile la conferma.*
 
-> **Read-aloud (LotR lead) — l'incudine, e l'incasso che si chiude.** *L'altare
+> **Read-aloud — l'incudine, e l'incasso che si chiude.** *L'altare
 > è un'incudine, e si vede: il piano è segnato da mille anni di martelli.
 > Intorno, il cortile è pieno di feriti. Nessuno l'ha toccata, eppure sul ferro,
 > dove un attimo fa non c'era niente, adesso c'è una pietra rossa grande come
@@ -4452,7 +5981,7 @@ finito di bruciare.
 **Momento 3 — Aegis Fang si sveglia**. È una scena, non una riga di scheda: l'ascia resta com'è finché l'Assedio non
 è vinto, e poi si risveglia del tutto. L'Assedio è questo, ed è appena stato vinto.
 
-> **Read-aloud (Mercer lead) — l'ascia prende la parola.** *L'ascia si scalda
+> **Read-aloud — l'ascia prende la parola.** *L'ascia si scalda
 > nella mano di Thorik, e non è il calore della forgia. Per la prima volta in tre
 > anni si fa sentire senza che nessuno l'abbia interrogata. Nel cortile nessuno
 > guarda le armi.*
@@ -4498,7 +6027,7 @@ resta alla Corona come potere **1/settimana**. È la cosa che la Corona sa fare
 da quando ha preso la terza pietra, e non una ricarica. L'Aura viene dal rito,
 non dal ritorno, e non aspetta che la Corona sia completa.
 
-> **Read-aloud (LotR lead) — l'aura.** *Il vecchio accanto all'incudine alza la
+> **Read-aloud — l'aura.** *Il vecchio accanto all'incudine alza la
 > testa e guarda la luce dietro Thorik. In tutto il cortile i feriti smettono di essere feriti:
 > un fabbro con una gamba sola si tira su contro il muro, il muro gli si apre
 > sotto la mano come argilla, e lui ci infila la gamba e resta in piedi.
@@ -4528,7 +6057,7 @@ porta al collo, e un re nanico se lo toglie solo con le sue mani, davanti a
 tutti. Quella sera i PG erano forestieri con la corona di suo nonno; adesso il
 re ha visto la pietra entrare. È l'ultima cosa prima della Scena 13.
 
-> **Read-aloud (Casa di Davide lead) — il torque.** *Il re si fa avanti, e per
+> **Read-aloud — il torque.** *Il re si fa avanti, e per
 > la prima volta da ieri sera non ha l'ascia in pugno. Porta le mani al collo e
 > apre il fermaglio: oro vecchio, ritorto come una corda, consumato liscio dove
 > la barba lo sfrega da cent'anni. Non chiama il sergente. Lo chiude lui attorno
@@ -4557,7 +6086,7 @@ che si toglie l'elmo nella prima battuta è l'eco di questo gesto.*
 
 L'accensione si legge in tre battute, di fila, senza fermarsi per i tiri.
 
-> **Read-aloud (Casa di Davide lead) — l'incudine, 1 di 3: la profezia compiuta.** *L'orda,
+> **Read-aloud — l'incudine, 1 di 3: la profezia compiuta.** *L'orda,
 > senza generale e senza drago a spronarla, si sfalda come sabbia, e
 > Hammerfist regge. All'incudine il Rubino ha preso la luce; adesso, sulla
 > fronte di Thorik, la dà: calda come sangue, e non si abbassa. Un nano
@@ -4571,7 +6100,7 @@ L'accensione si legge in tre battute, di fila, senza fermarsi per i tiri.
 > momento in cui ognuno di voi ha scelto. La pietra li tiene tutti, uno per
 > uno, come si tiene una cosa che servirà.*
 
-> **Read-aloud (LotR lead) — l'incudine, 3 di 3: la voce.** *Poi una voce, come
+> **Read-aloud — l'incudine, 3 di 3: la voce.** *Poi una voce, come
 > una campana che batte una volta sola: «Ben fatto, figli miei. Avete salvato
 > la fortezza come doveva accadere. Avete chiuso il cerchio.» Nessuno ha visto muoversi una bocca:
 > la voce è nei denti, e ci resta. La luce comincia a tirare e vi porta via, verso
@@ -4602,7 +6131,7 @@ si inginocchia. Il resto non si tocca.*
 | **Vogliono reclutare Thorgrim / portarlo nel futuro** | Impossibile (non è «loro»): Thorgrim resta, e la sua eco è l'affresco A3 della Sala della Forgia. Commovente: si separano da un fratello che è già polvere da mille anni. |
 | **Vogliono attaccare il drago di notte, sulle colline** | Si può. Le colline sono a qualche chilometro, e il drago vede al buio e sente chi è invisibile entro 18 m. Di notte non combatte per l'orda: combatte due round per orgoglio, poi vola via, perché la Catena lo lega al campo e non alle colline. Il danno che ha preso **resta** all'alba, ma il duello comincia **senza sorpresa**: li conosce. Costa **2 tacche**, e la Scena 7 resta da fare |
 | **Evitano del tutto il duello con Skullcrusher** | Difficile ma possibile (montaggio): allora il Rubino si accende comunque (la fortezza regge), ma **senza ferite ancestrali** → nessun carry-over B4 (Fauci al 1372 a piena forza). La scelta ha un prezzo futuro. |
-| **FALLIMENTO — il duello va malissimo / un PG cade / fuggono sconfitti** | Non c'è TPK: la timeline **esige** che vincano (la profezia È incisa). Se il combattimento crolla (**due PG a terra nello stesso round**, o il gruppo che **si ritira dal cortile**), gli antenati, chiamati da Thorgrim che dà l'ordine, **intervengono** e ricacciano il drago (a caro prezzo: molti nani antichi muoiono — pathos, e il DM ne annota i nomi fra i caduti del 372). I PG vincono «sporco»: **nessuna ferita ancestrale** registrata, il Rubino si accende col tono «misericordia/dovere», e portano il peso di essere stati salvati dagli avi che erano venuti a salvare. |
+| **FALLIMENTO — il duello va malissimo / un PG cade / fuggono sconfitti** | Non c'è TPK: la timeline **esige** che vincano (la profezia È incisa). Se il combattimento crolla (**due PG a terra nello stesso round**, o il gruppo che **si ritira dal cortile**), gli antenati, chiamati da Thorgrim che dà l'ordine, **intervengono** e ricacciano il drago (a caro prezzo: molti nani antichi muoiono — pathos, e il DM ne annota i nomi fra i caduti del 372). I PG vincono «sporco»: **nessuna ferita ancestrale** registrata, i PX del drago a metà (§8 A), il Rubino si accende col tono «misericordia/dovere», e portano il peso di essere stati salvati dagli avi che erano venuti a salvare. |
 
 ---
 
@@ -4613,11 +6142,12 @@ si inginocchia. Il resto non si tocca.*
 | Evento (qui) | Eco | Quando riemerge | Dove si gestisce |
 |---|---|---|---|
 | **Esito del duello con Skullcrusher** (Scena 11) | UCCISO/FERITO/FUGGITO → effetto quantificato su Fauci di Palude | ARC-08 (boss di Hammerfist) | **«La Forgia ricorda le ferite»** + statblock Fauci ARC-08 |
-| **Ferite ancestrali segnate** (N≤3) | +N TxC **o** +Nd6 ai portatori vs Fauci; Aegis Fang in volo → cicatrice d'ala (−2 Volare Fauci) | ARC-08 | B4 §3 |
-| **Aegis Fang «sente» Fauci** (gancio inverso) | +2 circostanza a Thorik vs Fauci + preavviso del soffio | ARC-08 | B4 §4 |
+| **Ferite ancestrali segnate** (N≤3) | +N TxC **o** +Nd6 ai portatori vs Fauci; Aegis Fang in volo → cicatrice d'ala (−2 Volare Fauci) | ARC-08 | «La Forgia ricorda le ferite» §3 |
+| **Aegis Fang «sente» Fauci** (gancio inverso) | +2 circostanza a Thorik vs Fauci + preavviso del soffio | ARC-08 | «La Forgia ricorda le ferite» §4 |
 | **Vatore segnato/derubato/ferito** (Scena 9) | sincronizzazione su Sal nel 1372 (sanguina / manca un asso / vi teme) | ARC-09 (Sal mercante-spia) | registro di fine serata + scheda di Sal |
 | **Seme del Ghostlord** (Scena 5, incontro con Zeth) | i PG assistono all'inizio della Lichificazione di Zeth (i componenti li porta Vatore, per il Collezionista: Q4-bis) | ARC-09 (dilemma etico di Hella su Zeth il Murato) | registro di fine serata + scheda del Ghostlord |
 | **Zog'tar catturato, o umiliato e vivo** (Scena 8) | un generale mezzo-ogre che sopravvive alla notte del 372: giustiziato dal re se catturato, ramingo se umiliato. Nel 1372 è un nome nelle cronache dell'assedio antico | ARC-08 | registro di fine serata |
+| **La notte del barile** (Scena 6, variante del barile) | chi è morto nel fuoco (Zog'tar, Balvar, il sacerdote, Grask, le guardie), se il corno ha suonato, e se Zog'tar è uscito dal fuoco davanti ai suoi. Balvar vivo non tratta più da solo; morto, la lastra col nome di Hald resta fra le ceneri e qualcuno la trova. Zog'tar vivo dorme ogni notte in un posto diverso, e il campo guarda il cielo: un secondo barile non trova più niente di facile | Scena 10 · Scena 11 · ARC-08, se Zog'tar è vivo (riga qui sopra) · ARC-09 (la lastra di Hald) | registro di fine serata + supplemento «Il barile sulla tenda» §10 |
 | **Scelte-costo vs Zog'tar** (Scena 8) | Thorik affaticato / Cintura di Tordek «assaggiata» o disciplinata / tono del Rubino | ARC-08 (vs Fauci) | Scena 8 + B4 |
 | **Tono del Rubino** (esito duello) | «nessuna pietà» (UCCISO) / «dovere» (FERITO) / «vigile» (FUGGITO) → colore della Corona in ARC-08 (vedi sotto) | ARC-08 ingresso | registro delle conseguenze dell'arco |
 | **La Senzienza arriva calda o fredda** («Il Ritorno a Hammerfist» §3, dopo il Rubino) | il ramo lo ha deciso «La Resurrezione di Hella» §5: se Thorik ha donato il +2 di deflessione la Corona **commenta**, se ha rifiutato **informa e basta**. ⚠️ Il freddo è **reversibile** | ARC-08 e ARC-09, ogni volta che la Corona parla | stato degli artefatti · registro delle conseguenze |
@@ -4650,17 +6180,18 @@ della Corona.
 | **Scena 11: Skullcrusher Vecchio (GS 17), stasera** | boss | **3.900** (tabella DMG: 15.600 per un gruppo di 13°, diviso per 4) |
 | Scena 11: Skullcrusher Adulto (GS 14), se si usa A.1 | boss | **1.460** (tabella DMG: 5.850 per un gruppo di 13°, diviso per 4) |
 | Scena 11: le 2 wyvern (GS 6) | combattimento | **≈ 160** (tabella DMG: 325 l'una per un gruppo di 13°, 650 in tutto, diviso per 4). Il duello vale **≈ 4.060** a testa col Vecchio, EL 17; **1.625** con l'Adulto, EL 14 |
+| Scena 11, **vinto sporco** (§6): il drago lo ricacciano gli avi | boss | PX del drago **dimezzati**: **1.950** col Vecchio, **730** con l'Adulto; le wyvern valgono i loro ≈ 160 solo se le uccidono i PG |
 | Scene 12-13: il Rituale e il Rubino | premio di storia maggiore | 800 |
 | **TOTALE beat** (la tenda intera, senza pattuglia né lupi) | | **~10.210/PG** col Vecchio e le wyvern, stasera (duello a ≈ 4.060); **~7.775/PG** con l'Adulto e le wyvern (duello a 1.625); **~7.610/PG** con l'Adulto da solo |
 
-> Sommato a Terra (~11.600) + Affreschi (~1.900) + Resurrezione (~1.900), il
-> party **non** arrivava al 14° in questo master: ci arrivava **dopo «Il Ritorno a Hammerfist»**.
-> Con le Scene 6-8 alla tabella il beat
-> sale di circa 1.250 a testa: se basti per il 14° prima del ritorno al 1372 dipende dai
-> PX con cui il gruppo è partito, che il master non fissa. Le parti giocate non
-> si ritoccano. Col Vecchio il duello vale circa 2.435 a testa più dell'Adulto
-> con le wyvern: il 14° può arrivare qui e non dopo «Il Ritorno a Hammerfist», e allora la riga
-> qui sopra non vale più `[INFERRED — needs DM confirmation: dipende dai PX di partenza]`.
+> **I PX di un gruppo che gioca** stanno nel registro dei PX del suo ramo di
+> gruppo, non in questo
+> master. Vale la regola 3.5 di un livello alla volta: chi con i PX del beat
+> passerebbe due soglie si ferma a un PX sotto la seconda, e l'eccedenza è
+> persa. Il livello si prende al primo riposo, dopo la battaglia
+> («Il Ritorno a Hammerfist» §8). Le parti giocate non si ritoccano.
+>
+> 
 
 ⚠️ **Il conto SRD è più basso.** La tabella dei PX della DMG dà il totale
 dell'incontro, da dividere fra i PG: Skullcrusher (GS 14) contro un gruppo di
@@ -4680,7 +6211,7 @@ premi di storia, come sempre.
 | Scena 12, Momento 5 (dono del re, di persona) | **Torque di Thorek I**, sempre, anche senza fiducia piena: è il dono del re a chi porta la Corona — monile nanico antico (+1 sacro ai TS vs paura; e nel 1372 è una **reliquia storica**: i nani si scoprono il capo davanti a chi lo porta) | ~2.000 mo + valore storico |
 | Scena 9 (se derubano Vatore) | **Sigillo di Ossidiana** — artefatto minore di Shar (Manto di Notte + Furto della Notte, divora anime; contrasta l'Anello di Artemis — Appendice B) | speciale (gancio ARC-09) |
 | Scena 10 (bottino dell'orda antica, se sabotano gli arieti) | armi orchesche primitive (poco valore). Il **corno da guerra di ferro nero** che chiama il drago è incatenato al polso di Grask, alla tenda: si prende solo lì (Scena 6, variante dall'alto; 300 mo, e nel 1372 una reliquia) | ~300 mo |
-| Scena 8 (la tenda, con Zog'tar e i suoi a terra) | **Zog'tar**: armatura completa di mithral +2 Grande (16.000: 1.500 × 2 per la taglia, 9.000 di mithral, 4.000 di +2; si vende, non si indossa) · ascia a due mani +1 Grande (2.340). **Balvar**, se è morto: armatura completa di mithral +2 Media, che a un nano va bene (14.500) · anello di protezione +2 (8.000) · martello da guerra runico +1 (2.312) · la polvere di diamante dei glifi di una sera (400). **Le quattro guardie**: armatura completa, spadone e giavellotti (≈ 1.550 l'una). L'Occhio di Ossidiana resta nell'orbita: è maledetto e non si vende | ≈ 49.750 mo di listino, ≈ 24.500 senza Balvar; alla vendita la metà (SRD). Quanto se ne porta via dipende dal campo: qui sotto |
+| Scena 8 (la tenda, con Zog'tar e i suoi a terra) | **Zog'tar**: armatura completa di mithral +2 Grande (16.000: 1.500 × 2 per la taglia, 9.000 di mithral, 4.000 di +2; si vende, non si indossa) · ascia a due mani +1 Grande (2.340) · 2 pozioni di *cura ferite gravi* (750 l'una), che nella tenda non ha ancora bevuto: le beve solo la notte dopo il barile, e chi lo spoglia all'alba non le trova. **Balvar**, se è morto: armatura completa di mithral +2 Media, che a un nano va bene (14.500) · anello di protezione +2 (8.000) · martello da guerra runico +1 (2.312) · la polvere di diamante dei glifi di una sera (400) · i cinque oggetti +2 che porta addosso: *cintura della forza del gigante*, *guanti della destrezza*, *fascia dell'intelletto*, *periapto della saggezza*, *mantello del carisma* (4.000 l'uno, 20.000 in tutto). **Le quattro guardie**: armatura completa, spadone e giavellotti (≈ 1.550 l'una). L'Occhio di Ossidiana resta nell'orbita: è maledetto e non si vende | ≈ 69.750 mo di listino, ≈ 24.500 senza Balvar; alla vendita la metà (SRD). Quanto se ne porta via dipende dal campo: qui sotto |
 | Scena 11 (resti di Skullcrusher, se UCCISO) | **scaglia del Primo Nero** — trofeo: materiale per **1 oggetto ad acido** (arma/armatura +1d6 acido, o focus per incantesimi acidi; a discrezione del fabbro), e prova che la profezia è compiuta | ~1.500 mo |
 
 **Il bottino della tenda e il tempo**. Il
@@ -4693,7 +6224,9 @@ gliela portano la riprende in cambio della sua parola, non di monete.
 - **Se qualcuno ha gridato o il corno ha suonato**, le ronde arrivano in
   **1d4+2 round**, gli squadroni in **2d4+2** e il drago in 70 (Scena 8). In
   quei round si prende solo quello che si stacca con un'azione: le armi,
-  l'anello, la borsa della polvere. Le armature restano addosso ai morti,
+  l'anello, la borsa della polvere e i cinque oggetti +2 di Balvar, uno per
+  azione come l'anello.
+  Le armature restano addosso ai morti,
   perché una completa si toglie in **1d4+1 minuti** (SRD), la metà con
   qualcuno che aiuta, e in un minuto il campo è già nella tenda.
 - **Se nessuno ha dato l'allarme** (Zog'tar ucciso in silenzio, D51), c'è il
@@ -4780,49 +6313,40 @@ incantesimi conosciuti sono quelli dell'SRD. Sopra c'è il template **Avanzato**
 di PF1e, nella versione completa (+4 a tutte le caratteristiche, +2 di armatura
 naturale), **senza alzare il GS**: vale come un GS 15 e si conta come 14.
 
-{{note
-##### Skullcrusher il Nero, il Primo Nero · GS 14
-**CA** 33, contatto 10, impreparato 31 (−2 taglia, +2 DES, +23 naturale); 37 con armatura magica · **pf** 297 (22d12+154) · *scheda in appendice*
+{{monster,frame
+## Skullcrusher il Nero, il Primo Nero
+*Drago Enorme (acqua), caotico malvagio · drago nero adulto maturo, Avanzato · capostipite di Fauci di Palude* · GS 14
+___
+**Taglia** Enorme · **Spazio** 4,5 m (3×3 quadretti) · **Portata** 3 m (2 quadretti); 4,5 m (3 quadretti) con il morso
+**Iniziativa** +6 · **Sensi** percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4; Ascoltare +29, Osservare +29
+
+**DIFESA**
+___
+**CA 33** (−2 taglia, +2 DES, +23 naturale), contatto 10, impreparato 31; **37 con *armatura magica***, che si lancia prima del duello e dura 5 ore: al duello della Scena 11 è **già addosso**, quindi CA 37 · **pf 297** (22d12+154) · TS Temp +20, Rifl +17, Vol +19 · RD 10/magia · RI 21 · immune acido, sonno, paralisi  
+
+**ATTACCO**
+___
+Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +30 (2d8+10), 2 artigli +25 (2d6+5), 2 ali +25 (1d8+5), colpo di coda +25 (2d6+15) · Spazio 4,5 m, portata 3 m (morso 4,5 m) · **Schiacciare** (in volo o saltando, azione standard) 2d8+15, Riflessi CD 28 o immobilizzati; solo contro creature Piccole o minori: i nani e i PG Medi non li schiaccia · **Soffio acido** (Sop) linea di 30 m, 14d4, Riflessi CD 30 dimezza (28 + Capacità Focalizzata), di nuovo dopo 1d4 round · **Capacità magiche** 3/giorno *oscurità* (raggio 21 m); 1/giorno *corrompere l'acqua* (CD 25: rovina anche le pozioni che un PG ha addosso, se falliscono il TS) · **Incantesimi da stregone** (incantatore di 5°, CD 14 + livello): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, scudo, colpo accurato, dardo incantato*; 2° (5/giorno) *vedere invisibilità, immagine speculare*  
 
 **TATTICHE**
-Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf. Qui sotto, «Cosa cambia al tavolo», i numeri che contano nel duello.  
+___
+Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf. In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.  
+
+**STATISTICHE**
+___
+For 31, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +22; Lotta +40 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare, Volontà di Ferro · **Abilità** Ascoltare +29, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +29, Sapienza Magica +29, Nuotare +18  
+
+**CAPACITÀ SPECIALI**
+___
+- **Soffio impregnante**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 30 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.  
+- **Presenza Terrificante** (Str): raggio 63 m, Volontà CD 25; chi ha meno di 22 DV è scosso per 4d6 round (4 DV o meno: in preda al panico); chi supera il TS è immune per 24 ore.  
+- **Respirare sott'acqua** (Str).  
 }}
 
 **Perché GS 14** (scelta del DM): la nota D8 lo voleva GS 12, un Adulto «potenziato» senza numeri. Adesso è un drago dell'SRD intero, Avanzato senza alzare il GS. EL 14 sulla carta, 15 al tavolo: sotto il tetto di APL+4. Il vero climax resta Fauci nel 1372: qui si semina.
-- Boost log: due talenti cambiati, scelti fra le versioni più forti (regola del DM: prima il 3.5 completo, poi PF1e, poi SRD) — GS 14 → 14 (vale 15), EL invariato — il DM vuole la versione più terrificante. *Virata* → **Capacità Focalizzata (soffio)** (SRD, *Ability Focus*: +2 alla CD, soffio CD 28 → 30). *Attacco Poderoso* → **Soffio Aderente** (*Clinging Breath*) `[Private source — Draconomicon (WotC 2003), p. 67]`: talento di metasoffio, **fuori dall'SRD**; si sceglie a ogni soffio, e quando lo usa la ricarica sale di 1 round. Diverge dall'SRD solo qui: il resto del blocco è il drago nero adulto maturo dell'SRD con il template Avanzato. Restano *Ghermire*, *Fluttuare* e *Attacco in Volo*, che la Scena 11 usa, e *Riflessi Fulminei* e *Volontà di Ferro*, che reggono i TS. Il telaio è stato riverificato sulla tabella SRD (*Black Dragon*, adulto maturo: 22 DV, FOR 27, COS 21, CA 29, soffio 14d4 CD 26, Presenza CD 23, RI 21, LI 5) e il template rifatto: i numeri del blocco tornano tutti. Il grado d'età sopra (Vecchio, GS 16) resta al gruppo di 14° per D60. 🔎 Il testo del talento viene da una trascrizione secondaria del Draconomicon `[INFERRED — needs DM confirmation sulla CD per toglierselo]`.
-- Boost log: un talento cambiato: *Ghermire* → **Virata** (SRD, *Wingover*) — GS 14 → 14 (vale 15), EL invariato — la presa in bocca è la firma di Fauci di Palude contro Thorik, e il duello del 372 non deve ripetere quello del 1372. Skullcrusher combatte in passata e dice il nome prima di colpire, con *colpo accurato*, che aveva già. Il drago è meno letale sul singolo PG: niente picco della presa, il soffio in bocca e la caduta. Vale anche per il Vecchio, che ha i talenti di questo blocco.
+- Boost log: due talenti cambiati, scelti fra le versioni più forti (regola del DM: prima il 3.5 completo, poi PF1e, poi SRD) — GS 14 → 14 (vale 15), EL invariato — il DM vuole la versione più terrificante. *Virare* → **Capacità Focalizzata (soffio)** (SRD, *Ability Focus*: +2 alla CD, soffio CD 28 → 30). *Attacco Poderoso* → **Soffio Impregnante** (*Clinging Breath*) `[Private source — Draconomicon (WotC 2003), p. 67]`: talento di metasoffio, **fuori dall'SRD**; si sceglie a ogni soffio, e quando lo usa la ricarica sale di 1 round. Diverge dall'SRD solo qui: il resto del blocco è il drago nero adulto maturo dell'SRD con il template Avanzato. Restano *Ghermire*, *Fluttuare* e *Attacco in Volo*, che la Scena 11 usa, e *Riflessi Fulminei* e *Volontà di Ferro*, che reggono i TS. Il telaio è stato riverificato sulla tabella SRD (*Black Dragon*, adulto maturo: 22 DV, FOR 27, COS 21, CA 29, soffio 14d4 CD 26, Presenza CD 23, RI 21, LI 5) e il template rifatto: i numeri del blocco tornano tutti. Il grado d'età sopra (Vecchio, GS 16) resta al gruppo di 14° per D60. 🔎 Il testo del talento viene da una trascrizione secondaria del Draconomicon.
+- Boost log: un talento cambiato: *Ghermire* → **Virare** (SRD, *Wingover*) — GS 14 → 14 (vale 15), EL invariato — la presa in bocca è la firma di Fauci di Palude contro Thorik, e il duello del 372 non deve ripetere quello del 1372. Skullcrusher combatte in passata e dice il nome prima di colpire, con *colpo accurato*, che aveva già. Il drago è meno letale sul singolo PG: niente picco della presa, il soffio in bocca e la caduta. Vale anche per il Vecchio, che ha i talenti di questo blocco.
 
-
-**Cosa cambia al tavolo, rispetto ai numeri di prima**
-
-- **I PG invisibili non gli sfuggono da vicino.** La percezione cieca
-  localizza tutto entro 18 m: sa in che quadretto è un PG invisibile, che
-  però conserva l'occultamento totale, 50% di mancare (SRD, *percezione
-  cieca*). *Vedere invisibilità* dura 50 minuti: se lo lancia al
-  primo allarme, i PG invisibili sono visibili per tutto il duello. Di notte
-  sulle colline non l'ha lanciato, perché non si aspetta nessuno.
-- **Il soffio fa più male**: 14d4 (in media 35) invece di 12d4, e Riflessi
-  CD 30. La runa di Zeth (*resistere all'energia* 20) ne toglie ancora più
-  della metà.
-- **L'acido resta addosso** (*Soffio Aderente*). Quando lo sceglie,
-  chi ha preso danno dal soffio ne riprende metà all'inizio del round dopo:
-  17 in media a chi ha fallito il TS, 8-9 a chi l'ha superato. La runa di Zeth
-  toglie 20 anche a questo, che è un danno a sé, e di solito lo spegne tutto.
-  Il prezzo per il drago: la ricarica è 1d4+1 round. Lo usa al primo soffio,
-  quando il gruppo è fitto, e non quando ha fretta di soffiare di nuovo.
-- **La RI 21**: un incantatore di 12°-13° livello la supera con 8 o 9 sul d20
-  (d20 + livello contro 21), quindi un incantesimo su tre circa si spegne. Le
-  invocazioni di Artemis la subiscono come gli incantesimi.
-- **RD 10/magia**: le armi dei PG sono magiche; le balestre delle mura, no.
-- ***Corrompere l'acqua*** può rovinare le pozioni in tasca a un PG (TS
-  dell'oggetto sulla Volontà del portatore). Lo usa al primo turno libero dal
-  soffio, se vede qualcuno bere (Scena 11, round 2-3).
-- **Il nome** (*colpo accurato*): +20 al prossimo attacco entro il round
-  dopo, e l'occultamento non conta. Il morso sul PG nominato è a +50, e
-  l'invisibilità di Artemis non lo salva. Lo lancia a metà della passata, con
-  Attacco in Volo, e il morso arriva alla passata dopo (Scena 11). Il nome
-  non lo chiede: è quello sentito di notte attraverso il corno, o un epiteto
-  (Scena 7).
 
 ### A.1-bis · Skullcrusher Vecchio, il drago di stasera
 
@@ -4830,18 +6354,43 @@ La riga di prima usava il drago **Vecchio** dell'SRD senza template, e ne veniva
 fuori un drago **più debole** di quello di base (287 pf e CD 27/24 contro 297 e
 28/25). Questo è il Vecchio dell'SRD (d20srd.org, *Dragon, True*) con lo stesso
 template Avanzato di A.1. Si usa con il gruppo di stasera, insieme alle 2
-wyvern di A.6: per un gruppo di 13° fanno EL 17, il tetto esatto di APL+4
-. Con un
+wyvern di A.6: per un gruppo di 13° fanno EL 17, il tetto esatto di APL+4.
+Con un
 gruppo di 14° è APL+3. L'Adulto di A.1 resta per i gruppi più deboli (Scena
 11, «Quale drago si usa, e quando»).
 
-{{note
-##### Skullcrusher Vecchio · GS 17 (Vecchio GS 16, +1 Avanzato)
-**CA** 36, contatto 10, impreparato 34 (−2 taglia, +2 DES, +26 nat); 40 con armatura magica · **pf** 337 (25d12+175) · *scheda in appendice*
+<!-- blocco: skullcrusher-vecchio-scheda -->
+{{monster,frame
+## Skullcrusher Vecchio
+*Drago Enorme (acqua), caotico malvagio · drago nero Vecchio dell'SRD, Avanzato* · GS 17 (Vecchio GS 16, +1 Avanzato)
+___
+**Taglia** Enorme · **Spazio** 4,5 m (3×3 quadretti) · **Portata** 3 m (2 quadretti); 4,5 m (3 quadretti) con il morso
+**Iniziativa** +6 · **Sensi** percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4; Ascoltare +31, Osservare +31 (Allerta, +2: SRD)
 
-**TATTICHE**
-Come A.1: fugge a ⅓ dei pf, circa **112 pf**.  
+**DIFESA**
+___
+**CA 39** (−2 taglia, +2 DES, +26 nat, +3 deflessione), contatto 13, impreparato 37; **43 con *armatura magica***, come al duello · **pf 337** (25d12+175) · TS Temp +24, Rifl +21, Vol +23 (con il mantello; senza oggetti CA 36, contatto 10, TS +21/+18/+20) · RD 10/magia · RI 22 · immune acido, sonno, paralisi  
+
+**ATTACCO**
+___
+Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** (Sop) linea di 30 m, 16d4, Riflessi CD 31 dimezza, di nuovo dopo 1d4 round (1d4+1 se impregnante, sotto) · **Capacità magiche** (incantatore di 7°) 3/giorno *oscurità* (raggio 24 m); 1/giorno *corrompere l'acqua* (gittata 72 m, quella della Presenza; CD 26, la CD della sua Presenza Terrificante, come nell'SRD: rovina anche le pozioni che un PG ha addosso, se falliscono il TS); 1/giorno *crescita vegetale* (gittata 204 m) · **Incantesimi da stregone** (incantatore di 7°, CD 14 + livello; gittata vicina 12 m, media 51 m, lunga 204 m): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, messaggio, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, causare paura* (CD 15), *colpo accurato, dardo incantato, scudo*; 2° (7/giorno) *immagine speculare, spaventare* (CD 16), *vedere invisibilità*; 3° (5/giorno) *dissolvi magie, lentezza* (CD 17). Conosciuti 7/5/3/2, come lo stregone di 7° dell'SRD: ai conosciuti dell'Adulto più i due di 3° (D64, scelta di Jfs del 19/11) mancavano tre posti, e il DM li ha riempiti con *messaggio*, *causare paura* e *spaventare*  
+
+**STATISTICHE**
+___
+For 33 Des 14 Cos 25 Int 18 Sag 19 Car 18  
 }}
+
+**Oggetti al duello** Dal suo tesoro triplo (SRD: 36.000 mo al GS 17, × 3 = 108.000), circa 51.900 mo a prezzo SRD: **anello di protezione +3** (18.000), **mantello della resistenza +3** (9.000), **bacchetta di *paura*** (incantatore di 7°, 21.000: cono di 9 m, Volontà CD 16, panico per 7 round, scosso per 1 round chi riesce), **2 pergamene di *dominare persone*** (incantatore di 9°, 1.125 l'una: 13,5 m, Volontà CD 17) e **1 pergamena di *suggestione di massa*** (incantatore di 11°, 1.650: gittata media, 63 m, fino a 11 creature entro 9 m l'una dall'altra, Volontà CD 19). Bacchetta e pergamene sono tutte sulla lista dello stregone: la bacchetta non chiede prove, le pergamene una prova d'incantatore, d20+7 contro CD 10 e 12 (SRD, *Pergamene*). Bacchetta e *suggestione di massa* costano un'azione standard, presa con l'artiglio: quel round non morde e non soffia. *Dominare persone* ha tempo di lancio 1 round (SRD), quindi in passata non si legge: solo da fermo o fluttuando, e l'effetto arriva all'inizio del suo turno dopo. *Dominare persone* prende solo gli umanoidi: Thorik è immune per la Mente Vuota, Hella in forma animale non è una persona
+
+**Tattiche** Il duello della Scena 11: combatte in passata, dice il nome prima di colpire e fugge a ⅓ dei pf, circa **112 pf**. Al corno, prima di partire, lancia *vedere invisibilità* e *immagine speculare* (1d4+2 immagini, 7 minuti). In passata chiude ogni turno a più di 18 m da tutti i PG, fuori dalle cariche: in mischia lo si prende solo con un'azione preparata quando passa. Mentre il soffio ricarica usa la bacchetta sul gruppo più fitto; la prima pergamena di *dominare* (un round fermo o fluttuando, quindi dopo la prima paura) va sul PG che fa più danno e non è Thorik, la *suggestione di massa* sui nani delle corde («lasciate le corde e salvatevi»). In A.1-ter, «Cosa cambia al tavolo», i numeri che contano nel duello.
+
+**Statistiche** For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Impregnante, Virare (non Ghermire), Volontà di Ferro, più Allerta · **Abilità** Ascoltare +31, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +31, Sapienza Magica +29, Nuotare +18: come l'Adulto più Allerta (il blocco non spende i gradi dei tre DV in più)
+
+**Capacità speciali**
+- **Presenza Terrificante**: raggio 72 m, Volontà CD 26 (meno di 25 DV).
+- **Soffio impregnante**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 31 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.
+- **Respirare sott'acqua** (Str).
+<!-- /blocco -->
 
 I tiri salvezza, i bonus d'attacco e le CD sono quelli dell'SRD rifatti con il
 template: +2 di COS ai DV per i pf, la FOR per l'attacco, ½ DV + COS per il
@@ -4856,39 +6405,171 @@ testa**, e 12.600 per un gruppo di 14°, cioè **≈ 3.150 a testa**. Le wyvern
 si sommano a parte (§8 A).
 
 - Boost log: drago nero **Vecchio** dell'SRD invece dell'adulto maturo, con il template Avanzato PF1e completo — GS 16 → 17 — solo per il party straripante di 14°, dove EL 17 = APL+3; il DM vuole che la riga renda il duello più duro, non più facile.
-- Boost log: usato anche con il gruppo di 13°, con le 2 wyvern, e *Ghermire* → **Virata** come in A.1 — GS 17 → 17; EL 17 = APL+4, il tetto esatto — la simulazione del duello lo dà come l'unica versione che regge contro tutti e tre i modi di giocarlo senza una morte probabile, purché senza la presa in bocca.
+- Boost log: usato anche con il gruppo di 13°, con le 2 wyvern, e *Ghermire* → **Virare** come in A.1 — GS 17 → 17; EL 17 = APL+4, il tetto esatto — la simulazione del duello lo dà come l'unica versione che regge contro tutti e tre i modi di giocarlo senza una morte probabile, purché senza la presa in bocca.
+- Boost log: oggetti dal suo tesoro (anello di protezione +3, mantello della resistenza +3, bacchetta di *paura*, 2 pergamene di *dominare persone*, 1 di *suggestione di massa*: circa 51.900 mo di 108.000), i tre incantesimi che mancavano ai conosciuti (*messaggio*, *causare paura*, *spaventare*), *immagine speculare* al corno e passate lunghe — GS 17 → 17: gli oggetti vengono dal suo tesoro e la DMG non alza il GS per l'equipaggiamento che il mostro possiede; i conosciuti sono quelli che lo stregone di 7° dell'SRD già doveva avere. EL 17 = APL+4 resta il tetto. Il prezzo al tavolo: CA di contatto 13 invece di 10, e con l'anello Tordek (+21) lo colpisce solo col 20 naturale, contro CA 43.
+
+### A.1-ter · Cosa cambia al tavolo, con l'Adulto o con il Vecchio
+
+
+- **I PG invisibili non gli sfuggono da vicino.** La percezione cieca
+  localizza tutto entro 18 m: sa in che quadretto è un PG invisibile, che
+  però conserva l'occultamento totale, 50% di mancare (SRD, *percezione
+  cieca*). *Vedere invisibilità* dura 10 minuti per livello: 50 con
+  l'Adulto (incantatore di 5°), 70 col Vecchio (7°). Dopo il barile lo lancia
+  al corno dell'alba, prima di partire, e i PG invisibili sono visibili per
+  tutto il duello. Col Vecchio al corno lancia anche
+  *immagine speculare*: ogni attacco a bersaglio singolo, deflagrazione
+  compresa, sceglie a caso fra lui e le immagini; le aree lo prendono comunque.
+  Di notte sulle colline non l'ha
+  lanciato, perché non si aspetta nessuno.
+- **Il soffio fa più male**: 14d4 (in media 35) invece di 12d4, e Riflessi
+  CD 30; col Vecchio 16d4 (in media 40), CD 31. La runa di Zeth (*resistere all'energia* 20) ne toglie ancora più
+  della metà.
+- **L'acido resta addosso** (*Soffio Impregnante*). Quando lo sceglie,
+  chi ha preso danno dal soffio ne riprende metà all'inizio del round dopo:
+  17 in media a chi ha fallito il TS, 8-9 a chi l'ha superato. La runa di Zeth
+  toglie 20 anche a questo, che è un danno a sé, e di solito lo spegne tutto.
+  Il prezzo per il drago: la ricarica è 1d4+1 round. Lo usa al primo soffio,
+  quando il gruppo è fitto, e non quando ha fretta di soffiare di nuovo.
+  Chi ce l'ha addosso può toglierlo con un'azione di round completo e un
+  Riflessi alla CD del soffio (+2 rotolando a terra, e resta prono); l'acqua
+  non lo spegne, *dissolvi magie* sì, alla stessa CD (*Draconomicon* p. 67,
+  verificato su dnd.arkalseif.info il 2026-11-19).
+- **La RI 21** (22 col Vecchio): un incantatore di 12°-13° livello la supera con 8 o 9 sul d20
+  (d20 + livello contro 21), quindi un incantesimo su tre circa si spegne. Col
+  Vecchio servono 9 o 10, e se ne spengono quattro o cinque su dieci. Le
+  invocazioni di Artemis la subiscono come gli incantesimi.
+- **RD 10/magia**: le armi dei PG sono magiche; le balestre delle mura, no. L'arma con la runa di Zeth la supera, dardo compreso, per il suo colpo solo (Scena 5).
+- **Le gittate col Vecchio, che resta lontano.** Chiude ogni passata a più di
+  18 m dai PG. Lo raggiungono le armi a distanza e gli incantesimi a gittata
+  media o lunga; la deflagrazione di Artemis con *Eldritch Spear* arriva a
+  75 m (*Complete Arcane*, fuori SRD). Lui risponde da 51 m con *dissolvi
+  magie* e *dardo incantato*, da 72 m con *corrompere l'acqua*, da 12 m con
+  *lentezza* e *causare paura*, e col cono di 9 m della bacchetta.
+- ***Corrompere l'acqua*** può rovinare le pozioni in tasca a un PG (TS
+  dell'oggetto sulla Volontà del portatore). Lo usa al primo turno libero dal
+  soffio, se vede qualcuno bere (Scena 11, round 2-3).
+- **Il nome** (*colpo accurato*): +20 al prossimo attacco entro il round
+  dopo, e l'occultamento non conta. Il morso sul PG nominato è a +50 (+54 col Vecchio), e
+  l'invisibilità di Artemis non lo salva. Lo lancia a metà della passata, con
+  Attacco in Volo, e il morso arriva alla passata dopo (Scena 11). Il nome
+  non lo chiede: è quello sentito di notte attraverso il corno, o un epiteto
+  (Scena 7).
 
 ### A.2 · Zog'tar Deatheye e le sue quattro guardie (Scena 8)
 
-{{note
-##### Zog'tar Deatheye, generale dell'orda antica · GS 15 (Avanzato)
-**CA** 26, contatto 12, impreparato 26 (−1 taglia, +10 arm. completa di mithral +2, +3 DES, +4 nat); 24 in Ira · **pf** 283 (15 DV, massimi per dado; 328 in Ira Superiore) · *scheda in appendice*
+<!-- blocco: zogtar-scheda -->
+{{monster,frame
+## Zog'tar Deatheye, generale dell'orda antica
+*Mezzo-Ogre/Orco Grande, caotico malvagio · Barbaro 14 / Guerriero 1* · GS 15 (Avanzato)
+___
+**Taglia** Grande · **Spazio** 3 m (2×2 quadretti) · **Portata** 3 m (2 quadretti)
+**Iniziativa** +9 · **Sensi** scurovisione 18 m (ogre e mezzorco, SRD); Ascoltare +11, Osservare +3
+
+**DIFESA**
+___
+**CA 26** (−1 taglia, +10 arm. completa di mithral +2, +3 DES, +4 nat), contatto 12, impreparato 26 (Schivare Prodigioso Migliorato); 24 in Ira. Il mithral alza la DES massima a +3 (SRD); è preda presa ai nani, e i nani la riconoscono · **pf 283** (15 DV, massimi per dado), 328 in Ira Superiore · TS Tempra +18 (+21 in Ira), Riflessi +9, Volontà +9 (+12 in Ira; +16 contro gli ammaliamenti, Volontà Indomita) · RD 3/— (barbaro 13) · Schivare Prodigioso Migliorato · Percepire Trappole +4 · Volontà Indomita (14°)  
+
+**ATTACCO**
+___
+Vel 12 m · **Mischia** in Ira, ascia a due mani +1 +29/+24/+19 (3d6+20, 20/×3); fuori dall'Ira (round di sorpresa) +26/+21/+16 (3d6+16) · **Distanza** 3 giavellotti Grandi +19 (BAB 15, DES +5, −1 taglia) (1d8+13 in Ira, 1d8+10 fuori dall'Ira), incremento 9 m · **Colpo Terrificante** (azione standard) +25 in Ira, 3d6+20; Riflessi con CD pari al danno, o vola via di 3 m e cade prono (+1d6 a lui e all'ostacolo se ne incontra uno) · **Attacco Poderoso** a due mani: fino a −15 al colpire per +30 ai danni  
 
 **TATTICHE**
+___
 La tenda della Scena 8: le quattro guardie gli tengono la CA, il sacerdote sta nella tenda.  
-}}
 
-{{note
-##### Guardia di Zog'tar (4) · GS 8
-**CA** 19, +8 arm. completa, +1 DES, il massimo che l'armatura lascia; spadone, niente scudo · **pf** 60 · *scheda in appendice*
+**STATISTICHE**
+___
+For 30 (36 in Ira), Des 20, Cos 24 (30 in Ira), Int 16, Sag 16, Car 18 · BAB +15; Lotta +29 (+32 in Ira) · **Talenti** (7) Attacco Poderoso, Spingere Migliorato, Colpo Terrificante (talento da mostro, SRD), Ira Extra, Iniziativa Migliorata, Volontà di Ferro, Arma Focalizzata (ascia) · **Abilità** Ascoltare +11, Osservare +3, Intimidire +14 (8 gradi in Ascoltare, 10 in Intimidire, nessuno in Osservare) · **Altro equipaggiamento** armatura completa di mithral +2, ascia a due mani +1, 3 giavellotti (tutto di taglia Grande), 2 pozioni di *cura ferite gravi* (LI 5, 3d8+5, 750 mo l'una); Occhio di Ossidiana (sotto)  
+
+**CAPACITÀ SPECIALI**
+___
+- **Ira Barbarica Superiore** (6/giorno, con Ira Extra): +6 FOR, +6 COS, +3 Volontà, −2 CA, 13 round. Dopo l'Ira è affaticato (l'Ira Instancabile arriva al 17°).  
+- **Presenza Minacciosa**: entro 9 m, quando attacca o carica, Volontà CD 21 o scosso 1d4 round; chi supera il TS è immune per 24 ore (10 + ½ DV + CAR, e il resto come la presenza terrificante dei draghi; D57).  
+- **Occhio di Ossidiana** (artefatto minore maledetto, incastonato al posto dell'occhio destro, canone del DM): 3/giorno, azione di movimento, marca un bersaglio: −2 CA contro Zog'tar e +2 danni subiti da lui, 5 round. Prezzo: Zog'tar è **vulnerabile alla luce divina** (Luce di Lathander, Corona).  
 }}
+<!-- /blocco -->
+
+<!-- blocco: guardie-scheda -->
+{{monster,frame
+## Guardia di Zog'tar (4)
+*Hobgoblin Medio · Guerriero 8 SRD sulle caratteristiche dell'hobgoblin* · GS 8
+___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) ciascuno · **Portata** 1,5 m (1 quadretto)
+**Iniziativa** +1 · **Sensi** scurovisione 18 m; Ascoltare +1, Osservare +1 (senza gradi nelle due abilità)
+
+**DIFESA**
+___
+**CA** 19, +8 arm. completa, +1 DES, il massimo che l'armatura lascia; spadone, niente scudo  
+**pf** 60  
+**TS** Temp +8, Rifl +3, Vol +1  
+
+**ATTACCO**
+___
+**Velocità** 6 m (armatura pesante)  
+**Mischia** spadone +14 (2d6+6/19-20)  
+**Distanza** giavellotti +9 (1d6+4), incremento 9 m  
+
+**STATISTICHE**
+___
+Linguaggi: Comune, Goblin  
+Altro equipaggiamento: armatura completa, spadone, giavellotti  
+}}
+<!-- /blocco -->
 
 
 **Il sacerdote dell'orda** (Scena 8)
 
-{{note
-##### Sacerdote dell'orda · GS 6
-**CA** 12, +2 DES · **pf** 38 (7d6+14) · *scheda in appendice*
+<!-- blocco: sacerdote-scheda -->
+{{monster,frame
+## Sacerdote dell'orda
+*Hobgoblin Medio · Adepto 7* · GS 6
+___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) · **Portata** 1,5 m (1 quadretto)
+**Iniziativa** +2 · **Sensi** scurovisione 18 m; Ascoltare +2, Osservare +2
+
+**DIFESA**
+___
+**CA 12** (+2 DES) · **pf 38** (7d6+14) · TS Temp +4, Rifl +4, Vol +7  
+
+**ATTACCO**
+___
+Vel 9 m · **Mischia** bastone ferrato +3 (1d6) · **Incantesimi** (3/4/3; CD 12 + livello): 0 *guida, individuazione del magico, luce*; 1° *benedizione, causare paura, comando, protezione dal bene*; 2° *vedere invisibilità, oscurità, forza del toro*  
 
 **TATTICHE**
+___
 Sta nella tenda di Zog'tar (Scena 8).  
+
+**STATISTICHE**
+___
+For 10, Des 14, Cos 15, Int 14, Sag 15, Car 8 · **Abilità** Ascoltare +2, Osservare +2, Concentrazione +12 · **Linguaggi** Comune, Goblin · **Altro equipaggiamento** bastone ferrato  
 }}
+<!-- /blocco -->
 
 ### A.3 · Durin Rocciadura (Scena 2)
 
-{{note
-##### Durin Rocciadura · GS 6
-**CA** 22, arm. completa +1, scudo pesante +1 · **pf** 52 · *scheda in appendice*
+{{monster,frame
+## Durin Rocciadura
+*Nano Medio · Guerriero 6* · GS 6
+___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) · **Portata** 1,5 m (1 quadretto)
+**Sensi** scurovisione 18 m
+
+**DIFESA**
+___
+**CA 21** (arm. completa +1, scudo pesante perfetto) · **pf 52** · TS Temp +8, Rifl +2, Vol +4  
+
+**ATTACCO**
+___
+**Mischia** ascia da guerra nanica +1 +11 (1d10+5, ×3), a una mano  
+
+**TATTICHE**
+___
+Non vuole lo scontro con i PG e sa di non reggerlo: alla prima ferita grave getta l'ascia e grida *«Se siete dei nostri, dimostratelo!»* (§6, «Attaccano la pattuglia di Durin»). Nella Scena 6 li accompagna fino alla postierla e lì resta (la tiene aperta per il ritorno, Scena 8).  
+
+**STATISTICHE**
+___
+For 18, Cos 16, Sag 14 · BAB +6; Lotta +10 · **Linguaggi** Comune, Nanico · **Qualità speciali** tratti dei nani (SRD) · **Altro equipaggiamento** armatura completa +1, scudo pesante perfetto, ascia da guerra nanica +1  
 }}
 
 **Onesto e leale fino alla morte** una volta convinto; antenato di Othrek (Hammerfist 1372).
@@ -4896,12 +6577,34 @@ Sta nella tenda di Zog'tar (Scena 8).
 ### A.4 · Balvar Fuocospento (Scena 7)
 
 <!-- include: Bestiario/villain/balvar-fuocospento-cr13.md#scheda -->
-{{note
-##### Balvar Fuocospento, il Consigliere dell'Orda · GS 13
-**CA** 24, contatto 14, colto 22 (armatura completa di mithral +2, anello di protezione +2, DES +2) · **pf** 101 (13d8+39) · *scheda in appendice*
+{{monster,frame
+## Balvar Fuocospento, il Consigliere dell'Orda
+*Umanoide Medio (nano), Chierico 9 di Abbathor / Runecaster 4, NE* · GS 13
+___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) · **Portata** 1,5 m (1 quadretto)
+**Iniziativa** +2 · **Sensi** scurovisione 18 m; Ascoltare +5, Osservare +5
+
+**DIFESA**
+___
+**CA 24**, contatto 14, colto 22 (armatura completa di mithral +2, anello di protezione +2, DES +2) · **pf 101** (13 DV) · TS Temp +13, Rifl +8, **Vol +17** (+2 razziale vs magia) · immune a paura (patto con Abbathor) · **Debolezza** le sue rune sono **scritte** — chi legge il nanico antico e le vede può contrastarle (vedi il modulo).  
+
+**ATTACCO**
+___
+Vel 6 m · **Mischia** martello da guerra runico +1 +11/+6 (1d8+2/x3) · Domini **Inganno** e **Runa** (dominio Runa = FRCS). Incantesimi da **chierico di 13° livello**: è chierico 9 **e** Runecaster 4, e il Runecaster avanza il lancio (per questo ha *blade barrier*, che è di 6°). CD 15+liv: tipici *dispel magic, magic circle against good, greater magic weapon, divination, righteous might, blade barrier, slay living, silence, invisibility purge, glyph of warding, dimensional anchor*, *greater command* (uno slot di 5° libero).  
 
 **TATTICHE**
-Dipendono da come è andata con lui prima dello scontro: il viaggio a mille anni fa, Scena 7, «Cosa fa quando comincia lo scontro» (canone, decisione Q21 del DM) (recuperato non combatte e indica la runa della Catena; trattativa aperta guarda un round e poi sta con chi vince; minacciato combatte con Zog'tar, come dice «Come si combatte, se si arriva a combatterlo» nella stessa scena). **Morale**: sotto 30 pf non fugge e non implora, finisce di incidere la lastra con un'azione di round completo, l'ultima, e in quel turno non attacca e non lancia (decisioni D52 e D71 del DM, nella stessa scena).  
+___
+Dipendono da come è andata con lui prima dello scontro: il viaggio a mille anni fa, Scena 7, «Cosa fa quando comincia lo scontro» (recuperato non combatte e indica la runa della Catena; trattativa aperta guarda un round e poi sta con chi vince; minacciato combatte con Zog'tar, come dice «Come si combatte, se si arriva a combatterlo» nella stessa scena). **Morale**: sotto 30 pf non fugge e non implora, finisce di incidere la lastra con un'azione di round completo, l'ultima, e in quel turno non attacca e non lancia (decisioni D52 e D71 del DM, nella stessa scena).  
+
+**STATISTICHE**
+___
+For 12, Des 14, Cos 16, Int 16, **Sag 20**, Car 14 · BAB +9; Lotta +10 · **Abilità** Percepire Intenzioni +13, Concentrazione +19, Sapienza Magica +19, Conoscenze (storia) +19, Artigianato (incidere rune) +19 (il conto dei gradi è nella nota in testa) · **Talenti** Incidere Rune `[Private source — FRCS]`, Volontà di Ferro, Riflessi Fulminei, Incantare in Combattimento, Scrivere Pergamene · **Equipaggiamento** armatura completa di mithral +2, anello di protezione +2, martello da guerra runico +1, *cintura della forza del gigante +2*, *guanti della destrezza +2*, *fascia dell'intelletto +2*, *periapto della saggezza +2*, *mantello del carisma +2*, polvere di diamante per i glifi Equipaggiamento sopra la tabella: scelta del DM: almeno 44.812 mo contro i 35.000 della Tabella 4-23 del DMG 3.5 al livello effettivo 13; il GS resta 13.  
+
+**CAPACITÀ SPECIALI**
+___
+- **Rune incise (Runecaster 4)**: incide fino a **4 rune persistenti** su superfici o creature consenzienti/legate; una runa incisa **non consuma slot al momento dell'uso** e scatta alla condizione scritta. Alla tenda di Zog'tar (ARC-07 questo capitolo, Scene 6 e 7): *invisibility purge* sulla soglia, *blade barrier* sul palo centrale, *silence* su sé stesso, **la Catena** (sotto). *Dimensional anchor* lo lancia, non lo incide.  
+- **La Catena di Skullcrusher (Su, unica)**: la runa-vincolo incisa nella scaglia sternale del drago. Finché regge, **Skullcrusher combatte per l'orda**. Non è dominazione — è un **contratto scritto nella carne**, e il drago lo sa.  
+- **Leggere il Fuori-Posto (Su, 3/giorno)**: come *detect magic* ma sulle **anomalie temporali**: percepisce chi non appartiene a questo secolo. **È il solo, in tutta Hammerfist ≈372 DR, che sa cosa sono i PG.**  
 }}
 <!-- /include -->
 
@@ -4937,39 +6640,142 @@ questa tabella.
 | **Wyvern** (2, scalatura per un gruppo di 13°) | scortano il drago dal round 2 (Scena 11) | qui sotto |
 | **Gli sciamani del campo** | dopo il corno | adepti orchi di 5° livello (GS 4), circa quindici: incantesimi 3/2/1, con *vedere invisibilità* fra quelli di 2° |
 
-{{note
-##### Worg dei cavalieri dei lupi · GS 2
-**CA** 14 · **pf** 30 · *scheda in appendice*
+{{monster,frame
+## Worg dei cavalieri dei lupi
+*Bestia magica Media · worg SRD* · GS 2
+___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) · **Portata** 1,5 m (1 quadretto)
+**Sensi** olfatto 9 m; Ascoltare +6, Osservare +6
+
+**DIFESA**
+___
+**CA** 14  
+**pf** 30  
+**TS** Temp +5, Rifl +6, Vol +3  
+
+**ATTACCO**
+___
+**Mischia** morso +7 (1d6+4) e sbilanciare  
+
+*worg dell'SRD; i tiri salvezza sono quelli della sua scheda SRD*
 }}
 
-{{note
-##### Orco della ronda · GS ½
-**CA** 13, contatto 10 · **pf** 5 · *scheda in appendice*
+{{monster,frame
+## Orco della ronda
+*Orco Medio · guerriero 1 SRD* · GS ½
+___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) · **Portata** 1,5 m (1 quadretto)
+**Sensi** scurovisione 18 m
+
+**DIFESA**
+___
+**CA** 13, contatto 10  
+**pf** 5  
+**TS** Temp +3, Rifl +0, Vol −2  
+
+**ATTACCO**
+___
+**Mischia** falchion +4 (2d4+4/18-20)  
+**Distanza** giavellotto +1 (1d6+3)  
 
 **TATTICHE**
-Il sergente, guerriero 3 nel testo, ha i numeri dell'orco guerriero 4 del Bestiario, GS 3: 30 pf, CA 16, falchion +7 (2d4+3).  
+___
+Il sergente, guerriero 3 nel testo, ha i numeri dell'orco guerriero 4 del Bestiario, GS 3: 30 pf, CA 16, falchion +9 (2d4+6).  
+
+**STATISTICHE**
+___
+Linguaggi: Comune, Orchesco  
+Qualità speciali: sensibilità alla luce (abbagliato in piena luce solare o in *luce diurna*)  
+Altro equipaggiamento: cuoio borchiato, falchion, giavellotto  
 }}
 
-{{note
-##### Hobgoblin della pattuglia (8) · GS 4
-**CA** 15 · **pf** 30 · *scheda in appendice*
+
+{{monster,frame
+## Hobgoblin della pattuglia (8)
+*Hobgoblin Medio · guerriero 4 SRD, con Arma Focalizzata e Specializzata* · GS 4
+___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) ciascuno · **Portata** 1,5 m (1 quadretto)
+**Iniziativa** +1 · **Sensi** scurovisione 18 m; Ascoltare −1, Osservare −1
+
+**DIFESA**
+___
+**CA** 15  
+**pf** 30  
+**TS** Temp +6, Rifl +2, Vol +0  
+
+**ATTACCO**
+___
+**Velocità** 9 m  
+**Mischia** spada lunga +6 (1d8+3/19-20)  
+
+**STATISTICHE**
+___
+Linguaggi: Comune, Goblin  
+Altro equipaggiamento: cuoio borchiato, scudo leggero, spada lunga  
+
+*in otto fanno EL 10; i numeri sono calcolati sull'SRD*
 }}
 
-{{note
-##### Treant di Adamantio · GS ~10
-**CA** 24, RD 10/adamantio, vulnerabile al fuoco · **pf** 90 · *scheda in appendice*
+{{monster,frame
+## Treant di Adamantio
+*Vegetale Grande, evocato dalla Collana di Hella* · GS ~10
+___
+**Taglia** Grande · **Spazio** 3 m (2×2 quadretti) · **Portata** 3 m (2 quadretti)
+
+**DIFESA**
+___
+**CA** 24, RD 10/adamantio, vulnerabile al fuoco  
+**pf** 95  
+**TS** Temp +12, Rifl +3, Vol +8  
+
+**ATTACCO**
+___
+**Velocità** 9 m  
+**Mischia** 2 schianti +18 (2d8+9), danni doppi alle strutture  
+**Speciale** Travolgere 2d8+13 (Riflessi CD 24)  
 
 **TATTICHE**
+___
 Dura 1 ora.  
+
+**STATISTICHE**
+___
+For 29  
+
+*la scheda intera è nell'appendice delle statistiche della Resurrezione di Hella*
 }}
 
-{{note
-##### Wyvern (2) · GS 6
-**CA** 18 · **pf** 59 · *scheda in appendice*
+<!-- blocco: wyvern-scheda -->
+{{monster,frame
+## Wyvern (2)
+*Drago Grande · wyvern SRD* · GS 6
+___
+**Taglia** Grande · **Spazio** 3 m (2×2 quadretti) ciascuno · **Portata** 1,5 m (1 quadretto)
+**Iniziativa** +1 · **Sensi** scurovisione 18 m, visione crepuscolare, fiuto
+
+**DIFESA**
+___
+**CA** 18  
+**pf** 59  
+**TS** Temp +7, Rifl +6, Vol +6  
+
+**ATTACCO**
+___
+**Velocità** 6 m, volare 18 m (scarsa)  
+**Mischia** pungiglione +10 (1d6+4 e veleno, Tempra CD 17, 2d6 COS), morso +8 (2d8+4)  
 
 **TATTICHE**
+___
 Vanno su chi tiene la corda dell'ala e su chi vola.  
+
+**STATISTICHE**
+___
+Lotta: +15  
+Talenti: Allerta, Attacco in Volo, Capacità Focalizzata (veleno), Multiattacco  
+
+*wyvern dell'SRD; i tiri salvezza sono quelli della sua scheda SRD*
 }}
+<!-- /blocco -->
 
 <!-- nuova-pagina -->
 
@@ -5052,7 +6858,7 @@ La pattuglia si riassume in tre righe: Durin vede la Corona e cade in ginocchio
 ### C.3 · Il duello in tre scambi (Scena 11)
 
 > **🎚️ [FAST-PLAY] del duello** (se vuoi chiudere veloce): 3 scambi narrati a
-> prova di gruppo (un attacco contro **CA 40**, 37 con l'Adulto, o Saltare/Equilibrio **CD 22** per chi lo affronta dalle mura), poi si sceglie l'esito tra i tre
+> prova di gruppo (un attacco contro **CA 43**, 37 con l'Adulto, o Saltare/Equilibrio **CD 22** per chi lo affronta dalle mura), poi si sceglie l'esito tra i tre
 > della Scena 11 in base a quanti scambi i PG hanno «vinto» (0-1 = fuggito, 2 = ferito
 > grave, 3 = ucciso). Uno scambio è vinto se metà del gruppo supera la prova.
 > Registra comunque le ferite per B4: N = scambi vinti. **[COMBATTIMENTO
@@ -5118,6 +6924,25 @@ Le quote sono del DM: piana 0, spianata degli arieti
 mura. La rampa fra la spianata e la porta, le scale sul tratto est e la torre
 nord sul suo gradone sono inferenze da confermare: sono scritte, con le loro
 ragioni, nelle note di M7-A dell'Atlante.
+
+#### MAPPA M7-R — LA VALLE DI HAMMERFIST ≈372 DR (la regione, non in scala)
+
+M7-R allarga M7-A alla valle intera: le montagne a nord con le miniere, la
+fortezza sul gradone, la spianata degli arieti e i tornanti, la piana col mare
+di tende e il campo del capo, il bosco a est dove posa il portale, le colline a
+sud dove dorme il drago, e la via degli eroi giù per il fianco est. Il riquadro
+tratteggiato è M7-A. È uno schema disegnato come M7-A, senza griglia e senza
+scala: dice dove sta ogni cosa, e le distanze sono scritte nella legenda. Non
+serve a muovere le pedine. Si stampa nell'appendice della regione del booklet
+della serata, alla sezione «La geografia».
+
+Le quote della fortezza vengono dal profilo di M7-A,
+la piana a 520 m sul mare da M7-B. Il pendio del
+372 è lo stesso del 1372, quindi il pendio e
+la strada vengono dalla pianta L2 di ARC-08: circa 300 m in pianta per 80 m di
+dislivello, il 27%, e una strada a tornanti di circa 530 m, larga 6 m, al 15%.
+I valichi a nord e la strada da cui è arrivata l'orda non sono disegnati: il
+canone non li dà.
 
 #### MAPPA M7-B — L'ARENA DEL DUELLO (cortile interno · Skullcrusher)
 
@@ -5189,7 +7014,7 @@ telo, sul bordo nord-est dello spiazzo, dormono le due guardie del turno dopo.
 
 \page
 
-# V · La Forgia ricorda le ferite
+# VII · La Forgia ricorda le ferite
 
 {{note
 ##### ⚠ SOLO DM
@@ -5200,13 +7025,13 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 ## Ponte meccanico P5 (duello con Skullcrusher, ≈372 DR) → ARC-08 (Fauci di Palude, 1372 DR)
 
 > **Stato (B4)**: ⭐ deliverable cross-arc più importante dell'arco. Traduce
-> l'**esito del duello con Skullcrusher** (oggi cap. IV, Scena 11; nel vecchio P5 fast-play era la Scena 5) in un
+> l'**esito del duello con Skullcrusher** (oggi cap. VI, Scena 11; nel vecchio P5 fast-play era la Scena 5) in un
 > **effetto quantificato** sullo statblock di **Fauci di Palude** nell'ARC-08
 > (GS 15, 337 PF).
 >
-> **Fonte narrativa**: Moradin, P5-DEFINITIVO-PARTE2 r.290 — *«Ogni ferita che
+> **Fonte narrativa**: Moradin, *«Ogni ferita che
 > infliggi ora all'antenato, la mia Forgia la ricorderà quando affronterai il
-> discendente.»* + Aegis Fang, P6 r.746 (*"sangue Skullcrusher chiama"*).
+> discendente.»*, e Aegis Fang (*"sangue Skullcrusher chiama"*).
 >
 > ✅ **Canone di carry-over.** Sistema
 > **D&D 3.5** — solo bonus tipizzati (competenza/circostanza/morale), **niente
@@ -5217,7 +7042,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 ## 1. INPUT DAL P5 (cosa registra il fast-play)
 
-Dalla **Scena 11 di cap. IV**, il duello, si registrano due dati (nel vecchio P5 era la Scena 5; stasera la Scena 5 è la notte nella fortezza):
+Dalla **Scena 11 di cap. VI**, il duello, si registrano due dati (nel vecchio P5 era la Scena 5; stasera la Scena 5 è la notte nella fortezza):
 
 1. **Esito del duello**: `UCCISO` / `FERITO GRAVE` / `FUGGITO`.
 2. **Ferite ancestrali segnate** (`N`): numero di colpi andati a segno su
@@ -5234,13 +7059,13 @@ Dalla **Scena 11 di cap. IV**, il duello, si registrano due dati (nel vecchio P5
 |---|---|---|
 | **UCCISO** (Skullcrusher a 0 pf) | **Cicatrice ancestrale attiva**: Fauci entra in campo con **−10% PF** (337 → **303 PF**) e **Presenza Terrificante CD 25 → 23** contro i **portatori degli artefatti** (Thorik/Corona, Tordek/Bracieri+Cintura, Hella/Collana, Artemis/Ring). | La stirpe porta la ferita mortale del capostipite: il sangue "ricorda" di poter cadere. |
 | **FERITO GRAVE** (fugge sotto ⅓ pf) | **−1 uso del soffio**: il primo **Soffio a Cono** (1/giorno) è **indisponibile**; il soffio in linea parte comunque ma la **prima** volta a −2 alla CD (27 invece di 29). Nessuna riduzione di PF. | La ferita non è letale ma "storpia" l'arma migliore del sangue. |
-| **FUGGITO** (Skullcrusher si allontana quasi illeso) | Fauci **vi ha visti e riconosciuti**: **+2 iniziativa** e nessuna sorpresa contro di voi (sa chi siete) **MA morale fragile** — **fugge sotto i 75 PF** invece di 50 (soglia di ritirata alzata di 25). | Il drago è forte ma il sangue teme già i "quattro del futuro": più cauto, meno disposto a morire. |
+| **FUGGITO** (Skullcrusher si allontana quasi illeso) | Fauci **vi ha visti e riconosciuti**: **+2 iniziativa** e nessuna sorpresa contro di voi (sa chi siete) **MA morale fragile** — **fugge sotto i 137 PF** invece di 112 (soglia di ritirata alzata di 25). | Il drago è forte ma il sangue teme già i "quattro del futuro": più cauto, meno disposto a morire. |
 
 ---
 
 ## 3. BONUS PER "FERITE ANCESTRALI SEGNATE" (N)
 
-Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
+Indipendente dall'esito (si somma):
 
 - **Ogni ferita ancestrale segnata** dà ai **portatori d'artefatto**, **solo
   contro Fauci nel 1372**, a **scelta unica del gruppo** all'inizio della
@@ -5248,7 +7073,7 @@ Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
   - **+1 di competenza ai tiri per colpire** contro Fauci, **oppure**
   - **+1d6 danni** ai colpi che vanno a segno su Fauci.
 - Cap: **N ≤ 3** (max **+3 TxC** o **+3d6**).
-- **Cicatrice fisica** (se Aegis Fang colpì Skullcrusher in volo, cap. IV Scena 11):
+- **Cicatrice fisica** (se Aegis Fang colpì Skullcrusher in volo, cap. VI Scena 11):
   Fauci ha una **cicatrice a forma di martello** su un'ala → **−2 metri alla
   Volare** (45 → 43) e i PG che lo sanno hanno **+2 di circostanza** a
   colpirlo mentre è in volo.
@@ -5258,7 +7083,7 @@ Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
 ## 4. IL GANCIO INVERSO — AEGIS FANG "SENTE" FAUCI
 
 - Quando Fauci di Palude entra in scena nel 1372, **Aegis Fang canta**
-  (*"sangue Skullcrusher chiama"*, P6 r.746). Meccanicamente: **Thorik ottiene
+  (*"sangue Skullcrusher chiama"*). Meccanicamente: **Thorik ottiene
   +2 di circostanza ai tiri per colpire contro Fauci** (bonus di circostanza
   3.5, definito e non 5e) e **avverte in anticipo** il primo soffio di Fauci
   (può dichiarare *pronto a ripararsi* → TS Riflessi del soffio **+2**).
@@ -5269,7 +7094,7 @@ Indipendente dall'esito (si somma), riflette P5-DEF-P2 r.294:
 
 \page
 
-# VI · Durik, il compagno di Hella
+# VIII · Durik, il compagno di Hella
 
 {{note
 ##### ⚠ SOLO DM
@@ -5372,1203 +7197,3 @@ succede, di solito dopo.
 
 ![Durik, di fronte](../../../PG/Immagini/web/DurikFront2.jpg)
 
-
-\page
-
-# VII · Il barile sulla tenda di Zog'tar
-
-{{note
-##### ⚠ SOLO DM
-Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
-}}
-
-# ARC-07 · Il barile sulla tenda di Zog'tar
-
-> **Che cos'è.** Il supplemento alle Scene 7 e 8 di cap. IV
-> per quello che il tavolo ha fatto davvero: invece di entrare nella tenda del
-> comando, i PG ci hanno lasciato cadere sopra, da 48 m e invisibili, una botte
-> d'olio piena di sassi, con i rostri dei fabbri nanici sotto e le fiale della
-> fenice legate con le corde. In apertura c'è la **scheda da tavolo**, dieci
-> passi da tirare senza improvvisare; poi la caduta e la deviazione, i danni
-> della caduta, dell'olio e delle palle di fuoco e l'area che coprono, tutto
-> rifatto per la quota da cui il tavolo rigioca lo sgancio, il telo e i rostri, le 25
-> cadute possibili sopra il palo centrale, che cosa vedono i PG da 48 m e chi
-> li può trovare, quando si tira l'iniziativa e che cosa fanno le rune, le
-> tattiche di chi è dentro e del campo, round per round, chi suona il corno se
-> Grask muore, i
-> due barilotti da 10 litri e una procedura, con i PE, per le trovate dei
-> giocatori delle prossime volte.
->
-> **Le mappe** sono M7-C, lo spiazzo del capo con la tenda, e M7-H, il campo
-> attorno. Le coordinate di questo documento sono quelle di M7-C; su
-> M7-H si sommano otto colonne e otto righe.
->
-> **Da dove vengono i numeri.** Dall'SRD 3.5. Dove l'SRD non ha una regola per
-> quello che è successo, c'è una **variazione**, segnata come tale e costruita
-> su una regola dell'SRD vicina; quando le letture possibili sono due, vale la
-> più forte, come vuole il DM. Le probabilità vengono da 20.000 prove di una
-> simulazione che usa queste stesse regole.
-
-## La scheda da tavolo
-
-Dieci passi, nell'ordine in cui si tirano. Ogni riga dice da quale regola
-dell'SRD viene; le variazioni sono segnate ◆ e sono le scelte del DM B4, B5, B6,
-B12 e B16. I dadi delle righe 2 e 3 dipendono dalla quota da cui i PG
-sganciano: la tabella è nel §2-bis. Con questa scheda il DM non deve inventare niente: tira i dadi
-della colonna di destra.
-
-<!-- pagina: una-colonna -->
-
-| # | Che cosa | Regola | Si tira |
-|---|---|---|---|
-| 1 | **Lo sgancio** | Non è un attacco (SRD, *invisibilità*: chi causa danno in modo indiretto non attacca). È un'azione gratuita, e chi sgancia resta invisibile. Si può fare nel round di sorpresa, e tutti e quattro i PG possono sganciare nello stesso round | niente |
-| 2 | **Dove cade** | Non si mira: la deviazione è l'attrito dell'aria più quanto chi sgancia era spostato dalla verticale. Come l'arma a spargimento che manca (SRD): 1d8 per la direzione, 1 = nord e poi in senso orario. ◆ La distanza dipende dalla **quota**, dal peso e da che cosa vede chi sgancia (§2 e §2-bis): da 48 m la botte, sopra la tenda illuminata dai fuochi, 1d4−1 quadretti, un barilotto 1d6−1; se chi sgancia non vede il bersaglio, un dado in più. Se si è mosso in quel round, in più 6 quadretti nella direzione del volo | **1d8** e il dado della quota (§2-bis); da 48 m **1d4−1**, barilotto **1d6−1** |
-| 3 | **Che cosa prende** | Il telo non la ferma: i rostri lo tagliano e toglie solo 3 danni (§3). Una creatura nella casella: oggetto in caduta (SRD), senza TS, meno la RD; ◆ in più le lame dei rostri, 1d4 lame da 1d8, nello stesso colpo. La riga 12, cioè un palo in cima (K12, N12, Q12) o la trave del colmo: la botte prende il legno, durezza 5 e 60 pf (SRD, §3). Se lo spezza, la tenda crolla subito; se no gli si apre sopra, e sotto nessuno prende il colpo diretto | i dadi della quota (§2-bis): da 48 m **15d6** − 3 + **1d4 × 1d8** (barilotto 3d6 − 3); sul legno **13d6 + 1d4 × 1d8 − 5**, si spezza a 60 |
-| 4 | **Le fiale** | Si rompono sempre: prendono anche loro i 15d6 della caduta, e il vetro ha 1 pf. Ogni fiala è una *palla di fuoco* (SRD). L'origine è un angolo della casella d'impatto (d4, o quello che sceglie il DM). ◆ Sotto il telo la tenda fa da forno: chi è dentro la tenda è nell'area. Fuori dal telo valgono i 6 m dall'angolo | **6d6 per fiala**, **Riflessi CD 14** dimezza, un TS per fiala |
-| 5 | **L'olio, subito** | Il **cuore** è la casella d'impatto e le otto attorno: chi c'è è colpito in pieno, come da un'ampolla d'olio (SRD, fuoco dell'alchimista), e prende fuoco ◆ senza TS. Il resto dell'olio copre **tutto il pavimento della tenda** (all'aperto: fino a 7 m): chi c'è prende lo spruzzo | cuore **1d6**; resto **1** |
-| 6 | **L'olio, ogni round** | La palla di fuoco lo accende tutto nello stesso istante. Chi sta nell'olio che brucia prende 1d3 (SRD, la pinta versata) e tira per non prendere fuoco (SRD, «Catching on Fire»). Chi è nel cuore prende il secondo 1d6 dell'ampolla al round dopo l'impatto. ◆ Il cuore brucia 10 round, il resto del pavimento 3 (all'aperto 2) | **1d3**, **Riflessi CD 15** |
-| 7 | **Chi brucia** | SRD, «Catching on Fire»: 1d6 a round, un TS a round per spegnersi; rotolarsi a terra dà +4, ma non dentro l'olio, che riaccende. Un mantello addosso, gettato da un altro, dà +4 come il rotolarsi | **1d6** a round, **Riflessi CD 15** |
-| 8 | **Il crollo** | Se non è già crollata, la tenda crolla alla fine del round 1d4+1. Chi è sotto il telo che cade prende il fuoco del telo, è intralciato e per uscire tira un TS a round, con 1d6 a ogni round sotto `[Regola della casa, costruita sullo stato F di M7-C]` | **2d6**, **Riflessi CD 15** |
-| 9 | **Il fumo** | SRD, «Smoke Effects», sotto il telo: chi fallisce passa il round a tossire, due round di fila fanno 1d6 non letali; occultamento 20% per tutti | **Tempra CD 15**, +1 per prova |
-| 10 | **Il danno massiccio** | SRD 3.5: 50 danni o più da un solo attacco, e chi fallisce muore; un 1 naturale fallisce sempre. ◆ Le palle di fuoco nate insieme contano come un attacco solo; il colpo diretto e l'olio restano a parte | **Tempra CD 15** |
-
-<!-- /pagina -->
-
-**Due conti da avere in testa.** Il colpo diretto da 15d6 fa 50 o più due
-volte su tre. Due palle di fuoco fanno 42 in media a chi fallisce tutti e due i
-TS, 21 a chi li supera.
-
-## 1. Che cosa hanno fatto, e che cosa si suppone
-
-Il racconto del DM, messo in ordine:
-
-- I PG volano sopra il campo, invisibili, a **48 m** di quota, in una notte
-  stellata. Partono dalla postierla in volo, come nella variante «dall'alto»
-  della Scena 6.
-- Lasciano cadere **una botte da 59 litri**: in fondo sassi, sopra **50 litri
-  d'olio**, e sotto il fondo i **rostri**, lame forgiate dai fabbri nanici di
-  Hammerfist. Alla botte sono legate con le corde le **fiale della fenice**, da
-  6d6 con l'effetto di una *palla di fuoco*.
-- Tengono in mano **due barilotti da 10 litri**, senza rostri e senza sassi,
-  ciascuno con le sue fiale della fenice legate.
-- Vogliono squarciare la tenda di Zog'tar.
-
-Quello che il racconto non dice si suppone così, e ogni supposizione è una
-scelta del DM:
-
-- Le fiale sulla botte sono **due**. Le tabelle danno anche una e tre.
-- Una fiala della fenice **scoppia quando si rompe**: il vetro che va in pezzi
-  è l'innesco, come per un'ampolla di fuoco dell'alchimista.
-- Nella tenda c'è la **disposizione A** di M7-C (Scena 7): Zog'tar sul seggio
-  che racconta, le quattro guardie attorno, Balvar che incide, il sacerdote
-  che dorme, Grask fuori.
-- Chi sgancia **sta fermo in aria**. La pozione di *volare* dà manovrabilità
-  buona, e con la manovrabilità buona si resta sospesi (SRD, movimento
-  aereo).
-
-## 2. La caduta e dove finisce il barile
-
-| | Botte (circa 93 kg, 205 libbre) | Barilotto (circa 14 kg, 31 libbre) |
-|---|---|---|
-| Quota | 48 m, 157 piedi | 48 m |
-| Tempo di caduta | 3,15 s | 3,18 s |
-| Velocità all'impatto | 30 m/s, 109 km/h | 29 m/s |
-| Energia | 40 kJ | 6 kJ |
-| Deriva con 5 m/s di vento laterale | 20 cm | 40 cm |
-| Spostamento se chi sgancia vola a 18 m per round | 9,5 m in avanti | 9,5 m |
-
-L'aria quasi non frena una botte così pesante: la velocità finale è il 98%
-di quella nel vuoto, e il vento di una notte di pianura la sposta meno di un
-quadretto. Contano due cose: se chi sgancia si muove, e quanto l'attrito e il
-buio lo portano lontano dalla verticale.
-
-**Nessun tiro per colpire.** L'SRD dice che chi è invisibile e «causa danno in
-modo indiretto» non attacca: l'esempio è chi taglia le corde di un ponte con i
-nemici sopra. Lasciar cadere un barile è lo stesso gesto. Non è un attacco,
-quindi non c'è tiro per colpire, l'invisibilità resta, e lasciarlo andare è
-un'azione gratuita.
-
-**La deviazione** `[Variazione sull'SRD, B4]`.
-I PG non mirano: lasciano andare. Il barile finisce lontano dalla verticale
-per due ragioni, e la regola le mette tutte e due in un dado solo.
-
-- **L'attrito.** Un oggetto pesante e compatto cade quasi dritto; uno leggero
-  e storto si gira, e l'aria lo spinge di lato. La botte coi sassi in fondo
-  cade sui rostri come una freccia sulla punta: a 30 m/s l'aria la frena del
-  12% del suo peso, e se la spinge di lato la sposta di 0,5-2 m. Un barilotto
-  da 14 kg senza sassi rotola: l'aria lo frena del 30%, e lo sposta di 1,5-4
-  m.
-- **La luce.** Chi sgancia sa di essere sopra il bersaglio solo se lo vede. A
-  48 m la scurovisione non arriva (18 m) e le stelle non bastano: si vedono
-  solo i fuochi, e ciò che illuminano. La tenda si vede, nera in mezzo ai due
-  falò della guardia e al fuoco del consiglio. Un punto fuori dalla luce non
-  si vede, e si sgancia a stima.
-
-L'SRD ha una regola sola per un oggetto che cade dove non si voleva, l'arma a
-spargimento che manca: **1d8 per la direzione** (1 è il nord, poi in senso
-orario) e una distanza in quadretti. La distanza, da 48 m, è questa:
-
-| Che cosa cade (le fasce di peso degli oggetti in caduta, SRD) | Bersaglio nella luce di un fuoco | Bersaglio al buio |
-|---|---|---|
-| pesante e compatto, 200 libbre (91 kg) o più: la botte con i sassi | **1d4−1** quadretti (0-4,5 m) | 1d6−1 (0-7,5 m) |
-| medio, da 31 a 200 libbre: i barilotti da 14 kg | **1d6−1** (0-7,5 m) | 1d8−1 (0-10,5 m) |
-| leggero o storto, sotto le 31 libbre | 1d8−1 (0-10,5 m) | 1d10−1 (0-13,5 m) |
-
-- Da più in alto o più in basso: un dado in più o in meno ogni 15 m di
-  differenza dai 48 (sotto i 15 m non si devia).
-- In diagonale lo stesso numero di quadretti è più lontano: tre quadretti in
-  diagonale sono 6,4 m.
-- Se chi sgancia si è mosso in quel round, la botte conserva la sua velocità:
-  in più, 6 quadretti nella direzione del volo, e la tenda si manca.
-
-Il conto della fisica sta nella simulazione; la regola lo arrotonda per
-eccesso, perché al buio si sbaglia anche il punto da cui si parte.
-
-## 2-bis. Rigiocare lo sgancio: tutto dalla quota
-
-Il DM farà rigiocare lo sgancio, e la quota la scelgono i PG. Da quella
-dipendono tre cose: quanti dadi fa la botte a chi sta sotto, quanto devia, e
-chi dei PG vede davvero dove la lascia andare. Più in basso si vede meglio e
-si sbaglia meno, ma la botte fa meno male, e dal round dopo i PG sono a
-portata del campo.
-
-**Prima: chi vede che cosa, al buio.** La notte è stellata, ma le stelle non
-fanno luce per l'SRD: a occhio nudo si vedono le sagome contro i fuochi, non il
-punto dove lasciar andare la botte. Le luci attorno alla tenda, su M7-C:
-
-| Fuoco | Luce (come una torcia dell'SRD) | Che cosa illumina della tenda |
-|---|---|---|
-| i due falò della guardia, H17 e T17 | intensa entro 6 m, fioca fino a 12 m | gli angoli sud del telo. La cima del palo centrale è a 11,7 m da ciascuno in pianta e a 6 m d'altezza: **13,2 m, appena fuori**. Grask, a P16, è a 4 m da T17: in piena luce |
-| i fuochi delle sentinelle, D12 e X12 | intensa entro 6 m, fioca fino a 12 m | il bordo ovest e il bordo est del telo, non il colmo (15 m) |
-| il fuoco del consiglio, N5 | brace: fioca entro 3 m | niente: il telo è a 6 m |
-| i due bracieri, L10 e K14 | dentro, sotto il telo nero | da fuori non si vedono |
-
-Chi ha la **visione crepuscolare** vede il doppio lontano con la stessa luce
-(SRD): per lui i falò fanno luce fioca fino a 24 m, e il colmo ci sta dentro.
-La **scurovisione** si misura fino al colmo, che è a 6 m da terra: chi ha 18 m
-di scurovisione vede il colmo da 24 m di quota.
-
-| PG | Che cosa ha | Vede il colmo, da che quota |
-|---|---|---|
-| **Artemis** | scurovisione 36 m, Vista del Diavolo 18 m e visione crepuscolare, dall'Anello dell'Illuminazione Caotica | **da qualunque quota**, nella luce doppia dei falò; col solo buio fino a 42 m |
-| **Thorik** | *Visione del Vero* della Corona, 1 volta al giorno per 10 minuti: vede nel buio, anche magico, e vede gli invisibili | **42 m**, se la attiva prima |
-| **Hella** | nana dei sogni, scurovisione 27 m | **33 m** |
-| **Tordek** | nano, scurovisione 18 m | **24 m** |
-
-Chi sgancia e vede il colmo usa la colonna «chi vede» della tabella; chi non lo
-vede, quella «al buio», un dado in più.
-
-**Lo sgancio guidato**. Se Tordek
-tiene la botte e Artemis guida, c'è un problema che al tavolo non si vede
-subito: **Artemis vede la tenda, ma non vede Tordek**, perché anche lui è
-invisibile. Può dirgli «ora», non «un metro a sinistra».
-
-| Chi sgancia | Chi lo guida | Che colonna usa |
-|---|---|---|
-| vede il colmo | nessuno | «chi vede» |
-| non lo vede | **Thorik con la Visione del Vero**, che vede il colmo e vede anche lui | «chi vede» |
-| non lo vede | **Artemis**, che lo tiene per la spalla o è legata a lui con una corda corta | «chi vede», e **1 quadretto in più** nella direzione del d8: lei sa dov'è la sua mano, non dov'è la botte |
-| non lo vede | Artemis a voce, senza toccarlo | «al buio»: lei non sa dov'è lui |
-| tengono la botte in due, e la lascia andare chi vede | | quella di chi lascia andare |
-
-Da 48 m, Tordek guidato da Artemis con la mano sulla spalla sbaglia di **1d4**
-quadretti (da 1 a 4); da solo, al buio, di 1d6−1 (da 0 a 5). Conviene l'ultima
-riga: la botte la tengono in due, e la lascia andare Artemis.
-
-Parlare si sente: Ascoltare ha −1 ogni 3 m (SRD). Un sussurro è CD 15
-: da 48 m diventa CD 31, e Zog'tar con +11 non lo sente; da 18 m è
-CD 21, e lo sente una volta su due.
-
-**La tabella.** Danno dell'oggetto in caduta dall'SRD: la botte con i sassi
-pesa 205 libbre, quindi 1d6 più 1d6 ogni 3 m oltre i primi; il barilotto da
-31 libbre fa 1d6 ogni 12 m. La botte si apre se il danno della sua stessa
-caduta (1d6 ogni 3 m, come chi cade) passa durezza 5 e 10 pf. Deviazione: un
-gradino di dado ogni 15 m di caduta, uno in più per il barilotto, uno in più
-se chi sgancia non vede il bersaglio (§2).
-
-| Quota | Caduta | Botte: danno a chi sta sotto | 50 o più | La botte si apre | Spezza un palo o la trave | Deviazione: botte nella luce / al buio | Barilotto: danno, deviazione nella luce |
-|---|---|---|---:|---:|---:|---|---|
-| 48 m | 3,2 s | **15d6** | 68% | 100% | 19% | 1d4−1 / 1d6−1 | 3d6 · 1d6−1 |
-| 42 m | 3,0 s | **13d6** | 26% | 100% | 4% | 1d3−1 / 1d4−1 | 3d6 · 1d4−1 |
-| 36 m | 2,7 s | **11d6** | 2% | 100% | 0% | 1d3−1 / 1d4−1 | 2d6 · 1d4−1 |
-| 30 m | 2,5 s | **9d6** | 0% | 100% | 0% | 1d3−1 / 1d4−1 | 2d6 · 1d4−1 |
-| 27 m | 2,4 s | **8d6** | 0% | 100% | 0% | 1d2−1 / 1d3−1 | 2d6 · 1d3−1 |
-| 24 m | 2,2 s | **7d6** | 0% | 99% | 0% | 1d2−1 / 1d3−1 | 1d6 · 1d3−1 |
-| 18 m | 1,9 s | **5d6** | 0% | 78% | 0% | 1d2−1 / 1d3−1 | 1d6 · 1d3−1 |
-| 12 m | 1,6 s | **3d6** | 0% | 9% | 0% | nessuna / 1d2−1 | niente · 1d2−1 |
-| 9 m | 1,4 s | **2d6** | 0% | 0% | 0% | nessuna / 1d2−1 | niente · 1d2−1 |
-
-- **Sotto i 18 m la botte può restare intera.** Le fiale si rompono lo stesso
-  (il vetro ha 1 pf) e le palle di fuoco scoppiano. Il fuoco apre la botte
-  alla fine del round, e l'olio esce al round dopo: niente cuore e niente
-  pavimento inzuppato al primo round, solo una pozza di 3 × 3 quadretti attorno
-  alla botte che brucia per 10 round.
-- **Sopra un palo o sulla trave** la botte cade 6 m in meno, e il danno va al
-  legno (§3): da 48 m lo spezza una volta su cinque, da 42 m una volta su
-  venticinque, più in basso mai. Se il legno regge, la botte gli si apre sopra.
-- **Il danno massiccio** arriva solo dall'alto: due volte su tre da 48 m, una
-  volta su quattro da 42, quasi mai sotto.
-
-**Che cosa rischiano i PG, quota per quota.** Al momento dello sgancio
-nessuno sta guardando in alto; i rischi valgono dal round dopo.
-
-| Quota | Che cosa li raggiunge |
-|---|---|
-| sopra i 45 m | niente. Fuori dalla gittata massima dei giavellotti, fuori da ogni scurovisione |
-| da 45 a 37 m | i giavellotti, ma solo se qualcuno li vede (il giavellotto con la *luce*, §8) |
-| 36 m e sotto | la scurovisione di Skullcrusher, se arriva |
-| 19,5 m e sotto | l'*epurare invisibilità* di Balvar: raggio 19,5 m attorno a lui. Se lo lancia, chi è dentro torna visibile |
-| 18 m e sotto | la scurovisione di tutto il campo: visibili, li vedono tutti; invisibili, li vede il sacerdote con *vedere invisibilità*. *Comando* del sacerdote a 12 m |
-| 9 m e sotto | Osservare CD 20 per notare un invisibile che si muove (SRD) |
-| 6 m e sotto | sono dentro la loro stessa palla di fuoco |
-
-**Che cosa succede, quota per quota.** Il barile lasciato cadere sopra il palo
-centrale da chi vede il colmo, due fiale; 20.000 prove per riga, fino alla
-fine del primo round.
-
-| Quota | La tenda giù subito | La botte resta intera | Zog'tar, pf (mediana) | Il sacerdote morto | Una guardia a terra (M13) | Grask morto |
-|---|---:|---:|---:|---:|---:|---:|
-| 48 m | 8% | 0% | 250 | 34% | 6% | 30% |
-| 42 m | 2% | 0% | 249 | 32% | 7% | 30% |
-| 36 m | 0% | 0% | 249 | 33% | 7% | 31% |
-| 30 m | 0% | 1% | 249 | 31% | 7% | 29% |
-| 27 m | 0% | 4% | 249 | 30% | 9% | 28% |
-| 24 m | 0% | 15% | 250 | 29% | 9% | 28% |
-| 18 m | 0% | 65% | 257 | 18% | 5% | 28% |
-| 12 m | 0% | 100% | 260 | 8% | 0% | 25% |
-| 9 m | 0% | 100% | 260 | 9% | 0% | 25% |
-
-**Che cosa vuol dire.** Il danno della botte conta poco: sotto il palo
-centrale non c'è nessuno, e quello che uccide è il fuoco, che non dipende dalla
-quota. Scendere serve a sbagliare meno, non a fare più male a Zog'tar. Il
-crollo subito è raro (una volta su dodici da 48 m, mai sotto i 36), ma la tenda
-crolla comunque alla fine del round 1d4+1. Sotto i 24 m la botte resta intera
-sempre più spesso, l'olio esce un round dopo, e il sacerdote se la cava: da 18 m
-muore una volta su cinque invece di una su tre. La quota buona, se il
-DM vuole un consiglio da dare, è **fra 30 e 36 m**, con Artemis o Thorik che
-sgancia: vedono la tenda anche dove i falò non arrivano, la deviazione scende a
-1d3−1, la botte si apre sempre, e restano fuori da tutto quello che il campo può
-fare.
-
-## 3. Il telo, il colmo e i rostri
-
-**Il telo non la ferma, e non la rallenta.** La botte arriva a 30 m/s con
-40 kJ. Per tagliare un telo di pelle con la punta di una lama bastano poche
-centinaia di joule: il telo le toglie meno dell'1% dell'energia, mezzo punto
-percentuale di velocità. Nell'SRD la pelle ha durezza 2 e 5 pf per pollice di
-spessore; un telo di 6 mm ha 1 pf. Al tavolo vale così: **il telo toglie 3 danni
-al colpo diretto** (durezza 2 più 1 pf), e la botte arriva a terra come se il
-telo non ci fosse.
-
-**Che cosa fanno i rostri.** Sono lame di spada piantate nel fondo della
-botte, con le punte in giù. Tre cose:
-
-- **Tagliano invece di tirare.** Una botte senza rostri sfonderebbe il telo
-  lo stesso, ma lo trascinerebbe giù con sé, e tirerebbe i pali: la tenda
-  crollerebbe più spesso. Con i rostri lo squarcio è pulito, largo un metro e
-  mezzo, e il telo attorno resta su.
-- **Tengono la botte dritta e la piantano.** Con i sassi sul fondo la botte
-  cade sulle punte come una freccia, e le punte entrano nella terra battuta:
-  non rotola e non rimbalza.
-- **Feriscono chi è sotto**. L'SRD ha la fossa con gli spuntoni, dove chi cade
-  finisce su 1d4 punte. Qui è rovesciato: le punte cadono su chi sta sotto.
-  Chi prende il colpo diretto prende anche **1d4 lame da 1d8**, nello stesso
-  colpo, quindi contano per i 50 danni del danno massiccio.
-
-**Lacera tutto, lacera in parte, rotola al bordo?** Le tre possibilità che il
-DM ha chiesto di pesare, con i numeri:
-
-| Dove tocca il telo | Che cosa succede alla botte | Al tavolo |
-|---|---|---|
-| sulla falda, fra il colmo e il bordo | taglia e passa: la falda scende di 50° circa, ma a 30 m/s la botte non scivola, e le punte mordono prima che la pelle ceda | arriva a terra nella casella tirata: il caso normale |
-| sulla riga 12: un palo in cima (K12, N12, Q12) o la trave del colmo | prende il legno, a 6 m da terra | il danno della caduta va al legno (qui sotto): se lo spezza, la tenda crolla subito; se no la botte gli si apre sopra, e olio e fiale cadono da lì. Sotto nessuno prende il colpo diretto; il fuoco e l'olio sono gli stessi |
-| sul bordo del telo, l'anello esterno di M7-C | taglia il telo dove scende verso terra, a un metro e mezzo d'altezza | arriva a terra contro la parete: metà dell'olio resta dentro, metà esce, e fuori arriva fino a 3 m |
-| un barilotto, sulla falda | senza rostri e senza sassi cade storto, di piatto o di spigolo | d6: con 1-2 rimbalza sulla falda, scivola giù e si apre fuori, nella casella oltre il bordo, dalla parte della falda (nord se è sopra la riga 12, sud se è sotto). Con 3-6 sfonda e cade dentro |
-
-**I pali e la trave reggono la botte?** Prima quanto devono reggere. Il telo
-copre 16,5 × 10,5 m: con le due falde sono circa 230 m² di pelle, a 2 kg al
-metro quadro 450 kg. La trave del colmo, quercia di 15 × 20 cm lunga 16,5 m,
-pesa 300 kg. Metà del telo tira sui picchetti del bordo, e sui tre pali vanno
-circa 180 kg ciascuno. Un palo di legno alto 6 m regge quel peso cinque volte,
-con il vento e il telo bagnato, se ha almeno 10-12 cm di diametro; il padiglione
-di un capo ha pali da **15 cm**, e la trave ha lo stesso spessore.
-Nell'SRD il legno ha durezza 5 e 10 pf ogni 2,5 cm di spessore: palo e trave
-hanno **60 pf**.
-
-La botte che cade sul palo o sulla trave fa al legno il danno della sua caduta
-fino a 6 m da terra, più le lame dei rostri (B16). Se, tolta la durezza, arriva
-a 60, il legno si spezza.
-
-| Quota di sgancio | Danno al legno | Il palo o la trave si spezza |
-|---|---|---|
-| 48 m | 13d6 + 1d4 × 1d8 | **19%**, una volta su cinque |
-| 42 m | 11d6 + 1d4 × 1d8 | 4% |
-| 36 m e sotto | 9d6 + lame, o meno | mai |
-| un barilotto, da qualunque quota | 3d6 al massimo | mai: si apre sul legno |
-
-**La fisica, su questo, non è d'accordo del tutto, e va detto** (B22). In punta
-il palo lavora di compressione, e la botte ci si infilza sopra: SRD e fisica
-dicono la stessa cosa, il palo regge quasi sempre. Una trave presa in mezzo,
-fra due pali, invece si piega: assorbe un paio di kJ prima di rompersi, e la
-botte ne porta 40. Per la fisica la trave presa fra due pali si spezza sempre.
-
-**Le palle di fuoco scoppiano sotto il telo.** Le fiale si rompono quando la
-botte tocca terra, o la trave, e tutte e due stanno sotto il telo. L'olio e il
-fuoco nascono dentro la tenda, mai sopra; solo al bordo metà resta fuori. Se una
-fiala si rompesse sul telo, la palla di fuoco nascerebbe sul tetto: la tenda fa
-da forno lo stesso, e chi è dentro è comunque nell'area.
-
-La runa della barriera di lame è incisa sul palo centrale, N12. Se il palo si
-spezza, la runa si spezza con lui **senza scattare**: scatta solo quando la
-attiva Balvar.
-
-## 4. La botte e le fiale toccano terra
-
-Nell'SRD un oggetto che cade prende anche lui il danno della caduta, 1d6 ogni
-3 m, e la durezza lo riduce. La botte e le fiale cadono da 48 m: **15d6**, in
-media 52.
-
-| Che cosa | Durezza e pf (SRD) | Che fine fa |
-|---|---|---|
-| La botte, doghe di quercia e cerchi di ferro | durezza 5, 10 pf, come una porta di legno semplice | si apre sempre: anche il minimo, 15, passa la durezza e i punti ferita |
-| Le fiale della fenice, legate alle doghe | vetro: durezza 1, 1 pf | si rompono sempre, nella casella dell'impatto, e scoppiano insieme |
-| I barilotti | durezza 5, 5 pf | si aprono sempre |
-
-I sassi tengono il fondo in basso, quindi la botte cade dritta, sui rostri, e
-i rostri la piantano nel terreno: non rotola. Che il barile non scoppi o che
-una fiala resti intera non succede con le regole dell'SRD: la versione di
-prima, con il d20 per la tenuta, è tolta.
-
-## 5. I danni
-
-### Il colpo diretto: l'oggetto in caduta
-
-Chi sta nella casella dove cade la botte prende il danno di un **oggetto in
-caduta** (SRD 3.5, «Falling Objects»): un oggetto da 200 libbre in su fa 1d6
-ogni 200 libbre, più 1d6 per ogni 3 m di caduta oltre i primi, fino a 20d6. Da
-48 m sono **15d6**, in media 52. L'SRD non dà un TS e non chiede un tiro per
-colpire: lo prende chi sta sotto. La riduzione del danno conta (Zog'tar ha RD
-3/—). Il telo toglie 3 danni, e i rostri aggiungono 1d4 lame da 1d8 nello
-stesso colpo (§3, variazione B16). Da 48 m, quindi, chi è sotto prende 15d6 − 3
-+ 1d4 × 1d8, in media 60. Da un'altra quota, i dadi del §2-bis.
-
-Una creatura sola prende il colpo diretto, quella della casella. Per Zog'tar,
-che è Grande, basta una delle sue quattro caselle.
-
-> **Il peso sta sul filo.** Botte di quercia da 59 litri con i cerchi di ferro
-> 14-16 kg, olio 45,5 kg, sassi 15-24 kg (al massimo i 9 litri che l'olio
-> lascia liberi), rostri 4-6 kg, fiale e corde 2 kg: da **80 a 93 kg**. Dalle
-> 200 libbre (91 kg) in su l'SRD dà 15d6; sotto, nella fascia da 101 a 200
-> libbre, dà 1d6 ogni 6 m, cioè **7d6**. Con i sassi fino all'orlo la botte
-> pesa 93 kg e vale la prima riga: 15d6. La fisica è d'accordo: 40 kJ uccidono
-> un uomo, e 7d6 non ucciderebbero una guardia hobgoblin
->.
-
-### Le palle di fuoco, e perché non si allargano
-
-Ogni fiala rotta è una *palla di fuoco* da 6d6. L'SRD fa partire un'area da un
-incrocio della griglia: l'origine è **un angolo della casella d'impatto**, a
-scelta del DM o con 1d4. La palla è uno spargimento di **6 m di raggio, 4
-quadretti**. Riflessi **CD 14** dimezza: è la CD dell'SRD per un oggetto con un
-incantesimo di 3° livello, 10 + 3 + 1. Due fiale sono due palle di fuoco dallo
-stesso angolo, con due TS, e i danni si sommano. Nessuno nella tenda ha
-Eludere.
-
-**Perché non si allarga.** Nel 3.5 la *palla di fuoco* ha un raggio fisso: se
-trova un muro si ferma, se trova un angolo lo gira, ma non riempie il volume
-che le manca. Era l'AD&D a farla allargare nei luoghi chiusi. Due palle di
-fuoco nello stesso punto non fanno un'area più grande: fanno due volte il
-danno nella stessa area.
-
-**La tenda fa da forno** `[Variazione — la versione più terribile, B12]`. Il
-telo è chiuso su quattro lati e alto da 3 a 6 m: le fiamme non hanno dove
-andare, e riempiono tutto quello che c'è sotto prima di squarciarlo. **Chi è
-sotto il telo è nell'area, dovunque sia**, anche oltre i 6 m. Dal palo
-centrale cambia poco, perché la palla da 6 m copre già quasi tutto il
-pavimento: aggiunge Balvar nel fondo buio e la guardia Q14, che l'SRD puro
-lascia fuori con tre angoli d'origine su quattro. Fuori dal telo valgono i 6 m
-dell'SRD: Grask, a P16, è dentro o fuori secondo l'angolo.
-
-### L'olio: quanto ne cade e dove arriva
-
-L'SRD dà due regole per l'olio, e qui servono tutte e due.
-
-- **La pinta versata.** Mezzo litro d'olio (una pinta) copre un quadretto, se
-  il terreno è liscio; acceso, brucia **2 round** e fa **1d3 da fuoco** a round
-  a chi ci sta.
-- **L'ampolla lanciata.** Un'ampolla d'olio è un'arma a spargimento, con le
-  regole del fuoco dell'alchimista: chi è colpito in pieno prende **1d6**, e
-  **1d6 ancora il round dopo**; chi è vicino prende lo **spruzzo, 1 danno**.
-
-La botte ha 50 litri, cioè **105 pinte**. Una botte che si apre a 110 all'ora
-schizza l'olio tutto attorno, e il conto delle pinte dice fin dove arriva
-`[Variazione sull'SRD, B6]`:
-
-| Zona | All'aperto | Dentro la tenda | Olio | Brucia |
-|---|---|---|---|---|
-| **Cuore** | la casella d'impatto e le otto attorno, 3 × 3 | lo stesso | 5 pinte a quadretto, 45 in tutto | 10 round |
-| **Il resto** | fino a **7 m** dall'impatto: 60 quadretti | **tutto il pavimento**, J10–R14, e le pareti del telo inzuppate fino a 3 m: il telo ferma gli schizzi | 1 pinta a quadretto all'aperto, quasi 2 dentro | 2 round all'aperto, 3 dentro |
-
-**Quanto va oltre la palla di fuoco.** All'aperto l'olio arriva a 7 m e la
-palla di fuoco a 6: **un metro in più**, un anello sottile di un quadretto,
-che prende fuoco nello stesso istante, perché il velo d'olio è tutto unito e
-la fiammata lo corre in un attimo. Dentro la tenda la domanda non si pone: dal
-palo centrale il telo è a 4,5 m a nord e a sud e a 7,5 m a est e a ovest,
-quindi l'olio si ferma sul telo e copre ogni quadretto del pavimento. Se il
-barile cade sul bordo del telo (le cadute da 4,5 m del §6), metà dell'olio va
-fuori, in una striscia di un quadretto lungo il telo da quella parte.
-
-La variazione è una sola: le pinte nello stesso quadretto si sommano, e ogni
-pinta in più fa bruciare il quadretto 2 round in più, non più forte. Il resto
-è l'SRD.
-
-### L'olio acceso
-
-- **Si accende subito**, tutto: la palla di fuoco accende i combustibili
-  nell'area (SRD), e la fiammata corre il velo d'olio fino al bordo.
-- **Chi sta nell'olio che brucia** prende **1d3 da fuoco** a round (SRD, la
-  pinta) e tira **Riflessi CD 15** per non prendere fuoco (SRD, «Catching on
-  Fire»: chi è esposto a olio in fiamme).
-- **Chi era nel cuore è inzuppato**: prende il secondo 1d6 dell'ampolla e
-  prende fuoco **senza TS** `[Variazione — la versione più terribile; per l'SRD
-  tira anche lui Riflessi CD 15]`.
-- **Chi brucia** prende **1d6 a round** finché non riesce Riflessi CD 15;
-  rotolarsi a terra dà +4, ma non dentro l'olio, che riaccende. Una palla di
-  fuoco da sola non accende i vestiti (SRD: gli effetti istantanei non lo
-  fanno); l'olio sì.
-
-### Il fumo e il crollo
-
-- **Fumo**, da subito, sotto il telo: Tempra CD 15, +1 per ogni prova
-  precedente, o il round si passa a tossire; due round di fila fanno 1d6 non
-  letali. Il fumo dà occultamento (20%) a tutti quelli dentro (SRD, «Smoke
-  Effects»).
-- **Il telo brucia** dal primo round. Alla fine del round **1d4+1** crolla, se
-  non è crollato prima per il colmo: chi è ancora sotto prende 2d6 da fuoco, è
-  intralciato e tira Riflessi CD 15 per uscire, un tentativo per round, con 1d6
-  da fuoco a ogni round sotto il telo che brucia `[Regola della casa, costruita
-  sullo stato F di M7-C]`.
-- **La luce**: la tenda che brucia illumina lo spiazzo come un falò grande. Il
-  fondo buio di M7-C non c'è più.
-
-### Il danno massiccio
-
-Nel 3.5 chi prende **50 danni o più da un solo attacco** e non è già morto tira
-**Tempra CD 15**: se fallisce, muore, quali che siano i suoi punti ferita. Un 1
-naturale fallisce sempre, quindi anche Zog'tar, con Tempra +18, ha il 5%.
-
-- Il **colpo diretto** da 15d6 arriva a 50 due volte su tre.
-- **Le due palle di fuoco contano come un attacco solo**: si sommano, e la
-  somma è quella che conta per i 50 `[Variazione, la versione più terribile —
-  B5: per l'SRD ogni palla di fuoco è un attacco a sé, e 6d6 non
-  arrivano mai a 50]`. Con due fiale e il TS fallito, la somma
-  arriva a 50 una volta su dieci.
-- Il colpo diretto, il fuoco e l'olio restano attacchi diversi.
-
-### Le cose
-
-| Che cosa | Che fine fa |
-|---|---|
-| La mappa di Hammerfist con le croci rosse, sulla tavola a J10 | brucia nel primo round se J10 è nella palla di fuoco; chi la vuole la prende prima |
-| La lastra d'ardesia di Balvar | non brucia. La ha in mano, e la porta fuori con sé |
-| Il corno di ferro nero, nella custodia al polso di Grask | non brucia. La custodia è di cuoio e ferro, e il glifo resta |
-| Le armature delle guardie | niente: l'SRD fa danneggiare gli oggetti indossati solo con un 1 naturale al TS |
-
-## 6. Il palo centrale, caduta per caduta
-
-I PG non hanno mirato: stavano più o meno sopra il palo centrale, N12, e hanno
-lasciato andare il barile. La deviazione del §2 dice quanto erano spostati
-dalla verticale. Una volta su quattro erano proprio sopra il palo; le altre
-volte il barile cade da 1,5 a 4,5 m più in là, nella direzione del d8, e in
-diagonale un po' di più, fino a 6,4 m.
-
-Le 25 cadute possibili, con quello che prende il barile, chi sta nel cuore
-dell'olio (colpito in pieno, prende fuoco) e chi resta fuori dalle palle di
-fuoco con la tenda che fa da forno. Chi non è nominato nelle ultime due colonne
-è nell'area: prende le palle di fuoco e l'olio del pavimento.
-
-<!-- pagina: una-colonna -->
-
-| d8 · metri | Casella | Probabilità | Che cosa prende | Nel cuore dell'olio | Fuori dalle palle di fuoco |
-|---|---|---:|---|---|---|
-| nessuna deviazione | N12 | 25% | il palo centrale, in cima: lo spezza il 19%, e la tenda crolla; se no la botte gli si apre sopra | Zog'tar, Guardia M13, Guardia N13 | nessuno · secondo l'angolo: Grask |
-| 1 nord · 1,5 m | N11 | 3,1% | il pavimento | nessuno | Grask |
-| 2 nord-est · 2,1 m | O11 | 3,1% | il pavimento | nessuno | Grask |
-| 3 est · 1,5 m | O12 | 3,1% | la trave del colmo: la spezza il 19%, e la tenda crolla; se no la botte le si apre sopra, e sotto niente colpo diretto | Zog'tar, Guardia N13 | nessuno · secondo l'angolo: Grask |
-| 4 sud-est · 2,1 m | O13 | 3,1% | **Zog'tar**, 15d6 − 3 + 1d4 × 1d8 | Zog'tar, Guardia N13, Sacerdote | nessuno |
-| 5 sud · 1,5 m | N13 | 3,1% | **Guardia N13**, 15d6 − 3 + 1d4 × 1d8 | Zog'tar, Guardia M13, Guardia N13, Guardia M14, Sacerdote | nessuno · secondo l'angolo: Grask |
-| 6 sud-ovest · 2,1 m | M13 | 3,1% | **Guardia M13**, 15d6 − 3 + 1d4 × 1d8 | Guardia M13, Guardia N13, Guardia M14, Sacerdote | nessuno · secondo l'angolo: Grask |
-| 7 ovest · 1,5 m | M12 | 3,1% | la trave del colmo: la spezza il 19%, e la tenda crolla; se no la botte le si apre sopra, e sotto niente colpo diretto | Guardia M13, Guardia N13 | Grask |
-| 8 nord-ovest · 2,1 m | M11 | 3,1% | il pavimento | nessuno | Grask |
-| 1 nord · 3,0 m | N10 | 3,1% | il pavimento | nessuno | Grask |
-| 2 nord-est · 4,2 m | P10 | 3,1% | il pavimento | nessuno | Grask |
-| 3 est · 3,0 m | P12 | 3,1% | la trave del colmo: la spezza il 19%, e la tenda crolla; se no la botte le si apre sopra, e sotto niente colpo diretto | Zog'tar | nessuno · secondo l'angolo: Grask |
-| 4 sud-est · 4,2 m | P14 | 3,1% | **Zog'tar**, 15d6 − 3 + 1d4 × 1d8 | Zog'tar, Guardia Q14 | nessuno |
-| 5 sud · 3,0 m | N14 | 3,1% | **Sacerdote**, 15d6 − 3 + 1d4 × 1d8 | Zog'tar, Guardia M13, Guardia N13, Guardia M14, Sacerdote | nessuno |
-| 6 sud-ovest · 4,2 m | L14 | 3,1% | il pavimento | Guardia M13, Guardia M14 | nessuno · secondo l'angolo: Grask |
-| 7 ovest · 3,0 m | L12 | 3,1% | la trave del colmo: la spezza il 19%, e la tenda crolla; se no la botte le si apre sopra, e sotto niente colpo diretto | Guardia M13 | Grask |
-| 8 nord-ovest · 4,2 m | L10 | 3,1% | il pavimento | nessuno | Grask |
-| 1 nord · 4,5 m | N9 | 3,1% | il telo, sul bordo: metà olio fuori | nessuno | Grask |
-| 2 nord-est · 6,4 m | Q9 | 3,1% | il telo, sul bordo: metà olio fuori | nessuno | Grask |
-| 3 est · 4,5 m | Q12 | 3,1% | il palo est, in cima: lo spezza il 19%, e la tenda crolla; se no la botte gli si apre sopra | Zog'tar | nessuno · secondo l'angolo: Grask |
-| 4 sud-est · 6,4 m | Q15 | 3,1% | il telo, sul bordo: metà olio fuori | Zog'tar, Guardia Q14, Balvar, Grask | nessuno |
-| 5 sud · 4,5 m | N15 | 3,1% | il telo, sul bordo: metà olio fuori | Zog'tar, Guardia M14, Sacerdote | nessuno |
-| 6 sud-ovest · 6,4 m | K15 | 3,1% | il telo, sul bordo: metà olio fuori | nessuno | Grask |
-| 7 ovest · 4,5 m | K12 | 3,1% | il palo ovest, in cima: lo spezza il 19%, e la tenda crolla; se no la botte gli si apre sopra | nessuno | Grask |
-| 8 nord-ovest · 6,4 m | K9 | 3,1% | il telo, sul bordo: metà olio fuori | nessuno | Grask |
-
-<!-- /pagina -->
-
-**Come si legge al tavolo.** Si tirano il d4 e il d8, si trova la riga, e la
-riga dice tutto: chi prende i 15d6, se la tenda crolla subito, chi è
-inzuppato. Poi si tirano i TS della scheda per tutti gli altri.
-
-**Che cosa dice la tabella.** Il caso più probabile, una volta su quattro, è
-la botte che si schianta in cima al palo centrale. Una volta su cinque lo
-spezza, e il colmo viene giù con il telo in fiamme; le altre volte gli si apre
-sopra, e l'olio e le fiale cadono da 6 m sullo stesso punto. Nessuno prende il
-colpo diretto, perché sotto il palo non c'è nessuno. Zog'tar lo prende solo con
-due righe su 25 (O13 e P14), una volta su sedici.
-
-## 7. Che cosa succede, in numeri
-
-Venti mila prove con le regole della scheda, la disposizione A, il barile
-lasciato cadere sopra il palo centrale e due fiale. Il conto va fino alla fine
-del primo round: lo scoppio, l'olio che brucia una volta, chi prende fuoco, il
-telo che crolla addosso se il palo o il colmo si sono spezzati.
-
-| Chi | pf pieni | pf alla fine del round 1 (mediana) | in fiamme | a 0 pf o meno | morto |
-|---|---:|---:|---:|---:|---:|
-| Zog'tar | 283 | 249 | 65% | 0% | 0% |
-| Guardia M13, N13 (ciascuna) | 60 | 20 | 71% | 6-7% | 4% |
-| Guardia Q14, M14 (ciascuna) | 60 | 22-23 | 60% | 1% | 1% |
-| Il sacerdote, che dorme | 38 | −5 | 66% | 71% | 34% |
-| Balvar | 101 | 72 | 33% | 0% | 0% |
-| Grask, fuori a P16 | 6 | 6 | 0% | 30% | 30% |
-
-- La tenda crolla subito l'**8%** delle volte, quando la botte spezza il palo o la trave (§3). Le altre volte crolla alla fine del round 1d4+1.
-- Il sacerdote dorme: è indifeso, la sua Destrezza conta 0 (SRD), e i suoi
-  Riflessi scendono da +4 a −1. Per questo è il primo a cadere.
-- Con **una fiala** il sacerdote muore il 3% delle volte e le guardie
-  restano a metà; con **tre fiale** il sacerdote muore nove volte su dieci e
-  ogni guardia una volta su quattro.
-- **Con la lettura SRD pura** (le palle di fuoco sono attacchi separati,
-  l'inzuppato tira il TS, la palla resta di 6 m anche sotto il telo) il
-  sacerdote muore il 28% delle volte, Balvar resta quasi intatto e Zog'tar
-  brucia una volta su quattro invece di due su tre.
-- **Se fossero stati sopra il seggio** invece che sopra il palo, Grask
-  sarebbe morto l'83% delle volte e Zog'tar avrebbe preso i 15d6 una volta su
-  tre.
-
-**Che cosa vuol dire.** Il barile **non uccide Zog'tar**: 283 punti ferita, RD
-3 e Riflessi +9 reggono anche il colpo in pieno. Gli toglie un quinto dei punti
-ferita prima ancora di cominciare, gli brucia la tenda, la mappa dell'assalto
-e la scena di Balvar, e una volta su tre gli toglie il sacerdote. Lascia vivo Grask
-due volte su tre, e Grask suona il corno: per questo i barilotti contano (§9).
-Con 50 litri d'olio in una tenda di 100 metri quadri un giocatore si aspetta
-una strage, e per Zog'tar questa non è una strage: va detto al tavolo prima di
-tirare.
-
-## 8. Chi vede che cosa, e le tattiche round per round
-
-### Che cosa vedono e possono fare i PG da 48 m
-
-| Che cosa | Regola | Al tavolo |
-|---|---|---|
-| **Vedere giù** | La scurovisione dei nani arriva a 18 m: a 48 m non serve. Si vede solo quello che è illuminato. Osservare ha −1 ogni 3 m di distanza (SRD), qui −15 | Si vedono i fuochi, i bracieri, e dal round 1 la tenda che brucia, che illumina lo spiazzo come un falò grande. Contare le sagome è facile; dire chi è chi chiede **Osservare CD 25** (10 + 15). Grask si riconosce perché sta dove sta |
-| **Restare invisibili** | Lasciar cadere un barile o un barilotto non è un attacco. Lanciare un incantesimo che colpisce un nemico, o tirare con l'arco, rompe l'invisibilità (SRD) | Anche visibili, a 48 m nel buio nessuno li vede: sono fuori dalla luce del fuoco e oltre la scurovisione. Rompere l'invisibilità quassù costa poco, finché nessuno illumina il cielo |
-| **Farsi sentire** | Ascoltare: −1 ogni 3 m (SRD), −15. *Volare* non fa rumore. Parlare a voce normale è CD 0, quindi 15 | **Non parlate.** Zog'tar ha Ascoltare +11: sente voci dall'alto una volta su tre, e da quel momento sa dove guardare. Le componenti verbali degli incantesimi si sentono allo stesso modo |
-| **Colpire da quassù** | Gittata media: 30 m + 3 m per livello, al 13° 69 m. Gittata corta (7,5 m + 1,5 m ogni due livelli, 16,5 m al 13°) non arriva. Arco lungo: 48 m sono due incrementi, −2 | Incantesimi a gittata media e lunga sì, a contatto e corta no. Le frecce arrivano, ma chi le prende capisce che vengono dall'alto |
-| **Il tempo** | Pozione di *volare* dell'incantatore di 5°: 5 minuti, 50 round. Pozione di *invisibilità* del 3°: 3 minuti, 30 round | L'invisibilità finisce prima del volo. Il viaggio di ritorno è quello della Scena 6. Se il corno suona, il drago arriva al round 70: chi è ancora in aria lì sopra non c'è più, perché il volo è finito da un pezzo |
-
-### Chi può trovarli
-
-| Chi | Che cosa ha | Che cosa può fare contro chi sta a 48 m |
-|---|---|---|
-| Guardie, orchi, lance della Guardia | scurovisione 18 m, Osservare e Ascoltare +1/+2 | niente. Notare un invisibile che si muove si fa solo entro 9 m (SRD, *invisibilità*, Osservare CD 20) |
-| **Zog'tar** | scurovisione 18 m, Ascoltare +11, Int 16, tre giavellotti Grandi (incremento 9 m, al massimo cinque incrementi: 45 m) | capisce subito che il barile è venuto dall'alto. Non vede niente, ma sa dove guardare e non sta mai fermo nella luce |
-| **Il sacerdote** (adepto 7) | *vedere invisibilità*, *luce*, *comando* (gittata corta, 12 m) | *vedere invisibilità* fa vedere gli invisibili, ma non fa luce: a 48 m nel buio non vede nessuno. Con *luce* su un giavellotto che Zog'tar scaglia verso l'alto illumina per un istante 6 m attorno al punto più alto del tiro, a 45 m: se un PG è lì vicino, lo vede (sotto) |
-| **Balvar** (chierico 13) | *Leggere il Fuori-Posto* (18 m), *epurare invisibilità* (19,5 m), *dissolvi magie* (gittata media, 69 m, area di 6 m di raggio) | le prime due non arrivano a 48 m. *Dissolvi magie* ad area sì: può lanciarlo alla cieca sopra la tenda, o sul punto che il giavellotto ha illuminato (sotto, e B13) |
-| Gli sciamani dei clan (15 adepti di 5°) | *vedere invisibilità*, *luce* | arrivano solo dopo il corno; stessi limiti del sacerdote |
-| **Skullcrusher** | scurovisione 36 m, percezione cieca 18 m, *vedere invisibilità*, Osservare +29, vola | l'unico che li trova davvero. Arriva 70 round dopo il primo suono del corno (Scena 6) |
-
-**Il giavellotto con la luce**. Se il
-sacerdote è sopravvissuto ed è sveglio, al round 3 ha già *vedere invisibilità* addosso e
-lancia *luce* su un giavellotto di Zog'tar (azione standard tutti e due). Zog'tar
-lo scaglia dritto in alto sopra la tenda: arriva a 45 m e illumina 6 m attorno
-per un round. Se i PG sono ancora sulla verticale della tenda (entro 6 m dal
-punto), il sacerdote li vede, e li indica. Se si sono spostati anche solo di
-dieci metri, il giavellotto illumina il vuoto. È la ragione per cui, dopo lo
-sgancio, conviene allontanarsi.
-
-**Il dissolvi di Balvar**. *Dissolvi
-magie* ad area ha 6 m di raggio. Se il giavellotto ha mostrato i PG, Balvar lo
-lancia lì al round 4. Se non li ha mostrati, può lanciarlo alla cieca sopra la
-tenda, e prende chi è rimasto sulla verticale una volta su sei. Ogni PG nell'area
-tira la prova del dissolvi contro ogni effetto: d20 + 10 contro **CD 16** per il
-*volare* della pozione (11 + 5) e **CD 14** per l'invisibilità (11 + 3). Chi
-perde il volo cade: 48 m, **15d6** (SRD, 1d6 ogni 3 m). Lo fa solo se è in
-modalità «minacciato, o attaccato» della Scena 7, ed è il caso: il barile è un
-attacco.
-
-### Quando si tira l'iniziativa, e che cosa fanno le rune
-
-**L'iniziativa si tira quando i PG decidono di sganciare**, prima di tirare i
-dadi della caduta: per l'SRD il combattimento comincia quando una parte agisce
-contro l'altra, e i PG sono gli unici che sanno che sta cominciando. Tirano tutti,
-PG e PNG. Poi:
-
-1. **Il round di sorpresa è solo dei PG.** Nessuno nel campo sa che sono lì.
-   Ognuno ha un'azione standard o di movimento, e lasciar cadere qualcosa è
-   un'azione gratuita: la botte e i due barilotti possono andare giù nello stesso
-   round. La botte cade in 3 secondi, meno di mezzo round: **arriva nel turno di
-   chi l'ha lasciata**, e il DM risolve subito la scheda, dal passo 2 al 5.
-2. **Il round 1 comincia in ordine d'iniziativa.** Chi è nella tenda è colto alla
-   sprovvista fino al suo primo turno: niente Destrezza alla CA, che quassù conta
-   poco. I TS contro le palle di fuoco li tira con il suo bonus pieno: l'SRD toglie
-   la Destrezza alla CA, non ai Riflessi.
-3. **L'olio che brucia** (passo 6 della scheda) si tira alla fine di ogni round,
-   per tutti insieme. È lì che chi brucia perde i punti ferita.
-
-**Balvar non è colto alla sprovvista**. Il suo *Leggere il Fuori-Posto* è acceso, un cono di 18 m verso la
-soglia, e il palo centrale ci sta dentro. Le fiale della fenice sono magiche:
-Balvar le sente arrivare un battito prima dell'urto. Non fa in tempo a fare
-niente, il round di sorpresa resta dei PG, ma al round 1 non è colto alla
-sprovvista, e sa che cosa è caduto prima di vederlo.
-
-**Le rune non scattano con il barile.** Una per una, con la regola di ciascuna:
-
-| La runa o il glifo | Scatta? | Perché, e la versione più forte |
-|---|---|---|
-| La soglia, *epurare invisibilità* | no | scatta quando un nano varca la soglia: la botte non è una creatura, e i PG sono a 48 m. Se dopo uno di loro scende sotto i 19,5 m sopra la soglia, scatta su di lui |
-| Il palo centrale, *barriera di lame* | no | la attiva Balvar. Se il palo si spezza, la runa si spezza senza scattare (B7) |
-| Su Balvar, *silenzio* | non da sola | la accende lui, a comando. Contro chi è a 48 m non serve: la tiene per dopo |
-| Il glifo sul telo sopra il seggio, 5d8 sonori | no, per l'SRD | il glifo scatta solo per una creatura che lo varca o lo tocca. La versione più forte, scelta dal DM: **scatta quando il telo che lo porta brucia o crolla**, alla fine del round 1 o al crollo. Scoppio sonoro di 5d8, Riflessi CD 18 dimezza, su chi sta entro 1,5 m dal punto del telo sopra il seggio: Zog'tar, se è ancora lì, e la guardia Q14 |
-| La custodia del corno, al polso di Grask | no | cuoio e ferro: il fuoco non la apre, e il glifo scatta solo per chi la apre senza la parola |
-| La gemella della Catena, sul corno | non scatta, ma **ascolta** | tutto quello che si grida vicino a Grask arriva a Skullcrusher sulle colline (Scena 6). Il boato, «A ME, CANI! IL CORNO!» e «Dall'alto. Hanno ali.»: all'alba il drago sa che i nani volano, e guarda in alto |
-
-### Le tattiche, round per round
-
-Le righe valgono per i due casi del §6: la tenda crollata subito (8%) e la
-tenda in piedi che brucia.
-
-| Chi | Round 1 | Round 2-3 | Dal round 4 |
-|---|---|---|---|
-| **Zog'tar** (Iniz +9) | Ira Superiore, azione gratuita, e il grido *«A ME, CANI! IL CORNO!»*. Se la tenda è crollata è sotto il telo in fiamme: lo squarcia con l'ascia ed esce in un round (Riflessi CD 15, ha +9). Se è in piedi esce dal lato più corto, tagliando il telo. Prende fuoco quasi sempre: si getta a terra fuori dall'olio (+4) | Fuori, guarda in alto e non vede niente. Capisce: *«Dall'alto. Hanno ali.»* Esce dalla luce del fuoco e non ci rientra: non sta mai fermo dove un secondo barile lo troverebbe. Al round 3 scaglia il giavellotto con la *luce* del sacerdote, se il sacerdote è vivo. Se Grask è morto va al corpo e strappa la custodia: il glifo gli scoppia addosso, 5d8 sonori, Riflessi CD 18, e lui suona lo stesso (B8) | Raduna le guardie nel buio, lontano dalla tenda, e manda le lance a cercare per il campo chi ha portato il fuoco. Se un PG scende sotto i 45 m e si fa vedere, i giavellotti; se scende sotto i 3 m, la carica |
-| **Le quattro guardie** (Iniz +1) | Chi brucia si getta a terra fuori dall'olio (+4). Chi non brucia trascina fuori il sacerdote, se è vivo, oppure spegne Zog'tar con il mantello | Spengono chi brucia con i mantelli (+4, un'azione standard ciascuno), poi si mettono attorno al generale, scudi alzati, nel buio | Come Zog'tar. Non tirano verso l'alto finché nessuno indica un bersaglio |
-| **Il sacerdote** (se è vivo) | Si sveglia nel fuoco, indifeso fino al suo turno. Striscia fuori, quasi sempre in fiamme | Round 2 si spegne. Round 3 *vedere invisibilità* e *luce* sul giavellotto di Zog'tar | Cura chi brucia. Se vede un PG, lo indica a Balvar; *comando* arriva solo a 12 m |
-| **Balvar** (se è vivo) | Esce dal telo est, quello a sinistra, e si spegne. Guarda la botte squarciata e i rostri: lavoro dei fabbri di Hammerfist, lo riconosce al primo sguardo | Va da Zog'tar: *«Nani. Dall'alto.»* E la parola che conta: *«Chiamate il drago.»* Se Grask è morto e la custodia è intera, dà a Zog'tar la parola che la apre senza glifo | Il barile è un attacco: Balvar è «minacciato, o attaccato» (Scena 7). Al round 4 *dissolvi magie* ad area dove il giavellotto ha mostrato i PG, o alla cieca sopra la tenda (B13) |
-| **Grask**, il suonatore del corno | Se è vivo, sveglio o no, il boato lo sveglia: suona il corno entro **1d4 round**, come al primo grido di Zog'tar (Scena 6) | Suona finché qualcuno non gli dice di smettere. Sta dove sta: è lui il bersaglio più facile del campo | |
-| **Le due guardie del turno dopo** | Si svegliano nella loro tenda, a X4–Y5 | Arrivano al round 2, armate, da Zog'tar | Con le altre |
-| **Il campo** (M7-H) | Le sentinelle dei fuochi gridano. I clan degli orchi si svegliano tutti insieme | Le ronde d'orchi arrivano dalla via ovest in 1d4+2 round, le lance della Guardia della Mano dalle vie nord e sud in 2d4+2. Finché Zog'tar è in piedi non vanno addosso alla tenda: fanno quadrato nello spiazzo, a una decina di metri dal telo, e portano acqua e pelli bagnate | Gli sciamani, se il corno ha suonato, cercano con *vedere invisibilità* e *luce*; nessuno vede a 48 m. Il campo resta sveglio fino all'alba |
-| **Skullcrusher** | | | Se il corno ha suonato, arriva **70 round** dopo il primo suono e caccia sopra il campo (Scena 6, «Se il corno suona di notte») |
-
-### Chi suona il corno, se Grask muore
-
-Il corno chiama il drago chiunque lo suoni: la Catena è incisa sul corno, non su
-Grask. Il problema è la custodia, chiusa da un glifo e incatenata al polso del
-ragazzo morto. In ordine, chi ci prova:
-
-| Chi | Quando | Come |
-|---|---|---|
-| **Balvar**, se è vivo | round 2-3 | non apre la custodia: dà la parola a Zog'tar, o a una guardia, e il corno suona senza glifo **al round 3-4** |
-| **Zog'tar**, se Balvar è morto o lontano | round 2-3 | va al corpo, spezza la catena e strappa la custodia: il glifo gli scoppia addosso, 5d8 sonori, Riflessi CD 18, e lui suona lo stesso **al round 3** (B8) |
-| **La guardia più vicina**, se Zog'tar è a terra | appena Zog'tar lo ordina, anche da a terra | come Zog'tar, ma con 60 pf e Riflessi +4 il glifo la può uccidere: una guardia già bruciata muore una volta su tre. Se muore, il corno resta nella custodia aperta, e lo prende la seguente |
-| **Il primo capolancia della Guardia della Mano** | quando arriva, round 4-10 (2d4+2) | se nella tenda nessuno è in piedi a dare ordini, il capolancia sa che il corno è il segnale dell'alba e del drago. Lo fa suonare |
-| **Nessuno** | | se sono morti Grask, Zog'tar e Balvar, e le guardie sono tutte a terra prima che arrivino le lance. È il caso «se rubano o rompono il corno» della Scena 6: il drago arriva a metà mattina, furioso |
-
-Il drago arriva 70 round dopo il primo suono, chiunque abbia suonato.
-
-### Se sopravvivono: che cosa fanno dopo la notte
-
-| Chi | Che cosa fa fino all'alba | All'alba |
-|---|---|---|
-| **Zog'tar** | brucia di rabbia, ma non perde la testa: dorme al buio, fuori dalla luce, e ogni ora in un posto diverso. Fa spegnere i fuochi dello spiazzo e mette due guardie a guardare il cielo. Manda le lance a cercare per il campo, perché pensa a un traditore prima che a dei nani in volo | guida l'assalto (§10), con il segno delle ustioni addosso. Ai suoi dice che il fuoco era un segno: chi l'ha attraversato vince |
-| **Balvar** | è stato attaccato: non tratta più da solo (§10). Incide di nuovo i glifi scattati, rifà la custodia, e ricorda la botte di Hammerfist | sta sulla collina col drago, come nel canone. Ha capito che i nani vengono dall'alto, e lo dice al drago attraverso la Catena |
-| **Il sacerdote** | cura chi brucia fino a finire gli incantesimi. Prepara *vedere invisibilità* e *luce* per la notte dopo | sale sulla breccia con Zog'tar, se ci sono incantesimi da spendere |
-| **Le guardie** | stanno attorno al generale, con gli scudi alzati, al buio. Chi ha visto morire i compagni nel fuoco odia i nani in un modo nuovo | combattono con Zog'tar sulla breccia |
-| **Grask**, se è vivo | non lascia più il corno. Dorme in piedi | suona all'alba, e il drago arriva sull'assalto |
-
-### L'orda: che cosa fa, che cosa vede, che cosa può fare
-
-Il campo è un'orda di circa diecimila: la Guardia della Mano, che è
-disciplinata, le bande d'orchi, che non lo sono, i goblin sui carri, i lupi fuori.
-Una tenda che scoppia nel cuore del campo, di notte, senza un nemico in vista,
-non è una cosa che l'orda abbia mai visto. Su M7-H, attorno allo spiazzo, ci
-sono otto lance della Guardia (quattro tende da otto attorno a ogni fuoco) e
-quattro bande d'orchi a ovest, una ventina ciascuna con il loro sciamano.
-
-| Chi | Che cosa fa | Che cosa vede, e fin dove | Che cosa può fare a chi vola |
-|---|---|---|---|
-| **Le sentinelle** dei fuochi e dei falò | round 1 gridano, round 2 corrono alla tenda e tirano fuori chi possono | scurovisione 18 m, e tutto quello che i fuochi illuminano: la tenda in fiamme, nessun nemico | giavellotti, solo se vedono qualcuno |
-| **La Guardia della Mano**, otto lance | escono armate al round 2, arrivano nello spiazzo in 2d4+2 round. Quattro lance fanno quadrato a 10 m dal telo, portano acqua e pelli bagnate e tengono indietro gli orchi; le altre chiudono le quattro vie battute e cercano tenda per tenda chi ha portato il fuoco | come le sentinelle. Ascoltare e Osservare +2 | giavellotti: incremento 9 m, al massimo 45 m, −2 a incremento |
-| **Le bande d'orchi** | non capiscono, e si infuriano. Un fuoco dal cielo senza nemici: gli sciamani gridano che è l'occhio di Gruumsh, e le quattro bande corrono armate allo spiazzo con le torce, urlando al cielo. Arrivano in 1d4+2 round, come le ronde, senza ritardo: fanno muro attorno alla Guardia, e ogni torcia è un occhio in più che guarda in alto | scurovisione 18 m, Ascoltare e Osservare +1. Le torce fanno luce fino a 12 m da terra | giavellotti alla cieca contro il cielo: chi è invisibile ha occultamento totale, 50% di mancare, e l'orco deve indovinare il quadretto (SRD) |
-| **Le vedette goblin** sui carri | strillano, e non scendono | scurovisione 18 m | niente |
-| **I lupi**, fuori dal campo | le sei squadre si stringono verso il campo e girano sotto le vie del ritorno: il viaggio a piedi della Scena 6 si tira a CD +2 | fiuto a 9 m (18 col vento): chi vola sopra i 20 m ne resta fuori | i goblin in sella tirano giavellotti; i worg aspettano l'atterraggio |
-| **Gli sciamani**, quindici adepti di 5° | dopo il corno: *vedere invisibilità*, e *luce* sulle punte dei giavellotti | vedono gli invisibili, ma solo dove vedono: 18 m di scurovisione, o la luce | *raggio rovente* (4d6, gittata corta: 10,5 m). La *ragnatela* arriva a 45 m ma in aria non ha dove attaccarsi, e non si forma (SRD) |
-
-**Chi li vede, e chi li colpisce, quota per quota.** La tenda che brucia fa
-luce come un falò grande: intensa entro 12 m, fioca fino a 24 m, finché non
-crolla. I numeri dei giavellotti
-sono per un hobgoblin o un orco con +1 a distanza.
-
-| Quota sopra la tenda | Visibili | Invisibili | Che cosa arriva |
-|---|---|---|---|
-| sopra i 45 m | nessuno li vede | nessuno li vede | niente: oltre la gittata dei giavellotti |
-| da 45 a 25 m | nessuno, se non li illumina il giavellotto con la *luce* (§8) | nessuno | giavellotti a −4/−8 (−2 ogni 9 m): colpiscono solo col 20 naturale, 1d6+1 |
-| da 24 a 19 m | **tutti**, nella luce dell'incendio | nessuno, finché non suona il corno; dopo, gli sciamani | giavellotti a −4: raffiche di 20-30, colpisce un giavellotto ogni venti |
-| 18 m e sotto | tutti, anche al buio | gli sciamani dopo il corno, e il sacerdote. *Comando* del sacerdote a 12 m | giavellotti a −2 o senza penalità; Zog'tar con i giavellotti Grandi |
-| 10,5 m e sotto | | | il *raggio rovente* degli sciamani, 4d6 |
-
-Il conto che conta: l'orda non può far male a chi resta in alto. Quello che
-temere sono quattro cose sole, e tutte hanno un nome: il *dissolvi* di Balvar,
-il giavellotto con la *luce* di Zog'tar, il corno, e il drago.
-
-**Che cosa rischiano i PG.** Finché restano a 48 m, zitti, e si allontanano
-dalla verticale della tenda dopo lo sgancio, niente: nessuno nel campo vede
-così in alto al buio. Restano sopra la tenda a guardarla bruciare, e dal round
-3-4 rischiano il giavellotto con la luce e il dissolvi di Balvar, cioè una
-caduta da 48 m. Il resto è tempo: il volo dura 50 round, l'invisibilità 30, e
-se il corno ha suonato il drago è lì al round 70.
-
-**La mossa migliore, se la chiedono.** Nel round di sorpresa, insieme alla
-botte, un barilotto su Grask. Ha 6 pf e Riflessi +1: una palla di fuoco lo
-uccide anche se il TS gli riesce (3d6, in media 10). Grask sta nella luce del
-falò della guardia, quindi il barilotto devia di 1d6−1 quadretti: lasciato
-cadere sopra P16, la palla di fuoco lo prende due volte su tre. Tutti e due i
-barilotti su di lui, nello stesso round: nove volte su dieci. Senza
-Grask il corno resta nella custodia col glifo, e la notte resta senza drago.
-
-## 9. I due barilotti da 10 litri
-
-| | Il numero | Da dove |
-|---|---|---|
-| Peso | circa 14 kg, 31 libbre: 9 kg d'olio, 5 di doghe e cerchi | |
-| Dove cade | 1d8 per la direzione, **1d6−1 quadretti** nella luce di un fuoco, 1d8−1 al buio: senza sassi rotola, e l'aria lo sposta | §2 |
-| Colpo diretto | oggetto in caduta da 31 a 50 libbre: 1d6 ogni 12 m, da 48 m **3d6** | SRD |
-| Tenuta | si apre sempre: 15d6 contro durezza 5 e 5 pf | §4 |
-| Fiale | una per barilotto: una *palla di fuoco* da 6d6, 6 m di raggio, Riflessi CD 14 | §5 |
-| Olio | 21 pinte: il cuore è la sola casella d'impatto (5 pinte, 10 round, colpito in pieno chi c'è), il resto i quadretti entro 3 m (16, una pinta l'uno, 2 round, lo spruzzo): l'olio va 3 m, la palla di fuoco 6 | §5, con la stessa variazione |
-
-La palla di fuoco del barilotto è grande quanto quella della botte; l'olio
-copre un quarto dell'area.
-
-Dove fanno più male, in ordine:
-
-1. **Su Grask, prima che suoni.** Ha 6 pf e Riflessi +1: una palla di fuoco lo
-   uccide quasi sempre, e senza Grask il corno resta nella custodia col glifo.
-   È l'unico modo di tenere lontano il drago senza scendere. Dal round 1 Grask
-   è a P16, nella luce del falò: lasciato cadere sopra di lui, il barilotto lo
-   prende due volte su tre; tutti e due, nove volte su dieci (§8).
-2. **Su una via battuta quando arrivano i rinforzi.** Le ronde d'orchi
-   arrivano in fila dalla via ovest: gli orchi hanno 5 pf, e una palla di
-   fuoco ne ammazza una ronda intera. Le lance della Guardia (guerrieri di 4°,
-   30 pf) passano bruciate ma vive.
-3. **Su Zog'tar fuori dalla tenda.** Fa poco: 3d6 se lo prende in pieno, 6d6
-   di fuoco, e lo trova già in Ira.
-4. **Sulla tenda del turno dopo**, a X4–Y5, prima che le due guardie escano.
-
-Un consiglio da dire al tavolo solo se lo chiedono: i barilotti valgono di più
-**contro il corno** che contro Zog'tar.
-
-## 10. Che cosa cambia per la storia
-
-- **Balvar.** Se è vivo, è stato attaccato: non tratta più da solo. La
-  Diplomazia CD 18 del nipote funziona solo con chi non l'ha minacciato, e
-  bruciargli la tenda è una minaccia. Resta la lastra d'ardesia, che porta
-  fuori dal fuoco: chi la guarda (Osservare CD 20, da vicino) legge il nome di
-  Hald, e chi gli parla del ragazzo per primo lo trova ancora aperto, perché
-  quella leva non dipende da come lo si è trattato (Scena 7, «Ricattabile»).
-  Se è morto nel fuoco è il caso «ucciso senza ascoltarlo» della Scena 7: la
-  lastra resta fra le ceneri della tenda, e qualcuno la trova in ARC-09. La
-  Catena sul drago e la sua gemella sul corno restano: le rune incise
-  sopravvivono al runaio.
-- **Il corno e il drago.** Se Grask muore e nessuno apre la custodia, all'alba
-  nessuno chiama il drago, ed è il caso «se rubano o rompono il corno» della
-  Scena 6: arriva tardi, a metà mattina, furioso. Se il corno suona di notte,
-  vale «se il corno suona di notte»: il duello all'alba si fa senza sorpresa,
-  con il drago già in quota.
-- **L'assalto dell'alba.** Le mura contano quello che arriva dalla notte
-  (Scena 10), e il barile ci porta due righe del canone: il boato è un
-  **allarme**, quindi un successo in meno, e Zog'tar quasi sempre è **vivo
-  all'alba**, quindi un altro successo in meno, e guida l'assalto. Tutte e due
-  valgono anche se la tenda è bruciata. Per bilanciarle propongo di leggere la
-  tenda in fiamme come la riga «Zog'tar umiliato davanti alle guardie»: il
-  generale tirato fuori dal fuoco davanti ai suoi annulla il successo in meno
-  dell'allarme. Se il barile uccide il
-  sacerdote, Zog'tar sale sulla breccia senza di lui, come il canone prevede
-  già (EL 16, senza Balvar e senza il sacerdote).
-- **Hammerfist vede.** Dalle mura le sentinelle vedono la tenda nera prendere
-  fuoco a un chilometro, nel mezzo del campo. Re Thorek lo sa prima che i PG
-  rientrino.
-- **Il nemico impara.** Dopo questa notte Zog'tar sa che i nani volano. Per il
-  resto dell'assedio dorme ogni notte in un posto diverso, al buio, e non sotto
-  una tenda; i fuochi dello spiazzo si spengono; gli sciamani tengono pronti
-  *vedere invisibilità* e *luce* sui giavellotti, e due di loro guardano il
-  cielo. Un secondo barile non trova più
-  niente di così facile.
-- **I PE per la trovata**: §13.
-- **Echo Ledger** (§7 di cap. IV): «la notte del barile», con chi è morto e se il
-  corno ha suonato.
-
-## 11. Le mappe
-
-**Perché al tavolo la tenda sembrava enorme.** Il ramo di gruppo
-`campaign-group-rumblingstone` e il booklet stampato il 12 ottobre hanno
-ancora la vecchia M7-C: un salone da 18 × 16,5 m su un palo solo, con sette
-croci di tendine attaccate. Su `main` la tenda è stata rifatta il 21 ottobre
-(PR #261) come padiglione a tre pali, 13,5 × 7,5 m di pavimento, ed è quella
-del booklet ristampato il 22. Questa PR fa un passo in più, e toglie lo
-steccato che la #261 ci aveva messo attorno: orchi e hobgoblin dell'orda sono
-un'orda nomade, non una legione.
-
-Il modello è il campo di un capo nomade: l'ordo di un khan mongolo, con la
-tenda del capo sola in mezzo e gli anelli di tende attorno; il khalasar di un
-khal, senza mura, dove il capo dorme al centro e i suoi fedeli più vicini; il
-campo di una banda gota o gallica, raccolta attorno al fuoco del capo e ai
-pali dei trofei, con i carri del bottino lasciati dove si sono fermati.
-
-- **M7-C** è lo **spiazzo del capo**: terra battuta senza recinto, larga una
-  quarantina di metri, con la tenda sola nel mezzo. Davanti alla soglia il
-  fuoco del consiglio, a notte fonda ridotto a brace (luce fioca solo entro 3
-  m, così l'avvicinamento della Scena 6 non cambia), e i due pali dei trofei
-  con lo stendardo della Mano Rossa; il bottino della valle ammucchiato
-  davanti al capo. Sul bordo, staccate l'una dall'altra, le tende dei servi e
-  del bottino, senza soldati, e la tenda del turno dopo a 9 m (X4–Y5). La
-  tenda, le persone e tutte le coordinate delle scene **non cambiano**.
-- **M7-H** è il **campo attorno**, 66 × 60 m. A 20-30 m dal telo le lance della
-  Guardia della Mano: quattro tende da otto attorno al fuoco della lancia, a
-  gruppi staccati, con 3 m fra il fuoco e i teli; a ovest i clan degli orchi,
-  ripari storti attorno al fuoco della banda, con il vuoto fra un clan e
-  l'altro; i lupi da guerra ai picchetti, i carri del bottino, il palo degli
-  sciamani. Le vie sono solo terra battuta, a raggiera dallo spiazzo, e i
-  rinforzi arrivano da lì. Nessuna tenda della Guardia è dentro i 6 m del
-  barile.
-
-Le misure vengono dalla ricerca sugli accampamenti, nelle parti sui campi
-mongoli e d'avventura. Le due mappe passano il collaudo senza
-errori, con voto di qualità 100 tutte e due.
-
-
-## 13. Le trovate dei giocatori: come gestirle le prossime volte
-
-Il barile non è stato un incidente: il tavolo ha guardato quello che aveva
-(olio, botti, fabbri nanici, pozioni, volo e invisibilità) e ha costruito
-un'arma che il modulo non prevedeva. Succederà ancora, ed è una cosa da
-premiare, non da contenere. Perché il DM non debba improvvisare, serve una
-procedura breve e sempre uguale `[Proposta — B14 e B15]`.
-
-**La procedura, in cinque passi.**
-
-1. **La regola più vicina dell'SRD.** Quasi tutto quello che i giocatori
-   costruiscono è già nell'SRD sotto un altro nome: oggetto in caduta, arma a
-   spargimento, olio e fuoco dell'alchimista, danni agli oggetti (durezza e
-   pf), trappole, crolli, fumo, annegamento. Si parte da lì e si scrive la
-   variazione, una sola, accanto.
-2. **Un tiro per l'imprevisto, non di più.** Se la trovata non è un attacco,
-   non c'è tiro per colpire. L'imprevisto si tira con un dado solo, come la
-   deviazione di questo documento (1d8 per la direzione, un dado per la
-   distanza), o con una prova di abilità del PG che l'ha costruita
-   (Artigianato, Conoscenze (architettura e ingegneria), Disattivare
-   Congegni) contro **CD 15 / 20 / 25** per una cosa semplice, ingegnosa o al
-   limite.
-3. **Il danno dalle tabelle.** Se la trovata fa danno, si prende la tabella
-   SRD più vicina (oggetti in caduta, trappole) e si sta dentro il tetto
-   delle trappole dell'SRD per il livello del gruppo: al 13° una trappola
-   seria fa in media 50-70 danni e ha CD 20-25. Il barile di questa notte,
-   15d6 + 12d6 di fuoco, sta proprio lì.
-4. **Le reazioni, da una tabella fissa.** Ogni scena di un modulo dovrebbe
-   avere tre righe pronte: chi è colpito e che cosa fa al suo primo turno, chi
-   se ne accorge e in quanti round, e che cosa arriva (allarme, rinforzi,
-   incantatori). È quello che il §8 fa per questa scena.
-5. **La conseguenza e il premio.** Una riga di canone (che cosa cambia nel
-   mondo) e i PE.
-
-**I PE per l'ingegno.** Il 3.5 lascia al DM i premi fuori dagli scontri. La
-proposta è dare per la trovata, oltre ai PE dei nemici che cadono davvero, i
-PE di uno scontro immaginario, con il GS legato a quanto la trovata pesa:
-
-| La trovata | GS dello scontro immaginario | Al 13°, PE da dividere fra i quattro |
-|---|---|---|
-| risolve una scena in un modo che il modulo non prevedeva | livello del gruppo −4 | 975, cioè 244 a testa |
-| cambia l'arco: tocca il canone, toglie un pezzo al nemico | livello del gruppo −2 | 1.950, cioè 487 a testa |
-| ribalta l'arco: salva un luogo, abbatte un boss prima del tempo | livello del gruppo | 3.900, cioè 975 a testa |
-
-Per il barile, la proposta è la seconda riga: brucia la tenda del comando, la
-mappa dell'assalto e quasi sempre il sacerdote, e tocca le mura all'alba. Se
-uccide Grask e il corno non suona, sale alla terza. I PE si segnano a mano: il
-registro PE dello script parte da zero, e senza un punto di partenza non va
-usato.
-
-**Lasciare che i PG stravolgano le cose.** Il modulo non deve difendere le sue
-scene. Due cose aiutano. La prima: nei master dei prossimi archi, accanto alle
-risorse che i PG trovano, una riga «se ci fanno l'ingegnere», con la regola SRD
-più vicina già scritta (la botte d'olio, la diga, il ponte, il forno della
-forgia). La seconda: i nemici intelligenti imparano. Dopo questa notte Zog'tar
-sa che i nani volano, e il resto dell'assedio lo mostra (§10).
-
-## Fonti
-
-- SRD 3.5, «Falling Objects», «Catching on Fire», «Smoke Effects»:
-  <https://www.d20srd.org/srd/environment.htm>
-- SRD 3.5, olio (la pinta versata, l'ampolla lanciata, la miccia) e fuoco
-  dell'alchimista: <https://www.d20srd.org/srd/equipment/goodsAndServices.htm>
-- SRD 3.5, armi a spargimento e deviazione:
-  <https://www.d20srd.org/srd/combat/specialAttacks.htm>
-- SRD 3.5, danni agli oggetti, durezza e punti ferita:
-  <https://www.d20srd.org/srd/combat/specialAttacks.htm>
-- SRD 3.5, *invisibilità* («causing harm indirectly is not an attack»), *palla
-  di fuoco*, aree e incroci della griglia, danno massiccio, CD degli oggetti
-  magici: d20srd.org, voci omonime
-- La fisica della caduta:
-  densità dell'olio 0,91 kg/l, aria a 870 m 1,12 kg/m³, coefficiente di
-  resistenza 0,9.
-
-
-\page
-
-# Appendice: le creature
-
-{{monster,frame
-## Balvar Fuocospento, il Consigliere dell'Orda
-*Medium humanoid (dwarf), Chierico 9 di Abbathor / Runecaster 4, NE* · GS 13
-___
-**Iniziativa** +2 · **Sensi** scurovisione 18 m; Ascoltare +5, Osservare +5
-
-**DIFESA**
-___
-**CA 24**, contatto 14, colto 22 (armatura completa di mithral +2, anello di protezione +2, DES +2) · **pf 101** (13 DV) · TS Temp +13, Rifl +8, **Vol +17** (+2 razziale vs magia) · immune a paura (patto con Abbathor) · **Debolezza** le sue rune sono **scritte** — chi legge il nanico antico e le vede può contrastarle (vedi il modulo).  
-
-**ATTACCO**
-___
-Vel 6 m · **Mischia** martello da guerra runico +1 +11/+6 (1d8+2) · Domini **Inganno** e **Runa** (dominio Runa = FRCS). Incantesimi da **chierico di 13° livello**: è chierico 9 **e** Runecaster 4, e il Runecaster avanza il lancio (per questo ha *blade barrier*, che è di 6°). CD 15+liv: tipici *dispel magic, magic circle against good, greater magic weapon, divination, righteous might, blade barrier, slay living, silence, invisibility purge, glyph of warding, dimensional anchor*, *greater command* (uno slot di 5° libero).  
-
-**STATISTICHE**
-___
-For 12, Des 14, Cos 16, Int 16, **Sag 20**, Car 14 · BAB +9; Lotta +10 · **Abilità** Percepire Intenzioni +13, Concentrazione +19, Sapienza Magica +19, Conoscenze (storia) +19, Artigianato (incidere rune) +19 (il conto dei gradi è nella nota in testa) · **Talenti** Incidere Rune `[Private source — FRCS]`, Volontà di Ferro, Riflessi Fulminei, Incantare in Combattimento, Scrivere Pergamene · **Equipaggiamento** armatura completa di mithral +2, anello di protezione +2, martello da guerra runico +1, polvere di diamante per i glifi  
-
-**CAPACITÀ SPECIALI**
-___
-- **Rune incise (Runecaster 4)**: incide fino a **4 rune persistenti** su superfici o creature consenzienti/legate; una runa incisa **non consuma slot al momento dell'uso** e scatta alla condizione scritta. Alla tenda di Zog'tar (ARC-07 questo capitolo, Scene 6 e 7): *invisibility purge* sulla soglia, *blade barrier* sul palo centrale, *silence* su sé stesso, **la Catena** (sotto). *Dimensional anchor* lo lancia, non lo incide.  
-- **La Catena di Skullcrusher (Su, unica)**: la runa-vincolo incisa nella scaglia sternale del drago. Finché regge, **Skullcrusher combatte per l'orda**. Non è dominazione — è un **contratto scritto nella carne**, e il drago lo sa.  
-- **Leggere il Fuori-Posto (Su, 3/giorno)**: come *detect magic* ma sulle **anomalie temporali**: percepisce chi non appartiene a questo secolo. **È il solo, in tutta Hammerfist ≈372 DR, che sa cosa sono i PG.**  
-}}
-{{monster,frame
-## Durin Rocciadura
-*Nano Medio · Guerriero 6* · GS 6
-___
-
-**DIFESA**
-___
-**CA 22** (arm. completa +1, scudo pesante +1) · **pf 52** · TS Temp +8, Rifl +2, Vol +4  
-
-**ATTACCO**
-___
-**Mischia** ascia da guerra nanica +1 +11 (1d10+5, ×3), a una mano  
-
-**STATISTICHE**
-___
-For 18, Cos 16, Sag 14 · BAB +6; Lotta +10  
-}}
-{{monster,frame
-## Guardia di Zog'tar (4)
-*Hobgoblin Medio · Guerriero 8 SRD sulle caratteristiche dell'hobgoblin* · GS 8
-___
-**Iniziativa** +1 · **Sensi** Ascoltare +1, Osservare +1 (senza gradi nelle due abilità)
-
-**DIFESA**
-___
-**CA** 19, +8 arm. completa, +1 DES, il massimo che l'armatura lascia; spadone, niente scudo  
-**pf** 60  
-**TS** Temp +8, Rifl +3, Vol +1  
-
-**ATTACCO**
-___
-**Velocità** 6 m (armatura pesante)  
-**Mischia** spadone +14 (2d6+6)  
-**Distanza** giavellotti +9 (1d6+4), incremento 9 m  
-}}
-{{monster,frame
-## Hobgoblin della pattuglia (8)
-*Hobgoblin Medio · guerriero 4 SRD, con Arma Focalizzata e Specializzata* · GS 4
-___
-**Iniziativa** +1 · **Sensi** Ascoltare −1, Osservare −1
-
-**DIFESA**
-___
-**CA** 15  
-**pf** 30  
-**TS** Temp +6, Rifl +2, Vol +0  
-
-**ATTACCO**
-___
-**Velocità** 9 m  
-**Mischia** spada lunga +6 (1d8+3/19-20)  
-
-*in otto fanno EL 10; i numeri sono calcolati sull'SRD*
-}}
-{{monster,frame
-## Orco della ronda
-*Orco Medio · guerriero 1 SRD* · GS ½
-___
-**Sensi** scurovisione 18 m
-
-**DIFESA**
-___
-**CA** 13, contatto 10  
-**pf** 5  
-**TS** Temp +3, Rifl +0, Vol −2  
-
-**ATTACCO**
-___
-**Mischia** falchion +4 (2d4+4/18-20)  
-**Distanza** giavellotto +1 (1d6+3)  
-}}
-{{monster,frame
-## Sacerdote dell'orda
-*Hobgoblin Medio · Adepto 7* · GS 6
-___
-**Iniziativa** +2 · **Sensi** Ascoltare +2, Osservare +2
-
-**DIFESA**
-___
-**CA 12** (+2 DES) · **pf 38** (7d6+14) · TS Temp +4, Rifl +4, Vol +7  
-
-**ATTACCO**
-___
-Vel 9 m · **Mischia** bastone ferrato +3 (1d6) · **Incantesimi** (3/4/3; CD 12 + livello): 0 *guida, individuazione del magico, luce*; 1° *benedizione, causare paura, comando, protezione dal bene*; 2° *vedere invisibilità, oscurità, forza del toro*  
-
-**STATISTICHE**
-___
-For 10, Des 14, Cos 15, Int 14, Sag 15, Car 8 · **Abilità** Ascoltare +2, Osservare +2, Concentrazione +12  
-}}
-{{monster,frame
-## Skullcrusher il Nero, il Primo Nero
-*Drago Enorme (acqua), caotico malvagio · drago nero adulto maturo, Avanzato · capostipite di Fauci di Palude* · GS 14
-___
-**Iniziativa** +6 · **Sensi** percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4; Ascoltare +29, Osservare +29
-
-**DIFESA**
-___
-**CA 33** (−2 taglia, +2 DES, +23 naturale), contatto 10, impreparato 31; **37 con *armatura magica***, che si lancia prima del duello e dura 5 ore: al duello della Scena 11 è **già addosso**, quindi CA 37 · **pf 297** (22d12+154) · TS Temp +20, Rifl +17, Vol +19 · RD 10/magia · RI 21 · immune acido, sonno, paralisi  
-
-**ATTACCO**
-___
-Vel 18 m, volare 45 m (scarsa), nuotare 18 m · **Mischia** morso +30 (2d8+10), 2 artigli +25 (2d6+5), 2 ali +25 (1d8+5), colpo di coda +25 (2d6+15) · Spazio 4,5 m, portata 3 m (morso 4,5 m) · **Schiacciare** (in volo o saltando, azione standard) 2d8+15, Riflessi CD 28 o immobilizzati; solo contro creature Piccole o minori: i nani e i PG Medi non li schiaccia · **Soffio acido** (Sop) linea di 30 m, 14d4, Riflessi CD 30 dimezza (28 + Capacità Focalizzata), di nuovo dopo 1d4 round · **Capacità magiche** 3/giorno *oscurità* (raggio 21 m); 1/giorno *corrompere l'acqua* (CD 25: rovina anche le pozioni che un PG ha addosso, se falliscono il TS) · **Incantesimi da stregone** (incantatore di 5°, CD 14 + livello): 0 (6/giorno) *individuazione del magico, lettura del magico, mano magica, resistenza, suono fantasma, frastornare*; 1° (7/giorno) *armatura magica, scudo, colpo accurato, dardo incantato*; 2° (5/giorno) *vedere invisibilità, immagine speculare*  
-
-**STATISTICHE**
-___
-For 31, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +22; Lotta +40 · **Talenti** Attacco in Volo, Capacità Focalizzata (soffio), Fluttuare, Iniziativa Migliorata, Riflessi Fulminei, Soffio Aderente, Virata, Volontà di Ferro · **Abilità** Ascoltare +29, Cercare +29, Concentrazione +32, Intimidire +29, Muoversi Silenziosamente +27, Nascondersi +19, Osservare +29, Sapienza Magica +29, Nuotare +18  
-
-**CAPACITÀ SPECIALI**
-___
-- **Soffio aderente**, quando lo sceglie: chi ne prende danno ne riprende metà al round dopo; toglierselo è un'azione di round completo con Riflessi CD 30 (+2 rotolando a terra, e si resta proni); la ricarica sale di 1 round.  
-- **Presenza Terrificante** (Str): raggio 63 m, Volontà CD 25; chi ha meno di 22 DV è scosso per 4d6 round (4 DV o meno: in preda al panico); chi supera il TS è immune per 24 ore.  
-- **Respirare sott'acqua** (Str).  
-}}
-{{monster,frame
-## Skullcrusher Vecchio
-*Drago Enorme (acqua), caotico malvagio · drago nero Vecchio dell'SRD, Avanzato* · GS 17 (Vecchio GS 16, +1 Avanzato)
-___
-**Iniziativa** +6 · **Sensi** come A.1
-
-**DIFESA**
-___
-**CA 36** (−2 taglia, +2 DES, +26 nat), contatto 10, impreparato 34; **40 con *armatura magica*** · **pf 337** (25d12+175) · TS Temp +21, Rifl +18, Vol +20 · RD 10/magia · RI 22 · immune acido, sonno, paralisi  
-
-**ATTACCO**
-___
-come A.1 · **Mischia** morso +34 (2d8+11), 2 artigli +29 (2d6+5), 2 ali +29 (1d8+5), colpo di coda +29 (2d6+16) · **Schiacciare** 2d8+16, Riflessi CD 29 (solo creature Piccole o minori) · **Soffio acido** linea di 30 m, 16d4, Riflessi CD 31 dimezza (aderente come A.1) · **Capacità magiche** come A.1, ma *oscurità* con raggio 24 m, più *crescita vegetale* 1/giorno · **Incantesimi da stregone** incantatore di 7°: 6/7/7/5 al giorno (*lentezza* CD 17)  
-
-**STATISTICHE**
-___
-For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · **Talenti** quelli di A.1 (Virata, non Ghermire), più Allerta · **Abilità** e il resto: come A.1  
-
-**CAPACITÀ SPECIALI**
-___
-- **Presenza Terrificante**: raggio 72 m, Volontà CD 26 (meno di 25 DV).  
-- **Soffio aderente**, come A.1.  
-}}
-{{monster,frame
-## Treant di Adamantio
-*Vegetale Grande, evocato dalla Collana di Hella* · GS ~10
-___
-
-**DIFESA**
-___
-**CA** 24, RD 10/adamantio, vulnerabile al fuoco  
-**pf** 90  
-**TS** Temp +12, Rifl +3, Vol +8  
-
-**ATTACCO**
-___
-**Velocità** 9 m  
-**Mischia** 2 schianti +18 (2d8+9), danni doppi alle strutture  
-**Speciale** Travolgere 2d8+13 (Riflessi CD 24)  
-
-**STATISTICHE**
-___
-For 29  
-
-*la scheda intera è nell'appendice delle statistiche della Resurrezione di Hella*
-}}
-{{monster,frame
-## Worg dei cavalieri dei lupi
-*Bestia magica Media · worg SRD* · GS 2
-___
-**Sensi** olfatto 9 m; Ascoltare +6, Osservare +6
-
-**DIFESA**
-___
-**CA** 14  
-**pf** 30  
-**TS** Temp +5, Rifl +6, Vol +3  
-
-**ATTACCO**
-___
-**Mischia** morso +7 (1d6+4) e sbilanciare  
-
-*worg dell'SRD; i tiri salvezza sono quelli della sua scheda SRD*
-}}
-{{monster,frame
-## Wyvern (2)
-*Drago Grande · wyvern SRD* · GS 6
-___
-
-**DIFESA**
-___
-**CA** 18  
-**pf** 59  
-**TS** Temp +7, Rifl +6, Vol +6  
-
-**ATTACCO**
-___
-**Velocità** volare 18 m  
-**Mischia** pungiglione +10 (1d6+4 e veleno, Tempra CD 17, 2d6 COS), morso +8 (2d8+4)  
-
-*wyvern dell'SRD; i tiri salvezza sono quelli della sua scheda SRD*
-}}
-{{monster,frame
-## Zog'tar Deatheye, generale dell'orda antica
-*Mezzo-Ogre/Orco Grande, caotico malvagio · Barbaro 14 / Guerriero 1* · GS 15 (Avanzato)
-___
-**Iniziativa** +9 · **Sensi** Ascoltare +11, Osservare +3
-
-**DIFESA**
-___
-**CA 26** (−1 taglia, +10 arm. completa di mithral +2, +3 DES, +4 nat), contatto 12, impreparato 26 (Schivare Prodigioso Migliorato); 24 in Ira. Il mithral alza la DES massima a +3 (SRD); è preda presa ai nani, e i nani la riconoscono · **pf 283** (15 DV, massimi per dado), 328 in Ira Superiore · TS Tempra +18 (+21 in Ira), Riflessi +9, Volontà +9 (+12 in Ira; +16 contro gli ammaliamenti, Volontà Indomita) · RD 3/— (barbaro 13) · Schivare Prodigioso Migliorato · Percepire Trappole +4 · Volontà Indomita (14°)  
-
-**ATTACCO**
-___
-Vel 12 m · **Mischia** in Ira, ascia a due mani +1 +29/+24/+19 (3d6+20, 20/×3); fuori dall'Ira (round di sorpresa) +26/+21/+16 (3d6+16) · **Distanza** 3 giavellotti Grandi +19 (BAB 15, DES +5, −1 taglia) (1d8+13), incremento 9 m · **Colpo Devastante** (azione standard) +25 in Ira, 3d6+20; Riflessi con CD pari al danno, o vola via di 3 m e cade prono (+1d6 a lui e all'ostacolo se ne incontra uno) · **Attacco Poderoso** a due mani: fino a −15 al colpire per +30 ai danni  
-
-**STATISTICHE**
-___
-For 30 (36 in Ira), Des 20, Cos 24 (30 in Ira), Int 16, Sag 16, Car 18 · BAB +15; Lotta +29 (+32 in Ira) · **Talenti** (7) Attacco Poderoso, Spingere Migliorato, Colpo Devastante (talento da mostro, SRD), Ira Extra, Iniziativa Migliorata, Volontà di Ferro, Arma Focalizzata (ascia) · **Abilità** Ascoltare +11, Osservare +3, Intimidire +14 (8 gradi in Ascoltare, 10 in Intimidire, nessuno in Osservare)  
-
-**CAPACITÀ SPECIALI**
-___
-- **Ira Barbarica Superiore** (6/giorno, con Ira Extra): +6 FOR, +6 COS, +3 Volontà, −2 CA, 13 round. Dopo l'Ira è affaticato (l'Ira Instancabile arriva al 17°).  
-- **Presenza Minacciosa**: entro 9 m, Volontà CD 21 o scosso 1d4 round (10 + ½ DV + CAR, come la presenza terrificante dei draghi; D57).  
-- **Occhio di Ossidiana** (artefatto minore maledetto, incastonato al posto dell'occhio destro, canone del DM): 3/giorno, azione di movimento, marca un bersaglio: −2 CA contro Zog'tar e +2 danni subiti da lui, 5 round. Prezzo: Zog'tar è **vulnerabile alla luce divina** (Luce di Lathander, Corona).  
-}}

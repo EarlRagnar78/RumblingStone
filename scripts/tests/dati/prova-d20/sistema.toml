@@ -1,0 +1,43 @@
+# Plugin finto per la prova del nove (ADR-0111, L8): un sistema d20 che si
+# aggiunge al repo senza toccare una riga di codice. Lo usa solo
+# scripts/tests/test_sistemi_prova_del_nove.py, che lo copia in un repo
+# temporaneo; non è mai in sistemi/ e nessuno strumento lo vede.
+#
+# Eredita quasi tutto dal 3.5 e cambia due regole, perché la prova serva:
+# soglie dei PE diverse e un altro raddoppio nell'EL.
+
+id = "prova-d20"
+nome = "Sistema d20 di prova (solo test)"
+tipo = "sistema"
+famiglia = "d20"
+licenza = "nessuna (dati inventati per il test)"
+fonti = []
+riconosci = ["Prova d20"]
+skill = []
+
+[capacita]
+"termini.vietati" = { eredita = "d20", motivo = "famiglia" }
+"statblocco.campi" = { eredita = "d20", motivo = "famiglia" }
+"statblocco.taglie" = { eredita = "d20", motivo = "famiglia" }
+"formule.regole" = { eredita = "d20", motivo = "famiglia" }
+"creature.armi" = { eredita = "dnd35", motivo = "stesse tabelle" }
+"creature.incantatori" = { eredita = "dnd35", motivo = "stesse tabelle" }
+"creature.prestigio" = { eredita = "dnd35", motivo = "stessi requisiti" }
+"creature.base" = { eredita = "dnd35", motivo = "stesse creature base" }
+"bonus.cumulo" = { eredita = "d20", motivo = "famiglia" }
+"stampa.etichette" = { eredita = "d20", motivo = "famiglia" }
+"lessico.abilita" = { eredita = "dnd35", motivo = "stesse abilità" }
+"lessico.entita" = { eredita = "dnd35", motivo = "stesse classi e razze" }
+"lessico.italiano" = { eredita = "dnd35", motivo = "stessi nomi italiani" }
+"fonti.regole" = { eredita = "dnd35", motivo = "nessuna fonte propria" }
+"pe.soglie" = { dati = ["sistemi/prova-d20/dati/pe.toml"] }
+"tesoro.per_livello" = { eredita = "dnd35", motivo = "stesso tesoro" }
+"incontri.livello" = { dati = ["sistemi/prova-d20/dati/incontri.toml"] }
+"creature.costruzione" = { eredita = "dnd35", motivo = "stesse tabelle" }
+"creature.statistiche_per_gs" = { eredita = "pf1e", motivo = "come il 3.5" }
+"creature.incantesimi" = { eredita = "dnd35", motivo = "stesse liste" }
+"creature.regole_di_tipo" = { eredita = "dnd35", motivo = "stesse regole di tipo" }
+"creature.conformita" = { eredita = "dnd35", motivo = "stessi conti" }
+"creature.talenti" = { eredita = "dnd35", motivo = "stessi talenti" }
+"creature.gradi" = { eredita = "dnd35", motivo = "stessi gradi" }
+"creature.liste_incantesimi" = { eredita = "dnd35", motivo = "stesse liste" }

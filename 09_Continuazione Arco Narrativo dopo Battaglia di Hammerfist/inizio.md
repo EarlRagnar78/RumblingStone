@@ -87,7 +87,7 @@ Ecco uno schema dettagliato per la continuazione dell'arco narrativo, con missio
 ### C. Monaco Nano - Torneo di Dauth  
 
 - Obiettivo: Successo in combattimenti epici e prova di abilità marziali contro sfidanti abili.  
-- Evento: Torneo regale con molteplici fasi, dalla lotta corpo a corpo fino a prove di agilità e equilibrio.  
+- Evento: Torneo regale con molteplici fasi, dalla lotta corpo a corpo fino a prove di agilità ed equilibrio.  
 - Finale: Interruzione da attacco Ghitianki cavalcanti draghi rossi.  
 - Ricompense: Fama, relazioni politiche, artefatti da combattimento.
 

@@ -57,17 +57,17 @@ SRD URL pattern: `https://www.d20srd.org/srd/classes/[className].htm`
 ## Bard
 
 **Arcane spells** (up to 6th level, CHA-based, no preparation needed)
-Verified anchor rows (SRD Table: The Bard / Bard Spells Known). Spells/day
-runs 0th–6th level and stops there; the bard is spontaneous, so *known* is the
-column that describes the creature.
+Verified anchor rows (PRD PF1e Table: Bard / Bard Spells Known — DM choice of
+2026-11-09, **not SRD 3.5**). Cantrips are at will, so spells/day starts at 1st
+level; the bard is spontaneous, so *known* is the column that describes the creature.
 
-| Level | Spells/Day (0/1st/…/6th) | Spells Known (0/1st/…/6th) |
+| Level | Spells/Day (1st/…/6th) | Spells Known (0/1st/…/6th) |
 |---|---|---|
-| 1 | 2 | 4/2 |
-| 5 | 3/3/1 | 6/4/3 |
-| 10 | 3/3/3/2/0 | 6/5/5/4/2 |
-| 15 | 4/4/3/3/3/2 | 6/6/6/5/4/4 |
-| 20 | 4/4/4/4/4/4/4 | 6/6/6/6/6/5/4 |
+| 1 | 1 | 4/2 |
+| 5 | 4/2 | 6/4/3 |
+| 10 | 5/4/3/1 | 6/5/5/4/2 |
+| 15 | 5/5/5/4/3 | 6/6/6/5/4/4 |
+| 20 | 5/5/5/5/5/5 | 6/6/6/6/6/5/5 |
 
 **Special Features:** Bardic Music (Inspire Courage/Competence/Greatness/Heroics, Countersong, Fascinate, Inspire Courage, Suggestion, Song of Freedom, Inspire Heroics, Mass Suggestion), Bardic Knowledge, Countersong, Fascinate
 
@@ -192,12 +192,20 @@ Caster level = paladin level − 3, so a 12th-level paladin casts as a 9th-level
 **Spellcasting**: Divine, 1st–4th level, WIS-based, prepared; starts at 4th level.
 Caster level = ranger level − 3.
 
-Verified anchor rows (SRD Table: The Ranger / The Paladin — same grid). There is
-no 0-level column: these two classes have no orisons, so the first number below
-is the **1st-level** slot.
+Verified anchor rows (PRD PF1e Table: Ranger / Paladin — same grid in PF1e;
+DM choice of 2026-11-09, **not SRD 3.5**: the SRD gives a 5th-level ranger no
+1st-level slot and a 20th-level one 3/3/3/3). There is no 0-level column: these
+two classes have no orisons, so the first number below is the **1st-level** slot.
 
 | Level | Spells/Day (1st/2nd/3rd/4th) |
 |---|---|
+| 4 | 0 |
+| 8 | 1/1 |
+| 12 | 2/2/1 |
+| 16 | 3/3/2/1 |
+| 20 | 4/4/3/3 |
+
+---|---|
 | 4 | 0 |
 | 8 | 1/1 |
 | 12 | 2/2/1 |

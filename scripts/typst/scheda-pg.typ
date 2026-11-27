@@ -13,7 +13,7 @@
 // Lo riempie scripts/export_booklet_typst.py leggendo i master markdown
 // (`PREGEN-*.md` + `FASCICOLO-*.md`). Qui non si scrive contenuto: solo forma.
 
-#import "tema-rumblingstone.typ": avorio, boxLeggi, inchiostro, rosso, seppia
+#import "tema-rumblingstone.typ": avorio, boxLeggi, inchiostro, rosso, seppia, titolo-visibile, to-string
 
 #let bordo = seppia.lighten(45%)
 #let campo = rgb("#efe6d2")
@@ -102,7 +102,8 @@
   footer: none,
 )[
   // Il segnalibro PDF e la voce d'indice: `place` lo tiene fuori dal flusso,
-  // così non ruba una riga alla fascia alta.
+  // così non ruba una riga alla fascia alta. Per i lettori di schermo il
+  // titolo è il nome visibile qui sotto (`titolo-visibile`, PDF/UA-1).
   #place(hide(heading(level: 1, nome)))
 
   #set text(size: 8.9pt)
@@ -116,7 +117,7 @@
       align: horizon,
 
       if ritratto != none {
-        block(radius: 2pt, clip: true, stroke: 0.7pt + seppia, image(ritratto, width: 3.9cm))
+        block(radius: 2pt, clip: true, stroke: 0.7pt + seppia, image(ritratto, width: 3.9cm, alt: "Ritratto di " + to-string(nome)))
       } else {
         block(width: 3.9cm, height: 5.05cm, radius: 2pt, stroke: (thickness: 0.7pt, paint: bordo, dash: "dashed"))[
           #align(center + horizon)[#text(size: 7pt, fill: seppia, style: "italic")[ritratto]]
@@ -129,7 +130,7 @@
         ]
         #v(-1pt)
         #block(above: 3pt, below: 3pt)[
-          #text(font: "Cinzel", size: 22pt, weight: 600, fill: rosso)[#nome]
+          #titolo-visibile(1, text(font: "Cinzel", size: 22pt, weight: 600, fill: rosso)[#nome])
         ]
         #line(length: 100%, stroke: 0.6pt + seppia)
         #v(2pt)

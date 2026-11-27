@@ -115,6 +115,7 @@ Con poco tempo per leggere: §0, §0-bis, Scene 2 e 3, Appendice A.
 | come è finito il duello, e le ferite lasciate al drago. Se è **FUGGITO**, anche il perché: ritirata dei PG, Catena spezzata, o un drago che non sono riusciti a intaccare (`DEF-4` Scena 11) | il ramo dell'arrivo (§0-bis, «I due rami»), §6, §7, la copertina del §9 |
 | cosa è successo con Vatore, e **chi porta il Sigillo di Ossidiana**, se l'hanno rubato | §7. Il Sigillo arriva acceso (`DEF-4` Appendice B, `[CANONE — DM 2026-10-18, G2-28]`): entro 9 m dal portatore la luce non magica scende a penombra, e lì il *Passo d'Ombra* di Artemis torna a funzionare. In mano ad Artemis il Sigillo è soppresso, e i poteri di luce dell'Anello diventano instabili. Un'ora dopo che è in mano a un PG il DM sceglie chi paga il livello negativo |
 | il tono del Rubino | §7 |
+| **la notte del barile** (`DEF-4` Scena 6, variante del barile): chi è morto nel fuoco fra Zog'tar, Balvar, il sacerdote e Grask, se il corno ha suonato, se Zog'tar è uscito dal fuoco davanti ai suoi | §7. Nel 1372 non cambia nessuna scena di questo master. Se Balvar è morto, la lastra col nome di Hald aspetta fra le ceneri fino all'ARC-09 |
 | se Re Thorek I ha dato il torque a Thorik, o se la Scena 12 è saltata e il torque è murato nell'incudine | Scena 2, la scheda di Re Thorek. Murato, lo tirano fuori i nani del 1372 quando riconoscono la Corona (`DEF-4` Scena 12): lo porta a Thorik uno dei dieci capi, dopo il passaggio di consegne |
 | se Thorik ha chiesto contro Zog'tar la **Benedizione della Forgia** (`DEF-4` Scena 8) | Scena 2 e 3: senza riposo è ancora **affaticato**, −2 a Forza e Destrezza, e non può correre né caricare (SRD). Al varco ci va a passo normale |
 | come Tordek ha usato la Cintura contro Zog'tar: tutte le cariche (la Cintura l'ha «assaggiata») o una o due (disciplinata) (`DEF-4` Scena 8) | §7 |
@@ -194,6 +195,7 @@ del duello). **VINTO SPORCO**: il drago l'hanno ricacciato gli avi, non i PG
 | Cosa | Prova | Dove |
 |---|---|---|
 | lo strappo fra le ere | Volontà **CD 15** o frastornati 1 round | Scena 1 |
+| il pegno di carne, solo per Artemis | Tempra **CD 20**: fallita, un livello negativo fino all'alba successiva; affaticato in ogni caso | Scena 1 |
 | l'aura, per ogni orco | Volontà **CD 25**: passa solo col 20, e resta scosso | Scena 2 |
 | salire sull'altare | Scalare **CD 15**, un round | Scena 2 |
 | scendere dall'altare | salto di 3 m: 1d6, o niente con Saltare o Acrobazia **CD 15** | Scena 2 |
@@ -252,8 +254,10 @@ drago sulle mura.
 > dopo la battaglia, non prima.
 
 ### 🐾 Supporto Pathfinder 1e (dove il 3.5 è vago) — opzionale, dichiarato
-> - **Il ritorno nel tempo**: nessun costo meccanico ai PG (il Rubino paga, ed è
->   speso). Torna tutto quello che portano addosso, comprato al banco della
+> - **Il ritorno nel tempo**: nessun costo meccanico a Thorik, Tordek e Hella
+>   (il Rubino paga, ed è speso). Artemis, l'unico che non è un nano, paga il
+>   pegno di carne della Scena 1: Tempra CD 20 `[CANONE — DM 2026-11-25, card «pegno di Artemis»]`.
+>   Torna tutto quello che portano addosso, comprato al banco della
 >   fucina compreso: pozioni, pergamene, bacchette, rune (Scena 1)
 >   `[CANONE — DM 2026-10-18, G2-14]`. Il Sigillo di Ossidiana, se l'hanno
 >   rubato a Vatore, torna come il resto, e acceso (`DEF-4` Appendice B). Al
@@ -324,6 +328,7 @@ riga e vai avanti.
   lo ha segnato o derubato, la **sincronizzazione** lo aspetta in ARC-09 (Sal).
 - L'Anello, all'arrivo, pulsa fra luce e ombra. Non è un dono divino: è la sua
   natura riforgiata che riconosce di essere **tornata a casa** nel tempo giusto.
+- All'arrivo paga il pegno di carne, lui solo: Tempra CD 20 (Scena 1).
 
 ---
 
@@ -336,8 +341,8 @@ Il box è nella **Scena 1**.
 **Volontà CD 15** o **frastornati 1 round** all'arrivo: lo strappo fra le ere
 scuote la mente, e si resiste con la Volontà; frastornato e non stordito, così
 nessuno lascia cadere quello che ha in mano `[CANONE — DM 2026-10-15, D90]`.
-Il beat chiede ai PG Volontà (lo strappo) e Riflessi (le stalattiti), mai
-Tempra: è voluto, perché è una transizione e non uno scontro pieno.
+Il beat chiede ai PG Volontà (lo strappo) e Riflessi (le stalattiti), e la
+Tempra solo ad Artemis, per il pegno di carne (Scena 1): è voluto, perché è una transizione e non uno scontro pieno.
 
 ### ZONA 2 — Il Cuore della Montagna (la caverna sacra sotto Hammerfist, 1372)
 I box sono nella **Scena 2**.
@@ -399,6 +404,43 @@ rende immune agli effetti mentali, e la pagina a tre gemme che il giocatore ha
 in mano lo dice. Il suo primo ordine da portatore della Corona arriva sempre
 col primo gesto della Scena 2, nel giro dei gesti `[CANONE — DM 2026-10-19, giro 4 DEF-5 n. 2]`.
 
+**Il pegno di carne** `[CANONE — DM 2026-11-25, card «pegno di Artemis»]`. All'arrivo
+Artemis, l'unico dei quattro che non è un nano, tira anche **Tempra CD 20**.
+Se la fallisce prende **un livello negativo** fino all'alba successiva, ed è
+**affaticato**; se la supera è solo affaticato. L'alba successiva è la prima
+dopo l'arrivo: i quattro arrivano il Giorno 3 dell'assedio (`ARC08-11`), ed è
+quella del giorno dopo. Tutto quello che si gioca il giorno dell'arrivo,
+Artemis lo gioca col pegno addosso.
+
+- *Il livello negativo* `[SRD: Energy Drained]`: −1 ai tiri per colpire, ai
+  tiri salvezza, alle prove di abilità e alle prove di caratteristica; 5
+  punti ferita in meno; −1 al livello effettivo, per la potenza, la durata e
+  la CD di incantesimi e capacità speciali; un incantatore perde anche un
+  incantesimo o uno slot del livello più alto che può lanciare. Qui **non
+  diventa permanente**: all'alba successiva se ne va da solo, senza il tiro
+  di Tempra che l'SRD chiede dopo 24 ore.
+- *Affaticato* `[SRD: Fatigued]`: −2 a Forza e Destrezza, e non può correre
+  né caricare; passa con otto ore di riposo completo. Affaticato su
+  affaticato dà **esausto**: se Artemis fa o subisce qualcosa che affatica,
+  passa a metà velocità e a −6 a Forza e Destrezza, e dopo un'ora di riposo
+  completo torna affaticato `[SRD: Exhausted]`.
+- *Che cosa li toglie.* *Ristorare inferiore* toglie l'affaticato e non il
+  livello negativo `[SRD: Lesser Restoration]`: lo lancia Hella, se le resta.
+  *Ristorare* toglie tutti e due `[SRD: Restoration]`, in tre round, e nel
+  gruppo viene solo dalle pergamene comprate da Brynja (`DEF-4`, «Cosa hanno
+  comprato»), lette da Artemis con Usare Oggetti Magici CD 27. Sono le
+  stesse che rialzano Re Thorek (Scena 3): quella letta per Artemis al re
+  non resta.
+
+Thorik, Tordek e Hella non pagano niente: per loro il Rubino paga, ed è
+speso `[CANONE — DM 2026-10-18, G2-14]`.
+
+<!-- storico -->
+*Fino al 2026-11-25 il ritorno non costava niente a nessuno dei quattro
+(G2-14, 2026-10-18). La card «pegno di Artemis» lo supera per il solo
+Artemis.*
+<!-- /storico -->
+
 **Che cosa torna con loro.** Tutto quello che portano addosso, comprato al
 banco della fucina compreso: pozioni, pergamene, bacchette, rune, come l'ascia
 e lo scudo del capo fabbro (`DEF-4` §6) `[CANONE — DM 2026-10-18, G2-14]`.
@@ -422,7 +464,7 @@ lo trovano.*
 
 ### SCENA 2 — L'apparizione
 
-**In scena** — Dove: la caverna — Chi: Re Thorek · Madre Superiora Dana · i novanta nani · gli orchi e il loro capo
+**In scena** — Dove: la caverna — Chi: Re Thorek · Madre Superiora Dagmar Forgiapietra · i novanta nani · gli orchi e il loro capo
 
 I PG compaiono sull'altare nell'istante in cui le porte di mithral cedono, e la
 loro luce mette in fuga gli orchi.
@@ -496,9 +538,12 @@ Dana, che gli si getta sopra `[CANONE — DM 2026-10-15, D92]`. Dana ha 20 pf pi
 2d8 dell'Apparizione, e la abbattono cinque o sei frecce, o due critici
 `[CANONE — DM 2026-10-18]`: allora vale la riga «Madre Dana cade» del §6.
 Caduta Dana, il colpo che ucciderebbe il re lo prende il primo dei dieci capi
-che sale sull'altare, e gli hobgoblin passano a tirare a chi è sull'altare.
+che sale sull'altare, **Hrolf Spaccascudi** `[CANONE — DM 2026-11-15]`, e gli hobgoblin passano a tirare a chi è sull'altare.
 Nel ramo luminoso succede di rado, perché i tiri al re cominciano al round 6
 `[CANONE — DM 2026-10-19, giro 4 DEF-5 n. 6]`.
+<!-- storico -->
+<!-- fino al 2026-11-15 i dieci capi erano senza nome; il DM ha scelto sulla card del 15/11 di nominarne due con un gesto (Hrolf Spaccascudi prende il colpo al posto del re, Yrsa Portastendardo tiene lo stendardo). Quattro capi sono gli Eroi di Hammerfist nella regia breve, gli altri quattro restano senza nome. Se Hrolf sopravvive al colpo non è deciso -->
+<!-- /storico -->
 
 #### Il round di sorpresa, un gesto a testa
 
@@ -516,8 +561,13 @@ si ricorda (§7). Le statistiche di Treant e Durik sono in Appendice A.
 | **Hella** · radici intorno al re | le radici che le crescono intorno sono sue: chiuse sul re, copertura totale per un round `[CANONE — DM 2026-10-12, D77]` | |
 | **Hella** · radici verso la porta | fanno come *intralciare*, ma su un'area di 6 m di raggio (Riflessi CD 15), per un round soltanto `[CANONE — DM 2026-10-12, D77]`. Nel round di sorpresa prendono gli orchi in fuga, non gli hobgoblin, che entrano dopo | chi resta intralciato non può fuggire: si rannicchia come ogni creatura in panico messa all'angolo (SRD) e si arrende |
 | **Hella** · lo *Scudo del Custode* | solo se al rito Thorik ha donato la deflessione: 1/giorno, immediata, prende dimezzato il danno di un alleato entro 9 m, e Thorik è accelerato 3 round verso chi lei ha protetto | |
-| **Hella** · i Treant di Adamantio | si chiamano con la Collana, uno per seme ancora carico (i semi tornano all'alba): un'azione standard, e arrivano alla fine del round. Durano 1 ora (`DEF-3` Appendice A.2; qui Appendice A.3) | chiamarli **tutti e due insieme** spegne per un mese l'Evocazione dei Guardiani, il potere della Collana che li chiama (niente Treant, e Durik torna solo all'alba): va detto alla giocatrice prima che scelga. Se al −1000 li ha già chiamati insieme di notte, è spenta; chiamarli insieme all'alba non la spegne (`DEF-4`). L'alba del 1372 non è ancora arrivata: i semi spesi al −1000 sono ancora spesi. I Treant chiamati all'alba del 372, se la loro ora non è finita, restano al −1000 e svaniscono a fine durata; il seme resta speso fino all'alba del 1372 (D91). Quelli chiamati qui compaiono ai piedi dell'altare, dentro lo schieramento `[CANONE — DM 2026-10-19, giro 4 DEF-5 n. 4]` |
+| **Hella** · i Treant di Adamantio | si chiamano con la Collana, uno per seme ancora carico (i semi tornano all'alba): un'azione standard, e arrivano alla fine del round. Durano 1 ora (`DEF-3` Appendice A.2; qui Appendice A.3) | chiamarli **tutti e due insieme** spegne per un mese l'Evocazione dei Guardiani, il potere della Collana che li chiama (niente Treant, e Durik torna solo all'alba): va detto alla giocatrice prima che scelga. Se al −1000 li ha già chiamati insieme di notte, è spenta; chiamarli insieme all'alba non la spegne (`DEF-4`). L'alba del 1372 non è ancora arrivata: i semi spesi al −1000 sono ancora spesi. I Treant chiamati all'alba del 372, se la loro ora non è finita, restano al −1000 e svaniscono a fine durata; il seme resta speso fino all'alba del 1372<!-- apparato --> (D91)<!-- /apparato -->. Quelli chiamati qui compaiono ai piedi dell'altare, dentro lo schieramento `[CANONE — DM 2026-10-19, giro 4 DEF-5 n. 4]` |
 | **Hella** · Durik | arriva con lei, perché è legato alla Collana (`DEF-4`): sta accanto a Hella e va dove lei lo manda (Appendice A.4) | se il drago l'ha distrutto nel duello, Hella lo richiama col seme III, se è carico e l'Evocazione non è spenta: torna subito, per un'ora (`DEF-3` §7). Altrimenti torna all'alba |
+
+**Artemis fa il suo gesto col pegno addosso** (Scena 1) `[CANONE — DM 2026-11-25, card «pegno di Artemis»]`:
+affaticato non corre e non carica, ma muove normalmente, Ali d'Ombra
+comprese `[SRD: Fatigued]`; con la Tempra fallita ha anche il −1 del livello
+negativo ai tiri.
 
 **Le radici di Hella si usano una volta per scena** `[CANONE — DM 2026-10-18, G2-33]`,
 intorno al re o verso la porta: un'azione standard, alla gittata di
@@ -529,6 +579,7 @@ intorno al re o verso la porta: un'azione standard, alla gittata di
 |---|---|---|
 | i novanta nani | a trenta metri dall'altare, rivolti alle porte: un blocco spesso di scudi davanti al varco e due ali più sottili piegate verso l'altare; sessanta guerrieri, venti balestrieri, dieci capi. Hanno fatto due giorni di assedio e si vede nelle braccia | fino all'apparizione non parlano, contano. Dopo gridano tutti insieme una parola sola, il nome della fortezza |
 | gli orchi | berserker entrati con le porte, sporchi di fumo e di sangue nanico. Trovano davanti una luce che non capiscono | urlano per farsi coraggio. Quando la luce li colpisce smettono, e chi scappa scappa senza voltarsi |
+| Hrolf Spaccascudi e Yrsa Portastendardo `[CANONE — DM 2026-11-15]` | due dei dieci capi, gli unici con un nome. Hrolf è il primo che sale sull'altare quando cade Dana. Yrsa tiene lo stendardo di Hammerfist in mezzo al blocco di scudi, e quando i novanta gridano lo alza | Hrolf non parla, si mette davanti. Yrsa grida il nome della fortezza per prima, e gli altri le vanno dietro |
 | il capo degli orchi | il più grosso, con un elmo nanico preso sulle mura. Vuole uscire vivo e tenersi l'elmo | urla ordini in orchesco finché ha qualcuno a cui darli, poi niente |
 
 **Scheda d'entrata — Re Thorek Hammerfist, il re che doveva morire oggi** *(statistiche: Appendice A.6, e la Guida DM dell'ARC-08, PNG Alleati)*
@@ -545,7 +596,7 @@ intorno al re o verso la porta: un'azione standard, alla gittata di
 
 ⚠️ A voce **Thorek** e **Thorik** si confondono: di' sempre **«Re Thorek»**.
 
-**Scheda d'entrata — Madre Superiora Dana Forgiapietra, la voce del tempio** *(statistiche: Appendice A.5, e la Guida DM dell'ARC-08, PNG Alleati)*
+**Scheda d'entrata — Madre Superiora Dagmar Forgiapietra, detta Dana, la voce del tempio** *(statistiche: Appendice A.5, e la Guida DM dell'ARC-08, PNG Alleati)*
 
 | | |
 |---|---|
@@ -597,7 +648,7 @@ intera**.
 
 ### SCENA 3 — La pulizia e il passaggio
 
-**In scena** — Dove: la caverna — Chi: Re Thorek · Madre Superiora Dana · gli orchi · gli hobgoblin sergenti · Aegis Fang
+**In scena** — Dove: la caverna — Chi: Re Thorek · Madre Superiora Dagmar Forgiapietra · gli orchi · gli hobgoblin sergenti · Aegis Fang
 
 Restano due orchi scossi, e alla fine del round 1 entrano venti hobgoblin
 sergenti che vogliono il re: cinque passano lo schieramento, e quando cadono comincia
@@ -762,7 +813,7 @@ l'ordine e il preavviso ne tolgono gli stessi.
 > drago. Fauci di Palude. Devasta ancora le mura. Se non cade, tutto è perduto
 > comunque.»*
 >
-> **MADRE SUPERIORA DANA (in piedi, la voce che torna ferma):** *«Posso aprire un portale diretto ai bastioni della Porta
+> **MADRE SUPERIORA DAGMAR (in piedi, la voce che torna ferma):** *«Posso aprire un portale diretto ai bastioni della Porta
 > Ovest. Là il drago apparirà quando vi sentirà: la vendetta del sangue chiama.»*
 >
 > **AEGIS FANG (canta):** *«Sangue Skullcrusher chiama! Fauci ci SENTE! Verrà. E
@@ -805,8 +856,8 @@ tavolo.
 preghiera di un round; dall'altra parte entrano il vento e il fumo dei bastioni
 `[CANONE — DM 2026-10-12, D77]`. Il potere è del luogo: lo apre l'altare
 consacrato del Cuore della Montagna, e la preghiera lo chiede
-`[CANONE — DM 2026-10-18, G2-34]`. Quanto resta aperto
-`[INFERRED — needs DM confirmation]`.
+`[CANONE — DM 2026-10-18, G2-34]`. Resta aperto 1 minuto
+(10 round), poi si chiude `[CANONE — DM 2026-11-04, P16, poteri e luoghi]`.
 
 > **Read-aloud (LotR lead) — la caverna, il portale.** *Dana prega per il tempo
 > di un respiro, e sulla parete si apre un arco di luce dorata. Dall'altra parte
@@ -862,6 +913,7 @@ Ogni fallimento di questo master è un costo, non un blocco.
 | **Debito della Radice** (`DEF-3` §6) | pegno al Sogno della Terra (A/B/C, o il quarto ramo: Thorik ha preso il debito su di sé, eco E-07g) | ARC-09 (Cerchio Sacro/Ghostlord) |
 | **Seme del Ghostlord** (`DEF-4` §1-bis) | Zeth avviato alla lichificazione (mano del Collezionista) | ARC-09 (dilemma di Hella) |
 | **Vatore/Sal** (`DEF-4` §5) | sincronizzazione (se segnato/derubato/ferito) | ARC-09 (Sal) |
+| **La notte del barile** (`DEF-4` Scena 6, supplemento «Il barile sulla tenda» §10) | chi è morto nel fuoco; il corno suonato o no; Zog'tar vivo, umiliato o morto. Balvar morto: la lastra col nome di Hald resta fra le ceneri | ARC-08, se Zog'tar è vivo (`DEF-4` §7) · ARC-09 (la lastra) |
 | **Il segno della cera nera** (`DEF-4` Scena 5, la boccetta n. 4) | chi l'ha bevuta, PG o Re Thorek, porta il riflesso violaceo sotto il polso, finché non lo toglie *rimuovi maledizione*. Lo vedono gli agenti della gilda del Collezionista, e in ARC-09 Sal lo cerca su quel polso | ARC-08/09 |
 | **Seme-Mercato di Varis** (`DEF-1` §6-bis) | Marchio di Varis / rispetto | ARC-09 |
 | **Doni mancati alla resurrezione** (`DEF-3` §5) | Hella senza RD 3 / Timeless / Rinascita, se rifiutati | ARC-08/09 |
@@ -877,16 +929,16 @@ Ogni fallimento di questo master è un costo, non un blocco.
 ### A. Budget PX
 | Voce | PX/PG<!-- apparato --> `[verif. ✓ ERRATA/TESORO-WBL 2026-07-23]`<!-- /apparato --> |
 |---|---|
-| Ritorno + Manifestazione (chiusura d'arco, premio maggiore) | 1.000 |
+| Ritorno + Manifestazione (chiusura d'arco, premio maggiore): si dà tutto alla Scena 2, quando il ritorno è compiuto `[CANONE — DM 2026-11-27, serata-30-11 n. 13]` | 1.000 |
 | Pulizia della caverna (opzionale; in tutte e due le modalità) | 300 |
 | **PREMIO DI COMPLETAMENTO ARCO-07** (il viaggio-leggenda concluso) | **2.000** |
 | **TOTALE beat** | **~3.300/PG** |
 
 > **Somma d'arco (ARC-07)**: Terra ~11.600 + Affreschi ~1.900 + Resurrezione
-> ~1.900 + Viaggio ~7.600 + Ritorno ~3.300 = **~26.300/PG**. Con il Fuoco (P3)
-> già alle spalle, i PG hanno i PX del **14°** già all'arrivo, se il registro PX
-> del gruppo lo conferma: per il gruppo di oggi i PX del Fuoco hanno ancora tre
-> valori che non coincidono, e il DM non ha scelto (`sessione-4`, «XP awarded»).
+> ~1.900 + Viaggio ~7.600 + Ritorno ~3.300 = **~26.300/PG**, più il Fuoco (P3).
+> **Per un gruppo che gioca** il conto vero è nel registro dei PX del suo ramo
+> di gruppo<!-- apparato --> (`campaign/REGISTRO-PX.md` sul ramo)<!-- /apparato -->. Vale la regola 3.5 di un livello
+> alla volta `[CANONE — DM 2026-11-27, serata-30-11 n. 14]`.<!-- storico --> Fino al 2026-11-27: «Per il gruppo di oggi il conto vero è nel registro dei PX `[CANONE — DM 2026-11-05, P16, PX]`: Thorik, Tordek e Artemis hanno i PX del 14° già all'arrivo e restano fermi a 104.999 (un livello alla volta). Hella li raggiunge durante la notte di DEF-4.»<!-- /storico -->
 > Il livello si prende al
 > primo riposo, cioè dopo la battaglia di Hammerfist `[CANONE — DM 2026-10-15, D90]`. Se dormono nel Cuore della Montagna, quello è il primo riposo e il livello si prende lì, al prezzo della breccia (§6) `[CANONE — DM 2026-10-18]`. Le parti giocate non si ritoccano.
 
@@ -930,10 +982,10 @@ bastioni dopo mezza giornata di battaglia sotterranea, e il ponte d'arrivo
 racconta l'arrivo nel Cuore della Montagna, cioè la Scena 2, con uno stato del
 gruppo superato. Finché il raccordo non è scritto, il DM apre la Sessione 4
 della Guida (l'Incontro 4A, la battaglia aerea contro Fauci) dall'uscita del portale, subito, e con
-lo stato del §0-bis `[CANONE — DM 2026-10-19, giro 4 DEF-5 n. 5]`. Il raccordo va scritto, e il ponte d'arrivo
-dell'ARC-08 va portato allo stato in uscita: −4 DES / +2 COS / +4 CAR, i tre
-Doni, Durik sempre presente, il Cuore di Moradin che non aggancia gli spiriti
-(D32).
+lo stato del §0-bis `[CANONE — DM 2026-10-19, giro 4 DEF-5 n. 5]`. Il raccordo va scritto. Il ponte d'arrivo
+dell'ARC-08 è allineato allo stato in uscita<!-- storico --> dal 2026-10-31<!-- /storico -->: −4 DES / +2 COS /
++4 CAR, i tre Doni, Durik sempre presente, il Cuore di Moradin che non aggancia
+gli spiriti<!-- apparato --> (D32)<!-- /apparato -->, e il §3.4 che riprende dall'Incontro 4A.
 
 ### Handout giocatore
 1. **«Lo Stato dei Custodi»**, da consegnare a chiusura d'arco, uno per
@@ -1015,7 +1067,7 @@ Grande, **90 pf**, CA 24, RD 10/adamantio, velocità 9 m, 2 schianti +18
 
 Medio, **102 pf**, CA 21, velocità 12 m, morso +15 (2d6+6) (`DEF-4`).
 
-### A.5 · Madre Superiora Dana Forgiapietra (Scene 2-3)
+### A.5 · Madre Superiora Dagmar Forgiapietra, detta Dana (Scene 2-3)
 
 Chierica 12 di Moradin / Cantante Divina 3, GS 14: CA 29 (contatto 14, colta
 alla sprovvista 28), iniziativa +1, 142 pf massimi, ma
@@ -1069,8 +1121,8 @@ ginocchio sul re, sull'altare.
 > Caverna-cattedrale **100 m × 80 m × 40 m** di altezza.
 > ⚠️ **Scala 3 m/quadretto**: è la deviazione A4 dalla convenzione 1,5 m. La
 > griglia originale è disegnata così, e non è stata ridisegnata per non
-> alterare posizioni e portate già usate nel testo. Dal 2026-10-22 è
-> dichiarata vista d'insieme (`@tipo strategica`): le miniature si muovono
+> alterare posizioni e portate già usate nel testo. Ora è
+> dichiarata vista d'insieme<!-- storico --> (dal 2026-10-22)<!-- /storico --> (`@tipo strategica`): le miniature si muovono
 > sulla carta **CM-2**, qui sotto, a 1,5 m. Non mischiare quadretti di mappe a
 > scale diverse.
 
@@ -1132,7 +1184,7 @@ BIOLUMINESCENTI (luce piena ovunque, niente *darkness*).
 @north N
 @tipo strategica caverna
 @luogo Hammerfist, il Cuore della Montagna (sotto la fucina grande, livello −3)
-@quota −150 m ; sotto il cortile di Hammerfist (livello 0) [INFERRED — needs DM confirmation]
+@quota −150 m ; sotto il cortile di Hammerfist (livello 0) [CANONE — DM 2026-11-04, P16, poteri e luoghi]
 @dislivello +3 m ; l'altare sul pavimento della caverna; le piattaforme laterali +1,5 m
 ```
 <!-- /apparato -->
@@ -1186,7 +1238,7 @@ BIOLUMINESCENTI (luce piena ovunque, niente *darkness*).
   | 6-8 | **15 Bugbear assassini** | Nascondersi +12, puntano i capi e Re Thorek — **interrotti dall'Apparizione** |
   | 9-10 | **Grimjaw + 10 Orog** (se vivo) | vede il ribaltone: ritirata strategica O sfida personale a Thorik; se già morto → capitano minore, auto-ritirata |
 - **⏱️ Timing dell'Apparizione (due regie valide)**: giocando il **3B completo**
-  (lato ARC-08, coi PNG giocabili Borin/Dara/Thorin/Nala; nella regia breve
+  (lato ARC-08, coi PNG giocabili Borin/Dara/Harbek/Nala; nella regia breve
   sono fra i dieci capi al centro, e non parlano) i PG appaiono al
   **Round 8**, nel mezzo dell'ondata 3; giocando **solo il lato ARC-07**
   (DEF-5 Scena 2, arrivo compresso) appaiono nell'istante in cui le porte cedono.

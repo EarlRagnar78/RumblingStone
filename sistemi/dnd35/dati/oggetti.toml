@@ -1,0 +1,1679 @@
+# sistemi/dnd35/dati/oggetti.toml — prezzi degli oggetti magici e valore dell'equipaggiamento
+# di un PNG per livello (ADR-0126, lotto 8)
+#
+# GENERATO da plans/esperimenti/regole-senza-omissioni-2026-11-12/estrai_oggetti.py
+# dall'SRD 3.5 (olimot/srd-v3.5-md@c7f30a0c, OGL). Non si corregge a mano.
+
+[oggetti.png]
+# NON dall'SRD, che non l'ha: Dungeon Master's Guide 3.5, Tabella 4-23 «NPC Gear Value»,
+# solo i numeri (mo dal 1° al 20° livello), riscontrati il 2026-11-13 su
+# realmshelps.net/charbuild/classes/npc
+per_livello = [900, 2000, 2500, 3300, 4300, 5600, 7200, 9400, 12000, 16000, 21000, 27000, 35000, 45000, 59000, 77000, 100000, 130000, 170000, 220000]
+
+[oggetti.potenziamento]
+# SRD, «Table: Weapons» e «Table: Armor and Shields»: prezzo base del bonus da +1 in su (mo)
+arma = [2000, 8000, 18000, 32000, 50000, 72000, 98000, 128000, 162000, 200000]
+armatura = [1000, 4000, 9000, 16000, 25000]
+
+[oggetti.prezzi]
+# SRD, tabelle degli oggetti magici: «Market Price» (mo). Anelli, verghe, bastoni, bacchette
+# e pozioni hanno davanti il nome della loro tabella.
+"absorbing shield" = 50170
+"adamantine battleaxe" = 3010
+"adamantine breastplate" = 10200
+"adamantine dagger" = 3002
+"amulet of health +2" = 4000
+"amulet of health +4" = 16000
+"amulet of health +6" = 36000
+"amulet of mighty fists +1" = 6000
+"amulet of mighty fists +2" = 24000
+"amulet of mighty fists +3" = 54000
+"amulet of mighty fists +4" = 96000
+"amulet of mighty fists +5" = 150000
+"amulet of natural armor +1" = 2000
+"amulet of natural armor +2" = 8000
+"amulet of natural armor +3" = 18000
+"amulet of natural armor +4" = 32000
+"amulet of natural armor +5" = 50000
+"amulet of proof against detection and location" = 35000
+"amulet of the planes" = 120000
+"apparatus of the crab" = 90000
+"assassin's dagger" = 10302
+"bag of holding type i" = 2500
+"bag of holding type ii" = 5000
+"bag of holding type iii" = 7400
+"bag of holding type iv" = 10000
+"bag of tricks, gray" = 900
+"bag of tricks, rust" = 3000
+"bag of tricks, tan" = 6300
+"banded mail of luck" = 18900
+"bead of force" = 3000
+"belt of dwarvenkind" = 14900
+"belt of giant strength +4" = 16000
+"belt of giant strength +6" = 36000
+"belt, monk's" = 13000
+"blessed book" = 12500
+"boat, folding" = 7200
+"boots of elvenkind" = 2500
+"boots of levitation" = 7500
+"boots of speed" = 12000
+"boots of striding and springing" = 5500
+"boots of teleportation" = 49000
+"boots of the winterlands" = 2500
+"boots, winged" = 16000
+"bottle of air" = 7250
+"bowl of commanding water elementals" = 100000
+"bracelet of friends" = 19000
+"bracers of archery, greater" = 25000
+"bracers of archery, lesser" = 5000
+"bracers of armor +1" = 1000
+"bracers of armor +2" = 4000
+"bracers of armor +3" = 9000
+"bracers of armor +4" = 16000
+"bracers of armor +5" = 25000
+"bracers of armor +6" = 36000
+"bracers of armor +7" = 49000
+"bracers of armor +8" = 64000
+"brazier of commanding fire elementals" = 100000
+"breastplate of command" = 25400
+"brooch of shielding" = 1500
+"broom of flying" = 17000
+"candle of invocation" = 8400
+"candle of truth" = 2500
+"cape of the mountebank" = 10080
+"carpet of flying, 10 ft. by 10 ft." = 60000
+"carpet of flying, 5 ft. by 10 ft." = 35000
+"carpet of flying, 5 ft. by 5 ft." = 20000
+"carpet of flying, 6 ft. by 9 ft." = 53000
+"caster's shield" = 3153
+"celestial armor" = 22400
+"censer of controlling air elementals" = 100000
+"chaos diamond" = 160000
+"chime of interruption" = 16800
+"chime of opening" = 3000
+"circlet of blasting, major" = 23760
+"circlet of blasting, minor" = 6480
+"circlet of persuasion" = 4500
+"cloak of arachnida" = 14000
+"cloak of charisma +2" = 4000
+"cloak of charisma +4" = 16000
+"cloak of charisma +6" = 36000
+"cloak of displacement, major" = 50000
+"cloak of displacement, minor" = 24000
+"cloak of elvenkind" = 2500
+"cloak of etherealness" = 55000
+"cloak of resistance +1" = 1000
+"cloak of resistance +2" = 4000
+"cloak of resistance +3" = 9000
+"cloak of resistance +4" = 16000
+"cloak of resistance +5" = 25000
+"cloak of the bat" = 26000
+"cloak of the manta ray" = 7200
+"cold iron longsword, masterwork" = 330
+"crystal ball" = 42000
+"crystal ball with detect thoughts" = 51000
+"crystal ball with see invisibility" = 50000
+"crystal ball with telepathy" = 70000
+"crystal ball with true seeing" = 80000
+"cube of force" = 62000
+"cube of frost resistance" = 27000
+"cubic gate" = 164000
+"dagger of venom" = 8302
+"darkskull" = 60000
+"darkwood buckler" = 205
+"darkwood shield" = 257
+"decanter of endless water" = 9000
+"deck of illusions" = 8100
+"demon armor" = 52260
+"dimensional shackles" = 28000
+"dragonhide plate" = 3300
+"drums of panic" = 30000
+"dust of appearance" = 1800
+"dust of disappearance" = 3500
+"dust of dryness" = 850
+"dust of illusion" = 1200
+"dust of tracelessness" = 250
+"dwarven plate" = 16500
+"dwarven thrower" = 60312
+"efficient quiver" = 1800
+"efreeti bottle" = 145000
+"elemental gem" = 2250
+"elixir of fire breath" = 1100
+"elixir of hiding" = 250
+"elixir of love" = 150
+"elixir of sneaking" = 250
+"elixir of swimming" = 250
+"elixir of truth" = 500
+"elixir of vision" = 250
+"elven chain" = 4150
+"eversmoking bottle" = 5400
+"eyes of charming" = 56000
+"eyes of doom" = 25000
+"eyes of petrification" = 98000
+"eyes of the eagle" = 2500
+"feather token, anchor" = 50
+"feather token, bird" = 300
+"feather token, fan" = 200
+"feather token, swan boat" = 450
+"feather token, tree" = 400
+"feather token, whip" = 500
+"figurine of wondrous power, bronze griffon" = 10000
+"figurine of wondrous power, ebony fly" = 10000
+"figurine of wondrous power, golden lions" = 16500
+"figurine of wondrous power, ivory goats" = 21000
+"figurine of wondrous power, marble elephant" = 17000
+"figurine of wondrous power, obsidian steed" = 28500
+"figurine of wondrous power, onyx dog" = 15500
+"figurine of wondrous power, serpentine owl" = 9100
+"figurine of wondrous power, silver raven" = 3800
+"flame tongue" = 20715
+"frost brand" = 54475
+"gauntlet of rust" = 11500
+"gauntlets of ogre power" = 4000
+"gem of brightness" = 13000
+"gem of seeing" = 75000
+"glove of storing" = 10000
+"gloves of arrow snaring" = 4000
+"gloves of dexterity +2" = 4000
+"gloves of dexterity +4" = 16000
+"gloves of dexterity +6" = 36000
+"gloves of swimming and climbing" = 6250
+"goggles of minute seeing" = 1250
+"goggles of night" = 12000
+"golem manual, clay" = 12000
+"golem manual, flesh" = 8000
+"golem manual, greater stone" = 44000
+"golem manual, iron" = 35000
+"golem manual, stone" = 22000
+"hand of glory" = 8000
+"hand of the mage" = 900
+"handy haversack" = 2000
+"harp of charming" = 7500
+"hat of disguise" = 1800
+"headband of intellect +2" = 4000
+"headband of intellect +4" = 16000
+"headband of intellect +6" = 36000
+"helm of brilliance" = 125000
+"helm of comprehend languages and read magic" = 5200
+"helm of telepathy" = 27000
+"helm of teleportation" = 73500
+"helm of underwater action" = 24000
+"holy avenger" = 120630
+"horn of blasting" = 20000
+"horn of blasting, greater" = 70000
+"horn of fog" = 2000
+"horn of goodness/evil" = 6500
+"horn of the tritons" = 15100
+"horn of valhalla" = 50000
+"horseshoes of a zephyr" = 6000
+"horseshoes of speed" = 3000
+"incense of meditation" = 4900
+"instant fortress" = 55000
+"ioun stone, clear spindle" = 4000
+"ioun stone, dark blue rhomboid" = 10000
+"ioun stone, deep red sphere" = 8000
+"ioun stone, dusty rose prism" = 5000
+"ioun stone, incandescent blue sphere" = 8000
+"ioun stone, iridescent spindle" = 18000
+"ioun stone, lavender and green ellipsoid" = 40000
+"ioun stone, orange" = 30000
+"ioun stone, pale blue rhomboid" = 8000
+"ioun stone, pale green prism" = 30000
+"ioun stone, pale lavender ellipsoid" = 20000
+"ioun stone, pearly white spindle" = 20000
+"ioun stone, pink and green sphere" = 8000
+"ioun stone, pink rhomboid" = 8000
+"ioun stone, scarlet and blue sphere" = 8000
+"ioun stone, vibrant purple prism" = 36000
+"iron bands of binding" = 26000
+"iron flask" = 170000
+"javelin of lightning" = 1500
+"lantern of revealing" = 30000
+"lens of detection" = 3500
+"life-drinker" = 40320
+"lion's shield" = 9170
+"luck blade (0 wishes)" = 22060
+"luck blade (1 wish)" = 62360
+"luck blade (2 wishes)" = 102660
+"luck blade (3 wishes)" = 142960
+"lyre of building" = 13000
+"mace of smiting" = 75312
+"mace of terror" = 38552
+"mantle of faith" = 76000
+"mantle of spell resistance" = 90000
+"manual of bodily health +1" = 27500
+"manual of bodily health +2" = 55000
+"manual of bodily health +3" = 82500
+"manual of bodily health +4" = 110000
+"manual of bodily health +5" = 137500
+"manual of gainful exercise +1" = 27500
+"manual of gainful exercise +2" = 55000
+"manual of gainful exercise +3" = 82500
+"manual of gainful exercise +4" = 110000
+"manual of gainful exercise +5" = 137500
+"manual of quickness in action +1" = 27500
+"manual of quickness in action +2" = 55000
+"manual of quickness in action +3" = 82500
+"manual of quickness in action +4" = 110000
+"manual of quickness in action +5" = 137500
+"marvelous pigments" = 4000
+"mask of the skull" = 22000
+"mattock of the titans" = 23348
+"maul of the titans" = 25305
+"medallion of thoughts" = 12000
+"mirror of life trapping" = 200000
+"mirror of mental prowess" = 175000
+"mirror of opposition" = 92000
+"mithral full plate of speed" = 26500
+"mithral heavy shield" = 1020
+"mithral shirt" = 1100
+"necklace of adaptation" = 9000
+"necklace of fireballs type i" = 1650
+"necklace of fireballs type ii" = 2700
+"necklace of fireballs type iii" = 4350
+"necklace of fireballs type iv" = 5400
+"necklace of fireballs type v" = 6150
+"necklace of fireballs type vi" = 8100
+"necklace of fireballs type vii" = 9150
+"nine lives stealer" = 23057
+"oathbow" = 25600
+"orb of storms" = 48000
+"pearl of power, 1st-level spell" = 1000
+"pearl of power, 2nd-level spell" = 4000
+"pearl of power, 3rd-level spell" = 9000
+"pearl of power, 4th-level spell" = 16000
+"pearl of power, 5th-level spell" = 25000
+"pearl of power, 6th-level spell" = 36000
+"pearl of power, 7th-level spell" = 49000
+"pearl of power, 8th-level spell" = 64000
+"pearl of power, 9th-level spell" = 81000
+"pearl of power, two spells" = 70000
+"pearl of the sirines" = 15300
+"periapt of health" = 7400
+"periapt of proof against poison" = 27000
+"periapt of wisdom +2" = 4000
+"periapt of wisdom +4" = 16000
+"periapt of wisdom +6" = 36000
+"periapt of wound closure" = 15000
+"phylactery of faithfulness" = 1000
+"phylactery of undead turning" = 11000
+"pipes of haunting" = 6000
+"pipes of pain" = 12000
+"pipes of sounding" = 1800
+"pipes of the sewers" = 1150
+"plate armor of the deep" = 24650
+"portable hole" = 20000
+"potion of aid (potion)" = 300
+"potion of barkskin +2 (potion)" = 300
+"potion of barkskin +3 (potion)" = 600
+"potion of barkskin +4 (potion)" = 900
+"potion of barkskin +5 (potion)" = 1200
+"potion of bear's endurance (potion)" = 300
+"potion of bless weapon (oil)" = 100
+"potion of blur (potion)" = 300
+"potion of bull's strength (potion)" = 300
+"potion of cat's grace (potion)" = 300
+"potion of cure light wounds (potion)" = 50
+"potion of cure moderate wounds (potion)" = 300
+"potion of cure serious wounds (potion)" = 750
+"potion of darkness (oil)" = 300
+"potion of darkvision (potion)" = 300
+"potion of daylight (oil)" = 750
+"potion of delay poison (potion)" = 300
+"potion of displacement (potion)" = 750
+"potion of eagle's splendor (potion)" = 300
+"potion of endure elements (potion)" = 50
+"potion of enlarge person (potion)" = 250
+"potion of flame arrow (oil)" = 750
+"potion of fly (potion)" = 750
+"potion of fox's cunning (potion)" = 300
+"potion of gaseous form (potion)" = 750
+"potion of good hope (potion)" = 1050
+"potion of greater magic fang +1 (potion)" = 750
+"potion of greater magic fang +2 (potion)" = 1200
+"potion of greater magic fang +3 (potion)" = 1800
+"potion of greater magic fang +4 (potion)" = 2400
+"potion of greater magic fang +5 (potion)" = 3000
+"potion of greater magic weapon +1 (oil)" = 750
+"potion of greater magic weapon +2 (oil)" = 1200
+"potion of greater magic weapon +3 (oil)" = 1800
+"potion of greater magic weapon +4 (oil)" = 2400
+"potion of greater magic weapon +5 (oil)" = 3000
+"potion of haste (potion)" = 750
+"potion of heroism (potion)" = 750
+"potion of hide from animals (potion)" = 50
+"potion of hide from undead (potion)" = 50
+"potion of invisibility (potion or oil)" = 300
+"potion of jump (potion)" = 50
+"potion of keen edge (oil)" = 750
+"potion of lesser restoration (potion)" = 300
+"potion of levitate (potion or oil)" = 300
+"potion of mage armor (potion)" = 50
+"potion of magic circle against (alignment) (potion)" = 750
+"potion of magic fang (potion)" = 50
+"potion of magic stone (oil)" = 50
+"potion of magic vestment +1 (oil)" = 750
+"potion of magic vestment +2 (oil)" = 1200
+"potion of magic vestment +3 (oil)" = 1800
+"potion of magic vestment +4 (oil)" = 2400
+"potion of magic vestment +5 (oil)" = 3000
+"potion of magic weapon (oil)" = 50
+"potion of misdirection (potion)" = 300
+"potion of neutralize poison (potion)" = 750
+"potion of nondetection (potion)" = 750
+"potion of owl's wisdom (potion)" = 300
+"potion of pass without trace (potion)" = 50
+"potion of protection from (alignment) (potion)" = 50
+"potion of protection from arrows 10/magic (potion)" = 300
+"potion of protection from arrows 15/magic (potion)" = 1500
+"potion of protection from energy (type) (potion)" = 750
+"potion of rage (potion)" = 750
+"potion of reduce person (potion)" = 250
+"potion of remove blindness/deafness (potion)" = 750
+"potion of remove curse (potion)" = 750
+"potion of remove disease (potion)" = 750
+"potion of remove fear (potion)" = 50
+"potion of remove paralysis (potion)" = 300
+"potion of resist energy (type) 10 (potion)" = 300
+"potion of resist energy (type) 20 (potion)" = 700
+"potion of resist energy (type) 30 (potion)" = 1100
+"potion of sanctuary (potion)" = 50
+"potion of shield of faith +2 (potion)" = 50
+"potion of shield of faith +3 (potion)" = 300
+"potion of shield of faith +4 (potion)" = 600
+"potion of shield of faith +5 (potion)" = 900
+"potion of shillelagh (oil)" = 50
+"potion of spider climb (potion)" = 300
+"potion of tongues (potion)" = 750
+"potion of undetectable alignment (potion)" = 300
+"potion of water breathing (potion)" = 750
+"potion of water walk (potion)" = 750
+"rapier of puncturing" = 50320
+"restorative ointment" = 4000
+"rhino hide" = 5165
+"ring gates" = 40000
+"ring of animal friendship" = 10800
+"ring of blinking" = 27000
+"ring of chameleon power" = 12700
+"ring of climbing" = 2500
+"ring of climbing, improved" = 10000
+"ring of counterspells" = 4000
+"ring of djinni calling" = 125000
+"ring of elemental command (air)" = 200000
+"ring of elemental command (earth)" = 200000
+"ring of elemental command (fire)" = 200000
+"ring of elemental command (water)" = 200000
+"ring of energy resistance, greater" = 44000
+"ring of energy resistance, major" = 28000
+"ring of energy resistance, minor" = 12000
+"ring of evasion" = 25000
+"ring of feather falling" = 2200
+"ring of force shield" = 8500
+"ring of freedom of movement" = 40000
+"ring of friend shield (pair)" = 50000
+"ring of invisibility" = 20000
+"ring of jumping" = 2500
+"ring of jumping, improved" = 10000
+"ring of mind shielding" = 8000
+"ring of protection +1" = 2000
+"ring of protection +2" = 8000
+"ring of protection +3" = 18000
+"ring of protection +4" = 32000
+"ring of protection +5" = 50000
+"ring of ram" = 8600
+"ring of regeneration" = 90000
+"ring of shooting stars" = 50000
+"ring of spell storing" = 50000
+"ring of spell storing, major" = 200000
+"ring of spell storing, minor" = 18000
+"ring of spell turning" = 98280
+"ring of sustenance" = 2500
+"ring of swimming" = 2500
+"ring of swimming, improved" = 10000
+"ring of telekinesis" = 75000
+"ring of three wishes" = 97950
+"ring of water walking" = 15000
+"ring of wizardry (i)" = 20000
+"ring of wizardry (ii)" = 40000
+"ring of wizardry (iii)" = 70000
+"ring of wizardry (iv)" = 100000
+"ring of x-ray vision" = 25000
+"robe of blending" = 30000
+"robe of bones" = 2400
+"robe of eyes" = 120000
+"robe of scintillating colors" = 27000
+"robe of stars" = 58000
+"robe of the archmagi" = 75000
+"robe of useful items" = 7000
+"rod of absorption" = 50000
+"rod of alertness" = 85000
+"rod of cancellation" = 11000
+"rod of enemy detection" = 23500
+"rod of flailing" = 50000
+"rod of flame extinguishing" = 15000
+"rod of immovable" = 5000
+"rod of lordly might" = 70000
+"rod of metal and mineral detection" = 10500
+"rod of metamagic, empower" = 32500
+"rod of metamagic, empower, greater" = 73000
+"rod of metamagic, empower, lesser" = 9000
+"rod of metamagic, enlarge" = 11000
+"rod of metamagic, enlarge, greater" = 24500
+"rod of metamagic, enlarge, lesser" = 3000
+"rod of metamagic, extend" = 11000
+"rod of metamagic, extend, greater" = 24500
+"rod of metamagic, extend, lesser" = 3000
+"rod of metamagic, maximize" = 54000
+"rod of metamagic, maximize, greater" = 121500
+"rod of metamagic, maximize, lesser" = 14000
+"rod of metamagic, quicken" = 75500
+"rod of metamagic, quicken, greater" = 170000
+"rod of metamagic, quicken, lesser" = 35000
+"rod of metamagic, silent" = 11000
+"rod of metamagic, silent, greater" = 24500
+"rod of metamagic, silent, lesser" = 3000
+"rod of negation" = 37000
+"rod of python" = 13000
+"rod of rulership" = 60000
+"rod of security" = 61000
+"rod of splendor" = 25000
+"rod of thunder and lightning" = 33000
+"rod of viper" = 19000
+"rod of withering" = 25000
+"rod of wonder" = 12000
+"rope of climbing" = 3000
+"rope of entanglement" = 21000
+"salve of slipperiness" = 1000
+"scabbard of keen edges" = 16000
+"scarab of protection" = 38000
+"scarab, golembane" = 2500
+"screaming bolt" = 267
+"shatterspike" = 4315
+"shifter's sorrow" = 12780
+"silver dagger, masterwork" = 322
+"silversheen" = 250
+"slaying arrow" = 2282
+"slaying arrow (greater)" = 4057
+"sleep arrow" = 132
+"slippers of spider climbing" = 4800
+"sovereign glue" = 2400
+"spined shield" = 5580
+"staff of abjuration" = 65000
+"staff of charming" = 16500
+"staff of conjuration" = 65000
+"staff of defense" = 58250
+"staff of divination" = 73500
+"staff of earth and stone" = 80500
+"staff of enchantment" = 65000
+"staff of evocation" = 65000
+"staff of fire" = 17750
+"staff of frost" = 56250
+"staff of healing" = 27750
+"staff of illumination" = 48250
+"staff of illusion" = 65000
+"staff of life" = 155750
+"staff of necromancy" = 65000
+"staff of passage" = 170500
+"staff of power" = 211000
+"staff of size alteration" = 29000
+"staff of swarming insects" = 24750
+"staff of transmutation" = 65000
+"staff of woodlands" = 101250
+"stone horse, courser" = 10000
+"stone horse, destrier" = 14800
+"stone of alarm" = 2700
+"stone of controlling earth elementals" = 100000
+"stone of good luck (luckstone)" = 20000
+"stone salve" = 4000
+"strand of prayer beads" = 25800
+"strand of prayer beads, greater" = 95800
+"strand of prayer beads, lesser" = 9600
+"sun blade" = 50335
+"sustaining spoon" = 5400
+"sword of life stealing" = 25715
+"sword of subtlety" = 22310
+"sword of the planes" = 22315
+"sylvan scimitar" = 47315
+"talisman of the sphere" = 9000
+"tome of clear thought +1" = 27500
+"tome of clear thought +2" = 55000
+"tome of clear thought +3" = 82500
+"tome of clear thought +4" = 110000
+"tome of clear thought +5" = 137500
+"tome of leadership and influence +1" = 27500
+"tome of leadership and influence +2" = 55000
+"tome of leadership and influence +3" = 82500
+"tome of leadership and influence +4" = 110000
+"tome of leadership and influence +5" = 137500
+"tome of understanding +1" = 27500
+"tome of understanding +2" = 55000
+"tome of understanding +3" = 82500
+"tome of understanding +4" = 110000
+"tome of understanding +5" = 137500
+"trident of fish command" = 18650
+"trident of warning" = 10115
+"unguent of timelessness" = 150
+"universal solvent" = 50
+"vest of escape" = 5200
+"vestment, druid's" = 3750
+"wand of acid arrow" = 4500
+"wand of bear's endurance" = 4500
+"wand of bull's strength" = 4500
+"wand of burning hands" = 750
+"wand of call lightning (5th)" = 11250
+"wand of call lightning (8th)" = 18000
+"wand of cat's grace" = 4500
+"wand of chaos hammer (8th)" = 24000
+"wand of charm animal" = 750
+"wand of charm monster" = 21000
+"wand of charm person" = 750
+"wand of charm person, heightened (3rd-level spell)" = 11250
+"wand of color spray" = 750
+"wand of contagion" = 11250
+"wand of cure critical wounds" = 21000
+"wand of cure light wounds" = 750
+"wand of cure moderate wounds" = 4500
+"wand of cure serious wounds" = 11250
+"wand of darkness" = 4500
+"wand of daylight" = 4500
+"wand of delay poison" = 4500
+"wand of detect magic" = 375
+"wand of detect secret doors" = 750
+"wand of dimensional anchor" = 21000
+"wand of dispel magic" = 11250
+"wand of dispel magic (10th)" = 22500
+"wand of eagle's splendor" = 4500
+"wand of enlarge person" = 750
+"wand of false life" = 4500
+"wand of fear" = 21000
+"wand of fireball (10th)" = 22500
+"wand of fireball (5th)" = 11250
+"wand of fireball (6th)" = 13500
+"wand of fireball (8th)" = 18000
+"wand of fox's cunning" = 4500
+"wand of ghoul touch" = 4500
+"wand of greater invisibility" = 21000
+"wand of hold person" = 4500
+"wand of hold person, heightened (4th level)" = 21000
+"wand of holy smite (8th)" = 24000
+"wand of ice storm" = 21000
+"wand of inflict critical wounds" = 21000
+"wand of invisibility" = 4500
+"wand of keen edge" = 11250
+"wand of knock" = 4500
+"wand of levitate" = 4500
+"wand of light" = 375
+"wand of lightning bolt (10th)" = 22500
+"wand of lightning bolt (5th)" = 11250
+"wand of lightning bolt (6th)" = 13500
+"wand of lightning bolt (8th)" = 18000
+"wand of magic missile (1st)" = 750
+"wand of magic missile (3rd)" = 2250
+"wand of magic missile (5th)" = 3750
+"wand of magic missile (7th)" = 5250
+"wand of magic missile (9th)" = 6750
+"wand of major image" = 11250
+"wand of mirror image" = 4500
+"wand of neutralize poison" = 21000
+"wand of order's wrath (8th)" = 24000
+"wand of owl's wisdom" = 4500
+"wand of poison" = 21000
+"wand of polymorph" = 21000
+"wand of ray of enfeeblement, heightened (4th level)" = 21000
+"wand of restoration" = 26000
+"wand of searing light (6th)" = 13500
+"wand of shatter" = 4500
+"wand of shocking grasp" = 750
+"wand of silence" = 4500
+"wand of slow" = 11250
+"wand of stoneskin" = 33500
+"wand of suggestion" = 11250
+"wand of suggestion, heightened (4th level)" = 21000
+"wand of summon monster i" = 750
+"wand of summon monster ii" = 4500
+"wand of summon monster iii" = 11250
+"wand of summon monster iv" = 21000
+"wand of unholy blight (8th)" = 24000
+"wand of wall of fire" = 21000
+"wand of wall of ice" = 21000
+"wand of web" = 4500
+"well of many worlds" = 82000
+"wind fan" = 5500
+"winged shield" = 17257
+"wings of flying" = 54000
+
+[oggetti.capacita.arma]
+# SRD, «Table: Melee/Ranged Weapon Special Abilities»: bonus equivalente da sommare al potenziamento, o prezzo in mo
+"anarchic" = { bonus = 2 }
+"axiomatic" = { bonus = 2 }
+"bane" = { bonus = 1 }
+"brilliant energy" = { bonus = 4 }
+"dancing" = { bonus = 4 }
+"defending" = { bonus = 1 }
+"disruption" = { bonus = 2 }
+"distance" = { bonus = 1 }
+"flaming" = { bonus = 1 }
+"flaming burst" = { bonus = 2 }
+"frost" = { bonus = 1 }
+"ghost touch" = { bonus = 1 }
+"holy" = { bonus = 2 }
+"icy burst" = { bonus = 2 }
+"keen" = { bonus = 1 }
+"ki focus" = { bonus = 1 }
+"merciful" = { bonus = 1 }
+"mighty cleaving" = { bonus = 1 }
+"returning" = { bonus = 1 }
+"seeking" = { bonus = 1 }
+"shock" = { bonus = 1 }
+"shocking burst" = { bonus = 2 }
+"speed" = { bonus = 3 }
+"spell storing" = { bonus = 1 }
+"throwing" = { bonus = 1 }
+"thundering" = { bonus = 1 }
+"unholy" = { bonus = 2 }
+"vicious" = { bonus = 1 }
+"vorpal" = { bonus = 5 }
+"wounding" = { bonus = 2 }
+
+[oggetti.capacita.armatura]
+# SRD, «Table: Armor/Shield Special Abilities»: bonus equivalente da sommare al potenziamento, o prezzo in mo
+"acid resistance" = { mo = 18000 }
+"acid resistance, greater" = { mo = 66000 }
+"acid resistance, improved" = { mo = 42000 }
+"animated" = { bonus = 2 }
+"arrow catching" = { bonus = 1 }
+"arrow deflection" = { bonus = 2 }
+"bashing" = { bonus = 1 }
+"blinding" = { bonus = 1 }
+"cold resistance" = { mo = 18000 }
+"cold resistance, greater" = { mo = 66000 }
+"cold resistance, improved" = { mo = 42000 }
+"electricity resistance" = { mo = 18000 }
+"electricity resistance, greater" = { mo = 66000 }
+"electricity resistance, improved" = { mo = 42000 }
+"etherealness" = { mo = 49000 }
+"fire resistance" = { mo = 18000 }
+"fire resistance, greater" = { mo = 66000 }
+"fire resistance, improved" = { mo = 42000 }
+"fortification, heavy" = { bonus = 5 }
+"fortification, light" = { bonus = 1 }
+"fortification, moderate" = { bonus = 3 }
+"ghost touch" = { bonus = 3 }
+"glamered" = { mo = 2700 }
+"invulnerability" = { bonus = 3 }
+"reflecting" = { bonus = 5 }
+"shadow" = { mo = 3750 }
+"shadow, greater" = { mo = 33750 }
+"shadow, improved" = { mo = 15000 }
+"silent moves" = { mo = 3750 }
+"silent moves, greater" = { mo = 33750 }
+"silent moves, improved" = { mo = 15000 }
+"slick" = { mo = 3750 }
+"slick, greater" = { mo = 33750 }
+"slick, improved" = { mo = 15000 }
+"sonic resistance" = { mo = 18000 }
+"sonic resistance, greater" = { mo = 66000 }
+"sonic resistance, improved" = { mo = 42000 }
+"spell resistance (13)" = { bonus = 2 }
+"spell resistance (15)" = { bonus = 3 }
+"spell resistance (17)" = { bonus = 4 }
+"spell resistance (19)" = { bonus = 5 }
+"undead controlling" = { mo = 49000 }
+"wild" = { bonus = 3 }
+
+[oggetti.pergamene]
+# SRD, «Table: Arcane Spell Scrolls» e «Table: Divine Spell Scrolls»: il prezzo più basso (mo intere)
+"acid arrow" = 150
+"acid fog" = 1650
+"acid splash" = 12
+"air walk" = 700
+"alarm" = 25
+"analyze dweomer" = 1650
+"animal growth" = 1125
+"animal messenger" = 150
+"animal shapes" = 3000
+"animal trance" = 150
+"animate dead" = 625
+"animate objects" = 1650
+"animate plants" = 2275
+"animate rope" = 25
+"antilife shell" = 1650
+"antimagic field" = 1650
+"antipathy" = 3000
+"antiplant shell" = 700
+"arcane eye" = 700
+"arcane lock" = 175
+"arcane mark" = 12
+"arcane sight" = 375
+"arcane sight, greater" = 2275
+"astral projection" = 4870
+"atonement" = 3625
+"augury" = 175
+"awaken" = 2375
+"baleful polymorph" = 1125
+"bane" = 25
+"banishment" = 1650
+"barkskin" = 150
+"bear's endurance" = 150
+"bear's endurance, mass" = 1650
+"bestow curse" = 375
+"binding" = 8500
+"black tentacles" = 700
+"blade barrier" = 1650
+"blasphemy" = 2275
+"bless" = 25
+"bless water" = 50
+"bless weapon" = 100
+"blight" = 700
+"blindness/deafness" = 150
+"blink" = 375
+"blur" = 150
+"break enchantment" = 700
+"bull's strength" = 150
+"bull's strength, mass" = 1650
+"burning hands" = 25
+"call lightning" = 375
+"call lightning storm" = 1125
+"calm animals" = 25
+"calm emotions" = 150
+"cat's grace" = 150
+"cat's grace, mass" = 1650
+"cause fear" = 25
+"chain lightning" = 1650
+"changestaff" = 2275
+"charm animal" = 25
+"charm monster" = 700
+"charm monster, mass" = 3000
+"charm person" = 25
+"chill metal" = 150
+"chill touch" = 25
+"circle of death" = 2150
+"clairaudience/clairvoyance" = 375
+"clenched fist" = 3000
+"cloak of chaos" = 3000
+"clone" = 4000
+"cloudkill" = 1125
+"color spray" = 25
+"command" = 25
+"command plants" = 700
+"command undead" = 150
+"command, greater" = 1125
+"commune" = 1625
+"commune with nature" = 1125
+"comprehend languages" = 25
+"cone of cold" = 1125
+"confusion" = 700
+"confusion, lesser" = 50
+"consecrate" = 200
+"contact other plane" = 1125
+"contagion" = 375
+"contingency" = 1650
+"continual flame" = 200
+"control plants" = 3000
+"control undead" = 2275
+"control water" = 700
+"control weather" = 2275
+"control winds" = 1125
+"create food and water" = 375
+"create greater undead" = 3000
+"create undead" = 1650
+"create water" = 12
+"creeping doom" = 2275
+"crushing despair" = 700
+"crushing hand" = 3825
+"cure critical wounds" = 700
+"cure critical wounds, mass" = 3000
+"cure light wounds" = 25
+"cure light wounds, mass" = 1125
+"cure minor wounds" = 12
+"cure moderate wounds" = 150
+"cure moderate wounds, mass" = 1650
+"cure serious wounds" = 375
+"cure serious wounds, mass" = 2275
+"curse water" = 50
+"dancing lights" = 12
+"darkness" = 150
+"darkvision" = 150
+"daylight" = 375
+"daze" = 12
+"daze monster" = 150
+"death knell" = 150
+"death ward" = 700
+"deathwatch" = 25
+"deep slumber" = 375
+"deeper darkness" = 375
+"delay poison" = 150
+"delayed blast fireball" = 2275
+"demand" = 3600
+"desecrate" = 200
+"destruction" = 2275
+"detect animals or plants" = 25
+"detect chaos/evil/good/law" = 25
+"detect magic" = 12
+"detect poison" = 12
+"detect scrying" = 700
+"detect secret doors" = 25
+"detect snares and pits" = 25
+"detect thoughts" = 150
+"detect undead" = 25
+"dictum" = 2275
+"dimension door" = 700
+"dimensional anchor" = 700
+"dimensional lock" = 3000
+"diminish plants" = 375
+"discern lies" = 700
+"discern location" = 3000
+"disguise self" = 25
+"disintegrate" = 1650
+"dismissal" = 700
+"dispel chaos/evil/good/law" = 1125
+"dispel magic" = 375
+"dispel magic, greater" = 1625
+"displacement" = 375
+"disrupt undead" = 12
+"disrupting weapon" = 1125
+"divination" = 725
+"divine favor" = 25
+"divine power" = 700
+"dominate animal" = 375
+"dominate monster" = 3825
+"dominate person" = 1125
+"doom" = 25
+"dream" = 1125
+"eagle's splendor" = 150
+"eagle's splendor, mass" = 1650
+"earthquake" = 3000
+"elemental swarm" = 3825
+"endure elements" = 25
+"energy drain" = 3825
+"enervation" = 700
+"enlarge person" = 25
+"enlarge person, mass" = 700
+"entangle" = 25
+"enthrall" = 150
+"entropic shield" = 25
+"erase" = 25
+"ethereal jaunt" = 2275
+"etherealness" = 3825
+"expeditious retreat" = 25
+"explosive runes" = 375
+"eyebite" = 1650
+"fabricate" = 1125
+"faerie fire" = 25
+"false life" = 150
+"false vision" = 1375
+"fear" = 700
+"feather fall" = 25
+"feeblemind" = 1125
+"find the path" = 1650
+"find traps" = 150
+"finger of death" = 2275
+"fire seeds" = 1650
+"fire shield" = 700
+"fire storm" = 3000
+"fire trap" = 175
+"fireball" = 375
+"flame arrow" = 375
+"flame blade" = 150
+"flame strike" = 1125
+"flaming sphere" = 150
+"flare" = 12
+"flesh to stone" = 1650
+"floating disk" = 25
+"fly" = 375
+"fog cloud" = 150
+"forbiddance" = 4650
+"forcecage" = 23775
+"forceful hand" = 1650
+"foresight" = 3825
+"fox's cunning" = 150
+"fox's cunning, mass" = 1650
+"freedom" = 3825
+"freedom of movement" = 700
+"freezing sphere" = 1650
+"gaseous form" = 375
+"gate" = 8825
+"geas, lesser" = 700
+"geas/quest" = 1650
+"gentle repose" = 150
+"ghost sound" = 12
+"ghoul touch" = 150
+"giant vermin" = 700
+"glibness" = 525
+"glitterdust" = 150
+"globe of invulnerability" = 1650
+"globe of invulnerability, lesser" = 700
+"glyph of warding" = 575
+"glyph of warding, greater" = 1650
+"good hope" = 525
+"goodberry" = 25
+"grasping hand" = 2275
+"grease" = 25
+"guards and wards" = 1650
+"guidance" = 12
+"gust of wind" = 150
+"hallow" = 6125
+"hallucinatory terrain" = 700
+"halt undead" = 375
+"harm" = 1650
+"haste" = 375
+"heal" = 1650
+"heal mount" = 375
+"heal, mass" = 3825
+"heat metal" = 150
+"helping hand" = 375
+"heroes' feast" = 1650
+"heroism" = 375
+"heroism, greater" = 1650
+"hide from animals" = 25
+"hide from undead" = 25
+"hideous laughter" = 150
+"hold animal" = 150
+"hold monster" = 1125
+"hold monster, mass" = 3825
+"hold person" = 150
+"hold person, mass" = 2275
+"hold portal" = 25
+"holy aura" = 3000
+"holy sword" = 700
+"holy word" = 2275
+"horrid wilting" = 3000
+"hypnotic pattern" = 150
+"hypnotism" = 25
+"ice storm" = 700
+"identify" = 125
+"illusory script" = 425
+"illusory wall" = 700
+"imbue with spell ability" = 700
+"implosion" = 3825
+"imprisonment" = 3825
+"incendiary cloud" = 3000
+"inflict critical wounds" = 700
+"inflict critical wounds, mass" = 3000
+"inflict light wounds" = 25
+"inflict light wounds, mass" = 1125
+"inflict minor wounds" = 12
+"inflict moderate wounds" = 150
+"inflict moderate wounds, mass" = 1650
+"inflict serious wounds" = 375
+"inflict serious wounds, mass" = 2275
+"insanity" = 2275
+"insect plague" = 1125
+"instant summons" = 3275
+"interposing hand" = 1125
+"invisibility" = 150
+"invisibility purge" = 375
+"invisibility sphere" = 375
+"invisibility, greater" = 700
+"invisibility, mass" = 2275
+"iron body" = 3000
+"ironwood" = 1650
+"irresistible dance" = 3000
+"jump" = 25
+"keen edge" = 375
+"knock" = 150
+"know direction" = 12
+"legend lore" = 1900
+"levitate" = 150
+"light" = 12
+"lightning bolt" = 375
+"limited wish" = 3775
+"liveoak" = 1650
+"locate creature" = 700
+"locate object" = 150
+"longstrider" = 25
+"lullaby" = 12
+"mage armor" = 25
+"mage hand" = 12
+"mage's disjunction" = 3825
+"mage's faithful hound" = 1125
+"mage's lucubration" = 1650
+"mage's magnificent mansion" = 2275
+"mage's private sanctum" = 1125
+"mage's sword" = 2275
+"magic aura" = 25
+"magic circle against chaos/evil/good/law" = 375
+"magic fang" = 25
+"magic fang, greater" = 375
+"magic jar" = 1125
+"magic missile" = 25
+"magic mouth" = 160
+"magic stone" = 25
+"magic vestment" = 375
+"magic weapon" = 25
+"magic weapon, greater" = 375
+"major creation" = 1125
+"major image" = 375
+"make whole" = 150
+"mark of justice" = 1125
+"maze" = 3000
+"meld into stone" = 375
+"mending" = 12
+"message" = 12
+"meteor swarm" = 3825
+"mind blank" = 3000
+"mind fog" = 1125
+"minor creation" = 700
+"minor image" = 150
+"miracle" = 28825
+"mirage arcana" = 1125
+"mirror image" = 150
+"misdirection" = 150
+"mislead" = 1650
+"mnemonic enhancer" = 700
+"modify memory" = 1000
+"moment of prescience" = 3000
+"mount" = 25
+"move earth" = 1650
+"neutralize poison" = 375
+"nightmare" = 1125
+"nondetection" = 425
+"obscure object" = 150
+"obscuring mist" = 25
+"open/close" = 12
+"overland flight" = 1125
+"owl's wisdom" = 150
+"owl's wisdom, mass" = 1650
+"pass without trace" = 25
+"passwall" = 1125
+"permanency" = 10125
+"permanent image" = 1650
+"persistent image" = 1125
+"phantasmal killer" = 700
+"phantom steed" = 375
+"phantom trap" = 200
+"phase door" = 2275
+"planar ally" = 2400
+"planar ally, greater" = 5500
+"planar ally, lesser" = 1200
+"planar binding" = 1650
+"planar binding, greater" = 3000
+"planar binding, lesser" = 1125
+"plane shift" = 1125
+"plant growth" = 375
+"poison" = 700
+"polar ray" = 3000
+"polymorph" = 700
+"polymorph any object" = 3000
+"power word blind" = 2275
+"power word kill" = 3825
+"power word stun" = 3000
+"prayer" = 375
+"prestidigitation" = 12
+"prismatic sphere" = 3825
+"prismatic spray" = 2275
+"prismatic wall" = 3000
+"produce flame" = 25
+"programmed image" = 1675
+"project image" = 2280
+"protection from arrows" = 150
+"protection from chaos/evil/good/law" = 25
+"protection from energy" = 375
+"protection from spells" = 3500
+"prying eyes" = 1125
+"prying eyes, greater" = 3000
+"purify food and drink" = 12
+"pyrotechnics" = 150
+"quench" = 375
+"rage" = 375
+"rainbow pattern" = 700
+"raise dead" = 6125
+"ray of enfeeblement" = 25
+"ray of exhaustion" = 375
+"ray of frost" = 12
+"read magic" = 12
+"reduce animal" = 150
+"reduce person" = 25
+"reduce person, mass" = 700
+"refuge" = 3775
+"regenerate" = 2275
+"reincarnate" = 700
+"remove blindness/deafness" = 375
+"remove curse" = 375
+"remove disease" = 375
+"remove fear" = 25
+"remove paralysis" = 150
+"repel metal or stone" = 3000
+"repel vermin" = 700
+"repel wood" = 1650
+"repulsion" = 1650
+"resilient sphere" = 700
+"resist energy" = 150
+"resistance" = 12
+"restoration" = 800
+"restoration, greater" = 4775
+"restoration, lesser" = 150
+"resurrection" = 12275
+"reverse gravity" = 2275
+"righteous might" = 1125
+"rope trick" = 150
+"rusting grasp" = 700
+"sanctuary" = 25
+"scare" = 150
+"scintillating pattern" = 3000
+"scorching ray" = 150
+"screen" = 3000
+"scrying" = 700
+"scrying, greater" = 2275
+"sculpt sound" = 525
+"searing light" = 375
+"secret chest" = 1125
+"secret page" = 375
+"secure shelter" = 700
+"see invisibility" = 150
+"seeming" = 1125
+"sending" = 700
+"sepia snake sigil" = 875
+"sequester" = 2275
+"shades" = 3825
+"shadow conjuration" = 700
+"shadow conjuration, greater" = 2275
+"shadow evocation" = 1125
+"shadow evocation, greater" = 3000
+"shadow walk" = 1650
+"shambler" = 3825
+"shapechange" = 3825
+"shatter" = 150
+"shield" = 25
+"shield of faith" = 25
+"shield of law" = 3000
+"shield other" = 150
+"shillelagh" = 25
+"shocking grasp" = 25
+"shout" = 700
+"shout, greater" = 3000
+"shrink item" = 375
+"silence" = 150
+"silent image" = 25
+"simulacrum" = 7275
+"slay living" = 1125
+"sleep" = 25
+"sleet storm" = 375
+"slow" = 375
+"snare" = 150
+"soften earth and stone" = 150
+"solid fog" = 700
+"song of discord" = 1625
+"soul bind" = 3825
+"sound burst" = 150
+"speak with animals" = 25
+"speak with dead" = 375
+"speak with plants" = 150
+"spectral hand" = 150
+"spell immunity" = 700
+"spell immunity, greater" = 3000
+"spell resistance" = 1125
+"spell turning" = 2275
+"spellstaff" = 1650
+"spider climb" = 150
+"spike growth" = 375
+"spike stones" = 700
+"spiritual weapon" = 150
+"statue" = 2275
+"status" = 150
+"stinking cloud" = 375
+"stone shape" = 375
+"stone tell" = 1650
+"stone to flesh" = 1650
+"stoneskin" = 950
+"storm of vengeance" = 3825
+"suggestion" = 375
+"suggestion, mass" = 1650
+"summon instrument" = 12
+"summon monster i" = 25
+"summon monster ii" = 150
+"summon monster iii" = 375
+"summon monster iv" = 700
+"summon monster ix" = 3825
+"summon monster v" = 1125
+"summon monster vi" = 1650
+"summon monster vii" = 2275
+"summon monster viii" = 3000
+"summon nature's ally i" = 25
+"summon nature's ally ii" = 150
+"summon nature's ally iii" = 375
+"summon nature's ally iv" = 700
+"summon nature's ally ix" = 3825
+"summon nature's ally v" = 1125
+"summon nature's ally vi" = 1650
+"summon nature's ally vii" = 2275
+"summon nature's ally viii" = 3000
+"summon swarm" = 150
+"sunbeam" = 2275
+"sunburst" = 3000
+"symbol of death" = 8000
+"symbol of fear" = 2650
+"symbol of insanity" = 8000
+"symbol of pain" = 2125
+"symbol of persuasion" = 6650
+"symbol of sleep" = 2125
+"symbol of stunning" = 7275
+"symbol of weakness" = 7275
+"sympathetic vibration" = 2400
+"sympathy" = 4500
+"telekinesis" = 1125
+"telekinetic sphere" = 3000
+"telepathic bond" = 1125
+"teleport" = 1125
+"teleport object" = 2275
+"teleport, greater" = 2275
+"teleportation circle" = 4825
+"temporal stasis" = 3500
+"time stop" = 3825
+"tiny hut" = 375
+"tongues" = 375
+"touch of fatigue" = 12
+"touch of idiocy" = 150
+"transformation" = 1950
+"transmute metal to wood" = 2275
+"transmute mud to rock" = 1125
+"transmute rock to mud" = 1125
+"transport via plants" = 1650
+"trap the soul" = 13000
+"tree shape" = 150
+"tree stride" = 700
+"true resurrection" = 28825
+"true seeing" = 1375
+"true strike" = 25
+"undeath to death" = 2150
+"undetectable alignment" = 50
+"unhallow" = 6125
+"unholy aura" = 3000
+"unseen servant" = 25
+"vampiric touch" = 375
+"veil" = 1650
+"ventriloquism" = 25
+"virtue" = 12
+"vision" = 2775
+"wail of the banshee" = 3825
+"wall of fire" = 700
+"wall of force" = 1125
+"wall of ice" = 700
+"wall of iron" = 1700
+"wall of stone" = 1125
+"wall of thorns" = 1125
+"warp wood" = 150
+"water breathing" = 375
+"water walk" = 375
+"waves of exhaustion" = 2275
+"waves of fatigue" = 1125
+"web" = 150
+"weird" = 3825
+"whirlwind" = 3000
+"whispering wind" = 150
+"wind walk" = 1650
+"wind wall" = 375
+"wish" = 28825
+"wood shape" = 150
+"word of chaos" = 2275
+"word of recall" = 1650
+"zone of silence" = 1000
+"zone of truth" = 150
+
+[oggetti.materiali.adamantine]
+# SRD, «Special Materials»: costo in più dell'oggetto (mo), per categoria
+leggera = 5000
+media = 10000
+pesante = 15000
+arma = 3000
+
+[oggetti.materiali.mithral]
+# SRD, «Special Materials»: costo in più dell'oggetto (mo), per categoria
+leggera = 1000
+media = 4000
+pesante = 9000
+scudo = 1000
+
+[oggetti.perfetta]
+# SRD, «Masterwork Weapons» e «Masterwork Armor»: quanto costa in più la fattura perfetta (mo)
+arma = 300
+armatura = 150
+proiettile = 6
+
+[oggetti.comuni.armi]
+# SRD, «Table: Weapons»: prezzo dell'arma di taglia Media (mo intere; 0 sotto 1 mo)
+"arrows" = 1
+"axe, orc double" = 60
+"axe, throwing" = 8
+"battleaxe" = 10
+"bolas" = 5
+"bolts" = 1
+"bolts, crossbow" = 1
+"bullets, sling" = 0
+"chain, spiked" = 25
+"club" = 0
+"crossbow, hand" = 100
+"crossbow, heavy" = 50
+"crossbow, light" = 35
+"crossbow, repeating heavy" = 400
+"crossbow, repeating light" = 250
+"dagger" = 2
+"dagger, punching" = 2
+"dart" = 0
+"falchion" = 75
+"flail" = 8
+"flail, dire" = 90
+"flail, heavy" = 15
+"gauntlet" = 2
+"gauntlet, spiked" = 5
+"glaive" = 8
+"greataxe" = 20
+"greatclub" = 5
+"greatsword" = 50
+"guisarme" = 9
+"halberd" = 10
+"hammer, gnome hooked" = 20
+"hammer, light" = 1
+"handaxe" = 6
+"javelin" = 1
+"kama" = 2
+"kukri" = 8
+"lance" = 10
+"longbow" = 75
+"longbow, composite" = 100
+"longspear" = 5
+"longsword" = 15
+"mace, heavy" = 12
+"mace, light" = 5
+"morningstar" = 8
+"net" = 20
+"nunchaku" = 2
+"pick, heavy" = 8
+"pick, light" = 4
+"quarterstaff" = 0
+"ranseur" = 10
+"rapier" = 20
+"sai" = 1
+"sap" = 1
+"scimitar" = 15
+"scythe" = 18
+"shortbow" = 30
+"shortbow, composite" = 75
+"shortspear" = 1
+"shuriken" = 1
+"siangham" = 3
+"sickle" = 6
+"sling" = 0
+"spear" = 2
+"sword, bastard" = 35
+"sword, short" = 10
+"sword, two-bladed" = 100
+"trident" = 15
+"unarmed strike" = 0
+"urgrosh, dwarven" = 50
+"waraxe, dwarven" = 30
+"warhammer" = 12
+"whip" = 1
+
+[oggetti.comuni.ammo]
+# SRD, «Table: Weapons»: quanti proiettili compra il prezzo scritto
+"arrows" = 20
+"bolts" = 10
+"bolts, crossbow" = 10
+"bullets, sling" = 10
+"shuriken" = 5
+
+[oggetti.comuni.armature]
+# SRD, «Table: Armor and Shields»: prezzo dell'armatura (mo)
+"banded mail" = 250
+"breastplate" = 200
+"chain shirt" = 100
+"chainmail" = 150
+"full plate" = 1500
+"half-plate" = 600
+"hide" = 15
+"leather" = 10
+"padded" = 5
+"scale mail" = 50
+"splint mail" = 200
+"studded leather" = 25
+
+[oggetti.comuni.scudi]
+# SRD, «Table: Armor and Shields»: per bonus di CA, lo scudo che costa meno (mo)
+"1" = 3
+"2" = 7
+"4" = 30
+
+[oggetti.comuni.scudi_acciaio]
+# SRD, «Table: Armor and Shields»: per bonus di CA, lo scudo d'acciaio (mo)
+"1" = 9
+"2" = 20
+
+[oggetti.comuni.arco_forza]
+# SRD, «Longbow, Composite» e «Shortbow, Composite»: mo per punto di Forza dell'arco
+"longbow" = 100
+"shortbow" = 75
+
+[oggetti.comuni.merci]
+# SRD, «Table: Goods and Services» (attrezzatura, sostanze, attrezzi, cavalcature): mo intere, 0 sotto 1 mo
+"acid" = 10
+"alchemist's fire" = 20
+"alchemist's lab" = 500
+"antitoxin" = 50
+"artisan's tools" = 5
+"artisan's tools, masterwork" = 55
+"backpack" = 2
+"barrel" = 2
+"basket" = 0
+"bedroll" = 0
+"bell" = 1
+"bit and bridle" = 2
+"blanket, winter" = 0
+"block and tackle" = 5
+"bottle, wine, glass" = 2
+"bucket" = 0
+"caltrops" = 1
+"candle" = 0
+"canvas" = 0
+"case, map or scroll" = 1
+"chain" = 30
+"chalk, 1 piece" = 0
+"chest" = 2
+"climber's kit" = 80
+"crowbar" = 2
+"disguise kit" = 50
+"dog, guard" = 25
+"dog, riding" = 150
+"donkey or mule" = 8
+"everburning torch" = 110
+"feed" = 0
+"firewood" = 0
+"fishhook" = 0
+"fishing net, 25 sq. ft." = 4
+"flask" = 0
+"flint and steel" = 1
+"grappling hook" = 1
+"hammer" = 0
+"healer's kit" = 50
+"holy symbol, silver" = 25
+"holy symbol, wooden" = 1
+"holy water" = 25
+"horse, heavy" = 200
+"horse, light" = 75
+"hourglass" = 25
+"ink" = 8
+"inkpen" = 0
+"jug, clay" = 0
+"ladder, 10-foot" = 0
+"lamp, common" = 0
+"lantern, bullseye" = 12
+"lantern, hooded" = 7
+"lock, amazing" = 150
+"lock, average" = 40
+"lock, good" = 80
+"lock, very simple" = 20
+"magnifying glass" = 100
+"manacles" = 15
+"manacles, masterwork" = 50
+"mirror, small steel" = 10
+"mug/tankard, clay" = 0
+"musical instrument, common" = 5
+"musical instrument, masterwork" = 100
+"oil" = 0
+"paper" = 0
+"parchment" = 0
+"pick, miner's" = 3
+"pitcher, clay" = 0
+"piton" = 0
+"pole, 10-foot" = 0
+"pony" = 30
+"pot, iron" = 0
+"pouch, belt" = 1
+"ram, portable" = 10
+"rations, trail" = 0
+"rope, hempen" = 1
+"rope, silk" = 10
+"sack" = 0
+"saddle, exotic military" = 60
+"saddle, exotic pack" = 15
+"saddle, exotic riding" = 30
+"saddle, military" = 20
+"saddle, pack" = 5
+"saddle, riding" = 10
+"saddlebags" = 4
+"scale, merchant's" = 2
+"sealing wax" = 1
+"sewing needle" = 0
+"signal whistle" = 0
+"signet ring" = 5
+"sledge" = 1
+"smokestick" = 20
+"soap" = 0
+"spade or shovel" = 2
+"spell component pouch" = 5
+"spellbook, wizard's" = 15
+"spyglass" = 1000
+"stabling" = 0
+"sunrod" = 2
+"tanglefoot bag" = 50
+"tent" = 10
+"thieves' tools" = 30
+"thieves' tools, masterwork" = 100
+"thunderstone" = 30
+"tindertwig" = 1
+"tool, masterwork" = 50
+"torch" = 0
+"vial, ink or potion" = 1
+"warhorse, heavy" = 400
+"warhorse, light" = 150
+"warpony" = 100
+"water clock" = 1000
+"waterskin" = 1
+"whetstone" = 0
+
+# come una scheda scrive un oggetto (espressioni regolari; non vengono dall'SRD). «N» è il bonus letto.
+[[oggetti.nomi]]
+nome = "ring of protection +N"
+schema = '''(?:anello|ring)\s+(?:di|della|of)\s+(?:protezione|deviazione|protection)\s*\+(\d)'''
+
+[[oggetti.nomi]]
+nome = "cloak of resistance +N"
+schema = '''(?:mantello|cloak)\s+(?:della|di|of)\s+(?:resistenza|resistance)\s*\+(\d)'''
+
+[[oggetti.nomi]]
+nome = "cloak of charisma +N"
+schema = '''(?:mantello|cloak)\s+(?:del|di|of)\s+(?:carisma|charisma)\s*\+(\d)'''
+
+[[oggetti.nomi]]
+nome = "amulet of health +N"
+schema = '''(?:amuleto|amulet)\s+(?:della|di|of)\s+(?:salute|health)\s*\+(\d)'''
+
+[[oggetti.nomi]]
+nome = "amulet of natural armor +N"
+schema = '''(?:amuleto|amulet)\s+(?:(?:dell['’]|di|of)\s*)?(?:armatura naturale|natural armor)\s*\+(\d)'''
+
+[[oggetti.nomi]]
+nome = "gauntlets of ogre power"
+schema = '''guanti\s+della\s+forza\s+dell['’]\s*ogre|gauntlets\s+of\s+ogre\s+power'''
+
+[[oggetti.nomi]]
+nome = "gloves of dexterity +N"
+schema = '''(?:guanti|gloves)\s+(?:della|di|of)\s+(?:destrezza|dexterity)\s*\+(\d)'''
+
+[[oggetti.nomi]]
+nome = "belt of giant strength +N"
+schema = '''(?:cintura\s+della\s+forza\s+(?:del|dei)\s+gigant[ei]|belt\s+of\s+giant\s+strength)\s*\+(\d)'''
+
+[[oggetti.nomi]]
+nome = "headband of intellect +N"
+schema = '''(?:fascia\s+dell['’]\s*intelletto|headband\s+of\s+intellect)\s*\+(\d)'''
+
+[[oggetti.nomi]]
+nome = "periapt of wisdom +N"
+schema = '''(?:(?:periapto|pendente)\s+(?:della|di)\s+saggezza|periapt\s+of\s+wisdom)\s*\+(\d)'''
+
+[[oggetti.nomi]]
+nome = "bracers of armor +N"
+schema = '''(?:bracciali\s+(?:dell['’]|di)\s*armatura|bracers\s+of\s+armor)\s*\+(\d)'''
+
+[[oggetti.nomi]]
+nome = "boots of speed"
+schema = '''stivali\s+(?:di|della)\s+velocit[àa]|boots\s+of\s+speed'''
+
+[[oggetti.nomi]]
+nome = "ring of mind shielding"
+schema = '''(?:anello|ring)\s+(?:di|dello|of)\s+(?:mind shielding|schermo mentale)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 1st-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*1(?:st|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 2nd-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*2(?:nd|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 3rd-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*3(?:rd|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 4th-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*4(?:th|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 5th-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*5(?:th|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 6th-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*6(?:th|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 7th-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*7(?:th|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 8th-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*8(?:th|°|º)'''
+
+[[oggetti.nomi]]
+nome = "pearl of power, 9th-level spell"
+schema = '''(?:perla\s+del\s+potere|pearl\s+of\s+power)\s*(?:\(|,|di|del)?\s*9(?:th|°|º)'''
+
+[[oggetti.nomi]]
+nome = "necklace of fireballs type vii"
+schema = '''(?:collana\s+(?:delle|di)\s+palle\s+di\s+fuoco|necklace\s+of\s+fireballs)\s+(?:(?:tipo|type)\s+)?vii(?![ivx\w])'''
+
+[[oggetti.nomi]]
+nome = "necklace of fireballs type iii"
+schema = '''(?:collana\s+(?:delle|di)\s+palle\s+di\s+fuoco|necklace\s+of\s+fireballs)\s+(?:(?:tipo|type)\s+)?iii(?![ivx\w])'''
+
+[[oggetti.nomi]]
+nome = "necklace of fireballs type vi"
+schema = '''(?:collana\s+(?:delle|di)\s+palle\s+di\s+fuoco|necklace\s+of\s+fireballs)\s+(?:(?:tipo|type)\s+)?vi(?![ivx\w])'''
+
+[[oggetti.nomi]]
+nome = "necklace of fireballs type iv"
+schema = '''(?:collana\s+(?:delle|di)\s+palle\s+di\s+fuoco|necklace\s+of\s+fireballs)\s+(?:(?:tipo|type)\s+)?iv(?![ivx\w])'''
+
+[[oggetti.nomi]]
+nome = "necklace of fireballs type ii"
+schema = '''(?:collana\s+(?:delle|di)\s+palle\s+di\s+fuoco|necklace\s+of\s+fireballs)\s+(?:(?:tipo|type)\s+)?ii(?![ivx\w])'''
+
+[[oggetti.nomi]]
+nome = "necklace of fireballs type v"
+schema = '''(?:collana\s+(?:delle|di)\s+palle\s+di\s+fuoco|necklace\s+of\s+fireballs)\s+(?:(?:tipo|type)\s+)?v(?![ivx\w])'''
+
+[[oggetti.nomi]]
+nome = "necklace of fireballs type i"
+schema = '''(?:collana\s+(?:delle|di)\s+palle\s+di\s+fuoco|necklace\s+of\s+fireballs)\s+(?:(?:tipo|type)\s+)?i(?![ivx\w])'''

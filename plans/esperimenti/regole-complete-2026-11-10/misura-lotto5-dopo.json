@@ -1,0 +1,252 @@
+{
+ "fonti": {
+  "prd": "PSRD-Data-76ea47846041",
+  "srd35": "srd-v3.5-md-c7f30a0ce11a"
+ },
+ "sistemi": {
+  "dnd35": [
+   {
+    "campi_assenti": [],
+    "coperte": 20,
+    "fonte": 20,
+    "giuste": 20,
+    "mancanti": [],
+    "non_verificabili": [],
+    "nota": "le colonne coins_pct/goods_pct/items_pct di loot_tables.yaml non sono nella fonte",
+    "sbagliate": [],
+    "tabella": "tesoro per livello d'incontro (SRD Treasure Values per Encounter)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 11,
+    "fonte": 11,
+    "giuste": 11,
+    "mancanti": [],
+    "non_verificabili": [],
+    "nota": "atteso contato a mano sul manuale (ATTESI_7), non dai dati del plugin",
+    "sbagliate": [],
+    "tabella": "uso: numero di talenti dei PNG generati (7° livello, ogni classe)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 11,
+    "fonte": 11,
+    "giuste": 11,
+    "mancanti": [],
+    "non_verificabili": [],
+    "nota": "ogni talento generale ricontrollato coi prerequisiti della fonte, nell'ordine in cui è stato preso",
+    "sbagliate": [],
+    "tabella": "uso: prerequisiti dei talenti generali dei PNG generati"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 37,
+    "fonte": 37,
+    "giuste": 37,
+    "mancanti": [],
+    "non_verificabili": [],
+    "sbagliate": [],
+    "tabella": "nomi italiani: condizioni (SRD)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 110,
+    "fonte": 110,
+    "giuste": 110,
+    "mancanti": [],
+    "non_verificabili": [],
+    "sbagliate": [],
+    "tabella": "nomi italiani: talenti (SRD feats.md)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 45,
+    "fonte": 45,
+    "giuste": 45,
+    "mancanti": [],
+    "non_verificabili": [],
+    "sbagliate": [],
+    "tabella": "tratti dei tipi nei mostri generati (Cos, Int, talenti, pf, Tempra)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 9,
+    "fonte": 9,
+    "giuste": 9,
+    "mancanti": [],
+    "non_verificabili": [],
+    "sbagliate": [],
+    "tabella": "pf bonus dei costrutti per taglia (Construct Traits)"
+   }
+  ],
+  "pf1e": [
+   {
+    "campi_assenti": [],
+    "coperte": 60,
+    "fonte": 60,
+    "giuste": 60,
+    "mancanti": [],
+    "non_verificabili": [],
+    "sbagliate": [],
+    "tabella": "soglie PE (tre tracce)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 30,
+    "fonte": 30,
+    "giuste": 30,
+    "mancanti": [],
+    "non_verificabili": [],
+    "sbagliate": [],
+    "tabella": "PE per GS (Experience Point Awards)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 60,
+    "fonte": 60,
+    "giuste": 60,
+    "mancanti": [],
+    "non_verificabili": [],
+    "sbagliate": [],
+    "tabella": "tesoro per incontro (tre velocità)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 21,
+    "fonte": 21,
+    "giuste": 21,
+    "mancanti": [],
+    "non_verificabili": [],
+    "sbagliate": [],
+    "tabella": "statistiche dei mostri per GS (Bestiary Table 1–1)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 44,
+    "fonte": 44,
+    "giuste": 44,
+    "mancanti": [],
+    "non_verificabili": [],
+    "sbagliate": [],
+    "tabella": "modificatore di caratteristica (formula d20 contro PRD)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 626,
+    "fonte": 626,
+    "giuste": 626,
+    "mancanti": [],
+    "non_verificabili": [],
+    "nota": "0 incantesimi non sono nella lista PF1e della classe; gli altri sono a un livello diverso",
+    "sbagliate": [],
+    "tabella": "liste d'incantesimi 3.5 riusate dal plugin pf1e (livello PF1e)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 55,
+    "fonte": 55,
+    "giuste": 54,
+    "mancanti": [],
+    "non_verificabili": [
+     "bardo 3°: tamburi tonanti (thunderous drums, non nel PRD in cache)"
+    ],
+    "sbagliate": [],
+    "tabella": "incantesimi «solo PF1e» (APG) per classe e livello"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 18,
+    "fonte": 18,
+    "giuste": 18,
+    "mancanti": [],
+    "non_verificabili": [],
+    "nota": "gradi, allineamento, imprese e capacità particolari restano «da verificare dal DM»",
+    "sbagliate": [],
+    "tabella": "requisiti delle classi di prestigio (BAB e talenti contro il PRD)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 18,
+    "fonte": 18,
+    "giuste": 18,
+    "mancanti": [],
+    "non_verificabili": [],
+    "nota": "17 classi hanno anche requisiti che il generatore non verifica (gradi, allineamento…)",
+    "sbagliate": [],
+    "tabella": "uso: PNG con classe di prestigio, via d'ingresso legale (requisiti ✓, talenti presi)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 32,
+    "fonte": 32,
+    "giuste": 32,
+    "mancanti": [],
+    "non_verificabili": [],
+    "nota": "atteso contato a mano sul manuale (ATTESI_7), non dai dati del plugin",
+    "sbagliate": [],
+    "tabella": "uso: numero di talenti dei PNG generati (7° livello, ogni classe)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 32,
+    "fonte": 32,
+    "giuste": 32,
+    "mancanti": [],
+    "non_verificabili": [],
+    "nota": "ogni talento generale ricontrollato coi prerequisiti della fonte, nell'ordine in cui è stato preso",
+    "sbagliate": [],
+    "tabella": "uso: prerequisiti dei talenti generali dei PNG generati"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 34,
+    "fonte": 34,
+    "giuste": 34,
+    "mancanti": [],
+    "non_verificabili": [],
+    "sbagliate": [],
+    "tabella": "nomi italiani: condizioni (PRD)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 175,
+    "fonte": 175,
+    "giuste": 175,
+    "mancanti": [],
+    "non_verificabili": [],
+    "sbagliate": [],
+    "tabella": "nomi italiani: talenti del Core (PRD)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 623,
+    "fonte": 623,
+    "giuste": 623,
+    "mancanti": [],
+    "non_verificabili": [],
+    "sbagliate": [],
+    "tabella": "nomi italiani: incantesimi del Core (PRD)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 45,
+    "fonte": 45,
+    "giuste": 45,
+    "mancanti": [],
+    "non_verificabili": [],
+    "sbagliate": [],
+    "tabella": "tratti dei tipi nei mostri generati (Cos, Int, talenti, pf, Tempra)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 9,
+    "fonte": 9,
+    "giuste": 9,
+    "mancanti": [],
+    "non_verificabili": [],
+    "sbagliate": [],
+    "tabella": "pf bonus dei costrutti per taglia (Construct Traits)"
+   }
+  ]
+ }
+}

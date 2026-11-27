@@ -1,10 +1,13 @@
-# Goblin Warrior 1 [ACCEPTED — DM-canon 2026-05-05]
-**Faction**: red-hand | **Role**: fodder-ranged | **Environment**: any | **CR**: 1/2 | **Source**: MM p.133 Goblin | **Status**: inferred
+# Goblin Warrior 1 [CANONE — DM 2026-05-05]
+**Faction**: red-hand | **Role**: fodder-ranged | **Environment**: any | **CR**: 1/3 | **Source**: MM p.133 Goblin | **Status**: inferred
 
 
 
 ```statblocco
-gs: 1/2
+gs: 1/3
+taglia: Piccola
+spazio: 1,5 m
+portata: 1,5 m
 ca: 15
 ca-dettaglio: (+1 size, +1 Dex, +2 leather, +1 light shield)
 pf: 5
@@ -29,3 +32,5 @@ iniziativa: +1
 **Special**: Darkvision 60 ft.
 **Tactics**: Massed volleys, retreat if losing >25%. Morale -2 vs goblinoid routing.
 **Notes**: 800 nell'orda, fornitori di frecce.
+
+> decisione del DM (2026-11-13, card del grado di sfida): GS da 1/2 a 1/3, come il goblin combattente di 1° dell'SRD 3.5 («Goblin, 1st-Level Warrior»). Il nome del file resta `goblin-warrior1-cr05.md`. Nessun altro numero cambia.

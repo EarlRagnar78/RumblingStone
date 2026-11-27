@@ -243,6 +243,31 @@ Solo se un PNG è morto / cambiato allineamento / cambiato posizione:
 sed -i 's/Status: alive/Status: dead (killed session 14)/' Bestiario/villain/Regiarix/Regiarix.md
 ```
 
+#### 4.3-bis Una scheda cambia fuori dalla serata
+
+Quando cambia la scheda di un PNG già scritto nello stato (classe, livello,
+GS), `dm.py` non ha un comando che riscriva la sua riga: la riga sta in
+`campaign/state.yaml` e le tabelle di `state.md` si rigenerano da lì
+(ADR-0007, ADR-0050). Esempio reale, Tempestas da GS 14 a GS 15 (#498):
+
+```bash
+# 1. la riga del PNG si corregge nel master, non in state.md
+grep -n "Maestro Tempestas" campaign/state.yaml
+#    poi si modifica quella riga (Stormsinger 3, GS 15)
+# 2. si rigenerano le regioni gen:state di state.md e si verifica
+python3 scripts/render_state.py
+python3 scripts/render_state.py --check
+python3 scripts/validate_state.py
+# 3. la prosa fuori dai marcatori gen:state si corregge a mano
+grep -n "Tempestas" campaign/state.md
+# 4. si rigenera il dossier del DM
+python3 scripts/dm.py dossier
+```
+
+`state-changelog.md` non si tocca: le righe vecchie sono storia. Il lavoro si
+fa sul ramo del gruppo; su `main` solo con il sì esplicito del DM, come per
+#498.
+
 ### 4.4 Aggiorna encounter files (opzionale)
 
 Se un encounter è stato "consumato" e potrebbe riemergere (es. imboscata replicabile), aggiungi nota in `campaign/encounters/...`.
@@ -250,10 +275,16 @@ Se un encounter è stato "consumato" e potrebbe riemergere (es. imboscata replic
 ### 4.5 Commit & push
 
 ```bash
+python3 scripts/campaign_branch.py guard     # rifiuta main e i rami morti
 git add -A
 git commit -m "Session N: <titolo one-line>"
-git push origin main   # oppure il tuo branch-gruppo (vedi §7)
+python3 scripts/sincronia_giocato.py --ref HEAD --check
+git push origin campaign-group-<gruppo>      # mai main, mai --force (vedi §7.5)
 ```
+
+Il canone vivo si scrive solo sul ramo del gruppo (ADR-0007): un push di
+canone su `main` lo ferma il cancello dei thread. Il controllo prima del push
+dice se il commit chiude campi aperti senza la tua decisione datata.
 
 **Fatto.** Lo stato è consolidato. Alla prossima sessione §2 ti riporta esattamente qui.
 
@@ -330,7 +361,7 @@ Tordek lo finisce con un critico di +3 greataxe di Moradin. Nessun PG giù.
 ## Key decisions
 
 - Hella ACCETTA il patto con Silvanus → ora è Druid 12 / Hierophant 1 (trigger livello 13 ritardato)
-- Party decide di NON tornare a Rethmar subito → prosegue verso Lhesper (P2 Rhest) invece
+- Party decide di NON tornare a Rethmar subito → prosegue verso Lhesper (P2) invece
 - Maewen rivela backstory sul padre elfico → potenziale hook Tiri-Kitor per P3
 
 ## XP awarded
@@ -373,8 +404,8 @@ Sempre sessione 14. Il DM apre `state.md` e applica questi cambi (mostrato come 
  |---|---|---|---|---|
 -| 09 P1A Hella | 🟡 in corso | Day 27 | 13 |
 +| 09 P1A Hella | ✅ completato | Day 29 | 13 |
--| 09 P2 Rhest | ⬜ non iniziato | — | — |
-+| 09 P2 Rhest | 🟡 approccio | Day 29 | 13 |
+-| 09 P2 Lhesper | ⬜ non iniziato | — | — |
++| 09 P2 Lhesper | 🟡 approccio | Day 29 | 13 |
 
  ## §2.1 March Clock
 
@@ -436,8 +467,8 @@ Apri `campaign/state.md` §0 per vedere il cruscotto in tempo reale. Template:
 | ... | ... | ... | ... | ... | ... |
 | 08 Hammerfist | ✅ | completato | Day 19 | 12 | Sync point ✓ |
 | 09 P1A Hella | 🟡 | in corso | Day 27 | 13 | Deadline Day 30 |
-| 09 P2 Rhest | ⬜ | non iniziato | — | — | Regiarix vivo |
-| 09 P3 Rethmar | ⬜ | non iniziato | Target Day 40 | — | Battaglia finale |
+| 09 P2 Lhesper | ⬜ | non iniziato | — | — | Regiarix vivo |
+| 09 P3 Rethmar | ⬜ | non iniziato | Target Day 42 | — | Battaglia finale |
 
 **Legenda**: ✅ completato · 🟡 in corso · ⬜ non iniziato · ❌ fallito · ⏸ sospeso
 
@@ -450,11 +481,11 @@ Riassunto operativo di `campaign-coherence.md` §5.2/§5.2.bis:
 ### March Clock (deterministico)
 
 - **Tick +1** per ogni giorno in-world che passa (anche se i PG non fanno nulla / sessione off-screen)
-- Gira **Day 1 → Day 40**
+- Gira **Day 1 → Day 42** (`campaign/state.yaml`, `march_clock`)
 - Eventi **locked** (non toccare mai):
-  - Day 5: PG non interferiscono a Skull Gorge ✓
+  - Day 8-9: il ponte di Skull Gorge è attraversato intatto (i PG non lo sabotano) ✓
   - **Day 19**: Terrelton cade = fine Battaglia di Hammerfist (sync)
-  - Day 40: Orda arriva a Rethmar
+  - Day 40: Notte dei Drow (Fase 0); **Day 42**: l'orda arriva a Rethmar e si accampa
 
 ### Ritual Clock Azarr Kul (indipendente)
 
@@ -541,6 +572,40 @@ Si gioca la prima sessione, e alla fine `python3 scripts/dm.py session end`
 template vuoto, senza modulo e senza stato derivato. Serve a chi vuole partire
 da zero e non dal prodotto.
 
+### 7.5 Il ramo del gruppo resta allineato a main
+
+Il giocato vive sul ramo del gruppo, il prodotto arriva su `main`: prima di
+ogni preparazione `main` entra nel ramo con un merge (ADR-0090). Il
+21/11/2026 il ramo del primo tavolo era fermo al 12/10 e nessuno se n'era
+accorto; da allora c'è una misura che lo dice
+([ADR-0149](../plans/adr/ADR-0149-il-giocato-arriva-sul-ramo-di-gruppo-con-un-agente-e-una-misura.md)).
+I rami vivi e quelli morti sono in `plans/rami-di-gruppo.json`.
+
+```bash
+# prima della preparazione: main indietro, patch ferme, campi aperti, serate
+python3 scripts/sincronia_giocato.py --aggiorna --check --scansiona /mnt/project-files
+
+# il merge, sul ramo del gruppo (mai rebase)
+git merge origin/main
+python3 scripts/sincronia_giocato.py --dopo-merge   # nessuna riga di main persa
+python3 scripts/validate_state.py
+python3 scripts/render_state.py --check
+
+# prima del push: i campi chiusi hanno la tua decisione datata?
+python3 scripts/sincronia_giocato.py --ref HEAD --check
+git push origin campaign-group-<gruppo>             # solo fast-forward
+```
+
+I conflitti si risolvono blocco per blocco: nei PNG di `state.yaml` e nelle
+correzioni di canone approvate su `main` vince `main`, nel giocato vince il
+ramo, e lo stesso record cambiato dalle due parti lo decidi tu. Un 🔴 ferma il
+push. I 🟡 delle regole S4 e S6 sono domande per te: un campo aperto (PX,
+bottino, esito, presenti) si chiude solo con la tua decisione, scritta nella
+riga con la marca `[CANONE — DM 2026-11-21, <codice>]` di
+`docs/reference/GUIDA-MARCATURE.md`. Nei thread questo lavoro lo fa l'agente
+`sincronizzatore-giocato`; ogni lunedì alle 06:30 UTC il workflow
+`sincronia-giocato.yml` rifà la misura che basta a git.
+
 ---
 
 ## §8 — Red Flags — cosa NON fare
@@ -590,3 +655,4 @@ da zero e non dal prodotto.
 
 - **2026-05-05** — Creato file v1: workflow pre/during/post-session, worked examples per file sessione e diff state.md, reset procedure per nuovo gruppo (branch-per-gruppo), dual clock quick reference, red flags.
 - **2026-05-05** — Aggiunto §4.6 "Recap per i player" con integrazione di `scripts/session_recap.py` (generatore markdown/PDF A4 italiano spoiler-safe, tono R.A. Salvatore). Aggiunta tabella script in §9.
+- **2026-11-21** — §4.5 spinge sul ramo del gruppo e non più su `main`, con `campaign_branch.py guard` e il controllo prima del push; §7.5 nuovo: il ramo del gruppo resta allineato a `main` con `sincronia_giocato.py` (ADR-0149).

@@ -1,10 +1,13 @@
-# Bruto Deforme del Sottosuolo (Gigante di Pietra deforme, Barbaro 2) [ACCEPTED — DM-canon]
+# Bruto Deforme del Sottosuolo (Gigante di Pietra deforme, Barbaro 2) [CANONE — DM 2026-08-05]
 **Faction**: mano-rossa / drow-sonjak (mercenario) | **Role**: melee-heavy/artiglieria-corta | **Environment**: underdark | **CR**: 11 | **Source**: SRD *Stone Giant* (GS 8) + template semplice PF1e **Giant** (GS +1) + Barbaro 2 (classe associata, GS +1/liv) | **Status**: accepted
 
 
 ```statblocco
 gs: 11
 tipo: Huge giant (earth), CE
+taglia: Enorme
+spazio: 4,5 m
+portata: 4,5 m
 ca: 26
 ca-dettaglio: (−2 taglia, +1 Des, +14 naturale, +3 pelle), contatto 9, colto alla sprovvista 25
 pf: 172
@@ -28,7 +31,7 @@ Huge giant (earth), CE. **DV 14d8 + 2d12**. **hp 172**. **CA 26** (−2 taglia, 
 **Distanza** lancio di massi +11 (**3d8+15**, incremento di gittata 55 m).
 **Car** For 31, Des 13, Cos 23, Int 10, Sag 12, Car 11.
 **Qualità speciali** Scurovisione 18 m, vista crepuscolare, **cattura massi**, ira 1/giorno, schivare prodigioso.
-**Talenti** Robustezza, Attacco Poderoso, Volontà di Ferro, Lottare Migliorato, Riflessi in Combattimento, Sbilanciare Migliorato.
+**Talenti** Robustezza, Attacco Poderoso, Volontà di Ferro, Lottare Migliorato (B), Riflessi in Combattimento, Sbilanciare Migliorato (B), Incalzare, Incalzare Potenziato.
 
 - **Ira (1/giorno, 8 round)**: For 35, Cos 27 → **hp 204**, randello **+22/+17 (3d8+18)**, **CA 24**, Vol +9.
 - **Cattura massi (Str)**: Riflessi CD 15 per afferrare al volo un masso lanciato contro di lui — e **rilanciarlo nello stesso round** se ha un'azione. Contro un gruppo che usa il terreno, è la risposta.
@@ -43,3 +46,7 @@ Huge giant (earth), CE. **DV 14d8 + 2d12**. **hp 172**. **CA 26** (−2 taglia, 
 Notes: il «vero» mostro deforme del Sottosuolo sta su **fonte privata** e non è stato usato (`AGENTS.md` regola 2). Questo è un **equivalente costruito interamente su SRD + template PF1e**: stessa funzione al tavolo (gigante enorme, deforme, delle profondità), numeri derivati dalle tabelle citate sopra, nessun testo ripreso da altrove. Sonjak li affitta alla Mano Rossa a peso; gli Ogre Micelio (`ogre-micelio-sporeborn-cr8.md`) sono l'esperimento riuscito male sulla stessa idea. Da solo EL 11; 2 esemplari = EL 13; con `chierico-gruumsh-cr11.md` davanti a lui = EL 13.
 
 Boost log: 2026-08-02 — creato a GS 11 da SRD *Stone Giant* (GS 8) via template semplice PF1e **Giant** (+1: Enorme, For/Cos +4, Des −2, armatura naturale +3, dadi di danno +1 categoria) + **Barbaro 2** (classe associata, +1/livello). Benchmark PF T1-1 GS 11 verificato: in scala su CA/pf/attacco/danno, sotto su TS Rifl/Vol (scelta di design, vedi «contromossa»).
+
+> correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12): Lottare Migliorato e Sbilanciare Migliorato segnati **(B)**: talenti bonus della deformità, senza prerequisiti (SRD, *Monster Feats*, «Bonus Feats»). I 6 DV di talenti non bastavano per aggiungere Colpo Senz'Armi Migliorato, Maestria in Combattimento e Int 13.
+
+> correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-13, decisione del DM sulla card): 16 DV danno 6 talenti e la scheda ne contava 4 oltre ai due bonus. Aggiunti **Incalzare** e **Incalzare Potenziato** (Attacco Poderoso, For 31, BAB +12: prerequisiti soddisfatti). Nessun numero scritto cambia.

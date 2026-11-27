@@ -1,0 +1,13 @@
+# sistemi/pf1e/dati/talenti_in_piu.toml — scritto a mano, con la fonte di ogni voce
+# I talenti oltre il conto per livello (ADR-0126, lotto 4).
+# PRD: l'umano ha un talento in più al 1° livello (Races, «Humans», Bonus Feat).
+# Il ladro sceglie un talento da ladro ogni due livelli: Combat Trick, Finesse
+# Rogue e Weapon Training danno un talento ciascuno, e dal 10° il talento
+# avanzato «Feat» ne dà un altro (Rogue, «Rogue Talents», «Advanced Talents»).
+# Il dominio della Guerra PF1e non dà talenti permanenti.
+[talenti_in_piu]
+umano = 1
+razza_umana = ["human", "umano", "umana"]
+
+[talenti_in_piu.capacita_o_talento]
+rogue = [2, 4, 6, 10]

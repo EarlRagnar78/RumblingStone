@@ -184,7 +184,7 @@ Dopo che tutti PG hanno superato/dissipato effetto iniziale:
 **1. CONSECRATE (Consacrare a Moradin):**
 - **Effetto:** Intera sala consacrata a Moradin (divinità LN/LG)
 - **Benefici Alleati (LN/LG/qualsiasi nano):**
-  - +1 sacro ad attacco, danno, TS vs Non-Morti e Esterni Malvagi
+  - +1 sacro ad attacco, danno, TS vs Non-Morti ed Esterni Malvagi
   - *Turn Undead*: +1 bonus sacro
 - **Penalità Nemici (CE/CN malvagi, non-morti, demoni):**
   - -1 profano ad attacco, danno, TS

@@ -1,40 +1,56 @@
 ---
 name: rumblingstone-edizione
 description: >
-  Il mestiere dell'editore in RumblingStone: chi risponde di **cosa esce dal
-  repo**. Colophon (crediti, licenza, versione, data), Product Identity / Open
-  Content, il **gate d'uscita** (la checklist IP da passare *prima* di
-  consegnare), versione, ristampa, errata. Use WHENEVER qualcosa esce dal repo
-  o si parla di crediti, licenza o versione: "posso pubblicare", "posso
-  condividere", "mando ai giocatori", "lo metto su GitHub", "consegno
-  l'handout", "colophon", "crediti", "licenza", "OGL", "Product Identity",
-  "Open Content", "diritti", "IP", "versione del volume", "ristampa", "errata",
-  "che edizione è", "questo PDF è vecchio", "si può vendere", "posso
-  monetizzare". ⚠️ ANCHE per la licenza di ciò che si vorrebbe **adottare**:
-  "è open source?", "che licenza ha", "MIT", "GPL", "Creative Commons", "posso
-  usare questo tool", "posso includere questo font/asset/modello", "i pesi di
-  questo modello sono liberi?". Far entrare e far uscire è lo stesso mestiere.
+  Il mestiere dell'editore in RumblingStone: risponde di **cosa esce dal
+  repo**. Compila il colophon (crediti, licenza, versione, data), separa
+  Product Identity e Open Content (OGL 1.0a), passa il **gate d'uscita** (la
+  checklist IP *prima* di consegnare) e tiene versione, ristampa ed errata.
+  Si usa ogni volta che qualcosa esce dal repo o si parla di crediti, licenza
+  o versione: "posso pubblicare", "posso condividere", "mando ai giocatori",
+  "lo metto su GitHub", "consegno l'handout", "colophon", "crediti",
+  "licenza", "OGL", "Product Identity", "Open Content", "diritti", "IP",
+  "versione del volume", "ristampa", "errata", "che edizione è", "questo PDF
+  è vecchio", "si può vendere", "posso monetizzare". ⚠️ Si usa ANCHE per la
+  licenza di ciò che si vorrebbe **adottare**: "è open source?", "che licenza
+  ha", "MIT", "GPL", "Creative Commons", "posso usare questo tool", "posso
+  includere questo font/asset/modello", "i pesi di questo modello sono
+  liberi?". Far entrare e far uscire è lo stesso mestiere.
 ---
 
 # RumblingStone — Edizione
 
-L'[editoria](../rumblingstone-editoria/SKILL.md) decide **come sta sulla pagina**.
-Questa skill decide **se quella pagina può uscire, con che nome e che versione**.
-È il mestiere che in un colophon Paizo occupa tre righe — *editore*, *Product
-Identity*, *Open Content* — e che qui esisteva come guida che nessun agente
-apriva ([ADR-0024](../../plans/adr/ADR-0024-skill-edizione.md)).
+L'[editoria](../rumblingstone-editoria/SKILL.md) decide **come sta sulla pagina**;
+questa skill decide **se quella pagina può uscire, con che nome e che versione**
+([ADR-0024](../../plans/adr/ADR-0024-skill-edizione.md)).
 
 > **La riga da ricordare**: un volume che non sa dire **da dove viene, quando è
 > stato fatto e cosa se ne può fare** non è un'edizione, è un file.
 
----
+## Quando no
 
-## §1 · Il gate d'uscita — si passa PRIMA, non dopo
+La pagina è di [`rumblingstone-editoria`](../rumblingstone-editoria/SKILL.md), le immagini di [`rumblingstone-art-direction`](../rumblingstone-art-direction/SKILL.md), la prosa e le passate redazionali di [`rumblingstone-narrative-style`](../rumblingstone-narrative-style/SKILL.md), la profondità di un modulo di [`rumblingstone-module-standard`](../rumblingstone-module-standard/SKILL.md).
+Non serve per: materiale che **resta nel repo** e non va a nessuno; il **PDF
+settimanale per il tavolo**, che passa dal §1 in dieci secondi (caso
+«giocatori») e non dall'intera skill; **decidere se pubblicare per soldi**, che
+non è una domanda editoriale: è ADR-0005, e la risposta è già scritta.
 
-Cinque domande. Vengono da
-[`GUIDA-CONDIVISIONE-IP.md`](../../docs/guides/GUIDA-CONDIVISIONE-IP.md) §7, che è
-la fonte: **se le due divergono, vince la guida**. Stanno qui perché è qui che un
-agente le incontra al momento giusto.
+## Fonti
+
+1. [`GUIDA-CONDIVISIONE-IP.md`](../../docs/how-to/GUIDA-CONDIVISIONE-IP.md): §0 i
+   casi, §4 il denaro, §7 il gate. **Se guida e skill divergono, vince la guida.**
+2. [ADR-0005](../../plans/adr/ADR-0005-confini-ip-uso-non-commerciale.md) (uso
+   non commerciale), [ADR-0023](../../plans/adr/ADR-0023-colophon-di-edizione.md)
+   (il meccanismo del colophon), ADR-0024, ADR-0107 (chi si incontra).
+
+## Procedura
+
+1. In stesura, la tabella di licenza (§2).
+2. Se il volume esce, il colophon (§3); alla seconda uscita, §4.
+3. Prima di consegnare, il gate (§1).
+
+### §1 · Il gate d'uscita: si passa PRIMA, non dopo
+
+Le cinque domande della guida, §7, qui dove servono.
 
 - [ ] **So in quale caso rientro** (§0 della guida): materiale originale ·
       derivato da Red Hand of Doom · SRD. Sono tre regimi diversi.
@@ -50,12 +66,52 @@ agente le incontra al momento giusto.
 materiale non esce e si dice quale: non uscire con una riga di motivo è un esito
 legittimo, uscire con un dubbio non lo è.
 
----
+### §2 · L'igiene di licenza si compila in stesura, non a posteriori
 
-## §2 · L'igiene di licenza si compila in stesura, non a posteriori
+La tabella («Formato d'uscita») si scrive **mentre si scrive il modulo**.
+`10-stand-alone/L'abbazia Della Rotta Sicura/` la ha dentro: ha separato *Il
+Nocchiero* e *la Signora del Frangente* (inventate) da Valkur e Umberlee
+(Forgotten Realms non-SRD) **prima** del commit. Bonificare dopo costa dieci
+volte tanto (il Palio, `…-VERIFICA-LEGALE-IP.md`, PR #47).
 
-Il modo che funziona non è controllare alla fine: è **scrivere la tabella mentre
-si scrive il modulo**, elemento per elemento.
+⚠️ **I due rami si tengono separati dal primo commit.** Il ramo Faerûn ricade
+sotto il DMs Guild Community Content Agreement, incompatibile con MIT, GPL e
+CC BY. Separarli dopo significa riscrivere.
+
+### §3 · Il colophon: quando si compila
+
+ADR-0023 è il meccanismo; le sette voci sono in «Formato d'uscita». **Chi non
+dichiara `colophon` esce come prima**: è una possibilità, non una migrazione.
+
+### §4 · L'edizione come oggetto: versione, ristampa, errata
+
+**Il volume è alla seconda uscita, e qualcuno sa cosa è cambiato?**
+
+- **Versione**: si alza quando cambia il contenuto. Due stampe con la stessa
+  versione devono essere lo stesso testo.
+- **Errata**: una correzione che arriva **dopo** che qualcuno ha stampato non si
+  fa in silenzio nel master. Si scrive in un file `ERRATA-*.md` accanto al
+  modulo, e **poi** si integra alzando la versione. Precedente:
+  `ERRATA-ARC08-DESCRIZIONE-EPICA.md`.
+- **Ristampa**: stesso contenuto, edizione nuova (carta diversa, impaginazione
+  rifatta). Cambia `edizione`, non `versione`.
+
+🟡 **Oggi è una convenzione, non un meccanismo**: niente lo verifica.
+Diventerà un gate il giorno della prima ristampa vera (ADR-0024, «da rivisitare»).
+
+### Chi si incontra sta nel capitolo (ADR-0107, accettata)
+
+Un booklet del DM nuovo nasce con `"schede": "entrambe"` e
+`"chi_si_incontra": true`: scheda d'entrata, ritratto e riquadro intero di chi
+si incontra nel capitolo, la mappa dello scontro vicino alla scena,
+l'appendice dei riquadri resta. Si tiene solo se il PDF migliora:
+`misura_distanza_pagine.py` prima e dopo, nessuna persona più lontana dai suoi
+numeri, `misura_stampa --check` verde. Se una persona peggiora (Terros: da 7 a
+8 pagine) il booklet resta com'era e lo si scrive nell'ADR.
+
+## Formato d'uscita
+
+**La tabella di licenza**, dentro il modulo:
 
 | Elemento | Stato | Nota |
 |---|---|---|
@@ -65,22 +121,7 @@ si scrive il modulo**, elemento per elemento.
 | Toponimi | ⚠️ inventati o reali? | un luogo reale va bene come riferimento visivo, non come nome nel prodotto |
 | Tavole e immagini | ✅ originali | nessun asset di terzi, provenienza dichiarata |
 
-**Esemplare, e non è teoria**: `10-stand-alone/L'abbazia Della Rotta Sicura/` ha
-questa tabella dentro il modulo. Ha separato *Il Nocchiero* e *la Signora del
-Frangente* (inventate) da Valkur e Umberlee (Forgotten Realms non-SRD) **prima**
-del commit. Bonificare dopo costa dieci volte tanto: l'arco del Palio lo ha
-dimostrato (`…-VERIFICA-LEGALE-IP.md`, PR #47).
-
-⚠️ **I due rami si tengono separati dal primo commit.** Il ramo Faerûn ricade
-sotto il DMs Guild Community Content Agreement, incompatibile con MIT, GPL e
-CC BY. Separarli dopo significa riscrivere.
-
----
-
-## §3 · Il colophon: quando si compila, e con che valori
-
-Il meccanismo è [ADR-0023](../../plans/adr/ADR-0023-colophon-di-edizione.md); qui
-c'è **quando** si tocca. La chiave `colophon` del manifest, e le sue sette voci:
+**Il colophon**, chiave `colophon` del manifest:
 
 | Voce | Cosa ci va | La trappola |
 |---|---|---|
@@ -92,46 +133,20 @@ c'è **quando** si tocca. La chiave `colophon` del manifest, e le sue sette voci
 | `licenza` | il regime d'uso di **questo** volume | «materiale del DM, uso privato» è una frase stampata, non da ripetere a voce |
 | `nota` | dedica, ringraziamenti, avvertenza | — |
 
-**Chi non la dichiara esce come prima**: non è una migrazione, è una possibilità.
+**L'esito del gate**: esce, o non esce con la casella vuota e il motivo.
 
----
+## Prima di consegnare
 
-## §4 · L'edizione come oggetto: versione, ristampa, errata
+- Le cinque caselle del §1 sono spuntate?
+- `data` scritta e non dedotta, nessun autore inventato, `versione` alzata solo
+  se cambia il contenuto, una correzione dopo la stampa in `ERRATA-*.md`?
+- Con `chi_si_incontra`: misurato prima e dopo, `misura_stampa --check` verde?
 
-Il colophon italiano di un AP Paizo ha una riga che sembra burocrazia —
-*«adattamento grafico ristampa»* — e invece è la domanda più profonda: **quel
-volume è alla seconda uscita, e qualcuno sa cosa è cambiato.**
+## Cancelli deterministici
 
-- **Versione**: si alza quando cambia il contenuto. Due stampe con la stessa
-  versione devono essere lo stesso testo.
-- **Errata**: una correzione che arriva **dopo** che qualcuno ha stampato non si
-  fa in silenzio nel master. Si scrive in un file `ERRATA-*.md` accanto al
-  modulo, e **poi** si integra alzando la versione. Precedente:
-  `ERRATA-ARC08-DESCRIZIONE-EPICA.md`.
-- **Ristampa**: stesso contenuto, edizione nuova (carta diversa, impaginazione
-  rifatta). Cambia `edizione`, non `versione`.
+I controlli che non chiedono un giudizio, da far girare prima di consegnare.
+Quello che qui non c'è resta giudizio di chi legge (registro delle norme).
 
-🟡 **Oggi questo è una convenzione, non un meccanismo**: niente lo verifica.
-Diventerà un gate il giorno della prima ristampa vera (ADR-0024, «da rivisitare»).
-
----
-
-## §5 · Confini con le altre skill
-
-| Se la domanda è… | Skill |
-|---|---|
-| come sta sulla pagina | [`rumblingstone-editoria`](../rumblingstone-editoria/SKILL.md) |
-| che faccia hanno le immagini | [`rumblingstone-art-direction`](../rumblingstone-art-direction/SKILL.md) |
-| come si scrive la prosa, e le passate redazionali | [`rumblingstone-narrative-style`](../rumblingstone-narrative-style/SKILL.md) |
-| quanto è profondo un modulo | [`rumblingstone-module-standard`](../rumblingstone-module-standard/SKILL.md) |
-| **se può uscire, con che crediti e che versione** | **questa** |
-
----
-
-## §6 · Quando NON serve
-
-- **Materiale che resta nel repo** e non va a nessuno: il gate serve all'uscita.
-- **Il PDF settimanale per il tavolo**: passa dal §1 in dieci secondi (caso
-  «giocatori»), non dall'intera skill.
-- **Decidere se pubblicare per soldi**: quella non è una domanda editoriale, è
-  ADR-0005, e la risposta è già scritta.
+- `python3 scripts/validate_booklets.py --stampa`: il gate d'uscita compila davvero.
+- `python3 scripts/misura_distanza_pagine.py`: quanto sfoglia il DM nel volume stampato.
+- `python3 scripts/misura_distanza_pagine.py --volume --manifest <manifest>`: la struttura del volume come gli AP, S1-S5 (ADR-0122, canale testing).

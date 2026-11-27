@@ -22,6 +22,24 @@
 #let boxLeggi  = rgb("#ece0c6")
 #let boxLato   = rgb("#efe6d2")
 
+// Il titolo VISIBILE di un capitolo o di una scheda è anche il titolo che legge
+// un lettore di schermo (PDF/UA-1, ISO 14289-1, dal 2026-11-13). Il titolo
+// nascosto con `hide` resta, perché fa la voce d'indice, il segnalibro e la
+// testatina; ma `hide` lo toglie dall'albero dei tag, e senza un titolo di
+// livello 1 lì dentro typst con `pdf_standards: ua-1` si ferma su «the first
+// heading must be of level 1». Questo è fuori dall'indice e dai segnalibri,
+// che restano di quello nascosto, e si disegna com'era: `corpo` porta già la
+// sua forma, e le spaziature del `show heading` del tema qui non valgono.
+//
+// Con `segnalibro: true` (l'apertura di capitolo) è lui a fare il segnalibro:
+// typst annida un segnalibro sotto l'ultimo titolo che lo precede, e se il
+// titolo di livello 1 più vicino non ha segnalibro le sezioni salgono al
+// primo livello. Era la causa dei segnalibri piatti (ADR-0145).
+#let titolo-visibile(livello, corpo, segnalibro: false) = {
+  show heading: set block(above: 0pt, below: 0pt, sticky: false)
+  heading(level: livello, outlined: false, bookmarked: segnalibro, corpo)
+}
+
 #let SERIF = "EB Garamond"
 #let TITOLI = "Cinzel"
 #let MONO = "Inconsolata"
@@ -37,14 +55,16 @@
   // L'heading (voce d'indice + segnalibro PDF) va emesso PRIMA del float:
   // altrimenti la testatina della pagina d'apertura mostra ancora il capitolo
   // precedente, perché la query si risolve prima che il float atterri.
-  hide(heading(level: 1, titolo))
+  // Il segnalibro lo fa il titolo visibile (sotto): vedi `titolo-visibile`.
+  hide(heading(level: 1, bookmarked: false, titolo))
   place(top, float: true, scope: "parent", clearance: 14pt)[
     #block(width: 100%, above: 0pt)[
       #line(length: 100%, stroke: 0.6pt + seppia)
       #v(7pt)
       #grid(columns: (1.5cm, 1fr), column-gutter: 10pt, align: horizon,
-        if fregio != none { image(fregio, width: 1.5cm) } else { [] },
-        text(font: TITOLI, size: 17pt, weight: 600, fill: rosso)[#titolo])
+        // il fregio è decorazione: un artefatto, senza testo alternativo (PDF/UA-1)
+        if fregio != none { pdf.artifact(image(fregio, width: 1.5cm)) } else { [] },
+        titolo-visibile(1, text(font: TITOLI, size: 17pt, weight: 600, fill: rosso)[#titolo], segnalibro: true))
       #v(5pt)
       #line(length: 100%, stroke: 0.6pt + seppia)
     ]
@@ -58,7 +78,59 @@
   else if c.has("children") { c.children.map(to-string).join("") }
   else if c.has("body") { to-string(c.body) }
   else if c == [ ] { " " }
+  // l'apostrofo del markdown è un `smartquote`: senza questa riga i titoli
+  // ricomposti uscivano «LALBA» per «L'ALBA» (misura titoli_rovinati)
+  else if c.func() == smartquote { if c.at("double", default: true) { "\u{201D}" } else { "\u{2019}" } }
   else { "" }
+}
+
+// Il numero di pagina dietro un rimando a un capitolo del volume («cap. V
+// Scena 6» → «cap. V Scena 6, p. 50»), come fanno gli AP («see page 50»):
+// un rimando senza pagina obbliga il DM a sfogliare. `rom` è il numero romano
+// del capitolo, `chiave` l'inizio del titolo cercato dentro quel capitolo
+// («SCENA 6», «§8» o «8.», «C.2»); vuota, vale la pagina d'apertura. Se il
+// titolo non c'è non stampa niente: meglio nessun numero che uno sbagliato.
+// Lo inserisce l'esportatore quando il manifest ha `"pagine_nei_rimandi"`.
+#let _rif-inizia(t, k) = {
+  let t = upper(t.trim().replace("\u{2019}", "'"))
+  let k = upper(k.replace("\u{2019}", "'"))
+  if not t.starts-with(k) { return false }
+  if t.len() == k.len() { return true }
+  t.slice(k.len()).match(regex("^[\p{L}\p{N}-]")) == none
+}
+#let rif-pagina(rom, chiave) = context {
+  // senza capitolo («statistiche in A.6»): il primo titolo con quella sigla
+  // DOPO il rimando, cioè l'appendice del master che lo cita
+  if rom == "" {
+    let dopo = query(selector(heading).after(here())).filter(h => _rif-inizia(to-string(h.body), chiave))
+    if dopo.len() == 0 or dopo.first().location().page() == here().page() { return }
+    let l = dopo.first().location()
+    return [, #link(l)[p.~#counter(page).at(l).first()]]
+  }
+  let aperture = query(heading.where(level: 1))
+  let caps = aperture.filter(h => to-string(h.body).starts-with(rom + " ·"))
+  if caps.len() == 0 { return }
+  let inizio = caps.first().location()
+  let dopo = aperture.filter(h => h.location().page() > inizio.page() or (
+    h.location().page() == inizio.page() and h.location().position().y > inizio.position().y))
+  let sel = selector(heading).after(inizio, inclusive: false)
+  if dopo.len() > 0 { sel = sel.before(dopo.first().location(), inclusive: false) }
+  let bersaglio = if chiave == "" { inizio } else if chiave.starts-with("?") {
+    // «?Balvar»: il primo titolo del capitolo che contiene la parola (la
+    // scheda di una persona, la pagina delle mappe); se non c'è, l'apertura
+    let k = upper(chiave.slice(1).replace("\u{2019}", "'"))
+    let trovati = query(sel).filter(h => upper(to-string(h.body).replace("\u{2019}", "'")).contains(k))
+    if trovati.len() == 0 { inizio } else { trovati.first().location() }
+  } else {
+    let chiavi = if chiave.starts-with("§") { (chiave, chiave.slice("§".len()) + ".") } else { (chiave,) }
+    let trovati = query(sel).filter(h => chiavi.any(k => _rif-inizia(to-string(h.body), k)))
+    if trovati.len() == 0 { none } else { trovati.first().location() }
+  }
+  if bersaglio == none { return }
+  let n = counter(page).at(bersaglio).first()
+  // il rimando punta a una pagina che il DM ha già sotto gli occhi: niente numero
+  if bersaglio.page() == here().page() { return }
+  [, #link(bersaglio)[p.~#n]]
 }
 
 // Una figura: se è più larga che alta scavalca le due colonne (le tavole
@@ -228,7 +300,30 @@
     numbering: none,
   )
   if larga { place(top, float: true, scope: "parent", clearance: 12pt, block(width: 100%, corpo)) }
-  else { block(width: 100%, above: 0.8em, below: 0.8em, corpo) }
+  else {
+    // Se non entra nello spazio che resta nella colonna, va a capo colonna
+    // da sé, come la scheda delle creature: sotto un float a tutta pagina
+    // Typst 0.15 sbaglia lo spazio che resta, e la figura, che non si
+    // spezza, usciva dal foglio (il ritratto di Vatore nella serata di
+    // ARC-07, 2026-11-19; misura `immagini_tagliate` di misura_stampa.py).
+    // `layout` dà la larghezza vera della colonna; il blocco esterno porta la
+    // spaziatura di sempre, che `layout` da solo cambierebbe di qualche punto
+    // (una scheda spezzata in più nel fascicolo dei giocatori di ARC-07).
+    // Solo `context`, senza `layout`, non basta: il ritratto esce lo stesso.
+    block(width: 100%, above: 0.8em, below: 0.8em, layout(spazio => context {
+      let a5 = page.width < 16cm
+      let larghezza = spazio.width
+      let colonna = page.height - if a5 { 2.9cm } else { 4.1cm }
+      let fondo-col = page.height - if a5 { 1.4cm } else { 2.0cm }
+      let alto = measure(block(width: larghezza, corpo)).height + 0.8em.to-absolute()
+      let resta = fondo-col - here().position().y
+      // Un float di colonna sarebbe meglio (il testo dopo riempirebbe lo
+      // spazio), ma Typst 0.15 lo colloca lo stesso sotto i float a tutta
+      // pagina e l'immagine esce ancora dal foglio: provato e scartato.
+      if alto > resta and alto < colonna { colbreak() }
+      corpo
+    }))
+  }
 }
 
 // Una griglia a spaziatura fissa (mappa ASCII, schema, statblocco
@@ -296,7 +391,15 @@
   // della serata del −1000, p. 65 e p. 72, 2026-09-26). Il flusso a due colonne
   // di Typst 0.15 sbaglia di quel tanto l'altezza lasciata al float: è una
   // mitigazione misurata, non la cura. `validate_booklets --stampa` la tiene.
-  let scavalca = place(auto, float: true, scope: "parent", clearance: 18pt, block(width: 100%)[
+  // La tabella della persona portata da ADR-0107 («Chi si incontra in questo
+  // capitolo») sta sempre in cima: in fondo alla pagina Typst 0.15 la mette
+  // sopra il riquadro della colonna accanto (Notte e Alba, p. 24, 2026-11-03).
+  // Dal 2026-11-12 vale per ogni tabella che scavalca: con la riga di taglia,
+  // spazio e portata (ADR-0128) e la CA spiegata (ADR-0126) la scheda di
+  // Skullcrusher Vecchio finiva 3 righe dentro il float in fondo (Notte e
+  // Alba p. 114, Resurrezione p. 128; validate_corredo, 98 difetti).
+  let dove = top
+  let scavalca = place(dove, float: true, scope: "parent", clearance: 18pt, block(width: 100%)[
     #if sezione != none [
       #text(font: TITOLI, size: 7.5pt, fill: seppia, tracking: 0.3pt)[#upper(sezione)]
       #v(-4pt)
@@ -324,7 +427,9 @@
 // CA e pf e il rimando alla pagina, più la tattica di quell'incontro; il
 // riquadro intero va nell'appendice in fondo (`appendice-creature`), una volta
 // sola per creatura. «qui»: il riquadro intero esce dove è scritto, come nei
-// fascicoli di schede da dare in mano. L'esportatore sceglie dal manifest.
+// fascicoli di schede da dare in mano. «entrambe»: il riquadro intero dove è
+// scritto e, in più, l'appendice in fondo (richiesta del DM, 2026-11-03, per i
+// booklet della serata). L'esportatore sceglie dal manifest.
 #let modo-schede = state("modo-schede", "qui")
 
 // Blocco statistiche: il riquadro del mostro/PNG, coi numeri dove il DM li
@@ -333,16 +438,22 @@
 //
 // La forma è una sola per ogni creatura, dal goblin al drago (ADR-0105): il
 // nome e il GS sulla barra, il tipo sotto, la riga dell'iniziativa, poi le
-// fasce DIFESA, ATTACCO, STATISTICHE, CAPACITÀ SPECIALI e TATTICHE, come nelle
-// AP. Le fasce si riempiono con le righe leggibili di ADR-0091 (`sezioni`)
+// fasce DIFESA, ATTACCO, TATTICHE, STATISTICHE e CAPACITÀ SPECIALI, come nelle
+// AP PF1e (ordine di Burnt Offerings, Jfs 2026-11-13). Le fasce si riempiono con le righe leggibili di ADR-0091 (`sezioni`)
 // quando la scheda le ha, e se no coi campi del blocco: la forma non cambia,
 // cambia solo quanto è piena. Una fascia senza niente dentro non si stampa.
 #let statblocco(
   nome: "", tipo: "", gs: "", iniziativa: "", sensi: "",
+  // ADR-0128: «Taglia · Spazio (quadretti) · Portata (quadretti)», già composta
+  // da dmcore.statblock.ingombro; vuota finché la scheda non dichiara la taglia.
+  ingombro: "",
   ca: "", pf: "", ts: "", velocita: "",
   attributi: (), attacchi: (), voci: (), tattica: "", fonte: "",
   sezioni: (:),
   larga: false,
+  // Le sigle del riquadro vengono dal plugin del sistema (stampa.etichette,
+  // ADR-0111, L7): export_booklet_typst.py le passa a ogni chiamata.
+  etichette: (ca: "CA", pf: "pf", ts: "TS", vel: "Vel", iniziativa: "Iniziativa", sensi: "Sensi"),
 ) = {
   let fascia(titolo, corpo) = if corpo != none [
     #v(3.5pt)
@@ -357,9 +468,9 @@
     let piene = coppie.filter(c => c.at(1) != "" and c.at(1) != [])
     if piene.len() == 0 { none } else { piene.map(c => [*#c.at(0)* #c.at(1)]).join([ · ]) }
   }
-  let difesa = sezioni.at("Difesa", default: in-riga((("CA", ca), ("pf", pf), ("TS", ts))))
+  let difesa = sezioni.at("Difesa", default: in-riga(((etichette.ca, ca), (etichette.pf, pf), (etichette.ts, ts))))
   let attacco = sezioni.at("Attacco", default: in-riga(
-    (("Vel", velocita),) + attacchi.map(a => (a.at(0), a.at(1)))))
+    ((etichette.vel, velocita),) + attacchi.map(a => (a.at(0), a.at(1)))))
   // La griglia delle caratteristiche solo quando ci sono tutte e sei: con
   // tre colonne su sei il riquadro sembra rotto. Altrimenti stanno in riga.
   let griglia-car = attributi.len() == 6
@@ -382,8 +493,8 @@
   let tattiche = sezioni.at("Tattiche", default: if tattica == "" { none } else [#tattica])
   let apertura = sezioni.at("Iniziativa", default: {
     let pezzi = ()
-    if iniziativa != "" { pezzi.push([*Iniziativa* #iniziativa]) }
-    if sensi != "" { pezzi.push([*Sensi* #sensi]) }
+    if iniziativa != "" { pezzi.push([*#etichette.iniziativa* #iniziativa]) }
+    if sensi != "" { pezzi.push([*#etichette.sensi* #sensi]) }
     if pezzi.len() == 0 { none } else { pezzi.join([ · ]) }
   })
 
@@ -394,14 +505,15 @@
     #if tipo != "" [ #v(1pt) #text(size: 8.6pt, style: "italic", fill: seppia)[#tipo] ]
     #set text(size: 8.8pt)
     #set par(spacing: 0.5em, first-line-indent: 0pt, justify: false)
+    #if ingombro != "" and ingombro != [] { v(2pt); ingombro }
     #if apertura != none { v(2pt); apertura }
     #fascia("Difesa", difesa)
     #fascia("Attacco", attacco)
-    #fascia("Statistiche", statistiche)
-    #fascia("Capacità speciali", capacita)
     #if tattiche != none [
       #fascia("Tattiche", text(size: 8.5pt)[#tattiche])
     ]
+    #fascia("Statistiche", statistiche)
+    #fascia("Capacità speciali", capacita)
     #if fonte != "" [ #v(3pt) #text(size: 7.4pt, fill: seppia)[#fonte] ]
   ]
   let intero(tattiche, spezzabile: true) = block(
@@ -413,7 +525,26 @@
     // la pagina del primo e dell'ultimo segnaposto dice se il riquadro si spezza.
     #metadata(to-string(nome)) <sb-inizio>
     #testa
-    #resto(tattiche)
+    // ADR-0133: in una pagina a una colonna la scheda sarebbe larga tutta la
+    // pagina, con righe da 130 caratteri e più. Burnt Offerings e Red Hand of
+    // Doom stampano la scheda sempre in una colonna di due: qui il corpo si
+    // divide in due colonne pari dentro il riquadro. Sotto i 6 cm resta
+    // intero: due colonne di tre righe si leggono peggio di una. Il blocco è
+    // alto metà del corpo più 16pt di gioco, perché le fasce non si dividono
+    // mai esattamente a metà; se il riquadro si spezza a pagina girata, le
+    // due colonne riprendono nella pagina dopo.
+    #context {
+      if page.columns == 1 {
+        layout(size => {
+          let canale = 16pt
+          let meta = (size.width - canale) / 2
+          let alto = measure(block(width: meta, resto(tattiche))).height
+          if alto < 6cm { resto(tattiche) } else {
+            block(width: 100%, height: alto / 2 + 16pt, columns(2, gutter: canale, resto(tattiche)))
+          }
+        })
+      } else { resto(tattiche) }
+    }
     #metadata(to-string(nome)) <sb-fine>
   ]
   // Il riquadro più alto di una colonna, in appendice: si spezza per forza, e
@@ -468,41 +599,164 @@
   // stessi numeri. La tattica non conta, perché cambia da un incontro all'altro.
   let chiave = to-string(nome) + "|" + repr(intero(none))
   context {
+    // Con «entrambe» la stessa scheda esce in due capitoli, e i rimandi
+    // riscritti per capitolo cambiano il testo: lì la stessa creatura è
+    // stesso nome, GS, CA e pf, non lo stesso testo.
+    let modo = modo-schede.get()
+    let chiave = if modo == "entrambe" or modo == "prima-volta" {
+      to-string(nome) + "|" + repr(gs) + "|" + repr(ca) + "|" + repr(pf)
+    } else { chiave }
+    // La riga dell'incontro (ADR-0105 §7): CA, pf, la pagina della scheda e
+    // la tattica di QUESTO incontro. `dove`: «scheda a pagina N».
+    let riga(pagina) = {
+      let pezzi = ()
+      if ca != "" and ca != [] { pezzi.push([*CA* #ca]) }
+      if pf != "" and pf != [] { pezzi.push([*pf* #pf]) }
+      // intera: spezzata fra due colonne la riga breve perde iniziativa, TS e
+      // attacco per chi la legge (serata, p. 58, 2026-11-12)
+      block(width: 100%, breakable: false, above: 0.9em, below: 0.6em,
+        stroke: (left: 2pt + rosso), inset: (left: 7pt, y: 3pt))[
+        #set par(first-line-indent: 0pt, justify: false, spacing: 0.4em)
+        #text(font: TITOLI, size: 9.5pt, weight: 600, fill: rosso, hyphenate: false)[#nome]
+        #if gs != "" { h(0.4em); text(font: TITOLI, size: 8pt, fill: seppia)[#gs] }
+        #if pagina != none {
+          h(1fr); text(size: 8.4pt, style: "italic", fill: seppia)[scheda a pagina #pagina]
+        }
+        #if pezzi.len() > 0 [ \ #text(size: 8.8pt)[#pezzi.join([ · ])] ]
+        #if ingombro != "" and ingombro != [] [ \ #text(size: 8.8pt)[#ingombro] ]
+        // Giro del 2026-11-10 (lettura del DM): con CA e pf soltanto si
+        // sfoglia a ogni attacco del nemico. La riga porta anche iniziativa,
+        // velocità, TS e gli attacchi, come il blocco breve degli AP.
+        #{
+          let mossa = ()
+          if iniziativa != "" and iniziativa != [] { mossa.push([*#etichette.iniziativa* #iniziativa]) }
+          if velocita != "" and velocita != [] { mossa.push([*#etichette.vel* #velocita]) }
+          if ts != "" and ts != [] { mossa.push([*#etichette.ts* #ts]) }
+          if mossa.len() > 0 [ \ #text(size: 8.8pt)[#mossa.join([ · ])] ]
+          if attacchi.len() > 0 [ \ #text(size: 8.8pt)[#attacchi.map(a => [*#a.at(0)* #a.at(1)]).join([ · ])] ]
+        }
+        #if tattiche != none [
+          #v(2pt)
+          #text(font: TITOLI, size: 7.4pt, weight: 600, fill: rosso, tracking: 0.8pt)[TATTICHE]
+          #v(1pt)
+          #text(size: 8.6pt)[#tattiche]
+        ]
+      ]
+    }
+    // «prima-volta» (ADR-0122, scelta del DM del 2026-11-10): come negli AP
+    // Paizo, la scheda intera esce nel corpo solo la prima volta; dopo, la
+    // riga con la pagina della scheda e la tattica di questo incontro. In
+    // appendice ci sono tutte, come con «entrambe».
+    if modo == "prima-volta" {
+      let gia = query(selector(<sb-corpo>).before(here())).filter(m => m.value == chiave)
+      if gia.len() > 0 {
+        [#metadata((chiave: chiave, nome: to-string(nome), intero: intero(none, spezzabile: false),
+                    lungo: lungo(chiave), accanto: lungo(chiave, accanto: true))) <sb-dato>]
+        // la pagina dove la scheda comincia davvero: il segnaposto sta prima
+        // del riquadro, che può passare intero alla colonna o alla pagina dopo
+        let dentro = query(selector(<sb-inizio>).after(gia.first().location()))
+          .filter(m => m.value == to-string(nome))
+        let dove = if dentro.len() > 0 { dentro.first().location() } else { gia.first().location() }
+        riga(counter(page).at(dove).first())
+        return
+      }
+      [#metadata(chiave) <sb-corpo>]
+    }
     if modo-schede.get() != "appendice" {
-      let corpo = intero(tattiche)
-      if larga { place(top, float: true, scope: "parent", clearance: 10pt, corpo) } else { corpo }
+      // «entrambe»: il riquadro intero qui, e una copia anche nell'appendice.
+      if modo == "entrambe" or modo == "prima-volta" {
+        [#metadata((chiave: chiave, nome: to-string(nome), intero: intero(none, spezzabile: false),
+                    lungo: lungo(chiave), accanto: lungo(chiave, accanto: true))) <sb-dato>]
+      }
+      // Con «entrambe» il riquadro nel capitolo non si spezza a pagina
+      // girata: passa intero alla colonna o alla pagina dopo, come in appendice.
+      // Un riquadro più alto di una colonna si spezza lo stesso.
+      // Se non entra nello spazio che resta nella colonna, va a capo colonna
+      // da sé: sotto un float Typst 0.15 sbaglia lo spazio che resta, e un
+      // blocco che non si spezza finirebbe sopra il piede.
+      if (modo != "entrambe" and modo != "prima-volta") or larga {
+        let corpo = intero(tattiche, spezzabile: true)
+        if larga { place(top, float: true, scope: "parent", clearance: 10pt, corpo) } else { corpo }
+        return
+      }
+      let a5 = page.width < 16cm
+      let larghezza = if page.columns > 1 { TABELLA-COLONNA } else { page.width - if a5 { 2.6cm } else { 3.5cm } }
+      let colonna = page.height - if a5 { 2.9cm } else { 4.1cm }
+      let fondo-col = page.height - if a5 { 1.4cm } else { 2.0cm }
+      let alto = measure(intero(tattiche, spezzabile: false), width: larghezza).height
+      // Su una pagina a una colonna (l'appendice A4 delle statistiche) non
+      // c'è una colonna accanto né una pagina girata da evitare: il riquadro
+      // che sta in una pagina non si spezza, e Typst lo porta da sé alla
+      // pagina dopo. La scelta presa su `here()` qui non convergeva: la
+      // scheda del Vecchio (DEF-4, A.1-bis) andava a capo, tornava su e
+      // spostava di una pagina tutto quello che segue, e il volume d'arco
+      // stampava 15 rimandi sbagliati su 242 (misura_rimandi.py, 2026-11-19).
+      if page.columns < 2 {
+        intero(tattiche, spezzabile: alto >= colonna * 0.92)
+        return
+      }
+      // Qui c'era un primo «a capo colonna» preso sulla posizione prima del
+      // riquadro, e dentro un secondo controllo che rimisura. Il primo non
+      // convergeva: l'Abbazia della Rotta Sicura stampava nell'indice un
+      // numero di pagina diverso a ogni giro (30, 31, 32). Resta solo il
+      // secondo, che fa la stessa scelta dove il riquadro cade davvero.
+      // La colonna dopo può essere accorciata da un float a tutta pagina (la
+      // scheda d'entrata, una tabella larga), e un blocco che non si spezza
+      // finirebbe sopra il piede: intero solo se entra davvero dove cade.
+      context {
+        let qui = fondo-col - here().position().y - 4pt
+        // in cima a una colonna quasi intera si fa come prima della prova
+        // (#305): intero se sta in una colonna; Typst lo porta avanti da sé
+        if alto < qui or (qui > colonna * 0.8 and alto < colonna * 0.92) {
+          intero(tattiche, spezzabile: false)
+        }
+        // in fondo a una colonna resterebbe il solo titolo: si va a capo, e
+        // lì si spezza solo se la colonna è accorciata da un float
+        else if alto < colonna * 0.97 and qui < colonna * 0.66 {
+          colbreak()
+          // ADR-0144: in cima alla colonna nuova si misura di nuovo. Se un
+          // float l'accorcia e la colonna è quella di destra, il riquadro si
+          // spezzerebbe a pagina girata: va alla pagina dopo, che comincia a
+          // sinistra e lascia la colonna accanto per continuare.
+          context {
+            let qui2 = fondo-col - here().position().y - 4pt
+            if alto >= qui2 and here().position().x > page.width / 2 { colbreak() }
+            // In cima alla colonna di sinistra accorciata da un float a tutta
+            // pagina, anche quella di destra è accorciata allo stesso modo: se
+            // il riquadro non sta nelle due, si spezzerebbe a pagina girata
+            // e va alla pagina dopo (lo Skullcrusher Vecchio nel volume
+            // d'arco, pp. 204-205, finiva su tre colonne).
+            else if alto > 2 * qui2 - 12pt and qui2 < colonna * 0.8 { colbreak(); colbreak() }
+            intero(tattiche, spezzabile: true)
+          }
+        } else {
+          // un riquadro più alto di una colonna si spezza. Nella colonna di
+          // sinistra continua accanto, sulla stessa pagina; in fondo a quella
+          // di destra lascerebbe il titolo da solo a pagina girata, e va a capo
+          // ADR-0144: un riquadro che sta in due colonne non si spezza a
+          // pagina girata. Se comincia a destra va alla pagina dopo, dove
+          // scorre da sinistra a destra; se comincia a sinistra e non entra
+          // in quel che resta più la colonna accanto, va anche lui alla
+          // pagina dopo. Si paga lo spazio bianco che lascia.
+          let destra = here().position().x > page.width / 2
+          let due = page.columns > 1 and alto < colonna * 1.9
+          if due and destra { colbreak() }
+          else if due and alto > qui + colonna - 12pt { colbreak(); colbreak() }
+          else if qui < colonna * 0.33 and destra { colbreak() }
+          intero(tattiche, spezzabile: true)
+        }
+      }
       return
     }
     [#metadata((chiave: chiave, nome: to-string(nome), intero: intero(none, spezzabile: false),
                 lungo: lungo(chiave), accanto: lungo(chiave, accanto: true))) <sb-dato>]
     // La riga dell'incontro: quanto serve per tenere il conto al tavolo, e la
-    // pagina dove sta il resto. I campi brevi, non le fasce: CA e pf.
+    // pagina dove sta il resto, in appendice.
     let pagina = {
       let qui = query(<sb-app>).filter(m => m.value == chiave)
       if qui.len() > 0 { counter(page).at(qui.first().location()).first() } else { none }
     }
-    let pezzi = ()
-    if ca != "" and ca != [] { pezzi.push([*CA* #ca]) }
-    if pf != "" and pf != [] { pezzi.push([*pf* #pf]) }
-    // Spezzabile: sotto un float a tutta pagina Typst 0.15 sbaglia lo spazio
-    // che resta in colonna, e un blocco che non si spezza finiva sopra il piede
-    // (Abbazia, p. 26, 2026-10-29). Il nome resta attaccato alla prima riga.
-    block(width: 100%, breakable: true, above: 0.9em, below: 0.6em,
-      stroke: (left: 2pt + rosso), inset: (left: 7pt, y: 3pt))[
-      #set par(first-line-indent: 0pt, justify: false, spacing: 0.4em)
-      #text(font: TITOLI, size: 9.5pt, weight: 600, fill: rosso, hyphenate: false)[#nome]
-      #if gs != "" { h(0.4em); text(font: TITOLI, size: 8pt, fill: seppia)[#gs] }
-      #if pagina != none {
-        h(1fr); text(size: 8.4pt, style: "italic", fill: seppia)[scheda a pagina #pagina]
-      }
-      #if pezzi.len() > 0 [ \ #text(size: 8.8pt)[#pezzi.join([ · ])] ]
-      #if tattiche != none [
-        #v(2pt)
-        #text(font: TITOLI, size: 7.4pt, weight: 600, fill: rosso, tracking: 0.8pt)[TATTICHE]
-        #v(1pt)
-        #text(size: 8.6pt)[#tattiche]
-      ]
-    ]
+    riga(pagina)
   }
 }
 
@@ -554,7 +808,7 @@
       [#metadata(v.chiave) <sb-app>]
       block(width: 100%, below: 1em, v.accanto)
       col = 1
-      y = cima-destra + alto - resta + 30pt + spazio
+      y = cima-destra + alto - resta + 12pt + spazio
     } else if alto < colonna * 0.92 {
       [#metadata(v.chiave) <sb-app>]
       block(width: 100%, breakable: false, below: 1em, v.intero)
@@ -629,13 +883,13 @@
 // «da stampare stasera» non sono lo stesso file.
 #let libro(titolo: "", sottotitolo: "", brand: "", banner: "", meta: "", capitolo: "",
            apparato: true, carta: "avorio", formato: "a4", copertina: none, intro: none,
-           crediti: none,
+           crediti: none, indice-profondita: 4,
            corpo) = {
   // A5 è il formato «libretto»: **una colonna sola**, perché in A5 due colonne
   // sarebbero da 5 cm e nessuno impagina un manuale così.
   //
   // Sta accanto all'imposizione (ADR-0027), non al posto suo, e la differenza è
-  // il corpo del testo: `pdfcpu booklet` prende il volume A4 e ne mette due per
+  // il corpo del testo: imporre il volume A4 (pdfcpu allora, pdfimpose ora) ne mette due per
   // foglio, cioè **scala tutto al 71%** — 10.2 pt diventano ~7.2, che si
   // stampano ma non si leggono al tavolo. Comporre in A5 e poi imporre due
   // pagine per foglio A4 tiene il corpo a 9.6 pt, che è la misura di un manuale
@@ -656,7 +910,7 @@
         set text(size: 8pt, fill: seppia, style: "italic")
         // La testatina destra segue il CAPITOLO corrente: è ciò che rende
         // sfogliabile un volume di sessanta pagine.
-        let qui = query(selector(heading.where(level: 1)).before(here()))
+        let qui = query(selector(heading.where(level: 1, outlined: true)).before(here()))
         grid(columns: (1fr, 1fr),
           align(left)[#titolo],
           align(right)[#if qui.len() > 0 { qui.last().body } else { capitolo }],
@@ -689,14 +943,23 @@
   // difetto che si nota per primo sfogliando: `sticky` lo tiene attaccato.
   show heading: set block(above: 1.1em, below: 0.65em, sticky: true)
   show heading: it => {
-    set text(font: TITOLI, fill: if it.level == 1 { rosso } else { seppia })
-    if it.level == 1 { text(size: 15pt, weight: 600)[#it.body] }
+    let etichetta = it.at("label", default: none)
+    // `<come-N>`: un titolo che nei master saltava un livello sale nell'albero
+    // dei tag (export_booklet_typst.titoli_senza_salti) ma si disegna come prima.
+    // Si disegna per `depth`, non per `level`: dentro un capitolo i titoli dei
+    // master scendono di un livello nei segnalibri (`offset: 1`,
+    // export_booklet_typst.titoli_annidati, ADR-0145) e la pagina resta uguale.
+    // I titoli con `level` esplicito (capitolo, carta, scheda) portano già la
+    // loro forma nel corpo.
+    let livello = if etichetta == <come-2> { 2 } else if etichetta == <come-3> { 3 } else if etichetta == <come-4> { 4 } else { it.depth }
+    set text(font: TITOLI, fill: if livello == 1 { rosso } else { seppia })
+    if livello == 1 { text(size: 15pt, weight: 600)[#it.body] }
     else {
       // «§3 · Titolo» → medaglione(3) + Titolo. Se il titolo non comincia con
       // un §, resta esattamente com'è.
       let grezzo = to-string(it.body)
       let m = grezzo.match(regex("^§\s*([0-9]+(?:[-–][a-z]+)?)\s*(?:·|-|—)?\s*(.*)$"))
-      let dim = if it.level == 2 { 11.5pt } else { 10pt }
+      let dim = if livello == 2 { 11.5pt } else { 10pt }
       if m != none {
         text(size: dim, weight: 600)[#medaglione(m.captures.at(0))~#m.captures.at(1)]
       } else {
@@ -763,7 +1026,7 @@
   // Indice cliccabile (e segnalibri PDF dagli heading)
   align(center)[#text(font: TITOLI, size: 13pt, fill: rosso)[Indice]]
   v(0.4cm)
-  outline(title: none, depth: 3, indent: 1em)
+  outline(title: none, depth: indice-profondita, indent: 1em)
   pagebreak()
 
   set page(columns: if a5 { 1 } else { 2 })

@@ -1,0 +1,47 @@
+# sistemi.toml — i sistemi di gioco del progetto (ADR-0111)
+#
+# Il file generale: quali sistemi sono attivi, in che ordine si cerca la
+# versione più potente di una regola, e quale sistema usa ogni cartella.
+# Lo legge scripts/dmcore/sistemi.py; `python3 scripts/sistemi.py` mostra
+# i sistemi supportati dal repo e cosa ogni strumento sa fare con ciascuno,
+# `--check` è il cancello.
+#
+# I plugin stanno in sistemi/<id>/sistema.toml. Spegnere un sistema vuol
+# dire toglierlo da `attivi`: il suo plugin resta nel repo e resta elencato.
+
+[progetto]
+predefinito = "dnd35"
+attivi = ["dnd35", "pf1e"]
+# Dove si cerca la versione più potente di una regola, in ordine: prima il
+# 3.5, poi Pathfinder 1e (preferenza del DM del 2026-10-18). Un sistema di
+# rinforzo serve anche quando non è il sistema base di nessun modulo.
+rinforzo = ["dnd35", "pf1e"]
+
+[moduli]
+# Percorso dalla radice del repo = sistema. Vince il percorso più lungo che
+# contiene il file; un file fuori da tutti usa `predefinito`.
+"10-stand-alone/Il-Drappo-di-Tarsilia" = "pf1e"
+"10-stand-alone/Il Giardino di Sale e Calce PF1e" = "pf1e"
+
+[opzioni.pf1e]
+# Scelte di campagna che il PRD lascia al GM. Valgono quando uno strumento
+# lavora in PF1e e non riceve l'opzione da riga di comando.
+traccia_pe = "media"        # lenta · media · veloce (PRD, Character Advancement)
+velocita_tesoro = "media"   # lenta · media · veloce (PRD, Treasure Values per Encounter)
+
+[ambientazioni]
+# Il mondo in cui un modulo è ambientato (ADR-0111, D4): un asse diverso dal
+# sistema. Il Drappo è PF1e e Golarion, il Giardino PF1e è PF1e senza mondo
+# ufficiale, la campagna è 3.5 nei Forgotten Realms. Vince il percorso più
+# lungo; un file fuori da tutti usa `predefinito`.
+predefinito = "forgotten-realms"
+
+[ambientazioni.elenco]
+"forgotten-realms" = { nome = "Forgotten Realms", skill = ["forgotten-realms-lore"] }
+golarion = { nome = "Golarion (Pathfinder)", skill = [] }
+nessuna = { nome = "nessun mondo ufficiale: nomi e divinità inventati nel modulo", skill = [] }
+
+[ambientazioni.moduli]
+"10-stand-alone/Il-Drappo-di-Tarsilia" = "golarion"
+"10-stand-alone/Il Giardino di Sale e Calce PF1e" = "nessuna"
+"10-stand-alone/L'abbazia Della Rotta Sicura" = "nessuna"

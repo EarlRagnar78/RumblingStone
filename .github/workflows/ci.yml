@@ -14,7 +14,7 @@ permissions:
 jobs:
   validate:
     name: Validate skills & scripts
-    # Fissato, come typst piu' sotto: dal 19 ottobre 2026 `ubuntu-latest`
+    # Fissato, come typst in requirements.txt: dal 19 ottobre 2026 `ubuntu-latest`
     # diventa Ubuntu 26 (avviso di GitHub). Si passa a 26.04 con una PR che
     # la prova, non perche' e' cambiata l'etichetta (PRATICHE PI-3).
     runs-on: ubuntu-24.04
@@ -31,7 +31,12 @@ jobs:
         # ADR-0037, emendamento 2026-09-21: due piani. requirements.txt e' cio'
         # che il DM esegue (stdlib + tre eccezioni dichiarate); il file -dev
         # aggiunge pytest, che gira solo qui e in locale.
-        run: pip install -r requirements-dev.txt
+        # uv e' STABLE dal 2026-11-08 (ADR-0099, P5 di PIANO-PIATTAFORMA): in 81
+        # run di main dal 23/10 ha installato gli stessi pacchetti di pip, nomi
+        # e versioni, 81 volte su 81, in 6 s contro 24 s. Versione fissata.
+        run: |
+          pip install "uv==0.11.32"
+          uv pip install --system -r requirements-dev.txt
 
       # PRATICHE PI-3 (D2): le vulnerabilita' note nelle dipendenze dichiarate.
       # `-r requirements-dev.txt` include requirements.txt, quindi guarda sia
@@ -43,15 +48,12 @@ jobs:
         continue-on-error: true
         run: pip-audit -r requirements-dev.txt
 
-      - name: Python scripts compile
-        run: python -m compileall -q scripts converters
-
-      # ADR-0099: ruff e' in TESTING, quindi non blocca. Sale a stable (e il
-      # passo compileall sopra esce, perche' ruff copre E9) dopo 14 giorni e
-      # 10 run su main senza falsi allarmi (P3 di PIANO-PIATTAFORMA). Le regole
-      # sono in ruff.toml: solo quelle che cercano bug, non lo stile.
-      - name: ruff — nomi non definiti, codice morto, usi deprecati (testing, non bloccante)
-        continue-on-error: true
+      # ADR-0099: ruff e' STABLE dal 2026-11-08 (P3 di PIANO-PIATTAFORMA) e
+      # blocca. 81 run di main dal 23/10: 76 puliti, 5 rossi il 7/11 per due
+      # variabili morte vere (F841, corrette con la #319), nessun falso allarme.
+      # Il passo `compileall` e' uscito: gli errori di sintassi li vede E9. Le
+      # regole sono in ruff.toml: solo quelle che cercano bug, non lo stile.
+      - name: ruff — sintassi, nomi non definiti, codice morto, usi deprecati
         run: ruff check --output-format github
 
       # ADR-0102, canale TESTING: shapely ridisegna le piante di Rethmar, Dauth e
@@ -72,6 +74,18 @@ jobs:
       - name: Validate skill trees (frontmatter, links, data YAML)
         run: python scripts/validate_skills.py
 
+      # ADR-0114: le prove con trappola delle skill nella forma di `claude plugin eval`.
+      - name: Prove delle skill in forma (ADR-0114)
+        run: python scripts/prove_skill.py controlla
+
+      # ADR-0148: le prove fisse degli agenti. Forma e giudici si controllano
+      # senza modelli: ogni caso ha almeno un giudice deterministico, e i
+      # giudici promuovono l'esempio buono e bocciano il cattivo.
+      - name: Prove degli agenti in forma, giudici che discriminano (ADR-0148)
+        run: |
+          python scripts/prove_skill.py controlla --agenti
+          python scripts/prove_skill.py esempi
+
       # Lo scanner di sicurezza delle skill, copiato da awesome-llm-apps
       # (Apache 2.0, ADR-0076): esce 1 su un CRITICO, come `curl ... | sh`.
       - name: Skill security scan (scripts/terzi/skill_scanner.py)
@@ -82,10 +96,24 @@ jobs:
       - name: Pending adoptions (adozioni_in_attesa.py --check)
         run: python scripts/adozioni_in_attesa.py --check
 
+      # Il registro dei filoni in sviluppo: solo la forma, offline. La pagina
+      # plans/LAVORO-IN-CORSO.md dipende da rete e macchina e NON si controlla qui.
+      - name: Registro del lavoro in corso (lavoro_in_corso.py --check)
+        run: python scripts/lavoro_in_corso.py --check
+
       # Le frasi vere del DM raggiungono le skill obbligatorie (L8, ORCHESTRAZIONE §4):
       # a cricchetto, fallisce se le omissioni superano il tetto di casi.json
       - name: Skill routing (instradamento_skill.py --check)
         run: python scripts/instradamento_skill.py --check
+
+      # ADR-0154, canale testing dal merge, stable non prima di 14 giorni e 10 run
+      # su main: il primo agente che l'hook suggerisce, contro il set d'oro di
+      # plans/instradamento/agenti-oro.json (28 messaggi veri, etichette confermate dal DM). Cricchetto sullo
+      # split test: esce 1 se giusti, giusti indulgenti o macro-F1 scendono sotto
+      # il «tetto» del file; se salgono avvisa, e il tetto si alza a mano.
+      - name: Agent routing (instradamento_agenti.py --check) — testing, non bloccante (ADR-0154)
+        continue-on-error: true
+        run: python scripts/instradamento_agenti.py --check
 
       # Due o piu' decisioni chiuse nella stessa data vogliono l'eco nel piano (L9)
       - name: Decision echo (eco_decisioni.py --check)
@@ -111,12 +139,39 @@ jobs:
       - name: Link e percorsi locali — su tutti i sorgenti scritti a mano
         run: python scripts/validate_docs.py --sorgenti
 
+      # ADR-0153, audit del 2026-11-27: dopo la #510 AGENTS.md non nominava
+      # nessuno dei 13 agenti e docs/INDEX.md nessuno degli script nuovi. Un
+      # agente, uno script, un workflow o un hook AGGIUNTI dalla PR sono citati
+      # nel loro indice; il debito vecchio non boccia (la base viene dal
+      # checkout con fetch-depth: 0, come per il cricchetto della prosa).
+      - name: Documentazione — la struttura nuova è citata nel suo indice (ADR-0153)
+        if: github.event_name == 'pull_request'
+        run: python scripts/documentazione_allineata.py --rispetto-a "origin/${{ github.base_ref }}"
+
+      # Il debito di tutto il repo, a cricchetto sul tetto di
+      # plans/debito-documentazione.json: si abbassa a mano, mai si alza.
+      - name: Documentazione — il debito non cresce (cricchetto, ADR-0153)
+        run: python scripts/documentazione_allineata.py --debito --check
+
+      # ADR-0148, canale testing fino al 2026-12-04 (14 giorni e 10 run su main):
+      # i rimandi «FILE §N» e «vedi §N» puntano a un titolo che esiste. La regola
+      # sul «§N» senza nome è tarata sul repo del 20/11; sullo storico (tre
+      # istantanee) 2 rotture vere e 0 falsi allarmi; 41% dei rimandi non
+      # giudicabile. Le violazioni portate al DM stanno in IN_ATTESA.
+      - name: Rimandi per sezione — non bloccante fino al 2026-12-04 (ADR-0148, testing)
+        continue-on-error: true
+        run: python scripts/verifica_rimandi.py --check
+
       - name: Decisioni aperte al DM — l'aggregato combacia coi piani
         run: python scripts/decisioni_dm.py --check
 
       # ADR-0087: la memoria del lavoro è generata dal repo e non resta indietro
       - name: La memoria è allineata (MEMORIA.md, ADR-0087)
         run: python scripts/memoria.py --check
+
+      # ADR-0127: la memoria storica resta cercabile e collegata al changelog
+      - name: La memoria storica è in forma (plans/MEMORIA-STORICA.md, ADR-0127)
+        run: python scripts/memoria_storica.py --check
 
       - name: Plans discipline gate — CHANGELOG obbligatorio + promemoria ADR (ADR-0009)
         if: github.event_name == 'pull_request'
@@ -140,12 +195,28 @@ jobs:
           python scripts/validate_pg.py
           python scripts/render_pg.py --check
 
+      # 🔴 BLOCCANTE, ADR-0148, per la regola di Jfs «ciò che un controllo trova
+      # si corregge e il controllo diventa cancello»: il registro dei PX torna
+      # con le somme (R1), la tabella dei PX (R2), un livello alla volta (R3) e
+      # il livello effettivo di state.yaml (R4). Aritmetica su un file: 366
+      # mutanti su 366, 0 violazioni sulle tre versioni del registro nella storia.
+      - name: Registro dei PX — somme, soglie e livelli (verifica_px.py, ADR-0148)
+        run: python scripts/verifica_px.py
+
       # Il debito [INFERRED] dei documenti vivi non sale (ripreso dalla #99,
       # lotto G4; ADR-0088). Canale testing (ADR-0099): non blocca finché il DM
       # non lo promuove. Se sale per una ragione: --update-baseline nello stesso commit.
       - name: Ratchet dei [INFERRED] aperti — non bloccante (ADR-0088, testing)
         continue-on-error: true
         run: python scripts/inventory_inferred.py --check
+
+      # ADR-0109, scheda 4: sulle righe cambiate, marca senza domanda e base, e
+      # INFERRED tolto senza CANONE, GENERATO o storico. Stable dal 2026-11-25
+      # (ADR-0099): 510 run di PR dal 2026-11-07, 3 rossi, tutti difetti veri.
+      # Gira solo sulle PR, quindi i «10 run su main» sono stati run di PR.
+      - name: Marche sulle righe cambiate (ADR-0109)
+        if: github.event_name == 'pull_request'
+        run: python scripts/controlla_marche.py --base "origin/${{ github.base_ref }}" --rigido
 
       - name: Validate generated maps (well-formed, in-sync SVGs)
         run: |
@@ -176,6 +247,21 @@ jobs:
       # vecchi restavano. Le correzioni devono restare riproducibili (ADR-0065).
       - name: pf-dado registra i dadi vita, e le correzioni sono riproducibili
         run: python scripts/conformita_statblocchi.py --check
+
+      # F4 di ADR-0112, scelta del DM del 2026-11-08 (card F4 1): le schede dei
+      # moduli di un altro sistema (Drappo e Giardino PF1e) si contano con le
+      # regole del loro sistema, e un conto che non torna blocca. I conti senza
+      # regola PF1e (lotta, scurovisione, corrompere l'acqua) si saltano e si dicono.
+      - name: Le schede dei moduli PF1e tornano con le regole PF1e
+        run: python scripts/conformita_statblocchi.py --cancello-moduli
+
+      # ADR-0118, scelta del DM del 2026-11-09: un numero entra solo se la regola
+      # lo calcola. Cricchetto su docs/audit/numeri-baseline.json: uno scarto nuovo
+      # o un file nuovo con numeri che nessun conto legge fa fallire; il risolto
+      # si toglie con --aggiorna-numeri. Stable dal 2026-11-25 (ADR-0099): 146
+      # run su main senza un rosso, 3 rossi su 384 run di PR, spiegati.
+      - name: Cancello dei numeri (ADR-0118)
+        run: python scripts/conformita_statblocchi.py --cancello-numeri
 
       # Ogni creatura dei booklet esce nello stesso riquadro (ADR-0105): una
       # scheda nuova scritta in prosa o in un recinto qualunque fa salire il
@@ -211,6 +297,13 @@ jobs:
       - name: Domande del developer — si gioca?
         run: python scripts/domande_developer.py --check
 
+      # ADR-0111: i sistemi di gioco come plugin. sistemi.toml, i plugin in
+      # sistemi/<id>/ e le capacità chieste dal manifest dei tool tornano:
+      # nessuna capacità chiesta e non dichiarata, nessuna tabella puntata
+      # che nel codice non c'è più, nessuna eredità senza motivo.
+      - name: Sistemi di gioco — plugin e capacità
+        run: python scripts/sistemi.py --check
+
       # Lotto 7c di AVVENTURE-COMMUNITY: lo stesso PNG o mostro con GS, pf, CA,
       # CD o classi diversi in due scene. Solo ARC-07 e ARC-08, dove la
       # precisione è misurata (4 su 4); le contraddizioni che aspettano il DM
@@ -233,7 +326,10 @@ jobs:
       # nella #167, 13 falsi positivi tolti dalla regola). Gli AVVISI (virgolette
       # dritte, «E'») restano ~2.450 e non bloccano: --strict li alzerebbe a
       # errori, e si mette il giorno in cui anche quelli sono a zero. Dal
-      # 2026-10-22 se ne stampa solo il conto (l'elenco con --avvisi).
+      # 2026-10-22 se ne stampa solo il conto (l'elenco con --avvisi). La d
+      # eufonica (ADR-0120) e' un errore dal 2026-11-25: 141 run su main nel
+      # canale testing di ADR-0099 senza un falso allarme, e il suo passo
+      # separato, che rieseguiva tutto il validatore (8 s), e' uscito.
       - name: Lingua italiana — refusi meccanici
         run: python scripts/validate_lingua.py
 
@@ -325,8 +421,10 @@ jobs:
           python scripts/dm_dossier.py --help > /dev/null
           python scripts/validate_modules.py --help > /dev/null
           python scripts/tools_manifest.py --help > /dev/null
+          python scripts/memoria_custode.py --help > /dev/null
           python scripts/decisioni_dm.py --help > /dev/null
           python scripts/validate_docs.py --help > /dev/null
+          python scripts/documentazione_allineata.py --help > /dev/null
           # Catena editoriale e da stampa: questi sette dichiaravano `ci_smoke`
           # nel manifest e non venivano eseguiti da nessuno — il contratto
           # prometteva una verifica che non esisteva (ADR-0012).
@@ -389,17 +487,13 @@ jobs:
         run: python scripts/validate_booklets.py --spiega
 
 
-      - name: Install typst (versione FISSATA, mai «latest»)
-        # Un compilatore che si aggiorna da solo è una CI che diventa rossa di
-        # notte per una riga che nessuno ha scritto. La versione si alza a mano,
-        # in un commit che si vede. ADR-0020 §3.
-        env:
-          TYPST_VERSION: "0.15.1"
+      - name: typst e pdfimpose arrivano da requirements.txt (ADR-0116)
+        # Niente binari scaricati da GitHub Releases: il compilatore typst è il
+        # modulo PyPI, l'imposizione è pdfimpose. Qui si controlla solo che la
+        # catena usi il modulo e non una CLI trovata per caso nel PATH.
         run: |
-          curl -fsSL "https://github.com/typst/typst/releases/download/v${TYPST_VERSION}/typst-x86_64-unknown-linux-musl.tar.xz" -o /tmp/typst.tar.xz
-          tar -xJf /tmp/typst.tar.xz -C /tmp
-          sudo install /tmp/typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
-          typst --version
+          python -c "import sys; sys.path.insert(0, 'scripts'); import typst_motore as t; print('typst:', t.versione()); assert t.motore() == 'pypi'"
+          python -m pdfimpose --version
 
       - name: Edizione da stampa — i volumi compilano DAVVERO (ADR-0020)
         # Il gate che mancava: senza typst in CI, due booklet della campagna non
@@ -442,6 +536,27 @@ jobs:
       # ADR-0059: il punteggio pesato. Nasce verde per costruzione (la soglia
       # viene dalla distribuzione misurata del repo), quindi un rosso qui e' un
       # documento che e' peggiorato, non una soglia importata da un manuale.
+      # 🔴 BLOCCANTE, ADR-0146 (scelta del DM del 2026-11-20, che supera «niente
+      # cancelli di prosa nuovi»): sui file di gioco che la PR cambia, nessuna
+      # norma MQM ha piu' difetti che su main. Si controllano la prosa pura e i
+      # file misti a cui la PR aggiunge un box: un ritocco a uno statblock passa.
+      # Sugli ultimi 300 commit: 157 file di gioco cambiati, 8 controllati, 1
+      # fermato (una parentesi in piu' in un box). Vede la forma, non la qualita':
+      # quella resta al voto alla cieca (ADR-0093).
+      - name: Prosa — il testo cambiato non peggiora (cricchetto, ADR-0146)
+        if: github.event_name == 'pull_request'
+        run: python scripts/cricchetto_prosa.py --rispetto-a "origin/${{ github.base_ref }}"
+
+      # ADR-0148, canale testing: un agente toccato dalla PR (il suo file, una
+      # skill che precarica, i suoi casi) ha un esito registrato con l'impronta
+      # nuova, non sotto il precedente. Non blocca finché non si misura quanto
+      # oscilla l'esito fra due esecuzioni; alla promozione si toglie
+      # continue-on-error.
+      - name: Agenti toccati senza esito registrato — non bloccante (ADR-0148, testing)
+        if: github.event_name == 'pull_request'
+        continue-on-error: true
+        run: python scripts/prove_skill.py cricchetto --rigoroso --base "origin/${{ github.base_ref }}"
+
       - name: Punteggio di qualita' editoriale (MQM, ADR-0059)
         run: |
           python scripts/punteggio_mqm.py --soglia
@@ -456,8 +571,16 @@ jobs:
       # presidiato da `test_i_test_girano_in_ci.py`, che conta le prove dei due
       # corridori senza eseguirle e boccia se non combaciano: un test che
       # unittest non vedrebbe fa ancora rossa la CI.
-      - name: Unit tests — pytest (ADR-0037 em. 2026-09-21 e 2026-10-23)
-        run: python -m pytest scripts/tests -q
+      # pytest-xdist e' stable dal 2026-11-25 (ADR-0099, D3 di PIANO-PIATTAFORMA):
+      # 168 run su main dal 2026-11-08 con le stesse prove passate e saltate del
+      # passo in serie, e la mediana degli ultimi 10 da 1.127 a 477 s. Due giri:
+      # in parallelo tutto tranne i test che scrivono per un momento nel repo
+      # vero, poi quelli in serie (scripts/tests/conftest.py). Insieme sono la
+      # suite intera.
+      - name: Unit tests — pytest (ADR-0037 em. 2026-09-21 e 2026-10-23; xdist, ADR-0099)
+        run: |
+          python -m pytest scripts/tests -q -n auto -m "not scrive_nel_repo"
+          python -m pytest scripts/tests -q -m scrive_nel_repo
 
       - name: dm.py unified CLI smoke test (K-C3)
         run: |
@@ -489,15 +612,15 @@ jobs:
           print(f"server MCP OK — {n} tool, annotazioni presenti, S-5 attiva")
           EOF
 
-  # ADR-0099, canale TESTING (D3 e D4 di PIANO-PIATTAFORMA, DM 2026-10-23):
-  # la stessa suite installata con uv ed eseguita in parallelo con
-  # pytest-xdist. Non blocca la PR. Sale a stable, e sostituisce il passo
-  # pytest e `pip install` del job principale, dopo 14 giorni e 10 run su main
-  # con le stesse prove passate e nessun test instabile in parallelo. I tempi
-  # da confrontare sono quelli dei passi «Installa con uv» e «pytest -n auto»
-  # contro «Install dependencies» e «Unit tests» del job principale.
-  testing:
-    name: Piattaforma in prova (uv, pytest-xdist) — non bloccante
+  # P8 di PIANO-PIATTAFORMA, anticipata dal DM il 2026-11-09 («Accendilo
+  # ora»): la stessa suite del job principale su Python 3.14, non bloccante.
+  # Il resto della CI resta su 3.13 e il salto vero aspetta Debian 14 (ADR-0099
+  # §6); il criterio è un mese di verde su main prima del salto. Blender resta
+  # fuori: bpy vuole 3.13 esatto e sta solo in requirements-completo.txt, quindi
+  # qui test_blender_vero salta come nel job principale. Prima misura in locale
+  # (3.14.6): ogni dipendenza ha la ruota, stesse prove passate e saltate di 3.13.
+  python-314:
+    name: Python 3.14 in prova — non bloccante
     runs-on: ubuntu-24.04
     continue-on-error: true
     steps:
@@ -507,45 +630,27 @@ jobs:
 
       - uses: actions/setup-python@v7
         with:
-          python-version: "3.13"
+          python-version: "3.14"
 
-      - name: Installa uv (versione fissata)
-        run: pip install "uv==0.11.32"
-
-      - name: Installa con uv
-        run: uv pip install --system -r requirements-dev.txt
-
-      - name: Stessi pacchetti di pip (nomi e versioni)
+      - name: Installa con uv (come nel job principale)
         run: |
-          # Il confronto che dice se uv installa cio' che installerebbe pip.
-          # I nomi si normalizzano come PEP 503 (pip scrive «PyYAML», uv
-          # «pyyaml»); uv, pip e setuptools sono gli strumenti, non il contenuto.
-          norm() { sed -E 's/[-_.]+/-/g' | tr 'A-Z' 'a-z' | grep -v -E '^(uv|pip|setuptools|wheel)==' | sort; }
-          uv pip freeze --system | norm > "$RUNNER_TEMP/uv.txt"
-          python -m venv "$RUNNER_TEMP/pipvenv"
-          "$RUNNER_TEMP/pipvenv/bin/pip" install -q -r requirements-dev.txt
-          "$RUNNER_TEMP/pipvenv/bin/pip" freeze | norm > "$RUNNER_TEMP/pip.txt"
-          diff "$RUNNER_TEMP/pip.txt" "$RUNNER_TEMP/uv.txt" && echo "✓ stessi pacchetti"
+          pip install "uv==0.11.32"
+          uv pip install --system -r requirements-dev.txt
 
-      # Due giri: in parallelo tutto tranne i test che scrivono per un momento
-      # nel repo vero, poi quelli in serie (scripts/tests/conftest.py). Insieme
-      # sono la stessa suite del job principale.
-      - name: pytest -n auto
-        run: |
-          python -m pytest scripts/tests -q -n auto -m "not scrive_nel_repo"
-          python -m pytest scripts/tests -q -m scrive_nel_repo
+      - name: Unit tests — pytest su 3.14
+        run: python -m pytest scripts/tests -q
 
   # D6 di PIANO-PIATTAFORMA (DM, 2026-10-23: «D6 b»): i convertitori entrano
-  # nella piattaforma, in canale TESTING. ruff li guarda gia' nel job
+  # nella piattaforma. STABLE dal 2026-11-08 (P9): 81 run di main dal 23/10
+  # tutti verdi, in media 52 s, in parallelo a «validate». ruff li guarda gia' nel job
   # principale; qui si installano le loro dipendenze vere (torch per CPU, come
   # in requirements-completo.txt) e si prova che ogni modulo si importi su
   # Python 3.13. La misura del 2026-10-23: 12 moduli su 20 senza torch, uno
   # (fallback_manager) rotto da un NameError all'import, ora corretto. I test
   # del motore leggono PDF che non stanno nel repo e qui non girano.
   convertitori:
-    name: Convertitori in prova (import su 3.13) — non bloccante
+    name: Convertitori (import su 3.13)
     runs-on: ubuntu-24.04
-    continue-on-error: true
     steps:
       - uses: actions/checkout@v7
 
@@ -608,21 +713,40 @@ jobs:
           python-version: "3.13"
 
       - name: Install dependencies
+        # typst arriva da qui (requirements.txt, ADR-0116): niente GitHub Releases.
         run: pip install -r requirements-dev.txt
-
-      - name: Install typst (la stessa versione fissata di «validate»)
-        env:
-          TYPST_VERSION: "0.15.1"
-        run: |
-          curl -fsSL "https://github.com/typst/typst/releases/download/v${TYPST_VERSION}/typst-x86_64-unknown-linux-musl.tar.xz" -o /tmp/typst.tar.xz
-          tar -xJf /tmp/typst.tar.xz -C /tmp
-          sudo install /tmp/typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
 
       - name: Nessun booklet sopra i suoi tetti di stampa
         run: |
           set -o pipefail
           { echo "## Misure di stampa dei booklet"; echo; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
           python scripts/misura_stampa.py --tutti --check | tee -a "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+
+      # ADR-0122, canale TESTING (ADR-0099): lo standard del volume (S1-S5:
+      # introduzione di capitolo, chiavi d'area fra testo e mappa, mappa entro
+      # una pagina, appendice regione e PNG, ritratto dei PNG principali) contro
+      # le soglie misurate su Burnt Offerings e Red Hand of Doom. Legge i PDF che
+      # il passo sopra ha appena compilato. Oggi nessun booklet le passa tutte:
+      # il passo avvisa e non blocca finché il DM non sceglie la nuova struttura.
+      - name: Standard del volume — non bloccante (ADR-0122, testing)
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          { echo "## Standard del volume (ADR-0122, testing)"; echo; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          python scripts/misura_distanza_pagine.py --volume --tutti --check | tee -a "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
+
+      # Giro di lettura del 2026-11-10, canale TESTING: le pedine delle mappe
+      # dichiarano la loro scheda; avvisa se i collegamenti calano o le taglie
+      # della pianta non sono più quelle delle schede. Non ferma.
+      - name: Pedine delle mappe contro le schede (testing, non bloccante)
+        continue-on-error: true
+        run: |
+          set -o pipefail
+          { echo "## Pedine delle mappe contro le schede (testing)"; echo; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          python scripts/misura_mappe_schede.py --check --dettaglio 2>&1 | tee -a "$GITHUB_STEP_SUMMARY"
+          python scripts/misura_mappe_schede.py --booklet 2>/dev/null | tail -1 | tee -a "$GITHUB_STEP_SUMMARY"
           echo '```' >> "$GITHUB_STEP_SUMMARY"
 
   # ADR-0103, canale TESTING: le regole dei master ARC-08 riscontrate sull'SRD
@@ -655,6 +779,37 @@ jobs:
             plans/esperimenti/ricerca-rete-2026-10-23/riscontri-arc08.yaml \
             --md "$RUNNER_TEMP/riscontro.md"
           { echo "## Riscontro SRD di ARC-08 (ADR-0103, testing)"; echo; cat "$RUNNER_TEMP/riscontro.md"; } >> "$GITHUB_STEP_SUMMARY"
+
+  # ADR-0110, canale STABLE (bloccante da subito, su richiesta del DM dopo la
+  # misura 13/40 → 40/40): i nomi dei talenti nelle schede sono quelli della
+  # tabella o delle fonti, o portano una marca. Varianti e nomi 3.5 nei moduli
+  # PF1e bloccano; gli sconosciuti hanno un ratchet che può solo scendere.
+  lessico-regole:
+    name: Termini ufficiali 3.5 e PF1e (ADR-0110)
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+
+      - name: Scarica le fonti a commit fissato e genera l'elenco dei termini
+        run: |
+          python scripts/riscontro_srd.py --cache "$RUNNER_TEMP/srd" scarica
+          python scripts/lessico_regole.py --cache "$RUNNER_TEMP/srd" indice
+
+      - name: Tabella, casi veri e schede
+        run: |
+          set -o pipefail
+          L="python scripts/lessico_regole.py --cache $RUNNER_TEMP/srd --offline"
+          $L verifica-tabella
+          $L casi plans/esperimenti/regole-ufficiali-2026-11-07/casi.json --check
+          { echo "## Termini ufficiali (ADR-0110)"; echo; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          $L controlla --tutto --volumi --check --massimo-sconosciuti 0 | tee -a "$GITHUB_STEP_SUMMARY"
+          # Incantesimi, abilità e oggetti delle schede: per ora solo il conto, non blocca (ADR-0110, lotto 2).
+          $L controlla --tutto --volumi --campi | grep '^lessico campi' | tee -a "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"
 
   build:
     name: Build skill packages

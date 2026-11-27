@@ -12,16 +12,17 @@ Classe, PF e stato di oggi: `campaign/state.yaml`, blocco `party` (e [`state.md`
 
 | | Catena | Oggi |
 |---|---|---:|
-| **FOR** | 12 | 12 |
-| **DES** | 10 | 10 |
-| **COS** | 18 | 18 |
-| **INT** | 13 | 13 |
+| **FOR** | 14 → **16** *(scheda della giocatrice, foto del )* | 16 |
+| **DES** | 13 | 13 |
+| **COS** | 12 | 12 |
+| **INT** | 12 | 12 |
 | **SAG** | 16 → **20** *(ARC-07, Hella risorta (DEF-3))* | 20 |
-| **CAR** | 12 | 12 |
+| **CAR** | 10 | 10 |
 
-## Modificatori permanenti — 1
+## Modificatori permanenti — 2
 
 | Car. | Δ | Causa | Quando | Fonte |
 |---|---:|---|---|---|
 | **SAG** | +4 | Saggezza della Terra della Collana dei Semi Eterni. | ARC-07, Hella risorta (DEF-3) | `07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md` |
+| **FOR** | +2 | Guanti della Forza dell'Orco indossati (+2 di potenziamento). | scheda della giocatrice, foto del DM del 2026-11-05 | `plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md` |
 

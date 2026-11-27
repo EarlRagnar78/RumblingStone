@@ -77,7 +77,7 @@ def all_md_under(root: Path) -> list[Path]:
     return sorted(root.rglob("*.md"))
 
 
-LOAD_ORDER = re.compile(r"load(?:ing)? order", re.I)
+LOAD_ORDER = re.compile(r"load(?:ing)? order|ordine di (?:lettura|caricamento)", re.I)
 LIST_ITEM = re.compile(r"^\s*\d+\.\s")
 BACKTICK_MD = re.compile(r"`([^`\s]+\.md)`")
 
@@ -85,8 +85,8 @@ BACKTICK_MD = re.compile(r"`([^`\s]+\.md)`")
 def required_preload(skill_dir: Path) -> list[Path]:
     """Files a skill's SKILL.md says to load before the reference.
 
-    Read from the numbered list that follows a "load order" / "loading
-    order" line. Paths are tried relative to the skill, to skills/, and to
+    Read from the "load order" / "ordine di lettura" line and the numbered
+    list or paragraph that follows it. Paths are tried relative to the skill, to skills/, and to
     the repo root; the skill's own SKILL.md is not a preload.
     """
     skill_md = skill_dir / "SKILL.md"
@@ -96,10 +96,15 @@ def required_preload(skill_dir: Path) -> list[Path]:
     start = next((i for i, riga in enumerate(lines) if LOAD_ORDER.search(riga)), None)
     if start is None:
         return []
-    block: list[str] = []
+    # La riga stessa conta: la scheda (ADR-0114) scrive l'ordine anche in linea,
+    # «**Ordine di lettura:** `a.md`, poi `b.md`», e il paragrafo finisce alla
+    # prima riga vuota se non comincia un elenco numerato.
+    block: list[str] = [lines[start]]
     seen_item = False
     for line in lines[start + 1:]:
         if line.startswith("#"):
+            break
+        if not seen_item and not line.strip() and len(block) > 1 and not LIST_ITEM.match(block[-1]):
             break
         if LIST_ITEM.match(line):
             seen_item = True

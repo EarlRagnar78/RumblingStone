@@ -6,6 +6,12 @@
 >
 > **Gate**: `python3 scripts/validate_skills.py` —
 > [ADR-0058](../plans/adr/ADR-0058-orchestrazione-a-strati-delle-skill.md)
+>
+> **Quali sono installate** (ADR-0111, L6): le skill di un sistema di gioco
+> (`dnd-35-srd`, `dnd-35-rules`, `npc-villain-boosting`, `pathfinder-1e-srd`)
+> si costruiscono solo se il loro sistema è attivo o di rinforzo in
+> `sistemi.toml`; `python3 scripts/sistemi.py --skill-escluse` dice quali
+> saltano. Con la configurazione di oggi non ne salta nessuna.
 
 ---
 

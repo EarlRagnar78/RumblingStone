@@ -64,12 +64,12 @@ La stanza è progettata per dividere gli intrusi basandosi sulla loro natura.
 ## 3. La Sentinella di Mithral (Statistiche Boss)
 
 **Nome:** Sentinella Silenziosa
-**Tipo:** Costrutto (Golem) - Taglia Grande
+**Tipo:** Costrutto (Golem) - Taglia Enorme (spazio 4,5 m, portata 4,5 m; SRD, golem di mithral)
 **DV:** 18d10+40 (160 PF)
 **Iniziativa:** +2 (Dex)
 **Velocità:** 9m (non rallentata da armatura)
-**CA:** 30 (-1 taglia, +2 Dex, +19 naturale) [Touch 11, Flat 28]
-**Attacchi:** 2 Schianti +20 mischia
+**CA:** 29 (-2 taglia, +2 Dex, +19 naturale) [Touch 10, Flat 27]
+**Attacchi:** 2 Schianti +19 mischia
 **Danni:** 2d10+8 + 1d6 Elettrici (Magnetismo)
 
 **Attacchi Speciali:**

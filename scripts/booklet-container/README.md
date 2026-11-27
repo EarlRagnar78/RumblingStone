@@ -6,7 +6,7 @@
 > `python3 scripts/dm.py booklet <manifest> --pdf`.
 
 **Guida completa** (prerequisiti, manifest, comandi, troubleshooting):
-[`docs/guides/GUIDA-BOOKLET-E-PDF.md`](../../docs/guides/GUIDA-BOOKLET-E-PDF.md) §7.2.
+[`docs/how-to/GUIDA-BOOKLET-E-PDF.md`](../../docs/how-to/GUIDA-BOOKLET-E-PDF.md) §7.2.
 
 ## Uso
 

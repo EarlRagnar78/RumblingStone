@@ -6,6 +6,9 @@
 
 ```statblocco
 gs: 7
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 13
 pf: 43
 ts: Temp +3, Rifl +3, Vol +13

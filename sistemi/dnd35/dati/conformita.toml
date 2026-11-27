@@ -1,0 +1,17 @@
+# sistemi/dnd35/dati/conformita.toml — i conti che conformita_statblocchi sa
+# fare su una scheda 3.5 (F4 di ADR-0112). Il codice li esegue; quali valgono,
+# e come si arrotondano i pf, lo dice il sistema.
+
+fonte = "SRD 3.5 (dnd-35-srd): Monsters Intro, Improving Monsters, DMG cap. 4 «PNG»"
+
+[punti_ferita]
+# Media dei dadi vita: (facce + 1) / 2 per dado, il totale arrotondato in giù.
+media = "giu"
+# Un PNG con livelli di classe ha il primo dado al massimo (DMG 3.5, cap. 4);
+# gli altri dadi a media, il totale arrotondato in giù.
+primo_dado_di_classe = "massimo"
+mezzi_dopo_il_primo = "giu"
+
+[conti]
+# Ogni conto qui ha la sua regola SRD 3.5 (tabella in conformita_statblocchi.py).
+fatti = ["pf", "CA", "prosa", "iniziativa", "attacco", "lotta", "CD", "corrompere_acqua", "ereditate", "scurovisione"]

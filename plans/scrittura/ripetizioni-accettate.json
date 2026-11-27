@@ -1,0 +1,139 @@
+{
+ "data": "2026-11-03",
+ "nota": "Le ripetizioni sopra 0,80 lette e lasciate. misura_ripetizioni_frasi --check boccia solo le coppie nuove.",
+ "coppie": [
+  {
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "frase_a": "In fondo alla pagina, al posto del nome, una bilancia con un filo d'argento avvolto al giogo.",
+   "frase_b": "In fondo alla pagina, una bilancia con un filo d'argento avvolto al giogo.",
+   "perche": "eco voluta: la firma del contratto ritorna nella gemma (DEF-1)"
+  },
+  {
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "frase_a": "Il vento tra le lame crea una melodia triste ma orgogliosa - il canto degli eroi caduti.\"",
+   "frase_b": "\"Il vento attraversa le lame piantate creando una melodia triste ma orgogliosa.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "frase_a": "Il vento tra le lame crea una melodia triste ma orgogliosa - il canto degli eroi caduti.\"",
+   "frase_b": "\"Il vento attraversa le lame piantate creando una melodia triste ma orgogliosa.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "frase_a": "Il suono dell'impatto è assordante: il clangore di cento asce che trovano il loro bersaglio, lo schianto di scudi che spezzano ossa, le grida di terrore dei nemici che vedono la morte negli occhi dei nani in carica.\"",
+   "frase_b": "Il suono è assordante: cento asce che trovano simultaneamente i loro bersagli, scudi che spezzano ossa, grida di terrore che si mescolano ai canti di guerra nanici.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+   "frase_a": "25 DV danno 9 talenti: i tre che mancavano sono Fluttuare, Ghermire e Riflessi Fulminei.",
+   "frase_b": "25 DV danno 9 talenti: i tre che mancavano sono confermati dal DM (2026-10-18).",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "frase_a": "\"Dara è la migliore esploratrice di Hammerfist, una nana dai capelli corvini e occhi acuti come lame.",
+   "frase_b": "\"Sei la migliore esploratrice di Hammerfist, una nana dagli occhi acuti come lame.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+   "frase_a": "\"Dara è la migliore esploratrice di Hammerfist, una nana dai capelli corvini e occhi acuti come lame.",
+   "frase_b": "\"Sei la migliore esploratrice di Hammerfist, una nana dagli occhi acuti come lame.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "frase_a": "Il metallo si scalda contro la fronte, e non si raffredda.",
+   "frase_b": "Il metallo gli si raffredda contro la fronte, e resta caldo come una mano.",
+   "perche": "richiamo voluto: DEF-5 chiude il calore aperto in DEF-4; box di DEF-5 votato dal DM (CONGELATI)"
+  },
+  {
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "b": "10-stand-alone/Il Giardino di Sale e Calce/giardino_sale_calce.md",
+   "frase_a": "Lo Smeraldo galleggia sopra l'Altare e non proietta ombra: la sua luce verde va all'indietro, dentro le cose.",
+   "frase_b": "Nel mezzo la scala a chiocciola sprofonda in un pozzo di luce verde.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "b": "10-stand-alone/Il Giardino di Sale e Calce PF1e/giardino_sale_calce_pf1e.md",
+   "frase_a": "Lo Smeraldo galleggia sopra l'Altare e non proietta ombra: la sua luce verde va all'indietro, dentro le cose.",
+   "frase_b": "Nel mezzo la scala a chiocciola sprofonda in un pozzo di luce verde.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "b": "10-stand-alone/L'abbazia Della Rotta Sicura/appendice_corsari_borgo.md",
+   "frase_a": "Sul margine, piccola e quasi nascosta, una zampa di pietra si solidifica, con occhi di topazio.",
+   "frase_b": "La scalinata finisce su una piattaforma di pietra battuta.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "frase_a": "A chinarsi, il calore arriva in faccia asciutto, come dalla bocca di un forno appena aperto.",
+   "frase_b": "Sotto la fucina il caldo finisce di colpo.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "frase_a": "Il drago smette di girare sopra il campo, chiude le ali e scende dritto, e la pioggia gli scivola addosso come su una lama oliata.",
+   "frase_b": "Il drago si ferma in aria sopra il fossato, a sud, e le ali battono piano per tenerlo fermo.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "b": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "frase_a": "Il drago si ferma in aria sopra il fossato, a sud, e le ali battono piano per tenerlo fermo.",
+   "frase_b": "Il drago smette di girare sopra il campo, chiude le ali e scende dritto, e la pioggia gli scivola addosso come su una lama oliata.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "frase_a": "Aegis Fang, nella mano di Thorik, vibra così forte che il braccio duole.",
+   "frase_b": "Thorik, l'armatura è àncora e bandiera insieme: Aegis Fang morde il bordo dell'Altare con un suono di ferro, il braccio urla, e il morso tiene e vibra fino alla spalla.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "b": "10-stand-alone/Il Giardino di Sale e Calce/giardino_sale_calce.md",
+   "frase_a": "Per un istante la luce verde disegna sopra l'Altare la forma di qualcosa con quattro zampe; poi non c'è più.",
+   "frase_b": "Nel mezzo la scala a chiocciola sprofonda in un pozzo di luce verde.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "b": "10-stand-alone/Il Giardino di Sale e Calce PF1e/giardino_sale_calce_pf1e.md",
+   "frase_a": "Per un istante la luce verde disegna sopra l'Altare la forma di qualcosa con quattro zampe; poi non c'è più.",
+   "frase_b": "Nel mezzo la scala a chiocciola sprofonda in un pozzo di luce verde.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "frase_a": "\"La carica nanica colpisce le linee nemiche come un martello divino che si abbatte su un'incudine.",
+   "frase_b": "\"La carica nanica colpisce le linee nemiche come una valanga di ferro e vendetta.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  },
+  {
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "frase_a": "\"Re Thorek Hammerfist è l'incarnazione della nobiltà nanica.",
+   "frase_b": "\"Io, Thorek Hammerfist, Re dei Rifugi, vi nomino Custodi Eterni di Hammerfist.",
+   "perche": "pre-esistente al 2026-11-03: fuori dai master DEF vivi o scene diverse, non letta come difetto"
+  }
+ ]
+}

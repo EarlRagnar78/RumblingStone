@@ -500,7 +500,7 @@ inventa** e finisce in `notes`. Il vincolo è lo schema che esiste già,
 con errori precisi; il lotto A gli aggiunge il grounding. Il ciclo diventa:
 il modello emette JSON, il codice boccia con l'elenco dei difetti, il modello
 corregge. Non serve codice nuovo, serve che il ciclo sia **documentato come il
-modo normale di lavorare**, in `docs/guides/GUIDA-MAPPE.md` e nella skill.
+modo normale di lavorare**, in `docs/how-to/GUIDA-MAPPE.md` e nella skill.
 
 **B3 · Il banco di prova dell'estrazione.** Cinque prose di riferimento scritte
 dal DM, con accanto il JSON che un'estrazione corretta deve produrre, in

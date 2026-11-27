@@ -1,0 +1,663 @@
+# sistemi/dnd35/dati/creature.toml — le tabelle base per costruire una creatura 3.5 (ADR-0111, L5a)
+#
+# Spostate senza cambiare un valore da scripts/dmcore/tabelle.py (2026-11-07).
+# Le fonti per tabella sono quelle di tabelle.PROVENIENZA; le chiavi italiane
+# sono alias delle inglesi, come prima.
+
+# tipo = { dv = faccia del dado, bab = per DV, ts_buoni }
+[tipi]
+"aberration" = { dv = 8, bab = 0.75, ts_buoni = ["vol"] }
+"animal" = { dv = 8, bab = 0.75, ts_buoni = ["temp", "rifl"] }
+"construct" = { dv = 10, bab = 0.75, ts_buoni = [] }
+"dragon" = { dv = 12, bab = 1.0, ts_buoni = ["temp", "rifl", "vol"] }
+"elemental" = { dv = 8, bab = 0.75, ts_buoni = ["rifl"] }
+"fey" = { dv = 6, bab = 0.5, ts_buoni = ["rifl", "vol"] }
+"giant" = { dv = 8, bab = 0.75, ts_buoni = ["temp"] }
+"humanoid" = { dv = 8, bab = 0.75, ts_buoni = ["temp"] }
+"magical beast" = { dv = 10, bab = 1.0, ts_buoni = ["temp", "rifl"] }
+"monstrous humanoid" = { dv = 8, bab = 1.0, ts_buoni = ["rifl", "vol"] }
+"ooze" = { dv = 10, bab = 0.75, ts_buoni = [] }
+"outsider" = { dv = 8, bab = 1.0, ts_buoni = ["temp", "rifl", "vol"] }
+"plant" = { dv = 8, bab = 0.75, ts_buoni = ["temp"] }
+"undead" = { dv = 12, bab = 0.5, ts_buoni = ["vol"] }
+"vermin" = { dv = 8, bab = 0.75, ts_buoni = ["temp"] }
+
+# I tratti del tipo che cambiano il blocco (lotto 5 delle regole complete,
+# 2026-11-10). SRD 3.5, basic-rules-and-legal/types-subtypes-and-special-abilities.md:
+# Construct e Undead «No Constitution score»; Ooze e Vermin «Mindless: No
+# Intelligence score»; Construct «most constructs are mindless» (il caso tipico,
+# che il generatore produce). «Mindless creatures do not gain feats or skills».
+# Il PRD PF1e dice le stesse cose per gli stessi tipi.
+[tratti_tipo]
+"construct" = { senza_cos = true, senza_int = true }
+"undead" = { senza_cos = true }
+"ooze" = { senza_int = true }
+"vermin" = { senza_int = true }
+
+# SRD 3.5, Construct Traits: «bonus hit points based on size» (la tabella
+# accanto al tratto; «—» per Fine, Diminutive e Tiny).
+[pf_bonus_costrutti]
+"fine" = 0
+"diminutive" = 0
+"tiny" = 0
+"small" = 10
+"medium" = 20
+"large" = 30
+"huge" = 40
+"gargantuan" = 60
+"colossal" = 80
+
+# classe = { dv, ts_buoni, bab = per livello, png = classe PNG dell'SRD }
+[classi]
+"barbarian" = { dv = 12, ts_buoni = ["temp"], bab = 1.0 }
+"barbaro" = { dv = 12, ts_buoni = ["temp"], bab = 1.0 }
+"bard" = { dv = 6, ts_buoni = ["rifl", "vol"], bab = 0.75 }
+"bardo" = { dv = 6, ts_buoni = ["rifl", "vol"], bab = 0.75 }
+"cleric" = { dv = 8, ts_buoni = ["temp", "vol"], bab = 0.75 }
+"chierico" = { dv = 8, ts_buoni = ["temp", "vol"], bab = 0.75 }
+"druid" = { dv = 8, ts_buoni = ["temp", "vol"], bab = 0.75 }
+"druido" = { dv = 8, ts_buoni = ["temp", "vol"], bab = 0.75 }
+"fighter" = { dv = 10, ts_buoni = ["temp"], bab = 1.0 }
+"guerriero" = { dv = 10, ts_buoni = ["temp"], bab = 1.0 }
+"monk" = { dv = 8, ts_buoni = ["temp", "rifl", "vol"], bab = 0.75 }
+"monaco" = { dv = 8, ts_buoni = ["temp", "rifl", "vol"], bab = 0.75 }
+"paladin" = { dv = 10, ts_buoni = ["temp"], bab = 1.0 }
+"paladino" = { dv = 10, ts_buoni = ["temp"], bab = 1.0 }
+"ranger" = { dv = 8, ts_buoni = ["temp", "rifl"], bab = 1.0 }
+"rogue" = { dv = 6, ts_buoni = ["rifl"], bab = 0.75 }
+"ladro" = { dv = 6, ts_buoni = ["rifl"], bab = 0.75 }
+"sorcerer" = { dv = 4, ts_buoni = ["vol"], bab = 0.5 }
+"stregone" = { dv = 4, ts_buoni = ["vol"], bab = 0.5 }
+"wizard" = { dv = 4, ts_buoni = ["vol"], bab = 0.5 }
+"mago" = { dv = 4, ts_buoni = ["vol"], bab = 0.5 }
+"warrior" = { dv = 8, ts_buoni = ["temp"], bab = 1.0, png = true }
+"guerriero-png" = { dv = 8, ts_buoni = ["temp"], bab = 1.0, png = true }
+"adept" = { dv = 6, ts_buoni = ["vol"], bab = 0.5, png = true }
+"adepto" = { dv = 6, ts_buoni = ["vol"], bab = 0.5, png = true }
+"expert" = { dv = 6, ts_buoni = ["vol"], bab = 0.75, png = true }
+"esperto" = { dv = 6, ts_buoni = ["vol"], bab = 0.75, png = true }
+"aristocrat" = { dv = 8, ts_buoni = ["vol"], bab = 0.75, png = true }
+"aristocratico" = { dv = 8, ts_buoni = ["vol"], bab = 0.75, png = true }
+"commoner" = { dv = 4, ts_buoni = [], bab = 0.5, png = true }
+"popolano" = { dv = 4, ts_buoni = [], bab = 0.5, png = true }
+
+# taglia = { armatura_naturale tipica, ca_attacco }
+[taglie]
+"fine" = { armatura_naturale = 0, ca_attacco = 8 }
+"diminutive" = { armatura_naturale = 0, ca_attacco = 4 }
+"minuta" = { armatura_naturale = 0, ca_attacco = 4 }
+"tiny" = { armatura_naturale = 0, ca_attacco = 2 }
+"minuscola" = { armatura_naturale = 0, ca_attacco = 2 }
+"small" = { armatura_naturale = 0, ca_attacco = 1 }
+"piccola" = { armatura_naturale = 0, ca_attacco = 1 }
+"medium" = { armatura_naturale = 0, ca_attacco = 0 }
+"media" = { armatura_naturale = 0, ca_attacco = 0 }
+"large" = { armatura_naturale = 2, ca_attacco = -1 }
+"grande" = { armatura_naturale = 2, ca_attacco = -1 }
+"huge" = { armatura_naturale = 5, ca_attacco = -2 }
+"enorme" = { armatura_naturale = 5, ca_attacco = -2 }
+"gargantuan" = { armatura_naturale = 9, ca_attacco = -4 }
+"mastodontica" = { armatura_naturale = 9, ca_attacco = -4 }
+"colossal" = { armatura_naturale = 14, ca_attacco = -8 }
+"colossale" = { armatura_naturale = 14, ca_attacco = -8 }
+
+# armatura = { ca, des_max }
+[armature]
+"full plate" = { ca = 8, des_max = 1 }
+"piastre" = { ca = 8, des_max = 1 }
+"fullplate" = { ca = 8, des_max = 1 }
+"half-plate" = { ca = 7, des_max = 0 }
+"mezza piastra" = { ca = 7, des_max = 0 }
+"breastplate" = { ca = 5, des_max = 3 }
+"corazza" = { ca = 5, des_max = 3 }
+"chainmail" = { ca = 5, des_max = 2 }
+"cotta di maglia" = { ca = 5, des_max = 2 }
+"chain shirt" = { ca = 4, des_max = 4 }
+"camicia di maglia" = { ca = 4, des_max = 4 }
+"maglia" = { ca = 4, des_max = 4 }
+"scale mail" = { ca = 4, des_max = 3 }
+"corazza a scaglie" = { ca = 4, des_max = 3 }
+"studded leather" = { ca = 3, des_max = 5 }
+"cuoio borchiato" = { ca = 3, des_max = 5 }
+"leather" = { ca = 2, des_max = 6 }
+"cuoio" = { ca = 2, des_max = 6 }
+"padded" = { ca = 1, des_max = 8 }
+"imbottita" = { ca = 1, des_max = 8 }
+# Audit del 2026-11-09 (misura_plugin_regole.py): le tre armature SRD che
+# mancavano, e i nomi italiani ufficiali (lessico_it_35.tsv) delle armature
+# che c'erano già. Chi legge le armature cerca prima il nome più lungo
+# (derive_statblocks), così «corazza di piastre» non diventa «piastre».
+"hide" = { ca = 3, des_max = 4 }
+"armatura di pelle" = { ca = 3, des_max = 4 }
+"banded mail" = { ca = 6, des_max = 1 }
+"corazza di bande" = { ca = 6, des_max = 1 }
+"armatura a bande" = { ca = 6, des_max = 1 }
+"splint mail" = { ca = 6, des_max = 0 }
+"corazza a strisce" = { ca = 6, des_max = 0 }
+"armatura completa" = { ca = 8, des_max = 1 }
+"corazza di piastre" = { ca = 5, des_max = 3 }
+"giaco di maglia" = { ca = 4, des_max = 4 }
+
+[scudi]  # bonus di CA
+"heavy shield" = 2
+"scudo pesante" = 2
+"tower shield" = 4
+"scudo torre" = 4
+"scudo a torre" = 4
+"light shield" = 1
+"scudo leggero" = 1
+"buckler" = 1
+"brocchiere" = 1
+"shield" = 2
+"scudo" = 2
+
+[matrici]  # caratteristiche: elite (PF1e «heroic») e standard (PF1e «basic»)
+elite = [15, 14, 13, 12, 10, 8]
+standard = [13, 12, 11, 10, 9, 8]
+# --- L5b: incantatori (SRD 3.5, tabelle delle classi incantatrici) ---
+# griglia = livello di classe → slot per livello d'incantesimo da 0 a 9.
+# Ranger e paladino: la prima cifra è lo 0 finto che allinea l'indice.
+
+[griglie.mago]
+"1" = [3, 1]
+"2" = [4, 2]
+"3" = [4, 2, 1]
+"4" = [4, 3, 2]
+"5" = [4, 3, 2, 1]
+"6" = [4, 3, 3, 2]
+"7" = [4, 4, 3, 2, 1]
+"8" = [4, 4, 3, 3, 2]
+"9" = [4, 4, 4, 3, 2, 1]
+"10" = [4, 4, 4, 3, 3, 2]
+"11" = [4, 4, 4, 4, 3, 2, 1]
+"12" = [4, 4, 4, 4, 3, 3, 2]
+"13" = [4, 4, 4, 4, 4, 3, 2, 1]
+"14" = [4, 4, 4, 4, 4, 3, 3, 2]
+"15" = [4, 4, 4, 4, 4, 4, 3, 2, 1]
+"16" = [4, 4, 4, 4, 4, 4, 3, 3, 2]
+"17" = [4, 4, 4, 4, 4, 4, 4, 3, 2, 1]
+"18" = [4, 4, 4, 4, 4, 4, 4, 3, 3, 2]
+"19" = [4, 4, 4, 4, 4, 4, 4, 4, 3, 3]
+"20" = [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+
+[griglie.stregone]
+"1" = [5, 3]
+"2" = [6, 4]
+"3" = [6, 5]
+"4" = [6, 6, 3]
+"5" = [6, 6, 4]
+"6" = [6, 6, 5, 3]
+"7" = [6, 6, 6, 4]
+"8" = [6, 6, 6, 5, 3]
+"9" = [6, 6, 6, 6, 4]
+"10" = [6, 6, 6, 6, 5, 3]
+"11" = [6, 6, 6, 6, 6, 4]
+"12" = [6, 6, 6, 6, 6, 5, 3]
+"13" = [6, 6, 6, 6, 6, 6, 4]
+"14" = [6, 6, 6, 6, 6, 6, 5, 3]
+"15" = [6, 6, 6, 6, 6, 6, 6, 4]
+"16" = [6, 6, 6, 6, 6, 6, 6, 5, 3]
+"17" = [6, 6, 6, 6, 6, 6, 6, 6, 4]
+"18" = [6, 6, 6, 6, 6, 6, 6, 6, 5, 3]
+"19" = [6, 6, 6, 6, 6, 6, 6, 6, 6, 4]
+"20" = [6, 6, 6, 6, 6, 6, 6, 6, 6, 6]
+
+[griglie.stregone_conosciuti]
+"1" = [4, 2]
+"2" = [5, 2]
+"3" = [5, 3]
+"4" = [6, 3, 1]
+"5" = [6, 4, 2]
+"6" = [7, 4, 2, 1]
+"7" = [7, 5, 3, 2]
+"8" = [8, 5, 3, 2, 1]
+"9" = [8, 5, 4, 3, 2]
+"10" = [9, 5, 4, 3, 2, 1]
+"11" = [9, 5, 5, 4, 3, 2]
+"12" = [9, 5, 5, 4, 3, 2, 1]
+"13" = [9, 5, 5, 4, 4, 3, 2]
+"14" = [9, 5, 5, 4, 4, 3, 2, 1]
+"15" = [9, 5, 5, 4, 4, 4, 3, 2]
+"16" = [9, 5, 5, 4, 4, 4, 3, 2, 1]
+"17" = [9, 5, 5, 4, 4, 4, 3, 3, 2]
+"18" = [9, 5, 5, 4, 4, 4, 3, 3, 2, 1]
+"19" = [9, 5, 5, 4, 4, 4, 3, 3, 3, 2]
+"20" = [9, 5, 5, 4, 4, 4, 3, 3, 3, 3]
+
+[griglie.chierico]
+"1" = [3, 1]
+"2" = [4, 2]
+"3" = [4, 2, 1]
+"4" = [5, 3, 2]
+"5" = [5, 3, 2, 1]
+"6" = [5, 3, 3, 2]
+"7" = [6, 4, 3, 2, 1]
+"8" = [6, 4, 3, 3, 2]
+"9" = [6, 4, 4, 3, 2, 1]
+"10" = [6, 4, 4, 3, 3, 2]
+"11" = [6, 5, 4, 4, 3, 2, 1]
+"12" = [6, 5, 4, 4, 3, 3, 2]
+"13" = [6, 5, 5, 4, 4, 3, 2, 1]
+"14" = [6, 5, 5, 4, 4, 3, 3, 2]
+"15" = [6, 5, 5, 5, 4, 4, 3, 2, 1]
+"16" = [6, 5, 5, 5, 4, 4, 3, 3, 2]
+"17" = [6, 5, 5, 5, 5, 4, 4, 3, 2, 1]
+"18" = [6, 5, 5, 5, 5, 4, 4, 3, 3, 2]
+"19" = [6, 5, 5, 5, 5, 5, 4, 4, 3, 3]
+"20" = [6, 5, 5, 5, 5, 5, 4, 4, 4, 4]
+
+[griglie.adepto]
+"1" = [3, 1]
+"2" = [3, 1]
+"3" = [3, 2]
+"4" = [3, 2, 0]
+"5" = [3, 2, 1]
+"6" = [3, 2, 1]
+"7" = [3, 3, 2]
+"8" = [3, 3, 2, 0]
+"9" = [3, 3, 2, 1]
+"10" = [3, 3, 2, 1]
+"11" = [3, 3, 3, 2]
+"12" = [3, 3, 3, 2, 0]
+"13" = [3, 3, 3, 2, 1]
+"14" = [3, 3, 3, 2, 1]
+"15" = [3, 3, 3, 3, 2]
+"16" = [3, 3, 3, 3, 2, 0]
+"17" = [3, 3, 3, 3, 2, 1]
+"18" = [3, 3, 3, 3, 2, 1]
+"19" = [3, 3, 3, 3, 3, 2]
+"20" = [3, 3, 3, 3, 3, 2]
+
+[griglie.bardo]
+# Scelta del DM (card del 2026-11-09, «Tabelle PF1e intere, segnate»): PRD PF1e,
+# Table: Bard (book-cr). ⚠ Non SRD 3.5. Indice 0 = trucchetti, a volontà in PF1e
+# (lo 0 qui è finto, come per ranger e paladino); dal 1° livello i numeri del PRD.
+"1" = [0, 1]
+"2" = [0, 2]
+"3" = [0, 3]
+"4" = [0, 3, 1]
+"5" = [0, 4, 2]
+"6" = [0, 4, 3]
+"7" = [0, 4, 3, 1]
+"8" = [0, 4, 4, 2]
+"9" = [0, 5, 4, 3]
+"10" = [0, 5, 4, 3, 1]
+"11" = [0, 5, 4, 4, 2]
+"12" = [0, 5, 5, 4, 3]
+"13" = [0, 5, 5, 4, 3, 1]
+"14" = [0, 5, 5, 4, 4, 2]
+"15" = [0, 5, 5, 5, 4, 3]
+"16" = [0, 5, 5, 5, 4, 3, 1]
+"17" = [0, 5, 5, 5, 4, 4, 2]
+"18" = [0, 5, 5, 5, 5, 4, 3]
+"19" = [0, 5, 5, 5, 5, 5, 4]
+"20" = [0, 5, 5, 5, 5, 5, 5]
+
+[griglie.bardo_conosciuti]
+# PRD PF1e, Table: Bard Spells Known (book-cr 1773). ⚠ Non SRD 3.5 (card del 2026-11-09).
+"1" = [4, 2]
+"2" = [5, 3]
+"3" = [6, 4]
+"4" = [6, 4, 2]
+"5" = [6, 4, 3]
+"6" = [6, 4, 4]
+"7" = [6, 5, 4, 2]
+"8" = [6, 5, 4, 3]
+"9" = [6, 5, 4, 4]
+"10" = [6, 5, 5, 4, 2]
+"11" = [6, 6, 5, 4, 3]
+"12" = [6, 6, 5, 4, 4]
+"13" = [6, 6, 5, 5, 4, 2]
+"14" = [6, 6, 6, 5, 4, 3]
+"15" = [6, 6, 6, 5, 4, 4]
+"16" = [6, 6, 6, 5, 5, 4, 2]
+"17" = [6, 6, 6, 6, 5, 4, 3]
+"18" = [6, 6, 6, 6, 5, 4, 4]
+"19" = [6, 6, 6, 6, 5, 5, 4]
+"20" = [6, 6, 6, 6, 6, 5, 5]
+
+[griglie.ranger]
+# Scelta del DM (card del 2026-11-09): PRD PF1e, Table: Ranger e Table: Paladin
+# (in PF1e le due griglie coincidono). ⚠ Non SRD 3.5: l'SRD dà al ranger di 5° nessun
+# incantesimo di 1° (qui 1) e al 20° 3/3/3/3 (qui 4/4/3/3). La prima cifra è lo 0 finto.
+"1" = [0]
+"2" = [0]
+"3" = [0]
+"4" = [0, 0]
+"5" = [0, 1]
+"6" = [0, 1]
+"7" = [0, 1, 0]
+"8" = [0, 1, 1]
+"9" = [0, 2, 1]
+"10" = [0, 2, 1, 0]
+"11" = [0, 2, 1, 1]
+"12" = [0, 2, 2, 1]
+"13" = [0, 3, 2, 1, 0]
+"14" = [0, 3, 2, 1, 1]
+"15" = [0, 3, 2, 2, 1]
+"16" = [0, 3, 3, 2, 1]
+"17" = [0, 4, 3, 2, 1]
+"18" = [0, 4, 3, 2, 2]
+"19" = [0, 4, 3, 3, 2]
+"20" = [0, 4, 4, 3, 3]
+
+# classe = { griglia, caratteristica primaria, spontaneo }
+[incantatori]
+"wizard" = { griglia = "mago", caratteristica = "int", spontaneo = false }
+"mago" = { griglia = "mago", caratteristica = "int", spontaneo = false }
+"sorcerer" = { griglia = "stregone", caratteristica = "car", spontaneo = true }
+"stregone" = { griglia = "stregone", caratteristica = "car", spontaneo = true }
+"cleric" = { griglia = "chierico", caratteristica = "sag", spontaneo = false }
+"chierico" = { griglia = "chierico", caratteristica = "sag", spontaneo = false }
+"druid" = { griglia = "chierico", caratteristica = "sag", spontaneo = false }
+"druido" = { griglia = "chierico", caratteristica = "sag", spontaneo = false }
+"adept" = { griglia = "adepto", caratteristica = "sag", spontaneo = false }
+"adepto" = { griglia = "adepto", caratteristica = "sag", spontaneo = false }
+"bard" = { griglia = "bardo", caratteristica = "car", spontaneo = true }
+"bardo" = { griglia = "bardo", caratteristica = "car", spontaneo = true }
+"ranger" = { griglia = "ranger", caratteristica = "sag", spontaneo = false }
+"paladin" = { griglia = "ranger", caratteristica = "sag", spontaneo = false }
+"paladino" = { griglia = "ranger", caratteristica = "sag", spontaneo = false }
+
+[incantatori_regole]
+# livello dell'incantatore = livello di classe − 3
+livello_ridotto = ["paladin", "paladino", "ranger"]
+# griglie senza un'ancora in repo: lecite, ma dichiarate
+senza_ancora = ["adept", "adepto"]
+# trucchetti a volontà (PF1e, card del 2026-11-09): la griglia ha lo 0 finto
+# in prima posizione e il blocco stampa «trucchetti a volontà»
+zero_a_volonta = ["bard", "bardo"]
+# griglie prese dal PRD PF1e invece che dall'SRD 3.5 (card del 2026-11-09):
+# il conto del generatore lo scrive, «non SRD 3.5»
+griglia_pf1e = ["bard", "bardo", "ranger", "paladin", "paladino"]
+
+# --- L5b: classi di prestigio SRD del Bestiario fuori da [classi] ---
+# classe = { dv, ts_buoni, bab = per livello }
+[prestigio]
+# Audit del 2026-11-09: tutte le classi di prestigio dell'SRD 3.5 in cache
+# (prestige-classes.md, «Table: The …»: DV, BAB al livello più alto, TS buoni al 1°),
+# con il nome italiano del lessico (lessico_it_35.tsv). Il Maestro del Sapere
+# (Loremaster) manca: nella fonte in cache la sua tabella non c'è.
+"arcane archer" = { dv = 8, ts_buoni = ["temp", "rifl"], bab = 1.0 }
+"arciere arcano" = { dv = 8, ts_buoni = ["temp", "rifl"], bab = 1.0 }
+"arcane trickster" = { dv = 4, ts_buoni = ["rifl", "vol"], bab = 0.5 }
+"mistificatore arcano" = { dv = 4, ts_buoni = ["rifl", "vol"], bab = 0.5 }
+"archmage" = { dv = 4, ts_buoni = ["vol"], bab = 0.5 }
+"arcimago" = { dv = 4, ts_buoni = ["vol"], bab = 0.5 }
+"assassin" = { dv = 6, ts_buoni = ["rifl"], bab = 0.75 }
+"assassino" = { dv = 6, ts_buoni = ["rifl"], bab = 0.75 }
+"blackguard" = { dv = 10, ts_buoni = ["temp"], bab = 1.0 }
+"guardia nera" = { dv = 10, ts_buoni = ["temp"], bab = 1.0 }
+"dragon disciple" = { dv = 12, ts_buoni = ["temp", "vol"], bab = 0.75 }
+"discepolo dei draghi" = { dv = 12, ts_buoni = ["temp", "vol"], bab = 0.75 }
+"duelist" = { dv = 10, ts_buoni = ["rifl"], bab = 1.0 }
+"duellante" = { dv = 10, ts_buoni = ["rifl"], bab = 1.0 }
+"dwarven defender" = { dv = 12, ts_buoni = ["temp", "vol"], bab = 1.0 }
+"difensore nanico" = { dv = 12, ts_buoni = ["temp", "vol"], bab = 1.0 }
+"eldritch knight" = { dv = 6, ts_buoni = ["temp"], bab = 1.0 }
+"cavaliere mistico" = { dv = 6, ts_buoni = ["temp"], bab = 1.0 }
+"hierophant" = { dv = 8, ts_buoni = ["temp", "vol"], bab = 0.5 }
+"gerofante" = { dv = 8, ts_buoni = ["temp", "vol"], bab = 0.5 }
+"horizon walker" = { dv = 8, ts_buoni = ["temp"], bab = 1.0 }
+"viandante dell'orizzonte" = { dv = 8, ts_buoni = ["temp"], bab = 1.0 }
+"mystic theurge" = { dv = 4, ts_buoni = ["vol"], bab = 0.5 }
+"teurgo mistico" = { dv = 4, ts_buoni = ["vol"], bab = 0.5 }
+"shadowdancer" = { dv = 8, ts_buoni = ["rifl"], bab = 0.75 }
+"ombra danzante" = { dv = 8, ts_buoni = ["rifl"], bab = 0.75 }
+"thaumaturgist" = { dv = 4, ts_buoni = ["vol"], bab = 0.5 }
+"taumaturgo" = { dv = 4, ts_buoni = ["vol"], bab = 0.5 }
+"danzatrice delle ombre" = { dv = 8, ts_buoni = ["rifl"], bab = 0.75 }  # la forma del Bestiario
+
+# --- L5b: profili di ruolo (ordine delle sei caratteristiche) ---
+# Si prende la prima parola chiave che compare nel ruolo, in quest'ordine.
+[profili]
+ripiego = ["For", "Cos", "Des", "Sag", "Car", "Int"]
+
+[[profili.ruolo]]
+chiave = "psionic"
+ordine = ["Int", "Cos", "Des", "Sag", "Car", "For"]
+
+[[profili.ruolo]]
+chiave = "psi"
+ordine = ["Int", "Cos", "Des", "Sag", "Car", "For"]
+
+[[profili.ruolo]]
+chiave = "arcane"
+ordine = ["Int", "Des", "Cos", "Car", "Sag", "For"]
+
+[[profili.ruolo]]
+chiave = "blaster"
+ordine = ["Int", "Des", "Cos", "Car", "Sag", "For"]
+
+[[profili.ruolo]]
+chiave = "divine"
+ordine = ["Sag", "Cos", "For", "Car", "Des", "Int"]
+
+[[profili.ruolo]]
+chiave = "divino"
+ordine = ["Sag", "Cos", "For", "Car", "Des", "Int"]
+
+[[profili.ruolo]]
+chiave = "warpriest"
+ordine = ["Sag", "For", "Cos", "Car", "Des", "Int"]
+
+[[profili.ruolo]]
+chiave = "envoy"
+ordine = ["Car", "Des", "Cos", "Int", "Sag", "For"]
+
+[[profili.ruolo]]
+chiave = "subdolo"
+ordine = ["Car", "Des", "Cos", "Int", "Sag", "For"]
+
+[[profili.ruolo]]
+chiave = "infiltrator"
+ordine = ["Des", "Car", "Cos", "Int", "Sag", "For"]
+
+[[profili.ruolo]]
+chiave = "stealth"
+ordine = ["Des", "Car", "Cos", "Int", "Sag", "For"]
+
+[[profili.ruolo]]
+chiave = "caster"
+ordine = ["Car", "Des", "Cos", "Int", "Sag", "For"]
+
+[[profili.ruolo]]
+chiave = "gish"
+ordine = ["For", "Int", "Cos", "Des", "Sag", "Car"]
+
+[[profili.ruolo]]
+chiave = "ranged"
+ordine = ["Des", "For", "Cos", "Sag", "Int", "Car"]
+
+[[profili.ruolo]]
+chiave = "scout"
+ordine = ["Des", "Sag", "Cos", "For", "Int", "Car"]
+
+[[profili.ruolo]]
+chiave = "skirmisher"
+ordine = ["Des", "For", "Cos", "Sag", "Int", "Car"]
+
+[[profili.ruolo]]
+chiave = "ambusher"
+ordine = ["Des", "Sag", "Cos", "For", "Int", "Car"]
+
+[[profili.ruolo]]
+chiave = "flier"
+ordine = ["Des", "For", "Cos", "Sag", "Car", "Int"]
+
+[[profili.ruolo]]
+chiave = "aerial"
+ordine = ["Des", "Cos", "For", "Sag", "Car", "Int"]
+
+[[profili.ruolo]]
+chiave = "mount"
+ordine = ["For", "Cos", "Des", "Sag", "Car", "Int"]
+
+[[profili.ruolo]]
+chiave = "brute"
+ordine = ["For", "Cos", "Des", "Sag", "Car", "Int"]
+
+[[profili.ruolo]]
+chiave = "defender"
+ordine = ["Cos", "For", "Des", "Sag", "Car", "Int"]
+
+[[profili.ruolo]]
+chiave = "guard"
+ordine = ["Cos", "For", "Des", "Sag", "Car", "Int"]
+
+[[profili.ruolo]]
+chiave = "tank"
+ordine = ["Cos", "For", "Des", "Sag", "Car", "Int"]
+
+[[profili.ruolo]]
+chiave = "guardian"
+ordine = ["Cos", "For", "Des", "Sag", "Car", "Int"]
+
+[[profili.ruolo]]
+chiave = "commander"
+ordine = ["Car", "For", "Cos", "Sag", "Des", "Int"]
+
+[[profili.ruolo]]
+chiave = "leader"
+ordine = ["Car", "For", "Cos", "Sag", "Des", "Int"]
+
+[[profili.ruolo]]
+chiave = "officer"
+ordine = ["Car", "For", "Cos", "Sag", "Des", "Int"]
+
+[[profili.ruolo]]
+chiave = "shock"
+ordine = ["For", "Des", "Cos", "Sag", "Car", "Int"]
+
+[[profili.ruolo]]
+chiave = "melee"
+ordine = ["For", "Cos", "Des", "Sag", "Car", "Int"]
+
+[[profili.ruolo]]
+chiave = "fodder"
+ordine = ["For", "Cos", "Des", "Sag", "Car", "Int"]
+
+[[profili.ruolo]]
+chiave = "wave"
+ordine = ["For", "Cos", "Des", "Sag", "Car", "Int"]
+
+[[profili.ruolo]]
+chiave = "hazard"
+ordine = ["Cos", "For", "Des", "Sag", "Car", "Int"]
+
+# --- L5b: SRD 3.5 Improving Monsters, «Changes to Statistics by Size» ---
+# differenza di taglia da Media = [For, Des, Cos]
+[per_taglia]
+"-8" = [32, -4, 16]
+"-4" = [24, -4, 12]
+"-2" = [16, -4, 8]
+"-1" = [8, -2, 4]
+"0" = [0, 0, 0]
+"1" = [-4, 2, -2]
+"2" = [-8, 4, -2]
+"4" = [-10, 6, -2]
+"8" = [-10, 8, -2]
+
+# --- L5b: modificatori razziali SRD 3.5; l'ordine conta (hobgoblin prima di goblin) ---
+
+[[razze]]
+nome = "hobgoblin"
+modificatori = { Des = 2, Cos = 2 }
+
+[[razze]]
+nome = "bugbear"
+modificatori = { For = 4, Des = 2, Cos = 2, Car = -2 }
+
+[[razze]]
+nome = "goblin"
+modificatori = { For = -2, Des = 2, Car = -2 }
+
+[[razze]]
+nome = "half-orc"
+modificatori = { For = 2, Int = -2, Car = -2 }
+
+[[razze]]
+nome = "mezzorc"
+modificatori = { For = 2, Int = -2, Car = -2 }
+
+[[razze]]
+nome = "orc"
+modificatori = { For = 4, Int = -2, Sag = -2, Car = -2 }
+
+[[razze]]
+nome = "orco"
+modificatori = { For = 4, Int = -2, Sag = -2, Car = -2 }
+
+[[razze]]
+nome = "duergar"
+modificatori = { Cos = 2, Car = -4 }
+
+[[razze]]
+nome = "dwarf"
+modificatori = { Cos = 2, Car = -2 }
+
+[[razze]]
+nome = "nano"
+modificatori = { Cos = 2, Car = -2 }
+
+[[razze]]
+nome = "drow"
+modificatori = { Des = 2, Cos = -2, Int = 2, Car = 2 }
+
+[[razze]]
+nome = "elf"
+modificatori = { Des = 2, Cos = -2 }
+
+[[razze]]
+nome = "elfo"
+modificatori = { Des = 2, Cos = -2 }
+
+[[razze]]
+nome = "svirfneblin"
+modificatori = { For = -2, Des = 2, Sag = 2, Car = -4 }
+
+[[razze]]
+nome = "gnome"
+modificatori = { For = -2, Cos = 2 }
+
+[[razze]]
+nome = "gnomo"
+modificatori = { For = -2, Cos = 2 }
+
+[[razze]]
+nome = "halfling"
+modificatori = { For = -2, Des = 2 }
+
+[[razze]]
+nome = "kobold"
+modificatori = { For = -4, Des = 2, Cos = -2 }
+
+[[razze]]
+nome = "gnoll"
+modificatori = { For = 4, Cos = 2, Int = -2, Car = -2 }
+
+[[razze]]
+nome = "lizardfolk"
+modificatori = { For = 2, Cos = 2, Int = -2 }
+
+# --- L5d: come il tipo si scrive nelle schede (italiano, inglese, forme miste) ---
+[alias_tipo]
+"aberrazione" = "aberration"
+"animale" = "animal"
+"costrutto" = "construct"
+"drago" = "dragon"
+"elementale" = "elemental"
+"folletto" = "fey"
+"gigante" = "giant"
+"umanoide" = "humanoid"
+"bestia magica" = "magical beast"
+"umanoide mostruoso" = "monstrous humanoid"
+"melma" = "ooze"
+"esterno" = "outsider"
+"pianta" = "plant"
+"non-morto" = "undead"
+"nonmorto" = "undead"
+"parassita" = "vermin"
+"immondo" = "outsider"
+"tiefling" = "outsider"
+"mezzodrago" = "dragon"

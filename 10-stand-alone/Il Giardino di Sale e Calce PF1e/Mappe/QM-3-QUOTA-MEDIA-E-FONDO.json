@@ -334,7 +334,8 @@
       "at": [
         9,
         18
-      ]
+      ],
+      "scheda": "10-stand-alone/Il Giardino di Sale e Calce PF1e/appendice_creature.md#Chuul avanzato"
     },
     {
       "faction": "Tariq",
@@ -343,7 +344,8 @@
       "at": [
         28,
         20
-      ]
+      ],
+      "scheda": "10-stand-alone/Il Giardino di Sale e Calce PF1e/appendice_creature.md#Chuul avanzato"
     },
     {
       "faction": "Tariq",
@@ -352,7 +354,8 @@
       "at": [
         29,
         6
-      ]
+      ],
+      "scheda": "10-stand-alone/Il Giardino di Sale e Calce PF1e/appendice_creature.md#Chuul avanzato"
     },
     {
       "faction": "Tariq",
@@ -375,21 +378,21 @@
         9,
         18
       ],
-      "taglia": "Enorme"
+      "taglia": "Grande"
     },
     {
       "at": [
         28,
         20
       ],
-      "taglia": "Enorme"
+      "taglia": "Grande"
     },
     {
       "at": [
         29,
         6
       ],
-      "taglia": "Enorme"
+      "taglia": "Grande"
     }
   ],
   "tattiche": [

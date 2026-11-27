@@ -1,10 +1,13 @@
-# emissario-red-hand-cr12 — diplomatico-sacerdote hobgoblin (Chierico 12 di Tiamat) [ACCEPTED — DM-canon 2026-05-05]
+# emissario-red-hand-cr12 — diplomatico-sacerdote hobgoblin (Chierico 12 di Tiamat) [CANONE — DM 2026-05-05]
 
 **Faction**: red-hand | **Role**: elite-envoy-caster | **Environment**: thornwaste,ruins | **CR**: 12
 
 ```statblocco
 gs: 12
 tipo: Medium humanoid (goblinoid), hobgoblin Chierico 12, LM
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 20
 ca-dettaglio: (+0 Des, +10 armatura completa +2), contatto 10, colto alla sprovvista 20
 pf: 72
@@ -19,7 +22,7 @@ attacchi:
 voci:
   - Chierico 12 di Tiamat, Sag 18; incantesimi al giorno 6/6+1/5+1/5+1/4+1/3+1/2+1
   - CD degli incantesimi 14 + livello (6° livello: CD 20)
-  - Domini Distruzione e Male; intimorire non morti 5/giorno
+  - Domini Distruzione e Male (Distruzione e Male sono domini di Tiamat nel Deities and Demigods, verificato su dnd.arkalseif.info il 2026-11-19; tenuti dal DM sulla card del 2026-11-19); intimorire non morti 5/giorno
   - Marchio di Tiamat: +2 contro i non morti
 fonte: hobgoblin (SRD 3.5) + Chierico 12 (SRD 3.5), rifatto a mano: vedi Boost log
 ```
@@ -38,9 +41,11 @@ Medium humanoid (goblinoid), hobgoblin Chierico 12, Legale Malvagio. Diplomatico
 - 5° (3+1): *colpo infuocato* (CD 19), *cura ferite leggere di massa*, *spezzare incantamento*; dominio: *dissolvi il bene*
 - 4° (4+1): *libertà di movimento*, *potere divino*, *interdizione alla morte*, *veleno* (CD 18); dominio: *infliggi ferite critiche*
 - 3° (5+1): *dissolvi magie*, *preghiera*, *cecità/sordità* (CD 17), *luce incandescente*, *cerchio magico contro il bene*; dominio: *contagio* (CD 17)
-- 2° (5+1): *aiuto*, *arma spirituale*, *resistere all'energia*, *silenzio*, *blocca persone* (CD 16); dominio: *profanare*
+- 2° (5+1): *aiuto*, *arma spirituale*, *resistere all'energia*, *silenzio*, *blocca persone* (CD 16); dominio: *dissacrare*
 - 1° (6+1): *benedizione*, *cura ferite leggere*, *santuario*, *scudo della fede*, *nascondersi ai non morti*, *favore divino*; dominio: *protezione dal bene*
 - 0 (6): *individuazione del magico*, *guida*, *resistenza*, *lettura del magico*, *infliggi ferite minori*, *luce*
+
+**Tattiche**
 
 **Statistiche** For 13 Des 10 Cos 12 Int 8 Sag 18 Car 14 · BAB +9; Lotta +10 · **Talenti** Incantare in Combattimento, Robustezza (tiene i pf nella fascia 70-80 della vecchia proposta d'arco), più tre talenti che la scheda non sceglie · **Abilità** [DA SCRIVERE — non sono scritte da nessuna parte; Diplomazia e Intimidire sono quelle del ruolo] · **Linguaggi** Comune, Goblin · **Equipaggiamento** armatura completa +2, mazza pesante, simbolo sacro di Tiamat, *stivali della falcata e del balzo*; il resto del budget di un PNG eroico di 12° livello (fra le righe 11 e 13 della tabella PF1e: 16.350-27.000 mo) [DA SCRIVERE]
 
@@ -48,8 +53,6 @@ Medium humanoid (goblinoid), hobgoblin Chierico 12, Legale Malvagio. Diplomatico
 - **Marchio di Tiamat** (Sop): +2 ai TS e alle prove contro i non morti.
 - **Colpo distruttivo** (Sop, dominio della Distruzione): 1/giorno, +4 al tiro per colpire e +12 ai danni di un attacco in mischia.
 - **Intimorire non morti** (Sop): chierico malvagio, 5/giorno (3 + Car 2). Contro il Ghostlord non basta (13 DV e resistenza allo scacciare +4); contro i leoni spettrali sì.
-
-**Tattiche**
 
 *Prima del combattimento* — Arriva con la scorta di 4-6 hobgoblin e parla per primo: offre resa o minaccia, mai le due cose insieme. Se capisce che si combatte, lancia nell'ordine *libertà di movimento*, *scudo della fede* e *resistere all'energia* (freddo, contro i leoni spettrali), e tiene *potere divino* per il primo round. Nel Leone di Pietra attraversa le sale con *nascondersi ai non morti*.
 
@@ -71,3 +74,5 @@ Boost log: livelli di classe (Chierico 9 → 12, classe associata) — GS 9 → 
 - era: incantesimi 6/4/4/3/2/1 + dominio, CD massima 18 al 5°
 - la scheda d'arco del Ghostlord (§3) proponeva «Bardo 8 / Chierico 4 (o Stregone 10), PF ~70–80»: superata da questa build
 <!-- /storico -->
+
+> correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12): l'incantesimo di dominio di 2° era scritto *profanare* (*Unhallow*, 5°); il dominio del Male dà *dissacrare* (*Desecrate*).

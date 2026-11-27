@@ -1,0 +1,27 @@
+# sistemi/dnd35/dati/effetti_talenti.toml — generato, non si corregge a mano
+# Da plans/esperimenti/regole-senza-omissioni-2026-11-12/estrai_effetti_talenti.py (ADR-0126, lotto 4).
+# 19 talenti che alzano il bonus scritto di un'abilità: solo nomi e numeri.
+# `abilita` = le due abilità che prendono il bonus; `a_scelta` = un'abilità scelta,
+# scritta fra parentesi accanto al talento; `bonus_con_gradi` = il bonus con almeno
+# `con_gradi` gradi nell'abilità (PF1e).
+
+[effetti_talenti]
+"acrobatic" = { bonus = 2, abilita = ["jump", "tumble"], fonte = "SRD 3.5, Feats" }
+"agile" = { bonus = 2, abilita = ["balance", "escape artist"], fonte = "SRD 3.5, Feats" }
+"alertness" = { bonus = 2, abilita = ["listen", "spot"], fonte = "SRD 3.5, Feats" }
+"animal affinity" = { bonus = 2, abilita = ["handle animal", "ride"], fonte = "SRD 3.5, Feats" }
+"athletic" = { bonus = 2, abilita = ["climb", "swim"], fonte = "SRD 3.5, Feats" }
+"autonomous" = { bonus = 2, abilita = ["autohypnosis", "knowledge (psionics)"], fonte = "SRD 3.5, Psionic Feats" }
+"deceitful" = { bonus = 2, abilita = ["disguise", "forgery"], fonte = "SRD 3.5, Feats" }
+"deft hands" = { bonus = 2, abilita = ["sleight of hand", "use rope"], fonte = "SRD 3.5, Feats" }
+"diligent" = { bonus = 2, abilita = ["appraise", "decipher script"], fonte = "SRD 3.5, Feats" }
+"epic skill focus" = { bonus = 10, a_scelta = true, fonte = "SRD 3.5, Epic Feats" }
+"investigator" = { bonus = 2, abilita = ["gather information", "search"], fonte = "SRD 3.5, Feats" }
+"magical aptitude" = { bonus = 2, abilita = ["spellcraft", "use magic device"], fonte = "SRD 3.5, Feats" }
+"negotiator" = { bonus = 2, abilita = ["diplomacy", "sense motive"], fonte = "SRD 3.5, Feats" }
+"nimble fingers" = { bonus = 2, abilita = ["disable device", "open lock"], fonte = "SRD 3.5, Feats" }
+"persuasive" = { bonus = 2, abilita = ["bluff", "intimidate"], fonte = "SRD 3.5, Feats" }
+"psionic affinity" = { bonus = 2, abilita = ["psicraft", "use psionic device"], fonte = "SRD 3.5, Psionic Feats" }
+"self-sufficient" = { bonus = 2, abilita = ["heal", "survival"], fonte = "SRD 3.5, Feats" }
+"skill focus" = { bonus = 3, a_scelta = true, fonte = "SRD 3.5, Feats" }
+"stealthy" = { bonus = 2, abilita = ["hide", "move silently"], fonte = "SRD 3.5, Feats" }

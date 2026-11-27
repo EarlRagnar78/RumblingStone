@@ -1,0 +1,16 @@
+{
+ "data": "2026-11-13",
+ "base": "main b6bae7be",
+ "comando": "python3 scripts/verifica_scheda.py Bestiario 0*/ --fatti",
+ "misura": {
+  "file": 186,
+  "talenti": 508,
+  "talenti_canonici": 486,
+  "incantesimi": 688,
+  "incantesimi_canonici": 626,
+  "capacita_speciali": 214,
+  "tattiche": 265,
+  "file_con_tattiche": 111,
+  "descrizione": 120
+ }
+}

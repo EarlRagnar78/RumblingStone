@@ -4,7 +4,7 @@
 > file del commit `0448956`, 2026-07-26, portato com'era). Su `main` lo citavano
 > già tre documenti, [ADR-0040](../../plans/adr/ADR-0040-separazione-prodotto-e-toolkit-estraibile.md),
 > [ADR-0048](../../plans/adr/ADR-0048-legenda-funzionale-fonte-unica.md) e
-> [`LEGENDA-FUNZIONALE-SPEC`](../guides/LEGENDA-FUNZIONALE-SPEC.md), e il file
+> [`LEGENDA-FUNZIONALE-SPEC`](../reference/LEGENDA-FUNZIONALE-SPEC.md), e il file
 > non c'era. Le sezioni citate sono di questo audit: §6.4 in ADR-0040, §2.1
 > negli altri due. L'assenza l'ha trovata `validate_docs --sorgenti` quando ha
 > cominciato a controllare i percorsi fra backtick.

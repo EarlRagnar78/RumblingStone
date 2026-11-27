@@ -136,7 +136,7 @@ Quello che si aggiunge qui riguarda la **forma**.
 
 ⚠️ Dentro l'SRD. Recuperare pf fra una fase e l'altra, avere azioni in più per
 round o immunità nuove sono **meccaniche inventate**: si scrivono
-`[INFERRED — needs DM confirmation]`, passano dal tetto EL ≤ APL+4 e lasciano il
+`[INFERRED — <domanda al DM>; base: <fonte o dato>]`, passano dal tetto EL ≤ APL+4 e lasciano il
 loro `Boost log:`. I boss pronti dei due manuali (Valerius, Xar'Kesh) non si
 importano: i numeri non sono verificati e uno è sbagliato («RD 5/Magia e Adamo»).
 
@@ -186,7 +186,7 @@ qualità smette di esserlo.
 
 Una riga per caso basta, e i numeri restano quelli dell'SRD e dell'appendice.
 Dove la tattica aggiunge un fatto che il canone non ha (un'altezza, un tempo
-d'arrivo), si scrive `[INFERRED — needs DM confirmation]` finché il DM non lo
+d'arrivo), si scrive `[INFERRED — <domanda al DM>; base: <fonte o dato>]` finché il DM non lo
 conferma.
 
 Esempio vero: il DM, preparando la seconda serata di `ARC07-DEF-4`

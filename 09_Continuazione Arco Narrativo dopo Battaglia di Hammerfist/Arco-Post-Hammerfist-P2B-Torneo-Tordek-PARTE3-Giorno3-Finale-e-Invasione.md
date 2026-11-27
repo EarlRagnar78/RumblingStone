@@ -122,7 +122,10 @@ A questo punto il Giorno 3 ha **tre poli ostili tra loro**:
 
 ### Comportamento
 
-- **Turno 1 dopo lo smascheramento:** Sethrax NON attacca il party. Tenta di **raggiungere l’Orbe** sfruttando il caos (Move full speed → tenta Use Magic Device CD 25 per “mungere” un seme di Porta — azione standard).
+- **Turno 1 dopo lo smascheramento:** Sethrax NON attacca il party. *Mental Barrier* su sé stesso (azione immediata), poi *Psionic Dimension Door* fino al piedistallo dell’Orbe (azione standard) e comincia a canalizzare il “seme di Porta” (Use Magic Device CD 25, 1d6 round di canalizzazione), come nel Bestiario (`Bestiario/villain/Sethrax_il_Velato/Sethrax.md`, Round 1) e nello statblocco completo. Sul piedistallo è esposto a un attacco preparato.
+
+> Storico (fino al 2026-11-17): «Move full speed» verso l’Orbe, senza teletrasporto, poi la prova di Use Magic Device. Allineato al Bestiario con la scelta del DM sulla card del 15/11.
+
 - **Turno 2:** se Xal’thor lo nota, Sethrax lo combatte direttamente con Mind Blast contro Mind Blast (entrambi neutralizzano i loro coni l’uno sull’altro per 1 round — momento spettacolare descritto come due onde ceramiche che si infrangono in mezz’aria).
 - **Turno 3+:** se ha estratto il “seme”, tenta *Psionic Plane Shift* (o *Psionic Dimension Door* se PS non disponibile) per sparire **verso la Torre Invisibile** — questo dà un indizio diretto ad Artemis.
 

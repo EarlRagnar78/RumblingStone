@@ -37,7 +37,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA
 @north N
 @tipo tattica esterno
 @luogo Hammerfist ≈372 DR, la tenda del comando sulla piana dell'orda
-@quota 870 m ; s.l.m., la piana dell'orda [INFERRED — needs DM confirmation: il DM ha fissato la piana a quota 0, non la quota sul mare]
+@quota 520 m ; s.l.m., la piana dell'orda [CANONE — DM 2026-11-04: la piana a 520 m sul mare]
 @dislivello 0 m ; sulla piana dell'orda: porta e cortile sono 100 m più in alto, a nord, a circa 1 km di cammino dalla postierla
 @taglia P14 ; Grande
 @mark 1 ; N3 ; I quattro PG, invisibili o nascosti (Scena 6)
@@ -53,12 +53,12 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA
 @path Le due guardie del turno dopo, se Balvar sta con i PG: entrano dal telo del seggio al round 2 ; X6 U17 O16 ; #7b2cbf
 @path Le ronde di orchi più vicine (1d4+2 round) ; A12 G12 ; #e85d04
 @path Gli squadroni hobgoblin (2d4+2 round) ; O23 O18 ; #9d0208
-@zone S10-S14 ; Telo est: «il telo a sinistra» di Balvar
-@zone N15-P15 ; Telo del glifo
-@zone N12-N12 ; Palo centrale, di legno
-@zone B2-C3 ; Tende dei servi e del bottino del capo: dentro non ci sono soldati
-@zone X4-Y5 ; Tenda del turno dopo
-@zone Q13-R14 ; Fondo buio
+@zone S10-S14 ; Telo est: «il telo a sinistra» di Balvar ; C1
+@zone N15-P15 ; Telo del glifo ; C2
+@zone N12-N12 ; Palo centrale, di legno ; C3
+@zone B2-C3 ; Tende dei servi e del bottino del capo: dentro non ci sono soldati ; C4
+@zone X4-Y5 ; Tenda del turno dopo ; C5
+@zone Q13-R14 ; Fondo buio ; C6
 ```
 
 ### 🌍 AMBIENTE (cosa impone il terreno — regole, non prosa)
@@ -95,7 +95,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA
 - **Da dove si entra** (Scene 6 e 7): dalla **soglia** (M9–N9), e con un nano fra loro scatta la runa (stato C); dal **telo est** (S10–S14), «il telo a sinistra» che Balvar consiglia, e si resta invisibili senza runa né glifo; dal **telo sopra il seggio** (N15–P15), che porta il glifo (stato D). Chi taglia la tenda altrove resta invisibile, ma il taglio fa rumore: le guardie tirano Ascoltare contro il suo Muoversi Silenziosamente.
 - **Round di sorpresa** (Scena 8): chi nessuno ha visto né sentito ha un'azione standard o di movimento. Parlare con Balvar in nanico antico, sottovoce, non conta come parlare ad alta voce. Zog'tar non perde la Destrezza alla CA (Schivare Prodigioso Migliorato) e fuori dall'Ira ha 283 pf.
 - **Round 1** (Scena 8): Ira Barbarica (*«A ME, CANI! ABBATTETE LE OMBRE!»*) e Occhio di Ossidiana su Thorik; delle quattro guardie, due restano davanti al seggio e due vanno in coppia su chi lancia incantesimi o colpisce da lontano. Al primo grido Grask suona il corno entro **1d4 round**, se nessuno se n'è occupato prima (Scena 6).
-- **Round 2-3** (Scena 8): carica chi fa più danni, Attacco Poderoso −5/+10 se ha colpito bene. Contro chi ha armatura leggera o niente usa il Colpo Devastante e lo scaglia contro un palo o fuori dal telo. Il sacerdote si alza al primo grido e agisce dal round 1: da dietro il seggio lancia *comando* («Cadi!», Volontà CD 13) sul PG più vicino a Zog'tar, poi *benedizione* sulle guardie, poi *oscurità* per coprire la ritirata del generale.
+- **Round 2-3** (Scena 8): carica chi fa più danni, Attacco Poderoso −5/+10 se ha colpito bene. Contro chi ha armatura leggera o niente usa il Colpo Terrificante e lo scaglia contro un palo o fuori dal telo. Il sacerdote si alza al primo grido e agisce dal round 1: da dietro il seggio lancia *comando* («Cadi!», Volontà CD 13) sul PG più vicino a Zog'tar, poi *benedizione* sulle guardie, poi *oscurità* per coprire la ritirata del generale.
 - **Balvar** (Scena 7): recuperato, non combatte e al primo round dice dov'è la runa della Catena; con la trattativa aperta guarda il primo round e poi sta con chi vince; minacciato o attaccato, *righteous might* al round 1, *slay living* (Tempra CD 20) al round 2, dal round 3 la runa del *silenzio* su di sé, la barriera di lame del palo centrale e il martello.
 - **Chi vola sotto il telo** (6 m al colmo, 3 m ai lati; Scena 8): resta **nella** portata dell'ascia: Zog'tar è alto 3 m e arriva 3 m oltre, fino al colmo. Ne esce solo chi sta fuori dal telo. Zog'tar tira i tre giavellotti Grandi (+19, 1d8+13 in Ira `[CANONE — DM 2026-10-18]`) e, se il volo dura, abbatte il palo centrale (stato F); le guardie tirano giavellotti (+9, 1d6+4); Balvar, se combatte, *dissolvi magie* e *comando superiore* «Cadi» (Volontà CD 20); il sacerdote *comando*.
 - **Rinforzi** (Scena 8): le ronde di orchi più vicine arrivano in **1d4+2 round**, gli squadroni hobgoblin in **2d4+2**, poi un'altra ronda ogni round e un altro squadrone ogni due. Finché Zog'tar è in piedi non entrano: entrano nello spiazzo, fanno quadrato attorno al telo e aspettano chi esce; quando lui cade, entrano. Le frecce delle vie battute sono una proposta: la tenda sta al centro del campo, e arrivano da ogni lato.

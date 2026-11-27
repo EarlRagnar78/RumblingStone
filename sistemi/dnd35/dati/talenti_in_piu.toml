@@ -1,0 +1,18 @@
+# sistemi/dnd35/dati/talenti_in_piu.toml — scritto a mano, con la fonte di ogni voce
+# I talenti oltre il conto per livello (ADR-0126, lotto 4).
+# SRD 3.5: l'umano ha un talento in più al 1° livello (Races, «Humans»); il
+# dominio della Guerra dà Competenza nelle Armi da Guerra (se serve) e Arma
+# Focalizzata nell'arma della divinità (Cleric Domains, «War Domain»); il ladro
+# dal 10° livello sceglie una capacità speciale ogni tre livelli, e una può
+# essere un talento (Rogue, «Special Abilities», «Feat»).
+[talenti_in_piu]
+umano = 1
+razza_umana = ["human", "umano", "umana"]
+
+[talenti_in_piu.capacita_o_talento]
+rogue = [10, 13, 16, 19]
+
+[talenti_in_piu.domini.war]
+nomi = ["war", "guerra"]
+classi = ["cleric"]
+talenti = ["Martial Weapon Proficiency", "Weapon Focus"]

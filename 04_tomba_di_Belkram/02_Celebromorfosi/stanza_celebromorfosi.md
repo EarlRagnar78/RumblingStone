@@ -20,7 +20,7 @@ Dal soffitto pendono *capsule trasparenti*, simili a bozzoli, che contengono **g
 
   
 
-2. **Drow Psionica Mezzo-Illithid (2)**: Sacerdotesse di Lolth cadute, con metà volto trasfigurato in tentacoli. Posseggono poteri da *Telepath Psion* (6° livello) e *Cleric of Lolth* (5° livello). Usano *Dominate Person* e *Ego Whip* per paralizzare le vittime prima di inoculare i girini. Una porta uno *Scettro Nero* che proietta *Darkness* permanente attorno a sé.
+2. **Drow Psionica Mezzo-Illithid (2)**: Sacerdotesse di Lolth cadute, con metà volto trasfigurato in tentacoli. Posseggono poteri da *Telepath Psion* (6° livello) e *Cleric of Lolth* (5° livello). Usano *Dominate Person* ed *Ego Whip* per paralizzare le vittime prima di inoculare i girini. Una porta uno *Scettro Nero* che proietta *Darkness* permanente attorno a sé.
 
   
 

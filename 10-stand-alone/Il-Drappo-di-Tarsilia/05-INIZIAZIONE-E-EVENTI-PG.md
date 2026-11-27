@@ -110,7 +110,7 @@ sessione** sì, altrimenti qualcuno passa la serata a guardare.
 
 | | |
 |---|---|
-| **G1 · La coda** | Alla bilancia, Attu la fa passare avanti a tre persone. Uno dei tre è **Orsa della Zoppa**, che non dice niente e la guarda passare. La sera, alla Zoppa, Orsa le versa da bere e le chiede: *«Quanto gli devi?»* — **Scelta**: dire la cifra, mentire (Raggirare vs Percepire Intenzioni +4), o non rispondere. Chi dice la cifra: **Morale +1** e Orsa comincia a mettere da parte |
+| **G1 · La coda** | Alla bilancia, Attu la fa passare avanti a tre persone. Uno dei tre è **Orsa della Zoppa**, che non dice niente e la guarda passare. La sera, alla Zoppa, Orsa le versa da bere e le chiede: *«Quanto gli devi?»* — **Scelta**: dire la cifra, mentire (Raggirare vs Intuizione +4), o non rispondere. Chi dice la cifra: **Morale +1** e Orsa comincia a mettere da parte |
 | **G2 · Il registro** | Ai Partiti, Attu apre il libro dei debiti su un tavolo dove passano altri due Capitani. La pagina è quella di Vanna e resta aperta trenta secondi. **Scelta**: chiuderlo (Rapidità di Mano CD 15, e Attu se ne accorge), lasciarlo aperto (**Morale −1**, ma nessuno può più ricattarla con quello), o chiedergli di chiuderlo (Diplomazia CD 18: lo chiude, e da quel momento le deve una cortesia) |
 | **G3 · Il conto** | Un'ora prima dello Stacco, Attu le chiede la cortesia: **che l'Istrice non ostacoli l'Oca alla curva sud**. Non minaccia. Ricorda. **Scelta**: accettare (in Corsa perdi la manovra alla Curva Sud), rifiutare (il debito si riscuote a dicembre, per intero), o offrire altro |
 
@@ -136,7 +136,7 @@ di undici anni. Il ragazzo era **il figlio di Nonna Grasa**.
 
 | | |
 |---|---|
-| **G1 · Il fieno nuovo** | Nella stalla c'è fieno buono comprato la settimana scorsa con soldi che il rione non aveva. **Chi l'ha pagato**: Nonna Grasa, di tasca. Non lo dirà. Se Ombra glielo chiede in faccia (Percepire Intenzioni CD 14 per capire che mente male), Grasa risponde: *«Il cavallo deve mangiare. Anche i cavalli che non c'entrano niente.»* |
+| **G1 · Il fieno nuovo** | Nella stalla c'è fieno buono comprato la settimana scorsa con soldi che il rione non aveva. **Chi l'ha pagato**: Nonna Grasa, di tasca. Non lo dirà. Se Ombra glielo chiede in faccia (Intuizione CD 14 per capire che mente male), Grasa risponde: *«Il cavallo deve mangiare. Anche i cavalli che non c'entrano niente.»* |
 | **G2 · La notte in stalla** | Prima dell'assalto, la scena tranquilla: il cavallo non si fa toccare i garretti. Addestrare Animali CD 15. Riuscendo, Ombra capisce che ha paura **delle mani**, non di lei — qualcuno l'ha già maltrattato altrove. **Ritmo +1** al primo giro se lo tratta di conseguenza |
 | **G3 · Le quaranta candele** | All'alba, Nonna Grasa mette in fila le sue quaranta candele. Ne prende una e la porge a Ombra. Una sola. **Nessuna prova, nessuna spiegazione, nessun effetto meccanico.** Vent'anni per una candela |
 
@@ -148,7 +148,7 @@ per nome — **Berta** — per la prima volta da vent'anni. Falla sentire.
 | | |
 |---|---|
 | **G1 · Il foglio del 4692** | Il confine del bosco, cinquanta passi più a est. La correzione è del 4705, mano ferma, **senza firma**. Conoscenze (locali) CD 15: quella mano è la stessa che compare in altri quattro atti, tutti a favore del Bruco |
-| **G2 · Qualcuno sa** | Sirena Occo lo ferma per strada e gli dice, cordiale: *«Lei ha delle copie che il catasto non sa di aver perso.»* Non chiede niente. **Adesso**. **Scelta**: negare (Raggirare CD 22, lei ha Percepire Intenzioni +12), ammettere, o offrirle qualcosa prima che lo chieda |
+| **G2 · Qualcuno sa** | Sirena Occo lo ferma per strada e gli dice, cordiale: *«Lei ha delle copie che il catasto non sa di aver perso.»* Non chiede niente. **Adesso**. **Scelta**: negare (Raggirare CD 22, lei ha Intuizione +12), ammettere, o offrirle qualcosa prima che lo chieda |
 | **G3 · La consegna** | Portare il registro alla Sovrintendente davanti a tutti apre il finale alternativo (`03-GIORNO-3` §7.1) — **e costa a Tesio il posto**, perché quelle copie non doveva averle. Lo sa. **Scelta**: farlo, non farlo, o farlo tramite un altro |
 
 **L'eco**: se lo fa, entro un anno la Sovrintendente lo assume come *suo* scrivano. Se
@@ -158,7 +158,7 @@ non lo fa, i cinquanta passi restano al Bruco per sempre.
 
 | | |
 |---|---|
-| **G1 · Il manifesto** | Legge il nome del pittore sul cartiglio e cambia strada. Chi la vede: Percepire Intenzioni CD 12 per capire che non è disgusto — è vergogna |
+| **G1 · Il manifesto** | Legge il nome del pittore sul cartiglio e cambia strada. Chi la vede: Intuizione CD 12 per capire che non è disgusto — è vergogna |
 | **G2 · La domanda dal palco** | `02-GIORNO-2` §3. Rasca le fa una domanda a cui non si può rispondere bene. **Suggerimento per il DM**: *«Perché non hai mai chiesto com'è finita?»* — e lascia che il giocatore decida di cosa parla |
 | **G3 · Il retro del Drappo** | In basso a destra, sul retro del telo, a matita, c'è un nome scritto e cancellato. Si legge lo stesso. **Non è il suo.** È il nome di sua madre, che era del Leocorno |
 

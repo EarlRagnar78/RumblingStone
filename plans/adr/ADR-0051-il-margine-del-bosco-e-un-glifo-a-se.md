@@ -37,7 +37,7 @@ Fare `🌲` un muro come `⛰` chiude il difetto e ne apre un altro **peggiore p
 il tavolo**: il muro del VTT è binario, e un bosco no.
 
 La specifica normativa lo dice contro se stessa
-([`LEGENDA-FUNZIONALE-SPEC`](../../docs/guides/LEGENDA-FUNZIONALE-SPEC.md) §7):
+([`LEGENDA-FUNZIONALE-SPEC`](../../docs/reference/LEGENDA-FUNZIONALE-SPEC.md) §7):
 *«`🌲` è un'approssimazione onesta. Una cella di foresta densa non blocca la
 vista dentro di sé ma la blocca attraverso»*. Con `🌲` muro pieno, un PG **in
 mezzo agli alberi** non vedrebbe il quadretto adiacente — e l'inseguimento nel

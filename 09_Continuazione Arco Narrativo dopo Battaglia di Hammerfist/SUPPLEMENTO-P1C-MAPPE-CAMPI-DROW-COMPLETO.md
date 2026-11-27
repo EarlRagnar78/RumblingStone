@@ -439,7 +439,7 @@ LEGENDA · 🏰 palizzata di tronchi appuntiti, 3 m · 🗼 torretta d'angolo (3
 - -43 combattenti dall'orda.
 - Morte del Wyrmlord = nessuna coordinazione tattica nel settore nord.
 - Intel: piani completi dell'orda (mappe nella tenda del Wyrmlord).
-- Prigionieri salvati: +reputazione a Brindol.
+- Prigionieri salvati: +reputazione a Rethmar.
 
 ### 🔄 EVOLUZIONE (companion T5b)
 
@@ -509,7 +509,7 @@ SCALA: 1 quadrato = 1.5m × 1.5m | DIMENSIONI: 40×27 = 60m × 40m
 - Tempo richiesto: 3 giorni (1 giorno/campo con prep)
 - Riduzione forze orda: -95 combattenti elite
 - Intel guadagnato: Complete tactical picture
-- **Effetto Battaglia Finale:** Orda Brindol ridotta 15% forza, PG +2 morale bonus
+- **Effetto Battaglia Finale:** Orda Rethmar ridotta 15% forza, PG +2 morale bonus
 
 **Se sabotano 1-2 campi:**
 - Riduzione parziale forze
@@ -517,10 +517,10 @@ SCALA: 1 quadrato = 1.5m × 1.5m | DIMENSIONI: 40×27 = 60m × 40m
 - Morale boost minore
 
 **Se ignorano campi:**
-- Orda full strength Brindol
+- Orda full strength Rethmar
 - No intel extra
 - Battaglia più dura!
 
 ---
 
-**Prossimo: PARTE 2 - Missioni Secondarie Red Hand of Doom (Starsong Hill, Rhest, Ghostlord)**
+**Prossimo: PARTE 2 - Missioni Secondarie Red Hand of Doom (Starsong Hill, Lhesper, Ghostlord)**

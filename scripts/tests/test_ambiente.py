@@ -50,7 +50,7 @@ class TestPythonMinimo(unittest.TestCase):
                 f"la CI installa Python {v}, sotto il minimo {minimo} del registro")
 
     def test_la_guida_di_setup_dichiara_lo_stesso_minimo(self):
-        guida = REPO / "docs" / "guides" / "GUIDA-SETUP-MACCHINA.md"
+        guida = REPO / "docs" / "tutorials" / "GUIDA-SETUP-MACCHINA.md"
         testo = guida.read_text(encoding="utf-8")
         atteso = ".".join(str(n) for n in binari.PYTHON_MINIMO)
         self.assertIn(atteso, testo,

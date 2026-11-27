@@ -14,7 +14,7 @@
 ---
 
 ## MAPPA 2A: FORTEZZA HAMMERFIST - VISTA DALL'ALTO (TOP-DOWN)
-**Dimensioni:** 180m × 120m (120×80 quadrati, 1.5m/quadrato)  
+**Dimensioni:** 180m × 120m dichiarati; lo schizzo qui sotto ne disegna 34×80 celle, fuori scala in larghezza (corretto il 2026-11-09: l'intestazione diceva 120 colonne). La 2A in scala piena è in `../Hammerfist-L2-REVISED-Ultra-Clear.md`, contratto `../fortezza-json/HF-2A-fortezza.json`.  
 **Incontro:** Mass Battle - Difesa 3 Giorni
 
 ### LEGENDA COLORI:
@@ -33,7 +33,7 @@
 
 ```
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
-NORD ↑ (Verso Montagna)                                     GRIGLIA 120 COLONNE × 80 RIGHE
+NORD ↑ (Verso Montagna)                                     GRIGLIA 34 COLONNE × 80 RIGHE
 ════════════════════════════════════════════════════════════════════════════════════════════════════════════════════
 
 --- RIGA 01-15: MONTAGNA SOLIDA (Impenetrabile) ---

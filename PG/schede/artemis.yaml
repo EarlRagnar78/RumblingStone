@@ -10,11 +10,12 @@ schema_version: 1
 pg: Artemis
 
 caratteristiche:
-  for: {base: null, attuale: null, attestato_da: null}
-  des: {base: null, attuale: null, attestato_da: null}
-  cos: {base: null, attuale: null, attestato_da: null}
-  int: {base: null, attuale: null, attestato_da: null}
-  sag: {base: null, attuale: null, attestato_da: null}
-  car: {base: null, attuale: null, attestato_da: null}
+  # Lotto P16 «PG» (2026-11-05): la carta del DM; nessun oggetto dà caratteristiche.
+  for: {base: 10, attuale: 10, attestato_da: "plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md"}
+  des: {base: 18, attuale: 18, attestato_da: "plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md"}
+  cos: {base: 14, attuale: 14, attestato_da: "plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md"}
+  int: {base: 10, attuale: 10, attestato_da: "plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md"}
+  sag: {base: 10, attuale: 10, attestato_da: "plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md"}
+  car: {base: 18, attuale: 18, attestato_da: "plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md"}
 
 modificatori_permanenti: []

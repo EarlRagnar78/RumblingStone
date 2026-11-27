@@ -7,9 +7,11 @@
 > **Gate**: `python3 scripts/validate_skills.py` —
 > [ADR-0061](../plans/adr/ADR-0061-le-regole-d-oro-sono-un-dato-ordinato-per-momento.md)
 >
-> La **narrazione** — perché ogni regola esiste, quale fallimento l'ha
-> generata, cosa costa saltarla — resta in [`AGENTS.md`](../AGENTS.md). Qui c'è
-> la struttura, e solo quella.
+> In [`AGENTS.md`](../AGENTS.md) resta il testo che l'agente esegue; la
+> **storia** di ogni regola (quale fallimento l'ha generata, cosa costa
+> saltarla) sta negli ADR e nelle righe di `plans/CHANGELOG.md` che AGENTS.md
+> richiama ([ADR-0114](../plans/adr/ADR-0114-ogni-prompt-ha-una-scheda-e-le-sue-prove.md)).
+> Qui c'è la struttura, e solo quella.
 
 ---
 

@@ -6,7 +6,7 @@
 > fatta (lotto F2.10 di PIANO-MISURA-EDITORIALE-STANDARD); qui sta come si
 > scrive, con quali template, e dove si applica.
 >
-> **Stato**: 🟡 B0 fatto, D1 decisa il 2026-10-18, il resto aspetta D2-D6 · **Decisore**: DM ·
+> **Stato**: 🟡 B0 e B1 fatti (B1 il 2026-11-09), D1-D6 decise (D1 il 2026-10-18, D2-D6 il 2026-11-08); restano i lotti B2-B6 · **Decisore**: DM ·
 > **Si lavora**: in una chat a parte, svincolata da PIANO-AGENT-SKILLS-ESTERNE
 > **Gate**: `misura_craft --box`, `componenti.py --check`, `validate_norme_editoriali.py`
 
@@ -148,7 +148,7 @@ creatura dal Bestiario PF1e: *Shadow*, GS 3, pf 19, Bestiary p. 245.
 | | Lotto | Dipende da | Cosa produce |
 |---|---|---|---|
 | ✅ | **B0** · la misura e le norme | — | F2.10 di PIANO-MISURA (PR #188) |
-| ⬜ | **B1** · il template in `campaign/templates/` | D6 | `area-chiave-template.md` (3.5) e la variante PF1e, dal §3.3; riga nell'indice dei template, se ce n'è uno |
+| ✅ | **B1** · il template in `campaign/templates/` (fatto il 2026-11-09: `area-chiave-template.md` e `area-chiave-template-pf1e.md`; l'ordine delle voci segue `module-standard` §7, read-aloud prima dei Dati per il DM, e non il §3.3 qui sopra; la grata PF1e verificata sul Core Rulebook, *Doors*: stessi valori dell'SRD) | D6 | `area-chiave-template.md` (3.5) e la variante PF1e, dal §3.3; riga nell'indice dei template, se ce n'è uno |
 | ⬜ | **B2** · il tipo del box | D3 | la convenzione `**Read-aloud (tipo · pilastro).**` in `editorial-standards.md`, e `componenti.py --check` che la legge sui master che dichiarano il contratto; sblocca la norma 🔴 «niente creature» (`superficie_norme.py`) |
 | ⬜ | **B3** · la soglia pesata | D1, B2 | `≤ 4 frasi` per il box di luogo entra in `punteggio_mqm`, con la riga del registro da 🟡 a 🟢 |
 | ⬜ | **B4** · la riga degli oggetti | — | una forma fissa che `componenti.py` riconosce nei Dati per il DM (spessore; Durezza; pf; CD), misurata sui master nuovi |
@@ -166,11 +166,17 @@ Opus, ciclo del master) · B6 **R** (ricognizione sui master nuovi)]
 | # | Lotto | Domanda |
 |---|---|---|
 | ~~D1~~ | B3 | ✅ **Decisa il 2026-10-18** (il DM: *«La 3 ok»*, sulla proposta qui sotto). La fonte che mancava per la lunghezza ora c'è: dScryb (Merwin, Sims) dà 30-70 parole per il box, oltre 100 è lungo; nei box di luogo dei moduli gratuiti Paizo la mediana è 42 parole (ADR-0093, `plans/esperimenti/avventure-community/note-prosa-web.md`). I caratteri restano un indicatore. **Il tetto del box di luogo: righe, frasi o caratteri?** Oggi la norma è ≤ 12 righe; *Dungeon* conta le frasi; i 300-500 caratteri non hanno fonte. Proposta: si tiene ≤ 12 righe come norma pesata; **≤ 4 frasi** diventa norma **minore** per il solo box di luogo, pesata quando i box dichiarano il tipo (D3), perché oggi colpirebbe anche le aperture di scena da 8-12 righe, che sono legittime; i caratteri restano un indicatore |
-| D2 | B0 | **Le dimensioni nella prima frase del box** («camera quadrata di quaranta piedi»), come nel modello del 2026-10-01, o il paragone di ADR-0014 con le misure nei Dati per il DM? Proposta: resta ADR-0014. Dal modello esterno si prende la struttura (le caratteristiche della stanza fuori dal box), non le misure nella voce |
-| D3 | B2 | **Ogni box dichiara il suo tipo?** Per esempio `**Read-aloud (luogo · Salvatore lead).**`, con i tipi luogo, ingresso, round, rivelazione, chiusura. Sblocca la norma «niente creature nel box di luogo» e le soglie per tipo della tabella del §2 di `read-aloud-adulti.md`, che oggi nessuno può misurare. Proposta: sì, sui master nuovi (S1-S4 di PIANO-MASTER-DEF), scritto da chi scrive il box e controllato da `componenti.py`; non sui DEF già giocati |
-| D4 | — | **I box già giocati fuori dalle nuove misure**: nei DEF di ARC-07, 27 box oltre i 500 caratteri e 61 oltre le quattro frasi. Proposta: non si toccano, come per D9 di PIANO-LETTORE: si spezzano solo se lo chiedi, e senza cambiare una parola |
-| D5 | B5 | **L'Abbazia con le stanze *keyed*** (è la F5 di PIANO-LETTORE, «decidere col DM se ogni stanza vuole un box»). Proposta: sì, un box di luogo breve per stanza nell'ordine di *Dungeon*, quando F5 tocca l'Abbazia; è il banco del repo e già oggi ha 1 box su 11 oltre le quattro frasi |
-| D6 | B1 | **Il template d'area va in `campaign/templates/`**, accanto a quelli di sessione e di mappa, in due versioni (3.5 e PF1e)? Proposta: sì, tutte e due, con la creatura sempre come rimando al Bestiario e mai trascritta |
+| ~~D2~~ | B0 | ✅ **Decisa il 2026-11-08: resta ADR-0014.** **Le dimensioni nella prima frase del box** («camera quadrata di quaranta piedi»), come nel modello del 2026-10-01, o il paragone di ADR-0014 con le misure nei Dati per il DM? Proposta: resta ADR-0014. Dal modello esterno si prende la struttura (le caratteristiche della stanza fuori dal box), non le misure nella voce |
+| ~~D3~~ | B2 | ✅ **Decisa il 2026-11-08: ovunque, solo l'etichetta** (la proposta la voleva solo sui master nuovi). Nei master nuovi e nei DEF già giocati; nei vecchi si aggiunge l'etichetta senza toccare una parola. **Ogni box dichiara il suo tipo?** Per esempio `**Read-aloud (luogo · Salvatore lead).**`, con i tipi luogo, ingresso, round, rivelazione, chiusura. Sblocca la norma «niente creature nel box di luogo» e le soglie per tipo della tabella del §2 di `read-aloud-adulti.md`, che oggi nessuno può misurare. Proposta: sì, sui master nuovi (S1-S4 di PIANO-MASTER-DEF), scritto da chi scrive il box e controllato da `componenti.py`; non sui DEF già giocati |
+| ~~D4~~ | — | ✅ **Decisa il 2026-11-08: non si toccano, con l'eccezione scritta.** Ogni box entra in un elenco di eccezioni col motivo, così il cancello non li conta come difetti e non li nasconde; uno si spezza solo se lo chiede il DM. **I box già giocati fuori dalle nuove misure**: nei DEF di ARC-07, 27 box oltre i 500 caratteri e 61 oltre le quattro frasi. Proposta: non si toccano, come per D9 di PIANO-LETTORE: si spezzano solo se lo chiedi, e senza cambiare una parola |
+| ~~D5~~ | B5 | ✅ **Decisa il 2026-11-08: sì, un box breve per stanza.** **L'Abbazia con le stanze *keyed*** (è la F5 di PIANO-LETTORE, «decidere col DM se ogni stanza vuole un box»). Proposta: sì, un box di luogo breve per stanza nell'ordine di *Dungeon*, quando F5 tocca l'Abbazia; è il banco del repo e già oggi ha 1 box su 11 oltre le quattro frasi |
+| ~~D6~~ | B1 | ✅ **Decisa il 2026-11-08: due versioni, 3.5 e PF1e.** **Il template d'area va in `campaign/templates/`**, accanto a quelli di sessione e di mappa, in due versioni (3.5 e PF1e)? Proposta: sì, tutte e due, con la creatura sempre come rimando al Bestiario e mai trascritta |
+
+<!-- eco: BOX-LUOGO 2026-11-08 -->
+- **Decise**: D2, le misure non vanno nella prima frase del box, resta ADR-0014. D3, ogni box dichiara il tipo, nei master nuovi e nei DEF già giocati. D4, i box giocati oltre misura non si toccano ed entrano in un elenco di eccezioni col motivo. D5, l'Abbazia ha un box di luogo breve per stanza. D6, il template d'area in `campaign/templates/`, in 3.5 e in PF1e.
+- **Aperte**: nessuna decisione; restano i lotti B2-B6 (B1 fatto il 2026-11-09).
+- **Cambiate**: D3 va oltre la proposta, che lasciava fuori i DEF giocati: lì entra solo l'etichetta, senza toccare una parola. D4 aggiunge l'elenco delle eccezioni, che la proposta non aveva.
+- **Dedotto da me**: l'elenco delle eccezioni di D4 lo legge `componenti.py`, come gli altri elenchi del repo; non è scritto nella card.
 
 ## 6 · Validazione
 

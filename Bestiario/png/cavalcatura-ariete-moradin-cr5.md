@@ -5,6 +5,9 @@
 ```statblocco
 gs: 5
 tipo: Large animal (celestiale; cavalcatura speciale da paladino, trattata come bestia magica), 8 HD, N
+taglia: Grande
+spazio: 3 m
+portata: 1,5 m
 ca: 21
 ca-dettaglio: touch 10, flat-footed 20 (−1 taglia, +1 Des, +11 naturale)
 pf: 60
@@ -30,14 +33,14 @@ voci:
 
 **Attacco** Vel 18 m (Correre: ×5 in corsa) · **Mischia** 2 zoccoli/testata +10 (1d6+5) e morso +5 (1d4+2) · Spazio 3 m; portata 1,5 m · **Attacchi speciali** punire il male 1/giorno (+8 danni a un attacco in mischia contro un nemico malvagio)
 
-**Statistiche** For 20, Des 13, Cos 17, Int 7, Sag 13, Car 6 · BAB +6; Lotta +15 · **Talenti** Resistenza Fisica, Armatura Naturale Migliorata, Correre
-
-**Capacità speciali** Legame empatico, eludere migliorato, condividere incantesimi, condividere tiri salvezza, velocità migliorata (privilegi SRD della cavalcatura di un paladino di 8° livello). Rurik lo richiama una volta al giorno con un'azione di round completo e lo congeda con un'azione gratuita; se muore non torna per 30 giorni.
-
 **Tattiche**
 - *Prima del combattimento*: arriva dal cielo dei celestiali quando Rurik lo chiama, già bardato. Se Rurik ha un round, gli passa un incantesimo con condividere incantesimi (*benedire l'arma* o *resistere all'energia*).
 - *Durante il combattimento*: con Rurik in sella carica in linea retta sul nemico più grosso, e il martello di Rurik colpisce con il +2 della carica. Dopo la carica resta fermo accanto al bersaglio per dargli gli zoccoli. Se Rurik smonta per tenere un varco, l'ariete combatte da solo: zoccoli e morso sullo stesso nemico, e il punire il male lo spende sul primo nemico malvagio che arriva a contatto, di solito un goblinoide o un drago della Mano Rossa. Il soffio di un drago non lo spaventa: con eludere migliorato e Riflessi +7 spesso non prende danno.
 - *Morale*: non fugge finché Rurik è in piedi. Sotto i 15 pf Rurik lo congeda prima che muoia: il giorno dopo torna intero, mentre morto starebbe fuori per un mese.
+
+**Statistiche** For 20, Des 13, Cos 17, Int 7, Sag 13, Car 6 · BAB +6; Lotta +15 · **Talenti** Resistenza Fisica, Armatura Naturale Migliorata, Correre
+
+**Capacità speciali** Legame empatico, eludere migliorato, condividere incantesimi, condividere tiri salvezza, velocità migliorata (privilegi SRD della cavalcatura di un paladino di 8° livello). Rurik lo richiama una volta al giorno con un'azione di round completo e lo congeda con un'azione gratuita; se muore non torna per 30 giorni.
 
 
 **Benchmark**: PF T1-1 riga 5 (CA 18, pf 55, att +10, danno 20, CD 15): CA 21 (+3), pf 60 (+5), att +10 (uguale), danno con l'attacco completo ≈21 (uguale). È un GS 5 pieno: il cavallo da guerra pesante (GS 2), +1 per i 4 DV da animale, +2 per il template celestiale a 8 DV.

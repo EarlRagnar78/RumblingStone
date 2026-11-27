@@ -77,14 +77,22 @@ La **sincronizzazione** col fronte (INTEGRAZIONE §3): due vie per i rinforzi vi
 
 ![Stalla — assalto drow](P2D-Palio-Allegati/mappe/stalla-assalto-drow.svg)
 
-Griglia **1 quadretto = 5 ft**, GS 11–12 (statblocchi in `...P2D-PALIO-STATBLOCCHI.md` §3).
+Griglia **1 quadretto = 5 ft**, EL 12–13 (statblocchi in `...P2D-PALIO-STATBLOCCHI.md` §3).
 - I drow entrano dalla **botola/fogna** (angolo SO) con *Oscurità*; puntano al **BOX** del
-  cavallo (obiettivo: avvelenarlo), usano *Silenzio* per soffocare gli allarmi.
-- Il **Barbaresco (B)** è accanto al cavallo; la **scorta PG (P)** copre la porta principale.
+  cavallo (obiettivo: avvelenare il cavallo o rapire il fantino), usano *Silenzio* per soffocare gli allarmi.
+- Il **Barbaresco (B)** è accanto al cavallo; il **fantino (F)**, se è un PNG ancora lì, dorme nella stalla, accanto al box `[CANONE — DM 2026-11-27, card «Dove dorme il fantino»]`: se è fuggito o i rivali l'hanno rapito, al suo posto dorme il fantino di riserva (GIORNO2 §3.2) `[CANONE — DM 2026-11-27, card «Chi corre se il fantino fugge o lo rapiscono i rivali»]`, e se i rivali l'hanno rapito i drow puntano solo al cavallo, anche con la riserva lì (un solo rapimento a notte) `[CANONE — DM 2026-11-27, card «La riserva si può rapire?»]`; se nella stalla non dorme nessun fantino, ignora la F della mappa e i drow puntano solo al cavallo `[CANONE — DM 2026-11-27, card «Senza fantino, solo il cavallo»]`; se è un PG il segnalino va dove lo mette il giocatore `[CANONE — DM 2026-11-27, card «Fantino PG o già fuggito»]`; la **scorta PG (P)** copre la porta principale.
   Sorpresa se non di guardia: Ascoltare DC 20.
 - Buio totale (torce spente): **Scurovisione**/luce = cruciale.
-- Token in mappa: **D** Drow Assassino · **C** Chierica di Lolth · **S** Servitore della Spora.
+- Token in mappa: **D** Drow Assassina di Lolth · **C** Chierica di Lolth · **S** Servitore della Spora · **F** fantino.
 - **Catturare un drow vivo** = intel Fase 0 Rethmar **−1 clock Sonjak** (INTEGRAZIONE §3.2).
+
+<!-- storico -->
+- era: fino al 2026-11-27 la mappa della stalla aveva solo il cavallo come obiettivo, senza il fantino. Card del DM del 2026-11-27 «Nella stalla, accanto al box»: segnalino F accanto al box, nella mappa e nella legenda. Nella stessa modifica la legenda dell'SVG va su due righe e la tattica su due, con la tela alta 530: prima uscivano oltre il bordo e si accavallavano con l'etichetta della porta.
+- era: fino al 2026-11-27 la riga diceva che il fantino dorme nella stalla in ogni caso. Card del DM del 2026-11-27 «Solo se PNG e ancora lì»: se è fuggito o rapito dai rivali non c'è, se è un PG lo mette il giocatore.
+- era: fino al 2026-11-27 la riga non diceva chi puntano i drow senza fantino. Card del DM del 2026-11-27 «Sì, solo il cavallo»: la F stampata si ignora e il bersaglio è solo il cavallo.
+- era: fino al 2026-11-27 la riga non diceva chi dorme nella stalla se il fantino è fuggito o rapito dai rivali. Card del DM del 2026-11-27 «La riserva, come per i drow»: al suo posto dorme il fantino di riserva.
+- era: fino al 2026-11-27 la riga lasciava ai drow il fantino di riserva come bersaglio anche dopo il rapimento dei rivali. Card del DM del 2026-11-27 «No, i drow puntano solo al cavallo» (rilievo di Codex sulla #536).
+<!-- /storico -->
 
 ---
 
@@ -100,7 +108,7 @@ per mappa. Companion di raccordo:*
 | **Channathgate città** | `channathgate-citta.svg` | 8 rioni-contrada, Porta dell'Alba/del Porto, Darsena; spostamenti dei partiti, infiltrazione Civetta, porto |
 | **Channathgate in scala** | `channathgate-pianta.svg` | la pianta che vale per le misure: arg (Palazzo dei Nove), maidan (il Campo), bazar coperto, giardini murati, qanat, Darsena e chiuse; città aperta di circa 250 ha e 25.000 abitanti: mura e torri solo all'arg (828 m, 27 torri e 2 alla porta), fossi e muri di rione con porte di quartiere |
 | **Rotta di soccorso** | `rotta-soccorso.svg` | Dawn Way (~35 mi, 1,5 gg, cavalleria) vs Fiume Cannath (~1 gg, flotta); **deadline Day 38** per la Fase 1 |
-| **Stalla — assalto drow** | `stalla-assalto-drow.svg` | 1 quadretto = 5 ft, GS 11-12; drow dalla botola SO con *Oscurità/Silenzio*, buio totale |
+| **Stalla — assalto drow** | `stalla-assalto-drow.svg` | 1 quadretto = 5 ft, EL 12-13; drow dalla botola SO con *Oscurità/Silenzio*, buio totale |
 
 ### ⚔️ TATTICHE (companion T5c)
 

@@ -1,9 +1,12 @@
-# Thayan Knight (PrC Complete Warrior) [ACCEPTED — DM-canon 2026-05-05]
+# Thayan Knight (PrC Complete Warrior) [CANONE — DM 2026-05-05]
 **Faction**: teschio-nero-thay | **Role**: mounted-elite | **Environment**: any | **CR**: 8 | **Source**: Complete Warrior p.54 Thayan Knight PrC | **Status**: inferred
 
 
 ```statblocco
 gs: 8
+taglia: Media
+spazio: 1,5 m (in sella 3 m, quello della cavalcatura Grande)
+portata: 1,5 m (3 m con la lancia da cavaliere, e allora non i quadretti adiacenti)
 ca: 22
 ca-dettaglio: (+10 +2 full plate, +2 large shield)
 pf: 60

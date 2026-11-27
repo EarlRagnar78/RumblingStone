@@ -12,6 +12,8 @@
 - FEAT INTERACTION NOTES (FR-Specific)
 <!-- /indice -->
 
+> **Avviso (2026-11-07)**: 14 nomi di questo file non sono in nessun indice dei talenti 3.5 e sono marcati INFERRED. Per gli altri è verificato solo il nome, non la regola: prima di usarne una in una scheda, riscontrala sul manuale (`scripts/talenti_manuali_35.tsv` dà sigla e pagina).
+
 Sources: Player's Guide to Faerûn (2004), Faiths & Pantheons (2002), FRCS (2001),
 Champions of Valor (2005), Champions of Ruin (2005), Races of Faerûn (2003)
 
@@ -25,7 +27,7 @@ or an equivalent option as DM allows). They can also be taken as normal feats if
 
 ### Aglarond
 **Luck of Heroes**: +1 luck bonus to all saves; +1 luck bonus to AC. (Req: Aglarond region)
-**Simbul's Glare**: Once per day, attempt a gaze attack that deals 1d6/2 levels fire damage (Ref half). (Req: Aglarond, female only)
+**Simbul's Glare**: Once per day, attempt a gaze attack that deals 1d6/2 levels fire damage (Ref half). (Req: Aglarond, female only) `[INFERRED — questo talento esiste in un manuale 3.5?; base: il nome non è in nessun indice dei manuali (crystalkeep 2007, realmshelps), controllo del 2026-11-07]`
 
 ### Amn
 **Silver Palm**: +2 Appraise, +2 Diplomacy when negotiating prices. (Req: Amn)
@@ -34,17 +36,17 @@ or an equivalent option as DM allows). They can also be taken as normal feats if
 ### Calimshan
 **Deft Hands**: +2 Sleight of Hand, +2 Open Lock. (Req: Calimshan)
 **Smooth Talk**: +2 Bluff, +2 Diplomacy. (Req: Calimshan or Dragon Coast)
-**Genie-Touched**: +2 save vs. fire or air effects (choose type based on ancestry). (Req: Calimshan, Genasi blood)
+**Genie-Touched**: +2 save vs. fire or air effects (choose type based on ancestry). (Req: Calimshan, Genasi blood) `[INFERRED — questo talento esiste in un manuale 3.5?; base: il nome non è in nessun indice dei manuali (crystalkeep 2007, realmshelps), controllo del 2026-11-07]`
 
 ### Chessenta
-**Warrior's Valor**: Once per day, make one attack at full BAB as a swift action (even if already attacked). (Req: Chessenta, BAB +3)
+**Warrior's Valor**: Once per day, make one attack at full BAB as a swift action (even if already attacked). (Req: Chessenta, BAB +3) `[INFERRED — questo talento esiste in un manuale 3.5?; base: il nome non è in nessun indice dei manuali (crystalkeep 2007, realmshelps), controllo del 2026-11-07]`
 
 ### Chult
-**Chultan Jungle Fighter**: +2 attack against creatures you're flanking; +1 AC in jungle terrain. (Req: Chult, BAB +1)
-**Serpent Blood**: +2 save vs. poison; +2 damage with unarmed attacks when attacking poisonous creatures. (Req: Chult)
+**Chultan Jungle Fighter**: +2 attack against creatures you're flanking; +1 AC in jungle terrain. (Req: Chult, BAB +1) `[INFERRED — questo talento esiste in un manuale 3.5? Esiste Jungle Fighter (Dragon #315 p. 53), con regole diverse.; base: il nome non è in nessun indice dei manuali (crystalkeep 2007, realmshelps), controllo del 2026-11-07]`
+**Serpent Blood**: +2 save vs. poison; +2 damage with unarmed attacks when attacking poisonous creatures. (Req: Chult) `[INFERRED — questo talento esiste in un manuale 3.5? Il talento regionale di Chult nel PGF è Snake Blood (p. 43).; base: il nome non è in nessun indice dei manuali (crystalkeep 2007, realmshelps), controllo del 2026-11-07]`
 
 ### Cormyr
-**Cormyrean Conscript**: Proficiency with longbow; +1 attack with longbow. (Req: Cormyr)
+**Cormyrean Conscript**: Proficiency with longbow; +1 attack with longbow. (Req: Cormyr) `[INFERRED — questo talento esiste in un manuale 3.5? I talenti regionali del Cormyr nel PGF sono Discipline e Militia.; base: il nome non è in nessun indice dei manuali (crystalkeep 2007, realmshelps), controllo del 2026-11-07]`
 **Militia (Cormyr)**: +1 attack with longsword, +2 Intimidate when in uniform. (Req: Cormyr)
 
 ### Dalelands
@@ -55,7 +57,7 @@ or an equivalent option as DM allows). They can also be taken as normal feats if
 **Mercantile Background**: +4 Appraise; start with 2× the normal wealth for your class. (Req: Dragon Coast, Sembia, Amn)
 
 ### Great Dale / The North (Druidic)
-**Wychlaran Initiate**: Access to Wychlaran magical traditions; +2 Concentration, Spellcraft when casting in Rashemen's spirit lands. (Req: Female Rashemi, must be Wychlaran member)
+**Wychlaran Initiate**: Access to Wychlaran magical traditions; +2 Concentration, Spellcraft when casting in Rashemen's spirit lands. (Req: Female Rashemi, must be Wychlaran member) `[INFERRED — questo talento esiste in un manuale 3.5?; base: il nome non è in nessun indice dei manuali (crystalkeep 2007, realmshelps), controllo del 2026-11-07]`
 
 ### Halruaa
 **Magical Artisan**: Reduce time and cost to create any one type of magic item by 25%. (Req: Halruaa)
@@ -66,23 +68,23 @@ or an equivalent option as DM allows). They can also be taken as normal feats if
 **Militia (Impiltur)**: +1 attack with longsword and light crossbow. (Req: Impiltur)
 
 ### Moonshaes
-**Ffolk Heritage**: +2 Survival; speak Ffolk dialect; +2 vs. cold-weather hazards. (Req: Moonshaes, Ffolk human)
-**Northman Heritage**: +2 Intimidate; +2 damage with greataxe. (Req: Moonshaes, Illuskan human)
+**Ffolk Heritage**: +2 Survival; speak Ffolk dialect; +2 vs. cold-weather hazards. (Req: Moonshaes, Ffolk human) `[INFERRED — questo talento esiste in un manuale 3.5?; base: il nome non è in nessun indice dei manuali (crystalkeep 2007, realmshelps), controllo del 2026-11-07]`
+**Northman Heritage**: +2 Intimidate; +2 damage with greataxe. (Req: Moonshaes, Illuskan human) `[INFERRED — questo talento esiste in un manuale 3.5?; base: il nome non è in nessun indice dei manuali (crystalkeep 2007, realmshelps), controllo del 2026-11-07]`
 
 ### Mulhorand
 **Heroic Destiny**: Once per day, reroll any one die roll and take the better result. (Req: Mulhorand, Mulan human)
 **Blooded**: +2 Initiative; +2 save vs. fear. (Req: Mulhorand, Rashemen, or Vaasa/Damara)
 
 ### Rashemen
-**Rashemi Elemental Affinity**: Choose one element (fire, earth, air, water); +2 caster level for that element's spells. (Req: Rashemen)
-**Spirit Speaker**: Communicate with Rashemen land spirits; +4 Diplomacy with fey and nature spirits. (Req: Rashemen, Wis 13+)
+**Rashemi Elemental Affinity**: Choose one element (fire, earth, air, water); +2 caster level for that element's spells. (Req: Rashemen) `[INFERRED — questo talento esiste in un manuale 3.5?; base: il nome non è in nessun indice dei manuali (crystalkeep 2007, realmshelps), controllo del 2026-11-07]`
+**Spirit Speaker**: Communicate with Rashemen land spirits; +4 Diplomacy with fey and nature spirits. (Req: Rashemen, Wis 13+) `[INFERRED — questo talento esiste in un manuale 3.5?; base: il nome non è in nessun indice dei manuali (crystalkeep 2007, realmshelps), controllo del 2026-11-07]`
 
 ### Sembia
 **Mercantile Background**: See Dragon Coast above.
 **Cosmopolitan**: See Amn above.
 
 ### The Shaar
-**Shaaryan Mounted Combat**: Mounted Combat + +2 Ride; no penalty for attacking with a bow while mounted. (Req: The Shaar, Ride 4 ranks)
+**Shaaryan Mounted Combat**: Mounted Combat + +2 Ride; no penalty for attacking with a bow while mounted. (Req: The Shaar, Ride 4 ranks) `[INFERRED — questo talento esiste in un manuale 3.5?; base: il nome non è in nessun indice dei manuali (crystalkeep 2007, realmshelps), controllo del 2026-11-07]`
 **Track (Regional)**: As Ranger class feature; bonus to Survival when tracking. (Req: The Shaar, various frontier regions)
 
 ### Thay
@@ -91,10 +93,10 @@ or an equivalent option as DM allows). They can also be taken as normal feats if
 
 ### Unther
 **Survivor**: See Dalelands above.
-**Warrior's Valor**: See Chessenta above. (Cross-regional for Untheric warriors)
+**Warrior's Valor**: See Chessenta above. (Cross-regional for Untheric warriors) `[INFERRED — questo talento esiste in un manuale 3.5?; base: il nome non è in nessun indice dei manuali (crystalkeep 2007, realmshelps), controllo del 2026-11-07]`
 
 ### Waterdeep
-**Waterdhavian Noble**: +2 Diplomacy; access to noble social circles; +1 Bluff. (Req: Waterdeep, noble family)
+**Waterdhavian Noble**: +2 Diplomacy; access to noble social circles; +1 Bluff. (Req: Waterdeep, noble family) `[INFERRED — questo talento esiste in un manuale 3.5?; base: il nome non è in nessun indice dei manuali (crystalkeep 2007, realmshelps), controllo del 2026-11-07]`
 
 ### The Western Heartlands
 **Militia (various towns)**: +1 attack with longsword; proficiency with longbow. (Req: Specific Heartlands town)
@@ -129,7 +131,7 @@ for 1 minute. (Req: Turn or Rebuke Undead)
 **Sacred Vengeance**: Deal +2d6 sacred/profane damage vs. undead on each attack for 1 round.
 (Req: Turn or Rebuke Undead)
 
-**Anchoring Aura**: Prevent extraplanar creatures within 30 ft from plane-shifting or teleporting
+**Anchoring Aura**: Prevent extraplanar creatures within 30 ft from plane-shifting or teleporting `[INFERRED — questo talento esiste in un manuale 3.5?; base: il nome non è in nessun indice dei manuali (crystalkeep 2007, realmshelps), controllo del 2026-11-07]`
 as long as you have Turn attempts remaining. (Req: CHA 14, Turn or Rebuke Undead)
 
 **Disciple of the Sun**: Evil undead automatically destroyed when Turned (on a Turn result, not

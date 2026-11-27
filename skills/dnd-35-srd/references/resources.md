@@ -30,6 +30,21 @@ When an AI agent needs to look up rules or lore, follow this order:
 | 4 | **forgottenrealms.fandom.com** | FR depth: deity pages, geography, named NPCs |
 | 5 | **orbitalflower.github.io → web.archive.org** | Official WotC 3.5 articles: maps, monsters, errata |
 | 6 | **imarvintpa.com** | Structured spell lookup, non-SRD spell catalogue |
+| — | **`Bestiario/pregen-pcgen/`** (nel repo, fuori rete) | Testo degli incantesimi quando d20srd.org non si raggiunge |
+
+**Fuori rete: gli incantesimi stanno nelle esportazioni PCGen del repo.** Questa
+skill non porta il testo degli incantesimi (`spells.md` ha le scuole e qualche
+esempio). Se d20srd.org non risponde, i file `*spell*.htm*` di
+`Bestiario/pregen-pcgen/` (13 al 2026-10-31, in `png_La_mano_rossa_del_destino/`)
+riportano per ogni incantesimo preparato tempo di lancio, gittata, componenti,
+durata, TS e CD, RI, scuola, effetto in una riga e pagina del PHB
+(`Source: p.NNN`). Il livello si ricava dalla CD: CD − 10 − modificatore di
+caratteristica dell'incantatore. È un riassunto di PCGen, non il testo SRD:
+basta per controllare un numero, non per citare la regola. Una regola
+verificata solo così si scrive con la fonte (`PCGen, PHB p. NNN`), e se il
+riassunto non basta resta `[INFERRED — <domanda al DM>; base: <fonte o dato>]` finché non si
+legge su d20srd.org (STATO-E-ORDINE §8.3; dal 2026-10-23 d20srd.org si
+raggiunge anche dal container, quindi è la via di riserva, non la prima).
 
 ---
 

@@ -24,18 +24,28 @@
       "tetti": {
         "testi_sotto_minimo": 0,
         "fuori_margine": 0,
-        "immagini_sotto_300dpi": 45,
+        "immagini_sotto_300dpi": 66,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
-        "pagine": 129,
+        "pagine": 163,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
-        "schede": 12,
-        "pagine_con_immagine": 0.031,
-        "pagine_con_immagine_decimo": 0.101
+        "schede": 32,
+        "pagine_con_immagine": 0.043,
+        "pagine_con_immagine_decimo": 0.117,
+        "parole": 91037,
+        "quota_parole_ripetute": 0.126
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 11433
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-notte-e-alba/ARC07-NOTTE-E-ALBA-GIOCATORI.manifest.json": {
@@ -45,7 +55,9 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
         "pagine": 7,
@@ -53,7 +65,43 @@
         "corpo_minimo_pt": 7.0,
         "schede": 0,
         "pagine_con_immagine": 0.0,
-        "pagine_con_immagine_decimo": 0.0
+        "pagine_con_immagine_decimo": 0.0,
+        "parole": 1536,
+        "quota_parole_ripetute": 0.039
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 60
+      }
+    },
+    "07_il Portale Della Forgia Eterna/homebrew/sessione-notte-e-alba/ARC07-NOTTE-E-ALBA-SERATA.manifest.json": {
+      "tetti": {
+        "testi_sotto_minimo": 0,
+        "fuori_margine": 0,
+        "immagini_sotto_300dpi": 25,
+        "schede_spezzate": 0,
+        "font_non_incorporati": 0,
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
+      },
+      "misura": {
+        "pagine": 131,
+        "corpo_mediano_pt": 10.0,
+        "corpo_minimo_pt": 7.0,
+        "schede": 24,
+        "pagine_con_immagine": 0.023,
+        "pagine_con_immagine_decimo": 0.076,
+        "parole": 72597,
+        "quota_parole_ripetute": 0.119
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 8621
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-resurrezione-mille-anni/ARC07-SERATA-GIOCATORI.manifest.json": {
@@ -63,7 +111,9 @@
         "immagini_sotto_300dpi": 5,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
         "pagine": 19,
@@ -71,25 +121,43 @@
         "corpo_minimo_pt": 7.0,
         "schede": 1,
         "pagine_con_immagine": 0.263,
-        "pagine_con_immagine_decimo": 0.263
+        "pagine_con_immagine_decimo": 0.263,
+        "parole": 3405,
+        "quota_parole_ripetute": 0.019
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 63
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-resurrezione-mille-anni/ARC07-SERATA-RESURREZIONE-BOOKLET.manifest.json": {
       "tetti": {
         "testi_sotto_minimo": 0,
         "fuori_margine": 0,
-        "immagini_sotto_300dpi": 45,
+        "immagini_sotto_300dpi": 53,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
-        "pagine": 157,
+        "pagine": 175,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
-        "schede": 15,
-        "pagine_con_immagine": 0.025,
-        "pagine_con_immagine_decimo": 0.083
+        "schede": 30,
+        "pagine_con_immagine": 0.034,
+        "pagine_con_immagine_decimo": 0.08,
+        "parole": 102608,
+        "quota_parole_ripetute": 0.094
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 9598
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-ritorno-forgia/ARC07-RITORNO-FORGIA-BOOKLET.manifest.json": {
@@ -99,15 +167,25 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
-        "pagine": 28,
+        "pagine": 29,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 0,
         "pagine_con_immagine": 0.0,
-        "pagine_con_immagine_decimo": 0.0
+        "pagine_con_immagine_decimo": 0.0,
+        "parole": 16450,
+        "quota_parole_ripetute": 0.062
+      },
+      "in_prova": {
+        "sigle_morte": 1,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 1015
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-terros/ARC07-GRUPPO-CAMMINO.manifest.json": {
@@ -117,7 +195,9 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
         "pagine": 4,
@@ -125,7 +205,15 @@
         "corpo_minimo_pt": 7.0,
         "schede": 0,
         "pagine_con_immagine": 0.0,
-        "pagine_con_immagine_decimo": 0.0
+        "pagine_con_immagine_decimo": 0.0,
+        "parole": 568,
+        "quota_parole_ripetute": 0.025
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 14
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-terros/ARC07-SESSIONE-TERROS-BOOKLET.manifest.json": {
@@ -135,15 +223,25 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
-        "pagine": 65,
+        "pagine": 66,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 4,
         "pagine_con_immagine": 0.0,
-        "pagine_con_immagine_decimo": 0.0
+        "pagine_con_immagine_decimo": 0.0,
+        "parole": 39493,
+        "quota_parole_ripetute": 0.048
+      },
+      "in_prova": {
+        "sigle_morte": 2,
+        "righe_brevi_incomplete": 1,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 1907
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/sessione-terros/ARC07-TEASER-GIOCATORI.manifest.json": {
@@ -153,7 +251,9 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
         "pagine": 3,
@@ -161,25 +261,71 @@
         "corpo_minimo_pt": 7.0,
         "schede": 0,
         "pagine_con_immagine": 0.0,
-        "pagine_con_immagine_decimo": 0.0
+        "pagine_con_immagine_decimo": 0.0,
+        "parole": 558,
+        "quota_parole_ripetute": 0.0
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 0
+      }
+    },
+    "07_il Portale Della Forgia Eterna/homebrew/volume-arco/ARC07-VOLUME-ARCO.manifest.json": {
+      "tetti": {
+        "testi_sotto_minimo": 0,
+        "fuori_margine": 0,
+        "immagini_sotto_300dpi": 83,
+        "schede_spezzate": 1,
+        "font_non_incorporati": 0,
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
+      },
+      "misura": {
+        "pagine": 294,
+        "corpo_mediano_pt": 10.0,
+        "corpo_minimo_pt": 7.0,
+        "schede": 41,
+        "pagine_con_immagine": 0.024,
+        "pagine_con_immagine_decimo": 0.065,
+        "parole": 168407,
+        "quota_parole_ripetute": 0.112
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 2,
+        "parole_ripetute": 18795
       }
     },
     "07_il Portale Della Forgia Eterna/homebrew/volume-mille-anni/ARC07-MILLE-ANNI-VOLUME.manifest.json": {
       "tetti": {
         "testi_sotto_minimo": 0,
         "fuori_margine": 0,
-        "immagini_sotto_300dpi": 43,
+        "immagini_sotto_300dpi": 51,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
-        "pagine": 92,
+        "pagine": 108,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
-        "schede": 13,
-        "pagine_con_immagine": 0.033,
-        "pagine_con_immagine_decimo": 0.109
+        "schede": 26,
+        "pagine_con_immagine": 0.046,
+        "pagine_con_immagine_decimo": 0.102,
+        "parole": 62437,
+        "quota_parole_ripetute": 0.105
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 6575
       }
     },
     "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/homebrew/PALIO-BOOKLET.manifest.json": {
@@ -189,7 +335,9 @@
         "immagini_sotto_300dpi": 2,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
         "pagine": 65,
@@ -197,7 +345,15 @@
         "corpo_minimo_pt": 3.0,
         "schede": 5,
         "pagine_con_immagine": 0.031,
-        "pagine_con_immagine_decimo": 0.031
+        "pagine_con_immagine_decimo": 0.031,
+        "parole": 29699,
+        "quota_parole_ripetute": 0.051
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 5,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 1506
       }
     },
     "10-stand-alone/Il Giardino di Sale e Calce PF1e/homebrew/giardino-sale-calce-pf1e.manifest.json": {
@@ -207,15 +363,25 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
-        "pagine": 25,
+        "pagine": 26,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 7,
         "pagine_con_immagine": 0.0,
-        "pagine_con_immagine_decimo": 0.0
+        "pagine_con_immagine_decimo": 0.0,
+        "parole": 11000,
+        "quota_parole_ripetute": 0.082
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 900
       }
     },
     "10-stand-alone/Il Giardino di Sale e Calce/homebrew/giardino-sale-calce.manifest.json": {
@@ -225,15 +391,25 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 1
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
-        "pagine": 40,
+        "pagine": 41,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 7,
         "pagine_con_immagine": 0.0,
-        "pagine_con_immagine_decimo": 0.0
+        "pagine_con_immagine_decimo": 0.0,
+        "parole": 17729,
+        "quota_parole_ripetute": 0.081
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 1430
       }
     },
     "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BENVENUTO-TAVOLO.manifest.json": {
@@ -243,7 +419,9 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
         "pagine": 2,
@@ -251,7 +429,15 @@
         "corpo_minimo_pt": 7.0,
         "schede": 0,
         "pagine_con_immagine": 0.0,
-        "pagine_con_immagine_decimo": 0.0
+        "pagine_con_immagine_decimo": 0.0,
+        "parole": 661,
+        "quota_parole_ripetute": 0.0
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 0
       }
     },
     "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.manifest.json": {
@@ -261,15 +447,25 @@
         "immagini_sotto_300dpi": 19,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
-        "pagine": 86,
+        "pagine": 88,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 6.1,
-        "schede": 7,
-        "pagine_con_immagine": 0.116,
-        "pagine_con_immagine_decimo": 0.209
+        "schede": 14,
+        "pagine_con_immagine": 0.114,
+        "pagine_con_immagine_decimo": 0.205,
+        "parole": 40835,
+        "quota_parole_ripetute": 0.059
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 2411
       }
     },
     "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-GIOCATORI.manifest.json": {
@@ -279,15 +475,53 @@
         "immagini_sotto_300dpi": 6,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
-        "pagine": 8,
+        "pagine": 9,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 0,
         "pagine_con_immagine": 0.0,
-        "pagine_con_immagine_decimo": 0.625
+        "pagine_con_immagine_decimo": 0.444,
+        "parole": 2509,
+        "quota_parole_ripetute": 0.007
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 17
+      }
+    },
+    "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-CARTE-DA-TAVOLO.manifest.json": {
+      "tetti": {
+        "testi_sotto_minimo": 0,
+        "fuori_margine": 0,
+        "immagini_sotto_300dpi": 0,
+        "schede_spezzate": 0,
+        "font_non_incorporati": 0,
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
+      },
+      "misura": {
+        "pagine": 4,
+        "corpo_mediano_pt": 7.5,
+        "corpo_minimo_pt": 7.0,
+        "schede": 0,
+        "pagine_con_immagine": 0.0,
+        "pagine_con_immagine_decimo": 0.0,
+        "parole": 1925,
+        "quota_parole_ripetute": 0.648
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 1248
       }
     },
     "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-FASCICOLO-SCHEDE.manifest.json": {
@@ -297,15 +531,25 @@
         "immagini_sotto_300dpi": 7,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
-        "pagine": 11,
+        "pagine": 12,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 7.0,
         "schede": 0,
-        "pagine_con_immagine": 0.091,
-        "pagine_con_immagine_decimo": 0.455
+        "pagine_con_immagine": 0.083,
+        "pagine_con_immagine_decimo": 0.333,
+        "parole": 4474,
+        "quota_parole_ripetute": 0.047
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 209
       }
     },
     "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-PROP.manifest.json": {
@@ -315,7 +559,9 @@
         "immagini_sotto_300dpi": 1,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
         "pagine": 6,
@@ -323,7 +569,15 @@
         "corpo_minimo_pt": 7.0,
         "schede": 0,
         "pagine_con_immagine": 0.0,
-        "pagine_con_immagine_decimo": 0.167
+        "pagine_con_immagine_decimo": 0.167,
+        "parole": 747,
+        "quota_parole_ripetute": 0.0
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 0
       }
     },
     "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json": {
@@ -333,7 +587,9 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
         "pagine": 6,
@@ -341,7 +597,15 @@
         "corpo_minimo_pt": 7.0,
         "schede": 0,
         "pagine_con_immagine": 0.0,
-        "pagine_con_immagine_decimo": 0.0
+        "pagine_con_immagine_decimo": 0.0,
+        "parole": 3812,
+        "quota_parole_ripetute": 0.051
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 194
       }
     },
     "10-stand-alone/L'abbazia Della Rotta Sicura/homebrew/abbazia-rotta-sicura.manifest.json": {
@@ -351,15 +615,25 @@
         "immagini_sotto_300dpi": 0,
         "schede_spezzate": 0,
         "font_non_incorporati": 0,
-        "rimandi_sbagliati": 0
+        "rimandi_sbagliati": 0,
+        "immagini_tagliate": 0,
+        "difetti_ordine": 0
       },
       "misura": {
-        "pagine": 41,
+        "pagine": 45,
         "corpo_mediano_pt": 10.0,
         "corpo_minimo_pt": 2.5,
-        "schede": 19,
+        "schede": 38,
         "pagine_con_immagine": 0.0,
-        "pagine_con_immagine_decimo": 0.0
+        "pagine_con_immagine_decimo": 0.0,
+        "parole": 23796,
+        "quota_parole_ripetute": 0.074
+      },
+      "in_prova": {
+        "sigle_morte": 0,
+        "righe_brevi_incomplete": 0,
+        "titoli_rovinati": 0,
+        "parole_ripetute": 1758
       }
     }
   }

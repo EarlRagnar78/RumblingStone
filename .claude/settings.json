@@ -9,11 +9,104 @@
           }
         ]
       }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/vincolo_skill.py --hook",
+            "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/memoria_custode.py --hook-scrittura",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "Bash|mcp__github__merge_pull_request",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/memoria_custode.py --hook-merge",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "Bash|mcp__github__create_pull_request|mcp__github__push_files|mcp__github__create_or_update_file|mcp__github__delete_file|mcp__github__create_branch|mcp__github__merge_pull_request|mcp__github__update_pull_request_branch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/instradamento_agenti.py --cancello",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/instradamento_agenti.py --prompt",
+            "timeout": 10
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/instradamento_agenti.py --stop",
+            "timeout": 10
+          }
+        ]
+      }
     ]
   },
   "enabledPlugins": {
+    "agentic-council@synced": false,
+    "ai-governance-legal@synced": false,
+    "ai-mentor@synced": false,
+    "bio-research@synced": false,
+    "claude-for-msft-365-install@synced": false,
+    "claude-tag-data-viz@synced": false,
+    "claude-tag-troubleshoot@synced": false,
+    "customer-support@synced": false,
+    "data@synced": false,
+    "ddd@synced": true,
+    "design@synced": false,
+    "docs@synced": true,
+    "engineering@synced": true,
+    "enterprise-search@synced": false,
+    "finance@synced": false,
+    "fpf@synced": true,
+    "frontend-design@synced": false,
+    "google-drive@synced": false,
+    "grafana@synced": false,
+    "human-resources@synced": false,
+    "legal@synced": false,
+    "marketing@synced": false,
+    "mcp@synced": true,
+    "operations@synced": false,
     "pdf-viewer@synced": true,
+    "product-legal@synced": false,
+    "product-management@synced": false,
+    "productivity@synced": false,
+    "recursive-decomposition@synced": true,
+    "reflexion@synced": true,
     "review@synced": true,
+    "sadd@synced": true,
+    "sdd@synced": true,
+    "skill-creator@synced": false,
+    "small-business@synced": false,
+    "superpowers@synced": false,
     "tdd@synced": true
   },
   "skillOverrides": {
@@ -53,5 +146,90 @@
   },
   "enabledMcpjsonServers": [
     "rumblingstone-tools"
-  ]
+  ],
+  "permissions": {
+    "deny": [
+      "mcp__Gmail",
+      "mcp__Google_Drive",
+      "mcp__Channel3_MCP",
+      "mcp__Clipkit",
+      "mcp__Mobbin",
+      "mcp__Microsoft_Learn",
+      "mcp__Mozilla_MDN",
+      "mcp__Shutterstock",
+      "mcp__bioRxiv",
+      "mcp__pg-aiguide",
+      "Read(**/.git/**)",
+      "Read(**/.codegraph/**)",
+      "Read(/.serena/cache/**)",
+      "Read(**/.kilo/**)",
+      "Read(**/.pr-body.md)",
+      "Read(**/rami-cancellati.log)",
+      "Read(/.agents/skills/**)",
+      "Read(/.cursor/skills/**)",
+      "Read(/.windsurf/skills/**)",
+      "Read(/.chatgpt/skills/**)",
+      "Read(/.gemini/skills/**)",
+      "Read(/.github/copilot/skills/**)",
+      "Read(**/build/**)",
+      "Read(**/*.hb.md)",
+      "Read(**/homebrew/**/*.html)",
+      "Read(**/homebrew/**/*.typ)",
+      "Read(**/rendered/**)",
+      "Read(**/rendered-*/**)",
+      "Read(/scripts/typst/packages/**)",
+      "Read(/scripts/homebrew-local/homebrewery/**)",
+      "Read(/scripts/comfyui-local/ComfyUI/**)",
+      "Read(/scripts/blender/texture/*/**)",
+      "Read(/converters/pdf-to-md-engine/data/**)",
+      "Read(/converters/Pdf_To_extract/**)",
+      "Read(/converters/SoundTrack/**)",
+      "Read(/converters/avventura_con_modifiche/**)",
+      "Read(/converters/ImageBackup/**)",
+      "Read(**/node_modules/**)",
+      "Read(**/*_files/**)",
+      "Read(/Bestiario/pregen-pcgen/**/*.js)",
+      "Read(/Bestiario/pregen-pcgen/**/*.css)",
+      "Read(**/__pycache__/**)",
+      "Read(**/*.py[cod])",
+      "Read(**/.venv/**)",
+      "Read(**/venv/**)",
+      "Read(**/env/**)",
+      "Read(**/.pytest_cache/**)",
+      "Read(**/.mypy_cache/**)",
+      "Read(**/.ruff_cache/**)",
+      "Read(**/.hypothesis/**)",
+      "Read(**/.coverage)",
+      "Read(**/htmlcov/**)",
+      "Read(**/*.egg-info/**)",
+      "Read(**/*.ttf)",
+      "Read(**/*.otf)",
+      "Read(**/*.woff)",
+      "Read(**/*.woff2)",
+      "Read(**/*.mp3)",
+      "Read(**/*.wav)",
+      "Read(**/*.ogg)",
+      "Read(**/*.flac)",
+      "Read(**/*.mp4)",
+      "Read(**/*.mkv)",
+      "Read(**/*.webm)",
+      "Read(**/*.mov)",
+      "Read(**/*.zip)",
+      "Read(**/*.tar)",
+      "Read(**/*.gz)",
+      "Read(**/*.7z)",
+      "Read(**/*.rar)",
+      "Read(**/*.blend)",
+      "Read(**/*.blend1)",
+      "Read(**/.DS_Store)",
+      "Read(**/Thumbs.db)",
+      "Read(**/*~)",
+      "Read(**/*.tmp)",
+      "Read(**/*.bak)",
+      "Read(**/*.log)",
+      "Read(**/.vscode/**)",
+      "Read(**/.idea/**)",
+      "Read(**/.env)"
+    ]
+  }
 }

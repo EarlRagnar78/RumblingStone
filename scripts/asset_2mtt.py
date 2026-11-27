@@ -152,7 +152,7 @@ def stato() -> int:
     installati = pacchetti()
     if not installati:
         print("○ 2-Minute Tabletop: nessun pacchetto installato (asset-esterni/2mtt/). "
-              "Guida: docs/guides/GUIDA-MAPPE.md §5.2")
+              "Guida: docs/how-to/GUIDA-MAPPE.md §5.2")
         return 0
     for nome, p in installati.items():
         print(f"✓ {nome}: {p['categoria']}, {len(p['file'])} file")

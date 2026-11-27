@@ -37,9 +37,16 @@ def _lancia(*args: str) -> subprocess.CompletedProcess:
 class TestOrdine(unittest.TestCase):
     def test_i_mestieri_sono_in_ordine_e_dichiarati(self):
         # L'ordine è il contenuto di questo comando: se cambia, è una decisione.
+        # «struttura» (ADR-0122) misura il volume appena stampato, prima di imporlo.
         self.assertEqual(dm.PASSI_VOLUME,
                          ("prosa", "lingua", "manifest", "colophon",
-                          "schermo", "stampa", "imposizione"))
+                          "schermo", "stampa", "struttura", "imposizione"))
+
+    def test_senza_stampa_non_si_misura_la_struttura(self):
+        r = _lancia(str(REPO / "10-stand-alone" / "L'abbazia Della Rotta Sicura" /
+                        "homebrew" / "abbazia-rotta-sicura.manifest.json"))
+        riga = next(l for l in r.stdout.splitlines() if l.startswith("[dm] passi:"))
+        self.assertNotIn("struttura", riga)
 
     def test_senza_stampa_la_catena_si_ferma_allo_schermo(self):
         r = _lancia(str(REPO / "10-stand-alone" / "L'abbazia Della Rotta Sicura" /
@@ -98,16 +105,61 @@ class TestGuasti(unittest.TestCase):
         self.assertIn("GUIDA-CONDIVISIONE-IP", r.stdout)
         self.assertIn("ADR-0005", r.stdout)
 
-    def test_l_imposizione_degrada_pulito_se_manca_pdfcpu(self):
+    def test_l_imposizione_degrada_pulito_se_manca_pdfimpose(self):
         # ADR-0027: dichiara e non fallisce. Il volume resta stampabile.
         import binari
         from unittest import mock
         mp = (REPO / "10-stand-alone" / "L'abbazia Della Rotta Sicura" /
               "homebrew" / "abbazia-rotta-sicura.manifest.json")
-        with mock.patch.object(binari.shutil, "which", return_value=None):
+        with mock.patch.object(binari, "disponibile", return_value=False):
             nome, segno, dettaglio = dm._imponi(mp)
         self.assertEqual(segno, "○")
-        self.assertIn("pdfcpu assente", dettaglio)
+        self.assertIn("pdfimpose assente", dettaglio)
+
+    def test_l_imposizione_fa_un_foglio_2xA5_con_le_pagine_accoppiate(self):
+        # ADR-0116: pdfimpose al posto di pdfcpu, stesso libretto da piegare.
+        try:
+            import pdfimpose  # noqa: F401
+            import pymupdf
+        except ImportError:
+            self.skipTest("pdfimpose o PyMuPDF assenti")
+        with tempfile.TemporaryDirectory() as d:
+            mp = Path(d) / "prova.manifest.json"
+            src = pymupdf.open()
+            for n in range(1, 9):
+                pg = src.new_page(width=419.53, height=595.28)  # A5
+                pg.insert_text((50, 300), f"pagina {n}")
+            src.save(Path(d) / "prova-STAMPA.pdf")
+            _, segno, dettaglio = dm._imponi(mp)
+            self.assertEqual(segno, "✓", dettaglio)
+            out = pymupdf.open(Path(d) / "prova-STAMPA-LIBRETTO.pdf")
+            self.assertEqual(len(out), 4)  # 8 pagine A5 = 2 fogli, fronte e retro
+            r = out[0].rect
+            self.assertAlmostEqual(r.width, 2 * 419.53, delta=1)
+            self.assertAlmostEqual(r.height, 595.28, delta=1)
+            # la prima facciata porta l'ultima e la prima pagina, come pdfcpu
+            testo = out[0].get_text()
+            self.assertIn("pagina 8", testo)
+            self.assertIn("pagina 1", testo)
+
+    def test_un_volume_a4_si_riduce_su_un_foglio_a4_non_a3(self):
+        # pdfimpose non scala: senza la riduzione un A4 darebbe fogli A3.
+        try:
+            import pdfimpose  # noqa: F401
+            import pymupdf
+        except ImportError:
+            self.skipTest("pdfimpose o PyMuPDF assenti")
+        with tempfile.TemporaryDirectory() as d:
+            mp = Path(d) / "prova.manifest.json"
+            src = pymupdf.open()
+            for n in range(1, 5):
+                src.new_page(width=595.28, height=841.89).insert_text((50, 300), f"pagina {n}")
+            src.save(Path(d) / "prova-STAMPA.pdf")
+            _, segno, dettaglio = dm._imponi(mp)
+            self.assertEqual(segno, "✓", dettaglio)
+            r = pymupdf.open(Path(d) / "prova-STAMPA-LIBRETTO.pdf")[0].rect
+        self.assertAlmostEqual(r.width, 2 * dm.A5_PT[0], delta=1)  # 296 mm: due A5 su un A4
+        self.assertAlmostEqual(r.height, 595.28, delta=2)
 
 
 class TestRegistrazione(unittest.TestCase):

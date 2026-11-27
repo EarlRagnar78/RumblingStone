@@ -1,0 +1,31 @@
+# sistemi/dnd35/dati/mdl.toml — il modificatore di livello delle razze senza dadi vita razziali
+# (ADR-0126, lotto 5)
+#
+# GENERATO da plans/esperimenti/regole-senza-omissioni-2026-11-12/estrai_mdl.py
+# dall'SRD 3.5 (olimot/srd-v3.5-md@c7f30a0c, OGL). Non si corregge a mano.
+
+[mdl.razze]
+# SRD, blocchi «X, 1st-Level Warrior»: riga «Level Adjustment» e tipo della creatura
+"aasimar" = { mdl = 1, tipo = "outsider", fonte = "monsters-o-r.md" }
+"drow" = { mdl = 2, tipo = "humanoid", fonte = "monsters-e-f.md" }
+"duergar" = { mdl = 1, tipo = "humanoid", fonte = "monsters-dr-dw.md" }
+"goblin" = { mdl = 0, tipo = "humanoid", fonte = "monsters-g.md" }
+"hobgoblin" = { mdl = 1, tipo = "humanoid", fonte = "monsters-h-i.md" }
+"kobold" = { mdl = 0, tipo = "humanoid", fonte = "monsters-k-l.md" }
+"merfolk" = { mdl = 1, tipo = "humanoid", fonte = "monsters-m-n.md" }
+"orc" = { mdl = 0, tipo = "humanoid", fonte = "monsters-o-r.md" }
+"svirfneblin" = { mdl = 3, tipo = "humanoid", fonte = "monsters-g.md" }
+"tiefling" = { mdl = 1, tipo = "outsider", fonte = "monsters-o-r.md" }
+
+[mdl.nomi]
+# come una scheda scrive la razza (espressioni regolari; non vengono dall'SRD)
+"aasimar" = '''aasimar'''
+"drow" = '''drow'''
+"duergar" = '''duergar'''
+"goblin" = '''goblin'''
+"hobgoblin" = '''hobgoblin'''
+"kobold" = '''kobold[oi]?|cobold[oi]'''
+"merfolk" = '''merfolk|marinid[ei]'''
+"orc" = '''(?<!half-)(?<!mezz)orc(?:[oa]|hi|he|s)?'''
+"svirfneblin" = '''svirfneblin|gnom[oi] delle profondità|deep gnomes?'''
+"tiefling" = '''tiefling'''

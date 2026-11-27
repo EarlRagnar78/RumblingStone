@@ -1,0 +1,43 @@
+# sistemi/dnd35/dati/linguaggi.toml — i linguaggi che razza e classe danno da soli (ADR-0126, lotto 7)
+#
+# GENERATO da plans/esperimenti/regole-senza-omissioni-2026-11-12/estrai_linguaggi.py
+# dall'SRD 3.5 (olimot/srd-v3.5-md@c7f30a0c, OGL). Non si corregge a mano.
+
+[linguaggi.razze]
+# SRD, razze: «Automatic Languages»
+"dwarf" = ["Common", "Dwarven"]
+"elf" = ["Common", "Elven"]
+"gnome" = ["Common", "Gnome"]
+"half-elf" = ["Common", "Elven"]
+"half-orc" = ["Common", "Orc"]
+"halfling" = ["Common", "Halfling"]
+"human" = ["Common"]
+# SRD, mostri: «Automatic Languages» delle razze senza dadi vita razziali (le chiavi di mdl.toml)
+"aasimar" = ["Common", "Celestial"]
+"drow" = ["Common", "Elven", "Undercommon"]
+"duergar" = ["Common", "Dwarven", "Undercommon"]
+"goblin" = ["Common", "Goblin"]
+"hobgoblin" = ["Common", "Goblin"]
+"kobold" = ["Draconic"]
+"orc" = ["Common", "Orc"]
+"svirfneblin" = ["Undercommon", "Gnome", "Common"]
+"tiefling" = ["Common", "Infernal"]
+
+[linguaggi.classi]
+# SRD, druido: «A druid also knows Druidic»
+druid = ["Druidic"]
+
+[linguaggi.nomi]
+# come una scheda scrive ogni linguaggio (espressioni regolari; non vengono dall'SRD)
+"Common" = "comune|common"
+"Dwarven" = "nanico|dwarven"
+"Elven" = "elfico|elven"
+"Gnome" = "gnomesco|gnome"
+"Orc" = "orchesco|orc"
+"Halfling" = "halfling"
+"Druidic" = "druidico|druidic"
+"Goblin" = "goblin"
+"Draconic" = "draconico|draconic"
+"Undercommon" = "sottocomune|undercommon"
+"Celestial" = "celestiale|celestial"
+"Infernal" = "infernale|infernal"

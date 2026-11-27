@@ -1,0 +1,219 @@
+# sistemi/pf1e/dati/conformita_prd.toml — le regole PF1e che conformita_statblocchi
+# controlla sulle schede (generato da estrai_prd_pf1e.py, non si scrive a mano).
+fonte = "PRD PF1e, devonjones/PSRD-Data@76ea4784: tabelle delle classi, Bestiary «Creature Types», creature del Bestiario 1-4"
+
+# classe = { bab per livello, ts = [Tempra, Riflessi, Volontà], tabella del PRD }
+# buono = 2 + L/2, scarso = L/3; *_prestigio = (L+1)/2 e (L+1)/3 (classi di prestigio)
+[classi]
+"adept" = { bab = 0.5, ts = ["scarso", "scarso", "buono"], tipo = "npc", tabella = "book-cr 1640" }
+"arcane archer" = { bab = 1.0, ts = ["buono_prestigio", "buono_prestigio", "scarso_prestigio"], tipo = "prestige", tabella = "book-cr 1654" }
+"arcane trickster" = { bab = 0.5, ts = ["scarso_prestigio", "buono_prestigio", "buono_prestigio"], tipo = "prestige", tabella = "book-cr 1673" }
+"aristocrat" = { bab = 0.75, ts = ["scarso", "scarso", "buono"], tipo = "npc", tabella = "book-cr 1686" }
+"assassin" = { bab = 0.75, ts = ["scarso_prestigio", "buono_prestigio", "scarso_prestigio"], tipo = "prestige", tabella = "book-cr 1697" }
+"barbarian" = { bab = 1.0, ts = ["buono", "scarso", "scarso"], tipo = "core", tabella = "book-cr 1718" }
+"bard" = { bab = 0.75, ts = ["scarso", "buono", "buono"], tipo = "core", tabella = "book-cr 1772" }
+"cleric" = { bab = 0.75, ts = ["buono", "scarso", "buono"], tipo = "core", tabella = "book-cr 1809" }
+"commoner" = { bab = 0.5, ts = ["scarso", "scarso", "scarso"], tipo = "npc", tabella = "book-cr 1996" }
+"dragon disciple" = { bab = 0.75, ts = ["buono_prestigio", "scarso_prestigio", "buono_prestigio"], tipo = "prestige", tabella = "book-cr 2008" }
+"druid" = { bab = 0.75, ts = ["buono", "scarso", "buono"], tipo = "core", tabella = "book-cr 2027" }
+"duelist" = { bab = 1.0, ts = ["scarso_prestigio", "buono_prestigio", "scarso_prestigio"], tipo = "prestige", tabella = "book-cr 2117" }
+"eldritch knight" = { bab = 1.0, ts = ["buono_prestigio", "scarso_prestigio", "scarso_prestigio"], tipo = "prestige", tabella = "book-cr 2140" }
+"expert" = { bab = 0.75, ts = ["scarso", "scarso", "buono"], tipo = "npc", tabella = "book-cr 2150" }
+"fighter" = { bab = 1.0, ts = ["buono", "scarso", "scarso"], tipo = "core", tabella = "book-cr 2159" }
+"loremaster" = { bab = 0.5, ts = ["scarso_prestigio", "scarso_prestigio", "buono_prestigio"], tipo = "prestige", tabella = "book-cr 2194" }
+"monk" = { bab = 0.75, ts = ["buono", "buono", "buono"], tipo = "core", tabella = "book-cr 2210" }
+"mystic theurge" = { bab = 0.5, ts = ["scarso_prestigio", "scarso_prestigio", "buono_prestigio"], tipo = "prestige", tabella = "book-cr 2250" }
+"paladin" = { bab = 1.0, ts = ["buono", "scarso", "buono"], tipo = "core", tabella = "book-cr 2262" }
+"pathfinder chronicler" = { bab = 0.75, ts = ["scarso_prestigio", "buono_prestigio", "buono_prestigio"], tipo = "prestige", tabella = "book-cr 2311" }
+"ranger" = { bab = 1.0, ts = ["buono", "buono", "scarso"], tipo = "core", tabella = "book-cr 2332" }
+"rogue" = { bab = 0.75, ts = ["scarso", "buono", "scarso"], tipo = "core", tabella = "book-cr 2370" }
+"shadowdancer" = { bab = 0.75, ts = ["scarso_prestigio", "buono_prestigio", "scarso_prestigio"], tipo = "prestige", tabella = "book-cr 2419" }
+"sorcerer" = { bab = 0.5, ts = ["scarso", "scarso", "buono"], tipo = "core", tabella = "book-cr 2443" }
+"warrior" = { bab = 1.0, ts = ["buono", "scarso", "scarso"], tipo = "npc", tabella = "book-cr 2572" }
+"wizard" = { bab = 0.5, ts = ["scarso", "scarso", "buono"], tipo = "core", tabella = "book-cr 2581" }
+"alchemist" = { bab = 0.75, ts = ["buono", "buono", "scarso"], tipo = "base", tabella = "book-apg 835" }
+"battle herald" = { bab = 1.0, ts = ["buono_prestigio", "scarso_prestigio", "buono_prestigio"], tipo = "prestige", tabella = "book-apg 899" }
+"cavalier" = { bab = 1.0, ts = ["buono", "scarso", "scarso"], tipo = "base", tabella = "book-apg 934" }
+"holy vindicator" = { bab = 1.0, ts = ["buono_prestigio", "scarso_prestigio", "buono_prestigio"], tipo = "prestige", tabella = "book-apg 1013" }
+"horizon walker" = { bab = 1.0, ts = ["buono_prestigio", "scarso_prestigio", "scarso_prestigio"], tipo = "prestige", tabella = "book-apg 1035" }
+"inquisitor" = { bab = 0.75, ts = ["buono", "scarso", "buono"], tipo = "base", tabella = "book-apg 1082" }
+"master chymist" = { bab = 1.0, ts = ["buono_prestigio", "buono_prestigio", "scarso_prestigio"], tipo = "prestige", tabella = "book-apg 1130" }
+"master spy" = { bab = 0.75, ts = ["scarso_prestigio", "buono_prestigio", "buono_prestigio"], tipo = "prestige", tabella = "book-apg 1162" }
+"nature warden" = { bab = 0.75, ts = ["buono_prestigio", "scarso_prestigio", "buono_prestigio"], tipo = "prestige", tabella = "book-apg 1190" }
+"oracle" = { bab = 0.75, ts = ["scarso", "scarso", "buono"], tipo = "base", tabella = "book-apg 1215" }
+"rage prophet" = { bab = 0.75, ts = ["buono_prestigio", "scarso_prestigio", "buono_prestigio"], tipo = "prestige", tabella = "book-apg 1395" }
+"stalwart defender" = { bab = 1.0, ts = ["buono_prestigio", "scarso_prestigio", "buono_prestigio"], tipo = "prestige", tabella = "book-apg 1418" }
+"summoner" = { bab = 0.75, ts = ["scarso", "scarso", "buono"], tipo = "base", tabella = "book-apg 1448" }
+"witch" = { bab = 0.5, ts = ["scarso", "scarso", "buono"], tipo = "base", tabella = "book-apg 1562" }
+"antipaladin" = { bab = 1.0, ts = ["buono", "scarso", "buono"], tipo = "npc", tabella = "book-apg 2735" }
+"arcanist" = { bab = 0.5, ts = ["scarso", "scarso", "buono"], tipo = "hybrid", tabella = "book-acg 571" }
+"bloodrager" = { bab = 1.0, ts = ["buono", "scarso", "scarso"], tipo = "hybrid", tabella = "book-acg 630" }
+"brawler" = { bab = 1.0, ts = ["buono", "buono", "scarso"], tipo = "hybrid", tabella = "book-acg 758" }
+"hunter" = { bab = 0.75, ts = ["buono", "buono", "scarso"], tipo = "hybrid", tabella = "book-acg 781" }
+"investigator" = { bab = 0.75, ts = ["scarso", "buono", "buono"], tipo = "hybrid", tabella = "book-acg 825" }
+"shaman" = { bab = 0.75, ts = ["scarso", "scarso", "buono"], tipo = "hybrid", tabella = "book-acg 877" }
+"skald" = { bab = 0.75, ts = ["buono", "scarso", "buono"], tipo = "hybrid", tabella = "book-acg 1084" }
+"slayer" = { bab = 1.0, ts = ["buono", "buono", "scarso"], tipo = "hybrid", tabella = "book-acg 1114" }
+"swashbuckler" = { bab = 1.0, ts = ["scarso", "buono", "scarso"], tipo = "hybrid", tabella = "book-acg 1145" }
+"warpriest" = { bab = 0.75, ts = ["buono", "scarso", "buono"], tipo = "hybrid", tabella = "book-acg 1183" }
+"ninja" = { bab = 0.75, ts = ["scarso", "buono", "scarso"], tipo = "base", tabella = "book-uc 996" }
+"samurai" = { bab = 1.0, ts = ["buono", "scarso", "scarso"], tipo = "base", tabella = "book-uc 1058" }
+"gunslinger" = { bab = 1.0, ts = ["buono", "buono", "scarso"], tipo = "base", tabella = "book-uc 1099" }
+"magus" = { bab = 0.75, ts = ["buono", "scarso", "buono"], tipo = "base", tabella = "book-um 598" }
+
+# nome italiano (lessico_it_pf1.tsv, classi PNG da lessico_it_35.tsv) = classe del PRD
+[alias_classi]
+"adepto" = "adept"
+"alchimista" = "alchemist"
+"antipaladino" = "antipaladin"
+"araldo condottiero" = "battle herald"
+"arcanista" = "arcanist"
+"arciere arcano" = "arcane archer"
+"aristocratico" = "aristocrat"
+"assassino" = "assassin"
+"attaccabrighe" = "brawler"
+"barbaro" = "barbarian"
+"bardo" = "bard"
+"cacciatore" = "hunter"
+"cavaliere" = "cavalier"
+"chierico" = "cleric"
+"combattente" = "warrior"
+"convocatore" = "summoner"
+"custode della natura" = "nature warden"
+"difensore indomito" = "stalwart defender"
+"discepolo dei draghi" = "dragon disciple"
+"druido" = "druid"
+"duellante" = "duelist"
+"esperto" = "expert"
+"fattucchiere" = "witch"
+"guerriero" = "fighter"
+"guerriero arcano" = "eldritch knight"
+"inquisitore" = "inquisitor"
+"intrepido" = "swashbuckler"
+"investigatore" = "investigator"
+"iracondo di stirpe" = "bloodrager"
+"ladro" = "rogue"
+"maestro del sapere" = "loremaster"
+"maestro spia" = "master spy"
+"mago" = "wizard"
+"magus" = "magus"
+"mastro chimico" = "master chymist"
+"mistificatore arcano" = "arcane trickster"
+"monaco" = "monk"
+"ninja" = "ninja"
+"ombra danzante" = "shadowdancer"
+"oracolo" = "oracle"
+"paladino" = "paladin"
+"pistolero" = "gunslinger"
+"popolano" = "commoner"
+"predatore" = "slayer"
+"profeta furioso" = "rage prophet"
+"ranger" = "ranger"
+"sacerdote guerriero" = "warpriest"
+"samurai" = "samurai"
+"scaldo" = "skald"
+"sciamano" = "shaman"
+"stregone" = "sorcerer"
+"teurgo mistico" = "mystic theurge"
+"trovatore" = "pathfinder chronicler"
+"vendicatore divino" = "holy vindicator"
+"viandante dell'orizzonte" = "horizon walker"
+
+# scurovisione in metri (0 = no), visione crepuscolare; book-b1 «Creature Types»
+[sensi.tipi]
+"aberration" = { scurovisione = 18, crepuscolare = false, sezione = 361 }
+"animal" = { scurovisione = 0, crepuscolare = true, sezione = 363 }
+"construct" = { scurovisione = 18, crepuscolare = true, sezione = 365 }
+"dragon" = { scurovisione = 18, crepuscolare = true, sezione = 367 }
+"fey" = { scurovisione = 0, crepuscolare = true, sezione = 369 }
+"magical beast" = { scurovisione = 18, crepuscolare = true, sezione = 373 }
+"monstrous humanoid" = { scurovisione = 18, crepuscolare = false, sezione = 375 }
+"outsider" = { scurovisione = 18, crepuscolare = false, sezione = 379 }
+"plant" = { scurovisione = 0, crepuscolare = true, sezione = 381 }
+"undead" = { scurovisione = 18, crepuscolare = false, sezione = 383 }
+"vermin" = { scurovisione = 18, crepuscolare = false, sezione = 385 }
+
+[sensi.sottotipi]
+"agathion" = { scurovisione = 0, crepuscolare = true, sezione = 392 }
+"angel" = { scurovisione = 18, crepuscolare = true, sezione = 394 }
+"archon" = { scurovisione = 18, crepuscolare = true, sezione = 396 }
+"azata" = { scurovisione = 18, crepuscolare = true, sezione = 398 }
+"dwarf" = { scurovisione = 18, crepuscolare = false, sezione = 405 }
+"elf" = { scurovisione = 0, crepuscolare = true, sezione = 408 }
+"giant" = { scurovisione = 0, crepuscolare = true, sezione = 412 }
+"gnome" = { scurovisione = 0, crepuscolare = true, sezione = 413 }
+"inevitable" = { scurovisione = 0, crepuscolare = true, sezione = 419 }
+"nightshade" = { scurovisione = 0, crepuscolare = true, sezione = 422 }
+"orc" = { scurovisione = 18, crepuscolare = false, sezione = 423 }
+
+# umanoidi del Bestiario 1-4 con sensi propri, per nome italiano (lessico_it_pf1.tsv)
+[sensi.razze]
+"adlet" = { scurovisione = 0, crepuscolare = true, prd = "Adlet", fonte = "book-b3 19" }
+"athach" = { scurovisione = 18, crepuscolare = true, prd = "Athach", fonte = "book-b2 172" }
+"boggard" = { scurovisione = 18, crepuscolare = true, prd = "Boggard", fonte = "book-b1 689" }
+"bugbear" = { scurovisione = 18, crepuscolare = false, prd = "Bugbear", fonte = "book-b1 697" }
+"changeling" = { scurovisione = 18, crepuscolare = false, prd = "Changeling", fonte = "book-b4 182" }
+"ciclope" = { scurovisione = 0, crepuscolare = true, prd = "Cyclops", fonte = "book-b1 808" }
+"coboldo" = { scurovisione = 18, crepuscolare = false, prd = "Kobold", fonte = "book-b1 1908" }
+"derro" = { scurovisione = 18, crepuscolare = false, prd = "Derro", fonte = "book-b1 922" }
+"dhampir" = { scurovisione = 18, crepuscolare = true, prd = "Dhampir", fonte = "book-b2 593" }
+"drow" = { scurovisione = 36, crepuscolare = false, prd = "Drow", fonte = "book-b1 1279" }
+"drow nobile" = { scurovisione = 36, crepuscolare = false, prd = "Drow Noble", fonte = "book-b1 1302" }
+"duergar" = { scurovisione = 36, crepuscolare = false, prd = "Duergar", fonte = "book-b1 1318" }
+"ettin" = { scurovisione = 0, crepuscolare = true, prd = "Ettin", fonte = "book-b1 1429" }
+"felinide" = { scurovisione = 0, crepuscolare = true, prd = "Catfolk", fonte = "book-b3 328" }
+"gigante degli oceani" = { scurovisione = 0, crepuscolare = true, prd = "Giant, Ocean", fonte = "book-b4 888" }
+"gigante dei boschi" = { scurovisione = 0, crepuscolare = true, prd = "Giant, Wood", fonte = "book-b2 942" }
+"gigante dei deserti" = { scurovisione = 0, crepuscolare = true, prd = "Giant, Desert", fonte = "book-b3 966" }
+"gigante dei fiumi" = { scurovisione = 0, crepuscolare = true, prd = "Giant, River", fonte = "book-b4 894" }
+"gigante del fuoco" = { scurovisione = 0, crepuscolare = true, prd = "Giant, Fire", fonte = "book-b1 1582" }
+"gigante del gelo" = { scurovisione = 0, crepuscolare = true, prd = "Giant, Frost", fonte = "book-b1 1589" }
+"gigante della taiga" = { scurovisione = 0, crepuscolare = true, prd = "Giant, Taiga", fonte = "book-b2 936" }
+"gigante delle caverne" = { scurovisione = 36, crepuscolare = true, prd = "Giant, Cave", fonte = "book-b3 959" }
+"gigante delle ceneri" = { scurovisione = 0, crepuscolare = true, prd = "Giant, Ash", fonte = "book-b3 950" }
+"gigante delle colline" = { scurovisione = 0, crepuscolare = true, prd = "Giant, Hill", fonte = "book-b1 1594" }
+"gigante delle giungle" = { scurovisione = 0, crepuscolare = true, prd = "Giant, Jungle", fonte = "book-b3 973" }
+"gigante delle nuvole" = { scurovisione = 0, crepuscolare = true, prd = "Giant, Cloud", fonte = "book-b1 1576" }
+"gigante delle paludi" = { scurovisione = 0, crepuscolare = true, prd = "Giant, Marsh", fonte = "book-b2 924" }
+"gigante delle rocce" = { scurovisione = 18, crepuscolare = true, prd = "Giant, Stone", fonte = "book-b1 1599" }
+"gigante delle rune" = { scurovisione = 0, crepuscolare = true, prd = "Giant, Rune", fonte = "book-b2 929" }
+"gigante delle rupi" = { scurovisione = 0, crepuscolare = true, prd = "Giant, Cliff", fonte = "book-b4 881" }
+"gigante delle scorie" = { scurovisione = 0, crepuscolare = true, prd = "Giant, Slag", fonte = "book-b4 900" }
+"gigante delle tempeste" = { scurovisione = 0, crepuscolare = true, prd = "Giant, Storm", fonte = "book-b1 1606" }
+"gnoll" = { scurovisione = 18, crepuscolare = false, prd = "Gnoll", fonte = "book-b1 1627" }
+"goblin" = { scurovisione = 18, crepuscolare = false, prd = "Goblin", fonte = "book-b1 1644" }
+"grande ciclope" = { scurovisione = 0, crepuscolare = true, prd = "Cyclops, Great", fonte = "book-b3 459" }
+"grippli" = { scurovisione = 18, crepuscolare = false, prd = "Grippli", fonte = "book-b2 1073" }
+"hobgoblin" = { scurovisione = 18, crepuscolare = false, prd = "Hobgoblin", fonte = "book-b1 1825" }
+"kitsune" = { scurovisione = 0, crepuscolare = true, prd = "Kitsune", fonte = "book-b4 1236" }
+"locathah" = { scurovisione = 0, crepuscolare = true, prd = "Locathah", fonte = "book-b2 1302" }
+"lupo mannaro" = { scurovisione = 0, crepuscolare = true, prd = "Werewolf", fonte = "book-b1 2060" }
+"marinide" = { scurovisione = 0, crepuscolare = true, prd = "Merfolk", fonte = "book-b1 2150" }
+"merrow d'acqua dolce" = { scurovisione = 0, crepuscolare = true, prd = "Merrow, Freshwater", fonte = "book-b2 1385" }
+"merrow d'acqua salata" = { scurovisione = 0, crepuscolare = true, prd = "Merrow, Saltwater", fonte = "book-b2 1386" }
+"nagaji" = { scurovisione = 0, crepuscolare = true, prd = "Nagaji", fonte = "book-b4 1448" }
+"ogre" = { scurovisione = 18, crepuscolare = true, prd = "Ogre", fonte = "book-b1 2292" }
+"orco" = { scurovisione = 18, crepuscolare = false, prd = "Orc", fonte = "book-b1 2303" }
+"rattoide" = { scurovisione = 18, crepuscolare = false, prd = "Ratfolk", fonte = "book-b3 1810" }
+"samsaran" = { scurovisione = 0, crepuscolare = true, prd = "Samsaran", fonte = "book-b4 1687" }
+"sasquatch" = { scurovisione = 18, crepuscolare = true, prd = "Sasquatch", fonte = "book-b3 1856" }
+"skulk" = { scurovisione = 0, crepuscolare = true, prd = "Skulk", fonte = "book-b2 1864" }
+"svirfneblin" = { scurovisione = 36, crepuscolare = true, prd = "Svirfneblin", fonte = "book-b1 2649" }
+"tengu" = { scurovisione = 0, crepuscolare = true, prd = "Tengu", fonte = "book-b1 2674" }
+"troglodita" = { scurovisione = 27, crepuscolare = false, prd = "Troglodyte", fonte = "book-b1 2719" }
+"troll" = { scurovisione = 18, crepuscolare = true, prd = "Troll", fonte = "book-b1 2724" }
+"troll jotund" = { scurovisione = 0, crepuscolare = true, prd = "Troll, Jotund", fonte = "book-b3 2160" }
+"troll dei ghiacci" = { scurovisione = 18, crepuscolare = true, prd = "Troll, Ice", fonte = "book-b2 2050" }
+"troll del muschio" = { scurovisione = 18, crepuscolare = true, prd = "Troll, Moss", fonte = "book-b3 2168" }
+"troll delle rocce" = { scurovisione = 18, crepuscolare = true, prd = "Troll, Rock", fonte = "book-b2 2056" }
+"udeo" = { scurovisione = 0, crepuscolare = true, prd = "Udaeus", fonte = "book-b4 1985" }
+"vanara" = { scurovisione = 0, crepuscolare = true, prd = "Vanara", fonte = "book-b3 2223" }
+"vishkanya" = { scurovisione = 0, crepuscolare = true, prd = "Vishkanya", fonte = "book-b3 2237" }
+"wayang" = { scurovisione = 18, crepuscolare = false, prd = "Wayang", fonte = "book-b4 2047" }
+"wikkawak" = { scurovisione = 18, crepuscolare = false, prd = "Wikkawak", fonte = "book-b4 2088" }
+
+[corrompere_acqua]
+# «Liquid-based magic items … must succeed on a Will save (DC equal to the dragon's
+# frightful presence) or become ruined» — la stessa regola dell'SRD 3.5
+cd = "presenza_terrificante"
+fonte = "book-b1 1112 «Corrupt Water»"

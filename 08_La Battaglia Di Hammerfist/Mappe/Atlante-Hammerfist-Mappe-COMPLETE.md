@@ -4,12 +4,10 @@
 > **Stato**: canonico — **MASTER VISIVO** dell'arco (piano ARC-08 A8,
 > 2026-07-02). Canone di trama in `campaign/state.md`, non ancora
 > giocato (piano ARC-08 A0). **Ultima revisione**: 2026-07-02.
-> **⚠️ Disambiguazione nomi (A10, D2)**: **Thorin** Runaforte = pregen
-> chierico (agisce SOLO nel flashback D6, poi come PNG); **Thorik** =
-> PG guerriero (compare SOLO dal finale, D6/E6, mai prima); **Thorek**
-> = Re di Hammerfist (comandante difensore per tutta la battaglia).
-> Tre persone diverse — mai fonderle (audit occorrenza-per-occorrenza
-> 2026-07-02: refusi corretti, vedi changelog).
+> **⚠️ Nomi (A10, D2)**: **Thorik** = PG guerriero (compare SOLO dal
+> finale, D6/E6, mai prima); **Thorek** = Re di Hammerfist (comandante
+> difensore per tutta la battaglia). Due persone diverse — mai fonderle.
+> Il pregen chierico si chiama **Harbek** Runaforte dal 2026-11-14 (DM).
 > **🖼️ Immagini reali (C3)**: i riferimenti "**Immagine:** [NNN]
 > `hammerfist-*.png`" sotto sono placeholder. Le immagini **reali**
 > (webp in `immagini/`) sono classificate in
@@ -105,11 +103,11 @@ questo file resta il master narrativo (descrizioni, immagini, prompt).
 
 **Tipo:** Infiltrazione tattica  
 **Scala:** 1 quadrato = 1,5 metri (la griglia della L1)  
-**Quota:** il fondo del canyon a ~900 m s.l.m., +30 m sulla piana `[INFERRED]`  
+**Quota:** il fondo del canyon a ~550 m s.l.m., +30 m sulla piana `[CANONE — DM 2026-11-04, P16, quota sul mare]`  
 **Livello Sfida:** CD 5-12 (variabile approccio)
 
 **Descrizione Scenario:**
-Il gruppo di ricognizione nanico (Borin, Dara, Thorin, Nala) deve attraversare un canyon roccioso stretto al crepuscolo. Il sentiero nascosto si snoda tra massi aguzzi offrendo copertura parziale, ma interseca il percorso di una pattuglia orchesca: 3 Orchi in sella a Worg (lupi giganti mostruosi).
+Il gruppo di ricognizione nanico (Borin, Dara, Harbek, Nala) deve attraversare un canyon roccioso stretto al crepuscolo. Il sentiero nascosto si snoda tra massi aguzzi offrendo copertura parziale, ma interseca il percorso di una pattuglia orchesca: 3 Orchi in sella a Worg (lupi giganti mostruosi).
 
 **Elementi Tattici Chiave:**
 - **Terreno:** Rocce impraticabili (zone grigie), sentiero normale (zone chiare)
@@ -146,7 +144,7 @@ SUD ↓
 
 **Tipo:** Osservazione tattica  
 **Scala:** 1 quadrato = 1,5 metri (la griglia della L1)  
-**Quota:** la base del torrione a ~930 m s.l.m., +60 m sulla piana del campo `[INFERRED]`  
+**Quota:** la base del torrione a ~580 m s.l.m., +60 m sulla piana del campo `[CANONE — DM 2026-11-04, P16, quota sul mare]`  
 **Altezza:** Torrione 18m, Dirupo 40m caduta
 
 **Descrizione Scenario:**
@@ -158,7 +156,7 @@ Antica torre di guardia in pietra (rovina) si erge sul bordo di un dirupo scosce
 - **Hobgoblin:** Distratti (guardano NORD), Osservare +5, Ascoltare +3
 - **Posizioni PG:**
   - Dara (D): Sommità torrione, cecchino + osservazione
-  - Thorin (T): Base torrione, pronto lanciare *Silenzio*
+  - Harbek (T): Base torrione, pronto lanciare *Silenzio*
   - Nala (N): Rocce nascoste, possibile infiltrazione origliare
   - Borin (B): Fiancheggiamento alternativo, backup combattimento
 
@@ -173,7 +171,7 @@ Antica torre di guardia in pietra (rovina) si erge sul bordo di un dirupo scosce
          D (Dara Top)
          │
     T   │   N
-   (Thorin)(Nala Rocce)
+   (Harbek)(Nala Rocce)
 ═══════════════════════════════
   . . . Terreno Aperto . . .
 ═══════════════════════════════
@@ -187,7 +185,7 @@ Antica torre di guardia in pietra (rovina) si erge sul bordo di un dirupo scosce
 - **Dara Osservare CD 20:** Conta forze nemiche accurate (900 unità)
 - **Dara Sopravvivenza CD 22:** Identifica rotte approccio nemiche
 - **Nala Nascondersi CD 22:** Infiltra camp hobgoblin, origliare ordini
-- **Thorin Conoscenze Religione CD 18:** Riconosce simboli draconici chierici
+- **Harbek Conoscenze Religione CD 18:** Riconosce simboli draconici chierici
 
 **Ricompense Successo:**
 - Intelligence completa: +2 Iniziativa massa nani
@@ -201,7 +199,7 @@ Antica torre di guardia in pietra (rovina) si erge sul bordo di un dirupo scosce
 **Immagine:** [150] `hammerfist-1a3.png` — **reale (C3)**: `immagini/03.webp` (orda schierata)
 
 **Tipo:** Vista strategica narrativa  
-**Scala:** strategica, 3 m/quadretto; il campo è sulla piana (870 m s.l.m. `[INFERRED]`), a qualche miglio dalle mura e a 400 m dal Torrione; nell'assedio l'orda si riaccampa a 500 m-1 km dalle mura  
+**Scala:** strategica, 3 m/quadretto; il campo è sulla piana (520 m s.l.m. `[CANONE — DM 2026-11-04, P16, quota sul mare]`), a qualche miglio dalle mura e a 400 m dal Torrione; nell'assedio l'orda si riaccampa a 500 m-1 km dalle mura  
   ⚠️ **Vista strategica — NON è una griglia di combattimento.**
 **Visione:** Cannocchiale Dara dal Torrione
 
@@ -238,7 +236,7 @@ Rappresentazione visiva di ciò che Dara vede con cannocchiale masterwork. Non �
 **Funzione:** DM overview posizioni iniziali tutte forze
 
 **Descrizione Scenario:**
-Alba Giorno 1 assedio. Esercito Mano Rossa dispiegato formazioni militari perfette davanti mura Hammerfist. L'orda è salita all'alba dagli accampamenti della piana (870 m s.l.m., 500 m-1 km dalle mura) e si schiera sul pendio, che scende di 80 m in 300 m; l'unica via a passo pieno è la strada a tornanti larga 6 m. Vista dall'alto mostra progressione distanze: Drago 300m quota aerea, Artiglieria 200m, Fanteria 100-60m, Fossato 0m.
+Alba Giorno 1 assedio. Esercito Mano Rossa dispiegato formazioni militari perfette davanti mura Hammerfist. L'orda è salita all'alba dagli accampamenti della piana (520 m s.l.m., 500 m-1 km dalle mura) e si schiera sul pendio, che scende di 80 m in 300 m; l'unica via a passo pieno è la strada a tornanti larga 6 m. Vista dall'alto mostra progressione distanze: Drago 300m quota aerea, Artiglieria 200m, Fanteria 100-60m, Fossato 0m.
 
 **Formazioni Distanza (Dal Fossato):**
 
@@ -274,7 +272,7 @@ Alba Giorno 1 assedio. Esercito Mano Rossa dispiegato formazioni militari perfet
 - 25 Worg Riders (Sinistra)
 - 25 Worg Riders (Destra)
 
-**0m - DIFESE NANICHE (950 m s.l.m., +80 m sulla piana `[INFERRED]`):**
+**0m - DIFESE NANICHE (600 m s.l.m., +80 m sulla piana `[CANONE — DM 2026-11-04, P16, quota sul mare]`):**
 - Fossato 6m
 - Ponte Levatoio
 - Cancello Principale
@@ -342,7 +340,7 @@ Vista dall'alto completa fortezza nanica Hammerfist. Mostra layout strategico da
 **Posizioni PG Iniziali:**
 - **B (Borin):** Cortile Esterno, comando prima linea
 - **D (Dara):** Torre Ovest sommità, cecchino
-- **T (Thorin):** Cortile Interno, supporto divino mobile
+- **T (Harbek):** Cortile Interno, supporto divino mobile
 - **N (Nala):** Bastione Sud G1, infiltrazione/sabotaggio
 
 **Simbologia Mappa:**
@@ -432,11 +430,11 @@ Vista laterale sezionata (Sud-Nord) mostra tutti livelli verticali fortezza dall
 **Sezione Sud → Nord (Livelli Altezza):** le quote sono riferite alla piana; la tabella delle quote è in testa alla L2 (MISURE, «la fortezza a gradoni»).
 
 **ESTERNO SUD (Attaccanti):**
-- 0 m (870 m s.l.m. `[INFERRED]`): la piana, gli accampamenti a 500 m-1 km
+- 0 m (520 m s.l.m. `[CANONE — DM 2026-11-04, P16, quota sul mare]`): la piana, gli accampamenti a 500 m-1 km
 - Da 0 a +80 m: il pendio, ~300 m in pianta (~27%), e la strada a tornanti al 15%
 - Fossato: 3 m sotto il piede del muro
 
-**FRONTE SUD E CORTILE ESTERNO (+80 m, 950 m s.l.m. `[INFERRED]`):**
+**FRONTE SUD E CORTILE ESTERNO (+80 m, 600 m s.l.m. `[CANONE — DM 2026-11-04, P16, quota sul mare]`):**
 - Soglia del cancello e pavimento del cortile esterno: la quota di riferimento
 - +12 m sul cortile: camminamento delle mura
 - +15 m sul cortile: Bastioni Sud G1-G2
@@ -446,10 +444,10 @@ Vista laterale sezionata (Sud-Nord) mostra tutti livelli verticali fortezza dall
 - Una scarpa di 20 m fra il cortile esterno e quello interno, con due scale di 30 m e un pianerottolo
 - La Porta Interna (il muro del 372) sta in cima, soglia a +100 m
 
-**CORTILE INTERNO (+100 m, 970 m s.l.m. `[INFERRED]`):**
+**CORTILE INTERNO (+100 m, 620 m s.l.m. `[CANONE — DM 2026-11-04, P16, quota sul mare]`):**
 - Comando Centrale qui (Protetto)
 
-**BASTIONI NORD E CITTADELLA (+120 m, 990 m s.l.m. `[INFERRED]`):**
+**BASTIONI NORD E CITTADELLA (+120 m, 640 m s.l.m. `[CANONE — DM 2026-11-04, P16, quota sul mare]`):**
 - Bastioni Nord B1-B2, 20 m sopra il cortile interno, contro la roccia
 - Dietro il portale dell'atrio una scala interna sale alla cittadella
 - Cuore Montagna: Profondo interno (Sessione 3)
@@ -500,7 +498,7 @@ Mappa schematica mostra DOVE ogni unità nanica posizionata all'inizio Giorno 1.
 
 **CORTILE ESTERNO (50):**
 - 5 Unit Nani d'Elite
-- **Borin Ferropugno** (Comando prima linea)
+- **Borin Giuraferro** (Comando prima linea)
 - Posizione: Davanti Cancello Principale (Ready intercettare brecce)
 
 **RISERVA, CORTILE ESTERNO (30):**
@@ -510,9 +508,9 @@ Mappa schematica mostra DOVE ogni unità nanica posizionata all'inizio Giorno 1.
 **CORTILE INTERNO - COMANDO (20):**
 - **Re Thorek Hammerfist** (Comando Supremo)
 - 2 Unit Guardie Reali (veterani scelti)
-- **Madre Superiora Dana Forgiapietra** (Supporto divino)
+- **Madre Superiora Dagmar Forgiapietra** (Supporto divino)
 - 5 **Cantitrici della Pietra** (Buff massa)
-- **Thorin Runaforte** (Supporto divino mobile)
+- **Harbek Runaforte** (Supporto divino mobile)
 
 **BASTIONE NORD B1 (30, a +120 m):**
 - 2 Unit Veterani + 1 Unit Balestrieri, 1 Balista
@@ -769,8 +767,8 @@ Momento ICONICO campagna: Fauci di Palude dragon dive attack vs Re Thorek. Al co
   - Espressione: Determinazione facing death
 - 10 Guardie Reali: Circondano re (Loyal unto death)
   - Scudi alzati (Won't help vs acid)
-- **Borin Ferropugno:** Lato sinistro (Se PG present)
-- **Thorin Runaforte:** Lato destro (Ready *Cure* desperate)
+- **Borin Giuraferro:** Lato sinistro (Se PG present)
+- **Harbek Runaforte:** Lato destro (Ready *Cure* desperate)
 - **Nala Cantapietre:** Nascosta merlature (Hidden, invisibile drago)
 
 **CORTILE INTERNO (Below, visible):**
@@ -787,12 +785,12 @@ Momento ICONICO campagna: Fauci di Palude dragon dive attack vs Re Thorek. Al co
 - **Area:** Cono 18m (Copre TUTTA walkway bastioni centrali)
 - **Danni:** 14d4 acido (Media 35 danni)
 - **TS:** Riflessi CD 29 dimezza (VERY hard)
-- **Targets:** Re Thorek + 10 Guardie + Borin + Thorin (13 totali)
+- **Targets:** Re Thorek + 10 Guardie + Borin + Harbek (13 totali)
 - **Risultato Probabile:** 
   - Guardie (PF 42 media): 6-8 KO instant (Failed save = death)
   - Re Thorek (PF 196): Survives (Resistenza + items), heavily wounded
   - Borin (PG): Tough call (Depends save)
-  - Thorin (pregen, non ancora PG in questa scena — D6/D2): Likely survive (Chierico AC alto)
+  - Harbek (pregen, non ancora PG in questa scena — D6/D2): Likely survive (Chierico AC alto)
 
 **Controffensive Possibili:**
 - **Dara (Torre Ovest):** Crossbow Heavy +1 attack (Extreme range -6, +19 final = +13)
@@ -845,7 +843,7 @@ Cortile Interno ridotto inferno fumante. Pozze acido verde corrosivo steam ovunq
 - **PG Positions:**
   - Borin: Guida evacuation (Leadership)
   - Dara: Retroguardia (Covering fire)
-  - Thorin: Thorek fianco (*Cure Serious* keeping alive)
+  - Harbek: Thorek fianco (*Cure Serious* keeping alive)
   - Nala: Scouting tunnel (Stealth checking traps)
 
 **SUD - ORCHI INSEGUITORI:**
@@ -874,7 +872,7 @@ Cortile Interno ridotto inferno fumante. Pozze acido verde corrosivo steam ovunq
 - Crossbow sniping capi orchi (Demoralize pursuers)
 - Trappole improvvisate macerie (Engineering check CD 15, 2d6 slashing damage)
 
-**THORIN (Chierico):**
+**HARBEK (Chierico):**
 - *Cure Serious Wounds* Re Thorek (Keep alive critical)
 - *Spiritual Weapon* floating defense (Distract orchi)
 - Prepared *Dimension Door* emergency escape (4 creatures, save leaders)
@@ -915,7 +913,7 @@ MAPPA 5.
 > pronta a respingere l'orda di inseguitori che sta per raggiungerlo."*
 
 **Elementi Mappa:**
-- **Piattaforma Rocciosa (Nord):** Dara (arco) e Thorin (supporto divino) in posizione di copertura
+- **Piattaforma Rocciosa (Nord):** Dara (arco) e Harbek (supporto divino) in posizione di copertura
 - **Ponte di Pietra (Centro, largo 3m):** Borin tiene la strozzatura in mischia
 - **Baratro Profondo (ambo i lati):** una creatura spinta oltre il bordo tenta un TS Riflessi CD 18 per aggrapparsi, altrimenti cade nell'oscurità (20d6 danni da caduta)
 - **Inseguitori (Sud):** Orchi e Hobgoblin in arrivo dai tunnel di MAPPA 3X
@@ -998,7 +996,7 @@ Multi-threat simultaneous:
 - Position: Elevated stalagmite (Scalare CD 10, +2 di circostanza per il terreno rialzato)
 - Precise Shot: Target Bugbear mixed melee
 
-**THORIN:**
+**HARBEK:**
 - Area Denial: *Blade Barrier* across tunnel opening (Block reinforcements)
 - Healing: *Mass Cure Moderate* wounded nani (Keep army functional)
 
@@ -1114,7 +1112,7 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
 - **Nemici:** TS Volontà CD 20 o spaventati per 10 round (guida, «Effetti dell'Apparizione»)
 - **PG:** Full HP, tutti buff attivi, surprise round vs nemici
 
-**Transizione:** Da PNG giocabili (Borin/Dara/Thorin/Nala) → Veri PG (Thorik/Tordek/Artemis/Hella)
+**Transizione:** Da PNG giocabili (Borin/Dara/Harbek/Nala) → Veri PG (Thorik/Tordek/Artemis/Hella)
 
 ---
 
@@ -1130,14 +1128,14 @@ Caverna naturale bellezza mozzafiato, cathedral-like grandezza. Soffitto 40m alt
 **Timing:** Post-Cuore Montagna rally, prima carica finale
 
 **Descrizione Scenario:**
-Vista laterale (side profile) mostra vantaggio tattico geografico nani: Hammerfist fortress elevated rocky terrain 80 m above the plain (950 m s.l.m. `[INFERRED]`). 90 nani superstiti + 4 PG schierati fuori cancello principale (Ora controllano exit), ready charge downhill. Il pendio (~27%, la strada al 15%) favorisce momentum carica. 120 metri distanza, ~30 m più in basso: Resti esercito Mano Rossa (400 superstiti) demoralized, disorganized in valley below.
+Vista laterale (side profile) mostra vantaggio tattico geografico nani: Hammerfist fortress elevated rocky terrain 80 m above the plain (600 m s.l.m. `[CANONE — DM 2026-11-04, P16, quota sul mare]`). 90 nani superstiti + 4 PG schierati fuori cancello principale (Ora controllano exit), ready charge downhill. Il pendio (~27%, la strada al 15%) favorisce momentum carica. 120 metri distanza, ~30 m più in basso: Resti esercito Mano Rossa (400 superstiti) demoralized, disorganized in valley below.
 
 **Geografia Verticale:**
 
 **OVEST (Hammerfist):**
-- **Fortezza Base:** +80 m sulla piana (950 m s.l.m. `[INFERRED]`)
+- **Fortezza Base:** +80 m sulla piana (600 m s.l.m. `[CANONE — DM 2026-11-04, P16, quota sul mare]`)
 - **Cancello Principale:** Exit controllato nani (Ripreso Sessione 3 controffensiva)
-- **Pendenza:** ~27% sul pendio, 15% sulla strada a tornanti (120 m in pianta = ~30 m di quota, dalle mura alla linea hobgoblin a ~920 m)
+- **Pendenza:** ~27% sul pendio, 15% sulla strada a tornanti (120 m in pianta = ~30 m di quota, dalle mura alla linea hobgoblin a ~570 m)
 - **Vantaggio:** Gravity assist carica (Velocity +50%, Impact damage +2)
 
 **CENTRO - CAMPO BATTAGLIA:**
@@ -1147,7 +1145,7 @@ Vista laterale (side profile) mostra vantaggio tattico geografico nani: Hammerfi
 - **Weather:** Nubi temporale gathering: la tempesta di Orion (*controllare tempo*), con la musica di Maestro Tempestas `[CANONE — DM 2026-10-19, D14]`
 
 **EST (Valle):**
-- **Esercito Mano Rossa:** sul pendio, la linea a ~920 m s.l.m. (+50 m sulla piana)
+- **Esercito Mano Rossa:** sul pendio, la linea a ~570 m s.l.m. (+50 m sulla piana)
 - **Formazione:** Disordinata (Morale -6 post-defeat Cuore Montagna)
 - **Numeri:** 400 superstiti (Da 900 iniziali = -55% casualties)
   - 100 Hobgoblin veterani (Disciplinati ancora)
@@ -1252,7 +1250,7 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
   - **Orion Pelleorsa (Druido):** SALTA SCHIENA DRAGO!
     - **Wild Shape: Dire Bear** forma (For 31), presa il round prima: salto, forma e presa non stanno in un round solo (SRD)
     - Lotta **contrapposta** (SRD): +24 dell'orso crudele contro +43 di Fauci, che se ne libera quasi sempre
-    - Il peso da solo non forza la discesa: Fauci scende **per scelta**, come dice la sua scheda (atterra sotto i 100 pf o per finire Thorik dopo averlo lasciato cadere) `[CANONE — DM 2026-10-19, D9]`
+    - Il peso da solo non forza la discesa: Fauci scende **per scelta**, come dice la sua scheda (atterra solo per finire Thorik dopo averlo lasciato cadere) `[CANONE — DM 2026-10-19, D9]`; sotto i 112 pf fugge `[CANONE — DM 2026-11-15]`
 
 **ARTEMIS BLACKROCK (Solo Aereo PG):**
 - **Altitude:** 30m (Below melee swarm)
@@ -1263,7 +1261,7 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
 **CONVERGENZA CLIMAX:**
 
 **Round 18-20: LA PICCHIATA SU THORIK** `[CANONE — DM 2026-10-19, D9]`
-- Fauci scende per scelta: sotto i 100 pf, o per Thorik (scheda, `ARC08-02` §1; Odio della stirpe +4). Picchiata in volo con Attacco in Volo e **presa di Thorik** `[CANONE — DM 2026-10-19]`: morso e presa al round 18, salita con lui in bocca al 19, soffio sui compagni e caduta al 20 (scheda, «La presa di Thorik», una volta)
+- Fauci scende per scelta, solo per Thorik (scheda, `ARC08-02` §1; Odio della stirpe +4); sotto i 112 pf fugge `[CANONE — DM 2026-11-15]`. Picchiata in volo con Attacco in Volo e **presa di Thorik** `[CANONE — DM 2026-10-19]`: morso e presa al round 18, salita con lui in bocca al 19, soffio sui compagni e caduta al 20 (scheda, «La presa di Thorik», una volta)
 - Orion sulla schiena, solo nei round in cui vince la lotta contrapposta; un fulmine di *chiamare fulmini* (3d10) su un'ala
 - Artemis Deflagrazione occulta (6d6) ala sinistra
 - **Result:** Thorik cade nella zona ⚡ (AB30-AG32 della MAPPA 4 REVISED), alle spalle della punta, a circa 30 m dalla linea; Fauci ci atterra al round 21 per finirlo; i PG convergono in 2 round
@@ -1282,7 +1280,7 @@ Rappresenta absolute APEX campagna - every element converges single moment glory
 - **Thorik Heroic:** Aegis Fang (+2 Ritornante *Dragondoom*) + castigo *Dragondoom*, 3/giorno, +2d6 contro un drago Enorme (stato del ramo di gruppo, D14; il guerriero non ha *punire il male*)
 
 > **Esito — ramo condizionale, non un fatto compiuto (D10, piano
-> ARC-08 A1)**: quando Fauci scende **sotto i 50 PF** il **default**
+> ARC-08 A1)**: quando Fauci scende **sotto i 112 PF** `[CANONE — DM 2026-11-15]` il **default**
 > è che tenta la fuga (Tattiche già previste nello statblock,
 > `00_Schede_dei_Personaggi...md` §1) — rottura del grapple di Orion,
 > decollo disperato verso le montagne meridionali, gravemente ferito

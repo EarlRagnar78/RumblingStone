@@ -20,6 +20,7 @@ from pathlib import Path
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "scripts"))
 
+import typst_motore  # noqa: E402
 import validate_corredo as vc  # noqa: E402
 
 SERATA = (REPO / "07_il Portale Della Forgia Eterna" / "homebrew" /
@@ -209,7 +210,7 @@ class TestIlPdf(unittest.TestCase):
         righe = [((10, 100, 200, 110), "fuori"), ((60, 100, 200, 110), "dentro")]
         self.assertEqual(vc.fuori_margine(righe, 595, 842), ["fuori"])
 
-    @unittest.skipUnless(shutil.which("typst"), "typst assente")
+    @unittest.skipUnless(typst_motore.disponibile(), "typst assente")
     def test_un_pdf_difettoso_viene_bocciato(self):
         try:
             import pymupdf  # noqa: F401
@@ -223,7 +224,9 @@ class TestIlPdf(unittest.TestCase):
                 "#place(top + left, dx: 0.3cm, dy: 3.05cm)[Due righe]\n"
                 "#place(top + left, dx: -1.8cm, dy: 8cm)[Sul bordo del foglio]\n",
                 encoding="utf-8")
-            subprocess.run(["typst", "compile", str(d / "x.typ")], check=True)
+            e = typst_motore.compila(d / "x.typ", d / "x.pdf", root=d, font=REPO / "scripts" / "fonts",
+                                     pacchetti=REPO / "scripts" / "typst" / "packages")
+            self.assertTrue(e.ok, e.errore)
             difetti, nota = vc.misura_pdf(d / "x.pdf")
             self.assertEqual(nota, "")
             self.assertTrue(any("sovrapposte" in x for x in difetti), difetti)

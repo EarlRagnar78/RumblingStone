@@ -6,6 +6,9 @@
 
 ```statblocco
 gs: 15
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 26
 ca-dettaglio: (+2 Des, +5 naturale da lich, +5 *pelle coriacea*, +4 deviazione), contatto 16, colto alla sprovvista 24
 pf: 90
@@ -139,6 +142,13 @@ Zeth sente tutto ciò che accade nel Leone di Pietra attraverso i suoi sensi mag
 #### Se Negozia (PG con filatteria o approccio diplomatico)
 - Dimostra il suo potere **senza attaccare**: fa emergere un leone spettrale dal muro accanto al PG più arrogante del gruppo, lo fissa per 3 secondi, poi lo fa scomparire. Messaggio: potrebbe farlo fuori, ma non lo farà.
 - Non attacca per primo a meno di minaccia diretta alla filatteria.
+
+#### Cosa sa dei PG
+- Con i Sensi del Lair sente chi entra nel Leone di Pietra prima di vederlo: quanti sono, se qualcuno porta la filatteria e chi parla con la natura. Riconosce le capacità druidiche di Hella prima che apra bocca, ed è con lei che parla per prima: è la sola che può leggere le rune del testamento (§Le rune nella Stanza Runica).
+- Della Mano Rossa sa quello che gli fa fare chi tiene la filatteria (§Filatteria: gliel'hanno rubata, non c'è un patto); dei PG sa solo quello che il lair gli dice in quel momento. Non sa niente della Corona di Adamantio né di Aegis Fang finché non li vede. `[INFERRED — Il Ghostlord sa dei PG più di quello che il lair gli mostra?; base: §Sensi del Lair e §Se Negozia della scheda, nessuna fonte gli dà altre notizie]`
+<!-- storico -->
+- era (17/11, corretto il 18/11): «Riconosce Hella come una del Cerchio» e «il patto che lo tiene sotto controllo». La scheda non nomina un Cerchio, e la Mano Rossa lo costringe con la filatteria rubata, non con un patto.
+<!-- /storico -->
 
 ## Esiti possibili
 

@@ -1,0 +1,693 @@
+[
+ {
+  "a": "Bestiario/mostri/chierico-gruumsh-cr11.md:22",
+  "b": "Bestiario/mostri/hobgoblin-bladebearer-ftr6-cr6.md:19",
+  "prima": "TS Temp +11, Rifl +6, Vol +13 (mantello di resistenza +2 incluso).",
+  "dopo": "TS Temp +7, Rifl +5/+6, Vol +5 (Volontà di Ferro).",
+  "sim": 0.64,
+  "entita": [
+   "Rifl",
+   "Temp"
+  ],
+  "nli": 0.999
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-CONSEGUENZE-ESITI.md:9",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md:180",
+  "prima": "eco Tiri‑Kitor (vendetta di Lanikar → +VP alleanza).",
+  "dopo": "Tiri-Kitor restano tiepidi (nessun eco-vendetta di Lanikar, B1.5).",
+  "sim": 0.56,
+  "entita": [
+   "Lanikar"
+  ],
+  "nli": 0.999
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md:109",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md:43",
+  "prima": "Lythiel si avvicina a Hella nel cortile esterno, dopo la cerimonia.",
+  "dopo": "Lythiel raggiunge Hella in un cortile interno o sui bastioni — un luogo tranquillo.",
+  "sim": 0.56,
+  "entita": [
+   "Hella"
+  ],
+  "nli": 0.999
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE4-CIRCOLO-MYTHAL-STATUE-TESTO.md:16",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ESITI-CONSEGUENZE.md:181",
+  "prima": "che il Circolo degli Otto usa qui è la Matrice del Mythal («La",
+  "dopo": "Il Circolo degli Otto è annientato (nessun Mythal).",
+  "sim": 0.6,
+  "entita": [
+   "Circolo",
+   "Mythal",
+   "Otto"
+  ],
+  "nli": 0.998
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:1115",
+  "b": "Bestiario/villain/Conte_Valerius/Conte_Valerius/Conte_Valerius.md:49",
+  "prima": "Lo statblocco del Treant di Adamantio è in Appendice A.",
+  "dopo": "Non sa ancora della Corona di Adamantio (messaggeri in transito).",
+  "sim": 0.57,
+  "entita": [
+   "Adamantio"
+  ],
+  "nli": 0.998
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE1.md:146",
+  "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:338",
+  "prima": "La Cintura della Devastazione vibra leggermente (riconosce potere divino)",
+  "dopo": "La Cintura della Devastazione rifiuta di attivarsi contro Skullcrusher,",
+  "sim": 0.58,
+  "entita": [
+   "Cintura",
+   "Devastazione"
+  ],
+  "nli": 0.997
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/Mappe/Portale-Forgia-L1-REVISED-UltraClear.md:327",
+  "b": "07_il Portale Della Forgia Eterna/Mappe/Portale-Forgia-L2-REVISED-UltraClear.md:394",
+  "prima": "│                                      └─┘ Centro: Col N, Riga 14 (Focal Point)",
+  "dopo": "│                                           🔴 ELDER FIRE ELEMENTAL (Col P, Riga 17 center!)",
+  "sim": 0.68,
+  "entita": [
+   "Riga"
+  ],
+  "nli": 0.997
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE.md:250",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1B-Cerchio-Treant-COMPLETO-maps.md:319",
+  "prima": "🔵 Hella: Col T, Riga 20 (CENTRO, casting, vulnerabile!)",
+  "dopo": "🔵 Hella: Col T, Riga 05 (frontline, deve reach centro!)",
+  "sim": 0.56,
+  "entita": [
+   "Hella",
+   "Riga"
+  ],
+  "nli": 0.996
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE1.md:498",
+  "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:338",
+  "prima": "La Cintura della Devastazione riceve upgrade temporaneo (dura fino completamento avventura):",
+  "dopo": "La Cintura della Devastazione rifiuta di attivarsi contro Skullcrusher,",
+  "sim": 0.56,
+  "entita": [
+   "Cintura",
+   "Devastazione"
+  ],
+  "nli": 0.996
+ },
+ {
+  "a": "Bestiario/mostri/bruto-deforme-sottosuolo-cr11.md:30",
+  "b": "Bestiario/villain/Zin_thara_Vel_Ryn/zin-thara-vel-ryn-cr12.md:51",
+  "prima": "Qualità speciali Scurovisione 18 m, vista crepuscolare, cattura massi, ira 1/giorno, schivare prodigioso.",
+  "dopo": "Qualità speciali Scurovisione 36 m, cecità alla luce solare, nascondersi in piena vista, elusione, schivare prodigioso.",
+  "sim": 0.71,
+  "entita": [
+   "Scurovisione"
+  ],
+  "nli": 0.996
+ },
+ {
+  "a": "Bestiario/villain/Zarim/zarim-illithid-luogotenente-cr12.md:41",
+  "b": "Bestiario/villain/Xal_thor/Xal_thor/Xal_thor.md:140",
+  "prima": "⚠ Prerequisito: un Psion 4 manifesta poteri fino al 2° livello; la telecinesi della scheda è un potere più alto.",
+  "dopo": "⚠ Prerequisito: un Psion 6 manifesta poteri fino al 3° livello; Psionic Dominate e Psionic Dimension Door sono del 4°, e li manifesta un Psion 7.",
+  "sim": 0.65,
+  "entita": [
+   "Prerequisito",
+   "Psion"
+  ],
+  "nli": 0.996
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE.md:629",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1B-Cerchio-Treant-COMPLETO-maps.md:319",
+  "prima": "🔵 Hella: Col T, Riga 20 (TRANCE, defenseless AC 10!)",
+  "dopo": "🔵 Hella: Col T, Riga 05 (frontline, deve reach centro!)",
+  "sim": 0.6,
+  "entita": [
+   "Hella",
+   "Riga"
+  ],
+  "nli": 0.995
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:1339",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE1.md:32",
+  "prima": "pozione con Sapienza Magica CD 25, un minuto, senza ritentare.",
+  "dopo": "Conoscenze (arcane) o Sapienza Magica CD 20 per intuire la presenza di un ancoraggio planare.",
+  "sim": 0.59,
+  "entita": [
+   "Sapienza Magica"
+  ],
+  "nli": 0.995
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:2957",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md:17",
+  "prima": "risponde con la sua gilda, e non nomina il Collezionista.",
+  "dopo": "Identificare chi porta cosa e aggiornare il Collezionista.",
+  "sim": 0.57,
+  "entita": [
+   "Collezionista"
+  ],
+  "nli": 0.994
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:3",
+  "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:3",
+  "prima": "Il Portale della Forgia Eterna — il Cuore di Moradin, i Doni, il Debito della Radice",
+  "dopo": "Il Portale della Forgia Eterna — la Sala, gli Otto Affreschi, la Stanza della Corona",
+  "sim": 0.62,
+  "entita": [
+   "Forgia Eterna",
+   "Portale"
+  ],
+  "nli": 0.994
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:3",
+  "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:2",
+  "prima": "Il Portale della Forgia Eterna — il Cuore di Moradin, i Doni, il Debito della Radice",
+  "dopo": "Il Portale della Forgia Eterna — Hammerfist ≈372 DR, il duello con Skullcrusher, il Rubino",
+  "sim": 0.56,
+  "entita": [
+   "Forgia Eterna",
+   "Portale"
+  ],
+  "nli": 0.994
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md:622",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md:1",
+  "prima": "[ ] Battaglia Finale Rethmar — Fase 0 Notte dei Drow",
+  "dopo": "Battaglia Finale di Rethmar — Sincronizzazione Armate (v2)",
+  "sim": 0.6,
+  "entita": [
+   "Rethmar"
+  ],
+  "nli": 0.992
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:1369",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md:939",
+  "prima": "In scena — Dove: l'oceano di roccia — Chi: nessuno",
+  "dopo": "In scena — Dove: il cortile interno — Chi: la Madre Superiora",
+  "sim": 0.59,
+  "entita": [
+   "Dove"
+  ],
+  "nli": 0.992
+ },
+ {
+  "a": "Bestiario/mostri/kulkorzhul-war-adept-cr7.md:25",
+  "b": "Bestiario/mostri/hobgoblin-bladebearer-ftr6-cr6.md:19",
+  "prima": "TS Temp +5, Rifl +6, Vol +5 (+3 vs sonno/paralisi ed elettricità).",
+  "dopo": "TS Temp +7, Rifl +5/+6, Vol +5 (Volontà di Ferro).",
+  "sim": 0.62,
+  "entita": [
+   "Rifl",
+   "Temp"
+  ],
+  "nli": 0.992
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:71",
+  "b": "07_il Portale Della Forgia Eterna/Immagini/PROMPT-IMMAGINI-07ILP.md:558",
+  "prima": "vita Hella Oakenshield, morta nella Stanza della Corona (ARC-06).",
+  "dopo": "Ti vedi avvicinare esitante al trono nella Stanza della Corona.",
+  "sim": 0.56,
+  "entita": [
+   "Stanza"
+  ],
+  "nli": 0.992
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE2.md:632",
+  "b": "07_il Portale Della Forgia Eterna/Immagini/PROMPT-IMMAGINI-07ILP.md:936",
+  "prima": "Aegis Fang canta debolmente nella mano - non paura, ma ANTICIPAZIONE.",
+  "dopo": "Aegis Fang urla nella mente di Thorik — non canta, URLA: «SANGUE ANTICO.",
+  "sim": 0.57,
+  "entita": [
+   "Fang"
+  ],
+  "nli": 0.992
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md:147",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-19-SEGRETI-DELL-ORDA.md:120",
+  "prima": "Artigianato (pietra) +3, Nascondersi −5, Muoversi Silenziosamente −5",
+  "dopo": "Osservare +7, Nascondersi +4, Muoversi Silenziosamente +7, Sopravvivenza +2",
+  "sim": 0.64,
+  "entita": [
+   "Muoversi Silenziosamente",
+   "Nascondersi"
+  ],
+  "nli": 0.992
+ },
+ {
+  "a": "Bestiario/png/morlin-coalhewer-cr12.md:1",
+  "b": "Bestiario/png/rurik-gorunn-cr10.md:1",
+  "prima": "Morlin Coalhewer, forgiatore di Moradin [TRANSCRIBED — PCGen, L1 2026-07-08]",
+  "dopo": "Rurik Gorunn, Martello di Moradin [TRANSCRIBED — PCGen, L1 2026-07-08]",
+  "sim": 0.74,
+  "entita": [
+   "Moradin"
+  ],
+  "nli": 0.992
+ },
+ {
+  "a": "Bestiario/mostri/bruto-deforme-sottosuolo-cr11.md:1",
+  "b": "Bestiario/mostri/ogre-micelio-sporeborn-cr8.md:1",
+  "prima": "Bruto Deforme del Sottosuolo (Gigante di Pietra deforme, Barbaro 2) [ACCEPTED — DM-canon]",
+  "dopo": "Ogre Micelio — Sporeborn di Sonjak (Barbaro 4) [ACCEPTED — DM-canon]",
+  "sim": 0.57,
+  "entita": [
+   "Barbaro"
+  ],
+  "nli": 0.992
+ },
+ {
+  "a": "Bestiario/villain/Sethrax_il_Velato/Sethrax.md:156",
+  "b": "Bestiario/villain/Zarim/zarim-illithid-luogotenente-cr12.md:41",
+  "prima": "⚠ Prerequisito: un Psion 5 manifesta poteri fino al 3° livello; Psionic Dimension Door è del 4°, e lo manifesta un Psion 7.",
+  "dopo": "⚠ Prerequisito: un Psion 4 manifesta poteri fino al 2° livello; la telecinesi della scheda è un potere più alto.",
+  "sim": 0.66,
+  "entita": [
+   "Prerequisito",
+   "Psion"
+  ],
+  "nli": 0.992
+ },
+ {
+  "a": "Bestiario/villain/Ghaurush_Cenerevento/Ghaurush_Cenerevento.md:88",
+  "b": "Bestiario/villain/Ghaurush_Cenerevento/ghaurush-cenerevento-secondo-incontro-cr18.md:91",
+  "prima": "Bucano i pugni di Tordek e i Treant della Collana.",
+  "dopo": "Aegis Fang non buca; i pugni di Tordek e i Treant della Collana sì.",
+  "sim": 0.8,
+  "entita": [
+   "Collana",
+   "Tordek",
+   "Treant"
+  ],
+  "nli": 0.991
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md:16",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md:622",
+  "prima": "La Battaglia di Rethmar NON è un wargame e NON è a ondate generiche.",
+  "dopo": "[ ] Battaglia Finale Rethmar — Fase 0 Notte dei Drow",
+  "sim": 0.55,
+  "entita": [
+   "Rethmar"
+  ],
+  "nli": 0.991
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Artemis-TorreInvisibile.md:10",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md:72",
+  "prima": "Day 25 (opz.) Saraah conferma direzione Torre via rito druidico al Sacred Forest.",
+  "dopo": "La mattina del Giorno 20 vola via verso il Sacred Forest.",
+  "sim": 0.55,
+  "entita": [
+   "Sacred Forest"
+  ],
+  "nli": 0.991
+ },
+ {
+  "a": "Bestiario/mostri/monaco-pugno-del-destino-cr7.md:23",
+  "b": "Bestiario/mostri/hobgoblin-doom-hand-cleric5-cr5.md:25",
+  "prima": "Medium humanoid (goblinoid), Monk 7 (ordine del Pugno del Destino), LE.",
+  "dopo": "Medium humanoid (goblinoid), Cleric 5 (Mano del Destino di Tiamat), LE.",
+  "sim": 0.73,
+  "entita": [
+   "Destino"
+  ],
+  "nli": 0.991
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:3",
+  "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:3",
+  "prima": "Il Portale della Forgia Eterna — il Cuore di Moradin, i Doni, il Debito della Radice",
+  "dopo": "Il Portale della Forgia Eterna — Seconda Gemma (Smeraldo della Forza)",
+  "sim": 0.63,
+  "entita": [
+   "Forgia Eterna",
+   "Portale"
+  ],
+  "nli": 0.991
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md:105",
+  "b": "Bestiario/villain/Salvatore/Salvatore.md:176",
+  "prima": "Individuazione del Magico dei maghi (la cassa irradia magia — la vera difficoltà).",
+  "dopo": "Individuazione del Magico non rileva nulla di insolito.",
+  "sim": 0.57,
+  "entita": [
+   "Magico"
+  ],
+  "nli": 0.99
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md:72",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md:419",
+  "prima": "Runaforte a chi gioca Hella, Dara a chi gioca Tordek, Nala a chi gioca",
+  "dopo": "Thorik, Thorin a chi gioca Hella, Dara a chi gioca Tordek, Nala a chi gioca",
+  "sim": 0.87,
+  "entita": [
+   "Dara",
+   "Hella",
+   "Nala",
+   "Tordek"
+  ],
+  "nli": 0.99
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md:1490",
+  "b": "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md:29",
+  "prima": "G1 (M14), poi 45 m di cortile esterno fino alla Porta Interna, la scala",
+  "dopo": "🎯 COMPRENSIONE: il cortile esterno è perduto e la Porta Interna è sfondata.",
+  "sim": 0.6,
+  "entita": [
+   "Porta Interna"
+  ],
+  "nli": 0.99
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:280",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:418",
+  "prima": "Incantesimi da Guardia Nera (LI 4°; 2 di 1° al giorno, CD 12): Incutere Paura, Infliggi Ferite Leggere.",
+  "dopo": "Incantesimi da Bardo Chiave (LI 4°): Frantumare, Suggestione, Cura Ferite Leggere, Rimuovere Paura.",
+  "sim": 0.55,
+  "entita": [
+   "Leggere"
+  ],
+  "nli": 0.99
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md:62",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-12-CRONOLOGIA-MARCH-CLOCK.md:52",
+  "prima": "Giorno 3 dell'assedio (≈ March Clock Day 18-19, vedi",
+  "dopo": "\"Giorno 3 dell'assedio\" ≠ March Clock Day 3. L'arrivo dei",
+  "sim": 0.79,
+  "entita": [
+   "March Clock"
+  ],
+  "nli": 0.989
+ },
+ {
+  "a": "Bestiario/villain/abbathor-cleric11-cr11.md:29",
+  "b": "Bestiario/mostri/duergar-chierico3-cr4.md:25",
+  "prima": "Medium humanoid (dwarf), Cleric 11 di Abbathor (domini Inganno/Male), LE.",
+  "dopo": "Medium humanoid (dwarf, duergar), Cleric 3 (Abbathor; domini Inganno/Male), LE.",
+  "sim": 0.88,
+  "entita": [
+   "Abbathor",
+   "Cleric",
+   "Inganno",
+   "Male"
+  ],
+  "nli": 0.989
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md:3",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-AVVENTURA.md:3",
+  "prima": "<!-- storico -->Versione: v1 (2026-07-17) — canone fornito dal DM (file \"Fazioni\",",
+  "dopo": "<!-- storico -->Versione: v1 (2026-07-01). <!-- /storico -->Modulo doppio-uso: (a) avventura autoconclusiva",
+  "sim": 0.59,
+  "entita": [
+   "Versione"
+  ],
+  "nli": 0.989
+ },
+ {
+  "a": "10-stand-alone/Il Giardino di Sale e Calce/giardino_sale_calce.md:370",
+  "b": "10-stand-alone/Il Giardino di Sale e Calce PF1e/giardino_sale_calce_pf1e.md:253",
+  "prima": "Chi nuota adiacente a Karkator sott'acqua fa il TS contro la nube di muco (Tempra CD 31).",
+  "dopo": "Chi nuota adiacente a Karkator sott'acqua fa il TS contro la nube di muco (Tempra CD 28), e gli asserviti sulla riva prendono gli attacchi d'opportunità.",
+  "sim": 0.72,
+  "entita": [
+   "Karkator"
+  ],
+  "nli": 0.989
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:97",
+  "b": "07_il Portale Della Forgia Eterna/ARC07-00-INDICE.md:40",
+  "prima": "La Corona porta ora due gemme (Topazio + Smeraldo).",
+  "dopo": "Corona in uscita = 3 gemme accese (Topazio/Tempo, Smeraldo/Terra,",
+  "sim": 0.6,
+  "entita": [
+   "Smeraldo",
+   "Topazio"
+  ],
+  "nli": 0.988
+ },
+ {
+  "a": "10-stand-alone/Il Giardino di Sale e Calce/giardino_sale_calce.md:21",
+  "b": "10-stand-alone/Il Giardino di Sale e Calce PF1e/giardino_sale_calce_pf1e.md:20",
+  "prima": "Sotto il Mercato del Ponte, il foro alla testa del ponte sul Cannath, c'è la Grande Cisterna di Rethmar: 57 metri per 37, diciotto metri di volta, pilastri di tufo, passerelle e catene.",
+  "dopo": "Sotto la piazza del Pozzo dei Sospiri, nel cuore di Qasr al-Milah, c'è la Grande Cisterna di Tufo: 57 metri per 37, diciotto metri di volta, pilastri di tufo, passerelle e catene.",
+  "sim": 0.76,
+  "entita": [
+   "Grande Cisterna"
+  ],
+  "nli": 0.988
+ },
+ {
+  "a": "Bestiario/mostri/bruto-deforme-sottosuolo-cr11.md:30",
+  "b": "Bestiario/mostri/drow-trickster-arcano-cr11.md:29",
+  "prima": "Qualità speciali Scurovisione 18 m, vista crepuscolare, cattura massi, ira 1/giorno, schivare prodigioso.",
+  "dopo": "Qualità speciali Scurovisione 36 m, cecità alla luce solare, individuazione delle trappole, schivare prodigioso, prestidigitazione a distanza.",
+  "sim": 0.61,
+  "entita": [
+   "Scurovisione"
+  ],
+  "nli": 0.987
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:945",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md:939",
+  "prima": "In scena — Dove: la Sala — Chi: la Custode delle Radici",
+  "dopo": "In scena — Dove: il cortile interno — Chi: la Madre Superiora",
+  "sim": 0.62,
+  "entita": [
+   "Dove"
+  ],
+  "nli": 0.986
+ },
+ {
+  "a": "Bestiario/png/Tempestas/Tempestas.md:22",
+  "b": "Bestiario/png/Lorana/Lorana/Lorana.md:53",
+  "prima": "Messaggero ufficiale del Consiglio di Rethmar (Brenna Sorvane è la sua patrona).",
+  "dopo": "Lorana non è membro ufficiale del Consiglio — è portata da Brenna Sorvane come voce di campo.",
+  "sim": 0.58,
+  "entita": [
+   "Brenna Sorvane",
+   "Consiglio"
+  ],
+  "nli": 0.986
+ },
+ {
+  "a": "Bestiario/villain/Sethrax_il_Velato/Sethrax.md:156",
+  "b": "Bestiario/villain/Xal_thor/Xal_thor/Xal_thor.md:140",
+  "prima": "⚠ Prerequisito: un Psion 5 manifesta poteri fino al 3° livello; Psionic Dimension Door è del 4°, e lo manifesta un Psion 7.",
+  "dopo": "⚠ Prerequisito: un Psion 6 manifesta poteri fino al 3° livello; Psionic Dominate e Psionic Dimension Door sono del 4°, e li manifesta un Psion 7.",
+  "sim": 0.9,
+  "entita": [
+   "Door",
+   "Prerequisito",
+   "Psion",
+   "Psionic Dimension"
+  ],
+  "nli": 0.986
+ },
+ {
+  "a": "Bestiario/png/grandmaster-rihan-cr14.md:1",
+  "b": "Bestiario/mostri/avversario-agile-giorno1-cr9.md:1",
+  "prima": "Grandmaster Rihan — Monk 14 [POINTER — statblocco nell'arco] [RIMANDO]",
+  "dopo": "Avversario agile Giorno 1 (Rogue/Monk) [POINTER — statblocco nell'arco] [RIMANDO]",
+  "sim": 0.68,
+  "entita": [
+   "Monk"
+  ],
+  "nli": 0.985
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-RUMBLING-STONE-SIDEMISSIONS.md:97",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-CHEAT-SHEET-Round-e-Porte.md:65",
+  "prima": "Incontro 4 (Mistress + Koryn), Incontro 5 (Ironclad + Kragar/Shen).",
+  "dopo": "Giorno 2 – Sconfigge illusionisti (Mistress + Koryn) e muri fisici (Ironclad + Kragar/Shen), sblocca Porta 2.",
+  "sim": 0.59,
+  "entita": [
+   "Ironclad",
+   "Koryn",
+   "Kragar",
+   "Mistress",
+   "Shen"
+  ],
+  "nli": 0.985
+ },
+ {
+  "a": "10-stand-alone/Il Giardino di Sale e Calce/appendice_creature.md:183",
+  "b": "10-stand-alone/Il Giardino di Sale e Calce PF1e/appendice_creature.md:180",
+  "prima": "Statistiche Equipaggiamento giaco di maglia sotto il grembiule da facchino, spada corta perfetta, balestra leggera, 2 pozioni di cura ferite moderate, 30 mo",
+  "dopo": "Statistiche Equipaggiamento giaco di maglia sotto la veste da acquaiolo, scimitarra perfetta, arco corto composito (For +3), 2 pozioni di cura ferite moderate, 30 mo",
+  "sim": 0.79,
+  "entita": [
+   "Equipaggiamento"
+  ],
+  "nli": 0.985
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/inizio.md:80",
+  "b": "Bestiario/villain/Zalkatar/Zalkatar.md:26",
+  "prima": "Warlock e l'anello Chaotic Illumination - Torre Invisibile",
+  "dopo": "la classe di prestigio e il Ring of Chaotic Illumination si risveglia.",
+  "sim": 0.56,
+  "entita": [
+   "Chaotic Illumination"
+  ],
+  "nli": 0.984
+ },
+ {
+  "a": "Bestiario/png/zhen-windwhisper-cr11.md:1",
+  "b": "Bestiario/mostri/avversario-agile-giorno1-cr9.md:1",
+  "prima": "Zhen Windwhisper — Monk 11 [POINTER — statblocco nell'arco] [RIMANDO]",
+  "dopo": "Avversario agile Giorno 1 (Rogue/Monk) [POINTER — statblocco nell'arco] [RIMANDO]",
+  "sim": 0.68,
+  "entita": [
+   "Monk"
+  ],
+  "nli": 0.983
+ },
+ {
+  "a": "10-stand-alone/Il Giardino di Sale e Calce PF1e/Mappe/QM-3-QUOTA-MEDIA-E-FONDO.md:11",
+  "b": "10-stand-alone/Il Giardino di Sale e Calce/Mappe/GSC-2-QUOTA-ALTA.md:1",
+  "prima": "QM-3 — La Grande Cisterna, quota media (+6 m) e fondo: ponte maestro, navate, vasca",
+  "dopo": "GS-2 — La Grande Cisterna, quota alta (+15 m): le passerelle e i nidi dei Ragni delle Catene",
+  "sim": 0.56,
+  "entita": [
+   "Grande Cisterna"
+  ],
+  "nli": 0.983
+ },
+ {
+  "a": "10-stand-alone/Il Giardino di Sale e Calce PF1e/Mappe/QM-3-QUOTA-MEDIA-E-FONDO.md:11",
+  "b": "10-stand-alone/Il Giardino di Sale e Calce/Mappe/GSC-2-QUOTA-ALTA.md:11",
+  "prima": "QM-3 — La Grande Cisterna, quota media (+6 m) e fondo: ponte maestro, navate, vasca",
+  "dopo": "GS-2 — La Grande Cisterna, quota alta (+15 m): le passerelle e i nidi dei Ragni delle Catene",
+  "sim": 0.56,
+  "entita": [
+   "Grande Cisterna"
+  ],
+  "nli": 0.983
+ },
+ {
+  "a": "10-stand-alone/Il Giardino di Sale e Calce PF1e/Mappe/QM-3-QUOTA-MEDIA-E-FONDO.md:1",
+  "b": "10-stand-alone/Il Giardino di Sale e Calce/Mappe/GSC-2-QUOTA-ALTA.md:1",
+  "prima": "QM-3 — La Grande Cisterna, quota media (+6 m) e fondo: ponte maestro, navate, vasca",
+  "dopo": "GS-2 — La Grande Cisterna, quota alta (+15 m): le passerelle e i nidi dei Ragni delle Catene",
+  "sim": 0.56,
+  "entita": [
+   "Grande Cisterna"
+  ],
+  "nli": 0.983
+ },
+ {
+  "a": "10-stand-alone/Il Giardino di Sale e Calce PF1e/Mappe/QM-3-QUOTA-MEDIA-E-FONDO.md:1",
+  "b": "10-stand-alone/Il Giardino di Sale e Calce/Mappe/GSC-2-QUOTA-ALTA.md:11",
+  "prima": "QM-3 — La Grande Cisterna, quota media (+6 m) e fondo: ponte maestro, navate, vasca",
+  "dopo": "GS-2 — La Grande Cisterna, quota alta (+15 m): le passerelle e i nidi dei Ragni delle Catene",
+  "sim": 0.56,
+  "entita": [
+   "Grande Cisterna"
+  ],
+  "nli": 0.983
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md:1",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md:622",
+  "prima": "Battaglia di Rethmar — IL MAZZO EVENTI (Event Deck)",
+  "dopo": "[ ] Battaglia Finale Rethmar — Fase 0 Notte dei Drow",
+  "sim": 0.56,
+  "entita": [
+   "Rethmar"
+  ],
+  "nli": 0.982
+ },
+ {
+  "a": "10-stand-alone/Il-Drappo-di-Tarsilia/REGOLE-DELLA-CORSA-PF1E.md:135",
+  "b": "10-stand-alone/L'abbazia Della Rotta Sicura/appendice_b_oppressione.md:54",
+  "prima": "Percepire Intenzioni CD 20 durante la trattativa rivela se",
+  "dopo": "Percepire Intenzioni CD 22: dice la verità sulle nove.",
+  "sim": 0.66,
+  "entita": [
+   "Intenzioni"
+  ],
+  "nli": 0.982
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md:477",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE2-RITUALISTI-TESTO.md:174",
+  "prima": "PG devono interrompere — ogni round completato rinforza Avatar",
+  "dopo": "Trade-off quantificato: interrompere il rituale (0-4 round) evita l'Avatar",
+  "sim": 0.56,
+  "entita": [
+   "Avatar"
+  ],
+  "nli": 0.982
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/Mappe/Portale-Forgia-L1-REVISED-UltraClear.md:327",
+  "b": "07_il Portale Della Forgia Eterna/Mappe/Portale-Forgia-L2-REVISED-UltraClear.md:375",
+  "prima": "│                                      └─┘ Centro: Col N, Riga 14 (Focal Point)",
+  "dopo": "│                      └─┘ PG Start (Col I, Riga 08) - Perimeter Nord",
+  "sim": 0.61,
+  "entita": [
+   "Riga"
+  ],
+  "nli": 0.982
+ },
+ {
+  "a": "Bestiario/png/tetsu-serpente-di-vento-cr12.md:1",
+  "b": "Bestiario/mostri/avversario-agile-giorno1-cr9.md:1",
+  "prima": "Tetsu «Serpente di Vento» — Monk 12 [POINTER — statblocco nell'arco] [RIMANDO]",
+  "dopo": "Avversario agile Giorno 1 (Rogue/Monk) [POINTER — statblocco nell'arco] [RIMANDO]",
+  "sim": 0.68,
+  "entita": [
+   "Monk"
+  ],
+  "nli": 0.982
+ },
+ {
+  "a": "Bestiario/mostri/drow-assassina-lolth-cr10.md:30",
+  "b": "Bestiario/mostri/bruto-deforme-sottosuolo-cr11.md:30",
+  "prima": "Qualità speciali Scurovisione 36 m, cecità alla luce solare, uso dei veleni (mai auto-avvelenamento), schivare prodigioso, individuazione delle trappole.",
+  "dopo": "Qualità speciali Scurovisione 18 m, vista crepuscolare, cattura massi, ira 1/giorno, schivare prodigioso.",
+  "sim": 0.61,
+  "entita": [
+   "Scurovisione"
+  ],
+  "nli": 0.982
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:198",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md:162",
+  "prima": "Attacco Furtivo +1d6: contro bersagli colti alla sprovvista o fiancheggiati.",
+  "dopo": "Attacco Furtivo +3d6 (bersagli colti alla sprovvista o fiancheggiati)",
+  "sim": 0.91,
+  "entita": [
+   "Furtivo"
+  ],
+  "nli": 0.981
+ }
+]

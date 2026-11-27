@@ -54,6 +54,10 @@ def cartella():
         shutil.rmtree(d, ignore_errors=True)
 
 
+VOCE_STORICA = ("### MS-0001 · 2026-11-12 · prova\n\n- **Data:** 2026-11-12\n- **PR:** —\n"
+                "- **ADR:** —\n- **Temi:** prova\n- **Origine:** prova\n- **Testo:** prova\n")
+
+
 class BaseDecisione(unittest.TestCase):
     """Ogni asserzione dice anche *quale* riga del manifest sta verificando."""
 
@@ -108,8 +112,16 @@ class TestValidateSkills(BaseDecisione):
                 encoding="utf-8")
 
     def test_una_skill_sana_passa(self):
+        # ADR-0114, stable dal 2026-11-25: una skill sana ha la scheda intera, in
+        # ordine, e tre casi di prova in evals/ (prima mancavano e avvisava soltanto)
+        scheda = "".join(f"## {s}\n\nx\n\n" for s in (
+            "Quando no", "Fonti", "Procedura", "Formato d'uscita",
+            "Prima di consegnare", "Cancelli deterministici"))
         with cartella() as d:
-            self._skill(d, "---\nname: finta\ndescription: Una skill di prova.\n---\n\n# Finta\n")
+            self._skill(d, "---\nname: finta\ndescription: Una skill di prova.\n---\n\n# Finta\n\n"
+                        + scheda)
+            for i in range(3):
+                (d / "skills" / "finta" / "evals" / f"caso-{i}").mkdir(parents=True)
             self.assertEsce("validate_skills", 0, esegui("validate_skills.py", "--repo-root", str(d)))
 
     def test_frontmatter_rotto_viene_bocciato(self):
@@ -181,6 +193,7 @@ class TestCheckPlansDiscipline(BaseDecisione):
             (d / "plans" / "CHANGELOG.md").write_text(
                 "| Data | Piano |\n|---|---|\n| 2026-09-03 | PROVA | riga | — | ✅ |\n",
                 encoding="utf-8")
+            (d / "plans" / "MEMORIA-STORICA.md").write_text(VOCE_STORICA, encoding="utf-8")
             subprocess.run(["git", "add", "-A"], cwd=str(d), capture_output=True, check=True)
             subprocess.run(["git", "commit", "-qm", "tocco scripts/ e traccio"], cwd=str(d),
                            capture_output=True, check=True)
@@ -188,9 +201,11 @@ class TestCheckPlansDiscipline(BaseDecisione):
                             esegui("check_plans_discipline.py", "--repo-root", str(d),
                                    "--base", "HEAD~1", "--head", "HEAD"))
 
-    def _tocca_changelog(self, d: Path, riga: str) -> None:
+    def _tocca_changelog(self, d: Path, riga: str, voce: bool = True) -> None:
         (d / "plans" / "CHANGELOG.md").write_text(
             "| Data | Piano |\n|---|---|\n" + riga + "\n", encoding="utf-8")
+        if voce:
+            (d / "plans" / "MEMORIA-STORICA.md").write_text(VOCE_STORICA, encoding="utf-8")
         subprocess.run(["git", "add", "-A"], cwd=str(d), capture_output=True, check=True)
         subprocess.run(["git", "commit", "-qm", "riga"], cwd=str(d),
                        capture_output=True, check=True)
@@ -219,6 +234,23 @@ class TestCheckPlansDiscipline(BaseDecisione):
             self._tocca_changelog(
                 d, "| 2026-09-01 | PROVA | lotto | — | ✅ `auto\\|inkscape` |\n"
                    "| 2026-10-08 | PROVA | lotto | — | ✅ senza barra finale")
+            self.assertEsce("check_plans_discipline", 0,
+                            esegui("check_plans_discipline.py", "--repo-root", str(d),
+                                   "--base", "HEAD~1", "--head", "HEAD"))
+
+    def test_riga_del_changelog_senza_voce_storica_viene_bocciata(self):
+        """ADR-0127: la storia entra al merge, con la riga del changelog."""
+        with cartella() as d:
+            self._repo_git(d)
+            self._tocca_changelog(d, "| 2026-11-12 | PROVA | lotto | — | ✅ |", voce=False)
+            self.assertEsce("check_plans_discipline", 1,
+                            esegui("check_plans_discipline.py", "--repo-root", str(d),
+                                   "--base", "HEAD~1", "--head", "HEAD"))
+
+    def test_riga_del_changelog_con_voce_storica_passa(self):
+        with cartella() as d:
+            self._repo_git(d)
+            self._tocca_changelog(d, "| 2026-11-12 | PROVA | lotto | — | ✅ |")
             self.assertEsce("check_plans_discipline", 0,
                             esegui("check_plans_discipline.py", "--repo-root", str(d),
                                    "--base", "HEAD~1", "--head", "HEAD"))
@@ -511,6 +543,19 @@ class TestCampaignBranch(BaseDecisione):
         mod = self._modulo()
         with mock.patch.object(mod.cfg, "load_group", return_value=None):
             self.assertIn(mod.cmd_guard(mod.REPO), (0, 1))
+
+    def test_un_ramo_morto_del_registro_rifiuta(self):
+        """ADR-0090: il ramo morto non riceve canone, anche se è un campaign-group-*."""
+        from unittest import mock
+        mod = self._modulo()
+        morto = "campaign-group-rumblingstone-dm-gianfranco"
+        with mock.patch.object(mod.cfg, "load_group", return_value=None), \
+                mock.patch.object(mod.gitio, "guard_canon_branch", return_value=morto):
+            self.assertEqual(mod.cmd_guard(mod.REPO), 1)
+        with mock.patch.object(mod.cfg, "load_group", return_value=None), \
+                mock.patch.object(mod.gitio, "guard_canon_branch",
+                                  return_value="campaign-group-rumblingstone"):
+            self.assertEqual(mod.cmd_guard(mod.REPO), 0)
 
     def test_ensure_senza_gruppo_da_2(self):
         mod = self._modulo()

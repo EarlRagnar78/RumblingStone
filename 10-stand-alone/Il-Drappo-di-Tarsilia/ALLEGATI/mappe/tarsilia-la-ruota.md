@@ -60,8 +60,8 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @north N
 @tipo strategica abitato
 @luogo Tarsilia, la Ruota
-@quota 3 m ; sopra il pelo del Sellen in magra [INFERRED — needs DM confirmation]
-@dislivello +1,5 m ; sul canale del Ponte Storto, a nord della pista [INFERRED — needs DM confirmation]
+@quota 1,5 m ; sopra il pelo del Sellen in magra: la piena del G3 sera entra in piazza [CANONE — DM 2026-11-05, P16, quota]
+@dislivello +1,5 m ; sul canale del Ponte Storto, a nord della pista (3 m sul Sellen in magra) [CANONE — DM 2026-11-05, P16, quota]
 @mark 1 ; L22 ; Nocca (fantino) (ranger 3)
 @mark 2 ; I23 ; Vanna — alle funi (guerriera 3)
 @mark 3 ; AE4 ; Ombra — dentro il transennato (druida 3)

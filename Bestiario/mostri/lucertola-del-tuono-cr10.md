@@ -1,9 +1,12 @@
-# Lucertola del tuono — progenie azzurra di Tiamat (drago) [ACCEPTED — DM-canon 2026-10-18]
+# Lucertola del tuono — progenie azzurra di Tiamat (drago) [CANONE — DM 2026-10-18]
 **Faction**: red-hand | **Role**: brute | **Environment**: desert | **CR**: 10 | **Source**: ricostruito su SRD 3.5 (tipo drago); idea da `[Private — Red Hand of Doom WE, p. 25]` | **Status**: ACCEPTED — DM-canon 2026-10-18 (PR #247, poi canone su richiesta del DM)
 
 ```statblocco
 gs: 10
 tipo: Large dragon (earth), 12 DV, LE
+taglia: Grande
+spazio: 3 m
+portata: 1,5 m
 ca: 24
 ca-dettaglio: (-1 taglia, +15 naturale)
 pf: 138
@@ -26,14 +29,14 @@ fonte: ricostruzione del repo su SRD 3.5, 2026-10-18
 
 **Attacco** Vel 12 m, scavare 6 m · Mischia morso +20 (2d6+8 più 1d6 elettricità), 2 artigli +17 (1d8+4) · Spazio 3 m; Portata 1,5 m · soffio, ruggito del tuono
 
+**Tattiche** *Prima del combattimento*: aspetta sotto la sabbia lungo la pista; i PG la notano con Osservare CD 25 (la sabbia vibra). · *Durante il combattimento*: sbuca in mezzo al gruppo e usa subito il ruggito, poi il soffio in linea su chi è rimasto allineato. In mischia carica l'incantatore. · *Morale*: sotto i 30 pf si rintana sotto la sabbia e scappa; se c'è un'altra lucertola viva, resta.
+
 **Statistiche** For 26 Des 10 Cos 21 Int 6 Sag 12 Car 8 · BAB +12; Lotta +24 · Talenti Attacco Poderoso, Multiattacco, Arma Focalizzata (morso), Iniziativa Migliorata, Incalzare · Abilità Ascoltare +9, Osservare +9, Saltare +16 · Linguaggi Draconico (capisce, parla poco)
 
 **Capacità speciali**
 - *Soffio (Sop)*: linea di 18 m, 8d8 elettricità, Riflessi CD 21 dimezza, una volta ogni 1d4 round. La CD è basata sulla Costituzione.
 - *Ruggito del tuono (Sop)*: 1/giorno, azione standard, esplosione di 6 m centrata su di sé: 4d6 danni sonori; Tempra CD 21 o assordati e frastornati per 1 round. Capacità originale del repo.
 - *Scavare*: si muove sotto la sabbia e sbuca in mezzo a una colonna in marcia.
-
-**Tattiche** *Prima del combattimento*: aspetta sotto la sabbia lungo la pista; i PG la notano con Osservare CD 25 (la sabbia vibra). · *Durante il combattimento*: sbuca in mezzo al gruppo e usa subito il ruggito, poi il soffio in linea su chi è rimasto allineato. In mischia carica l'incantatore. · *Morale*: sotto i 30 pf si rintana sotto la sabbia e scappa; se c'è un'altra lucertola viva, resta.
 
 **Hook**: una bestia da traino diventata arma; porta ancora il collare di bronzo dei carrettieri della Mano. *Il ruggito si sente prima che la sabbia si apra.*
 

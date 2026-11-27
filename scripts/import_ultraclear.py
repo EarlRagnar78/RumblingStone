@@ -206,6 +206,10 @@ class ParsedMap:
     pg: list[PgPos]
     raw_lines: list[str]          # raw grid-block lines (for raw-glyph rules)
     north: str = "N"
+    # symbols outside the universal legend that the map explains itself:
+    # {emoji: descrizione}, from the in-fence «LEGENDA · …» line first, then
+    # from a legend line elsewhere in the file («- 🛡 = scudo …»)
+    local_legend: dict = field(default_factory=dict)
 
     @property
     def actual_dims(self) -> tuple[int, int]:
@@ -277,6 +281,42 @@ def _file_dims(md_text: str) -> tuple[int, int] | None:
     return (int(m.group(1)), int(m.group(2))) if m else None
 
 
+SENZA_VOCE = "simbolo senza voce in legenda (da spiegare nel master)"
+
+
+def _local_legend(md_text: str, grid: dict, matrix: list[list[str]]) -> dict:
+    """Local symbols of one map: the in-fence legend wins, then the first
+    line of the file that names the symbol and says something after it."""
+    local = dict(grid.get("local_legend") or {})
+    for row in matrix:
+        for sym in row:
+            if sym in SYMBOLS or sym in local or not sym.strip():
+                continue
+            for line in md_text.splitlines():
+                i = line.find(sym)
+                if i < 0 or re.match(r"^\s*\d{1,3}\s", line):
+                    continue  # a grid row is not a description
+                after = line[i + len(sym):].lstrip("\ufe0f\u200d `*")
+                lead = line.lstrip()
+                # a legend entry, not a sentence that happens to name the glyph:
+                # «🛡 = scudo», «🛡: scudo», or a list/table/LEGENDA line that
+                # opens with the symbol
+                voce = after[:1] in ("=", ":", "–", "—") or (
+                    (lead.startswith(("-", "*", "|")) or "LEGENDA" in line)
+                    and line.find(sym) - (len(line) - len(lead)) <= 4)
+                if not voce:
+                    continue
+                rest = after.lstrip(" =:–—-").split("·")[0].strip(" |*_`").strip()
+                if rest and any(c.isalpha() for c in rest[:3]):
+                    local[sym] = rest[:120]
+                    break
+            else:
+                # kept in the geometry all the same, so the contract paints
+                # the grid the master draws; R3 still reports it as an ERROR
+                local[sym] = SENZA_VOCE
+    return local
+
+
 def parse_maps(md_text: str) -> list[ParsedMap]:
     grids = rms.extract_maps(md_text)
     raw_blocks = _iter_grid_blocks(md_text)
@@ -304,6 +344,7 @@ def parse_maps(md_text: str) -> list[ParsedMap]:
             pg=pg if i == 0 else [],
             raw_lines=raw,
             north=_scan_north(raw),
+            local_legend=_local_legend(md_text, g, _matrix_from_grid(g)),
         ))
     return parsed
 
@@ -531,9 +572,17 @@ def _emit_from_grid(pmap: ParsedMap) -> tuple[dict, list[str]]:
                     units.append({"token": sym, "at": [x, y],
                                   "name": SYMBOLS[sym].get("it", "")})
                 else:
-                    bx, by, bw, bh = _bbox(comp)
-                    units.append({"token": sym, "area": {"rect": [bx, by, bw, bh]},
-                                  "quantity": len(comp), "name": SYMBOLS[sym].get("it", "")})
+                    # a formation that does not fill its bounding box (a
+                    # chequer, an L) is split into the exact rectangles it
+                    # covers: the bbox would paint cells the grid leaves empty
+                    for (bx, by, bw, bh) in _rect_decompose(comp):
+                        if bw * bh == 1:
+                            units.append({"token": sym, "at": [bx, by],
+                                          "name": SYMBOLS[sym].get("it", "")})
+                        else:
+                            units.append({"token": sym, "area": {"rect": [bx, by, bw, bh]},
+                                          "quantity": bw * bh,
+                                          "name": SYMBOLS[sym].get("it", "")})
         elif sym in ICON_SYMS:
             bucket = hazards if sym in HAZARD_SYMS else structures
             key = "type"
@@ -542,12 +591,28 @@ def _emit_from_grid(pmap: ParsedMap) -> tuple[dict, list[str]]:
                     (x, y) = next(iter(comp))
                     bucket.append({key: sym, "at": [x, y]})
                 else:
-                    bx, by, bw, bh = _bbox(comp)
-                    bucket.append({key: sym, "rect": [bx, by, bw, bh]})
-        # non-legend symbols are handled by rule R3 and dropped from geometry
+                    for (bx, by, bw, bh) in _rect_decompose(comp):
+                        if bw * bh == 1:
+                            bucket.append({key: sym, "at": [bx, by]})
+                        else:
+                            bucket.append({key: sym, "rect": [bx, by, bw, bh]})
+        elif sym in pmap.local_legend:
+            # a local symbol the map explains: kept as a structure so the
+            # contract paints the same grid (R3 reports it as INFO)
+            for comp in _components(cells):
+                for (bx, by, bw, bh) in _rect_decompose(comp):
+                    if bw * bh == 1:
+                        structures.append({"type": sym, "at": [bx, by]})
+                    else:
+                        structures.append({"type": sym, "rect": [bx, by, bw, bh]})
+        # other non-legend symbols are handled by rule R3 and dropped from geometry
 
     draft = _assemble(pmap, [cols, rows], base, regions, structures, hazards, units, notes,
                       source="griglia emoji (figura)")
+    used = {s["type"] for s in structures
+            if s["type"] in pmap.local_legend and s["type"] not in SYMBOLS}
+    if used:
+        draft["simboli_locali"] = {k: pmap.local_legend[k] for k in sorted(used)}
     # il percorso griglia NON deduce: ogni simbolo viene letto direttamente dalla
     # cella (nessuna assunzione semantica da segnalare all'editor).
     return draft, []
@@ -786,9 +851,12 @@ def rule_symbol_legend(ctx: Ctx) -> list[Conflict]:
             if s not in SYMBOLS and s not in unknown:
                 unknown.add(s)
                 norm = _nfc_strip(s)
-                sev = "WARN" if norm in SYMBOLS else "ERROR"
+                locale = (s in p.local_legend and norm not in SYMBOLS
+                          and p.local_legend[s] != SENZA_VOCE)
+                sev = "WARN" if norm in SYMBOLS else ("INFO" if locale else "ERROR")
                 sug = (f"usare il canonico '{norm}'" if norm in SYMBOLS
-                       else "aggiungere il simbolo alla legenda o correggerlo")
+                       else (f"simbolo locale, spiegato dalla mappa: «{p.local_legend[s]}»"
+                             if locale else "aggiungere il simbolo alla legenda o correggerlo"))
                 acts = [_act("ignore", "Ignora")]
                 if norm in SYMBOLS:
                     acts.insert(0, _act("replace_symbol", f"Sostituisci con '{norm}'",

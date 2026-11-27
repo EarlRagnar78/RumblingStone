@@ -1,6 +1,8 @@
 # Piano: recupero delle decisioni perse e chiusura delle revisioni incompiute
 
-> **Stato**: 🟡 **in corso** (2026-10-10). Portato nella #230 su richiesta del DM
+> **Stato**: ✅ **completo** (2026-11-16, L5 e L6; L2 chiuso con loro). Resta aperta solo
+> `RIPRESA-PR#D2`, che non è di questo piano dal 2026-10-23 (§5 L6).
+> Era: 🟡 **in corso** (2026-10-10). Portato nella #230 su richiesta del DM
 > (*«questa PR la più recente e completa con tutto quello che è rimasto da fare»*):
 > L3 fatto, L1 in corso col merge della #230, D1 e D2 chiuse. Il resto in §5.
 > **Riallineato il 2026-10-10, dopo il merge di #229, #230 e #232** (richiesta del
@@ -217,6 +219,20 @@ diventa una delle tre cose: un lotto con una data, una voce di
 «non si fa» con il perché. *Conseguenze*: INDEX dice la verità su cosa resta;
 il prezzo è una decisione del DM per gruppo, non per casella.
 
+**R-6 · Nel registro delle adozioni entrano solo le attese che uno script misura.**
+*Contesto*: le risposte di D5 (2026-11-13) mettono in attesa sette voci; due
+hanno una condizione che il repo vede (il rilascio 1.2.0 in `CHANGELOG.md`, le
+righe di `comfyui_batch.py` in un `PROVENIENZA.txt`), cinque dipendono da una
+parola di Jfs o da un fatto fuori dal repo. Il registro di ADR-0076 teneva solo
+codice esterno. *Decisione* (Jfs, card del 2026-11-13 23:53, la consigliata):
+il registro accetta anche i lotti interni (`"tipo": "lotto"`, con `piano` e
+`decisione` al posto di fonte, commit, licenza e autore) se la condizione si
+misura; le altre restano scritte nel loro piano con la data della scelta.
+Due misure nuove in `adozioni_in_attesa.py`: `versione_rilasciata` e
+`serie_comfyui_registrata`. *Conseguenze*: il registro resta un cancello che
+morde in CI e non un elenco; il prezzo è che cinque attese non hanno un
+allarme, e le trova solo chi legge i piani (la routine del lunedì).
+
 **R-5 · Nessun piano nuovo si apre per finire quelli vecchi.**
 *Contesto*: la richiesta chiede «un nuovo piano». *Decisione*: questo documento
 coordina, i lotti si chiudono nei piani dove stanno. Una casella chiusa qui
@@ -233,16 +249,18 @@ chiude quando L1-L6 sono fatti, e non accumula lavoro suo.
 | ~~D2~~ | L1 | ✅ **Chiusa il 2026-10-10 dalla regola stessa della proposta, l'ordine di arrivo**: la #230 arriva prima, quindi tiene `ADR-0086` (la sostituzione misurata); la #216 si rinumera a `ADR-0087` nel suo ramo prima del merge, la chiusura della #99 a `0088`. Era: **Chi tiene il numero ADR-0086?** Tre candidati: la memoria generata (#216), la sostituzione misurata (#230), la chiusura della #99 (proposta del thread dedicato). *Proposta*: nell'ordine di arrivo su `main`, quindi 0086 alla #216, 0087 alla #230, 0088 alla #99; ognuno si rinumera nel suo ramo prima del merge, con `validate_docs --prossimo-adr` |
 | ~~D3~~ | L5 | 🔀 **Non decisa: spostata il 2026-10-23 in `RIPRESA-PR#D2`** (P15 dell'indice), dove la stessa domanda era già aperta e in §4 compariva due volte; la proposta è ora in quella riga. Era: **`RIPRESA-PR#D2` e la #106**: il collaudo SDXL accanto a Gemini tiene aperta la #106 da otto settimane, e il suo codice è già su `main` in forma nuova. La #230 installa ComfyUI e scarica SDXL sulla tua Debian 13. *Proposta*: il collaudo delle due o tre immagini si fa con la #230 installata; la #106 si chiude subito come «contenuto portato», e la D2 resta aperta in RIPRESA-PR senza tenere aperta una PR |
 | ~~D4~~ | L5 | 🔀 **Non decisa: spostata il 2026-10-23 in `RIPRESA-PR#D11`** (P15 dell'indice), dove la stessa domanda era già aperta e in §4 compariva due volte; la proposta è ora in quella riga. Era: **`RIPRESA-PR#D11` (ADR-0049, l'AP originale)**: resta aperta dal 2026-09-11, legata a un avvocato IP e a VENDIBILITA, che non è autorizzato. *Proposta*: passa a voce di `adozioni-in-attesa.json` con la condizione «VENDIBILITA autorizzato», e lascia §4 |
-| D5 | L4 | **I ⬜ opzionali dei piani chiusi o fermi**, per gruppo. *Proposta*: (a) chiusi come «non si fa»: AUDIT-SCRIPTS (shellcheck lo fa AMBIENTE A6), IMPORT-ULTRACLEAR (migrazione delle ~30 mappe, ora COLLAUDO-MAPPE), RENDER-FEDELTA (`--strict` default); (b) in attesa con condizione: TRAVASO A6 (quando ARC-07 finisce al tavolo), INTEGRAZIONE (quando c'è Foundry al tavolo), RICERCA-MODULO-PUBBLICABILE B3, C3, D5, RICERCA-TOOL-ESTERNI R1, RICERCA-TOOL-LGM P1-P3, GENERATORE J e K; (c) restano lotti: nessuno |
-| D6 | L3 | **RICONCILIAZIONE-PR-APERTE si chiude come superato?** R3, R6, R7, R8 sono decisi o fatti altrove (§2.3). *Proposta*: sì, ✅ con il rimando a dove sta ognuno |
+| ~~D5~~ | L4 | ✅ **Decisa il 2026-11-13, Jfs voce per voce sulle card del thread audit** (23:40-23:50), applicata in L4: convertitori allo standard pieno e shellcheck bloccante → blocco piattaforma, milestone v1.5.0 (AUDIT-SCRIPTS); callout ancorati con la freccia → in attesa di un caso vero (RENDER-FEDELTA F3); dossier delle piste di ARC-09 → dopo ARC-07 al tavolo (TRAVASO A6); prova di Foundry → quando Jfs lo usa (INTEGRAZIONE b); carte da tavolo del Drappo → subito, in un thread a parte (MODULO-PUBBLICABILE B3, non la consigliata); riassunto fra le serate → dopo una serata del Drappo (C3); trascrizione whisper.cpp → prova su una serata (TOOL-ESTERNI §3); carta del cielo → sì, per ARC-09 (TOOL-LGM §3.1, non la consigliata); Blockbench → in attesa di una serie ComfyUI vera (TOOL-LGM §3.3: la prima condizione scelta, lo script su main, era già vera dal 2026-09-05, e Jfs l'ha cambiata sulla card del 2026-11-13 23:54); template semplici PF1e → sì, col thread delle regole (GENERATORE J); incontro tarato → alla chiusura della milestone v1.2.0 (GENERATORE K). Nel registro delle adozioni entrano solo le due condizioni che uno script misura, K e Blockbench (R-6, scelta di Jfs sulla card del 2026-11-13 23:53) · Era: **I ⬜ opzionali dei piani chiusi o fermi**, per gruppo. *Proposta*: (a) chiusi come «non si fa»: AUDIT-SCRIPTS (shellcheck lo fa AMBIENTE A6), IMPORT-ULTRACLEAR (migrazione delle ~30 mappe, ora COLLAUDO-MAPPE), RENDER-FEDELTA (`--strict` default); (b) in attesa con condizione: TRAVASO A6 (quando ARC-07 finisce al tavolo), INTEGRAZIONE (quando c'è Foundry al tavolo), RICERCA-MODULO-PUBBLICABILE B3, C3, D5, RICERCA-TOOL-ESTERNI R1, RICERCA-TOOL-LGM P1-P3, GENERATORE J e K; (c) restano lotti: nessuno · 🔎 **2026-11-08, la sola domanda vera rimasta dopo la regola del 2026-11-04 (il ripiego PyYAML di AUDIT-SCRIPTS)**: il DM ha chiesto di misurarla e decidere. Misurata, **non si fa** ([ESITO](esperimenti/ripiego-pyyaml-2026-11-08/ESITO.md)). La card sulla migrazione JSON delle 30 mappe è stata ritirata perché sbagliata (le mappe del Drappo sono JSON, il formato vivo) · ✅ **2026-11-09, il DM sulla card: «Chiudi, superato»** per il fallback PyYAML, chiuso in AUDIT-SCRIPTS come superato con la prova (`requirements.txt:28`, lo script gira solo in fase di build). La proposta (a) «non si fa» **non si applica** alle altre voci (regola del 2026-11-04): shellcheck bloccante, convertitori allo standard pieno, migrazione al contratto JSON delle ~30 mappe ultra-clear di IMPORT-ULTRACLEAR e `--strict` di RENDER-FEDELTA restano ⬜ con la loro condizione, come le voci di (b). D5 resta aperta per queste · 🔎 **2026-11-09, richiesta del DM di chiudere le voci superate da altre decisioni**, ricontrollate tutte su `main`: tre erano già fatte altrove e si chiudono con la prova, cioè RICERCA-MODULO-PUBBLICABILE D5 (budget PF1e nel plugin `pf1e`, «somma_px»), INTEGRAZIONE (a) (le carte di Dauth e della fortezza nel contratto JSON, `b8423c1c`) e il setup di ComfyUI di INTEGRAZIONE (c) (R4-quinquies, in distrobox su Debian); shellcheck di AUDIT-SCRIPTS è spostata in AMBIENTE A6, dove la stessa voce è aperta. Le altre non sono superate e restano ⬜ · ✅ **2026-11-09, il DM: «per le mappe fai sempre il json»**: fatte la migrazione al contratto JSON di IMPORT-ULTRACLEAR (25 mappe vive, identiche cella per cella) e `--strict` di RENDER-FEDELTA, ora cancello in CI ([ADR-0117](adr/ADR-0117-ogni-mappa-ha-il-suo-contratto-json.md)). Restano ⬜ convertitori allo standard pieno, callout ancorati e le voci di (b) |
+| ~~D6~~ | L3 | ✅ **Decisa il 2026-10-31, il DM: sì, ✅ con i rimandi** (card del thread «Chiusura piano RECUPERO-DECISIONI»). Verificato su `main` prima di chiedere: R3, l'ultima casella aperta, era già chiusa da ADR-0043 (⛰ è un muro) e ADR-0042 (⬛ in tre glifi). Era: **RICONCILIAZIONE-PR-APERTE si chiude come superato?** R3, R6, R7, R8 sono decisi o fatti altrove (§2.3). *Proposta*: sì, ✅ con il rimando a dove sta ognuno |
 | ~~D7~~ | L7 | ✅ **Decisa il 2026-10-10, il DM: tutte e tre** (*«adotta le pratiche e mergia»*), fatte in L7. Era: **Quali pratiche dei due repo di riferimento si adottano qui?** Il confronto è in §7: tre mancano davvero (il modello di PR, le alternative e la condizione di revisione nel modello di ADR, il numero dell'ADR prenotato prima di aprire il ramo), le altre ci sono già. *Proposta*: tutte e tre, come lotto L7, ognuna registrata in `REGISTRO-NORME-EDITORIALI.md` con chi la misura (G3); nessuna riscrittura degli ADR già accettati |
 
 <!-- eco: RECUPERO 2026-10-10 -->
 - **Decise**: D1 la #229 e la #230 su `main` per prime, se verdi · D2 lo `0086` resta alla #230, la #216 passa a `0087` · D7 le tre pratiche dei repo di riferimento, adottate tutte come proposto (dopo i merge)
 - **Aperte**: D3 (la #106), D4 (D11 di RIPRESA-PR), D5 (i ⬜ opzionali per gruppo), D6 (RICONCILIAZIONE chiusa come superata)
+- **Decisa il 2026-10-31**: D6 come proposto, RICONCILIAZIONE-PR-APERTE ✅ superato, con R3 rimandata ad ADR-0042 e ADR-0043. D3 e D4 erano già passate a RIPRESA-PR D2 e D11 il 2026-10-23
 - **Cambiate**: D1, dove la proposta metteva prima la #216
 - **Dedotto da me**: che la D2 segua l'ordine di arrivo anche quando l'ordine cambia, perché è la regola che la proposta stessa scriveva; e che la rinumerazione della #216 spetti al suo ramo, non a questo
 - **Rivisto il 2026-10-10, dopo i merge**: la rinumerazione della #216 l'ha fatta la PR del riallineamento, non il suo ramo, perché il DM ha chiesto di organizzare tutto senza toccare le PR degli altri; D7 decisa poche ore dopo
+- **Decisa il 2026-11-13**: D5, voce per voce sulle card di Jfs (11 risposte, due non la consigliata: B3 subito e la carta del cielo per ARC-09); più due card in questo piano: il registro solo per le condizioni misurabili (R-6) e la nuova condizione di Blockbench. **Dedotto da me**: che shellcheck bloccante segua i convertitori nella milestone v1.5.0 (sta già nel blocco 3 della roadmap, nessuna card l'ha chiesto); che la «serie vera» di Blockbench voglia almeno 3 righe di `comfyui_batch.py` in un file; che la hero map di INTEGRAZIONE (c) resti collaudo del DM con la sua condizione, perché nessuna card la nomina
 
 ## 5 · I lotti
 
@@ -255,7 +273,7 @@ Classe **G**, perché decide un ordine di merge. Aspetta D1 e D2. Si esegue nel
 thread della PR che arriva prima; qui si spunta. Se la #216 cambia ancora prima
 del merge, si rimisura §2.1.
 
-### L2 · Il registro dei rami, completo e che non dimentica `[🟡 2026-10-10: R-2 nello script e le dieci voci della #72 ripristinate; restano R-3 e il test]`
+### L2 · Il registro dei rami, completo e che non dimentica `[✅ 2026-11-16: R-3 misurato e il test della regola R-2; prima, 2026-10-10, R-2 nello script e le dieci voci della #72]`
 
 Fatto: `contenuti_nei_rami.py` stampa le voci «scadute» solo con `--fetch`;
 senza, dice quante voci non trovano il loro ramo e che non si potano. Le dieci
@@ -268,6 +286,25 @@ rami `claude/*` di §2.4 non hanno file senza posto: non serve una voce. Non
 fatti: R-3 (i commit dopo il merge sui rami delle PR fuse) e il test che prova
 la regola nuova, perché `main()` vuole un repo git e il test va scritto con il
 repo finto di `_repo_righe`.
+**Fatto il 2026-11-16** (con L6):
+- **R-3**, misurato su `main` a `91a4f1be` con `--fetch`: dei dieci rami di
+  `origin` con commit che `main` non raggiunge, quattro sono di PR fuse
+  (`scripts-audit-documentation` della #66, `paizo-editorial-components` della
+  #120, `campaign-session-tools` della #92, `map-generation-pipeline` della #51).
+  In tutti e quattro **ogni commit è precedente all'ultimo merge** del ramo
+  (squash: il contenuto è arrivato, i commit no), salvo `e5cf5177` del
+  2026-07-20 su `map-generation-pipeline`, che è della #52, chiusa senza merge e
+  già giudicata obsoleta in §2.4. Nessun commit con contenuto dopo un merge:
+  nessuna riga nuova per questo piano. Il comando:
+  `for b in $(git for-each-ref --format='%(refname:short)' refs/remotes/origin/); do git rev-list --count origin/main..$b; done`,
+  poi la data di ogni commit contro `merged_at` della PR del ramo.
+- **Il test** della regola R-2:
+  `test_la_voce_di_una_pr_chiusa_sopravvive_a_un_giro_senza_fetch` in
+  `scripts/tests/test_contenuti_nei_rami.py`, sul repo finto di `_repo`: senza
+  `--fetch` la voce senza ramo si conta e non si nomina, con `--fetch` si
+  nomina, e in tutti e due i giri `--check` resta verde e il registro non cambia.
+  Non serviva il repo di `_repo_righe`: basta quello dei file.
+
 `[engine: Sonnet 5 · effort: medio · qualità: contenuti_nei_rami --fetch --check esce 0; un test prova che una voce di PR chiusa sopravvive a un giro senza --fetch]`
 
 Classe **C**. Fa R-2 nello script; rimette le voci della #72 come erano prima
@@ -287,18 +324,58 @@ Classe **M**, con una parte **G** (D6). Corregge sul posto le righe di STATO
 `PIANO-REVISIONE-LIBRERIA-MOSTRI-PNG-VILLAIN.md` in `plans/` con un puntatore
 nella radice e la riga ✅ in INDEX, come K-A ha fatto con gli altri.
 
-### L4 · I piani fermi, una casella alla volta `[⬜]`
+### L4 · I piani fermi, una casella alla volta `[✅ 2026-11-13]`
 `[engine: Opus 5 · effort: medio · qualità: nessun ⬜ senza data, condizione o «non si fa» nei piani di D5; adozioni_in_attesa --check verde]`
 
 Classe **G**. Applica D5 piano per piano. Le voci «in attesa» entrano in
 `plans/adozioni-in-attesa.json` con una condizione misurabile, o restano fuori
 se la condizione non si sa scrivere: in quel caso il lotto lo dice.
 
-### L5 · Le due decisioni parcheggiate di RIPRESA-PR `[⬜]`
+**Fatto il 2026-11-13**, piano per piano, con le risposte di D5:
+
+| Piano | Casella | Esito | Dove sta la condizione |
+|---|---|---|---|
+| AUDIT-SCRIPTS | shellcheck bloccante | 📅 lotto, milestone v1.5.0 (blocco piattaforma) | la milestone |
+| AUDIT-SCRIPTS | convertitori allo standard pieno | 📅 lotto, milestone v1.5.0 | la milestone |
+| RENDER-FEDELTA | F3 pieno, callout ancorati | ⏳ in attesa di un caso vero | **fuori**: nel piano |
+| TRAVASO | A6, dossier delle piste di ARC-09 | ~~⏳ dopo ARC-07 al tavolo~~ ✅ gate tolto da Jfs il 2026-11-14, dossier scritto | — |
+| INTEGRAZIONE | (b) prova in Foundry | ⏳ quando Jfs usa Foundry | **fuori**: nel piano |
+| INTEGRAZIONE | (c) hero map su una mappa chiave | ⏳ resta collaudo del DM: **nessuna card l'ha nominata** | **fuori**: nel piano |
+| MODULO-PUBBLICABILE | B3, carte da tavolo | 🟡 fatto dalla PR #423 (36 carte, PDF/UA-1 e PDF/A-2a); da rivedere dopo la prima serata del Drappo | — |
+| MODULO-PUBBLICABILE | C3, riassunto fra le serate | ⏳ dopo una serata del Drappo | **fuori**: nel piano |
+| TOOL-ESTERNI | §3, trascrizione whisper.cpp | ⏳ prova su una serata registrata | **fuori**: nel piano |
+| TOOL-LGM | §3.1, carta del cielo | 📅 lotto, per ARC-09 | — |
+| TOOL-LGM | §3.2, Krita e GIMP | ✅ è una regola, nessun lavoro | — |
+| TOOL-LGM | §3.3, Blockbench | ⏳ una serie ComfyUI vera | **registro**: `blockbench-stanze-3d` |
+| GENERATORE | lotto J | 📅 lotto, col thread delle regole | — |
+| GENERATORE | lotto K | ⏳ milestone v1.2.0 chiusa | **registro**: `generatore-lotto-k` |
+
+Le cinque condizioni **fuori** dal registro dipendono da una parola di Jfs o da
+un fatto che non entra nel repo (una registrazione, una serata del Drappo):
+nessuno script le sa misurare, e un tipo «manuale» nel registro non
+scatterebbe mai (R-6). Le legge la routine del lunedì nei piani.
+`adozioni_in_attesa.py --check` è verde con tre voci, nessuna attiva.
+
+### L5 · Le due decisioni parcheggiate di RIPRESA-PR `[✅ 2026-11-16, chiuso con la prova]`
 `[engine: Opus 5 · effort: basso · qualità: §4 non mostra più D11; la #106 chiusa con il commento che rimanda al registro, solo dopo il sì del DM]`
 
 Classe **G**. Aspetta D3 e D4. La chiusura della #106 è un'azione su una PR:
 si fa solo con la tua conferma esplicita.
+
+**Chiuso il 2026-11-16 perché i due criteri di qualità sono già veri**, non
+per tempo trascorso (regola del 2026-11-04):
+- §4 non mostra più D11: D3 e D4 sono passate a `RIPRESA-PR#D2` e `#D11` il
+  2026-10-23 (P15), e `RIPRESA-PR#D11` è **decisa** il 2026-11-08 (il perimetro
+  di ADR-0049 col Bestiario dentro, da pulire; ADR proposta fino all'avvocato IP).
+- la #106 è **chiusa senza merge** dal 2026-10-24 (`closed_at`
+  2026-10-24T10:12:23Z), col codice già su `main` in forma nuova (§2.4).
+
+Resta aperta `RIPRESA-PR#D2`, l'arte del Drappo: il DM ha scelto l'8/11 il
+metodo (2-3 tavole con FLUX.2 klein accanto a quelle di Gemini, A o B
+guardando), ma il confronto non è stato fatto e in `scripts/prove-4050/` non
+c'è uno script per il Drappo. Non è di questo piano: sta in RIPRESA-PR, ed è
+su card a Jfs (thread «Chiusura piano RECUPERO», 2026-11-16) con la
+consigliata, uno script per il portatile 4050 in un thread a parte.
 
 ### L7 · Le pratiche prese dai repo di riferimento `[✅ 2026-10-10]`
 
@@ -314,11 +391,30 @@ Classe **G**. Aspetta D7. Aggiunge `.github/pull_request_template.md`, le due
 sezioni al modello `ADR-0000-template.md`, e la prenotazione del numero ADR
 (§7). Non tocca gli ADR già scritti.
 
-### L6 · Chiusura `[⬜]`
+### L6 · Chiusura `[✅ 2026-11-16]`
 `[engine: inline · effort: basso · qualità: le tre misure di §2 rifatte, con i numeri prima e dopo in questa sezione]`
 
 Rimisura `contenuti_nei_rami --fetch --check`, `decisioni_dm --check` e le
 righe di §2.5, e chiude il piano.
+
+**Fatto il 2026-11-16**, su `main` a `91a4f1be`, clone con la storia intera:
+
+| Misura | 2026-10-10 (apertura) | 2026-11-16, prima di L6 | dopo L6 |
+|---|---|---|---|
+| `contenuti_nei_rami --fetch --check` | 8 file senza posto (la #72 potata); dopo L2 0 su 61 | **9 senza posto, esce 1**: tutti della #424 (la trascrizione whisper, bozza aperta dal 2026-11-14), non registrata. I tre file del ramo `vyifoi` che la memoria dava rossi non ci sono più | **0 senza posto, esce 0**: 476 riferimenti, 41 file mai arrivati, tutti con un posto (in volo 9, partita 5, portato 6, rifiutato 6, superato 15) |
+| voci «in volo» del registro che non lo sono | — | 2: la #99 (chiusa il 2026-10-24, la 4g-2 che aspettava fatta con la #313) e la #216 (fusa il 2026-10-10), ancora «aperta in bozza» | 0: la #99 «superato», la #216 «portato», la #424 «in volo» con il suo piano |
+| voci scadute anche con `--fetch` | 2 (`validate_skill_paths`, il Giorno 3 di maggio) | 2, le stesse | 2: restano come memoria del perché (R-2) |
+| `decisioni_dm --check` | non misurato all'apertura; 16 aperte il 2026-10-23, 14 dopo P15 | 1 aperta, aggregato allineato | 1 aperta (`RIPRESA-PR#D2`), 324 decisioni in 25 piani |
+| righe di §2.5 | 9 ferme | 0: rimisurate le legature (0 file con `ﬀ`/`ﬁ`/`ﬂ`), le `[INFERRED]` di DEF-4 e DEF-5 (0 e 0), INDEX di RICERCA-RUOLI, RICONCILIAZIONE, REVISIONE-ARC08 (✅ o 🔵); le righe di STATO di §2.5 stanno ora in §0-bis, che è diario | 0 |
+| righe ferme di STATO §0 trovate dalla stessa misura | — | 2: **P07** elencava sette decisioni aperte, ne resta una; **P21** dava ⬜ L2 e L4 | 0: P07 riscritta con la sola D2, P21 ✅ |
+
+Il criterio di §6 regge in due parti su tre: `--fetch --check` esce 0 con tutte
+le PR scaricate, e §4 di questo piano non ha domande aperte. La terza, «la
+routine del lunedì non trova una riga di §2.5», si verifica solo al prossimo
+giro (2026-11-23). **Limite dichiarato**: il registro dei rami è a posto oggi;
+la prossima PR in bozza con file nuovi lo rifà rosso finché qualcuno non la
+registra, perché `contenuti_nei_rami` non è un cancello di CI e non deve
+diventarlo (lo dice lo script stesso).
 
 ## 6 · Validazione
 

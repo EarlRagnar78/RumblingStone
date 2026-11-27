@@ -86,7 +86,7 @@ il renderer incorpora i due woff2 e stringe i titoli con le larghezze di
   git, e registra la categoria. La licenza (letta il 2026-10-09) divide i
   pacchetti in `base`, a offerta libera e CC BY-NC, e `premium`, senza
   licenza: `controlla` boccia la tabella che usa un premium. Guida:
-  `docs/guides/GUIDA-MAPPE.md` §5.2. Resta la tabella sui nomi veri dei file,
+  `docs/how-to/GUIDA-MAPPE.md` §5.2. Resta la tabella sui nomi veri dei file,
   e la mappa di prova.
 
 ### R4-bis · Il tema texture CC0 (la strada principale)

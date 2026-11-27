@@ -6,11 +6,11 @@
 > **Stato**: canonico (materiale di modulo; canone di trama in
 > `campaign/state.md`, non ancora giocato — vedi piano ARC-08 A0).
 > **Ultima revisione**: 2026-07-02.
-> **⚠️ Disambiguazione nomi (A10, D2)**: **Thorin** Runaforte = pregen
-> chierico (agisce SOLO nel flashback D6, poi come PNG); **Thorik** =
-> PG guerriero (compare SOLO dal finale, D6/E6); **Thorek** = Re di
-> Hammerfist (comandante difensore per tutta la battaglia). Tre
-> persone diverse — mai fonderle.
+> **⚠️ Nomi (A10, D2)**: **Thorik** = PG guerriero (compare SOLO dal
+> finale, D6/E6); **Thorek** = Re di Hammerfist (comandante difensore per
+> tutta la battaglia). Due persone diverse — mai fonderle. Il pregen
+> chierico si chiama **Harbek** Runaforte dal 2026-11-14 (DM): il terzo
+> nome simile non c'è più.
 
 ### **INDICE DELLE APPENDICI**
 
@@ -22,7 +22,7 @@
 
 2.  **Schede dei PNG Alleati**
     *   Re Thorek Hammerfist
-    *   Madre Superiora Dana Forgiapietra
+    *   Madre Superiora Dagmar Forgiapietra
     *   Le Cantitrici della Pietra
     *   Signore Ventolesto (Gufo Celestiale Alpha)
     *   Capitano Lunapiena (Leader Ranger Elfico)
@@ -30,9 +30,9 @@
     *   Maestro Tempestas (Bardo/Cantore delle tempeste)
 
 3.  **Schede dei PNG Giocabili (Eroi di Hammerfist)**
-    *   Borin Ferropugno (Guerriero/Campione Nanico)
+    *   Borin Giuraferro (Guerriero/Campione Nanico)
     *   Dara Occhiolesto (Ranger/Esploratrice dei Picchi)
-    *   Thorin Runaforte (Chierico/Sacerdote delle Rune)
+    *   Harbek Runaforte (Chierico/Sacerdote delle Rune)
     *   Nala Cantapietre (Bardo/Spia Maestra)
 
 4.  **Guida al Combattimento di Massa**
@@ -72,17 +72,17 @@
 > (valori **approvati dal DM 2026-07-03**). Se il gruppo NON ha giocato il P5,
 > usa lo statblock qui sotto invariato.
 **NM Drago Enorme (Acqua)**
-**Iniziativa:** +4; **Sensi:** Percezione cieca 18 m (SRD: chi Fauci non vede resta occultato del tutto, anche se ne sa il quadretto), Scurovisione 36m, Visione Crepuscolare; Ascoltare +29, Osservare +29
+**Iniziativa:** +4; **Sensi:** Percezione cieca 18 m (SRD: chi Fauci non vede resta occultato del tutto, anche se ne sa il quadretto), Scurovisione 36m, Visione Crepuscolare; Ascoltare +27, Osservare +27
 
-**CA:** 29 (-2 taglia, +21 naturale), contatto 8, colto alla sprovvista 29 (37 con *Armatura Magica* e *Scudo*)
+**CA:** 33 (-2 taglia, +21 naturale, +2 potenziamento all'armatura naturale, +2 deviazione), contatto 10, colto alla sprovvista 33 (41 con *Armatura Magica* e *Scudo*)
 **PF:** 337 (25d12+175)
-**TS:** Tempra +21, Riflessi +16, Volontà +19
+**TS:** Tempra +24, Riflessi +19, Volontà +22 (+3 del *mantello della resistenza*; il trucchetto *Resistenza*, se lo tiene, non si somma: due bonus di resistenza non si cumulano, SRD)
 **Immunità:** Acido, Paralisi, Sonno; **RD:** 10/magia; **RI:** 21
 
 **Velocità:** 18m, Nuotare 18m, Volare 45m (scarsa)
 **Attacco Base:** +25; **Lotta:** +43
-**Attacco:** Morso +33 in mischia (2d8+10/19-20)
-**Attacco Completo:** Morso +33 (2d8+10/19-20), 2 artigli +31 (2d6+5), 2 ali +31 (1d8+5), colpo di coda +31 (2d6+15)
+**Attacco:** Morso +34 in mischia (2d8+10/19-20)
+**Attacco Completo:** Morso +34 (2d8+10/19-20), 2 artigli +31 (2d6+5), 2 ali +31 (1d8+5), colpo di coda +31 (2d6+15)
 **Spazio/Portata:** 4,5m/3m (4,5m con morso)
 
 **Caratteristiche:** For 31, Des 10, Cos 25, Int 16, Sag 17, Car 16
@@ -94,13 +94,17 @@
 *   **Odio della stirpe (Str):** +4 ai tiri per colpire e ai danni contro Thorik, il portatore della Corona e di Aegis Fang, sempre: odia la stirpe che porta le armi dei nani, comunque sia andata all'alba del −1000 (non SRD, canone del DM 2026-10-18). Vale sul morso che apre la presa e sui danni dei morsi in presa; e anche sulle prove di lotta di Fauci contro Thorik, che l'SRD tratta «come un tiro per colpire in mischia» `[CANONE — DM 2026-10-20]`.
 *   **Corrompere Acqua (Mag):** A volontà (potenziamento: l'SRD dice 1/giorno).
 *   **Capacità Magiche:** 3/giorno: *oscurità* (raggio 21 m).
-*   **Incantesimi:** Come Stregone di 7° liv. (LI 7°; 6/8/8/6 al giorno).
+*   **Incantesimi:** Come Stregone di 7° liv. (LI 7°; 6/7/7/5 al giorno: 6/6/4 dalla tabella SRD più 1 bonus per livello con Car 16; fino al 2026-11-19 la scheda diceva 6/8/8/6, scelta del DM sulla card del 2026-11-19).
     *   *3° (CD 16):* *Dissolvi Magie*, *Nube Maleodorante*
     *   *2° (CD 15):* *Freccia Acida*, *Immagine Speculare*, *Invisibilità*
     *   *1° (CD 14):* *Armatura Magica*, *Colpo Accurato*, *Dardo Incantato*, *Protezione dal Bene*, *Scudo*
-    *   *0° (CD 13):* *Frastornare*, *Individuazione del Magico*, *Luce*, *Mano Magica*, *Prestidigitazione*, *Raggio di Gelo*, *Resistenza*
+    *   *0° (CD 13):* *Frastornare*, *Individuazione del Magico*, *Luce*, *Mano Magica*, *Prestidigitazione*, *Raggio di Gelo*, *Lettura del Magico* `[CANONE — DM 2026-11-21, card]`
 
-**Talenti:** Allerta, Attacco in Volo, Critico Migliorato (Morso), Iniziativa Migliorata, Multiattacco, Volontà di Ferro, Riflessi Fulminei, Fluttuare, Ghermire (gli ultimi tre confermati dal DM, 2026-10-18).
+**Talenti:** Arma Focalizzata (morso), Attacco in Volo, Critico Migliorato (Morso), Iniziativa Migliorata, Multiattacco, Volontà di Ferro, Riflessi Fulminei, Fluttuare, Ghermire (gli ultimi tre confermati dal DM, 2026-10-18). Arma Focalizzata (morso) ha preso il posto di Allerta, la scelta più forte tra le due versioni confrontate: morso +34, Ascoltare e Osservare +27 `[CANONE — DM 2026-11-09, INVENTARIO D4]`.
+
+**Equipaggiamento** `[CANONE — DM 2026-11-21, card: «A · Signore dell'assedio»]`: *anello di protezione +2* (8.000 mo), *amuleto dell'armatura naturale +2* (8.000 mo), *mantello della resistenza +3* (9.000 mo); 2 pergamene di *nebbia acida* (LI 11°, 1.650 mo l'una), 2 pergamene di *invisibilità superiore* (LI 7°, 700 mo l'una), 2 pozioni di *cura ferite gravi* (LI 5°, 750 mo l'una). Prezzi dell'SRD. In tutto 31.200 mo, il 47% del suo tesoro: un drago nero ha tesoro triplo (SRD, «Treasure: Triple standard»), e a GS 15 il tesoro standard è 22.000 mo (Guida del DM 3.5, «Treasure Values per Encounter»): 3 × 22.000 = 66.000 mo; il resto, 34.800 mo, è il covo.
+- **Le pergamene (SRD, *Scrolls*).** *Nebbia acida* e *invisibilità superiore* sono incantesimi arcani della lista dello stregone, e Fauci lancia come uno stregone (SRD, *Dragon*): le può usare. Car 16 basta anche per il 6° livello (serve 10 + il livello). *Invisibilità superiore* ha il suo LI, 7°, e non chiede prove. *Nebbia acida* ha LI 11°, sopra il suo: prova di livello dell'incantatore CD 12, d20 + 7, che riesce 80 volte su 100; se fallisce, la pergamena è persa e una prova di Saggezza CD 5 evita l'incidente. Leggerla è un'azione standard, come lanciare un incantesimo, e provoca attacchi di opportunità. Prima va decifrata, e Fauci lo fa prima della battaglia con *lettura del magico* `[CANONE — DM 2026-11-21, card]`.
+- **Le pozioni.** *Cura ferite gravi* rende 3d8+5 pf, in media 18 o 19. Prenderla è un'azione di movimento, berla un'azione standard, e tutte e due provocano attacchi di opportunità (SRD).
 
 > **Verifica 3.5 (versione più forte, lotto delle schede PNG; ricontata al giro
 > di letture del 2026-10-19)**: Fauci resta un **adulto maturo** per canone,
@@ -109,8 +113,8 @@
 > 16d4): qui si tengono i dadi del Vecchio con le capacità dell'adulto maturo,
 > ed è un potenziamento dichiarato. L'armatura naturale +21, la linea del soffio
 > di 30 m (taglia Enorme), RI 21 e RD 10/magia sono quelli dell'adulto maturo
-> SRD. Gli attacchi tornano col BAB: +25, For +10, taglia −2 fanno morso +33 e
-> secondari +31 con Multiattacco (la prima stesura diceva +35/+33). I draghi
+> SRD. Gli attacchi tornano col BAB: +25, For +10, taglia −2 fanno morso +33 (+34 con Arma
+> Focalizzata, dal 2026-11-09) e secondari +31 con Multiattacco (la prima stesura diceva +35/+33). I draghi
 > hanno **percezione cieca**, non vista cieca. Presenza terrificante a 90 m e
 > *corrompere acqua* a volontà sono potenziamenti, segnati sulla riga. I pf tornano coi dadi:
 > 25d12+175 = 337. Le caratteristiche (For 31, Cos 25, Int 16, Sag 17,
@@ -120,13 +124,29 @@
 > mancavano sono confermati dal DM (2026-10-18). *Oscurità* è una capacità magica dell'età, non
 > un incantesimo conosciuto; *Volare* esce dagli incantesimi (un drago vola
 > già, e superava i due conosciuti di 3°). L'Odio della stirpe viene dalla
-> CORREZIONE del boss nell'arco 07.
+> CORREZIONE del boss nell'arco 07. La CA 33 e i TS +24/+19/+22 vengono dagli oggetti della riga
+> Equipaggiamento (card del 2026-11-21), non dai dadi: senza, CA 29 e TS +21/+16/+19.
 
-**Tattiche:** Inizia con *Armatura Magica* e *Scudo*. Finché non riconosce Aegis Fang combatte da drago d'assedio: Soffio sui difensori ammassati e *Nube Maleodorante* dall'alto; con Fluttuare resta sospeso sopra le mura e soffia senza atterrare. Dal turno dopo il primo canto di Aegis Fang, o il primo colpo dell'ascia, sa chi ha davanti e ha un bersaglio solo: Thorik. Lo prende in bocca, una volta, quando lo decide lui (qui sotto, «La presa di Thorik»; in Sessione 4 è la picchiata dei round 18-20). Atterra solo se gravemente ferito (<100 PF) o per finire Thorik dopo averlo lasciato cadere. Fugge sotto i 50 PF. Thorik, col *Mind Blank* permanente della Corona, non subisce la Presenza terrificante: è un effetto di paura che influenza la mente (SRD *Mind Blank*).
+**Tattiche:**
+
+- **Prima del combattimento.** Inizia con *Armatura Magica* e *Scudo* attivi, e prima di farsi vedere lancia *Immagine Speculare* `[CANONE — DM 2026-11-15]`. Al LI 7° durano 7 ore la prima e 7 minuti le altre due (SRD), più di tutto lo scontro: quando si fa vedere ha già tutte e tre addosso, e in Sessione 4 questo è il round 1, quando il box lo fa ruggire contro i gufi. Invisibile non lo è ancora: l'*invisibilità superiore* viene dopo (qui sotto, «Picchiata»). Prima di avvicinarsi alle mura mette *Oscurità* su un sasso che tiene fra gli artigli: chi gli tira contro ha il 20% di mancarlo, anche con la scurovisione (SRD 3.5), mentre il soffio e la nube colpiscono un'area e non ne risentono. Non la mette sulle baliste: l'occultamento andrebbe ai serventi, non a lui, e le baliste (+10) lo colpiscono solo col 20 naturale. Le cisterne di Hammerfist non le tocca: *corrompere acqua* resta fuori dalla tattica `[CANONE — DM 2026-11-15]`.
+- **Assedio.** Finché non riconosce Aegis Fang combatte da drago d'assedio: Soffio sui difensori ammassati e *Nube Maleodorante* dall'alto; con Fluttuare resta sospeso sopra le mura e soffia senza atterrare. Nell'assedio legge *nebbia acida* sul camminamento dei difensori `[CANONE — DM 2026-11-21, card]`; in Sessione 4 la legge sui bastioni in uno dei round 1-3, mentre il cuneo si forma, e a quel punto si è già fatto vedere `[CANONE — DM 2026-11-21, card]`. Fauci è immune all'acido, ma la nebbia rallenterebbe anche lui: non ci entra. Che cosa fa la nebbia è nella nota qui sotto.
+- **Dal riconoscimento di Aegis Fang.** Dal turno dopo il primo canto di Aegis Fang, o il primo colpo dell'ascia, sa chi ha davanti e ha un bersaglio solo: Thorik. Lo prende in bocca, una volta, quando lo decide lui. Il soffio che non serve alla presa va su chi cura: ha visto chi tiene in piedi i nani `[CANONE — DM 2026-11-15]`.
+- **Picchiata (in Sessione 4, round 15-17).** Leggere una pergamena o lanciare un incantesimo è un'azione standard (SRD), e prima della picchiata ne fa una per round: round 15 *immagine speculare* (o *dissolvi magie*), round 16 *nebbia acida*, round 17 *invisibilità superiore*, che dura fino al round 23 e copre la presa e il duello `[CANONE — DM 2026-11-21, card]`. Se gli servono sia *immagine speculare* sia *dissolvi magie*, l'immagine passa al round 14.
+  - *L'immagine e il dissolvi.* Prima della picchiata rinnova *Immagine Speculare* se le immagini sono finite, e lancia *Dissolvi Magie* su chi vola vicino a Thorik e potrebbe prenderlo al volo (una pozione di *volare*, Hella con lo Scudo del Custode), ma solo se lo ha già visto farlo: la prima volta il trucco dei PG funziona `[CANONE — DM 2026-11-15]`.
+  - *La seconda nebbia.* Prima della picchiata legge l'altra *nebbia acida* sui compagni di Thorik, mai su Thorik: dentro la nebbia avrebbe occultamento anche lui contro il morso `[CANONE — DM 2026-11-21, card]`. La mette su chi cura e su chi tira da lontano, non su chi deve correre alla zona ⚡: Thorik resta fuori dai 6 m del raggio, e la zona dove lo lascerà cadere pure, perché chi cade dentro la nebbia prende 1d6 in meno ogni 3 m di vapore (SRD, *Solid Fog*). Chi è nella nebbia si muove di 1,5 m a round, e il soffio con Thorik in bocca lo trova ancora lì; chi corre alla zona ⚡ ne è fuori, e i PG convergono in 2 round come dice la guida dello scontro.
+  - *L'invisibilità.* Nell'avvicinamento alle mura legge una pergamena di *invisibilità superiore*: 7 round, e attaccare non la rompe `[CANONE — DM 2026-11-21, card]`. In Sessione 4 l'avvicinamento è quello della picchiata, al round 17. Invisibile, chi gli tira contro deve indovinare il quadretto e ha il 50% di mancarlo; lui ha +2 a colpire, e chi è attaccato da lui perde la Destrezza alla CA (SRD, *Invisibility*). Per la presa vuol dire: morso +40 contro Thorik (il +38 della presa e il +2), e Thorik senza Destrezza alla CA; la prova di lotta di *Ghermire* resta +27 contro +18, perché il +2 vale sui tiri per colpire e non sulla lotta, e il soffio con lui in bocca colpisce un'area e non cambia. Non sa che Artemis vede l'invisibile (*See the Unseen*): la prima volta l'invisibilità funziona contro tutti gli altri, non contro di lui `[CANONE — DM 2026-11-21, card]`. Cosa faccia della seconda pergamena, dopo che se n'è accorto, non è deciso `[INFERRED — Fauci tiene la seconda invisibilità per dove Artemis non ha la linea di vista, come Tyrgarun?; base: la card dice solo che la prima volta funziona]`.
+  - *Il sasso.* Finché è invisibile il sasso con l'*Oscurità* non serve: le probabilità di mancare non si sommano, vale la più alta (SRD, *Concealment*), e una sfera di buio che vola direbbe dov'è `[INFERRED — Fauci tiene coperto il sasso finché è invisibile, e lo scopre quando l'invisibilità finisce?; base: SRD, *Darkness*: una copertura opaca blocca l'effetto]`. Prima della picchiata su Thorik lascia cadere il sasso lontano dalle mura, così il morso non ha il 20% di mancare `[CANONE — DM 2026-11-15]`.
+- **Presa (round 18-20).** Morso, salita con Thorik in bocca, soffio con lui in bocca e caduta nella zona ⚡: la sequenza e i numeri sono qui sotto, in «La presa di Thorik».
+- **A terra (round 21-23).** Atterra solo per finire Thorik dopo averlo lasciato cadere. Prima di atterrare per finire Thorik lancia *Nube Maleodorante* sui compagni che gli corrono incontro, così scende quando nessuno può rispondere `[CANONE — DM 2026-11-15]`. Se la *nebbia acida* è ancora su di loro, la nube va su chi ne è fuori.
+- **Se i PG si sono protetti dall'acido** `[INFERRED — Fauci, coi PG protetti dall'acido, tiene la nebbia per rallentare e sposta il soffio su chi non lo è?; base: SRD, *Resist Energy* (da LI 7° toglie 20 danni a ogni attacco, quindi tutti i 2d6 della nebbia) e *Protection from Energy*; Regiarix fa lo stesso (P2-LHESPER STATBLOCCHI r.93)]`, lo capisce la prima volta che la nebbia o il soffio non li bruciano. La nebbia la usa ancora, per quello che le resta: rallentare e separare. I 2d6 non passano, il movimento di 1,5 m a round e la vista corta sì. Il soffio va su chi cura solo se chi cura non è protetto, se no su chi non lo è; se lo sono tutti, non soffia su di loro e usa la *nube maleodorante*, che non è acido. La presa di Thorik resta com'è.
+- **Morale.** Quando scende sotto i 150 pf beve una pozione di *cura ferite gravi*, prima di decidere se fuggire `[CANONE — DM 2026-11-21, card]`: due pozioni fanno in media 37 pf, e lo tengono sopra la soglia un round o due in più. Fugge sotto un terzo dei pf, **112 PF** `[CANONE — DM 2026-11-15]`: con INT 16 non resta a terra in mezzo a una fortezza nanica, e torna come nemesi.
+
+> **Nota di regola alle tattiche.** *Nebbia acida* (SRD, *Acid Fog*, *Solid Fog*, *Fog Cloud*): gittata 63 m (media, col LI 11° della pergamena), 6 m di raggio e 6 di altezza, 11 round. Nel turno di Fauci fa 2d6 acido a chi c'è dentro, senza TS né RI; dentro ci si muove di 1,5 m a round qualunque sia la velocità, si ha −2 a colpire e ai danni in mischia, non si fa il passo di 1,5 m, le armi a distanza non servono, e oltre 1,5 m non si vede, nemmeno con la scurovisione. La disperde in un round solo un vento violento, come quello di *folata di vento* (SRD). Il *See the Unseen* di Artemis non attraversa l'*Oscurità*: dà la scurovisione, che nell'oscurità magica non serve (SRD 3.5), e *Voidsense* gli dice solo il quadretto, il 20% resta. Thorik, col *Mind Blank* permanente della Corona, non subisce la Presenza terrificante: è un effetto di paura che influenza la mente (SRD *Mind Blank*). Simulazione: `plans/esperimenti/tattiche-draghi-2026-11-15/`.
 
 **La presa di Thorik** `[CANONE — DM 2026-10-19]`. È la firma di Fauci: la usa solo su Thorik, per odio, e solo da quando ha riconosciuto l'ascia. Non ghermisce nessun altro. Una volta per incontro `[CANONE — DM 2026-10-20]`. Se Aegis Fang non ha mai cantato né colpito, la presa non c'è.
 
-- **Il morso (round 18).** *Attacco in Volo* (SRD): scende in picchiata con un'azione di movimento e morde a metà discesa con l'azione standard, morso +37 (+33, più l'Odio della stirpe), 2d8+14, critico 19-20. Dopo il morso finisce il movimento risalendo, con la manovrabilità scarsa: 45° e metà velocità in salita (SRD). Una carica in volo darebbe +39, ma chiude il movimento accanto a Thorik.
+- **Il morso (round 18).** *Attacco in Volo* (SRD): scende in picchiata con un'azione di movimento e morde a metà discesa con l'azione standard, morso +38 (+34, più l'Odio della stirpe), 2d8+14, critico 19-20. Dopo il morso finisce il movimento risalendo, con la manovrabilità scarsa: 45° e metà velocità in salita (SRD). Una carica in volo darebbe +40, ma chiude il movimento accanto a Thorik.
 - **La presa.** Se il morso colpisce, *Ghermire* (SRD, *Snatch*) apre la lotta come la presa migliorata: azione gratuita, nessun attacco di opportunità, prova di lotta contrapposta. Fauci lo tiene con la sola bocca, a Lotta +27 (+43 −20, più l'Odio della stirpe): così non è in lotta, continua a volare, minaccia e usa gli altri attacchi su chi gli sta intorno (SRD, *Improved Grab*). Contro la Lotta di Thorik, +18 con BAB +13 e FOR 20 (i numeri che il repo usa: la scheda di Thorik non c'è), la presa riesce 86 volte su 100 (a parità vince Fauci, che ha il modificatore più alto). Thorik è Medio, due taglie sotto un Enorme: la stretta automatica di *Ghermire* vale solo da tre taglie in giù, e qui non c'è. Ogni prova di lotta che Fauci vince nei round dopo fa il danno del morso, 2d8+14 (presa migliorata, SRD).
 - **La salita (round 19).** *Fluttuare* (SRD, *Hover*): con un'azione di movimento si ferma e sale dritto a metà velocità, 22,5 m, fino a 30-35 m; con l'azione standard fa una prova di lotta, che morde se la vince. Che fermarsi e salire stiano nella stessa azione di movimento è una lettura del testo SRD («può poi volare in qualunque direzione a metà velocità»).
 - **Il soffio con lui in bocca (round 20).** Comincia il turno fermo in aria, e ha il round intero (SRD, *Hover*). Soffia sulla linea dei compagni che gli corrono sotto: chi è in bocca non ha il TS sui Riflessi (SRD, *Snatch*), e Thorik prende i 14d4 pieni.
@@ -152,13 +172,13 @@
 - **Sul collo** `[CANONE — DM 2026-10-20]`: Thorik non è più in lotta e il drago non lo morde, perché è fuori dalla portata della sua bocca. Come chi scala, perde la Destrezza alla CA e non usa lo scudo (SRD, *Climb*), e colpisce con Aegis Fang.
 - **Scrollarselo** `[CANONE — DM 2026-10-20]`: all'inizio di ogni turno di Fauci, Thorik ripete Scalare CD 25. Se fallisce di 5 o più, cade dalla quota del drago. Fauci per toglierselo può anche atterrare, ed è il duello dei round 21-23 con Thorik già addosso.
 
-**Colpi mirati: l'occhio e l'ala** `[CANONE — DM 2026-10-20: regola della casa da PF1e, solo per questo scontro]`. L'SRD 3.5 non ha colpi mirati; qui si usano quelli di Pathfinder 1e (*Ultimate Combat*, «Called Shots», OGL). Un colpo mirato è un attacco singolo con un'azione di round completo, contro la CA normale (29, 37 con *armatura magica* e *scudo*). Non si somma alla carica, né a una raffica o a un attacco completo.
+**Colpi mirati: l'occhio e l'ala** `[CANONE — DM 2026-10-20: regola della casa da PF1e, solo per questo scontro]`. L'SRD 3.5 non ha colpi mirati; qui si usano quelli di Pathfinder 1e (*Ultimate Combat*, «Called Shots», OGL). Un colpo mirato è un attacco singolo con un'azione di round completo, contro la CA normale (33, 41 con *armatura magica* e *scudo*). Non si somma alla carica, né a una raffica o a un attacco completo.
 - **L'occhio, −10.** Se colpisce, per 1 round i nemici di Fauci hanno occultamento contro i suoi attacchi, e lui ha −2 a Osservare. Con un critico perde la vista da quell'occhio per 1d4 minuti, e l'effetto di prima dura altrettanto. Non cade e non è accecato: gli restano l'altro occhio e la percezione cieca a 18 m, che però non gli toglie la probabilità di mancare chi è occultato (SRD).
 - **L'ala, −2** (le ali contano come braccia). Se colpisce, Fauci ha −2 per 1d4 round a ciò che fa con quell'ala. In PF1e deve anche superare una prova di Volare o scendere contro la sua volontà. In 3.5 quella prova non c'è, e al suo posto fa un TS sui Riflessi con CD pari alla CA colpita: se fallisce, nel suo turno scende di 22,5 m, metà della sua velocità di volo, e non può salire `[CANONE — DM 2026-10-20]` (la distanza la regola PF1e non la dice).
 - **Da dove.** In mischia senza penalità se il bersaglio è adiacente, −2 altrimenti; a distanza le penalità di gittata raddoppiano, minimo −2 oltre i 9 m. Dal collo del drago l'occhio è a portata: meglio Aegis Fang in mano che lanciata, perché un attacco a distanza fatto nello spazio di chi minaccia provoca un attacco di opportunità (SRD).
 
 > **Esito della battaglia — ramo condizionale (D10, non un fatto compiuto)**:
-> **default** = sotto i 50 PF fugge gravemente ferito verso le montagne
+> **default** = sotto i 112 PF fugge gravemente ferito verso le montagne
 > meridionali (come da Tattiche sopra); resta rimosso dall'assedio ma
 > può ricomparire più avanti (hook nemesi, non garantito — vedi piano
 > ARC-08 C2/EVENT-DECK, non ancora scritto). **Alternativa** = se i PG
@@ -200,11 +220,11 @@
 *   **Comando Tattico (Str):** Fornisce +2 morale agli attacchi degli alleati hobgoblin entro 9m.
 
 **Qualità Speciali:** Aura del male, Individuazione del bene, Uso dei veleni, Benedizione oscura (il Car ai TS, già contato).
-**Incantesimi da Guardia Nera (LI 4°; 2 di 1° al giorno, CD 12):** *Incutere Paura*, *Infliggi Ferite Leggere*.
+**Incantesimi da Guardia Nera (LI 4°; 2 di 1° al giorno, CD 12):** *Incuti Paura*, *Infliggi Ferite Leggere*.
 
 **Talenti:** Attacco Poderoso, Incalzare, Spezzare Migliorato, Combattere in Sella, Attacco in Sella, Carica Devastante, Arma Focalizzata (lancia da cavaliere), Arma Specializzata (lancia da cavaliere) (la scheda non li elencava; i primi tre sono i requisiti della Guardia Nera).
 
-**Equipaggiamento:** *Armatura Completa +1*, *Scudo Leggero in Acciaio +1*, *Lancia da Cavaliere +1*, *Spada Bastarda +1*, *Anello di Protezione +1*, *Amuleto della Salute +2* (è la fonte di Cos 18 e dei 95 pf).
+**Equipaggiamento:** *Armatura Completa +1*, *Scudo Leggero di Acciaio +1*, *Lancia da Cavaliere +1*, *Spada Bastarda +1*, *Anello di Protezione +1*, *Amuleto della Salute +2* (è la fonte di Cos 18 e dei 95 pf).
 
 > **Verifica 3.5 (versione più forte)**: Guerriero 6/Guardia Nera 4 rende
 > legali l'Aura di Disperazione della prima stesura (arriva al 3° livello di
@@ -215,7 +235,7 @@
 > livello di Guardia Nera. BAB, TS, CA e attacchi sono ricontati sull'SRD
 > (la Benedizione oscura somma il Car ai TS).
 
-**Tattiche:** *Prima del combattimento*: resta in sella a Fauci di Palude, stendardo alzato: il suo compito è difendere il drago e guidarlo. Lancia *Incutere Paura* sul primo difensore che lo vede arrivare. *Durante il combattimento*: nei passaggi radenti tiene l'Aura di Disperazione sui nani vicini al drago, così Presenza Terrificante e soffio trovano TS più bassi; quando il drago carica, colpisce in sella con la lancia (Attacco in Sella, Carica Devastante) e spende Punire il Bene sul primo leader nanico o paladino a portata. Se il drago atterra, scende a coprirgli il fianco con la spada bastarda e cerca di fiancheggiare per l'attacco furtivo. *Morale*: se Fauci fugge, resta in sella e lascia il campo con lui; sotto i 30 pf, disarcionato e col drago lontano, combatte fino alla morte: per un Guardia Nera arrendersi ai nani è peggio della fine. Che cosa sa, se lo prendono vivo, e il blocco «Se lo divinano»: `ARC08-10-ESITI-E-CONTINGENZE.md` §4.2 `[CANONE — DM 2026-10-19, D15]`.
+**Tattiche:** *Prima del combattimento*: resta in sella a Fauci di Palude, stendardo alzato: il suo compito è difendere il drago e guidarlo. Lancia *Incuti Paura* sul primo difensore che lo vede arrivare. *Durante il combattimento*: nei passaggi radenti tiene l'Aura di Disperazione sui nani vicini al drago, così Presenza Terrificante e soffio trovano TS più bassi; quando il drago carica, colpisce in sella con la lancia (Attacco in Sella, Carica Devastante) e spende Punire il Bene sul primo leader nanico o paladino a portata. Se il drago atterra, scende a coprirgli il fianco con la spada bastarda e cerca di fiancheggiare per l'attacco furtivo. *Morale*: se Fauci fugge, resta in sella e lascia il campo con lui; sotto i 30 pf, disarcionato e col drago lontano, combatte fino alla morte: per un Guardia Nera arrendersi ai nani è peggio della fine. Che cosa sa, se lo prendono vivo, e il blocco «Se lo divinano»: `ARC08-10-ESITI-E-CONTINGENZE.md` §4.2 `[CANONE — DM 2026-10-19, D15]`.
 > Tattiche scritte da un agente sui poteri della scheda.
 
 <!-- storico -->
@@ -230,46 +250,65 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 <div style="page-break-before:always"></div>
 
 ### **GENERALE GRIMJAW**
-*Orog Guerriero 10°/Signore della Guerra 3°, GS 14* — orog e Signore della Guerra [Private source — vedi nota]
-**LM Umanoide Mostruoso Medio (Orco)**
-**Iniziativa:** +5; **Sensi:** Scurovisione 18m; Ascoltare +13, Osservare +13
+*Orog Guerriero 11°/Signore della Guerra 3°, GS 15* — orog e Signore della Guerra [Private source — vedi nota] `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`
+**LM Umanoide Medio (orco)**
+**Iniziativa:** +4; **Sensi:** Scurovisione 18m; Ascoltare −1, Osservare −1
 
-**CA:** 26 (+1 Des, +10 armatura, +3 scudo, +1 schivare, +1 naturale), contatto 12, colto alla sprovvista 24
-**PF:** 178 (13d10+107)
-**TS:** Tempra +18, Riflessi +8, Volontà +10
+**CA:** 27 (+10 armatura, +3 scudo, +3 naturale, +1 deviazione), contatto 11, colto alla sprovvista 27
+**PF:** 122 (14d10+45); in Furia 150
+**TS:** Tempra +14, Riflessi +6, Volontà +7
 
 **Velocità:** 6m (in armatura completa)
-**Attacco Base:** +13; **Lotta:** +19
-**Attacco:** *Spada Bastarda Demoniaca +1* +22 in mischia (1d10+9/17-20 più 1d6 fuoco su critico)
-**Attacco Completo:** *Spada Bastarda Demoniaca +1* +22/+17/+12 in mischia (1d10+9/17-20 più 1d6 fuoco su critico)
+**Attacco Base:** +14; **Lotta:** +21
+**Attacco:** *Spada Bastarda Demoniaca +1* +24 in mischia (1d10+10/17-20 più 1d6 fuoco su critico)
+**Attacco Completo:** *Spada Bastarda Demoniaca +1* +24/+19/+14 in mischia (1d10+10/17-20 più 1d6 fuoco su critico)
 **Distanza:** *Arco Composito Lungo Poderoso +1 (+6 For)* +15/+10/+5 (1d8+7/x3)
 
-**Caratteristiche:** For 22, Des 13, Cos 26, Int 14, Sag 13, Car 16
+**Caratteristiche:** For 24, Des 10, Cos 14, Int 8, Sag 8, Car 15
 
 **Attacchi Speciali:**
-*   **Furia Comandante (Str):** 1/giorno per 8 round. Ottiene +4 For, +4 Cos. Gli alleati entro 6m ottengono +2 morale agli attacchi e ai danni.
+*   **Furia Comandante (Str):** 1/giorno per 8 round. Ottiene +4 For, +4 Cos (For 28, Cos 18: +26/+21/+16, 1d10+12; Lotta +23; Tempra +16; +28 pf). Gli alleati entro 6m ottengono +2 morale agli attacchi e ai danni.
 *   **Presenza Intimidatoria (Str):** Nemici entro 9m subiscono -2 ai tiri per colpire (TS Volontà CD 19 nega).
 *   **Tattico Superiore (Str):** Azione gratuita, fornisce +2 bonus a un tipo di tiro (attacco, danno, TS) a tutti gli alleati entro 18m per 1 round.
 
-**Talenti:** Arma Focalizzata (Spada Bastarda), Arma Specializzata (Spada Bastarda), Critico Migliorato (Spada Bastarda), Schivare, Attacco Poderoso, Incalzare, Arma Focalizzata Superiore (Spada Bastarda), Competenza nelle Armi Esotiche (Spada Bastarda), Robustezza, Incalzare Potenziato, Iniziativa Migliorata (gli ultimi cinque confermati dal DM, 2026-10-18).
-**Equipaggiamento:** *Armatura Completa Demoniaca +2* (Resistenza al Fuoco 10), *Scudo Pesante in Acciaio +1 con Spuntoni*, *Spada Bastarda Demoniaca +1*, *Mantello della Resistenza +2*, *Arco Composito Lungo Poderoso +1 (+6 For)*, *Amuleto dell'Armatura Naturale +1* e 2 *Pozioni di Cura Ferite Gravi*.
+**Talenti:** Arma Focalizzata (Spada Bastarda), Arma Specializzata (Spada Bastarda), Critico Migliorato (Spada Bastarda), Volontà di Ferro, Attacco Poderoso, Incalzare, Arma Focalizzata Superiore (Spada Bastarda), Competenza nelle Armi Esotiche (Spada Bastarda), Robustezza, Robustezza Migliorata, Iniziativa Migliorata. Volontà di Ferro al posto di Schivare, Robustezza Migliorata al posto di Incalzare Potenziato `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`.
+**Abilità:** Intimidire +16, Cavalcare +3 `[INFERRED — Come spende i punti abilità, e quanti ne dà il Signore della Guerra?; base: Guerriero 11 con Int 8 dà 14 punti, la classe di prestigio forse 3; Ascoltare e Osservare non sono abilità del guerriero, e la penalità di armatura è −6]`
+**Equipaggiamento:** *Armatura Completa Demoniaca +2* (Resistenza al Fuoco 10), *Scudo Pesante in Acciaio +1 con Spuntoni*, *Spada Bastarda Demoniaca +1*, *Mantello della Resistenza +2*, *Arco Composito Lungo Poderoso +1 (+6 For)*, *Amuleto dell'Armatura Naturale +1*, *Anello di Protezione +1* `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]` e 2 *Pozioni di Cura Ferite Gravi*.
 
 > **Fonti e verifica 3.5**: l'**orog** non è nell'SRD
-> [Private source — Monsters of Faerûn]; il **Signore della Guerra** non è
+> [Private source — Monsters of Faerûn; i numeri della razza da Races of
+> Faerûn: For +6, Des −2, Sag −2, Car +2, armatura naturale +2]; il
+> **Signore della Guerra** non è
 > una classe SRD [Private source — non identificata: la Furia Comandante
-> ricorda il *Warchief* di Complete Warrior]. I suoi privilegi sono
+> non è il *Warchief* del Miniatures Handbook, p. 24, che dà agli alleati
+> della stessa tribù +2 For al 1° e +4 al 3°, verificato su dnd.arkalseif.info
+> il 2026-11-19]. I suoi privilegi sono
 > quelli della scheda, confermati dal DM il 2026-10-18. PF1e: il **Cavaliere** (APG,
 > ordine del Drago) si avvicina, perché dà bonus agli alleati vicini e tiene
 > il guerriero in prima linea; il *Battle Herald* farebbe di più il
-> comandante ma stravolge il combattente. Conti ricontati: la *Armatura
-> Completa +2* vale +10 (era +9), Tempra non può stare sotto +18 (Gue 10 +7,
-> classe di prestigio almeno +1, Cos +8, mantello +2), il danno a una mano
-> con Arma Specializzata è +9, la CD della Presenza è 10 + ½ livello + Car.
-> 13 livelli danno 11 talenti: i cinque aggiunti sono confermati dal DM (2026-10-18), e
-> Robustezza spiega i 178 pf (13d10+104 = 175, +3).
+> comandante ma stravolge il combattente. **Robustezza Migliorata** non è
+> nell'SRD [Private source — Complete Warrior]: +1 pf per DV. Conti
+> ricontati: le caratteristiche sono la serie d'élite (DMG p. 110) più
+> l'orog, con i tre aumenti in For `[CANONE — DM 2026-11-20, card «Serie
+> d'élite più orog»]`; pf 77 (14 × 5,5) + 28 (Cos) + 3 (Robustezza) + 14
+> (Robustezza Migliorata) = 122; CA 10 + 10 + 3 + 3 (orog 2, amuleto 1) + 1
+> (anello); BAB 11 + 3; spada 14 + 7 (For) + 1 (arma) + 2 (le due Arma
+> Focalizzata) = +24, danno 7 + 2 (Specializzata) + 1 = +10; Tempra 7 + 3 +
+> 2 (Cos) + 2 (mantello) = +14, Volontà 3 + 1 − 1 + 2 + 2 (Volontà di Ferro)
+> = +7 `[INFERRED — Che progressione di TS ha il Signore della Guerra?;
+> base: la classe non è identificata; qui Tempra buona, +3/+1/+1 al 3°]`;
+> la CD della Presenza è 10 + 7 (½ di 14) + 2 (Car) = 19. 14 livelli danno
+> 11 talenti (5 generici, 6 da guerriero). Schivare esce perché chiede Des 13
+> (SRD).
 
-**Tattiche:** Grimjaw è un comandante, non un combattente solitario. Rimane sempre protetto dalle sue Guardie Nere Orog. Usa Tattico Superiore ogni round per potenziare le sue truppe. Attiva la Furia Comandante solo quando la battaglia raggiunge il suo culmine o viene ingaggiato personalmente. La sua morte causa un crollo del morale di -3 a tutto l'esercito. *Morale*: non combatte fino alla morte. Sotto i 60 pf beve una pozione e ripiega dietro le Guardie Nere; sotto i 30 pf, o se cade Fauci, suona la ritirata e torna al campo. Resta solo se Thorik lo ha sfidato davanti all'esercito: lì l'arroganza è più forte della prudenza.
-> Morale scritto da un agente sui poteri della scheda.
+**Tattiche:** Grimjaw è un comandante, non un combattente solitario. Rimane sempre protetto dalle sue Guardie Nere Orog. Usa Tattico Superiore ogni round per potenziare le sue truppe. Attiva la Furia Comandante solo quando la battaglia raggiunge il suo culmine o viene ingaggiato personalmente. La sua morte causa un crollo del morale di -3 a tutto l'esercito. *Morale* `[CANONE — DM 2026-11-26, card «Come rinforzo Grimjaw»]`: non combatte fino alla morte. Sotto metà dei pf (61) ripiega dietro le Guardie Nere, e lì beve una *cura ferite gravi*; sotto un quarto (30), o se cade Fauci, suona la ritirata e torna al campo. Resta solo se Thorik lo ha sfidato davanti all'esercito: lì l'arroganza è più forte della prudenza.
+
+<!-- storico -->
+Generale Grimjaw, numeri superati il 2026-11-26 (card del DM «Come rinforzo Grimjaw», opzione A, sopra la serie d'élite più orog del 2026-11-20):
+era Orog Guerriero 10°/Signore della Guerra 3°, GS 14; «LM Umanoide Mostruoso Medio (Orco)»; Iniziativa +5; Ascoltare +13, Osservare +13; CA 26 (+1 Des, +10 armatura, +3 scudo, +1 schivare, +1 naturale), contatto 12, colto alla sprovvista 24; PF 178 (13d10+107); TS Tempra +18, Riflessi +8, Volontà +10; BAB +13, Lotta +19; spada +22/+17/+12 (1d10+9); For 22, Des 13, Cos 26, Int 14, Sag 13, Car 16; Presenza CD 19; Schivare e Incalzare Potenziato fra i talenti; Morale: «sotto i 60 pf beve una pozione e ripiega dietro le Guardie Nere; sotto i 30 pf, o se cade Fauci, suona la ritirata», scritto da un agente sui poteri della scheda.
+era (conti del 2026-10-18): Tempra non sotto +18 (Gue 10 +7, classe di prestigio almeno +1, Cos +8, mantello +2); Robustezza spiegava i 178 pf (13d10+104 = 175, +3).
+Boost log: 2026-11-26 — Guerriero 11 e Robustezza Migliorata, Volontà di Ferro e anello di protezione +1 — GS 14 → 15 — card del DM «Come rinforzo Grimjaw», opzione A.
+<!-- /storico -->
 
 ---
 <div style="page-break-before:always"></div>
@@ -285,34 +324,40 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 
 **Velocità:** 9m (in armatura)
 **Attacco Base:** +11; **Lotta:** +24
-**Attacco:** *Randello Enorme +1* +21 in mischia (2d6+10)
-**Attacco Completo:** *Randello Enorme +1* +21/+16/+11 in mischia (2d6+10) e *Randello Enorme +1* +21/+16/+11 in mischia (2d6+5)
-**Distanza:** giavellotto grande +12/+7/+2 (1d8+9)
+**Attacco:** *Stella del Mattino Grande +1* +21 in mischia (2d6+10)
+**Attacco Completo:** *Stella del Mattino Grande +1* +21/+16/+11 in mischia (2d6+10) e *Stella del Mattino Grande +1* +21/+16/+11 in mischia (2d6+10)
+**Distanza:** giavellotto grande +12 (1d8+9), uno a round, dopo aver lasciato una stella del mattino: incremento 9 m, −2 a ogni incremento in più, fino a 45 m. Senza Estrazione Rapida le armi da lancio non danno gli attacchi iterativi `[SRD: Quick Draw]`
 **Spazio/Portata:** 3m/3m
 
 **Caratteristiche:** For 29, Des 15, Cos 28, Int 10, Sag 14, Car 11
 
 **Qualità Speciali:**
-*   **Combattere con Due Armi Superiore (Str):** ogni testa guida un braccio: nessuna penalità ai tiri per colpire e ai danni con due armi (ettin SRD); il secondo braccio somma metà For ai danni.
+*   **Combattere con Due Armi Superiore (Str):** ogni testa guida un braccio: nessuna penalità ai tiri per colpire e ai danni con due armi (ettin SRD): il secondo braccio somma la For piena ai danni, come il primo `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]`.
 *   **Visione Superiore (Str):** Bonus razziale di +4 a Osservare e Ascoltare. Non può essere attaccato ai fianchi.
 *   **Tre Teste, Tre Tattiche:**
     *   **Testa Sinistra (Brutale):** Il suo primo attacco in ogni round infligge +2 danni.
     *   **Testa Centrale (Strategica):** Una volta per scontro, può rinunciare a un attacco per fornire a un'unità alleata un bonus di +2 al morale per 1 round.
     *   **Testa Destra (Vigile):** Fornisce il talento Iniziativa Migliorata (+4 Iniziativa totale).
 
-**Talenti:** Allerta, Iniziativa Migliorata, Attacco Poderoso, Incalzare, Spezzare Migliorato, Volontà di Ferro.
-**Equipaggiamento:** *Corazza di Piastre Grande +1*, 3 *Randelli Enormi +1* (due in pugno, uno di riserva), 6 Giavellotti Grandi.
+**Talenti:** Allerta, Arma Focalizzata (stella del mattino), Attacco Poderoso, Incalzare, Spezzare Migliorato, Volontà di Ferro; Iniziativa Migliorata dalla testa destra. `[CANONE — regola, ADR-0118]: 15 DV danno sei talenti e Iniziativa Migliorata la dà la testa destra, quindi il sesto è libero; con Arma Focalizzata la stella del mattino torna a +21 (BAB +11, For +9, −1 taglia, +1 arma, +1)`
+**Equipaggiamento:** *Corazza di Piastre Grande +1*, 3 *Stelle del Mattino Grandi +1* (due in pugno, una di riserva), 6 Giavellotti Grandi.
 
-> **Verifica 3.5 (versione più forte)**: ettin dell'SRD avanzato a 15 DV
-> (il massimo della taglia Grande). L'ettin SRD combatte con un'arma per mano
-> senza penalità, perché ogni testa guida un braccio: due randelli a pieno
-> BAB, non tre attacchi con uno solo. La *corazza di piastre +1* vale +6 alla
+> **Verifica 3.5 (versione più forte)**: ettin dell'SRD (10 DV) portato a
+> 15 DV. ⚠️ Non SRD: l'SRD dà all'ettin «Advancement: By character class»,
+> senza una fascia di DV, ed è un potenziamento dichiarato
+> (`ARC08-DEF-2`, A.1). L'ettin SRD combatte con un'arma per mano
+> senza penalità, perché ogni testa guida un braccio: due stelle del mattino
+> Grandi a pieno BAB e a Forza piena, 2d6+10 l'una, non tre attacchi con una
+> sola. Sono le armi dell'ettin SRD (2 morningstars), con la For 29 e il +1
+> `[CANONE — DM 2026-11-25, card «armi di Gorthak e versione dura»]`.
+> <!-- storico: fino al 2026-11-25 la scheda scriveva «Randello Enorme +1», 2d6+10 e 2d6+5, e «il secondo braccio somma metà For ai danni». Un randello Grande fa 1d8, e un randello Enorme un gigante Grande lo impugna solo a due mani (SRD, Inappropriately Sized Weapons): il 2d6 era già il dado della stella del mattino Grande -->
+> La *corazza di piastre +1* vale +6 alla
 > CA (era +3). I pf tornano coi dadi con Cos 28 (15d8+135 = 202), un punto
 > in più dagli aumenti di caratteristica dei DV avanzati; prima
 > 15d8+120 dava 187, non 195. Multiattacco esce (non serve a chi usa armi):
 > entrano Spezzare Migliorato e Volontà di Ferro.
 
-**Tattiche:** Gorthak è un ariete vivente. Cerca sempre lo scontro fisico, puntando il cancello o i nemici più grandi e corazzati. Usa i suoi tre attacchi per colpire bersagli multipli o per devastare un singolo avversario. Sotto i 101 PF (metà), la testa sinistra prende il sopravvento, facendolo combattere con Furia (+4 For, -2 CA) fino alla morte. *Morale*: prima di quella soglia, se Fauci è fuggito o abbattuto e l'orda è in rotta, la testa centrale può offrire la resa (al finale la scelta è dei PG); dopo, nessuna resa.
+**Tattiche:** Gorthak è un ariete vivente. Cerca sempre lo scontro fisico, puntando il cancello o i nemici più grandi e corazzati. Ogni round fa l'attacco completo con le due stelle del mattino, una per braccio (sei colpi), su un bersaglio solo o divisi fra due. Sotto i 101 PF (metà), per un round la testa sinistra prende il sopravvento e lo fa combattere in Furia (+4 For, −2 CA); alla fine di quel round la testa centrale lo tira indietro e Gorthak lascia il ponte, ferito `[CANONE — DM 2026-11-04, P16, il cancello e Gorthak]` (il duello intero, con il ponte, lo sportello e i troll, è in `ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md`, Scena 2). *Morale*: prima di quella soglia, se Fauci è fuggito o abbattuto e l'orda è in rotta, la testa centrale può offrire la resa (al finale la scelta è dei PG).
 > Morale scritto da un agente sui poteri della scheda.
 
 ---
@@ -358,7 +403,7 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 ---
 <div style="page-break-before:always"></div>
 
-### **MADRE SUPERIORA DANA FORGIAPIETRA**
+### **MADRE SUPERIORA DAGMAR FORGIAPIETRA, DETTA DANA**
 *Nana Chierico 12°/Cantante Divina 3°, GS 14*
 **LB Umanoide Medio (Nano)**
 **Iniziativa:** +1; **Sensi:** Scurovisione 18m; Ascoltare +21, Osservare +21
@@ -376,11 +421,12 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 **Qualità Speciali:**
 *   **Scacciare Non Morti (Sop):** 11/giorno (+6 al tiro).
 *   **Canto di Battaglia (Sop):** 1/giorno, azione standard. Tutti gli alleati entro 18m ottengono +2 morale ad attacchi, danni e TS per 10 round.
-*   **Incantesimi:** Lancia come un Chierico di 15° livello. **Domini:** Guerra, Terra.
-    *   **Incantesimi Preparati (LI 15°):** *Aura Sacra*, *Parola del Potere Stordire* (D), *Terremoto* (D), *Guarigione* (x2), *Lama di Barriera* (D), *Colpo Infuocato* (D), *Potere Divino* (D), *Muro di Pietra*, *Preghiera*, ecc. (elenco completo nella Guida DM).
+*   **Incantesimi:** Lancia come un Chierico di 15° livello. **Domini:** Protezione, Terra.
+    *   **Incantesimi Preparati (LI 15°):** *Aura Sacra*, *Vuoto Mentale* (D), *Terremoto* (D), *Guarigione* (x2), *Pelle di Pietra* (D), *Colpo Infuocato*, *Immunità agli Incantesimi* (D), *Potere Divino*, *Muro di Pietra*, *Preghiera*, ecc. (elenco completo nella Guida DM).
 
-**Talenti:** Scacciare Extra (gli altri talenti non sono scritti).
-**Equipaggiamento:** *Armatura Completa +3*, *Scudo Pesante +2*, *Anello di Protezione +3*, *Martello da Guerra Sacro +2*, *Guanti della Forza dell'Orco +2* e *Mantello del Carisma +2*.
+**Talenti:** Scacciare Extra, Arma Focalizzata (martello da guerra) (gli altri talenti non sono scritti). `[CANONE — DM 2026-11-19]: Arma Focalizzata è un suo talento, e il martello resta a +18 (BAB +11, For +4, +2 arma, +1)`
+<!-- storico: fino al 2026-11-19 Domini Guerra e Terra, con Arma Focalizzata dal dominio della Guerra, che Moradin non dà (scelta del DM sulla card del 2026-11-19) -->
+**Equipaggiamento:** *Armatura Completa +3*, *Scudo Pesante +2*, *Anello di Protezione +3*, *Martello da Guerra Sacro +2*, *Guanti del Potere Orchesco +2* e *Mantello del Carisma +2*.
 
 **Tattiche:** *Prima del combattimento*: al mattino prepara *Banchetto degli Eroi* per gli ufficiali e consacra le armi (Benedizione della Forgia); prima di un assalto lancia *Aura Sacra* su sé e sulle Cantitrici vicine, e *Libertà di Movimento* su Re Thorek. *Durante il combattimento*: round 1 Canto di Battaglia (+2 a tutti gli alleati entro 18 m per 10 round); poi tiene in piedi i comandanti, con *Guarigione* sul re e *Cura Ferite Leggere di Massa* dopo ogni soffio; *Muro di Pietra* chiude una breccia, *Terremoto* lontano dalle mura spezza una carica. Scaccia i non morti se ne compaiono. Combatte col martello solo se un nemico le arriva addosso, e allora prima *Potere della Giustizia* e *Potere Divino*. *Morale*: non abbandona il re né il tempio; sotto i 40 pf si ritira dietro le Cantitrici, si cura e torna.
 > Tattiche scritte da un agente sui poteri della scheda.
@@ -392,8 +438,8 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 > senza perdere progressione; lo *Skald* (Advanced Class Guide) si avvicina
 > nel canto ma stravolge il chierico, e resta da preferire la classe 3.5.
 > Conti ricontati: *Armatura Completa +3* vale +11 e *Scudo Pesante +2* +4
-> (erano +8 e +2), quindi CA 29; il dominio della Guerra dà Arma Focalizzata
-> nel martello da guerra, l'arma di Moradin; +18 e 1d8+6 chiedono For 18,
+> (erano +8 e +2), quindi CA 29; Arma Focalizzata nel martello da guerra è
+> un suo talento, e i domini sono Protezione e Terra (Moradin non dà Guerra); +18 e 1d8+6 chiedono For 18,
 > dai guanti. Scacciare: 3 + Car +4 + 4 di Scacciare Extra = 11
 > al giorno, prova +6. Incantesimi: con Sag 22 gli slot sono quelli scritti,
 > e ogni livello ha uno slot di dominio (D).
@@ -404,7 +450,9 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 ### **LE CANTITRICI DELLA PIETRA**
 *Unità d'Élite: 5 Nane Chierico 8°/Bardo 4°, GS 12 ciascuna*
 **LB Umanoide Medio (Nano)**
-**Leader:** Melodia Echopietra
+**Leader:** Sigrun Cantoprofondo
+**Le altre quattro:** Bergdis Ecodiferro, Asvor Mezzavoce, Thora Vocediroccia, Ingrid Ultimanota `[CANONE — DM 2026-11-15]`
+<!-- storico: fino al 2026-11-15 la guida si chiamava «Melodia Echopietra» e le altre quattro non avevano nome; nomi scelti dal DM sulla card del 15/11 -->
 **Iniziativa:** +0; **Sensi:** Scurovisione 18m; Ascoltare +15, Osservare +10
 
 **CA:** 20 | **PF:** 98 (8d8+4d6+48) | **TS:** Temp +13, Rifl +8, Vol +16
@@ -415,7 +463,7 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 **Capacità Rilevanti:**
 *   **Musica Bardica (8/giorno):** *Ispirare Coraggio* (+2 a colpire e danni per tutti gli alleati che le sentono).
 *   **Scacciare Non Morti (7/giorno):** Bonus +6 al tiro.
-*   **Incantesimi da Bardo Chiave (LI 4°):** *Frantumare*, *Suggestione*, *Cura Ferite Leggere*, *Rimuovere Paura*.
+*   **Incantesimi da Bardo Chiave (LI 4°):** *Frantumare*, *Suggestione*, *Cura Ferite Leggere*, *Rimuovi Paura*.
 *   **Incantesimi da Chierico Chiave (CL 8°):** *Potere Divino*, *Preghiera*, *Dissolvi Magie*, *Silenzio*, *Aiuto*.
 
 **Capacità di Gruppo "Coro della Montagna" (1/giorno per abilità):**
@@ -434,8 +482,9 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 > chierico, Car 18 dalle CD da bardo; TS con un *Mantello della
 > Resistenza +2*. Un bardo di 4° ha 4 usi di musica e Ispirare
 > Coraggio +1: gli 8 usi e il +2 della scheda restano con due talenti non SRD,
-> Musica Extra [Private source — Complete Adventurer] e *Song of the Heart*
-> [Private source — talento non SRD, non verificato].
+> Musica Extra [Private source — Complete Adventurer, p. 109] (+4 usi) e
+> *Song of the Heart* [Private source — Eberron Campaign Setting, p. 60]
+> (+1 ai bonus di ispirare), verificati su dnd.arkalseif.info il 2026-11-19.
 > *Lancia Sonora* non è SRD ed esce; *Benedizione* e *Scudo della Fede* non
 > sono incantesimi da bardo (restano tra quelli da chierico). Il dominio
 > Nanico è del Forgotten Realms [Private source — FRCS]. Il Coro della
@@ -504,7 +553,7 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 **Qualità Speciali:**
 *   **Nemico Prescelto:** Draghi +4, Giganti +4, Orchi +2.
 *   **Stile di Combattimento Migliorato:** Possiede Tiro Rapido e Tiro Multiplo.
-*   **Incantesimi da Ranger (CL 5°):** *Pelle Coriacea*, *Resistenza all'Energia*, *Passo Veloce*.
+*   **Incantesimi da Ranger (CL 5°):** *Pelle Coriacea*, *Resistere all'Energia*, *Passo Veloce*.
 *   **Corno del Valhalla di Bronzo:** 1/settimana, evoca 2d4 guerrieri barbari di 4° livello che combattono per lui per 1 ora.
 
 **Talenti:** Tiro Ravvicinato, Tiro Preciso, Arma Focalizzata (arco lungo composito), Robustezza; da ranger: Seguire Tracce, Resistenza Fisica, Tiro Rapido, Tiro Multiplo.
@@ -581,30 +630,31 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 <div style="page-break-before:always"></div>
 
 ### **MAESTRO TEMPESTAS**
-*Mezzelfo Bardo 12°/Cantore delle tempeste 2°, GS 14*
+*Mezzelfo Bardo 12°/Cantore delle tempeste 3°, GS 15*
+<!-- storico: fino al 2026-11-19 Bardo 12 / Cantore delle tempeste 2, GS 14, 91 pf (14d6+42), Tempra +7, musica 14/giorno, incantatore di 14° (4/5/5/4/4/2), *fulmine* fra gli incantesimi di 3° (non è da bardo: PHB p. 248, stregone e mago), cinque talenti, Esibirsi +21, Concentrazione +11; scelta del DM del 2026-11-19: colpo di tuono -->
 **NB Umanoide Medio (Elfo)**
 **Iniziativa:** +7; **Sensi:** Visione Crepuscolare; Ascoltare +18, Osservare +15
 
 **CA:** 20 (+6 giaco di maglia +2, +3 Des, +1 deflessione), contatto 14, colto alla sprovvista 17
-**PF:** 91 (14d6+42)
-**TS:** Tempra +7, Riflessi +13, Volontà +13
+**PF:** 97 (15d6+45)
+**TS:** Tempra +8, Riflessi +16, Volontà +13
 
 **Velocità:** 9m
 **Attacco Base:** +10; **Lotta:** +11
 **Attacco:** *Spada corta +1* +12/+7 in mischia (1d6+2/19-20)
 
 **Qualità Speciali:**
-*   **Musica Bardica (12/giorno):** *Ispirare Coraggio* (+2 a colpire e danni), *Suggestione* (CD 22), *Canto di Libertà*.
+*   **Musica Bardica (15/giorno):** *Ispirare Coraggio* (+2 a colpire e danni), *Suggestione* (CD 22), *Canto di Libertà*.
 *   **Cantata della Tempesta Tonante (1/incontro):** alleati entro 18 m +2 morale ad attacchi, danni e TS per 10 round; ostili entro 18 m 2d6 elettrici a inizio turno per 3 round (Riflessi CD 23 dimezza; +1d6 a chi porta armatura di metallo).
-*   **Arcane Supreme:** Maestria del Controincantesimo, Potere Magico +1.
-*   **Incantesimi da Bardo Conosciuti (incantatore di 14° livello):**
+*   **Canto della tempesta** (Cantore delle tempeste): *folata di vento* con un uso di musica, LI 18 (20 al freddo o nella tempesta, Stormpower); **colpo di tuono** con un uso di musica, contatto a distanza +13 entro 18 m, danni da elettricità pari a una prova di Esibirsi +29 (in media 39), Riflessi CD 19 dimezza, chi fallisce resta anche assordato se fallisce Tempra; Stormpower dà +2 a Esibirsi (canto) per i canti della tempesta.
+*   **Incantesimi da Bardo Conosciuti (incantatore di 15° livello):**
     *   *5° (CD 21):* *Passo nelle Ombre*, *Cura Ferite Leggere di Massa*, *Suggestione di Massa*.
     *   *4° (CD 20):* *Urlo*, *Dominare Persone*, *Porta Dimensionale*, *Invisibilità Superiore*.
-    *   *3° (CD 19):* *Fulmine*, *Velocità*, *Dissolvi Magie*, *Confusione*.
+    *   *3° (CD 19):* *Lentezza*, *Velocità*, *Dissolvi Magie*, *Confusione*.
     *   *2° (CD 18):* *Esplosione Sonora*, *Polvere Luccicante*, *Eroismo*, *Invisibilità*.
     *   *1° (CD 17):* *Cura Ferite Leggere*, *Charme su Persone*, *Risata Incontenibile*, *Sonno*.
 
-**Tattiche:** Maestro Tempestas è un cannone di vetro magico. Rimane in aria, usando la sua musica per potenziare gli alleati e scatenando incantesimi devastanti sui nemici. Il suo incantesimo *Velocità* lanciato sui ranger elfici o sui PG è un punto di svolta. Contro Fauci di Palude apre con la Cantata della Tempesta Tonante e poi usa *fulmine* ed *esplosione sonora*: il drago nero è immune all'acido, non all'elettricità né al suono.
+**Tattiche:** Maestro Tempestas è un cannone di vetro magico. Rimane in aria, usando la sua musica per potenziare gli alleati e scatenando incantesimi devastanti sui nemici. Il suo incantesimo *Velocità* lanciato sui ranger elfici o sui PG è un punto di svolta. Contro Fauci di Palude apre con la Cantata della Tempesta Tonante e poi usa il *colpo di tuono* ed *esplosione sonora*: il drago nero è immune all'acido, non all'elettricità né al suono.
 
 ---
 <div style="page-break-before:always"></div>
@@ -613,7 +663,7 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 *(Da stampare e consegnare ai giocatori per le Sessioni 1 e 2)*
 
 ---
-### **BORIN FERROPUGNO, Il Martello di Hammerfist**
+### **BORIN GIURAFERRO, Colui che non arretra**
 **Classe:** Nano Guerriero 10°/Campione Nanico 3° (GS 13)
 **Ruolo:** Leader in prima linea, tank, ispiratore.
 > *"Sei il nipote del precedente Re, un nano nel fiore degli anni che vive per la battaglia. Grida 'Seguitemi!' e gettati per primo nella mischia. Il tuo compito è tenere la linea e proteggere il Re."*
@@ -640,7 +690,7 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 ---
 <div style="page-break-before:always"></div>
 
-### **DARA OCCHIOLESTO, L'Occhio delle Montagne**
+### **DARA OCCHIOLESTO, Morte dai Picchi**
 **Classe:** Nana Ranger 8°/Esploratrice dei Picchi 4° (GS 12)
 **Ruolo:** Cecchino, scout, cacciatrice di élite.
 > *"Sei la migliore esploratrice di Hammerfist, una nana dagli occhi acuti come lame. Agisci dalle ombre, eliminando i bersagli prioritari da lontano per cambiare le sorti della battaglia."*
@@ -670,7 +720,7 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 ---
 <div style="page-break-before:always"></div>
 
-### **THORIN RUNAFORTE, La Voce di Moradin**
+### **HARBEK RUNAFORTE, Custode dell'Ultima Runa**
 **Classe:** Nano Chierico 9°/Sacerdote delle Rune 3° (GS 12)
 **Ruolo:** Guaritore, supporto divino, controllo del campo di battaglia.
 > *"Sei un anziano saggio la cui fede in Moradin brucia come lava. Sei il consigliere spirituale del Re e il custode delle antiche rune. La tua magia può salvare vite o distruggere nemici."*
@@ -682,25 +732,26 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 | **Velocità** | 6m | |
 | **TS** | Temp **+13**, Rifl **+7**, Vol **+16** | |
 | **Attacco Base** | +8 | |
-| **Attacco Melee** | **+14** | *Martello da Guerra Sacro +2* (1d8+5) |
-| **For** 16, **Cos** 20, **Sag** 22, **Car** 16 | | |
+| **Attacco Melee** | **+13** | *Martello da Guerra Sacro +2* (1d8+5) |
+| **For** 16, **Cos** 20, **Int** 13, **Sag** 22, **Car** 15 | | |
 
-**Abilità:** Concentrazione **+20**, Conoscenze (religione) **+16**, Sapienza Magica **+16**, Ascoltare +6, Osservare +6, Percepire Intenzioni +6, Sopravvivenza +6, Guarire +6, Diplomazia +3, Intimidire +3, Artigianato (pietra) +3, Nascondersi −5, Muoversi Silenziosamente −5.
+**Abilità:** Concentrazione **+20**, Conoscenze (religione) **+8**, Sapienza Magica **+16**, Ascoltare +6, Osservare +6, Percepire Intenzioni +6, Sopravvivenza +6, Guarire +6, Diplomazia +2, Intimidire +2, Artigianato (pietra) +11, Nascondersi −5, Muoversi Silenziosamente −5.
 **Lingue:** Comune, Nanico, Terran.
 
 **ABILITÀ PRINCIPALI:**
-*   **Scacciare Non Morti (10/giorno):** Bonus di +5 al tiro.
+*   **Scacciare Non Morti (9/giorno):** Bonus di +4 al tiro.
 *   **Rune di Potere (3/giorno):** Come azione di round completo, puoi incidere una runa su un'arma. L'arma ottiene un **bonus di potenziamento di +1** per 1 ora (non cumulabile con bonus esistenti).
 *   **Incantesimi Chiave:**
     *   **Guarigione:** *Guarigione*, *Cura Ferite Critiche* (x2), *Cura Ferite Gravi* (x2), *Cura Ferite Moderate* (x3).
     *   **Supporto:** *Potere Divino* (+bonus attacco, PF temp), *Preghiera* (+1 a tutti i tiri alleati, -1 nemici), *Forza del Toro* (x2).
     *   **Attacco:** *Colpo Infuocato*, *Ferire*.
-    *   **Domini:** Guerra (competenza e focus nelle armi), Terra (*Scolpire Pietra*).
+    *   **Domini:** Protezione (1/giorno, +9 al prossimo TS di chi tocca), Terra (*Scolpire Pietra*).
+    <!-- storico: fino al 2026-11-19 Guerra (competenza e focus nelle armi), che Moradin non dà; attacco +14 (scelta del DM sulla card del 2026-11-19) -->
 
 ---
 <div style="page-break-before:always"></div>
 
-### **NALA CANTAPIETRE, La Lama Nascosta**
+### **NALA CANTAPIETRE, Il Sorriso prima della Lama**
 **Classe:** Nana Bardo 8°/Spia Maestra 4° (GS 12)
 **Ruolo:** Infiltratrice, sabotatrice, supporto tattico e morale.
 > *"Ufficialmente sei una barda di corte, ma in realtà sei gli occhi e le orecchie di Hammerfist. Il tuo sorriso può celare una lama, e la tua musica può ispirare eroi o far vacillare nemici."*
@@ -710,13 +761,13 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
 | **PF** | **90** | |
 | **CA** | **20** | (Armatura di Cuoio +2, Des +4, Naturale +1, Schivare +1) |
 | **Velocità** | 9m | |
-| **TS** | Temp **+8**, Rifl **+13**, Vol **+11** | |
+| **TS** | Temp **+7**, Rifl **+14**, Vol **+9** | |
 | **Attacco Base** | +8 | |
 | **Attacco Melee** | **+13** | *Stocco Affilato +1* (1d6+3, critico 15-20/x2) |
-| **Attacco Furtivo** | **+3d6** | Danno extra contro bersagli colti alla sprovvista o fiancheggiati. |
+| **Attacco Furtivo** | **+1d6** | Danno extra contro bersagli colti alla sprovvista o fiancheggiati. |
 | **Des** 18, **Cos** 18, **Car** 18 | | |
 
-**Abilità:** Diplomazia **+23**, Raggirare **+21**, Intrattenere (canto) **+16**, Ascoltare +15, Osservare +15, Camuffare +14 (+16 per recitare una parte), Nascondersi +14, Muoversi Silenziosamente +14, Raccogliere Informazioni +12, Percepire Intenzioni +10, Sapere bardico +10, Acrobazia +9, Intimidire +8, Conoscenze (locali) +7.
+**Abilità:** Diplomazia **+23**, Raggirare **+22**, Intrattenere (canto) **+16**, Ascoltare +15, Osservare +15, Camuffare +14 (+16 per recitare una parte), Nascondersi +14, Muoversi Silenziosamente +14, Raccogliere Informazioni +12, Percepire Intenzioni +10, Sapere bardico +10, Acrobazia +9, Intimidire +6, Falsificare +6, Conoscenze (locali) +7.
 **Lingue:** Comune, Nanico, Orchesco, Goblin (capisce gli ordini dell'orda entro 9 m, Ascoltare CD 15).
 
 **ABILITÀ PRINCIPALI:**
@@ -729,6 +780,64 @@ Boost log: ricostruzione di classe (Gue 6/GN 4) — GS 10 → 10 — tornano aur
     *   **Immagine Speculare (2° liv):** Ottima difesa personale.
     *   **Silenzio (2° liv):** Per neutralizzare incantatori nemici.
 *   **Canto di Guerra Nanico:** Quando usi Ispirare Coraggio, i nani alleati ottengono un **bonus morale extra di +1** ai tiri per colpire.
+
+---
+<div style="page-break-before:always"></div>
+
+### **RAGNHILD MANTOFERRO, la Mano che Scrive il Fuoco** `[CANONE — DM 2026-11-15]`
+**Classe:** Nana Maga Invocatrice 10°/Maestra del Sapere 3° (GS 13)
+**Ruolo:** Artiglieria arcana, controllo del campo, sapere antico.
+> *"Hai passato quarant'anni a ricopiare le rune che i chierici non sanno più leggere. Parli poco e scrivi molto. In battaglia sei l'artiglieria di Hammerfist: dove indichi col bastone, la pietra prende fuoco."*
+
+| STATISTICA | VALORE | DETTAGLI |
+| :--- | :--- | :--- |
+| **PF** | **84** | |
+| **CA** | **18** | (Bracciali dell'Armatura +4, Anello di Protezione +2, Des +2) |
+| **Velocità** | 6m | |
+| **TS** | Temp **+11**, Rifl **+9**, Vol **+14** | +2 contro incantesimi e veleni |
+| **Attacco Base** | +6 | |
+| **Attacco Melee** | **+5/+0** | *Bastone del Fuoco* (1d6−1) |
+| **For** 8, **Des** 14, **Cos** 18, **Int** 25, **Sag** 12, **Car** 6 | | |
+
+**Abilità:** Conoscenze (arcane) **+26**, Sapienza Magica **+25**, Conoscenze (storia) **+23**, Concentrazione **+20**, Decifrare Scritture +17, Conoscenze (piani) +17, Conoscenze (religioni) +17, Conoscenze (dungeon) +15.
+**Lingue:** Comune, Nanico, Draconico, Gigante, Orchesco, Terran.
+
+**ABILITÀ PRINCIPALI:**
+*   **Incantesimi da Mago (LI 13°):** 5/7/8/7/6/5/4/3 al giorno; CD 10 + livello + 7, +2 in Invocazione. Scuole proibite: Ammaliamento e Illusione. La lista preparata è nella Guida del DM.
+*   **Palla di Fuoco Ritardata (7°):** 13d6 di fuoco, CD 26. La tua carta più forte.
+*   **Palla di Fuoco rapida (7°):** con Incantesimi Rapidi la lanci come azione gratuita (una per round), e nello stesso round lanci anche un altro incantesimo.
+*   **Muri:** *Muro di Fuoco*, *Muro di Pietra*, *Muro di Forza* chiudono una breccia per tutto lo scontro.
+*   **Bastone del Fuoco (50 cariche):** *Mani Brucianti*, *Palla di Fuoco* (10d6, CD 22), *Muro di Fuoco* quando gli slot finiscono.
+*   **Sapere (+10):** come la conoscenza bardica, su leggende, persone e luoghi.
+
+---
+<div style="page-break-before:always"></div>
+
+### **YRSA PORTASTENDARDO, lo Stendardo dei Novanta** `[CANONE — DM 2026-11-15]` `[PF1e]`
+**Classe:** Nana Cavaliera 12°, Ordine del Drago (GS 12; classe di Pathfinder 1e)
+**Ruolo:** Portastendardo, comandante di fila, supporto in mischia.
+> *"Sei uno dei dieci capi dei novanta, e da vent'anni porti lo stendardo di Hammerfist. Quando gridi il nome della fortezza, i nani ti vanno dietro. Non sei tu che uccidi il campione nemico: sei tu che fai reggere la fila mentre gli altri lo fanno."*
+
+| STATISTICA | VALORE | DETTAGLI |
+| :--- | :--- | :--- |
+| **PF** | **114** | |
+| **CA** | **32** | (Arm. Completa +3, Scudo Pesante +2 e Scudo Focalizzato, Des +1, Deviazione +2, Naturale +2) |
+| **Velocità** | 6m | |
+| **TS** | Temp **+14**, Rifl **+8**, Vol **+10** | +2 contro veleni, incantesimi e capacità magiche |
+| **Attacco Base** | +12 | |
+| **Attacco Melee** | **+23/+18/+13** | *Ascia da Guerra Nanica +3* (1d10+10, critico x3) |
+| **For** 24, **Des** 12, **Cos** 16, **Int** 10, **Sag** 12, **Car** 14 | | |
+
+**Abilità:** Diplomazia **+17**, Intimidire **+17**, Percezione **+16** (vale per Ascoltare e Osservare), Cavalcare +16.
+**Lingue:** Comune, Nanico.
+
+**ABILITÀ PRINCIPALI:**
+*   **Stendardo:** finché lo stendardo si vede, gli alleati entro 18 m hanno **+3 ai TS contro la paura** e **+2 a colpire in carica**.
+*   **Sfida (4/giorno, azione veloce):** scegli un nemico. Contro di lui fai **+18 danni** in mischia, i tuoi alleati hanno **+4 a colpirlo** finché lo minacci, e lui ha **−2 alla CA** contro gli altri. Tu hai −2 alla CA contro tutti gli altri.
+*   **Tattico (3/giorno, azione veloce):** per 9 round gli alleati entro 9 m hanno un talento di squadra a tua scelta, **Muro di Scudi** o **Difesa Coordinata**: uno per uso.
+*   **Strategia (azione standard):** a ogni alleato entro 9 m dai +2 alla CA per 1 round, o +2 a colpire per 1 round, o un movimento immediato. Una volta per alleato per combattimento.
+*   **Aiutare gli Alleati:** quando usi aiutare un altro, l'alleato prende **+4** invece di +2.
+*   **Attacco Poderoso:** −4 a colpire e +8 ai danni: **+19/+14/+9** (1d10+18). La Concentrazione Furiosa non vale finché porti lo scudo.
 
 ---
 <div style="page-break-before:always"></div>
@@ -828,8 +937,10 @@ Questa regola è essenziale per rendere la minaccia dell'assedio concreta e per 
 ### **FANTERIA HOBGOBLIN (Standard)**
 *Fanteria Leggera, 1ª Linea d'Assalto (30 Unità)*
 
+> Uno contro uno: `Bestiario/mostri/hobgoblin-regular-warrior3-cr2.md` (Combattente 3, GS 2, spada lunga perfetta +6).
+
 **PFU:** 10/10 | **DU:** 18 | **Morale Iniziale:** +2
-**AU (Spada Lunga):** +8 | **Danno:** 1d10+3
+**AU (Spada Lunga):** +6 | **Danno:** 1d10+3 `[CANONE — DM 2026-11-09: l'AU è l'attacco della creatura singola (§4), senza il +2 della variante 2d6: +6 è la spada lunga perfetta del regolare hobgoblin (Bestiario, combattente 3). Prima +8; il +10 della chat non esce da nessuna scheda 3.5 o PF1e]`
 **Movimento:** 6m
 
 **Capacità Speciali:**
@@ -840,19 +951,23 @@ Questa regola è essenziale per rendere la minaccia dell'assedio concreta e per 
 ### **FANTERIA ORCHESCA**
 *Carne da Cannone, 1ª Linea d'Assalto (15 Unità)*
 
+> Uno contro uno: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` § «FANTERIA ORCHESCA» (la creatura singola, nello stesso riquadro dell'unità).
+
 **PFU:** 8/10 | **DU:** 13 | **Morale Iniziale:** +1
-**AU (Ascia Grande):** +6 | **Danno:** 1d8+2
+**AU (Ascia Grande):** +5 | **Danno:** 1d8+2 `[CANONE — DM 2026-11-09: l'AU è l'attacco della creatura singola (§4), senza il +2 della variante 2d6, prima +6]`
 **Movimento:** 9m
 
 **Capacità Speciali:**
-*   **Furia Orchesca:** Se l'unità ha 4 PFU o meno, il suo AU aumenta a +8.
-*   **Carica Selvaggia:** Nel primo round di carica, il loro AU è +8 ma la loro DU scende a 12.
+*   **Furia Orchesca:** Se l'unità ha 4 PFU o meno, il suo AU aumenta a +7.
+*   **Carica Selvaggia:** Nel primo round di carica, il loro AU è +7 ma la loro DU scende a 12.
 
 ---
 <div style="page-break-before:always"></div>
 
 ### **HOBGOBLIN GUERRIERI (Warrior 3)**
 *Fanteria Pesante, 2ª Linea d'Assalto (20 Unità)*
+
+> Uno contro uno: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` § «HOBGOBLIN WARRIOR 3» (la creatura singola, nello stesso riquadro dell'unità).
 
 **PFU:** 11/11 | **DU:** 17 | **Morale Iniziale:** +1
 **AU (Lancia):** +5 | **Danno:** 1d8+2
@@ -889,6 +1004,8 @@ Scheda intera: `Bestiario/mostri/hobgoblin-sergente-cr5.md` `[CANONE — DM 2026
 ### **GOBLIN WORG RIDERS**
 *Cavalleria Leggera, Fiancheggiatori (5 Unità)*
 
+> Uno contro uno: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` § «GOBLIN WORG RIDERS» (la creatura singola, nello stesso riquadro dell'unità).
+
 **PFU:** 10/10 | **DU:** 17 | **Morale Iniziale:** 0
 **AU (Lancia + Morso):** +5 / +7 | **Danno:** 1d6 / 1d6+3
 **Movimento:** 15m
@@ -901,8 +1018,11 @@ Scheda intera: `Bestiario/mostri/hobgoblin-sergente-cr5.md` `[CANONE — DM 2026
 ### **GIGANTI DELLE COLLINE**
 *Artiglieria Pesante, 3ª Linea (8 Unità, 1 gigante per unità)*
 
+> Uno contro uno: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` § «GIGANTI DELLE COLLINE» (la creatura singola, nello stesso riquadro dell'unità).
+
 **PFU:** 15/15 | **DU:** 20 | **Morale Iniziale:** +1
-**AU (Lancio Massi):** +14 | **Danno:** 2d6+8 (Gittata 36m)
+**AU (Randello):** +16 | **Danno:** 2d8+12 `[CANONE — DM 2026-11-09: l'AU è l'attacco della creatura singola (§4), senza il +2 della variante 2d6: BAB +9, For 27, Grande; prima +14]`
+**AU (Lancio Massi):** +8 | **Danno:** 2d6+8 (Gittata 36m) `[CANONE — regola, ADR-0118: il masso del gigante delle colline è +8 nell'SRD (BAB +9, Des −1, taglia −1, +1 razziale); il +14 era il randello]`
 **Movimento:** 12m
 
 **Capacità Speciali:**
@@ -915,8 +1035,10 @@ Scheda intera: `Bestiario/mostri/hobgoblin-sergente-cr5.md` `[CANONE — DM 2026
 ### **ETTIN STANDARD**
 *Supporto Pesante, 3ª Linea (2 Unità, 1 Ettin per unità)*
 
+> Uno contro uno: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` § «ETTIN STANDARD» (la creatura singola, nello stesso riquadro dell'unità).
+
 **PFU:** 13/13 | **DU:** 18 | **Morale Iniziale:** +0
-**AU (Mazzafrusto Pesante):** +11 (doppio attacco) | **Danno:** 2d8+4
+**AU (Mazzafrusto Pesante):** +12 (doppio attacco) | **Danno:** 2d8+6 `[CANONE — regola, ADR-0118: ettin dell'SRD, For 23; prima +11 con For 19]`
 **Movimento:** 12m
 
 **Capacità Speciali:**
@@ -927,10 +1049,10 @@ Scheda intera: `Bestiario/mostri/hobgoblin-sergente-cr5.md` `[CANONE — DM 2026
 ### **OROG GUARDIE NERE**
 *Guardia del Corpo del Generale, 4ª Linea (1 Unità d'Élite di 4 Orog)*
 
-> Uno contro uno: `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` (Guerriero 6, GS 7, CA 19, pf 63, ascia bipenne +1 +13/+8, 1d12+10). ⚠ **Non SRD**: l'orog è `[Private source — Monsters of Faerûn / Races of Faerûn]` `[CANONE — DM 2026-10-19, D10]`.
+> Uno contro uno: `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` (Guerriero 6, GS 7, CA 21, pf 45, ascia bipenne +1 +14/+9, 1d12+12; caratteristiche rifatte con la serie d'élite più la razza, card del DM del 2026-11-20). ⚠ **Non SRD**: l'orog è `[Private source — Monsters of Faerûn / Races of Faerûn]` `[CANONE — DM 2026-10-19, D10]`.
 
-**PFU:** 13/13 | **DU:** 19 | **Morale Iniziale:** +3
-**AU (Ascia Bipenne+1):** +12 | **Danno:** 1d12+7
+**PFU:** 13/13 | **DU:** 21 | **Morale Iniziale:** +3
+**AU (Ascia Bipenne+1):** +14 | **Danno:** 1d12+7 `[CANONE — DM 2026-11-09: l'AU è l'attacco della creatura singola (§4), senza il +2 della variante 2d6: è l'ascia della scheda uno contro uno. Era +12, poi +15 per errore, poi +13; +14 e DU 21 dal 2026-11-20, quando la scheda è stata rifatta con la serie d'élite (card del DM)]`
 **Movimento:** 6m
 
 **Capacità Speciali:**
@@ -945,16 +1067,22 @@ Scheda intera: `Bestiario/mostri/hobgoblin-sergente-cr5.md` `[CANONE — DM 2026
 *Unità di Incantatori, 3ª Linea*
 
 #### **HOBGOBLIN WAR ADEPTS (2 Unità, 20 stregoni)**
+
+> Uno contro uno: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` § «HOBGOBLIN WAR ADEPTS» (la creatura singola, nello stesso riquadro dell'unità).
 **PFU:** 8/8 | **DU:** 16 | **Morale:** +1
-**AU (Raggio Rovente):** +7 | **Danno:** 4d6 fuoco
+**AU (Raggio Rovente):** +5 | **Danno:** 4d6 fuoco `[CANONE — regola, ADR-0118: contatto a distanza, BAB +3 e Des +2; prima +7]`
 **Capacità:** **Palla di Fuoco (2/battaglia):** Infligge 1d4+1 PFU a un'unità bersaglio (TS Rifl CD 16 dimezza).
 
 #### **DOOM HAND WARPRIESTS (1.5 Unità, 15 chierici)**
+
+> Uno contro uno: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` § «DOOM HAND WARPRIESTS» (la creatura singola, nello stesso riquadro dell'unità).
 **PFU:** 13/13 | **DU:** 19 | **Morale:** +2
 **AU (Martello da Guerra):** +8 | **Danno:** 1d8+2
 **Capacità:** **Preghiera (3/battaglia):** Fornisce +1 ad AU/DU a 3 unità alleate e -1 alle unità nemiche per 5 round. **Dissolvi Magie (2/battaglia).**
 
 #### **SHAMANI DRACONICI (1 Unità, 10 chierici)**
+
+> Uno contro uno: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` § «SHAMANI DRACONICI» (la creatura singola, nello stesso riquadro dell'unità).
 **PFU:** 10/10 | **DU:** 17 | **Morale:** +1
 **AU (Lancia Lunga):** +5 | **Danno:** 1d8+1
 **Capacità:** **Scaglie del Drago (1/battaglia):** Fornisce a un'unità alleata Resistenza al Fuoco 10 e +2 alla DU.
@@ -968,6 +1096,8 @@ Scheda intera: `Bestiario/mostri/hobgoblin-sergente-cr5.md` `[CANONE — DM 2026
 ### **GUERRIERI NANICI VETERANI**
 *Difensori delle Mura, Fanteria Pesante (15 Unità)*
 
+> Uno contro uno: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` § «GUERRIERI NANICI VETERANI» (la creatura singola, nello stesso riquadro dell'unità).
+
 **PFU:** 11/11 | **DU:** 20 | **Morale Iniziale:** +1
 **AU (Ascia da Guerra):** +9 | **Danno:** 1d10+4
 **Movimento:** 6m
@@ -980,6 +1110,8 @@ Scheda intera: `Bestiario/mostri/hobgoblin-sergente-cr5.md` `[CANONE — DM 2026
 ---
 ### **BALESTRIERI NANICI**
 *Difensori delle Torri, Fanteria a Distanza (8 Unità)*
+
+> Uno contro uno: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` § «BALESTRIERI NANICI» (la creatura singola, nello stesso riquadro dell'unità).
 
 **PFU:** 9/9 | **DU:** 17 | **Morale Iniziale:** 0
 **AU (Balestra Pesante):** +8 | **Danno:** 1d10+3 (Gittata 36m)
@@ -996,6 +1128,8 @@ Scheda intera: `Bestiario/mostri/hobgoblin-sergente-cr5.md` `[CANONE — DM 2026
 ### **NANI D'ÉLITE (GUARDIA DEL CANCELLO)**
 *Fanteria Pesante d'Élite (5 Unità)*
 
+> Uno contro uno: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` § «NANI D'ÉLITE» (la creatura singola, nello stesso riquadro dell'unità).
+
 **PFU:** 12/12 | **DU:** 20 | **Morale Iniziale:** +2
 **AU (Ascia da Battaglia):** +9 | **Danno:** 1d8+4
 **Movimento:** 6m
@@ -1009,12 +1143,14 @@ Scheda intera: `Bestiario/mostri/hobgoblin-sergente-cr5.md` `[CANONE — DM 2026
 ### **INGEGNERI DA GUERRA**
 *Supporto Tecnico e Macchine d'Assedio (4 Unità)*
 
+> Uno contro uno: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` § «INGEGNERI DA GUERRA» (la creatura singola, nello stesso riquadro dell'unità).
+
 **PFU:** 8/8 | **DU:** 16 | **Morale Iniziale:** -1
 **AU (Martello da Guerra):** +4 | **Danno:** 1d8+1
 **Movimento:** 6m
 
 **Capacità Speciali:**
 *   **Operare Baliste Pesanti (6 totali):**
-    *   **Balista Pesante Nanica:** AU +10, Danno 3d8, incremento di gittata 36 m (SRD). Richiede un round per ricaricare.
+    *   **Balista Pesante Nanica:** AU +10, Danno 3d8+2, incremento di gittata 36 m (SRD). Gli ingegneri caricano, un mastro artigliere punta [CANONE — regola, ADR-0118: SRD 3.5, la balista dà −4 a una creatura Media; la punta un mastro artigliere, `Bestiario/mostri/nano-mastro-artigliere-guerriero8-cr8.md`]. Richiede un round per ricaricare.
 *   **Riparazione Rapida (3/giorno):** Ripristina 1d4 danni strutturali a una sezione di mura o a un cancello.
 *   **Trappole (1/battaglia):** La prima unità nemica che attraversa un'area di 6m subisce 2d6 danni.

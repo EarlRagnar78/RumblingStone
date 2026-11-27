@@ -187,7 +187,7 @@ giocherai e leggile a voce. Tre. Non trenta.
 ## §4 · I suoni dell'arco
 
 **Descrizioni, mai titoli di brani**: ognuno usa quello che ha, e il file non
-invecchia con le piattaforme (ADR-0018 «regola dei suoni»).
+invecchia con le piattaforme.
 
 > **La regola di quest'arco**, e non è quella dell'ARC-08. Là il fragore era lo
 > stato di riposo e i suoni si spegnevano per fare spazio. **Qui il silenzio è lo

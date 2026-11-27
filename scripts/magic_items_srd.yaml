@@ -336,7 +336,7 @@ faction_signatures:
       srd_basis: [ "Cloak of Resistance equivalent narrow vs fear (SRD schema)" ]
 
   hammerfist-hero:
-    - name: "Elmo Ferropugno"
+    - name: "Elmo Giuraferro"
       price: 8000
       tier: medium_lesser
       desc: "Elmo d'acciaio. +2 enhancement Con (SRD Amulet of Health effect nel

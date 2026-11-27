@@ -1,0 +1,46 @@
+# sistemi/pf1e/sistema.toml — Pathfinder 1ª edizione (ADR-0111)
+#
+# Due ruoli: sistema base del Drappo e del Giardino a Qasr al-Milah, e
+# sistema di rinforzo dei moduli 3.5 (template, bersagli per GS). I numeri
+# in dati/ li scrive estrai_prd_pf1e.py dal PRD in cache, con la fonte.
+
+id = "pf1e"
+nome = "Pathfinder 1ª edizione (PRD)"
+tipo = "sistema"
+famiglia = "d20"
+licenza = "OGL 1.0a"
+fonti = ["PRD PF1e in cache (riscontro_srd.py, chiave pf1)"]
+# Come si scrive il sistema nella riga «**Sistema:**» di un modulo (regex).
+riconosci = ["Pathfinder", "PF1e?\\b"]
+skill = ["pathfinder-1e-srd"]
+
+[capacita]
+"termini.vietati" = { eredita = "d20", motivo = "le meccaniche 5e sono vietate in tutta la famiglia" }
+"stampa.etichette" = { eredita = "d20", motivo = "le sigle del riquadro sono le stesse in 3.5 e PF1e" }
+"statblocco.campi" = { eredita = "d20", motivo = "GS, CA, pf e TS sono gli stessi campi in 3.5 e PF1e" }
+"statblocco.taglie" = { eredita = "d20", motivo = "la tabella di spazio e portata per taglia è la stessa in 3.5 e PF1e" }
+"formule.regole" = { eredita = "d20", motivo = "modificatore, TS e CD si calcolano allo stesso modo in 3.5 e PF1e" }
+"creature.armi" = { eredita = "dnd35", motivo = "le 72 armi della tabella del manuale base PF1e hanno lo stesso dado e lo stesso critico dell'SRD 3.5 (riscontro su PSRD-Data, 72 su 72, 2026-11-12); le armi degli altri libri arrivano col lotto 10" }
+"creature.base" = { dati = ["sistemi/pf1e/dati/creature_base.toml"], nota = "PRD PF1e (PSRD-Data, creature_details di book-b1…b4.db); scritto da estrai_creature_base.py. Il conto del danno PF1e non c'è ancora: della base si usano dadi vita razziali e armatura naturale" }
+"creature.incantatori" = { dati = ["sistemi/pf1e/dati/incantatori.toml"], nota = "PRD PF1e (PSRD-Data, book-cr), tabelle delle classi; scritto da estrai_incantatori.py. Bardo e stregone non hanno slot di livello 0, il paladino lancia col Carisma, la stirpe dà conosciuti in più" }
+"creature.prestigio" = { dati = ["sistemi/pf1e/dati/prestigio.toml"], nota = "PRD PF1e (PSRD-Data, book-cr), sezioni Requirements delle 10 classi di prestigio del Core; scritto da estrai_prestigio.py. I gradi richiesti sono quelli PF1e (massimo = dadi vita)" }
+"bonus.cumulo" = { eredita = "d20", motivo = "il cumulo dei bonus per tipo è lo stesso in 3.5 e PF1e (SRD e PRD, «Bonus Types»)" }
+"lessico.abilita" = { dati = ["sistemi/pf1e/dati/abilita.toml", "scripts/lessico_it_pf1.tsv"], nota = "i nomi dalle righe «abilità» del lessico PF1e" }
+"lessico.entita" = { dati = ["scripts/lessico_it_pf1.tsv"], nota = "righe di tipo classe, classe di prestigio e razza, lette con lessico_regole.tabella_pf1" }
+"lessico.italiano" = { dati = ["scripts/lessico_it_pf1.tsv"] }
+"fonti.regole" = { dati = ["sistemi/pf1e/dati/fonti.toml"], nota = "F1 di ADR-0112: repo, commit, licenza e sha256 delle fonti scaricate; li legge riscontro_srd.py" }
+"pe.soglie" = { dati = ["sistemi/pf1e/dati/pe.toml"], nota = "tre tracce; la scelta è opzioni.pf1e.traccia_pe" }
+"tesoro.per_livello" = { dati = ["sistemi/pf1e/dati/tesoro.toml"], nota = "mo per incontro per APL a tre velocità; la scelta è opzioni.pf1e.velocita_tesoro" }
+"incontri.livello" = { dati = ["sistemi/pf1e/dati/incontri.toml"], nota = "GS dell'incontro = il GS più alto il cui valore in PE non supera la somma dei PE" }
+"creature.costruzione" = { dati = ["sistemi/pf1e/dati/creature.toml", "sistemi/pf1e/dati/classi.toml", "sistemi/pf1e/dati/liste_incantesimi.toml", "sistemi/pf1e/dati/talenti_in_piu.toml", "sistemi/pf1e/dati/gs.toml", "sistemi/pf1e/dati/oggetti.toml", "sistemi/pf1e/dati/codex.toml", "sistemi/pf1e/dati/modelli.toml"], nota = "tipi (DV, BAB, TS buoni, gradi), taglie (CA/attacco, BMC/DMC), armature e scudi; classi, griglie e conosciuti da classi.toml e liste di classe degli incantesimi da liste_incantesimi.toml (generati dal PRD, ADR-0119 lotti 2-3); calcolo in dmcore/creature_pf1e.py (converti, converti_classe), misura in plans/esperimenti/plugin-regole-2026-11-09/ (ADR-0121)" }
+"creature.statistiche_per_gs" = { dati = ["scripts/pf1e-statistiche-per-gs.yaml"] }
+"creature.incantesimi" = { dati = ["sistemi/dnd35/dati/incantesimi.toml", "sistemi/pf1e/dati/incantesimi.toml"], nota = "L5c: la lista core PF1e è abbastanza vicina alla 3.5 da usare quella; in più gli incantesimi dell'APG (solo)" }
+"creature.regole_di_tipo" = { dati = ["sistemi/pf1e/dati/creature.toml"], nota = "L5d: il non morto PF1e (d8, BAB 3/4, Vol, Carisma) viene da [tipi.undead]; la regola del Carisma in dmcore/lettura_creatura.py" }
+"creature.conformita" = { dati = ["sistemi/pf1e/dati/conformita.toml", "sistemi/pf1e/dati/conformita_prd.toml"], nota = "F4 di ADR-0112 e ADR-0119: pf col primo dado al massimo e mezzi in su; BMC, DMC, BAB, TS, sensi e corrompere l'acqua dal PRD (conformita_prd.toml, generato)" }
+"creature.talenti" = { dati = ["sistemi/pf1e/dati/talenti.toml"], nota = "talenti, prerequisiti, bonus delle classi e capacità, generati dal PRD da plans/esperimenti/regole-complete-2026-11-10/estrai_talenti.py; regola in dmcore/talenti.py" }
+"creature.gradi" = { dati = ["sistemi/pf1e/dati/gradi.toml", "sistemi/pf1e/dati/effetti_talenti.toml", "sistemi/pf1e/dati/classi.toml"], nota = "caratteristica chiave e punti per tipo dal PRD (estrai_gradi.py); i punti per livello di classe sono `gradi` in classi.toml; lo usa verifica_scheda.py" }
+"creature.liste_incantesimi" = { dati = ["sistemi/pf1e/dati/liste_incantesimi.toml"], nota = "le liste del PRD (estrai_prd_pf1e.py), già nel plugin dal lotto 3 di ADR-0119: ora le legge verifica_scheda.py" }
+
+# F5 di ADR-0112: il codice del plugin, per nome (modulo:funzione in codice/).
+[moduli]
+somma_px = "incontri:somma_px"

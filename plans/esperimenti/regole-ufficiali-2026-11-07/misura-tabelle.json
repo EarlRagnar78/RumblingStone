@@ -1,0 +1,1473 @@
+{
+ "confronti": [
+  {
+   "categoria": "incantesimo 3.5 (doppia fonte ↔ firma Editori Folli)",
+   "comuni": 506,
+   "concordi": 505,
+   "discordi": [
+    [
+     "phantom trap",
+     "Trappola fantasma",
+     "Trappola"
+    ]
+   ]
+  },
+  {
+   "categoria": "equipaggiamento 3.5 (Mephit ↔ firma Editori Folli)",
+   "comuni": 125,
+   "concordi": 118,
+   "discordi": [
+    [
+     "fishing net 25 sq ft",
+     "Rete da pesca (2,25 mq)",
+     "Rete da pesca (2,25 m2)"
+    ],
+    [
+     "horse heavy",
+     "Cavallo pesante",
+     "Pesante"
+    ],
+    [
+     "horse light",
+     "Cavallo leggero",
+     "Leggero"
+    ],
+    [
+     "shield heavy steel",
+     "Scudo pesante di metallo",
+     "Scudo pesante di acciaio"
+    ],
+    [
+     "shield heavy wooden",
+     "Scudo pesante di legno",
+     "Scudo pesante legno"
+    ],
+    [
+     "shield light steel",
+     "Scudo leggero di metallo",
+     "Scudo leggero di acciaio"
+    ],
+    [
+     "sword short",
+     "Spada corta",
+     "Spade corta"
+    ]
+   ]
+  },
+  {
+   "categoria": "incantesimo 3.5 (tapionx, CC0)",
+   "comuni": 605,
+   "concordi": 600,
+   "discordi": [
+    [
+     "protection from evil",
+     "Protezione dal bene",
+     [
+      "Protezione dal male"
+     ]
+    ],
+    [
+     "protection from good",
+     "Protezione dal male",
+     [
+      "Protezione dal bene"
+     ]
+    ],
+    [
+     "divination",
+     "Divinare",
+     [
+      "Divinazione"
+     ]
+    ],
+    [
+     "phantom trap",
+     "Trappola di Leomund",
+     [
+      "Trappola fantasma"
+     ]
+    ],
+    [
+     "shrink item",
+     "Restringere oggetti",
+     [
+      "Restringere oggetto"
+     ]
+    ]
+   ],
+   "non_in_tabella": 1
+  },
+  {
+   "categoria": "talento 3.5 (glossario MdG di gdrzine)",
+   "comuni": 71,
+   "concordi": 57,
+   "discordi": [
+    [
+     "Weapon Specialization",
+     "Specializzazione in un'Arma",
+     [
+      "Arma specializzata"
+     ]
+    ],
+    [
+     "Alertness",
+     "Sensi Acuti",
+     [
+      "Allerta"
+     ]
+    ],
+    [
+     "Combat Casting",
+     "Incantesimi in Combattimento",
+     [
+      "Incantare in combattimento"
+     ]
+    ],
+    [
+     "Combat Reflexes",
+     "Riflessi da Combattimento",
+     [
+      "Riflessi in combattimento"
+     ]
+    ],
+    [
+     "Craft Magic Arms and Armor",
+     "Creare Armi e Armature",
+     [
+      "Creare armi e armature magiche"
+     ]
+    ],
+    [
+     "Enlarge Spell",
+     "Incantesimi Estesi",
+     [
+      "Incantesimi ingranditi"
+     ]
+    ],
+    [
+     "Extend Spell",
+     "Incantesimi Prolungati",
+     [
+      "Incantesimi estesi"
+     ]
+    ],
+    [
+     "Improved Bull Rush",
+     "Spinta Migliorata",
+     [
+      "Spingere migliorato"
+     ]
+    ],
+    [
+     "Improved Unarmed Strike",
+     "Colpo Sen'Armi Migliorato",
+     [
+      "Colpo senz'armi migliorato"
+     ]
+    ],
+    [
+     "Spell Focus",
+     "Incantesimo Focalizzato",
+     [
+      "Incantesimi focalizzati (bene, caos, legge o male)"
+     ]
+    ],
+    [
+     "Spell Penetration",
+     "Incantesimo Inarrestabile",
+     [
+      "Incantesimi inarrestabili"
+     ]
+    ],
+    [
+     "Weapon Finesse",
+     "Arma Preferita",
+     [
+      "Arma accurata"
+     ]
+    ],
+    [
+     "Weapon Specialization",
+     "Specializzazione in un'Arma",
+     [
+      "Arma specializzata"
+     ]
+    ],
+    [
+     "Endurance",
+     "Vigore",
+     [
+      "Resistenza fisica"
+     ]
+    ]
+   ],
+   "non_in_tabella": 906
+  },
+  {
+   "categoria": "abilità 3.5 (glossario MdG di gdrzine)",
+   "comuni": 36,
+   "concordi": 33,
+   "discordi": [
+    [
+     "Sense Motive",
+     "Percepire Inganni",
+     [
+      "Percepire Intenzioni"
+     ]
+    ],
+    [
+     "Hide",
+     "Pelle",
+     [
+      "Nascondersi"
+     ]
+    ],
+    [
+     "Heal",
+     "Guarigione",
+     [
+      "Guarire"
+     ]
+    ]
+   ],
+   "non_in_tabella": 941
+  },
+  {
+   "categoria": "incantesimo 3.5 (glossario MdG di gdrzine)",
+   "comuni": 448,
+   "concordi": 435,
+   "discordi": [
+    [
+     "Remove Disease",
+     "Rimuovere malattie",
+     [
+      "Rimuovi malattia"
+     ]
+    ],
+    [
+     "Heal",
+     "Guarire",
+     [
+      "Guarigione"
+     ]
+    ],
+    [
+     "Detect Animals or Plants",
+     "lndividuazione di animali o vegetali",
+     [
+      "Individuazione di animali o vegetali"
+     ]
+    ],
+    [
+     "Bull’s Strength",
+     "Forza straordinaria",
+     [
+      "Forza del toro"
+     ]
+    ],
+    [
+     "Detect Snares and Pits",
+     "Individuazione di calappi e",
+     [
+      "Individuazione di calappi e trabocchetti"
+     ]
+    ],
+    [
+     "Calm Emotions",
+     "Calmare emozioni                                                   trabocchetti",
+     [
+      "Calmare emozioni"
+     ]
+    ],
+    [
+     "Cat’s Grace",
+     "Grazia felina",
+     [
+      "Grazia del gatto"
+     ]
+    ],
+    [
+     "Charm Person",
+     "Charme",
+     [
+      "Charme su persone"
+     ]
+    ],
+    [
+     "Greater Glyph of Warding",
+     "Glifo d’interdizione superiore",
+     [
+      "Glifo di interdizione superiore"
+     ]
+    ],
+    [
+     "Greater Shadow Evocation",
+     "Ombra di una invocazione",
+     [
+      "Ombra di una invocazione superiore"
+     ]
+    ],
+    [
+     "Obscure Object",
+     "Occultare oggetto",
+     [
+      "Occulta oggetto"
+     ]
+    ],
+    [
+     "Polymorph Any Object",
+     "Metarnorfosi di un oggetto",
+     [
+      "Metamorfosi di un oggetto"
+     ]
+    ],
+    [
+     "Protection from Spells",
+     "Protezione dagli",
+     [
+      "Protezione dagli incantesimi"
+     ]
+    ]
+   ],
+   "non_in_tabella": 529
+  },
+  {
+   "categoria": "equipaggiamento 3.5 (glossario MdG di gdrzine)",
+   "comuni": 133,
+   "concordi": 109,
+   "discordi": [
+    [
+     "Hide",
+     "Nascondersi",
+     [
+      "Pelle"
+     ]
+    ],
+    [
+     "Shuriken",
+     "Shuriken",
+     [
+      "Shuriken (5)"
+     ]
+    ],
+    [
+     "Arrows",
+     "Frecce",
+     [
+      "Frecce (20)"
+     ]
+    ],
+    [
+     "Bullets, sling",
+     "Proiettili per fionda",
+     [
+      "Proiettili per fionda (10)"
+     ]
+    ],
+    [
+     "Full plate",
+     "Armatura complea",
+     [
+      "Armatura completa"
+     ]
+    ],
+    [
+     "Greataxe",
+     "Ascia grande",
+     [
+      "Ascia bipenne"
+     ]
+    ],
+    [
+     "Greatclub",
+     "Randello grande",
+     [
+      "Randello pesante"
+     ]
+    ],
+    [
+     "Handaxe",
+     "Ascia                                Goods and Services / Merci e Servizi",
+     [
+      "Ascia"
+     ]
+    ],
+    [
+     "Artisan’s outfit",
+     "Abiti da artigiano",
+     [
+      "Abito da artigiano"
+     ]
+    ],
+    [
+     "Royal outfit",
+     "Abiti reali",
+     [
+      "Abito reale"
+     ]
+    ],
+    [
+     "Scholar’s outfit",
+     "Abiti da studioso",
+     [
+      "Abito da studioso"
+     ]
+    ],
+    [
+     "Cold weather outfit",
+     "Abiti invernali",
+     [
+      "Abito invernale"
+     ]
+    ],
+    [
+     "Courtier’s outfit",
+     "Abiti da cortigiano",
+     [
+      "Abito da cortigiano"
+     ]
+    ],
+    [
+     "Spellbook, wizard’s (blank)",
+     "Libro degli incantesimi da mago",
+     [
+      "Libro degli incantesimi da mago (vuoto)"
+     ]
+    ],
+    [
+     "Crowbar",
+     "Piede di porco                                                        (bianco)",
+     [
+      "Piede di porco"
+     ]
+    ],
+    [
+     "Entertainer’s outfit",
+     "Abiti da intrattenitore",
+     [
+      "Abito da intrattenitore"
+     ]
+    ],
+    [
+     "Explorer’s outfit",
+     "Abiti da esploratore",
+     [
+      "Abito da esploratore"
+     ]
+    ],
+    [
+     "Traveler’s outfit",
+     "Abiti da viaggiatore",
+     [
+      "Abito da viaggiatore"
+     ]
+    ],
+    [
+     "Grappling hook",
+     "Uncino da scalata",
+     [
+      "Rampino"
+     ]
+    ],
+    [
+     "Jug, clay",
+     "Caraffa di ceramica",
+     [
+      "Brocca di ceramica"
+     ]
+    ],
+    [
+     "Monk’s outfit",
+     "Abiti da monaco",
+     [
+      "Abito da monaco"
+     ]
+    ],
+    [
+     "Noble’s outfit",
+     "Abiti da nobile",
+     [
+      "Abito da nobile"
+     ]
+    ],
+    [
+     "Peasant’s outfit",
+     "Abiti da contadino",
+     [
+      "Abito da contadino"
+     ]
+    ],
+    [
+     "Pitcher, clay",
+     "Brocca di ceramica",
+     [
+      "Caraffa di ceramica"
+     ]
+    ]
+   ],
+   "non_in_tabella": 844
+  }
+ ],
+ "casi": [
+  {
+   "tipo": "incantesimo",
+   "nome": "Trama ipnotica",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Pelle coriacea",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Ridurre persone di massa",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Barriera di lame",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Divinazione",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Mano magica",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Individuazione dei non morti",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Globo di invulnerabilità inferiore",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Charme su persone",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Tentacoli neri di Evard",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Mano interposta di Bigby",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Cerchio di morte",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Dominare animali",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Giusto potere",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Proibizione",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Clone",
+   "atteso": true,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Lama infuocata",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Fatale",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Muovere il terreno",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Evoca alleato naturale IV",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Teletrasporto degli oggetti",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Immagine speculare",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Legame planare superiore",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Evoca mostri II",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Repulsione",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Vuoto mentale",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Astuzia della volpe di massa",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Colpo accurato",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Sigillo arcano",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "Simbolo di debolezza",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "fuoco fatuo",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "palla infuocata",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "dardo magico",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "individuazione magico",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "rimuovere paura",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "cura ferite lievissime",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "scudo magico",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "invisibilità superiore minore",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "teletrasporto avanzato",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "incantesimo",
+   "nome": "fulmine globulare",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Disattivare Congegni",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Equilibrio",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Artigianato",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Raccogliere Informazioni",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Scalare",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Utilizzare Oggetti Magici",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Raggirare",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Cercare",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Cavalcare",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Artista della Fuga",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Falsificare",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Analfabetismo",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Valutare",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Muoversi Silenziosamente",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Diplomazia",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Osservare",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Intrattenere",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Rapidità di Mano",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Scassinare Serrature",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Utilizzare Corde",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Parlare Linguaggi",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Percepire Intenzioni",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Autoipnosi",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Saltare",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Sopravvivenza",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Sapienza Psionica",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Camuffare",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Nascondersi",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Addestrare Animali",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Acrobazia",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Furtività",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Percezione",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Storia",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Atletica",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Intuizione",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Indagare",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Persuasione",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Sopravvivenza in natura",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Arcano",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "abilità",
+   "nome": "Inganno",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Giaco invulnerabile",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Mantello dell'aracnide",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Lancio triplo",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Manuale del golem d'argilla",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Stivali del teletrasporto",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Resistenza al freddo migliorata",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Anarchica",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Incenso della meditazione",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Mazza della punizione",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Immunità agli elementi",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Ali del volo",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Accumula potere",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Freccia acida",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Elisir del nascondersi",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Flagellazione",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Cubo di forza",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Psicocinetica",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Pietra del controllo degli elementali della terra",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Collana delle palle di fuoco tipo III",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Gemma della visione",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Ferri dello zefiro",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Pozione del veleno",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Accecante",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Campana dell'interruzione",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Allerta",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Talismano della putrefazione",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Interdizione al fulmine",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Vacuo grimorio",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Luccicante",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Giocoliere temporale",
+   "atteso": true,
+   "dopo": true,
+   "prima": false,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Guanti della Forza dell'Orco",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Anello dell'invisibilità totale",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Mantello della protezione elfica",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Stivali della corsa rapida",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Borsa conservante",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Bacchetta dei fulmini globulari",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Cintura della forza del gigante di pietra",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Amuleto della corazza naturale",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Anello di resistenza al fuoco totale",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  },
+  {
+   "tipo": "oggetto magico",
+   "nome": "Elmo della telepatia superiore",
+   "atteso": false,
+   "dopo": true,
+   "prima": true,
+   "letto": true
+  }
+ ]
+}

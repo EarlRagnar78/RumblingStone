@@ -1,0 +1,148 @@
+{
+ "_cos_e": "Annotazione di Burnt Offerings (Paizo 2007, Rise of the Runelords 1, PDF comprato dal DM, fuori dal repo). Le etichette delle mappe sono raster calligrafiche: trascritte a vista il 2026-11-10 dalle pagine indicate. Pagine = numero di pagina del PDF (1 = copertina).",
+ "sha256_pdf": "79ac923646554464188a6d248fb91730450f76f6d10de3dc2e6bcb0218a072a7",
+ "capitoli": {
+  "livello": 2,
+  "filtro": "^Part"
+ },
+ "mappe": [
+  {
+   "pagina": 21,
+   "nome": "Sandpoint Glassworks",
+   "codici": [
+    "A1",
+    "A2",
+    "A3",
+    "A4",
+    "A5",
+    "A6",
+    "A7",
+    "A8",
+    "A9",
+    "A10",
+    "A11",
+    "A12",
+    "A13",
+    "A14",
+    "A15",
+    "A16",
+    "A17",
+    "A18",
+    "A19",
+    "A20",
+    "A21",
+    "A22",
+    "A23"
+   ]
+  },
+  {
+   "pagina": 26,
+   "nome": "Catacombs of Wrath",
+   "codici": [
+    "B1",
+    "B2",
+    "B3",
+    "B4",
+    "B5",
+    "B6",
+    "B7",
+    "B8",
+    "B9",
+    "B10",
+    "B11",
+    "B12",
+    "B13"
+   ]
+  },
+  {
+   "pagina": 34,
+   "nome": "Thistletop",
+   "codici": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C20",
+    "C21",
+    "C22",
+    "C23",
+    "C27"
+   ]
+  },
+  {
+   "pagina": 44,
+   "nome": "Thistletop Dungeon: Level One",
+   "codici": [
+    "D1",
+    "D2",
+    "D3",
+    "D4A",
+    "D4B",
+    "D4C",
+    "D4D",
+    "D5",
+    "D6",
+    "D7",
+    "D8",
+    "D9",
+    "D10",
+    "D11",
+    "D12",
+    "D13",
+    "D14",
+    "D15"
+   ]
+  },
+  {
+   "pagina": 52,
+   "nome": "Thistletop Dungeon: Level Two",
+   "codici": [
+    "E1",
+    "E2",
+    "E3",
+    "E4",
+    "E5",
+    "E6",
+    "E7",
+    "E8",
+    "E9",
+    "E10"
+   ]
+  }
+ ],
+ "appendice": {
+  "regione": [
+   [
+    58,
+    79
+   ]
+  ],
+  "png": [
+   [
+    86,
+    96
+   ]
+  ],
+  "nota": "regione = Sandpoint (gazzettiere con mappa e 50 luoghi) e Thassilon; png = Bestiary e Characters. Il Pathfinder's Journal (80-85) è narrativa e non conta."
+ },
+ "png": {
+  "principali": 15,
+  "con_ritratto": 8,
+  "fonte": "standard-stampa/CONFRONTO-PAIZO-AP-2026-10-29.md: 8 delle 15 schede intere accanto al ritratto"
+ }
+}

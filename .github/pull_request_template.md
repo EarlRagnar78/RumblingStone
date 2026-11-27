@@ -12,6 +12,7 @@ Le scelte che il diff non spiega da solo.
 ## Piani e decisioni
 
 - [ ] piano, riga in `plans/INDEX.md` e riga in `plans/CHANGELOG.md` nello **stesso commit** (regola d'oro di `rumblingstone-plans`)
+- [ ] con la riga del changelog, una voce `MS-NNNN` in coda a `plans/MEMORIA-STORICA.md`: decisioni, misure, questioni aperte, rimandi (addendum, ADR-0127; la CI la esige)
 - [ ] le decisioni del DM nelle tabelle `<!-- decisioni-dm: … -->`, con l'eco; §4 di STATO rigenerato con `decisioni_dm.py --emit`
 - [ ] un ADR nuovo ha il numero prenotato in `plans/adr-prenotati.json` e la prenotazione è tolta in questa PR
 - [ ] un cambio della superficie pubblica (CLI `dm.py`, contratti dei file, skill, versione di Python) ha una riga in «Non rilasciato» di `CHANGELOG.md` (ADR-0100)

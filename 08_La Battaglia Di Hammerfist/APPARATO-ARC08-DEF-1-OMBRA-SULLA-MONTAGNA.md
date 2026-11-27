@@ -17,7 +17,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | **Fauci di Palude** | SCENA 4 | stasera, che Hammerfist abbia paura. Domani, il resto | non parla con i nani. Non ne ha bisogno |
 | la pattuglia | SCENA 4 | — | goblin, a fischi più che a parole |
 | gli scout | SCENA 4 | — | goblin, sottovoce, per ordine del sergente |
-| **Madre Superiora Dana Forgiapietra** | SCENA 5 | le Cantitrici sulle Mura, dove il canto arriva a più nani. Il Re le vorrebbe al tempio, al sicuro | sussurra le preghiere e tuona le benedizioni. Al Consiglio parla poco, e per ultima |
+| **Madre Superiora Dagmar Forgiapietra** | SCENA 5 | le Cantitrici sulle Mura, dove il canto arriva a più nani. Il Re le vorrebbe al tempio, al sicuro | sussurra le preghiere e tuona le benedizioni. Al Consiglio parla poco, e per ultima |
 | il mastro armaiolo | SCENA 6 | — | a numeri: «trecento quadrelli, quaranta scudi, due mani in meno» |
 | i guastatori | SCENA 8 | — | non parlano: contano i colpi |
 
@@ -27,6 +27,8 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 |---|---|---:|
 | SCENA 4 | e lo si sa con Sopravvivenza | 15 |
 | SCENA 4 | Con Sopravvivenza | 15 |
+| SCENA 4 | tocca o la studia tira Volontà | 15 |
+| SCENA 4 | lì l'Ascoltare degli scout va contro | 20 |
 | SCENA 4 | Forza | 10 |
 | SCENA 4 | Scalare | 12 |
 | SCENA 4 | Entro 9 m dal fuoco, Ascoltare | 15 |
@@ -44,8 +46,12 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 7 | mura entro 90 m tira Volontà | 25 |
 | SCENA 7 | partito il colpo, 14d4 acido, Riflessi | 29 |
 | SCENA 7 | resta entro 3 m tira Tempra | 15 |
+| SCENA 7 | davanti al soffio (Riflessi +9 contro | 29 |
 | SCENA 8 | Con immagine silenziosa | 15 |
 | SCENA 8 | riesce metà delle volte, con affascinare | 18 |
+| SCENA 8 | Acrobazia | 15 |
+| SCENA 8 | e per farlo tira Concentrazione +20 | 15 |
+| SCENA 8 | dimezzare un Riflessi contro la frana | 15 |
 | SCENA 9 | Conoscenze (religione) | 15 |
 | SCENA 9 | Sopravvivenza | 15 |
 | SCENA 9 | Ascoltare | 18 |
@@ -73,7 +79,7 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 4 | il campo, il conto | Salvatore lead | 5 |
 | SCENA 4 | il campo, i comandi | Game of Thrones lead | 6 |
 | SCENA 4 | il campo, la palude | Tolkien lead | 6 |
-| SCENA 5 | la Sala del Trono Ancestrale | Casa di Davide lead | 7 |
+| SCENA 5 | la Sala del Trono Ancestrale | Casa di Davide lead | 8 |
 | SCENA 6 | il cortile interno | Mercer lead | 7 |
 | SCENA 7 | le mura, il drago | Tolkien lead | 7 |
 | SCENA 8 | il pendio | Salvatore lead | 7 |

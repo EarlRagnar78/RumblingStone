@@ -518,7 +518,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 - Arma Focalizzata (schianto)
 - Attacco Poderoso
 - Incalzare
-- Fendente Poderoso
+- Incalzare Potenziato
 - Iniziativa Migliorata
 - Critico Migliorato (schianto)
 - Volontà di Ferro
@@ -530,7 +530,7 @@ Schiavi menzionarono "Canto Ignan Primordiale calma guardiano?"
 
 1. **Round 1 (Sveglia):** Alza, ruggisce (Intimidire vs party, TS Volontà CD 20 o Scosso -2 attacco/TS per 3 round), carica su PG più vicino (Thorik probabilmente)
 2. **Round 2+:** Attacco Poderoso massimo (-5 attacco, +10 danni), Schianto doppio target prioritario
-3. **Se flanked:** Fendente Poderoso (attacco cleave colpisce due nemici adiacenti)
+3. **Se flanked:** Incalzare Potenziato (attacco cleave colpisce due nemici adiacenti)
 4. **Se HP < 100:** Attacco Poderoso moderato (-3/+6)
 5. **Se HP < 50:** Ritira su Altare, tenta rigenerarsi (assorbe potere Altare, +20 HP, 1 volta sola)
 6. **Mai fugge:** Guardiano combatte fino morte

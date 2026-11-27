@@ -1,0 +1,9 @@
+# sistemi/dnd35/dati/incontri.toml — come si combinano i GS in un EL, D&D 3.5 (ADR-0111, L4)
+#
+# In 3.5 raddoppiare le creature di pari GS alza l'EL di 2 (DMG 3.5 p. 49):
+# EL = r · log2( Σ 2^(GS/r) ), con r = raddoppio = 2. Due GS 10 → EL 12.
+# Il metodo «potenze» è codice del plugin d20 (sistemi/d20/codice/incontri.py,
+# F5 di ADR-0112); qui stanno il nome del metodo e il suo parametro.
+fonte = "DMG 3.5 p. 49, «Encounter Level» (non nell'SRD in cache)"
+metodo = "potenze"
+raddoppio = 2

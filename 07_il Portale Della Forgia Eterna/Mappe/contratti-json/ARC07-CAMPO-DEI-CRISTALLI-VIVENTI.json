@@ -1,0 +1,278 @@
+{
+  "schema_version": "1.0",
+  "title": "CAMPO DEI CRISTALLI VIVENTI — 30 m × 12 m (20 col × 8 righe · 1,5 m)",
+  "scale_m_per_square": 1.5,
+  "units_in": "squares",
+  "map_size": [
+    20,
+    8
+  ],
+  "base_terrain": "🟫",
+  "north": "N",
+  "regions": [
+    {
+      "terrain": "⬜",
+      "rect": [
+        0,
+        5,
+        20,
+        1
+      ],
+      "label": "Pavimento lavorato"
+    },
+    {
+      "terrain": "🌫",
+      "rect": [
+        0,
+        0,
+        20,
+        1
+      ],
+      "label": "Vuoto / aria (niente pavimento, gravita' alterata: vale la nota della mappa)"
+    }
+  ],
+  "structures": [
+    {
+      "type": "💚",
+      "at": [
+        4,
+        1
+      ]
+    },
+    {
+      "type": "💚",
+      "at": [
+        14,
+        6
+      ]
+    },
+    {
+      "type": "🔮",
+      "rect": [
+        1,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🔮",
+      "at": [
+        0,
+        2
+      ]
+    },
+    {
+      "type": "🔮",
+      "rect": [
+        1,
+        6,
+        3,
+        1
+      ]
+    },
+    {
+      "type": "🔮",
+      "at": [
+        2,
+        7
+      ]
+    },
+    {
+      "type": "🔮",
+      "rect": [
+        3,
+        2,
+        4,
+        1
+      ]
+    },
+    {
+      "type": "🔮",
+      "at": [
+        6,
+        3
+      ]
+    },
+    {
+      "type": "🔮",
+      "rect": [
+        5,
+        6,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🔮",
+      "at": [
+        5,
+        7
+      ]
+    },
+    {
+      "type": "🔮",
+      "at": [
+        7,
+        1
+      ]
+    },
+    {
+      "type": "🔮",
+      "rect": [
+        9,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🔮",
+      "rect": [
+        8,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "type": "🔮",
+      "rect": [
+        10,
+        2,
+        1,
+        3
+      ]
+    },
+    {
+      "type": "🔮",
+      "at": [
+        7,
+        4
+      ]
+    },
+    {
+      "type": "🔮",
+      "at": [
+        11,
+        4
+      ]
+    },
+    {
+      "type": "🔮",
+      "rect": [
+        8,
+        6,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🔮",
+      "rect": [
+        10,
+        6,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🔮",
+      "at": [
+        9,
+        7
+      ]
+    },
+    {
+      "type": "🔮",
+      "at": [
+        11,
+        1
+      ]
+    },
+    {
+      "type": "🔮",
+      "rect": [
+        12,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🔮",
+      "rect": [
+        14,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🔮",
+      "at": [
+        15,
+        1
+      ]
+    },
+    {
+      "type": "🔮",
+      "at": [
+        15,
+        4
+      ]
+    },
+    {
+      "type": "🔮",
+      "rect": [
+        15,
+        7,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🔮",
+      "at": [
+        17,
+        1
+      ]
+    },
+    {
+      "type": "🔮",
+      "at": [
+        17,
+        4
+      ]
+    },
+    {
+      "type": "🔮",
+      "at": [
+        17,
+        6
+      ]
+    },
+    {
+      "type": "🔮",
+      "rect": [
+        18,
+        2,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🔷",
+      "at": [
+        9,
+        3
+      ]
+    }
+  ],
+  "notes": [
+    "Contratto ricavato il 2026-11-09 dalla griglia di `07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md` (mappa 2) con `import_ultraclear.py`. Griglia e contratto restano identici: lo controlla `scripts/tests/test_contratti_mappe.py`. Chi cambia la mappa cambia questo file e rigenera la griglia con `compile_map_json.py`."
+  ],
+  "simboli_locali": {
+    "💚": "Cristallo Vivente crepato, riforgiabile (E02 e O07): curato vale +2 🔮 Cristallo Vivente che canta, alto 1-3 m: copertura ½, chi ci entra lo rompe 🔷 Madre Cristallo (J04), alta 5 m"
+  }
+}

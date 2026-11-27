@@ -1,0 +1,159 @@
+{
+  "_cos_e": "Il registro curato dei filoni di lavoro in sviluppo, fuori da main: un filone ha il suo thread, le sue PR, i suoi rami, le sue cartelle condivise (relative a /mnt/project-files, la cartella dei thread cloud che sul PC del DM non c'è), che cosa aspetta e il passo dopo. Lo legge scripts/lavoro_in_corso.py, che ne fa plans/LAVORO-IN-CORSO.md e con --check lo valida in CI. Ciò che è già su main sta in MEMORIA.md, non qui. Niente dati personali: né email né nomi dei giocatori. Si aggiorna a mano: quando un filone cambia stato, si cambiano stato, aspetta, prossimo e aggiornato.",
+  "stati": {
+    "in-corso": "qualcuno ci lavora: thread aperto o PR che si muove",
+    "aspetta-jfs": "fermo su una decisione, una prova o una revisione del DM",
+    "in-prova": "su main o quasi, in canale testing: si misura prima di dirlo finito",
+    "fermo": "nessuno ci lavora: da riprendere, chiudere o portare"
+  },
+  "servizio": [
+    {
+      "cartella": "memoria-progetto-specchio",
+      "perche": "infrastruttura della memoria del progetto (ADR-0151): istantanee, non un filone"
+    },
+    {
+      "cartella": "memoria-storica-coda",
+      "perche": "la coda della memoria storica (ADR-0138): la scrivono tutti i thread, non è un filone"
+    },
+    {
+      "cartella": "uploads",
+      "perche": "i file caricati nei thread: materiale in entrata, non un filone"
+    }
+  ],
+  "filoni": [
+    {
+      "id": "misure-agenti",
+      "titolo": "Registro e runner unico delle misure dei componenti",
+      "stato": "in-corso",
+      "thread": "Misurare e migliorare agenti, skill e automatismi",
+      "thread_id": "cmsg_019sykApdKEBBe8D8NJyiFEGBL6zH6jvBhBcJwVn6DWXuU",
+      "pr": [544],
+      "rami": ["claude/project-thread-2yp4ga"],
+      "mnt": ["agenti-eval-2026-11-27", "instradamento-coda"],
+      "repo": [],
+      "aspetta": "",
+      "prossimo": "finire la bozza della PR #544 (ADR-0155) e portarla a pronta",
+      "aggiornato": "2026-11-27"
+    },
+    {
+      "id": "piani-fermi",
+      "titolo": "Allineare i sette piani fermi",
+      "stato": "in-corso",
+      "thread": "Allineare i sette piani fermi",
+      "thread_id": "cmsg_019sykApdKEBBe8D8NJyiFEG5nrFb9i42vUL2hgFBgRcKW",
+      "pr": [542],
+      "rami": ["claude/project-thread-198cay"],
+      "mnt": ["audit-settimanale/piani-fermi-2026-11-27"],
+      "repo": [],
+      "aspetta": "",
+      "prossimo": "chiusure con prova e numeri aggiornati nella PR #542, poi da bozza a pronta",
+      "aggiornato": "2026-11-27"
+    },
+    {
+      "id": "serata-30-novembre",
+      "titolo": "Preparare la sessione del 30 novembre (ARC-07 DEF-4 e DEF-5)",
+      "stato": "aspetta-jfs",
+      "thread": "Preparare la sessione del 30 novembre",
+      "thread_id": "cmsg_019sykApdKEBBe8D8NJyiFEG6UNwZcQKiVpik6sUrbQWSR",
+      "pr": [541],
+      "rami": ["claude/project-thread-3o4an2"],
+      "mnt": ["serata-2026-11-30", "tavole-serata-2026-11-30"],
+      "repo": [
+        "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+        "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md"
+      ],
+      "aspetta": "la revisione e il merge della PR #541 (pronta, ADR-0156) prima della serata",
+      "prossimo": "dopo il merge, il corredo della serata con dm.py corredo --stampa",
+      "aggiornato": "2026-11-27"
+    },
+    {
+      "id": "doni-di-hella",
+      "titolo": "Allineare i Doni di Hella nei rimandi",
+      "stato": "in-corso",
+      "thread": "Allineare i Doni di Hella nei rimandi",
+      "thread_id": "cmsg_019sykApdKEBBe8D8NJyiFEGQQfCFqMe1qSg7hTdsJzZKc",
+      "pr": [539],
+      "rami": ["claude/project-thread-fm157b"],
+      "mnt": [],
+      "repo": [],
+      "aspetta": "",
+      "prossimo": "TRASVERSALE T9-bis nella bozza #539, poi pronta per la revisione",
+      "aggiornato": "2026-11-27"
+    },
+    {
+      "id": "trascrizione-locale",
+      "titolo": "Provare la trascrizione locale della serata",
+      "stato": "fermo",
+      "thread": "Provare la trascrizione locale della serata",
+      "thread_id": "cmsg_019sykApdKEBBe8D8NJyiFEGGo5rcLeF9YHzKvax2rjjzz",
+      "pr": [424],
+      "rami": ["claude/project-thread-kcq3f8"],
+      "mnt": [],
+      "repo": [],
+      "aspetta": "una decisione: il thread è risolto ma la bozza #424 è ancora aperta (ADR-0135 prenotato)",
+      "prossimo": "riprendere la prova su GPU locale o chiudere la PR e liberare ADR-0135",
+      "aggiornato": "2026-11-27"
+    },
+    {
+      "id": "drappo-flux",
+      "titolo": "Immagini FLUX del Drappo (D2) sul portatile 4050",
+      "stato": "aspetta-jfs",
+      "thread": "Scrivere lo script FLUX per il 4050",
+      "thread_id": "cmsg_019sykApdKEBBe8D8NJyiFEGHqq2jSbavZsWSm6NcCaADC",
+      "pr": [],
+      "rami": [],
+      "mnt": [
+        "drappo-flux-2026-11-16",
+        "drappo-flux-kaggle-2026-11-21",
+        "drappo-flux-kaggle-2026-11-25",
+        "drappo-flux-kaggle-2026-11-27",
+        "prove-4050-risultati",
+        "kaggle-2026-11-18"
+      ],
+      "repo": ["scripts/prove-4050/"],
+      "aspetta": "guardare i confronti, o lanciare scripts/prove-4050/drappo-flux.sh sull'ASUS, e scegliere A o B; niente è mai girato su GPU locale",
+      "prossimo": "con la scelta, il lotto D2 delle immagini del Drappo",
+      "aggiornato": "2026-11-27"
+    },
+    {
+      "id": "agenti-e-cascate",
+      "titolo": "Agenti e cascate: vincolo delle skill, custode della memoria, documentazione automatica",
+      "stato": "in-prova",
+      "canale": "testing",
+      "thread": "Vincolare gli agenti all'uso delle skill (con Creare l'agente custode della memoria e Garantire che la documentazione si aggiorni da sola)",
+      "thread_id": "cmsg_019sykApdKEBBe8D8NJyiFEGRD5KoqsRoGajxaH2V3LDwe",
+      "pr": [],
+      "rami": [],
+      "mnt": [
+        "agenti-2026-11-20",
+        "custode-memoria-2026-11-27",
+        "documentazione-automatica-2026-11-27"
+      ],
+      "repo": [
+        ".claude/agents/",
+        "plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md",
+        "plans/adr/ADR-0148-i-fatti-si-verificano-con-script-e-gli-agenti-con-prove-fisse.md",
+        "plans/adr/ADR-0151-la-memoria-del-progetto-ha-uno-specchio-e-un-custode.md",
+        "plans/adr/ADR-0154-l-instradamento-degli-agenti-si-misura-su-messaggi-veri.md"
+      ],
+      "aspetta": "",
+      "prossimo": "le regole sono su main; si misura nel canale testing (ADR-0099) prima di dirle stabili",
+      "aggiornato": "2026-11-27"
+    },
+    {
+      "id": "lavoro-in-corso",
+      "titolo": "Rendere visibile il lavoro in corso (questa pagina)",
+      "stato": "in-corso",
+      "canale": "testing",
+      "thread": "Rendere visibile il lavoro in corso",
+      "thread_id": "cmsg_019sykApdKEBBe8D8NJyiFEGA4dsRRjwhsVGaemd6hXUH6",
+      "pr": [],
+      "rami": ["claude/project-thread-65g5a1"],
+      "mnt": [],
+      "repo": ["scripts/lavoro_in_corso.py"],
+      "aspetta": "",
+      "prossimo": "PR del registro e dello script, poi la documentazione",
+      "aggiornato": "2026-11-27"
+    }
+  ]
+}

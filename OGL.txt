@@ -5,7 +5,7 @@ Questo file esiste per una ragione operativa, non decorativa: la Sezione 10
 della licenza qui sotto dice che una copia della licenza va inclusa con ogni
 copia dell'Open Game Content che si distribuisce. Finché il repo resta privato
 non è un adempimento; nel momento in cui qualcosa esce, lo è — ed è parte del
-cancello d'uscita di `docs/guides/GUIDA-CONDIVISIONE-IP.md` §7. Averlo qui
+cancello d'uscita di `docs/how-to/GUIDA-CONDIVISIONE-IP.md` §7. Averlo qui
 significa che il cancello si può passare invece che solo citare.
 
 
@@ -25,6 +25,11 @@ DA COSA DERIVA QUESTO REPO
       * Advanced Player's Guide, liste di incantesimi  →  le voci PF1e senza
         equivalente 3.5 (`skills/pathfinder-1e-srd/references/conversion-guide.md`
         §«PF1e spell lists», `scripts/dmcore/incantesimi.py`).
+      * i dati del plugin PF1e (`sistemi/pf1e/dati/`, ADR-0112 e ADR-0121): classi
+        e talenti da Core, APG, Advanced Class Guide, Advanced Race Guide,
+        Ultimate Magic, Ultimate Combat, Ultimate Campaign, Ultimate Equipment,
+        Mythic Adventures; tipi, sensi e statistiche delle creature dai Bestiary
+        1-4, GameMastery Guide, NPC Codex, Monster Codex, Technology Guide.
 
 Il resto del repo — la prosa delle avventure, il canone della Cannath Vale, le
 mappe, le guide, gli ADR — NON è Open Game Content: è opera originale sotto
@@ -147,6 +152,103 @@ based on material by Jonathan Tweet, Monte Cook, and Skip Williams.
 Advanced Player's Guide. Copyright 2010, Paizo Publishing, LLC; Author: Jason
 Bulmahn
 
+Pathfinder Roleplaying Game Advanced Race Guide. © 2012, Paizo Publishing, LLC;
+Authors: Dennis Baker, Jesse Benner, Benjamin Bruck, Jason Bulmahn, Adam Daigle,
+Jim Groves, Tim Hitchcock, Hal MacLean, Jason Nelson, Stephen Radney-MacFarland,
+Owen K.C. Stephens, Todd Stewart, and Russ Taylor.
+
+Pathfinder Roleplaying Game Advanced Class Guide © 2014, Paizo Inc.; Authors:
+Dennis Baker, Ross Byers, Jesse Benner, Savannah Broadway, Jason Bulmahn, Jim
+Groves, Tim Hitchcock, Tracy Hurley, Jonathan H. Keith, Will McCardell, Dale C.
+McCoy, Jr., Tom Phillips, Stephen Radney-MacFarland, Thomas M. Reid, Sean K
+Reynolds, Tork Shaw, Owen K.C. Stephens, and Russ Taylor.
+
+Pathfinder Roleplaying Game Ultimate Magic. © 2011, Paizo Publishing, LLC;
+Authors: Jason Bulmahn, Tim Hitchcock, Colin McComb, Rob McCreary, Jason Nelson,
+Stephen Radney-MacFarland, Sean K Reynolds, Owen K.C. Stephens, and Russ Taylor.
+
+Pathfinder Roleplaying Game Ultimate Combat. © 2011, Paizo Publishing, LLC;
+Authors: Dennis Baker, Jesse Benner, Benjamin Bruck, Jason Bulmahn, Brian J.
+Cortijo, Jim Groves, Tim Hitchcock, Richard A. Hunt, Colin McComb, Jason Nelson,
+Tom Phillips, Patrick Renie, Sean K Reynolds, and Russ Taylor.
+
+Pathfinder Roleplaying Game Ultimate Campaign. © 2013, Paizo Publishing, LLC;
+Authors: Jesse Benner, Benjamin Bruck, Jason Bulmahn, Ryan Costello, Adam
+Daigle, Matt Goetz, Tim Hitchcock, James Jacobs, Ryan Macklin, Colin McComb,
+Jason Nelson, Richard Pett, Stephen Radney-MacFarland, Patrick Renie, Sean K
+Reynolds, F. Wesley Schneider, James L. Sutter, Russ Taylor, and Stephen
+Townshend.
+
+Pathfinder Roleplaying Game Ultimate Equipment. © 2012 Paizo Publishing, LLC;
+Authors: Dennis Baker, Jesse Benner, Benjamin Bruck, Ross Byers, Brian J.
+Cortijo, Ryan Costello, Mike Ferguson, Matt Goetz, Jim Groves, Tracy Hurley,
+Matt James, Jonathan H. Keith, Michael Kenway, Hal MacLean, Jason Nelson, Tork
+Shaw, Owen KC Stephens, and Russ Taylor.
+
+Pathfinder Roleplaying Game Mythic Adventures © 2013, Paizo Publishing, LLC;
+Authors: Jason Bulmahn, Stephen Radney-MacFarland, Sean K Reynolds, Dennis
+Baker, Jesse Benner, Ben Bruck, Jim Groves, Tim Hitchcock, Tracy Hurley,
+Jonathan Keith, Jason Nelson, Tom Phillips, Ryan Macklin, F. Wesley Schneider,
+Amber Scott, Tork Shaw, Russ Taylor, and Ray Vallese.
+
+Pathfinder Roleplaying Game GameMastery Guide. © 2010, Paizo Publishing, LLC;
+Author: Cam Banks, Wolfgang Buar, Jason Bulmahn, Jim Butler, Eric Cagle, Graeme
+Davis, Adam Daigle, Joshua J. Frost, James Jacobs, Kenneth Hite, Steven Kenson,
+Robin Laws, Tito Leati, Rob McCreary, Hal Maclean, Colin McComb, Jason Nelson,
+David Noonan, Richard Pett, Rich Redman, Sean K reynolds, F. Wesley Schneider,
+Amber Scorr, Doug Seacat, Mike Selinker, Lisa Stevens, James L. Sutter, Russ
+Taylor, Penny Williams, Skip Williams, Teeuwynn Woodruff.
+
+Pathfinder Roleplaying Game Bestiary 2. © 2010, Paizo Publishing, LLC; Authors
+Wolfgang Baur, Jason Bulmahn, Adam Daigle, Graeme Davis, Crystal Frasier, Joshua
+J. Frost, Tim Hitchcock, Brandon Hodge, James Jacobs, Steve Kenson, Hal MacLean,
+Martin Mason, Rob McCreary, Erik Mona, Jason Nelson, Patrick Renie, Sean K
+Reynolds, F. Wesley Schneider, Owen K.C. Stephens, James L. Sutter, Russ Taylor,
+and Greg A. Vaughan, based on material by Jonathan Tweet, Monte Cook, and Skip
+Williams.
+
+Pathfinder Roleplaying Game Bestiary 3. © 2011, Paizo Publishing, LLC; Authors:
+Jesse Benner, Jason Bulmahn, Adam Daigle, James Jacobs, Michael Kenway, Rob
+McCreary, Patrick Renie, Chris Sims, F. Wesley Schneider, James L. Sutter, and
+Russ Taylor, based on material by Jonathan Tweet, Monte Cook, and Skip Williams.
+
+Pathfinder Roleplaying Game Bestiary 4. © 2013, Paizo Publishing, LLC; Authors:
+Dennis Baker, Jesse Benner, Savannah Broadway, Ross Byers, Adam Daigle, Tim
+Hitchcock, Tracy Hurley, James Jacobs, Matt James, Rob McCreary, Jason Nelson,
+Tom Phillips, Stephen Radney- MacFarland, Sean K Reynolds, F. Wesley Schneider,
+Tork Shaw, and Russ Taylor.
+
+Pathfinder Roleplaying Game NPC Codex. © 2012, Paizo Publishing, LLC; Authors:
+Jesse Benner, Jason Bulmahn, Adam Daigle, Alex Greenshields, Rob McCreary, Mark
+Moreland, Jason Nelson, Stephen Radney-MacFarland, Patrick Renie, Sean K
+Reynolds, and Russ Taylor.
+
+Pathfinder Roleplaying Game Monster Codex. © 2014, Paizo Inc.; Authors: Dennis
+Baker, Jesse Benner, Logan Bonner, Jason Bulmahn, Ross Byers, John Compton,
+Robert N. Emerson, Jonathan H. Keith, Dale C. McCoy, Jr., Mark Moreland, Tom
+Phillips, Stephen Radney-MacFarland, Sean K Reynolds, Thomas M. Reid, Patrick
+Renie, Mark Seifter, Tork Shaw, Neil Spicer, Owen K.C. Stephens, and Russ
+Taylor.
+
+Pathfinder Campaign Setting: Technology Guide. © 2014, Paizo Inc.; Authors:
+James Jacobs and Russ Taylor.
+
+Giant, Wood from the Tome of Horrors, Revised, © 2002, Necromancer Games, Inc.;
+Author Scott Greene, based on original material by Wizards of the Coast.
+
+Grippli from the Tome of Horrors Complete © 2011, Necromancer Games, Inc.,
+published and distributed by Frog God Games; Author: Scott Greene, based on
+original material by Gary Gygax.
+
+Skulk from the Tome of Horrors, Revised, © 2002, Necromancer Games, Inc.; Author
+Scott Greene, based on original material by Simon Muth.
+
+Troll, Ice from the Tome of Horrors, Revised, © 2002, Necromancer Games, Inc.;
+Author Scott Greene, based on original material by Russell Cole.
+
+Troll, Rock from the Tome of Horrors, Revised, © 2002, Necromancer Games, Inc.;
+Author Scott Greene.
+
 --------------------------------------------------------------------------------
 
 NOTA SULLA CATENA
@@ -154,7 +256,11 @@ NOTA SULLA CATENA
 
 La Sezione 15 del PRD di Pathfinder porta 93 voci, perché quel documento
 raccoglie l'intera linea Paizo più il Tome of Horrors e tre bestiari. Qui ne
-sono riportate SEI: quelle del materiale da cui questo repo deriva davvero.
+sono riportate quelle del materiale da cui questo repo deriva davvero: le sei
+di partenza e, dal 2026-11-10, i libri da cui i dati dei plugin
+(`sistemi/pf1e/dati/`) prendono classi, talenti, razze e creature, più le
+cinque creature del Tome of Horrors che quei dati nominano. Il testo delle voci
+è copiato dalla Sezione 15 del PRD (legacy.aonprd.com/openGameLicense.html).
 Copiare le altre dichiarerebbe un uso che non c'è, ed è il modo più rapido di
 rendere inutile una catena di copyright.
 

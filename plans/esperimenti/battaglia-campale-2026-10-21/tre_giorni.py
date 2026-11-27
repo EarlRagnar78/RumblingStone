@@ -28,6 +28,7 @@ ORDA = {"hobgoblin": (10, 20, 10), "orchi": (7, 14, 8), "guerrieri": (6, 18, 11)
         "worg": (7, 17, 10)}
 ORDA = {k: (a + FEROCE, b + FEROCE, c) for k, (a, b, c) in ORDA.items()}
 EROE = {"Borin": 21, "Dara": 19, "Thorin": 14, "Nala": 13}
+MACIGNI = (2, 9)   # quanti per settore, e il bonus
 ORD = {"tenere": (None, 4), "colpire": (0, 0), "caricare": (2, -2)}
 SETTORI = [("Borin", ["elite"] * 2, "Cancello", 3),
            ("Dara", ["balestrieri"] * 2, "Torre Ovest", 2),
@@ -61,8 +62,11 @@ def battaglia(politica):
                 # la carta dell'orda: i giganti il primo e il secondo giorno,
                 # il soffio del drago sulle Mura il terzo
                 if giorno < 3 and r == 1:
-                    i = R.choice(vivi)
-                    pfu[nome][i] = max(0, pfu[nome][i] - tab(d(20) + 14 - (NANI[rep[i]][1] + mura + morale)))  # tiro dell'orda, diretto
+                    # due macigni per settore a +9 (otto giganti, quattro settori; +8 SRD, +1 morale):
+                    # MACIGNI = (1, 14) rifà la carta di prima del 2026-11-09
+                    for _ in range(MACIGNI[0]):
+                        i = R.choice(vivi)
+                        pfu[nome][i] = max(0, pfu[nome][i] - tab(d(20) + MACIGNI[1] - (NANI[rep[i]][1] + mura + morale)))  # tiro dell'orda, diretto
                 if giorno == 3 and r == 1 and nome == "Mura":
                     for i in vivi: pfu[nome][i] = max(0, pfu[nome][i] - d(4))
                 inflitti, com = 0, 0

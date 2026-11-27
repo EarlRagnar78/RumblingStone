@@ -405,8 +405,8 @@ uomini»* — non è una concessione del DM.
 nella Sala come fuori: un pomeriggio davanti agli affreschi è un pomeriggio
 del mondo di sopra, come l'ora del rito.
 **E vale solo prima del rito.** Dopo il rito la Sala conta per intero anche
-il sonno: otto ore di sonno costano otto ore, come scrive «La Resurrezione di Hella» §9
-. Il registro qui sotto è giocato, e non
+il sonno: otto ore di sonno costano otto ore, come scrive «La Resurrezione di Hella» §9.
+Il registro qui sotto è giocato, e non
 cambia.
 
 #### Il registro dei riposi (giocato + previsto)
@@ -456,7 +456,7 @@ posto in cui i PG vedono il prezzo di ciò che hanno appena scelto.
 | **3g 04h** | la torre di **nord-ovest** ha preso un colpo che non è stato riparato, e alle porte lavora un **ariete**. Nella pietra dipinta c'è una **crepa sottile che non si richiude più** |
 | **sotto 2g** | **breccia aperta**, combattimento *dentro* le mura → scatta il §8: pannello velato su A8 e ARC-08 in Fase 0 dura |
 
-> **Read-aloud (Andor lead) — l'affresco A7, ogni volta che il timer scende.** *I
+> **Read-aloud — l'affresco A7, ogni volta che il timer scende.** *I
 > numeri nanici nell'angolo dell'affresco sono cambiati, senza un rintocco: la
 > volta prima erano altri. Nella pietra dipinta qualcosa si è mosso mentre
 > nessuno guardava, una torre più vicina nel fumo, un tratto di camminamento
@@ -479,8 +479,8 @@ davanti a un pannello completato = **Benedizione della Cronaca** (§3).
 >   tutti e due, e per ogni tiro vale il più alto, come per due bonus dello
 >   stesso tipo nell'SRD. Per Thorik, che ha già +2 sacro a tutti i TS dalla
 >   Risonanza della Corona con Aegis Fang, i premi di A1, A3 e A8 diventano
->   bonus **morale** dello stesso valore, e si sommano al sacro
->.
+>   bonus **morale** dello stesso valore, e si sommano al sacro.
+>   
 > - **«Guarigione emotiva» (A3)**: vale il numero del §4 (3d8+13 col
 >   fallimento, 2d8+13 col successo), sul solo Thorik e **una volta sola** nel
 >   beat, non a ogni visita.
@@ -492,7 +492,7 @@ davanti a un pannello completato = **Benedizione della Cronaca** (§3).
 > La Sala offre a ciascuno uno specchio diverso. Da' a ognuno **il suo** momento
 > — e ricorda: Hella non parla, si manifesta.
 
-### 🛡️ THORIK — l'unto che ancora non porta la corona (Casa di Davide lead)
+### 🛡️ THORIK — l'unto che ancora non porta la corona
 - È a LUI che gli affreschi parlano: Moradin gli **gira la testa** (A1), la sua
   anima è dipinta sulla parete (A3), Aegis Fang riconosce il sangue del drago
   (A7). Thorik è il fulcro della Cronaca.
@@ -505,7 +505,7 @@ davanti a un pannello completato = **Benedizione della Cronaca** (§3).
   corpo). Ora sa *perché* quel drago conta. È un peso che diventa scopo, più che
   un'informazione tattica.
 
-### ⚒️ TORDEK — il testimone (Mercer support)
+### ⚒️ TORDEK — il testimone
 - Non è il protagonista degli affreschi, ed è giusto così: il suo ruolo qui è
   **esserci per gli altri** (regge Thorik nella catarsi senza giudicare; è lui
   che, sfiorando la Corona, riceve il **frammento onirico** di Hella — Piano della Terra, §1).
@@ -516,7 +516,7 @@ davanti a un pannello completato = **Benedizione della Cronaca** (§3).
 
   Piccolo colore, grande personaggio.
 
-### 🔮 ARTEMIS — il predone davanti alla porta del Tempo (Andor support)
+### 🔮 ARTEMIS — il predone davanti alla porta del Tempo
 > A6 **non** gli mostra la partita a scacchi di
 > Lathander/Mask: **quella visione non è mai stata giocata e Artemis non la
 > conosce**. I poteri «Luce di Lathander / Ombra di Mask» che porta li ha già
@@ -593,7 +593,7 @@ sua scena, la 4 (§6).
 
 ### ZONA A — La Sala della Forgia Eterna (l'ottagono divino)
 
-> **Read-aloud (LotR lead, Salvatore support) — la Sala, l'arrivo.** *Il
+> **Read-aloud — la Sala, l'arrivo.** *Il
 > portale vi posa sul pavimento di adamantio tiepido, e la Sala vi accoglie
 > come una madre i figli tornati dalla guerra: senza una parola, con la luce
 > dorata di sempre. Intorno, otto pareti e otto affreschi grandi come porte di
@@ -698,7 +698,7 @@ ogni riposo anche se nessuno lo guarda.
 ### A1 — «L'Alba del Mondo» (NORD · statico)
 
 <!-- scelta del DM: versione vincitrice del voto cieco, eccezione al tetto voluta -->
-> **Read-aloud (LotR lead, Casa di Davide support) — gli affreschi, A1 «L'Alba del Mondo».** *Il primo affresco mostra un'era in cui il mondo era ancora caos. Al centro,
+> **Read-aloud — gli affreschi, A1 «L'Alba del Mondo».** *Il primo affresco mostra un'era in cui il mondo era ancora caos. Al centro,
 > alto dieci metri, MORADIN: muscoli di granito, barba intrecciata d'oro,
 > mithral e adamantio, e negli occhi le fiamme della creazione. Davanti a lui
 > un'incudine titanica, grande quanto una montagna. Nella sinistra, Frostforge
@@ -706,7 +706,7 @@ ogni riposo anche se nessuno lo guarda.
 > grezzo. Nella destra, la CORONA DI ADAMANTIO in fase di nascita, che brilla
 > come una stella appena accesa.*
 
-> **Read-aloud (LotR lead, Casa di Davide support) — gli affreschi, A1, dopo che hanno guardato.** *Intorno,
+> **Read-aloud — gli affreschi, A1, dopo che hanno guardato.** *Intorno,
 > il caos primordiale: fiamme alte chilometri, fulmini che spaccano il cielo,
 > pietra liquida che ribolle, ombre antiche che tentano di avvolgere tutto.
 > Ma Moradin è calmo. Guarda la Corona con amore paterno, e forgia per
@@ -737,7 +737,7 @@ artefatti nascono — un Aegis Fang primordiale, altri martelli senza nome.*
 
 ### A2 — «I Quattro Eroi Predestinati» (NORD-OVEST · progressivo → 80%)
 
-> **Read-aloud (Casa di Davide lead, LotR support) — gli affreschi, A2.** *Quando
+> **Read-aloud — gli affreschi, A2.** *Quando
 > siete partiti, questo affresco era nebbia: quattro sagome vaghe contro
 > qualcosa di indistinto. Dopo il Fuoco e la Terra la nebbia si è quasi
 > diradata, e le sagome hanno una faccia. Un nano con una stella sulla fronte
@@ -757,7 +757,7 @@ tornare — presagio della resurrezione, non garanzia.*
 
 ### A3 — «La Visione del Risveglio» (NORD-EST · personale Thorik)
 
-> **Read-aloud (Salvatore lead, Casa di Davide support) — gli affreschi, A3.** *Questo
+> **Read-aloud — gli affreschi, A3.** *Questo
 > affresco mostra eventi di pochi giorni fa, e la figura dipinta sei tu,
 > Thorik. Si avvicina esitante al trono della Stanza della Corona e tocca la
 > Corona. Poi il lampo di luce dorata, e il campo di battaglia dove hai
@@ -814,7 +814,7 @@ diceva la Sala.
 Al ritorno, la superficie liquida della Terra **si solidifica** e diventa il
 pannello-conseguenza del Piano della Terra.
 
-> **Read-aloud (LotR lead, Mercer support) — gli affreschi, A5, la Terra che si chiude.** *L'affresco
+> **Read-aloud — gli affreschi, A5, la Terra che si chiude.** *L'affresco
 > di est, che era una finestra di gravità e cristallo, si raffredda come un
 > ferro tolto dal fuoco, dal rosso al grigio. La scena si fissa: tre figure
 > reggono un altare mentre una montagna vivente si dissolve in polvere di
@@ -825,7 +825,7 @@ pannello-conseguenza del Piano della Terra.
 
 ### A6 — «Il Viaggio Attraverso il Tempo» (SUD-OVEST · temporale → 80%)
 
-> **Read-aloud (Andor lead, LotR support) — gli affreschi, A6 «Il Viaggio Attraverso il Tempo», 1 di 2.** *Questo affresco fa
+> **Read-aloud — gli affreschi, A6 «Il Viaggio Attraverso il Tempo», 1 di 2.** *Questo affresco fa
 > male a guardarlo a lungo: due scene sovrapposte, come una doppia
 > esposizione che l'occhio rifiuta di separare. Nella prima, mille anni fa,
 > Hammerfist è giovane, le mura appena erette; i nani respingono un'orda di
@@ -835,7 +835,7 @@ pannello-conseguenza del Piano della Terra.
 > stesso sangue del primo e con mille anni in più. Le due scene si alternano
 > ogni tre battiti, e nessuno di voi sa dire quale sia quella vera.*
 
-> **Read-aloud (Andor lead, LotR support) — gli affreschi, A6, 2 di 2, dopo tre battiti.** *Dopo la Terra
+> **Read-aloud — gli affreschi, A6, 2 di 2, dopo tre battiti.** *Dopo la Terra
 > le immagini si mettono a fuoco, e al centro della doppia esposizione pulsa
 > un portale dorato. Una porta. Sul passato. La Corona sulla fronte di
 > Thorik, con due gemme accese, risponde al suo battito e si scalda. Che
@@ -901,7 +901,7 @@ dipingendo con le loro scelte.
 - **Interazione (posare il corpo di Hella davanti — manifestazione muta).**
   Leggi il box solo dopo che il corpo è davanti alla tela.
 
-> **Read-aloud (Casa di Davide lead, Salvatore support) — gli affreschi, A8, la manifestazione.** *Il
+> **Read-aloud — gli affreschi, A8, la manifestazione.** *Il
 > corpo di Hella è davanti alla tela, e la luce verde della sua anima
 > druidica esce dalle ossa e tocca il vetro nel silenzio. Per dieci battiti
 > del cuore Hella appare nell'affresco, semitrasparente e serena. Non parla.
@@ -957,8 +957,8 @@ dipinto e il vero al 100% di A8 (§5, Sviluppi).
 
 **Porta chiusa: i Dipinti Invisibili (J11-J12 sulla S-2).** Restano come in
 ARC-06, e nessun file del repo dice che cosa siano. In questo beat non si
-aprono: chi li esamina li trova muti, e restano muti per tutto l'arco
-.
+aprono: chi li esamina li trova muti, e restano muti per tutto l'arco.
+
 
 ### Se lo divinano
 
@@ -984,7 +984,7 @@ aprono: chi li esamina li trova muti, e restano muti per tutto l'arco
 con **≥2 successi** la visione si apre per tutti. Il corpo di Hella davanti ad
 A2 è un gesto che il rito non pretende: bastano i tre tiri.
 
-> **Read-aloud (Casa di Davide lead, LotR support) — l'affresco A2, la visione.** *Per
+> **Read-aloud — l'affresco A2, la visione.** *Per
 > dieci battiti l'affresco si fa limpido come vetro lavato, e mostra un
 > futuro che nessuno ha promesso. Hammerfist è salva, le bandiere naniche al
 > vento. Voi quattro siete davanti a Re Thorek, e Hella è viva, la mano
@@ -1018,7 +1018,7 @@ d'ombra sono di Artemis, il ki di Tordek.
 
 **In scena** — Dove: la Stanza della Corona — Chi: nessuno
 
-> **Read-aloud (Salvatore lead, Casa di Davide support) — la Stanza della Corona, l'ingresso.** *Oltre
+> **Read-aloud — la Stanza della Corona, l'ingresso.** *Oltre
 > il Portale sempre aperto c'è il posto da cui tutto è cominciato: la Stanza
 > della Corona, nel cuore del Sottosuolo, dove Hella è morta. Ma non è più
 > la stanza che avete lasciato. Il gelo, i muschi viola, le ragnatele dei
@@ -1046,7 +1046,7 @@ dopo lettera, la **Cronaca dei Custodi** in rune naniche:
   giorno della morte) e ora è **meno cava** — la pietra si sta *riempiendo*,
   come A2. Presagio della resurrezione, scolpito nel luogo della morte.
 
-> **Read-aloud (Salvatore lead, Casa di Davide support) — la Stanza della Corona, l'incisione, per Thorik.** *Thorik,
+> **Read-aloud — la Stanza della Corona, l'incisione, per Thorik.** *Thorik,
 > questa parete la ricordi coperta del sangue di Hella. Ora il sangue non c'è
 > più, e la pietra si scolpisce da sola: la Corona, con due gemme che ardono,
 > e accanto lei, o la sua ombra, scavata nel granito il giorno in cui è
@@ -1131,7 +1131,7 @@ scena**: se dormono otto ore e il mondo ne conta quattro, **quattro ore devono
 stare da qualche parte**. Stanno nel sogno. Il tempo che la Forgia non spende
 fuori, lo spende **dentro di loro**.
 
-> **Read-aloud (Salvatore lead, LotR support) — la Sala, l'addormentarsi.** *Il
+> **Read-aloud — la Sala, l'addormentarsi.** *Il
 > basalto è tiepido sotto la schiena, e la Sala fa una cosa che nessuna
 > locanda ha mai fatto: abbassa il tono. La luce dorata non si spegne, si
 > ritira come una brace coperta per la notte. L'ultima cosa prima di andare
@@ -1163,7 +1163,7 @@ Chiudi ogni scena e passa oltre: **non spiegare nulla**.
 
 ### 🛡️ THORIK — le mani fredde sotto la trave
 
-> **Read-aloud (Salvatore lead) — la Sala, il sogno di Thorik.** *Sogni di essere ancora
+> **Read-aloud — la Sala, il sogno di Thorik.** *Sogni di essere ancora
 > in ginocchio sull'Altare, col peso addosso, ma non lo porti da solo: sotto
 > la trave c'è un secondo paio di mani, più piccole delle tue, fredde come
 > pietra all'ombra, e non tremano. Provi a girare la testa per sapere di chi
@@ -1191,7 +1191,7 @@ Per il gruppo di oggi, nello zaino di Tordek c'è il Seme di Varis, la gemma che
 Tempio senza toccarla a mani nude, e quello che Artemis gli ha detto, o
 taciuto, è canone (Piano della Terra, §6-bis).
 
-> **Read-aloud (Andor lead, Salvatore support) — la Sala, il sogno di Tordek.** *Sogni
+> **Read-aloud — la Sala, il sogno di Tordek.** *Sogni
 > una fiera, e non è una fiera nanica: banchi bassi, teli chiari, una lingua
 > che non conosci e che capisci lo stesso, un odore di spezie che non
 > crescono in nessun posto in cui sei stato. Nessuno ti guarda: sei un
@@ -1211,13 +1211,13 @@ fermati lì.
 
 ### 🔮 ARTEMIS — la porta, dopo che hai già visto il negozio
 
-> **Read-aloud (Andor lead, BG3 support) — la Sala, il sogno di Artemis, 1 di 2.** *Il bazar te lo
+> **Read-aloud — la Sala, il sogno di Artemis, 1 di 2.** *Il bazar te lo
 > ricordi ancora: i teli bianchi, i registri, tutto quel disordine
 > ricchissimo e rumoroso tenuto in ordine da qualcuno molto bravo. Nel sogno
 > ci torni, ma da fuori, e la porta del mercato ha la cornice d'oro e
 > adamantio dell'affresco del Tempo.*
 
-> **Read-aloud (Andor lead, BG3 support) — la Sala, il sogno di Artemis, 2 di 2, quando ha riconosciuto la porta.** *È socchiusa, e dallo
+> **Read-aloud — la Sala, il sogno di Artemis, 2 di 2, quando ha riconosciuto la porta.** *È socchiusa, e dallo
 > spiraglio viene aria vera che sa di fumo di forgia e di neve: mille anni
 > di aria. Oltre c'è tutto quello che il mondo ha dimenticato di aver perso.
 > E qualcuno l'ha già aperta prima di te, perché sullo stipite, all'altezza
@@ -1228,7 +1228,7 @@ Il bazar è la vetrina di Varis, che Artemis ha visto prima di estrarre il Seme
 («Il Piano della Terra & Terros l'Antico» §6-bis, giocata). Se un Artemis nuovo non l'ha vista, al posto del
 primo box leggi una riga sola:
 
-> **Read-aloud (Andor lead) — la Sala, il sogno di Artemis, senza il bazar.** *Sogni l'affresco del Tempo, e nel sogno l'affresco è una porta.*
+> **Read-aloud — la Sala, il sogno di Artemis, senza il bazar.** *Sogni l'affresco del Tempo, e nel sogno l'affresco è una porta.*
 
 Il gancio è **Vatore** («Il Viaggio a 1.000 Anni fa»). Non nominarlo. Se Artemis chiede di chi è il
 pollice: nel sogno lo sapeva, sveglio non se lo ricorda. E se chiede se il
@@ -1238,14 +1238,14 @@ bazar c'entra — *sì, ma non sai come*.
 
 ✉ **Si consegna qui: H5**, i due box qui sotto, alla sola giocatrice di Hella.
 
-> **Read-aloud (Casa di Davide lead, LotR support) — la Sala, il sogno di Hella, dall'altra parte, 1 di 2.** *Tu non dormi più,
+> **Read-aloud — la Sala, il sogno di Hella, dall'altra parte, 1 di 2.** *Tu non dormi più,
 > e questo non è un sogno. Ma per la prima volta da quando sei qui qualcuno
 > dorme vicino a te: nel silenzio, tre respiri lenti che conosci come
 > conosci il tuo nome. Accanto a te c'è una quarta cosa che non respira, una
 > forma di polvere e mithral scuro che aspetta, con la pazienza dei cani, di
 > essere chiamata.*
 
-> **Read-aloud (Casa di Davide lead, LotR support) — la Sala, il sogno di Hella, dall'altra parte, 2 di 2.** *Tu non l'hai ancora
+> **Read-aloud — la Sala, il sogno di Hella, dall'altra parte, 2 di 2.** *Tu non l'hai ancora
 > chiamata. Non sai come. Poi, lontanissima, la voce di un nano che hai
 > tenuto per mano dice il tuo nome nel sonno, in un sussurro. E per la prima
 > volta da quando sei morta hai freddo. È bellissimo. Il freddo è dei vivi.*
@@ -1255,7 +1255,7 @@ freddo è il primo sintomo del ritorno.
 
 ### Al risveglio
 
-> **Read-aloud (LotR lead) — la Sala, il risveglio.** *Vi svegliate insieme, e
+> **Read-aloud — la Sala, il risveglio.** *Vi svegliate insieme, e
 > per un po' c'è solo silenzio. Sulla parete di sud-est i numeri nanici sono
 > cambiati, e molto meno del previsto. Il basalto è ancora tiepido nel punto
 > esatto in cui avete dormito, e da nessun'altra parte. Che fate?*
@@ -1326,7 +1326,7 @@ risposte. Nessun vicolo cieco blocca il gioco.
 | Dove | Oggetto / dono (pregenerato) | Valore |
 |---|---|---|
 | Altare (§7) | **3 Benedizioni** per PG, rinnovabili, più Forza della Montagna nel solo Piano della Terra: equivalenti a Resist Energy (1.000), Endure Elements (500), pozioni di cura (3 cariche per PG) | ricchezza speciale (non-WBL) |
-| A8 (manifestazione) | **Ghianda di Speranza**: è la **stessa ghianda annerita** che Hella stringe nel pugno dalla morte («La Resurrezione di Hella» §7-bis); l'affresco A8 la «mostra» come segno. Al rito del #3 diventa un piccolo àncora druidico (+1 sacro 1/g al Radicamento, la capacità di Hella risorta in «La Resurrezione di Hella» Appendice A.1) **o** va nel 1° seme della Collana. Curiosità sacra, 0 mo. | — |
+| A8 (manifestazione) | **Ghianda di Speranza**: è la **stessa ghianda annerita** che Hella stringe nel pugno dalla morte («La Resurrezione di Hella» §11 C); l'affresco A8 la «mostra» come segno. Al rito del #3 diventa un piccolo àncora druidico (+1 sacro 1/g al Radicamento, la capacità di Hella risorta in «La Resurrezione di Hella» Appendice A.1) **o** va nel 1° seme della Collana. Curiosità sacra, 0 mo. | — |
 | Stanza della Corona | Sotto il dais del trono (Cercare CD 22): **reliquia dei Custodi caduti** — un anello sigillo nanico annerito, appartenuto a un portatore della Corona di ere fa (200 mo per un collezionista; +2 di circostanza a Diplomazia coi nani devoti se indossato) | 200 mo |
 
 Ricchezza speciale (Corona 2/3, Bracieri completi) già contata nel Piano della Terra.

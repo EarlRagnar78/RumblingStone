@@ -1,6 +1,6 @@
 # PIANO — La piattaforma di sviluppo: una versione stabile, componenti misurati
 
-> **Stato**: 🟡 in corso (2026-10-23), P0 e P9 fatti, D1-D6 decise il giorno stesso · **Classe**: G per la regola, C per i lotti
+> **Stato**: 🟡 in corso (2026-10-23). Fatti P0, P3, P4, P7, P9, P10, P11 e P12 (P10, P11 e P12 con il loro componente ancora in testing); P5 a metà (uv installa, manca il lock di A3); P8 avviata (job 3.14 non bloccante dal 2026-11-09). Restano P1, P2, P5, P6 e P8. D1-D8 decise. Il 2026-11-08 ruff, uv e `converters/` salgono a stable ([misura](esperimenti/promozioni-2026-11-08/MISURE.md)); il 2026-11-25 salgono pytest-xdist e cinque cancelli del repo (ADR-0109, 0114, 0118, 0119, 0120), scelta del DM D8 ([misura](esperimenti/promozioni-2026-11-25/MISURE.md)) · **Classe**: G per la regola, C per i lotti
 > **Nasce da**: tre messaggi del DM del 2026-10-23 (citati in
 > [ADR-0099](adr/ADR-0099-la-piattaforma-ha-tre-canali-come-debian.md)): una
 > versione sola di Python, stabile e supportata, scelta come Debian sceglie il
@@ -54,14 +54,28 @@ colonna lo dice e il lotto che la fissa è A1 o A3 di AMBIENTE.
 | unittest (secondo corridore) | stdlib | — | 222 s su 914 per rieseguire gli stessi test | stable, **da togliere** come esecuzione completa (D2) |
 | pip-audit | ≥ 2.10.1 | pavimento | CVE nelle dipendenze | **testing** (non bloccante dal 2026-09-24, non è mai salito) |
 | shellcheck | del runner | no | 4 avvisi in 2 file (audit AMBIENTE) | **testing** (`|| true`); stable con A6 di AMBIENTE |
-| `compileall` | stdlib | — | solo errori di sintassi | **stable**; ruff lo copre e lo supera (§3) |
-| ruff | 0.16.9 | no | 0,08 s; 3 bug veri in `converters/`, 0 in `scripts/` | **testing** da questa PR (D5) |
-| pytest-xdist | — | — | suite 219 s → 67 s su 4 core | unstable → testing se D3 |
-| uv | 0.11.32 | — | installazione 33 s → 4 s a freddo, 21 s → 0,2 s a caldo | unstable → testing se D4 |
+| `compileall` | stdlib | — | solo errori di sintassi | **uscito** dalla CI il 2026-11-08: ruff E9 lo copre (P3) |
+| ruff | 0.16.9 | sì (`requirements-dev.txt`) | 0,08 s; 3 bug veri in `converters/`, 0 in `scripts/`; 81 run su `main`, 0 falsi allarmi | **stable** dal 2026-11-08 (P3) |
+| pytest-xdist | 3.8.0 | sì | suite 219 s → 67 s su 4 core; su `main` 168 run su 168 con le stesse prove del passo in serie dal 2026-11-08; mediana degli ultimi 10 run 1.127 s in serie, 477 s nei due giri | **stable** dal 2026-11-25 nel passo pytest del job principale (P4, D8) |
+| uv | 0.11.32 | sì (in `ci.yml`) | installazione 33 s → 4 s a freddo; in CI 24 s → 6 s, stessi pacchetti di pip 81 run su 81 | **stable** per installare in CI dal 2026-11-08 (P5); il lock di A3 resta da fare |
 | mypy | 2.3.1 | — | 328 rilievi, 0 bug nel campione di 41 | **unstable**, non si adotta |
 | pyright | — | — | non misurato | unstable |
 | pre-commit (framework) | — | — | non misurato; A4 ha già deciso hook senza dipendenze | **non si adotta** |
+| cancello dei numeri (`conformita_statblocchi.py --cancello-numeri`, ADR-0118) | del repo | — | 146 run su `main` senza rossi; 3 rossi su 384 run di PR, 2 veri e 1 del lettore, spiegato | **stable** dal 2026-11-25 (D8) |
+| 14 conti PF1e `in_prova` (`--cancello-moduli`, ADR-0119) | del repo | — | 0 avvisi in 145 run su `main` e in 420 run di PR | **stable** dal 2026-11-25 (D8): passano in `fatti`, e lo scarto porta sempre il suo conto |
+| *d* eufonica (`validate_lingua.py`, ADR-0120) | del repo | — | 141 run su `main` e 369 di PR senza rossi | **stable** dal 2026-11-25 (D8): errore nel passo della lingua; l'opzione `--d-eufonica` e il passo separato escono |
+| scheda delle skill (`validate_skills.py`, `check_schede`, ADR-0114) | del repo | — | 0 avvisi in 168 run su `main` | **stable** dal 2026-11-25 (D8): i rilievi sono errori |
+| marche sulle righe cambiate (`controlla_marche.py`, ADR-0109) | del repo | — | gira solo sulle PR: 3 rossi su 510 run, tutti difetti veri | **stable** dal 2026-11-25 (D8), con run di PR al posto dei 10 run su `main` |
 | riscontro SRD (`riscontro_srd.py` con l'SRD 3.5 e il PRD PF1e in cache, OGL 1.0a) | commit fissati, sha256 per file | sì | 53 regole di ARC-08 in 0,25 s, 3 discordanze vere (RISCONTRO-ARC08) | **testing** da questa PR (P11, ADR-0103) |
+| verifica del registro dei PX (`verifica_px.py`, ADR-0148) | stdlib | — | 16 test, 366 mutanti su 366, 0 falsi allarmi su 3 versioni storiche del registro | **stable** dal 2026-11-20, bloccante da subito per scelta del DM (ciò che un controllo trova diventa cancello) |
+| verifica dei rimandi per sezione (`verifica_rimandi.py`, ADR-0148) | stdlib | — | 1.744 rimandi, 1.026 giudicati giusti, 717 non giudicabili; sullo storico 2 rotture vere e 0 falsi allarmi; 435 mutanti su 435 | **testing** dal 2026-11-20 (`continue-on-error`); stable non prima del 2026-12-04 |
+| cricchetto degli agenti (`prove_skill.py cricchetto --rigoroso`, ADR-0148) | stdlib | — | solo sulle PR che toccano un agente, le skill che precarica o i suoi casi; quanto oscilla l'esito fra due esecuzioni non è misurato | **testing** dal 2026-11-20 (`continue-on-error`); stable solo dopo la misura dell'oscillazione e i 14 giorni |
+| custode della memoria (`memoria_custode.py`, ADR-0151): test e smoke in CI | stdlib | — | 27 test; `--help` nello smoke di `ci.yml` | **stable** dal 2026-11-27 |
+| hook del custode della memoria (`--hook-merge`, `--hook-scrittura`, ADR-0151) | stdlib | — | merge: mediana 129 ms, massimo 228; scrittura: 45 ms fuori dalla memoria, 89 ms dentro; timeout 10 s; esiti in `.claude/.custode-memoria.jsonl` | **testing** dal 2026-11-27: il merge si ferma solo per righe tolte non archiviate o `MEMORY.md` oltre 16.384 byte (card aperta al DM), la scrittura avvisa. L'hook di scrittura diventa bloccante non prima del 2026-12-12, con almeno 10 eventi nel registro, zero falsi avvisi non spiegati, p95 sotto 1 s e l'ok del DM |
+| milestone pronte (`milestone_pronte.py` sul registro `plans/milestone.json`, ADR-0152) | stdlib e git | — | 2,6 s sull'albero del 2026-11-27 (`--check --solo-integrita` 0,06 s), 26 test; nessuna milestone pronta, v1.1.0 ferma su tre criteri | **testing** dal merge (workflow `milestone.yml`, push su main e lunedì 06:35 UTC, solo riepilogo); stable dopo 14 giorni e 10 run su main senza falsi allarmi, con determinismo, idempotenza, mutazione e durata sotto i 2 minuti provati, e l'ok del DM: allora apre una issue per versione (`issues: write`) |
+| instradamento degli agenti (`instradamento_agenti.py --check`, ADR-0154) | del repo, metriche con scikit-learn e scipy (solo in `--eval` e `--check`: l'hook resta senza dipendenze) | — | primo agente sul set d'oro di 29 messaggi veri: sul test 4 su 18 (Wilson 0,09-0,45), macro-F1 107/1155, sotto la costante «sviluppatore» (6 su 18); kappa fra due etichettature cieche 0,78 | **testing** dal merge (`continue-on-error`); stable non prima di 14 giorni, con le sette condizioni di ADR-0154 (10 run su main, 3 su PR che cambiano l'ingresso, rossi classificati, etichette confermate, JSON identico anche su 3.14, passo < 2 s, ok del DM); revisione se ancora in testing verso il 2027-02-26 |
+| metriche dei classificatori (`eval_metriche.py`, ADR-0154) | del repo, involucro di `sklearn.metrics` e `scipy.stats` | scikit-learn sì (`==1.9.1`) | le convenzioni sono quelle di sklearn per costruzione; rifatto il confronto col valore stdlib di M1 sul set d'oro dopo la riscrittura: stessi numeri (4 su 18, baseline 6 su 18, macro-F1 107/1155); il bootstrap cambia (0,0185-0,2159 contro 0,0222-0,2222) ed è uscito dal JSON | **testing** con il cancello che la usa, e sale con lui |
+| lavoro in corso fuori da main (`lavoro_in_corso.py`, registro `plans/lavoro-in-corso.json`, ADR-0157) | stdlib, REST pubblica di GitHub | — | 25 test; sul 27/11 8 filoni, 4 PR aperte, 3 rami e 28 cartelle condivise recenti senza filone (su 94); la pagina conta anche i canali di questa §2 (36 stable, 19 testing, 11 unstable) | **testing** dal merge: in CI solo `--check` sul registro, offline; la pagina dipende da rete e macchina e non diventa un cancello |
 
 ### Librerie Python
 
@@ -76,6 +90,7 @@ colonna lo dice e il lotto che la fissa è A1 o A3 di AMBIENTE.
 | scikit-image | ≥ 0.25 | resa delle mappe | **stable** |
 | fonttools | ≥ 4.66.1 | font delle mappe | **stable** |
 | shapely | = 2.2.0 | piante delle città, `scripts/piante/` (ADR-0102) | **testing** dal 2026-10-23 |
+| scikit-learn | = 1.9.1 | metriche dei classificatori (`eval_metriche.py`) e baseline statistica di M3 (ADR-0154); porta joblib, threadpoolctl (BSD-3-Clause) e narwhals (MIT). BSD-3-Clause. Import a freddo 1,2 s, solo fuori dall'hook | **testing** dal 2026-11-27 (Jfs: «le librerie standard de facto della community») |
 | bpy, torch, piq | `requirements-completo.txt` | 3D e seconda misura della resa, fuori CI | **testing** locale (non girano in CI: ADR-0084) |
 | spaCy, Stanza | — | `misura_sintassi` (PR #264, #270) | **unstable** |
 | `import fitz` di pymupdf | — | deprecato: pymupdf avvisa che sparirà | da migrare a `import pymupdf` prima che salga la versione maggiore |
@@ -92,6 +107,7 @@ colonna lo dice e il lotto che la fissa è A1 o A3 di AMBIENTE.
 | Blender | di sistema | no | render 3D, tessere degli oggetti | **unstable** fuori CI; il piano di scena è stdlib e stable |
 | ComfyUI, distrobox | — | no | immagini | **unstable** fuori CI |
 | LLM locale per la prosa | gemma4 bocciato | — | ADR-0089, PR #234 | **unstable** |
+| CLI `claude` (Claude Code) | quella della macchina, scritta in ogni riga di `ESITI.jsonl` | no | `prove_skill.py esegui`, le prove degli agenti (ADR-0148) | **unstable** fuori CI: chiede una chiave e costa token; `binari.py` la elenca fra gli opzionali |
 
 ### Le pipeline
 
@@ -112,6 +128,7 @@ tutti i componenti che la fanno passare in CI.
 | prosa: sintassi | spaCy, Stanza | unstable |
 | bestiario e statblocchi | Python, pyyaml | stable |
 | skill: build, validazione, scanner | Python, pyyaml, tiktoken, bash | stable |
+| agenti: instradamento misurato (`--eval`, `--check`) | Python, scikit-learn, scipy | testing |
 | piani e documenti | Python, git | stable |
 | server MCP | Python | stable |
 | `converters/` | PyMuPDF, docling, torch, EasyOCR, magika | **testing** dal 2026-10-23 (D6, P9): Python 3.13, ruff, Dependabot, import di ogni modulo in CI |
@@ -148,21 +165,51 @@ test); gli altri tre lasciati, con la ragione, in due righe di `ruff.toml`.
 - La routine settimanale lo esegue sull'ultimo run di `main` e lo confronta
   col precedente: è il «nessuna misura peggiora» del criterio di promozione.
 
-### P3 · ruff da testing a stable ⬜
+### P3 · ruff da testing a stable ✅ 2026-11-08
 `[engine: Haiku 5.5 · effort: basso · qualità: i criteri di ADR-0099 §3 verificati e scritti qui]`
 - Dopo 14 giorni e 10 run su `main` con zero falsi allarmi non spiegati, si
   toglie `continue-on-error` e si toglie il passo `compileall`, che ruff
   copre (E9).
 - Una regola nuova entra solo se, sul repo di quel giorno, i suoi rilievi
   sono difetti veri almeno una volta su due.
+- **Fatto il 2026-11-08** (ok del DM: *«Ok anche per la migrazione a stabile
+  deglinstrumenti eptoseguire ?»*). Contesto: 81 run di `main` dal 23/10, letti
+  dal log perché il passo con `continue-on-error` risulta sempre `success`: 76
+  puliti, 5 rossi il 7/11 per due variabili morte vere, corrette con la #319;
+  nessun falso allarme. Decisione: ruff blocca, `compileall` esce.
+  Conseguenze: un F841 o un NameError nuovo fa rossa la PR; `scripts/Old`
+  (solo shell) non è più compilato. Misura in
+  [promozioni-2026-11-08](esperimenti/promozioni-2026-11-08/MISURE.md).
 
-### P4 · I test girano una volta, e in parallelo ⬜
+### P4 · I test girano una volta, e in parallelo ✅ 2026-11-25
 `[engine: Sonnet 5.5 · effort: medio · qualità: stesso numero di prove eseguite prima e dopo; il test di parità resta e morde]`
 - Se D2: il passo `python -m unittest discover` esce; `test_i_test_girano_in_ci.py`
   continua a contare le prove dei due corridori senza eseguirle, che è ciò
   che il difetto del 2026-09-21 chiedeva. Guadagno atteso: 222 s su 914.
 - Se D3: pytest-xdist in testing, prima in un job parallelo non bloccante che
   misura tempo e test instabili per 14 giorni.
+- **2026-11-08, resta in testing.** 81 run verdi, nessun fallimento in
+  parallelo, ma per 70 run il job xdist non aveva typst ed eseguiva 9 prove
+  in meno del job principale: la stessa suite c'è solo dalla #342. La misura
+  di chi scrive nel repo, rifatta, ha trovato due moduli nuovi
+  (`test_migliora_prosa.py`, `test_misura_stampa.py`), ora in serie. Si
+  ripropone non prima del 2026-11-22, con 10 run e conteggi uguali.
+- **Stable il 2026-11-25** (D8, card del DM: *«Tutti e sei, con il codice»*).
+  Contesto: dalla #342 (2026-11-08) 168 run su `main` su 168 hanno le stesse
+  prove passate e saltate nel job principale e nel job xdist, senza un test
+  instabile; sulle PR i 3 rossi del solo job principale sono dell'8/11,
+  prima della #342. Decisione: il passo pytest del job principale fa i due
+  giri (`-n auto` senza `scrive_nel_repo`, poi quei moduli in serie) e il job
+  «pytest-xdist in prova» esce. La misura di chi scrive nel repo, rifatta,
+  mette in serie `test_ciclo_prosa`, `test_booklets` e `test_componenti`: con
+  `-n auto`, `componenti --check` vedeva sparire a metà lettura un file
+  temporaneo in radice. Suite locale dopo il cambio: 3.456 passate, 18
+  saltate, 0 fallite. Conseguenze: sul run della #516 (testa c1ef61d9) il passo pytest
+  dura 761 s contro la mediana di 1.127 s su `main` (−32%), il job «Validate»
+  1.108 s contro 1.442 s (−23%), con 3.458 prove passate; la stima di 477 s
+  dal job xdist non regge, perché quel job girava senza le altre prove accanto; un modulo che
+  scrive nel repo e non è nell'elenco può fare rossa la CI a caso, e ci entra
+  con la misura dell'audit hook. [Misura](esperimenti/promozioni-2026-11-25/MISURE.md).
 
 ### P5 · uv per installare, fare il lock e dare la Python ⬜
 `[engine: Sonnet 5.5 · effort: medio · qualità: stesso insieme di pacchetti installati, verificato con pip freeze; il lock con hash si installa con pip --require-hashes]`
@@ -173,19 +220,26 @@ test); gli altri tre lasciati, con la ragione, in due righe di `ruff.toml`.
   distrobox su Bazzite, da misurare in A5b.
 - Da misurare prima: se Dependabot aggiorna un lock scritto da `uv pip
   compile` (A3 già lo chiedeva per pip-compile).
+- **2026-11-08, la parte che installa è stable**: `uv pip install --system`
+  nel job principale (81 run, stessi pacchetti di pip 81 volte su 81, 24 s →
+  6 s). Restano il lock con hash di A3, `uv python install` e gli altri job
+  che installano ancora con pip.
 
 ### P6 · Una Python sola, controllata ⬜
 Lo fa **A2 di AMBIENTE** (il test che confronta `ci.yml` col registro), con
 una correzione da ADR-0099 §7: la versione è esatta, non un minimo, e il test
 guarda anche `dipendenze.yml`, il Dockerfile e `dependabot.yml`.
 
-### P7 · Le skill e le guide sanno la regola ⬜
+### P7 · Le skill e le guide sanno la regola ✅ 2026-11-25
 `[engine: Haiku 5.5 · effort: basso · qualità: validate_skills e validate_docs verdi]`
 - Una riga in `rumblingstone-automation` e in `rumblingstone-debugging`: prima
   di proporre una libreria o uno strumento, il canale e la misura (ADR-0099).
 - `rumblingstone-edizione` resta il gate della licenza all'ingresso in testing.
+- **Fatto il 2026-11-25**: la riga è nella Procedura di
+  `rumblingstone-automation` e nella fase della fix di
+  `rumblingstone-debugging`.
 
-### P9 · I convertitori entrano nella piattaforma ✅ in testing
+### P9 · I convertitori entrano nella piattaforma ✅ stable dal 2026-11-08
 `[engine: Opus 5.5 · effort: medio · qualità: ruff a zero su converters/; ogni modulo si importa su 3.13 nel job della CI]`
 D6, DM 2026-10-23: *«D6 b»*. Corretti i tre bug (`Tuple` non importato:
 `fallback_manager` non si importava; `success_count` mai inizializzato;
@@ -196,7 +250,7 @@ README, al posto di 3.9 e 3.12; `magika>=1.0.3` senza il marcatore che lo
 escludeva da 3.13 (la 1.0.3 ha la ruota per 3.13, e l'API usata
 `identify_stream(...).prediction.output.mime_type` risponde
 `application/pdf` su un PDF vero). Dependabot ha una voce `pip` per le due
-cartelle, con gruppi suoi. Job CI `convertitori`, non bloccante.
+cartelle, con gruppi suoi. Job CI `convertitori`, non bloccante fino al 2026-11-08, poi stable (81 run verdi su 81, 52 s in parallelo a «validate»): perde `continue-on-error`. Per bloccare il merge va aggiunto ai check richiesti del ruleset, che è un passo del DM.
 Resta: i test del motore leggono PDF fuori dal repo.
 
 ### P10 · Il rilascio è una PR ✅ in testing
@@ -207,7 +261,7 @@ di progetto alla radice (Keep a Changelog, italiano), `__version__` in
 `scripts/dmcore/__init__.py` letto da `dm.py --version`, workflow
 `release.yml` con `scripts/release_plan.py` e `scripts/release_notes.py`
 ripresi da iemod-fetch (MIT, stesso autore), guida in
-[docs/RILASCIO.md](../docs/RILASCIO.md). Il primo rilascio è 1.0.0 (D7). Il
+[docs/how-to/RILASCIO.md](../docs/how-to/RILASCIO.md). Il primo rilascio è 1.0.0 (D7). Il
 workflow sale a stable dopo tre rilasci senza interventi a mano.
 
 ### P11 · Il riscontro delle regole sull'SRD ✅ in testing
@@ -221,17 +275,40 @@ SQLite a commit fissato, con lo sha256 di ogni file, in
 `~/.cache/rumblingstone/srd/`, e riscontra un file di regole (concorda,
 discorda, non trovata, con la citazione). Job CI `riscontro-srd` non
 bloccante; il flusso di tutti gli strumenti di qualità in
-[ARCHITETTURA](../docs/ARCHITETTURA.md) §18. Primo uso su DEF-1 e DEF-2:
+[ARCHITETTURA](../docs/explanation/ARCHITETTURA.md) §18. Primo uso su DEF-1 e DEF-2:
 [RISCONTRO-ARC08](esperimenti/ricerca-rete-2026-10-23/RISCONTRO-ARC08.md), 53
 regole, 3 discordanze lasciate al DM. Sale a stable non prima del 2026-11-06.
 
-### P8 · La prova generale della prossima migrazione ⬜
+### P12 · La milestone pronta si misura ✅ in testing
+`[engine: Opus 5.5 · effort: medio · qualità: il rilevatore dà lo stesso esito su due run dello stesso commit, non cambia niente nel repo, vede un criterio falsificato di proposito, e gira sotto i 2 minuti]`
+Jfs, 2026-11-27: l'agente `piattaforma` scatta da solo quando una milestone
+è raggiunta? No: i criteri stavano in prosa su GitHub e nessuno li misurava.
+[ADR-0152](adr/ADR-0152-la-milestone-pronta-si-misura-su-main.md) (accettata, card di Jfs del 2026-11-27):
+il registro [`plans/milestone.json`](milestone.json), il rilevatore
+`scripts/milestone_pronte.py`, il workflow `.github/workflows/milestone.yml`
+su main e di lunedì; il segnale arriva alla routine del lunedì, che chiede un
+thread al coordinatore per ogni versione pronta (scelta su card a Jfs). Come
+si usa: [RILASCIO](../docs/how-to/RILASCIO.md) § «Sapere se una milestone è
+pronta». Sale a stable non prima di 14 giorni dal merge, con i criteri della
+riga in §2; da allora il workflow apre una issue per versione.
+
+### P8 · La prova generale della prossima migrazione 🟡 job acceso il 2026-11-09
 `[engine: Sonnet 5.5 · effort: medio · qualità: un job non bloccante su Python 3.14 verde per un mese prima del salto]`
 - Parte quando Debian 14 entra nel congelamento (atteso nel 2027): un job CI
   non bloccante su 3.14 con gli stessi test. Dopo il salto, 3.13 resta
   oldstable per tre mesi.
 - Prima, se una libreria stable annuncia l'abbandono di 3.13: decisione del
   DM fra fermarla e anticipare (ADR-0099 §6).
+- **Anticipata il 2026-11-09** su scelta del DM (card del 9/11, «Accendilo
+  ora»): contesto, il job costa poco e dice prima quali librerie o test
+  cadranno al salto. Decisione: job CI «Python 3.14 in prova — non
+  bloccante» con la stessa suite pytest del job principale; ogni altro
+  `python-version` resta 3.13 e il salto resta legato a Debian 14. Blender e
+  `bpy` fuori (3.13 esatto, solo in `requirements-completo.txt`).
+  Conseguenze: il criterio resta **un mese di verde su `main` prima del
+  salto**, contato da qui; un rosso del job non blocca nessuna PR ma va letto
+  nell'audit del lunedì. Prima misura in
+  [python-314-2026-11-09](esperimenti/python-314-2026-11-09/MISURE.md).
 
 ## §4 · Validazione
 
@@ -242,6 +319,15 @@ regole, 3 discordanze lasciate al DM. Sale a stable non prima del 2026-11-06.
 | promozioni | ogni componente stable ha data, misura e ok del DM | P1, test del registro |
 | una Python sola | un `python-version` diverso in un workflow boccia la CI | P6 / A2 |
 | la CI di `main` | resta verde | sempre |
+
+**Il passo pytest peggiora, e la causa non è misurata (2026-11-25).** Su
+`main` il passo pytest del job principale è passato da 258 s a 1.127 s di
+mediana in 13 giorni (dall'8 al 21 novembre), mentre le prove crescevano del
+38%, da 2.494 a 3.447. Il job «Validate» è a 1.442 s, contro i 914 s della
+seconda riga. I tempi recenti sono bimodali, attorno a 860 s e a 1.370 s con
+le stesse prove: una parte è rumore del runner, ma la crescita resta. xdist
+riporta il passo a 761 s sul run della #516 senza spiegarla: è il motivo per fare P2
+([misura](esperimenti/promozioni-2026-11-25/MISURE.md)).
 
 ## §5 · Decisioni
 
@@ -256,12 +342,19 @@ regole, 3 discordanze lasciate al DM. Sale a stable non prima del 2026-11-06.
 | ~~D5~~ | P3 | ✅ **Decisa il 2026-10-23, risposta del DM: sì, la consigliata** (*«D1-d5 ok»*). **ruff resta in testing con gli otto gruppi di regole che cercano bug, e sale dopo 14 giorni?** Le regole di stile restano fuori (1.672 rilievi, quasi tutti scelte volute del repo). Proposta: sì |
 | ~~D6~~ | P9 | ✅ **Decisa il 2026-10-23, risposta del DM: B** (*«D6 b»*, dopo la spiegazione: correggere e portare `converters/` nella piattaforma). **I tre bug che ruff ha trovato in `converters/` si correggono?** Un modulo che non si importa, un NameError a fine installazione, una correzione grammaticale che non parte e non lo dice. `converters/` è fuori dalla piattaforma (PRATICHE D9). Proposta: tre righe in una PR a parte, senza portare `converters/` in CI |
 | ~~D7~~ | P10 | ✅ **Decisa il 2026-10-23, risposta del DM: sì, la consigliata** (*«1.0.0, solo le skill»*). **Il primo rilascio è 1.0.0, con dentro solo i pacchetti delle skill?** Lo 0.1.0 scritto nel codice non è mai uscito; 1.0.0 dice «la piattaforma di ADR-0099 è la base». Il repo è pubblico, quindi il rilascio lo è: esce solo ciò che il repo mostra già (pacchetti delle skill, sorgenti del tag), i PDF dei booklet no finché non passano dal gate di `rumblingstone-edizione`. Proposta: sì, 1.0.0, solo le skill |
+| ~~D8~~ | P4, ADR-0109, 0114, 0118, 0119, 0120 | ✅ **Decisa il 2026-11-25, risposta del DM: «Tutti e sei, con il codice»** (la consigliata). **Promuovo a stable i sei controlli in prova scaduti il 22-24/11?** pytest-xdist, cancello dei numeri, 14 conti PF1e, *d* eufonica, scheda delle skill (ADR-0114) e marche sulle righe cambiate (ADR-0109): da 141 a 168 run su `main` ciascuno (le marche, run di PR), nessun falso allarme non spiegato. Le alternative erano «Solo i quattro di ci.yml» (conti PF1e e scheda in testing fino a una PR di codice) e «Nessuno per ora» (il rilascio 1.1.0 resta fermo) |
 
 <!-- eco: PIATTAFORMA 2026-10-23 -->
 - **Decise**: D1 la regola dei tre canali · D2 un corridore solo per i test · D3 pytest-xdist in testing · D4 uv in testing · D5 ruff in testing, stable dopo 14 giorni · D6 B, `converters/` dentro la piattaforma · D7 primo rilascio 1.0.0 con solo le skill
 - **Aperte**: nessuna
 - **Cambiate**: D6 dalla proposta A (correggere e lasciare fuori) a B (correggere e portare dentro)
 - **Dedotto da me**: che D3 e D4 in testing si provino nello stesso job non bloccante (uv installa, xdist esegue), per pagare un job solo invece di due; che «se sono migliorative poi diventano standard» del DM sia la regola di promozione di ADR-0099 §3, e non un sì anticipato alla promozione; che lo stesso concetto del kernel Linux in Debian» voglia dire i canali unstable, testing e stable con promozione a tempo e senza regressioni, e la migrazione a ogni rilascio di Debian (lettura confermata dalla nota del coordinatore); che le soglie (14 giorni, 10 run, +5%, tre mesi di oldstable) siano mie e da tarare; che «le skill» nella piattaforma vogliano dire che le skill conoscono la regola, non che le skill diventino componenti con un canale
+
+<!-- eco: PIATTAFORMA 2026-11-25 -->
+- **Decise**: D8, i sei controlli salgono a stable nella stessa PR, con il codice che serve: due giri di pytest nel job principale e job `testing` fuori; cancello dei numeri e marche bloccanti; 14 conti PF1e in `fatti`, con lo scarto che porta sempre il conto; *d* eufonica sempre errore, opzione `--d-eufonica` e passo separato fuori; rilievi della scheda come errori
+- **Aperte**: perché il passo pytest su `main` è passato da 258 a 1.127 s (P2); il rilascio 1.1.0, che aspettava queste promozioni (MS-0171)
+- **Cambiate**: nessuna
+- **Dedotto da me**: che «con il codice» copra anche la correzione di `conformita_statblocchi.py` e i tre moduli messi in serie in `conftest.py`, che la card non nominava; che per le marche i run di PR valgano come i 10 run su `main`, come diceva la misura sulla card
 
 ## §6 · Ordine
 
@@ -273,12 +366,13 @@ A2 → P7 → P8 quando Debian 14 si congela.
 - [x] P0 · audit, misure, ADR-0099, ruff in testing
 - [ ] P1 · il canale nel registro, la tabella generata
 - [ ] P2 · `misura_piattaforma.py`
-- [ ] P3 · ruff stable (D5 ✅; in testing dal 2026-10-23, non prima del 2026-11-06)
-- [~] P4 · test una volta sola (D2 ✅, 2026-10-23: il passo unittest è uscito dalla CI); xdist (D3) in testing nel job `testing` dal 2026-10-23, stable non prima del 2026-11-06
-- [~] P5 · uv (D4): installazione in testing nel job `testing` dal 2026-10-23, con il confronto dei pacchetti contro pip; il lock aspetta A3
+- [x] P3 · ruff stable (D5 ✅; in testing dal 2026-10-23, stable dal 2026-11-08)
+- [x] P4 · test una volta sola (D2 ✅, 2026-10-23: il passo unittest è uscito dalla CI); xdist (D3) stable dal 2026-11-25 nel passo pytest del job principale, job `testing` tolto (D8)
+- [~] P5 · uv (D4): installazione stable nel job principale dal 2026-11-08; il lock aspetta A3
 - [ ] P6 · una Python sola, controllata (con A2 di AMBIENTE)
-- [ ] P7 · skill e guide
-- [ ] P8 · prova generale della migrazione a 3.14
+- [x] P7 · skill e guide (una riga in `rumblingstone-automation` e `rumblingstone-debugging`, 2026-11-25)
+- [~] P8 · prova generale della migrazione a 3.14 (job non bloccante acceso il 2026-11-09)
 - [x] P9 · `converters/` nella piattaforma, in testing (D6)
 - [x] P10 · il rilascio è una PR (ADR-0100), workflow in testing; primo rilascio 1.0.0 (D7 ✅)
 - [x] P11 · il riscontro SRD (ADR-0103) in testing, job `riscontro-srd`; stable non prima del 2026-11-06
+- [x] P12 · le milestone pronte (ADR-0152) in testing: registro, `milestone_pronte.py`, workflow `milestone.yml`; stable non prima di 14 giorni dal merge

@@ -20,10 +20,12 @@ quello che un controllo di prestampa misura, più le schede delle creature:
 | `corpo_mediano_pt` | il corpo più frequente del testo | 9,5-11 pt (C8 di RIFERIMENTI-AP) |
 | `fuori_margine` | righe che escono dall'area di stampa | 0 |
 | `immagini_sotto_300dpi` | immagini sotto 300 dpi alla dimensione stampata | 0 |
+| `immagini_tagliate` | immagini che escono dal foglio oltre la smarginatura di 3 mm, quindi tagliate in stampa | 0 |
 | `schede_spezzate` | riquadri di creatura che cominciano su una pagina e finiscono su un'altra | 0 |
 | `rimandi_sbagliati` | «scheda a pagina N» senza la creatura a pagina N, «continua a pagina N» senza «(segue)» a pagina N, «continua nella colonna accanto» senza «(segue)» sulla stessa pagina | 0 |
 | `pagine_con_immagine` | quota di pagine con un'immagine raster di almeno un quarto di pagina | da registrare |
 | `pagine_con_immagine_decimo` | la stessa quota con la soglia di 1/10 di pagina, dove il piano pone l'obiettivo ≥ 0,3 (Paizo 0,40) | da registrare |
+| `parole_ripetute`, `quota_parole_ripetute` | parole che stanno in un passo di almeno 8 parole già stampato prima, testatine escluse | in prova; *Burnt Offerings* 0,011, *Red Hand of Doom* (estratto) 0,004 |
 
 Le schede si riconoscono dai segnaposti `<sb-inizio>` e `<sb-fine>` che il
 tema mette in ogni `#statblocco`; si leggono con `typst eval`.
@@ -70,16 +72,32 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import export_booklet_typst as ex  # noqa: E402
+import typst_motore  # noqa: E402
 
 CARTELLA = ROOT / "build" / "misura-stampa"
 REGISTRO = ROOT / "docs" / "audit" / "stampa-booklet.json"
 #: Le misure con un tetto: si scende soltanto. Le altre si registrano e basta.
 CON_TETTO = ("testi_sotto_minimo", "fuori_margine", "immagini_sotto_300dpi",
-             "schede_spezzate", "font_non_incorporati", "rimandi_sbagliati")
+             "schede_spezzate", "font_non_incorporati", "rimandi_sbagliati",
+             "immagini_tagliate", "difetti_ordine")
 REGISTRATE = ("pagine", "corpo_mediano_pt", "corpo_minimo_pt", "schede", "pagine_con_immagine",
-              "pagine_con_immagine_decimo")
+              "pagine_con_immagine_decimo", "parole", "quota_parole_ripetute")
+#: Le misure in prova (canale testing, ADR-0099): nate dal giro di lettura del
+#: 2026-11-10. Si registrano e `--check` avvisa se salgono, senza fermare.
+IN_PROVA = ("sigle_morte", "righe_brevi_incomplete", "titoli_rovinati", "parole_ripetute")
+#: Un passo ripetuto è lungo almeno tante parole identiche (w-shingling, Broder
+#: 1997: lo standard di fatto per trovare testo riusato).
+PASSO_RIPETUTO = 8
+#: Un n-gramma che torna su più di tante pagine è una testatina, non una ripetizione.
+PAGINE_DI_TESTATINA = 8
+#: Quante righe in testa e in coda alla pagina si guardano per togliere le
+#: testatine: titolo del volume, capitolo, numero di pagina.
+RIGHE_DI_BORDO = 3
 MINIMO_PT = 7.0
 DPI_MINIMI = 300
+#: Quanto un'immagine al vivo può uscire dal foglio: la smarginatura di 3 mm
+#: che la tipografia rifila. Oltre, la stampa taglia l'immagine.
+SMARGINATURA_PT = 3 * 72 / 25.4 + 1
 # Typst appende punteggiatura e trattini nel margine (text.overhang, la
 # «sporgenza ottica» dei tipografi): fino a 4 pt fuori è composizione voluta.
 TOLLERANZA_PT = 4.0
@@ -99,16 +117,22 @@ def compila_misurabile(mp: Path) -> tuple[Path, list[dict], str]:
         if esito.returncode != 0:
             raise RuntimeError(f"{mp.name}: typst non compila\n{esito.stderr[-2000:]}")
         # Un'impaginazione che non converge stampa rimandi sbagliati: «scheda a
-        # pagina N», «continua a pagina N» presi da un giro precedente.
-        if "did not converge" in esito.stderr:
+        # pagina N», «continua a pagina N» presi da un giro precedente. Si
+        # guarda l'avviso del numero di pagina, che è quello stampato: fino al
+        # 2026-11-19 il controllo leggeva lo stderr, che col typst di PyPI è
+        # vuoto, e il volume d'arco di ARC-07 passava con 15 rimandi su 242
+        # sbagliati di una pagina.
+        instabili = esito.stderr.split("\n") if esito.stderr else []
+        if instabili:
             raise RuntimeError(f"{mp.name}: l'impaginazione non converge, i rimandi di pagina "
-                               f"possono essere sbagliati\n{esito.stderr[-2000:]}")
+                               f"possono essere sbagliati\n" + "\n".join(instabili[:6]))
         schede = interroga_schede(typ)
     finally:
         typ.unlink(missing_ok=True)
-    # Un volume fatto solo di schede da tavolo ha la gabbia della scheda
-    # (scheda-pg.typ), non quella del libro.
-    if man.get("chapters") and all(c.get("layout") == "schede" for c in man["chapters"]):
+    # Un volume fatto solo di schede o di carte da tavolo ha la gabbia del
+    # foglio sciolto (scheda-pg.typ, carte-tavolo.typ: 1 cm per lato), non
+    # quella del libro.
+    if man.get("chapters") and all(c.get("layout") in ("schede", "carte") for c in man["chapters"]):
         formato = "scheda"
     return pdf, schede, formato
 
@@ -121,25 +145,20 @@ SOLO_FONT_DEL_REPO = ["--ignore-system-fonts", "--font-path", str(ex.FONTS)]
 
 
 def compila_senza_font_di_sistema(typ: Path, pdf: Path) -> subprocess.CompletedProcess:
-    cmd = ["typst", "compile", *SOLO_FONT_DEL_REPO, "--root", str(ROOT),
-           "--package-path", str(ex.PACCHETTI)]
-    esito = subprocess.run(cmd + [str(typ), str(pdf)], capture_output=True, text=True)
-    if esito.returncode != 0 and "internal error" in esito.stderr and "tags" in esito.stderr:
-        # lo stesso ripiego di export_booklet_typst.compila (bug dei tag di typst 0.15.1)
-        esito = subprocess.run(cmd + ["--no-pdf-tags", str(typ), str(pdf)], capture_output=True, text=True)
-    return esito
+    """Il PDF senza font di sistema. Se compila, lo stderr porta solo gli
+    avvisi dei numeri di pagina instabili (`typst_motore.numeri_instabili`)."""
+    e = typst_motore.compila(typ, pdf, root=ROOT, font=ex.FONTS, pacchetti=ex.PACCHETTI,
+                             solo_font_del_repo=True)
+    stderr = e.errore if not e.ok else "\n".join(typst_motore.numeri_instabili(e))
+    return subprocess.CompletedProcess(["typst", "compile", str(typ)], 0 if e.ok else 1, "", stderr)
 
 
 def interroga_schede(typ: Path) -> list[dict]:
     """Inizio e fine di ogni riquadro, dai segnaposti del tema."""
     espressione = ("query(selector(<sb-inizio>).or(<sb-fine>))"
                    ".map(m => (str(m.label), m.value, m.location().page()))")
-    cmd = ["typst", "eval", "--in", str(typ), *SOLO_FONT_DEL_REPO, "--root", str(ROOT),
-           "--package-path", str(ex.PACCHETTI), espressione]
-    esito = subprocess.run(cmd, capture_output=True, text=True)
-    if esito.returncode != 0:
-        raise RuntimeError(f"typst eval: {esito.stderr[-1000:]}")
-    return accoppia_segnaposti(json.loads(esito.stdout or "[]"))
+    return accoppia_segnaposti(typst_motore.valuta(
+        typ, espressione, root=ROOT, font=ex.FONTS, pacchetti=ex.PACCHETTI, solo_font_del_repo=True))
 
 
 def accoppia_segnaposti(segnaposti: list) -> list[dict]:
@@ -188,6 +207,7 @@ def misura_pdf(pdf: Path, schede: list[dict], formato: str = "a4") -> dict:
     doc = pymupdf.open(pdf)
     corpi: Counter = Counter()
     sotto, fuori, immagini_basse, pagine_illustrate, pagine_illustrate_decimo = [], [], [], 0, 0
+    tagliate = []
     minimo = 99.0
     font_mancanti: set[str] = set()
     for n, pagina in enumerate(doc, 1):
@@ -227,6 +247,11 @@ def misura_pdf(pdf: Path, schede: list[dict], formato: str = "a4") -> dict:
         for r, im in immagini:
             if min(r.width, r.height) < ILLUSTRAZIONE_MINIMA_PT:
                 continue        # icone ed emoji delle mappe: non sono illustrazioni
+            # Il foglio allargato della smarginatura: un'immagine che ne esce
+            # perde in stampa la parte di fuori (il ritratto di Vatore, ARC-07).
+            foglio = area + (-SMARGINATURA_PT, -SMARGINATURA_PT, SMARGINATURA_PT, SMARGINATURA_PT)
+            if not foglio.contains(r):
+                tagliate.append((n, round(max(area.y0 - r.y0, r.y1 - area.y1, area.x0 - r.x0, r.x1 - area.x1))))
             dpi = min(im["width"] / (r.width / 72), im["height"] / (r.height / 72))
             # Typst rasterizza i filtri degli SVG (ombre, sfocature della
             # pergamena) in uno strato a bassa risoluzione sopra l'immagine
@@ -245,6 +270,8 @@ def misura_pdf(pdf: Path, schede: list[dict], formato: str = "a4") -> dict:
         pagine_illustrate_decimo += media
     spezzate = [s for s in schede if s["a"] != s["da"]]
     rimandi = rimandi_sbagliati(doc)
+    sigle, brevi, titoli = sigle_morte(doc), righe_brevi_incomplete(doc), titoli_rovinati(doc)
+    parole, ripetute, passi = parole_ripetute(doc)
     return {
         "pagine": len(doc),
         "font_non_incorporati": sorted(font_mancanti),
@@ -253,15 +280,25 @@ def misura_pdf(pdf: Path, schede: list[dict], formato: str = "a4") -> dict:
         "testi_sotto_minimo": len(sotto),
         "fuori_margine": len(fuori),
         "immagini_sotto_300dpi": len(immagini_basse),
+        "immagini_tagliate": len(tagliate),
         "schede": len(schede),
         "schede_spezzate": len(spezzate),
         "rimandi_sbagliati": len(rimandi),
+        "sigle_morte": len(sigle),
+        "righe_brevi_incomplete": len(brevi),
+        "titoli_rovinati": len(titoli),
+        "parole": parole,
+        "parole_ripetute": ripetute,
+        "quota_parole_ripetute": round(ripetute / parole, 3) if parole else 0,
         "pagine_con_immagine": round(pagine_illustrate / len(doc), 3) if len(doc) else 0,
         "pagine_con_immagine_decimo": round(pagine_illustrate_decimo / len(doc), 3) if len(doc) else 0,
         "dettaglio": {
             "sotto_minimo": sotto[:30], "fuori_margine": fuori[:30],
-            "immagini_basse": immagini_basse[:30],
+            "immagini_basse": immagini_basse[:30], "immagini_tagliate": tagliate[:30],
             "schede_spezzate": spezzate, "rimandi_sbagliati": rimandi[:30],
+            "sigle_morte": sigle[:30], "righe_brevi_incomplete": brevi[:30],
+            "titoli_rovinati": titoli[:30],
+            "passi_ripetuti": passi[:30],
         },
     }
 
@@ -288,7 +325,10 @@ def rimandi_sbagliati(doc) -> list[tuple]:
                 if m := re.search(r"scheda a pagina (\d+)", testo):
                     # Il nome apre la riga dell'incontro: è il primo pezzo del blocco.
                     nome, dove = _piano(righe[0][0]), int(m.group(1))
-                    if not (1 <= dove <= len(testi)) or nome not in testi[dove - 1]:
+                    # senza trattini né spazi: «mezzo-immondo» spezzato a fine riga
+                    # nel titolo della scheda torna dal PDF come «mezzo- immondo»
+                    stretto = lambda t: re.sub(r"[-\s]", "", t)  # noqa: E731
+                    if not (1 <= dove <= len(testi)) or stretto(nome) not in stretto(testi[dove - 1]):
                         sbagliati.append((n, nome[:40], f"scheda a pagina {dove}"))
                 elif m := re.search(r"continua a pagina (\d+)", testo):
                     dove = int(m.group(1))
@@ -297,6 +337,128 @@ def rimandi_sbagliati(doc) -> list[tuple]:
                 elif "continua nella colonna accanto" in testo and "(segue)" not in testi[n - 1]:
                     sbagliati.append((n, "", "continua nella colonna accanto"))
     return sbagliati
+
+
+_PAROLA = re.compile(r"[a-zà-ùA-ZÀ-Ù0-9+]+")
+
+
+def parole_ripetute(doc, passo: int = PASSO_RIPETUTO) -> tuple[int, int, list[tuple]]:
+    """Quante parole del volume stanno in un passo già stampato prima.
+
+    Un passo è una sequenza di almeno `passo` parole identiche; si conta dalla
+    seconda volta in poi. Le testatine e i piè di pagina non contano: né le
+    righe in testa e in coda che tornano uguali su un'altra pagina, né i passi
+    presenti su più di `PAGINE_DI_TESTATINA` pagine. Misurato il 2026-11-13
+    sui riferimenti di ADR-0122: *Burnt Offerings* 1,1%, l'estratto di *Red
+    Hand of Doom* 0,4%; il booklet di serata «La Notte e l'Alba» 11,9%.
+
+    Torna (parole del volume, parole ripetute, passi): ogni passo è
+    (pagina, pagina della prima volta, parole, come comincia), dal più lungo.
+    """
+    # Le righe in testa e in coda che tornano uguali su un'altra pagina sono
+    # testatine e piè di pagina: fuori prima di contare, anche nei capitoli
+    # corti, dove il conto delle pagine non le riconosce.
+    pagine = [pagina.get_text().replace("\xad", "").split("\n") for pagina in doc]
+    bordo: dict[str, int] = {}
+    for righe in pagine:
+        for r in {x.strip() for x in righe[:RIGHE_DI_BORDO] + righe[-RIGHE_DI_BORDO:]}:
+            if _PAROLA.search(r):
+                bordo[r] = bordo.get(r, 0) + 1
+    parole: list[tuple[str, int]] = []
+    for n, righe in enumerate(pagine, start=1):
+        a, z = 0, len(righe)
+        while a < min(RIGHE_DI_BORDO, z) and bordo.get(righe[a].strip(), 0) > 1:
+            a += 1
+        while z > max(a, len(righe) - RIGHE_DI_BORDO) and (
+                bordo.get(righe[z - 1].strip(), 0) > 1 or not righe[z - 1].strip()):
+            z -= 1
+        testo = re.sub(r"-\n(?=[a-zà-ù])", "", "\n".join(righe[a:z]))
+        parole += [(w.lower(), n) for w in _PAROLA.findall(testo)]
+    ws = [w for w, _ in parole]
+    dove: dict[tuple, list[int]] = {}
+    for i in range(len(ws) - passo + 1):
+        dove.setdefault(tuple(ws[i:i + passo]), []).append(i)
+    ripetuta, testatina = [False] * len(ws), [False] * len(ws)
+    for ii in dove.values():
+        if len({parole[i][1] for i in ii}) > PAGINE_DI_TESTATINA:
+            for i in ii:
+                testatina[i:i + passo] = [True] * passo
+        for i in ii[1:]:
+            ripetuta[i:i + passo] = [True] * passo
+    conta = [a and not b for a, b in zip(ripetuta, testatina)]
+    passi, i = [], 0
+    while i < len(ws):
+        if not conta[i]:
+            i += 1
+            continue
+        j = i
+        while j < len(ws) and conta[j]:
+            j += 1
+        prima = dove.get(tuple(ws[i:i + passo]), [i])[0]
+        passi.append((parole[i][1], parole[prima][1], j - i, " ".join(ws[i:i + 10])))
+        i = j
+    passi.sort(key=lambda p: -p[2])
+    return len(ws), sum(conta), passi
+
+
+_SIGLA = re.compile(r"\b[Aa]ppendice\s+([A-Z])(\.\d+(?:-(?:bis|ter))?)?(?![\w-])")
+
+
+def sigle_morte(doc) -> list[tuple]:
+    """I rimandi «Appendice A.3» che nel volume stampato non portano a niente.
+
+    Una sigla è viva se da qualche parte una riga comincia con lei («A.3 …»)
+    o con «Appendice A» come titolo. Giro del 2026-11-10: il booklet per
+    sezioni stampava sigle dei master che l'appendice del booklet non ha."""
+    righe = [(n, _piano(r)) for n, p in enumerate(doc, 1) for r in p.get_text().splitlines() if r.strip()]
+    inizi = {r for _, r in righe}
+    def viva(lettera: str, numero: str | None) -> bool:
+        if numero:
+            return any(r.startswith(f"{lettera}{numero} ") or r == f"{lettera}{numero}"
+                       or r.startswith(f"{lettera}{numero} ·") for r in inizi)
+        return any(re.match(rf"(?i:appendice)\s+{lettera}\b\s*(?:[·:—–-]|$)", r) for r in inizi)
+    morte = []
+    for n, pagina in enumerate(doc, 1):
+        for m in _SIGLA.finditer(_piano(pagina.get_text())):
+            if not viva(m.group(1), m.group(2)):
+                morte.append((n, m.group(0)))
+    return morte
+
+
+def righe_brevi_incomplete(doc) -> list[tuple]:
+    """Le righe d'incontro («scheda a pagina N») senza quello che serve per
+    giocare il round: iniziativa, tiri salvezza e almeno un attacco. Giro del
+    2026-11-10: con CA e pf soltanto il DM sfoglia a ogni attacco."""
+    manca = []
+    for n, pagina in enumerate(doc, 1):
+        for blocco in pagina.get_text("blocks"):
+            testo = _piano(blocco[4])
+            if "scheda a pagina" not in testo:
+                continue
+            cosa = [nome for nome, segno in (("iniziativa", r"\bIniz"), ("TS", r"\bTS\b|\bTemp"),
+                                             ("attacco", r"\bMischia\b|\bDistanza\b|\+\d+ \("))
+                    if not re.search(segno, testo)]
+            if cosa:
+                manca.append((n, testo[:40], "manca " + ", ".join(cosa)))
+    return manca
+
+
+_ELISIONE = re.compile(r"\b(DELL|DALL|NELL|SULL|ALL|QUELL|UN|L|D)([AEIOUÀÈÉÌÒÙ][A-ZÀ-Ý]{2,})\b")
+
+
+def titoli_rovinati(doc) -> list[tuple]:
+    """I titoli in maiuscolo che hanno perso l'apostrofo («LALBA» per
+    «L'ALBA»): la parola intera non esiste altrove nel volume, la seconda
+    metà sì."""
+    tutto = " ".join(_piano(p.get_text()) for p in doc)
+    parole = Counter(w.lower() for w in re.findall(r"[A-Za-zÀ-ÿ]+", tutto) if not w.isupper())
+    rovinati = []
+    for n, pagina in enumerate(doc, 1):
+        for m in _ELISIONE.finditer(_piano(pagina.get_text())):
+            intera, resto = m.group(0).lower(), m.group(2).lower()
+            if parole[resto] and not parole[intera]:
+                rovinati.append((n, m.group(0)))
+    return rovinati
 
 
 def main(argv: list[str] | None = None) -> int:
@@ -321,7 +483,9 @@ def main(argv: list[str] | None = None) -> int:
     for mp in a.manifest:
         mp = mp.resolve()
         pdf, schede, formato = compila_misurabile(mp)
-        risultati[mp.relative_to(ROOT).as_posix()] = misura_pdf(pdf, schede, formato)
+        v = misura_pdf(pdf, schede, formato)
+        v["difetti_ordine"], v["dettaglio"]["ordine"] = difetti_ordine(mp, pdf)
+        risultati[mp.relative_to(ROOT).as_posix()] = v
     if a.json:
         print(json.dumps(risultati, ensure_ascii=False, indent=2))
         return 0
@@ -331,12 +495,12 @@ def main(argv: list[str] | None = None) -> int:
         print(f"✓ registro riscritto in {REGISTRO.relative_to(ROOT)}")
         return 0
     print(f"{'booklet':<44} {'pag':>4} {'corpo':>5} {'<7pt':>5} {'marg':>5} {'dpi':>4} "
-          f"{'font':>4} {'min':>4} {'schede':>6} {'spezz':>5} {'immag':>7}")
+          f"{'font':>4} {'min':>4} {'schede':>6} {'spezz':>5} {'immag':>7} {'ripet':>6}")
     for nome, v in risultati.items():
         print(f"{nome[-44:]:<44} {v['pagine']:>4} {v['corpo_mediano_pt'] or 0:>5} "
               f"{v['testi_sotto_minimo']:>5} {v['fuori_margine']:>5} {v['immagini_sotto_300dpi']:>4} "
               f"{len(v['font_non_incorporati']):>4} {v['corpo_minimo_pt'] or 0:>4} {v['schede']:>6} {v['schede_spezzate']:>5} "
-              f"{v['pagine_con_immagine']:>7.0%}")
+              f"{v['pagine_con_immagine']:>7.0%} {v['quota_parole_ripetute']:>6.1%}")
         if a.dettaglio:
             for chiave, voci in v["dettaglio"].items():
                 for voce in voci[:10]:
@@ -345,10 +509,27 @@ def main(argv: list[str] | None = None) -> int:
         sopra = sopra_il_tetto(registro.get("booklet", {}), risultati)
         for riga in sopra:
             print(f"✗ {riga}", file=sys.stderr)
+        for nome, v in risultati.items():
+            prima = registro.get("booklet", {}).get(nome, {}).get("in_prova", {})
+            for m in IN_PROVA:
+                if m in prima and v[m] > prima[m]:
+                    print(f"⚠ {nome}: {m} = {v[m]}, era {prima[m]} (in prova, non ferma)", file=sys.stderr)
         if sopra:
             return 1
         print(f"✓ {len(risultati)} booklet, nessuno sopra i suoi tetti di stampa")
     return 0
+
+
+def difetti_ordine(mp: Path, pdf: Path) -> tuple[int, list]:
+    """ADR-0145: i difetti d'ordine del booklet (`misura_ordine.py`), se il
+    suo manifest dichiara i ruoli dei capitoli; 0 se non li dichiara, perché
+    senza ruoli l'ordine non si misura. Il dettaglio sono le regole violate."""
+    import misura_ordine as mo
+    man = json.loads(mp.read_text(encoding="utf-8"))
+    if not mo.ha_ruoli(man):
+        return 0, []
+    m, _, n = mo.misura_completa(pdf, mo.regole_per(pdf, mp))
+    return n, mo.violazioni(m)
 
 
 def valore(v: dict, misura: str) -> int:
@@ -364,6 +545,7 @@ def scrivi_registro(registro: dict, risultati: dict) -> None:
         nuovi[nome] = {
             "tetti": {m: min(valore(v, m), prima.get(m, valore(v, m))) for m in CON_TETTO},
             "misura": {m: v[m] for m in REGISTRATE},
+            "in_prova": {m: v[m] for m in IN_PROVA},
         }
     REGISTRO.parent.mkdir(parents=True, exist_ok=True)
     REGISTRO.write_text(json.dumps({

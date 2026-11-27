@@ -12,7 +12,7 @@
 > - `README.DOCKER.md` dello stesso repo (*Offline Install Instructions: Docker*)
 
 > 📘 **Guida completa dai master ai PDF**:
-> [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](../../docs/guides/GUIDA-BOOKLET-E-PDF.md)
+> [`docs/how-to/GUIDA-BOOKLET-E-PDF.md`](../../docs/how-to/GUIDA-BOOKLET-E-PDF.md)
 > — questa pagina copre solo l'**editor** Homebrewery self-hosted.
 
 > ℹ️ **Serve Docker per i booklet «pergamena»? NO — ma le due vie convivono

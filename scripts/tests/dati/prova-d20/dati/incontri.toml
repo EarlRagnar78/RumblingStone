@@ -1,0 +1,3 @@
+# Lo stesso metodo del 3.5 con un altro parametro: qui il GS raddoppia ogni 3.
+metodo = "potenze"
+raddoppio = 3

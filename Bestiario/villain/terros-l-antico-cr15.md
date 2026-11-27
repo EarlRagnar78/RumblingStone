@@ -2,7 +2,7 @@
 **Key stats**: → `07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md` §7 (i numeri stanno li'; duplicarli qui creerebbe una seconda copia che diverge alla prima errata — ADR-0021).
 
 **Faction**: elemental-earth | **Role**: boss | **Environment**: elemental-earth | **CR**: 15
-**Source**: `07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md` §7 (statblocco nel master DEFINITIVO — CR 15: PF 345 (30d8+210), Elementale della Terra Avanzato 30 DV, Enorme)
+**Source**: `07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md` §7 (statblocco nel master DEFINITIVO — CR 15: PF 348 (30d8+210, +3 Robustezza), Elementale della Terra Avanzato 30 DV, Enorme)
 **Status**: POINTER — NON duplicare lo statblock qui. Usare sempre il file d'arco.
 
 ## Summary

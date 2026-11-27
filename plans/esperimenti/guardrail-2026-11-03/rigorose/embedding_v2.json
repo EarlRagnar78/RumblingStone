@@ -1,0 +1,229 @@
+{
+ "frasi": 1255,
+ "coppie": [
+  {
+   "cos": 0.958,
+   "jac": 0.44,
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "fa": "In fondo alla pagina, al posto del nome, una bilancia con un filo d'argento avvolto al giogo.",
+   "fb": "In fondo alla pagina, una bilancia con un filo d'argento avvolto al giogo."
+  },
+  {
+   "cos": 0.955,
+   "jac": 0.31,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+   "fa": "\"Sei la migliore esploratrice di Hammerfist, una nana dagli occhi acuti come lame.",
+   "fb": "Sei la migliore esploratrice di Hammerfist, occhi acuti come lame."
+  },
+  {
+   "cos": 0.955,
+   "jac": 0.31,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+   "fa": "\"Sei la migliore esploratrice di Hammerfist, una nana dagli occhi acuti come lame.",
+   "fb": "Sei la migliore esploratrice di Hammerfist, occhi acuti come lame."
+  },
+  {
+   "cos": 0.95,
+   "jac": 0.06,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+   "fa": "\"Sei un anziano saggio la cui fede in Moradin brucia come lava.",
+   "fb": "Sei un anziano saggio, fede in Moradin che brucia come lava."
+  },
+  {
+   "cos": 0.95,
+   "jac": 0.06,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+   "fa": "\"Sei un anziano saggio la cui fede in Moradin brucia come lava.",
+   "fb": "Sei un anziano saggio, fede in Moradin che brucia come lava."
+  },
+  {
+   "cos": 0.872,
+   "jac": 0.1,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "fa": "Il vento tra le lame crea una melodia triste ma orgogliosa - il canto degli eroi caduti.\"",
+   "fb": "\"Il vento attraversa le lame piantate creando una melodia triste ma orgogliosa."
+  },
+  {
+   "cos": 0.872,
+   "jac": 0.1,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "fa": "Il vento tra le lame crea una melodia triste ma orgogliosa - il canto degli eroi caduti.\"",
+   "fb": "\"Il vento attraversa le lame piantate creando una melodia triste ma orgogliosa."
+  },
+  {
+   "cos": 0.85,
+   "jac": 0.0,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+   "fa": "\"Ufficialmente sei una barda di corte, ma in realtà sei gli occhi e le orecchie di Hammerfist.",
+   "fb": "Ufficialmente barda di corte, in realtà occhi e orecchie di Hammerfist."
+  },
+  {
+   "cos": 0.85,
+   "jac": 0.0,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+   "fa": "\"Ufficialmente sei una barda di corte, ma in realtà sei gli occhi e le orecchie di Hammerfist.",
+   "fb": "Ufficialmente barda di corte, in realtà occhi e orecchie di Hammerfist."
+  },
+  {
+   "cos": 0.845,
+   "jac": 0.03,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "fa": "Il suono dell'impatto è assordante: il clangore di cento asce che trovano il loro bersaglio, lo schianto di scudi che spezzano ossa, le grida di terrore dei nemici che vedono la morte negli occhi dei nani in carica.\"",
+   "fb": "Il suono è assordante: cento asce che trovano simultaneamente i loro bersagli, scudi che spezzano ossa, grida di terrore che si mescolano ai canti di guerra nanici."
+  },
+  {
+   "cos": 0.836,
+   "jac": 0.39,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+   "fa": "25 DV danno 9 talenti: i tre che mancavano sono Fluttuare, Ghermire e Riflessi Fulminei.",
+   "fb": "25 DV danno 9 talenti: i tre che mancavano sono confermati dal DM (2026-10-18)."
+  },
+  {
+   "cos": 0.834,
+   "jac": 0.26,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "fa": "\"Dara è la migliore esploratrice di Hammerfist, una nana dai capelli corvini e occhi acuti come lame.",
+   "fb": "\"Sei la migliore esploratrice di Hammerfist, una nana dagli occhi acuti come lame."
+  },
+  {
+   "cos": 0.834,
+   "jac": 0.26,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+   "fa": "\"Dara è la migliore esploratrice di Hammerfist, una nana dai capelli corvini e occhi acuti come lame.",
+   "fb": "\"Sei la migliore esploratrice di Hammerfist, una nana dagli occhi acuti come lame."
+  },
+  {
+   "cos": 0.829,
+   "jac": 0.06,
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "fa": "Il metallo si scalda contro la fronte, e non si raffredda.",
+   "fb": "Il metallo gli si raffredda contro la fronte, e resta caldo come una mano."
+  },
+  {
+   "cos": 0.829,
+   "jac": 0.0,
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md",
+   "fa": "Il rosso vi stringe in un filo tirato attraverso mille anni, e non fa male: è una vertigine calda, in cui le cose accadono al contrario.",
+   "fb": "Il rosso vi tira attraverso le ere — non c'è dolore, solo vertigine cosmica."
+  },
+  {
+   "cos": 0.827,
+   "jac": 0.0,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+   "fa": "Poi: pietra, calore, il rombo di un assedio.",
+   "fb": "Al tatto è calda, come se la pietra ricordasse la forgia."
+  },
+  {
+   "cos": 0.823,
+   "jac": 0.0,
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "b": "10-stand-alone/Il Giardino di Sale e Calce/giardino_sale_calce.md",
+   "fa": "Lo Smeraldo galleggia sopra l'Altare e non proietta ombra: la sua luce verde va all'indietro, dentro le cose.",
+   "fb": "Nel mezzo la scala a chiocciola sprofonda in un pozzo di luce verde."
+  },
+  {
+   "cos": 0.823,
+   "jac": 0.0,
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "b": "10-stand-alone/Il Giardino di Sale e Calce PF1e/giardino_sale_calce_pf1e.md",
+   "fa": "Lo Smeraldo galleggia sopra l'Altare e non proietta ombra: la sua luce verde va all'indietro, dentro le cose.",
+   "fb": "Nel mezzo la scala a chiocciola sprofonda in un pozzo di luce verde."
+  },
+  {
+   "cos": 0.822,
+   "jac": 0.0,
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "b": "10-stand-alone/L'abbazia Della Rotta Sicura/appendice_corsari_borgo.md",
+   "fa": "Sul margine, piccola e quasi nascosta, una zampa di pietra si solidifica, con occhi di topazio.",
+   "fb": "La scalinata finisce su una piattaforma di pietra battuta."
+  },
+  {
+   "cos": 0.807,
+   "jac": 0.0,
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "fa": "A chinarsi, il calore arriva in faccia asciutto, come dalla bocca di un forno appena aperto.",
+   "fb": "Sotto la fucina il caldo finisce di colpo."
+  },
+  {
+   "cos": 0.807,
+   "jac": 0.0,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "fa": "Il drago smette di girare sopra il campo, chiude le ali e scende dritto, e la pioggia gli scivola addosso come su una lama oliata.",
+   "fb": "Il drago si ferma in aria sopra il fossato, a sud, e le ali battono piano per tenerlo fermo."
+  },
+  {
+   "cos": 0.807,
+   "jac": 0.0,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "b": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "fa": "Il drago si ferma in aria sopra il fossato, a sud, e le ali battono piano per tenerlo fermo.",
+   "fb": "Il drago smette di girare sopra il campo, chiude le ali e scende dritto, e la pioggia gli scivola addosso come su una lama oliata."
+  },
+  {
+   "cos": 0.806,
+   "jac": 0.0,
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "fa": "Aegis Fang, nella mano di Thorik, vibra così forte che il braccio duole.",
+   "fb": "Thorik, l'armatura è àncora e bandiera insieme: Aegis Fang morde il bordo dell'Altare con un suono di ferro, il braccio urla, e il morso tiene e vibra fino alla spalla."
+  },
+  {
+   "cos": 0.804,
+   "jac": 0.14,
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "fa": "Da quella parte, a portata di mano, piattaforme di cristallo unite da ponti di pietra che galleggiano.",
+   "fb": "Le piattaforme di cristallo grigio-verde si susseguono nel buio, unite da ponti di pietra che galleggiano senza fune né pilastro."
+  },
+  {
+   "cos": 0.804,
+   "jac": 0.0,
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "b": "10-stand-alone/Il Giardino di Sale e Calce/giardino_sale_calce.md",
+   "fa": "Per un istante la luce verde disegna sopra l'Altare la forma di qualcosa con quattro zampe; poi non c'è più.",
+   "fb": "Nel mezzo la scala a chiocciola sprofonda in un pozzo di luce verde."
+  },
+  {
+   "cos": 0.804,
+   "jac": 0.0,
+   "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "b": "10-stand-alone/Il Giardino di Sale e Calce PF1e/giardino_sale_calce_pf1e.md",
+   "fa": "Per un istante la luce verde disegna sopra l'Altare la forma di qualcosa con quattro zampe; poi non c'è più.",
+   "fb": "Nel mezzo la scala a chiocciola sprofonda in un pozzo di luce verde."
+  },
+  {
+   "cos": 0.804,
+   "jac": 0.25,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "fa": "\"La carica nanica colpisce le linee nemiche come un martello divino che si abbatte su un'incudine.",
+   "fb": "\"La carica nanica colpisce le linee nemiche come una valanga di ferro e vendetta."
+  },
+  {
+   "cos": 0.802,
+   "jac": 0.0,
+   "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "b": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "fa": "\"Re Thorek Hammerfist è l'incarnazione della nobiltà nanica.",
+   "fb": "\"Io, Thorek Hammerfist, Re dei Rifugi, vi nomino Custodi Eterni di Hammerfist."
+  }
+ ]
+}

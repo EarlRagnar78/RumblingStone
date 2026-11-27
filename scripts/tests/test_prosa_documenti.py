@@ -195,7 +195,7 @@ class IlPerimetro(unittest.TestCase):
     def test_i_documenti_del_repo_si_trovano(self):
         trovati = {p.relative_to(REPO).as_posix() for p in P.documenti()}
         for atteso in ("README.md", "AGENTS.md", "plans/INDEX.md",
-                       "docs/guides/GUIDA-BESTIARIO.md"):
+                       "docs/how-to/GUIDA-BESTIARIO.md"):
             with self.subTest(file=atteso):
                 self.assertIn(atteso, trovati)
 

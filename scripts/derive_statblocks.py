@@ -58,6 +58,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 BESTIARIO = ROOT / "Bestiario"
 sys.path.insert(0, str(ROOT / "scripts"))
+from dmcore import sistemi as S  # noqa: E402
 from dmcore.statblock import Statblocco, rendi  # noqa: E402
 from dmcore.statblock import estrai  # noqa: E402
 from extract_statblocks import APERTURA, e_non_creatura, inserisci, schede  # noqa: E402
@@ -162,12 +163,17 @@ def leggi_scheda(f: Path) -> Lettura:
         if re.search(rf"\b{taglia}\b", basso):
             L.taglia = taglia
             break
-    for nome, val in ARMATURE.items():
-        if nome in basso:
+    # Il nome più lungo per primo: «corazza di piastre» (corazza, +5) contiene
+    # «piastre» (armatura completa, +8), «cotta di maglia» contiene «maglia»
+    # (audit plugin del 2026-11-09).
+    # Parola intera: «shield» stava dentro «Oakenshield» e «torre» nella Torre
+    # del conclave, e davano uno scudo a chi non l'ha.
+    for nome, val in sorted(ARMATURE.items(), key=lambda kv: -len(kv[0])):
+        if re.search(rf"\b{re.escape(nome)}\b", basso):
             L.armatura = val
             break
-    for nome, val in SCUDI.items():
-        if nome in basso:
+    for nome, val in sorted(SCUDI.items(), key=lambda kv: -len(kv[0])):
+        if re.search(rf"\b{re.escape(nome)}\b", basso):
             L.scudo = val
             break
     return L
@@ -369,6 +375,14 @@ def main(argv: list[str] | None = None) -> int:
         t = f.read_text(encoding="utf-8")
         if APERTURA in t or e_non_creatura(t):
             saltate += 1
+            continue
+        # F4 di ADR-0112: le tabelle qui sono quelle 3.5; un file di un sistema
+        # che legge altre regole si ferma, e si dice quali mancano.
+        sistema = S.sistema_di(f)
+        diverse = S.regole_diverse(sistema, "derive_statblocks")
+        if diverse:
+            fermi[str(f.relative_to(ROOT))] = [
+                f"sistema {sistema} (le regole {', '.join(diverse)} non sono quelle 3.5 dello strumento)"]
             continue
         # ⚠️ Il principio: **la prosa vince sempre.** Si legge prima cosa la
         # scheda dice gia', si deriva solo il buco, e un numero scritto non si

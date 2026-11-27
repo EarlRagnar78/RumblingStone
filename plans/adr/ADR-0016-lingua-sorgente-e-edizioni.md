@@ -61,7 +61,7 @@ lunghi, subordinate accumulate, nominalizzazioni, connettivi ridondanti).
   un testo vivo è il modo più rapido per averne una sbagliata;
 - ⚠️ **c'è un tetto di IP che nessuna lingua alza.** La campagna è Red Hand of
   Doom adattato ai Forgotten Realms: pubblicazione gratuita 🟡 con condizioni,
-  **vendita ❌** (`docs/guides/GUIDA-CONDIVISIONE-IP.md`). L'unico materiale
+  **vendita ❌** (`docs/how-to/GUIDA-CONDIVISIONE-IP.md`). L'unico materiale
   realmente pubblicabile è quello **originale** (Terros, i Bracieri, la Cronaca
   Vivente, Balvar, il sistema del Palio) **riambientato fuori da Faerûn**, e
   quello sì, un giorno, in inglese nativo.
@@ -98,4 +98,4 @@ pipeline, e questa ADR va riaperta.
 - `skills/rumblingstone-narrative-style/SKILL.md`: load order.
 - `references/italiano-nativo.md` · `references/read-aloud-adulti.md`.
 - `campaign/GLOSSARIO-E-LOCALIZZAZIONE.md`: glossario e DNT.
-- [`docs/guides/GUIDA-CONDIVISIONE-IP.md`](../../docs/guides/GUIDA-CONDIVISIONE-IP.md): il tetto di pubblicazione.
+- [`docs/how-to/GUIDA-CONDIVISIONE-IP.md`](../../docs/how-to/GUIDA-CONDIVISIONE-IP.md): il tetto di pubblicazione.

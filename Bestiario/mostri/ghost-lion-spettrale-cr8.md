@@ -1,10 +1,13 @@
-# ghost-lion-spettrale-cr8 [ACCEPTED — DM-canon 2026-05-05]
+# ghost-lion-spettrale-cr8 [CANONE — DM 2026-05-05]
 
 **Faction**: ghostlord-undead | **Role**: guardian-incorporeal | **Environment**: thornwaste,ruins | **CR**: 8
 
 ```statblocco
 gs: 8
 tipo: Large undead (incorporeal), fantasma PF1e su leone crudele, 9d8
+taglia: Grande
+spazio: 3 m
+portata: 1,5 m
 ca: 20
 ca-dettaglio: (−1 taglia, +4 Des, +7 deflessione dal Carisma), contatto 20, colto alla sprovvista 16
 pf: 103
@@ -17,6 +20,7 @@ attacchi:
   - Mischia tocco corruttore +9 (8d6, contatto incorporeo; Tempra CD 21 dimezza)
 voci:
   - BAB +6; lotta — (incorporeo)
+  - Tratti dei non morti
   - Incorporeo: 50% di mancare contro gli attacchi non magici; passa attraverso muri e pavimenti
   - Resistenza a incanalare +4; ringiovanimento (torna in 2d4 giorni se non si scioglie il suo legame con la tana del Ghostlord)
   - Gemito Terrificante: Volontà CD 21 o in preda al panico per 2d4 round (effetto di paura, sonoro)

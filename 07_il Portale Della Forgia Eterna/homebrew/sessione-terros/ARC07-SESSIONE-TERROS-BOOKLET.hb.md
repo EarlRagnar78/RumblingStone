@@ -287,7 +287,7 @@ giocherai e leggile a voce. Tre. Non trenta.
 ## §4 · I suoni dell'arco
 
 **Descrizioni, mai titoli di brani**: ognuno usa quello che ha, e il file non
-invecchia con le piattaforme (ADR-0018 «regola dei suoni»).
+invecchia con le piattaforme.
 
 > **La regola di quest'arco**, e non è quella dell'ARC-08. Là il fragore era lo
 > stato di riposo e i suoni si spegnevano per fare spazio. **Qui il silenzio è lo
@@ -658,7 +658,7 @@ Questo capitolo è materiale del DM: non mostrarlo ai giocatori.
 
 ## §0 — QUICKSTART DM (una pagina)
 
-**Dove siete.** I Custodi Eterni sono entrati nel Portale della Forgia
+**Dove siete.** I Rumbling Stones sono entrati nel Portale della Forgia
 Eterna per recuperare le tre gemme della Corona di Adamantio e riportare in
 vita **Hella Oakenshield**, morta nella Stanza della Corona (ARC-06). Il
 **Topazio del Tempo** è già stato forgiato nel Piano del Fuoco. Ora si scende
@@ -799,10 +799,10 @@ modulo, non giocate.
 | Rituale F2: Thorik Tempra/FOR (**16** se Tordek riesce) · Tordek TxC/Conc. · Artemis UMD/TxC | 26 · 25 · 25 | §9 |
 
 ### Iniziativa tipo & pf da tracciare
-`Artemis, Tordek, Thorik: dalla scheda · Terros −1` · Xorn e Fauci di Diamante +0 · Sentinella +2 — **Terros 345 pf**
+`Artemis, Tordek, Thorik: dalla scheda · Terros −1` · Xorn e Fauci di Diamante +0 · Sentinella +2 — **Terros 348 pf**
 (soglie: 260 = usa Scudo di Geodi; 172 = difesa sull'Altare/rigenera;
 0 = si sbriciola, emerge lo Smeraldo). **Sentinella 160 pf** (1ª crepa = Overdrive
-3 attacchi/CA 24; 3ª crepa o 0 pf = petto aperto → colpo finale). **Fauci di Diamante 181
+3 attacchi/CA 23; 3ª crepa o 0 pf = petto aperto → colpo finale). **Fauci di Diamante 181
 pf** (90 = si rifugia nel cristallo +4 CA). Xorn 52 pf (15 = scava via).
 
 ### Il giro di Terros, in breve (3.5: UNA azione per round)
@@ -959,7 +959,7 @@ attesa. Al risveglio, controllate l'**Affresco A7** (Battaglia di Hammerfist):
 il countdown è sceso. Dieci minuti di preghiera all'Altare riaccendono le
 Benedizioni; la voce di Moradin arriva quando la preghiera finisce.
 
-> **Read-aloud (LotR lead, Salvatore support) — la Sala.** *Il primo sonno vero
+> **Read-aloud — la Sala.** *Il primo sonno vero
 > da giorni. La Sala non è cambiata di un riflesso: ha la costanza di
 > un'incudine in un mondo che frana. Davanti all'Altare le Benedizioni sono
 > brace sotto la cenere, e aspettano soltanto una preghiera per riaccendersi.
@@ -1006,7 +1006,7 @@ sue, con le sue cariche; i dati sono quelli di «Il Ritorno e gli Affreschi» §
 > registra le vostre gesta: quella è la **Cronaca Vivente**, dettaglio nel
 > «Il Ritorno e gli Affreschi». Qui conta l'apertura della Terra.)
 
-> **Read-aloud (Salvatore lead, LotR support) — l'affresco A5 e la Corona.** *Un rombo basso
+> **Read-aloud — l'affresco A5 e la Corona.** *Un rombo basso
 > sale dal pavimento ed entra nelle ossa; le colonne tremano tutte sulla
 > stessa nota, come le corde di un'arpa sotto una mano sola. L'Affresco Est, pietra grigia e inerte, si sgretola senza cadere,
 > e la pietra dipinta si fa pietra vera. Arriva l'odore di terra umida, di
@@ -1028,7 +1028,7 @@ sue, con le sue cariche; i dati sono quelli di «Il Ritorno e gli Affreschi» §
 roccia che galleggia, gravità impossibile. Thorik, il Topazio acceso sulla
 fronte, guida. Aegis Fang canta: *«Seconda gemma. Seconda prova. Avanti.»*
 
-> **Read-aloud (Salvatore lead) — l'attraversamento.** *Il passaggio è fango
+> **Read-aloud — l'attraversamento.** *Il passaggio è fango
 > denso e freddo, poi il peso arriva tutto insieme, uno zaino di pietre posato
 > senza preavviso. Le ginocchia cedono un istante, respirare costa fatica,
 > l'aria è sciroppo. Poi la Benedizione morde: la pelle indurisce, le ossa si
@@ -1105,7 +1105,7 @@ lontani.
   - **«magia elementale».** I PG sentono **ozono**. La categoria sta nello
     statblock, non nel naso di chi cammina (ADR-0014 §2, il mostro spiegato).
 
-> **Read-aloud (LotR lead) — le piattaforme, l'orizzonte.** *Aegis Fang tira
+> **Read-aloud — le piattaforme, l'orizzonte.** *Aegis Fang tira
 > il braccio da una parte sola. Da quella parte, a portata di mano, piattaforme
 > di cristallo unite da ponti di pietra che galleggiano. Più in là una foresta
 > di cristalli alti come torri, accesi di luce interna. Oltre ancora, in
@@ -1136,10 +1136,10 @@ il Tempio. Nessuna prova di Sopravvivenza necessaria.
 > diventa sempre più ostile man mano che ci si avvicina al Tempio.
 
 #### ZONA 1 — Le Piattaforme di Cristallo (0–300 m)
-> **Read-aloud (Salvatore lead) — le piattaforme.** *Il primo passo fuori dal
-> portale è come camminare sul dorso di una bestia addormentata. Le
-> piattaforme di cristallo grigio-verde si susseguono nel buio, unite da ponti
-> di pietra che galleggiano senza fune né pilastro. Sotto, sopra, intorno:
+> **Read-aloud — le piattaforme.** *Il primo passo fuori dal
+> portale è come camminare sul dorso di una bestia addormentata. Da vicino il
+> cristallo è grigio-verde e venato come un'unghia, e il primo ponte non ha né
+> fune né pilastro: sta su e basta. Sotto, sopra, intorno:
 > nulla, solo cristalli lontani che brillano come stelle affogate. Ogni ponte
 > oscilla appena sotto il peso raddoppiato, e il cristallo, sotto gli stivali,
 > risponde: un suono basso, breve, come una campana che prova la voce.*
@@ -1235,7 +1235,7 @@ Vedi **MAPPA T-1** (orizzonte) e **MAPPA T-2** (foresta).
 
 **In scena** — Dove: la foresta — Chi: Fauci di Diamante · gli Xorn
 
-> **Read-aloud (LotR lead, Salvatore support) — la foresta.** *Le piattaforme
+> **Read-aloud — la foresta.** *Le piattaforme
 > finiscono e comincia la foresta. Nessun albero è mai cresciuto così: colonne
 > di cristallo spesse come torri di guardia, che salgono nel buio finché la
 > vista si arrende. Dentro ognuna una luce lenta pulsa e migra, sangue luminoso
@@ -1257,7 +1257,7 @@ chi è sotto. **Gli Xorn NON
 sono malvagi: sono affamati** (INT 10, parlano Terran). Ma il loro capo,
 **«Fauci di Diamante»**, è vecchio, scaltro e famelico: negozia… o spezza.
 
-> **Read-aloud (Salvatore lead, Mercer support) — il pilastro corroso.** *A
+> **Read-aloud — il pilastro corroso.** *A
 > metà foresta una colonna geme. Alla base il cristallo è roso a morsi, e dalle
 > ferite pendono vene d'argento masticate. Sotto i piedi sale un rumore di
 > macina, lento e paziente: qualcosa mastica la pietra, e si avvicina.
@@ -1274,12 +1274,12 @@ a parlare, gli Xorn emergono a metà e parla Fauci di Diamante (via C).
   pietra, come al §6), poi colpo
   mirato (FOR o attacco) **CD 20** sul punto di stress → il pilastro crolla
   sugli Xorn (**10d6**, Riflessi **CD 22** dimezza). Chi è dentro la pietra
-  prende metà danni ed esce stordito per 1 round; lo scontro si fa comunque
-. Il pilastro cade dove sceglie chi ha letto
+  prende metà danni ed esce stordito per 1 round; lo scontro si fa comunque.
+  Il pilastro cade dove sceglie chi ha letto
   l'angolo di rottura; se la Conoscenze è fallita, la direzione si tira col d8,
-  e i PG sulla traiettoria tirano i Riflessi anche loro
-. L'area è una striscia larga 3 m e lunga
-  30 m dalla base G08 `[INFERRED — needs DM confirmation]`.
+  e i PG sulla traiettoria tirano i Riflessi anche loro.
+  L'area è una striscia larga 3 m e lunga
+  30 m dalla base G08.
   *Costo:* perdi il mithral (loot che Artemis brama).
 - **B — Ordine tattico (Shine Time di Thorik).** Azione di comando
   (Intimidire o Diplomazia **CD 18**, come la via C) per accerchiarli in
@@ -1450,7 +1450,7 @@ non crolla, cioè con le vie B e C; 2 geodi d'ametista (400 mo l'uno) e un grana
 All'uscita dalla foresta, anche se il gruppo non ha intenzione di fermarsi:
 
 <!-- scelta del DM: versione vincitrice del voto cieco, eccezione al tetto voluta -->
-> **Read-aloud (BG3 lead, Salvatore support) — il giardino dei cristalli.** *La foresta si apre di colpo, e il buio si accende. Davanti a voi, un
+> **Read-aloud — il giardino dei cristalli.** *La foresta si apre di colpo, e il buio si accende. Davanti a voi, un
 > giardino: migliaia di cristalli non più alti di un nano, cresciuti in
 > triangoli, esagoni, cerchi concentrici — la geometria di una mente, non del
 > caso. E si MUOVONO: si inclinano verso di voi come girasoli verso un sole
@@ -1521,8 +1521,8 @@ centro, alto 5 m, la **MADRE CRISTALLO**. Vedi **MAPPA T-3**.
 Si tira a giri: a ogni giro ogni PG tira almeno una volta, e ogni abilità vale
 una volta per PG a giro. Utilizzare Oggetti Magici si usa solo con i
 gradi, come nell'SRD. Chi non ha un'abilità utile può Aiutare un compagno (+2)
-o passare il giro senza fallimento; e i nani hanno la loro prova, qui sotto
-. Ogni prova fallita è uno dei tre
+o passare il giro senza fallimento; e i nani hanno la loro prova, qui sotto.
+Ogni prova fallita è uno dei tre
 fallimenti, Diplomazia compresa; il canto fallito, in più, toglie un successo.
 Riforgiare un cristallo è la prova del giro di quel PG: tira Osservare, e se
 fallisce conta un fallimento. Ogni cristallo crepato si riforgia una volta.
@@ -1596,12 +1596,12 @@ la Sentinella** (Scena 7), sul corridoio che scende verso Terros.
 > per secoli era rimasto sepolto nel muro. *Nessuno l'ha portato qui a mano:
 > è il mercato che cresce dove passa la ricchezza.*
 
-> **Read-aloud (Salvatore lead, solo per Artemis) — il corridoio, 1 di 2.** *Il corridoio riprende
+> **Read-aloud (solo per Artemis) — il corridoio, 1 di 2.** *Il corridoio riprende
 > a scendere, e i compagni sono già avanti: il nano coi guanti nuovi cammina
 > come se il pavimento gli dovesse dei soldi. Mezzo passo indietro, l'Anello,
 > freddo, ti morde il dito. Quel morso lì.*
 
-> **Read-aloud (Salvatore lead, Andor support) — il corridoio, 2 di 2.** *Nella crepa che
+> **Read-aloud — il corridoio, 2 di 2.** *Nella crepa che
 > il duello ha aperto nel mithral, qualcosa cattura la luce in un modo che il
 > metallo non fa: un **cabochon violetto**, grande come l'unghia del pollice,
 > incastonato nella pietra come una zecca nel cuoio. È **caldo**. In un piano dove tutto è
@@ -1904,7 +1904,7 @@ anni prima di lui, e per un mercante non c'è niente di più interessante.
    sopra, con la correzione del paragrafo «A ≈372 DR il creditore non c'è
    ancora» per chi firma a ≈372 DR.
 
-> **Read-aloud (Andor lead) — per Artemis, alla fine dell'ora.** *La pergamena
+> **Read-aloud — per Artemis, alla fine dell'ora.** *La pergamena
 > si accartoccia in cenere tiepida. Sotto il guanto la gemma pesa e scalda
 > come prima, ma dentro la pietra c'è una scrittura fitta e ordinata, da libro
 > mastro. In fondo alla
@@ -1920,7 +1920,7 @@ anni prima di lui, e per un mercante non c'è niente di più interessante.
 
 **In scena** — Dove: l'oceano di roccia — Chi: nessuno
 
-> **Read-aloud (LotR lead, Salvatore support) — l'oceano di roccia e il cubo sospeso.** *Qui il suolo
+> **Read-aloud — l'oceano di roccia e il cubo sospeso.** *Qui il suolo
 > smette di fingere di essere solido. Fino a un orizzonte che non esiste si
 > stende un oceano di roccia grigia: onde lente come pensieri di montagna,
 > creste che impiegano un'ora a rompersi, correnti di granito liquido senza
@@ -1975,15 +1975,15 @@ fino al portale. Chi ha saltato i Cristalli non ha né l'una né l'altro, e
 attraversa coi tre ruoli. Ogni prova riuscita solleva dall'oceano un blocco di pietra,
 e i blocchi fanno una scala; **Tordek salta da un detrito sopra l'oceano, a
 metà strada**, e da lì al portale. La prova è quella della Frequenza (§8):
-Intrattenere (Canto) **CD 18**, l'Anello di Artemis dà +4
-. Suonarlo per la scala **non lo consuma**: il suo uso unico è lo stordimento.
-Servono **4 prove riuscite**, e una fallita fa ricadere l'ultimo blocco
-. Le quattro fanno la scala intera, che con la
+Intrattenere (Canto) **CD 18**, l'Anello di Artemis dà +4.
+Suonarlo per la scala **non lo consuma**: il suo uso unico è lo stordimento.
+Servono **4 prove riuscite**, e una fallita fa ricadere l'ultimo blocco.
+Le quattro fanno la scala intera, che con la
 sola Frequenza arriva a metà strada e col Diapason al portale. Canta un PG alla
 volta, con un'azione standard, come nel §8. Ogni prova prende un round. Al
 terzo fallimento la scala crolla, e chi sta sui blocchi cade nell'oceano di
-roccia dalla quota a cui è arrivato, con la regola delle cadute del §3
-.
+roccia dalla quota a cui è arrivato, con la regola delle cadute del §3.
+
 
 > **✅ CANONE GIOCATO — «la salita cantata».** Al tavolo
 > l'attraversamento è stato risolto in variante: il party ha **cantato la
@@ -2005,13 +2005,13 @@ negata.
 
 **Una riga di storia profonda**, da leggere se i PG toccano il muro del Tempio.
 
-> **Read-aloud (LotR lead) — il muro.** *Sotto le dita il mithral è
+> **Read-aloud — il muro.** *Sotto le dita il mithral è
 > tiepido, e vibra appena, come un'incudine che ricorda ancora l'ultimo colpo.*
 
 Con Conoscenze (religioni) CD 15 chi ha toccato il muro sa il resto, e il DM
 lo dice così:
 
-> **Read-aloud (LotR lead) — la Scoria Santa.** *Questo Tempio fu forgiato in
+> **Read-aloud — la Scoria Santa.** *Questo Tempio fu forgiato in
 > un solo colpo, quando Moradin batté qui il primo mithral del creato: la
 > scoria, raffreddandosi, prese la forma di un cubo perfetto. Nei canti più
 > vecchi i nani la chiamano la Scoria Santa, e nessuno l'ha mai vista da
@@ -2041,7 +2041,7 @@ centro. Due hazard opzionali, ognuno con il suo esito:
 La stanza divide gli intrusi in tre: un box per ciascuno, letto al suo
 giocatore, poi la meccanica.
 
-> **Read-aloud (Salvatore lead, per Thorik) — l'anticamera.** *«Il metallo
+> **Read-aloud (per Thorik) — l'anticamera.** *«Il metallo
 > chiama il metallo.» Armatura, scudo e ascia pesano di colpo tonnellate, e
 > tirano di lato, verso le pareti. Sei scagliato contro la parete nord, nera e
 > venata di viola, e la Magnetite ti tiene incollato come una mosca nel miele.*
@@ -2049,14 +2049,14 @@ giocatore, poi la meccanica.
 **Thorik è immobilizzato**: FOR CD 25 per liberarsi; finché non riesce non si
 muove, ed è fuori dallo scontro, costretto a guardare.
 
-> **Read-aloud (Salvatore lead, per Artemis) — l'anticamera.** *«Ciò che
+> **Read-aloud (per Artemis) — l'anticamera.** *«Ciò che
 > sfida la terra dev'essere abbattuto.» Qui la gravità si stringe, dieci volte
 > la sua forza. Le ali d'ombra si frantumano, a malapena sollevi la testa, e
 > i gesti della magia pesano troppo.*
 
 **Artemis è prono**: la magia con componenti somatiche non passa (qui sotto).
 
-> **Read-aloud (Salvatore lead, per Tordek) — l'anticamera.** *Le ossa
+> **Read-aloud (per Tordek) — l'anticamera.** *Le ossa
 > reggono, temprate dal Vigore della Montagna, e addosso non hai metallo che ti
 > tradisca. Attorno a te i Bracieri accendono una bolla calda di
 > stabilità: sei l'unico in piedi. Nel ronzio, gli occhi senza volto della
@@ -2103,19 +2103,19 @@ muove, ed è fuori dallo scontro, costretto a guardare.
 
 | Chi | Com'è | Come parla |
 |---|---|---|
-| la Sentinella | un golem di mithral, Grande, veloce e fluido, non goffo. Occhi senza volto che si girano verso l'unico in piedi | non parla. Ogni pugno che riceve risuona come una campana; il mithral non si ammacca, vibra |
+| la Sentinella | un golem di mithral, Enorme, veloce e fluido, non goffo. Occhi senza volto che si girano verso l'unico in piedi | non parla. Ogni pugno che riceve risuona come una campana; il mithral non si ammacca, vibra |
 | i Bracieri | i guanti di Tordek, con una coscienza da vecchio fabbro | in nanico, dentro la mente di Tordek, per frasi corte. Parlano al completamento, e poi di rado |
 
 {{note
 ##### Sentinella Silenziosa (Golem di Mithral)
-**CA** 30, contatto 11, colto 28 (−1 taglia, +2 DES, +19 naturale) · **pf** 160 (18 DV) · *scheda in appendice*
+**CA** 29, contatto 10, colto 27 (−2 taglia, +2 DES, +19 naturale) · **pf** 160 (18 DV) · *scheda in appendice*
 }}
 
 **Scontro in 3 fasi.** (1) *Il guscio* — la Sentinella è veloce, fluida, non
 goffa: Tordek usa mobilità/CA per sopravvivere e colpire **duro** (ogni pugno
 risuona come una campana; il mithral non si ammacca, **vibra**). (2) *La
 Risonanza* — alla prima crepa il guscio si apre in luce verde;
-il Golem entra in *Overdrive* (**3 attacchi/round, CA scende a 24**), voce di
+il Golem entra in *Overdrive* (**3 attacchi/round, CA scende a 23**), voce di
 Moradin: *«Il metallo cede al calore e alla pressione insieme: usa entrambi!»* (attiva
 i Colpi del Fuoco). (3) *Il colpo finale* — alla terza crepa (o a 0 pf) il petto si apre; un colpo
 senz'armi automatico estrae il **Geode di Smeraldo** prima che si rigeneri.
@@ -2150,7 +2150,7 @@ il guanto sinistro si apre come petali d'acciaio. TS **Volontà CD 20** (fallito
 stordito 1 minuto dopo la visione). La visione si legge al solo giocatore di
 Tordek, tutta in un box.
 
-> **Read-aloud (LotR lead, Salvatore support, per Tordek) — la visione.** *La
+> **Read-aloud (per Tordek) — la visione.** *La
 > stanza svanisce. Sepolto vivo nella roccia, la terra fredda nei polmoni. Poi
 > una voce tettonica, nello scheletro: Moradin. «Il fuoco brucia in fretta e
 > muore. La roccia attende. La roccia sostiene. La roccia vince perché non ha
@@ -2264,7 +2264,7 @@ gravità normale, con Terros dormiente all'altro capo della piattaforma.
 > è l'Altare stesso a fare da approdo. Il rischio «ritirata tagliata» resta,
 > in forma migliore — vedi il distacco qui sotto.
 
-> **Read-aloud (LotR lead, Salvatore support) — i sei secondi della soglia, 1 di 2.** *La soglia si apre come una pupilla, e il mondo si apre con lei. Siete
+> **Read-aloud — i sei secondi della soglia, 1 di 2.** *La soglia si apre come una pupilla, e il mondo si apre con lei. Siete
 > dentro una bolla. Una sfera di cristallo grande come la piazza di un
 > mercato, e la sua parete è l'unica cosa che vi separa dal Piano della Terra:
 > fuori, il buio preme contro il vetro, e dentro quel buio passano lentissime
@@ -2272,7 +2272,7 @@ gravità normale, con Terros dormiente all'altro capo della piattaforma.
 > lanterna. L'aria qui dentro è pulita — la prima aria pulita da ore. Le
 > narici se ne accorgono prima della testa.*
 
-> **Read-aloud (Salvatore lead, LotR support) — la soglia, 2 di 2.** *Davanti
+> **Read-aloud — la soglia, 2 di 2.** *Davanti
 > agli stivali, una lastra d'argento vivo larga quanto la sala comune di una
 > locanda, incisa di rune verdi che pulsano piano. Oltre il bordo non c'è un
 > pavimento, c'è niente: il «sotto» finisce dove finisce la lastra. Sopra il centro pende una luce verde senza
@@ -2289,7 +2289,7 @@ nell'SRD agisce ogni PG pronto, con un'azione standard o di movimento a testa. T
 round 1, e l'Altare si stacca all'inizio del round 1. Poi si legge il
 risveglio qui sotto.
 
-> **Read-aloud (LotR lead, Salvatore support) — il risveglio del guardiano.** *Poi la collina respira. Una fenditura si apre lungo la parete di roccia, e
+> **Read-aloud — il risveglio del guardiano.** *Poi la collina respira. Una fenditura si apre lungo la parete di roccia, e
 > la parete è una palpebra: due occhi di cristallo grezzo si accendono di una
 > luce minerale, fredda, senza odio e senza pietà, come guarderebbe una
 > montagna. Terros si erge, e ogni suo movimento è il suono di una faglia che
@@ -2321,7 +2321,7 @@ in linea retta a metà velocità — §0-bis). **La ritirata non viene tagliata
 da una trappola: se la tagliano da soli**, ed è molto più bello. Da qui in
 poi vale la **MAPPA T-6**.
 
-> **Read-aloud (Salvatore lead) — il distacco, l'Altare.** *Prima della
+> **Read-aloud — il distacco, l'Altare.** *Prima della
 > collina si muove il bordo. Con un suono di ghiaccio che si stacca da un
 > tetto, la lastra si scolla dalla soglia, e la soglia comincia ad
 > allontanarsi: piano, con la calma di una chiatta che lascia il molo mentre
@@ -2394,7 +2394,7 @@ veloce, non rende sonici i pugni di Tordek, e la regola è in 8c-1.
 
 {{note
 ##### Terros l'Antico, l'Incudine del Mondo · GS 15
-**CA** 26, contatto 7, colto 26 (−2 taglia, −1 DES, +19 naturale) · **pf** 345 (30d8+210) · *scheda in appendice*
+**CA** 26, contatto 7, colto 26 (−2 taglia, −1 DES, +19 naturale) · **pf** 348 (30d8+213) · *scheda in appendice*
 
 **TATTICHE**
 *Round 1*: Onda gravitazionale verso il soffitto per staccare il party dall'Altare. È la sua azione del round: niente altro. Se nessuno è sull'Altare, al posto dell'Onda: lancio di roccia su Artemis, o carica su Thorik se è a portata. *Round 2*: Earth Glide nell'Altare: un'azione di movimento per entrarci, e per un turno è dentro la pietra, fuori portata, e guarisce 15. Al turno dopo riemerge (movimento) accanto al PG a terra più fragile, di solito chi è atterrato per tirare, e lo colpisce con uno schianto. Ogni riemersione dall'Altare è il momento delle azioni preparate e di «Radice a Terra». *Round 3*: se i PG sono dispersi, Stalattiti sul gruppo più fitto; se sono compatti sull'Altare, Scudo di geodi e attacco completo. *Dal round 4*: alterna i turni dentro l'Altare, le riemersioni con uno schianto, l'Onda e lo Scudo: in 3.5 non entra, colpisce ed esce nello stesso turno (servirebbe Attacco Rapido). Sotto il 50% combatte in difesa sull'Altare (rigenera) e costringe i PG ad avvicinarsi. **Morale**: non fugge mai, guardiano fino alla morte.  
@@ -2421,7 +2421,7 @@ veloce, non rende sonici i pugni di Tordek, e la regola è in 8c-1.
 Prima di leggerlo, Thorik tira Riflessi CD 22: se fallisce, la sua riga si
 salta e Thorik cade con gli altri. Il box è un giro solo, una frase per PG.
 
-> **Read-aloud (Salvatore lead, Mercer support) — il primo scambio.** *Terros si lascia cadere in avanti, e la camera intera cade con lui:
+> **Read-aloud — il primo scambio.** *Terros si lascia cadere in avanti, e la camera intera cade con lui:
 > l'Onda strappa l'Altare da sotto i piedi come una tovaglia. Thorik,
 > l'armatura è àncora e bandiera insieme: Aegis Fang morde il bordo dell'Altare
 > con un suono di ferro, il braccio urla, e il morso tiene e vibra fino alla
@@ -2452,7 +2452,7 @@ salta e Thorik cade con gli altri. Il box è un giro solo, una frase per PG.
 | **Thorik** (Aegis Fang +21) | ~3 dopo RD 10 | serve 5+; 1d10+7 ≈ 12, −RD 10. Il sacro arriva allo stadio 1 di Aegis Fang: il suo contributo vero è la Radice a Terra |
 | **Tordek** (Raffica +12/+12/+7: BAB +10 con monaco 9 e guerriero 4, SRD *Monaco*) | ~11 dopo RD 10 | la RD morde il monaco; i danni **sonici** (×1,5) e il Pugno Frana sono il suo vero contributo |
 | **Artemis** (Blast +16 vs **contatto 7**) | ~33; **~49 in modalità sonica**; **~63** nel round quickened | manca solo con l'1 naturale; la RD **non** si applica (abilità magica); **star DPS designato** — regole della modalità sonica in **§8c-1** |
-| **Party** | **~50/round**, ~35 netti con la rigenerazione | Terros 345 pf → **~10 round** |
+| **Party** | **~50/round**, ~35 netti con la rigenerazione | Terros 348 pf → **~10 round** |
 
 | Bersaglio di Terros | Danno medio/round | Letalità |
 |---|---|---|
@@ -2476,7 +2476,7 @@ salta e Thorik cade con gli altri. Il box è un giro solo, una frase per PG.
 > vecchio quanto il piano**. Combatte come una frana: lento, inevitabile,
 > paziente. Non ha fretta — la roccia vince perché non ha fretta.
 
-- **Apertura (345–303 pf).** Se il party è entrato cantando la Frequenza:
+- **Apertura (348–303 pf).** Se il party è entrato cantando la Frequenza:
   primo round **intontito dal canto** (−4/−4), usa comunque l'**Onda** per
   disorientare. Altrimenti: si alza dall'Altare (K08-L09) e apre con **Onda
   Gravitazionale verso il soffitto** — vuole i PG **staccati dall'Altare**,
@@ -2761,10 +2761,12 @@ arriva a risorse piene. Mostra l'affresco, non minacciare l'orologio.
 > **Conseguenze già maturate:**
 > - **Loot dell'arco disponibile**: Geode Titanico (5.000 mo) + **Cuore di
 >   Terros** (20.000 mo) + residuo golem + geodi.
-> - Sbloccata la condizione del **TODO «Diventare una Collina»** sui Bracieri
->   Gemelli:
->   Tordek ha dimostrato il proprio valore contro il guardiano. **Il potere va
->   ora scritto sulla scheda** — finché il TODO è aperto non esiste al tavolo.
+> - Sbloccato **«Diventare una Collina»** sui Bracieri Gemelli: Tordek ha
+>   dimostrato il proprio valore contro il guardiano. Il potere è scritto sulla
+>   scheda dei Bracieri, §7:
+>   come *ingrandire persona*, taglia Grande per 1 minuto, 1 volta al
+>   giorno; la prima volta si attiva da sé, quando un nemico Enorme o più grande
+>   lo porta sotto metà dei pf.
 > - L'ultimo suono di Terros è stato di **assenso**, non d'odio (il party aveva
 >   curato i Cristalli, §6).
 
@@ -2814,8 +2816,8 @@ non lo accetta: è legata a Thorik.
 .
 - **Se Thorik rifiuta e nessuno paga**: il rito non parte. Dopo un riposo,
   −12 h all'orologio, Moradin ripete la domanda davanti a tutti; al secondo
-  rifiuto la Corona prende il Peso da sola, col prezzo dell'Opzione B
-.
+  rifiuto la Corona prende il Peso da sola, col prezzo dell'Opzione B.
+  
 
 > **Regia (asimmetria).** Thorik **non sa** che la presenza verde è Hella; per
 > la giocatrice di Hella è uno dei suoi echi (§1). **Non spiegarlo finché non
@@ -2931,7 +2933,7 @@ non lo accetta: è legata a Thorik.
 
 #### ROUND 1 — «Il contatto»
 
-> **Read-aloud (Salvatore lead) — apertura del round 1.** *Lo Smeraldo
+> **Read-aloud — apertura del round 1.** *Lo Smeraldo
 > galleggia sopra l'Altare e non proietta ombra: la sua luce verde va
 > all'indietro, dentro le cose. Quando Thorik alza la Corona verso la gemma, l'aria
 > fra le due si fa densa, lo spazio fra due calamite che si rifiutano. E la
@@ -2967,14 +2969,14 @@ non lo accetta: è legata a Thorik.
   - **Fallimento** → *La polvere passa. **(Applica il malus.)** L'odore è
     quello del metallo bagnato, e ti resta addosso per giorni.*
 
-> **Read-aloud (Salvatore lead) — chiusura del round 1.** *La gemma è entrata
+> **Read-aloud — chiusura del round 1.** *La gemma è entrata
 > di un'unghia nel castone della Corona. Un'unghia. Dalla lastra sale un
 > ronzio basso, e la polvere del rito non ricade: resta ferma a mezz'aria, in
 > attesa.*
 
 #### ROUND 2 — «La resistenza»
 
-> **Read-aloud (Salvatore lead) — apertura del round 2.** *Al secondo giro la
+> **Read-aloud — apertura del round 2.** *Al secondo giro la
 > sala ha scelto da che parte stare, e non è la vostra. La polvere sospesa
 > gira attorno all'Altare in un cerchio lento; le rune verdi sotto i piedi
 > brillano tutte, calde attraverso il cuoio. Lo Smeraldo adesso tira: vuole la Corona, e vuole anche le mani che
@@ -3008,14 +3010,14 @@ non lo accetta: è legata a Thorik.
     apre in due attorno a voi come una tenda.*
   - **Fallimento** → *Passa. **(Malus.)** E Thorik incassa anche la tua parte.*
 
-> **Read-aloud (Salvatore lead) — chiusura del round 2.** *Metà. Sulla Corona
+> **Read-aloud — chiusura del round 2.** *Metà. Sulla Corona
 > il Topazio della fronte e il verde della tempia si guardano. La polvere gira
 > più veloce. Sulla parete di cristallo della sfera, fuori, il buio del Piano
 > si è avvicinato a guardare.*
 
 #### ROUND 3 — «L'assestamento»
 
-> **Read-aloud (LotR lead, Salvatore support) — apertura del round 3.** *Il
+> **Read-aloud — apertura del round 3.** *Il
 > terzo giro arriva come l'ultimo tratto di una salita, quando le gambe hanno
 > già dato tutto. La luce verde ha riempito la camera fino a farne un fondale, e
 > ogni cosa, le mani, il metallo, la polvere ferma, ha lo stesso colore. Il
@@ -3045,7 +3047,7 @@ non lo accetta: è legata a Thorik.
 
 Dopo il terzo giro si legge la chiusura, riusciti o no.
 
-> **Read-aloud (LotR lead) — chiusura, l'assestamento.** *Poi, semplicemente,
+> **Read-aloud — chiusura, l'assestamento.** *Poi, semplicemente,
 > smette, con il rumore di una montagna che trova la sua posizione e decide di
 > restarci per sempre. Lo Smeraldo è dentro la Corona. La polvere sospesa cade
 > tutta insieme, in silenzio, come neve che ha aspettato tutto il giorno. Per un
@@ -3055,8 +3057,8 @@ Dopo il terzo giro si legge la chiusura, riusciti o no.
 → **Fase 3**.
 
 ### FASE 3 — L'Incastonatura e il Ritorno di Durik
-Comunque sia andata la Fase 2, anche con Thorik crollato al terzo fallimento
-, lo Smeraldo — verde e pulsante come linfa — si **incastona
+Comunque sia andata la Fase 2, anche con Thorik crollato al terzo fallimento,
+lo Smeraldo — verde e pulsante come linfa — si **incastona
 nella tempia sinistra** della Corona. Onda d'urto smeraldo: per un'ora la carne
 diventa **pietra vivente** (RD 10/adamantio gratis). Thorik, toccando la gemma,
 sente che **l'ancoraggio dello spirito di Hella si è cristallizzato: ora è
@@ -3064,7 +3066,7 @@ impossibile perderla.** E la Forgia dà una **vibrazione di assestamento**: la
 polvere di Terros e i cristalli strappati collassano in un vortice
 gravitazionale accanto all'Altare.
 
-> **Read-aloud (Salvatore lead, Casa di Davide support) — l'Altare, Durik prende forma.** *L'onda verde
+> **Read-aloud — l'Altare, Durik prende forma.** *L'onda verde
 > percuote la camera con un tuono basso, e nel vortice la polvere di Terros si
 > mescola ai frammenti di cristallo vivente: quelli che una polvere più antica,
 > sparsa nel Sogno della Terra da mani che amavano, ha già trovato e riempito.
@@ -3242,7 +3244,7 @@ futuro). *Lista completa degli 8 affreschi e del gancio → «Il Ritorno e gli A
 
 **In scena** — Dove: la Sala — Chi: nessuno
 
-> **Read-aloud (LotR lead) — la Sala.** *Dall'altra parte del portale la luce
+> **Read-aloud — la Sala.** *Dall'altra parte del portale la luce
 > dorata della Sala è quella di sempre, immutabile. Il resto no. L'affresco di Est si è
 > chiuso come una porta; quello del Tempo brucia nitido; nella nebbia della
 > parete di Nord-Ovest, la quarta figura ha un contorno. Sulla fronte di
@@ -3598,17 +3600,18 @@ di chi prepara la casa prima che l'ospite arrivi.*
 
 {{monster,frame
 ## Sentinella Silenziosa (Golem di Mithral)
-*Costrutto Grande*
+*Costrutto Enorme*
 ___
+**Taglia** Enorme · **Spazio** 4,5 m (3×3 quadretti) · **Portata** 4,5 m (3 quadretti)
 **Iniziativa** +2
 
 **DIFESA**
 ___
-**CA 30** (−1 taglia, +2 DES, +19 nat), contatto 11, colto 28 · **pf 160** (DV 18; con 18d10 e i +30 di un costrutto Grande la media SRD sarebbe 129, i 160 sono del modulo) · TS Tempra +6, Riflessi +8, Volontà +6 (costrutto: BAB ai tre quarti dei DV, tre TS scarsi, SRD *Costrutto*) · **RD 15/adamantio e contundente** (solo i pugni di Tordek coi Bracieri passano pieni) · immunità da costrutto · **immunità alla magia** (non al Diapason, qui sotto)  
+**CA 29** (−2 taglia, +2 DES, +19 nat), contatto 10, colto 27 · **pf 160** (DV 18; con 18d10 e i +40 di un costrutto Enorme la media SRD sarebbe 139, i 160 sono del modulo) · TS Tempra +6, Riflessi +8, Volontà +6 (costrutto: BAB ai tre quarti dei DV, tre TS scarsi, SRD *Costrutto*) · **RD 15/adamantio e contundente** (solo i pugni di Tordek coi Bracieri passano pieni) · immunità da costrutto · **immunità alla magia** (non al Diapason, qui sotto)  
 
 **ATTACCO**
 ___
-Vel 9 m · **Mischia** 2 schianti +20 (2d10+8 **+1d6 elettrico**) · BAB +13; Lotta +25  
+Vel 9 m · **Mischia** 2 schianti +19 (2d10+8 **+1d6 elettrico**) · BAB +13; Lotta +29  
 
 **STATISTICHE**
 ___
@@ -3618,17 +3621,18 @@ For 27, Des 14, Cos —, Int —, Sag 11, Car 1
 ___
 - **Pugno Voltaico**: se colpisce, Tempra **CD 22** o **barcollante** 1 round.  
 - **Attrazione Fatale** (azione veloce): strappa un oggetto metallico non-artefatto entro 9 m, Riflessi **CD 22** nega.  
-- **Vulnerabilità alla Risonanza degli artefatti**: i Bracieri **ignorano la RD** e infliggono pieno, e i loro colpi sono **attacchi di contatto** (la Risonanza: CA di contatto 11). Il primo che va a segno in un round crea una **crepa**, al massimo una a round. **3 crepe → guscio infranto, ed è la vittoria**.  
+- **Vulnerabilità alla Risonanza degli artefatti**: i Bracieri **ignorano la RD** e infliggono pieno, e i loro colpi sono **attacchi di contatto** (la Risonanza: CA di contatto 10). Il primo che va a segno in un round crea una **crepa**, al massimo una a round. **3 crepe → guscio infranto, ed è la vittoria**.  
 }}
 {{monster,frame
 ## Terros l'Antico, l'Incudine del Mondo
 *Elementale (Terra, Extraplanare) Enorme, neutrale · Elementale della Terra Anziano avanzato (30 DV)* · GS 15
 ___
+**Taglia** Enorme · **Spazio** 4,5 m (3×3 quadretti) · **Portata** 4,5 m (3 quadretti)
 **Iniziativa** −1 (DES 8) · **Sensi** scurovisione 18 m, percezione tremorica 18 m; Ascoltare +20, Osservare +20
 
 **DIFESA**
 ___
-**CA 26** (−2 taglia, −1 DES, +19 naturale), contatto 7, colto 26 · **pf 345** (30d8+210; Robustezza, fra i talenti, porterebbe a 348: il modulo tiene 345, e le soglie sono su quello) · TS Tempra +24, Riflessi +9, Volontà +14 · **RD 10/—** · immune acido, veleno, sonno, paralisi, stordimento (tranne il Diapason, dono della Madre), critici, fiancheggiamento, effetti di forma · **Debolezza** sonico ×1,5 (la Frequenza dei Cristalli morde; i pugni di Tordek, sonici col canto, sono la fonte di danno chiave)  
+**CA 26** (−2 taglia, −1 DES, +19 naturale), contatto 7, colto 26 · **pf 348** (30d8+210, +3 Robustezza) · TS Tempra +24, Riflessi +9, Volontà +14 · **RD 10/—** · immune acido, veleno, sonno, paralisi, stordimento (tranne il Diapason, dono della Madre), critici, fiancheggiamento, effetti di forma · **Debolezza** sonico ×1,5 (la Frequenza dei Cristalli morde; i pugni di Tordek, sonici col canto, sono la fonte di danno chiave)  
 
 **ATTACCO**
 ___
@@ -3636,7 +3640,7 @@ Vel 9 m; Earth Glide 9 m (attraverso pietra). Non vola: in zero-G si spinge dall
 
 **STATISTICHE**
 ___
-For 34 (+12), Des 8 (−1), Cos 25 (+7), Int 10, Sag 15 (+2), Car 11 · BAB +22; Lotta +42 · **Talenti** Attacco Poderoso, Incalzare, Fendente Poderoso, Spinta Migliorata, Critico Migliorato (schianto), Spaccare Migliorato, Volontà di Ferro, Colpo Terrificante, Allerta, Robustezza, Arma Focalizzata (schianto) · **Abilità** Ascoltare +20, Osservare +20, Intimidire +15  
+For 34 (+12), Des 8 (−1), Cos 25 (+7), Int 10, Sag 15 (+2), Car 11 · BAB +22; Lotta +42 · **Talenti** Attacco Poderoso, Incalzare, Incalzare Potenziato, Spingere Migliorato, Critico Migliorato (schianto), Spezzare Migliorato, Volontà di Ferro, Colpo Terrificante, Allerta, Robustezza, Arma Focalizzata (schianto) · **Abilità** Ascoltare +20, Osservare +20, Intimidire +15  
 
 **CAPACITÀ SPECIALI**
 ___
@@ -3653,6 +3657,7 @@ ___
 ## Xorn standard (2)
 *Esterno (Terra) Medio* · GS 6
 ___
+**Taglia** Media · **Spazio** 1,5 m (1 quadretto) ciascuno · **Portata** 1,5 m (1 quadretto)
 **Sensi** percezione tremorica 18 m, onnidirezionale
 
 **DIFESA**
@@ -3671,6 +3676,7 @@ For 17, Des 10, Cos 17
 ## Xorn «Fauci di Diamante» (élite)
 *Esterno (Terra, Extraplanare) Grande · Xorn Anziano dell'SRD avanzato da 15 a 21 DV* · GS 12
 ___
+**Taglia** Grande · **Spazio** 3 m (2×2 quadretti) · **Portata** 3 m (2 quadretti)
 **Iniziativa** +0 · **Sensi** scurovisione 18 m, percezione tremorica 18 m, visione a 360° (niente fiancheggiamento); Ascoltare +24, Osservare +24
 
 **DIFESA**
@@ -3683,7 +3689,7 @@ Vel 6 m, Scavare 6 m (non lascia tunnel), Earth Glide · **Mischia** morso +29 (
 
 **STATISTICHE**
 ___
-For 27, Des 10, Cos 19, Int 10, Sag 11, Car 10 (+2 alla FOR dai DV 16 e 20) · BAB +21; Lotta +33 (21, FOR +8, taglia +4) · **Talenti** (8 per 21 DV, più Incalzare bonus come nell'SRD) Attacco Poderoso, Incalzare (bonus), Spinta Migliorata, Colpo Possente, Multiattacco, Robustezza, Spaccare Migliorato, Arma Focalizzata (morso), Volontà di Ferro · **Abilità** Ascoltare +24, Osservare +24, Cercare +24  
+For 27, Des 10, Cos 19, Int 10, Sag 11, Car 10 (+2 alla FOR dai DV 16 e 20) · BAB +21; Lotta +33 (21, FOR +8, taglia +4) · **Talenti** (8 per 21 DV, più Incalzare bonus come nell'SRD) Attacco Poderoso, Incalzare (bonus), Spingere Migliorato, Colpo Terrificante, Multiattacco, Robustezza, Spezzare Migliorato, Arma Focalizzata (morso), Volontà di Ferro · **Abilità** Ascoltare +24, Osservare +24, Cercare +24  
 
 **CAPACITÀ SPECIALI**
 ___

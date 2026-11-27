@@ -1,0 +1,39 @@
+{
+ "per_regola": {
+  "bab": {
+   "mutanti": 41,
+   "python": 41,
+   "swi-prolog": 41,
+   "clingo": 41
+  },
+  "car": {
+   "mutanti": 55,
+   "python": 55,
+   "swi-prolog": 55,
+   "clingo": 55
+  },
+  "talento": {
+   "mutanti": 37,
+   "python": 37,
+   "swi-prolog": 37,
+   "clingo": 37
+  },
+  "classe": {
+   "mutanti": 8,
+   "python": 8,
+   "swi-prolog": 8,
+   "clingo": 8
+  }
+ },
+ "totale": {
+  "mutanti": 141,
+  "python": 141,
+  "swi-prolog": 141,
+  "clingo": 141
+ },
+ "ms": {
+  "python": 0.8,
+  "swi-prolog": 56.5,
+  "clingo": 30.5
+ }
+}

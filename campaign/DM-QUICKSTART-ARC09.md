@@ -5,8 +5,8 @@
 > Questo file **indicizza** tutti gli strumenti già pronti: workflow,
 > script, atlas unità, scheduling, scenari, checklist.
 
-**Stato canonizzato 2026-05-05**: tutte le unità `[INFERRED]` sono
-`[ACCEPTED — DM-canon]`. March Clock = Day 19. Ritual Clock = 9/18.
+**Stato canonizzato 2026-05-05**: tutte le unità prima marcate INFERRED sono
+`[CANONE — DM 2026-05-05]`. March Clock = Day 19. Ritual Clock = 9/18.
 APL = 13.
 
 > **↩ Carry-over dall'ARC-07 — echi del rituale P3B di Hella (T9)**: prima di
@@ -63,7 +63,7 @@ Drow Sonjak, Gnoll, Loxo/Centauri, Githyanki, Teschio Nero, Rakshasa,
 Aberrazioni, Alleati Difensori, **§16 Boss Epici CR 10-18**).
 
 **Cartella statblock derivati** (accettati): `Bestiario/`
-(54 file, tutti `[ACCEPTED — DM-canon 2026-05-05]`).
+(54 file, tutti `[CANONE — DM 2026-05-05]`).
 
 **Cartelle NPC canonici**: `Bestiario/villain/` e `Bestiario/png/` (Azarr Kul, Ghostlord, Lorana, Lythiel,
 Maewen, Salvatore, Sethrax, Sonjak, Tempestas, Therysol, Valerius,
@@ -123,11 +123,11 @@ di tutte le fasi).
 
 | Fase | File master | Arco temporale |
 |---|---|---|
-| P1 Hella | `P1A-Timeline-Quest-Hellas-*` + `P1B-Cerchio-Treant-*` + `P1C-Rituale-*` | Day 20-27 (finestra PG) |
-| P2 Rhest | `P2-RHEST-OVERVIEW.md` + `FASE1-4` + `ENCOUNTER-*` | Day 22-26 |
-| P2A Torre | `P2A-Torre-PARTE1-4` + `STATBLOCCHI` per livello | Day 24-28 |
-| P2B Torneo Dauth | `P2B-Torneo-PARTE1-3` + `OTTO-PORTE` + `BATTLE-STATS` | Day 26-30 (fixed) |
-| P2C Mercante | `P2C-Salvatore-Mercante-TESTO.md` | Day 25-35 (subplot) |
+| P1 Hella | `P1A-Timeline-Quest-Hellas-*` + `P1B-Cerchio-Treant-*` + `P1C-Rituale-*` | Day 20-30 (finestra PG; P1B Day 22-28, P1C Day 25-30) |
+| P2 Lhesper | `P2-LHESPER-OVERVIEW.md` + `FASE1-4` + `ENCOUNTER-*` | Day 25-32 |
+| P2A Torre | `P2A-Torre-PARTE1-4` + `STATBLOCCHI` per livello | Day 28-35 |
+| P2B Torneo Dauth | `P2B-Torneo-PARTE1-3` + `OTTO-PORTE` + `BATTLE-STATS` | Day 25-34 (finestra); Torneo Day 30-32 (fixed) |
+| P2C Mercante | `P2C-Salvatore-Mercante-TESTO.md` | Day 28-36 (subplot) |
 | P2D Palio di Channathgate | `P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md` (HUB) + `P2D-PALIO-DM-MASTER-REFERENCE.md` + `P2D-PALIO-GIORNO1..3-4` | Day 27-36 (**parallela**, opzionale; deadline rinforzi Day 37-38 → Rethmar Day 42). Vince il **Drappellone = Matrice del Mythal** (Fase 4) e muove il voto del Consiglio |
 | P3 Ghostlord | `P3-Ghostlord-LICH-ALLEANZA-TESTO.md` + `STATBLOCCHI` + `MAPPE` | Day 28-35 |
 | P3 Starsong | `P3-Starsong-Hill-ALLEANZA-ELFI-*` | Day 30-38 |
@@ -148,9 +148,10 @@ di tutte le fasi).
 |---|---|
 | 19 | Hammerfist end — Fauci di Palude: ramo condizionale (D10), non ancora deciso — default fugge ferito, alternativa ucciso |
 | 20-22 | Karruk CR 10 pubblico |
-| 22-26 | Saarvith/Zalkatar finestre PG (Rhest, Torre) |
-| 26-30 | **Dauth fixed**: Zarim CR 12 Day 2, Xal'thor CR 14 Day 3 |
+| 25-32 | Saarvith finestra PG (Lhesper) |
 | 28-32 | Emissario Red Hand → Ghostlord parley |
+| 28-35 | Zalkatar finestra PG (Torre) |
+| 30-32 | **Dauth fixed**: Zarim CR 12 Day 2 del torneo (Day 31), Xal'thor CR 14 Day 3 (Day 32) |
 | 30-35 | Il Collezionista CR 18 muove shadow |
 | 35-38 | Warpriest élite CR 11 sacrificio → Ritual +1 |
 | 38-39 | Hobgoblin Captains CR 8 visibili |
@@ -173,7 +174,7 @@ Dal `Armate-CALCOLI-ESERCITI-DINAMICI.md` §6:
 | Ottimale | 6.800 | 4.100 | 1.66:1 | Vittoria con perdite |
 | Leggendario | 6.400 | 4.700 | 1.36:1 | Vittoria decisiva |
 
-Il DM controlla lo scenario dai **trigger PG** (Rhest, Torre, Ghostlord,
+Il DM controlla lo scenario dai **trigger PG** (Lhesper, Torre, Ghostlord,
 Loxo revolt, Collezionista stop, Starsong/Dauth/Druidi alleanze) —
 tutti tracciati in `Armate-CALCOLI-ESERCITI-DINAMICI.md` §4 e §5.2.
 
@@ -189,14 +190,14 @@ Se un player/agent fa una domanda, usa lo skill giusto:
 - **Meta-router legacy** → `skills/dnd-35-rules/`
 
 Regola AGENTS.md: **mai inventare statblocchi**. Se manca una stat,
-flaggala `[ACCEPTED — DM-canon]` e cita fonte (MM/FRCS/AP).
+flaggala `[CANONE — DM data]` e cita fonte (MM/FRCS/AP).
 
 ---
 
 ## §8.5 — Risorse di resurrezione nel Vale (protocollo morte PG — C3)
 
 > **Lotto C3 (2026-07-02).** Nota unica citata da tutte le sidebar "SE FALLISCONO"
-> (P1C, P2A-PARTE4, P2B-PARTE3, RHEST-FASE4, Ghostlord). A APL 13-14 la morte di
+> (P1C, P2A-PARTE4, P2B-PARTE3, LHESPER-FASE4, Ghostlord). Ad APL 13-14 la morte di
 > un PG **non deve** chiudere la campagna: deve **costare**.
 
 **Precedente in-fiction (vincolante)**: Hella è **già** stata resuscitata con il
@@ -215,7 +216,7 @@ ripetibile: nessun agente/PG può "riusarlo" (violazione di coerenza da flaggare
 **Regole d'oro del protocollo:**
 1. **In battaglia non si resuscita** (3.5 non ha *revivify*): un PG che cade in
    Fase 0-4 è fuori per la scena; il recupero avviene **dopo**, se il corpo è
-   salvato (le sidebar RHEST/Ghostlord notano i casi in cui il corpo è difficile
+   salvato (le sidebar LHESPER/Ghostlord notano i casi in cui il corpo è difficile
    da recuperare — fondo del lago, tana del Lich).
 2. **Ogni raise lascia un debito**, mai gratis: politico (Consiglio), religioso
    (Ilmater), o identitario (*reincarnate*). È il "costo, non stop".

@@ -1,0 +1,419 @@
+{
+  "python": "3.13.18",
+  "motori": {
+    "ast": {
+      "nome": "ast (stdlib, lista bianca)",
+      "installato": true,
+      "formule_corrette": 7,
+      "formule": 7,
+      "formule_riscritte_per_il_dialetto": 0,
+      "casi_errati": 0,
+      "correttezza": {
+        "mod": {
+          "casi": 61,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "ts_buono": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "ts_cattivo": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "cd_incantesimo": {
+          "casi": 260,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "da_modificatore": {
+          "casi": 31,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "livello_incantatore_ridotto": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "bab_gruppo": {
+          "casi": 123,
+          "errati": 0,
+          "primi_errati": []
+        }
+      },
+      "ostili_accettate": 0,
+      "ostili": 50,
+      "dettaglio_ostili": [],
+      "deterministico": true,
+      "us_per_valutazione": 4.2,
+      "impacchettabile": {
+        "puro_python": true,
+        "dipendenze": [],
+        "licenza": "PSF (libreria standard)",
+        "versione": "3.13.18"
+      }
+    },
+    "simpleeval": {
+      "nome": "simpleeval",
+      "installato": true,
+      "formule_corrette": 7,
+      "formule": 7,
+      "formule_riscritte_per_il_dialetto": 0,
+      "casi_errati": 0,
+      "correttezza": {
+        "mod": {
+          "casi": 61,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "ts_buono": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "ts_cattivo": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "cd_incantesimo": {
+          "casi": 260,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "da_modificatore": {
+          "casi": 31,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "livello_incantatore_ridotto": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "bab_gruppo": {
+          "casi": 123,
+          "errati": 0,
+          "primi_errati": []
+        }
+      },
+      "ostili_accettate": 4,
+      "ostili": 50,
+      "dettaglio_ostili": [
+        {
+          "espressione": "x = 1",
+          "esito": "ACCETTATA 1"
+        },
+        {
+          "espressione": "f'{dv}'",
+          "esito": "ACCETTATA '3'"
+        },
+        {
+          "espressione": "'%s' % dv",
+          "esito": "ACCETTATA '3'"
+        },
+        {
+          "espressione": "dv.real",
+          "esito": "ACCETTATA 3"
+        }
+      ],
+      "deterministico": true,
+      "us_per_valutazione": 11.3,
+      "impacchettabile": {
+        "puro_python": true,
+        "dipendenze": [],
+        "licenza": "MIT",
+        "versione": "1.0.8"
+      }
+    },
+    "simpleeval-ristretto": {
+      "nome": "simpleeval ristretto (config)",
+      "installato": true,
+      "formule_corrette": 7,
+      "formule": 7,
+      "formule_riscritte_per_il_dialetto": 0,
+      "casi_errati": 0,
+      "correttezza": {
+        "mod": {
+          "casi": 61,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "ts_buono": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "ts_cattivo": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "cd_incantesimo": {
+          "casi": 260,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "da_modificatore": {
+          "casi": 31,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "livello_incantatore_ridotto": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "bab_gruppo": {
+          "casi": 123,
+          "errati": 0,
+          "primi_errati": []
+        }
+      },
+      "ostili_accettate": 0,
+      "ostili": 50,
+      "dettaglio_ostili": [],
+      "deterministico": true,
+      "us_per_valutazione": 13.3,
+      "impacchettabile": {
+        "puro_python": true,
+        "dipendenze": [],
+        "licenza": "MIT",
+        "versione": "1.0.8"
+      }
+    },
+    "asteval": {
+      "nome": "asteval",
+      "installato": true,
+      "formule_corrette": 7,
+      "formule": 7,
+      "formule_riscritte_per_il_dialetto": 0,
+      "casi_errati": 0,
+      "correttezza": {
+        "mod": {
+          "casi": 61,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "ts_buono": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "ts_cattivo": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "cd_incantesimo": {
+          "casi": 260,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "da_modificatore": {
+          "casi": 31,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "livello_incantatore_ridotto": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "bab_gruppo": {
+          "casi": 123,
+          "errati": 0,
+          "primi_errati": []
+        }
+      },
+      "ostili_accettate": 10,
+      "ostili": 50,
+      "dettaglio_ostili": [
+        {
+          "espressione": "open('/etc/passwd')",
+          "esito": "ACCETTATA <_io.TextIOWrapper name='/etc/passwd' mo"
+        },
+        {
+          "espressione": "type(dv)",
+          "esito": "ACCETTATA 'int'"
+        },
+        {
+          "espressione": "dir()",
+          "esito": "ACCETTATA ['args', 'func', 'keywords', 'kwargs', '"
+        },
+        {
+          "espressione": "range(10 ** 12)",
+          "esito": "ACCETTATA range(0, 1000000000000)"
+        },
+        {
+          "espressione": "sum(range(10 ** 12))",
+          "esito": "TEMPO SCADUTO"
+        },
+        {
+          "espressione": "x = 1",
+          "esito": "ACCETTATA None"
+        },
+        {
+          "espressione": "'%s' % dv",
+          "esito": "ACCETTATA '3'"
+        },
+        {
+          "espressione": "print(1)",
+          "esito": "ACCETTATA None"
+        },
+        {
+          "espressione": "dv.real",
+          "esito": "ACCETTATA 3"
+        },
+        {
+          "espressione": "sorted",
+          "esito": "ACCETTATA <built-in function sorted>"
+        }
+      ],
+      "deterministico": true,
+      "us_per_valutazione": 31.1,
+      "impacchettabile": {
+        "puro_python": true,
+        "dipendenze": [],
+        "licenza": "MIT",
+        "versione": "1.0.10"
+      }
+    },
+    "cel-python": {
+      "nome": "cel-python (CEL)",
+      "installato": true,
+      "formule_corrette": 7,
+      "formule": 7,
+      "formule_riscritte_per_il_dialetto": 6,
+      "casi_errati": 0,
+      "correttezza": {
+        "mod": {
+          "casi": 61,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "ts_buono": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "ts_cattivo": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "cd_incantesimo": {
+          "casi": 260,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "da_modificatore": {
+          "casi": 31,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "livello_incantatore_ridotto": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "bab_gruppo": {
+          "casi": 123,
+          "errati": 0,
+          "primi_errati": []
+        }
+      },
+      "ostili_accettate": 1,
+      "ostili": 50,
+      "dettaglio_ostili": [
+        {
+          "espressione": "'%s' % dv",
+          "esito": "ACCETTATA 3"
+        }
+      ],
+      "deterministico": true,
+      "us_per_valutazione": 199.5,
+      "impacchettabile": {
+        "puro_python": true,
+        "dipendenze": [
+          "google-re2>=1.1.20240702",
+          "google-re2>=1.1.20250722",
+          "jmespath>=1.0.1",
+          "lark>=1.2.2",
+          "pendulum>=3.1.0",
+          "pyyaml>=6.0.2",
+          "tomli>=1.1.0"
+        ],
+        "licenza": "",
+        "versione": "0.5.0"
+      },
+      "mod_tradotto_alla_lettera_casi_errati": 5
+    },
+    "cel-rust": {
+      "nome": "common-expression-language (CEL, Rust)",
+      "installato": true,
+      "formule_corrette": 7,
+      "formule": 7,
+      "formule_riscritte_per_il_dialetto": 6,
+      "casi_errati": 0,
+      "correttezza": {
+        "mod": {
+          "casi": 61,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "ts_buono": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "ts_cattivo": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "cd_incantesimo": {
+          "casi": 260,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "da_modificatore": {
+          "casi": 31,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "livello_incantatore_ridotto": {
+          "casi": 41,
+          "errati": 0,
+          "primi_errati": []
+        },
+        "bab_gruppo": {
+          "casi": 123,
+          "errati": 0,
+          "primi_errati": []
+        }
+      },
+      "ostili_accettate": 0,
+      "ostili": 50,
+      "dettaglio_ostili": [],
+      "deterministico": true,
+      "us_per_valutazione": 9.5,
+      "impacchettabile": {
+        "puro_python": false,
+        "dipendenze": [
+          "typer>=0.12.0",
+          "rich>=13.0.0",
+          "prompt-toolkit>=3.0.0",
+          "pygments>=2.0.0"
+        ],
+        "licenza": "Apache-2.0",
+        "versione": "0.10.0"
+      },
+      "mod_tradotto_alla_lettera_casi_errati": 5
+    }
+  }
+}

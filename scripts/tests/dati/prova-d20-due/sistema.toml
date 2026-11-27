@@ -1,0 +1,48 @@
+# Plugin finto della seconda prova del nove (F6 di ADR-0112): un sistema d20
+# che cambia una formula e porta un suo algoritmo per l'EL, senza toccare
+# una riga del nucleo. Lo usa solo scripts/tests/test_prova_del_nove_2.py,
+# che lo copia in un repo temporaneo; non è mai in sistemi/.
+#
+# Rispetto al 3.5 cambia due cose:
+#   - formule.regole: il TS buono è 3 + DV/2 invece di 2 + DV/2 (dati);
+#   - incontri.livello: il metodo «piu_forte», EL = GS più alto + (creature − 1)
+#     (codice del plugin, in codice/incontri.py).
+
+id = "prova-d20-due"
+nome = "Sistema d20 di prova con formule e metodo propri (solo test)"
+tipo = "sistema"
+famiglia = "d20"
+licenza = "nessuna (regole inventate per il test)"
+fonti = []
+riconosci = ["Prova d20 due"]
+skill = []
+
+[capacita]
+"termini.vietati" = { eredita = "d20", motivo = "famiglia" }
+"statblocco.campi" = { eredita = "d20", motivo = "famiglia" }
+"statblocco.taglie" = { eredita = "d20", motivo = "famiglia" }
+"formule.regole" = { dati = ["sistemi/prova-d20-due/dati/formule.toml"], nota = "TS buono 3 + DV/2" }
+"stampa.etichette" = { eredita = "d20", motivo = "famiglia" }
+"lessico.abilita" = { eredita = "dnd35", motivo = "stesse abilità" }
+"lessico.entita" = { eredita = "dnd35", motivo = "stesse classi e razze" }
+"lessico.italiano" = { eredita = "dnd35", motivo = "stessi nomi italiani" }
+"fonti.regole" = { eredita = "dnd35", motivo = "nessuna fonte propria" }
+"pe.soglie" = { eredita = "dnd35", motivo = "stesse soglie" }
+"tesoro.per_livello" = { eredita = "dnd35", motivo = "stesso tesoro" }
+"incontri.livello" = { dati = ["sistemi/prova-d20-due/dati/incontri.toml"] }
+"creature.costruzione" = { eredita = "dnd35", motivo = "stesse tabelle" }
+"creature.statistiche_per_gs" = { eredita = "pf1e", motivo = "come il 3.5" }
+"creature.incantesimi" = { eredita = "dnd35", motivo = "stesse liste" }
+"creature.regole_di_tipo" = { eredita = "dnd35", motivo = "stesse regole di tipo" }
+"creature.conformita" = { eredita = "dnd35", motivo = "stessi conti" }
+"creature.talenti" = { eredita = "dnd35", motivo = "stessi talenti" }
+"creature.gradi" = { eredita = "dnd35", motivo = "stessi gradi" }
+"creature.liste_incantesimi" = { eredita = "dnd35", motivo = "stesse liste" }
+"creature.armi" = { eredita = "dnd35", motivo = "stesse armi" }
+"creature.incantatori" = { eredita = "dnd35", motivo = "stesse tabelle" }
+"creature.prestigio" = { eredita = "dnd35", motivo = "stessi requisiti" }
+"creature.base" = { eredita = "dnd35", motivo = "stesse creature base" }
+"bonus.cumulo" = { eredita = "d20", motivo = "famiglia" }
+
+[moduli]
+piu_forte = "incontri:piu_forte"

@@ -14,18 +14,15 @@
       "perche": "il rito della resurrezione: stessa esclusione della §3"
     },
     "10-stand-alone/Il-Drappo-di-Tarsilia/01-GIORNO-1-LA-SORTE.md": {
-      "sistema": "pf1e",
       "modulo": "drappo",
       "perche": "modulo PF1e in tre file (AGENTS.md): Percezione e Furtivita' esistono, e i TS si contano sull'insieme; PG dal 1° al 4° livello (00-HUB, pietre miliari): D9 e D15 non si applicano",
       "apl": 3
     },
     "10-stand-alone/Il-Drappo-di-Tarsilia/02-GIORNO-2-I-PARTITI-E-LA-CENA.md": {
-      "sistema": "pf1e",
       "modulo": "drappo",
       "apl": 3
     },
     "10-stand-alone/Il-Drappo-di-Tarsilia/03-GIORNO-3-LO-STACCO-E-LA-CORSA.md": {
-      "sistema": "pf1e",
       "modulo": "drappo",
       "apl": 3
     },
@@ -118,20 +115,6 @@
       "scena": "SCENA 3",
       "dettaglio": "scontro con un nemico in volo: niente per chi resta a terra",
       "ragione": "falso positivo: in volo c'è un PG (Artemis), non un nemico; la riga è la tattica degli hobgoblin contro chi vola"
-    },
-    {
-      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
-      "regola": "D3",
-      "scena": "—",
-      "dettaglio": "nessun effetto chiede un TS su Tempra",
-      "ragione": "scelta del DM (D90, 2026-10-15): lo strappo fra le ere si resiste con la Volontà. DEF-5 ha tre scene e un solo scontro breve, contro orchi scossi e cinque sergenti hobgoblin: un TS su Tempra non ha un posto naturale"
-    },
-    {
-      "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
-      "regola": "D15",
-      "scena": "SCENA 6",
-      "dettaglio": "«otto hobgoblin»: niente dice cosa li tiene in vita contro un incantesimo ad area",
-      "ragione": "falso positivo: lo scontro non va vinto («Non serve vincerla, serve che nessuno…»), conta l'allarme; un incantesimo ad area che li cancella è un esito previsto"
     },
     {
       "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",

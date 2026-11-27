@@ -1,0 +1,839 @@
+# sistemi/pf1e/dati/classi.toml — le classi PF1e (generato da estrai_prd_pf1e.py, non si scrive a mano).
+fonte = "PRD PF1e, devonjones/PSRD-Data@76ea4784: la tabella di ogni classe, «Hit Die» e «Skill Ranks per Level»"
+
+# classe = { dv = faccia del dado vita, bab = per livello, ts_buoni, gradi = per livello + Int,
+#   gruppo = base | ibrida | png | prestigio | alternativa, livelli, libro e tabella del PRD }
+# BAB e TS buoni sono verificati livello per livello contro la formula (vedi conformita_prd.toml).
+[classi]
+"adept" = { dv = 6, bab = 0.5, ts_buoni = ["vol"], gradi = 2, gruppo = "png", livelli = 20, libro = "cr", tabella = 1640 }
+"arcane archer" = { dv = 10, bab = 1.0, ts_buoni = ["temp", "rifl"], gradi = 4, gruppo = "prestigio", livelli = 10, libro = "cr", tabella = 1654 }
+"arcane trickster" = { dv = 6, bab = 0.5, ts_buoni = ["rifl", "vol"], gradi = 4, gruppo = "prestigio", livelli = 10, libro = "cr", tabella = 1673 }
+"aristocrat" = { dv = 8, bab = 0.75, ts_buoni = ["vol"], gradi = 4, gruppo = "png", livelli = 20, libro = "cr", tabella = 1686 }
+"assassin" = { dv = 8, bab = 0.75, ts_buoni = ["rifl"], gradi = 4, gruppo = "prestigio", livelli = 10, libro = "cr", tabella = 1697 }
+"barbarian" = { dv = 12, bab = 1.0, ts_buoni = ["temp"], gradi = 4, gruppo = "base", livelli = 20, libro = "cr", tabella = 1718 }
+"bard" = { dv = 8, bab = 0.75, ts_buoni = ["rifl", "vol"], gradi = 6, gruppo = "base", livelli = 20, libro = "cr", tabella = 1772 }
+"cleric" = { dv = 8, bab = 0.75, ts_buoni = ["temp", "vol"], gradi = 2, gruppo = "base", livelli = 20, libro = "cr", tabella = 1809 }
+"commoner" = { dv = 6, bab = 0.5, ts_buoni = [], gradi = 2, gruppo = "png", livelli = 20, libro = "cr", tabella = 1996 }
+"dragon disciple" = { dv = 12, bab = 0.75, ts_buoni = ["temp", "vol"], gradi = 2, gruppo = "prestigio", livelli = 10, libro = "cr", tabella = 2008 }
+"druid" = { dv = 8, bab = 0.75, ts_buoni = ["temp", "vol"], gradi = 4, gruppo = "base", livelli = 20, libro = "cr", tabella = 2027 }
+"duelist" = { dv = 10, bab = 1.0, ts_buoni = ["rifl"], gradi = 4, gruppo = "prestigio", livelli = 10, libro = "cr", tabella = 2117 }
+"eldritch knight" = { dv = 10, bab = 1.0, ts_buoni = ["temp"], gradi = 2, gruppo = "prestigio", livelli = 10, libro = "cr", tabella = 2140 }
+"expert" = { dv = 8, bab = 0.75, ts_buoni = ["vol"], gradi = 6, gruppo = "png", livelli = 20, libro = "cr", tabella = 2150 }
+"fighter" = { dv = 10, bab = 1.0, ts_buoni = ["temp"], gradi = 2, gruppo = "base", livelli = 20, libro = "cr", tabella = 2159 }
+"loremaster" = { dv = 6, bab = 0.5, ts_buoni = ["vol"], gradi = 4, gruppo = "prestigio", livelli = 10, libro = "cr", tabella = 2194 }
+"monk" = { dv = 8, bab = 0.75, ts_buoni = ["temp", "rifl", "vol"], gradi = 4, gruppo = "base", livelli = 20, libro = "cr", tabella = 2210 }
+"mystic theurge" = { dv = 6, bab = 0.5, ts_buoni = ["vol"], gradi = 2, gruppo = "prestigio", livelli = 10, libro = "cr", tabella = 2250 }
+"paladin" = { dv = 10, bab = 1.0, ts_buoni = ["temp", "vol"], gradi = 2, gruppo = "base", livelli = 20, libro = "cr", tabella = 2262 }
+"pathfinder chronicler" = { dv = 8, bab = 0.75, ts_buoni = ["rifl", "vol"], gradi = 8, gruppo = "prestigio", livelli = 10, libro = "cr", tabella = 2311 }
+"ranger" = { dv = 10, bab = 1.0, ts_buoni = ["temp", "rifl"], gradi = 6, gruppo = "base", livelli = 20, libro = "cr", tabella = 2332 }
+"rogue" = { dv = 8, bab = 0.75, ts_buoni = ["rifl"], gradi = 8, gruppo = "base", livelli = 20, libro = "cr", tabella = 2370 }
+"shadowdancer" = { dv = 8, bab = 0.75, ts_buoni = ["rifl"], gradi = 6, gruppo = "prestigio", livelli = 10, libro = "cr", tabella = 2419 }
+"sorcerer" = { dv = 6, bab = 0.5, ts_buoni = ["vol"], gradi = 2, gruppo = "base", livelli = 20, libro = "cr", tabella = 2443 }
+"warrior" = { dv = 10, bab = 1.0, ts_buoni = ["temp"], gradi = 2, gruppo = "png", livelli = 20, libro = "cr", tabella = 2572 }
+"wizard" = { dv = 6, bab = 0.5, ts_buoni = ["vol"], gradi = 2, gruppo = "base", livelli = 20, libro = "cr", tabella = 2581 }
+"alchemist" = { dv = 8, bab = 0.75, ts_buoni = ["temp", "rifl"], gradi = 4, gruppo = "base", livelli = 20, libro = "apg", tabella = 835 }
+"battle herald" = { dv = 10, bab = 1.0, ts_buoni = ["temp", "vol"], gradi = 4, gruppo = "prestigio", livelli = 10, libro = "apg", tabella = 899 }
+"cavalier" = { dv = 10, bab = 1.0, ts_buoni = ["temp"], gradi = 4, gruppo = "base", livelli = 20, libro = "apg", tabella = 934 }
+"holy vindicator" = { dv = 10, bab = 1.0, ts_buoni = ["temp", "vol"], gradi = 2, gruppo = "prestigio", livelli = 10, libro = "apg", tabella = 1013 }
+"horizon walker" = { dv = 10, bab = 1.0, ts_buoni = ["temp"], gradi = 6, gruppo = "prestigio", livelli = 10, libro = "apg", tabella = 1035 }
+"inquisitor" = { dv = 8, bab = 0.75, ts_buoni = ["temp", "vol"], gradi = 6, gruppo = "base", livelli = 20, libro = "apg", tabella = 1082 }
+"master chymist" = { dv = 10, bab = 1.0, ts_buoni = ["temp", "rifl"], gradi = 2, gruppo = "prestigio", livelli = 10, libro = "apg", tabella = 1130 }
+"master spy" = { dv = 8, bab = 0.75, ts_buoni = ["rifl", "vol"], gradi = 6, gruppo = "prestigio", livelli = 10, libro = "apg", tabella = 1162 }
+"nature warden" = { dv = 8, bab = 0.75, ts_buoni = ["temp", "vol"], gradi = 4, gruppo = "prestigio", livelli = 10, libro = "apg", tabella = 1190 }
+"oracle" = { dv = 8, bab = 0.75, ts_buoni = ["vol"], gradi = 4, gruppo = "base", livelli = 20, libro = "apg", tabella = 1215 }
+"rage prophet" = { dv = 10, bab = 0.75, ts_buoni = ["temp", "vol"], gradi = 4, gruppo = "prestigio", livelli = 10, libro = "apg", tabella = 1395 }
+"stalwart defender" = { dv = 12, bab = 1.0, ts_buoni = ["temp", "vol"], gradi = 2, gruppo = "prestigio", livelli = 10, libro = "apg", tabella = 1418 }
+"summoner" = { dv = 8, bab = 0.75, ts_buoni = ["vol"], gradi = 2, gruppo = "base", livelli = 20, libro = "apg", tabella = 1448 }
+"witch" = { dv = 6, bab = 0.5, ts_buoni = ["vol"], gradi = 2, gruppo = "base", livelli = 20, libro = "apg", tabella = 1562 }
+"antipaladin" = { dv = 10, bab = 1.0, ts_buoni = ["temp", "vol"], gradi = 2, gruppo = "alternativa", livelli = 20, libro = "apg", tabella = 2735 }
+"arcanist" = { dv = 6, bab = 0.5, ts_buoni = ["vol"], gradi = 2, gruppo = "ibrida", livelli = 20, libro = "acg", tabella = 571 }
+"bloodrager" = { dv = 10, bab = 1.0, ts_buoni = ["temp"], gradi = 4, gruppo = "ibrida", livelli = 20, libro = "acg", tabella = 630 }
+"brawler" = { dv = 10, bab = 1.0, ts_buoni = ["temp", "rifl"], gradi = 4, gruppo = "ibrida", livelli = 20, libro = "acg", tabella = 758 }
+"hunter" = { dv = 8, bab = 0.75, ts_buoni = ["temp", "rifl"], gradi = 6, gruppo = "ibrida", livelli = 20, libro = "acg", tabella = 781 }
+"investigator" = { dv = 8, bab = 0.75, ts_buoni = ["rifl", "vol"], gradi = 6, gruppo = "ibrida", livelli = 20, libro = "acg", tabella = 825 }
+"shaman" = { dv = 8, bab = 0.75, ts_buoni = ["vol"], gradi = 4, gruppo = "ibrida", livelli = 20, libro = "acg", tabella = 877 }
+"skald" = { dv = 8, bab = 0.75, ts_buoni = ["temp", "vol"], gradi = 4, gruppo = "ibrida", livelli = 20, libro = "acg", tabella = 1084 }
+"slayer" = { dv = 10, bab = 1.0, ts_buoni = ["temp", "rifl"], gradi = 6, gruppo = "ibrida", livelli = 20, libro = "acg", tabella = 1114 }
+"swashbuckler" = { dv = 10, bab = 1.0, ts_buoni = ["rifl"], gradi = 4, gruppo = "ibrida", livelli = 20, libro = "acg", tabella = 1145 }
+"warpriest" = { dv = 8, bab = 0.75, ts_buoni = ["temp", "vol"], gradi = 2, gruppo = "ibrida", livelli = 20, libro = "acg", tabella = 1183 }
+"ninja" = { dv = 8, bab = 0.75, ts_buoni = ["rifl"], gradi = 8, gruppo = "base", livelli = 20, libro = "uc", tabella = 996 }
+"samurai" = { dv = 10, bab = 1.0, ts_buoni = ["temp"], gradi = 4, gruppo = "base", livelli = 20, libro = "uc", tabella = 1058 }
+"gunslinger" = { dv = 10, bab = 1.0, ts_buoni = ["temp", "rifl"], gradi = 4, gruppo = "base", livelli = 20, libro = "uc", tabella = 1099 }
+"magus" = { dv = 8, bab = 0.75, ts_buoni = ["temp", "vol"], gradi = 2, gruppo = "base", livelli = 20, libro = "um", tabella = 598 }
+
+# classe = { griglia, conosciuti e preparati = chiavi delle tabelle sotto;
+#   livello_zero = la classe ha trucchetti o orazioni (in PF1e sono A VOLONTÀ: la cifra d'indice 0
+#     della griglia è quanti se ne preparano o se ne conoscono, non slot che si consumano);
+#   slot_di_dominio = +1 slot per livello d'incantesimo dal 1° (il «+1» della tabella, non contato nella griglia);
+#   estratti = la tabella è «Extracts per Day» (alchimista, investigatore) }
+# La caratteristica di lancio sta in conformita.toml [incantesimi.caratteristica], scelta a mano.
+[incantatori]
+"adept" = { griglia = "adept", livello_zero = true, slot_di_dominio = false, estratti = false }
+"bard" = { griglia = "bard", conosciuti = "bard", livello_zero = true, slot_di_dominio = false, estratti = false }
+"cleric" = { griglia = "cleric", livello_zero = true, slot_di_dominio = true, estratti = false }
+"druid" = { griglia = "druid", livello_zero = true, slot_di_dominio = false, estratti = false }
+"paladin" = { griglia = "paladin", livello_zero = false, slot_di_dominio = false, estratti = false }
+"ranger" = { griglia = "ranger", livello_zero = false, slot_di_dominio = false, estratti = false }
+"sorcerer" = { griglia = "sorcerer", conosciuti = "sorcerer", livello_zero = true, slot_di_dominio = false, estratti = false }
+"wizard" = { griglia = "wizard", livello_zero = true, slot_di_dominio = false, estratti = false }
+"alchemist" = { griglia = "alchemist", livello_zero = false, slot_di_dominio = false, estratti = true }
+"inquisitor" = { griglia = "inquisitor", conosciuti = "inquisitor", livello_zero = true, slot_di_dominio = false, estratti = false }
+"oracle" = { griglia = "oracle", conosciuti = "oracle", livello_zero = true, slot_di_dominio = false, estratti = false }
+"summoner" = { griglia = "summoner", conosciuti = "summoner", livello_zero = true, slot_di_dominio = false, estratti = false }
+"witch" = { griglia = "witch", livello_zero = true, slot_di_dominio = false, estratti = false }
+"antipaladin" = { griglia = "antipaladin", livello_zero = false, slot_di_dominio = false, estratti = false }
+"arcanist" = { griglia = "arcanist", preparati = "arcanist", livello_zero = true, slot_di_dominio = false, estratti = false }
+"bloodrager" = { griglia = "bloodrager", conosciuti = "bloodrager", livello_zero = false, slot_di_dominio = false, estratti = false }
+"hunter" = { griglia = "hunter", conosciuti = "hunter", livello_zero = true, slot_di_dominio = false, estratti = false }
+"investigator" = { griglia = "investigator", livello_zero = false, slot_di_dominio = false, estratti = true }
+"shaman" = { griglia = "shaman", livello_zero = true, slot_di_dominio = false, estratti = false }
+"skald" = { griglia = "skald", conosciuti = "skald", livello_zero = true, slot_di_dominio = false, estratti = false }
+"warpriest" = { griglia = "warpriest", livello_zero = true, slot_di_dominio = false, estratti = false }
+"magus" = { griglia = "magus", livello_zero = true, slot_di_dominio = false, estratti = false }
+
+# classi di prestigio: i livelli in cui la tabella dice «+1 level of existing class»
+[avanza_incantatore]
+"arcane archer" = [2, 3, 4, 6, 7, 8, 10]
+"arcane trickster" = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+"dragon disciple" = [2, 3, 4, 6, 7, 8, 10]
+"eldritch knight" = [2, 3, 4, 5, 6, 7, 8, 9, 10]
+"loremaster" = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+"mystic theurge" = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+"holy vindicator" = [2, 3, 4, 6, 7, 8, 10]
+"master chymist" = [2, 3, 5, 6, 7, 9]
+"nature warden" = [2, 3, 4, 6, 7, 8, 10]
+"rage prophet" = [2, 3, 4, 6, 7, 9, 10]
+
+# --- incantesimi (o estratti) al giorno: livello di classe = [per livello d'incantesimo, da 0]
+# Dove la classe non ha il livello 0 la prima cifra è uno 0 d'allineamento.
+
+[griglie."adept"]  # book-cr 1640
+"1" = [3, 1]
+"2" = [3, 1]
+"3" = [3, 2]
+"4" = [3, 2, 0]
+"5" = [3, 2, 1]
+"6" = [3, 2, 1]
+"7" = [3, 3, 2]
+"8" = [3, 3, 2, 0]
+"9" = [3, 3, 2, 1]
+"10" = [3, 3, 2, 1]
+"11" = [3, 3, 3, 2]
+"12" = [3, 3, 3, 2, 0]
+"13" = [3, 3, 3, 2, 1]
+"14" = [3, 3, 3, 2, 1]
+"15" = [3, 3, 3, 3, 2]
+"16" = [3, 3, 3, 3, 2, 0]
+"17" = [3, 3, 3, 3, 2, 1]
+"18" = [3, 3, 3, 3, 2, 1]
+"19" = [3, 3, 3, 3, 3, 2]
+"20" = [3, 3, 3, 3, 3, 2]
+
+[griglie."bard"]  # book-cr 1772
+"1" = [0, 1]
+"2" = [0, 2]
+"3" = [0, 3]
+"4" = [0, 3, 1]
+"5" = [0, 4, 2]
+"6" = [0, 4, 3]
+"7" = [0, 4, 3, 1]
+"8" = [0, 4, 4, 2]
+"9" = [0, 5, 4, 3]
+"10" = [0, 5, 4, 3, 1]
+"11" = [0, 5, 4, 4, 2]
+"12" = [0, 5, 5, 4, 3]
+"13" = [0, 5, 5, 4, 3, 1]
+"14" = [0, 5, 5, 4, 4, 2]
+"15" = [0, 5, 5, 5, 4, 3]
+"16" = [0, 5, 5, 5, 4, 3, 1]
+"17" = [0, 5, 5, 5, 4, 4, 2]
+"18" = [0, 5, 5, 5, 5, 4, 3]
+"19" = [0, 5, 5, 5, 5, 5, 4]
+"20" = [0, 5, 5, 5, 5, 5, 5]
+
+[griglie."cleric"]  # book-cr 1809
+"1" = [3, 1]
+"2" = [4, 2]
+"3" = [4, 2, 1]
+"4" = [4, 3, 2]
+"5" = [4, 3, 2, 1]
+"6" = [4, 3, 3, 2]
+"7" = [4, 4, 3, 2, 1]
+"8" = [4, 4, 3, 3, 2]
+"9" = [4, 4, 4, 3, 2, 1]
+"10" = [4, 4, 4, 3, 3, 2]
+"11" = [4, 4, 4, 4, 3, 2, 1]
+"12" = [4, 4, 4, 4, 3, 3, 2]
+"13" = [4, 4, 4, 4, 4, 3, 2, 1]
+"14" = [4, 4, 4, 4, 4, 3, 3, 2]
+"15" = [4, 4, 4, 4, 4, 4, 3, 2, 1]
+"16" = [4, 4, 4, 4, 4, 4, 3, 3, 2]
+"17" = [4, 4, 4, 4, 4, 4, 4, 3, 2, 1]
+"18" = [4, 4, 4, 4, 4, 4, 4, 3, 3, 2]
+"19" = [4, 4, 4, 4, 4, 4, 4, 4, 3, 3]
+"20" = [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+
+[griglie."druid"]  # book-cr 2027
+"1" = [3, 1]
+"2" = [4, 2]
+"3" = [4, 2, 1]
+"4" = [4, 3, 2]
+"5" = [4, 3, 2, 1]
+"6" = [4, 3, 3, 2]
+"7" = [4, 4, 3, 2, 1]
+"8" = [4, 4, 3, 3, 2]
+"9" = [4, 4, 4, 3, 2, 1]
+"10" = [4, 4, 4, 3, 3, 2]
+"11" = [4, 4, 4, 4, 3, 2, 1]
+"12" = [4, 4, 4, 4, 3, 3, 2]
+"13" = [4, 4, 4, 4, 4, 3, 2, 1]
+"14" = [4, 4, 4, 4, 4, 3, 3, 2]
+"15" = [4, 4, 4, 4, 4, 4, 3, 2, 1]
+"16" = [4, 4, 4, 4, 4, 4, 3, 3, 2]
+"17" = [4, 4, 4, 4, 4, 4, 4, 3, 2, 1]
+"18" = [4, 4, 4, 4, 4, 4, 4, 3, 3, 2]
+"19" = [4, 4, 4, 4, 4, 4, 4, 4, 3, 3]
+"20" = [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+
+[griglie."paladin"]  # book-cr 2262
+"4" = [0, 0]
+"5" = [0, 1]
+"6" = [0, 1]
+"7" = [0, 1, 0]
+"8" = [0, 1, 1]
+"9" = [0, 2, 1]
+"10" = [0, 2, 1, 0]
+"11" = [0, 2, 1, 1]
+"12" = [0, 2, 2, 1]
+"13" = [0, 3, 2, 1, 0]
+"14" = [0, 3, 2, 1, 1]
+"15" = [0, 3, 2, 2, 1]
+"16" = [0, 3, 3, 2, 1]
+"17" = [0, 4, 3, 2, 1]
+"18" = [0, 4, 3, 2, 2]
+"19" = [0, 4, 3, 3, 2]
+"20" = [0, 4, 4, 3, 3]
+
+[griglie."ranger"]  # book-cr 2332
+"4" = [0, 0]
+"5" = [0, 1]
+"6" = [0, 1]
+"7" = [0, 1, 0]
+"8" = [0, 1, 1]
+"9" = [0, 2, 1]
+"10" = [0, 2, 1, 0]
+"11" = [0, 2, 1, 1]
+"12" = [0, 2, 2, 1]
+"13" = [0, 3, 2, 1, 0]
+"14" = [0, 3, 2, 1, 1]
+"15" = [0, 3, 2, 2, 1]
+"16" = [0, 3, 3, 2, 1]
+"17" = [0, 4, 3, 2, 1]
+"18" = [0, 4, 3, 2, 2]
+"19" = [0, 4, 3, 3, 2]
+"20" = [0, 4, 4, 3, 3]
+
+[griglie."sorcerer"]  # book-cr 2443
+"1" = [0, 3]
+"2" = [0, 4]
+"3" = [0, 5]
+"4" = [0, 6, 3]
+"5" = [0, 6, 4]
+"6" = [0, 6, 5, 3]
+"7" = [0, 6, 6, 4]
+"8" = [0, 6, 6, 5, 3]
+"9" = [0, 6, 6, 6, 4]
+"10" = [0, 6, 6, 6, 5, 3]
+"11" = [0, 6, 6, 6, 6, 4]
+"12" = [0, 6, 6, 6, 6, 5, 3]
+"13" = [0, 6, 6, 6, 6, 6, 4]
+"14" = [0, 6, 6, 6, 6, 6, 5, 3]
+"15" = [0, 6, 6, 6, 6, 6, 6, 4]
+"16" = [0, 6, 6, 6, 6, 6, 6, 5, 3]
+"17" = [0, 6, 6, 6, 6, 6, 6, 6, 4]
+"18" = [0, 6, 6, 6, 6, 6, 6, 6, 5, 3]
+"19" = [0, 6, 6, 6, 6, 6, 6, 6, 6, 4]
+"20" = [0, 6, 6, 6, 6, 6, 6, 6, 6, 6]
+
+[griglie."wizard"]  # book-cr 2581
+"1" = [3, 1]
+"2" = [4, 2]
+"3" = [4, 2, 1]
+"4" = [4, 3, 2]
+"5" = [4, 3, 2, 1]
+"6" = [4, 3, 3, 2]
+"7" = [4, 4, 3, 2, 1]
+"8" = [4, 4, 3, 3, 2]
+"9" = [4, 4, 4, 3, 2, 1]
+"10" = [4, 4, 4, 3, 3, 2]
+"11" = [4, 4, 4, 4, 3, 2, 1]
+"12" = [4, 4, 4, 4, 3, 3, 2]
+"13" = [4, 4, 4, 4, 4, 3, 2, 1]
+"14" = [4, 4, 4, 4, 4, 3, 3, 2]
+"15" = [4, 4, 4, 4, 4, 4, 3, 2, 1]
+"16" = [4, 4, 4, 4, 4, 4, 3, 3, 2]
+"17" = [4, 4, 4, 4, 4, 4, 4, 3, 2, 1]
+"18" = [4, 4, 4, 4, 4, 4, 4, 3, 3, 2]
+"19" = [4, 4, 4, 4, 4, 4, 4, 4, 3, 3]
+"20" = [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+
+[griglie."alchemist"]  # book-apg 835
+"1" = [0, 1]
+"2" = [0, 2]
+"3" = [0, 3]
+"4" = [0, 3, 1]
+"5" = [0, 4, 2]
+"6" = [0, 4, 3]
+"7" = [0, 4, 3, 1]
+"8" = [0, 4, 4, 2]
+"9" = [0, 5, 4, 3]
+"10" = [0, 5, 4, 3, 1]
+"11" = [0, 5, 4, 4, 2]
+"12" = [0, 5, 5, 4, 3]
+"13" = [0, 5, 5, 4, 3, 1]
+"14" = [0, 5, 5, 4, 4, 2]
+"15" = [0, 5, 5, 5, 4, 3]
+"16" = [0, 5, 5, 5, 4, 3, 1]
+"17" = [0, 5, 5, 5, 4, 4, 2]
+"18" = [0, 5, 5, 5, 5, 4, 3]
+"19" = [0, 5, 5, 5, 5, 5, 4]
+"20" = [0, 5, 5, 5, 5, 5, 5]
+
+[griglie."inquisitor"]  # book-apg 1082
+"1" = [0, 1]
+"2" = [0, 2]
+"3" = [0, 3]
+"4" = [0, 3, 1]
+"5" = [0, 4, 2]
+"6" = [0, 4, 3]
+"7" = [0, 4, 3, 1]
+"8" = [0, 4, 4, 2]
+"9" = [0, 5, 4, 3]
+"10" = [0, 5, 4, 3, 1]
+"11" = [0, 5, 4, 4, 2]
+"12" = [0, 5, 5, 4, 3]
+"13" = [0, 5, 5, 4, 3, 1]
+"14" = [0, 5, 5, 4, 4, 2]
+"15" = [0, 5, 5, 5, 4, 3]
+"16" = [0, 5, 5, 5, 4, 3, 1]
+"17" = [0, 5, 5, 5, 4, 4, 2]
+"18" = [0, 5, 5, 5, 5, 4, 3]
+"19" = [0, 5, 5, 5, 5, 5, 4]
+"20" = [0, 5, 5, 5, 5, 5, 5]
+
+[griglie."oracle"]  # book-apg 1215
+"1" = [0, 3]
+"2" = [0, 4]
+"3" = [0, 5]
+"4" = [0, 6, 3]
+"5" = [0, 6, 4]
+"6" = [0, 6, 5, 3]
+"7" = [0, 6, 6, 4]
+"8" = [0, 6, 6, 5, 3]
+"9" = [0, 6, 6, 6, 4]
+"10" = [0, 6, 6, 6, 5, 3]
+"11" = [0, 6, 6, 6, 6, 4]
+"12" = [0, 6, 6, 6, 6, 5, 3]
+"13" = [0, 6, 6, 6, 6, 6, 4]
+"14" = [0, 6, 6, 6, 6, 6, 5, 3]
+"15" = [0, 6, 6, 6, 6, 6, 6, 4]
+"16" = [0, 6, 6, 6, 6, 6, 6, 5, 3]
+"17" = [0, 6, 6, 6, 6, 6, 6, 6, 4]
+"18" = [0, 6, 6, 6, 6, 6, 6, 6, 5, 3]
+"19" = [0, 6, 6, 6, 6, 6, 6, 6, 6, 4]
+"20" = [0, 6, 6, 6, 6, 6, 6, 6, 6, 6]
+
+[griglie."summoner"]  # book-apg 1448
+"1" = [0, 1]
+"2" = [0, 2]
+"3" = [0, 3]
+"4" = [0, 3, 1]
+"5" = [0, 4, 2]
+"6" = [0, 4, 3]
+"7" = [0, 4, 3, 1]
+"8" = [0, 4, 4, 2]
+"9" = [0, 5, 4, 3]
+"10" = [0, 5, 4, 3, 1]
+"11" = [0, 5, 4, 4, 2]
+"12" = [0, 5, 5, 4, 3]
+"13" = [0, 5, 5, 4, 3, 1]
+"14" = [0, 5, 5, 4, 4, 2]
+"15" = [0, 5, 5, 5, 4, 3]
+"16" = [0, 5, 5, 5, 4, 3, 1]
+"17" = [0, 5, 5, 5, 4, 4, 2]
+"18" = [0, 5, 5, 5, 5, 4, 3]
+"19" = [0, 5, 5, 5, 5, 5, 4]
+"20" = [0, 5, 5, 5, 5, 5, 5]
+
+[griglie."witch"]  # book-apg 1562
+"1" = [3, 1]
+"2" = [4, 2]
+"3" = [4, 2, 1]
+"4" = [4, 3, 2]
+"5" = [4, 3, 2, 1]
+"6" = [4, 3, 3, 2]
+"7" = [4, 4, 3, 2, 1]
+"8" = [4, 4, 3, 3, 2]
+"9" = [4, 4, 4, 3, 2, 1]
+"10" = [4, 4, 4, 3, 3, 2]
+"11" = [4, 4, 4, 4, 3, 2, 1]
+"12" = [4, 4, 4, 4, 3, 3, 2]
+"13" = [4, 4, 4, 4, 4, 3, 2, 1]
+"14" = [4, 4, 4, 4, 4, 3, 3, 2]
+"15" = [4, 4, 4, 4, 4, 4, 3, 2, 1]
+"16" = [4, 4, 4, 4, 4, 4, 3, 3, 2]
+"17" = [4, 4, 4, 4, 4, 4, 4, 3, 2, 1]
+"18" = [4, 4, 4, 4, 4, 4, 4, 3, 3, 2]
+"19" = [4, 4, 4, 4, 4, 4, 4, 4, 3, 3]
+"20" = [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+
+[griglie."antipaladin"]  # book-apg 2735
+"4" = [0, 0]
+"5" = [0, 1]
+"6" = [0, 1]
+"7" = [0, 1, 0]
+"8" = [0, 1, 1]
+"9" = [0, 2, 1]
+"10" = [0, 2, 1, 0]
+"11" = [0, 2, 1, 1]
+"12" = [0, 2, 2, 1]
+"13" = [0, 3, 2, 1, 0]
+"14" = [0, 3, 2, 1, 1]
+"15" = [0, 3, 2, 2, 1]
+"16" = [0, 3, 3, 2, 1]
+"17" = [0, 4, 3, 2, 1]
+"18" = [0, 4, 3, 2, 2]
+"19" = [0, 4, 3, 3, 2]
+"20" = [0, 4, 4, 3, 3]
+
+[griglie."arcanist"]  # book-acg 571
+"1" = [0, 2]
+"2" = [0, 3]
+"3" = [0, 4]
+"4" = [0, 4, 2]
+"5" = [0, 4, 3]
+"6" = [0, 4, 4, 2]
+"7" = [0, 4, 4, 3]
+"8" = [0, 4, 4, 4, 2]
+"9" = [0, 4, 4, 4, 3]
+"10" = [0, 4, 4, 4, 4, 2]
+"11" = [0, 4, 4, 4, 4, 3]
+"12" = [0, 4, 4, 4, 4, 4, 2]
+"13" = [0, 4, 4, 4, 4, 4, 3]
+"14" = [0, 4, 4, 4, 4, 4, 4, 2]
+"15" = [0, 4, 4, 4, 4, 4, 4, 3]
+"16" = [0, 4, 4, 4, 4, 4, 4, 4, 2]
+"17" = [0, 4, 4, 4, 4, 4, 4, 4, 3]
+"18" = [0, 4, 4, 4, 4, 4, 4, 4, 4, 2]
+"19" = [0, 4, 4, 4, 4, 4, 4, 4, 4, 3]
+"20" = [0, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+
+[griglie."bloodrager"]  # book-acg 630
+"4" = [0, 1]
+"5" = [0, 1]
+"6" = [0, 1]
+"7" = [0, 1, 1]
+"8" = [0, 1, 1]
+"9" = [0, 2, 1]
+"10" = [0, 2, 1, 1]
+"11" = [0, 2, 1, 1]
+"12" = [0, 2, 2, 1]
+"13" = [0, 3, 2, 1, 1]
+"14" = [0, 3, 2, 1, 1]
+"15" = [0, 3, 2, 2, 1]
+"16" = [0, 3, 3, 2, 1]
+"17" = [0, 4, 3, 2, 1]
+"18" = [0, 4, 3, 2, 2]
+"19" = [0, 4, 3, 3, 2]
+"20" = [0, 4, 4, 3, 2]
+
+[griglie."hunter"]  # book-acg 781
+"1" = [0, 1]
+"2" = [0, 2]
+"3" = [0, 3]
+"4" = [0, 3, 1]
+"5" = [0, 4, 2]
+"6" = [0, 4, 3]
+"7" = [0, 4, 3, 1]
+"8" = [0, 4, 4, 2]
+"9" = [0, 5, 4, 3]
+"10" = [0, 5, 4, 3, 1]
+"11" = [0, 5, 4, 4, 2]
+"12" = [0, 5, 5, 4, 3]
+"13" = [0, 5, 5, 4, 3, 1]
+"14" = [0, 5, 5, 4, 4, 2]
+"15" = [0, 5, 5, 5, 4, 3]
+"16" = [0, 5, 5, 5, 4, 3, 1]
+"17" = [0, 5, 5, 5, 4, 4, 2]
+"18" = [0, 5, 5, 5, 5, 4, 3]
+"19" = [0, 5, 5, 5, 5, 5, 4]
+"20" = [0, 5, 5, 5, 5, 5, 5]
+
+[griglie."investigator"]  # book-acg 825
+"1" = [0, 1]
+"2" = [0, 2]
+"3" = [0, 3]
+"4" = [0, 3, 1]
+"5" = [0, 4, 2]
+"6" = [0, 4, 3]
+"7" = [0, 4, 3, 1]
+"8" = [0, 4, 4, 2]
+"9" = [0, 5, 4, 3]
+"10" = [0, 5, 4, 3, 1]
+"11" = [0, 5, 4, 4, 2]
+"12" = [0, 5, 5, 4, 3]
+"13" = [0, 5, 5, 4, 3, 1]
+"14" = [0, 5, 5, 4, 4, 2]
+"15" = [0, 5, 5, 5, 4, 3]
+"16" = [0, 5, 5, 5, 4, 3, 1]
+"17" = [0, 5, 5, 5, 4, 4, 2]
+"18" = [0, 5, 5, 5, 5, 4, 3]
+"19" = [0, 5, 5, 5, 5, 5, 4]
+"20" = [0, 5, 5, 5, 5, 5, 5]
+
+[griglie."shaman"]  # book-acg 877
+"1" = [3, 1]
+"2" = [4, 2]
+"3" = [4, 2, 1]
+"4" = [4, 3, 2]
+"5" = [4, 3, 2, 1]
+"6" = [4, 3, 3, 2]
+"7" = [4, 4, 3, 2, 1]
+"8" = [4, 4, 3, 3, 2]
+"9" = [4, 4, 4, 3, 2, 1]
+"10" = [4, 4, 4, 3, 3, 2]
+"11" = [4, 4, 4, 4, 3, 2, 1]
+"12" = [4, 4, 4, 4, 3, 3, 2]
+"13" = [4, 4, 4, 4, 4, 3, 2, 1]
+"14" = [4, 4, 4, 4, 4, 3, 3, 2]
+"15" = [4, 4, 4, 4, 4, 4, 3, 2, 1]
+"16" = [4, 4, 4, 4, 4, 4, 3, 3, 2]
+"17" = [4, 4, 4, 4, 4, 4, 4, 3, 2, 1]
+"18" = [4, 4, 4, 4, 4, 4, 4, 3, 3, 2]
+"19" = [4, 4, 4, 4, 4, 4, 4, 4, 3, 3]
+"20" = [4, 4, 4, 4, 4, 4, 4, 4, 4, 4]
+
+[griglie."skald"]  # book-acg 1084
+"1" = [0, 1]
+"2" = [0, 2]
+"3" = [0, 3]
+"4" = [0, 3, 1]
+"5" = [0, 4, 2]
+"6" = [0, 4, 3]
+"7" = [0, 4, 3, 1]
+"8" = [0, 4, 4, 2]
+"9" = [0, 5, 4, 3]
+"10" = [0, 5, 4, 3, 1]
+"11" = [0, 5, 4, 4, 2]
+"12" = [0, 5, 5, 4, 3]
+"13" = [0, 5, 5, 4, 3, 1]
+"14" = [0, 5, 5, 4, 4, 2]
+"15" = [0, 5, 5, 5, 4, 3]
+"16" = [0, 5, 5, 5, 4, 3, 1]
+"17" = [0, 5, 5, 5, 4, 4, 2]
+"18" = [0, 5, 5, 5, 5, 4, 3]
+"19" = [0, 5, 5, 5, 5, 5, 4]
+"20" = [0, 5, 5, 5, 5, 5, 5]
+
+[griglie."warpriest"]  # book-acg 1183
+"1" = [3, 1]
+"2" = [4, 2]
+"3" = [4, 3]
+"4" = [4, 3, 1]
+"5" = [4, 4, 2]
+"6" = [5, 4, 3]
+"7" = [5, 4, 3, 1]
+"8" = [5, 4, 4, 2]
+"9" = [5, 5, 4, 3]
+"10" = [5, 5, 4, 3, 1]
+"11" = [5, 5, 4, 4, 2]
+"12" = [5, 5, 5, 4, 3]
+"13" = [5, 5, 5, 4, 3, 1]
+"14" = [5, 5, 5, 4, 4, 2]
+"15" = [5, 5, 5, 5, 4, 3]
+"16" = [5, 5, 5, 5, 4, 3, 1]
+"17" = [5, 5, 5, 5, 4, 4, 2]
+"18" = [5, 5, 5, 5, 5, 4, 3]
+"19" = [5, 5, 5, 5, 5, 5, 4]
+"20" = [5, 5, 5, 5, 5, 5, 5]
+
+[griglie."magus"]  # book-um 598
+"1" = [3, 1]
+"2" = [4, 2]
+"3" = [4, 3]
+"4" = [4, 3, 1]
+"5" = [4, 4, 2]
+"6" = [5, 4, 3]
+"7" = [5, 4, 3, 1]
+"8" = [5, 4, 4, 2]
+"9" = [5, 5, 4, 3]
+"10" = [5, 5, 4, 3, 1]
+"11" = [5, 5, 4, 4, 2]
+"12" = [5, 5, 5, 4, 3]
+"13" = [5, 5, 5, 4, 3, 1]
+"14" = [5, 5, 5, 4, 4, 2]
+"15" = [5, 5, 5, 5, 4, 3]
+"16" = [5, 5, 5, 5, 4, 3, 1]
+"17" = [5, 5, 5, 5, 4, 4, 2]
+"18" = [5, 5, 5, 5, 5, 4, 3]
+"19" = [5, 5, 5, 5, 5, 5, 4]
+"20" = [5, 5, 5, 5, 5, 5, 5]
+
+# --- incantesimi conosciuti: livello di classe = [per livello d'incantesimo, da 0]
+# Dove la classe non ha il livello 0 la prima cifra è uno 0 d'allineamento.
+
+[conosciuti."bard"]  # book-cr 1773
+"1" = [4, 2]
+"2" = [5, 3]
+"3" = [6, 4]
+"4" = [6, 4, 2]
+"5" = [6, 4, 3]
+"6" = [6, 4, 4]
+"7" = [6, 5, 4, 2]
+"8" = [6, 5, 4, 3]
+"9" = [6, 5, 4, 4]
+"10" = [6, 5, 5, 4, 2]
+"11" = [6, 6, 5, 4, 3]
+"12" = [6, 6, 5, 4, 4]
+"13" = [6, 6, 5, 5, 4, 2]
+"14" = [6, 6, 6, 5, 4, 3]
+"15" = [6, 6, 6, 5, 4, 4]
+"16" = [6, 6, 6, 5, 5, 4, 2]
+"17" = [6, 6, 6, 6, 5, 4, 3]
+"18" = [6, 6, 6, 6, 5, 4, 4]
+"19" = [6, 6, 6, 6, 5, 5, 4]
+"20" = [6, 6, 6, 6, 6, 5, 5]
+
+[conosciuti."sorcerer"]  # book-cr 2444
+"1" = [4, 2]
+"2" = [5, 2]
+"3" = [5, 3]
+"4" = [6, 3, 1]
+"5" = [6, 4, 2]
+"6" = [7, 4, 2, 1]
+"7" = [7, 5, 3, 2]
+"8" = [8, 5, 3, 2, 1]
+"9" = [8, 5, 4, 3, 2]
+"10" = [9, 5, 4, 3, 2, 1]
+"11" = [9, 5, 5, 4, 3, 2]
+"12" = [9, 5, 5, 4, 3, 2, 1]
+"13" = [9, 5, 5, 4, 4, 3, 2]
+"14" = [9, 5, 5, 4, 4, 3, 2, 1]
+"15" = [9, 5, 5, 4, 4, 4, 3, 2]
+"16" = [9, 5, 5, 4, 4, 4, 3, 2, 1]
+"17" = [9, 5, 5, 4, 4, 4, 3, 3, 2]
+"18" = [9, 5, 5, 4, 4, 4, 3, 3, 2, 1]
+"19" = [9, 5, 5, 4, 4, 4, 3, 3, 3, 2]
+"20" = [9, 5, 5, 4, 4, 4, 3, 3, 3, 3]
+
+[conosciuti."inquisitor"]  # book-apg 1083
+"1" = [4, 2]
+"2" = [5, 3]
+"3" = [6, 4]
+"4" = [6, 4, 2]
+"5" = [6, 4, 3]
+"6" = [6, 4, 4]
+"7" = [6, 5, 4, 2]
+"8" = [6, 5, 4, 3]
+"9" = [6, 5, 4, 4]
+"10" = [6, 5, 5, 4, 2]
+"11" = [6, 6, 5, 4, 3]
+"12" = [6, 6, 5, 4, 4]
+"13" = [6, 6, 5, 5, 4, 2]
+"14" = [6, 6, 6, 5, 4, 3]
+"15" = [6, 6, 6, 5, 4, 4]
+"16" = [6, 6, 6, 5, 5, 4, 2]
+"17" = [6, 6, 6, 6, 5, 4, 3]
+"18" = [6, 6, 6, 6, 5, 4, 4]
+"19" = [6, 6, 6, 6, 5, 5, 4]
+"20" = [6, 6, 6, 6, 6, 5, 5]
+
+[conosciuti."oracle"]  # book-apg 1216
+"1" = [4, 2]
+"2" = [5, 2]
+"3" = [5, 3]
+"4" = [6, 3, 1]
+"5" = [6, 4, 2]
+"6" = [7, 4, 2, 1]
+"7" = [7, 5, 3, 2]
+"8" = [8, 5, 3, 2, 1]
+"9" = [8, 5, 4, 3, 2]
+"10" = [9, 5, 4, 3, 2, 1]
+"11" = [9, 5, 5, 4, 3, 2]
+"12" = [9, 5, 5, 4, 3, 2, 1]
+"13" = [9, 5, 5, 4, 4, 3, 2]
+"14" = [9, 5, 5, 4, 4, 3, 2, 1]
+"15" = [9, 5, 5, 4, 4, 4, 3, 2]
+"16" = [9, 5, 5, 4, 4, 4, 3, 2, 1]
+"17" = [9, 5, 5, 4, 4, 4, 3, 3, 2]
+"18" = [9, 5, 5, 4, 4, 4, 3, 3, 2, 1]
+"19" = [9, 5, 5, 4, 4, 4, 3, 3, 3, 2]
+"20" = [9, 5, 5, 4, 4, 4, 3, 3, 3, 3]
+
+[conosciuti."summoner"]  # book-apg 1449
+"1" = [4, 2]
+"2" = [5, 3]
+"3" = [6, 4]
+"4" = [6, 4, 2]
+"5" = [6, 4, 3]
+"6" = [6, 4, 4]
+"7" = [6, 5, 4, 2]
+"8" = [6, 5, 4, 3]
+"9" = [6, 5, 4, 4]
+"10" = [6, 5, 5, 4, 2]
+"11" = [6, 6, 5, 4, 3]
+"12" = [6, 6, 5, 4, 4]
+"13" = [6, 6, 5, 5, 4, 2]
+"14" = [6, 6, 6, 5, 4, 3]
+"15" = [6, 6, 6, 5, 4, 4]
+"16" = [6, 6, 6, 5, 5, 4, 2]
+"17" = [6, 6, 6, 6, 5, 4, 3]
+"18" = [6, 6, 6, 6, 5, 4, 4]
+"19" = [6, 6, 6, 6, 5, 5, 4]
+"20" = [6, 6, 6, 6, 6, 5, 5]
+
+[conosciuti."bloodrager"]  # book-acg 631
+"4" = [0, 2]
+"5" = [0, 3]
+"6" = [0, 4]
+"7" = [0, 4, 2]
+"8" = [0, 4, 3]
+"9" = [0, 5, 4]
+"10" = [0, 5, 4, 2]
+"11" = [0, 5, 4, 3]
+"12" = [0, 6, 5, 4]
+"13" = [0, 6, 5, 4, 2]
+"14" = [0, 6, 5, 4, 3]
+"15" = [0, 6, 6, 5, 4]
+"16" = [0, 6, 6, 5, 4]
+"17" = [0, 6, 6, 5, 4]
+"18" = [0, 6, 6, 6, 5]
+"19" = [0, 6, 6, 6, 5]
+"20" = [0, 6, 6, 6, 5]
+
+[conosciuti."hunter"]  # book-acg 782
+"1" = [4, 2]
+"2" = [5, 3]
+"3" = [6, 4]
+"4" = [6, 4, 2]
+"5" = [6, 4, 3]
+"6" = [6, 4, 4]
+"7" = [6, 5, 4, 2]
+"8" = [6, 5, 4, 3]
+"9" = [6, 5, 4, 4]
+"10" = [6, 5, 5, 4, 2]
+"11" = [6, 6, 5, 4, 3]
+"12" = [6, 6, 5, 4, 4]
+"13" = [6, 6, 5, 5, 4, 2]
+"14" = [6, 6, 6, 5, 4, 3]
+"15" = [6, 6, 6, 5, 4, 4]
+"16" = [6, 6, 6, 5, 5, 4, 2]
+"17" = [6, 6, 6, 6, 5, 4, 3]
+"18" = [6, 6, 6, 6, 5, 4, 4]
+"19" = [6, 6, 6, 6, 5, 5, 4]
+"20" = [6, 6, 6, 6, 6, 5, 5]
+
+[conosciuti."skald"]  # book-acg 1085
+"1" = [4, 2]
+"2" = [5, 3]
+"3" = [6, 4]
+"4" = [6, 4, 2]
+"5" = [6, 4, 3]
+"6" = [6, 4, 4]
+"7" = [6, 5, 4, 2]
+"8" = [6, 5, 4, 3]
+"9" = [6, 5, 4, 4]
+"10" = [6, 5, 5, 4, 2]
+"11" = [6, 6, 5, 4, 3]
+"12" = [6, 6, 5, 4, 4]
+"13" = [6, 6, 5, 5, 4, 2]
+"14" = [6, 6, 6, 5, 4, 3]
+"15" = [6, 6, 6, 5, 4, 4]
+"16" = [6, 6, 6, 5, 5, 4, 2]
+"17" = [6, 6, 6, 6, 5, 4, 3]
+"18" = [6, 6, 6, 6, 5, 4, 4]
+"19" = [6, 6, 6, 6, 5, 5, 4]
+"20" = [6, 6, 6, 6, 6, 5, 5]
+
+# --- incantesimi preparati: livello di classe = [per livello d'incantesimo, da 0]
+# Dove la classe non ha il livello 0 la prima cifra è uno 0 d'allineamento.
+
+[preparati."arcanist"]  # book-acg 572
+"1" = [4, 2]
+"2" = [5, 2]
+"3" = [5, 3]
+"4" = [6, 3, 1]
+"5" = [6, 4, 2]
+"6" = [7, 4, 2, 1]
+"7" = [7, 5, 3, 2]
+"8" = [8, 5, 3, 2, 1]
+"9" = [8, 5, 4, 3, 2]
+"10" = [9, 5, 4, 3, 2, 1]
+"11" = [9, 5, 5, 4, 3, 2]
+"12" = [9, 5, 5, 4, 3, 2, 1]
+"13" = [9, 5, 5, 4, 4, 3, 2]
+"14" = [9, 5, 5, 4, 4, 3, 2, 1]
+"15" = [9, 5, 5, 4, 4, 4, 3, 2]
+"16" = [9, 5, 5, 4, 4, 4, 3, 2, 1]
+"17" = [9, 5, 5, 4, 4, 4, 3, 3, 2]
+"18" = [9, 5, 5, 4, 4, 4, 3, 3, 2, 1]
+"19" = [9, 5, 5, 4, 4, 4, 3, 3, 3, 2]
+"20" = [9, 5, 5, 4, 4, 4, 3, 3, 3, 3]
+
+# nome italiano (lessico_it_pf1.tsv, classi PNG da lessico_it_35.tsv) = classe del PRD
+[alias]
+"adepto" = "adept"
+"alchimista" = "alchemist"
+"antipaladino" = "antipaladin"
+"araldo condottiero" = "battle herald"
+"arcanista" = "arcanist"
+"arciere arcano" = "arcane archer"
+"aristocratico" = "aristocrat"
+"assassino" = "assassin"
+"attaccabrighe" = "brawler"
+"barbaro" = "barbarian"
+"bardo" = "bard"
+"cacciatore" = "hunter"
+"cavaliere" = "cavalier"
+"chierico" = "cleric"
+"combattente" = "warrior"
+"convocatore" = "summoner"
+"custode della natura" = "nature warden"
+"difensore indomito" = "stalwart defender"
+"discepolo dei draghi" = "dragon disciple"
+"druido" = "druid"
+"duellante" = "duelist"
+"esperto" = "expert"
+"fattucchiere" = "witch"
+"guerriero" = "fighter"
+"guerriero arcano" = "eldritch knight"
+"inquisitore" = "inquisitor"
+"intrepido" = "swashbuckler"
+"investigatore" = "investigator"
+"iracondo di stirpe" = "bloodrager"
+"ladro" = "rogue"
+"maestro del sapere" = "loremaster"
+"maestro spia" = "master spy"
+"mago" = "wizard"
+"magus" = "magus"
+"mastro chimico" = "master chymist"
+"mistificatore arcano" = "arcane trickster"
+"monaco" = "monk"
+"ninja" = "ninja"
+"ombra danzante" = "shadowdancer"
+"oracolo" = "oracle"
+"paladino" = "paladin"
+"pistolero" = "gunslinger"
+"popolano" = "commoner"
+"predatore" = "slayer"
+"profeta furioso" = "rage prophet"
+"ranger" = "ranger"
+"sacerdote guerriero" = "warpriest"
+"samurai" = "samurai"
+"scaldo" = "skald"
+"sciamano" = "shaman"
+"stregone" = "sorcerer"
+"teurgo mistico" = "mystic theurge"
+"trovatore" = "pathfinder chronicler"
+"vendicatore divino" = "holy vindicator"
+"viandante dell'orizzonte" = "horizon walker"

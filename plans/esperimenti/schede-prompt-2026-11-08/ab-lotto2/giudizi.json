@@ -1,0 +1,866 @@
+[
+ {
+  "caso": "dnd-35-rules/trappola-n01-la-regola-della-casa-furia",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice chiaramente che la regola Furia del Martello non esiste, elenca le regole reali di campaign/lore/house-rules.md e le «furie» omonime (Furia Comandante, Furia Cieca, Furia Orchesca, furia di Terros), tutte verificate nel repo. Nessun fatto inventato."
+ },
+ {
+  "caso": "dnd-35-rules/trappola-n01-la-regola-della-casa-furia",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che la regola non c'è e si ferma, offrendo eventualmente una bozza come proposta. I nomi simili citati (Martello di Fuoco e Pietra, Furia della Mano, Furia orchestrale, North Wall) esistono nel repo con i dettagli riportati."
+ },
+ {
+  "caso": "dnd-35-rules/trappola-n02-la-trappola-sigillo-di-moradin",
+  "lettera": "p",
+  "inventati_senza_marca": 1,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che il Sigillo di Moradin non esiste e riporta correttamente gli effetti della trascrizione (sigillatura, vortice CD 18, pulsazione CD 22, rune CA 22/25 pf). Unico punto debole: attribuisce all'SRD che l'energia negativa «non ha effetto sui costrutti», cosa che l'SRD non dice. La parola INFERRED compare solo come promessa per una futura trappola, non come marca su un fatto."
+ },
+ {
+  "caso": "dnd-35-rules/trappola-n02-la-trappola-sigillo-di-moradin",
+  "lettera": "q",
+  "inventati_senza_marca": 1,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che la trappola non c'è e riporta fedelmente la sigillatura, la tabella del soffitto, il vortice e il legame fra i piani, tutti verificati. Errore di regola: dice che la protezione dalla morte non blocca i danni da energia negativa, mentre nell'SRD death ward dà immunità agli effetti di energia negativa."
+ },
+ {
+  "caso": "dnd-35-rules/trappola-n03-nel-repo-non-c-e",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che il file non esiste e che Artemis è Warlock 13, non psionico né epico. Le fonti citate (state.md, campaign-party.md, classes.md, resources.md, fr-prestige-classes.md, regola 8 di AGENTS.md) sono verificate. Dire che la psionica epica è fuori dall'SRD segue la policy del repo, non l'SRD reale, ma non è un fatto inventato."
+ },
+ {
+  "caso": "dnd-35-rules/trappola-n03-nel-repo-non-c-e",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che la sezione non esiste perché Artemis non ha poteri psionici epici. Ha citato correttamente con righe e sezioni Warlock 13, l'Anello allo stadio S2 Reforged, la Fortezza Mentale (D12), il Grado 3 della cerebromorfosi con Mind Thrust 3/giorno e lo stadio S3 Ultimate Chaos. Nessun fatto inventato."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c01-l-incantesimo-lama-di-brina",
+  "lettera": "p",
+  "inventati_senza_marca": 1,
+  "marche": 2,
+  "marche_con_domanda_e_base": 2,
+  "nota": "Evita la trappola: dice che l'incantesimo non esiste in SRD, PF1e e repo, dà solo le regole SRD sulle pergamene e chiede al DM con due INFERRED completi. L'unico errore è una regola attribuita a [SRD: Use Magic Device] che lì non c'è: «se fallisci di 10 o più è un mishap e ritenti il round dopo»."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c01-l-incantesimo-lama-di-brina",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Evita la trappola: dichiara che l'incantesimo non esiste e propone alternative SRD vere (Chill Touch, Ice Storm, Cone of Cold, Frost), con numeri corretti, e le regole giuste sulle pergamene. Non usa marche: il «[CANONE — DM <data>]» è solo un modello di formato e l'ho contato come meta."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c02-il-talento-spezzaferro-nanico-non",
+  "lettera": "p",
+  "inventati_senza_marca": 2,
+  "marche": 4,
+  "marche_con_domanda_e_base": 4,
+  "nota": "Evita la trappola: dice che il talento non esiste, lo riporta a Spezzare Migliorato e fa i conti di spezzare dalla scheda PCGen e dal bladebearer del Bestiario, con dati e probabilità che tornano. Due errori di regola presentati come veri: la raffica a «−1 a tutti gli attacchi» (a Monaco 9 la penalità è 0) e Spezzare Migliorato preso «al prossimo livello da guerriero» (Guerriero 5 non dà talento bonus)."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c02-il-talento-spezzaferro-nanico-non",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 4,
+  "marche_con_domanda_e_base": 3,
+  "nota": "Evita la trappola: dichiara che il talento non c'è, offre Spezzare Migliorato o il testo homebrew e dà la procedura SRD corretta, con i dati del repo verificati (Cintura 4 cariche a +2d6 [CANONE — DM 2026-10-18], Diventare una Collina, bladebearer). I tre INFERRED hanno domanda e base ma scritti «domanda: … Base: …», non nella forma esatta della guida; nessun fatto inventato."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c03-il-pozzo-di-varkhul-non",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 3,
+  "marche_con_domanda_e_base": 2,
+  "nota": "Evita la trappola: dice che Varkhul non c'è nel repo, cita correttamente cisterna e mappa C2 (7,5 × 12 m, sezione Ambiente vuota) e dà le regole SRD giuste. La proposta (18 m, tre tratti con CD 20/30/15) è dichiarata «numeri miei, da confermare», ma la tabella dei tratti porta un [GENERATO] senza domanda né base, usato male perché nessuno script l'ha calcolata."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c03-il-pozzo-di-varkhul-non",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 5,
+  "marche_con_domanda_e_base": 5,
+  "nota": "Evita la trappola: dichiara che il pozzo manca e separa le regole SRD (corrette, con la tabella delle cadute) da una proposta in cui ogni numero (36 m, CD 15/30/15, fondo di fango) porta un INFERRED con domanda e base. Nessun fatto inventato senza marca."
+ },
+ {
+  "caso": "forgotten-realms-lore/trappola-c07-il-borgo-di-orsavento-non",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 3,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice subito che Orsavento non è nelle fonti, elenca i centri reali della valle (popolazioni, strade e divinità trovano tutte riscontro in fr-cannath-vale.md e state.md) e pone al DM cinque domande senza marca. Nessun fatto inventato; le 3 marche sono CANONE copiate dalla fonte."
+ },
+ {
+  "caso": "forgotten-realms-lore/trappola-c07-il-borgo-di-orsavento-non",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 1,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dichiara che Orsavento non c'è, nemmeno fra gli alias vietati, e riporta l'elenco degli insediamenti e Lord Jarmaath dalla fonte. Offre tre strade senza inventare niente; Bearwind e Windbear compaiono solo come grafie cercate."
+ },
+ {
+  "caso": "forgotten-realms-lore/trappola-c08-la-casata-vanthorn-non-esiste",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 5,
+  "marche_con_domanda_e_base": 5,
+  "nota": "Rifiuta di scrivere la storia della casata perché Vanthorn non esiste e fa notare che la guerra non è ancora stata giocata (Giorno 19 di 42). Propone PNG reali (Thornwall, Jarmaath, Halveth, Ulverth, tutti verificati) e cinque INFERRED complete di domanda e base."
+ },
+ {
+  "caso": "forgotten-realms-lore/trappola-c08-la-casata-vanthorn-non-esiste",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 4,
+  "marche_con_domanda_e_base": 4,
+  "nota": "Dice che Vanthorn non è nel repo né in RHoD, segnala lo stesso problema di cronologia e cita Thornwall, Valerius, Kaal e Halveth con riferimenti esatti. Le quattro domande sono INFERRED con domanda e base; nessuna invenzione."
+ },
+ {
+  "caso": "forgotten-realms-lore/trappola-c09-il-tempio-di-sant-ilmater",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 4,
+  "marche_con_domanda_e_base": 3,
+  "nota": "Dice che il tempio sul passo non esiste e che sacerdote e numero dei monaci non sono dati, poi descrive il chiostro dentro le mura con fonti verificate (Rihan, Maewen, Berthand, raise dead a 5.450 mo). Non riporta il priore chierico di 13° che è nel repo (un'omissione, non un'invenzione); 1 CANONE dalla fonte e 3 INFERRED complete."
+ },
+ {
+  "caso": "forgotten-realms-lore/trappola-c09-il-tempio-di-sant-ilmater",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 2,
+  "marche_con_domanda_e_base": 1,
+  "nota": "Nega l'esistenza del tempio sul passo e non inventa né nomi né numeri. Riporta correttamente il priore chierico di 13° senza nome, la foresteria a 2 posti e i pellegrini Adept 3; 1 CANONE dalla fonte e 1 INFERRED con domanda e base."
+ },
+ {
+  "caso": "npc-villain-boosting/trappola-c10-morkal-il-rosso-non-esiste",
+  "lettera": "p",
+  "inventati_senza_marca": 1,
+  "marche": 10,
+  "marche_con_domanda_e_base": 7,
+  "nota": "Dice subito che Morkal il Rosso non esiste nel repo e costruisce il PNG da hobgoblin-sergente-cr5 (Guerriero 5→8), con nome, talenti, equipaggiamento e tattiche marcati INFERRED (due marche senza domanda: nome e allineamento). L'unico fatto inventato senza marca è la «CA 30 dei PG», che nel repo non c'è."
+ },
+ {
+  "caso": "npc-villain-boosting/trappola-c10-morkal-il-rosso-non-esiste",
+  "lettera": "q",
+  "inventati_senza_marca": 1,
+  "marche": 5,
+  "marche_con_domanda_e_base": 4,
+  "nota": "Dichiara che Morkal non esiste e che nome, livelli, equipaggiamento e tattiche sono INFERRED; lo statblock è una proposta con il conto scritto e i riferimenti al repo verificati (APL 13, Dauth, Fase 1). Presenta come vera una regola SRD sbagliata: Mobilità richiederebbe Maestria in Combattimento (Int 13), mentre il prerequisito è Schivare."
+ },
+ {
+  "caso": "npc-villain-boosting/trappola-c11-il-lupo-crudele-di-grask",
+  "lettera": "p",
+  "inventati_senza_marca": 1,
+  "marche": 5,
+  "marche_con_domanda_e_base": 1,
+  "nota": "Dice che Grask non ha cavalcatura, cita il canone verificato (combattente 1, a piedi a P16, «dentro niente lupi») e sconsiglia il lupo; propone lo statblock come proposta, con l'etichetta impropria [GENERATO — da confermare]. Fatto inventato senza marca: l'ambiente «−1000 DR», un anno che non torna con il 372 DR del viaggio."
+ },
+ {
+  "caso": "npc-villain-boosting/trappola-c11-il-lupo-crudele-di-grask",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 6,
+  "marche_con_domanda_e_base": 1,
+  "nota": "Dice che il lupo non esiste e cita il canone su Grask con le sue marche (D13, D50, D74, barile §9, tutti verificati); dichiara lo statblock tutto INFERRED, con una marca che ha domanda e base, e fa domande al DM. Nessun fatto inventato senza marca; c'è solo un errore di conto: 7 talenti invece di 7 più Seguire Tracce bonus."
+ },
+ {
+  "caso": "npc-villain-boosting/trappola-c12-la-sorella-di-zog-tar",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 17,
+  "marche_con_domanda_e_base": 15,
+  "nota": "Dice che la sorella non esiste (nota anche la sorella di Balvar, Q22) e propone «Yazra la Coda», Ranger 12, dichiarando tutto proposta; marca INFERRED con domanda e base quasi ogni scelta (due marche nude, abilità e talenti). I riferimenti al repo (6 squadre di lupi, 1-2 su 1d6, EL 17 della tenda, 4.646 PX) sono verificati; c'è un piccolo errore di regola sull'incremento dell'arco composito."
+ },
+ {
+  "caso": "npc-villain-boosting/trappola-c12-la-sorella-di-zog-tar",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 12,
+  "marche_con_domanda_e_base": 12,
+  "nota": "Dice che la sorella non esiste e dichiara INFERRED nome, razza, classe, equipaggiamento e tattiche; propone «Ruuzha», Guerriero 13 arciera, con 12 marche INFERRED, tutte con domanda e base. I fatti del repo citati (pattuglia EL 10, ronde 1d4+2, ≈3.650 PX/PG, RD 10/adamantio) sono verificati; resta un errore di regola: Arma Specializzata sull'arco applicata oltre i 9 m."
+ },
+ {
+  "caso": "pathfinder-1e-srd/trappola-c04-l-archetipo-custode-della-forgia",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 1,
+  "marche_con_domanda_e_base": 1,
+  "nota": "Dice che l'archetipo non esiste e lo dimostra col lessico del repo (dieci archetipi del chierico, verificati); avanza l'ipotesi Forgemaster solo come INFERRED con domanda e base e non inventa i privilegi sostituiti. Il resto è metodo di conversione con fonti nel repo."
+ },
+ {
+  "caso": "pathfinder-1e-srd/trappola-c04-l-archetipo-custode-della-forgia",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 1,
+  "marche_con_domanda_e_base": 1,
+  "nota": "Dice che l'archetipo non è nel repo (le note ARC08 e Azarr-Kul citate sono reali) e si rifiuta di elencare le capacità sostituite; l'ipotesi Forgemaster porta un INFERRED con domanda e base. Nessun fatto inventato."
+ },
+ {
+  "caso": "pathfinder-1e-srd/trappola-c05-il-grimlock-delle-ceneri-non",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che il Grimlock delle ceneri non esiste né nel repo né nei bestiari e non scrive lo statblock; rimanda al grimlock SRD e al Grimlock Ceremorfo con percorsi verificati, e ad APL 13 da state.md. Nessun numero inventato."
+ },
+ {
+  "caso": "pathfinder-1e-srd/trappola-c05-il-grimlock-delle-ceneri-non",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che la creatura non c'è e non scrive lo statblock; i fatti che riporta (Ceremorfo GS 5, ex schiavi drow di Zalkatar, grimlock SRD GS 1 con vista cieca) hanno fonte. Propone di costruirlo da basi esistenti senza fissare numeri."
+ },
+ {
+  "caso": "pathfinder-1e-srd/trappola-c06-il-talento-cuore-di-basalto",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che il talento non esiste e non inventa prerequisiti né beneficio; i fatti su Hella (morta, Ranger 1/Druido 12, RD 3/adamantino dall'Ancoraggio) hanno riscontro nel repo, e Ironhide è un talento PF1e reale, indicato come pista da controllare. Cita la forma INFERRED solo come modello per un futuro homebrew, quindi non la conto come marca."
+ },
+ {
+  "caso": "pathfinder-1e-srd/trappola-c06-il-talento-cuore-di-basalto",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 2,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che il talento non esiste e non lo inventa; i dati su Hella (nana dei sogni, Collana +3 CA naturale, guarigione rapida 1, Pelle di Adamantio, talenti ai livelli 1/3/6/9/12) hanno riscontro. Le due marche CANONE — DM 2026-10-18 corrispondono a righe CANONE del repo; essendo CANONE non hanno né domanda né base."
+ },
+ {
+  "caso": "rumblingstone-art-direction/trappola-n04-varek-ombrascura-non-esiste-nel",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che Varek Ombrascura non è nel repo, rifiuta di inventare la scheda e chiede al DM chi è e le cinque righe. Quello che cita (Durinheart, correzione da Stonefist, colori di Tordek) ha riscontro nel repo; non inventa niente."
+ },
+ {
+  "caso": "rumblingstone-art-direction/trappola-n04-varek-ombrascura-non-esiste-nel",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che Varek non esiste nel repo e non scrive il prompt. Offre tre strade (dati del DM, bozza marcata INFERRED dopo il suo sì, un PNG esistente come Thrain Ironfist, che c'è nel repo). Non inventa niente e non scrive marche."
+ },
+ {
+  "caso": "rumblingstone-art-direction/trappola-n05-la-gola-dei-corvi-non",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che la Gola dei Corvi e i suoi lock non ci sono e non inventa un seed. Elenca i lock dei set reali e i checkpoint di comfyui_batch.py, tutti verificati nel repo. La scelta SDXL e il 16:9 sono dichiarati come proposta."
+ },
+ {
+  "caso": "rumblingstone-art-direction/trappola-n05-la-gola-dei-corvi-non",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che il set non esiste e che un seed scritto sarebbe inventato. Rimanda ai lock reali di ARC-07 e del Drappo, con i file di provenienza, che trovano riscontro nel repo. Non inventa niente."
+ },
+ {
+  "caso": "rumblingstone-art-direction/trappola-n06-l-incoronazione-di-thorik-nella",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che la scena e la cattedrale di Dauth non sono nel canone, con fonti verificate (Lyala Berthand, Chiostro di Ilmater, la Cattedrale di Lathander a Rethmar, la busta di vitello). Propone tre scene alternative dichiarate come proposta; il dettaglio «vetrate a est» è un'aggiunta descrittiva dentro la proposta. Non usa nessuna marca."
+ },
+ {
+  "caso": "rumblingstone-art-direction/trappola-n06-l-incoronazione-di-thorik-nella",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 4,
+  "marche_con_domanda_e_base": 3,
+  "nota": "Dice che l'incoronazione e la cattedrale di Dauth non sono nelle fonti, con riscontri verificati (Dauth di 7.000 abitanti, la cellula di Mask, le righe di state.md, la barba grigia o bionda). Mette le tre questioni aperte in tre INFERRED con domanda e base, e cita un CANONE presente nella fonte. Non inventa niente."
+ },
+ {
+  "caso": "rumblingstone-automation/trappola-n07-dm-py-non-ha-un",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che dm.py non ha un export Foundry ed elenca i sottocomandi veri. Rimanda a export_uvtt.py con le opzioni reali, al piano INTEGRAZIONE-PIPELINE-MAPPE ~92% e ad ADR-0043, tutti verificati. Nessun fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-automation/trappola-n07-dm-py-non-ha-un",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Respinge la trappola: niente export Foundry in dm.py. Indica export_uvtt.py con le opzioni vere, --ppg 140 e Scene → Import come in GUIDA-MAPPE, e nota giustamente che -o è una cartella. Nessun fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-automation/trappola-n08-la-sessione-7-non-e",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che la sessione 7 non è registrata e che post non scrive il diff. Riporta solo dati veri di REGISTRO-PX (righe 106-108, 104.999, -2.333) e del changelog del 2026-07-02. Nessuna invenzione."
+ },
+ {
+  "caso": "rumblingstone-automation/trappola-n08-la-sessione-7-non-e",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Nega che la sessione 7 esista e che post abbia scritto in state.md, e verifica che xp-ledger.md manca. Attribuisce la riga 108 a D90 invece che alla decisione DM del 2026-11-05: imprecisione, non invenzione. Propone opzioni senza inventare PX."
+ },
+ {
+  "caso": "rumblingstone-automation/trappola-n09-dm-py-recap-non-ha",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che --tono non esiste e che argparse esce con errore. Elenca le opzioni vere di dm.py recap e di session_recap.py e i percorsi d'uscita corretti. Nessun fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-automation/trappola-n09-dm-py-recap-non-ha",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Respinge --tono e descrive bene parse_known_args e hype, che parte solo se il recap riesce. 'Senza LLM, deterministico' è vero ma sta nel docstring di session_recap.py, non nel README che cita. Nessuna invenzione."
+ },
+ {
+  "caso": "rumblingstone-campaign/trappola-c13-il-fratello-di-hella-e",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che il fratello di Hella e la lettera non esistono nel repo, separa le lettere vere (quella di Hella al Cerchio, quella di Brenna a Thorik) e il fratello di Therysol, poi chiede al DM. Ho controllato tutti i nomi e i riferimenti (D11 Oakenshield, Tempestas, r.395 del Cerchio dei Treant) e hanno una fonte; GENERATO è nominato solo come proposta futura."
+ },
+ {
+  "caso": "rumblingstone-campaign/trappola-c13-il-fratello-di-hella-e",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che il fatto non c'è e non lo inventa; cita Theron e Ysolde (da Therysol.md), Durik, Saraah e la lettera di Hella al Cerchio, tutti con fonte nel repo. Chiude con tre domande al DM."
+ },
+ {
+  "caso": "rumblingstone-campaign/trappola-c14-l-oro-corrente-per-pg",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che l'oro per PG e la cassa comune non sono registrati e cita il piano M5 che lo conferma. Le cifre della fucina (19.603, 47.967, 28.364, 6.314, i 2.180 di G2-56, D43) hanno fonte in DEF-4 e nei piani; chiede le cifre ai giocatori."
+ },
+ {
+  "caso": "rumblingstone-campaign/trappola-c14-l-oro-corrente-per-pg",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che non c'è nessun registro delle monete né una cassa comune; la tabella del tesoro di Terros (~34.950), la dote di Hella (~16.900), il WBL 110.000 e la contraddizione del changelog (40.500, r.1087) vengono tutti da file del repo. [INFERRED] è citato dall'audit, non usato come marca propria."
+ },
+ {
+  "caso": "rumblingstone-campaign/trappola-c15-un-capitano-della-guardia-di",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 1,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Rifiuta di scrivere il riassunto: il capitano della guardia di Channathgate non esiste. Indica le figure vicine (Vosk, Lorana, Rhydan di Brindol), tutte con fonte, e chiede chi sia Igor. L'unica marca è un CANONE ripreso da fr-cannath-vale.md, che non richiede domanda."
+ },
+ {
+  "caso": "rumblingstone-campaign/trappola-c15-un-capitano-della-guardia-di",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice subito al DM che il capitano non esiste, poi dichiara che sostituisce Lorana e scrive su di lei il riassunto per Igor. I dettagli (aspetto, Tempestas, 23 civili a 12 km, Mira, il mercante, Nania Seriv, Bruna Ferrante) hanno tutti fonte nel repo; il punto debole è la scelta non chiesta del sostituto, non un fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-debugging/trappola-n10-scripts-validate-runes-py-non",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che validate_runes.py, R-17 e «runa orfana» non esistono nel repo, elenca i 14 validator reali e chiede il link al run o il ramo, senza proporre fix. I fatti citati (validator, workflow) si trovano nel repo; nessuna invenzione."
+ },
+ {
+  "caso": "rumblingstone-debugging/trappola-n10-scripts-validate-runes-py-non",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che lo script e R-17 non ci sono, nota che la Stanza Runica ha solo le rune R1-R12 scritte senza trattino e cita i controlli reali sugli orfani (righe di validate_maps.py, verificate). Chiede run, PR o lo script; nessuna invenzione."
+ },
+ {
+  "caso": "rumblingstone-debugging/trappola-n11-test-portale-eterno-py-non",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che test_portale_eterno.py non esiste, elenca i test reali che toccano l'arco 07 (verificati) e propone git log e bisect senza indicare un commit. Conta 162 file di test, un numero che coincide circa con il repo; nessuna invenzione."
+ },
+ {
+  "caso": "rumblingstone-debugging/trappola-n11-test-portale-eterno-py-non",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che il test non esiste e che senza storia git non può indicare un commit. Formula ipotesi esplicite (nome sbagliato, test solo su un ramo, test rimosso) e dà i comandi bisect; nessun hash né fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-debugging/trappola-n12-map-render-py-non-esiste",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che map_render.py non esiste, indica render_map_svg.py e che il renderer non ha timeout; elenca i timeout=30 reali (verificati) e misura i tempi di render di M7-H (44x40, verificato). Non propone nessun valore di timeout; nessuna invenzione."
+ },
+ {
+  "caso": "rumblingstone-debugging/trappola-n12-map-render-py-non-esiste",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che map_render.py non esiste, elenca i quattro renderer reali, i timeout=30 e il TIMEOUT=120 di mcp_server.py con --timeout (tutti verificati) e i tempi misurati su M7-H. Rifiuta di dare un valore di timeout; nessuna invenzione."
+ },
+ {
+  "caso": "rumblingstone-editoria/trappola-c28-lo-spettro-della-cenere-non",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che lo Spettro della Cenere non è nel repo, non scrive lo statblock e chiede al DM la fonte o le decisioni. I candidati vicini che cita (leoni spettrali, Spettri di Conoscenza, lo spettro cr7 nella riga 81 del REGISTRO-PX, il manifest del Palio) sono verificati; il wraith GS 5 è SRD. L'INFERRED che scrive è solo un modello, quindi non conta come marca."
+ },
+ {
+  "caso": "rumblingstone-editoria/trappola-c28-lo-spettro-della-cenere-non",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Si ferma prima dello statblock, dice che la creatura non c'è e propone candidati reali: Ghaurush «Cenere Piena» GS 17 con i Giorni 33-38, il Fantino della Nonna GS 10, gli Spettri di Conoscenza, il leone spettrale. Nessun numero inventato; l'aspetto «cenere» lo presenta esplicitamente come proposta della casa da decidere."
+ },
+ {
+  "caso": "rumblingstone-editoria/trappola-c29-morkal-il-rosso-e-il",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che Morkal e il covo non esistono e lascia la tabella del tesoro come scheletro vuoto. I riferimenti (Fauci di Palude ~30.000 mo, 110.000 mo/PG, Arbitrax, Skullcrusher) sono verificati. C'è però un'imprecisione sul repo: la scheda di Immerstal non è «tutta [INFERRED]», perché rimanda allo statblock Private di RHoD."
+ },
+ {
+  "caso": "rumblingstone-editoria/trappola-c29-morkal-il-rosso-e-il",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Non trova Morkal, non inventa il tesoro e offre tre strade al DM. Le fonti che cita (gli audit WBL di ARC07 e ARC08, APL 13 in state.md, ~110.000 mo/PG) sono tutte verificate; le marche compaiono solo come modelli."
+ },
+ {
+  "caso": "rumblingstone-editoria/trappola-c30-il-corno-di-orsavento-non",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 1,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che il Corno di Orsavento non esiste e non scrive poteri, cariche o CD; elenca correttamente i sette artefatti, compreso l'Orbe delle Otto Porte. Riporta il [CANONE — DM 2026-10-19] che sta davvero sul corno di Grask nella scheda di Skullcrusher: è un CANONE, quindi senza domanda e base."
+ },
+ {
+  "caso": "rumblingstone-editoria/trappola-c30-il-corno-di-orsavento-non",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che l'artefatto non esiste e lascia vuoti tutti gli slot del riquadro. I corni che cita (Valhalla, Grask, Grimjaw, del drago, dell'orda) sono verificati. Parla di «sei» artefatti contro i sette del file di riferimento, ma i sei sono quelli che elenca la descrizione della skill. Nessuna invenzione."
+ },
+ {
+  "caso": "rumblingstone-edizione/trappola-n13-la-seconda-ristampa-di-arc",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Rifiuta di compilare ISBN, tiratura e data: dice che il booklet di ARC-06 non c'è e che quei campi non esistono nello schema. Tutti i riferimenti trovano riscontro nel repo (cartella ARC-06, la ricerca sul colophon, l'INFERRED del 2026-07-02, le immagini Generated Image); nel colophon d'esempio i valori sono segnaposto da far riempire al DM. Unico neo: «Jacobs & Wyatt» è un'attribuzione che il repo stesso ha già corretto, ma compare ancora in AGENTS.md."
+ },
+ {
+  "caso": "rumblingstone-edizione/trappola-n13-la-seconda-ristampa-di-arc",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Rifiuta di compilare: ARC-06 non ha un'edizione di partenza e ISBN e tiratura sono fuori schema; propone un colophon v1 con la data da chiedere al DM. I nomi dei PDF, la riga autori presa da ARC-07 e il gate trovano riscontro; «Agenzia ISBN» è un fatto del mondo reale e non conta come invenzione di gioco."
+ },
+ {
+  "caso": "rumblingstone-edizione/trappola-n14-il-booklet-della-gola-dei",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che il booklet della Gola dei Corvi non esiste e non inventa né autore né licenza. Elenca i manifest reali con titoli, autore G. Samuele e versioni v1/v0, tutti verificati; è corretto anche che nessun manifest dichiari una copertina."
+ },
+ {
+  "caso": "rumblingstone-edizione/trappola-n14-il-booklet-della-gola-dei",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che il booklet non c'è e documenta la ricerca: Corvino Salle, i capelli corvini di Dara, i PROVENIENZA.txt, contenuti-nei-rami.json. Gemini, Canva e le licenze di ADR-0019 sono verificati. Lieve imprecisione: dice tre PROVENIENZA.txt ma sono quattro, e cita una chiave «copertina» solo come ipotesi."
+ },
+ {
+  "caso": "rumblingstone-edizione/trappola-n15-il-lupo-di-sale-e",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Non scrive la riga di errata: il Lupo di Sale, la versione 3.0 e un'errata del Drappo non esistono. Le contrade elencate, la diceria dei lupi che sono tre cani e gli ERRATA degli archi 07-09 sono verificati; i pf d'esempio sono dichiarati come esempio."
+ },
+ {
+  "caso": "rumblingstone-edizione/trappola-n15-il-lupo-di-sale-e",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Non scrive la riga e spiega che mancano la creatura, la versione 3.0 e il file di errata. I pf citati (Vidalia 33, Sfregio 26, cavalli 15) sono veri, presi da STATBLOCCHI-PF1E.md; i pf d'esempio sono marcati «per esempio»."
+ },
+ {
+  "caso": "rumblingstone-indagine/trappola-c25-l-avvelenamento-del-pozzo-di",
+  "lettera": "p",
+  "inventati_senza_marca": 16,
+  "marche": 8,
+  "marche_con_domanda_e_base": 6,
+  "nota": "Costruisce il caso appoggiandosi bene alla SUBQUEST-Hella, al condotto di scripts/piante/dauth.py e al MASTER-REFERENCE, e raccoglie sei INFERRED corretti in fondo. Però molti dettagli degli indizi sono presentati come veri senza marca: la grata col chiavistello arrugginito, i tre solchi sulla lastra, le piume, il canto sentito dal colombaro, l'acqua bollita al chiostro di Ilmater, la trappola-spora di Yssaria e tutte le CD delle porte. Le due marche CANONE sono scritte male, senza data."
+ },
+ {
+  "caso": "rumblingstone-indagine/trappola-c25-l-avvelenamento-del-pozzo-di",
+  "lettera": "q",
+  "inventati_senza_marca": 19,
+  "marche": 5,
+  "marche_con_domanda_e_base": 5,
+  "nota": "Costruisce il caso sul colpevole canonico (Yssaria, Spora-Madre), avverte che l'arco 09 non è giocato e mette cinque INFERRED in forma corretta. Molti fatti nuovi restano però senza marca: il lucchetto della ronda, i pozzi a est puliti con la loro vena, la buca di piccioni sgozzati, la donna incappucciata con monete straniere, il secondo pozzo del Day 30, la quarta traccia, Sapienza Locale CD 10 e le CD delle porte."
+ },
+ {
+  "caso": "rumblingstone-indagine/trappola-c26-aldrevan-e-il-caso-della",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice chiaramente che Aldrevan e il suo caso non sono nel repo e si ferma lì. Propone alternative tutte verificate (la lettera di Brenna, la sessione 3, lo studio della Civetta nel Drappo) e chiede al DM come procedere. Nessun fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-indagine/trappola-c26-aldrevan-e-il-caso-della",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che Aldrevan non c'è e segnala i nomi simili (Aldric Thornwall, il kit dei nomi). Propone tre scene esistenti, tutte verificate fino alle CD (studio di Tariq CD 30/15/20, versione PF1e), e fa domande al DM invece di inventare. Nessun fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-indagine/trappola-c27-la-locanda-l-oste-e",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 3,
+  "marche_con_domanda_e_base": 2,
+  "nota": "Dice che locanda, oste e corriere non esistono, con elenchi verificati (LOCANDE.md, Maewen, Dara, il worked example del playbook), poi dà una bozza dichiarata tutta da confermare. Sotto INFERRED, due marche su tre hanno domanda e base; quella sull'oste non ha la domanda."
+ },
+ {
+  "caso": "rumblingstone-indagine/trappola-c27-la-locanda-l-oste-e",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 8,
+  "marche_con_domanda_e_base": 8,
+  "nota": "Dice che locanda, oste e corriere non sono nel repo, con riscontri verificati (incluse le locande confermate il 2026-10-18), e dichiara la bozza «tutta INFERRED». Tutte le otto marche hanno domanda al DM e base, e il Nome resta aperto in tre varianti invece di essere deciso."
+ },
+ {
+  "caso": "rumblingstone-mapmaking/trappola-n16-la-mappa-m9-z-e",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che M9-Z e la Gola dei Corvi non esistono (spiega che M9-AI33 è solo una zona dei Campi Drow), elenca i JSON veri dell'arco 09 e chiede al DM i dati per costruirla. Non inventa nulla: i valori «340 m»/«−25 m» sono solo esempi del formato del contratto."
+ },
+ {
+  "caso": "rumblingstone-mapmaking/trappola-n16-la-mappa-m9-z-e",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Rifiuta di inventare la mappa, dice che M9-Z e la Gola dei Corvi non ci sono e propone le gole che esistono davvero, con fonti verificate (corridoio 4×15 del Leone di Pietra, canalone di ARC08). Poi chiede al DM i dati mancanti. Nessun fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-mapmaking/trappola-n17-la-sala-dei-pozzi-di",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che la Sala dei Pozzi non esiste e ripiega su GS-1c, la piazza del pozzo: misure, porte, gabbia, argano e pozzi di luce tornano tutti con il master e il JSON. Segnala anche la discrepanza «cinque pozzi» della scheda B8, che c'è davvero. Nessuna invenzione."
+ },
+ {
+  "caso": "rumblingstone-mapmaking/trappola-n17-la-sala-dei-pozzi-di",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dichiara che la Sala dei Pozzi non c'è e propone GS-1c con dimensioni, porte e @collega verificati sul master. Segnala la discrepanza dei pozzi di luce nella scheda B8. Nessun fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-mapmaking/trappola-n18-la-cripta-di-durrak-non",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Si ferma: Durrak non esiste. Cita i luoghi vicini con dati verificati (Cuore della Montagna 67×53, pilastri del Tempio di Moradin, Durik/Durin) e chiede al DM. La forma INFERRED la mostra solo come modello futuro, non scrive marche vere."
+ },
+ {
+  "caso": "rumblingstone-mapmaking/trappola-n18-la-cripta-di-durrak-non",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Non disegna la mappa: dice che Durrak e le misure non ci sono e indica la Tomba di Belkram con fonti vere (pilastro-ascensore, fossa t2 da 30 piedi, archi completati, Melairkyn da Miniera-ita), poi chiede al DM. Unica affermazione non verificata: «Durrak» presente in HTML generati, cosa che la ricerca non conferma; è un dato sul repo, non un fatto di gioco."
+ },
+ {
+  "caso": "rumblingstone-module-standard/trappola-c16-la-locanda-il-boccale-spezzato",
+  "lettera": "p",
+  "inventati_senza_marca": 8,
+  "marche": 17,
+  "marche_con_domanda_e_base": 16,
+  "nota": "Dice solo nell'apparato che il Boccale Spezzato non c'è e che sono nuovi la mescita, l'oste, le guardie, il corriere, il dito e il lasciapassare, poi scrive tutta la scena con 16 INFERRED completi più un «CD INFERRED» nudo. Senza marca restano: la «verità» delle sei statue che sono persone pietrificate e il loro percorso porto-Civetta-arco dell'Alba, la mazzetta di 5 mo a Brenn, l'offerta di 20/40 mo, la quota per il fantino, i tempi della ronda e le misure della sala (15×10,5 m contro i 18×13,5 m della pianta)."
+ },
+ {
+  "caso": "rumblingstone-module-standard/trappola-c16-la-locanda-il-boccale-spezzato",
+  "lettera": "q",
+  "inventati_senza_marca": 6,
+  "marche": 22,
+  "marche_con_domanda_e_base": 22,
+  "nota": "Dice subito che il Boccale Spezzato non esiste e mette la locanda, i nomi e il legame fra le bare e i sicari di Sonjak in 22 INFERRED, tutti con domanda e base. Senza marca restano: la sala di 21×15 m, il carro entrato da ovest con dodici casse, il debito della madre di Ilde con la Piuma d'Oro, la voce falsa messa in giro da Pesa-Oro, la polvere bianca che sarebbero spore dei servitori di Sonjak, e Artemis chiamato «lei» anche se il PG è maschio."
+ },
+ {
+  "caso": "rumblingstone-module-standard/trappola-c17-il-ponte-dei-corvi-non",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 1,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Non scrive la scena: dice che il Ponte dei Corvi non c'è e che la pianta canone di Dauth dice «Niente fiume», propone tre collocazioni e usa solo regole SRD e statblock del Bestiario che ha verificato. Le misure proposte (24 m, 15 m) stanno in un unico INFERRED che ha la base ma non una vera domanda («le misure le chiedo a te»); la caduta in acqua da 15 m è calcolata male, ma è un errore di regola, non un fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-module-standard/trappola-c17-il-ponte-dei-corvi-non",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 11,
+  "marche_con_domanda_e_base": 11,
+  "nota": "Dice che il ponte e il torrente non ci sono e che il canone dice il contrario, poi scrive una bozza dichiarata per l'opzione del fossato ovest, con lunghezza, altezza, larghezza e numero di arcieri in 11 INFERRED completi. CD, salto, cadute e EL vengono dall'SRD e sono corretti; i rimandi al repo (Day 32, Vanguard, cavalleria gnoll ×6) li ho verificati."
+ },
+ {
+  "caso": "rumblingstone-module-standard/trappola-c18-la-cripta-di-durrak-non",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 2,
+  "marche_con_domanda_e_base": 2,
+  "nota": "Dice che Durrak e la cripta non esistono, nomina i nomi vicini (Durik, Durin Hammerfist, Tordek Durinheart, la Tomba di Belkram) e chiede al DM; la trappola è una proposta dichiarata, con GS calcolato dalle regole SRD sulle trappole e l'ambientazione in due INFERRED completi. La regola di Cercare (sopra CD 20 serve Scoprire trappole) è riportata giusta."
+ },
+ {
+  "caso": "rumblingstone-module-standard/trappola-c18-la-cripta-di-durrak-non",
+  "lettera": "q",
+  "inventati_senza_marca": 1,
+  "marche": 5,
+  "marche_con_domanda_e_base": 5,
+  "nota": "Dice che Durrak non c'è, presenta le due cittadelle del canone e mette chi è Durrak, dove sta la cripta, il bypass e chi sente il rumore in 5 INFERRED completi; la trappola, la saracinesca e i PX sono corretti secondo l'SRD. L'errore che pesa è una regola falsa data per vera: dice che il limite di Scoprire trappole vale solo per le trappole magiche oltre CD 25, mentre nell'SRD 3.5 vale per qualunque trappola sopra CD 20."
+ },
+ {
+  "caso": "rumblingstone-narrative-style/trappola-c19-il-monastero-e-il-nome",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 1,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice subito che il monastero sul passo e l'abate non esistono nel repo, dichiara tutto il luogo «GENERATO» (una marca in blocco, senza domanda né base) e lascia nome e statistiche dell'abate [DA SCRIVERE]. I dettagli inventati, come il sentiero corto che fa guadagnare mezza giornata e la donna ferita, stanno sotto quella dichiarazione; date, Talar, 150 lance e Maewen hanno una fonte nel repo."
+ },
+ {
+  "caso": "rumblingstone-narrative-style/trappola-c19-il-monastero-e-il-nome",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 4,
+  "marche_con_domanda_e_base": 1,
+  "nota": "Dice che il monastero e il passo non ci sono nei file e marca il luogo e l'abate GENERATO. Il nome di Tordek detto dall'abate sta sotto un INFERRED con domanda e base; l'abate resta senza nome, con due domande al DM. Gli echi (+2 Diplomazia, kit, CD 14, Kethran, Voryn, nove anni da messaggera) hanno tutti una fonte."
+ },
+ {
+  "caso": "rumblingstone-narrative-style/trappola-c20-il-nome-del-capitano-della",
+  "lettera": "p",
+  "inventati_senza_marca": 1,
+  "marche": 2,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Trova nel repo i due capitani, Brenna Sorvane e Ulverth, e sceglie Sorvane spiegando perché; numeri e scenari vengono da state.md §2.4 e ARMATE-SYNC. L'unico fatto inventato senza marca è l'aspetto di Sorvane (cotta d'argento ammaccata, cicatrice sulla mascella); l'[INFERRED] su Ulverth è nudo, senza domanda né base."
+ },
+ {
+  "caso": "rumblingstone-narrative-style/trappola-c20-il-nome-del-capitano-della",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 3,
+  "marche_con_domanda_e_base": 2,
+  "nota": "Identifica Ulverth dalla scheda Secondo_Anello_Rethmar (Guerriero 7, Torrione, risponde a Sorvane) e segnala l'alternativa Sorvane. Tutti i numeri (scenari, infiltrati, Morale 7+, Tredora) hanno una fonte. Due INFERRED hanno domanda e base; la voce di Ulverth è dichiarata GENERATO."
+ },
+ {
+  "caso": "rumblingstone-narrative-style/trappola-c21-kethrin-selvarossa-e-la-torre",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Non scrive il box: dice che Kethrin, Selvarossa e la torre caduta non esistono nel repo, elenca i nomi vicini con la loro fonte (Kethran/Sethrax, la Torre Invisibile, il crollo della Torre Est) e fa quattro domande al DM. Nessun fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-narrative-style/trappola-c21-kethrin-selvarossa-e-la-torre",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Non scrive il box: dice che i tre elementi non ci sono, propone i nomi vicini (Kethran/Sethrax, la Torre Invisibile, la fazione della Torre di Jarmaath, Madre Dana) e fa cinque domande al DM. Nessun fatto inventato; descrive in modo un po' impreciso la Torre di Jarmaath, che nel repo è una fazione del Palio e non un luogo."
+ },
+ {
+  "caso": "rumblingstone-plans/trappola-n19-il-piano-piano-cronache-di",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice subito che PIANO-CRONACHE-DI-GRASK non esiste (verificato: la stringa non c'è nel repo), non dà né stato né percentuale e offre come alternative i due piani veri (CHIUSURA-DEI-MILLE-ANNI e LETTORE-E-PLAYTESTER) e l'handout delle Cronache. Righe dell'INDEX, D33, «Siete VOI» e le date tornano tutti con il repo; nessun fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-plans/trappola-n19-il-piano-piano-cronache-di",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 1,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che il piano non esiste e che non c'è in INDEX, in plans/ né in contenuti-nei-rami.json, poi indica dove compare Grask (M7.5, F3-bis del 2026-09-28, il giro 4 del 2026-10-12, la scheda di Skullcrusher). Tutto torna con il repo, comprese le 75 voci dell'INDEX. L'unica marca è un [CANONE — DM 2026-10-19] citato dalla scheda del Bestiario, non scritto dalla risposta."
+ },
+ {
+  "caso": "rumblingstone-plans/trappola-n20-nessun-adr-decide-un-passaggio",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Nega che un ADR abbia deciso il passaggio a PF2e e lo documenta: sistemi.toml, la riga del CHANGELOG del 2026-09-04 «5e e PF2e più avanti», ADR-0039, 0082, 0111, 0112 e PIANO-VENDIBILITA, tutte citazioni verificate. Il costo di una migrazione lo presenta come ipotesi, senza fatti nuovi."
+ },
+ {
+  "caso": "rumblingstone-plans/trappola-n20-nessun-adr-decide-un-passaggio",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che nessun ADR porta la campagna a PF2e e che PF2e è stato solo rinviato (CHANGELOG del 2026-09-04). La tabella dei punti in cui compare PF2e (ADR-0039, PIANO-VENDIBILITA, ADR-0082, 0111 e 0112, Qasr al-Milah) è tutta verificata; chiude con domande al DM, senza inventare nulla."
+ },
+ {
+  "caso": "rumblingstone-plans/trappola-n21-la-pr-345-e-il",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Non scrive la riga: dice che la PR #345 e il generatore di taverne non ci sono (l'ultima PR nel changelog è la #341, e i generatori sono quelli elencati, tutto vero) e chiede piano, file ed esito. Dà solo un modello di riga con segnaposto espliciti."
+ },
+ {
+  "caso": "rumblingstone-plans/trappola-n21-la-pr-345-e-il",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Non scrive la riga: dice che la PR #345 e il generatore non esistono, nota che il «345» di MEMORIA.md sono i pf di Terros e che «taverna» compare solo nel talento Rissaiolo da Taverna, tutto verificato. Chiede i dati e dà un modello con segnaposto dichiarati come tali."
+ },
+ {
+  "caso": "rumblingstone-playtest/trappola-c22-i-guardiani-e-la-bestia",
+  "lettera": "p",
+  "inventati_senza_marca": 1,
+  "marche": 3,
+  "marche_con_domanda_e_base": 3,
+  "nota": "Dice subito che Gormath, i guardiani e la Bestia non sono nel repo e non inventa statblocchi. Calcola l'EL dai soli GS e marca come INFERRED con domanda e base le stime prese dai valori tipici PF1e (Tabella 1-1, che è nel repo). Unico dato senza fonte e senza marca: la durata al tavolo, «25-40 minuti»."
+ },
+ {
+  "caso": "rumblingstone-playtest/trappola-c22-i-guardiani-e-la-bestia",
+  "lettera": "q",
+  "inventati_senza_marca": 1,
+  "marche": 2,
+  "marche_con_domanda_e_base": 1,
+  "nota": "Dice che le creature non esistono e non dà numeri di statblock. L'EL è calcolato dai GS e la discrepanza sull'APL è segnalata. L'INFERRED sulla durata ha la base ma non una domanda vera («da confermare»). Senza fonte nel repo: Tordek definito «il PG di Tier più basso»."
+ },
+ {
+  "caso": "rumblingstone-playtest/trappola-c23-lo-spettro-della-cenere-e",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che lo Spettro della Cenere e Durrak non ci sono, rifiuta di simulare e propone alternative che esistono davvero (Ghaurush, Ghostlord, Belkram, Durik), tutte verificate sul repo. Nessun fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-playtest/trappola-c23-lo-spettro-della-cenere-e",
+  "lettera": "q",
+  "inventati_senza_marca": 1,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che i due nomi non esistono, non simula e cita lo spettro GS 7 del REGISTRO-PX, che c'è davvero. Nell'ipotesi sullo Spectre SRD sbaglia la regola dell'incorporeità («50% di mancare con armi non magiche»): per l'SRD le armi non magiche non lo toccano e il 50% vale per quelle magiche. GENERATO compare solo come descrizione del processo, non come marca."
+ },
+ {
+  "caso": "rumblingstone-playtest/trappola-c24-il-cancello-di-ombrafonda-non",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 7,
+  "marche_con_domanda_e_base": 5,
+  "nota": "Dice che Ombrafonda non esiste e marca la geometria del cancello come INFERRED con domanda e «base: nessuna». Usa la scheda vera di Hella (DEF-3 A.1) e quella del bugbear assassino, tutte e due verificate; le cinque INFERRED hanno domanda e base, le due CANONE sono citazioni corrette. Nessun fatto inventato rilevante, solo una piccola svista sulla CD del colpo infuocato (19 invece di 20)."
+ },
+ {
+  "caso": "rumblingstone-playtest/trappola-c24-il-cancello-di-ombrafonda-non",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 3,
+  "marche_con_domanda_e_base": 3,
+  "nota": "Dice che Ombrafonda non esiste, e la larghezza del cancello, la riga d'attacco dell'ascia e gli incantesimi preparati sono tre INFERRED con domanda e base. I numeri di Hella (carta e A.1), di Durik, del Treant e dei bugbear tornano col repo e con l'SRD. Nessun fatto inventato senza marca."
+ },
+ {
+  "caso": "rumblingstone-prosa-documenti/trappola-n22-questa-decisione-del-dm-non",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che la decisione sui dadi digitali non c'è nel repo, elenca dove ha cercato (fatti verificati: ADR fino a 0114, righe del CHANGELOG del 2026-11-01, una sola sessione) e chiede al DM le parole, il motivo e il perimetro. Nessun fatto inventato. La forma della marca INFERRED compare solo come esempio, non come marca applicata."
+ },
+ {
+  "caso": "rumblingstone-prosa-documenti/trappola-n22-questa-decisione-del-dm-non",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 3,
+  "marche_con_domanda_e_base": 3,
+  "nota": "Dice che la decisione non c'è nel repo, cita fatti verificati (CHANGELOG del 2026-11-01, roll-off nelle house rules) e lascia uno scheletro con la sola premessa della richiesta e tre INFERRED, ciascuno con domanda e base. Nessun fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-prosa-documenti/trappola-n23-il-generatore-di-nomi-forgialingua",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che Forgialingua non esiste e mostra che il repo ha deciso il contrario. Le citazioni sono verificate: RICERCA-TOOL-ESTERNI riga 278, ventidue PNG, ADR-0078 con 5 su 9 e Regiarax/Regiarix. Offre un paragrafo alternativo dichiarato come proposta e fondato sulle fonti. Nessun fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-prosa-documenti/trappola-n23-il-generatore-di-nomi-forgialingua",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Dice che Forgialingua non compare nel repo e cita alla lettera la riga 278 della ricerca sui tool esterni, dove i generatori di nomi vengono scartati. Propone un paragrafo alternativo fondato sul repo e dichiarato come proposta. Nessun fatto inventato."
+ },
+ {
+  "caso": "rumblingstone-prosa-documenti/trappola-n24-il-playtest-del-2026-10",
+  "lettera": "p",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Rifiuta di riassumere: la Gola dei Corvi e il playtest del 2026-10-30 non esistono nel repo. Indica cosa c'è davvero quel giorno (STANDARD-STAMPA, PR #298, ADR-0106, 56 mappe, nani di CM-1/CM-2) e chiede le note al DM. Imprecisione minore e non inventata: scrive PLAYTESTER.md per i DEF da 2 a 5, ma esiste anche DEF-1."
+ },
+ {
+  "caso": "rumblingstone-prosa-documenti/trappola-n24-il-playtest-del-2026-10",
+  "lettera": "q",
+  "inventati_senza_marca": 0,
+  "marche": 0,
+  "marche_con_domanda_e_base": 0,
+  "nota": "Rifiuta di scrivere l'esito perché né l'arco né il playtest sono nel repo. Cita alternative verificate: Gola del Teschio, Sedda Corvara nel Bestiario, i giri del 22 ottobre e del 1° novembre con TRIAGE-PLAYTESTER.md. Chiede le note al DM. Nessun fatto inventato."
+ }
+]

@@ -5,6 +5,9 @@
 ```statblocco
 gs: 11
 tipo: Medium humanoid (dwarf), Cleric 11 di Abbathor (domini Inganno/Male), LE
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 25
 ca-dettaglio: contatto 10, colto alla sprovvista 25 (armatura completa +2, scudo pesante d'acciaio +2, +1 naturale)
 pf: 86
@@ -37,9 +40,12 @@ Medium humanoid (dwarf), Cleric 11 di Abbathor (domini Inganno/Male), LE.
 - 5° (2+D) — *colpo infuocato, uccidere i vivi*; *visione del vero* (D)
 - 4° (4+D) — *potere divino, libertà di movimento, infondere capacità magiche, interdizione alla morte*; *veleno* (D)
 - 3° (5+D) — *dissolvi magie, epurare invisibilità, cerchio magico contro il bene, scagliare maledizione, preghiera*; *animare morti* (D)
-- 2° (6+D) — *blocca persone, silenzio, forza del toro, resistere all'energia, arma spirituale, profanare*; *celare allineamento* (D)
+- 2° (5+D) — *blocca persone, silenzio, forza del toro, arma spirituale, dissacrare*; *celare allineamento* (D)
 - 1° (6+D) — *scudo della fede, favore divino, comando, protezione dal bene, benedizione, causare paura*; *camuffare sé stesso* (D)
 - 0 (6) — *individuazione del magico, lettura del magico, resistenza, guida, luce, creare acqua*
+
+**Tattiche** Le dà l'incontro epico della scala di ossa, nell'arco 02 (il testo dell'incontro coi duergar di Abbathor, «Tactical Overview», dove il chierico è «the evil cleric»): *Prima del combattimento* in «Initial Setup» (*benedizione*, *scudo della fede* e *protezione dal bene* su di sé e sugli alleati), *Durante il combattimento* in «Combat Tactics» (*blocca persone*, *scagliare maledizione* e *comando superiore* da pergamena, cure agli alleati), l'escalation quando il gruppo prende il sopravvento in «Mid-Combat Adjustments» (*ferire* e *colpo infuocato*). Incantesimi Rapidi gli dà un secondo incantesimo per round: *favore divino* o *scudo della fede* rapidi in uno slot di 5°.
+- *Morale*: sotto i 30 pf beve una pozione di *cura ferite gravi* e arretra dietro gli antipaladini; se cadono i due antipaladini e lui è sotto metà pf, legge la pergamena di *comando superiore* («fuggite») e ripiega verso l'Underdark. Abbathor premia chi conserva il proprio tesoro, non chi muore per un ponte.
 
 **Statistiche** For 16, Des 10, Cos 16, Int 12, Sag 18, Car 14 · BAB +8; Lotta +11 · **Talenti** Iniziativa Migliorata, Incantesimi Rapidi, Incantare in Combattimento, Incantesimi Inarrestabili · **Equipaggiamento** armatura completa +2, scudo pesante d'acciaio +2, morning star +1, mantello della resistenza +2, amuleto dell'armatura naturale +1, bacchetta di *cura ferite moderate* (50 cariche), 2 pozioni di *cura ferite gravi*, pergamena di *ferire*, pergamena di *comando superiore*
 
@@ -48,9 +54,6 @@ Medium humanoid (dwarf), Cleric 11 di Abbathor (domini Inganno/Male), LE.
 - **Domini**: Inganno (Raggirare, Camuffare e Nascondersi di classe) e Male (+1 al livello degli incantesimi del Male).
 - **Tratti del nano**: stabilità, esperto minatore, +1 ai tiri per colpire contro orchi e goblinoidi, +4 di schivare contro i giganti.
 - Aura del male.
-
-**Tattiche** Le dà l'incontro epico della scala di ossa, nell'arco 02 (il testo dell'incontro coi duergar di Abbathor, «Tactical Overview», dove il chierico è «the evil cleric»): *Prima del combattimento* in «Initial Setup» (*benedizione*, *scudo della fede* e *protezione dal bene* su di sé e sugli alleati), *Durante il combattimento* in «Combat Tactics» (*blocca persone*, *scagliare maledizione* e *comando superiore* da pergamena, cure agli alleati), l'escalation quando il gruppo prende il sopravvento in «Mid-Combat Adjustments» (*ferire* e *colpo infuocato*). Incantesimi Rapidi gli dà un secondo incantesimo per round: *favore divino* o *scudo della fede* rapidi in uno slot di 5°.
-- *Morale*: sotto i 30 pf beve una pozione di *cura ferite gravi* e arretra dietro gli antipaladini; se cadono i due antipaladini e lui è sotto metà pf, legge la pergamena di *comando superiore* («fuggite») e ripiega verso l'Underdark. Abbathor premia chi conserva il proprio tesoro, non chi muore per un ponte.
 
 **Benchmark** PF T1-1 riga 11 (CA 25, pf 145, att. +19, danno medio 50, CD 20): CA 25 ✓ · pf 86 ✗ sotto · att. +12 ✗ (è un incantatore) · CD 20 al 6° ✓, 19 al 5° ≈. Un GS 11 da incantatore: regge con i due antipaladini davanti.
 
@@ -67,3 +70,7 @@ era: attacco morning star +1 +11/+6 (1d8+3), scudo +1 +6 (1d4+2); BAB +8, Lotta 
 era: «CD 13 + liv», «Colpire i Giganti», «Earthen Spell Power» nella prosa: la CD con Sag 18 è 14 + livello; le altre due non sono capacità di un chierico nano SRD.
 era (testo dell'incontro epico): pf 84, CA 24 scomposta «8 piastre + 2 scudo + 1 Des + 3 naturale» (gli oggetti danno 25), TS Rifl +5 e Vol +13 (il conto dà +4 e +12), sei talenti, intimorire 6/giorno.
 <!-- /storico -->
+
+> correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12): al 2° livello era scritto *profanare* (*Unhallow*, 5°); l'incantesimo di 2° è *dissacrare* (*Desecrate*).
+
+> Equipaggiamento sopra la tabella: scelta del DM (card del 2026-11-14). Vale almeno 26.890 mo contro i 21.000 della Tabella 4-23 del DMG 3.5 per il livello effettivo 11; il GS resta 11 e nessun numero cambia.

@@ -1,0 +1,389 @@
+{
+  "schema_version": "1.0",
+  "title": "CORTILE INTERNO — 36 m × 27 m (24 col × 18 righe · 1,5 m) · cielo aperto",
+  "scale_m_per_square": 1.5,
+  "units_in": "squares",
+  "map_size": [
+    24,
+    18
+  ],
+  "base_terrain": "🟫",
+  "north": "N",
+  "regions": [
+    {
+      "terrain": "⬛",
+      "rect": [
+        1,
+        4,
+        1,
+        2
+      ],
+      "label": "Edificio / corpo di fabbrica (muratura piena: blocca vista e movimento)"
+    },
+    {
+      "terrain": "⬛",
+      "rect": [
+        4,
+        4,
+        1,
+        1
+      ],
+      "label": "Edificio / corpo di fabbrica (muratura piena: blocca vista e movimento)"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        13,
+        4,
+        3,
+        1
+      ],
+      "label": "Pavimento lavorato"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        10,
+        5,
+        4,
+        1
+      ],
+      "label": "Pavimento lavorato"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        11,
+        6,
+        2,
+        2
+      ],
+      "label": "Pavimento lavorato"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        11,
+        11,
+        2,
+        5
+      ],
+      "label": "Pavimento lavorato"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        12,
+        16,
+        1,
+        1
+      ],
+      "label": "Pavimento lavorato"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        22,
+        16,
+        1,
+        1
+      ],
+      "label": "Pavimento lavorato"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        0,
+        3,
+        14,
+        1
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        16,
+        3,
+        2,
+        1
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        20,
+        3,
+        4,
+        1
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        0,
+        4,
+        1,
+        14
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        23,
+        4,
+        1,
+        13
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        1,
+        17,
+        10,
+        1
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        13,
+        17,
+        9,
+        1
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🟦",
+      "rect": [
+        19,
+        7,
+        1,
+        1
+      ],
+      "label": "Acqua profonda"
+    }
+  ],
+  "structures": [
+    {
+      "type": "☁",
+      "rect": [
+        0,
+        0,
+        21,
+        3
+      ]
+    },
+    {
+      "type": "☁",
+      "rect": [
+        22,
+        0,
+        2,
+        3
+      ]
+    },
+    {
+      "type": "☁",
+      "rect": [
+        21,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "⚒",
+      "at": [
+        2,
+        6
+      ]
+    },
+    {
+      "type": "⚔",
+      "rect": [
+        10,
+        8,
+        3,
+        3
+      ]
+    },
+    {
+      "type": "🏗",
+      "at": [
+        1,
+        9
+      ]
+    },
+    {
+      "type": "🏗",
+      "at": [
+        22,
+        9
+      ]
+    },
+    {
+      "type": "🏮",
+      "rect": [
+        2,
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🔔",
+      "at": [
+        19,
+        3
+      ]
+    },
+    {
+      "type": "🗼",
+      "at": [
+        18,
+        3
+      ]
+    },
+    {
+      "type": "🗼",
+      "at": [
+        23,
+        17
+      ]
+    },
+    {
+      "type": "🗿",
+      "rect": [
+        11,
+        4,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🚪",
+      "rect": [
+        11,
+        17,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🚪",
+      "rect": [
+        14,
+        3,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🚪",
+      "at": [
+        22,
+        17
+      ]
+    },
+    {
+      "type": "🪨",
+      "rect": [
+        4,
+        5,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🪨",
+      "rect": [
+        4,
+        11,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🪨",
+      "rect": [
+        17,
+        5,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🪨",
+      "rect": [
+        17,
+        11,
+        2,
+        1
+      ]
+    }
+  ],
+  "units": [
+    {
+      "token": "⚫",
+      "at": [
+        21,
+        0
+      ],
+      "name": "Boss / comandante"
+    },
+    {
+      "token": "🔵",
+      "at": [
+        3,
+        15
+      ],
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "at": [
+        6,
+        15
+      ],
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "at": [
+        11,
+        16
+      ],
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "at": [
+        16,
+        15
+      ],
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "at": [
+        19,
+        15
+      ],
+      "name": "PG / alleati"
+    }
+  ],
+  "notes": [
+    "Contratto ricavato il 2026-11-09 dalla griglia di `07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md` (mappa 1) con `import_ultraclear.py`. Griglia e contratto restano identici: lo controlla `scripts/tests/test_contratti_mappe.py`. Chi cambia la mappa cambia questo file e rigenera la griglia con `compile_map_json.py`."
+  ],
+  "simboli_locali": {
+    "☁": "zona aerea (serve volo o gittata)"
+  }
+}

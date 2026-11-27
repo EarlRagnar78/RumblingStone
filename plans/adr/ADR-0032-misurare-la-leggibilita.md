@@ -99,6 +99,11 @@ Si rivaluta quando Typst emetterà l'identificazione PDF/UA: allora il referto
 diventerebbe azionabile per intero. La ricetta per rifarlo sta qui sopra, così la
 prossima persona non deve riscoprire la storia del provider.
 
+> **Rivalutato il 2026-11-13 ([ADR-0129](ADR-0129-il-volume-da-stampa-e-pdf-ua-1.md)).**
+> Da typst 0.14 l'identificazione PDF/UA c'è se la si chiede: sui 19 booklet
+> veraPDF passa da 0 a 17 conformi. veraPDF resta fuori dalla CI per le stesse
+> ragioni di costo; il cancello è typst stesso.
+
 ## Conseguenze
 
 **Buone.** Tre difetti che nessun exit code vedeva ora hanno un numero. La

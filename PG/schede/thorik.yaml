@@ -10,23 +10,15 @@ schema_version: 1
 pg: Thorik
 
 caratteristiche:
-  # FOR 20 è il numero del modulo al tavolo (Sentinella, chi porta il corpo).
-  # Il lotto 4g-2 lo prende così; se comprende un oggetto, lo dice il DM.
-  for: {base: 20, attuale: 20, attestato_da: "07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md"}
-  # La sola catena attestata per intero: il modulo scrive «DES: 10 → 8 (-2 Corona)»
-  # quando la indossa, e il rito dello Smeraldo toglie altri 2.
-  des: {base: 10, attuale: 6, attestato_da: "07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md"}
-  cos: {base: null, attuale: null, attestato_da: null}
-  int: {base: null, attuale: null, attestato_da: null}
-  sag: {base: null, attuale: null, attestato_da: null}
-  # CAR 8 → 12, un solo +4. È il conto del canone giocato: state.yaml del ramo
-  # di gruppo (campaign-group-rumblingstone) dà «−4 DES / +2 COS / +4 CAR
-  # permanenti» in tutto, e la scheda giocatore della Corona, rivista, scrive
-  # «+4 CAR (8 → 12)». P1 e DEF-1 attribuiscono quel +4 l'uno alla Corona e
-  # l'altro al rito: è lo stesso punto, contato una volta. Il DM il 2026-10-23:
-  # il canone è quello giocato dal gruppo e dagli artefatti rivisti.
-  # Qui sta col rito, come in state.yaml, che è il master (ADR-0050).
-  car: {base: 8, attuale: 12, attestato_da: "PG/Artefatti/Artefatti-Pg/00-La Corona di Adamantio-ogetto&Prove/00_SCHEDA-GIOCATORE-STATO-ATTUALE.md"}
+  # Lotto P16 «PG» (2026-11-05): la carta del DM, con la DES 12 che ha già il −2
+  # della Corona (base 14) e senza il rito dello Smeraldo, che qui si aggiunge.
+  for: {base: 20, attuale: 20, attestato_da: "plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md"}
+  des: {base: 14, attuale: 10, attestato_da: "plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md"}
+  cos: {base: 16, attuale: 18, attestato_da: "plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md"}
+  int: {base: 13, attuale: 13, attestato_da: "plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md"}
+  sag: {base: 12, attuale: 12, attestato_da: "plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md"}
+  # CAR 9 della carta, +4 del rito (un solo +4, come in state.yaml).
+  car: {base: 9, attuale: 13, attestato_da: "plans/esperimenti/p16-inferred-2026-11-04/SCHEDE-PG-CARTA.md"}
 
 modificatori_permanenti:
 - caratteristica: DES

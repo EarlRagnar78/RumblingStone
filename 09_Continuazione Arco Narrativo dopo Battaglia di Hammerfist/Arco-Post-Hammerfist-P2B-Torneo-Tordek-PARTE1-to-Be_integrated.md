@@ -287,10 +287,10 @@ Proprio mentre il colpo sembra risolvere tutto, la terra vibra. L'annunciatore e
 COLPO DI SCENA — APERTURA DEL PORTALE
 
 L'aria si raffredda; il pubblico vede una fenditura blu-violacea che si apre sopra il piedistallo. Mani tentacolari emergono. Urli, caos.
-Una voce telepatica avvolge l'arena: "Voi... piccole coscienze. Preparatevi ad essere raccolte." — Xal'thor comunica con tutti i presenti.
+Una voce telepatica avvolge l'arena: "Voi... piccole coscienze. Preparatevi a essere raccolte." — Xal'thor comunica con tutti i presenti.
 (Gioco: tutti tirano Volontà DC 18. Chi fallisce subisce 2d6 danno mentale e può essere soggetto a Dominazione.)
 
-FASE DI INVASIONE — CAOS E EROISMO
+FASE DI INVASIONE — CAOS ED EROISMO
 
 Le orde illithid scendono in ondate. Il monaco e Rihan, ora, devono collaborare: il nucleo psionico è il cuore — distruggerlo ferma la connessione.
 NPC alleati (referee, guardie reali) aiutano a evacuare il pubblico; i giocatori decidono: difendere il pubblico o attaccare il nucleo.

@@ -1,0 +1,6 @@
+{"_fonte": "campaign/state.md al commit cafd15a6 (2026-07-02): §0 righe 32-52, §2.1 righe 98-109; livello di ARC-07 = D8 del piano ARC-07 (13°), ARC-08 = D9 (13° consolidato)",
+ "giorno_arrivo": 42,
+ "waypoint": {"Vraath": [6,6], "Skull Gorge": [8,9], "Drellin": [12,13], "Terrelton": [19,19], "Marth Fen / Blackfens": [25,25], "Elsir": [33,35]},
+ "quest": {"P2A Torre": [28,35], "P2 Rhest": [25,32], "P2B Torneo": [25,34], "P3 Starsong": [30,35], "P3 Ghostlord": [25,32]},
+ "livelli": {"07": [13,13], "08": [13,13], "09": [13,14]},
+ "portatori": {}, "modifiche": {}, "echi": []}

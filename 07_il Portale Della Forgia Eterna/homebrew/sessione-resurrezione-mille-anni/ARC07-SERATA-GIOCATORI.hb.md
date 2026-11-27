@@ -396,10 +396,11 @@ non si fonde nel corpo nuovo.
 ## Treant di Adamantio (evocato)
 *Vegetale Grande*
 ___
+**Taglia** Grande · **Spazio** 3 m (2×2 quadretti) · **Portata** 3 m (2 quadretti)
 
 **DIFESA**
 ___
-**CA 24** · **pf 90** · TS Tempra +12, Riflessi +3, Volontà +8 · **RD 10/adamantio**  
+**CA 24** · **pf 95** · TS Tempra +12, Riflessi +3, Volontà +8 · **RD 10/adamantio**  
 
 **ATTACCO**
 ___

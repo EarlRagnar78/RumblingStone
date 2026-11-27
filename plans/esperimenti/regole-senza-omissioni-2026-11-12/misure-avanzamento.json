@@ -1,0 +1,28 @@
+{
+ "schede": 6,
+ "per_classe": {
+  "Loremaster": {
+   "fatte": 6,
+   "viste_prima": 0,
+   "viste_dopo": 0
+  },
+  "Assassin": {
+   "fatte": 6,
+   "viste_prima": 0,
+   "viste_dopo": 6
+  },
+  "Eldritch Knight": {
+   "fatte": 6,
+   "viste_prima": 0,
+   "viste_dopo": 6
+  }
+ },
+ "errori_messi": 12,
+ "errori_visti_prima": 0,
+ "errori_visti_dopo": 12,
+ "controlli": 6,
+ "controlli_segnati_a_torto_prima": 0,
+ "controlli_segnati_a_torto_dopo": 0,
+ "perse": [],
+ "falsi": []
+}

@@ -5,6 +5,9 @@
 ```statblocco
 gs: 8
 tipo: Medium humanoid (elf/human), Bard 8, NE
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 16
 ca-dettaglio: touch 12, flat-footed 15 (camicia di mithral, +1 Des, anello di protezione +1)
 pf: 36
@@ -29,17 +32,17 @@ voci:
 **Attacco** Vel 9 m · **Mischia** spada lunga perfetta +7/+2 (1d8/19-20) · **Attacchi speciali** musica bardica 8/giorno (ispirare coraggio +2, affascinare 3 bersagli, ispirare competenza, suggestione CD 18, controcanto) · **Incantesimi conosciuti** (bardo 8, LI 8; 3/4/4/2 al giorno; CD 14 + livello, ammaliamento 15 + livello):
 - 3° — *confusione* (CD 18), *velocità*, *loquacità*
 - 2° — *blocca persone* (CD 17), *invisibilità*, *polvere luccicante* (CD 16), *suggestione* (CD 17)
-- 1° — *charme su persone* (CD 16), *camuffare se stesso*, *cura ferite leggere*, *ritirata rapida*, *risata incontenibile* (CD 16)
+- 1° — *charme su persone* (CD 16), *camuffare se stesso*, *cura ferite leggere*, *risata incontenibile* (CD 16)
 - 0 — *apertura/chiusura*, *lettura del magico*, *luce*, *messaggio*, *prestidigitazione*, *suono fantasma*
-
-**Statistiche** For 10, Des 13, Cos 12, Int 14, Sag 8, Car 19 · BAB +6; Lotta +6 · **Talenti** Iniziativa Migliorata, Incantesimi Focalizzati (ammaliamento), Incantare in Combattimento · **Abilità** Diplomazia +16, Raggirare +15, Intrattenere (danza) +15, Raccogliere Informazioni +14, Camuffare +12 (+22 col cappello), Usare Oggetti Magici +12, Rapidità di Mano +11, Concentrazione +9 (+13 sulla difensiva), Acrobazia +9, Muoversi Silenziosamente +6, Ascoltare +5; conoscenze bardiche +10 · **Linguaggi** Comune, Elfico, Goblin, Illuskan, Orchesco · **Equipaggiamento** camicia di mithral, mantello del Carisma +2, cappello del camuffamento, anello di protezione +1, spada lunga perfetta, 2 pozioni di *cura ferite leggere*, abiti da intrattenitore
-
-**Capacità speciali** Bardo 8 (SRD): musica bardica, conoscenze bardiche, controcanto, affascinare, ispirare coraggio +2, ispirare competenza, suggestione. Mezzelfo (della Foresta Alta, regione di Faerûn): sangue elfico, visione crepuscolare, immune al sonno magico. Devoto di Mask.
 
 **Tattiche**
 - *Prima del combattimento*: Lómyn non combatte da Lómyn. Va in giro col cappello del camuffamento e un'altra faccia, e quando sente aria di scontro si mette dietro qualcuno che combatte per lui: un *charme su persone* lanciato giorni prima, o una guardia pagata.
 - *Durante il combattimento*: al primo round, se i suoi sono più di due, *ispirare coraggio*; se è solo, *invisibilità* e si sposta. Al secondo *confusione* sul gruppo più compatto, o *blocca persone* sul guerriero che gli corre incontro. Contro chi è invisibile, *polvere luccicante*. *Suggestione* (con la musica, CD 18) la tiene per il PG che sembra comandare: «Lascia andare il cantore, non è lui che vuoi». *Velocità* la lancia sui suoi, mai su se stesso. Non tocca la spada se non è messo all'angolo.
-- *Morale*: a metà dei pf (18) se ne va: *invisibilità*, *ritirata rapida* e un'altra faccia al primo angolo. Se lo prendono, si arrende subito e offre di vendere chi l'ha pagato, con i nomi. Mente su metà di quello che dice, e Raggirare +15 regge contro quasi tutti.
+- *Morale*: a metà dei pf (18) se ne va: *invisibilità* e un'altra faccia al primo angolo. Se lo prendono, si arrende subito e offre di vendere chi l'ha pagato, con i nomi. Mente su metà di quello che dice, e Raggirare +15 regge contro quasi tutti.
+
+**Statistiche** For 10, Des 13, Cos 12, Int 14, Sag 8, Car 19 · BAB +6; Lotta +6 · **Talenti** Iniziativa Migliorata, Incantesimi Focalizzati (ammaliamento), Incantare in Combattimento · **Abilità** Diplomazia +16, Raggirare +15, Intrattenere (danza) +15, Raccogliere Informazioni +14, Camuffare +12 (+22 col cappello), Usare Oggetti Magici +12, Rapidità di Mano +11, Concentrazione +9 (+13 sulla difensiva), Acrobazia +9, Muoversi Silenziosamente +6, Ascoltare +5; conoscenze bardiche +10 · **Linguaggi** Comune, Elfico, Goblin, Illuskan, Orchesco · **Equipaggiamento** camicia di mithral, mantello del Carisma +2, cappello del camuffamento, anello di protezione +1, spada lunga perfetta, 2 pozioni di *cura ferite leggere*, abiti da intrattenitore
+
+**Capacità speciali** Bardo 8 (SRD): musica bardica, conoscenze bardiche, controcanto, affascinare, ispirare coraggio +2, ispirare competenza, suggestione. Mezzelfo (della Foresta Alta, regione di Faerûn): sangue elfico, visione crepuscolare, immune al sonno magico. Devoto di Mask.
 
 
 **Benchmark**: PF T1-1 riga 8 (CA 21, pf 100, att +15, danno 35, CD 18): CA 16 (−5), pf 36 (−64), att +7 (−8), CD primaria 18 (uguale). Vale il suo GS solo se combatte con le parole e con gli altri: da solo e scoperto cade in un round.

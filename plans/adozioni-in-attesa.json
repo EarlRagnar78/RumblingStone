@@ -1,5 +1,5 @@
 {
-  "descrizione": "Codice o skill esterni valutati e rimandati, ognuno con la condizione misurabile che ne fa partire l'adozione. Lo legge scripts/adozioni_in_attesa.py; --check esce 1 quando una condizione e' attiva e la voce e' ancora 'in attesa' (ADR-0076).",
+  "descrizione": "Codice o skill esterni valutati e rimandati, e dal 2026-11-13 i lotti interni rimandati (\"tipo\": \"lotto\"), ognuno con la condizione misurabile che ne fa partire l'adozione. Lo legge scripts/adozioni_in_attesa.py; --check esce 1 quando una condizione e' attiva e la voce e' ancora 'in attesa' (ADR-0076; i lotti interni: R-6 del piano di recupero). Le attese che dipendono solo da una parola del DM non entrano: restano nel loro piano.",
   "adozioni": [
     {
       "id": "commit-archaeologist",
@@ -24,6 +24,36 @@
         "descrizione": "almeno 3 file di gioco (master, stand-alone, Drappo) con 10 o piu' commit negli ultimi 60 giorni e nessuna riga di storia nel sorgente"
       },
       "quando_scatta": "si apre il lotto L10 di PIANO-AGENT-SKILLS-ESTERNE: adozione con ADR-0010, licenza e attribuzione come per lo scanner, e la voce passa a 'da adottare'"
+    },
+    {
+      "id": "generatore-lotto-k",
+      "tipo": "lotto",
+      "piano": "plans/PIANO-GENERATORE-CREATURE-E-PNG.md §10 (Lotto K: l'incontro tarato sulla composizione del gruppo)",
+      "decisione": "Jfs, 2026-11-13 23:40, card del thread audit (D5 del piano di recupero): in attesa, parte quando la milestone v1.2.0 (regole complete) e' chiusa",
+      "cosa_porterebbe": "suggest_encounter con un'opzione che tara l'incontro sulla composizione del gruppo: pressione, non contromisure; almeno un bersaglio su cui ogni PG ha presa, o il tool si rifiuta",
+      "perche_non_ora": "il lotto legge le regole complete (lotti di ADR-0126) che la v1.2.0 chiude; tararlo prima vuol dire rifarlo",
+      "stato": "in attesa",
+      "condizione": {
+        "misura": "versione_rilasciata",
+        "versione": "1.2.0",
+        "descrizione": "CHANGELOG.md ha la sezione ## [1.2.0]: la milestone v1.2.0 chiude con il suo rilascio (regola della documentazione a ogni milestone)"
+      },
+      "quando_scatta": "si apre il lotto K di PIANO-GENERATORE-CREATURE-E-PNG con il criterio di §10 (pressione, non contromisure), e la voce passa a 'da adottare'"
+    },
+    {
+      "id": "blockbench-stanze-3d",
+      "tipo": "lotto",
+      "piano": "plans/RICERCA-TOOL-LGM-2026.md §3.3 (Blockbench: la geometria, a un decimo del costo di Blender)",
+      "decisione": "Jfs, 2026-11-13 23:48, card del thread audit: in attesa finche' lo script per le serie ComfyUI e' su main; 2026-11-13 23:54, card del thread del piano di recupero: quella condizione era gia' vera (scripts/comfyui_batch.py su main dal 2026-09-05, 494174ce), nuova condizione «una serie vera generata»",
+      "cosa_porterebbe": "la stanza modellata low-poly in Blockbench (GPL-3.0, l'opera resta dell'autore) come primo anello della catena geometria → profondita' in Blender → ControlNet depth: tavola e pianta sono la stessa stanza",
+      "perche_non_ora": "la catena ComfyUI non ha ancora prodotto una serie vera: senza, la geometria non ha dove entrare",
+      "stato": "in attesa",
+      "condizione": {
+        "misura": "serie_comfyui_registrata",
+        "righe_minime": 3,
+        "descrizione": "un PROVENIENZA.txt del repo ha almeno 3 righe scritte da scripts/comfyui_batch.py (formato con il seed, ADR-0019 §2)"
+      },
+      "quando_scatta": "si apre il lotto Blockbench di RICERCA-TOOL-LGM-2026 §3.3: una stanza di prova, Blender resta per il passo di profondita', e la voce passa a 'da adottare'"
     }
   ]
 }

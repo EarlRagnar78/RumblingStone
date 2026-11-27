@@ -1,0 +1,52 @@
+# sistemi/d20/dati/formule.toml — le formule della famiglia d20 (F3 di ADR-0112)
+#
+# Ogni formula è scritta come nel manuale e si valuta con simpleeval ristretto
+# (`dmcore.formule`): solo interi, + − × // %, confronti, `max` e `min`.
+# `ingressi` sono i soli nomi che la formula può usare; `sistemi.py --check`
+# boccia un nome in più o un nodo fuori lista. `test_formule.py` confronta ogni
+# formula con la funzione Python che ha sostituito, su tutto il dominio.
+
+[formule.modificatore]
+espressione = "(punteggio - 10) // 2"
+ingressi = ["punteggio"]
+fonte = "SRD 3.5, «Ability Modifiers»; PRD PF1e, «Table 1–3: Ability Modifiers»"
+
+[formule.ts_buono]
+espressione = "2 + dv // 2"
+ingressi = ["dv"]
+fonte = "SRD 3.5, «Creature Improvement by Type» e tabelle delle classi: TS buono"
+
+[formule.ts_cattivo]
+espressione = "dv // 3"
+ingressi = ["dv"]
+fonte = "SRD 3.5, «Creature Improvement by Type» e tabelle delle classi: TS cattivo"
+
+[formule.cd_incantesimo]
+espressione = "10 + livello + modificatore"
+ingressi = ["livello", "modificatore"]
+fonte = "SRD 3.5, «Saving Throw» (Magic Overview): CD = 10 + livello dell'incantesimo + modificatore"
+
+[formule.punteggio_minimo]
+espressione = "max(1, 10 + 2 * modificatore)"
+ingressi = ["modificatore"]
+fonte = "inversa di `modificatore`: il punteggio più basso che dà quel modificatore, mai sotto 1"
+
+[formule.livello_incantatore_ridotto]
+espressione = "max(0, livello - 3)"
+ingressi = ["livello"]
+fonte = "PRD PF1e, ranger e paladino: livello dell'incantatore = livello di classe − 3 (scelta del DM 2026-11-09 anche per il 3.5; non SRD 3.5)"
+# Scelta del DM (card del 2026-11-09, «Tenere livello meno 3»): vale anche
+# nei moduli 3.5. È la regola PF1e, più forte di quella SRD 3.5 dal 7° livello
+# (al 14°: 11 contro 7), secondo la regola del DM «la versione più potente,
+# con la fonte segnata». ⚠ Non SRD 3.5: l'SRD dice «one-half his ranger
+# level» dal 4° (character-classes-ii.md, righe 57 e 179 della fonte in cache).
+
+[formule.incantesimi_bonus]
+espressione = "0 if livello < 1 else (0 if modificatore < livello else 1 + (modificatore - livello) // 4)"
+ingressi = ["livello", "modificatore"]
+fonte = "SRD 3.5 e PRD PF1e, «Table: Ability Modifiers and Bonus Spells»: riscontrata riga per riga da estrai_incantatori.py (ADR-0126, lotto 3)"
+
+[formule.punteggio_per_lanciare]
+espressione = "10 + livello"
+ingressi = ["livello"]
+fonte = "SRD 3.5, classi che lanciano: per un incantesimo di livello L serve la caratteristica a 10 + L"

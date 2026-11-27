@@ -203,7 +203,11 @@ Le due catene di lavoro sono **indipendenti**: la provenienza serve prima di
 - **⬜ 2.1 — Bonifica del bestiario non-SRD** (§2). ~220 occorrenze, priorità:
   illithid e githyanki (arco 09), poi il Circolo degli Otto, poi il resto. Le
   statistiche restano SRD: si sostituisce l'**identità**. *Accettazione*: un
-  validatore che **fallisce** se una rientra.
+  validatore che **fallisce** se una rientra. Dal 2026-11-08 (D11 di RIPRESA-PR,
+  perimetro di ADR-0049 con il Bestiario dentro) anche: `Bestiario/` sotto **1,0**
+  occorrenze RHoD ogni 1.000 parole (oggi 3,0), misurate come nell'audit
+  `AUDIT-DERIVAZIONE-IP-CAMPAGNA`. Nessuna creatura si toglie: cambiano nome e
+  testo nelle copie che escono, la campagna resta com'è.
 - **⬜ 2.2 — La verifica della struttura contro RHoD** (§2): camera bianca + test
   del lettore, un verdetto motivato per arco. ⚠️ **Solo se questo lotto stabilisce
   che è falsa** si corregge la riga *«heavily based on Red Hand of Doom»* del
@@ -272,6 +276,10 @@ ciò che porta il primo utente.
    si guardano le PR aperte.* Sei settimane di lavoro sono state riscritte da capo
    perché nessuno ha guardato una bozza. Vale la pena metterla nella skill
    `rumblingstone-plans`.
+5. **Il perimetro di [ADR-0049](adr/ADR-0049-edizione-commerciale-ap-originale.md)**
+   (era la D11 di RIPRESA-PR): ✅ **deciso dal DM il 2026-11-08**, adottato con il
+   `Bestiario/` dentro. La pulizia del Bestiario entra nel lotto 2.1; l'ADR resta
+   proposta fino alla verifica di un avvocato IP.
 
 ---
 
@@ -285,7 +293,7 @@ ciò che porta il primo utente.
 > illustrati e non mappe. Sotto `validate_maps` ce ne sono **40**, di 18 master.
 >
 > **Decisione attuata**: [ADR-0048](adr/ADR-0048-legenda-funzionale-fonte-unica.md).
-> **Spec normativa**: [`LEGENDA-FUNZIONALE-SPEC`](../docs/guides/LEGENDA-FUNZIONALE-SPEC.md).
+> **Spec normativa**: [`LEGENDA-FUNZIONALE-SPEC`](../docs/reference/LEGENDA-FUNZIONALE-SPEC.md).
 
 ### 9.0 · Informazioni mancanti e assunzioni dichiarate
 

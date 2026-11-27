@@ -1,10 +1,13 @@
-# avatar-tiamat-cr17 [ACCEPTED — DM-canon 2026-05-05]
+# avatar-tiamat-cr17 [CANONE — DM 2026-05-05]
 
 **Faction**: red-hand | **Role**: boss-epic-dragon | **Environment**: any | **CR**: 17
 
 ```statblocco
 gs: 17
 tipo: Huge outsider (lawful, evil, extraplanar), 20d10+120
+taglia: Enorme
+spazio: 4,5 m
+portata: 3 m (4,5 m con il morso)
 ca: 34
 ca-dettaglio: (−2 taglia, +4 Des, +22 naturale); contatto 12, colto alla sprovvista 30
 pf: 230
@@ -35,6 +38,11 @@ Huge outsider (lawful, evil, extraplanar), 20d10+120. La Regina Cromatica è leg
 
 **Attacco** Vel 18 m, volare 30 m (buona) · **Mischia** morso principale +28 (3d8+10), 2 artigli +26 (2d6+5), 2 morsi minori +26 (2d8+5) · **Spazio** 4,5 m; **portata** 3 m (4,5 m col morso principale) · **Attacchi speciali** tre soffi, aura di terrore
 
+**Tattiche**
+- *Prima del combattimento*: durante la Sotto-fase A resta una sagoma nel vortice sopra Azarr Kul; non attacca, ma la sua aura comincia a farsi sentire sulle truppe. Scende quando Azarr Kul è sotto metà dei pf o dopo 4-6 round.
+- *Durante il combattimento*: round 1, piomba a 9 m dal gruppo più compatto e soffia il fuoco a cono sui PG raggruppati; l'aura scatta all'arrivo. Round 2, attacco completo su chi tiene il Mythal: è una dea e sa che il cerchio è la sua sola debolezza `[CANONE — DM 2026-11-15]`. Tra un soffio e l'altro cerca chi tiene il cerchio, con l'aura e non scavando come Tyrgarun; se nessuno lo tiene ancora, va sul PG che minaccia Azarr Kul. Round 3, soffio a linea (elettricità o acido) dove allinea due bersagli, meglio se uno è un incantatore del Circolo. Da lì tiene un ritmo leggibile, due round di mischia e uno di soffio con la testa che ha pronta, come chiede la Fase 3. Contro chi non vola usa Attacco in Volo: morde e risale fuori portata. Contro un PG invisibile soffia a linea dove lo ha sentito (Ascoltare +28). Quando un focus cade, ruggisce col colore che ha perso e cambia testa.
+- *Morale*: sotto 115 pf scatta la Sotto-fase C. Se il Mythal si ancora non può più fuggire e combatte fino alla distruzione; se il Mythal non si chiude e scende sotto 50 pf, si ritira nel vortice urlando maledizioni, e lo scontro finisce con lei respinta.
+
 **Statistiche** For 30 Des 18 Cos 22 Int 18 Sag 20 Car 24 · BAB +20; Lotta +38 · **Talenti** Multiattacco, Iniziativa Migliorata, Attacco Naturale Migliorato (morso), Tempra Possente, Attacco in Volo, Volontà di Ferro, Capacità Focalizzata (aura di terrore): la scheda non li elencava, e sono quelli che spiegano iniziativa, morso, Tempra, Volontà e CD dell'aura · **Abilità** Ascoltare +28, Osservare +28, Concentrazione +29, Intimidire +30, Percepire Intenzioni +28, Conoscenze (piani) +27, Sapienza Magica +27 · **Linguaggi** Draconico, Infernale, Abissale, Comune
 
 **Capacità speciali**
@@ -43,11 +51,6 @@ Huge outsider (lawful, evil, extraplanar), 20d10+120. La Regina Cromatica è leg
 - **Aura di terrore (Sop)**: 18 m, Volontà CD 29 o spaventato per 1d4 round.
 - **Manifestazione legata al rituale**: con 5-8 round riusciti in Fase 2 si presenta parziale (meno pf, uno o due soffi spenti); con 0-4 appare solo una Manifestazione d'Ombra a metà pf, senza soffi multipli e con l'aura ridotta. Se l'Artefatto Maligno è stato usato nel rituale (Fase 0): +20 pf e +2 alle CD.
 - **Debolezza: il Mythal**: completo, le dà −2 ai tiri per colpire, ai TS e alla RI, le impedisce di lasciare il campo centrale e blocca nuove evocazioni.
-
-**Tattiche**
-- *Prima del combattimento*: durante la Sotto-fase A resta una sagoma nel vortice sopra Azarr Kul; non attacca, ma la sua aura comincia a farsi sentire sulle truppe. Scende quando Azarr Kul è sotto metà dei pf o dopo 4-6 round.
-- *Durante il combattimento*: round 1, piomba a 9 m dal gruppo più compatto e soffia il fuoco a cono sui PG raggruppati; l'aura scatta all'arrivo. Round 2, attacco completo sul PG che minaccia Azarr Kul o che sta più vicino al Circolo. Round 3, soffio a linea (elettricità o acido) dove allinea due bersagli, meglio se uno è un incantatore del Circolo. Da lì tiene un ritmo leggibile, due round di mischia e uno di soffio con la testa che ha pronta, come chiede la Fase 3. Contro chi non vola usa Attacco in Volo: morde e risale fuori portata. Contro un PG invisibile soffia a linea dove lo ha sentito (Ascoltare +28). Quando un focus cade, ruggisce col colore che ha perso e cambia testa.
-- *Morale*: sotto 115 pf scatta la Sotto-fase C. Se il Mythal si ancora non può più fuggire e combatte fino alla distruzione; se il Mythal non si chiude e scende sotto 50 pf, si ritira nel vortice urlando maledizioni, e lo scontro finisce con lei respinta.
 
 
 Benchmark: PF T1-1 riga 17: CA 34 sopra (+2) / pf 230 sotto (−40) / attacco +28 sopra (+1) / danno medio pieno 75 sotto (90; il soffio fa 54 ad area) / CD 26-29 sopra / TS buono +20 in linea (20).

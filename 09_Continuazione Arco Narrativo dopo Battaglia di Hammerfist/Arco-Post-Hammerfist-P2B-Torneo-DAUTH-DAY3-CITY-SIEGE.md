@@ -61,7 +61,7 @@ state.md §2). Il "terrore del cielo" qui è un semplice **Razorfiend**.
 | Elemento | Statblock (riuso) | Fonte / condizione |
 |---|---|---|
 | Comandante nanico di Dauth | `.../dauth-commander-mercenari-nani-cr12.md` | Guarnigione cittadina |
-| Difensori nani | `.../dauth-dwarf-defender-cr6.md` | Guarnigione |
+| Difensori nani (**200**, `[CANONE — DM 2026-11-05, P16, mura]`) | `.../dauth-dwarf-defender-cr6.md` | Guarnigione fissa: da sola tiene la Porta Sud (§8) |
 | **300 mercenari nani** | (astratti) | **Solo se Tordek vince/ha vinto** (D10) — a Dauth sono già ingaggiati per l'evento |
 | **150 lance di Re Thorek** | (astratte) | **Solo se il sigillo + messaggero** sono partiti in tempo — vedi `...SUBQUEST-Thorik.md` |
 | **Joran** (CR 5) + profughi | `HOOKS-Ghostlord-Refugees` §7.3 | **Solo se** la carovana è stata scortata a Dauth |
@@ -304,13 +304,18 @@ Per ogni carta **non giocata**, tira **1d20 + Fronte corrente** vs **CD 18**:
   la Porta Est è ridotta a postierla. È una piccola città, più del borgo della Elsir
   Vale, perché regga l'urto della Mano Rossa (scelta del DM, 2026-10-22)
   `[CANONE — DM 2026-10-23]`.
-- **Quanti uomini servono sulle mura** `[INFERRED — needs DM confirmation]`: le mura
+- **Quanti uomini servono sulle mura** `[CANONE — DM 2026-11-05, P16, mura]`: le mura
   della pianta sono lunghe 2,55 km, con 59 torri. Con la regola del Burghal Hidage
-  (0,8 uomini per metro di mura) servono circa 2.000 difensori. Gli uomini abili, il
-  18% di 7.000 abitanti, sono circa 1.260; con i 300 mercenari nani e le 150 lance
-  si arriva a circa 1.700, più la guarnigione nanica (§1.2). Per l'intero giro non
-  bastano: si tengono le mura sud e ovest, dove preme il Vanguard, e si lasciano
-  leggere quelle nord ed est, sopra il versante ripido.
+  (0,8 uomini per metro di mura) servono circa 2.000 difensori. La leva degli uomini
+  abili (circa 1.260, il 18% di 7.000 abitanti) **non sale sulle mura**: porta l'acqua,
+  tiene le cisterne (Carta C) e spegne i fuochi. Sulle mura stanno la guarnigione
+  nanica di **200 nani** (§1.2), più i 300 mercenari se Tordek vince e le 150 lance se
+  parte il sigillo di Thorik: al massimo 650 soldati, un terzo di quelli che servono.
+  Si tengono le mura sud e ovest, dove preme il Vanguard, e si lasciano leggere quelle
+  nord ed est, sopra il versante ripido. Con la sola guarnigione si tiene la Porta Sud.
+  <!-- storico -->
+  *Prima del 2026-11-05 la leva si sommava (circa 1.700 più la guarnigione, che non aveva un numero).*
+  <!-- /storico -->
 - **HUB Torneo:** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md` §3 (sfondo Vanguard)
 - **Giorno 3 in arena (Tordek/Artemis):** `Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE3-Giorno3-Finale-e-Invasione.md`
 - **Le 150 lance (fonte):** `Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Thorik.md` §4

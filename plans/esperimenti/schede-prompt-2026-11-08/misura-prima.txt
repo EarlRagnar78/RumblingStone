@@ -1,0 +1,22 @@
+skill|righe|parole|lingua desc|«quando» in desc|date nel corpo|Vincoli|Formato d'uscita|Prima di consegnare|Cancelli|prove
+dnd-35-rules|49|357|en|True|0|False|False|False|True|0
+dnd-35-srd|72|413|en|True|0|True|True|False|True|3
+forgotten-realms-lore|57|424|en|True|0|True|True|False|True|3
+npc-villain-boosting|114|863|en|True|1|True|False|False|True|3
+pathfinder-1e-srd|80|524|en|True|1|True|True|False|True|3
+rumblingstone-art-direction|246|2165|it|True|1|False|False|False|True|0
+rumblingstone-automation|207|2058|it|True|3|False|False|False|True|0
+rumblingstone-campaign|92|695|en|True|0|True|False|False|True|3
+rumblingstone-debugging|110|811|it|True|1|False|False|False|True|0
+rumblingstone-editoria|324|3566|it|True|11|True|False|False|True|3
+rumblingstone-edizione|139|1070|it|True|1|False|True|False|True|0
+rumblingstone-indagine|206|2004|it|True|0|True|False|True|True|3
+rumblingstone-mapmaking|223|2082|en|False|7|False|False|False|True|0
+rumblingstone-module-standard|421|4306|en|True|5|True|False|True|True|3
+rumblingstone-narrative-style|231|2530|it|True|4|True|True|True|True|3
+rumblingstone-plans|277|2273|it|True|3|False|False|False|True|0
+rumblingstone-playtest|287|2501|it|True|2|True|False|False|True|3
+rumblingstone-prosa-documenti|144|1002|it|True|1|False|False|True|True|0
+
+AGENTS.md: 481 righe, 4497 parole, 32342 byte, 7 date
+brief/consegne a mano in plans/esperimenti: 4

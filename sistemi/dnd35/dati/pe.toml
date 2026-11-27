@@ -1,0 +1,29 @@
+# sistemi/dnd35/dati/pe.toml — PE cumulativi per livello, D&D 3.5 (ADR-0111, L4)
+#
+# Spostati senza cambiare un numero da `update_xp.py:THRESHOLDS`. La tabella
+# non è nell'SRD in cache (srd-v3.5-md): sta nel Manuale del Giocatore 3.5,
+# Tab. 3-2 «Experience and Level-Dependent Benefits». Il 3.5 ha una traccia sola.
+fonte = "PHB 3.5 Tab. 3-2 (non nell'SRD in cache); valori di update_xp.py:THRESHOLDS fino al 2026-11-07"
+etichetta = "3.5"
+
+[soglie.unica]
+"1" = 0
+"2" = 1000
+"3" = 3000
+"4" = 6000
+"5" = 10000
+"6" = 15000
+"7" = 21000
+"8" = 28000
+"9" = 36000
+"10" = 45000
+"11" = 55000
+"12" = 66000
+"13" = 78000
+"14" = 91000
+"15" = 105000
+"16" = 120000
+"17" = 136000
+"18" = 153000
+"19" = 171000
+"20" = 190000

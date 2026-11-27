@@ -1,0 +1,3146 @@
+{
+ "fonte_armature": {
+  "dnd35": {
+   "banded mail": {
+    "ca": 6,
+    "des_max": 1
+   },
+   "breastplate": {
+    "ca": 5,
+    "des_max": 3
+   },
+   "chain shirt": {
+    "ca": 4,
+    "des_max": 4
+   },
+   "chainmail": {
+    "ca": 5,
+    "des_max": 2
+   },
+   "full plate": {
+    "ca": 8,
+    "des_max": 1
+   },
+   "half-plate": {
+    "ca": 7,
+    "des_max": 0
+   },
+   "hide": {
+    "ca": 3,
+    "des_max": 4
+   },
+   "leather": {
+    "ca": 2,
+    "des_max": 6
+   },
+   "padded": {
+    "ca": 1,
+    "des_max": 8
+   },
+   "scale mail": {
+    "ca": 4,
+    "des_max": 3
+   },
+   "splint mail": {
+    "ca": 6,
+    "des_max": 0
+   },
+   "studded leather": {
+    "ca": 3,
+    "des_max": 5
+   }
+  },
+  "pf1e": {
+   "banded mail": {
+    "ca": 7,
+    "des_max": 1
+   },
+   "breastplate": {
+    "ca": 6,
+    "des_max": 3
+   },
+   "chain shirt": {
+    "ca": 4,
+    "des_max": 4
+   },
+   "chainmail": {
+    "ca": 6,
+    "des_max": 2
+   },
+   "full plate": {
+    "ca": 9,
+    "des_max": 1
+   },
+   "half-plate": {
+    "ca": 8,
+    "des_max": 0
+   },
+   "hide": {
+    "ca": 4,
+    "des_max": 4
+   },
+   "leather": {
+    "ca": 2,
+    "des_max": 6
+   },
+   "padded": {
+    "ca": 1,
+    "des_max": 8
+   },
+   "scale mail": {
+    "ca": 5,
+    "des_max": 3
+   },
+   "splint mail": {
+    "ca": 7,
+    "des_max": 0
+   },
+   "studded leather": {
+    "ca": 3,
+    "des_max": 5
+   }
+  }
+ },
+ "fonte_classi": {
+  "dnd35": {
+   "adept": {
+    "bab": 0.5,
+    "dv": 6,
+    "gradi": 2,
+    "gruppo": "png",
+    "ts_buoni": [
+     "vol"
+    ]
+   },
+   "arcane archer": {
+    "bab": 1.0,
+    "dv": 8,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "ts_buoni": [
+     "rifl",
+     "temp"
+    ]
+   },
+   "arcane trickster": {
+    "bab": 0.5,
+    "dv": 4,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "ts_buoni": [
+     "rifl",
+     "vol"
+    ]
+   },
+   "archmage": {
+    "bab": 0.5,
+    "dv": 4,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "ts_buoni": [
+     "vol"
+    ]
+   },
+   "aristocrat": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 4,
+    "gruppo": "png",
+    "ts_buoni": [
+     "vol"
+    ]
+   },
+   "assassin": {
+    "bab": 0.75,
+    "dv": 6,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "ts_buoni": [
+     "rifl"
+    ]
+   },
+   "barbarian": {
+    "bab": 1.0,
+    "dv": 12,
+    "gradi": 4,
+    "gruppo": "base",
+    "ts_buoni": [
+     "temp"
+    ]
+   },
+   "bard": {
+    "bab": 0.75,
+    "dv": 6,
+    "gradi": 6,
+    "gruppo": "base",
+    "ts_buoni": [
+     "rifl",
+     "vol"
+    ]
+   },
+   "blackguard": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "ts_buoni": [
+     "temp"
+    ]
+   },
+   "cleric": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 2,
+    "gruppo": "base",
+    "ts_buoni": [
+     "temp",
+     "vol"
+    ]
+   },
+   "commoner": {
+    "bab": 0.5,
+    "dv": 4,
+    "gradi": 2,
+    "gruppo": "png",
+    "ts_buoni": []
+   },
+   "dragon disciple": {
+    "bab": 0.75,
+    "dv": 12,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "ts_buoni": [
+     "temp",
+     "vol"
+    ]
+   },
+   "druid": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 4,
+    "gruppo": "base",
+    "ts_buoni": [
+     "temp",
+     "vol"
+    ]
+   },
+   "duelist": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "ts_buoni": [
+     "rifl"
+    ]
+   },
+   "dwarven defender": {
+    "bab": 1.0,
+    "dv": 12,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "ts_buoni": [
+     "temp",
+     "vol"
+    ]
+   },
+   "eldritch knight": {
+    "bab": 1.0,
+    "dv": 6,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "ts_buoni": [
+     "temp"
+    ]
+   },
+   "expert": {
+    "bab": 0.75,
+    "dv": 6,
+    "gradi": 6,
+    "gruppo": "png",
+    "ts_buoni": [
+     "vol"
+    ]
+   },
+   "fighter": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": 2,
+    "gruppo": "base",
+    "ts_buoni": [
+     "temp"
+    ]
+   },
+   "hierophant": {
+    "bab": 0.5,
+    "dv": 8,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "ts_buoni": [
+     "temp",
+     "vol"
+    ]
+   },
+   "horizon walker": {
+    "bab": 1.0,
+    "dv": 8,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "ts_buoni": [
+     "temp"
+    ]
+   },
+   "monk": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 4,
+    "gruppo": "base",
+    "ts_buoni": [
+     "rifl",
+     "temp",
+     "vol"
+    ]
+   },
+   "mystic theurge": {
+    "bab": 0.5,
+    "dv": 4,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "ts_buoni": [
+     "vol"
+    ]
+   },
+   "paladin": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": 2,
+    "gruppo": "base",
+    "ts_buoni": [
+     "temp"
+    ]
+   },
+   "ranger": {
+    "bab": 1.0,
+    "dv": 8,
+    "gradi": 6,
+    "gruppo": "base",
+    "ts_buoni": [
+     "rifl",
+     "temp"
+    ]
+   },
+   "rogue": {
+    "bab": 0.75,
+    "dv": 6,
+    "gradi": 8,
+    "gruppo": "base",
+    "ts_buoni": [
+     "rifl"
+    ]
+   },
+   "shadowdancer": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "ts_buoni": [
+     "rifl"
+    ]
+   },
+   "sorcerer": {
+    "bab": 0.5,
+    "dv": 4,
+    "gradi": 2,
+    "gruppo": "base",
+    "ts_buoni": [
+     "vol"
+    ]
+   },
+   "thaumaturgist": {
+    "bab": 0.5,
+    "dv": 4,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "ts_buoni": [
+     "vol"
+    ]
+   },
+   "warrior": {
+    "bab": 1.0,
+    "dv": 8,
+    "gradi": 2,
+    "gruppo": "png",
+    "ts_buoni": [
+     "temp"
+    ]
+   },
+   "wizard": {
+    "bab": 0.5,
+    "dv": 4,
+    "gradi": 2,
+    "gruppo": "base",
+    "ts_buoni": [
+     "vol"
+    ]
+   }
+  },
+  "pf1e": {
+   "adept": {
+    "bab": 0.5,
+    "dv": 6,
+    "gradi": 2,
+    "gruppo": "png",
+    "libro": "cr",
+    "ts_buoni": [
+     "vol"
+    ]
+   },
+   "alchemist": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 4,
+    "gruppo": "base",
+    "libro": "apg",
+    "ts_buoni": [
+     "rifl",
+     "temp"
+    ]
+   },
+   "arcane archer": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "libro": "cr",
+    "ts_buoni": []
+   },
+   "arcane trickster": {
+    "bab": 0.5,
+    "dv": 6,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "libro": "cr",
+    "ts_buoni": []
+   },
+   "aristocrat": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 4,
+    "gruppo": "png",
+    "libro": "cr",
+    "ts_buoni": [
+     "vol"
+    ]
+   },
+   "assassin": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "libro": "cr",
+    "ts_buoni": []
+   },
+   "barbarian": {
+    "bab": 1.0,
+    "dv": 12,
+    "gradi": 4,
+    "gruppo": "base",
+    "libro": "cr",
+    "ts_buoni": [
+     "temp"
+    ]
+   },
+   "bard": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 6,
+    "gruppo": "base",
+    "libro": "cr",
+    "ts_buoni": [
+     "rifl",
+     "vol"
+    ]
+   },
+   "battle herald": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": 4,
+    "gruppo": "prestigio",
+    "libro": "apg",
+    "ts_buoni": []
+   },
+   "cavalier": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": 4,
+    "gruppo": "base",
+    "libro": "apg",
+    "ts_buoni": [
+     "temp"
+    ]
+   },
+   "cleric": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 2,
+    "gruppo": "base",
+    "libro": "cr",
+    "ts_buoni": [
+     "temp",
+     "vol"
+    ]
+   },
+   "commoner": {
+    "bab": 0.5,
+    "dv": 6,
+    "gradi": 2,
+    "gruppo": "png",
+    "libro": "cr",
+    "ts_buoni": []
+   },
+   "dragon disciple": {
+    "bab": 0.75,
+    "dv": 12,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "libro": "cr",
+    "ts_buoni": []
+   },
+   "druid": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 4,
+    "gruppo": "base",
+    "libro": "cr",
+    "ts_buoni": [
+     "temp",
+     "vol"
+    ]
+   },
+   "duelist": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "libro": "cr",
+    "ts_buoni": []
+   },
+   "eldritch knight": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "libro": "cr",
+    "ts_buoni": []
+   },
+   "expert": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 6,
+    "gruppo": "png",
+    "libro": "cr",
+    "ts_buoni": [
+     "vol"
+    ]
+   },
+   "fighter": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": 2,
+    "gruppo": "base",
+    "libro": "cr",
+    "ts_buoni": [
+     "temp"
+    ]
+   },
+   "gunslinger": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": 4,
+    "gruppo": "base",
+    "libro": "uc",
+    "ts_buoni": [
+     "rifl",
+     "temp"
+    ]
+   },
+   "holy vindicator": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": 2,
+    "gruppo": "prestigio",
+    "libro": "apg",
+    "ts_buoni": []
+   },
+   "horizon walker": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "libro": "apg",
+    "ts_buoni": []
+   },
+   "inquisitor": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 6,
+    "gruppo": "base",
+    "libro": "apg",
+    "ts_buoni": [
+     "temp",
+     "vol"
+    ]
+   },
+   "loremaster": {
+    "bab": 0.5,
+    "dv": 6,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "libro": "cr",
+    "ts_buoni": []
+   },
+   "magus": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 2,
+    "gruppo": "base",
+    "libro": "um",
+    "ts_buoni": [
+     "temp",
+     "vol"
+    ]
+   },
+   "master chymist": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "libro": "apg",
+    "ts_buoni": []
+   },
+   "master spy": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 6,
+    "gruppo": "prestigio",
+    "libro": "apg",
+    "ts_buoni": []
+   },
+   "monk": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 4,
+    "gruppo": "base",
+    "libro": "cr",
+    "ts_buoni": [
+     "rifl",
+     "temp",
+     "vol"
+    ]
+   },
+   "mystic theurge": {
+    "bab": 0.5,
+    "dv": 6,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "libro": "cr",
+    "ts_buoni": []
+   },
+   "nature warden": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "libro": "apg",
+    "ts_buoni": []
+   },
+   "ninja": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 8,
+    "gruppo": "base",
+    "libro": "uc",
+    "ts_buoni": [
+     "rifl"
+    ]
+   },
+   "oracle": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 4,
+    "gruppo": "base",
+    "libro": "apg",
+    "ts_buoni": [
+     "vol"
+    ]
+   },
+   "paladin": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": 2,
+    "gruppo": "base",
+    "libro": "cr",
+    "ts_buoni": [
+     "temp",
+     "vol"
+    ]
+   },
+   "pathfinder chronicler": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "libro": "cr",
+    "ts_buoni": []
+   },
+   "rage prophet": {
+    "bab": 0.75,
+    "dv": 10,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "libro": "apg",
+    "ts_buoni": []
+   },
+   "ranger": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": 6,
+    "gruppo": "base",
+    "libro": "cr",
+    "ts_buoni": [
+     "rifl",
+     "temp"
+    ]
+   },
+   "rogue": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 8,
+    "gruppo": "base",
+    "libro": "cr",
+    "ts_buoni": [
+     "rifl"
+    ]
+   },
+   "samurai": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": 4,
+    "gruppo": "base",
+    "libro": "uc",
+    "ts_buoni": [
+     "temp"
+    ]
+   },
+   "shadowdancer": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": null,
+    "gruppo": "prestigio",
+    "libro": "cr",
+    "ts_buoni": []
+   },
+   "sorcerer": {
+    "bab": 0.5,
+    "dv": 6,
+    "gradi": 2,
+    "gruppo": "base",
+    "libro": "cr",
+    "ts_buoni": [
+     "vol"
+    ]
+   },
+   "stalwart defender": {
+    "bab": 1.0,
+    "dv": 12,
+    "gradi": 2,
+    "gruppo": "prestigio",
+    "libro": "apg",
+    "ts_buoni": []
+   },
+   "summoner": {
+    "bab": 0.75,
+    "dv": 8,
+    "gradi": 2,
+    "gruppo": "base",
+    "libro": "apg",
+    "ts_buoni": [
+     "vol"
+    ]
+   },
+   "warrior": {
+    "bab": 1.0,
+    "dv": 10,
+    "gradi": 2,
+    "gruppo": "png",
+    "libro": "cr",
+    "ts_buoni": [
+     "temp"
+    ]
+   },
+   "witch": {
+    "bab": 0.5,
+    "dv": 6,
+    "gradi": 2,
+    "gruppo": "base",
+    "libro": "apg",
+    "ts_buoni": [
+     "vol"
+    ]
+   },
+   "wizard": {
+    "bab": 0.5,
+    "dv": 6,
+    "gradi": 2,
+    "gruppo": "base",
+    "libro": "cr",
+    "ts_buoni": [
+     "vol"
+    ]
+   }
+  }
+ },
+ "fonte_griglie_pf1e": {
+  "adept": {
+   "1": [
+    3,
+    1
+   ],
+   "2": [
+    3,
+    1
+   ],
+   "3": [
+    3,
+    2
+   ],
+   "4": [
+    3,
+    2,
+    0
+   ],
+   "5": [
+    3,
+    2,
+    1
+   ],
+   "6": [
+    3,
+    2,
+    1
+   ],
+   "7": [
+    3,
+    3,
+    2
+   ],
+   "8": [
+    3,
+    3,
+    2,
+    0
+   ],
+   "9": [
+    3,
+    3,
+    2,
+    1
+   ],
+   "10": [
+    3,
+    3,
+    2,
+    1
+   ],
+   "11": [
+    3,
+    3,
+    3,
+    2
+   ],
+   "12": [
+    3,
+    3,
+    3,
+    2,
+    0
+   ],
+   "13": [
+    3,
+    3,
+    3,
+    2,
+    1
+   ],
+   "14": [
+    3,
+    3,
+    3,
+    2,
+    1
+   ],
+   "15": [
+    3,
+    3,
+    3,
+    3,
+    2
+   ],
+   "16": [
+    3,
+    3,
+    3,
+    3,
+    2,
+    0
+   ],
+   "17": [
+    3,
+    3,
+    3,
+    3,
+    2,
+    1
+   ],
+   "18": [
+    3,
+    3,
+    3,
+    3,
+    2,
+    1
+   ],
+   "19": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    2
+   ],
+   "20": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    2
+   ]
+  },
+  "bard": {
+   "1": [
+    0,
+    1
+   ],
+   "2": [
+    0,
+    2
+   ],
+   "3": [
+    0,
+    3
+   ],
+   "4": [
+    0,
+    3,
+    1
+   ],
+   "5": [
+    0,
+    4,
+    2
+   ],
+   "6": [
+    0,
+    4,
+    3
+   ],
+   "7": [
+    0,
+    4,
+    3,
+    1
+   ],
+   "8": [
+    0,
+    4,
+    4,
+    2
+   ],
+   "9": [
+    0,
+    5,
+    4,
+    3
+   ],
+   "10": [
+    0,
+    5,
+    4,
+    3,
+    1
+   ],
+   "11": [
+    0,
+    5,
+    4,
+    4,
+    2
+   ],
+   "12": [
+    0,
+    5,
+    5,
+    4,
+    3
+   ],
+   "13": [
+    0,
+    5,
+    5,
+    4,
+    3,
+    1
+   ],
+   "14": [
+    0,
+    5,
+    5,
+    4,
+    4,
+    2
+   ],
+   "15": [
+    0,
+    5,
+    5,
+    5,
+    4,
+    3
+   ],
+   "16": [
+    0,
+    5,
+    5,
+    5,
+    4,
+    3,
+    1
+   ],
+   "17": [
+    0,
+    5,
+    5,
+    5,
+    4,
+    4,
+    2
+   ],
+   "18": [
+    0,
+    5,
+    5,
+    5,
+    5,
+    4,
+    3
+   ],
+   "19": [
+    0,
+    5,
+    5,
+    5,
+    5,
+    5,
+    4
+   ],
+   "20": [
+    0,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ]
+  },
+  "cleric": {
+   "1": [
+    3,
+    1
+   ],
+   "2": [
+    4,
+    2
+   ],
+   "3": [
+    4,
+    2,
+    1
+   ],
+   "4": [
+    4,
+    3,
+    2
+   ],
+   "5": [
+    4,
+    3,
+    2,
+    1
+   ],
+   "6": [
+    4,
+    3,
+    3,
+    2
+   ],
+   "7": [
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "8": [
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "9": [
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "10": [
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "11": [
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "12": [
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "13": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "14": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "15": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "16": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "17": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "18": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "19": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3
+   ],
+   "20": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+   ]
+  },
+  "druid": {
+   "1": [
+    3,
+    1
+   ],
+   "2": [
+    4,
+    2
+   ],
+   "3": [
+    4,
+    2,
+    1
+   ],
+   "4": [
+    4,
+    3,
+    2
+   ],
+   "5": [
+    4,
+    3,
+    2,
+    1
+   ],
+   "6": [
+    4,
+    3,
+    3,
+    2
+   ],
+   "7": [
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "8": [
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "9": [
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "10": [
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "11": [
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "12": [
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "13": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "14": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "15": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "16": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "17": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "18": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "19": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3
+   ],
+   "20": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+   ]
+  },
+  "inquisitor": {
+   "1": [
+    0,
+    1
+   ],
+   "2": [
+    0,
+    2
+   ],
+   "3": [
+    0,
+    3
+   ],
+   "4": [
+    0,
+    3,
+    1
+   ],
+   "5": [
+    0,
+    4,
+    2
+   ],
+   "6": [
+    0,
+    4,
+    3
+   ],
+   "7": [
+    0,
+    4,
+    3,
+    1
+   ],
+   "8": [
+    0,
+    4,
+    4,
+    2
+   ],
+   "9": [
+    0,
+    5,
+    4,
+    3
+   ],
+   "10": [
+    0,
+    5,
+    4,
+    3,
+    1
+   ],
+   "11": [
+    0,
+    5,
+    4,
+    4,
+    2
+   ],
+   "12": [
+    0,
+    5,
+    5,
+    4,
+    3
+   ],
+   "13": [
+    0,
+    5,
+    5,
+    4,
+    3,
+    1
+   ],
+   "14": [
+    0,
+    5,
+    5,
+    4,
+    4,
+    2
+   ],
+   "15": [
+    0,
+    5,
+    5,
+    5,
+    4,
+    3
+   ],
+   "16": [
+    0,
+    5,
+    5,
+    5,
+    4,
+    3,
+    1
+   ],
+   "17": [
+    0,
+    5,
+    5,
+    5,
+    4,
+    4,
+    2
+   ],
+   "18": [
+    0,
+    5,
+    5,
+    5,
+    5,
+    4,
+    3
+   ],
+   "19": [
+    0,
+    5,
+    5,
+    5,
+    5,
+    5,
+    4
+   ],
+   "20": [
+    0,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ]
+  },
+  "magus": {
+   "1": [
+    3,
+    1
+   ],
+   "2": [
+    4,
+    2
+   ],
+   "3": [
+    4,
+    3
+   ],
+   "4": [
+    4,
+    3,
+    1
+   ],
+   "5": [
+    4,
+    4,
+    2
+   ],
+   "6": [
+    5,
+    4,
+    3
+   ],
+   "7": [
+    5,
+    4,
+    3,
+    1
+   ],
+   "8": [
+    5,
+    4,
+    4,
+    2
+   ],
+   "9": [
+    5,
+    5,
+    4,
+    3
+   ],
+   "10": [
+    5,
+    5,
+    4,
+    3,
+    1
+   ],
+   "11": [
+    5,
+    5,
+    4,
+    4,
+    2
+   ],
+   "12": [
+    5,
+    5,
+    5,
+    4,
+    3
+   ],
+   "13": [
+    5,
+    5,
+    5,
+    4,
+    3,
+    1
+   ],
+   "14": [
+    5,
+    5,
+    5,
+    4,
+    4,
+    2
+   ],
+   "15": [
+    5,
+    5,
+    5,
+    5,
+    4,
+    3
+   ],
+   "16": [
+    5,
+    5,
+    5,
+    5,
+    4,
+    3,
+    1
+   ],
+   "17": [
+    5,
+    5,
+    5,
+    5,
+    4,
+    4,
+    2
+   ],
+   "18": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    4,
+    3
+   ],
+   "19": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    4
+   ],
+   "20": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ]
+  },
+  "oracle": {
+   "1": [
+    0,
+    3
+   ],
+   "2": [
+    0,
+    4
+   ],
+   "3": [
+    0,
+    5
+   ],
+   "4": [
+    0,
+    6,
+    3
+   ],
+   "5": [
+    0,
+    6,
+    4
+   ],
+   "6": [
+    0,
+    6,
+    5,
+    3
+   ],
+   "7": [
+    0,
+    6,
+    6,
+    4
+   ],
+   "8": [
+    0,
+    6,
+    6,
+    5,
+    3
+   ],
+   "9": [
+    0,
+    6,
+    6,
+    6,
+    4
+   ],
+   "10": [
+    0,
+    6,
+    6,
+    6,
+    5,
+    3
+   ],
+   "11": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    4
+   ],
+   "12": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    5,
+    3
+   ],
+   "13": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    4
+   ],
+   "14": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    5,
+    3
+   ],
+   "15": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    4
+   ],
+   "16": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    5,
+    3
+   ],
+   "17": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    4
+   ],
+   "18": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    5,
+    3
+   ],
+   "19": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    4
+   ],
+   "20": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+   ]
+  },
+  "paladin": {
+   "4": [
+    0,
+    0
+   ],
+   "5": [
+    0,
+    1
+   ],
+   "6": [
+    0,
+    1
+   ],
+   "7": [
+    0,
+    1,
+    0
+   ],
+   "8": [
+    0,
+    1,
+    1
+   ],
+   "9": [
+    0,
+    2,
+    1
+   ],
+   "10": [
+    0,
+    2,
+    1,
+    0
+   ],
+   "11": [
+    0,
+    2,
+    1,
+    1
+   ],
+   "12": [
+    0,
+    2,
+    2,
+    1
+   ],
+   "13": [
+    0,
+    3,
+    2,
+    1,
+    0
+   ],
+   "14": [
+    0,
+    3,
+    2,
+    1,
+    1
+   ],
+   "15": [
+    0,
+    3,
+    2,
+    2,
+    1
+   ],
+   "16": [
+    0,
+    3,
+    3,
+    2,
+    1
+   ],
+   "17": [
+    0,
+    4,
+    3,
+    2,
+    1
+   ],
+   "18": [
+    0,
+    4,
+    3,
+    2,
+    2
+   ],
+   "19": [
+    0,
+    4,
+    3,
+    3,
+    2
+   ],
+   "20": [
+    0,
+    4,
+    4,
+    3,
+    3
+   ]
+  },
+  "ranger": {
+   "4": [
+    0,
+    0
+   ],
+   "5": [
+    0,
+    1
+   ],
+   "6": [
+    0,
+    1
+   ],
+   "7": [
+    0,
+    1,
+    0
+   ],
+   "8": [
+    0,
+    1,
+    1
+   ],
+   "9": [
+    0,
+    2,
+    1
+   ],
+   "10": [
+    0,
+    2,
+    1,
+    0
+   ],
+   "11": [
+    0,
+    2,
+    1,
+    1
+   ],
+   "12": [
+    0,
+    2,
+    2,
+    1
+   ],
+   "13": [
+    0,
+    3,
+    2,
+    1,
+    0
+   ],
+   "14": [
+    0,
+    3,
+    2,
+    1,
+    1
+   ],
+   "15": [
+    0,
+    3,
+    2,
+    2,
+    1
+   ],
+   "16": [
+    0,
+    3,
+    3,
+    2,
+    1
+   ],
+   "17": [
+    0,
+    4,
+    3,
+    2,
+    1
+   ],
+   "18": [
+    0,
+    4,
+    3,
+    2,
+    2
+   ],
+   "19": [
+    0,
+    4,
+    3,
+    3,
+    2
+   ],
+   "20": [
+    0,
+    4,
+    4,
+    3,
+    3
+   ]
+  },
+  "sorcerer": {
+   "1": [
+    0,
+    3
+   ],
+   "2": [
+    0,
+    4
+   ],
+   "3": [
+    0,
+    5
+   ],
+   "4": [
+    0,
+    6,
+    3
+   ],
+   "5": [
+    0,
+    6,
+    4
+   ],
+   "6": [
+    0,
+    6,
+    5,
+    3
+   ],
+   "7": [
+    0,
+    6,
+    6,
+    4
+   ],
+   "8": [
+    0,
+    6,
+    6,
+    5,
+    3
+   ],
+   "9": [
+    0,
+    6,
+    6,
+    6,
+    4
+   ],
+   "10": [
+    0,
+    6,
+    6,
+    6,
+    5,
+    3
+   ],
+   "11": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    4
+   ],
+   "12": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    5,
+    3
+   ],
+   "13": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    4
+   ],
+   "14": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    5,
+    3
+   ],
+   "15": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    4
+   ],
+   "16": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    5,
+    3
+   ],
+   "17": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    4
+   ],
+   "18": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    5,
+    3
+   ],
+   "19": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    4
+   ],
+   "20": [
+    0,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6,
+    6
+   ]
+  },
+  "summoner": {
+   "1": [
+    0,
+    1
+   ],
+   "2": [
+    0,
+    2
+   ],
+   "3": [
+    0,
+    3
+   ],
+   "4": [
+    0,
+    3,
+    1
+   ],
+   "5": [
+    0,
+    4,
+    2
+   ],
+   "6": [
+    0,
+    4,
+    3
+   ],
+   "7": [
+    0,
+    4,
+    3,
+    1
+   ],
+   "8": [
+    0,
+    4,
+    4,
+    2
+   ],
+   "9": [
+    0,
+    5,
+    4,
+    3
+   ],
+   "10": [
+    0,
+    5,
+    4,
+    3,
+    1
+   ],
+   "11": [
+    0,
+    5,
+    4,
+    4,
+    2
+   ],
+   "12": [
+    0,
+    5,
+    5,
+    4,
+    3
+   ],
+   "13": [
+    0,
+    5,
+    5,
+    4,
+    3,
+    1
+   ],
+   "14": [
+    0,
+    5,
+    5,
+    4,
+    4,
+    2
+   ],
+   "15": [
+    0,
+    5,
+    5,
+    5,
+    4,
+    3
+   ],
+   "16": [
+    0,
+    5,
+    5,
+    5,
+    4,
+    3,
+    1
+   ],
+   "17": [
+    0,
+    5,
+    5,
+    5,
+    4,
+    4,
+    2
+   ],
+   "18": [
+    0,
+    5,
+    5,
+    5,
+    5,
+    4,
+    3
+   ],
+   "19": [
+    0,
+    5,
+    5,
+    5,
+    5,
+    5,
+    4
+   ],
+   "20": [
+    0,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+   ]
+  },
+  "witch": {
+   "1": [
+    3,
+    1
+   ],
+   "2": [
+    4,
+    2
+   ],
+   "3": [
+    4,
+    2,
+    1
+   ],
+   "4": [
+    4,
+    3,
+    2
+   ],
+   "5": [
+    4,
+    3,
+    2,
+    1
+   ],
+   "6": [
+    4,
+    3,
+    3,
+    2
+   ],
+   "7": [
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "8": [
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "9": [
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "10": [
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "11": [
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "12": [
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "13": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "14": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "15": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "16": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "17": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "18": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "19": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3
+   ],
+   "20": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+   ]
+  },
+  "wizard": {
+   "1": [
+    3,
+    1
+   ],
+   "2": [
+    4,
+    2
+   ],
+   "3": [
+    4,
+    2,
+    1
+   ],
+   "4": [
+    4,
+    3,
+    2
+   ],
+   "5": [
+    4,
+    3,
+    2,
+    1
+   ],
+   "6": [
+    4,
+    3,
+    3,
+    2
+   ],
+   "7": [
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "8": [
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "9": [
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "10": [
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "11": [
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "12": [
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "13": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "14": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "15": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "16": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "17": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    2,
+    1
+   ],
+   "18": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3,
+    2
+   ],
+   "19": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    3,
+    3
+   ],
+   "20": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+   ]
+  }
+ },
+ "fonti": {
+  "prd": "PSRD-Data-76ea47846041",
+  "srd35": "srd-v3.5-md-c7f30a0ce11a"
+ },
+ "sistemi": {
+  "dnd35": [
+   {
+    "campi_assenti": [
+     "gradi (punti abilità per DV)"
+    ],
+    "coperte": 15,
+    "fonte": 15,
+    "giuste": 14,
+    "mancanti": [],
+    "sbagliate": [
+     {
+      "campo": "ts_buoni",
+      "fonte": [],
+      "nota": "Varies (any one)",
+      "plugin": [
+       "temp"
+      ],
+      "riga": "humanoid"
+     }
+    ],
+    "tabella": "tipi (Creature Improvement by Type)"
+   },
+   {
+    "campi_assenti": [
+     "gradi (punti abilità per livello)"
+    ],
+    "coperte": 16,
+    "fonte": 16,
+    "giuste": 16,
+    "mancanti": [],
+    "sbagliate": [],
+    "tabella": "classi base e PNG"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 14,
+    "fonte": 14,
+    "giuste": 14,
+    "mancanti": [],
+    "sbagliate": [],
+    "tabella": "classi di prestigio"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 12,
+    "fonte": 12,
+    "giuste": 12,
+    "mancanti": [],
+    "sbagliate": [],
+    "tabella": "armature"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 4,
+    "fonte": 4,
+    "giuste": 4,
+    "mancanti": [],
+    "sbagliate": [],
+    "tabella": "scudi"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 8,
+    "fonte": 8,
+    "giuste": 8,
+    "mancanti": [],
+    "sbagliate": [],
+    "tabella": "incantesimi al giorno (griglie) — bard, paladin, ranger contro il PRD PF1e (scelta del DM)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 20,
+    "fonte": 20,
+    "giuste": 20,
+    "mancanti": [],
+    "sbagliate": [],
+    "tabella": "incantesimi conosciuti (sorcerer)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 20,
+    "fonte": 20,
+    "giuste": 20,
+    "mancanti": [],
+    "sbagliate": [],
+    "tabella": "incantesimi conosciuti (bard) contro il PRD PF1e (scelta del DM)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 36,
+    "fonte": 36,
+    "giuste": 36,
+    "mancanti": [],
+    "sbagliate": [
+     {
+      "campo": "nome",
+      "fonte": "non è un'abilità SRD 3.5 nel lessico",
+      "plugin": "seguire tracce",
+      "riga": "seguire tracce"
+     },
+     {
+      "campo": "nome",
+      "fonte": "non è un'abilità SRD 3.5 nel lessico",
+      "plugin": "utilizzare congegni magici",
+      "riga": "utilizzare congegni magici"
+     }
+    ],
+    "tabella": "abilità (nomi)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 626,
+    "fonte": 626,
+    "giuste": 441,
+    "mancanti": [],
+    "non_verificabili": [
+     "mago.controllore.1: spruzzo di colori",
+     "mago.controllore.1: grasso",
+     "mago.controllore.2: polvere scintillante",
+     "mago.controllore.2: tocco della stupidità",
+     "mago.controllore.4: charme su mostri",
+     "mago.controllore.5: deficienza",
+     "mago.controllore.6: campo antimagia",
+     "mago.controllore.6: cerchio della morte",
+     "mago.controllore.6: nube acida",
+     "mago.controllore.7: follia",
+     "mago.controllore.8: schermo mentale",
+     "mago.controllore.8: parola del potere: stordire",
+     "mago.controllore.9: prigione",
+     "mago.controllore.9: arresto del tempo",
+     "mago.blaster.0: bagliore",
+     "mago.blaster.1: spruzzo di colori",
+     "mago.blaster.4: prosciugare",
+     "mago.blaster.5: evocare mostri V",
+     "mago.blaster.6: cerchio della morte",
+     "mago.blaster.7: spada arcana",
+     "mago.blaster.8: avvizzimento orrendo",
+     "mago.blaster.8: urlo superiore",
+     "mago.blaster.9: meteore",
+     "mago.blaster.9: parola del potere: uccidere",
+     "mago.blaster.9: urlo della banshee",
+     "mago.blaster.9: prosciugamento di energia",
+     "mago.utilita.3: spostamento",
+     "mago.utilita.4: polimorfismo",
+     "mago.utilita.6: globo d'invulnerabilità",
+     "mago.utilita.6: occhio maligno",
+     "mago.utilita.7: deviazione degli incantesimi",
+     "mago.utilita.8: schermo mentale",
+     "mago.utilita.9: preveggenza",
+     "mago.utilita.9: porta",
+     "chierico.controllore.3: infliggere maledizione",
+     "chierico.controllore.3: elusione dell'invisibilità",
+     "chierico.controllore.5: uccidere i viventi",
+     "chierico.controllore.5: piaga d'insetti",
+     "chierico.controllore.6: parola del richiamo",
+     "chierico.controllore.7: bestemmia",
+     "chierico.controllore.8: blocco dimensionale",
+     "chierico.controllore.8: campo antimagia",
+     "chierico.controllore.9: legare l'anima",
+     "chierico.controllore.9: porta",
+     "chierico.blaster.1: infliggere ferite leggere",
+     "chierico.blaster.3: luce bruciante",
+     "chierico.blaster.5: colonna di fuoco",
+     "chierico.blaster.5: uccidere i viventi",
+     "chierico.blaster.5: potenza virtuosa",
+     "chierico.blaster.5: scacciare il male",
+     "chierico.blaster.6: danno",
+     "chierico.blaster.7: controllare il clima",
+     "chierico.blaster.7: bestemmia",
+     "chierico.blaster.9: prosciugamento di energia",
+     "chierico.supporto.0: cura ferite minime",
+     "chierico.supporto.3: paramento magico",
+     "chierico.supporto.4: protezione dalla morte",
+     "chierico.supporto.5: potenza virtuosa",
+     "chierico.supporto.5: spezzare incantesimo",
+     "chierico.supporto.6: scudo di legge",
+     "chierico.supporto.9: risurrezione pura",
+     "chierico.supporto.9: porta",
+     "chierico.utilita.3: paramento magico",
+     "chierico.utilita.3: elusione dell'invisibilità",
+     "chierico.utilita.5: spezzare incantesimo",
+     "chierico.utilita.6: trovare il sentiero",
+     "chierico.utilita.6: parola del richiamo",
+     "chierico.utilita.7: controllare il clima",
+     "chierico.utilita.8: campo antimagia",
+     "chierico.utilita.8: blocco dimensionale",
+     "chierico.utilita.9: porta",
+     "chierico.utilita.9: legare l'anima",
+     "chierico.utilita.9: risurrezione pura",
+     "druido.controllore.0: bagliore",
+     "druido.controllore.1: nebbia oscurante",
+     "druido.controllore.1: fuoco fatuo",
+     "druido.controllore.1: passo senza tracce",
+     "druido.controllore.2: raffica di vento",
+     "druido.controllore.2: arroventare il metallo",
+     "druido.controllore.2: scalare come un ragno",
+     "druido.controllore.4: controllare piante",
+     "druido.controllore.4: spine di pietra",
+     "druido.controllore.4: controllare l'acqua",
+     "druido.controllore.5: controllare i venti",
+     "druido.controllore.5: piaga d'insetti",
+     "druido.controllore.6: respingere il legno",
+     "druido.controllore.6: spostare la terra",
+     "druido.controllore.6: guscio antivita",
+     "druido.controllore.7: controllare il clima",
+     "druido.controllore.7: fato strisciante",
+     "druido.controllore.7: animare piante",
+     "druido.controllore.8: controllare le piante",
+     "druido.controllore.9: mutare forma",
+     "druido.blaster.0: bagliore",
+     "druido.blaster.1: fuoco fatuo",
+     "druido.blaster.2: raffica di vento",
+     "druido.blaster.2: arroventare il metallo",
+     "druido.blaster.3: chiamare il fulmine",
+     "druido.blaster.4: colonna di fuoco",
+     "druido.blaster.4: avvizzimento",
+     "druido.blaster.4: spine di pietra",
+     "druido.blaster.5: tempesta di fulmini",
+     "druido.blaster.5: piaga d'insetti",
+     "druido.blaster.6: spostare la terra",
+     "druido.blaster.7: raggio di sole",
+     "druido.blaster.7: fato strisciante",
+     "druido.blaster.7: controllare il clima",
+     "druido.blaster.9: mutare forma",
+     "druido.supporto.0: cura ferite minime",
+     "druido.supporto.1: bacca curativa",
+     "druido.supporto.1: sopportare gli elementi",
+     "druido.supporto.2: corteccia",
+     "druido.supporto.3: luce del giorno",
+     "druido.supporto.3: modellare la pietra",
+     "druido.supporto.5: viaggio arboreo",
+     "druido.supporto.8: forma animale di massa",
+     "druido.supporto.8: controllare le piante",
+     "druido.supporto.9: preveggenza",
+     "druido.utilita.1: passo senza tracce",
+     "druido.utilita.1: nebbia oscurante",
+     "druido.utilita.1: sopportare gli elementi",
+     "druido.utilita.2: scalare come un ragno",
+     "druido.utilita.2: corteccia",
+     "druido.utilita.3: modellare la pietra",
+     "druido.utilita.3: luce del giorno",
+     "druido.utilita.4: controllare l'acqua",
+     "druido.utilita.5: viaggio arboreo",
+     "druido.utilita.6: spostare la terra",
+     "druido.utilita.7: controllare il clima",
+     "druido.utilita.8: forma animale di massa",
+     "druido.utilita.9: mutare forma",
+     "druido.utilita.9: preveggenza",
+     "bardo.controllore.1: ipnotismo",
+     "bardo.controllore.1: confusione minore",
+     "bardo.controllore.2: schema ipnotico",
+     "bardo.controllore.3: spavento",
+     "bardo.controllore.3: charme su mostri",
+     "bardo.controllore.4: schema arcobaleno",
+     "bardo.controllore.4: urlo",
+     "bardo.controllore.5: canto della discordia",
+     "bardo.controllore.6: charme su mostri di massa",
+     "bardo.controllore.6: occhio maligno",
+     "bardo.controllore.6: urlo superiore",
+     "bardo.supporto.1: ritirata veloce",
+     "bardo.supporto.3: buona speranza",
+     "bardo.supporto.3: spostamento",
+     "bardo.supporto.4: spezzare incantesimo",
+     "bardo.supporto.5: traviare",
+     "bardo.supporto.6: trovare il sentiero",
+     "bardo.utilita.1: grasso",
+     "bardo.utilita.2: polvere scintillante",
+     "bardo.utilita.3: spostamento",
+     "bardo.utilita.4: evocazione ombrosa",
+     "bardo.utilita.4: spezzare incantesimo",
+     "bardo.utilita.5: traviare",
+     "bardo.utilita.5: camminare nell'ombra",
+     "bardo.utilita.6: trovare il sentiero",
+     "ranger.supporto.1: sopportare gli elementi",
+     "ranger.supporto.1: ritardare veleno",
+     "ranger.supporto.2: corteccia",
+     "ranger.supporto.2: grazia felina",
+     "ranger.supporto.3: neutralizzare veleni",
+     "ranger.utilita.1: passo senza tracce",
+     "ranger.utilita.1: falcata prolungata",
+     "ranger.utilita.1: individuare trappole e fosse",
+     "ranger.utilita.1: salto",
+     "ranger.utilita.2: laccio",
+     "ranger.utilita.3: controllare piante",
+     "ranger.utilita.4: non individuazione",
+     "ranger.utilita.4: viaggio arboreo",
+     "paladino.supporto.2: scudo altrui",
+     "paladino.supporto.2: ritardare veleno",
+     "paladino.supporto.3: curare cavalcatura",
+     "paladino.supporto.4: protezione dalla morte",
+     "paladino.supporto.4: spezzare incantesimo",
+     "paladino.supporto.4: neutralizzare veleni",
+     "paladino.utilita.1: benedire arma",
+     "paladino.utilita.1: sopportare gli elementi",
+     "paladino.utilita.2: allineamento non individuabile",
+     "paladino.utilita.2: scudo altrui",
+     "paladino.utilita.3: individuare menzogne",
+     "paladino.utilita.3: luce del giorno",
+     "paladino.utilita.4: scacciare il male",
+     "paladino.utilita.4: marchio della giustizia",
+     "paladino.utilita.4: protezione dalla morte"
+    ],
+    "nota": "2 voci del chierico sono incantesimi di dominio, contati giusti",
+    "sbagliate": [],
+    "tabella": "liste d'incantesimi (classe × funzione)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 20,
+    "fonte": 20,
+    "giuste": 20,
+    "mancanti": [],
+    "sbagliate": [],
+    "tabella": "soglie PE (PHB Tab. 3-2)"
+   }
+  ],
+  "pf1e": [
+   {
+    "campi_assenti": [
+     "il plugin PF1e non ha la tabella: le schede con livelli di classe sono rifiutate"
+    ],
+    "coperte": 0,
+    "fonte": 26,
+    "giuste": 0,
+    "mancanti": [
+     "adept",
+     "alchemist",
+     "aristocrat",
+     "barbarian",
+     "bard",
+     "cavalier",
+     "cleric",
+     "commoner",
+     "druid",
+     "expert",
+     "fighter",
+     "gunslinger",
+     "inquisitor",
+     "magus",
+     "monk",
+     "ninja",
+     "oracle",
+     "paladin",
+     "ranger",
+     "rogue",
+     "samurai",
+     "sorcerer",
+     "summoner",
+     "warrior",
+     "witch",
+     "wizard"
+    ],
+    "sbagliate": [],
+    "tabella": "classi base, ibride e PNG"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 0,
+    "fonte": 18,
+    "giuste": 0,
+    "mancanti": [
+     "arcane archer",
+     "arcane trickster",
+     "assassin",
+     "battle herald",
+     "dragon disciple",
+     "duelist",
+     "eldritch knight",
+     "holy vindicator",
+     "horizon walker",
+     "loremaster",
+     "master chymist",
+     "master spy",
+     "mystic theurge",
+     "nature warden",
+     "pathfinder chronicler",
+     "rage prophet",
+     "shadowdancer",
+     "stalwart defender"
+    ],
+    "sbagliate": [],
+    "tabella": "classi di prestigio"
+   },
+   {
+    "campi_assenti": [
+     "il plugin PF1e non ha la tabella"
+    ],
+    "coperte": 0,
+    "fonte": 12,
+    "giuste": 0,
+    "mancanti": [
+     "banded mail",
+     "breastplate",
+     "chain shirt",
+     "chainmail",
+     "full plate",
+     "half-plate",
+     "hide",
+     "leather",
+     "padded",
+     "scale mail",
+     "splint mail",
+     "studded leather"
+    ],
+    "sbagliate": [],
+    "tabella": "armature"
+   },
+   {
+    "campi_assenti": [
+     "il plugin PF1e non ha griglie: chi genera usa quelle 3.5"
+    ],
+    "coperte": 0,
+    "fonte": 13,
+    "giuste": 0,
+    "mancanti": [
+     "adept",
+     "bard",
+     "cleric",
+     "druid",
+     "inquisitor",
+     "magus",
+     "oracle",
+     "paladin",
+     "ranger",
+     "sorcerer",
+     "summoner",
+     "witch",
+     "wizard"
+    ],
+    "sbagliate": [],
+    "tabella": "incantesimi al giorno (griglie)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 26,
+    "fonte": 26,
+    "giuste": 26,
+    "mancanti": [],
+    "sbagliate": [],
+    "tabella": "abilità (nomi, dal lessico PF1e)"
+   },
+   {
+    "campi_assenti": [],
+    "coperte": 13,
+    "fonte": 13,
+    "giuste": 13,
+    "mancanti": [],
+    "nota": "generati da estrai_prd_pf1e.py --check (cancello in CI)",
+    "sbagliate": [],
+    "tabella": "tipi e taglie"
+   }
+  ]
+ }
+}

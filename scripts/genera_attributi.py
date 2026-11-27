@@ -147,6 +147,7 @@ from dmcore.lettura_creatura import (  # noqa: E402
     BLOCCO, CODA_ARRAY, CODA_FONTE, CODA_SCHEDA, MARCA, ORDINE, dalla_scheda,
 )
 from dmcore.caratteristiche import dalla_fonte, genera, mod, riga_attributi  # noqa: E402
+from dmcore import sistemi as S  # noqa: E402
 
 
 RIGA_MARCA = re.compile("^" + re.escape(MARCA) + ".*$", re.M)
@@ -160,6 +161,9 @@ def statblocchi(rigenera: bool = False) -> "list[Path]":
         if "[POINTER" in t or "[RIMANDO]" in t:
             continue
         if not BLOCCO.search(t):
+            continue
+        # F4 di ADR-0112: le matrici e i profili sono quelli 3.5
+        if S.regole_diverse(S.sistema_di(p), "genera_attributi"):
             continue
         if re.search(r"^attributi:", t, re.M) and not (rigenera and MARCA in t):
             continue

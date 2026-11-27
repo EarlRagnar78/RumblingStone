@@ -1,0 +1,65 @@
+# varianti rare (<=3) a somiglianza >=0,80 da uno dei 96 nomi canonici del glossario: 64
+0.95	Adamantino(1)	Adamantio(129)	08_La Battaglia Di Hammerfist/Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md:1167
+0.93	Portarle(2)	Portale(118)	07_il Portale Della Forgia Eterna/PortaleForgia-P3-PianoFuoco-PARTE2.md:60
+0.93	Custodia(1)	Custodi(51)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md:70
+0.92	Esterna(1)	Eterna(131)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md:114
+0.91	Tempi(2)	Tempio(107)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md:77
+0.91	Rocca(1)	Roccia(34)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md:121
+0.91	During(2)	Durin(60)	06_Stanza-corona-di-adamantio/StanzaCoronaDiAdamantio/Belkram.md:113
+0.90	Silenziosi(3)	Silenziosa(7)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md:119
+0.90	Sentinelle(3)	Sentinella(76)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-MAPPE.md:14
+0.89	Zalkatar's(2)	Zalkatar(218)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md:30
+0.88	Ricordate(3)	Ricorda(24)	07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE1.md:1392
+0.88	Ricordare(1)	Ricorda(24)	08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:2694
+0.88	Leggendo(1)	Leggenda(8)	10-stand-alone/L'abbazia Della Rotta Sicura/appendice_b_oppressione.md:512
+0.88	Incudini(1)	Incudine(11)	07_il Portale Della Forgia Eterna/Mappe/Portale-Forgia-L2-REVISED-UltraClear.md:586
+0.87	Devastation(2)	Devastazione(31)	07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE1.md:483
+0.86	Tordek's(3)	Tordek(829)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md:330
+0.86	Thorik's(1)	Thorik(1118)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md:254
+0.86	Rocciosa(2)	Roccia(34)	08_La Battaglia Di Hammerfist/Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md:126
+0.86	Portate(2)	Portale(118)	07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE1.md:1281
+0.86	Portali(2)	Portale(118)	07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE1.md:204
+0.86	Oscurano(1)	Oscura(5)	08_La Battaglia Di Hammerfist/Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md:1234
+0.86	Legend(1)	Leggenda(8)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md:15
+0.86	Forgiato(1)	Forgia(346)	07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE1.md:428
+0.86	Forgiare(3)	Forgia(346)	06_Stanza-corona-di-adamantio/StanzaCoronaDiAdamantio/00-La Corona di Adamantio-ogetto&Prove/000_Guida_Dm_Corona_adamantio_ogetto_prove_rituali_sfide.md:139
+0.86	Forgiala(1)	Forgia(346)	07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md:401
+0.86	Eternità(2)	Eterni(40)	07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE1.md:293
+0.86	Anticipo(1)	Antico(7)	10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/handout/PROP-03-la-ricevuta-del-mediatore.hb.md:19
+0.83	Stanze(2)	Stanza(108)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-LOCANDE.md:144
+0.83	Stanca(1)	Stanza(108)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md:59
+0.83	Mandare(2)	Madre(159)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md:216
+0.83	Hella's(3)	Hella(1203)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md:329
+0.83	Forzato(1)	Forza(169)	07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE2.md:609
+0.83	Forzare(2)	Forza(169)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-TESTO.md:140
+0.83	Foglia(1)	Forgia(346)	07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE1.md:1356
+0.83	Divisa(1)	Divina(43)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO3-4-CORSA-ESITI.md:67
+0.83	Destinazione(3)	Devastazione(31)	07_il Portale Della Forgia Eterna/PortaleForgia-P3-PianoFuoco-PARTE1.md:80
+0.83	Colla(1)	Collana(116)	10-stand-alone/L'abbazia Della Rotta Sicura/appendice_b_oppressione.md:159
+0.83	Cinta(2)	Cintura(53)	08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md:35
+0.82	Armoniosa(2)	Armonico(6)	07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md:808
+0.82	Deviazione(3)	Devastazione(31)	07_il Portale Della Forgia Eterna/PortaleForgia-P1-REVISED-Corretta.md:129
+0.80	Varia(1)	Varis(126)	08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md:214
+0.80	Tempi(2)	Tempo(150)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md:77
+0.80	Riordina(1)	Ricorda(24)	08_La Battaglia Di Hammerfist/mass_combat_guide_Dm.md:405
+0.80	Rincorsa(2)	Ricorda(24)	10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/mappe/tarsilia-la-ruota.md:74
+0.80	Portarlo(1)	Portale(118)	07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:2742
+0.80	Parli(1)	Palio(196)	10-stand-alone/Il-Drappo-di-Tarsilia/PREGEN-SEI-SCHEDE-PF1E.md:60
+0.80	Palii(2)	Palio(196)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md:66
+0.80	Mound(1)	Mondo(36)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md:150
+0.80	Moderato(1)	Mercato(57)	07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE2.md:936
+0.80	Include(1)	Incudine(11)	07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE2.md:138
+0.80	Fiora(3)	Forza(169)	10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md:80
+0.80	Ferri(1)	Ferry(18)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-BATTLE-STATS-e-VILLAIN-ICONICI.md:80
+0.80	Duric(1)	Durin(60)	07_il Portale Della Forgia Eterna/Immagini/PROMPT-IMMAGINI-07ILP.md:51
+0.80	Duric(1)	Durik(139)	07_il Portale Della Forgia Eterna/Immagini/PROMPT-IMMAGINI-07ILP.md:51
+0.80	Custodia(1)	Custode(101)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md:70
+0.80	Curve(1)	Cuore(467)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md:54
+0.80	Cucitura(1)	Cintura(53)	08_La Battaglia Di Hammerfist/ARC08-00-INDICE.md:105
+0.80	Corde(2)	Cuore(467)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md:298
+0.80	Consacra(2)	Cronaca(49)	06_Stanza-corona-di-adamantio/StanzaCoronaDiAdamantio/00-La Corona di Adamantio-ogetto&Prove/00_corona_di_adamantio_i_rituali_descrizioni_interventi_divini.md:87
+0.80	Conclusion(1)	Confusione(13)	06_Stanza-corona-di-adamantio/StanzaCoronaDiAdamantio/Treasure&Xp.md:40
+0.80	Colto(1)	Colpo(62)	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md:49
+0.80	Color(1)	Colpo(62)	08_La Battaglia Di Hammerfist/Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md:1384
+0.80	Caotiche(1)	Chaotic(51)	07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE2.md:40
+0.80	Acida(3)	Ascia(38)	07_il Portale Della Forgia Eterna/CORREZIONE-Boss-Fauci.md:88

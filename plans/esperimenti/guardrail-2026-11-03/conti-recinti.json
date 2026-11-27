@@ -1,0 +1,56 @@
+[
+ {
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+  "titolo": "A.2 · Treant di Adamantio, evocato dalla Collana (§7)",
+  "campo": "pf",
+  "riga": 1536,
+  "scritto": 90,
+  "atteso": 95,
+  "nota": "media di 10d8+50"
+ },
+ {
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "titolo": "A.1-bis · Skullcrusher Vecchio, il drago di stasera [CANONE — DM 2026-10-12, D60]",
+  "campo": "CD in «Capacità magiche come A.1»",
+  "riga": 3995,
+  "scritto": 25,
+  "atteso": 26,
+  "nota": "ereditata da A.1, dove la presenza è CD 25: corrompere l'acqua segue la presenza"
+ },
+ {
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "titolo": "A.2 · Zog'tar Deatheye e le sue quattro guardie (Scena 8)",
+  "campo": "sensi",
+  "riga": 4041,
+  "scritto": "senza scurovisione",
+  "atteso": "scurovisione",
+  "nota": "il tipo «Ogre» la ha nell'SRD"
+ },
+ {
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "titolo": "A.3 · Durin Rocciadura (Scena 2)",
+  "campo": "sensi",
+  "riga": 4128,
+  "scritto": "senza scurovisione",
+  "atteso": "scurovisione",
+  "nota": "il tipo «Nano» la ha nell'SRD"
+ },
+ {
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "titolo": "A.4 · Balvar Fuocospento (Scena 7)",
+  "campo": "pf",
+  "riga": 4151,
+  "scritto": 101,
+  "atteso": 97,
+  "nota": "media di 13d8+39"
+ },
+ {
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+  "titolo": "A.6 · Le creature del campo (Scena 6)",
+  "campo": "sensi",
+  "riga": 4286,
+  "scritto": "senza scurovisione",
+  "atteso": "scurovisione",
+  "nota": "il tipo «Drago» la ha nell'SRD"
+ }
+]

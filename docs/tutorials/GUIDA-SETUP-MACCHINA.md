@@ -1,0 +1,292 @@
+# Guida completa — preparare una macchina nuova (o un secondo DM)
+
+> Forma: **tutorial** ([Diátaxis](../../plans/adr/ADR-0123-la-documentazione-segue-diataxis.md)).
+
+> **Cosa copre**: dal repo appena clonato a «funziona tutto», passo per
+> passo. Cosa serve davvero e cosa è opzionale, come si attivano le skill
+> per gli agenti, come si prepara il flusso di sessione con il branch di
+> gruppo, e come si verifica di non aver dimenticato niente.
+>
+> **Tempo**: ~10 minuti per il minimo indispensabile, ~25 con tutti gli
+> extra (PDF, container, secondo gruppo).
+
+---
+
+## 0. TL;DR — il minimo per lavorare
+
+```bash
+git clone <url-del-repo> RumblingStone && cd RumblingStone
+python3 --version                     # serve 3.13 o superiore
+python3 scripts/dm.py doctor          # diagnosi: dice cosa manca
+./scripts/build-skills.sh             # se usi agenti AI (Claude Code, Cursor, …)
+```
+
+Se `doctor` chiude con **`tutto ok`**, puoi già preparare sessioni,
+generare booklet HTML, renderizzare mappe e usare il bestiario.
+
+---
+
+## 1. Cosa serve davvero (e cosa no)
+
+La tabella qui sotto è comoda da leggere, ma **non è la fonte**: quella è
+`scripts/binari.py`, e si interroga senza leggere niente.
+
+```bash
+python3 scripts/binari.py     # cosa c'è, cosa manca, e quali catene partono stasera
+```
+
+Stampa Python e la sua soglia, i binari con il loro ripiego, le due librerie e
+soprattutto l'ultima sezione, che è quella che serve davvero prima di una
+sessione: **quali catene di lavoro sono pronte** e cosa manca a quelle che non
+lo sono. `dm.py doctor` legge dallo stesso registro (lotto D di
+[PIANO-QUALITA-DEL-CODICE](../../plans/PIANO-QUALITA-DEL-CODICE.md)); prima
+teneva una lista sua e le due divergevano.
+
+| Componente | Serve per | Obbligatorio? |
+|---|---|---|
+| **Python 3.13+** | tutto. Gli script usano la sola libreria standard ([ADR-0037](../../plans/adr/ADR-0037-stdlib-only-e-le-sue-eccezioni.md)): niente `requirements.txt`, niente ambiente virtuale | ✅ sì |
+| **git** | clonare, versionare, branch di gruppo | ✅ sì |
+| **bash** | i cinque script shell. Su Windows: Git Bash o WSL | quasi: gli equivalenti Python coprono il flusso principale |
+| **pyyaml** (`pip install pyyaml`) | il frontmatter delle skill. È l'unica libreria che un gate della CI pretende, e ADR-0037 la dichiara come debito | ✅ per le skill |
+| **Chromium / Chrome** | PDF dei booklet, PNG delle mappe | solo per quegli export |
+| **typst** (`pip install -r requirements.txt`) | l'edizione da stampa ([ADR-0020](../../plans/adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md), [ADR-0116](../../plans/adr/ADR-0116-typst-si-installa-da-pypi.md)): il modulo PyPI, una CLI nel PATH è il ripiego | solo per il volume da stampa |
+| **pdfimpose** (`pip install -r requirements.txt`) | l'imposizione del libretto ([ADR-0027](../../plans/adr/ADR-0027-imposizione-con-pdfcpu.md), [ADR-0116](../../plans/adr/ADR-0116-typst-si-installa-da-pypi.md)) | solo per il libretto piegato |
+| **Inkscape** | PNG delle mappe con resa SVG fedele (`--renderer inkscape`, default se installato) | opzionale: in sua assenza il PNG esce da Chromium |
+| **Pillow** (`pip install pillow`) | ricomprimere immagini grandi nell'HTML dei booklet e generare i derivati | opzionale, e degrada da sola |
+| **pandoc + xelatex** | `dm.py recap --pdf` (il recap in PDF «sobrio») | opzionale |
+| **cwebp** | convertire i master delle immagini in WebP | opzionale |
+| **Docker / Podman** | editor Homebrewery, container PDF, ComfyUI | opzionale |
+| **shellcheck** | lint degli script shell (in CI è non bloccante) | opzionale |
+
+> Nota: `doctor` segnala gli assenti opzionali come **`○`** (pallino, non
+> errore). È normale: hanno tutti un ripiego dichiarato e non impediscono nulla
+> del flusso principale. L'unica assenza che diventa un avviso vero è `pyyaml`,
+> perché lì un gate della CI si ferma.
+
+---
+
+## 2. Passo 1 — Clonare e verificare
+
+```bash
+git clone <url-del-repo> RumblingStone
+cd RumblingStone
+python3 scripts/dm.py doctor
+```
+
+`doctor` controlla, nell'ordine: versione di Python (la soglia la legge da
+`binari.py`, non l'ha scritta lui), presenza di `campaign/state.md`,
+`campaign/sessions/`, `campaign/templates/`, `scripts/map_templates/`,
+`plans/INDEX.md`, **freschezza del catalogo mostri**, lo stato del flusso
+branch-di-gruppo, e infine tutte le dipendenze esterne con le catene che
+dipendono da loro.
+
+Legenda dell'output: **✓** a posto · **○** opzionale o non ancora attivato
+· **✗** da sistemare.
+
+---
+
+## 3. Passo 2 — Skill per gli agenti AI
+
+Le skill vivono in `skills/` (versionate). Ogni agente però le legge da un
+percorso suo: i **mirror per-agente NON sono committati**, si generano in
+locale.
+
+```bash
+./scripts/build-skills.sh     # costruisce i pacchetti e li installa nei path per-agente
+./scripts/sync-skills.sh      # ri-sincronizza soltanto (più veloce, dopo un pull)
+```
+
+Equivalente dalla CLI: `python3 scripts/dm.py skills build` /
+`python3 scripts/dm.py skills sync`.
+
+### Se NON usi Claude Code
+
+Claude Code risincronizza da solo a ogni avvio di sessione (hook
+`.claude/hooks/session-start.sh`). **Gli altri agenti** (Cursor, Windsurf,
+Codex, Copilot…) no: installa l'hook git che lo fa dopo ogni `git pull`.
+
+```bash
+./scripts/install-git-hooks.sh    # installa un hook post-merge, non blocca mai git
+```
+
+> Verifica: `python3 scripts/validate_skills.py` deve essere verde.
+
+---
+
+## 4. Passo 3 — Il flusso di sessione (branch di gruppo)
+
+Le scritture di canone non si fanno su `main` e non si fanno a mano: c'è un
+**branch per gruppo di gioco** (ADR-0007). Se questa macchina serve a
+condurre partite, attivalo:
+
+```bash
+# crea/attiva il branch del gruppo e il file campaign/group.yaml
+python3 scripts/dm.py session branch --group <nome-gruppo>
+
+# inserisce i marker auto: in state.md (idempotente: si può rilanciare)
+python3 scripts/state_apply.py --migrate --commit
+
+# controllo
+python3 scripts/dm.py session status
+```
+
+Finché non lo fai, `doctor` mostra due **○** («`campaign/group.yaml`
+assente», «marker `auto:` assenti»): non è un errore — significa solo che
+il flusso automatico di chiusura sessione non è ancora attivo su questa
+copia.
+
+**Un secondo gruppo che rigioca la campagna da capo**: `python3 scripts/dm.py gruppo nuovo`
+(vedi `campaign/DM-CAMPAIGN-PLAYBOOK.md` §7 — «Reset per nuovo gruppo»).
+
+---
+
+## 5. Passo 4 — Gli extra, quando ti servono
+
+### PDF dei booklet e PNG delle mappe → serve Chromium
+
+```bash
+sudo apt install chromium      # Debian/Ubuntu   (Fedora: dnf, Arch: pacman)
+brew install --cask chromium   # macOS
+# Windows: usa Chrome/Edge già installati →  set BOOKLET_CHROME=C:\...\chrome.exe
+```
+
+Dettagli e alternative (container, stampa dal browser):
+[GUIDA-BOOKLET-E-PDF §2 e §7](../how-to/GUIDA-BOOKLET-E-PDF.md).
+
+### Immagini grandi nei booklet → Pillow
+
+```bash
+pip install pillow    # opzionale: senza, le immagini vengono incorporate non compresse
+```
+
+### Recap in PDF «sobrio» → pandoc
+
+```bash
+sudo apt install pandoc texlive-xetex    # solo se usi `dm.py recap --pdf`
+```
+
+### Tutto, per chi sviluppa, e come tornare indietro
+
+Gli extra qui sopra sono opzionali per scelta: la sera di gioco non li usa, e
+la CI installa solo `requirements-dev.txt`. Chi sviluppa li installa tutti con
+`ambiente.py`, che tiene un **registro** di ciò che installa e lo toglie con
+`rimuovi` (D1 di PIANO-AMBIENTE). Va lanciato col `.venv` attivo:
+
+```bash
+source .venv/bin/activate
+python scripts/ambiente.py piano --con blender,comfyui           # cosa farebbe, senza toccare niente
+export COMFYUI_DIR=/srv/comfyui                                  # solo se vuoi ComfyUI
+python scripts/ambiente.py installa --con blender,comfyui        # chiede conferma a ogni gruppo
+python scripts/ambiente.py stato                                 # cosa c'è nel registro
+python scripts/dm.py doctor
+```
+
+| Modulo | Cosa installa | Peso |
+|---|---|---|
+| sempre | pacchetti di sistema che mancano: chromium, pandoc, texlive-xetex, maven, default-jre, webp, inkscape, shellcheck; nel `.venv` `requirements-completo.txt` (bpy, torch per CPU, piq) | ~1 GB |
+| `blender` | il programma Blender da apt; con `bpy` serve solo al PNG di `render_map_blender.py` | ~400 MB |
+| `comfyui` | distrobox e podman, poi `scripts/comfyui-local/setup-distrobox.sh` in `COMFYUI_DIR` e, se dici sì, il checkpoint SDXL | ~15 GB |
+| `typst` | niente da scaricare: dal 2026-11-08 typst e pdfimpose arrivano nel `.venv` con `requirements.txt` ([ADR-0116](../../plans/adr/ADR-0116-typst-si-installa-da-pypi.md)); il modulo controlla solo che ci siano | — |
+
+**Il registro** sta in `~/.local/state/rumblingstone/<id del clone>/stato.json`.
+Possiede solo ciò che prima mancava: per i pacchetti di sistema fotografa
+`dpkg` prima e dopo, e tiene la differenza, dipendenze comprese. Un pacchetto
+che avevi già non diventa mai suo.
+
+**Tornare indietro:**
+
+```bash
+python scripts/ambiente.py rimuovi           # toglie solo ciò che ha installato, chiedendo
+python scripts/ambiente.py rimuovi --venv    # in più cancella tutto il .venv del repo
+```
+
+`rimuovi` ti mostra la simulazione di `apt-get remove` prima di farlo. Non
+usa mai `autoremove` né `purge`, che toglierebbero anche ciò che non è suo.
+Se da un pacchetto suo ora dipende un pacchetto installato da te, quel
+pacchetto resta, e `rimuovi` dice perché. Toglie il box e la cartella di
+ComfyUI solo se li aveva creati lui, e la CLI typst delle installazioni di
+prima solo se il file è ancora quello che aveva installato.
+
+**Quello che hai installato a mano prima** non è nel registro. Per affidarglielo
+c'è `adotta`: legge `/var/log/apt/history.log` e prende le transazioni dalla
+data che gli dai, limitandosi ai pacchetti che ci sono ancora:
+
+```bash
+python scripts/ambiente.py adotta --apt-dal 2026-10-09
+```
+
+⚠️ Adotta **tutte** le installazioni apt da quella data, anche quelle che non
+c'entrano col repo. Leggi l'elenco che ti mostra prima di dire sì.
+
+### Container
+
+| Cosa | Dove |
+|---|---|
+| Editor Homebrewery (due pannelli, `localhost:8000`) | [`scripts/homebrew-local/README.md`](../../scripts/homebrew-local/README.md) |
+| PDF senza installare un browser (distro immutabili) | [`scripts/booklet-container/README.md`](../../scripts/booklet-container/README.md) |
+| Hero map con GPU | [`scripts/comfyui-local/README.md`](../../scripts/comfyui-local/README.md) |
+
+---
+
+## 6. Passo 5 — Verifica finale
+
+```bash
+python3 scripts/dm.py doctor                  # ✓ ovunque (i ○ opzionali vanno bene)
+.venv/bin/python scripts/gate_locale.py --rapido   # i gate della CI, senza i test (~3 min)
+.venv/bin/python scripts/gate_locale.py            # tutti, test compresi
+```
+
+`gate_locale.py` legge i passi del job `validate` da `.github/workflows/ci.yml`
+e li esegue nell'ordine, quindi un gate aggiunto alla CI entra da solo.
+Salta i passi che installano qualcosa. Se un passo fallisce perché manca uno
+strumento che in CI viene installato (typst, per esempio), lo segna come
+avviso e dice quale. Con `--solo TESTO` esegue solo i passi che contengono
+quel testo; con `--elenco` mostra cosa farebbe senza eseguire niente.
+
+Se qui passano tutti, la PR non diventerà rossa per un gate che non hai fatto
+girare.
+
+---
+
+## 7. Prova che tutto funziona (5 minuti)
+
+```bash
+# 1. proposte di incontro (non scrive niente)
+python3 scripts/dm.py prep --el 13 --env underground
+
+# 2. genera un booklet esistente in HTML
+python3 scripts/dm.py booklet "07_il Portale Della Forgia Eterna/homebrew/sessione-terros/ARC07-GRUPPO-CAMMINO.manifest.json"
+
+# 3. ri-renderizza una mappa e verifica che resti in sync
+python3 scripts/dm.py maps validate
+```
+
+Se i tre comandi girano, la macchina è pronta.
+
+---
+
+## 8. Se qualcosa non funziona
+
+| Sintomo | Causa e rimedio |
+|---|---|
+| `python3: command not found` o versione < 3.13 | installa Python 3.13+: su Debian 13 `sudo apt install python3`; su Ubuntu 24.04 (che ha 3.12) il PPA deadsnakes, `sudo apt install python3.13` |
+| `doctor` segnala **✗ monster_catalog** o «catalogo vecchio» | `python3 scripts/build_monster_catalog.py` |
+| Un agente non «vede» le skill aggiornate | `./scripts/sync-skills.sh` (e, se non usi Claude Code, `./scripts/install-git-hooks.sh` una volta sola) |
+| `validate_maps` rosso appena clonato | qualcuno ha committato un SVG disallineato: `python3 scripts/dm.py maps render <master>` e ricommitta ([GUIDA-MAPPE §6](../how-to/GUIDA-MAPPE.md)) |
+| `ERRORE: nessun Chromium/Chrome trovato` | vedi §5, o usa il container, o stampa dal browser |
+| `git push` rifiutato sul branch di gruppo | il flusso ADR-0007 protegge `main`: lavora sul branch del gruppo (`dm.py session branch`) |
+| I PDF compaiono in `git status` | non dovrebbero: `*.pdf` è gitignored — controlla di non aver modificato `.gitignore` |
+
+---
+
+## 9. Dopo il setup: dove andare
+
+| Vuoi… | Documento |
+|---|---|
+| Condurre la tua prima sessione | [`campaign/DM-QUICKSTART-NUOVI-DM.md`](../../campaign/DM-QUICKSTART-NUOVI-DM.md) |
+| Il ciclo completo prima/durante/dopo | [`campaign/DM-CAMPAIGN-PLAYBOOK.md`](../../campaign/DM-CAMPAIGN-PLAYBOOK.md) |
+| Fare booklet e PDF | [`GUIDA-BOOKLET-E-PDF.md`](../how-to/GUIDA-BOOKLET-E-PDF.md) |
+| Fare mappe | [`GUIDA-MAPPE.md`](../how-to/GUIDA-MAPPE.md) |
+| Aggiungere mostri/PNG/villain | [`GUIDA-BESTIARIO.md`](../how-to/GUIDA-BESTIARIO.md) |
+| Capire regole e convenzioni del repo | [`AGENTS.md`](../../AGENTS.md) |
+| Sapere cosa fa ogni script | [`scripts/README-automation.md`](../../scripts/README-automation.md) |

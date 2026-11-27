@@ -156,7 +156,7 @@ class TestLaCopiaDiBalvar(unittest.TestCase):
 
     #: I numeri, non le etichette: il Bestiario scrive «hp 96», il modulo «pf 96».
     NUMERI = (r"(?:pf|hp):? 101", r"ca:? 24", r"vol \+17", r"sag 20", r"bab \+9",
-              r"lotta \+10", r"\+11/\+6 \(1d8\+2\)")
+              r"lotta \+10", r"\+11/\+6 \(1d8\+2/x3\)")
 
     def test_i_numeri_sono_gli_stessi(self):
         import re

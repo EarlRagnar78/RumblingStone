@@ -18,7 +18,7 @@ Uso:
     python3 scripts/tools_manifest.py --render-md    # solo docs/tools/README.md
     python3 scripts/tools_manifest.py --emit-mcp     # solo docs/tools/mcp-tools.json
 
-Exit code (convenzione repo — vedi docs/guides/TOOL-AUTHORING-STANDARD.md):
+Exit code (convenzione repo — vedi docs/reference/TOOL-AUTHORING-STANDARD.md):
     0 = ok
     1 = manifest non conforme / drift rilevato (--check)
     2 = errore d'uso
@@ -168,6 +168,15 @@ def validate(manifest: dict, schema: dict) -> list[str]:
         fx = t.get("side_effects")
         if not isinstance(fx, dict) or not {"writes_canon", "git_commit", "network"} <= set(fx or {}):
             errors.append(f"{tid}: 'side_effects' incompleto (servono writes_canon/git_commit/network)")
+        # sistema: le capacità chieste ai plugin dei sistemi di gioco (ADR-0111).
+        # Che ogni sistema attivo le dichiari lo verifica scripts/sistemi.py --check.
+        if "sistema" in t:
+            sis = t["sistema"]
+            cap = sis.get("capacita") if isinstance(sis, dict) else None
+            if not isinstance(cap, list) or not cap or set(sis) != {"capacita"}:
+                errors.append(f"{tid}: 'sistema' deve essere {{\"capacita\": [...]}} non vuoto")
+            elif any(not isinstance(c, str) or not re.fullmatch(r"[a-z_]+\.[a-z_]+", c) for c in cap):
+                errors.append(f"{tid}: 'sistema.capacita' ha un nome non nella forma area.nome")
         # il file esiste?
         p = REPO / t.get("path", "")
         if t.get("path") and not p.exists():
@@ -394,7 +403,7 @@ def emit_markdown(manifest: dict) -> str:
     lines.append("---")
     lines.append("")
     lines.append("Aggiungere un tool? Vedi "
-                 "[`../guides/TOOL-AUTHORING-STANDARD.md`](../guides/TOOL-AUTHORING-STANDARD.md).")
+                 "[`../reference/TOOL-AUTHORING-STANDARD.md`](../reference/TOOL-AUTHORING-STANDARD.md).")
     lines.append("")
     return "\n".join(lines)
 

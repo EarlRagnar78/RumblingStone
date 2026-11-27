@@ -1,10 +1,13 @@
-# Bone Naga (Ghostlord servant) [ACCEPTED — DM-canon 2026-05-05]
+# Bone Naga (Ghostlord servant) [CANONE — DM 2026-05-05]
 **Faction**: ghostlord-undead | **Role**: caster-melee | **Environment**: any | **CR**: 10 | **Source**: MM II p.146 Bone Naga | **Status**: inferred
 
 
 ```statblocco
 gs: 10
 tipo: Large aberration (undead) HD 13d12 (84 HP)
+taglia: Grande
+spazio: 3 m
+portata: 1,5 m
 ca: 18
 ca-dettaglio: (-1 size, +3 Dex, +6 natural)
 pf: 84

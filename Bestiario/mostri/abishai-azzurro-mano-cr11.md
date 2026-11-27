@@ -1,9 +1,12 @@
-# Abishai azzurro della Mano — il cane da guardia di Tiamat (esterno, baatezu) [ACCEPTED — DM-canon 2026-10-18]
+# Abishai azzurro della Mano — il cane da guardia di Tiamat (esterno, baatezu) [CANONE — DM 2026-10-18]
 **Faction**: red-hand | **Role**: elite-skirmisher | **Environment**: any | **CR**: 11 | **Source**: ricostruito su SRD 3.5 (tipo esterno, capacità dei diavoli); idea da `[Private — Red Hand of Doom WE, pp. 29, 33]` | **Status**: ACCEPTED — DM-canon 2026-10-18 (PR #247, poi canone su richiesta del DM)
 
 ```statblocco
 gs: 11
 tipo: Medium outsider (baatezu, evil, extraplanar, lawful), 14 DV, LE
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 25
 ca-dettaglio: (+4 Des, +11 naturale)
 pf: 147
@@ -27,6 +30,8 @@ fonte: ricostruzione del repo su SRD 3.5, 2026-10-18
 
 **Attacco** Vel 9 m, volare 18 m (media) · Mischia coda +20 (1d8+5 più 2d6 elettricità), 2 artigli +17 (1d6+2), morso +17 (1d6+2) · capacità magiche (LI 14): a volontà *charme su persone* (CD 15), *immagine maggiore* (CD 17), *suggestione* (CD 17), *teletrasporto superiore* (solo sé più 25 kg); 3/giorno *fulmine* (CD 17); 1/giorno *catena di fulmini* (CD 20) · evocare baatezu
 
+**Tattiche** *Prima del combattimento*: resta sospeso sopra il cerchio dei ritualisti, nascosto finché non arriva il segnale; lancia *immagine maggiore* per mostrare un secondo Azarr Kul dove non c'è. · *Durante il combattimento*: apre con *catena di fulmini* sul gruppo più compatto, poi colpisce in volo con Attacco in Volo e torna in quota, puntando l'incantatore che sta interrompendo il rituale. Al primo round in cui un PG lo tiene in mischia evoca rinforzi. · *Morale*: sotto i 40 pf usa *teletrasporto superiore* verso Azarr Kul e torna a combattere accanto a lui; non fugge mai dal Fane finché il suo signore è vivo.
+
 **Statistiche** For 20 Des 18 Cos 22 Int 14 Sag 16 Car 18 · BAB +14; Lotta +19 · Talenti Iniziativa Migliorata, Multiattacco, Attacco in Volo, Arma Focalizzata (coda), Riflessi in Combattimento · Abilità Ascoltare +20, Concentrazione +23, Intimidire +21, Muoversi Silenziosamente +21, Osservare +20, Raggirare +21 · Linguaggi Comune, Draconico, Infernale; telepatia 30 m · Qualità speciali tratti dei baatezu, vedere nell'oscurità
 
 **Capacità speciali**
@@ -35,8 +40,6 @@ fonte: ricostruzione del repo su SRD 3.5, 2026-10-18
 - *Evocare baatezu (Mag)*: 1/giorno, 2d10 lemuri (100%) oppure un altro abishai azzurro (35%). Vale un incantesimo di 4° livello.
 - *Vedere nell'oscurità (Sop)*: vede perfettamente in ogni oscurità, anche magica.
 - *Telepatia (Sop)*: 30 m, con qualunque creatura che abbia un linguaggio.
-
-**Tattiche** *Prima del combattimento*: resta sospeso sopra il cerchio dei ritualisti, nascosto finché non arriva il segnale; lancia *immagine maggiore* per mostrare un secondo Azarr Kul dove non c'è. · *Durante il combattimento*: apre con *catena di fulmini* sul gruppo più compatto, poi colpisce in volo con Attacco in Volo e torna in quota, puntando l'incantatore che sta interrompendo il rituale. Al primo round in cui un PG lo tiene in mischia evoca rinforzi. · *Morale*: sotto i 40 pf usa *teletrasporto superiore* verso Azarr Kul e torna a combattere accanto a lui; non fugge mai dal Fane finché il suo signore è vivo.
 
 **Hook**: un servo che si crede padrone; parla solo per telepatia e sempre al PG più giovane. *«Lui ti ha già venduto. Io ti offro un prezzo migliore.»*
 

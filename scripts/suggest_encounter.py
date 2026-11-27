@@ -23,7 +23,7 @@ DMG 3.5 EL math:  EL ≈ 2 · log2(Σ 2^(CR/2))
    NOT +1 as in 4e/5e. Power scales as 2^(CR/2).)
 """
 from __future__ import annotations
-import sys, argparse, random, math, re
+import sys, argparse, random, re
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
@@ -274,19 +274,45 @@ def _parse_list(lines, i, indent):
 
 
 # ───────────────────────── EL / CR math ─────────────────────────
-def combine_el(crs: list[float]) -> float:
-    """Combine CRs into an Encounter Level per D&D 3.5 DMG.
+# F5 di ADR-0112: gli algoritmi che combinano i GS sono codice dei plugin
+# (`sistemi/d20/codice/incontri.py` per «potenze», `sistemi/pf1e/codice/
+# incontri.py` per «somma_px»), caricati per nome da `dmcore.sistemi.modulo`.
+# Qui restano solo i nomi di sempre, che li chiamano.
+def combine_el(crs: list[float], raddoppio: float = 2.0) -> float:
+    """EL di un incontro 3.5 (DMG 3.5 p. 49): r · log2(Σ 2^(GS/r)), r = `raddoppio`.
 
-    In 3.5 doubling the number of equal-CR creatures raises EL by +2
-    (not +1 as in 4e/5e). Power therefore scales as 2^(CR/2) and the
-    combined EL is:
-
-        EL = 2 · log2( Σ 2^(CR/2) )
-
-    Example: two CR 10 creatures → 2·log2(2·2^5) = 2·log2(64) = 12 ✓
+    Due GS 10 → 12. L'algoritmo è il modulo «potenze» del plugin d20.
     """
-    if not crs: return 0.0
-    return 2.0 * math.log2(sum(2 ** (c / 2.0) for c in crs))
+    from dmcore import sistemi as S
+    return S.modulo("d20", "potenze")({"raddoppio": raddoppio})(crs)
+
+
+def combina_gs_pf1e(crs: list[float], tab: dict[str, int] | None = None) -> float:
+    """GS di un incontro PF1e dalla somma dei PE (PRD, Designing Encounters).
+
+    Due GS 10 → GS 12, tre → GS 13. L'algoritmo è il modulo «somma_px» del plugin pf1e.
+    """
+    from dmcore import sistemi as S
+    if tab is None:
+        tab = S.dati("pf1e", "incontri.livello")["px_per_gs"]
+    return S.modulo("pf1e", "somma_px")({"px_per_gs": tab})(crs)
+
+
+def combinatore(sistema: "str | None" = None, root=None):
+    """La funzione GS → EL del sistema: il modulo che il suo `incontri.livello` nomina."""
+    from dmcore import sistemi as S
+    sistema = sistema or S.predefinito(root)
+    dati = S.dati(sistema, "incontri.livello", root)
+    metodo = dati.get("metodo")
+    try:
+        return S.modulo(sistema, metodo, root)(dati)
+    except S.ErroreSistemi as e:
+        raise SystemExit(f"[suggest_encounter] {sistema}: metodo «{metodo}»: {e}") from e
+
+
+# Il modo di combinare i GS: 3.5 (combine_el) salvo `--sistema` (ADR-0111).
+COMBINA = combine_el
+
 
 def _cr_num(v):
     if v is None: return None
@@ -506,7 +532,7 @@ def build_encounter(pool, target_el, size, rng, forced: list[dict] | None = None
             crs.extend([pick["cr"]] * count)
             remaining_slots -= count
         if not ok or not mix: continue
-        el = combine_el(crs)
+        el = COMBINA(crs)
         score = -abs(el - target_el)
         if best is None or score > best["score"]:  # type: ignore[index]
             best = {"mix": mix, "el": el, "score": score}
@@ -597,9 +623,23 @@ def main():
     ap.add_argument("--list-environments", action="store_true")
     ap.add_argument("--list-npcs", action="store_true",
                     help="List all injectable NPCs (canonical Bestiario dossiers + named catalog entries).")
+    ap.add_argument("--sistema", default=None,
+                    help="sistema di gioco con cui combinare i GS (sistemi.toml; predefinito dnd35)")
     ap.add_argument("--list-all", action="store_true",
                     help="Dump factions + alliances + environments + NPCs + wild envs.")
     args = ap.parse_args()
+
+    global COMBINA
+    from dmcore import sistemi as S
+    sistema = args.sistema or S.predefinito()
+    if sistema not in S.attivi():
+        print(f"[suggest_encounter] sistema «{sistema}» non attivo in sistemi.toml", file=sys.stderr)
+        return 2
+    COMBINA = combinatore(sistema)
+    if sistema != S.predefinito():
+        print(f"[suggest_encounter] sistema {sistema}: GS dell'incontro col metodo "
+              f"«{S.dati(sistema, 'incontri.livello')['metodo']}» del plugin; "
+              "le creature vengono ancora dal catalogo 3.5", file=sys.stderr)
 
     cat = load_catalog()
     all_data = load_alliances()

@@ -38,6 +38,7 @@ RADICE = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(RADICE / "scripts"))
 
 import ciclo_prosa as cp  # noqa: E402
+import memoria_storica as ms  # noqa: E402
 import decisioni_dm as dd  # noqa: E402
 
 USCITA = RADICE / "MEMORIA.md"
@@ -163,6 +164,7 @@ def rendi() -> str:
          "python3 scripts/memoria.py --check      # questa pagina è allineata?",
          "python3 scripts/decisioni_dm.py --check # le decisioni aperte",
          "python3 scripts/fase1.py <file>         # sempre, prima di toccare",
+         "python3 scripts/memoria_storica.py --pr N  # la storia di una PR, di un ADR, di un tema",
          "```", "",
          "Poi si legge questa pagina dall'alto: prima cosa aspetta il DM, poi da dove "
          "riparte l'agente. Le regole di lavoro stanno in [`AGENTS.md`](AGENTS.md).", "",
@@ -210,6 +212,10 @@ def rendi() -> str:
     r += ["", "## Le misure che si portano dietro", ""]
     r.append(f"- **Decisioni**: {len(aperte)} aperte, {len(decisioni) - len(aperte)} chiuse "
              f"(`decisioni_dm.py`).")
+    storiche = ms.leggi(ms.FILE.read_text(encoding="utf-8")) if ms.FILE.is_file() else []
+    if storiche:
+        r.append(f"- **Memoria storica**: {len(storiche)} voci, l'ultima {storiche[-1].id} del "
+                 f"{storiche[-1].data} (`memoria_storica.py`, ADR-0127).")
     if reg:
         r.append(f"- **Prosa**: {reg[0]} revisioni applicate, segnalazioni {reg[1]:+d}, "
                  f"MQM {reg[2]:+.2f} punti (`ciclo_prosa.py registro`).")
@@ -222,6 +228,12 @@ def rendi() -> str:
           "| Cosa è successo | [`plans/CHANGELOG.md`](plans/CHANGELOG.md) |",
           "| Che piani esistono | [`plans/INDEX.md`](plans/INDEX.md) |",
           "| Perché si è deciso così | [`plans/adr/`](plans/adr/) |",
+          "| Cosa sapevano le sessioni prima, la storia dietro una scelta | "
+          "[`plans/MEMORIA-STORICA.md`](plans/MEMORIA-STORICA.md), si cerca con "
+          "`scripts/memoria_storica.py` (ADR-0127) |",
+          "| Il lavoro che non è ancora su `main` (PR, rami, cartelle dei thread) | "
+          "[`plans/LAVORO-IN-CORSO.md`](plans/LAVORO-IN-CORSO.md), istantanea dal registro "
+          "`plans/lavoro-in-corso.json`: `python3 scripts/lavoro_in_corso.py --fetch` (ADR-0157) |",
           "| Le norme e chi le misura | [`skills/REGISTRO-NORME-EDITORIALI.md`](skills/REGISTRO-NORME-EDITORIALI.md) |",
           "| Le regole per gli agenti | [`AGENTS.md`](AGENTS.md) |",
           "| Questa pagina | `scripts/memoria.py`, mai a mano |", ""]

@@ -3,7 +3,7 @@
 
 > ⚠ **[RIMANDO]** i numeri stanno in `ushgar-occhio-reso-cr13.md`, in questa cartella. Fino al 2026-09-23 qui c'era un secondo blocco, con TS «Temp +10, Rifl +5, Vol +5» derivati da `derive_statblocks --apply-ts` il 2 settembre, contro i +14/+8/+8 dello statblocco: due copie divergenti (ADR-0021). Tolto; il dossier resta la scheda del PNG.
 
-> **[ACCEPTED — DM-canon]** Approvato dal DM il **2026-08-05**.
+> **[CANONE — DM 2026-08-05]** Approvato dal DM il **2026-08-05**.
 > Statblock: `ushgar-occhio-reso-cr13.md` (questa cartella).
 > Righe di canone applicate in `campaign/state.md` §3 (clock 0/4), §4, §5 e §7.E.
 > **Decisione DM sul ramo**: si apre, ma passando **prima** per l'uscita

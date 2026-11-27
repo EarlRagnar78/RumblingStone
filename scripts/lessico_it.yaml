@@ -1,0 +1,382 @@
+# Tabella italiano -> SRD 3.5 -> PF1e dei termini di regola (lessico_regole.py).
+# it = nome italiano ufficiale (25 Edition per la 3.5); varianti = forme trovate nel repo da correggere,
+# separate da |; srd35 e pf1 = titolo esatto nelle due fonti (vuoto se non c'è); nota = differenza o fonte.
+
+- it: Iniziativa Migliorata
+  tipo: talento
+  srd35: Improved Initiative
+  pf1: Improved Initiative
+- it: Attacco Poderoso
+  tipo: talento
+  srd35: Power Attack
+  pf1: Power Attack
+  nota: "PF1e: penalità fissa per BAB, non a scelta"
+- it: Arma Focalizzata
+  tipo: talento
+  srd35: Weapon Focus
+  pf1: Weapon Focus
+  varianti: Focalizzazione nell'Arma
+- it: Volontà di Ferro
+  tipo: talento
+  srd35: Iron Will
+  pf1: Iron Will
+  varianti: Ferrea Volontà
+- it: Allerta
+  tipo: talento
+  srd35: Alertness
+  pf1: Alertness
+- it: Incantare in Combattimento
+  tipo: talento
+  srd35: Combat Casting
+  pf1: Combat Casting
+  varianti: Incantesimi in Combattimento
+- it: Robustezza
+  tipo: talento
+  srd35: Toughness
+  pf1: Toughness
+  nota: "PF1e: +3 pf e +1 per DV oltre il 3°"
+- it: Incalzare
+  tipo: talento
+  srd35: Cleave
+  pf1: Cleave
+  varianti: Fendere
+  nota: "PF1e: Cleave è un'azione standard"
+- it: Riflessi in Combattimento
+  tipo: talento
+  srd35: Combat Reflexes
+  pf1: Combat Reflexes
+  varianti: Riflessi da Combattimento
+- it: Riflessi Fulminei
+  tipo: talento
+  srd35: Lightning Reflexes
+  pf1: Lightning Reflexes
+- it: Multiattacco
+  tipo: talento
+  srd35: Multiattack
+  pf1: Multiattack
+- it: Attacco in Volo
+  tipo: talento
+  srd35: Flyby Attack
+  pf1: Flyby Attack
+- it: Schivare
+  tipo: talento
+  srd35: Dodge
+  pf1: Dodge
+- it: Tempra Possente
+  tipo: talento
+  srd35: Great Fortitude
+  pf1: Great Fortitude
+- it: Resistenza Fisica
+  tipo: talento
+  srd35: Endurance
+  pf1: Endurance
+- it: Incantesimi Focalizzati
+  tipo: talento
+  srd35: Spell Focus
+  pf1: Spell Focus
+  varianti: Focalizzazione | Focalizzazione Incantatore
+- it: Arma Specializzata
+  tipo: talento
+  srd35: Weapon Specialization
+  pf1: Weapon Specialization
+  varianti: Specializzazione in un'Arma
+- it: Spezzare Migliorato
+  tipo: talento
+  srd35: Improved Sunder
+  pf1: Improved Sunder
+  varianti: Spaccare Migliorato
+- it: Arma Accurata
+  tipo: talento
+  srd35: Weapon Finesse
+  pf1: Weapon Finesse
+  varianti: Finezza nell'Arma
+- it: Combattere in Sella
+  tipo: talento
+  srd35: Mounted Combat
+  pf1: Mounted Combat
+  varianti: Combattere a Cavallo
+- it: Critico Migliorato
+  tipo: talento
+  srd35: Improved Critical
+  pf1: Improved Critical
+- it: Scrivere Pergamene
+  tipo: talento
+  srd35: Scribe Scroll
+  pf1: Scribe Scroll
+  varianti: Vergare Pergamene
+- it: Arma Focalizzata Superiore
+  tipo: talento
+  srd35: Greater Weapon Focus
+  pf1: Greater Weapon Focus
+- it: Tiro Ravvicinato
+  tipo: talento
+  srd35: Point Blank Shot
+  pf1: Point Blank Shot
+- it: Tiro Preciso
+  tipo: talento
+  srd35: Precise Shot
+  pf1: Precise Shot
+  varianti: Mira Precisa
+  nota: "«Mira precisa» è un altro talento dell'elenco italiano: nel repo era usato per Precise Shot"
+- it: Seguire Tracce
+  tipo: talento
+  srd35: Track
+  pf1: 
+  nota: "PF1e: non è un talento (è Survival)"
+- it: Mobilità
+  tipo: talento
+  srd35: Mobility
+  pf1: Mobility
+- it: Incalzare Potenziato
+  tipo: talento
+  srd35: Great Cleave
+  pf1: Great Cleave
+  varianti: Fendente Poderoso
+- it: Spingere Migliorato
+  tipo: talento
+  srd35: Improved Bull Rush
+  pf1: Improved Bull Rush
+  varianti: Spinta Migliorata
+- it: Lottare Migliorato
+  tipo: talento
+  srd35: Improved Grapple
+  pf1: Improved Grapple
+- it: Furtivo
+  tipo: talento
+  srd35: Stealthy
+  pf1: Stealthy
+- it: Incantesimi Inarrestabili
+  tipo: talento
+  srd35: Spell Penetration
+  pf1: Spell Penetration
+  varianti: Penetrazione degli Incantesimi
+- it: Incantesimi Inarrestabili Superiore
+  tipo: talento
+  srd35: Greater Spell Penetration
+  pf1: Greater Spell Penetration
+  varianti: Penetrazione Superiore degli Incantesimi
+- it: Incantesimi Rapidi
+  tipo: talento
+  srd35: Quicken Spell
+  pf1: Quicken Spell
+  varianti: Incantesimo Rapido
+- it: Attacco Naturale Migliorato
+  tipo: talento
+  srd35: Improved Natural Attack
+  pf1: Improved Natural Attack
+  varianti: Arma Naturale Migliorata
+- it: Autorità
+  tipo: talento
+  srd35: Leadership
+  pf1: Leadership
+- it: Fluttuare
+  tipo: talento
+  srd35: Hover
+  pf1: Hover
+- it: Incantesimi Estesi
+  tipo: talento
+  srd35: Extend Spell
+  pf1: Extend Spell
+  varianti: Incantesimo Esteso|Estendere Incantesimi
+- it: Tiro Rapido
+  tipo: talento
+  srd35: Rapid Shot
+  pf1: Rapid Shot
+- it: Ghermire
+  tipo: talento
+  srd35: Snatch
+  pf1: Snatch
+- it: Carica Devastante
+  tipo: talento
+  srd35: Spirited Charge
+  pf1: Spirited Charge
+- it: Persuasivo
+  tipo: talento
+  srd35: Persuasive
+  pf1: Persuasive
+- it: Armatura Naturale Migliorata
+  tipo: talento
+  srd35: Improved Natural Armor
+  pf1: Improved Natural Armor
+- it: Combattere con Due Armi
+  tipo: talento
+  srd35: Two-Weapon Fighting
+  pf1: Two-Weapon Fighting
+- it: Arma Specializzata Superiore
+  tipo: talento
+  srd35: Greater Weapon Specialization
+  pf1: Greater Weapon Specialization
+- it: Combattere alla Cieca
+  tipo: talento
+  srd35: Blind-Fight
+  pf1: Blind-Fight
+- it: Tiro Lontano
+  tipo: talento
+  srd35: Far Shot
+  pf1: Far Shot
+- it: Incantesimi Focalizzati Superiore
+  tipo: talento
+  srd35: Greater Spell Focus
+  pf1: Greater Spell Focus
+  varianti: Incantesimi Focalizzati Superiori
+- it: Correre
+  tipo: talento
+  srd35: Run
+  pf1: Run
+- it: Autosufficiente
+  tipo: talento
+  srd35: Self-Sufficient
+  pf1: Self-Sufficient
+- it: Capacità Focalizzata
+  tipo: talento
+  srd35: Ability Focus
+  pf1: Ability Focus
+- it: Attacco in Sella
+  tipo: talento
+  srd35: Ride-By Attack
+  pf1: Ride-By Attack
+- it: Competenza nelle Armi Esotiche
+  tipo: talento
+  srd35: Exotic Weapon Proficiency
+  pf1: Exotic Weapon Proficiency
+- it: Scacciare Extra
+  tipo: talento
+  srd35: Extra Turning
+  pf1: 
+  nota: "PF1e: Extra Channel"
+- it: Tiro Multiplo
+  tipo: talento
+  srd35: Manyshot
+  pf1: Manyshot
+- it: Incantesimi Naturali
+  tipo: talento
+  srd35: Natural Spell
+  pf1: Natural Spell
+- it: Negoziatore
+  tipo: talento
+  srd35: Negotiator
+  pf1: 
+  nota: "PF1e: non esiste"
+- it: Iniziato della Natura
+  tipo: talento
+  srd35: 
+  pf1: 
+  nota: "Private source — Player's Handbook II / Complete Divine: non SRD"
+- it: Anima Forte
+  tipo: talento
+  srd35: 
+  pf1: 
+  nota: "Private source — non SRD"
+- it: Creare Armi e Armature Magiche
+  tipo: talento
+  srd35: Craft Magic Arms and Armor
+  pf1: Craft Magic Arms and Armor
+- it: Colpo Terrificante
+  tipo: talento
+  srd35: Awesome Blow
+  pf1: Awesome Blow
+- it: Afferrare Frecce
+  tipo: talento
+  srd35: Snatch Arrows
+  pf1: Snatch Arrows
+- it: Sbilanciare Migliorato
+  tipo: talento
+  srd35: Improved Trip
+  pf1: Improved Trip
+  varianti: Sgambettare Migliorato
+  nota: "3.5: +4 Forza e attacco subito se cade; PF1e: +2 manovra e +2 DMC"
+- it: Abilità Focalizzata
+  tipo: talento
+  srd35: Skill Focus
+  pf1: Skill Focus
+- it: Incantesimi Silenziosi
+  tipo: talento
+  srd35: Silent Spell
+  pf1: Silent Spell
+  varianti: Incantesimo Silenzioso
+- it: Ira Extra
+  tipo: talento
+  srd35: 
+  pf1: Extra Rage
+  nota: "3.5: Private source — Complete Warrior, non SRD"
+- it: Incantesimi Ingranditi
+  tipo: talento
+  srd35: Enlarge Spell
+  pf1: Enlarge Spell
+  varianti: Ingrandire Incantesimo|Ingrandire Incantesimi
+- it: Incantesimi Potenziati
+  tipo: talento
+  srd35: Empower Spell
+  pf1: Empower Spell
+  varianti: Incantesimo Potenziato
+- it: Incantesimi Massimizzati
+  tipo: talento
+  srd35: Maximize Spell
+  pf1: Maximize Spell
+  varianti: Incantesimo Massimizzato
+- it: Attacco Rapido
+  tipo: talento
+  srd35: Spring Attack
+  pf1: Spring Attack
+- it: Tiro in Movimento
+  tipo: talento
+  srd35: Shot on the Run
+  pf1: Shot on the Run
+  varianti: Tiro in Corsa
+- it: Competenza nelle Armi da Guerra
+  tipo: talento
+  srd35: Martial Weapon Proficiency
+  pf1: Martial Weapon Proficiency
+  varianti: Competenza Marziale
+- it: Robustezza Migliorata
+  tipo: talento
+  srd35: 
+  pf1: 
+  nota: "Private source — Monster Manual III / Complete Warrior: non SRD"
+- it: Multiattacco Migliorato
+  tipo: talento
+  srd35: Improved Multiattack
+  pf1: 
+  nota: "3.5 SRD: monster feat (epic)"
+- it: Critico Potente
+  tipo: talento
+  srd35: 
+  pf1: Critical Focus
+  nota: "PF1e; nome italiano da confermare"
+- it: Specializzazione nello Scudo
+  tipo: talento
+  srd35: 
+  pf1: Shield Focus
+  nota: "nome italiano da confermare: PF1e Shield Focus"
+- it: Deviare Frecce
+  tipo: talento
+  srd35: Deflect Arrows
+  pf1: Deflect Arrows
+  varianti: Deviazione Frecce
+- it: Pugno Stordente
+  tipo: talento
+  srd35: Stunning Fist
+  pf1: Stunning Fist
+  varianti: Colpo Stordente
+- it: Evasione Migliorata
+  tipo: talento
+  srd35: Improved Evasion
+  pf1: 
+  varianti: Evasione migliorata
+  nota: "capacità di classe, non talento"
+- it: Virare
+  tipo: talento
+  srd35: Wingover
+  pf1: Wingover
+  varianti: Virata
+  nota: "nome delle due fonti italiane (lessico_it_35.tsv); «Virata» era il nome del repo fino alla decisione del DM del 2026-11-13"
+- it: Attacco con lo Scudo Migliorato
+  tipo: talento
+  srd35: Improved Shield Bash
+  pf1: Improved Shield Bash
+- it: Colpo Terrificante
+  tipo: talento
+  srd35: Awesome Blow
+  pf1: Awesome Blow
+  varianti: Colpo Devastante | Colpo Tremendo | Colpo Possente
+  nota: "nome scelto dal DM il 2026-11-07 (è quello dell'edizione italiana PF1e); talento da mostro dell'SRD 3.5"

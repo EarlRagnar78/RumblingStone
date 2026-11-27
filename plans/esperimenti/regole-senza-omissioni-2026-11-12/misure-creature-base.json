@@ -1,0 +1,31 @@
+{
+ "data": "2026-11-13",
+ "base": "main 4fdbd914",
+ "comando": "python3 scripts/verifica_scheda.py Bestiario 0*/ --json",
+ "main": {
+  "violazioni": 72,
+  "non_verificabili": 321,
+  "attacchi_naturali_senza_dado": 85
+ },
+ "ramo": {
+  "violazioni": 73,
+  "non_verificabili": 297,
+  "attacchi_naturali_senza_dado": 61
+ },
+ "creature_base_nei_dati": 409,
+ "schede_del_bestiario_con_base_dichiarata_nella_fonte": 8,
+ "violazioni_nuove": [
+  {
+   "file": "Bestiario/mostri/gnoll-warrior2-cr2.md",
+   "regola": "numero.CA.naturale",
+   "testo": "armatura naturale +2: la creatura base gnoll ha +1 (un bonus in più va dichiarato con la sua sorgente)"
+  }
+ ],
+ "dubbi_chiusi_per_file": {
+  "ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md": 8,
+  "tyrgarun-blue-old-cr18.md": 4,
+  "ozyrrandion-drago-verde-cr14.md": 4,
+  "arbitrax-drago-rosso-cr15.md": 4,
+  "02-CHI-CE-STANOTTE.md": 4
+ }
+}

@@ -629,8 +629,8 @@ TS: Tempra +16 · Riflessi +8 · Volontà +7 (+2 in Ira)
 • OCCHIO DI OSSIDIANA (artefatto minore maledetto): 3/g azione di movimento,
   marca un bersaglio → −2 CA contro Zog'tar e +2 danni subiti da lui, 5 round.
   Prezzo: Zog'tar è VULNERABILE alla luce divina (Luce di Lathander/Corona).
-Talenti: Attacco Poderoso, Ira Extra, Critico Migl. (ascia), Arma Focalizzata
-   & Specializzata (ascia), Robustezza, Iniziativa Migliorata.
+Talenti: Attacco Poderoso, Ira Extra, Critico Migliorato (ascia), Arma Focalizzata
+   e Arma Specializzata (ascia), Robustezza, Iniziativa Migliorata.
 GUARDIE (4): Hobgoblin Guerriero 8 · CA 20 · PF 60 · spadone +14 (2d6+6)
 ============================================================
 ```

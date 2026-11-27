@@ -1,6 +1,6 @@
 {
   "versione": 1,
-  "serata": "2026-10-12",
+  "serata": "2026-11-02",
   "titolo": "La notte del campo e il duello all'alba",
   "arco": "ARC-07",
   "pg": [
@@ -25,5 +25,5 @@
     "prompt": [],
     "note": "Nessuna immagine nuova: la serata usa i ritratti e la tavola di Skullcrusher già nel master."
   },
-  "note": "Serata di circa tre ore: DEF-4 dalla Scena 5 all'esito del duello, stop prima della Scena 12. Il volume del −1000 (volume-mille-anni/) è un libro a sé e non fa parte di questo corredo."
+  "note": "Serata di circa tre ore: si rigioca lo sgancio del barile sulla tenda di Zog'tar (capitolo VII), poi il ritorno, le mura e il duello, stop prima della Scena 12. Le scelte in fortezza e il giro delle pozioni di Kettra sono giocati. Il volume del −1000 (volume-mille-anni/) è un libro a sé e non fa parte di questo corredo."
 }

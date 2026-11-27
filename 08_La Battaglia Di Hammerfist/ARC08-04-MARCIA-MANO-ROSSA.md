@@ -3,7 +3,7 @@
 > **Scopo**: scheda logistica canonica della colonna d'assalto (900
 > unità, E8) che Fauci di Palude guida contro Hammerfist Holds — da
 > dove si stacca, che rotta segue, quando arriva, e dove il gruppo di
-> ricognizione del flashback (D6: Borin, Dara, Thorin Runaforte, Nala)
+> ricognizione del flashback (D6: Borin, Dara, Harbek Runaforte, Nala)
 > può interferire.
 > **Stato**: canonico (materiale di modulo). Canone di trama in
 > `campaign/state.md`, non ancora giocato — vedi piano ARC-08 A0.
@@ -15,7 +15,7 @@
 
 Hammerfist Holds **non è** una delle tappe ufficiali del March Clock
 (`campaign/state.md` §2.1: Fane di Tiamat → Vraath Keep → Skull Gorge →
-Drellin's Ferry eq. → Terrelton eq. → Rhest → Elsir Crossroads →
+Drellin's Ferry eq. → Terrelton eq. → Lhesper → Elsir Crossroads →
 Rethmar). È un teatro **secondario**: una fortezza nanica fuori dalla
 rotta principale dell'Elsir Vale, colpita da un **distaccamento**
 (state.md §2.2: *"Fauci di Palude detachment"*) che si separa dal
@@ -34,7 +34,7 @@ corpo principale della Mano Rossa.
   non come tappa del piano principale.
 - **Non rientra nel corpo principale**: la sconfitta/dispersione del
   distaccamento (D11) non altera il totale dell'orda principale che
-  marcia verso Rhest — è già contabilizzata separatamente in
+  marcia verso Lhesper — è già contabilizzata separatamente in
   state.md §2.2 come perdita "post-Hammerfist (Day 19 sync)".
 
 ## 2. Composizione della colonna (900 unità — E8)
@@ -58,8 +58,8 @@ periodica sopra la colonna.
 
 ## 3. Opportunità di interferenza — gruppo di ricognizione (D6)
 
-Il flashback dei pregen "Eroi di Hammerfist" (Borin Ferropugno, Dara
-Occhiolesto, Thorin Runaforte, Nala Cantapietre — D6, qualche
+Il flashback dei pregen "Eroi di Hammerfist" (Borin Giuraferro, Dara
+Occhiolesto, Harbek Runaforte, Nala Cantapietre — D6, qualche
 settimana prima dell'assedio) è la finestra di gioco su questa marcia.
 Mappe già pronte in `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md` (master
 visivo, piano ARC-08 A8; griglie ultra-clear di 1A-1, 1A-2 e 1A-3 in

@@ -43,10 +43,74 @@ class TestClassificazione(unittest.TestCase):
 
     def test_la_documentazione_normale_non_e_meta(self):
         """Solo `docs/audit/`: una guida che marca un'inferenza ha un debito vero."""
-        self.assertEqual(inv.classe("docs/guides/GUIDA-IMMAGINI.md"), "aperti")
+        self.assertEqual(inv.classe("docs/how-to/GUIDA-IMMAGINI.md"), "aperti")
+
+
+class TestRigheDiRegola(unittest.TestCase):
+    """ADR-0109, scheda 6 = A: skill, modelli, README, fixture e GUIDA-MARCATURE sono meta."""
+
+    def test_regole_e_modelli_sono_meta(self):
+        for rel in ("skills/dnd-35-srd/references/resources.md",
+                    "campaign/templates/png-dossier-template.md",
+                    "Bestiario/README.md",
+                    "scripts/tests/fixtures/ultraclear/golden.md",
+                    "docs/reference/GUIDA-MARCATURE.md",
+                    "AGENTS.md"):
+            self.assertEqual(inv.classe(rel), "meta", rel)
+
+    def test_forma_della_marca(self):
+        self.assertEqual(inv.forma("Quanti PF ha?; base: MM 3.5"), "nuova")
+        self.assertEqual(inv.forma("needs DM confirmation"), "vecchia")
+        self.assertEqual(inv.forma("Quanti PF ha; base: MM"), "vecchia")  # manca la domanda
+        self.assertEqual(inv.forma(""), "nuda")
+
+    def test_lo_schema_da_copiare_e_meta(self):
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "x.md").write_text("marca `[INFERRED — <domanda>; base: <…>]`;\n"
+                                          "fatto [INFERRED — Quanti PF?; base: MM]\n", encoding="utf-8")
+            voci = inv.scansiona(Path(d))
+        self.assertEqual([v["classe"] for v in voci], ["meta", "aperti"])
+        self.assertEqual(voci[1]["forma"], "nuova")
+
+
+class TestConvenzione(unittest.TestCase):
+    """P16, 2026-11-04: una regola che dice come si marca non è un debito."""
+
+    def test_le_righe_di_regola_sono_meta(self):
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "x.md"
+            f.write_text("> **Regola**: oggetti fuori SRD marcati `[INFERRED]`.\n"
+                         "# `null` = [INFERRED]: il repo non conosce il valore\n"
+                         "SRD only; nulla di inventato senza flag [INFERRED].\n"
+                         "canonizzati dal DM — non più `[INFERRED]`.\n",
+                         encoding="utf-8")
+            voci = inv.scansiona(Path(d))
+            self.assertEqual([v["classe"] for v in voci], ["meta"] * 4)
+
+    def test_un_numero_marcato_resta_aperto(self):
+        """Il marcatore dopo un fatto è debito, anche se la riga dice «marcato» altrove."""
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "x.md"
+            f.write_text("la piana a 870 m `[INFERRED]`, marcata male\n"
+                         "Morale +2 se Borin resta in piedi `[INFERRED]`.\n",
+                         encoding="utf-8")
+            voci = inv.scansiona(Path(d))
+            self.assertEqual([v["classe"] for v in voci], ["aperti"] * 2)
 
 
 class TestScansione(unittest.TestCase):
+    def test_la_nota_che_va_a_capo_si_conta(self):
+        """P16: per riga, `[INFERRED — ...` spezzato su due righe spariva."""
+        with tempfile.TemporaryDirectory() as d:
+            f = Path(d) / "x.md"
+            f.write_text("dimezza `[INFERRED — la frana non ha numeri:\n"
+                         "sono quelli di una trappola]`. Una volta sola.\n",
+                         encoding="utf-8")
+            voci = inv.scansiona(Path(d))
+            self.assertEqual(len(voci), 1)
+            self.assertEqual(voci[0]["line"], 1)
+            self.assertIn("trappola", voci[0]["nota"])
+
     def test_riconosce_nudi_e_parlanti(self):
         with tempfile.TemporaryDirectory() as d:
             f = Path(d) / "x.md"
@@ -71,6 +135,50 @@ class TestScansione(unittest.TestCase):
             gen.mkdir()
             (gen / "x.md").write_text("[INFERRED]\n", encoding="utf-8")
             self.assertEqual(inv.scansiona(Path(d)), [])
+
+
+    def test_la_copia_in_un_booklet_generato_non_si_conta_due_volte(self):
+        """La #465: il booklet del Palio ristampava le due marche del sorgente, e la
+        baseline doveva salire di 2 a ogni marca nuova in un capitolo di booklet."""
+        marca = "`[INFERRED — Sonjak sa chi fa la guardia?; base: §3.1]`"
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "sorgente.md").write_text(f"I sicari arrivano. {marca}\n",
+                                                 encoding="utf-8")
+            (Path(d) / "BOOKLET.hb.md").write_text(
+                "<!-- GENERATO da scripts/build_booklet_html.py --format hb (ADR-0013).\n"
+                f"     Manifest: x -->\n\nI sicari arrivano. {marca}\n", encoding="utf-8")
+            classi = {v["file"]: v["classe"] for v in inv.scansiona(Path(d))}
+            self.assertEqual(classi, {"sorgente.md": "aperti", "BOOKLET.hb.md": "copie"})
+
+    def test_la_marca_che_sta_solo_nel_file_generato_resta_aperta(self):
+        """Se il sorgente l'ha persa, il file generato è l'unico posto dove si vede:
+        non si nasconde il debito."""
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "sorgente.md").write_text("niente marche qui\n", encoding="utf-8")
+            (Path(d) / "BOOKLET.hb.md").write_text(
+                "<!-- GENERATO da scripts/build_booklet_html.py -->\n"
+                "`[INFERRED — Chi guida?; base: nessuna]`\n", encoding="utf-8")
+            self.assertEqual([v["classe"] for v in inv.scansiona(Path(d))], ["aperti"])
+
+    def test_la_marca_citata_solo_nei_piani_non_fa_da_sorgente(self):
+        """Revisione di Codex sulla #467: se il sorgente vivo ha perso la marca e
+        resta solo il racconto in `plans/`, la marca del booklet è ancora debito."""
+        marca = "`[INFERRED — Chi guida?; base: nessuna]`"
+        with tempfile.TemporaryDirectory() as d:
+            (Path(d) / "plans").mkdir()
+            (Path(d) / "plans" / "PIANO.md").write_text(f"Era {marca}\n", encoding="utf-8")
+            (Path(d) / "BOOKLET.hb.md").write_text(
+                f"<!-- GENERATO da scripts/build_booklet_html.py -->\n{marca}\n",
+                encoding="utf-8")
+            with mock.patch.object(inv, "ROOT", Path(d)):
+                classi = {v["file"]: v["classe"] for v in inv.scansiona(Path(d))}
+            self.assertEqual(classi["BOOKLET.hb.md"], "aperti")
+
+    def test_generato_solo_se_lo_dice_in_testa(self):
+        """Un documento vivo che cita «GENERATO da scripts/» più sotto resta un sorgente."""
+        self.assertTrue(inv.e_generato("<!-- GENERATO da scripts/x.py -->\n# T\n"))
+        self.assertFalse(inv.e_generato("# T\n" + "riga\n" * 200
+                                        + "<!-- GENERATO da scripts/x.py -->\n"))
 
 
 class TestRatchet(unittest.TestCase):

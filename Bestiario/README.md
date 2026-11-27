@@ -19,7 +19,7 @@ una quest o un incontro:
 3. se esiste solo come sorgente storica (`pregen-pcgen/`) → **trascrivi** nel
    formato standard (lotto L1 del piano), senza reinventare i numeri;
 4. solo se non esiste da nessuna parte → genera ex-novo col template e
-   flagga `[INFERRED — needs DM confirmation]` (regola AGENTS.md).
+   marca `[INFERRED — <domanda al DM>; base: <fonte o dato>]` ([GUIDA-MARCATURE](../docs/reference/GUIDA-MARCATURE.md)).
 
 ## Struttura
 
@@ -34,7 +34,7 @@ una quest o un incontro:
 ## Formato statblock standard (ereditato dal catalogo Armate, 2026-05-05)
 
 ```markdown
-# Nome Creatura (contesto) [ACCEPTED — DM-canon YYYY-MM-DD]   ← o [INFERRED — needs DM confirmation]
+# Nome Creatura (contesto) [CANONE — DM AAAA-MM-GG]   ← o [INFERRED — <domanda>; base: <…>]
 **Faction**: … | **Role**: … | **Environment**: … | **CR**: N | **Source**: MM/RHoD/… | **Status**: accepted|inferred
 
 <Taglia> <tipo> HD XdY (NN HP). AC … Fort/Ref/Will … BAB/Grapple …

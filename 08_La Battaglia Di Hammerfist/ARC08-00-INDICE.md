@@ -5,7 +5,7 @@
 > leggerli** prima della prima sessione.
 > **Stato**: canonico (indice; canone di trama in `campaign/state.md`,
 > **non ancora giocato** — piano ARC-08 A0). **Ultima revisione**:
-> 2026-10-21.
+> 2026-11-25.
 
 <!-- storico -->
 > 🧭 **Perché questo indice è cambiato così spesso (ottobre 2026).** Il
@@ -38,16 +38,25 @@
 
 Hammerfist si gioca su **due livelli di personaggi**:
 
-1. **Flashback dei pregen "Eroi di Hammerfist"** (Borin, Dara, Thorin
-   Runaforte, Nala): quasi tutta la battaglia — ricognizione e giorni
-   d'assedio. Producono **BONUS quantificati per il finale, non PX**
-   (D9). Vedi la tabella di conversione in `ARC08-10-ESITI-E-
-   CONTINGENZE.md` §5.
+1. **Flashback dei pregen "Eroi di Hammerfist"**: quasi tutta la
+   battaglia, ricognizione e giorni d'assedio. Producono **BONUS
+   quantificati per il finale, non PX** (D9). Vedi la tabella di
+   conversione in `ARC08-10-ESITI-E-CONTINGENZE.md` §5.
+   Gli eroi giocabili sono **sei** (Borin, Dara, Harbek Runaforte, Nala,
+   Ragnhild Mantoferro, Yrsa Portastendardo) per quattro giocatori
+   `[CANONE — DM 2026-11-15]`. Chi tiene quale squadra lo dice una
+   regola sola, scritta uguale in `ARC08-DEF-1` (Scena 8, «Sei eroi,
+   quattro giocatori») e in `ARC08-DEF-2` («I numeri dei reparti, giorno
+   per giorno»): Dara gioca sempre; chi prende Ragnhild o Yrsa prende la
+   squadra (nell'assedio il settore) dell'eroe non scelto fra Borin,
+   Harbek e Nala, mai quella di Dara. La regola aspetta ancora il sì del
+   DM: le domande sono in fondo alla Scena 8 di DEF-1 e alla Scena 4 di
+   DEF-2.
 2. **Finale dei Rumbling Stones** (i PG reali): riemergono al Cuore
    della Montagna (Giorno 3) come la riscossa, giocano **solo il
    finale** (D6/E6). Regia del passaggio in `ARC08-11-PONTE-ARRIVO.md`.
 
-**Disambiguazione nomi (D2)**: **Thorin** Runaforte = pregen chierico ·
+**Disambiguazione nomi (D2)**: **Harbek** Runaforte = pregen chierico ·
 **Thorik** = PG guerriero · **Thorek** = Re di Hammerfist. Mai fonderli.
 
 ---
@@ -156,14 +165,16 @@ stat puntate alle appendici, campo "esiti possibili"):
 | Generale Grimjaw | `Bestiario/villain/Generale_Grimjaw.md` | Comandante di campo |
 | Gorthak il Trifronte | `Bestiario/villain/Gorthak_il_Trifronte.md` | Ariete vivente |
 | Re Thorek Hammerfist | `Bestiario/png/Re_Thorek_Hammerfist.md` | Re / comandante difensori |
-| Madre Dana Forgiapietra | `Bestiario/png/Dana_Forgiapietra.md` | Guida spirituale |
+| Madre Dagmar Forgiapietra | `Bestiario/png/Dana_Forgiapietra.md` | Guida spirituale |
 | Capitano Lunapiena | `Bestiario/png/Capitano_Lunapiena.md` | Ranger elfici (D13, indipendente) |
 | Signore Ventolesto | `Bestiario/png/Signore_Ventolesto.md` | Gufo alpha |
 | Orion Pelleorsa | `Bestiario/png/Orion_Pelleorsa.md` | Druido |
-| Borin Ferropugno | `Bestiario/png/Borin_Ferropugno.md` | Pregen (D14: campione) |
+| Borin Giuraferro | `Bestiario/png/Borin_Giuraferro.md` | Pregen (D14: campione) |
 | Dara Occhiolesto | `Bestiario/png/Dara_Occhiolesto.md` | Pregen (D14: staffette) |
-| Thorin Runaforte | `Bestiario/png/Thorin_Runaforte.md` | Pregen (D14: culto caduti) |
+| Harbek Runaforte | `Bestiario/png/Harbek_Runaforte.md` | Pregen (D14: culto caduti) |
 | Nala Cantapietre | `Bestiario/png/Nala_Cantapietre.md` | Pregen (D14: Dauth) |
+| Ragnhild Mantoferro | `Bestiario/png/Ragnhild_Mantoferro.md` | Pregen (DM 2026-11-15: incide la Runa) |
+| Yrsa Portastendardo | `Bestiario/png/Yrsa_Portastendardo.md` | Pregen (DM 2026-11-15: stendardo alla Cerimonia) |
 | Khorn | `Bestiario/png/Khorn/Khorn.md` | Ufficiale nanico (D5, 150 lance) |
 
 Cast già schedato altrove: `Bestiario/png/Lythiel/Lythiel.md` (Sacred Forest, E7),

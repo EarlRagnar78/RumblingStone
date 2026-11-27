@@ -106,7 +106,9 @@ def _ancora() -> dict[str, dict[int, set[str]]]:
         if not m or not corrente:
             continue
         livello = int(m.group(1))
-        voci = {v.strip() for v in m.group(2).split(",") if v.strip()}
+        # « · », non la virgola: i nomi ufficiali italiani la portano dentro
+        # («parola del potere, stordire», lessico ADR-0110), come quelli PF1e
+        voci = {v.strip() for v in m.group(2).split(" · ") if v.strip()}
         for c in corrente:
             fuori[c][livello] = voci
     return fuori
@@ -162,7 +164,7 @@ class OgniSceltaStaNellaListaDiQuellaClasse(unittest.TestCase):
                        "benedizione", "santuario", "scudo della fede",
                        "palla di fuoco"],
             "chierico": ["palla di fuoco", "armatura magica", "intralciare"],
-            "bardo": ["palla di fuoco", "benedizione", "corteccia"],
+            "bardo": ["palla di fuoco", "benedizione", "pelle coriacea"],
             "paladino": ["palla di fuoco", "intralciare"],
         }
         for classe, elenco in proibiti.items():

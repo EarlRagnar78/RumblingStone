@@ -1,0 +1,9 @@
+# sistemi/pf1e/dati/abilita.toml — le abilità PF1e (ADR-0111, L3)
+#
+# I nomi italiani vengono dalle righe «abilità» di scripts/lessico_it_pf1.tsv
+# (tabella del thread dei termini ufficiali, ADR-0110): qui non si ricopiano.
+# `estranee`: in PF1e Percezione, Furtività e Intuizione esistono (Perception,
+# Stealth, Sense Motive); resta estranea l'Atletica della 5e. Prima stava in
+# domande_developer.py:ABILITA_ESTRANEE.
+
+estranee = ["Atletica"]

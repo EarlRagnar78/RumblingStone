@@ -18,8 +18,8 @@
 >    simboli locali extra vanno dichiarati nel blocco griglia.
 > 4. Meccanica **3.5 SRD in italiano** (CD, Osservare, Nascondersi…); mai
 >    inventare statblock — puntare al file `*STATBLOCCHI*` o al catalogo
->    (`scripts/monster_catalog.yaml`); ciò che manca si flagga
->    `[INFERRED — needs DM confirmation]`.
+>    (`scripts/monster_catalog.yaml`); ciò che manca si marca
+>    `[INFERRED — <domanda al DM>; base: <fonte o dato>]` (GUIDA-MARCATURE).
 > 5. I tre blocchi companion stanno **nello stesso file della mappa**,
 >    subito dopo la griglia: mappa e uso della mappa non si separano.
 
@@ -110,7 +110,7 @@
 - **Senza allarme**: i PG ingaggiano 5-6 drow alla volta (gestibile);
   bottino intatto (2.500 mo + mappe tattiche dell'orda + intel sugli altri
   2 campi).
-- **Morale** `[INFERRED — needs DM confirmation]`: morti entrambi i
+- **Morale** `[INFERRED — Sotto quale soglia ripiegano i superstiti?; base: regola del morale DMG 3.5, metà delle forze]`: morti entrambi i
   Commander, i superstiti sotto il 25% ripiegano verso il Campo 2 (Hex D08)
   portando l'allarme.
 
@@ -120,8 +120,8 @@
 |---|---|---|---|
 | A — Notte, routine | — | pattuglie in loop riga 06; 2/3 delle forze nelle tende | sorpresa possibile, ingaggi 5-6 alla volta |
 | B — Allarme | tripwire o pattuglia dà l'allarme (campana 🔔) | tutti fuori dalle tende in 2 round; formazione al centro campo | EL 12 pieno, niente sorpresa |
-| C — Campo in fiamme | i PG incendiano scorte/fuochi tattici (💥 righe 20-23) | il fuoco si propaga 1 quadretto/round nelle celle adiacenti alle fiamme `[INFERRED]` | 1d6 fuoco/round per cella; fumo: occultamento 20% entro 3 m |
-| D — Rotta | entrambi i Commander morti + superstiti <25% `[INFERRED]` | i drow superstiti fuggono verso NE (Campo 2) | se ne scappa anche uno solo: Campo 2 in allerta permanente |
+| C — Campo in fiamme | i PG incendiano scorte/fuochi tattici (💥 righe 20-23) | il fuoco si propaga 1 quadretto/round nelle celle adiacenti alle fiamme `[INFERRED — Quanto corre il fuoco nel campo?; base: incendio boschivo DMG 3.5]` | 1d6 fuoco/round per cella; fumo: occultamento 20% entro 3 m |
+| D — Rotta | entrambi i Commander morti + superstiti <25% `[INFERRED — Vale la stessa soglia della rotta?; base: riga Morale qui sopra]` | i drow superstiti fuggono verso NE (Campo 2) | se ne scappa anche uno solo: Campo 2 in allerta permanente |
 
 ---
 

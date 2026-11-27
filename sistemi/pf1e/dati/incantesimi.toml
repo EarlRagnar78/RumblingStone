@@ -1,0 +1,123 @@
+# sistemi/pf1e/dati/incantesimi.toml — incantesimi che PF1e aggiunge (APG), per classe e livello (ADR-0111, L5c)
+#
+# Spostati senza cambiare una voce da scripts/dmcore/incantesimi.py:PF1E_SOLO (2026-11-07).
+# Ancora: pathfinder-1e-srd/references/conversion-guide.md §«PF1e spell lists»;
+# test_incantesimi.py verifica ogni riga contro quella sezione.
+# Il chierico resta scoperto al 1°, 6° e 7° di proposito (l'APG non aggiunge nulla che cambi un incontro).
+# voce = [nome italiano, nome PRD]
+
+# lo stregone ha la lista del mago, come in 3.5
+solo_alias = { stregone = "mago" }
+
+[solo.mago]
+"1" = [["fossa d'inciampo", "stumble gap"], ["spinta idraulica", "hydraulic push"]]
+"2" = [["fossa", "create pit"], ["pioggia di pietre", "stone call"]]
+"3" = [["fossa irta", "spiked pit"], ["sfera d'acqua", "aqueous orb"]]
+"4" = [["fulmini globulari", "ball lightning"], ["fossa acida", "acid pit"]]
+"5" = [["fossa vorace", "hungry pit"], ["serpente di fuoco", "fire snake"]]
+"6" = [["scirocco", "sirocco"]]
+"7" = [["tizzone ardente", "firebrand"], ["deviazione", "deflection"]]
+"8" = [["saette", "stormbolts"]]
+"9" = [["rocce cozzanti", "clashing rocks"]]
+
+[solo.chierico]
+"2" = [["arma del timore", "weapon of awe"]]
+"3" = [["manto irato", "wrathful mantle"]]
+"4" = [["benedizione del fervore", "blessing of fervor"]]
+"5" = [["colonna di vita", "pillar of life"], ["mondare", "cleanse"]]
+"8" = [["saette", "stormbolts"]]
+"9" = [["venti della vendetta", "winds of vengeance"]]
+
+[solo.druido]
+"1" = [["aculei", "bristle"], ["spinta idraulica", "hydraulic push"]]
+"2" = [["pioggia di pietre", "stone call"]]
+"3" = [["sfera d'acqua", "aqueous orb"]]
+"4" = [["fulmini globulari", "ball lightning"]]
+"5" = [["serpente di fuoco", "fire snake"], ["aspetto del lupo", "aspect of the wolf"]]
+"6" = [["scirocco", "sirocco"]]
+"7" = [["terrapieno", "rampart"]]
+"8" = [["saette", "stormbolts"]]
+"9" = [["rocce cozzanti", "clashing rocks"]]
+
+[solo.bardo]
+"1" = [["finale salvifico", "saving finale"]]
+"2" = [["ispirazione galante", "gallant inspiration"]]
+"3" = [["tamburi tonanti", "thunderous drums"]]
+"4" = [["esplosione discorde", "discordant blast"]]
+"5" = [["dardo assordante", "deafening song bolt"], ["manto dei sogni", "cloak of dreams"]]
+"6" = [["finale letale", "deadly finale"], ["interdizione dello stolto", "fool's forbiddance"]]
+
+[solo.ranger]
+"1" = [["arco gravitazionale", "gravity bow"], ["lame pesanti", "lead blades"]]
+"2" = [["aspetto dell'orso", "aspect of the bear"], ["eruzione di frecce", "arrow eruption"]]
+"3" = [["nemico istantaneo", "instant enemy"]]
+"4" = [["aspetto del lupo", "aspect of the wolf"], ["spirito dell'arco", "bow spirit"]]
+
+[solo.paladino]
+"1" = [["richiamo del cavaliere", "knight's calling"]]
+"2" = [["vigore virtuoso", "righteous vigor"], ["fuoco che avvince", "fire of entanglement"]]
+"3" = [["fuoco del giudizio", "fire of judgment"], ["santificare l'armatura", "sanctify armor"]]
+"4" = [["fuoco della vendetta", "fire of vengeance"], ["colpo risonante", "resounding blow"]]
+
+# Dove il livello PF1e di un incantesimo delle liste 3.5 riusate non è quello 3.5
+# (misura_regole_complete.py, «liste 3.5 riusate dal pf1e», contro il PRD).
+# -1 = non è nella lista PF1e della classe: in PF1e non si sceglie.
+# Il livello 0 il generatore non lo sceglie, ma il dato resta giusto.
+[livello_pf1e.mago]
+"metamorfosi" = 5            # Polymorph: Sor/Wiz 5 nel PRD (4 nell'SRD 3.5)
+
+[livello_pf1e.chierico]
+"cura ferite minori" = -1    # Cure Minor Wounds non esiste in PF1e (c'è Stabilize)
+
+[livello_pf1e.druido]
+"cura ferite minori" = -1
+
+# la scuola di ogni voce, dal PRD (PSRD-Data, book-apg.db, spell_details.school), per la
+# scuola di Incantesimi focalizzati nel generatore (2026-11-17). «thunderous drums» nel PRD si
+# chiama «Thundering Drums»: la scuola è quella.
+[scuole]
+"acid pit" = "conjuration"
+"aqueous orb" = "conjuration"
+"arrow eruption" = "conjuration"
+"aspect of the bear" = "transmutation"
+"aspect of the wolf" = "transmutation"
+"ball lightning" = "evocation"
+"blessing of fervor" = "transmutation"
+"bow spirit" = "conjuration"
+"bristle" = "transmutation"
+"clashing rocks" = "conjuration"
+"cleanse" = "evocation"
+"cloak of dreams" = "enchantment"
+"create pit" = "conjuration"
+"deadly finale" = "evocation"
+"deafening song bolt" = "evocation"
+"deflection" = "abjuration"
+"discordant blast" = "evocation"
+"fire of entanglement" = "evocation"
+"fire of judgment" = "evocation"
+"fire of vengeance" = "evocation"
+"fire snake" = "evocation"
+"firebrand" = "transmutation"
+"fool's forbiddance" = "abjuration"
+"gallant inspiration" = "divination"
+"gravity bow" = "transmutation"
+"hungry pit" = "conjuration"
+"hydraulic push" = "evocation"
+"instant enemy" = "enchantment"
+"knight's calling" = "enchantment"
+"lead blades" = "transmutation"
+"pillar of life" = "conjuration"
+"rampart" = "conjuration"
+"resounding blow" = "evocation"
+"righteous vigor" = "enchantment"
+"sanctify armor" = "abjuration"
+"saving finale" = "evocation"
+"sirocco" = "evocation"
+"spiked pit" = "conjuration"
+"stone call" = "conjuration"
+"stormbolts" = "evocation"
+"stumble gap" = "conjuration"
+"thunderous drums" = "evocation"
+"weapon of awe" = "transmutation"
+"winds of vengeance" = "evocation"
+"wrathful mantle" = "evocation"

@@ -1,0 +1,3 @@
+chiavi proprie ['balvar', 'durin', 'hella', 'skullcrusher', 'terros', 'zogtar']
+confronti 1 scarti 1
+07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md	1966	terros	pf	391	[345]	> | Party arriva **già al 14°** o straripante di risorse | Terros **avanzato a 34 DV** (391 pf, attacchi +36, CD +1) e lo Scudo di Geodi parte **già attivo**. I

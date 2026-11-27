@@ -68,6 +68,7 @@ import genera_creatura as GC  # noqa: E402
 from dmcore.statblock import rendi  # noqa: E402
 from dmcore import caratteristiche as CAR  # noqa: E402
 from dmcore import lettura_creatura as LC  # noqa: E402
+from dmcore import sistemi as S  # noqa: E402
 
 FIXTURE = ROOT / "scripts" / "tests" / "fixtures" / "impronta-creature.json"
 
@@ -136,6 +137,8 @@ def letture(p: Path, testo: str) -> dict:
 def bestiario() -> dict:
     fuori = {}
     for p in sorted(ROOT.glob("Bestiario/**/*-cr*.md")):
+        if S.regole_diverse(S.sistema_di(p), "impronta_creature"):
+            continue  # F4 di ADR-0112: l'impronta è delle regole 3.5
         testo = p.read_text(encoding="utf-8", errors="replace")
         voce = {"controlla": E.controlla(p)}
         if LC.BLOCCO.search(testo):

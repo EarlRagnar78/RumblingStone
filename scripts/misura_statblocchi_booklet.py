@@ -150,7 +150,7 @@ def schede_del_booklet(mp: Path) -> list[tuple[str, str, str]]:
         f = (base / cap["file"]).resolve()
         if not f.is_file():
             continue
-        for forma, riga in censisci(leggi_per_la_stampa(f, nel_volume)):
+        for forma, riga in censisci(leggi_per_la_stampa(f, nel_volume, cap.get("sezioni"))):
             fuori.append((forma, cap.get("title", f.stem), riga))
     return fuori
 

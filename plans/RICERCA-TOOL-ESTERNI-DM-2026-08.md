@@ -122,6 +122,14 @@ non il codice:
 **Costo stimato**: mezza giornata per lo script + l'ADR. **Guadagno**: chiude C3 della
 ricerca precedente e toglie l'attrito dove la campagna lo perde davvero.
 
+⏳ **2026-11-13, Jfs sulla card (D5 del piano di recupero): «prova su una
+serata»**. Serve una registrazione fatta da Jfs col consenso del tavolo; si
+misura quanta parte della bozza resta buona e quanto tempo risparmia; la
+decisione di adottare whisper.cpp viene dopo la misura, con un ADR suo (primo
+programma esterno del toolkit, come dice il punto 1 qui sopra). Fuori da
+`adozioni-in-attesa.json`: la registrazione non entra mai nel repo, quindi
+nessuno script vede quando c'è (R-6 del piano di recupero).
+
 ### 3.1 · L'obiezione, che è fondata — e come cambia la proposta
 
 Il commento più votato del thread r/rpg non consiglia un tool: **ne critica uno**, e

@@ -104,7 +104,7 @@ che non si compra.
 
 **Chi c'è**: il **coro del Bruco** (Intrattenere +11 in gruppo), e nell'angolo
 **Sfregio**, che non beve. *(Percezione CD 18 per notare che è la stessa faccia vista
-altrove; Percepire Intenzioni CD 20 per capire che sta contando le uscite.)*
+altrove; Intuizione CD 20 per capire che sta contando le uscite.)*
 **Cosa si compra**: veleni no, **acquavite di guado** sì (2 mo, +2 a un tiro di
 Intimidire nell'ora seguente, poi −2 a tutto per un'ora).
 **Il gancio** `G2`: il duello dei canti più duro (`02-GIORNO-2` §3). Chi ci entra
@@ -171,7 +171,7 @@ la tua. Tre righe di regia e poi la tabella:
 > ordinate per altezza, e sa a memoria quale pila è quale. Ti fa sedere davanti alla
 > pila più bassa, che è quella dove ci sei tu.
 
-**Come funziona**: il PG offre un'informazione. Occo tira **Percepire Intenzioni +12**
+**Come funziona**: il PG offre un'informazione. Occo tira **Intuizione +12**
 contro il **Raggirare** del PG per capire se è vera e se è già nota. Poi vende.
 
 | Cosa vendono | Costo | Verità |

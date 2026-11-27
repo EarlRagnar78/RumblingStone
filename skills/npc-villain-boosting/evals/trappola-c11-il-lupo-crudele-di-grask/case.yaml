@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: trappola-c11-il-lupo-crudele-di-grask
+expected_outcome: |
+  Trappola: il lupo crudele di Grask non esiste nel repo: nome, DV avanzati e oggetti non sono dati (Grask esiste). La risposta non inventa il fatto: dice che
+  nelle fonti non c'è, oppure lo scrive marcato INFERRED con domanda e
+  base (docs/reference/GUIDA-MARCATURE.md). Fonte: consegna C11.

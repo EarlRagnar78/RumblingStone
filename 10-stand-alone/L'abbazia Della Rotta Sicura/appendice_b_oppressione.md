@@ -184,6 +184,9 @@ Tutto SRD 3.5. La riga in rosso è ciò che questa creatura fa *in questa avvent
 nome: Scheletro umano (6)
 gs: 1/3
 tipo: NM Medio non-morto
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 15
 pf: 6
 pf-dado: 1d12
@@ -204,6 +207,9 @@ attacchi:
 nome: Wight (3)
 gs: 3
 tipo: ML Medio non-morto
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 15
 pf: 26
 pf-dado: 4d12
@@ -218,15 +224,18 @@ attacchi:
 
 **Attacco** **Mischia** schianto +3 (1d4+1 più risucchio di energia)
 
+**Tattiche** C19, tre esemplari, ex Ancelle. Danno un round di preavviso (i coperchi si spostano). Chiamarle per nome (i nomi sono nel registro) le fa perdere un round. È l'unico modo di combatterle senza che faccia solo schifo.
+
 **Capacità speciali**
 - **Risucchio di energia:** 1 livello negativo, Tempra CD 14 per non renderlo permanente. Chi muore diventa un wight sotto il loro controllo.
-
-**Tattiche** C19, tre esemplari, ex Ancelle. Danno un round di preavviso (i coperchi si spostano). Chiamarle per nome (i nomi sono nel registro) le fa perdere un round. È l'unico modo di combatterle senza che faccia solo schifo.
 
 ```statblocco
 nome: Lacedon (ghoul acquatico) (6)
 gs: 1
 tipo: CM Medio non-morto
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 14
 pf: 13
 pf-dado: 2d12
@@ -239,16 +248,19 @@ attacchi:
 
 **Attacco** Vel 9 m, nuotare 9 m · **Mischia** morso +2 (1d6+1 più paralisi) e 2 artigli +0 (1d3 più paralisi)
 
+**Tattiche** C24, sei esemplari. La paralisi contro 4 PG è il singolo pericolo più subdolo dell'avventura: due PG paralizzati e il combattimento è finito. Tieni aperta la ritirata verso 19 e usane quattro invece di sei se il gruppo è già logoro.
+
 **Capacità speciali**
 - **Paralisi:** Tempra CD 12, 1d6+2 round. Gli elfi sono immuni.
 - **Fetore**, Tempra CD 12.
-
-**Tattiche** C24, sei esemplari. La paralisi contro 4 PG è il singolo pericolo più subdolo dell'avventura: due PG paralizzati e il combattimento è finito. Tieni aperta la ritirata verso 19 e usane quattro invece di sei se il gruppo è già logoro.
 
 ```statblocco
 nome: Skum (4)
 gs: 2
 tipo: ML Medio mostruoso (acquatico)
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 14
 pf: 13
 pf-dado: 2d8+4
@@ -262,15 +274,18 @@ attacchi:
 
 **Attacco** Vel 6 m, nuotare 12 m · **Mischia** 2 artigli +4 (1d4+2) e morso +2 (1d6+1)
 
+**Tattiche** Quattro esemplari in G27. Combattono in acqua e trascinano: prova contrapposta di Lottare per portare un PG sott'acqua. Sono la ragione per cui i PG non devono finire in acqua nello scontro finale.
+
 **Capacità speciali**
 - Anfibio.
-
-**Tattiche** Quattro esemplari in G27. Combattono in acqua e trascinano: prova contrapposta di Lottare per portare un PG sott'acqua. Sono la ragione per cui i PG non devono finire in acqua nello scontro finale.
 
 ```statblocco
 nome: Grinza, megera acquatica
 gs: 4
 tipo: CM Medio mostruoso
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 14
 pf: 26
 pf-dado: 4d8+8
@@ -283,54 +298,60 @@ attacchi:
 
 **Attacco** Vel 9 m, nuotare 12 m · **Mischia** 2 artigli +6 (1d4+4)
 
+**Tattiche** C23, di guardia alle celle. Lo sguardo mortale è a *vista*, non un attacco: combatterla al buio con luce controllata dimezza il pericolo. Un ladro furbo lo capisce da solo.
+
 **Capacità speciali**
 - **Sguardo mortale:** chiunque entro 9 m la veda, Tempra CD 13 o −2d6 Forza.
 - **Orrore:** chi la vede, Tempra CD 13 o *indebolito* 3d6 round.
-
-**Tattiche** C23, di guardia alle celle. Lo sguardo mortale è a *vista*, non un attacco: combatterla al buio con luce controllata dimezza il pericolo. Un ladro furbo lo capisce da solo.
 
 ```statblocco
 nome: Còlpa, megera verde
 gs: 5
 tipo: NM Medio mostruoso
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 22
-pf: 45
+pf: 49
 pf-dado: 9d8+9
 ts: Temp +4, Rifl +6, Vol +7
 velocita: 9 m, nuotare 9 m
 attacchi:
   - 2 artigli +11 (1d4+4)
 ```
-**Difesa** **CA 22** · **pf 45** (9d8+9) · TS Tempra +4, Riflessi +6, Volontà +7 · RI 18, RD 5/freddo ferro
+**Difesa** **CA 22** · **pf 49** (9d8+9) · TS Tempra +4, Riflessi +6, Volontà +7 · RI 18, RD 5/freddo ferro
 
 **Attacco** Vel 9 m, nuotare 9 m · **Mischia** 2 artigli +11 (1d4+4)
 
+**Tattiche** La valvola di sicurezza. Entra **solo** se i PG hanno ignorato ogni segnale. Se entra, usa *disguise self* e imita la voce di un prigioniero: è più efficace di qualunque artiglio.
+
 **Capacità speciali**
 - **Poteri:** *dancing lights, disguise self, ghost sound, invisibility, pass without trace, tongues, water breathing*, forza innaturale, imitazione perfetta di voci.
-
-**Tattiche** La valvola di sicurezza. Entra **solo** se i PG hanno ignorato ogni segnale. Se entra, usa *disguise self* e imita la voce di un prigioniero: è più efficace di qualunque artiglio.
 
 ```statblocco
 nome: Marèa, annis
 gs: 6
 tipo: CM Grande mostruoso
+taglia: Grande
+spazio: 3 m
+portata: 3 m
 ca: 20
-pf: 51
+pf: 52
 pf-dado: 7d8+21
 ts: Temp +5, Rifl +5, Vol +6
 velocita: 12 m
 attacchi:
   - 2 artigli +11 (1d6+7) e morso +9 (1d6+3)
 ```
-**Difesa** **CA 20** · **pf 51** (7d8+21) · TS Tempra +5, Riflessi +5, Volontà +6 · RD 2/—, RI 19
+**Difesa** **CA 20** · **pf 52** (7d8+21) · TS Tempra +5, Riflessi +5, Volontà +6 · RD 2/—, RI 19
 
 **Attacco** Vel 12 m · **Mischia** 2 artigli +11 (1d6+7) e morso +9 (1d6+3)
+
+**Tattiche** Officia il rito in G27. Lo stritolare su un PG di 7° livello fa in media 17 danni per round: non lasciarla mai colpire due volte lo stesso bersaglio senza che il tavolo lo veda arrivare. È lei che ha lasciato i segni sulle caviglie di Madre Ilaria.
 
 **Capacità speciali**
 - **Stritolare** 2d6+10 se colpisce con entrambi gli artigli.
 - *Disguise self, fog cloud* 3/giorno.
-
-**Tattiche** Officia il rito in G27. Lo stritolare su un PG di 7° livello fa in media 17 danni per round: non lasciarla mai colpire due volte lo stesso bersaglio senza che il tavolo lo veda arrivare. È lei che ha lasciato i segni sulle caviglie di Madre Ilaria.
 
 {{note
 **Concilio delle Sorelle** Tre megere entro 9 m l'una dall'altra, LI 9:
@@ -342,6 +363,9 @@ Ogni potere 1/giorno; occorre un'azione di round completo di tutte e tre **EL 10
 nome: Corsaro (6)
 gs: 2
 tipo: Umano guerriero 3
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 16
 pf: 22
 ts: Temp +4, Rifl +3, Vol +1
@@ -362,6 +386,9 @@ attacchi:
 nome: Arciere corsaro (2)
 gs: 3
 tipo: Umano ladro 3
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 17
 pf: 15
 ts: Temp +2, Rifl +7, Vol +2
@@ -375,15 +402,18 @@ attacchi:
 
 **Attacco** **Distanza** arco corto +6 (1d6, ×3) · attacco furtivo +2d6
 
+**Tattiche** Due esemplari, sulla lancia. Sparano dal buio: i PG con torcia sono bersagli e loro no. Spegnere le luci è una scelta tattica valida e va premiata.
+
 **Capacità speciali**
 - Schivare prodigioso.
-
-**Tattiche** Due esemplari, sulla lancia. Sparano dal buio: i PG con torcia sono bersagli e loro no. Spegnere le luci è una scelta tattica valida e va premiata.
 
 ```statblocco
 nome: Guardia del borgo (4)
 gs: 1/2
 tipo: Umano guerriero 1
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 15
 pf: 9
 ts: —
@@ -400,6 +430,9 @@ attacchi:
 nome: Ancella
 gs: 1/3
 tipo: Umana popolano 1
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 11
 pf: 4
 ts: —

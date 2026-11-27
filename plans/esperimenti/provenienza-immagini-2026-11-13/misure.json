@@ -1,0 +1,214 @@
+{
+ "_banco": {
+  "main": "683480af",
+  "copie_web": 52,
+  "master_firmati_c2pa": 28,
+  "pixel_diversi_nelle_copie": 0
+ },
+ "pdf": {
+  "main": {
+   "ARC07-GRUPPO-CAMMINO-STAMPA.pdf": {
+    "jpeg": 1,
+    "etichettate": 0,
+    "pagine": 4
+   },
+   "ARC07-MILLE-ANNI-VOLUME-STAMPA.pdf": {
+    "jpeg": 12,
+    "etichettate": 0,
+    "pagine": 105
+   },
+   "ARC07-NOTTE-E-ALBA-BOOKLET-STAMPA.pdf": {
+    "jpeg": 13,
+    "etichettate": 0,
+    "pagine": 158
+   },
+   "ARC07-NOTTE-E-ALBA-GIOCATORI-STAMPA.pdf": {
+    "jpeg": 0,
+    "etichettate": 0,
+    "pagine": 7
+   },
+   "ARC07-NOTTE-E-ALBA-SERATA-STAMPA.pdf": {
+    "jpeg": 8,
+    "etichettate": 0,
+    "pagine": 125
+   },
+   "ARC07-RITORNO-FORGIA-BOOKLET-STAMPA.pdf": {
+    "jpeg": 1,
+    "etichettate": 0,
+    "pagine": 29
+   },
+   "ARC07-SERATA-GIOCATORI-STAMPA.pdf": {
+    "jpeg": 5,
+    "etichettate": 0,
+    "pagine": 19
+   },
+   "ARC07-SERATA-RESURREZIONE-BOOKLET-STAMPA.pdf": {
+    "jpeg": 14,
+    "etichettate": 0,
+    "pagine": 173
+   },
+   "ARC07-SESSIONE-TERROS-BOOKLET-STAMPA.pdf": {
+    "jpeg": 1,
+    "etichettate": 0,
+    "pagine": 66
+   },
+   "ARC07-TEASER-GIOCATORI-STAMPA.pdf": {
+    "jpeg": 1,
+    "etichettate": 0,
+    "pagine": 3
+   },
+   "DRAPPO-BENVENUTO-TAVOLO-STAMPA.pdf": {
+    "jpeg": 0,
+    "etichettate": 0,
+    "pagine": 2
+   },
+   "DRAPPO-BOOKLET-DM-STAMPA.pdf": {
+    "jpeg": 13,
+    "etichettate": 0,
+    "pagine": 88
+   },
+   "DRAPPO-BOOKLET-GIOCATORI-STAMPA.pdf": {
+    "jpeg": 7,
+    "etichettate": 0,
+    "pagine": 8
+   },
+   "DRAPPO-FASCICOLO-SCHEDE-STAMPA.pdf": {
+    "jpeg": 6,
+    "etichettate": 0,
+    "pagine": 11
+   },
+   "DRAPPO-PROP-STAMPA.pdf": {
+    "jpeg": 1,
+    "etichettate": 0,
+    "pagine": 6
+   },
+   "DRAPPO-SCHEDE-PG-STAMPA.pdf": {
+    "jpeg": 6,
+    "etichettate": 0,
+    "pagine": 6
+   },
+   "PALIO-BOOKLET-STAMPA.pdf": {
+    "jpeg": 0,
+    "etichettate": 0,
+    "pagine": 65
+   },
+   "abbazia-rotta-sicura-STAMPA.pdf": {
+    "jpeg": 0,
+    "etichettate": 0,
+    "pagine": 45
+   },
+   "giardino-sale-calce-STAMPA.pdf": {
+    "jpeg": 0,
+    "etichettate": 0,
+    "pagine": 40
+   },
+   "giardino-sale-calce-pf1e-STAMPA.pdf": {
+    "jpeg": 0,
+    "etichettate": 0,
+    "pagine": 25
+   }
+  },
+  "prov": {
+   "ARC07-GRUPPO-CAMMINO-STAMPA.pdf": {
+    "jpeg": 1,
+    "etichettate": 0,
+    "pagine": 4
+   },
+   "ARC07-MILLE-ANNI-VOLUME-STAMPA.pdf": {
+    "jpeg": 12,
+    "etichettate": 0,
+    "pagine": 105
+   },
+   "ARC07-NOTTE-E-ALBA-BOOKLET-STAMPA.pdf": {
+    "jpeg": 13,
+    "etichettate": 1,
+    "pagine": 158
+   },
+   "ARC07-NOTTE-E-ALBA-GIOCATORI-STAMPA.pdf": {
+    "jpeg": 0,
+    "etichettate": 0,
+    "pagine": 7
+   },
+   "ARC07-NOTTE-E-ALBA-SERATA-STAMPA.pdf": {
+    "jpeg": 8,
+    "etichettate": 1,
+    "pagine": 125
+   },
+   "ARC07-RITORNO-FORGIA-BOOKLET-STAMPA.pdf": {
+    "jpeg": 1,
+    "etichettate": 0,
+    "pagine": 29
+   },
+   "ARC07-SERATA-GIOCATORI-STAMPA.pdf": {
+    "jpeg": 5,
+    "etichettate": 1,
+    "pagine": 19
+   },
+   "ARC07-SERATA-RESURREZIONE-BOOKLET-STAMPA.pdf": {
+    "jpeg": 14,
+    "etichettate": 0,
+    "pagine": 173
+   },
+   "ARC07-SESSIONE-TERROS-BOOKLET-STAMPA.pdf": {
+    "jpeg": 1,
+    "etichettate": 0,
+    "pagine": 66
+   },
+   "ARC07-TEASER-GIOCATORI-STAMPA.pdf": {
+    "jpeg": 1,
+    "etichettate": 0,
+    "pagine": 3
+   },
+   "DRAPPO-BENVENUTO-TAVOLO-STAMPA.pdf": {
+    "jpeg": 0,
+    "etichettate": 0,
+    "pagine": 2
+   },
+   "DRAPPO-BOOKLET-DM-STAMPA.pdf": {
+    "jpeg": 13,
+    "etichettate": 13,
+    "pagine": 88
+   },
+   "DRAPPO-BOOKLET-GIOCATORI-STAMPA.pdf": {
+    "jpeg": 7,
+    "etichettate": 7,
+    "pagine": 8
+   },
+   "DRAPPO-FASCICOLO-SCHEDE-STAMPA.pdf": {
+    "jpeg": 6,
+    "etichettate": 6,
+    "pagine": 11
+   },
+   "DRAPPO-PROP-STAMPA.pdf": {
+    "jpeg": 1,
+    "etichettate": 1,
+    "pagine": 6
+   },
+   "DRAPPO-SCHEDE-PG-STAMPA.pdf": {
+    "jpeg": 6,
+    "etichettate": 6,
+    "pagine": 6
+   },
+   "PALIO-BOOKLET-STAMPA.pdf": {
+    "jpeg": 0,
+    "etichettate": 0,
+    "pagine": 65
+   },
+   "abbazia-rotta-sicura-STAMPA.pdf": {
+    "jpeg": 0,
+    "etichettate": 0,
+    "pagine": 45
+   },
+   "giardino-sale-calce-STAMPA.pdf": {
+    "jpeg": 0,
+    "etichettate": 0,
+    "pagine": 40
+   },
+   "giardino-sale-calce-pf1e-STAMPA.pdf": {
+    "jpeg": 0,
+    "etichettate": 0,
+    "pagine": 25
+   }
+  }
+ }
+}

@@ -51,7 +51,7 @@ stimato.
 | **Produzione** (prestampa, tipografia, carta) | `rumblingstone-editoria` §5, parziale | 🟡 imposizione e indice analitico dichiarati aperti; CMYK/PDF-X rinuncia scritta (ADR-0020) |
 | **Traduzione** (2 nomi) | `campaign/GLOSSARIO-E-LOCALIZZAZIONE.md` + ADR-0016 | ⏸️ **chiuso per decisione**, non per dimenticanza (ADR-0016: sorgente italiana, l'inglese è edizione derivata e non si costruisce adesso) |
 | **Supervisione** · **Direttore responsabile** | — | ❌ manca il ruolo che dice **«questo esce»**: vedi §2.C3 |
-| **Editore** (Erik Mona) — cioè chi risponde di cosa si pubblica | `ADR-0005` + `docs/guides/GUIDA-CONDIVISIONE-IP.md` §7 | ❌ **la checklist esiste e nessuna skill la carica**: vedi §2.C2 |
+| **Editore** (Erik Mona) — cioè chi risponde di cosa si pubblica | `ADR-0005` + `docs/how-to/GUIDA-CONDIVISIONE-IP.md` §7 | ❌ **la checklist esiste e nessuna skill la carica**: vedi §2.C2 |
 | **Product Identity · Open Content · OGL 1.0a** | nulla nei volumi | ❌ **il buco più netto**: vedi §2.C1 |
 | **Ringraziamenti speciali** (i playtester) | `rumblingstone-playtest` (tre passate, questionari, alfa→beta→collaudato) | ✅ |
 | **Technical Director** · **Senior Software Developer** | `rumblingstone-automation` + `rumblingstone-debugging` + ADR-0012 (37 tool a manifest, 70+ test in CI) | ✅ — è l'unica riga dove il repo **supera** il colophon: Paizo non ha una CI che rifiuta il volume |
@@ -118,7 +118,7 @@ non esiste niente di equivalente**: non c'è scritto quante passate fa un master
 prima di essere consegnabile, cosa si guarda in ciascuna, chi decide che è
 chiuso, e cosa succede quando si riapre.
 
-Nello stesso buco cade **l'editore**: `docs/guides/GUIDA-CONDIVISIONE-IP.md` ha
+Nello stesso buco cade **l'editore**: `docs/how-to/GUIDA-CONDIVISIONE-IP.md` ha
 al §7 una *«checklist prima di far uscire qualcosa dal repo»* — cioè esattamente
 il gate — e **nessuna skill la carica**. `grep -rl "GUIDA-CONDIVISIONE-IP" skills/`
 restituisce un solo file, e per un'altra ragione (l'art direction, sulle

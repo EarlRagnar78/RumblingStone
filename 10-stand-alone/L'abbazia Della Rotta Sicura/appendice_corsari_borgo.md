@@ -141,6 +141,9 @@ Il commercio con l'abbazia è l'unica linea che rende abbastanza da tenere la *Z
 nome: Ghebro Malaluna, capitano
 gs: 8
 tipo: Umano guerriero 6/ladro 2 · NM · 46 anni
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 20
 pf: 58
 ts: Temp +8, Rifl +8, Vol +3
@@ -151,6 +154,8 @@ attacchi:
 
 **Attacco** **Mischia** sciabola +1 +13/+8 (1d6+6, 18-20) e pugnale +11 (1d4+2)
 
+**Tattiche** Combatte solo se accerchiato o tradito. Preferisce ritirarsi sulla lancia: ha già perso una nave, non ne perde un'altra per una rissa in una grotta. **Volontà +3 è il suo punto debole** in ogni senso.
+
 **Statistiche** **Abilità** Professione (marinaio) +12, Intimidire +11, Percepire Intenzioni +6, Raggirare +5
 
 **Capacità speciali**
@@ -159,12 +164,13 @@ attacchi:
 - **Difetto:** ha bisogno che i documenti siano in regola per continuare a dormire.
 - **Non sa:** che l'abate è un non-morto; che Ostro ha venduto Naspo; che ciò che paga finisce in parte sull'altare e non sulla sua nave.
 
-**Tattiche** Combatte solo se accerchiato o tradito. Preferisce ritirarsi sulla lancia: ha già perso una nave, non ne perde un'altra per una rissa in una grotta. **Volontà +3 è il suo punto debole** in ogni senso.
-
 ```statblocco
 nome: Sedda Corvara, quartiermastro e navigatrice
 gs: 6
 tipo: Umana ladro 6 · NN · 34 anni
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 18
 pf: 31
 ts: —
@@ -176,18 +182,21 @@ attacchi:
 
 **Attacco** **Mischia** stocco +7 (1d6+1, 18-20) · **Distanza** balestra a mano +8 (1d4) · attacco furtivo +3d6
 
+**Tattiche** **Come ingaggiarla:** è l'unica della ciurma che parla per prima. Se i PG sbarcano in G26 senza attaccare, è lei che avanza. **Diplomazia CD 15**, o CD 10 se qualcuno le dice che il carico comprende bambini: lei lo sospetta già e sta aspettando che glielo dica qualcun altro.
+
 **Statistiche** **Abilità** Cercare +11, Percepire Intenzioni +10, Diplomazia +9, Professione (marinaio) +11, Decifrare Scritture +8
 
 **Capacità speciali**
 - **La frattura.** Sedda tiene i conti della nave e, da otto mesi, **una seconda contabilità privata**: date, teste, cifre. Non per ricatto, ma per poter dimostrare un giorno di non aver voluto. Vuole scendere a terra e non sa come si fa a smettere di essere una pirata.
 - **Cosa dà:** il suo registro (prova documentale n. 3, indipendente da abate e Vela), l'ora esatta della consegna, e, se convinta, **testimonia davanti alla ciurma**, che è ciò che conta davvero.
 
-**Tattiche** **Come ingaggiarla:** è l'unica della ciurma che parla per prima. Se i PG sbarcano in G26 senza attaccare, è lei che avanza. **Diplomazia CD 15**, o CD 10 se qualcuno le dice che il carico comprende bambini: lei lo sospetta già e sta aspettando che glielo dica qualcun altro.
-
 ```statblocco
 nome: Ostro il Muto, nostromo
 gs: 5
 tipo: Umano barbaro 5 · CM · muto per una ferita alla gola, non per nascita
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 17
 pf: 52
 ts: Temp +8, Rifl +2, Vol +2
@@ -198,11 +207,11 @@ attacchi:
 
 **Attacco** **Mischia** ascia bipenne +11 (1d12+7, ×3) · ira 2/giorno
 
+**Tattiche** **Cosa succede se Naspo compare vivo davanti alla ciurma:** per il codice della *Zanna*, vendere uno dei propri è la sola cosa che si paga con la corda. Ostro attacca, non i PG: **Malaluna**, perché è l'unico modo che ha di arrivare vivo a domattina. La ciurma si divide in due metà uguali. **Questo è il singolo evento più potente che i PG possano innescare in tutta l'avventura.**
+
 **Capacità speciali**
 - Movimento veloce, schivare prodigioso.
 - **Il problema.** Ostro pensa che Malaluna sia diventato debole e che la patente sia una fantasia da vecchio. Vuole la nave. Otto mesi fa ha **venduto Naspo all'abate di sua iniziativa**, incassando 200 mo e dicendo alla ciurma che il ragazzo era caduto in mare.
-
-**Tattiche** **Cosa succede se Naspo compare vivo davanti alla ciurma:** per il codice della *Zanna*, vendere uno dei propri è la sola cosa che si paga con la corda. Ostro attacca, non i PG: **Malaluna**, perché è l'unico modo che ha di arrivare vivo a domattina. La ciurma si divide in due metà uguali. **Questo è il singolo evento più potente che i PG possano innescare in tutta l'avventura.**
 
 {{note
 **La ciurma** **A terra la notte della consegna:** Malaluna, Sedda, Ostro, 6 corsari (guerriero 3, GS 2) e 2 arcieri (ladro 3, GS 3).
@@ -298,7 +307,7 @@ Vano voltato di 30×10 ft davanti al portale.
 Il nucleo antico. L'altare poggia sulla roccia viva. Alle spalle, una statua del Nocchiero alta sette piedi, con la mano tesa verso il mare.
 
 {{note
-**Area profanata** (effetto permanente di *profanare*): non-morti +1 a attacchi, danni e TS, +2 pf per DV; scacciare a −3 al livello effettivo. **Comunicalo al chierico appena entra** — un chierico che scopre di essere depotenziato solo tirando è un chierico frustrato. **La statua, Osservare CD 12:** il volto e la mano tesa sono corrosi dal sale come se stessero in mezzo alle onde, mentre il resto è intatto. Qualcuno ci versa sopra acqua di mare, spesso. **Cercare CD 20 sotto la mensa:** una spirale concentrica incisa nella roccia viva, molto più antica dell'altare che la copre. **Riconsacrare** l'area richiede *consacrare* o un rito di 10 minuti con acqua santa e Sapienza (religione) CD 20. **Vale la pena farlo prima di scendere:** annulla i bonus dei non-morti in tutta la chiesa.
+**Area profanata** (effetto permanente di *profanare*): non-morti +1 ad attacchi, danni e TS, +2 pf per DV; scacciare a −3 al livello effettivo. **Comunicalo al chierico appena entra** — un chierico che scopre di essere depotenziato solo tirando è un chierico frustrato. **La statua, Osservare CD 12:** il volto e la mano tesa sono corrosi dal sale come se stessero in mezzo alle onde, mentre il resto è intatto. Qualcuno ci versa sopra acqua di mare, spesso. **Cercare CD 20 sotto la mensa:** una spirale concentrica incisa nella roccia viva, molto più antica dell'altare che la copre. **Riconsacrare** l'area richiede *consacrare* o un rito di 10 minuti con acqua santa e Sapienza (religione) CD 20. **Vale la pena farlo prima di scendere:** annulla i bonus dei non-morti in tutta la chiesa.
 }}
 
 #### A5 Abside

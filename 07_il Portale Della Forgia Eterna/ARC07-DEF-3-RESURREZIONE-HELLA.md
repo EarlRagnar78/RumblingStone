@@ -1208,8 +1208,8 @@ che tornano dopo un sonno di otto ore: azione standard, cura 3d8+5 a sé o
   Conta se è ancora accesa agli scontri di `DEF-4`.
 - **Benedizione di Moradin Incarnato**: +2 sacro att/danni, +4 vs paura/charme,
   **1 ri-tiro**; attiva per 24 ore vissute dalla preghiera, come le altre
-  `[CANONE — DM 2026-10-18, G2-06]`. Quante volte si accende, con che azione e
-  per quanto dura ogni volta `[INFERRED — needs DM confirmation]`.
+  `[CANONE — DM 2026-10-18, G2-06]`. Si accende una volta al giorno, con un'azione
+  veloce, e dura 1 minuto ogni volta `[CANONE — DM 2026-11-04, P16, poteri e luoghi]`.
 
 > **Momento privato Hella + Tordek** (5 min di RP, lasciar improvvisare): la
 > gratitudine, la paura della morte perduta, le promesse di un dopo. È il
@@ -1407,15 +1407,22 @@ sul tavolo nelle scene di prima: qui li ritrova.
 > dal suo corpo nell'ARC-06 e custodito con lei nella Sala) **torna a lei** —
 > ricchezza ordinaria che rientra nel WBL del party, itemizzata:
 
-| Oggetto (corredo di Hella, restituito) | Valore |
+| Oggetto (corredo di Hella, restituito: la scheda della giocatrice `[CANONE — DM 2026-11-05, P16, schede PG]`) | Valore |
 |---|---|
-| **Cuoio borchiato +2** (ora venato di corteccia, adattato all'Ibrido; le borchie sono nodi di legno di ferro, non metallo `[CANONE — DM 2026-10-18]`. ⚠ Non SRD: il druido SRD non porta il cuoio borchiato, che ha borchie di metallo) | ~4.000 mo |
-| **Mantello della Resistenza +2** | ~4.000 mo |
+| **Corazza di piastre di pelle di drago +1** (*dragonhide full plate*: niente metallo, la porta un druido; armatura +9, DES max +1, penalità −5; SRD, materiali speciali: costo doppio della versione perfetta) | ~4.300 mo |
+| **Cristallo del riposo** sulla corazza (*restful crystal*, cristallo d'armatura; dormire con l'armatura addosso non affatica) `[Private source — Magic Item Compendium]` | 500 mo |
+| **Brocchiere** (CA +1) | ~15 mo |
+| **Anello di Deviazione +1** | ~2.000 mo |
+| **Mantello dello Svanire** (*vanisher cloak*, spalle; 3 cariche al giorno, azione standard: 1 carica invisibile 4 round, 2 cariche lei e un alleato adiacente 3 round, 3 cariche lei e fino a tre alleati adiacenti 2 round, come *invisibilità*) `[Private source — Magic Item Compendium]` | 2.500 mo |
+| **Anello degli Incantesimi Silenziosi** (*ring of silent spells*; 1 volta al giorno, azione veloce: *silenzio* centrato su di lei, e finché dura lancia fino a tre incantesimi di 3° livello o meno senza componenti verbali, senza slot più alti né tempo in più) `[Private source — Magic Item Compendium]` | 2.000 mo |
+| **Guanti del Potere Orchesco +2** (FOR 14 → 16) | ~4.000 mo |
 | **Periapto di Saggezza +2** (⚠️ **non si somma** al +4 della Collana: due bonus di potenziamento alla stessa caratteristica non si sommano, vale il più alto; resta utile se la Collana è soppressa o perduta) | ~4.000 mo |
-| **Scudo leggero di legno +1** | ~1.000 mo |
-| **Scimitarra +1** | ~2.300 mo |
-| **Bacchetta di Cura Ferite Moderate** (25 cariche; da chierico, 2° livello, LI 3: SRD 750 × 2 × 3 = 4.500 mo a 50 cariche) | ~2.250 mo |
-| **LORDO restituito** | **~17.550 mo** |
+| **Ascia nanica di adamantio** con il **cristallo del ritorno minore** (*crystal of return*, lesser, cristallo d'arma: la estrae come azione gratuita e, se nessuno la tiene, la richiama in mano da 9 m come azione di movimento; il superiore aggiunge solo «ritornante», che vale per le armi da lancio) `[Private source — Magic Item Compendium]` | ~3.030 mo + 1.000 mo |
+| **LORDO restituito** | **~23.345 mo** |
+
+<!-- storico -->
+*Fino al 2026-11-05 il corredo era cuoio borchiato +2, Mantello della Resistenza +2, Periapto di Saggezza +2, scudo leggero di legno +1, scimitarra +1, bacchetta di Cura Ferite Moderate (25 cariche), ~17.550 mo. Il DM: «ha quello che c'è scritto nella carta»..*
+<!-- /storico -->
 
 > **Sorpresa nascosta (Osservare CD 20, sul corpo di Hella prima del rito):**
 > la **ghianda annerita** stretta nel pugno da quando è morta — l'ultima che
@@ -1491,23 +1498,30 @@ ramo del rifiuto, risveglio, Collana, Treant) · `...-RICALIBRATO-alternative.md
 nome: Hella Oakenshield, risorta
 gs: PG di 13°
 tipo: Dream Dwarf · Ranger 1 / Druida 12 · Ibrido Treant (risorta) · Neutrale Buono · Media
-ca: 20
-ca-dettaglio: contatto 10, colta alla sprovvista 20
-pf: ~110
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
+ca: 25
+ca-dettaglio: contatto 12, colta alla sprovvista 24
+pf: 80
 pf-dado: 13 DV
-ts: Temp +16, Rifl +8, Vol +15
-attributi: For 12 Des 10 Cos 18 Int 13 Sag 20 Car 12
+ts: Temp +11, Rifl +7, Vol +13
+attributi: For 16 Des 13 Cos 12 Int 12 Sag 20 Car 10
 velocita: 6 m
-iniziativa: +0
+iniziativa: +1
 sensi: scurovisione 27 m (Dream Dwarf)
 ```
-**Iniziativa** +0 · **Sensi** scurovisione 27 m (Dream Dwarf)
+**Iniziativa** +1 · **Sensi** scurovisione 27 m (Dream Dwarf)
 
-**Difesa** **CA 20** (+5 cuoio borchiato +2 a borchie vegetali, +2 scudo leggero di legno +1, +3 naturale della Collana) `[CANONE — DM 2026-10-18]`, contatto 10, colta alla sprovvista 20 · **pf ~110** (13 DV) · TS Tempra +16, Riflessi +8, Volontà +15 (base Ranger 1 + Druida 12 +10/+6/+8, COS +4, SAG +5, Mantello della Resistenza +2; tabelle SRD) · **Vulnerabilità al fuoco** ×1,5 · resistenza al freddo 15 · guarigione rapida 1 (a contatto con terra o pietra; sospesa nel round dopo un danno da fuoco) `[CANONE — DM 2026-10-18]`: è la guarigione rapida SRD, Hella muore come chiunque altro
+**Difesa** **CA 25** (+9 corazza di piastre di pelle di drago +1, +1 brocchiere, +1 deviazione, +3 naturale della Collana, DES +1) `[CANONE — DM 2026-11-05, P16, schede PG]`, contatto 12, colta alla sprovvista 24 · **pf 80** (13 DV, dalla scheda della giocatrice) · TS Tempra +11, Riflessi +7, Volontà +13 (base Ranger 1 + Druida 12 +10/+6/+8, COS +1, DES +1, SAG +5; tabelle SRD) · **Vulnerabilità al fuoco** ×1,5 · resistenza al freddo 15 · guarigione rapida 1 (a contatto con terra o pietra; sospesa nel round dopo un danno da fuoco) `[CANONE — DM 2026-10-18]`: è la guarigione rapida SRD, Hella muore come chiunque altro
 
-**Attacco** Vel 6 m (nana: l'armatura non la riduce) · BAB +10; Lotta +11
+**Attacco** Vel 6 m (nana: l'armatura non la riduce) · BAB +10; Lotta +13
 
-**Statistiche** For 12, Des 10, Cos 18, Int 13, SAG 20(+5), con il +4 della Collana `[CANONE — DM 2026-10-18]`, Car 12 · **Talenti** Augment Summoning, Spell Focus (Conjuration), Natural Spell, Extend Spell, Combat Casting, Extra Wild Shape, Power of Nature (SNA +2 CL, custom) · **Equipaggiamento** (recuperato dal corpo, §11 C) cuoio borchiato +2 a borchie vegetali, scudo leggero di legno +1, scimitarra +1, Periapto di Saggezza +2 (non si somma alla Collana: vale il +4), Mantello della Resistenza +2, bacchetta di Cura Ferite Moderate (25 cariche) · **Artefatto** Collana dei Semi Eterni (§7)
+**Statistiche** For 16 (14 più i Guanti del Potere Orchesco +2), Des 13, Cos 12, Int 12, SAG 20(+5), con il +4 della Collana `[CANONE — DM 2026-10-18]`, Car 10 `[CANONE — DM 2026-11-05, P16, schede PG: la scheda della giocatrice]` · **Talenti** Augment Summoning, Spell Focus (Conjuration), Natural Spell, Extend Spell, Combat Casting, Extra Wild Shape, Power of Nature (SNA +2 CL, custom) · **Equipaggiamento** (recuperato dal corpo, §11 C; la scheda della giocatrice) corazza di piastre di pelle di drago +1 con cristallo del riposo, brocchiere, ascia nanica di adamantio con cristallo del ritorno minore, Anello di Deviazione +1, Anello degli Incantesimi Silenziosi, Mantello dello Svanire (3 cariche al giorno), Guanti del Potere Orchesco +2, Periapto di Saggezza +2 (non si somma alla Collana: vale il +4) · **Artefatto** Collana dei Semi Eterni (§7)
+
+<!-- storico -->
+*Fino al 2026-11-05 For 12 Des 10 Cos 18 Int 13 Car 12, CA 20, pf ~110, TS +16/+8/+15, corredo con cuoio borchiato, scudo di legno, scimitarra e Mantello della Resistenza; il DM ha dato la scheda della giocatrice (foto del 2026-11-05).*
+<!-- /storico -->
 
 **Capacità speciali**
 - **Ibrido Treant** (dal viaggio e dal rito): doppio tipo Umanoide (Nano) / Vegetale.
@@ -1537,9 +1551,12 @@ mithral affilato, un cuore di energia terrestre.»*
 nome: Treant di Adamantio (evocato dalla Collana)
 gs: ~10
 tipo: Vegetale Grande · Neutrale Buono
+taglia: Grande
+spazio: 3 m
+portata: 3 m
 ca: 24
 ca-dettaglio: contatto 9, colto alla sprovvista 24 (−1 taglia, +15 naturale)
-pf: 90
+pf: 95
 pf-dado: 10d8+50
 ts: Temp +12, Rifl +3, Vol +8
 attributi: For 29 Des 10 Cos 21 Int 12 Sag 16 Car 12
@@ -1552,9 +1569,11 @@ attacchi:
 ```
 **Iniziativa** +0 · **Sensi** visione crepuscolare; Ascoltare +8, Osservare +8
 
-**Difesa** **CA 24** (−1 taglia, +15 naturale), contatto 9, colto alla sprovvista 24 · **pf 90** (fissi, dal canone; DV 10d8+50) · TS Tempra +12, Riflessi +3, Volontà +8 · **RD 10/adamantio** · tratti dei vegetali · **Vulnerabilità al fuoco**
+**Difesa** **CA 24** (−1 taglia, +15 naturale), contatto 9, colto alla sprovvista 24 · **pf 95** (10d8+50) · TS Tempra +12, Riflessi +3, Volontà +8 · **RD 10/adamantio** · tratti dei vegetali · **Vulnerabilità al fuoco**
 
 **Attacco** Vel 9 m · **Mischia** schianto +18 (2d8+9); attacco completo 2 schianti +18 (2d8+9) · Spazio 3 m, portata 3 m · BAB +7; Lotta +20 (+7 BAB, +4 taglia, +9 FOR)
+
+**Tattiche** Obbedisce a Hella, che gli dà ordini a voce o col gesto. Senza ordini si mette fra lei e il nemico più vicino, e colpisce chi le arriva entro 3 m. Contro chi vola fuori portata non può niente: si pianta accanto a Hella e la copre. Se c'è una porta, un muro o una macchina d'assedio, ci va contro prima che contro le persone. Non fugge e non si arrende: allo scadere dell'ora, o a 0 pf, torna seme.
 
 **Statistiche** For 29, Des 10, Cos 21, Int 12, Sag 16, Car 12 · **Talenti** Attacco Poderoso, Arma Focalizzata (schianto), Spezzare Migliorato, Volontà di Ferro · **Abilità** Ascoltare +8, Osservare +8, Percepire Intenzioni +8
 
@@ -1563,8 +1582,6 @@ attacchi:
 - **Colpi d'adamantio**: danni doppi a oggetti e strutture, ignora la durezza sotto 20; i suoi colpi contano come adamantio.
 - **Durata**: 1 ora, al massimo due Treant, uno per seme (§7).
 - **Legami**: Tordek donatore entro 9 m, resistenza al fuoco 10. Artemis donatrice entro 9 m, quando usa Luce di Lathander (il potere 1/giorno dell'Anello): Rigenerazione 1 per tutta la durata.
-
-**Tattiche** Obbedisce a Hella, che gli dà ordini a voce o col gesto. Senza ordini si mette fra lei e il nemico più vicino, e colpisce chi le arriva entro 3 m. Contro chi vola fuori portata non può niente: si pianta accanto a Hella e la copre. Se c'è una porta, un muro o una macchina d'assedio, ci va contro prima che contro le persone. Non fugge e non si arrende: allo scadere dell'ora, o a 0 pf, torna seme.
 
 **I conti.** Base: il Treant SRD (Vegetale Enorme, 7 DV, FOR 29, DES 8,
 COS 21, INT 12, SAG 16, CAR 12, Ascoltare/Osservare/Percepire Intenzioni +8,
@@ -1598,6 +1615,9 @@ SRD, più il +8 FOR del canone `[CANONE — DM 2026-10-18]`.
 nome: Hella, Avatar della Radice
 gs: forma di Hella
 tipo: Ibrido Treant/Nano Enorme · 10 round, 1 volta al giorno
+taglia: Enorme
+spazio: 4,5 m
+portata: 4,5 m
 ca: 21
 ca-dettaglio: contatto 8, colta alla sprovvista 21 (−2 taglia, +13 naturale)
 pf: quelli di Hella

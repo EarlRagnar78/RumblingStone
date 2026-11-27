@@ -1,0 +1,51 @@
+{
+ "ca +1": {
+  "mutanti": 106,
+  "trovati": 106,
+  "persi": []
+ },
+ "ca -2": {
+  "mutanti": 106,
+  "trovati": 106,
+  "persi": []
+ },
+ "contatto +1": {
+  "mutanti": 62,
+  "trovati": 62,
+  "persi": []
+ },
+ "sprovvista +1": {
+  "mutanti": 60,
+  "trovati": 58,
+  "persi": [
+   "bruto-deforme-sottosuolo-cr11.md",
+   "druid-bear-ally-cr12.md"
+  ]
+ },
+ "voce +1": {
+  "mutanti": 45,
+  "trovati": 45,
+  "persi": []
+ },
+ "sensi": {
+  "mutanti": 25,
+  "trovati": 10,
+  "persi": [
+   "Il_Collezionista_Rakshasa.md",
+   "zarim-illithid-luogotenente-cr12.md",
+   "balvar-fuocospento-cr13.md",
+   "bebilith-guardiano-cr10.md",
+   "beholder-death-tyrant-cr14.md",
+   "draxoksus-shamano-draconico-cr8.md",
+   "emissario-red-hand-cr12.md",
+   "koth-signore-dei-dragoni-cr8.md",
+   "krusk-sfondacancelli-cr14.md",
+   "minotauro-karkilan-cr5.md",
+   "ozyrrandion-drago-verde-cr14.md",
+   "phantom-fungus-cr3.md",
+   "retriever-cr11.md",
+   "ur-vrax-voce-del-drago-cr10.md",
+   "vreek-volto-fantasma-cr10.md"
+  ]
+ }
+}

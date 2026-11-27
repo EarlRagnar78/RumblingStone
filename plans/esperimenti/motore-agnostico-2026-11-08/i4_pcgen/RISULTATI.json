@@ -1,0 +1,47 @@
+{
+  "commit_pcgen": "d96d4da30f8fc0086fe569311e82d85f219c1bff 2026-11-05",
+  "insiemi": {
+    "PF1e Core Rulebook": {
+      "file_lst": 39,
+      "BONUS": 6141,
+      "MODIFY": 24,
+      "variabili_dichiarate": 16,
+      "quota_nuovo_%": 0.39
+    },
+    "3.5 RSRD": {
+      "file_lst": 84,
+      "BONUS": 11898,
+      "MODIFY": 0,
+      "variabili_dichiarate": 0,
+      "quota_nuovo_%": 0.0
+    }
+  },
+  "formule_nel_game_mode": {
+    "35e": [
+      "level.lst CCSKILLMAX:(LEVEL+CrossClassSkillMax+3)/2",
+      "level.lst CSKILLMAX:LEVEL+ClassSkillMax+3",
+      "level.lst MINXP:(LEVEL*LEVEL-LEVEL)*500",
+      "miscinfo.lst CRFORMULA:CL",
+      "miscinfo.lst CRFORMULA:NONE",
+      "miscinfo.lst SPELLBASEDC:10+SPELLLEVEL+BASESPELLSTAT",
+      "miscinfo.lst SPELLRANGE:CLOSE|floor(CASTERLEVEL/2)*5+25",
+      "miscinfo.lst SPELLRANGE:LONG|(CASTERLEVEL*40)+400",
+      "miscinfo.lst SPELLRANGE:MEDIUM|(CASTERLEVEL*10)+100"
+    ],
+    "Pathfinder": [
+      "level.lst CCSKILLMAX:LEVEL",
+      "level.lst CSKILLMAX:LEVEL",
+      "level.lst MINXP:(LEVEL-1)*3",
+      "level.lst MINXP:2400000+LEVEL-20",
+      "level.lst MINXP:3600000+LEVEL-20",
+      "level.lst MINXP:5350000+LEVEL-20",
+      "miscinfo.lst CRFORMULA:CL",
+      "miscinfo.lst CRFORMULA:NONE",
+      "miscinfo.lst SPELLBASECONCENTRATION:CASTERLEVEL+BASESPELLSTAT",
+      "miscinfo.lst SPELLBASEDC:10+SPELLLEVEL+BASESPELLSTAT",
+      "miscinfo.lst SPELLRANGE:CLOSE|floor(CASTERLEVEL/2)*5+25",
+      "miscinfo.lst SPELLRANGE:LONG|(CASTERLEVEL*40)+400",
+      "miscinfo.lst SPELLRANGE:MEDIUM|(CASTERLEVEL*10)+100"
+    ]
+  }
+}

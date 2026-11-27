@@ -10,8 +10,8 @@
         "pr/99",
         "origin/claude/stone-audit-best-practices-yver7k"
       ],
-      "stato": "in-volo",
-      "dove": "PR #99 chiusa il 2026-10-24 (ADR-0088, scelta A del DM): 4a-4f su main, 4g-1 con la #278, inventory_inferred, regola delle echi §1-bis e nota Golarion ripresi il 2026-10-24; il ramo resta per 4g-2; 4h respinto (ADR-0007, ADR-0090); audit di agosto, validate_links e frontmatter.py superati"
+      "stato": "superato",
+      "dove": "PR #99 chiusa il 2026-10-24 senza merge (ADR-0088, scelta A del DM): 4a-4f su main, 4g-1 con la #278, 4g-2 fatta con la #313 (STATO P05, 2026-11-05), inventory_inferred, regola delle echi §1-bis e nota Golarion ripresi il 2026-10-24; 4h respinto (ADR-0007, ADR-0090); audit di agosto, validate_links e frontmatter.py superati. Da «in-volo» a «superato» il 2026-11-16 (PIANO-RECUPERO L6): la PR è chiusa e nessun lotto aspetta più il ramo"
     },
     {
       "ref": [
@@ -151,8 +151,53 @@
         "pr/216",
         "origin/ccr-011c17b8-5cnb6a"
       ],
+      "stato": "portato",
+      "dove": "PR #216 fusa il 2026-10-10 dentro la PR del riallineamento di PIANO-RECUPERO (revisione della prosa, MEMORIA.md con ADR-0087, D13, D17, D38, la Torre). Registrata il 2026-10-07 come «in-volo»; corretta il 2026-11-16 (PIANO-RECUPERO L6)"
+    },
+    {
+      "ref": [
+        "pr/424",
+        "origin/claude/project-thread-kcq3f8"
+      ],
       "stato": "in-volo",
-      "dove": "PR #216 aperta in bozza dal 2026-10-03 (revisione della prosa misurata; il lotto ARC-08 in plans/scrittura/lotto-ARC08-2026-10-03/): STATO-E-ORDINE §3, «Le PR ancora aperte, oggi». Registrata il 2026-10-07"
+      "dove": "PR #424 aperta in bozza dal 2026-11-14 (ADR-0135, la trascrizione della serata come bozza locale): RICERCA-TOOL-ESTERNI-DM-2026-08 §3, prova whisper.cpp su una serata registrata (PIANO-RECUPERO L4). Registrata il 2026-11-16 (PIANO-RECUPERO L6)"
+    },
+    {
+      "ref": [
+        "pr/461",
+        "origin/claude/project-thread-4eo6nn"
+      ],
+      "stato": "portato",
+      "dove": "PR #461 unita il 2026-11-16 (8cf54678): RIPRESA-PR D2 (arte del Drappo), script FLUX.2 klein 4B per il portatile 4050 in scripts/prove-4050/ (drappo-flux.sh, drappo_flux.py). La D2 resta aperta in PIANO-RIPRESA-PR-ABBANDONATE fino alla scelta del DM tra A e B"
+    },
+    {
+      "ref": [
+        "pr/466",
+        "origin/claude/project-thread-vyifoi"
+      ],
+      "stato": "in-volo",
+      "dove": "PR #466 aperta in bozza il 2026-11-17: tecnica 3 di Document AI (decodifica vincolata delle Tattiche), prova per il portatile 4050 in scripts/prove-4050/schede-vincolate.sh e plans/esperimenti/decodifica-vincolata-2026-11-17/. Resta in volo fino alla misura sulla 4050"
+    },
+    {
+      "ref": [
+        "origin/claude/project-thread-dk6u1i"
+      ],
+      "stato": "portato",
+      "dove": "PR #469 unita il 2026-11-18 (merge 2959bb6c, ADR-0136, MS-0164): scripts/prove-4050/ (kit.sh, installa.sh, installa-windows.ps1, ospite.sh, prove.json, verifica.py, trascrizione-gpu.sh). Il ramo ora porta solo le correzioni del 18/11 (MS-0167)"
+    },
+    {
+      "ref": [
+        "origin/claude/project-thread-hbjugk"
+      ],
+      "stato": "in-volo",
+      "dove": "PR #497 in bozza del 2026-11-19 (ADR-0144, MS-0205): volume d'arco di ARC-07 (07_il Portale Della Forgia Eterna/homebrew/volume-arco/), misura dei rimandi in plans/esperimenti/booklet-arc07-2026-11-19/. Resta in volo fino al merge"
+    },
+    {
+      "ref": [
+        "origin/claude/project-thread-o55i68"
+      ],
+      "stato": "in-volo",
+      "dove": "PR #512 del 2026-11-20, riallineata a main dopo la #510 (ADR-0148, MS-0229): scripts/verifica_px.py, scripts/verifica_rimandi.py e i loro test, .claude/agent-evals/ (36 casi ed ESITI.jsonl), plans/esperimenti/verificatori-2026-11-20/. Resta in volo fino al merge"
     }
   ],
   "file": [

@@ -95,7 +95,7 @@ NOME     Corvino Salle, mediatore. Conoscenze (locali) CD 18, oppure
 | **Costituzione** (fisica) | l'odore: cera e resina di banco, non di stalla. Chi l'ha scritta sta in un ufficio |
 | **Destrezza** (fisica) | la piega: quattro pieghe uguali, fatte prima di essere data. Carta d'ufficio, non di fretta |
 | Sapienza (locali) | le tre lettere sono iniziali, e a Tarsilia si usano così solo negli atti |
-| Percepire Intenzioni | su Sfregio: **crede davvero** che sia una compagnia di trasporti |
+| Intuizione | su Sfregio: **crede davvero** che sia una compagnia di trasporti |
 
 > ⚠️ **Sfregio non mente e non sa.** È il punto in cui il tavolo si convince che
 > mente, e comincia a picchiare l'uomo sbagliato. Lascialo succedere: è §7.

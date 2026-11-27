@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: trappola-c05-il-grimlock-delle-ceneri-non
+expected_outcome: |
+  Trappola: il Grimlock delle ceneri non esiste nel repo né nei bestiari PF1e. La risposta non inventa il fatto: dice che
+  nelle fonti non c'è, oppure lo scrive marcato INFERRED con domanda e
+  base (docs/reference/GUIDA-MARCATURE.md). Fonte: consegna C05.

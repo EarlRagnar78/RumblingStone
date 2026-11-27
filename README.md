@@ -20,9 +20,9 @@ Faerûn, 1372 DR), per un tavolo adulto di PG al 13° livello.
 [![OGL 1.0a](https://img.shields.io/badge/regole-OGL%201.0a-8B0000)](OGL.txt)
 [![D&D 3.5](https://img.shields.io/badge/sistema-D%26D%203.5-red)](skills/dnd-35-srd/SKILL.md)
 [![Dependabot](https://img.shields.io/badge/Dependabot-attivo-025E8C?logo=dependabot)](.github/dependabot.yml)
-[![Sigstore](https://img.shields.io/badge/rilasci-attestati%20Sigstore-6E40C9)](docs/RILASCIO.md)
+[![Sigstore](https://img.shields.io/badge/rilasci-attestati%20Sigstore-6E40C9)](docs/how-to/RILASCIO.md)
 
-[Architettura](docs/ARCHITETTURA.md) ·
+[Architettura](docs/explanation/ARCHITETTURA.md) ·
 [Indice dei documenti](docs/INDEX.md) ·
 [Playbook del DM](campaign/DM-CAMPAIGN-PLAYBOOK.md) ·
 [Strumenti](docs/tools/README.md) ·
@@ -68,20 +68,22 @@ corregge solo il master, e PDF, mappe, recap e pacchetti si rigenerano.
 | 📜 | Archi della campagna, master **DEF** al livello di un Adventure Path | `00_…` → `09_…` |
 | 👹 | Bestiario: mostri, PNG, villain con statblocco e dossier a sezioni fisse | [`Bestiario/`](Bestiario/) |
 | 🧝 | Schede dei quattro PG | [`PG/`](PG/) |
-| 🗺️ | Mappe a scala reale: griglia, JSON, SVG pergamena, PNG, UVTT per Foundry e Roll20 | [GUIDA-MAPPE](docs/guides/GUIDA-MAPPE.md) |
-| 📕 | Booklet e volumi di stampa: HTML, Homebrewery, PDF con typst | [GUIDA-BOOKLET-E-PDF](docs/guides/GUIDA-BOOKLET-E-PDF.md) |
+| 🗺️ | Mappe a scala reale: griglia, JSON, SVG pergamena, PNG, UVTT per Foundry e Roll20 | [GUIDA-MAPPE](docs/how-to/GUIDA-MAPPE.md) |
+| 📕 | Booklet e volumi di stampa: HTML, Homebrewery, PDF con typst; in ogni capitolo chi si incontra, con scheda, ritratto, riquadro e mappa | [GUIDA-BOOKLET-E-PDF](docs/how-to/GUIDA-BOOKLET-E-PDF.md) |
 | 🎲 | Stato della campagna, sessioni, recap per PG, ledger dei PE | [`campaign/`](campaign/) |
-| 🧠 | 18 skill per agenti: regole 3.5 e PF1e, lore 1372 DR, stile, mappe, editoria | [`skills/`](skills/) |
+| 🧠 | 18 skill per agenti: regole 3.5 e PF1e, lore 1372 DR, stile, mappe, editoria; ognuna dichiara i suoi cancelli deterministici | [`skills/`](skills/) |
 | 🛠️ | `dm.py` e gli script, ognuno con il suo contratto nel manifest | [`scripts/`](scripts/), [registro](docs/tools/README.md) |
-| 🧭 | Piani, 97 ADR, decisioni del DM tracciate | [`plans/`](plans/) |
+| 🎯 | Regole come plugin di dati: D&D 3.5 per la campagna, Pathfinder 1e per due moduli; `dm.py sistemi` dice quale sistema usa un file | [`sistemi/`](sistemi/), [GUIDA-SISTEMI-DI-GIOCO](docs/how-to/GUIDA-SISTEMI-DI-GIOCO.md) |
+| 🧭 | Piani, 123 ADR, decisioni del DM tracciate | [`plans/`](plans/) |
 | ✍️ | Misure della prosa e voto al cieco del DM | ADR-0093 |
 
 ## Come funziona
 
-Il disegno completo, con ventiquattro diagrammi (infrastruttura, integrazione fra
+Il disegno completo, con ventinove diagrammi (infrastruttura, integrazione fra
 strumenti e fonti, casi d'uso, la catena della prosa, la serata, il giro
-delle letture, i rilasci),
-sta in **[docs/ARCHITETTURA.md](docs/ARCHITETTURA.md)**. In breve:
+delle letture, le mappe e i booklet in stampa, i rilasci, il motore delle
+regole e i suoi plugin, da dove viene un numero),
+sta in **[docs/explanation/ARCHITETTURA.md](docs/explanation/ARCHITETTURA.md)**. In breve:
 
 ```mermaid
 flowchart LR
@@ -102,7 +104,7 @@ facoltativo e `dm.py doctor` dice cosa manca e cosa succede senza.
 ```bash
 git clone https://github.com/gsamuele78/RumblingStone.git
 cd RumblingStone
-pip install -r requirements.txt          # pyyaml, Pillow, tiktoken
+pip install -r requirements.txt          # pyyaml, Pillow, tiktoken, typst, pdfimpose, markdown-it-py
 python3 scripts/dm.py --version          # la versione del repo
 python3 scripts/dm.py doctor             # cosa c'è sulla macchina
 python3 scripts/dm.py --help             # tutti i comandi
@@ -126,7 +128,7 @@ python3 -m pytest scripts/tests -q
 
 La guida passo passo per una macchina nuova (hook git, ramo di gruppo,
 container facoltativi) è
-[GUIDA-SETUP-MACCHINA](docs/guides/GUIDA-SETUP-MACCHINA.md).
+[GUIDA-SETUP-MACCHINA](docs/tutorials/GUIDA-SETUP-MACCHINA.md).
 
 ## La campagna
 
@@ -202,18 +204,18 @@ La situazione della proprietà intellettuale è in
 
 | Vuoi… | Documento |
 |---|---|
-| capire come è fatto il progetto | [ARCHITETTURA](docs/ARCHITETTURA.md) |
+| capire come è fatto il progetto | [ARCHITETTURA](docs/explanation/ARCHITETTURA.md) |
 | trovare un documento qualsiasi | [docs/INDEX.md](docs/INDEX.md) |
 | sapere cosa fa uno script, i parametri, cosa produce | [registro dei tool](docs/tools/README.md), [README-automation](scripts/README-automation.md) |
 | la roadmap e cosa manca | [plans/INDEX.md](plans/INDEX.md), [plans/CHANGELOG.md](plans/CHANGELOG.md) |
 | il perché delle scelte | [plans/adr/](plans/adr/) |
-| preparare una macchina | [GUIDA-SETUP-MACCHINA](docs/guides/GUIDA-SETUP-MACCHINA.md) |
-| stampare booklet e PDF | [GUIDA-BOOKLET-E-PDF](docs/guides/GUIDA-BOOKLET-E-PDF.md) |
-| fare una mappa | [GUIDA-MAPPE](docs/guides/GUIDA-MAPPE.md) |
-| aggiungere un mostro, un PNG, un villain | [GUIDA-BESTIARIO](docs/guides/GUIDA-BESTIARIO.md) |
-| generare le immagini | [GUIDA-IMMAGINI](docs/guides/GUIDA-IMMAGINI.md) |
+| preparare una macchina | [GUIDA-SETUP-MACCHINA](docs/tutorials/GUIDA-SETUP-MACCHINA.md) |
+| stampare booklet e PDF | [GUIDA-BOOKLET-E-PDF](docs/how-to/GUIDA-BOOKLET-E-PDF.md) |
+| fare una mappa | [GUIDA-MAPPE](docs/how-to/GUIDA-MAPPE.md) |
+| aggiungere un mostro, un PNG, un villain | [GUIDA-BESTIARIO](docs/how-to/GUIDA-BESTIARIO.md) |
+| generare le immagini | [GUIDA-IMMAGINI](docs/how-to/GUIDA-IMMAGINI.md) |
 | i container locali (Homebrewery, PDF, ComfyUI) | [homebrew-local](scripts/homebrew-local/README.md), [booklet-container](scripts/booklet-container/README.md), [comfyui-local](scripts/comfyui-local/README.md) |
-| condividere il materiale | [GUIDA-CONDIVISIONE-IP](docs/guides/GUIDA-CONDIVISIONE-IP.md) |
+| condividere il materiale | [GUIDA-CONDIVISIONE-IP](docs/how-to/GUIDA-CONDIVISIONE-IP.md) |
 | le regole per gli agenti | [AGENTS.md](AGENTS.md), [skills/ORCHESTRAZIONE.md](skills/ORCHESTRAZIONE.md) |
 
 ## Versioni e rilasci
@@ -223,7 +225,7 @@ e i cambiamenti sono in [CHANGELOG.md](CHANGELOG.md). **Rilasciare è unire una
 PR** ([ADR-0100](plans/adr/ADR-0100-il-rilascio-e-una-pr.md)): il workflow
 Release crea il tag, pubblica l'archivio riproducibile delle skill con le
 impronte SHA-256 e un'attestazione di provenienza Sigstore. Come verificare un
-archivio scaricato è in [docs/RILASCIO.md](docs/RILASCIO.md).
+archivio scaricato è in [docs/how-to/RILASCIO.md](docs/how-to/RILASCIO.md).
 
 La piattaforma è una sola: **Python 3.13 ovunque**, e ogni componente di terzi
 sta in uno dei tre canali unstable, testing e stable, come i pacchetti in
@@ -243,6 +245,10 @@ aprirla:
   [CHANGELOG.md](CHANGELOG.md);
 - una scelta strutturale diventa un ADR, con il numero prenotato in
   `plans/adr-prenotati.json`;
+- una skill nuova chiude con la sezione «Cancelli deterministici», i comandi
+  che la verificano ([ADR-0108](plans/adr/ADR-0108-i-cancelli-deterministici-stanno-in-ogni-skill.md));
+  una tecnica nuova diventa standard solo se una prova ne misura il guadagno
+  sul repo;
 - i documenti seguono [rumblingstone-prosa-documenti](skills/rumblingstone-prosa-documenti/SKILL.md),
   la prosa di gioco [rumblingstone-narrative-style](skills/rumblingstone-narrative-style/SKILL.md).
 
@@ -264,5 +270,5 @@ un essere umano al tavolo è testo, se lo esegue una macchina è strumento.
 > of the Coast, Forgotten Realms fuori dall'SRD) che nessuna licenza
 > dell'autore può sanare, e l'arco del Palio di Channathgate evoca segni
 > tutelati del Palio di Siena. Cosa si può fare caso per caso è in
-> [GUIDA-CONDIVISIONE-IP](docs/guides/GUIDA-CONDIVISIONE-IP.md) e
+> [GUIDA-CONDIVISIONE-IP](docs/how-to/GUIDA-CONDIVISIONE-IP.md) e
 > [ADR-0005](plans/adr/ADR-0005-confini-ip-uso-non-commerciale.md).

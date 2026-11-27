@@ -11,6 +11,12 @@ Una skill o uno script esterno valutato e rimandato non sparisce: entra in
 quando una condizione e' attiva e la voce dice ancora «in attesa»: e' la riga
 che ha smesso di dire il vero, come nei cancelli di ADR-0062.
 
+Dal 2026-11-13 (D5 del piano di recupero, R-6) il registro tiene anche i
+lotti **interni** rimandati (`"tipo": "lotto"`): non hanno fonte, commit,
+licenza ne' autore, ma dicono il piano e la riga da cui vengono e hanno una
+condizione misurabile come gli altri. Le attese che dipendono solo da una
+parola del DM non entrano: restano scritte nel loro piano.
+
 Le misure sono funzioni con un nome; la voce del registro dice quale usare e
 con che parametri. Una misura che qui non puo' girare (un clone senza storia)
 lo dice, e non risponde «spenta».
@@ -65,15 +71,57 @@ def file_rimaneggiati_senza_storia(giorni: int, commit_minimi: int, soglia_file:
     return attiva, f"{len(colpiti)} file su una soglia di {soglia_file}" + (f": {', '.join(colpiti)}" if colpiti else "")
 
 
-MISURE = {"file_rimaneggiati_senza_storia": file_rimaneggiati_senza_storia}
-CAMPI = ("id", "fonte", "commit_upstream", "licenza", "autore", "stato", "condizione", "quando_scatta")
+CHANGELOG = ROOT / "CHANGELOG.md"
+
+
+def versione_rilasciata(versione: str, **_ignorati) -> "tuple[object, str]":
+    """Se `CHANGELOG.md` ha la sezione `## [versione]`, cioe' il rilascio e' su main."""
+    if not CHANGELOG.exists():
+        return NON_MISURABILE, "CHANGELOG.md non trovato"
+    testo = CHANGELOG.read_text(encoding="utf-8")
+    attiva = re.search(rf"^## \[{re.escape(versione)}\]", testo, re.M) is not None
+    return attiva, f"## [{versione}] {'presente' if attiva else 'assente'} in CHANGELOG.md"
+
+
+#: La riga che `comfyui_batch.py` scrive in PROVENIENZA.txt (ADR-0019 §2): il
+#: seed c'e', le righe di Gemini non l'hanno.
+RIGA_COMFYUI = re.compile(r"^[^#\s].* · seed \d+ · ")
+
+
+def serie_comfyui_registrata(righe_minime: int, **_ignorati) -> "tuple[object, str]":
+    """Se un PROVENIENZA del repo ha almeno `righe_minime` righe scritte da comfyui_batch.py."""
+    elenco = _git("ls-files", "*PROVENIENZA*.txt").splitlines()
+    if not elenco:
+        return NON_MISURABILE, "nessun PROVENIENZA.txt tracciato (fuori da un clone git?)"
+    conti = {}
+    for nome in elenco:
+        percorso = ROOT / nome
+        if percorso.exists():
+            testo = percorso.read_text(encoding="utf-8", errors="replace")
+            conti[nome] = sum(1 for r in testo.splitlines() if RIGA_COMFYUI.match(r))
+    migliore = max(conti, key=conti.get)
+    attiva = conti[migliore] >= righe_minime
+    return attiva, (f"{conti[migliore]} righe ComfyUI al massimo in un file ({migliore}), "
+                    f"soglia {righe_minime}, {len(conti)} file letti")
+
+
+MISURE = {"file_rimaneggiati_senza_storia": file_rimaneggiati_senza_storia,
+          "versione_rilasciata": versione_rilasciata,
+          "serie_comfyui_registrata": serie_comfyui_registrata}
+CAMPI_COMUNI = ("id", "stato", "condizione", "quando_scatta")
+#: I campi in piu' per tipo. «esterna» (il default) e' codice o skill di altri.
+CAMPI_PER_TIPO = {"esterna": ("fonte", "commit_upstream", "licenza", "autore"),
+                  "lotto": ("piano", "decisione")}
 
 
 def carica() -> "list[dict]":
     dati = json.loads(REGISTRO.read_text(encoding="utf-8"))
     voci = dati.get("adozioni", [])
     for v in voci:
-        mancanti = [c for c in CAMPI if c not in v]
+        tipo = v.get("tipo", "esterna")
+        if tipo not in CAMPI_PER_TIPO:
+            raise ValueError(f"{v.get('id', '?')}: tipo sconosciuto {tipo!r}")
+        mancanti = [c for c in CAMPI_COMUNI + CAMPI_PER_TIPO[tipo] if c not in v]
         if mancanti:
             raise ValueError(f"{v.get('id', '?')}: mancano {mancanti}")
         if v["condizione"].get("misura") not in MISURE:

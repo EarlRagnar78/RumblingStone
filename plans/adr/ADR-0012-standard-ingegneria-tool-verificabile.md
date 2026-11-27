@@ -23,7 +23,7 @@ l'audit degraderebbe alla prima aggiunta successiva (drift).
 
 Ogni **nuovo** tool eseguibile del repo (Python o shell, sotto `scripts/` o
 `converters/`) DEVE rispettare lo **standard di authoring** codificato in
-[`docs/guides/TOOL-AUTHORING-STANDARD.md`](../../docs/guides/TOOL-AUTHORING-STANDARD.md).
+[`docs/reference/TOOL-AUTHORING-STANDARD.md`](../../docs/reference/TOOL-AUTHORING-STANDARD.md).
 Lo standard non è una linea guida "morbida": è **applicato in CI** e la sua
 violazione fa fallire la build (gate bloccante), esattamente come i gate
 esistenti su mappe/bestiario/piani.

@@ -27,7 +27,7 @@ treasure_by_el:
   16: { gp: 28000, coins_pct: 25, goods_pct: 33, items_pct: 42 }
   17: { gp: 36000, coins_pct: 22, goods_pct: 35, items_pct: 43 }
   18: { gp: 47000, coins_pct: 22, goods_pct: 35, items_pct: 43 }
-  19: { gp: 60000, coins_pct: 20, goods_pct: 36, items_pct: 44 }
+  19: { gp: 61000, coins_pct: 20, goods_pct: 36, items_pct: 44 }
   20: { gp: 80000, coins_pct: 20, goods_pct: 36, items_pct: 44 }
 
 # Price tier → which EL range it's appropriate for

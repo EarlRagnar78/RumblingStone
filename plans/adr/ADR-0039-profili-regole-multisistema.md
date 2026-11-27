@@ -10,7 +10,7 @@
 > cambia solo il numero. La PR #72 è stata chiusa il 2026-09-04 e il suo
 > contenuto vive qui e in `PIANO-VENDIBILITA.md`.
 **Data**: 2026-07-26
-**Decisione-fonte**: risposta DM alla domanda «dove metto i numeri 3.5?» → **«deve supportare 3.5, Pathfinder 1e e D&D 5»**. Specifica completa da recuperare dalla PR #72 (`docs/guides/LEGENDA-FUNZIONALE-SPEC.md`, 283 righe) — è il lotto P1.1 del piano.
+**Decisione-fonte**: risposta DM alla domanda «dove metto i numeri 3.5?» → **«deve supportare 3.5, Pathfinder 1e e D&D 5»**. Specifica completa da recuperare dalla PR #72 (`docs/reference/LEGENDA-FUNZIONALE-SPEC.md`, 283 righe) — è il lotto P1.1 del piano.
 
 ## Contesto
 

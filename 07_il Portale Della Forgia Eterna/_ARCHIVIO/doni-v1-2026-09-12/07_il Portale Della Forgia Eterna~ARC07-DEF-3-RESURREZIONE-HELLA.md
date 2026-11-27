@@ -319,8 +319,8 @@ Doni** (conserva i doni del viaggio, vinti da sola). La Collana nasce comunque; 
 (quest personali ARC-09 — quando uno slot si riempie con un atto di sacrificio, il
 Dono si attiva retroattivamente). *Il rifiuto diventa una quest, non una punizione.*
 
-**Reazioni di Moradin (senza giudizio):** ad un'alternativa: *«Non è il dono che
-chiedevo. È il dono che DAI. La Forgia piega il metallo che riceve.»* — ad un
+**Reazioni di Moradin (senza giudizio):** a un'alternativa: *«Non è il dono che
+chiedevo. È il dono che DAI. La Forgia piega il metallo che riceve.»* — a un
 rifiuto: *«Lo ricorderò. E lo ricorderà anche lei. Ma la paura del prezzo è già
 il prezzo.»* — al rifiuto totale: *«Allora la riporto io. Ma torna come la morte
 la lasciò, e ciò che non le avete dato oggi, glielo dovrete domani.»*

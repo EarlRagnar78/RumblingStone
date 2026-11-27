@@ -1,8 +1,11 @@
-# Hobgoblin Sergente (Fighter 5) [ACCEPTED — DM-canon 2026-05-05; ricalcolato al conto SRD — DM 2026-10-12, D78]
+# Hobgoblin Sergente (Fighter 5) [CANONE — DM 2026-05-05; ricalcolato al conto SRD — DM 2026-10-12, D78]
 **Faction**: red-hand | **Role**: melee-leader | **Environment**: any | **CR**: 5 | **Source**: MM p.153 Hobgoblin + PHB Fighter 5 | **Status**: inferred
 
 ```statblocco
 gs: 5
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 21
 ca-dettaglio: (+8 full plate, +2 heavy shield, +1 Dex)
 pf: 37
@@ -27,7 +30,7 @@ attacchi:
 **Attacks**: MW longsword +9 melee (1d8+4/19-20) | Longbow +6 ranged (1d8/x3)
 **Full**: MW longsword +9 (1d8+4/19-20) — BAB +5, no iterative attack
 **Abilities**: Str 14, Dex 12, Con 14, Int 10, Wis 10, Cha 8
-**Feats**: Weapon Focus (longsword), Weapon Spec (longsword), Power Attack, Cleave, Combat Reflexes
+**Feats**: Weapon Focus (longsword), Weapon Specialization (longsword), Power Attack, Cleave, Combat Reflexes
 **Skills**: Intimidate +7, Listen +3, Spot +3
 **Special**: Darkvision 60 ft; Command: +1 morale to adj hobgoblin allies (10 ft).
 **Gear**: Full plate, heavy steel shield, MW longsword, longbow + 20 arrows, potion of CLW x2, horn, whistle.

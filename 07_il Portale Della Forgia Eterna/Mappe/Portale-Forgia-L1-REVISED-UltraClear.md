@@ -28,7 +28,7 @@
 > copertura e linea di vista restano quelli di prima. Il resto della sala non
 > cambia: è architettura nanica, e resta squadrata.
 >
-> ⚠️ `[INFERRED — needs DM confirmation]` Questa è una generazione storica: la
+> ⚠️ `[CANONE — DM 2026-11-04, P16, già risolta, S-2 canonica ARC-06]` Questa è una generazione storica: la
 > Stanza della Corona canonica è la S-2 dell'Atlante (10 × 13, ingresso a sud,
 > trono a nord), giocata in ARC-06. PF-1 ne è una versione diversa, con porta a
 > nord e quattro pilastri; al tavolo vale S-2.

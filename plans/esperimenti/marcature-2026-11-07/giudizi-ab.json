@@ -1,0 +1,684 @@
+[
+ {
+  "id": "C01",
+  "skill": "dnd-35-srd",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 1,
+  "marcati_con_domanda_e_base": 1,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C01",
+  "skill": "dnd-35-srd",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 0,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C02",
+  "skill": "dnd-35-srd",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 9,
+  "marcati_con_domanda_e_base": 8,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C02",
+  "skill": "dnd-35-srd",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 3,
+  "marcati_con_domanda_e_base": 3,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C03",
+  "skill": "dnd-35-srd",
+  "versione": "vecchia",
+  "inventati_non_marcati": 2,
+  "marcati": 9,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "Nel pozzo la parete c'è sempre",
+   "una caduta di Tordek da tutto il tratto B (15 m) vale **1d6** invece di 5d6, e da tutto il pozzo (36 m) vale **8d6** invece di 12d6"
+  ]
+ },
+ {
+  "id": "C03",
+  "skill": "dnd-35-srd",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 7,
+  "marcati_con_domanda_e_base": 4,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C04",
+  "skill": "pathfinder-1e-srd",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 4,
+  "marcati_con_domanda_e_base": 3,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C04",
+  "skill": "pathfinder-1e-srd",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 2,
+  "marcati_con_domanda_e_base": 2,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C05",
+  "skill": "pathfinder-1e-srd",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 2,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C05",
+  "skill": "pathfinder-1e-srd",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 2,
+  "marcati_con_domanda_e_base": 2,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C06",
+  "skill": "pathfinder-1e-srd",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 2,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C06",
+  "skill": "pathfinder-1e-srd",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 2,
+  "marcati_con_domanda_e_base": 2,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C07",
+  "skill": "forgotten-realms-lore",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 0,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C07",
+  "skill": "forgotten-realms-lore",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 4,
+  "marcati_con_domanda_e_base": 1,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C08",
+  "skill": "forgotten-realms-lore",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 22,
+  "marcati_con_domanda_e_base": 2,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C08",
+  "skill": "forgotten-realms-lore",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 11,
+  "marcati_con_domanda_e_base": 10,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C09",
+  "skill": "forgotten-realms-lore",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 0,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C09",
+  "skill": "forgotten-realms-lore",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 3,
+  "marcati_con_domanda_e_base": 3,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C10",
+  "skill": "npc-villain-boosting",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 22,
+  "marcati_con_domanda_e_base": 3,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C10",
+  "skill": "npc-villain-boosting",
+  "versione": "nuova",
+  "inventati_non_marcati": 6,
+  "marcati": 3,
+  "marcati_con_domanda_e_base": 3,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "**Caratteristiche**: For 17, Des 15, Cos 16, Int 10, Sag 12, Car 8",
+   "Iniziativa Migliorata, Spingere Migliorato, Arma Focalizzata Superiore (spada lunga)",
+   "**Abilità** (22 punti): Intimidire +10, Ascoltare +4, Osservare +3"
+  ]
+ },
+ {
+  "id": "C11",
+  "skill": "npc-villain-boosting",
+  "versione": "vecchia",
+  "inventati_non_marcati": 1,
+  "marcati": 11,
+  "marcati_con_domanda_e_base": 5,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "il lupo col modello **Avanzato** PF (+2 a tutti i tiri e alle CD, +4 CA, +2 pf/DV: CA 22, 171 pf, morso +24, 2d6+15)"
+  ]
+ },
+ {
+  "id": "C11",
+  "skill": "npc-villain-boosting",
+  "versione": "nuova",
+  "inventati_non_marcati": 7,
+  "marcati": 3,
+  "marcati_con_domanda_e_base": 3,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "tipo: Large animal, N, 18 DV (lupo crudele SRD da 6 DV, avanzato fino a 18 DV + Avanzato PF1e)",
+   "pf: 174",
+   "Mischia morso +24 (2d6+16) + Sbilanciare"
+  ]
+ },
+ {
+  "id": "C12",
+  "skill": "npc-villain-boosting",
+  "versione": "vecchia",
+  "inventati_non_marcati": 15,
+  "marcati": 12,
+  "marcati_con_domanda_e_base": 4,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "tipo: Orco Medio, legale malvagio · Guerriero 12",
+   "attributi: For 16 Des 20 Cos 14 Int 11 Sag 8 Car 6",
+   "gs: 11 (vedi «Benchmark»)"
+  ]
+ },
+ {
+  "id": "C12",
+  "skill": "npc-villain-boosting",
+  "versione": "nuova",
+  "inventati_non_marcati": 1,
+  "marcati": 7,
+  "marcati_con_domanda_e_base": 6,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "Quando le resta metà dei pf, o metà della pattuglia è a terra, si ritira, non combatte fino alla fine."
+  ]
+ },
+ {
+  "id": "C13",
+  "skill": "rumblingstone-campaign",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 0,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C13",
+  "skill": "rumblingstone-campaign",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 0,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C14",
+  "skill": "rumblingstone-campaign",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 1,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C14",
+  "skill": "rumblingstone-campaign",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 4,
+  "marcati_con_domanda_e_base": 4,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C15",
+  "skill": "rumblingstone-campaign",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 0,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C15",
+  "skill": "rumblingstone-campaign",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 1,
+  "marcati_con_domanda_e_base": 1,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C16",
+  "skill": "rumblingstone-module-standard",
+  "versione": "vecchia",
+  "inventati_non_marcati": 15,
+  "marcati": 17,
+  "marcati_con_domanda_e_base": 1,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "Stanza comune, due letti, a notte | **1 mo** | 3 libere",
+   "il posto della dogana, dall'altra parte della strada: **quattro doganieri** di notte. Arrivano in **3 round** se si sente una rissa",
+   "ieri Nanni ha pagato in oro tre mesi di conto, 2 mo, lui che paga in rame"
+  ]
+ },
+ {
+  "id": "C16",
+  "skill": "rumblingstone-module-standard",
+  "versione": "nuova",
+  "inventati_non_marcati": 22,
+  "marcati": 20,
+  "marcati_con_domanda_e_base": 19,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "Dice *«ragazza»* a Mirta, che ha ventisei anni",
+   "gli ha dato **10 mo** per tenere la ronda lontana dalla darsena vecchia per un'ora",
+   "Sala di 18 × 13,5 m, soffitto a 2,5 m. Luce normale: il focolare e quattro lanterne a olio."
+  ]
+ },
+ {
+  "id": "C17",
+  "skill": "rumblingstone-module-standard",
+  "versione": "vecchia",
+  "inventati_non_marcati": 15,
+  "marcati": 23,
+  "marcati_con_domanda_e_base": 4,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "che a monte, a mezza giornata, c'è un guado per le capre. Non sa se ci passa un bambino",
+   "**Morale**: con **tre arcieri a terra**, o il sergente sotto 15 pf, il drappello si ritira a nord-ovest",
+   "| 18 m a valle del ponte | le rapide | chi è in acqua e ci arriva subisce **1d6** per round contro i massi, Nuotare **CD 20** |"
+  ]
+ },
+ {
+  "id": "C17",
+  "skill": "rumblingstone-module-standard",
+  "versione": "nuova",
+  "inventati_non_marcati": 12,
+  "marcati": 19,
+  "marcati_con_domanda_e_base": 13,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "Gli hobgoblin hanno tolto le tavole della campata centrale e impeciato quella est, pronti a darle fuoco.",
+   "sei regolari, scudi rossi appoggiati al muro, frecce piantate in terra davanti ai piedi per fare prima",
+   "Il sergente ha tenuto due ponti in una settimana senza perdere un uomo."
+  ]
+ },
+ {
+  "id": "C18",
+  "skill": "rumblingstone-module-standard",
+  "versione": "vecchia",
+  "inventati_non_marcati": 22,
+  "marcati": 7,
+  "marcati_con_domanda_e_base": 1,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "Il Giudizio di Durrak.** GS 12; meccanica; innesco a posizione (le lastre della corsia centrale)",
+   "il soffitto scende e schiaccia tutto ciò che sta nella sala (18d6 danni da schiacciamento)",
+   "ritardo d'innesco 3 round; **Cercare CD 25**; **Disattivare Congegni CD 27**"
+  ]
+ },
+ {
+  "id": "C18",
+  "skill": "rumblingstone-module-standard",
+  "versione": "nuova",
+  "inventati_non_marcati": 5,
+  "marcati": 3,
+  "marcati_con_domanda_e_base": 3,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "La trappola: la Stanza della Pietra che si chiude",
+   "Una camera funeraria nanica di 3 m per 3 m (2×2 quadretti).",
+   "Il sarcofago di Durrak sta al centro"
+  ]
+ },
+ {
+  "id": "C19",
+  "skill": "rumblingstone-narrative-style",
+  "versione": "vecchia",
+  "inventati_non_marcati": 5,
+  "marcati": 6,
+  "marcati_con_domanda_e_base": 2,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "Sono una trentina, lavate, e ancora rosa.",
+   "Dentro ho diciannove persone di Talar",
+   "e undici letti"
+  ]
+ },
+ {
+  "id": "C19",
+  "skill": "rumblingstone-narrative-style",
+  "versione": "nuova",
+  "inventati_non_marcati": 4,
+  "marcati": 6,
+  "marcati_con_domanda_e_base": 6,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "qui siamo in sei. In cinque, da primavera.",
+   "due ceste di queste fino al chiostro di Dauth",
+   "Se le lasciano al passo, l'abate scende da solo con il mulo, e arriva un giorno dopo."
+  ]
+ },
+ {
+  "id": "C20",
+  "skill": "rumblingstone-narrative-style",
+  "versione": "vecchia",
+  "inventati_non_marcati": 1,
+  "marcati": 4,
+  "marcati_con_domanda_e_base": 1,
+  "ha_segnalato_le_trappole": false,
+  "esempi": [
+   "«E qualcuno era già qui dentro. Tre li ho chiusi giù ieri, e non li ho trovati io.»"
+  ]
+ },
+ {
+  "id": "C20",
+  "skill": "rumblingstone-narrative-style",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 4,
+  "marcati_con_domanda_e_base": 4,
+  "ha_segnalato_le_trappole": false,
+  "esempi": []
+ },
+ {
+  "id": "C21",
+  "skill": "rumblingstone-narrative-style",
+  "versione": "vecchia",
+  "inventati_non_marcati": 7,
+  "marcati": 6,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "Ero sveglia per il figlio del mugnaio, che aveva la febbre da tre giorni.",
+   "parte **Indifferente**",
+   "per il nome dello zoppo serve **Amichevole** (Diplomazia **CD 15** da Indifferente), oppure una promessa che i PG mantengono"
+  ]
+ },
+ {
+  "id": "C21",
+  "skill": "rumblingstone-narrative-style",
+  "versione": "nuova",
+  "inventati_non_marcati": 1,
+  "marcati": 7,
+  "marcati_con_domanda_e_base": 3,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "Ero sveglia per il figlio del mugnaio, che aveva la febbre alta."
+  ]
+ },
+ {
+  "id": "C22",
+  "skill": "rumblingstone-playtest",
+  "versione": "vecchia",
+  "inventati_non_marcati": 2,
+  "marcati": 3,
+  "marcati_con_domanda_e_base": 1,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "i PG con TS buono (circa +13 al 13°) passano la CD 16 col 3+",
+   "Contro un TS cattivo (circa +4/+8 al 13°) passa una volta su due o meno"
+  ]
+ },
+ {
+  "id": "C22",
+  "skill": "rumblingstone-playtest",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 2,
+  "marcati_con_domanda_e_base": 1,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C23",
+  "skill": "rumblingstone-playtest",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 1,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C23",
+  "skill": "rumblingstone-playtest",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 2,
+  "marcati_con_domanda_e_base": 2,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C24",
+  "skill": "rumblingstone-playtest",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 3,
+  "marcati_con_domanda_e_base": 2,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C24",
+  "skill": "rumblingstone-playtest",
+  "versione": "nuova",
+  "inventati_non_marcati": 1,
+  "marcati": 10,
+  "marcati_con_domanda_e_base": 9,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "I bugbear partono a 18 m e arrivano tutti insieme."
+  ]
+ },
+ {
+  "id": "C25",
+  "skill": "rumblingstone-indagine",
+  "versione": "vecchia",
+  "inventati_non_marcati": 23,
+  "marcati": 4,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": false,
+  "esempi": [
+   "Il guardiano notturno giura di aver visto, due notti fa, un uomo incappucciato chino sul pozzo per molto tempo.",
+   "Dietro c'è un vano vuoto, con una goccia di ceralacca nera.",
+   "La mattina del Day 31 un portatore d'acqua crolla tossendo davanti al tempio."
+  ]
+ },
+ {
+  "id": "C25",
+  "skill": "rumblingstone-indagine",
+  "versione": "nuova",
+  "inventati_non_marcati": 8,
+  "marcati": 4,
+  "marcati_con_domanda_e_base": 4,
+  "ha_segnalato_le_trappole": false,
+  "esempi": [
+   "il sapore è più forte a ovest e si attenua verso est. Va con la corrente.",
+   "TRACCIA: in città si dice che i forestieri del Torneo fanno domande sull'acqua.",
+   "nessuno dei loro compratori ha portato veleno, e il mercato sotterraneo ha visto passare degli elfi scuri"
+  ]
+ },
+ {
+  "id": "C26",
+  "skill": "rumblingstone-indagine",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 0,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C26",
+  "skill": "rumblingstone-indagine",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 0,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C27",
+  "skill": "rumblingstone-indagine",
+  "versione": "vecchia",
+  "inventati_non_marcati": 18,
+  "marcati": 14,
+  "marcati_con_domanda_e_base": 1,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "Dentro ci sono una camicia di ricambio, mezza pagnotta e la borsa della paga, piena. Manca solo l'astuccio del messaggio. Il cavallo è ancora nella tettoia.",
+   "Sei tavoli, uno occupato da due carrettieri che giocano a dadi senza puntare.",
+   "sulla lavagna dei conti, accanto al segno di Wendel, la tacca del debito è stata cancellata col pollice"
+  ]
+ },
+ {
+  "id": "C27",
+  "skill": "rumblingstone-indagine",
+  "versione": "nuova",
+  "inventati_non_marcati": 6,
+  "marcati": 10,
+  "marcati_con_domanda_e_base": 8,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "L'oste ha sentito aprire la stalla dopo mezzanotte e non è sceso a guardare.",
+   "l'oste ha già detto la stessa frase («è salito presto, stanco morto») due volte, con le stesse parole. È una frase preparata.",
+   "La sacca da sella non c'è."
+  ]
+ },
+ {
+  "id": "C28",
+  "skill": "rumblingstone-editoria",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 4,
+  "marcati_con_domanda_e_base": 3,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C28",
+  "skill": "rumblingstone-editoria",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 3,
+  "marcati_con_domanda_e_base": 3,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C29",
+  "skill": "rumblingstone-editoria",
+  "versione": "vecchia",
+  "inventati_non_marcati": 0,
+  "marcati": 0,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C29",
+  "skill": "rumblingstone-editoria",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 9,
+  "marcati_con_domanda_e_base": 5,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ },
+ {
+  "id": "C30",
+  "skill": "rumblingstone-editoria",
+  "versione": "vecchia",
+  "inventati_non_marcati": 1,
+  "marcati": 1,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": [
+   "**Slot** nessuno (si tiene in mano)"
+  ]
+ },
+ {
+  "id": "C30",
+  "skill": "rumblingstone-editoria",
+  "versione": "nuova",
+  "inventati_non_marcati": 0,
+  "marcati": 0,
+  "marcati_con_domanda_e_base": 0,
+  "ha_segnalato_le_trappole": true,
+  "esempi": []
+ }
+]

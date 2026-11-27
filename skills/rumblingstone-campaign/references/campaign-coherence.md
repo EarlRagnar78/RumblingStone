@@ -48,7 +48,7 @@ questions, opened three, and caught a correct rejection that cited the wrong
 source.
 
 If you cannot find a fact in 1–4, **say so**. Do not invent. Ask the DM or
-mark the suggestion as `[INFERRED — needs DM confirmation]`.
+mark the suggestion as `[INFERRED — <domanda al DM>; base: <fonte o dato>]`.
 
 ---
 

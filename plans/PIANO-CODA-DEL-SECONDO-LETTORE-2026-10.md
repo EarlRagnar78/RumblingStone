@@ -5,7 +5,7 @@
 > perché la misura ha trovato difetti veri che **non ho corretto**: o perché la
 > scelta è del DM, o perché sono un lotto di contenuto da fare a parte.
 >
-> **Stato**: lotto di infrastruttura chiuso (PR #214); punti 1 e 2 chiusi (2026-10-03 e 2026-10-06); restano 3 e 4, che aspettano D2 e D3.
+> **Stato**: lotto di infrastruttura chiuso (PR #214); punti 1 e 2 chiusi (2026-10-03 e 2026-10-06), punto 3 chiuso il 2026-11-08; D2 e D3 decise il 2026-11-08; punto 4 (*d* eufonica) chiuso il 2026-11-09 (ADR-0120); resta il punto 5.
 
 ## 1. Fatto (PR #214)
 
@@ -60,14 +60,19 @@ della lista di `validate_lingua` sulle righe segnalate, rilanciare il validatore
 (gli avvisi calano di 140), `fase1.py --check` prima, `pregen-pcgen/` escluso
 (sola lettura). Il lotto tocca 57 schede: va in una PR a sé.
 
-**3. Il campo *Etichetta regia* troncato in `PROMPT-IMMAGINI-07ILP.md`
-(decide il DM sul come).** 32 righe del file hanno il campo tagliato dopo una
+**3. ✅ Il campo *Etichetta regia* troncato in `PROMPT-IMMAGINI-07ILP.md`
+(fatto il 2026-11-08, D2: corretto lo script, con test).** Il file è stato
+rigenerato: 117 scene (erano 46), nessuna etichetta troncata fra quelle che hanno
+ancora la loro scena; le 6 schede compilate la cui scena è stata riscritta nei
+giri di ARC-07 restano in coda, con il solo residuo del troncamento tolto.
+
+*Com'era:* 32 righe del file hanno il campo tagliato dopo una
 parentesi chiusa (*«Etichetta regia: isolamento).»*). È un difetto sistematico:
 cercare chi compila quel file (`extract_scene_prompts`?) prima di correggere a
 mano, altrimenti la prossima generazione lo rifà. Non urgente per il tavolo: sono
 prompt per le immagini.
 
-**4. La *d* eufonica (decide il DM).** *legato a Aegis Fang*, *a area*: il repo non
+**4. La *d* eufonica ✅ (decisa il 2026-11-08, D3; chiusa il 2026-11-09, [ADR-0120](adr/ADR-0120-la-d-eufonica-si-misura-con-una-regex-tarata-su-languagetool.md)).** Norma in `editorial-standards.md` §4, riga nel REGISTRO, conto a zero in `validate_lingua.py --d-eufonica` (canale testing, non bloccante fino al 2026-11-24; bloccante dal 2026-11-25 nel passo della lingua, e l'opzione è uscita) tarato su LanguageTool ST_03_001 (`plans/esperimenti/d-eufonica-2026-11-09/RISULTATO.md`); 58 righe corrette in 42 file. Era: *legato a Aegis Fang*, *a area*: il repo non
 ha una norma. Se il DM la vuole (*ad* solo davanti alla stessa vocale), va
 scritta in `editorial-standards.md`, registrata in
 `skills/REGISTRO-NORME-EDITORIALI.md` e misurata; altrimenti resta com'è. Una
@@ -87,8 +92,8 @@ LanguageTool migliorano: la procedura sta nella ricerca e si rifà in un'ora.
 | # | Punto | Domanda |
 |---|---|---|
 | ~~D1~~ | 1 | ✅ **Decisa il 2026-10-03**: *la Torre*. Era: **la contrada del Palio è *la Torre* o *il Torre*?** |
-| **D2** | 3 | **Il campo *Etichetta regia* troncato in `PROMPT-IMMAGINI-07ILP.md`**: si cerca chi compila il file e si corregge lì, o si correggono a mano le 32 righe? *Proposta*: prima si cerca il generatore (`extract_scene_prompts`?); a mano solo se non c'è |
-| **D3** | 4 | **La *d* eufonica** (*legato a Aegis Fang*, *a area*): la vuoi come norma? *Proposta*: sì, *ad* solo davanti alla stessa vocale, scritta in `editorial-standards.md` e misurata; se no, resta com'è |
+| ~~D2~~ | 3 | ✅ **Decisa e attuata il 2026-11-08: si corregge lo script, con test.** Il generatore era `extract_scene_prompts.py`: leggeva il grassetto fino al primo `*` e toglieva le parentesi dai bordi. Ora conta le parentesi, e rigenerando rifà titolo, fonte ed etichetta anche delle schede già compilate (prompt intatto); `scripts/tests/test_extract_scene_prompts.py`. Era: **Il campo *Etichetta regia* troncato in `PROMPT-IMMAGINI-07ILP.md`**: si cerca chi compila il file e si corregge lì, o si correggono a mano le 32 righe? *Proposta*: prima si cerca il generatore (`extract_scene_prompts`?); a mano solo se non c'è |
+| ~~D3~~ | 4 | ✅ **Decisa il 2026-11-08: sì, norma con misura.** Entra in `editorial-standards.md` e in REGISTRO-NORME, con un rilevatore che conta le forme sbagliate nei testi di gioco (lotto fatto il 2026-11-09, ADR-0120). Era: **La *d* eufonica** (*legato a Aegis Fang*, *a area*): la vuoi come norma? *Proposta*: sì, *ad* solo davanti alla stessa vocale, scritta in `editorial-standards.md` e misurata; se no, resta com'è |
 
 ## 3. Quando usare il secondo lettore
 

@@ -30,20 +30,7 @@ campaign/
 # cards are in Bestiario/png/ and Bestiario/villain/; locations and encounters
 # are inside the arc modules (00_… to 09_…), with their tactical maps.
 
-skills/
-├── dnd-35-srd/             # D&D 3.5 SRD mechanics (no setting bias)
-├── forgotten-realms-lore/  # Faerûn 1372 DR canon
-├── rumblingstone-campaign/ # custom campaign + coherence rules
-├── rumblingstone-narrative-style/ # nine-pillar style engine (mandatory for generation)
-├── rumblingstone-mapmaking/ # battle-map pipeline (3 modes, JSON contract, UVTT)
-├── rumblingstone-automation/ # dm.py CLI + session-state pipeline (ADR-0007)
-├── rumblingstone-debugging/ # root-cause debugging, SOLO infrastruttura scripts/CI (vendored da obra/superpowers, MIT — ADR-0010)
-├── rumblingstone-plans/    # plan-archive discipline (INDEX, CHANGELOG, ADRs)
-├── rumblingstone-playtest/ # collaudo: audit, dry-run, feedback, alfa→beta→collaudato
-├── rumblingstone-art-direction/ # coerenza di un set di immagini: ancora storica, schede-personaggio, lock, gate di rifiuto
-├── pathfinder-1e-srd/      # PF1e rules, templates, 3.5<->PF conversion
-├── npc-villain-boosting/   # when/whether/how to boost PNGs, villains, monsters
-└── dnd-35-rules/           # legacy meta-router (points to the skills above)
+skills/    # le diciotto skill: vedi «Inventario completo» più sotto
 
 10-stand-alone/Il-Drappo-di-Tarsilia/  # self-contained PF1e module set in Golarion —
            # shares the race SYSTEM with arc 09's Palio and nothing else
@@ -54,40 +41,55 @@ scripts/   # DM automation — single entrypoint: python3 scripts/dm.py
 converters/ # content converters (pdf→md, html→md, img→webp) — NOT the DM automation
 ```
 
-Per-agent mirrors (`.claude/skills/`, `.cursor/skills/`, etc.) are
-generated artifacts of `scripts/build-skills.sh` and are gitignored.
 `.hb.md` files are generated Homebrewery layouts (`plans/adr/ADR-0003`):
 regenerate via `dm.py recap --hype` / `dm.py handout`, never edit by hand.
 
-> **Agenti e DM, per ripartire: prima [`MEMORIA.md`](MEMORIA.md).** È la
-> memoria del lavoro in una pagina (decisioni aperte, revisioni da approvare,
-> cosa è in corso, cosa è stato fatto), generata da `python3 scripts/memoria.py`
-> e tenuta allineata dalla CI ([ADR-0087](plans/adr/ADR-0087-la-memoria-del-lavoro-e-generata.md)).
+> **Agenti e DM, per ripartire: prima [`MEMORIA.md`](MEMORIA.md)**, la
+> memoria del lavoro generata da `python3 scripts/memoria.py`
+> ([ADR-0087](plans/adr/ADR-0087-la-memoria-del-lavoro-e-generata.md)).
 > Non si scrive a mano: si corregge la fonte che indica, poi si rigenera. E
 > niente di utile resta nello scratchpad di una sessione: prima di chiudere
 > entra nel repo.
+>
+> **Il lavoro che non è ancora su main** (PR aperte, rami, cartelle dei thread)
+> sta in [`plans/LAVORO-IN-CORSO.md`](plans/LAVORO-IN-CORSO.md), che si
+> rigenera con `python3 scripts/lavoro_in_corso.py --fetch` dal registro curato
+> `plans/lavoro-in-corso.json`; in Claude Code e in OpenCode il comando è
+> `/lavoro-in-corso`
+> ([ADR-0157](plans/adr/ADR-0157-il-lavoro-fuori-da-main-ha-una-pagina-dal-vivo.md)).
+>
+> **La storia dietro una scelta** (regressione, soluzione già provata) sta in
+> [`plans/MEMORIA-STORICA.md`](plans/MEMORIA-STORICA.md): si cerca con
+> `python3 scripts/memoria_storica.py --pr N | --adr N | --tema T | parole`.
+> Ogni PR che aggiunge una riga a `plans/CHANGELOG.md` aggiunge anche una
+> voce lì (decisioni, misure, questioni aperte: la CI la esige), e chi
+> toglie una riga dalla memoria delle sessioni la archivia lì prima
+> ([ADR-0127](plans/adr/ADR-0127-la-memoria-corta-archivia-nel-repo-prima-di-togliere.md)).
+> Il lavoro che non finisce in una PR (scelta su card, dato verificato, thread
+> che si risolve) lascia la sua voce nella coda del thread, e
+> `python3 scripts/memoria_coda.py DIR --thread "Titolo"` dice se manca
+> ([ADR-0138](plans/adr/ADR-0138-la-coda-della-memoria-storica-ha-un-cancello.md)).
+> Prima di togliere righe dalla memoria del progetto e prima di un merge,
+> `python3 scripts/memoria_custode.py verifica` dice quali righe tolte non
+> sono archiviate (`archivia` le scrive in coda), e l'agente
+> `custode-memoria` risponde da memoria del progetto, file storico e coda
+> ([ADR-0151](plans/adr/ADR-0151-la-memoria-del-progetto-ha-uno-specchio-e-un-custode.md)).
 
-> **DMs: start with `campaign/DM-CAMPAIGN-PLAYBOOK.md`.** It contains the
-> pre/during/post-session workflow, worked examples for session files and
-> `state.md` diffs, the `§0 Campaign Status At-a-Glance` dashboard, and the
-> branch-per-group reset procedure (`python3 scripts/dm.py gruppo nuovo`) for
-> running this campaign with a new group.
+> **DMs: start with `campaign/DM-CAMPAIGN-PLAYBOOK.md`**: session workflow,
+> worked examples, the `§0` dashboard and the new-group reset
+> (`python3 scripts/dm.py gruppo nuovo`).
 
 ---
 
 ## Skills
 
 **Il principio, prima della tabella.** Prima di produrre qualunque cosa,
-chiediti **chi la leggerà** e **in che forma uscirà**. Quelle due risposte —
-non l'argomento — scelgono la skill. Un mostro descritto in un booklet da
-stampare e lo stesso mostro dentro `Bestiario/` non vogliono lo stesso
-apparato; un ADR e un read-aloud sono entrambi prosa italiana e seguono norme
-**opposte** (ADR-0035).
-
-La tabella qui sotto **illustra** il principio, non lo esaurisce: se il tuo
-compito non c'è, applica la domanda. Le skill marcate **obbligatorie** vanno
-caricate anche se il DM non le nomina — è il DM ad averlo chiesto, e non
-doverle chiedere è il punto.
+chiediti **chi la leggerà** e **in che forma uscirà**: quelle due risposte, non
+l'argomento, scelgono la skill. Un ADR e un read-aloud sono entrambi prosa
+italiana e seguono norme **opposte** (ADR-0035). La tabella qui sotto
+**illustra** il principio, non lo esaurisce: se il tuo compito non c'è, applica
+la domanda. Le skill marcate **obbligatorie** vanno caricate anche se il DM non
+le nomina.
 
 ### 🥇 REGOLA D'ORO DELLA PROSA — una skill non è il suo `SKILL.md`
 
@@ -96,26 +98,17 @@ doverle chiedere è il punto.
 > riga della tabella ti assegna, per intero. Il `SKILL.md` è l'indice, non la
 > norma.**
 
-🔴 **Questa regola nasce da un fallimento misurato, il 2026-09-18.** Un agente
-— io — ha costruito un metro dello stile leggendo **due** `SKILL.md` e nessun
-`references/`, e ha concluso che certi standard «non esistevano». Esistevano:
-`read-aloud-adulti.md` prescrive da agosto **box ≤ 12 righe, un solo nome
-proprio nuovo, niente parentesi**; `editorial-standards.md` §2 prescrive la
-forma dei dialoghi che avevo dichiarato «inventata». E `ADR-0014` — *regia
-sensoriale obbligatoria*, luglio — era stato applicato a **un documento su
-cento**: la chiusura su «Che fate?», dovuta a *ogni* box di combattimento,
-esisteva **una volta in tutto il repo**.
+Le sei regole, ordinate per il momento in cui scattano, con comando,
+verificatore e i conflitti fra loro (la quinta viene prima della prima), stanno
+in [`skills/REGOLE-DORO.md`](skills/REGOLE-DORO.md)
+([ADR-0061](plans/adr/ADR-0061-le-regole-d-oro-sono-un-dato-ordinato-per-momento.md)).
+Perché esistono: [ADR-0056](plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md)
+(dalla prima alla quarta), [ADR-0058](plans/adr/ADR-0058-orchestrazione-a-strati-delle-skill.md)
+(la quinta), `plans/CHANGELOG.md` alle righe del 2026-09-18 e del 2026-09-20
+(la quarta e la sesta).
 
-⚠️ **Non era un problema di scopribilità.** Tutti e 56 i `references/` sono
-già citati dai loro `SKILL.md`: un cancello sulla citazione sarebbe verde e
-inutile. Il problema è che **una norma che nessuno misura non fa rumore quando
-viene ignorata** — per settimane, in silenzio.
-
-Quindi la regola ha **tre obblighi**, e il terzo è quello che la rende diversa
-da un buon proposito:
-
-1. **`G1` · Leggi i `references/`**, non il loro elenco. Sono la norma; il `SKILL.md`
-   è la mappa. Dieci file solo in `narrative-style`.
+1. **`G1` · Leggi i `references/`**, non il loro elenco. Sono la norma; il
+   `SKILL.md` è la mappa.
 2. **`G2` · Misura prima di affermare.** «Questo standard manca», «lo stile non è
    arrivato qui», «questa forma non la usa nessuno» sono affermazioni
    *misurabili*: `python3 scripts/misura_craft.py [--box|--copertura|--spotlight]`.
@@ -124,125 +117,45 @@ da un buon proposito:
    [`skills/REGISTRO-NORME-EDITORIALI.md`](skills/REGISTRO-NORME-EDITORIALI.md) elenca
    ogni norma con **chi la misura**, o con **il perché nessuno la misura**.
    Il gate `python3 scripts/validate_norme_editoriali.py` boccia un file
-   normativo non registrato e un rimando a uno strumento che non esiste
-   ([ADR-0056](plans/adr/ADR-0056-una-norma-senza-misura-non-esiste.md)).
+   normativo non registrato e un rimando a uno strumento che non esiste.
+   Introdurre uno standard non è aver fatto il lavoro: **una norma nuova arriva
+   con il suo lotto di applicazione e la sua misura, o non è arrivata.**
+4. **`G4` · Prima di consegnare prosa di gioco, esegui la self-check della skill**
+   *(il quarto obbligo)*. Non «tienila a mente»: **eseguila**, domanda per
+   domanda. Dove la domanda è misurabile, la risposta è un **comando**, non
+   un'impressione.
 
-> **Il corollario scomodo**: introdurre uno standard **non è** aver fatto il
-> lavoro. I due commit che hanno portato `read-aloud-adulti.md` e `ADR-0014`
-> erano ottimi e sono rimasti lettera morta, uno perché non ha toccato un solo
-> file d'arco, l'altro perché ne ha toccato uno. **Una norma nuova arriva con
-> il suo lotto di applicazione e la sua misura, o non è arrivata.**
+   | Domanda della self-check | Come si risponde |
+   |---|---|
+   | 1 · Quale pilastro guida la scena? *(se «tutti» → riscrivi)* | `misura_craft` → `PILASTRO dichiarato (lead/support)` |
+   | 2 · Almeno un PG agisce, sceglie o riceve un'eco? | `--spotlight` (indicatore) |
+   | 3 · Ho scritto o fatto riemergere un'eco? | congegno `eco / conseguenze a distanza` |
+   | 4 · Sopravvive senza i numeri di serie — niente nomi presi in prestito? | **giudizio**, nessuna misura |
+   | 5 · Ogni PNG nominato ha un *Want* che non riguarda i PG? | congegno `grigio politico` |
+   | 6 · La rete d'indizi è ridondante, e la risposta sbagliata porta comunque da qualche parte? | congegni `nodo d'indizio` + `modi di fallimento` |
+   | 7 · **Qualche box è oltre il tetto?** *(→ taglia; vince il tetto)* | `misura_craft --box`, colonna `>12 righe` |
+   | 8 · Ho corretto ciò che la misura segnala, e rimisurato? Su un file che c'era già, il DM approva le modifiche una per una? | `ciclo_prosa.py segnala` (o `lotto`) → `misura` a ogni giro → `revisione` → `applica [--auto]` ([ADR-0077](plans/adr/ADR-0077-revisione-a-due-giri.md)) |
 
-#### 🔴 Quarto obbligo: **la self-check prima di consegnare** *(aggiunto lo stesso giorno)*
-
-Il DM, poche ore dopo la prima stesura: *«perché non è partita automaticamente?
-Non è che c'è una skill che l'aveva previsto?»*
-
-**Ce l'aveva.** `rumblingstone-narrative-style` ha una sezione
-**«Self-check before delivering generated content»**: il controllo di coerenza
-più **sette domande**. Non era partita perché i tre obblighi qui sopra dicono
-**«leggi»** e **«misura»**, non **«esegui la self-check prima di consegnare»** —
-e una riscrittura è esattamente il momento in cui serve.
-
-> **`G4` · 4. Prima di consegnare prosa di gioco, esegui la self-check della skill.**
-> Non «tienila a mente»: **eseguila**, domanda per domanda. Dove la domanda è
-> misurabile, la risposta è un **comando**, non un'impressione.
-
-| Domanda della self-check | Come si risponde |
-|---|---|
-| 1 · Quale pilastro guida la scena? *(se «tutti» → riscrivi)* | `misura_craft` → `PILASTRO dichiarato (lead/support)` |
-| 2 · Almeno un PG agisce, sceglie o riceve un'eco? | `--spotlight` (indicatore) |
-| 3 · Ho scritto o fatto riemergere un'eco? | congegno `eco / conseguenze a distanza` |
-| 4 · Sopravvive senza i numeri di serie — niente nomi presi in prestito? | **giudizio**, nessuna misura |
-| 5 · Ogni PNG nominato ha un *Want* che non riguarda i PG? | congegno `grigio politico` |
-| 6 · La rete d'indizi è ridondante, e la risposta sbagliata porta comunque da qualche parte? | congegni `nodo d'indizio` + `modi di fallimento` |
-| 7 · **Qualche box è cresciuto oltre il tetto perché la prosa era venuta bene?** *(→ taglia; vince il tetto)* | `misura_craft --box`, colonna `>12 righe` |
-| 8 · Ho corretto quello che la misura segnala, e rimisurato? Su un file che c'era già, il DM può approvare le modifiche una per una? | `ciclo_prosa.py segnala` (o `lotto`, su più file) → `misura` a ogni giro → `revisione` → `applica [--auto]` ([ADR-0077](plans/adr/ADR-0077-revisione-a-due-giri.md)) |
-
-🔎 **La settima non è un esempio scelto a caso: è quella che ho fallito.** La
-riscrittura di `ARC07-DEF-4` del 2026-09-18 ha lasciato un box da **15 righe**
-— proprio quello meglio scritto, l'ingresso di Balvar — e l'ho corretto solo
-dopo che il DM ha fatto questa domanda. Spezzandolo in tre battute il testo è
-**migliorato**, perché il silenzio del vecchio è diventato la prima battuta.
-La domanda 7 esiste per quello.
-
-⚠️ **E la self-check non basta da sola**: due congegni che la skill dichiara —
-`[HDYWTDT]` (il finisher va al giocatore, ai punti di morte dei boss) e
-*yes-and with teeth* (l'invenzione del giocatore entra nel canone **e** genera
-una complicazione) — erano a **zero in tutti e nove gli archi** e non erano
-nemmeno nel metro. Adesso sono due congegni di `misura_craft`. **Se una cosa
-sta in una skill e in nessun rilevatore, prima o poi sparisce.**
-
-#### 🧭 Quinto obbligo: **l'ordine di caricamento è a strati, e sta in un dato**
-
-Il DM: *«fai un ordine gerarchico delle skill che eviti di far saltare le skill
-[…] verifica se ci sono skill che si sovrappongono e orchestrale in maniera
-smart, con meccanismi davvero misurabili»*.
-
-> **`G5` · 5. Prima di caricare, applica l'algoritmo a cinque domande di
-> [`skills/ORCHESTRAZIONE.md`](skills/ORCHESTRAZIONE.md).** Cinque strati più
-> la consultazione, otto conflitti ognuno con un vincitore dichiarato, e un
-> gate (`validate_skills.py`) che boccia una skill senza posto nella gerarchia.
-
-| # | Domanda | Cosa carichi |
-|---|---|---|
-| 1 | **Tocco il canone?** | sì → **L0 sempre**, e batte tutti (regola 8) |
-| 2 | **Chi legge?** | giocatore → `narrative-style` · il repo → `prosa-documenti`. ⚠️ **una sola delle due, mai entrambe** (ADR-0035) |
-| 3 | **Che cosa sto scrivendo?** | L2: `indagine` · `module-standard` · `npc-villain-boosting` |
-| 4 | **In che forma esce?** | L3: `editoria` · `edizione` · `mapmaking` · `art-direction` |
-| 5 | **Che gesto sto facendo?** | L4: `plans` · `automation` · `playtest` · `debugging` |
-
-Solo la **2** ha una risposta sola; dalla 3 in poi si somma. La consultazione
-(SRD, lore) si apre per un **fatto**, mai per decidere.
-
-🔎 **La gerarchia non è stata inventata**: esisteva già, sparsa in **cinque
-frasi** di questo documento («la coerenza batte lo stile», «sopra
-`narrative-style`, che resta il fondo», «regole opposte», «le righe si
-sommano», «read-aloud ceilings winning any conflict»). Erano tutte corrette e
-**nessuna verificabile**. Le diciotto skill entrano in diciotto caselle, una
-per una — ed è la prova che la struttura c'era.
-
-⚠️ **E «massimizzare l'uso» è il bersaglio sbagliato, dichiarato in
-[ADR-0058](plans/adr/ADR-0058-orchestrazione-a-strati-delle-skill.md).**
-Caricarle tutte e diciotto sarebbe il danno: `narrative-style` e
-`prosa-documenti` dettano regole **opposte** sullo stesso italiano, e insieme
-danno un testo che sbaglia in entrambi i modi. **Il bersaglio misurabile è
-*zero omissioni di ciò che è obbligatorio*** — e l'obbligo vero è su **L0-L2**.
-L4 e LR **non** si caricano per sicurezza.
-
-#### 🔎 Sesto obbligo: **la FASE 1 si esegue in sola lettura, prima di toccare**
-
-Il DM, il 2026-09-20: *«mettere una golden rule che esegue i passi della Fase 1
-di analisi in sola lettura […] e si usa preferibilmente il registro delle
-norme, l'algoritmo a strati e i 322 nomi di Bestiario prima di qualsiasi regex,
-in modo da eliminare errori di analisi ricorrenti»*.
-
-> **`G6` · 6. Prima di modificare qualunque cosa, esegui
-> `python3 scripts/fase1.py <bersagli>`.** I quattro passi vanno in
-> **quest'ordine**, e una regex nuova è l'ultima risorsa.
-
-| # | La domanda | Chi la risponde, e perché prima della regex |
-|---|---|---|
-| **1** | «questa cosa la misura già qualcuno?» | [`skills/REGISTRO-NORME-EDITORIALI.md`](skills/REGISTRO-NORME-EDITORIALI.md). Se sì **si riusa**: *una norma, un rilevatore* ([RICERCA-STANDARD-PROSA](plans/RICERCA-STANDARD-PROSA-WOTC-PAIZO-2026-09.md) §4) |
-| **2** | «quali skill devo avere aperte?» | [`skills/ORCHESTRAZIONE.md`](skills/ORCHESTRAZIONE.md), le cinque domande. Il bersaglio risponde **da sé** alla 2: un file sotto `plans/` parla al repo, uno d'arco parla al tavolo |
-| **3** | «cosa è archivio, cosa è superato, chi sono i nomi propri, cosa è rimasto nei rami?» | i **322 nomi** da `Bestiario/` e `state.md`; `_SNAPSHOT-STORICO.md`; `ESCLUSI_NOME`; le matrici delle versioni; i file di rami e PR mai arrivati su `main`, dal registro `plans/contenuti-nei-rami.json` |
-| **4** | «da che numero parto?» | `misura_craft`, sui bersagli veri e non su un campione |
-
-🔴 **Non è una precauzione: è la classifica dei difetti veri.** Quattordici
-misure sbagliate fra il 2026-09-17 e il 2026-09-20, e **nessuna** veniva da una
-regex scritta male. Venivano tutte dall'aver scritto una regex **prima di
-guardare se il dato c'era già** — la virgola contata come trigger (82 coppie
-invece di 5), «web» che cattura *web enhancement* (80% invece di 39%), «caso»
-che è italiano comune (55 indagini invece di 3), le maiuscole d'inizio frase
-contate come nomi propri (nove box invece di tre, **e il numero falso finito
-nel corpo di una PR**), un filtro di percorso che non scattava mai (1.548 file
-invece di 511).
-
-⚠️ **Questa regola nasce già violata.** L'ordine del DM è arrivato mentre
-scrivevo la FASE 1 di `PIANO-QUATTRO-ORDINI-2026-09-20`, e quella FASE 1 aveva
-appena commesso **due** degli errori dell'elenco. Il cancello `--check` esiste
-per il primo dei due: `fase1.py --check` **esce 1** se stai per modificare un
-archivio che il repo dichiara tale.
+5. **`G5` · Prima di caricare, applica l'algoritmo a cinque domande di
+   [`skills/ORCHESTRAZIONE.md`](skills/ORCHESTRAZIONE.md)**: canone (L0, sempre),
+   chi legge (L1: `narrative-style` **o** `prosa-documenti`, mai entrambe),
+   che cosa (L2), in che forma (L3), che gesto (L4). Solo la seconda ha una
+   risposta sola; dalla terza in poi si somma, e la consultazione (SRD, lore)
+   si apre per un **fatto**, mai per decidere. Il bersaglio è *zero omissioni
+   di ciò che è obbligatorio*, e l'obbligo vero è su **L0-L2**: L4 e LR **non**
+   si caricano per sicurezza.
+6. **`G6` · Prima di modificare qualunque cosa, esegui
+   `python3 scripts/fase1.py <bersagli>`.** I quattro passi, in
+   **quest'ordine**, con una regex nuova come ultima risorsa: (1) la misura già
+   qualcuno? il [registro delle norme](skills/REGISTRO-NORME-EDITORIALI.md), e
+   se sì si riusa (*una norma, un rilevatore*); (2) quali skill aprire?
+   [`skills/ORCHESTRAZIONE.md`](skills/ORCHESTRAZIONE.md), e un file sotto
+   `plans/` parla al repo, uno d'arco al tavolo; (3) cosa è archivio, superato,
+   nome proprio, rimasto nei rami? i nomi da `Bestiario/` e `state.md`,
+   `_SNAPSHOT-STORICO.md`, `ESCLUSI_NOME`, le matrici delle versioni,
+   `plans/contenuti-nei-rami.json`; (4) da che numero parto? `misura_craft` sui
+   bersagli veri, non su un campione. `fase1.py --check` **esce 1** se stai per
+   modificare un archivio che il repo dichiara tale.
 
 ### Cosa carico, in base a cosa sto per fare
 
@@ -278,44 +191,83 @@ Due avvertenze che la tabella non può contenere:
 Diciotto skill. L'elenco è **verificato da un gate**
 ([ADR-0041](plans/adr/ADR-0041-instradamento-delle-skill-con-un-gate.md)):
 `validate_skills.py` fallisce se una directory con `SKILL.md` non è citata qui,
-o se questo documento cita una skill che non esiste.
-
-⚠️ Nessun agente «scopre» queste skill da solo. Alcuni leggono le descrizioni
-del frontmatter, altri caricano solo ciò che un documento gli nomina, altri
-non hanno alcun meccanismo di scoperta. È questa sezione a instradarli.
+o se questo documento cita una skill che non esiste. Nessun agente «scopre»
+queste skill da solo: è questa sezione a instradarli.
 
 | Skill | Che cos'è |
 |---|---|
 | `skills/dnd-35-srd/` | meccaniche d20 SRD pure |
 | `skills/pathfinder-1e-srd/` | regole PF1e, template semplici, benchmark GS, conversione 3.5↔PF1e |
 | `skills/forgotten-realms-lore/` | canone di Faerûn, 1372 DR |
-| `skills/npc-villain-boosting/` | framework decisionale e workflow per potenziare PNG, villain e mostri |
+| `skills/npc-villain-boosting/` | quando e come potenziare PNG, villain e mostri |
 | `skills/rumblingstone-campaign/` | questa campagna: PG, artefatti, archi, coerenza |
-| `skills/rumblingstone-narrative-style/` | motore di stile a nove pilastri (prosa Salvatore, profondità LotR, destino Casa di Davide, intrigo Andor, politica GoT, tecnica di tavolo Mercer, echi BG3, quest design BG1/2, il caso ricomposto), protagonismo dei PG nel bene e nel male |
-| `skills/rumblingstone-indagine/` | come si costruisce e si gioca un **caso**: nodo d'indizio a tre strati, le sei porte, registro Acume/Perizia/Metodo (ADR-0022), ricomposizione, vicolo cieco |
-| `skills/rumblingstone-prosa-documenti/` | come si scrivono i **documenti** del repo perché non suonino generati a macchina — tic di composizione dell'IA, tropi inglesi da non importare |
-| `skills/rumblingstone-module-standard/` | standard di qualità dei master DEF: profondità, struttura, livello di finitura (benchmark: Red Hand of Doom + AP Pathfinder 1e) |
-| `skills/rumblingstone-editoria/` | il mestiere del layout designer e del tipografo: riquadri, blocchi statistiche, dove si tocca (nel tema, mai nel `.typ` generato) |
+| `skills/rumblingstone-narrative-style/` | motore di stile a nove pilastri, protagonismo dei PG nel bene e nel male |
+| `skills/rumblingstone-indagine/` | come si costruisce e si gioca un **caso**: nodo d'indizio, registro Acume/Perizia/Metodo (ADR-0022), ricomposizione, vicolo cieco |
+| `skills/rumblingstone-prosa-documenti/` | come si scrivono i **documenti** del repo perché non suonino generati a macchina |
+| `skills/rumblingstone-module-standard/` | standard di qualità dei master DEF (benchmark: Red Hand of Doom + AP Pathfinder 1e) |
+| `skills/rumblingstone-editoria/` | layout e tipografia: riquadri, blocchi statistiche, dove si tocca (nel tema, mai nel `.typ` generato) |
 | `skills/rumblingstone-edizione/` | il mestiere dell'editore: colophon, Product Identity / Open Content, **gate d'uscita** IP, versione/ristampa/errata |
-| `skills/rumblingstone-art-direction/` | il mestiere dell'art director: cosa hanno in comune le immagini di un set, e quando un'immagine si butta ([ADR-0019](plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md)) |
-| `skills/rumblingstone-mapmaking/` | workflow di generazione mappe: Watabou, template, export VTT |
-| `skills/rumblingstone-automation/` | CLI `dm.py` e pipeline sessione→stato: wizard di fine sessione, recap per PG, brief; scritture di canone solo sotto il vincolo triplo ADR-0007 |
-| `skills/rumblingstone-playtest/` | come si collauda: audit meccanico, dry-run cronometrato, schede di feedback, ciclo alfa → beta → collaudato ([ADR-0018](plans/adr/ADR-0018-apparato-uso-obbligatorio.md)) |
+| `skills/rumblingstone-art-direction/` | coerenza di un set di immagini, e quando un'immagine si butta ([ADR-0019](plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md)) |
+| `skills/rumblingstone-mapmaking/` | generazione mappe: Watabou, template, export VTT |
+| `skills/rumblingstone-automation/` | CLI `dm.py` e pipeline sessione→stato; scritture di canone solo sotto il vincolo triplo ADR-0007 |
+| `skills/rumblingstone-playtest/` | collaudo: audit meccanico, dry-run, schede di feedback, alfa → beta → collaudato ([ADR-0018](plans/adr/ADR-0018-apparato-uso-obbligatorio.md)) |
 | `skills/rumblingstone-plans/` | convenzioni dell'archivio dei piani: INDEX, gate, ADR |
-| `skills/rumblingstone-debugging/` | debugging sistematico per root cause, **solo infrastruttura**; vendorizzata da obra/superpowers (MIT), politica in ADR-0010 |
+| `skills/rumblingstone-debugging/` | debugging per root cause, **solo infrastruttura**; vendorizzata da obra/superpowers (MIT), ADR-0010 |
 | `skills/dnd-35-rules/` | meta-router legacy: rimanda alle skill qui sopra |
+
+### Gli agenti di `.claude/agents/`
+
+Quattordici agenti ([ADR-0146](plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md)),
+ognuno con le sue skill precaricate. Li lancia il thread con lo strumento Agent
+(`subagent_type: "<nome>"`); un agente non ne avvia altri, quindi la catena la
+guida il thread. Ogni catena che cambia file finisce con `autore-documenti`, e
+la riga «Catena: a → b» nelle istruzioni del thread ferma push e PR finché
+manca una chiamata (`scripts/instradamento_agenti.py --cancello`).
+
+| Agente | Classe | Quando |
+|---|---|---|
+| `autore-prosa-gioco` | Autori | box read-aloud, handout, recap, dialoghi, introduzioni e appendici dei volumi |
+| `autore-master` | Autori | master DEF di un arco: stanze, incontri, tattiche, bottega |
+| `autore-documenti` | Autori | ADR, piani, guide, corpi di PR; la documentazione dopo ogni lavoro |
+| `integratore-dm` | Tecnici | `dm.py`, `dmcore`, plugin di sistema, server MCP, manifest degli strumenti |
+| `sviluppatore` | Tecnici | il resto di `scripts/`, CI, test, hook |
+| `piattaforma` | Tecnici | canali, versioni fissate, promozioni, rilasci, roadmap |
+| `cartografo` | Tecnici | mappe tattiche, Watabou, UVTT |
+| `impaginatore` | Tecnici | booklet, PDF, typst, licenze e gate d'uscita |
+| `art-director` | Tecnici | immagini, prompt, set coerenti |
+| `regolista` | Tecnici | statblock, schede, potenziamenti, arbitrati 3.5 e PF1e |
+| `sincronizzatore-giocato` | Tecnici | il giocato sul ramo di gruppo e il merge di main in quel ramo ([ADR-0149](plans/adr/ADR-0149-il-giocato-arriva-sul-ramo-di-gruppo-con-un-agente-e-una-misura.md)) |
+| `custode-memoria` | Tecnici | che cosa sanno memoria del progetto, file storico e coda; righe tolte da `MEMORY.md`, tetto della memoria, merge fermato dal custode ([ADR-0151](plans/adr/ADR-0151-la-memoria-del-progetto-ha-uno-specchio-e-un-custode.md)) |
+| `lettore-a-freddo` | Verificatori, sola lettura | lettura a freddo di prosa o master appena scritti |
+| `custode-canone` | Verificatori, sola lettura | coerenza con il canone della campagna e del 1372 DR |
+
+Un agente nuovo entra in questa tabella nella stessa PR: la CI lo controlla
+con `scripts/documentazione_allineata.py`
+([ADR-0153](plans/adr/ADR-0153-la-documentazione-segue-la-struttura.md)).
 
 ### Quando un agente risponde
 
 1. Applica il principio: **chi legge, in che forma esce**. Poi guarda la
    tabella per compito.
-2. Carica il `SKILL.md` della skill scelta **per primo**; segui la sua tabella
+2. Carica il `SKILL.md` della skill scelta **per primo**, con lo strumento
+   Skill e non a memoria: in Claude Code un hook ferma la scrittura di prosa di
+   gioco (handout, recap, introduzioni dei volumi, box read-aloud) se
+   `rumblingstone-narrative-style` non è stata caricata, e ricorda
+   `rumblingstone-prosa-documenti` sui documenti
+   ([ADR-0146](plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md)).
+   Gli agenti di `.claude/agents/` le precaricano. Segui la sua tabella
    di routing interna.
 3. Per domande di campagna, carica anche `campaign/state.md` e
    `skills/rumblingstone-campaign/references/campaign-coherence.md`.
 4. Cita le fonti: sezione SRD, FRCS p.X, oppure `[Private — Red Hand of Doom, p.X]`.
 5. **Non inventare mai** blocchi statistiche, effetti di incantesimi, statistiche
-   di PNG o poteri di artefatti. Marca `[INFERRED — needs DM confirmation]`.
+   di PNG o poteri di artefatti. Se manca la fonte, marca INFERRED con
+   domanda e base: la grammatica sta in `docs/reference/GUIDA-MARCATURE.md`
+   (ADR-0109).
+6. Per una scelta di metodo, in ogni parte del progetto, parti dallo
+   **standard di fatto della comunità**: una soluzione nostra entra solo se
+   la misura lo boccia, con il motivo nell'ADR. Le schede di skill, brief e
+   prove sono in `docs/reference/GUIDA-SCHEDE-PROMPT.md` (ADR-0114).
 
 ---
 
@@ -400,9 +352,8 @@ non hanno alcun meccanismo di scoperta. È questa sezione a instradarli.
 ## Strumenti esterni: server MCP e skill dei plugin
 
 La configurazione di Claude Code per questo repo sta in `.claude/settings.json`
-e `.mcp.json`. L'audit del 2026-10-02 ha cercato nel repo, in 974 commit e
-nelle PR quali strumenti esterni servono davvero; il resto è spento o caricato
-solo su richiesta.
+e `.mcp.json`: sono accesi solo gli strumenti esterni che servono davvero, il
+resto è spento o caricato su richiesta.
 
 **Caricati su richiesta, senza chiedere al DM.** I tool MCP sono differiti
 (`ENABLE_TOOL_SEARCH`): un agente che ne ha bisogno li carica con `ToolSearch`
@@ -412,7 +363,7 @@ il compito lo chiede, e le skill `rumblingstone-*` hanno sempre la precedenza.
 
 | Server MCP | Quando si usa |
 |---|---|
-| `rumblingstone-tools` | i 77 tool di `scripts/tools.manifest.json` ([ADR-0030](plans/adr/ADR-0030-server-mcp-sui-tool.md)). Gira in sola lettura: i tool che scrivono canone restano bloccati (ADR-0007) |
+| `rumblingstone-tools` | i tool di `scripts/tools.manifest.json` (quanti sono lo dice `python3 scripts/tools_manifest.py --check`) ([ADR-0030](plans/adr/ADR-0030-server-mcp-sui-tool.md)). Gira in sola lettura: i tool che scrivono canone restano bloccati (ADR-0007) |
 | Canva, Fonts | immagini e tipografia (`rumblingstone-art-direction`, `rumblingstone-editoria`) |
 | Context7 | documentazione di librerie e di Typst |
 | Firecrawl | ricerche di lore e regole sul web |
@@ -422,20 +373,40 @@ il compito lo chiede, e le skill `rumblingstone-*` hanno sempre la precedenza.
 | Serena | navigazione del codice |
 
 **Spenti in questo progetto**: Gmail, Google Drive, Tavily, arxiv, bioRxiv,
-r-btw. Se un compito ne richiede uno, l'agente lo dice al DM, che lo riaccende
-con `/mcp`. Lo stesso vale per i plugin spenti a livello globale: un agente non
+r-btw. Gmail, Google Drive, Channel3, Clipkit, Mobbin, Microsoft Learn, MDN,
+Shutterstock, bioRxiv e pg-aiguide sono negati da `permissions.deny` di
+`.claude/settings.json`, che toglie i loro tool dal contesto (scelta del DM del
+2026-11-19, ADR-0140). Se un compito ne richiede uno, l'agente lo dice al DM,
+che lo riaccende con `/mcp` o togliendo la regola. I plugin dell'account che il
+repo non ha mai usato sono spenti con `enabledPlugins: false`: restano accesi
+`pdf-viewer`, `review` e `tdd`, più i nove di metodo di sviluppo (`sdd`, `sadd`,
+`engineering`, `reflexion`, `docs`, `fpf`, `ddd`, `recursive-decomposition`,
+`mcp`) riaccesi su scelta del DM (ADR-0140, punto 5). Lo stesso vale per i plugin spenti a livello globale: un agente non
 può accenderli da solo.
+
+**File generati e vendorizzati**: `.claudeignore` elenca ciò che l'agente non
+deve leggere, ma Claude Code non lo legge da solo: `scripts/claudeignore_deny.py`
+lo traduce in regole `Read(...)` di `permissions.deny` (ADR-0142), che valgono
+anche per Grep e Glob. Le scelte e come tornare indietro sono in
+`docs/how-to/GUIDA-CONFIGURAZIONE-CLAUDE.md`.
 
 ---
 
 ## Supported Agents
 
 The canonical skill source is the whole `skills/` tree (every directory with
-a `SKILL.md`; `build-skills.sh` auto-discovers them). Per-agent mirrors are
-**generated artifacts**, not committed to git (see `.gitignore`). Each
-developer/CI runs the build pipeline locally:
+a `SKILL.md`; `build-skills.sh` auto-discovers them). The one exception is the
+game-system skills (ADR-0111, L6): a skill listed by a plugin in
+`sistemi/<id>/sistema.toml` is built and synced only when that system is
+`attivi` or `rinforzo` in `sistemi.toml`; `python3 scripts/sistemi.py
+--skill-escluse` prints the skills that are skipped; skills no plugin lists
+are always built. Per-agent mirrors are **generated artifacts**, not committed
+to git (see `.gitignore`); each developer/CI builds them locally:
 
-- **Claude Code** → `.claude/skills/<skill>/` (compact.md format)
+- **Claude Code** → `.claude/skills/<skill>/` (compact.md format). Claude Code also gets THIS file
+  split into `.claude/rules/rs-*.md` by `python3 scripts/regole_claude.py`
+  (ADR-0141): each section loads only with the files it is for. Edit AGENTS.md,
+  then regenerate; `--check` fails when the two drift apart.
 - **OpenAI Codex** → `.agents/skills/<skill>/` (machine.json)
 - **GitHub Copilot** → `.github/copilot/skills/<skill>/` (compact.md)
 - **Cursor** → `.cursor/skills/<skill>/` (machine.json)
@@ -455,8 +426,7 @@ Build commands:
 
 - **Claude Code** (web + CLI): `.claude/hooks/session-start.sh` (registered
   in `.claude/settings.json`) rebuilds and deploys ALL skill mirrors at the
-  start of every session, **asynchronously**: the session starts at once
-  while the build runs in background.
+  start of every session, **asynchronously**, in background.
 - **Stale-mirror protocol (async race guard)**: the hook writes
   `.claude/.skills-sync-status` (`syncing…` → `ok <sha> <ts>` | `failed`).
   Before the FIRST campaign-content generation of a session, the agent must
@@ -465,10 +435,19 @@ Build commands:
   `./scripts/build-skills.sh && ./scripts/sync-skills.sh --no-build`, then
   continue the conversation normally. If the user declines, proceed reading
   the canonical `skills/` tree directly (always current in git).
+- **Claude Code started OUTSIDE the repo** (the project threads on claude.ai
+  start in the folder that contains the clone): `scripts/claude-progetto.sh`,
+  run by the cloud environment's setup script, writes there a short
+  `CLAUDE.md`, the repo's `.claude/settings.json` with absolute paths and the
+  `.mcp.json`, so the hook, the skills and `rumblingstone-tools` apply
+  ([ADR-0140](plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md)).
 - **Other agents / plain git users**: run `./scripts/install-git-hooks.sh`
   once; it installs a `post-merge` git hook that resyncs the mirrors after
-  every `git pull` that touches `skills/`.
+  every `git pull` that touches `skills/`, and a `pre-push` hook that runs the
+  blocking, fast CI gates (`python3 scripts/gate_locale.py --pre-push`, about
+  45 s, via pre-commit when installed;
+  [ADR-0143](plans/adr/ADR-0143-i-gate-veloci-girano-prima-del-push.md)). In
+  Claude Code cloud sessions the SessionStart hook installs both.
 
-Why mirrors aren't committed: they are 6× the source size (~3MB), drift over
-time, and any agent that needs them can regenerate deterministically from
-`skills/`. Treat `skills/` as the only thing humans edit.
+Treat `skills/` as the only thing humans edit; mirrors regenerate
+deterministically from it.

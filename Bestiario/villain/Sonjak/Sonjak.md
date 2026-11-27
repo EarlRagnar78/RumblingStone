@@ -6,6 +6,9 @@
 
 ```statblocco
 gs: 14
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 22
 pf: 91
 ts: Temp +11, Rifl +9, Vol +14
@@ -17,9 +20,10 @@ velocita: 9 m
 **Status**: [DA SCRIVERE — la scheda non dice in che stato è oggi]
 **Location**: [DA SCRIVERE — la scheda dice che comanda i campi drow sotto la Cannath Vale e ha un campo base nel Sottosuolo, non dove si trova adesso]
 **Motivation**: → §Cosa vuole (Obiettivo Primario, Secondario e Nascosto)
-**CR**: 14 (drow con 13 livelli di classe: livello +1) | **Race/Class**: Drow (Elfo del Sottosuolo — Umanoide Medio); Chierico 13 di Lolth (SRD; i tre livelli di «Matrona Drow, equivalente a Guerra Sacra» non sono una classe pubblicata e la scheda li conta già come livelli da chierico negli incantesimi); Legale Malvagio
+**CR**: 14 (drow con 13 livelli di classe: livello +1) | **Race/Class**: Drow (Elfo del Sottosuolo — Umanoide Medio); Chierico 13 di Lolth (SRD; i tre livelli di «Matrona Drow, equivalente a Guerra Sacra» non sono una classe pubblicata e la scheda li conta già come livelli da chierico negli incantesimi); Neutrale Malvagio
 
-> ⚠ Prerequisito: un chierico sta entro un passo dall'allineamento del suo dio, e Lolth è Caotica Malvagia: una Legale Malvagia non può esserne chierica. Tenuta così, perché è nella scheda; la correzione più leggera è Neutrale Malvagia. Quattro domini (Male, Magia, Ragno, Oscurità) contro i due del chierico SRD: tenuti tutti e quattro come scelta del DM; Ragno e Oscurità sono domini dei Reami [Private source — Forgotten Realms Campaign Setting]. PF1e: chierico con l'archetipo Separatista (APG) — non serve: dà un dominio fuori lista, non due in più.
+> Un chierico sta entro un passo dall'allineamento del suo dio, e Lolth è Caotica Malvagia: Sonjak è Neutrale Malvagia, e ha i due domini del chierico SRD, Male e Ragno [Private source — Forgotten Realms Campaign Setting] (Lolth: Caos, Distruzione, Male, Inganno nel Deities and Demigods, più Drow e Ragno nei Reami; verificato su dnd.arkalseif.info il 2026-11-19) (scelta del DM sulla card del 2026-11-19). *Ragnatela* non è un incantesimo da chierico né del dominio del Ragno: al 2° c'è *evocare sciame*.
+<!-- storico: fino al 2026-11-19 Legale Malvagia «tenuta così, perché è nella scheda», quattro domini (Male, Magia, Ragno, Oscurità) «come scelta del DM», e *web* fra gli incantesimi di 2° --> PF1e: chierico con l'archetipo Separatista (APG) — non serve: dà un dominio fuori lista, non due in più.
 **Countdown Clock:** 4/8 (vedi `campaign/state.md`)
 **Key stats**: → §In combattimento. I numeri stanno in questa scheda.
 
@@ -143,7 +147,7 @@ dominato e maledetto dai drow (morte negata) — come strumento corrotto.
 
 ### Incantesimi (Chierico 13, con domini Lolth)
 
-**Domini:** Malvagio, Magia, Ragno (Spider), Oscurità
+**Domini:** Male, Ragno (Spider)
 
 Chierico 13 con Sag 20: CD 15 + livello dell'incantesimo.
 
@@ -151,7 +155,7 @@ Chierico 13 con Sag 20: CD 15 + livello dell'incantesimo.
 |:---:|:---:|:---|
 | 0 | 6 | *detect magic, read magic, guidance, inflict minor wounds* |
 | 1 | 7+1 | *protection from good, divine favor, obscuring mist, bane, command* |
-| 2 | 6+1 | *hold person, silence, darkness, web, desecrate* |
+| 2 | 6+1 | *hold person, silence, darkness, summon swarm, desecrate* |
 | 3 | 5+1 | *prayer, dispel magic, bestow curse, blindness/deafness, contagion* |
 | 4 | 5+1 | *freedom of movement, unholy blight, poison, divine power* |
 | 5 | 4+1 | *flame strike (acido), insect plague, slay living, true seeing* |

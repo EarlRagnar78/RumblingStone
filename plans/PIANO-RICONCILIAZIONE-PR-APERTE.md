@@ -1,6 +1,6 @@
 # PIANO — Riconciliazione delle PR aperte e dei piani
 
-> **Stato**: 🟡 **in corso** · **Aperto**: 2026-09-04
+> **Stato**: ✅ **completo** (chiuso come superato il 2026-10-31, D6 di RECUPERO) · **Aperto**: 2026-09-04
 > **Richiesta-fonte (DM, 2026-09-04)**: *«controlla le vecchie PR se sono ancora
 > valide e se sono state superate […] fai la riconciliazione di PR e piani»*, poi
 > *«#109 analizza le modifiche […] se le modifiche sono valide fammi le domande
@@ -103,9 +103,9 @@ l'**omissione nell'instradamento**, e quello lo chiude il gate.
 
 ---
 
-## Lotto R3 — la legenda funzionale `[✅ recuperata, ⬜ non risolta]`
+## Lotto R3 — la legenda funzionale `[✅ recuperata e risolta: ⛰ da ADR-0043, ⬛ da ADR-0042]`
 
-**Fonte**: PR #72, `docs/guides/LEGENDA-FUNZIONALE-SPEC.md`.
+**Fonte**: PR #72, `docs/reference/LEGENDA-FUNZIONALE-SPEC.md`.
 
 Il documento è stato recuperato e **ri-verificato sui numeri di oggi**, non
 ricopiato: parte dei difetti che elencava sono già stati chiusi, e ne è emerso
@@ -114,8 +114,8 @@ uno nuovo che nella #72 non c'era.
 | Simbolo | Stato oggi |
 |---|---|
 | 🗿 🗼 🏛 | ✅ già corretti dopo la #72 |
-| ⛰ «Montagne / creste rocciose» | ⬜ **2.415 celle in 16 file** — ancora aperto |
-| ⬛ «Struttura (tenda, edificio, dais)» | 🔴 **8.205 celle in 21 file** — **nuovo**: simbolo sovraccarico, tre significati diversi sotto un glifo |
+| ⛰ «Montagne / creste rocciose» | ✅ muro da [ADR-0043](adr/ADR-0043-le-montagne-sono-muri-e-nessun-master-esce-dal-controllo.md) (`legend.yaml`, `function.blocks_movement` e `blocks_sight`); erano 2.415 celle in 16 file |
+| ⬛ «Struttura (tenda, edificio, dais)» | ✅ diviso in tre glifi da [ADR-0042](adr/ADR-0042-tre-glifi-per-tre-cose.md) (⬛ edificio, ⛺ tenda, 🔳 dais); erano 8.205 celle in 21 file |
 | 🪨 | ✅ correttamente **non** un muro (copertura parziale) |
 
 ⚠️ ⬛ **non si chiude con una riga in `WALL_SYMS`.** Un dais non è un muro, una
@@ -332,6 +332,10 @@ stata scritta nel thread della PR, non solo qui: chi la ritrova fra sei mesi
 deve poter leggere **perché** è chiusa senza dover cercare il piano.
 
 ---
+
+## Chiusura (2026-10-31)
+
+Chiuso come **superato** con D6 di [RECUPERO](PIANO-RECUPERO-DECISIONI-E-REVISIONI-INCOMPIUTE-2026-10.md), scelta del DM. Dove sta ogni lotto: R1, R2 e R9 fatti qui; R3 risolto da ADR-0042 e ADR-0043 (la casella era rimasta ⬜ dopo le due decisioni); R6, R7 e R8 decisi il 2026-09-04 (sotto); il seguito delle PR abbandonate è in [RIPRESA-PR](PIANO-RIPRESA-PR-ABBANDONATE.md).
 
 ## Cosa resta da decidere al DM
 

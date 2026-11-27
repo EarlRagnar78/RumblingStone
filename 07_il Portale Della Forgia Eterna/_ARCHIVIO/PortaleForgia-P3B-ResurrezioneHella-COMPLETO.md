@@ -67,7 +67,7 @@
 - Classe di Hella per il canone: **Dream Dwarf Ranger 1 / Druida 12** (CL 12),
   non "Druida 13°" — vedi state.md §1 e l'errata **B5**.
 - ✅ **Compagno animale (deciso dal DM 2026-07-03)**: l'**animal companion**
-  di Hella è **DURIK** — cane maschio, **riforgiato** in Guardiano di Pietra e
+  di Hella è **DURIK** — cane maschio, **riforgiato** in Guardiano di Pietra ed
   **evocato dal 3° seme della Collana dei Semi Eterni** (Magical Beast, DR
   5/adamantio, Tremorsense, legame telepatico entro 18 m). Il **rinoceronte**
   che appare in gioco è **Hella stessa che usa la Forma Selvatica (Wild Shape)

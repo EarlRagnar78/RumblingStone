@@ -1,212 +1,206 @@
 ---
 name: rumblingstone-mapmaking
 description: >
-  RumblingStone tactical map pipeline: create, edit, and render battle maps at
-  AP quality (Red Hand of Doom / Paizo benchmark). Use for "mappa", "battle
-  map", "griglia tattica", "battlemap", "render SVG", "nuova mappa", "import
-  watabou", "hero map", "mappa regionale", "mappa città", "mappa esercito",
-  "assedio", "accampamento", "coordinate", "JSON mappa", "contratto JSON",
+  Pipeline delle mappe tattiche di RumblingStone (battle map): crea, modifica e
+  rende le mappe a qualità AP (riferimento Red Hand of Doom / Paizo). Copre le
+  3 modalità di mappa, il master a griglia emoji, il contratto JSON, la
+  legenda, il renderer a pergamena, l'export VTT e la hero map ComfyUI
+  facoltativa. Da usare per "mappa", "battle map", "griglia tattica",
+  "battlemap", "render SVG", "nuova mappa", "import watabou", "hero map",
+  "mappa regionale", "mappa città", "mappa esercito", "assedio",
+  "accampamento", "coordinate", "JSON mappa", "contratto JSON",
   "compile_map_json", "export UVTT", "uvtt", "dd2vtt", "Foundry", "Roll20",
   "muri e luci", "mappa cinematografica", "handout", "audit mappe", "atlante
   mappe", "mappe definitive", "parity pass mappe", "consolidamento mappe",
-  "MAPPE-DEFINITIVO", "posizionamenti canonici", files *MAPPE* or
-  *Ultra-Clear*, and render_map_svg, import_watabou, compile_map_json,
-  export_uvtt, validate_maps. Covers the 3 map modes, the emoji-grid master,
-  the JSON contract, the legend, the parchment renderer, VTT export and the
-  optional ComfyUI hero map.
+  "MAPPE-DEFINITIVO", "posizionamenti canonici", per i file *MAPPE* o
+  *Ultra-Clear*, e per render_map_svg, import_watabou, compile_map_json,
+  export_uvtt, validate_maps.
 ---
 
-# RumblingStone — Mapmaking Pipeline
+# RumblingStone — Pipeline delle mappe
 
-> 📘 **Guida passo-passo per umani** (quale modalità scegliere, comandi, export
-> VTT, troubleshooting): [`docs/guides/GUIDA-MAPPE.md`](../../docs/guides/GUIDA-MAPPE.md).
-> Questa skill è la reference operativa per gli agenti.
+Ogni mappa tattica è una **griglia emoji in markdown** (il MASTER: leggibile,
+confrontabile, giocabile) resa in SVG **«pergamena»** da stampa da
+`scripts/render_map_svg.py` (terreni organici, ambient occlusion, oggetti
+vettoriali originali, griglia da 1,5 m/quadretto, legenda, barra di scala). Gli
+SVG in `rendered/`, accanto al master, sono **generati: mai a mano**; la CI
+(`scripts/validate_maps.py`) li vuole deterministici, identici byte per byte.
 
-Every tactical map of this campaign is an **emoji grid in markdown** (the
-MASTER: human-readable, diffable, playable at the table) rendered to a
-print-quality **"pergamena" SVG** by `scripts/render_map_svg.py` (organic
-terrain regions, ambient occlusion, original vector props, 1,5 m/quadretto
-grid, legend, scale bar). SVGs live in `rendered/` next to their master and
-are **generated artifacts — never hand-edit them**. CI
-(`scripts/validate_maps.py`) enforces byte-identical, deterministic renders.
+## Quando no
 
-## Golden rules
+Impaginare il volume: `rumblingstone-editoria` §4 (qui solo colonna o A4,
+regola 7). Le altre forme d'uscita: `editoria` · `edizione` · `art-direction`
+(riga L3 di `AGENTS.md`).
 
-1. The markdown grid is the master; regenerate the SVG after EVERY edit:
-   `python3 scripts/render_map_svg.py <file.md>`
-2. Scale is **1,5 m/quadretto**, declared in the file header.
-3. Use ONLY the universal legend symbols (`references/legenda-universale.md`);
-   `scripts/legend.yaml` is the source of truth (ADR-0048): renderer, UVTT
-   export, importer and the Blender chain all derive from it.
-   Local extra symbols must be declared in the file; they render with the
-   Noto Emoji SVG from `scripts/emoji-noto/` (ADR-0085), so they look the same
-   on every machine — run `python3 scripts/build_emoji_noto.py` after adding
-   one. A concept becomes universal only when it means the same thing in every
-   map that uses it.
-4. Every map ships with the three companion blocks (Ambiente / Tattiche /
-   Evoluzione) per `campaign/templates/mappa-tattica-template.md`.
-5. Art is procedural/in-house by default. A third-party file enters a map
-   only under ADR-0085: a licence that allows redistribution without imposing
-   itself (CC0, CC BY, CC BY-NC, Apache-2.0, OFL, MIT — never CC BY-SA or GPL),
-   with the licence and a `CREDITS.md` (author, changes) in its folder. No
-   tracing of third-party art. The map text uses the volumes' fonts, embedded
-   (`scripts/fonts/mappe/`, `build_font_mappe.py`).
-   **Richer maps go through CC0 only** (DM, 2026-10-09, D13-D15 of
-   RESA-ASSET): the texture theme fills the terrains with Poly Haven CC0
-   textures (`build_texture_cc0.py`, `scripts/texture-cc0/`), committed in
-   `rendered-texture/` next to the parchment and checked by `validate_maps`.
-   In that theme the props become webp tiles rendered top-down in Blender from
-   CC0 3D models (Poly Haven; Quaternius Fantasy Props MegaKit **Standard**
-   only), one lock of camera, sun and footprint for the whole set
-   (`build_oggetti_cc0.py`, `scripts/oggetti-cc0/`, D17-D22); the models stay
-   on the DM's machine. Fire, effects, doors, windows, grates, bars, markers,
-   creatures and stairs stay glyphs (`render.tessera_cc0: false` in `legend.yaml`); where no tile exists the
-   glyph stays. The parchment keeps every glyph. **A substitution enters only
-   if measured and preferred** (ADR-0086, D23): `misura_resa.py` (contour
-   contrast WCAG 1.4.11, SSIM to the nearest symbol, ΔE2000 to the house
-   palette) must not get worse, and the DM must choose it on the choice page
-   (`misura_resa.py coppie [--anche DIR]` for objects, `terreni-scelta` for
-   terrain textures, then `voti`): every box is labelled, identical options are
-   dropped and said, «nessuna va bene» throws the image away for that symbol and
-   «non vedo differenze» keeps the cheaper one; `misura_resa.py --check` in CI
-   blocks any rendering measure that drops more than 5%, and `misura_resa.py
-   tara` retunes halo and per-terrain veil of the texture theme. 2-Minute Tabletop is an optional extra for
-   the DM's own table: the packs live outside git (`asset-esterni/`,
-   `dm.py asset installa <zip> --categoria base|premium`), and a **premium**
-   pack (Plus, Patron Packs, tokens, even if paid for) has no licence beyond
-   the table — `dm.py asset controlla` fails on it (GUIDA-MAPPE §5.1-§5.2).
-   **The «pianta» theme** (ADR-0102) draws the same grid in the style of the
-   city plans: hatched rock with jagged edges (≤ 0.24 cell, walkable cells
-   unchanged), coursed paving, a «Luoghi» panel from the `@mark` lines and the
-   legend below. It is adopted one folder at a time: where `rendered-pianta/`
-   exists, `validate_maps` wants it complete and aligned (ARC-07 since
-   2026-10-23). The canonical plans of Rethmar, Dauth and Channathgate come
-   from `scripts/piante/` (shapely, requirements-dev): change the program,
-   never the SVG, then `dm.py maps citta <città>`; `--check` compares bytes.
-6. **Fidelity contract** (piano RENDER-MAPPE-FEDELTÀ, 2026-07-23): side
-   annotations on a grid row start after **≥3 spaces** (or a detached `│`
-   preceded by ≥2 spaces, or box-drawing) — the parser never reads them as
-   cells, even if they contain emoji. The header line `N col × M righe · S m`
-   is a **validated declaration**: mismatches warn (`--strict` fails) and the
-   declared scale drives the SVG subtitle/scale-bar. A `<!-- render: none -->`
-   comment right before the fence marks schematic/diagram maps that must NOT
-   be rendered. The in-fence `LEGENDA · 🧲 descrizione · …` line is parsed
-   automatically: local symbols get their real description in the SVG legend
-   (universal SYMBOLS keep their canonical text).
-7. **A map inside a booklet either fits a column or gets an A4 page**
-   (DM, 2026-09-25). A column holds 48 cells, an A4 one-column page 110
-   (an emoji counts 2.5). Put map sections in an appendix between
-   `<!-- pagina: una-colonna -->` and `<!-- /pagina -->`; keep every grid
-   line, side annotation and `LEGENDA` line within 110 cells so it prints at
-   full 9 pt. The typst exporter enforces the column/A4 split on its own
-   (`rumblingstone-editoria` §4, point 4), but a 180-cell legend line still
-   shrinks the whole map: shorten the annotation, never the grid.
-   **The rendered map in a booklet is always the «pianta» print mode**
-   (ADR-0106, DM 2026-10-30): every `rendered/` has a `rendered-stampa-pianta/`
-   twin with the map and its `_legenda` (`render_map_svg.py --tutti-i-master
-   --tema pianta --stampa`), and a booklet master points at both, each
-   followed by `<!-- nuova-pagina -->`. Text never goes below 7.4 pt, no
-   filters, legend entries whole. `validate_maps` flags missing or stale
-   files, `validate_booklets` stops a parchment SVG or a map without legend.
-   The ASCII grid of a renderable map is never printed in a booklet: it stays
-   in the master between `<!-- apparato -->` and `<!-- /apparato -->`, after
-   the plan, and `validate_booklets` stops a printed grid. A view that is
-   not a grid (a cross-section, a not-to-scale overview) becomes a scheme in
-   the plan style, generated by `scripts/render_schemi.py` (`--check` in CI);
-   an ASCII timeline or flow becomes a table. `validate_booklets` stops any
-   box-drawing diagram printed outside the apparatus.
-8. **Hero map from a service (Canva AI), until the local ComfyUI pass is
-   tested** (DM, 2026-09-25). Canva AI paints **only** the player-facing hero
-   map. The prompt is written **from the map's JSON** (the Mode 3 contract, or
-   the UVTT export for an emoji master): size ratio, terrain, rooms, doors and
-   accesses in words, north up. The tactical truth stays the grid master, its
-   JSON, the SVG, `validate_maps` and the UVTT. A hero map that moves a door, a
-   room or an access against the SVG is **discarded**, not kept because it
-   looks good. **No AI generator draws the grid**: if the table needs one, it
-   is laid over from the SVG. Procedure: `references/hero-map-comfyui.md`,
-   «Finché ComfyUI non è collaudato».
-9. **A map is done when it plays, not when it renders** (DM, 2026-10-08,
-   ADR-0082). Every new or redrawn tactical map passes
-   `scripts/collaudo_mappe.py` with zero E-class findings (or a written
-   `@deroga` with its reason), declares `@north`, links every staircase or
-   trapdoor to its twin with `@collega`, and then goes to the **cold map
-   checker** role. Doors, grates and windows sit in a wall; secret doors never
-   appear on the players' version (`@vista giocatori`). A closure takes the
-   axis of its wall from its four neighbours (ADR-0083): the renderer turns the
-   glyph and the UVTT export turns the portal from that same answer, so you
-   never draw the direction, you only write `@verso <cell> ; NS|EO` where the
-   checker says the neighbours are ambiguous. The checker needs `tcod`
-   (`pip install -r requirements-dev.txt`, ADR-0084). Use the symbol set of
-   `legend.yaml` (doors by type, bars, stairs up/down, cave floor, shallow
-   water, sewer, debris, furniture) before inventing a local symbol.
-   Procedure and rubric: `references/collaudo-mappe.md`.
-   Then `scripts/qualita_mappe.py` measures how good it is against the quality
-   standard (ADR-0098): prepare in the order function, flow, scale, tactics;
-   exterior, settlement and strategic maps declare `@quota` and `@dislivello`
-   (and `@luogo` when another map shows the same spot). Rules, thresholds and
-   sources: `references/standard-qualita-mappe.md`.
+## Fonti
 
-## Domain → File
+Guida passo passo per umani (modalità, comandi, export VTT, problemi):
+[`docs/how-to/GUIDA-MAPPE.md`](../../docs/how-to/GUIDA-MAPPE.md); questa skill
+è la reference operativa per gli agenti.
 
-## Le 3 modalità di mappa (quale pipeline)
-
-Tutte usano lo stesso formato MASTER (griglia emoji); cambia la *sorgente*:
-
-1. **Tattica standard**: griglia scritta a mano o dungeon importato
-   (`import_watabou.py`) → `render_map_svg.py`.
-2. **Cinematografica / scenica**: l'LLM fa il *prompt engineer*; immagine
-   d'atmosfera con ComfyUI locale (`scripts/comfyui-local/`,
-   `references/hero-map-comfyui.md`), banca prompt in `campaign/ai-media-prompts/`.
-3. **Tattica con strutture ed eserciti**: l'LLM emette **solo JSON rigido**
-   (`scripts/schemas/tactical_map.schema.json`), `compile_map_json.py` valida e
-   dipinge la griglia. Un LLM non disegna MAI arte ASCII di mappe.
-
-Dettaglio e "system prompt" per l'LLM: `references/tre-modalita-mappe.md`.
-
-### Le tavole di supporto: quando dall'alto non basta
-
-Le tre modalità sono tutte **zenitali**: si guarda il luogo da sopra. È la vista
-giusta per muovere miniature, ed è quella sbagliata per tre domande che al tavolo
-arrivano sempre:
-
-| Domanda | Vista che risponde |
-|---|---|
-| «Cosa vediamo arrivando?» | **veduta** — prospettica, dal punto da cui i PG arrivano davvero (dal mare, dalla strada, dal crinale) |
-| «Quanto è alto? Si può scendere di lì?» | **profilo laterale** — sezione con **quote**, e le vie verticali segnate |
-| «Quanto ci mettiamo?» | il profilo con i **tempi di percorrenza** annotati sui tratti, non solo le distanze |
-
-**La regola**: una tavola di supporto si aggiunge **quando risponde a una domanda
-che la griglia non può**, non per completezza. Tre viste dello stesso cortile sono
-tre file da tenere allineati; una veduta di un promontorio che i PG raggiungono in
-barca fa risparmiare cinque minuti di descrizione a ogni gruppo.
-
-Si numerano insieme alle altre nella stessa serie, con una lettera: `Tavola I`
-(zenitale), `Tavola I-a` (veduta), `Tavola I-b` (profilo). Così restano
-riconoscibili come **lo stesso luogo visto in un altro modo**, e non come mappe
-diverse.
-
-⚠️ **Non sostituiscono la griglia** e non hanno coordinate tattiche: nessuno ci
-muove sopra una miniatura, quindi niente quadretti e niente legenda tattica.
-Restano SVG originali come il resto (ADR-0005).
-Esemplare: `10-stand-alone/L'abbazia Della Rotta Sicura/` — Tavola I-a «il
-promontorio, veduta dal mare» e Tavola I-b «profilo laterale: quote, distanze e
-tempi».
-
-## Domain → File
-
-| Task | Reference |
+| Compito | Reference |
 |---|---|
 | **Audit/consolidamento mappe di un arco** (atlante definitivo, fonti canoniche, add-on DM, render+verifica) | `references/audit-mappe-workflow.md` |
 | Le 3 modalità, contratto JSON, system prompt LLM | `references/tre-modalita-mappe.md` |
 | **Migrare un ultra-clear esistente → bozza JSON + report conflitti** (`import_ultraclear.py`) | `references/import-ultraclear.md` |
-| Full workflow: new map, edit, render, validate, dungeon import, overland/city | `references/workflow-mappe.md` |
-| Universal legend: every terrain/unit/prop symbol with meaning | `references/legenda-universale.md` |
-| **Collaudo**: does the map play? the checker tool, the `@` directives, the cold map-checker role | `references/collaudo-mappe.md` |
-| **Quality standard**: is the map plausible and good? measurable rules with sources, elevation and context, real measures of fortresses and cities, the score | `references/standard-qualita-mappe.md` |
-| Direzione artistica handout/splash (convenzioni + confini IP) | `references/stile-illustrazione-handout.md` |
-| Optional local "hero map" painterly pass (ComfyUI + ControlNet + MCP), and the Canva AI hero map until ComfyUI is tested | `references/hero-map-comfyui.md` |
+| Flusso completo: mappa nuova, modifica, render, validazione, import di dungeon, regionale/città | `references/workflow-mappe.md` |
+| Legenda universale: ogni simbolo di terreno, unità, oggetto, col significato | `references/legenda-universale.md` |
+| **Collaudo**: la mappa si gioca? lo strumento, le direttive `@`, il ruolo del collaudatore a freddo | `references/collaudo-mappe.md` |
+| **Standard di qualità**: la mappa è plausibile e buona? regole misurabili con fonti, quota e contesto, misure vere di fortezze e città, il punteggio | `references/standard-qualita-mappe.md` |
+| Direzione artistica di handout/splash (convenzioni + confini IP) | `references/stile-illustrazione-handout.md` |
+| «Hero map» pittorica locale facoltativa (ComfyUI + ControlNet + MCP), e quella Canva AI finché ComfyUI non è collaudato | `references/hero-map-comfyui.md` |
 
-## Quick commands
+## Regole d'oro
+
+1. Il master è la griglia markdown; dopo OGNI modifica rigenera l'SVG:
+   `python3 scripts/render_map_svg.py <file.md>`
+2. Scala **1,5 m/quadretto**, dichiarata nell'intestazione del file.
+3. SOLO i simboli della legenda universale (`references/legenda-universale.md`);
+   `scripts/legend.yaml` è la fonte di verità (ADR-0048) per renderer, export
+   UVTT, importer e catena Blender. Un simbolo locale si dichiara nel file e si
+   rende con l'SVG Noto Emoji di `scripts/emoji-noto/` (ADR-0085), uguale su ogni
+   macchina: dopo averlo aggiunto, `python3 scripts/build_emoji_noto.py`.
+   Diventa universale solo se significa la stessa cosa in ogni mappa.
+4. Ogni mappa esce con i tre blocchi Ambiente / Tattiche / Evoluzione di
+   `campaign/templates/mappa-tattica-template.md`.
+5. **Arte procedurale/interna per default.** Un file di terzi entra solo
+   secondo ADR-0085: licenza che permette la ridistribuzione senza imporsi
+   (CC0, CC BY, CC BY-NC, Apache-2.0, OFL, MIT; mai CC BY-SA o GPL), con licenza
+   e `CREDITS.md` (autore, modifiche) nella sua cartella. Niente ricalco. Il
+   testo delle mappe usa i font dei volumi, incorporati (`scripts/fonts/mappe/`,
+   `build_font_mappe.py`).
+   **Le mappe più ricche passano solo per CC0** (D13-D15 di RESA-ASSET): il tema
+   texture riempie i terreni con texture CC0 di Poly Haven
+   (`build_texture_cc0.py`, `scripts/texture-cc0/`), committate in
+   `rendered-texture/` accanto alla pergamena e controllate da `validate_maps`.
+   Gli oggetti diventano tessere webp rese dall'alto in Blender da modelli 3D CC0
+   (Poly Haven; Quaternius Fantasy Props MegaKit solo **Standard**), con un solo
+   blocco di camera, sole e impronta per il set (`build_oggetti_cc0.py`,
+   `scripts/oggetti-cc0/`, D17-D22); i modelli restano sulla macchina del DM.
+   Fuoco, effetti, porte, finestre, grate, sbarre, segnalini, creature e scale
+   restano glifi (`render.tessera_cc0: false` in `legend.yaml`), e così ogni
+   simbolo senza tessera; la pergamena tiene ogni glifo. **Una sostituzione
+   entra solo se misurata e preferita** (ADR-0086, D23): `misura_resa.py`
+   (contrasto di contorno WCAG 1.4.11, SSIM col simbolo più vicino, ΔE2000 dalla
+   palette di casa) non peggiora, e il DM la sceglie nella pagina di scelta
+   (`misura_resa.py coppie [--anche DIR]` per gli oggetti, `terreni-scelta` per
+   le texture dei terreni, poi `voti`): riquadri etichettati, opzioni identiche
+   tolte e dette, «nessuna va bene» butta l'immagine per quel simbolo, «non vedo
+   differenze» tiene la più economica. `misura_resa.py --check` in CI blocca
+   ogni misura di resa che cala più del 5%; `misura_resa.py tara` ritara alone e
+   velo per terreno del tema texture. 2-Minute Tabletop è un extra facoltativo
+   per il solo tavolo del DM, fuori da git (`asset-esterni/`,
+   `dm.py asset installa <zip> --categoria base|premium`); un pacchetto **premium** (Plus,
+   Patron Packs, token, anche pagati) non ha licenza oltre il tavolo e
+   `dm.py asset controlla` fallisce (GUIDA-MAPPE §5.1-§5.2).
+   **Il tema «pianta»** (ADR-0102) disegna la griglia nello stile delle piante di
+   città: roccia tratteggiata a bordi frastagliati (≤ 0.24 cella, celle
+   calpestabili invariate), lastricato a corsi, pannello «Luoghi» dalle righe
+   `@mark`, legenda sotto. Si adotta per cartella: dove esiste `rendered-pianta/`,
+   `validate_maps` lo vuole completo e allineato (ARC-07 lo ha). Le piante
+   canoniche di Rethmar, Dauth e Channathgate escono da `scripts/piante/`
+   (shapely, requirements-dev): si cambia il programma, mai l'SVG, poi
+   `dm.py maps citta <città>`; `--check` confronta i byte.
+6. **Contratto di fedeltà** (piano RENDER-MAPPE-FEDELTÀ): le annotazioni a lato
+   di una riga di griglia cominciano dopo **≥3 spazi** (o un `│` staccato
+   preceduto da ≥2 spazi, o box-drawing): il parser non le legge mai come celle,
+   neanche con emoji. L'intestazione `N col × M righe · S m` è una
+   **dichiarazione validata**: le discordanze avvisano (`--strict` fallisce) e la
+   scala dichiarata guida sottotitolo e barra di scala. `<!-- render: none -->`
+   subito prima del fence marca schemi/diagrammi da NON rendere. La riga
+   `LEGENDA · 🧲 descrizione · …` nel fence si legge da sola: i simboli locali
+   hanno la loro descrizione nella legenda SVG (i SYMBOLS universali tengono il
+   testo canonico).
+7. **Una mappa in un volume o sta in una colonna o prende una pagina A4.** Una
+   colonna tiene 48 celle, una pagina A4 a una colonna 110 (un'emoji conta 2.5).
+   Le sezioni di mappa vanno in un'appendice fra `<!-- pagina: una-colonna -->`
+   e `<!-- /pagina -->`; ogni riga di griglia, annotazione e riga `LEGENDA` sta
+   entro 110 celle, per stampare a 9 pt pieni. L'esportatore typst divide da
+   solo colonna/A4 (`rumblingstone-editoria` §4, punto 4), ma una riga di
+   legenda da 180 celle rimpicciolisce tutta la mappa: accorcia l'annotazione,
+   mai la griglia.
+   **La mappa resa in un volume è sempre la stampa «pianta»** (ADR-0106): ogni
+   `rendered/` ha il gemello `rendered-stampa-pianta/` con la mappa e la sua
+   `_legenda` (`render_map_svg.py --tutti-i-master --tema pianta --stampa`), e
+   il master del volume punta a entrambe, ciascuna seguita da
+   `<!-- nuova-pagina -->`. Testo mai sotto 7.4 pt, niente filtri, voci di
+   legenda intere. `validate_maps` segnala file mancanti o vecchi;
+   `validate_booklets` ferma un SVG pergamena, una mappa senza legenda, una
+   griglia stampata e ogni diagramma box-drawing stampato fuori dall'apparato.
+   La griglia ASCII di una mappa rendibile non si stampa mai: resta nel master
+   fra `<!-- apparato -->` e `<!-- /apparato -->`, dopo la pianta. Una vista che
+   non è una griglia (sezione, panoramica fuori scala) diventa uno schema in
+   stile pianta da `scripts/render_schemi.py` (`--check` in CI); una linea del
+   tempo o un flusso ASCII diventa una tabella.
+8. **Hero map da un servizio (Canva AI), finché la passata ComfyUI locale non è
+   collaudata.** Canva AI dipinge **solo** la hero map per i giocatori, con il
+   prompt scritto **dal JSON della mappa** (contratto della Modalità 3, o export
+   UVTT di un master emoji): proporzioni, terreno, stanze, porte e accessi a
+   parole, nord in alto. La verità tattica resta master, JSON, SVG,
+   `validate_maps` e UVTT: una hero map che sposta una porta, una stanza o un
+   accesso rispetto all'SVG si **butta**, anche se è bella. **Nessun generatore
+   AI disegna la griglia**: se serve, si sovrappone dall'SVG. Procedura:
+   `references/hero-map-comfyui.md`, «Finché ComfyUI non è collaudato».
+9. **Una mappa è fatta quando si gioca, non quando si rende** (ADR-0082). Ogni
+   mappa tattica nuova o ridisegnata passa `scripts/collaudo_mappe.py` con zero
+   rilievi di classe E (o `@deroga` scritta con la ragione), dichiara
+   `@north`, collega ogni scala o botola alla gemella con `@collega`, e poi va
+   al **collaudatore a freddo**. Porte, grate e finestre stanno in un muro; le
+   porte segrete mai nella versione giocatori (`@vista giocatori`). Una chiusura
+   prende l'asse del muro dai quattro vicini (ADR-0083), e da lì il renderer
+   gira il glifo e l'export UVTT il portale: la direzione non si disegna, si
+   scrive `@verso <cell> ; NS|EO` solo dove il collaudo trova i vicini
+   ambigui. Il collaudo vuole `tcod` (`pip install -r requirements-dev.txt`, ADR-0084).
+   Prima di un simbolo locale, quelli di `legend.yaml` (porte per tipo, sbarre,
+   scale su/giù, pavimento di grotta, acqua bassa, fogna, detriti, mobili).
+   Procedura e rubrica: `references/collaudo-mappe.md`. Poi
+   `scripts/qualita_mappe.py` la misura contro lo standard di qualità
+   (ADR-0098): si prepara nell'ordine funzione, flusso, scala, tattica; le mappe
+   d'esterno, d'insediamento e strategiche dichiarano `@quota` e `@dislivello`
+   (e `@luogo` se un'altra mappa mostra lo stesso punto).
+   Regole, soglie e fonti: `references/standard-qualita-mappe.md`.
+
+## Procedura
+
+1. **Scegli la modalità**: stesso MASTER a griglia emoji, *sorgente* diversa
+   (dettaglio e «system prompt» dell'LLM: `references/tre-modalita-mappe.md`):
+   - **Tattica standard**: griglia scritta a mano o dungeon importato
+     (`import_watabou.py`) → `render_map_svg.py`.
+   - **Cinematografica / scenica**: l'LLM fa il *prompt engineer*; atmosfera
+     con ComfyUI locale (`scripts/comfyui-local/`,
+     `references/hero-map-comfyui.md`), banca prompt in
+     `campaign/ai-media-prompts/`.
+   - **Tattica con strutture ed eserciti**: l'LLM emette **solo JSON rigido**
+     (`scripts/schemas/tactical_map.schema.json`), `compile_map_json.py` valida
+     e dipinge la griglia. Un LLM non disegna MAI arte ASCII di mappe.
+2. Scrivi il master (regole 2-4, 6) e rendi (regola 1).
+3. Collauda e misura (regola 9).
+4. Dove servono: temi e stampa (regole 5, 7), hero map (regola 8), tavole di
+   supporto (sotto).
+
+### Le tavole di supporto: quando dall'alto non basta
+
+Le tre modalità sono **zenitali**: giuste per le miniature, sbagliate per tre
+domande che arrivano sempre:
+
+| Domanda | Vista che risponde |
+|---|---|
+| «Cosa vediamo arrivando?» | **veduta**: prospettica, dal punto da cui i PG arrivano davvero (dal mare, dalla strada, dal crinale) |
+| «Quanto è alto? Si può scendere di lì?» | **profilo laterale**: sezione con **quote**, e le vie verticali segnate |
+| «Quanto ci mettiamo?» | il profilo con i **tempi di percorrenza** annotati sui tratti, non solo le distanze |
+
+**La regola**: una tavola di supporto si aggiunge **quando risponde a una
+domanda che la griglia non può**, non per completezza: tre viste dello stesso
+cortile sono tre file da allineare, una veduta del promontorio raggiunto in
+barca risparmia cinque minuti di descrizione a ogni gruppo. Stessa serie, con
+una lettera: `Tavola I` (zenitale), `Tavola I-a` (veduta), `Tavola I-b`
+(profilo), cioè **lo stesso luogo visto in un altro modo**. ⚠️ **Non
+sostituiscono la griglia**: niente coordinate, quadretti o legenda tattica.
+Restano SVG originali (ADR-0005). Esemplare: `10-stand-alone/L'abbazia Della Rotta Sicura/`,
+Tavola I-a «il promontorio, veduta dal mare» e Tavola I-b «profilo laterale:
+quote, distanze e tempi».
+
+## Comandi
 
 ```bash
 python3 scripts/render_map_svg.py <file.md>        # render all maps in file
@@ -230,3 +224,29 @@ python3 scripts/dm.py maps pianta <file.md>        # «pianta» theme → render
 python3 scripts/render_map_svg.py --tutti-i-master --tema pianta --stampa   # print mode of every map (ADR-0106)
 python3 scripts/dm.py maps citta [rethmar|dauth|channathgate] [--check]  # the repo's own city plans
 ```
+
+## Formato d'uscita
+
+Un master markdown: intestazione `N col × M righe · S m`, griglia nel fence con
+la riga `LEGENDA`, direttive `@` del collaudo, tre blocchi Ambiente / Tattiche /
+Evoluzione; accanto `rendered/` (e, dove adottati, `rendered-texture/`,
+`rendered-pianta/`, `rendered-stampa-pianta/`). Modello:
+`campaign/templates/mappa-tattica-template.md`.
+
+## Prima di consegnare
+
+- SVG rigenerato e identico? `python3 scripts/validate_maps.py`
+- Si gioca? `python3 scripts/collaudo_mappe.py <file.md>`: zero classe E o
+  `@deroga`, poi il collaudatore a freddo (regola 9).
+- È buona? `python3 scripts/qualita_mappe.py <file.md>`
+- Glifo o texture sostituiti? `python3 scripts/misura_resa.py --check` e la
+  scelta del DM (regola 5).
+- La hero map sposta porte, stanze o accessi rispetto all'SVG? Si butta.
+
+## Cancelli deterministici
+
+I controlli che non chiedono un giudizio, da far girare prima di consegnare.
+Quello che qui non c'è resta giudizio di chi legge (registro delle norme).
+
+- `python3 scripts/validate_booklets.py`: pianta da stampa e legenda per ogni mappa (ADR-0106).
+- `python3 scripts/misura_standard_tavolo.py`: la mappa sta vicino alla scena dello scontro.

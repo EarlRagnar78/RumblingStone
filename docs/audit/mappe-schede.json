@@ -1,0 +1,404 @@
+{
+  "_cos_e": "Le pedine delle mappe contro le schede (scripts/misura_mappe_schede.py). In prova: --check avvisa se «collegate» scende o le altre salgono, senza fermare.",
+  "totale": {
+    "collegate": 41,
+    "nominate": 110,
+    "rotte": 0,
+    "taglie_discordi": 0,
+    "senza_scala": 0
+  },
+  "mappe": {
+    "07_il Portale Della Forgia Eterna/Mappe/ARC07-MAPPE-M7C-TENDA-DEL-COMANDO.json": {
+      "collegate": 7,
+      "nominate": 8,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/ARC07-MAPPE-M7H-QUARTIERE-DEL-COMANDO.json": {
+      "collegate": 7,
+      "nominate": 12,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/contratti-json/ARC07-CAMERA-CENTRALE.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/contratti-json/ARC07-CM-1-CUORE-DELLA-MONTAGNA.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/contratti-json/ARC07-CM-2-CUORE-LATO-NORD.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/contratti-json/ARC07-CORTILE-INTERNO.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/contratti-json/ARC07-FORESTA-DI-CRISTALLI.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/contratti-json/ARC07-PF-1-STANZA-DELLA-CORONA-BELKRAM.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/contratti-json/ARC07-PF-3-CORRIDOIO-DEL-FUOCO.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/contratti-json/ARC07-PF-4-FORGIA-ADAMANTINA.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/contratti-json/ARC07-R-1-CERCHIO-DEL-RITO.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/contratti-json/ARC07-T-5-ANTICAMERA-DELLA-MAGNETITE.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-D-livello-1-1372.json": {
+      "collegate": 0,
+      "nominate": 2,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-D-livello-1-372.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-E-gallerie-1372.json": {
+      "collegate": 0,
+      "nominate": 1,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-E-gallerie-372.json": {
+      "collegate": 0,
+      "nominate": 1,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-F-fucina-grande-1372.json": {
+      "collegate": 0,
+      "nominate": 1,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "07_il Portale Della Forgia Eterna/Mappe/hammerfist-372-1372/M7-F-fucina-grande-372.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "08_La Battaglia Di Hammerfist/Mappe/fortezza-json/HF-1-disposizione-giorno-1.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "08_La Battaglia Di Hammerfist/Mappe/fortezza-json/HF-1A1-sentiero-nascosto.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "08_La Battaglia Di Hammerfist/Mappe/fortezza-json/HF-1A2-torrione-di-vedetta.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "08_La Battaglia Di Hammerfist/Mappe/fortezza-json/HF-1A3-campo-mano-rossa.json": {
+      "collegate": 0,
+      "nominate": 10,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "08_La Battaglia Di Hammerfist/Mappe/fortezza-json/HF-1D-pendio-sotto-le-mura.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "08_La Battaglia Di Hammerfist/Mappe/fortezza-json/HF-2A-fortezza.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "08_La Battaglia Di Hammerfist/Mappe/fortezza-json/HF-2B-bastioni-centrali.json": {
+      "collegate": 0,
+      "nominate": 3,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "08_La Battaglia Di Hammerfist/Mappe/fortezza-json/HF-3Y-ponte-sospeso.json": {
+      "collegate": 0,
+      "nominate": 1,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "08_La Battaglia Di Hammerfist/Mappe/fortezza-json/HF-3Z-incrocio-silenzioso.json": {
+      "collegate": 0,
+      "nominate": 6,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "08_La Battaglia Di Hammerfist/Mappe/fortezza-json/HF-4-battaglia-finale-terrestre.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "08_La Battaglia Di Hammerfist/Mappe/fortezza-json/HF-5-cuore-della-montagna.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "08_La Battaglia Di Hammerfist/Mappe/fortezza-json/HF-H3-1-cortile-sfondato.json": {
+      "collegate": 0,
+      "nominate": 3,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Mappe/contratti-json/P1C-CAMPO-DROW-1.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Mappe/contratti-json/P1C-CAMPO-DROW-2.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Mappe/contratti-json/P1C-ONDATA-2.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Mappe/contratti-json/P1C-ULTIMA-RESISTENZA.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Mappe/dauth-assedio/DAUTH-A-breccia-porta-sud.json": {
+      "collegate": 3,
+      "nominate": 3,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Mappe/dauth-assedio/DAUTH-B-razorfiend-sui-bastioni.json": {
+      "collegate": 3,
+      "nominate": 3,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Mappe/dauth-assedio/DAUTH-C1-chiostro-ospedale.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Mappe/dauth-assedio/DAUTH-C2-cunicolo-cisterna.json": {
+      "collegate": 1,
+      "nominate": 3,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Mappe/dauth-assedio/DAUTH-D-lance-di-khorn.json": {
+      "collegate": 0,
+      "nominate": 0,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Mappe/dauth-assedio/DAUTH-E-cellula-nelle-mura.json": {
+      "collegate": 1,
+      "nominate": 2,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il Giardino di Sale e Calce PF1e/Mappe/QM-1-POZZO-DEI-SOSPIRI.json": {
+      "collegate": 0,
+      "nominate": 4,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il Giardino di Sale e Calce PF1e/Mappe/QM-2-QUOTA-ALTA.json": {
+      "collegate": 2,
+      "nominate": 2,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il Giardino di Sale e Calce PF1e/Mappe/QM-3-QUOTA-MEDIA-E-FONDO.json": {
+      "collegate": 3,
+      "nominate": 4,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il Giardino di Sale e Calce PF1e/Mappe/QM-4-TORRE-DELLE-VOLTE.json": {
+      "collegate": 3,
+      "nominate": 3,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il Giardino di Sale e Calce PF1e/Mappe/QM-5-SANTUARIO-DI-SALE.json": {
+      "collegate": 1,
+      "nominate": 2,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il Giardino di Sale e Calce PF1e/Mappe/QM-6-GALLERIA-DEL-WADI.json": {
+      "collegate": 0,
+      "nominate": 3,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il Giardino di Sale e Calce/Mappe/GSC-1-CRIPTA-CATTEDRALE.json": {
+      "collegate": 0,
+      "nominate": 2,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il Giardino di Sale e Calce/Mappe/GSC-1B-SFIORATORE.json": {
+      "collegate": 0,
+      "nominate": 1,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il Giardino di Sale e Calce/Mappe/GSC-1C-PIAZZA-DEL-POZZO.json": {
+      "collegate": 1,
+      "nominate": 4,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il Giardino di Sale e Calce/Mappe/GSC-2-QUOTA-ALTA.json": {
+      "collegate": 2,
+      "nominate": 2,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il Giardino di Sale e Calce/Mappe/GSC-3-QUOTA-MEDIA-E-FONDO.json": {
+      "collegate": 3,
+      "nominate": 4,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il Giardino di Sale e Calce/Mappe/GSC-4-TORRE-DELLE-VOLTE.json": {
+      "collegate": 3,
+      "nominate": 3,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il Giardino di Sale e Calce/Mappe/GSC-5-SANTUARIO-DI-SALE.json": {
+      "collegate": 1,
+      "nominate": 2,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il Giardino di Sale e Calce/Mappe/GSC-6-GALLERIA-DI-DRENAGGIO.json": {
+      "collegate": 0,
+      "nominate": 3,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/mappe/tarsilia-la-ruota.json": {
+      "collegate": 0,
+      "nominate": 5,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    },
+    "10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/mappe/tarsilia-stalle.json": {
+      "collegate": 0,
+      "nominate": 7,
+      "rotte": 0,
+      "taglie_discordi": 0,
+      "senza_scala": 0
+    }
+  }
+}

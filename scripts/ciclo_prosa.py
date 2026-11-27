@@ -585,6 +585,9 @@ def revisione(originale: Path, riscritto: Path) -> "tuple[str, bool]":
     dopo = riscritto.read_text(encoding="utf-8")
     if _SEGNI.search(prima) or _SEGNI.search(dopo):
         raise ValueError("il testo contiene già segni CriticMarkup: la revisione non sarebbe reversibile")
+    # Le righe che contraddicono l'originale tornano com'erano prima del diff:
+    # al DM arrivano solo modifiche che non cambiano i fatti (Jfs, 2026-11-03).
+    dopo, rimesse, nota_fedelta = ripara_fedelta(prima, dopo)
     seg = segnala(prima)
     mods, marcato = _modifiche(prima, dopo, seg)
     m0, m1 = misure(prima), misure(dopo)
@@ -609,6 +612,13 @@ def revisione(originale: Path, riscritto: Path) -> "tuple[str, bool]":
          f"- **Nessun controllo peggiora**: {'sì' if not peggiorate else 'NO, peggiorano ' + ', '.join(peggiorate)}",
          f"- **Nessun fatto cambia** (nomi propri, numeri, CD): {'sì' if not fatti_cambiati else 'NO'}"]
     r += [f"  - {x}" for x in fatti_cambiati]
+    if nota_fedelta:
+        r.append(f"- **Fedeltà (NLI)**: {nota_fedelta}")
+    else:
+        r.append(f"- **Fedeltà (NLI)**: {len(rimesse)} righe contraddicevano l'originale e sono "
+                 "tornate com'erano, in automatico")
+        r += [f"  - r.{c['riga']} (NLI {c['contraddizione']}): «{c['dopo']}» → resta «{c['prima']}»"
+              for c in rimesse]
     if mig["mqm"]:
         r.append(f"- **Il punteggio MQM non scende**: {'sì' if not mqm_scende else 'NO'} "
                  f"({mig['mqm'][0]} → {mig['mqm'][1]})")
@@ -768,6 +778,21 @@ def tabella_miglioramento(mig: dict) -> "list[str]":
     return r
 
 
+def ripara_fedelta(prima: str, dopo: str) -> "tuple[str, list[dict], str]":
+    """La correzione automatica della fedeltà (NLI, RICERCA-GUARDRAIL §9): le
+    righe del riscritto che contraddicono la loro riga d'origine tornano come
+    nell'originale. Ritorna (riscritto corretto, righe rimesse, nota). Senza
+    transformers o senza il modello il riscritto resta com'è e la nota lo dice."""
+    import misura_fedelta_nli as fn
+    if not fn.coppie(prima, dopo):
+        return dopo, [], ""
+    giudice, perche = fn.carica_giudice()
+    if giudice is None:
+        return dopo, [], f"fedeltà NLI non controllata: {perche}"
+    nuovo, rimesse = fn.ripara(prima, dopo, giudice)
+    return nuovo, rimesse, ""
+
+
 def misura_cmd(originale: Path, riscritto: Path) -> int:
     prima = originale.read_text(encoding="utf-8")
     dopo = riscritto.read_text(encoding="utf-8")
@@ -779,6 +804,13 @@ def misura_cmd(originale: Path, riscritto: Path) -> int:
     male = peggiora(mig)
     for x in male:
         print(f"✗ peggiora: {x}")
+    _, contraddette, nota = ripara_fedelta(prima, dopo)
+    for c in contraddette:
+        print(f"✗ contraddice l'originale (NLI {c['contraddizione']}) r.{c['riga']}: "
+              f"«{c['dopo']}» contro «{c['prima']}»; `revisione` la rimette com'era")
+    if nota:
+        print(f"· {nota}")
+    male = male + [f"contraddizione r.{c['riga']}" for c in contraddette]
     rimaste = segnala(dopo)
     print(f"{'✓' if not male and not fatti_cambiati else '✗'} restano {len(rimaste)} segnalazioni")
     if mig["segnalazioni"][1] >= mig["segnalazioni"][0]:

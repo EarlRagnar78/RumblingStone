@@ -3,7 +3,7 @@ Arco-Post-Hammerfist-P2A-Torre-PARTE3-Livello4.md
 
 # Parte 2A – Torre Invisibile  
 
-## Livello 4 – Camera dei Cristalli e Elementali del Caos (D&D 3.5)
+## Livello 4 – Camera dei Cristalli ed Elementali del Caos (D&D 3.5)
 
 ### 1. Tema e obiettivo
 

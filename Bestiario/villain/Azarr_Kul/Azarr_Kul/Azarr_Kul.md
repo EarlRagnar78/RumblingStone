@@ -4,6 +4,9 @@
 
 ```statblocco
 gs: 17
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 31
 pf: 156
 ts: Temp +19, Rifl +8, Vol +17
@@ -46,8 +49,8 @@ Azarr Kul non fa monologhi. Le sue poche frasi sono precise come un colpo di sci
 
 ## Nella campagna
 
-### Tyrgarun (Drago Blu Vecchio, CR 18 — incontro separato, NON cavalcatura)
-Tyrgarun non è mai stato una cavalcatura di Azarr Kul (D11 v2). È il terrore dei cieli della battaglia con la propria agenda tattica: in Fase 1 è un *hazard* di bombardamento aereo sui bastioni (imbattibile in volo a CR 18, si contrasta con contromosse — balliste, gufi Tiri Kitor, missione-esca dei PG — non con lo scontro frontale); in Fase 2-3 resta minaccia aerea a orologeria sui ritualisti; solo in Fase 4, quando il Mythal si completa, viene inchiodato a terra e diventa uccidibile — o fugge come nemesi per ARC-10. Azarr Kul combatte comunque a terra, per conto proprio, indipendentemente dall'esito dell'incontro col drago.
+### Tyrgarun (Drago Blu Molto Vecchio, CR 19 — incontro separato, NON cavalcatura)
+Tyrgarun non è mai stato una cavalcatura di Azarr Kul (D11 v2). È il terrore dei cieli della battaglia con la propria agenda tattica: in Fase 1 è un *hazard* di bombardamento aereo sui bastioni (imbattibile in volo a CR 19, si contrasta con contromosse — balliste, gufi Tiri Kitor, missione-esca dei PG — non con lo scontro frontale); in Fase 2-3 resta minaccia aerea a orologeria sui ritualisti; solo in Fase 4, quando il Mythal si completa, viene inchiodato a terra e diventa uccidibile — o fugge come nemesi per ARC-10. Azarr Kul combatte comunque a terra, per conto proprio, indipendentemente dall'esito dell'incontro col drago.
 
 ## In combattimento
 

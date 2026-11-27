@@ -21,5 +21,7 @@
       "tag": "dm"
     }
   ],
-  "fregio": "../../../docs/assets/fregi/fregio-arco-07-forgia.svg"
+  "fregio": "../../../docs/assets/fregi/fregio-arco-07-forgia.svg",
+  "schede": "entrambe",
+  "chi_si_incontra": true
 }

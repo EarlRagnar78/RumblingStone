@@ -1,0 +1,1524 @@
+{
+  "07_il Portale Della Forgia Eterna/homebrew/sessione-notte-e-alba/ARC07-NOTTE-E-ALBA-BOOKLET.manifest.json": {
+    "pagine": 158,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 66,
+    "schede": 32,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.044,
+    "pagine_con_immagine_decimo": 0.12,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [],
+      "immagini_basse": [
+        [
+          14,
+          287,
+          8.4
+        ],
+        [
+          16,
+          161,
+          8.4
+        ],
+        [
+          17,
+          232,
+          17.5
+        ],
+        [
+          19,
+          72,
+          2.3
+        ],
+        [
+          19,
+          72,
+          2.3
+        ],
+        [
+          19,
+          72,
+          2.4
+        ],
+        [
+          19,
+          72,
+          2.4
+        ],
+        [
+          23,
+          287,
+          8.4
+        ],
+        [
+          24,
+          161,
+          8.4
+        ],
+        [
+          29,
+          72,
+          2.3
+        ],
+        [
+          29,
+          72,
+          2.3
+        ],
+        [
+          29,
+          72,
+          2.4
+        ],
+        [
+          29,
+          72,
+          2.4
+        ],
+        [
+          68,
+          232,
+          17.5
+        ],
+        [
+          69,
+          232,
+          17.5
+        ],
+        [
+          70,
+          161,
+          8.4
+        ],
+        [
+          71,
+          232,
+          17.5
+        ],
+        [
+          73,
+          161,
+          8.4
+        ],
+        [
+          74,
+          161,
+          8.4
+        ],
+        [
+          80,
+          161,
+          8.4
+        ],
+        [
+          94,
+          287,
+          8.4
+        ],
+        [
+          96,
+          72,
+          2.3
+        ],
+        [
+          96,
+          72,
+          2.3
+        ],
+        [
+          96,
+          72,
+          2.4
+        ],
+        [
+          96,
+          72,
+          2.4
+        ],
+        [
+          99,
+          97,
+          14.0
+        ],
+        [
+          109,
+          161,
+          8.4
+        ],
+        [
+          115,
+          232,
+          17.5
+        ],
+        [
+          115,
+          72,
+          2.6
+        ],
+        [
+          115,
+          72,
+          2.6
+        ]
+      ],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "07_il Portale Della Forgia Eterna/homebrew/sessione-notte-e-alba/ARC07-NOTTE-E-ALBA-GIOCATORI.manifest.json": {
+    "pagine": 7,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 9.5,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 0,
+    "schede": 0,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.0,
+    "pagine_con_immagine_decimo": 0.0,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [],
+      "immagini_basse": [],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "07_il Portale Della Forgia Eterna/homebrew/sessione-resurrezione-mille-anni/ARC07-SERATA-GIOCATORI.manifest.json": {
+    "pagine": 19,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 5,
+    "schede": 1,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.263,
+    "pagine_con_immagine_decimo": 0.263,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [],
+      "immagini_basse": [
+        [
+          5,
+          232,
+          17.5
+        ],
+        [
+          10,
+          222,
+          12.0
+        ],
+        [
+          13,
+          254,
+          12.0
+        ],
+        [
+          14,
+          127,
+          10.7
+        ],
+        [
+          16,
+          203,
+          17.5
+        ]
+      ],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "07_il Portale Della Forgia Eterna/homebrew/sessione-resurrezione-mille-anni/ARC07-SERATA-RESURREZIONE-BOOKLET.manifest.json": {
+    "pagine": 172,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 53,
+    "schede": 30,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.035,
+    "pagine_con_immagine_decimo": 0.081,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [],
+      "immagini_basse": [
+        [
+          58,
+          161,
+          8.4
+        ],
+        [
+          59,
+          232,
+          17.5
+        ],
+        [
+          82,
+          232,
+          17.5
+        ],
+        [
+          83,
+          232,
+          17.5
+        ],
+        [
+          84,
+          161,
+          8.4
+        ],
+        [
+          85,
+          232,
+          17.5
+        ],
+        [
+          87,
+          161,
+          8.4
+        ],
+        [
+          88,
+          161,
+          8.4
+        ],
+        [
+          94,
+          161,
+          8.4
+        ],
+        [
+          108,
+          287,
+          8.4
+        ],
+        [
+          110,
+          72,
+          2.3
+        ],
+        [
+          110,
+          72,
+          2.3
+        ],
+        [
+          110,
+          72,
+          2.4
+        ],
+        [
+          110,
+          72,
+          2.4
+        ],
+        [
+          113,
+          97,
+          14.0
+        ],
+        [
+          123,
+          161,
+          8.4
+        ],
+        [
+          129,
+          232,
+          17.5
+        ],
+        [
+          129,
+          72,
+          2.6
+        ],
+        [
+          129,
+          72,
+          2.6
+        ],
+        [
+          129,
+          72,
+          2.6
+        ],
+        [
+          129,
+          72,
+          2.6
+        ],
+        [
+          151,
+          72,
+          2.6
+        ],
+        [
+          151,
+          72,
+          2.6
+        ],
+        [
+          151,
+          72,
+          2.6
+        ],
+        [
+          151,
+          72,
+          2.6
+        ],
+        [
+          153,
+          72,
+          2.3
+        ],
+        [
+          153,
+          72,
+          2.3
+        ],
+        [
+          153,
+          72,
+          2.4
+        ],
+        [
+          153,
+          72,
+          2.4
+        ],
+        [
+          163,
+          72,
+          2.1
+        ]
+      ],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "07_il Portale Della Forgia Eterna/homebrew/sessione-ritorno-forgia/ARC07-RITORNO-FORGIA-BOOKLET.manifest.json": {
+    "pagine": 29,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 1,
+    "immagini_sotto_300dpi": 0,
+    "schede": 0,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.0,
+    "pagine_con_immagine_decimo": 0.0,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [
+        [
+          1,
+          "Il Ritorno nella Sala della For­"
+        ]
+      ],
+      "immagini_basse": [],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "07_il Portale Della Forgia Eterna/homebrew/sessione-terros/ARC07-GRUPPO-CAMMINO.manifest.json": {
+    "pagine": 4,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 0,
+    "schede": 0,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.0,
+    "pagine_con_immagine_decimo": 0.0,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [],
+      "immagini_basse": [],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "07_il Portale Della Forgia Eterna/homebrew/sessione-terros/ARC07-SESSIONE-TERROS-BOOKLET.manifest.json": {
+    "pagine": 65,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 0,
+    "schede": 4,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.0,
+    "pagine_con_immagine_decimo": 0.0,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [],
+      "immagini_basse": [],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "07_il Portale Della Forgia Eterna/homebrew/sessione-terros/ARC07-TEASER-GIOCATORI.manifest.json": {
+    "pagine": 3,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 0,
+    "schede": 0,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.0,
+    "pagine_con_immagine_decimo": 0.0,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [],
+      "immagini_basse": [],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "07_il Portale Della Forgia Eterna/homebrew/volume-mille-anni/ARC07-MILLE-ANNI-VOLUME.manifest.json": {
+    "pagine": 105,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 51,
+    "schede": 26,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.048,
+    "pagine_con_immagine_decimo": 0.105,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [],
+      "immagini_basse": [
+        [
+          14,
+          232,
+          17.5
+        ],
+        [
+          15,
+          232,
+          17.5
+        ],
+        [
+          16,
+          161,
+          8.4
+        ],
+        [
+          17,
+          232,
+          17.5
+        ],
+        [
+          19,
+          161,
+          8.4
+        ],
+        [
+          20,
+          161,
+          8.4
+        ],
+        [
+          26,
+          161,
+          8.4
+        ],
+        [
+          40,
+          287,
+          8.4
+        ],
+        [
+          42,
+          72,
+          2.3
+        ],
+        [
+          42,
+          72,
+          2.3
+        ],
+        [
+          42,
+          72,
+          2.4
+        ],
+        [
+          42,
+          72,
+          2.4
+        ],
+        [
+          45,
+          97,
+          14.0
+        ],
+        [
+          55,
+          161,
+          8.4
+        ],
+        [
+          61,
+          232,
+          17.5
+        ],
+        [
+          61,
+          72,
+          2.6
+        ],
+        [
+          61,
+          72,
+          2.6
+        ],
+        [
+          61,
+          72,
+          2.6
+        ],
+        [
+          61,
+          72,
+          2.6
+        ],
+        [
+          83,
+          72,
+          2.6
+        ],
+        [
+          83,
+          72,
+          2.6
+        ],
+        [
+          83,
+          72,
+          2.6
+        ],
+        [
+          83,
+          72,
+          2.6
+        ],
+        [
+          85,
+          72,
+          2.3
+        ],
+        [
+          85,
+          72,
+          2.3
+        ],
+        [
+          85,
+          72,
+          2.4
+        ],
+        [
+          85,
+          72,
+          2.4
+        ],
+        [
+          95,
+          72,
+          2.1
+        ],
+        [
+          95,
+          72,
+          2.1
+        ],
+        [
+          95,
+          72,
+          2.2
+        ]
+      ],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/homebrew/PALIO-BOOKLET.manifest.json": {
+    "pagine": 65,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 3.0,
+    "testi_sotto_minimo": 97,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 2,
+    "schede": 5,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.031,
+    "pagine_con_immagine_decimo": 0.031,
+    "dettaglio": {
+      "sotto_minimo": [
+        [
+          52,
+          6.0,
+          "| 09 P2D Palio di Channathgate |"
+        ],
+        [
+          52,
+          6.0,
+          "# §2 clock"
+        ],
+        [
+          52,
+          6.0,
+          "| Palio di Channathgate | 0/3 | vinto en"
+        ],
+        [
+          52,
+          6.0,
+          "# §6 thread"
+        ],
+        [
+          52,
+          6.0,
+          "[PALIO ↔ CONSIGLIO] contrada vincente in"
+        ],
+        [
+          52,
+          6.0,
+          "[PALIO ↔ MYTHAL] Drappellone = Matrice d"
+        ],
+        [
+          52,
+          6.0,
+          "[PALIO ↔ SONJAK] assalto drow alla stall"
+        ],
+        [
+          52,
+          6.0,
+          "[PALIO ↔ COLLEZIONISTA/VALERIUS] registr"
+        ],
+        [
+          52,
+          6.0,
+          "[PALIO ↔ ONDA] flotta fluviale + evacuaz"
+        ],
+        [
+          60,
+          4.1,
+          "pianta della città aperta · Flamerule 13"
+        ],
+        [
+          60,
+          5.2,
+          "N"
+        ],
+        [
+          60,
+          4.2,
+          "Scala"
+        ],
+        [
+          60,
+          3.3,
+          "metri"
+        ],
+        [
+          60,
+          4.2,
+          "Misure"
+        ],
+        [
+          60,
+          3.3,
+          "abitato: 250 ha, città aperta, senza cin"
+        ],
+        [
+          60,
+          3.3,
+          "nucleo del bazar 66 ha · arg 5.0 ha mura"
+        ],
+        [
+          60,
+          3.3,
+          "mura dell'arg 828 m, 27 torri + 2 alla p"
+        ],
+        [
+          60,
+          3.3,
+          "edifici: 8.307 (lotto medio 130 m²)"
+        ],
+        [
+          60,
+          3.3,
+          "abitanti: ~25.000 (stima per rione ~24.9"
+        ],
+        [
+          60,
+          3.3,
+          "nucleo 215/ha, rioni 72/ha, giardini 30/"
+        ],
+        [
+          60,
+          3.3,
+          "Taglia: grande città della DMG 3.5, più "
+        ],
+        [
+          60,
+          3.3,
+          "Dennovar del libro (11.600): scelta del "
+        ],
+        [
+          60,
+          3.3,
+          "2026-10-22, perché la valle regga l'orda"
+        ],
+        [
+          60,
+          3.3,
+          "densità da Medieval Demographics Made Ea"
+        ],
+        [
+          60,
+          3.3,
+          "Assedio: senza cinta, reggerebbe solo l'"
+        ],
+        [
+          60,
+          3.3,
+          "e, quartiere per quartiere, i muri dei r"
+        ],
+        [
+          60,
+          3.3,
+          "Pianta, misure e posizioni sono canone."
+        ],
+        [
+          60,
+          4.2,
+          "Luoghi"
+        ],
+        [
+          60,
+          3.1,
+          "Palazzo dei Nove (The Seat), l'arg murat"
+        ],
+        [
+          60,
+          3.1,
+          "Sovereign Ring: maidan in pendenza, pist"
+        ]
+      ],
+      "fuori_margine": [],
+      "immagini_basse": [
+        [
+          3,
+          232,
+          17.5
+        ],
+        [
+          59,
+          232,
+          17.5
+        ]
+      ],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "10-stand-alone/Il Giardino di Sale e Calce/homebrew/giardino-sale-calce.manifest.json": {
+    "pagine": 40,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 0,
+    "schede": 7,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 1,
+    "pagine_con_immagine": 0.0,
+    "pagine_con_immagine_decimo": 0.0,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [],
+      "immagini_basse": [],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": [
+        [
+          33,
+          "Karkator, aboleth mezzo-immondo",
+          "scheda a pagina 39"
+        ]
+      ]
+    }
+  },
+  "10-stand-alone/Il Giardino di Sale e Calce PF1e/homebrew/giardino-sale-calce-pf1e.manifest.json": {
+    "pagine": 25,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 0,
+    "schede": 7,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.0,
+    "pagine_con_immagine_decimo": 0.0,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [],
+      "immagini_basse": [],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BENVENUTO-TAVOLO.manifest.json": {
+    "pagine": 2,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 0,
+    "schede": 0,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.0,
+    "pagine_con_immagine_decimo": 0.0,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [],
+      "immagini_basse": [],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-DM.manifest.json": {
+    "pagine": 87,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 6.1,
+    "testi_sotto_minimo": 30,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 19,
+    "schede": 14,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.115,
+    "pagine_con_immagine_decimo": 0.207,
+    "dettaglio": {
+      "sotto_minimo": [
+        [
+          24,
+          6.6,
+          "MORALE  0 1 2 3 4 5 6 7 8 9 10     ONORE"
+        ],
+        [
+          24,
+          6.6,
+          "▲"
+        ],
+        [
+          24,
+          6.6,
+          "0-2 → −1 Cavalcare/Iniziativa      ≤3 → "
+        ],
+        [
+          24,
+          6.6,
+          "6-8 → +1                            10 →"
+        ],
+        [
+          24,
+          6.6,
+          "9-10 → +2, e un rilancio"
+        ],
+        [
+          30,
+          6.2,
+          "FATTO    quello che c'è. Si REGALA a chi"
+        ],
+        [
+          30,
+          6.2,
+          "LETTURA  cosa vuol dire. Si paga con una"
+        ],
+        [
+          30,
+          6.2,
+          "NOME     chi, esattamente. Gradi veri, o"
+        ],
+        [
+          30,
+          6.2,
+          "PORTE    almeno tre, almeno una fisica ("
+        ],
+        [
+          31,
+          6.1,
+          "FATTO    Regina, la mula di ventidue ann"
+        ],
+        [
+          31,
+          6.1,
+          "non smette. (04-LUOGHI §1.3 — lo fa già)"
+        ],
+        [
+          31,
+          6.1,
+          "LETTURA  Non ha fame e non ha paura del "
+        ],
+        [
+          31,
+          6.1,
+          "pomeriggio, cioè da quando qualcuno è pa"
+        ],
+        [
+          31,
+          6.1,
+          "NOME     È passato TRE volte: mattina, p"
+        ],
+        [
+          31,
+          6.1,
+          "cadenza con cui Sfregio studia la stalla"
+        ],
+        [
+          31,
+          6.1,
+          "PORTE    Addestrare Animali CD 12 · COS "
+        ],
+        [
+          31,
+          6.1,
+          "SAG/Percezione CD 14 · DES (rifare il gi"
+        ],
+        [
+          31,
+          6.1,
+          "FATTO    Il confine è segnato cinquanta "
+        ],
+        [
+          31,
+          6.1,
+          "4705, mano ferma, SENZA FIRMA. (05-INIZI"
+        ],
+        [
+          31,
+          6.1,
+          "LETTURA  Un atto senza firma non è un er"
+        ],
+        [
+          31,
+          6.1,
+          "corretto senza volerne rispondere."
+        ],
+        [
+          31,
+          6.1,
+          "NOME     La stessa mano compare in altri"
+        ],
+        [
+          31,
+          6.1,
+          "Bruco (Conoscenze locali CD 15 — già scr"
+        ],
+        [
+          31,
+          6.1,
+          "PORTE    Sapienza (locali) · DES (ricalc"
+        ],
+        [
+          31,
+          6.1,
+          "stessa, e la penna è la stessa) · INT (c"
+        ],
+        [
+          31,
+          6.1,
+          "Diplomazia col funzionario che tiene il "
+        ],
+        [
+          64,
+          6.6,
+          "2-"
+        ],
+        [
+          64,
+          6.6,
+          "bis"
+        ],
+        [
+          71,
+          6.6,
+          "1-"
+        ],
+        [
+          71,
+          6.6,
+          "bis"
+        ]
+      ],
+      "fuori_margine": [],
+      "immagini_basse": [
+        [
+          1,
+          220,
+          11.0
+        ],
+        [
+          14,
+          261,
+          17.5
+        ],
+        [
+          21,
+          288,
+          8.4
+        ],
+        [
+          22,
+          288,
+          8.4
+        ],
+        [
+          27,
+          261,
+          17.5
+        ],
+        [
+          46,
+          261,
+          17.5
+        ],
+        [
+          47,
+          288,
+          8.4
+        ],
+        [
+          49,
+          272,
+          8.4
+        ],
+        [
+          51,
+          288,
+          8.4
+        ],
+        [
+          52,
+          288,
+          8.4
+        ],
+        [
+          52,
+          288,
+          8.4
+        ],
+        [
+          60,
+          261,
+          17.5
+        ],
+        [
+          61,
+          261,
+          17.5
+        ],
+        [
+          66,
+          261,
+          17.5
+        ],
+        [
+          67,
+          261,
+          17.5
+        ],
+        [
+          68,
+          261,
+          17.5
+        ],
+        [
+          73,
+          261,
+          17.5
+        ],
+        [
+          75,
+          236,
+          8.4
+        ],
+        [
+          77,
+          288,
+          8.4
+        ]
+      ],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-BOOKLET-GIOCATORI.manifest.json": {
+    "pagine": 8,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 6,
+    "schede": 0,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.0,
+    "pagine_con_immagine_decimo": 0.625,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [],
+      "immagini_basse": [
+        [
+          5,
+          288,
+          8.4
+        ],
+        [
+          6,
+          288,
+          8.4
+        ],
+        [
+          6,
+          288,
+          8.4
+        ],
+        [
+          7,
+          288,
+          8.4
+        ],
+        [
+          7,
+          288,
+          8.4
+        ],
+        [
+          8,
+          288,
+          8.4
+        ]
+      ],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-FASCICOLO-SCHEDE.manifest.json": {
+    "pagine": 11,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 7,
+    "schede": 0,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.091,
+    "pagine_con_immagine_decimo": 0.455,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [],
+      "immagini_basse": [
+        [
+          1,
+          220,
+          11.0
+        ],
+        [
+          8,
+          288,
+          8.4
+        ],
+        [
+          9,
+          288,
+          8.4
+        ],
+        [
+          9,
+          288,
+          8.4
+        ],
+        [
+          10,
+          288,
+          8.4
+        ],
+        [
+          10,
+          288,
+          8.4
+        ],
+        [
+          11,
+          288,
+          8.4
+        ]
+      ],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-PROP.manifest.json": {
+    "pagine": 6,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 9.5,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 1,
+    "schede": 0,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.0,
+    "pagine_con_immagine_decimo": 0.167,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [],
+      "immagini_basse": [
+        [
+          1,
+          208,
+          11.0
+        ]
+      ],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "10-stand-alone/Il-Drappo-di-Tarsilia/homebrew/DRAPPO-SCHEDE-PG.manifest.json": {
+    "pagine": 6,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 9.0,
+    "corpo_minimo_pt": 7.0,
+    "testi_sotto_minimo": 0,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 0,
+    "schede": 0,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.0,
+    "pagine_con_immagine_decimo": 0.0,
+    "dettaglio": {
+      "sotto_minimo": [],
+      "fuori_margine": [],
+      "immagini_basse": [],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  },
+  "10-stand-alone/L'abbazia Della Rotta Sicura/homebrew/abbazia-rotta-sicura.manifest.json": {
+    "pagine": 43,
+    "font_non_incorporati": [],
+    "corpo_mediano_pt": 10.0,
+    "corpo_minimo_pt": 2.5,
+    "testi_sotto_minimo": 102,
+    "fuori_margine": 0,
+    "immagini_sotto_300dpi": 0,
+    "schede": 38,
+    "schede_spezzate": 0,
+    "rimandi_sbagliati": 0,
+    "pagine_con_immagine": 0.0,
+    "pagine_con_immagine_decimo": 0.0,
+    "dettaglio": {
+      "sotto_minimo": [
+        [
+          5,
+          2.6,
+          "pozzo"
+        ],
+        [
+          5,
+          2.6,
+          "finestre murate"
+        ],
+        [
+          5,
+          3.2,
+          "S"
+        ],
+        [
+          5,
+          3.0,
+          "al borgo"
+        ],
+        [
+          5,
+          2.8,
+          "ABSIDE"
+        ],
+        [
+          5,
+          2.8,
+          "PRESBITERIO"
+        ],
+        [
+          5,
+          2.8,
+          "SACRESTIA"
+        ],
+        [
+          5,
+          2.8,
+          "NAVATA"
+        ],
+        [
+          5,
+          2.8,
+          "LOGGIA"
+        ],
+        [
+          5,
+          2.8,
+          "CAPPELLA"
+        ],
+        [
+          5,
+          2.8,
+          "PORTICO"
+        ],
+        [
+          5,
+          2.8,
+          "SAGRATO"
+        ],
+        [
+          5,
+          2.8,
+          "CHIOSTRO"
+        ],
+        [
+          5,
+          2.8,
+          "REFETTORIO"
+        ],
+        [
+          5,
+          2.8,
+          "CUCINA"
+        ],
+        [
+          5,
+          2.8,
+          "STUDIO"
+        ],
+        [
+          5,
+          2.8,
+          "CELLA ABATE"
+        ],
+        [
+          5,
+          2.8,
+          "SCRIPTORIUM"
+        ],
+        [
+          5,
+          2.8,
+          "DORMITORIO ANCELLE"
+        ],
+        [
+          5,
+          2.9,
+          "N"
+        ],
+        [
+          5,
+          2.6,
+          "20 ft"
+        ],
+        [
+          5,
+          2.5,
+          "1 quadr. = 5 ft"
+        ],
+        [
+          6,
+          6.9,
+          "140 gradini"
+        ],
+        [
+          6,
+          6.9,
+          "il vento porta i lamenti dal promontorio"
+        ],
+        [
+          6,
+          6.9,
+          "1 · Osteria La Gomena Rotta"
+        ],
+        [
+          6,
+          6.9,
+          "2 · Mulino Cassola"
+        ],
+        [
+          6,
+          6.9,
+          "3 · Corpo di Guardia"
+        ],
+        [
+          6,
+          6.9,
+          "4 · Molo e barche"
+        ],
+        [
+          6,
+          6.9,
+          "5 · Pozzo e piazza"
+        ],
+        [
+          6,
+          6.9,
+          "6 · Cappella del borgo (aperta)"
+        ]
+      ],
+      "fuori_margine": [],
+      "immagini_basse": [],
+      "schede_spezzate": [],
+      "rimandi_sbagliati": []
+    }
+  }
+}

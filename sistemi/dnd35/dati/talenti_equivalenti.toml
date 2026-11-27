@@ -1,0 +1,8 @@
+# sistemi/dnd35/dati/talenti_equivalenti.toml — talenti che valgono come un altro per i prerequisiti
+# (ADR-0124 §11). Scritto a mano: una riga per ogni talento dell'SRD che un talento di un manuale
+# può sostituire «per qualificarsi a un talento, a una classe di prestigio o ad altro».
+# Solo il nome e il libro; la regola sta nel campo «Special» del talento sul manuale.
+
+[equivalenti]
+# Races of the Wild p. 150; Tome of Battle p. 29; Magic of Incarnum p. 39
+"Dodge" = ["Expeditious Dodge", "Desert Wind Dodge", "Midnight Dodge"]

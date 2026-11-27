@@ -77,17 +77,17 @@ Boost log: (vuoto)
 
 ## 4. Teyani Sura — l'Esploratrice della Guardia del Leone
 
-**Role**: ally (intel di lungo raggio, gancio verso Rhest)
-**Status**: viva, in arrivo a Rethmar dalla Rhest Trail
-**Location**: strada verso nord/Rhest → Rethmar
-**Motivation**: portare l'allarme del blocco a nord: la strada per i rinforzi settentrionali è tagliata, e qualcosa si annida nelle paludi di Rhest.
+**Role**: ally (intel di lungo raggio, gancio verso Lhesper)
+**Status**: viva, in arrivo a Rethmar dalla Lhesper Trail
+**Location**: strada verso nord/Lhesper → Rethmar
+**Motivation**: portare l'allarme del blocco a nord: la strada per i rinforzi settentrionali è tagliata, e qualcosa si annida nel Lhespenbog.
 **CR**: 6 (ranger) | **Race/Class**: umana, Ranger 6 — statblock: `[Private — Red Hand of Doom]`
 **Key stats**: esploratrice montata; intel di prima mano sui movimenti a nord.
 **Esiti possibili**:
-- È il **gancio classico verso Rhest** (`dm-guide` §411): riferisce di essere stata attaccata sulla Rhest Trail da hobgoblin e ogre, e di un blocco che impedisce ai rinforzi del nord di arrivare → aggancio diretto all'**Arco 09 P2 Rhest** (Saarvith + Regiarix, state.md §0/§3). Se i PG rompono il blocco → sblocco dei rinforzi settentrionali (difensori §2.4).
+- È il **gancio classico verso Lhesper** (`dm-guide` §411): riferisce di essere stata attaccata sulla Lhesper Trail da hobgoblin e ogre, e di un blocco che impedisce ai rinforzi del nord di arrivare → aggancio diretto all'**Arco 09 P2 Lhesper** (Saarvith + Regiarix, state.md §0/§3). Se i PG rompono il blocco → sblocco dei rinforzi settentrionali (difensori §2.4).
 - Complementare a **Delora Zann** (R1, ex-avventuriera): due donne che conoscono le strade — insieme, una rete di corrieri/esploratori per i Day 30-42.
-- Se muore/non arriva → i PG scoprono il blocco di Rhest troppo tardi (−intel per la Fase finale).
-**Notes**: attenzione coerenza — nell'AP Norro parlava "a nome di" Jarmaath creando un buco logico; qui **Teyani riferisce direttamente** alla sua catena (Ulverth/Sorvane), più pulito. Aggancio: Rhest/Saarvith (P2), Delora (R1), rinforzi nord (§2.4).
+- Se muore/non arriva → i PG scoprono il blocco di Lhesper troppo tardi (−intel per la Fase finale).
+**Notes**: attenzione coerenza — nell'AP Norro parlava "a nome di" Jarmaath creando un buco logico; qui **Teyani riferisce direttamente** alla sua catena (Ulverth/Sorvane), più pulito. Aggancio: Lhesper/Saarvith (P2), Delora (R1), rinforzi nord (§2.4).
 
 Boost log: (vuoto)
 
@@ -97,4 +97,4 @@ Boost log: (vuoto)
 
 > Preparazione: nessuna riga di `state.md` applicata. Quando il DM li porta
 > in gioco, le righe naturali sono: §3 (nessun clock nuovo), §4 (cosa sanno),
-> §7 (thread tempio/torre/Rhest). Tredora è già "pre-agganciata" da Derny (R1).
+> §7 (thread tempio/torre/Lhesper). Tredora è già "pre-agganciata" da Derny (R1).

@@ -1,0 +1,173 @@
+{
+ "violazioni": [
+  {
+   "regola": "S4 livello del party",
+   "atteso": "8-13",
+   "ha": "14",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1317,
+   "testo": "> | Party arriva **già al 14°** o straripante di risorse | Terros **avanzato a 34 DV** (390 pf, attacchi +32, CD +1) e lo Scudo di Geodi parte **già attivo**; oppure aggiungi 2 Elementali della Terra Grandi (CR 5) che emergono dal pavimento"
+  },
+  {
+   "regola": "S4 livello del party",
+   "atteso": "8-13",
+   "ha": "14",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 752,
+   "testo": "> avvicina i PG al 14° verso Hammerfist. Le parti giocate non si ritoccano."
+  },
+  {
+   "regola": "S6 modifica permanente",
+   "atteso": "Thorik: DES −4 / COS +2 / CAR +4",
+   "ha": "COS −2",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 318,
+   "testo": "- **Cosa NON guarisce**: i **−2 COS permanenti** di Thorik (è un prezzo pagato,"
+  },
+  {
+   "regola": "S6 modifica permanente",
+   "atteso": "Thorik: DES −4 / COS +2 / CAR +4",
+   "ha": "COS −2",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 26,
+   "testo": "> accese**; **Cuore di Moradin SPESO**; **Thorik −2 COS** permanente; **Hella"
+  },
+  {
+   "regola": "S6 modifica permanente",
+   "atteso": "Thorik: DES −4 / COS +2 / CAR +4",
+   "ha": "COS −2",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 92,
+   "testo": "- **Thorik**: **−2 COS** permanente. **Hella**: viva (Ibrido Treant, Collana, Durik). **Bracieri** completi. **Ring** riforgiato."
+  },
+  {
+   "regola": "S7 eco armato senza scena",
+   "atteso": "E-07d citato in almeno un file d'arco (miccia: lunga)",
+   "ha": "0 file",
+   "file": "campaign/state.yaml",
+   "riga": 0,
+   "testo": ""
+  },
+  {
+   "regola": "S7 eco armato senza scena",
+   "atteso": "E-08a citato in almeno un file d'arco (miccia: lunga (ARC-09 → dopoguerra))",
+   "ha": "0 file",
+   "file": "campaign/state.yaml",
+   "riga": 0,
+   "testo": ""
+  }
+ ],
+ "file_letti": 17,
+ "non_verificabili": {
+  "conoscenze senza tempo (chi sa cosa)": 31
+ },
+ "ancore": {
+  "giorno_arrivo": 42,
+  "waypoint": {
+   "Vraath": [
+    6,
+    6
+   ],
+   "Skull Gorge": [
+    8,
+    9
+   ],
+   "Drellin": [
+    12,
+    13
+   ],
+   "Terrelton": [
+    19,
+    19
+   ],
+   "Marth Fen / Blackfens": [
+    25,
+    25
+   ],
+   "Elsir": [
+    33,
+    35
+   ]
+  },
+  "quest": {
+   "P2 Rhest": [
+    25,
+    32
+   ],
+   "P2A Torre": [
+    28,
+    35
+   ],
+   "P2B Torneo": [
+    25,
+    34
+   ],
+   "P3 Starsong": [
+    30,
+    35
+   ],
+   "P3 Ghostlord": [
+    25,
+    32
+   ]
+  },
+  "livelli": {
+   "00": [
+    5,
+    5
+   ],
+   "01": [
+    6,
+    6
+   ],
+   "02": [
+    7,
+    7
+   ],
+   "03": [
+    8,
+    8
+   ],
+   "04": [
+    9,
+    9
+   ],
+   "05": [
+    10,
+    10
+   ],
+   "06": [
+    11,
+    11
+   ],
+   "07": [
+    8,
+    13
+   ],
+   "08": [
+    9,
+    13
+   ],
+   "09": [
+    13,
+    14
+   ]
+  },
+  "portatori": {
+   "Aegis Fang": "Thorik",
+   "Corona di Adamantio": "Thorik",
+   "Ring of Chaotic Illumination": "Artemis",
+   "Bracieri Gemelli di Moradin": "Tordek",
+   "Cintura della Devastazione": "Tordek",
+   "Collana dei Semi Eterni": "Hella"
+  },
+  "modifiche": {
+   "Thorik": {
+    "DES": -4,
+    "COS": 2,
+    "CAR": 4
+   },
+   "Tordek": {}
+  }
+ }
+}

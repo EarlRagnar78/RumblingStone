@@ -129,11 +129,55 @@ class TestWorkflow(unittest.TestCase):
         self.assertEqual(self.grafo["5"]["inputs"]["batch_size"], 1)
 
 
+class TestWorkflowFlux2(unittest.TestCase):
+    """FLUX.2 [klein] 4B: grafo del template di ComfyUI, collaudo D2 del 2026-11-16."""
+
+    def setUp(self):
+        self.img = cb.Immagine("tavola-x", 1536, 864, "tavola", "base", "corpo", None)
+        self.mod = cb.MODELLI["flux2-klein-4b"]
+        self.grafo = cb.workflow(self.img, "positivo", "negativo", 42, self.mod)
+
+    def test_tre_caricatori_separati(self):
+        tipi = {n["class_type"]: n["inputs"] for n in self.grafo.values()}
+        self.assertEqual(tipi["UNETLoader"]["unet_name"], self.mod["checkpoint"])
+        self.assertEqual(tipi["CLIPLoader"]["type"], "flux2")
+        self.assertEqual(tipi["VAELoader"]["vae_name"], self.mod["vae"])
+        self.assertNotIn("CheckpointLoaderSimple", tipi)
+
+    def test_salvataggio_resta_nel_nodo_nove(self):
+        """Comfy.aspetta legge le immagini dal nodo «9»."""
+        self.assertEqual(self.grafo["9"]["class_type"], "SaveImage")
+
+    def test_seed_dimensioni_e_passi(self):
+        self.assertEqual(self.grafo["11"]["inputs"]["noise_seed"], 42)
+        for n in ("7", "10"):
+            self.assertEqual(self.grafo[n]["inputs"]["width"], 1536)
+            self.assertEqual(self.grafo[n]["inputs"]["height"], 864)
+        self.assertEqual(self.grafo["10"]["inputs"]["steps"], 4)
+        self.assertEqual(self.grafo["7"]["inputs"]["batch_size"], 1)
+
+    def test_ogni_collegamento_punta_a_un_nodo_che_esiste(self):
+        for ident, nodo in self.grafo.items():
+            for valore in nodo["inputs"].values():
+                if isinstance(valore, list):
+                    with self.subTest(nodo=ident, verso=valore[0]):
+                        self.assertIn(valore[0], self.grafo)
+
+    def test_dimensioni_della_serie_multiple_di_16(self):
+        """Il latente di FLUX.2 lavora a passi di 16 pixel."""
+        for img in cb.leggi_immagini(PROMPTS.read_text(encoding="utf-8")):
+            with self.subTest(img=img.ident):
+                self.assertEqual(img.larghezza % 16, 0)
+                self.assertEqual(img.altezza % 16, 0)
+
+
 class TestCancelloSuiPesi(unittest.TestCase):
     """ADR-0019 §1: FLUX.1 [dev] non e' sconsigliato, e' rifiutato."""
 
     def test_flux_dev_rifiutato(self):
-        for nome in ("flux1-dev.safetensors", "FLUX.1-dev-fp8.safetensors", "flux-dev.gguf"):
+        for nome in ("flux1-dev.safetensors", "FLUX.1-dev-fp8.safetensors", "flux-dev.gguf",
+                     "flux2-dev.safetensors", "flux-2-klein-9b-fp8.safetensors",
+                     "flux-2-klein-base-9b.safetensors"):
             with self.subTest(nome=nome), contextlib.redirect_stderr(io.StringIO()):
                 uscita = cb.main(["--checkpoint", nome, "--solo", "il-drappo"])
                 self.assertEqual(uscita, 1)

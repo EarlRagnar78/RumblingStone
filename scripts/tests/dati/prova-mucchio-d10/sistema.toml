@@ -1,0 +1,54 @@
+# Plugin finto della terza prova del nove (dopo F6 di ADR-0112): un sistema
+# FUORI dalla famiglia d20, a mucchio di d10, come i giochi narrativi di lupi
+# mannari. Lo usa solo scripts/tests/test_prova_non_d20.py, che lo copia in un
+# repo temporaneo; non è mai in sistemi/.
+#
+# Licenza: le meccaniche sono scritte con parole e numeri nostri. Nessuna
+# tabella, nessun nome di tratto e nessuna frase dei manuali. Non serve per
+# giocare: serve a vedere dove il motore regge e dove no.
+#
+# Il meccanismo:
+#   - si tira un mucchio di d10 = attributo + abilità (formule.regole);
+#   - ogni dado ≥ soglia è un successo; un dado ≥ rilancio si tira ancora;
+#   - nella variante «uno annulla» ogni 1 toglie un successo (codice/dadi.py);
+#   - la minaccia di un incontro è la somma dei successi attesi dei mucchi
+#     d'attacco delle creature (codice/incontri.py), al posto dell'EL.
+
+id = "prova-mucchio-d10"
+nome = "Sistema a mucchio di d10 di prova (solo test, fuori dalla famiglia d20)"
+tipo = "sistema"
+licenza = "nessuna (meccaniche descritte con parole nostre, per il test)"
+fonti = []
+riconosci = ["Prova mucchio d10"]
+skill = []
+
+[capacita]
+"formule.regole" = { dati = ["sistemi/prova-mucchio-d10/dati/formule.toml"] }
+"incontri.livello" = { dati = ["sistemi/prova-mucchio-d10/dati/incontri.toml"], nota = "minaccia, non EL" }
+"termini.vietati" = { dati = ["sistemi/prova-mucchio-d10/dati/termini-vietati.toml"] }
+"lessico.abilita" = { dati = ["sistemi/prova-mucchio-d10/dati/abilita.toml"] }
+"lessico.entita" = { non_supportato = "non ci sono classi né razze d20: le creature sono tribù e forme" }
+"lessico.italiano" = { non_supportato = "nessuna traduzione ufficiale nel repo" }
+"fonti.regole" = { non_supportato = "nessun testo di riferimento in cache: le regole sono solo quelle scritte qui" }
+"pe.soglie" = { non_supportato = "l'esperienza si spende tratto per tratto, non ci sono livelli" }
+"tesoro.per_livello" = { non_supportato = "nessun tesoro per livello" }
+"creature.costruzione" = { non_supportato = "niente DV, BAB, TS né taglie d20" }
+"creature.statistiche_per_gs" = { non_supportato = "niente GS" }
+"creature.incantesimi" = { non_supportato = "niente liste di incantesimi per classe" }
+"creature.regole_di_tipo" = { non_supportato = "niente tipi di creatura d20" }
+"creature.conformita" = { non_supportato = "il controllo delle schede sa fare solo conti d20" }
+"creature.talenti" = { non_supportato = "niente talenti d20: i tratti si comprano con l'esperienza" }
+"creature.gradi" = { non_supportato = "niente gradi d20: le abilità sono mucchi di dadi" }
+"creature.liste_incantesimi" = { non_supportato = "niente liste di classe: la magia non va per livelli d20" }
+"creature.armi" = { non_supportato = "niente dado dell'arma per taglia né critico d20" }
+"creature.incantatori" = { non_supportato = "niente incantesimi al giorno per livello di classe" }
+"creature.prestigio" = { non_supportato = "niente classi, quindi niente classi di prestigio" }
+"creature.base" = { non_supportato = "niente dadi vita né armatura naturale: non c'è una creatura base da riscontrare" }
+"bonus.cumulo" = { non_supportato = "niente bonus con un tipo che si cumula o no" }
+"statblocco.campi" = { non_supportato = "la scheda ha attributi, abilità e salute, non i campi d20" }
+"statblocco.taglie" = { non_supportato = "nessuna griglia a quadretti: il sistema non ha taglie con spazio e portata" }
+"stampa.etichette" = { non_supportato = "il riquadro della creatura stampato è d20" }
+
+[moduli]
+minaccia = "incontri:minaccia"
+successi = "dadi:successi"

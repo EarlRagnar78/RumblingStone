@@ -1,4 +1,4 @@
-# Rethmar Militia (Warrior 1) [ACCEPTED — DM-canon 2026-05-05]
+# Rethmar Militia (Warrior 1) [CANONE — DM 2026-05-05]
 **Faction**: rethmar-defender | **Role**: fodder-defender | **Environment**: urban | **CR**: 0.5 | **Source**: PHB Warrior 1 | **Status**: inferred
 
 
@@ -8,6 +8,9 @@
 
 ```statblocco
 gs: 0.5
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 15
 ca-dettaglio: (+4 chain shirt, +1 Dex)
 pf: 5

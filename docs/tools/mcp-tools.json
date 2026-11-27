@@ -1743,7 +1743,7 @@
     },
     {
       "name": "export_booklet_typst",
-      "description": "«Voglio un volume unico da rilegare, con segnalibri veri e tipografia decente: da dove esce?»\n\nEdizione da stampa (ADR-0020): dallo stesso manifest dei booklet produce UN volume PDF con tipografia OFL embedded, due colonne, fregi di capitolo e segnalibri. Un capitolo marcato \"layout\": \"schede\" viene invece impaginato come scheda pregenerata — una pagina A4 per personaggio, ritratto, statblocco e background — leggendo i master PREGEN-*.md e FASCICOLO-*.md. Affianca export_booklet_pdf.py senza sostituirlo.",
+      "description": "«Voglio un volume unico da rilegare, con segnalibri veri e tipografia decente: da dove esce?»\n\nEdizione da stampa (ADR-0020): dallo stesso manifest dei booklet produce UN volume PDF con tipografia OFL embedded, due colonne, fregi di capitolo e segnalibri. Un capitolo marcato \"layout\": \"schede\" viene invece impaginato come scheda pregenerata — una pagina A4 per personaggio, ritratto, statblocco e background — leggendo i master PREGEN-*.md e FASCICOLO-*.md. Un capitolo \"layout\": \"carte\" esce in carte da tavolo 63 × 88 mm, nove per foglio A4, coi dati delle tabelle dei master (le carte della corsa del Drappo). Affianca export_booklet_pdf.py senza sostituirlo.",
       "use_case": "«Voglio un volume unico da rilegare, con segnalibri veri e tipografia decente: da dove esce?»",
       "invocation": "python3 scripts/export_booklet_typst.py MANIFEST.json --all",
       "inputSchema": {
@@ -1897,6 +1897,242 @@
       "deterministic": true
     },
     {
+      "name": "misura_box_telecomando",
+      "description": "«C'è un box che dice ai giocatori cosa pensano?»\n\nI box read-aloud che decidono per il gruppo cosa capisce, sa o prova (seconda persona plurale, fuori dalle battute). Il 2026-11-03 i 2 veri corretti nel testo (4 → 2 colpi, i 2 rimasti accettati); --check è il cancello, in CI da test_misure_rigorose. Deterministico.",
+      "use_case": "«C'è un box che dice ai giocatori cosa pensano?»",
+      "invocation": "python3 scripts/misura_box_telecomando.py [FILE.md ...] [--check]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "file markdown (default: i file vivi)"
+          },
+          "check": {
+            "type": "boolean",
+            "description": "cancello: esce con 1 se c'è un colpo fuori da ACCETTATI"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "nessun colpo nuovo (o senza --check: elenco stampato)",
+        "1": "con --check: un box nuovo dice al gruppo cosa capisce o sa"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "misura_distanza_pagine",
+      "description": "«Quante pagine sfoglia il DM, nel volume stampato, per trovare i numeri di chi ha davanti?»\n\nLegge il PDF stampato con PyMuPDF e, per ogni persona che ha un riquadro nel repo, misura quante pagine separano le pagine dove agisce (nominata almeno 3 volte) dalla pagina con la sua CA e i suoi pf. È la misura della lettura a mano della prova ADR-0107 resa ripetibile. Indicatore, non cancello. Con --volume misura lo standard del volume (ADR-0122): introduzione di capitolo, chiavi d'area fra testo e mappa, mappa entro una pagina, appendice di regione e PNG, ritratto dei PNG principali, contro le soglie di Burnt Offerings e Red Hand of Doom.",
+      "use_case": "«Quante pagine sfoglia il DM, nel volume stampato, per trovare i numeri di chi ha davanti?»",
+      "invocation": "python3 scripts/misura_distanza_pagine.py VOLUME.pdf",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pdf": {
+            "type": "string",
+            "description": "uno o più PDF da confrontare (con --volume, oppure --tutti o --manifest)"
+          },
+          "nomi": {
+            "type": "string",
+            "description": "nomi separati da virgola (default: chi ha un riquadro nel repo)"
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Tutto in JSON."
+          },
+          "volume": {
+            "type": "boolean",
+            "description": "lo standard del volume, S1-S5 (ADR-0122)"
+          },
+          "riferimento": {
+            "type": "string",
+            "description": "annotazione di un PDF di riferimento (mappe raster, appendici)"
+          },
+          "tutti": {
+            "type": "boolean",
+            "description": "con --volume: ogni booklet del DM"
+          },
+          "manifest": {
+            "type": "string",
+            "description": "con --volume: il booklet di questo manifest (compilato come misura_stampa)"
+          },
+          "check": {
+            "type": "boolean",
+            "description": "con --volume: esce 1 se un booklet è sotto soglia"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "la misura è stampata: è un indicatore",
+        "2": "manca PyMuPDF",
+        "1": "con --volume --check: almeno una misura sotto le soglie dei riferimenti"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "misura_fedelta_nli",
+      "description": "«La riscrittura ha cambiato un fatto che i numeri non vedono, tipo nord diventato sud?»\n\nIl riscritto contraddice l'originale? Coppie (riga tolta, riga messa) del diff, modello NLI mDeBERTa multilingue (MIT), massimo dei due sensi sopra 0,5. Sulle 26 coppie del DM alla cieca F1 0,83 contro 0,62 dei soli numeri. Con --ripara (e dentro ciclo_prosa revisione/misura) le righe che contraddicono tornano all'originale in automatico. Canale unstable (ADR-0099).",
+      "use_case": "«La riscrittura ha cambiato un fatto che i numeri non vedono, tipo nord diventato sud?»",
+      "invocation": "python3 scripts/misura_fedelta_nli.py ORIGINALE RISCRITTO | --rif REV FILE... [--ripara] [--soglia 0.5] [--json]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "file": {
+            "type": "string",
+            "description": "ORIGINALE RISCRITTO, oppure con --rif i file da confrontare"
+          },
+          "rif": {
+            "type": "string",
+            "description": "il commit o il ramo di prima"
+          },
+          "soglia": {
+            "type": "number",
+            "description": "probabilità di contraddizione oltre cui segnalare"
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Tutto in JSON."
+          },
+          "ripara": {
+            "type": "boolean",
+            "description": "riscrive il file: le righe che contraddicono tornano all'originale"
+          }
+        },
+        "required": [
+          "file"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "**/*.md"
+      ],
+      "exit_codes": {
+        "0": "nessuna contraddizione, o con --ripara le righe sono state rimesse",
+        "1": "righe che contraddicono l'originale (senza --ripara)",
+        "2": "mancano transformers/torch o il modello"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "misura_mappe_schede",
+      "description": "«Sulla pianta la creatura Grande occupa i suoi quadretti, e nello scontro esce la sua scheda?»\n\nLe pedine delle mappe JSON contro le schede: quante unità nemiche con un nome dichiarano `scheda`, i collegamenti rotti, le taglie della pianta che non sono quelle della scheda, le mappe senza scala. Con --booklet, per ogni booklet, le unità delle mappe stampate la cui scheda non è nel booklet. In prova (ADR-0128): avvisa, non ferma.",
+      "use_case": "«Sulla pianta la creatura Grande occupa i suoi quadretti, e nello scontro esce la sua scheda?»",
+      "invocation": "python3 scripts/misura_mappe_schede.py --dettaglio",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "dettaglio": {
+            "type": "boolean",
+            "description": "Elenca collegamenti rotti e taglie discordi, mappa per mappa."
+          },
+          "proponi": {
+            "type": "boolean",
+            "description": "I collegamenti certi (id del Bestiario fra parentesi, o nome intero di una scheda dello stesso modulo), senza scrivere."
+          },
+          "scrivi": {
+            "type": "boolean",
+            "description": "Scrive i collegamenti certi nei JSON e porta `taglie` alla taglia della scheda."
+          },
+          "booklet": {
+            "type": "boolean",
+            "description": "Per ogni booklet, le unità delle mappe stampate la cui scheda non è nel booklet."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Avvisa se una misura peggiora rispetto al registro; esce 0."
+          },
+          "aggiorna": {
+            "type": "boolean",
+            "description": "Riscrive docs/audit/mappe-schede.json."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Tutto in JSON."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "sempre: è una misura in prova"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "misura_ordine",
+      "description": "«L'ordine del booklet regge al tavolo, o il DM dovrà cercare e andare a braccio?»\n\nMisura l'ordine dei capitoli di un booklet dal suo PDF (ADR-0145): legge l'indice, dà un ruolo a ogni sezione con le regole di un file di ruoli (avvio, preparazione, gioco, sintesi, fuori serata, riferimento) e conta i difetti R2-R8 (preparazione dopo il gioco, scene fuori ordine, riassunto dopo il dettaglio, dopo-serata fra le scene, doppioni, guida ai capitoli sbagliata). Con una regola \"parte\": true misura un volume d'arco: in più V1 (quadro del volume prima della Parte I), V2 (indice oltre due pagine), V3 (parti senza gioco fra parti giocate), e le regole R parte per parte. Serve PyMuPDF.",
+      "use_case": "«L'ordine del booklet regge al tavolo, o il DM dovrà cercare e andare a braccio?»",
+      "invocation": "python3 scripts/misura_ordine.py PDF RUOLI.json",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "pdf": {
+            "type": "string",
+            "description": "Il PDF composto del booklet."
+          },
+          "ruoli": {
+            "type": "string",
+            "description": "Il file JSON dei ruoli delle sezioni (regole sul titolo)."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Misure e sezioni in JSON."
+          }
+        },
+        "required": [
+          "pdf",
+          "ruoli"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "ok",
+        "1": "un booklet sopra un suo tetto o non registrato (--check)",
+        "2": "manca PyMuPDF"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "misura_ripetizioni_frasi",
+      "description": "«Quali immagini ho già usato in un altro box, anche con parole diverse?»\n\nLe immagini ripetute fra i box read-aloud, frase per frase, con embedding multilingue (MiniLM, Apache 2.0). Il 2026-11-03 le 2 vere nei master corrette (21 → 19 coppie), le altre lette e scritte in plans/scrittura/ripetizioni-accettate.json; --check è il cancello locale. Canale unstable (ADR-0099).",
+      "use_case": "«Quali immagini ho già usato in un altro box, anche con parole diverse?»",
+      "invocation": "python3 scripts/misura_ripetizioni_frasi.py [--soglia 0.80] [--json] [--check]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "soglia": {
+            "type": "number",
+            "description": "coseno minimo"
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Tutto in JSON."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "cancello: esce con 1 se c'è una coppia fuori da ripetizioni-accettate.json"
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "nessuna coppia nuova (o senza --check: elenco stampato)",
+        "1": "con --check: una ripetizione nuova fra box",
+        "2": "manca sentence-transformers"
+      },
+      "deterministic": true
+    },
+    {
       "name": "misura_stampa",
       "description": "«Questo booklet si stampa bene? Cosa è peggiorato o migliorato rispetto all'ultima volta?»\n\nCompila ogni booklet e ne misura il PDF come un controllo di prestampa: font non incorporati, testo sotto 7 pt, testo oltre la gabbia dei margini speculari, immagini sotto 300 dpi, riquadri di creatura spezzati fra due pagine (dai segnaposti <sb-inizio>/<sb-fine> del tema, letti con typst eval), più corpo mediano e quota di pagine illustrate. --check confronta con i tetti di docs/audit/stampa-booklet.json, che --aggiorna fa solo scendere. Serve PyMuPDF (requirements-dev.txt, come validate_corredo --stampa).",
       "use_case": "«Questo booklet si stampa bene? Cosa è peggiorato o migliorato rispetto all'ultima volta?»",
@@ -1944,6 +2180,44 @@
       "deterministic": true
     },
     {
+      "name": "misura_standard_tavolo",
+      "description": "«Al tavolo trovo chi ho davanti, la sua faccia e la mappa nel capitolo che sto giocando?»\n\nPer ogni booklet del DM e ogni capitolo, le persone con un nome che ci compaiono e se nello stesso capitolo ci sono numeri, aspetto, ritratto, chi è, cosa vuole e tattica (lo standard minimo del DM del 2026-11-02, ADR-0107); per ogni capitolo con uno scontro, se la mappa è nel capitolo vicino a dove serve. Con --prova misura il capitolo arricchito da dmcore.chi_si_incontra. Indicatore, non cancello.",
+      "use_case": "«Al tavolo trovo chi ho davanti, la sua faccia e la mappa nel capitolo che sto giocando?»",
+      "invocation": "python3 scripts/misura_standard_tavolo.py --dettaglio",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "dettaglio": {
+            "type": "boolean",
+            "description": "Elenca ogni coppia capitolo × persona con quello che manca, e i capitoli con uno scontro senza mappa."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Tutto in JSON."
+          },
+          "manifest": {
+            "type": "string",
+            "description": "un booklet solo"
+          },
+          "soglia": {
+            "type": "integer",
+            "description": "citazioni minime per dire che una persona compare"
+          },
+          "prova": {
+            "type": "boolean",
+            "description": "Misura ogni booklet come se il manifest avesse «schede»: «entrambe» e «chi_si_incontra»: true (ADR-0107), cioè il capitolo come lo stamperebbe l'esportatore con le persone e le mappe portate dal master."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "sempre: è un indicatore"
+      },
+      "deterministic": true
+    },
+    {
       "name": "misura_statblocchi_booklet",
       "description": "«Le creature di questo booklet escono tutte nello stesso riquadro, e quante ne mancano?»\n\nConta, booklet per booklet, le schede di creatura e la forma in cui escono in stampa (ADR-0105): riquadro (il recinto ```statblocco), griglia (un recinto qualunque), prosa, tabella, sciolta. --stampa conta anche i riquadri nel sorgente Typst; --check confronta i fuori forma con i tetti di docs/audit/statblocchi-booklet.json, che --aggiorna fa solo scendere.",
       "use_case": "«Le creature di questo booklet escono tutte nello stesso riquadro, e quante ne mancano?»",
@@ -1981,6 +2255,43 @@
       "exit_codes": {
         "0": "ok",
         "1": "un booklet sopra il suo tetto (--check)"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "provenienza_immagini",
+      "description": "«Le immagini generate che finiscono nei booklet dicono ancora di essere generate, come i loro master?»\n\nEtichetta di provenienza nelle copie web/ delle immagini: legge la sorgente digitale dal manifesto C2PA firmato del master e la scrive nella copia JPEG come XMP IPTC (DigitalSourceType), senza ricomprimerla. Non indovina: senza manifesto firmato la copia resta senza.",
+      "use_case": "«Le immagini generate che finiscono nei booklet dicono ancora di essere generate, come i loro master?»",
+      "invocation": "python3 scripts/provenienza_immagini.py [cartella ...] [--scrivi] [--check] [--json]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "cartelle": {
+            "type": "string",
+            "description": "Cartelle dei master (default: tutte quelle con una web/ tracciata)."
+          },
+          "scrivi": {
+            "type": "boolean",
+            "description": "Scrive l'etichetta nelle copie che non l'hanno."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se un'etichetta manca o non torna col master."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Rapporto in JSON."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<cartella>/web/*.jpg"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "--check: un'etichetta manca o non torna"
       },
       "deterministic": true
     },
@@ -2207,6 +2518,18 @@
           "check": {
             "type": "boolean",
             "description": "Gate: ogni `pf-dado` registra i dadi vita e ogni correzione è riproducibile."
+          },
+          "cancello-moduli": {
+            "type": "boolean",
+            "description": "Cancello (in CI): le schede dei moduli di un altro sistema (Drappo e Giardino PF1e) tornano con le regole del loro sistema; i conti senza regola si saltano e si dicono."
+          },
+          "cancello-numeri": {
+            "type": "boolean",
+            "description": "Cancello (ADR-0118): ogni numero che la regola sa calcolare (pf, TS, lotta, attacco, AU delle unità = attacco uno contro uno + 2) torna esatto su Bestiario, master, recinti e stand alone; cricchetto su docs/audit/numeri-baseline.json, anche per i file con numeri che nessun conto legge."
+          },
+          "aggiorna-numeri": {
+            "type": "boolean",
+            "description": "Toglie dalla baseline dei numeri gli scarti risolti e i file ora coperti; non aggiunge niente e fallisce se c'è uno scarto nuovo."
           }
         },
         "required": [],
@@ -2642,6 +2965,101 @@
       "deterministic": true
     },
     {
+      "name": "prove_skill",
+      "description": "«Questa skill ha le sue prove con trappola, e la versione nuova inventa meno della vecchia?»\n\nLe prove con trappola delle skill (ADR-0114): controlla la forma dei casi in skills/<nome>/evals/ (quella di claude plugin eval), prepara il piano alla cieca di una prova A/B vecchia/nuova e ne scrive l'esito con il test del segno. Non chiama modelli: le esecuzioni le fa un workflow o claude plugin eval. Dal ADR-0148 anche gli agenti di .claude/agents/: casi in .claude/agent-evals/<agente>/<caso>/ con almeno un giudice deterministico (regex, tool_used, tool_order, file_exists) ed esempi fissi buona/cattiva; esempi controlla in CI che ogni giudice promuova la buona e bocci la cattiva; valuta giudica un'esecuzione registrata senza modelli; impronta lega agente, skill precaricate e casi; esegui lancia claude -p --agent (costa token, mai in CI); registra scrive l'esito in .claude/agent-evals/ESITI.jsonl; cricchetto chiede, per ogni agente toccato dal diff, un esito con l'impronta nuova non peggiore del precedente (testing: avvisa; --rigoroso: blocca).",
+      "use_case": "«Questa skill ha le sue prove con trappola, e la versione nuova inventa meno della vecchia?»",
+      "invocation": "python3 scripts/prove_skill.py controlla [--agenti] | esempi | valuta CASO ESECUZIONE | impronta | esegui | registra | cricchetto",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "comando": {
+            "type": "string",
+            "description": "controlla · prepara · esito · valuta · esempi · impronta · esegui · registra · cricchetto"
+          },
+          "minimo": {
+            "type": "integer",
+            "description": "Casi minimi per skill (controlla)."
+          },
+          "uscita": {
+            "type": "string",
+            "description": "Cartella del piano A/B (prepara)."
+          },
+          "skill": {
+            "type": "string",
+            "description": "Solo questa skill (prepara), ripetibile."
+          },
+          "seme": {
+            "type": "integer",
+            "description": "Seme delle lettere alla cieca (prepara)."
+          },
+          "piano": {
+            "type": "string",
+            "description": "Cartella del piano con chiave.json e giudizi.json (esito)."
+          },
+          "giudizi": {
+            "type": "string",
+            "description": "File dei giudizi dentro --piano (esito)."
+          },
+          "agenti": {
+            "type": "boolean",
+            "description": "Con controlla: i casi degli agenti in .claude/agent-evals/."
+          },
+          "agente": {
+            "type": "string",
+            "description": "Agente su cui lavorare (esempi, impronta, esegui, registra, cricchetto)."
+          },
+          "caso": {
+            "type": "string",
+            "description": "Con esegui: solo questi casi; ripetibile."
+          },
+          "modello": {
+            "type": "string",
+            "description": "Con esegui e registra: il modello usato."
+          },
+          "cartella-lavoro": {
+            "type": "string",
+            "description": "Con esegui: il git worktree usa e getta dove l'agente lavora (obbligatorio)."
+          },
+          "esecuzioni": {
+            "type": "string",
+            "description": "Con registra: la cartella scritta da esegui."
+          },
+          "data": {
+            "type": "string",
+            "description": "Con registra: la data dell'esito."
+          },
+          "nota": {
+            "type": "string",
+            "description": "Con registra: una nota libera."
+          },
+          "base": {
+            "type": "string",
+            "description": "Con cricchetto: il ref di confronto (default origin/main)."
+          },
+          "rigoroso": {
+            "type": "boolean",
+            "description": "Con cricchetto: esce 1 invece di avvisare."
+          }
+        },
+        "required": [
+          "comando"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<uscita>/piano.json",
+        "<piano>/ESITO.md",
+        ".claude/agent-evals/ESITI.jsonl",
+        "<uscita>/<caso>/ (risposta.md, trace.jsonl, files/, cli.txt)"
+      ],
+      "exit_codes": {
+        "0": "casi in forma, giudici che discriminano, esito non peggiore",
+        "1": "un caso malformato, un giudice che non discrimina, un'esecuzione fallita, o (con --rigoroso) un agente toccato senza esito valido",
+        "2": "errore d'uso, git diff fallito o --cartella-lavoro uguale al repo"
+      },
+      "deterministic": true
+    },
+    {
       "name": "skill_scanner",
       "description": "«Una skill di questo repo contiene qualcosa che un agente non dovrebbe eseguire?»\n\nScanner statico di sicurezza delle skill (script scaricati e dati alla shell, rete non dichiarata, credenziali, codice offuscato), copiato identico da awesome-llm-apps (Apache 2.0, ADR-0076). Esce 1 se trova un CRITICO.",
       "use_case": "«Una skill di questo repo contiene qualcosa che un agente non dovrebbe eseguire?»",
@@ -2923,6 +3341,56 @@
       "deterministic": false
     },
     {
+      "name": "bundle_offline",
+      "description": "«Devo stampare su una macchina senza rete: cosa scarico dal rilascio e come lo installo?»\n\nIl bundle offline del rilascio (ADR-0116, sul modello di iemod-fetch): per ogni piattaforma pip download delle wheel di requirements.txt, che portano anche typst e pdfimpose, in un zip riproducibile con BUNDLE.json (sha256 di ogni file). installa verifica ogni wheel contro BUNDLE.json e fa pip install --no-index: si stampa senza rete. Sostituisce strumenti.py e mise.",
+      "use_case": "«Devo stampare su una macchina senza rete: cosa scarico dal rilascio e come lo installo?»",
+      "invocation": "python3 scripts/bundle_offline.py costruisci --uscita dist",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "azione": {
+            "type": "string",
+            "description": "costruisci · installa · elenco",
+            "enum": [
+              "costruisci",
+              "installa",
+              "elenco"
+            ]
+          },
+          "piattaforma": {
+            "type": "string",
+            "description": "costruisci: ripetibile; default tutte.",
+            "enum": [
+              "linux-arm64",
+              "linux-x64",
+              "macos-arm64",
+              "windows-x64"
+            ]
+          },
+          "uscita": {
+            "type": "string",
+            "description": "costruisci: dove scrivere i zip."
+          },
+          "bundle": {
+            "type": "string",
+            "description": "installa: il rumblingstone-offline-<piattaforma>-<tag>.zip."
+          }
+        },
+        "required": [
+          "azione"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "dist/"
+      ],
+      "exit_codes": {
+        "0": "fatto",
+        "1": "una wheel con lo sha256 sbagliato, o pip fallito"
+      },
+      "deterministic": true
+    },
+    {
       "name": "check_plans_discipline",
       "description": "«Ho toccato scripts/ o un ADR: ho lasciato la riga di tracciatura che la regola d'oro chiede?»\n\nGate ADR-0009: modifiche strutturali (scripts/, skills/, converters/, .github/, plans/adr/) senza riga in plans/CHANGELOG.md -> exit 1. Passa se i commit strutturali sono tutti di Dependabot (PI-3b).",
       "use_case": "«Ho toccato scripts/ o un ADR: ho lasciato la riga di tracciatura che la regola d'oro chiede?»",
@@ -3056,10 +3524,62 @@
       "deterministic": true
     },
     {
+      "name": "claude_progetto",
+      "description": "«Perché nei thread del progetto non girano l'hook, le skill del repo e rumblingstone-tools?»\n\nScrive nella cartella che contiene il clone un CLAUDE.md corto, il settings.json e il .mcp.json del repo a percorsi assoluti (ADR-0140).",
+      "use_case": "«Perché nei thread del progetto non girano l'hook, le skill del repo e rumblingstone-tools?»",
+      "invocation": "./scripts/claude-progetto.sh [cartella]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "cartella": {
+            "type": "string",
+            "description": "Dove scrivere; di default la cartella che contiene il repo."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<cartella>/CLAUDE.md",
+        "<cartella>/.claude/settings.json",
+        "<cartella>/.mcp.json"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "errore"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "claudeignore_deny",
+      "description": "«Ho aggiunto una voce a .claudeignore: Claude Code la rispetta davvero?»\n\nTraduce .claudeignore (che Claude Code non legge) in regole Read di permissions.deny in .claude/settings.json (ADR-0142).",
+      "use_case": "«Ho aggiunto una voce a .claudeignore: Claude Code la rispetta davvero?»",
+      "invocation": "python3 scripts/claudeignore_deny.py [--check]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se permissions.deny non è allineato a .claudeignore."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        ".claude/settings.json"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "regole non allineate (--check)"
+      },
+      "deterministic": true
+    },
+    {
       "name": "coerenza_campagna",
-      "description": "«Lo stesso PNG ha due GS in due file dell'arco? Gli orologi di questo arco hanno 4, 6 o 8 segmenti e un presagio scritto?»\n\nLotto 7c, coerenza. `fronti`: un file di fronti e orologi contro scripts/schemas/fronti_orologi.schema.json e le regole del mestiere (2-3 pericoli, presagi 1-3 o 3-5 scritti in un master, 1-3 domande, segmenti 4/6/8, riempiti <= totale, quando si riempie), e conta i campi che il master scrive contro quelli dedotti; con --state misura gli orologi dei villain di state.yaml. `fatti`: il rilevatore prudente di contraddizioni fra scene e archi (GS, pf, CA, TS, CD, classi, titolo, eta', anni DR, vivo/morto, portatore d'artefatto, giorno del March Clock), con file:riga di ogni valore. Misura, non cancello.",
-      "use_case": "«Lo stesso PNG ha due GS in due file dell'arco? Gli orologi di questo arco hanno 4, 6 o 8 segmenti e un presagio scritto?»",
-      "invocation": "python3 scripts/coerenza_campagna.py {fronti FILE.yaml... [--state] | fatti DIR... [--bestiario] [--tutti] | tutto --fronti F... --archi D... --out DIR}",
+      "description": "«Lo stesso PNG ha due GS in due file dell'arco? Gli orologi di questo arco hanno 4, 6 o 8 segmenti e un presagio scritto? Questo master contraddice state.yaml sul giorno d'arrivo dell'orda o su chi porta l'ascia?»\n\nLotto 7c, coerenza. `fronti`: un file di fronti e orologi contro scripts/schemas/fronti_orologi.schema.json e le regole del mestiere (2-3 pericoli, presagi 1-3 o 3-5 scritti in un master, 1-3 domande, segmenti 4/6/8, riempiti <= totale, quando si riempie), e conta i campi che il master scrive contro quelli dedotti; con --state misura gli orologi dei villain di state.yaml. `fatti`: il rilevatore prudente di contraddizioni fra scene e archi (GS, pf, CA, TS, CD, classi, titolo, eta', anni DR, vivo/morto, portatore d'artefatto, giorno del March Clock), con file:riga di ogni valore. Con `fatti --state` (ADR-0125, canale testing) aggiunge le regole con l'atteso in campaign/state.yaml: S1 giorno d'arrivo dell'orda a Rethmar, S5 chi porta quale artefatto, S6 modifiche permanenti di un PG, S7 echi armati senza un file che li cita; ogni violazione dice regola, atteso, ha e file:riga, e \"chi sa cosa\" senza tempo esce fra i non verificabili. Misura, non cancello.",
+      "use_case": "«Lo stesso PNG ha due GS in due file dell'arco? Gli orologi di questo arco hanno 4, 6 o 8 segmenti e un presagio scritto? Questo master contraddice state.yaml sul giorno d'arrivo dell'orda o su chi porta l'ascia?»",
+      "invocation": "python3 scripts/coerenza_campagna.py {fronti FILE.yaml... [--state] | fatti DIR... [--bestiario] [--tutti] [--state] | tutto --fronti F... --archi D... --out DIR}",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -3072,9 +3592,17 @@
               "tutto"
             ]
           },
+          "percorsi": {
+            "type": "string",
+            "description": "(fronti) i file YAML di fronti e orologi; (fatti) le cartelle d'arco da leggere, per esempio campaign o 09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist."
+          },
           "state": {
             "type": "boolean",
-            "description": "(fronti) Misura anche gli orologi dei villain di campaign/state.yaml, in sola lettura."
+            "description": "(fronti) Misura anche gli orologi dei villain di campaign/state.yaml, in sola lettura. (fatti) Aggiunge le regole S1, S5, S6, S7 e T2 (catena di chi informa chi) contro campaign/state.yaml, con regola, atteso, ha e file:riga (ADR-0125)."
+          },
+          "tattiche": {
+            "type": "boolean",
+            "description": "(fatti) Aggiunge la regola S8: un incantesimo (in corsivo) o un talento che le Tattiche di una scheda del Bestiario nominano e la scheda non ha. Misura in sola lettura, circa 20 secondi (ADR-0125)."
           },
           "bestiario": {
             "type": "boolean",
@@ -3196,6 +3724,36 @@
       "deterministic": true
     },
     {
+      "name": "controlla_marche",
+      "description": "«In questa PR ho aggiunto una marca senza domanda, o tolto un INFERRED senza dire chi l'ha deciso?»\n\nI due cancelli delle marche sulle righe cambiate (ADR-0109, scheda 4): una marca INFERRED aggiunta senza domanda e base, e un INFERRED tolto senza CANONE, GENERATO o blocco storico nello stesso file. Guarda solo il diff contro la base; salta plans/, changelog, righe di regola e volumi di stampa. Bloccante in CI sulle PR dal 2026-11-25, dopo il canale testing di ADR-0099.",
+      "use_case": "«In questa PR ho aggiunto una marca senza domanda, o tolto un INFERRED senza dire chi l'ha deciso?»",
+      "invocation": "python3 scripts/controlla_marche.py --base origin/main",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "base": {
+            "type": "string",
+            "description": "Ref di confronto, es. origin/main."
+          },
+          "rigido": {
+            "type": "boolean",
+            "description": "Exit 1 se c'è almeno un avviso."
+          }
+        },
+        "required": [
+          "base"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "nessun avviso, o avvisi senza --rigido",
+        "1": "avvisi con --rigido",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
       "name": "copertura_scene",
       "description": "«Stasera porto questo modulo al tavolo: c'è scritto com'è ogni posto in cui i PG entrano e chi ci trovano, o dovrò inventarlo?»\n\nMetà deterministica dello strumento lettore e playtester (ADR-0073): in ogni master DEF e stand-alone controlla che ogni scena abbia un box read-aloud (C1) e che chi ha un'etichetta di battuta abbia una scheda d'entrata o una riga nel foglio del cast (C2). Nei moduli che adottano il contratto «In scena — Dove: … — Chi: …» controlla che ogni luogo abbia un box con quel luogo nell'etichetta e ogni persona una scheda o una riga fra le Comparse (C3), e che nessuna scheda o battuta stia fuori dall'elenco (C4). Profili e residui dichiarati in plans/copertura-scene.json; un master DEF non dichiarato prende il profilo severo.",
       "use_case": "«Stasera porto questo modulo al tavolo: c'è scritto com'è ogni posto in cui i PG entrano e chi ci trovano, o dovrò inventarlo?»",
@@ -3223,6 +3781,31 @@
       "exit_codes": {
         "0": "ok",
         "1": "rilievi non dichiarati o residui scaduti (--check)"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "cricchetto_prosa",
+      "description": "«Questa PR ha peggiorato la prosa che tocca?»\n\nSui file di gioco cambiati da una revisione (prosa pura sempre, file misti solo se ricevono un box) nessuna norma MQM ha più difetti di prima; esce 1 altrimenti (ADR-0146).",
+      "use_case": "«Questa PR ha peggiorato la prosa che tocca?»",
+      "invocation": "python3 scripts/cricchetto_prosa.py --rispetto-a origin/main",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "rispetto-a": {
+            "type": "string",
+            "description": "La revisione di confronto."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "nessuna norma peggiorata",
+        "1": "almeno una norma peggiorata"
       },
       "deterministic": true
     },
@@ -3258,7 +3841,7 @@
     },
     {
       "name": "dm",
-      "description": "«Devo fare una cosa con il repo e non ricordo quale script: da dove passo?»\n\nEntrypoint unico: orchestra tutti gli script per fase del Playbook (prep/post/session/recap/handout/maps/hype/dossier/skills/doctor/bestiario/prosa). ADR-0002. Il sottocomando «volume» (ADR-0031) esegue la catena editoriale in ordine da un manifest a un volume, e chiude ricordando il cancello d'uscita IP: non e' automatizzabile, ma e' il momento in cui va detto. «corredo» fa lo stesso per tutti i volumi e i fogli di una serata.",
+      "description": "«Devo fare una cosa con il repo e non ricordo quale script: da dove passo?»\n\nEntrypoint unico: orchestra tutti gli script per fase del Playbook (prep/post/session/recap/handout/maps/hype/dossier/skills/doctor/bestiario/prosa/sistemi). ADR-0002. Il sottocomando «volume» (ADR-0031) esegue la catena editoriale in ordine da un manifest a un volume, e chiude ricordando il cancello d'uscita IP: non e' automatizzabile, ma e' il momento in cui va detto. «corredo» fa lo stesso per tutti i volumi e i fogli di una serata.",
       "use_case": "«Devo fare una cosa con il repo e non ricordo quale script: da dove passo?»",
       "invocation": "python3 scripts/dm.py",
       "inputSchema": {
@@ -3266,7 +3849,7 @@
         "properties": {
           "comando": {
             "type": "string",
-            "description": "Sottocomando di fase; i flag sono inoltrati allo script sottostante. «volume» e' la catena dei mestieri in ordine (prosa, lingua, manifest, colophon, schermo, stampa, imposizione) e assorbe il «dm.py stampa» mai fatto. «bestiario» passa i flag a uno dei cinque script delle creature (estrai, deriva, attributi, creatura, conformita). «corredo» fa l'intero corredo della serata da un *.corredo.json: controlla i pezzi, fa ogni volume con la catena di «volume» e misura i PDF. «prosa» passa i flag a uno degli script della catena della prosa (ADR-0101), in ordine d'uso: misura, ciclo, mqm, sintassi, coerenza, domande, migliora, cieco, banco, voto.",
+            "description": "Sottocomando di fase; i flag sono inoltrati allo script sottostante. «volume» e' la catena dei mestieri in ordine (prosa, lingua, manifest, colophon, schermo, stampa, imposizione) e assorbe il «dm.py stampa» mai fatto. «bestiario» passa i flag a uno dei cinque script delle creature (estrai, deriva, attributi, creatura, conformita). «corredo» fa l'intero corredo della serata da un *.corredo.json: controlla i pezzi, fa ogni volume con la catena di «volume» e misura i PDF. «prosa» passa i flag a uno degli script della catena della prosa (ADR-0101), in ordine d'uso: misura, ciclo, mqm, sintassi, coerenza, domande, migliora, cieco, banco, voto. «sistemi» passa i flag a scripts/sistemi.py (ADR-0111): i sistemi attivi, il sistema di un file con --di, la matrice strumenti × sistemi, il cancello con --check.",
             "enum": [
               "prep",
               "post",
@@ -3281,7 +3864,13 @@
               "volume",
               "corredo",
               "bestiario",
-              "prosa"
+              "prosa",
+              "asset",
+              "ambiente",
+              "booklet",
+              "prompts",
+              "gruppo",
+              "sistemi"
             ]
           }
         },
@@ -3297,6 +3886,48 @@
         "0": "ok",
         "1": "errore del sottocomando",
         "2": "errore uso"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "documentazione_allineata",
+      "description": "«Questa PR aggiunge struttura che nessun indice cita? Quanto debito di documentazione ha il repo? Questa settimana serve chiamare autore-documenti?»\n\nLa documentazione segue la struttura (ADR-0153): un agente, uno script, un workflow o un hook aggiunti rispetto a una revisione sono citati nel loro indice (AGENTS.md, docs/INDEX.md, GUIDA-CONFIGURAZIONE-CLAUDE.md), o esce 1; con --debito conta tutto il repo, gli ADR fuori indice di validate_docs e l'ultimo ADR citato in ARCHITETTURA.md, e con --check lo confronta con il tetto di plans/debito-documentazione.json. Con --attiva (la routine del lunedì) dice se serve chiamare autore-documenti, perché e con quale lista di lavoro, e stima il costo in token; esce sempre 0.",
+      "use_case": "«Questa PR aggiunge struttura che nessun indice cita? Quanto debito di documentazione ha il repo? Questa settimana serve chiamare autore-documenti?»",
+      "invocation": "python3 scripts/documentazione_allineata.py --rispetto-a origin/main",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "rispetto-a": {
+            "type": "string",
+            "description": "Solo gli elementi aggiunti rispetto a questa revisione (CI sulle PR)."
+          },
+          "debito": {
+            "type": "boolean",
+            "description": "Tutto il repo."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Con --debito: uscita JSON."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Con --debito: esce 1 se il totale supera il tetto."
+          },
+          "attiva": {
+            "type": "boolean",
+            "description": "Se serve un'attivazione di autore-documenti: motivi, lista di lavoro e stima_token (esce 0; leggere il campo attiva)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "niente di nuovo scoperto, o debito entro il tetto; con --attiva sempre",
+        "1": "un elemento nuovo non citato, o debito oltre il tetto",
+        "2": "errore d'uso (revisione inesistente, git assente, tetto illeggibile)"
       },
       "deterministic": true
     },
@@ -3392,7 +4023,7 @@
     },
     {
       "name": "gate_locale",
-      "description": "«Prima di spingere: la CI tornerà verde?»\n\nI gate del job validate della CI eseguiti sulla macchina, letti da .github/workflows/ci.yml e non da una lista copiata: un gate nuovo in CI entra da solo. Salta, dicendolo, i passi che installano e quelli con espressioni di GitHub che qui non hanno valore; continue-on-error vale come avviso; --rapido salta i corridori dei test.",
+      "description": "«Prima di spingere: la CI tornerà verde?»\n\nI gate del job validate della CI eseguiti sulla macchina, letti da .github/workflows/ci.yml e non da una lista copiata: un gate nuovo in CI entra da solo. Salta, dicendolo, i passi che installano e quelli con espressioni di GitHub che qui non hanno valore; continue-on-error vale come avviso; --rapido salta i corridori dei test. --pre-push tiene solo i gate bloccanti e veloci: è il hook pre-push (ADR-0143).",
       "use_case": "«Prima di spingere: la CI tornerà verde?»",
       "invocation": "python3 scripts/gate_locale.py --rapido",
       "inputSchema": {
@@ -3401,6 +4032,10 @@
           "rapido": {
             "type": "boolean",
             "description": "Salta i corridori dei test (unittest, pytest)."
+          },
+          "pre-push": {
+            "type": "boolean",
+            "description": "Come --rapido, senza i passi non bloccanti né quelli lenti di LENTI: è il hook pre-push (ADR-0143)."
           },
           "elenco": {
             "type": "boolean",
@@ -3515,6 +4150,68 @@
       "deterministic": true
     },
     {
+      "name": "instradamento_agenti",
+      "description": "«Il thread chiama l'agente giusto per questo lavoro?»\n\nGli hook UserPromptSubmit, PreToolUse e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e suggerisce agente e catena; se le istruzioni scrivono una riga «Catena: …», ferma push e PR finché la sessione non ha chiamato quegli agenti e autore-documenti, salvo una deroga con motivo; ferma sempre, anche nei sottoagenti, un push (comandi git, sh -c, opzioni globali, HEAD risolto) o una scrittura con gli strumenti MCP di GitHub che riscrive o cancella un ramo campaign-group-*, tocca un ramo morto del registro o porta canone su main (ADR-0007, ADR-0090); a fine turno registra se gli agenti sono stati chiamati (ADR-0146); con --eval e --check misura il primo agente suggerito contro il set d'oro di plans/instradamento/agenti-oro.json, con le metriche di eval_metriche (scikit-learn e scipy, importati solo da --eval e --check, mai dagli hook), a cricchetto sullo split test su interi e frazioni esatte (ADR-0154).",
+      "use_case": "«Il thread chiama l'agente giusto per questo lavoro?»",
+      "invocation": "python3 scripts/instradamento_agenti.py --riepilogo",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "prompt": {
+            "type": "boolean",
+            "description": "Evento UserPromptSubmit su stdin; scrive il contesto da aggiungere."
+          },
+          "stop": {
+            "type": "boolean",
+            "description": "Evento Stop su stdin; registra se gli agenti suggeriti sono stati chiamati."
+          },
+          "cancello": {
+            "type": "boolean",
+            "description": "Evento PreToolUse su push e PR su stdin; esce 2 per bloccare."
+          },
+          "deroga": {
+            "type": "string",
+            "description": "Via d'uscita dal cancello, con un motivo di almeno 15 caratteri."
+          },
+          "prova": {
+            "type": "string",
+            "description": "Mostra l'instradamento di un testo."
+          },
+          "riepilogo": {
+            "type": "boolean",
+            "description": "Suggerimenti dati e quanti seguiti."
+          },
+          "eval": {
+            "type": "boolean",
+            "description": "Misura il primo agente suggerito contro il set d'oro, per split dev, test e tutto (accuracy con Wilson, indulgente, macro-F1, baseline maggioritaria, matrice, P/R/F1)."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Cricchetto sullo split test: esce 1 se giusti, giusti indulgenti o macro-F1 scendono sotto il tetto del set d'oro; avvisa se salgono."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Con --eval: l'uscita in JSON, identica byte per byte fra due esecuzioni."
+          },
+          "oro": {
+            "type": "string",
+            "description": "Il set d'oro da usare."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        ".claude/.uso-agenti.jsonl"
+      ],
+      "exit_codes": {
+        "0": "passa (con o senza suggerimento)",
+        "1": "deroga senza motivo; --check: regressione sotto il tetto o tetto mancante",
+        "2": "push o PR bloccati (--cancello)"
+      },
+      "deterministic": true
+    },
+    {
       "name": "instradamento_skill",
       "description": "«Se il DM dice questa frase, un agente che instrada sulle descrizioni carica le skill che deve?»\n\nL8 (D6 del 2026-10-01): per ogni frase vera del DM in plans/instradamento/casi.json, quali skill obbligatorie (ORCHESTRAZIONE §4) raggiungono i trigger fra virgolette delle descrizioni. Conta omissioni, skill in più e conflitti fra le due L1. Il gate è a cricchetto sul tetto del file. Dal 2026-10-01 (D10): casi esclusi e quasi-casi, collisioni fra descrizioni, il suggerimento per una frase (--frase) e la prova con agenti veri (--comportamentale), come chiedono agentskills.io e skill-creator.",
       "use_case": "«Se il DM dice questa frase, un agente che instrada sulle descrizioni carica le skill che deve?»",
@@ -3556,7 +4253,7 @@
     },
     {
       "name": "inventory_inferred",
-      "description": "«Quanti marcatori INFERRED aperti ha il repo, dove stanno, e quanti ne ho tolti con questo lotto?»\n\nInventario e ratchet dei marcatori INFERRED: separa i marcatori dei documenti vivi (debito aperto, sorvegliato) da quelli di plans/ e dei changelog (storici) e di docs/audit/ (meta), perché contati insieme darebbero un numero che non può scendere. Ripreso dalla PR #99 (lotto G4, ADR-0088); canale testing (ADR-0099), --check non bloccante in CI.",
+      "description": "«Quanti marcatori INFERRED aperti ha il repo, dove stanno, e quanti ne ho tolti con questo lotto?»\n\nInventario e ratchet dei marcatori INFERRED: separa i marcatori dei documenti vivi (debito aperto, sorvegliato) da quelli di plans/ e dei changelog (storici) e di docs/audit/, skill, modelli, README e fixture (meta), perché contati insieme darebbero un numero che non può scendere. Ripreso dalla PR #99 (lotto G4, ADR-0088); canale testing (ADR-0099), --check non bloccante in CI. Ogni marcatore ha anche la forma (con domanda e base, vecchia, nuda) secondo GUIDA-MARCATURE (ADR-0109).",
       "use_case": "«Quanti marcatori INFERRED aperti ha il repo, dove stanno, e quanti ne ho tolti con questo lotto?»",
       "invocation": "python3 scripts/inventory_inferred.py",
       "inputSchema": {
@@ -3593,6 +4290,109 @@
       "exit_codes": {
         "0": "ok",
         "1": "il debito aperto è salito sopra la baseline",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "lavoro_in_corso",
+      "description": "«Che lavoro c'è in sviluppo, dove sta (PR, rami, cartelle dei thread) e che cosa aspetta me?»\n\nL'istantanea dal vivo del lavoro in sviluppo fuori da main, complementare a MEMORIA.md (che resta il cancello deterministico di ciò che è su main). Legge il registro curato plans/lavoro-in-corso.json (filoni con thread, PR, rami, cartelle condivise, che cosa aspettano, il passo dopo), le PR aperte dalla REST di GitHub o da --pr-json (formato REST o gh pr list --json), i rami di origin e le cartelle di primo livello di /mnt/project-files (solo nome, data e primo titolo del LEGGIMI). Attacca una PR a un filone per numero, ramo o thread=cmsg_… nel corpo; segnala PR, rami claude/* recenti e cartelle senza filone, PR del registro non più aperte, PR ferme da oltre 30 giorni e filoni non aggiornati da 14. Conta anche i canali di ADR-0099 (stable, testing, unstable…) dalle tabelle di §2 di plans/PIANO-PIATTAFORMA-DI-SVILUPPO.md, scritte a mano fino al lotto P1, e il campo facoltativo canale dei filoni. Scrive plans/LAVORO-IN-CORSO.md. --check valida solo il registro, offline.",
+      "use_case": "«Che lavoro c'è in sviluppo, dove sta (PR, rami, cartelle dei thread) e che cosa aspetta me?»",
+      "invocation": "python3 scripts/lavoro_in_corso.py [--fetch] [--offline] [--stdout|--json] | --check",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Valida solo il registro, offline e deterministico; esce 1 sugli errori."
+          },
+          "pr-json": {
+            "type": "string",
+            "description": "PR aperte da file (REST /pulls o gh pr list --json number,title,headRefName,isDraft,updatedAt,url,body) invece della rete."
+          },
+          "offline": {
+            "type": "boolean",
+            "description": "Niente rete: le PR non si leggono e la pagina lo dice."
+          },
+          "fetch": {
+            "type": "boolean",
+            "description": "Prima scarica i rami di origin (rete)."
+          },
+          "mnt": {
+            "type": "string",
+            "description": "La cartella condivisa dei thread (default /mnt/project-files se esiste)."
+          },
+          "giorni": {
+            "type": "integer",
+            "description": "Finestra di rami e cartelle ed età massima di un filone."
+          },
+          "stdout": {
+            "type": "boolean",
+            "description": "La pagina a video, senza scrivere il file."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Il rapporto in JSON, senza scrivere il file."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "plans/LAVORO-IN-CORSO.md",
+        "<stdout>"
+      ],
+      "exit_codes": {
+        "0": "pagina scritta (anche con la rete giù: lo dice la pagina) o registro valido (--check)",
+        "1": "registro illeggibile o malformato",
+        "2": "uso errato"
+      },
+      "deterministic": false
+    },
+    {
+      "name": "lessico_regole",
+      "description": "«Questo talento, incantesimo o oggetto della scheda si chiama così nel manuale italiano?»\n\nI termini ufficiali di D&D 3.5 e PF1e e chi li usa male (ADR-0110). Genera dall'SRD 3.5 e dal PRD PF1e in cache l'indice dei termini; legge le tabelle italiano → SRD 3.5 (scripts/lessico_it.yaml, scripts/lessico_it_35.tsv) e italiano → PRD PF1e (scripts/lessico_it_pf1.tsv, per i moduli PF1e senza passare dalla 3.5); controlla le righe dei talenti delle schede e, con --campi, incantesimi, abilità e oggetti, segnalando varianti non ufficiali, nomi 3.5 nei moduli PF1e e termini sconosciuti non marcati.",
+      "use_case": "«Questo talento, incantesimo o oggetto della scheda si chiama così nel manuale italiano?»",
+      "invocation": "python3 scripts/lessico_regole.py [--offline] {indice|cerca NOME|verifica-tabella|casi FILE|controlla PERCORSI [--tutto] [--campi] [--check]}",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "cache": {
+            "type": "string",
+            "description": "Cartella della cache delle fonti (come riscontro_srd.py)."
+          },
+          "offline": {
+            "type": "boolean",
+            "description": "Non scarica: solo la cache."
+          },
+          "comando": {
+            "type": "string",
+            "description": "indice | cerca | verifica-tabella | casi | controlla.",
+            "enum": [
+              "indice",
+              "cerca",
+              "verifica-tabella",
+              "casi",
+              "controlla"
+            ]
+          },
+          "campi": {
+            "type": "boolean",
+            "description": "Con controlla: anche incantesimi, abilità e oggetti magici dei campi dello statblocco."
+          }
+        },
+        "required": [
+          "comando"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout",
+        "<cache>/lessico-indice.json"
+      ],
+      "exit_codes": {
+        "0": "rapporto prodotto",
+        "1": "con --check: termini sbagliati o sconosciuti oltre il massimo; verifica-tabella con nomi fuori fonte; casi sbagliati",
         "2": "errore d'uso"
       },
       "deterministic": true
@@ -3695,6 +4495,179 @@
       "deterministic": true
     },
     {
+      "name": "memoria_coda",
+      "description": "«Sto per risolvere un thread, o è lunedì: le scelte prese su card e il lavoro senza PR hanno la loro voce di memoria storica, scritta bene?»\n\nADR-0138: il cancello della coda della memoria storica. Ogni thread scrive in un file suo (cartella condivisa, fuori dal repo) la voce del lavoro che non finisce in una PR: scelte su card, dati verificati, thread risolti (ADR-0137). --check controlla la forma di ogni voce in coda; --thread esce 1 se un thread non ha una voce, né in coda né già nel repo; --threads fa lo stesso per i thread risolti di un elenco JSON; --piega porta le voci nuove in plans/MEMORIA-STORICA.md numerandole, solo se il file risultante passa memoria_storica.py --check. La CI del repo non vede la coda: lo lancia chi risolve un thread e la routine del lunedì.",
+      "use_case": "«Sto per risolvere un thread, o è lunedì: le scelte prese su card e il lavoro senza PR hanno la loro voce di memoria storica, scritta bene?»",
+      "invocation": "python3 scripts/memoria_coda.py DIR [--check] [--thread TITOLO ...] [--threads JSON] [--dal DATA] [--piega] [--nome TITOLO] [--json]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "cartella": {
+            "type": "string",
+            "description": "La cartella della coda, un file .md per thread."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "La forma di tutte le voci in coda: exit 1 se una è scritta male."
+          },
+          "thread": {
+            "type": "string",
+            "description": "Titolo di un thread che deve avere una voce (in coda o già piegata)."
+          },
+          "threads": {
+            "type": "string",
+            "description": "Elenco JSON dei thread (forma di list_threads): exit 1 se un thread risolto da --dal non ha voce."
+          },
+          "dal": {
+            "type": "string",
+            "description": "Con --threads: solo i thread risolti da questo giorno (AAAA-MM-GG)."
+          },
+          "piega": {
+            "type": "boolean",
+            "description": "Porta in plans/MEMORIA-STORICA.md le voci della coda non ancora presenti, numerate."
+          },
+          "nome": {
+            "type": "string",
+            "description": "Stampa il nome del file di coda per un titolo ed esce."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Uscita machine-readable: file, voci, errori, thread senza voce, voci piegate."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<stdout>",
+        "plans/MEMORIA-STORICA.md"
+      ],
+      "exit_codes": {
+        "0": "coda in forma e nessun thread senza voce",
+        "1": "una voce scritta male, un thread senza voce, o piega che romperebbe il file storico",
+        "2": "errore d'uso: cartella, file o elenco mancante, data non valida"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "memoria_custode",
+      "description": "«Sto per togliere righe dalla memoria del progetto o per fare il merge di un thread: ogni riga tolta è archiviata da qualche parte, e che cosa sanno insieme memoria, file storico e coda di questo tema?»\n\nADR-0151: la memoria del progetto dei thread (MEMORY.md e note, cartella fuori dal repo) ha uno specchio e un custode. specchia scrive un'istantanea completa con MANIFEST.json (sha256) in /mnt/project-files/memoria-progetto-specchio/ quando il contenuto cambia, in modo atomico e con un lucchetto. verifica confronta la memoria con l'ultima istantanea: ogni riga tolta deve avere i suoi gettoni nel repo, nel file storico o in coda, e le sue parole sparite (al più 2) in una voce MS o di coda (almeno il 70%); esce 1 se no, o se MEMORY.md supera 16 KB, e se passa fa avanzare l'istantanea; tetto di 12 KB e forma della coda sono avvisi. archivia scrive in coda la voce con le righe tolte (rifiuta le righe con termini riservati o email, che restano nello specchio) e fallisce chiuso, uscita 1 senza toccare la coda, se RISERVATI.txt manca, è vuoto o non si legge; verifica lo dice fra gli avvisi, insieme ai link [[nome]] rotti fra le note (leciti, non cambiano l'uscita). cerca risponde da memoria del progetto, file storico e coda con il campo fonte, e per ogni nota trovata aggiunge le note collegate a un passo con [[nome]], in uscita e in entrata (fonte memoria-link; --senza-link le toglie). redigi copia la memoria con le righe riservate sostituite da un'impronta. --hook-merge (PreToolUse sul merge di gsamuele78/RumblingStone, da mcp__github__merge_pull_request o da Bash con gh pr merge o gh api -X PUT .../pulls/N/merge; ogni altro Bash esce 0 senza leggere niente) esce 2 se la verifica fallisce; --hook-scrittura (Write/Edit/MultiEdit dentro la memoria) avvisa senza bloccare (canale testing). Gli esiti degli hook vanno in .claude/.custode-memoria.jsonl.",
+      "use_case": "«Sto per togliere righe dalla memoria del progetto o per fare il merge di un thread: ogni riga tolta è archiviata da qualche parte, e che cosa sanno insieme memoria, file storico e coda di questo tema?»",
+      "invocation": "python3 scripts/memoria_custode.py specchia | verifica [--json] | archivia [--thread TITOLO] | cerca PAROLE... [--tema T] [--senza-link] [--json] | redigi --uscita DIR | --hook-merge | --hook-scrittura | --riepilogo",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "comando": {
+            "type": "string",
+            "description": "specchia · verifica · archivia · cerca · redigi (specchia, archivia e redigi non partono dal server MCP).",
+            "enum": [
+              "specchia",
+              "verifica",
+              "archivia",
+              "cerca",
+              "redigi"
+            ]
+          },
+          "parole": {
+            "type": "string",
+            "description": "Con cerca: le parole, tutte presenti (senza badare a maiuscole e accenti)."
+          },
+          "tema": {
+            "type": "string",
+            "description": "Con cerca: un tema (campo Temi nel file storico e in coda; una parola in più nella memoria)."
+          },
+          "senza-link": {
+            "type": "boolean",
+            "description": "Con cerca: non aggiungere le note collegate a un passo con [[nome]] (fonte memoria-link)."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Uscita per un agente."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<stdout>",
+        "/mnt/project-files/memoria-progetto-specchio/istantanee/<AAAAMMGGTHHMMSSZ>/",
+        "/mnt/project-files/memoria-storica-coda/<thread>.md",
+        ".claude/.custode-memoria.jsonl"
+      ],
+      "exit_codes": {
+        "0": "verifica passata, istantanea scritta o invariata, ricerca eseguita; nei modi hook anche cartella assente o errore interno",
+        "1": "verifica: righe tolte non archiviate o MEMORY.md oltre 16 KB; archivia e redigi: RISERVATI.txt manca, è vuoto o non si legge",
+        "2": "--hook-merge: merge fermato; errore d'uso (cartella della memoria assente fuori dai modi hook)"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "memoria_storica",
+      "description": "«Sto rivedendo una soluzione già adottata o cercando la causa di una regressione: che cosa si sapeva allora di questa PR, di questo ADR, di questo tema?»\n\nADR-0127: la storia del lavoro che esce dalla memoria corta delle sessioni. Legge plans/MEMORIA-STORICA.md (una voce MS-NNNN per riga tolta dalla memoria del progetto, con data, PR, ADR, temi, testo intero, dove il fatto si ritrova nel repo e cosa c'è solo lì) e restituisce le voci che passano tutti i filtri: PR, ADR, tema, intervallo di date, id, parole (senza badare a maiuscole e accenti). --json è l'uscita per un agente. --check è il cancello della CI: numeri consecutivi, date valide, campi obbligatori, collegamento da plans/CHANGELOG.md. --pr trova anche le voci col campo PR «—», dal merge che le ha portate su main (git). --confronta-memoria DIR dice quali righe della memoria delle sessioni hanno numeri o percorsi che il repo non ha (ADR-0137). Sola lettura.",
+      "use_case": "«Sto rivedendo una soluzione già adottata o cercando la causa di una regressione: che cosa si sapeva allora di questa PR, di questo ADR, di questo tema?»",
+      "invocation": "python3 scripts/memoria_storica.py [PAROLE ...] [--pr N] [--adr N] [--tema T] [--da DATA] [--a DATA] [--id MS-NNNN] [--elenco] [--json] [--check] [--confronta-memoria DIR]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "parole": {
+            "type": "string",
+            "description": "Parole che devono comparire tutte nella voce."
+          },
+          "pr": {
+            "type": "integer",
+            "description": "Numero della PR, senza #."
+          },
+          "adr": {
+            "type": "integer",
+            "description": "Numero dell'ADR, anche senza zeri (93 = ADR-0093)."
+          },
+          "tema": {
+            "type": "string",
+            "description": "Un tema della voce (campo Temi), per esempio prosa, regole, arc07."
+          },
+          "da": {
+            "type": "string",
+            "description": "Prima data, AAAA-MM-GG compresa."
+          },
+          "a": {
+            "type": "string",
+            "description": "Ultima data, AAAA-MM-GG compresa."
+          },
+          "id": {
+            "type": "string",
+            "description": "Una voce sola, per esempio MS-0042."
+          },
+          "elenco": {
+            "type": "boolean",
+            "description": "Solo id, data e titolo delle voci trovate."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Uscita machine-readable: le voci con id, data, titolo, riga, campi e testo."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Il cancello: exit 1 se il file è scritto male o il CHANGELOG dei piani non lo collega."
+          },
+          "confronta-memoria": {
+            "type": "string",
+            "description": "Cartella della memoria delle sessioni (MEMORY.md e note): elenca le righe con PR, ADR, SHA o percorsi che il repo non ha, e le note che la memoria storica non cita. Rapporto, non cancello: exit 0 (ADR-0137)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<stdout>"
+      ],
+      "exit_codes": {
+        "0": "ricerca eseguita (anche senza voci trovate) o file in forma con --check",
+        "1": "file scritto male o non collegato, solo con --check",
+        "2": "errore d'uso: data non valida, file mancante"
+      },
+      "deterministic": true
+    },
+    {
       "name": "migliora_prosa",
       "description": "«Fra queste quattro riscritture del box quale tengo, e la pipeline batte davvero l'originale al cieco?»\n\nLa pipeline che sceglie la riscrittura di un box read-aloud e misura se è migliore col voto cieco del DM (ADR-0093). dataset raccoglie in un JSON tutte le coppie votate alla cieca; modello addestra una logistica L2 sulle differenze dei tratti (misura_craft, Gulpease, possessivi, livelli di misura_sintassi, MATTR, regole 1-4 di read-aloud-adulti §2-ter) e la valida in leave-one-out contro il caso e contro «vince la più lunga», con la soglia scritta prima in SOGLIA.txt; migliora filtra le candidate scritte da un agente (confronta_fatti, box_impoveriti, regole di §2-ter) e le ordina; campione ed esito fanno la scheda cieca con cieco_versioni e registrano i voti. Non chiama modelli linguistici. Facoltativo: languagetool interroga un server LanguageTool locale (6.8, LGPL, fuori dal repo) su VOTI.json e sui box di ARC-07/08, legge la precisione scritta a mano, fa la calibrazione col test del segno e il confronto delle varianti del modello (+LT, +ppl, +Stanza da --tratti-esterni) con McNemar; migliora --lt aggiunge al filtro i gruppi di rilievi con precisione >= 0,70. Senza server salta con un messaggio ed esce 0.",
       "use_case": "«Fra queste quattro riscritture del box quale tengo, e la pipeline batte davvero l'originale al cieco?»",
@@ -3741,6 +4714,57 @@
       ],
       "exit_codes": {
         "0": "ok"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "milestone_pronte",
+      "description": "«Quale milestone è pronta per il rilascio?»\n\nValuta i criteri d'uscita delle milestone della roadmap registrati in plans/milestone.json (comando che esce 0, regex che compaiono o mancano in un file, conferma del DM con data e luogo) e dice per ognuna pronta, non pronta (con gli id dei criteri falsi) o rilasciata; pronta vuol dire tutto vero tranne fatto-changelog, fatto-versione e fatto-tag. Esce 2 se il registro è rotto. Misura, non scrive niente (ADR-0099, canale testing).",
+      "use_case": "«Quale milestone è pronta per il rilascio?»",
+      "invocation": "python3 scripts/milestone_pronte.py --json",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "json": {
+            "type": "boolean",
+            "description": "Ogni milestone con stato, criteri ed esito, in JSON."
+          },
+          "pronte": {
+            "type": "boolean",
+            "description": "Solo le versioni pronte e non rilasciate, una per riga."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Esce 2 se il registro è rotto, 0 altrimenti (anche se niente è pronto)."
+          },
+          "solo-integrita": {
+            "type": "boolean",
+            "description": "Controlla il registro senza eseguire i comandi dei criteri."
+          },
+          "github": {
+            "type": "boolean",
+            "description": "Confronta numero e titolo con le milestone di GitHub via gh; senza gh, non misurato."
+          },
+          "registro": {
+            "type": "string",
+            "description": "Il registro delle milestone."
+          },
+          "radice": {
+            "type": "string",
+            "description": "La radice del repo da cui si lanciano i comandi e si leggono i file."
+          },
+          "timeout": {
+            "type": "number",
+            "description": "Secondi per ogni comando; oltre, il criterio è falso."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "registro integro (qualunque sia lo stato delle milestone)",
+        "2": "registro rotto o errore d'uso"
       },
       "deterministic": true
     },
@@ -3984,6 +5008,66 @@
       "deterministic": true
     },
     {
+      "name": "raccogli_casi_agenti",
+      "description": "«È lunedì: quali messaggi dei thread nuovi entrano nel set d'oro degli agenti, con che etichetta da confermare, e com'è cambiata la misura dopo le mie scelte?»\n\nADR-0154, scelta di Jfs del 2026-11-27: ogni thread nuovo porta un caso al set d'oro degli agenti, e Jfs ne conferma l'etichetta una volta a settimana. «proponi» legge i messaggi esportati dalla routine del lunedì, scarta i duplicati (stesso id o stesso testo normalizzato, nel set o in coda) e i testi con segreti, email o percorsi con un nome utente, etichetta ogni caso con la predizione dell'hook (instradamento_agenti.predici) come proposta e scrive DIR/AAAA-Www.json e DIR/CARD.md, una card per caso con la consigliata, le alternative e la catena di ognuna. «applica» porta nel set i casi confermati in SCELTE.tsv, con lo split per hash sha256 dell'id (50/50 dev/test, stabile come in TFDS e Hugging Face), rimette il tetto con l'hook invariato e stampa la misura prima e dopo. --check valida la forma del set (campi, split, etichette, duplicati, testo non vuoto, nessun dato da non pubblicare). «cieco» e «annota» danno la consigliata da un annotatore che non vede la proposta dell'hook. La CI non legge i thread: lo lancia la routine dalla shell, perché la coda e i messaggi esportati stanno in /mnt/project-files/instradamento-coda/, fuori dal repo, e contengono prompt che nel repo non vanno. Il server MCP rifiuta i percorsi fuori dal repo e gli strumenti che scrivono: da lì la raccolta non si lancia.",
+      "use_case": "«È lunedì: quali messaggi dei thread nuovi entrano nel set d'oro degli agenti, con che etichetta da confermare, e com'è cambiata la misura dopo le mie scelte?»",
+      "invocation": "python3 scripts/raccogli_casi_agenti.py proponi IN.json --coda DIR | cieco DIR/AAAA-Www.json | annota DIR/AAAA-Www.json ANNOTAZIONI.tsv | applica DIR/AAAA-Www.json SCELTE.tsv | --check",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "comando": {
+            "type": "string",
+            "description": "proponi = le proposte della settimana dai messaggi esportati; cieco = id e testo per l'annotatore cieco, senza la proposta; annota = le sue etichette come consigliate; applica = i casi confermati nel set d'oro, con il tetto rimesso.",
+            "enum": [
+              "proponi",
+              "cieco",
+              "annota",
+              "applica"
+            ]
+          },
+          "ingresso": {
+            "type": "string",
+            "description": "Con proponi: IN.json, elenco di {data, fonte, tipo, testo, id_messaggio}."
+          },
+          "coda": {
+            "type": "string",
+            "description": "Con proponi: la cartella della coda, dove vanno AAAA-Www.json e CARD.md."
+          },
+          "settimana": {
+            "type": "string",
+            "description": "Con applica: il file DIR/AAAA-Www.json della settimana."
+          },
+          "scelte": {
+            "type": "string",
+            "description": "Con applica: SCELTE.tsv, colonne id_messaggio, atteso, accettabili (virgole), azione tieni|togli."
+          },
+          "oggi": {
+            "type": "string",
+            "description": "La data di oggi AAAA-MM-GG: sceglie la settimana e va nella nota del tetto."
+          },
+          "oro": {
+            "type": "string",
+            "description": "Il set d'oro."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "La forma del set d'oro: exit 1 se un caso è scritto male."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "plans/instradamento/agenti-oro.json"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "--check: set non in forma; applica: scelte che non tornano, niente scritto",
+        "2": "ingresso malformato o nessun sottocomando"
+      },
+      "deterministic": true
+    },
+    {
       "name": "registro_letture",
       "description": "«Questo master e' cambiato dopo l'ultima lettura a freddo? Ogni rilievo grave ha avuto una risposta?»\n\nIl registro delle letture a freddo dei master DEF (D26): impronta del testo letto e stato di ogni rilievo 🔴/🟠. Il cancello e' in avviso finche' un master non ha le letture con impronta di lettore e playtester, poi blocca da solo una lettura scaduta o un rilievo senza stato (D4). --confronta mette due letture affiancate, scena per scena.",
       "use_case": "«Questo master e' cambiato dopo l'ultima lettura a freddo? Ogni rilievo grave ha avuto una risposta?»",
@@ -4018,6 +5102,35 @@
         "0": "ok o avviso",
         "1": "un master sotto cancello ha una lettura da rifare",
         "2": "registro malformato"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "regole_claude",
+      "description": "«Ho modificato AGENTS.md: le regole di Claude Code sono ancora allineate?»\n\nRicava da AGENTS.md le regole .claude/rules/rs-*.md di Claude Code, ognuna caricata solo con i file a cui serve (ADR-0141).",
+      "use_case": "«Ho modificato AGENTS.md: le regole di Claude Code sono ancora allineate?»",
+      "invocation": "python3 scripts/regole_claude.py [--check | --misura]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 se .claude/rules/ non è allineata ad AGENTS.md."
+          },
+          "misura": {
+            "type": "boolean",
+            "description": "Caratteri caricati per compito tipo, contro AGENTS.md intero."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        ".claude/rules/rs-*.md"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "regole non allineate (--check)"
       },
       "deterministic": true
     },
@@ -4159,6 +5272,128 @@
       "deterministic": true
     },
     {
+      "name": "sincronia_giocato",
+      "description": "«Il ramo di gruppo ha tutto il giocato, e main è dentro?»\n\nMisura se il giocato è arrivato sul ramo di gruppo e se main ci è entrato, senza checkout né scritture: S1 rami campaign-group-* non registrati in plans/rami-di-gruppo.json, S2 commit di main mancanti e da quanti giorni (non misurabile su un clone shallow), S3 patch del canone ferme nelle cartelle scansionate (applicata per apply inverso o patch-id, in altra forma, da verificare, da applicare, in conflitto), S4 campi aperti al DM, S5 serata più recente dell'ultima sessione registrata, S6 campi chiusi senza decisione datata del DM (patch, o REF da spingere con --ref), S7 righe di main perse nel merge (--dopo-merge) (ADR-0007, ADR-0090).",
+      "use_case": "«Il ramo di gruppo ha tutto il giocato, e main è dentro?»",
+      "invocation": "python3 scripts/sincronia_giocato.py --check",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "repo": {
+            "type": "string",
+            "description": "Il clone da misurare (default: la radice del repo)."
+          },
+          "registro": {
+            "type": "string",
+            "description": "Il registro dei rami di gruppo."
+          },
+          "remoto": {
+            "type": "string",
+            "description": "Il remoto dei rami."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 con un 🔴, 2 se qualcosa non è misurabile."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "L'esito in JSON."
+          },
+          "avviso": {
+            "type": "boolean",
+            "description": "Modalità hook: poche righe solo con rosso o giallo, esce sempre 0."
+          },
+          "aggiorna": {
+            "type": "boolean",
+            "description": "git fetch di main e dei rami vivi prima di misurare (rete)."
+          },
+          "scansiona": {
+            "type": "string",
+            "description": "Cartella dove cercare patch, fino a profondità 3; ripetibile."
+          },
+          "giorni-rosso": {
+            "type": "integer",
+            "description": "S2: giorni oltre i quali main fuori dal ramo è rosso."
+          },
+          "ore-patch": {
+            "type": "number",
+            "description": "S3: ore oltre le quali una patch da applicare è rossa."
+          },
+          "senza-campi-aperti": {
+            "type": "boolean",
+            "description": "Salta la regola S4."
+          },
+          "ora": {
+            "type": "string",
+            "description": "Istante della misura in ISO 8601, per le prove."
+          },
+          "ref": {
+            "type": "string",
+            "description": "Misura questo albero (es. HEAD prima del push) al posto del ramo remoto; S6 guarda il diff fra il remoto e REF."
+          },
+          "dopo-merge": {
+            "type": "boolean",
+            "description": "S7: ogni riga che main ha aggiunto ai file di partita c'è nel risultato del merge."
+          },
+          "prima": {
+            "type": "string",
+            "description": "Con --dopo-merge: il ramo prima del merge."
+          },
+          "main": {
+            "type": "string",
+            "description": "Con --dopo-merge: il main fuso (default <remoto>/main)."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "nessun rosso (o --avviso, o senza --check)",
+        "1": "almeno un rilievo rosso (--check)",
+        "2": "non misurabile: clone shallow, ramo o main assenti (--check)"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "sistemi",
+      "description": "«Quali sistemi di gioco supporta il repo, quali sono accesi, e questo strumento funziona su un modulo PF1e?»\n\nI sistemi di gioco come plugin di dati (ADR-0111): legge sistemi.toml, i plugin in sistemi/<id>/sistema.toml e il campo sistema.capacita del manifest, e stampa i sistemi supportati (attivi, spenti, di rinforzo), la matrice strumenti × sistemi (dati, ancora nel codice con il lotto, ereditata, non supportata, mancante) e le skill da installare. Con --di dice il sistema di un file (il percorso più lungo di [moduli], altrimenti il predefinito); con --check fa da cancello.",
+      "use_case": "«Quali sistemi di gioco supporta il repo, quali sono accesi, e questo strumento funziona su un modulo PF1e?»",
+      "invocation": "python3 scripts/sistemi.py [--di FILE | --skill | --json | --check]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "di": {
+            "type": "string",
+            "description": "Stampa il sistema del file."
+          },
+          "skill": {
+            "type": "boolean",
+            "description": "Le skill da installare: sistemi attivi e di rinforzo, con la loro famiglia."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Tutto il rapporto in JSON."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Cancello: esce 1 se configurazione, plugin o manifest non tornano."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "stdout"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "1": "--check: problemi nella configurazione, nei plugin o nel manifest",
+        "2": "configurazione illeggibile"
+      },
+      "deterministic": true
+    },
+    {
       "name": "tools_manifest",
       "description": "«Il manifest dice ancora la verità sugli script, o qualcuno ha aggiunto un flag senza dichiararlo?»\n\nFonte di verita' -> artefatti: valida scripts/tools.manifest.json contro lo schema, verifica la copertura degli script e genera registry.json, README.md e mcp-tools.json.",
       "use_case": "«Il manifest dice ancora la verità sugli script, o qualcuno ha aggiunto un flag senza dichiararlo?»",
@@ -4236,7 +5471,7 @@
     },
     {
       "name": "validate_lingua",
-      "description": "«Ci sono refusi meccanici di italiano, del tipo che una macchina trova meglio di me?»\n\nRefusi meccanici dell'italiano nel contenuto: accenti (perche' -> perche acuto, ne', se stesso), po' con apostrofo, qual e', d eufonica davanti a consonante, spazio prima della punteggiatura, doppi spazi. Salta blocchi di codice, inline, URL, front-matter e guide alla pronuncia. Bloccante in CI sugli errori dal 2026-09-24; gli avvisi no, e --strict li alza a errori.",
+      "description": "«Ci sono refusi meccanici di italiano, del tipo che una macchina trova meglio di me?»\n\nRefusi meccanici dell'italiano nel contenuto: accenti (perche' -> perche acuto, ne', se stesso), po' con apostrofo, qual e', d eufonica davanti a consonante, spazio prima della punteggiatura, doppi spazi. Salta blocchi di codice (come li legge CommonMark: markdown-it-py se disponibile, altrimenti una regola stdlib), inline, URL, front-matter e guide alla pronuncia; legge le righe rientrate che sono prosa. `<!-- sic -->` marca una citazione alla lettera. Bloccante in CI sugli errori dal 2026-09-24; gli avvisi no, e --strict li alza a errori.",
       "use_case": "«Ci sono refusi meccanici di italiano, del tipo che una macchina trova meglio di me?»",
       "invocation": "python3 scripts/validate_lingua.py",
       "inputSchema": {
@@ -4436,6 +5671,114 @@
       "deterministic": true
     },
     {
+      "name": "verifica_px",
+      "description": "«I PX e i livelli del gruppo tornano con le righe del registro e con lo stato?»\n\nADR-0148. Il registro dei PX (campaign/REGISTRO-PX.md) torna con quattro regole deterministiche: R1 la somma delle righe per colonna è il totale PX; R2 il livello dai PX è quello della tabella dei PX (PHB 3.5, Table 3–2, non SRD); R3 un livello alla volta (PX sotto la soglia del livello al tavolo + 2); R3 anche il limite inferiore (PX non sotto la soglia del livello al tavolo); R4 il livello al tavolo è il livello effettivo di campaign/state.yaml (ECL se scritto, altrimenti livelli di classe più LA) e ogni PG dei totali ha la sua riga. Ogni violazione dice regola, PG, atteso, ha, fonte e file:riga. Sola lettura; esce 1 su una violazione. Cancello in CI.",
+      "use_case": "«I PX e i livelli del gruppo tornano con le righe del registro e con lo stato?»",
+      "invocation": "python3 scripts/verifica_px.py [REGISTRO] [--state STATE] [--json]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "registro": {
+            "type": "string",
+            "description": "Il registro da verificare."
+          },
+          "state": {
+            "type": "string",
+            "description": "Lo stato da cui leggere i livelli di classe."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Violazioni in JSON: regola, colonna, atteso, ha, fonte, dove."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<stdout>"
+      ],
+      "exit_codes": {
+        "0": "il registro torna",
+        "1": "almeno una violazione di R1-R4 o di forma",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "verifica_rimandi",
+      "description": "«Questo §N esiste ancora nel file a cui rimanda?»\n\nADR-0148. I rimandi per sezione dei file di gioco («`ARC08-02` §1», «state.md §2», «vedi §4») puntano a un titolo che esiste nel bersaglio (titolo con «§N» o che inizia con il numero). Il bersaglio si risolve solo se il nome individua un solo .md del repo; un nome ambiguo, una riga che nomina un altro documento o un elenco di § finiscono fra i non verificabili, mai fra le violazioni. Le violazioni già portate al DM stanno in IN_ATTESA. Solo stdlib; --check esce 1 su una violazione nuova. Canale testing in CI (continue-on-error) fino al 2026-12-04.",
+      "use_case": "«Questo §N esiste ancora nel file a cui rimanda?»",
+      "invocation": "python3 scripts/verifica_rimandi.py [PERCORSI ...] [--json] [--check]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "percorsi": {
+            "type": "string",
+            "description": "File .md da leggere; senza, gli archi, campaign/ e Bestiario/."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Rimandi non verificati in JSON, con motivo."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Esce 1 su una violazione nuova."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<stdout>"
+      ],
+      "exit_codes": {
+        "0": "misura eseguita (o nessuna violazione nuova con --check)",
+        "1": "violazione nuova, solo con --check",
+        "2": "errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "verifica_scheda",
+      "description": "«Che cosa non torna in questa scheda, con quale regola e quale valore dovrebbe avere?»\n\nADR-0124. Tutte le verifiche di regola di una scheda in una chiamata, sola lettura: i prerequisiti dei talenti (verifica_talenti, fonti nell'ordine SRD d20, manuali 3.5, PF1e) e i numeri (conformita_statblocchi.giudica: pf nella fascia dei dadi vita, BAB, tiri salvezza, lotta, attacco, iniziativa) e i gradi delle abilita' (massimo per abilita' e punti disponibili, capacita' creature.gradi del plugin) e gli incantesimi scritti per livello (nella lista della classe o in un dominio, non sotto il loro livello: capacita' creature.liste_incantesimi, SRD e poi liste dei manuali 3.5). Ogni violazione dice file:riga, verifica, regola, atteso, ha e fonte; con --json e' l'uscita che un agente legge per correggere e richiamare. Cio' che le regole del plugin non sanno giudicare (classi che la lettura non conosce, schede a dossier, talenti senza prerequisiti nel repo) va in non_verificabili, non fra le violazioni. Dal lotto 1 di ADR-0126 tiri salvezza e attacco si giudicano senza tolleranza: ogni punto sopra la base deve venire da un bonus che la scheda dichiara (capacita' bonus.cumulo: due bonus dello stesso tipo non si sommano); --tolleranza rimette la fascia di prima. Dal lotto 1-bis la CA del 3.5 si ricostruisce dalle voci di ca-dettaglio (armature e scudi dalla tabella, bonus per tipo, contatto e sprovvista: regole numero.CA e numero.CA.*), e si controllano i sensi della razza (numero.sensi) e la CD delle capacita' speciali (numero.CD_*); una scheda senza le voci della CA va in non_verificabili. Dal lotto 2 il danno delle armi della tabella (capacita' creature.armi): dado per taglia, bonus di Forza, potenziamento e talenti, critico (regole numero.danno.dado, numero.danno.bonus, numero.danno.critico); attacchi naturali e armi fuori tabella vanno in non_verificabili. Dal lotto 3 gli incantatori (capacita' creature.incantatori, 3.5 dall'SRD e PF1e dal PRD): incantesimi al giorno dalla tabella della classe piu' gli incantesimi bonus e lo slot di dominio o di scuola, conosciuti di bardo e stregone, livello massimo lanciabile e CD (regole numero.incantesimi.al_giorno, .conosciuti, .livello, .cd); una lista di cui non si leggono classe, livello o caratteristica va in non_verificabili, e cosi' la tabella PF1e del bardo scelta dal DM (numero.incantesimi.variante). Canale testing (ADR-0099): misura, non cancello. Lotto 3-bis: i requisiti delle classi di prestigio (capacita' creature.prestigio: 493 classi 3.5 dall'SRD e dai manuali, 10 PF1e dal PRD, solo nomi e numeri): bonus di attacco base delle altre classi, gradi, talenti, razza, allineamento, livello d'incantesimo; i requisiti speciali escono fra i non verificabili. Lotto 4: il numero dei talenti (regola numero.talenti): per dadi vita, talenti bonus di classe, talento dell'umano; fuori dal conto i concessi dalla classe e quelli dichiarati accanto al nome ((B), razziale, dominio, difetto); di piu' o di meno e' una violazione, con una classe senza talenti bonus nel plugin un dubbio. Dal lotto 5, seconda parte: il grado di sfida scritto contro livelli di classe (da PG o da PNG), eccezioni di razza e creatura base (regola numero.gs, tabella [gs] di creature.costruzione).",
+      "use_case": "«Che cosa non torna in questa scheda, con quale regola e quale valore dovrebbe avere?»",
+      "invocation": "python3 scripts/verifica_scheda.py SCHEDA|CARTELLA ... [--json] [--check] [--tolleranza] [--fatti]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "percorsi": {
+            "type": "string",
+            "description": "Schede .md o cartelle da leggere."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Uscita machine-readable: violazioni con verifica, regola, atteso, ha, fonte, file e riga."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Exit 1 se c'e' almeno una violazione."
+          },
+          "tolleranza": {
+            "type": "boolean",
+            "description": "Rimette la tolleranza di prima su tiri salvezza (+4) e attacco (-1..+2)."
+          }
+        },
+        "required": [
+          "percorsi"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<stdout>"
+      ],
+      "exit_codes": {
+        "0": "misura eseguita (o nessuna violazione con --check)",
+        "1": "violazioni, solo con --check",
+        "2": "errore d'uso, percorso inesistente"
+      },
+      "deterministic": true
+    },
+    {
       "name": "verifica_sezione6",
       "description": "«La tabella dice che restano 27 ADR da indicizzare: e' ancora vero?» Nel caso vero era gia' zero, e nessuno l'aveva eseguito.\n\nEsegue davvero i comandi che le righe di STATO-E-ORDINE §6.2 citano, e boccia una riga che il comando smentisce. Distingue i CANCELLI (stampano un verdetto: un ✓ senza avvisi accanto a una riga ⬜ e' una bugia) dalle MISURE (stampano numeri: la riga deve dichiarare il numero atteso in <!-- attesa: N -->). Esegue testo scritto a mano, quindi forma rigida, allowlist di script e shell=False.",
       "use_case": "«La tabella dice che restano 27 ADR da indicizzare: e' ancora vero?» Nel caso vero era gia' zero, e nessuno l'aveva eseguito.",
@@ -4455,6 +5798,77 @@
       "exit_codes": {
         "0": "ok",
         "1": "norma non registrata, rimando inesistente o 🔴 senza ragione"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "verifica_talenti",
+      "description": "«Questa scheda puo' avere Incalzare Potenziato? Quale prerequisito manca, e quanto vale quello che ha?»\n\nADR-0124. I prerequisiti dei talenti delle schede che esistono (difetto: Bestiario/), con la stessa regola del generatore (dmcore.talenti.violazioni). Per ogni violazione dice file:riga, talento, regola (car.X, bab, lic, classe.X, talento, capacita), valore atteso e valore che la scheda ha: con --json e' l'uscita che un agente legge per correggere la scheda e richiamare. Esclude i talenti bonus senza prerequisiti (monaco, ranger) e le competenze date dalla classe; senza classi dichiarate, lic/capacita/classe vanno fra i non verificabili. Canale testing (ADR-0099): misura, non cancello.",
+      "use_case": "«Questa scheda puo' avere Incalzare Potenziato? Quale prerequisito manca, e quanto vale quello che ha?»",
+      "invocation": "python3 scripts/verifica_talenti.py [SCHEDA|CARTELLA ...] [--json] [--check]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "percorsi": {
+            "type": "string",
+            "description": "Schede .md o cartelle da leggere (difetto: Bestiario/)."
+          },
+          "json": {
+            "type": "boolean",
+            "description": "Uscita machine-readable: violazioni con regola, atteso, ha, file e riga."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Exit 1 se c'e' almeno una violazione."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<stdout>"
+      ],
+      "exit_codes": {
+        "0": "misura eseguita (o nessuna violazione con --check)",
+        "1": "violazioni, solo con --check",
+        "2": "errore d'uso, percorso inesistente"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "vincolo_skill",
+      "description": "«Gli agenti caricano davvero la skill di stile prima di scrivere?»\n\nL'hook PreToolUse di Claude Code che ferma la scrittura di prosa di gioco (handout, recap, introduzioni dei volumi, box read-aloud nei file misti) se la sessione non ha caricato rumblingstone-narrative-style, e ricorda prosa-documenti sui documenti. Registra ogni decisione in .claude/.uso-skill.jsonl (ADR-0146).",
+      "use_case": "«Gli agenti caricano davvero la skill di stile prima di scrivere?»",
+      "invocation": "python3 scripts/vincolo_skill.py --riepilogo",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "hook": {
+            "type": "boolean",
+            "description": "Evento PreToolUse su stdin; esce 2 per bloccare."
+          },
+          "riepilogo": {
+            "type": "boolean",
+            "description": "Quanti blocchi, passaggi e promemoria nel registro."
+          },
+          "classe": {
+            "type": "string",
+            "description": "La classe di ogni file (prosa, misto, documento)."
+          },
+          "cambiati": {
+            "type": "string",
+            "description": "I file di prosa o misti cambiati da una revisione."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [
+        ".claude/.uso-skill.jsonl"
+      ],
+      "exit_codes": {
+        "0": "passa (con o senza promemoria)",
+        "2": "scrittura bloccata (--hook)"
       },
       "deterministic": true
     },
@@ -4566,6 +5980,53 @@
       "exit_codes": {
         "0": "convertito",
         "1": "cartella assente, nessun HTML, o master gia' esistenti senza --force"
+      },
+      "deterministic": true
+    },
+    {
+      "name": "importa_gemini",
+      "description": "«Ho esportato le chat di Gemini: quali parlano della campagna e cosa c'è dentro, senza aprirle una per una?»\n\nChat di Gemini esportate a mano dal DM (cartella «Google AI Studio» di Drive, JSON con chunkedPrompt; Google Takeout «La mia attività → App Gemini», JSON o HTML) → un Markdown per chat o per giorno, senza i pensieri del modello, e INDICE.md ordinato per quante volte nominano la campagna. Nessuna chiamata a Google, nessuna chiave; rifiuta una cartella di uscita dentro il repo (le chat restano fuori, PR #284).",
+      "use_case": "«Ho esportato le chat di Gemini: quali parlano della campagna e cosa c'è dentro, senza aprirle una per una?»",
+      "invocation": "python3 scripts/importa_gemini.py {aistudio|takeout} SORGENTE --out CARTELLA [--parole N1,N2]",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "fonte": {
+            "type": "string",
+            "description": "aistudio o takeout",
+            "enum": [
+              "aistudio",
+              "takeout"
+            ]
+          },
+          "sorgente": {
+            "type": "string",
+            "description": "Cartella, zip o file esportato."
+          },
+          "out": {
+            "type": "string",
+            "description": "Cartella di uscita, fuori dal repo."
+          },
+          "parole": {
+            "type": "string",
+            "description": "Nomi da contare nell'indice, separati da virgole (default: i nomi della campagna)."
+          }
+        },
+        "required": [
+          "fonte",
+          "sorgente",
+          "out"
+        ],
+        "additionalProperties": false
+      },
+      "outputs": [
+        "<out>/*.md",
+        "<out>/indice.json"
+      ],
+      "exit_codes": {
+        "0": "ok",
+        "2": "errore d'uso (sorgente assente, uscita dentro il repo)",
+        "3": "nessuna chat riconosciuta"
       },
       "deterministic": true
     }

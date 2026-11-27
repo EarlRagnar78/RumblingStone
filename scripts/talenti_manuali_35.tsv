@@ -1,0 +1,4224 @@
+# Nomi inglesi dei talenti D&D 3.5 di tutti i manuali, con sigla e pagina (solo nomi, niente testo).
+# Fonti: D&D 3.5 Edition Index – Feats, Chet Erez e Outlands (crystalkeep.com), 2007-02-28, con sigla e pagina;
+# «All Feats From All sources», Forgotten Realms Helps (realmshelps.net), letto il 2026-11-07, solo nomi.
+# Per i talenti senza sigla il manuale viene dalla pagina del talento su realmshelps (campo «Source»), 2026-11-07:
+#   abbinamenti/fonti_realmshelps.py; 317 talenti restano senza manuale.
+# Aggiunti da dndtools.net (2026-11-07, solo nomi e manuale): abbinamenti/indice_dndtools.py.
+inglese	manuale	fonte
+Aberrant Dragonmark	Eb p47	crystalkeep+realmshelps
+Aberrant Dragonmark Gift	PGE p49	crystalkeep
+Aberrant Dragonmark Mystery	PGE p49	crystalkeep
+Aberrant Dragonmark Vigor	PGE p49	crystalkeep
+Aberration Banemagic	Lords of Madness	realmshelps
+Aberration Blood	Lords of Madness	realmshelps
+Aberration Wild Shape	Lords of Madness	realmshelps
+Ability Enchancer	Dragon Compendium	dndtools
+Ability Enhancer	DR325 p77	crystalkeep+realmshelps
+Ability Focus	MM p303; MM3 p206	crystalkeep+realmshelps
+Abjurative Potency	DR325 p77	crystalkeep+realmshelps
+Able Learner	RoD p150	crystalkeep+realmshelps
+Able Sniper	RotW p148	crystalkeep+realmshelps
+Abominable Form	Elder Evils	dndtools
+Abrasive	Unearthed Arcana	realmshelps
+Absent-Minded	Unearthed Arcana	realmshelps
+Abyss-Bound Soul	Fiendish Codex I	realmshelps
+Accelerate Metamagic	Races of the Dragon	realmshelps
+Accurate Jaunt	UA p92	crystalkeep+realmshelps
+Acheron Flurry	Planar Handbook	realmshelps
+Acidic Splatter	Complete Mage	realmshelps
+Acrobatic	CAdv p10; PH p89	crystalkeep+realmshelps
+Acrobatic Backstab	Complete Scoundrel	dndtools
+Acrobatic Skirmisher	DR346 p86	crystalkeep+realmshelps
+Acrobatic Skirmisher, Improved	Dragon #346	realmshelps
+Acrobatic Strike	PH2 p71	crystalkeep+realmshelps
+Action Boost	Eb p47	crystalkeep+realmshelps
+Action Healing	FoE p145	crystalkeep
+Action Surge	Eb p50	crystalkeep+realmshelps
+Active Shield		crystalkeep
+Active Shield Defense	PH2 p71	crystalkeep+realmshelps
+Adamantine Body	Eb p50; RoD p150; RoE p118	crystalkeep+realmshelps
+Adamantine Mind Blade	Dragon #341	realmshelps
+Adaptable Flanker	PH2 p71	crystalkeep+realmshelps
+Adaptive Style	Tome of Battle	realmshelps
+Additional Favored Class	Unearthed Arcana	realmshelps
+Additional Magic Item Space	Epic Level Handbook	realmshelps
+Adroit Flyby Attack	Draconomicon	realmshelps
+Advanced Binding	Dragon #327	realmshelps
+Advanced Construction	Web	realmshelps
+Advantageous Avoidance	Complete Scoundrel	realmshelps
+Adventurous Explorer	Dragon #315	realmshelps
+Aerenal Arcanist	PGE p20	crystalkeep
+Aerenal Beastmaster	RoE p105	crystalkeep
+Aerenal Half-Life	PGE p20	crystalkeep
+Aereni Focus	PGE p20	crystalkeep
+Aerial Reflexes	Races of the Wild	realmshelps
+Aerial Superiority	Races of the Wild	realmshelps
+Aftersight	Races of Faerûn	realmshelps
+Aggressive	Unearthed Arcana	realmshelps
+Aggressive Mind	Complete Psionic	realmshelps
+Agile	CAdv p10; PH p89	crystalkeep+realmshelps
+Agile Athlete	RoW p148; RotW p148	crystalkeep+realmshelps
+Agile Riposte	Dragon #305	realmshelps
+Agile Shield Fighter	PH2 p74	crystalkeep+realmshelps
+Agile Tyrant	Lords of Madness	realmshelps
+Agitated Causticity	Dragon #313	realmshelps
+Aglarond		crystalkeep
+Agony Touch	Ghostwalk	realmshelps
+Aid Giver	DR343 p92	crystalkeep+realmshelps
+Air Bloodline		realmshelps
+Air Devotion	Complete Champion	realmshelps
+Air Heritage	Planar Handbook	realmshelps
+Airy Gallop	Dragon Annual 5	realmshelps
+Alacritous Cogitation	Complete Mage	realmshelps
+Alertness	CAdv p10; PH p89	crystalkeep+realmshelps
+Aleval School	Drow of the Underdark	realmshelps
+Align Mind Blade	Dragon #341	realmshelps
+Aligned Attack	Expanded Psionics Handbook	realmshelps
+Aligned Devotion	Dragon #326	realmshelps
+Aligned Theurgy	DR325 p60	crystalkeep+realmshelps
+Allied Defense	Shining South	realmshelps
+Alluring	Song and Silence	realmshelps
+Ally Of The Ki-Rin	Dragon #315	realmshelps
+Alter Appearance	Dragon #315	realmshelps
+Altered State	DR332 p84	crystalkeep+realmshelps
+Alternate Form	Dragons Ebberon	dndtools
+Alternative Source Spell	CArc p75; DR325 p61	crystalkeep+realmshelps
+Altitude Adaptation	Frostburn	realmshelps
+Altumbel		crystalkeep
+Amn		crystalkeep
+Anarchic Bloodline	DR325 p48	crystalkeep+realmshelps
+Anarchic Heritage	Planar Handbook	realmshelps
+Anauroch		crystalkeep
+Ancestor	Dragon #354	realmshelps
+Ancestral Guidance	RoE p105	crystalkeep
+Ancestral Knowledge	RoS p130	crystalkeep+realmshelps
+Ancestral Relic	BoED p39	crystalkeep+realmshelps
+Ancestral Spirit	Races of Faerûn	realmshelps
+Ancestral Whispers	FoE p145	crystalkeep
+Anchoring Blow	Dragon #306	realmshelps
+Animal Affinity	PH p89	crystalkeep+realmshelps
+Animal Affinity (Bloodline)	Dragon #315	realmshelps
+Animal Control	Masters of the Wild	realmshelps
+Animal Defiance	Masters of the Wild	realmshelps
+Animal Devotion	Complete Champion	realmshelps
+Animal Friend	BoED p41	crystalkeep+realmshelps
+Animal Friends	Races of Faerûn	realmshelps
+Animation Mastery	Dragon #298	realmshelps
+Ankheg Tribe Ambush	Shining South	realmshelps
+Antagonist	Complete Psionic	realmshelps
+Antipsionic Magic	Expanded Psionics Handbook	realmshelps
+Anvil of Thunder	CWar p112	crystalkeep+realmshelps
+Apostate	Elder Evils	dndtools
+Appraise Magic Value	CAdv p103	crystalkeep+realmshelps
+Apprentice	Dungeon Master's Guide II	realmshelps
+Aquatic Breath	Complete Mage	realmshelps
+Aquatic Fey Bloodline	Dragon #335	realmshelps
+Aquatic Shot	Stormwrack	realmshelps
+Aquatic Spellcasting	Lords of Madness	realmshelps
+Arachnid Rider	Races of Faerûn	realmshelps
+Arcane Accompaniment	PH2 p74	crystalkeep+realmshelps
+Arcane Consumption	PH2 p74	crystalkeep+realmshelps
+Arcane Conundrum	Dragon #328	realmshelps
+Arcane Defense	CArc p73	crystalkeep+realmshelps
+Arcane Disciple	CDiv p79	crystalkeep+realmshelps
+Arcane Fatigue	Dragon #333	realmshelps
+Arcane Flourish	PH2 p74	crystalkeep+realmshelps
+Arcane Focus	DR351 p88	crystalkeep+realmshelps
+Arcane Focus Item	Dragon #358	realmshelps
+Arcane Insight	RoD p154	crystalkeep+realmshelps
+Arcane Kinship	DR311 p34	crystalkeep+realmshelps
+Arcane Manipulation	Lost Empires of Faerûn	realmshelps
+Arcane Mastery	CArc p73	crystalkeep+realmshelps
+Arcane Parasites	Dragon #333	realmshelps
+Arcane Performer	Dragon #324	realmshelps
+Arcane Preparation	CArc p73; PGF p32	crystalkeep+realmshelps
+Arcane Schooling	PGF p33	crystalkeep+realmshelps
+Arcane Shorthand	Dragon #358	realmshelps
+Arcane Strike	CWar p96; DR310 p58	crystalkeep+realmshelps
+Arcane Thesis	PH2 p74	crystalkeep+realmshelps
+Arcane Toughness	PH2 p75	crystalkeep+realmshelps
+Arcane Transfiguration	Lost Empires of Faerûn	realmshelps
+Arcane Watchfulness	DR351 p88	crystalkeep+realmshelps
+Archivist of Nature	Heroes of Horror	realmshelps
+Arctic Adaptation	Races of Faerûn	realmshelps
+Arctic Priest	Frostburn	realmshelps
+Area Attack	Savage Species	realmshelps
+Armed Deflection	Web	realmshelps
+Armor Dance	Dragon #315	realmshelps
+Armor Proficiency (heavy)	Player's Handbook	realmshelps
+Armor Proficiency (light)	Player's Handbook	realmshelps
+Armor Proficiency (medium)	Player's Handbook	realmshelps
+Armor Skin		realmshelps
+Armor Specialization	PH2 p75	crystalkeep+realmshelps
+Armor of Scales	Dragon Magic	realmshelps
+Art Of Fascination	Oriental Adventures	realmshelps
+Arterial Strike	CWar p96	crystalkeep+realmshelps
+Artful Commander	Dragon #348	realmshelps
+Artisan Craftsman	Dragon #358	realmshelps
+Artist	PGF p33	crystalkeep+realmshelps
+Artist (OA)	Oriental Adventures	realmshelps
+Ascetic Hunter	CAdv p105	crystalkeep+realmshelps
+Ascetic Knight	CAdv p105	crystalkeep+realmshelps
+Ascetic Mage	CAdv p105	crystalkeep+realmshelps
+Ascetic Psion	Secrets of Sarlona	dndtools
+Ascetic Rogue	CAdv p106	crystalkeep+realmshelps
+Ascetic Stalker	Complete Scoundrel	realmshelps
+Ashbound	Eb p50	crystalkeep+realmshelps
+Ashbound Mark	Dragonmarked	dndtools
+Assemble the Horde	DR346 p52	crystalkeep+realmshelps
+Assume Quirk	Complete Scoundrel	dndtools
+Assume Supernatural Ability	Savage Species	realmshelps
+Astral Cord Whip	Dragon #306	realmshelps
+Astral Fire	Dragon #313	realmshelps
+Astral Tracking		realmshelps
+At Home In The Deep	Drow of the Underdark	realmshelps
+Athletic	CAdv p10; PH p89	crystalkeep+realmshelps
+Atlan's Mark	DR315 p51	crystalkeep+realmshelps
+Attention To Detail	Oriental Adventures	realmshelps
+Attune Gem	Magic of Faerûn	realmshelps
+Attune Magic Weapon	Eb p50	crystalkeep+realmshelps
+Attune Magical Weapon	Eberron Campaign Setting	dndtools
+Audacious Attempt	Dragon #318	realmshelps
+Augment Construction	Dragon #287	realmshelps
+Augment Elemental	Magic of Eberron	dndtools
+Augment Healing	CDiv p79	crystalkeep+realmshelps
+Augment Summoning	PH p89	crystalkeep+realmshelps
+Augmented Alchemy		realmshelps
+Aura of Bravery	DR323 p96	crystalkeep+realmshelps
+Aura of Life Energy	DR334 p86	crystalkeep+realmshelps
+Auspicious Marking	RoS p136	crystalkeep+realmshelps
+Automatic Quicken Spell		realmshelps
+Automatic Silent Spell		realmshelps
+Automatic Still Spell		realmshelps
+Automatic Vile Spell	Web	realmshelps
+Autonomous	Expanded Psionics Handbook	realmshelps
+Avenging Strike	Tome of Battle	realmshelps
+Avoid Critical Hit	Dragon #292	realmshelps
+Awaken Frightful Presence	Draconomicon	realmshelps
+Awaken Spell Resistance	Draconomicon	realmshelps
+Awesome Blow		realmshelps
+Awesome Smite	Complete Champion	realmshelps
+Axeshield	Und p24	crystalkeep+realmshelps
+Axespike	Races of Stone	crystalkeep+realmshelps
+Axethrower	PGF p33	crystalkeep+realmshelps
+Axiomatic Bloodline	DR325 p48	crystalkeep+realmshelps
+Axiomatic Heritage	Planar Handbook	realmshelps
+Axiomatic Strike	CWar p96	crystalkeep+realmshelps
+Axiomatic Strike (Epic)	Forgotten Realms Campaign Setting	realmshelps
+Azerblood	Races of Faerûn	realmshelps
+Azure Enmity	Magic of Incarnum	realmshelps
+Azure Talent	Magic of Incarnum	realmshelps
+Azure Touch	Magic of Incarnum	realmshelps
+Azure Toughness	Magic of Incarnum	realmshelps
+Azure Turning	Magic of Incarnum	realmshelps
+Azure Wild Shape	Magic of Incarnum	realmshelps
+Back on Your Feet	Complete Scoundrel	dndtools
+Backstab	DR340 p86	crystalkeep+realmshelps
+Backstabbing Traitor	Dragon #315	realmshelps
+Badge of Bondage	DR315 p51	crystalkeep+realmshelps
+Baleful Moan	Libris Mortis	realmshelps
+Ballista Proficiency	Heroes of Battle	realmshelps
+Bane Magic	Heroes of Horror	realmshelps
+Bane Of Enemies	Epic Level Handbook	realmshelps
+Bane Of The Unclean	Lords of Madness	realmshelps
+Bane of Argonnessen	Dragonmarked	dndtools
+Bane of Decay	DR337 p98	crystalkeep+realmshelps
+Bane of Infidels	Power of Faerun	dndtools
+Barbed Stinger	Serpent Kingdoms	realmshelps
+Bareback Soul	DR315 p51	crystalkeep+realmshelps
+Basilisk	DR340 p32	crystalkeep
+Batrider	Races of Faerûn	realmshelps
+Battle Blessing	Complete Champion	realmshelps
+Battle Caster	CArc p75	crystalkeep+realmshelps
+Battle Casting	RoW p148; RotW p148	crystalkeep+realmshelps
+Battle Dance	Dragon #297	realmshelps
+Battle Dancer	PH2 p75	crystalkeep+realmshelps
+Battle Hardened	RoS p137	crystalkeep+realmshelps
+Battle Hardened (Ra)	Races of Stone	realmshelps
+Battle Hardened'	DR343 p93	crystalkeep
+Battle Jump	Unapproachable East	realmshelps
+Battle Mage Tactics	Monster Manual V	dndtools
+Battle Magic Tactics	Monster Manual V	realmshelps
+Battle Weaver	Dragon #338	realmshelps
+Battlebred	Players Guide to Eberron	dndtools
+Battlecaster Defense	Complete Mage	realmshelps
+Battlecaster Offense	Complete Mage	realmshelps
+Battlefield Inspiration	Miniatures Handbook	realmshelps
+Battleshifter Training	RoE p116	crystalkeep
+Battlewise	Dragon #315	realmshelps
+Beady Eyes	Dragon #328	realmshelps
+Bear Fang	CWar p112; RoS p137	crystalkeep+realmshelps
+Beast Companion	Epic Level Handbook	realmshelps
+Beast Shape	Eb p50	crystalkeep+realmshelps
+Beast Strike	Dragon #355	realmshelps
+Beast Totem	Eb p51	crystalkeep+realmshelps
+Beast Wild Shape	Epic Level Handbook	realmshelps
+Beasthide	Eberron Campaign Setting	dndtools
+Beasthide Elite	Eb p51	crystalkeep+realmshelps
+Beastly	Dragon #329	realmshelps
+Beauty's Bounty	Web	realmshelps
+Beckon the Frozen	Frostburn	realmshelps
+Beholders	DR340 p27	crystalkeep
+Beloved of Demons	Exemplars of Evil	dndtools
+Bend Spell		realmshelps
+Bestial Charge	Complete Champion	realmshelps
+Bestial Hide	Lords of Madness	realmshelps
+Bestial Instinct	Dragon #324	realmshelps
+Betrayal Of The Spirit Linked	Dragon #336	realmshelps
+Betrayal of the Spirit Linked	DR336 p108	crystalkeep
+Better Lucky Than Good	Complete Scoundrel	realmshelps
+Bind Elemental	Eb p51	crystalkeep+realmshelps
+Bind Vestige	Tome of Magic	realmshelps
+Bind Vestige, Improved	Tome of Magic	dndtools
+Binding Brand	PGE p36	crystalkeep
+Bioelectrical Surge	Dragon #313	realmshelps
+Bite of Steel	DR332 p88	crystalkeep+realmshelps
+Black Dragon Lineage	Dragon Magic	realmshelps
+Black Lore of Moil	CArc p75	crystalkeep+realmshelps
+Black Panda Mastery I	Dragon #309	realmshelps
+Black Panda Mastery II	Dragon #309	realmshelps
+Blackmoorian Rhymes	DR315 p51	crystalkeep+realmshelps
+Blackwater Invocation	Stormwrack	realmshelps
+Blade Meditation	Tome of Battle	realmshelps
+Blade Of Force	Complete Mage	realmshelps
+Bladebearer of Valenar	Players Guide to Eberron	dndtools
+Bladebearer of the Valenar	RoE p107	crystalkeep
+Bladeproof Skin	UA p92	crystalkeep+realmshelps
+Blasphemous Utterance	DR336 p99	crystalkeep+realmshelps
+Blazing Berserker	Sandstorm	realmshelps
+Blend Into Shadows	Drow of the Underdark	realmshelps
+Blessed By Tem-Et-Nu	Sandstorm	realmshelps
+Blessed of Osprem	DR350 p69	crystalkeep+realmshelps
+Blessed of Vulkoor	Secrets of Xendrik	dndtools
+Blessed of the Seven Sisters	Player's Guide to Faerûn	realmshelps
+Blessing of Merrshaulk	Dragon #305	realmshelps
+Blessing of the Godless	Exemplars of Evil	dndtools
+Blind Rage	Dragon #325	realmshelps
+Blind-Fight	CAdv p10; PH p89	crystalkeep
+Blind-fight	Player's Handbook	realmshelps
+Blinding Speed	Epic Level Handbook	realmshelps
+Blinding Strike	Dragon #345	crystalkeep+realmshelps
+Blindsense	CAdv p114	crystalkeep+realmshelps
+Blindsight	Masters of the Wild	realmshelps
+Blindsight 5-foot Radius		realmshelps
+Blindsight, 5-ft. Radius	Deities and Demigods	dndtools
+Blistering Spell	PH2 p91	crystalkeep+realmshelps
+Block Arrow	Heroes of Battle	realmshelps
+Blood Artisan	Dragon #318	realmshelps
+Blood Calls To Blood	Heroes of Horror	realmshelps
+Blood Of The Warlord	Races of Faerûn	realmshelps
+Blood Sorcerer	Oriental Adventures	realmshelps
+Blood War Conscript	Fiendish Codex I	realmshelps
+Blood of Kord	DR315 p51	crystalkeep+realmshelps
+Blood-Spiked Charger	PH2 p92	crystalkeep+realmshelps
+Blooded	PGF p35	crystalkeep+realmshelps
+Blooded (FR)		realmshelps
+Blooded'	DR315 p51	crystalkeep
+Bloodline	Dragon #315	realmshelps
+Bloodline of Fire	PGF p35	crystalkeep+realmshelps
+Bloodsoaked Intimidate	Champions of Ruin	realmshelps
+Bloodthirsty	Dragon #311	realmshelps
+Blowhard	Savage Species	realmshelps
+Blue Dragon Lineage	Dragon Magic	realmshelps
+Blue Mountain Mastery I	Dragon #309	realmshelps
+Blue Mountain Mastery II	Dragon #309	realmshelps
+Boar's Ferocity	CDiv p79	crystalkeep+realmshelps
+Body Awareness	DR351 p89	crystalkeep+realmshelps
+Body Fuel	Expanded Psionics Handbook	realmshelps
+Body Guard	DR339 p34	crystalkeep
+Body Pouch	Serpent Kingdoms	realmshelps
+Bolster Power	Dragon #312	realmshelps
+Bolster Resistance	LM p25	crystalkeep+realmshelps
+Bonded	Dragon #357	realmshelps
+Bonded Familiar	PH2 p75	crystalkeep+realmshelps
+Bonus Breath	Savage Species	realmshelps
+Bonus Domain		realmshelps
+Bonus Essentia	Magic of Incarnum	realmshelps
+Bonus Soulmeld	Magic of Incarnum	dndtools
+Book Smart	Dragon #358	realmshelps
+Boomerang Daze	RoE p108	crystalkeep
+Boomerang Ricochet	RoE p108	crystalkeep
+Boost Construct	Expanded Psionics Handbook	realmshelps
+Boost Spell Resistance	Book of Vile Darkness	realmshelps
+Boost Spell-like Ability	Book of Vile Darkness	realmshelps
+Border Watch	DR315 p51	crystalkeep+realmshelps
+Born Duelist	Oriental Adventures	realmshelps
+Born Flyer	Races of the Wild	realmshelps
+Born Follower	DR315 p52	crystalkeep+realmshelps
+Born In The Saddle	Dungeon #307	realmshelps
+Born Of The Three Thunders	Complete Arcane	realmshelps
+Born Under a Crescent Moon	Dragon #340	realmshelps
+Born Under a Gibbous Moon	Dragon #340	realmshelps
+Born Under a High Sun	Dragon #340	realmshelps
+Born Under a Rising Sun	Dragon #340	realmshelps
+Born Under a Setting Sun	Dragon #340	realmshelps
+Born Under the Full Moon	Dragon #340	realmshelps
+Born Under the Half Moon	Dragon #340	realmshelps
+Born Under the New Moon	Dragon #340	realmshelps
+Born of The Three Thunders	CArc p76	crystalkeep
+Born under a High Sun	DR340 p48	crystalkeep
+Born under a Rising Sun	DR340 p48	crystalkeep
+Born under a Setting Sun	DR340 p48	crystalkeep
+Born under the Crescent Moon	DR340 p56	crystalkeep
+Born under the Full Moon	DR340 p57	crystalkeep
+Born under the Gibbous Moon	DR340 p57	crystalkeep
+Born under the Half Moon	DR340 p56	crystalkeep
+Born under the New Moon	DR340 p56	crystalkeep
+Borne Aloft	Complete Mage	realmshelps
+Bounding Assault	PH2 p75	crystalkeep+realmshelps
+Bow Feint	DR350 p90	crystalkeep+realmshelps
+Bowslinger	Und p24	crystalkeep+realmshelps
+Braced for Charge	DR331 p28	crystalkeep+realmshelps
+Brachiation	CAdv p10; CAdv p106; CWar p99; RoS p144	crystalkeep+realmshelps
+Brand of the Nine Hells	Fiendish Codex II	realmshelps
+Brash	Dragon #324	realmshelps
+Brass Dragon Lineage	Dragon Magic	realmshelps
+Bravado	Dragon #328	realmshelps
+Brawler	Unearthed Arcana	realmshelps
+Brawling Commander	Dragon #348	realmshelps
+Breadth of Knowledge	UA p92	crystalkeep+realmshelps
+Breath Control	DR333 p88	crystalkeep+realmshelps
+Breath of Siberys	Dragonmarked	dndtools
+Breath of Unlife	Dragons of Faerun	dndtools
+Breathing Link		realmshelps
+Brew Potion	PH p89	crystalkeep+realmshelps
+Bright Sigil	RoD p150	crystalkeep+realmshelps
+Brilliant Mind-blade	Web	realmshelps
+Broken Fist Mastery I	Dragon #309	realmshelps
+Broken Fist Mastery II	Dragon #309	realmshelps
+Broken One's Sacrifice	Champions of Valor	realmshelps
+Bronze Dragon Lineage	Dragon Magic	realmshelps
+Bronze Solaris Member	DR334 p93	crystalkeep+realmshelps
+Brutal Strike	PH2 p76	crystalkeep+realmshelps
+Brutal Throw	CAdv p106	crystalkeep+realmshelps
+Brute Fighting	RoE p118	crystalkeep
+Bull Blast	Dragon #313	realmshelps
+Bullheaded	PGF p37	crystalkeep+realmshelps
+Bully	Dungeon #294	realmshelps
+Bulwark Of Defense	Epic Level Handbook	realmshelps
+Burning Focus	DR314 p21	crystalkeep+realmshelps
+Burning Link	DR344 p102	crystalkeep+realmshelps
+Burning Rage	Dragon #314	realmshelps
+Burrow Friend	RoS p137	crystalkeep+realmshelps
+Burrowing Power	Expanded Psionics Handbook	realmshelps
+Business Savvy	Dungeon Masters Guide Ii	dndtools
+Calimshan		crystalkeep
+Calishite Elementalist	Races of Faerûn	realmshelps
+Calishite Elementalist: Air	Races of Faerun	dndtools
+Calishite Elementalist: Fire	Races of Faerun	dndtools
+Call of the Undying	RoE p108	crystalkeep
+Cannibalize Spell	Dragon #349	realmshelps
+Cannith	EB p65; EB p80	crystalkeep
+Cannith Forgecraft	Dragonmarked	dndtools
+Canny Opportunist	DR340 p86	crystalkeep+realmshelps
+Captivating Melody	Complete Mage	realmshelps
+Caravanner	Races of Faerûn	realmshelps
+Carmendine Monk	Champions of Valor	realmshelps
+Catfolk Pounce	RotW p148	crystalkeep+realmshelps
+Caustic Adaptation	Und p24	crystalkeep+realmshelps
+Cautious	Unearthed Arcana	realmshelps
+Cautious (Flaw)	Dragon #328	realmshelps
+Cautious Attack	Drow of the Underdark	realmshelps
+Cavalry Charger	CWar p108	crystalkeep+realmshelps
+Cavalry Commander	Dragon #348	realmshelps
+Caver	Und p24	crystalkeep+realmshelps
+Celestial Bloodline	DR311 p34	crystalkeep+realmshelps
+Celestial Bloodline (FR)	Races of Faerûn	realmshelps
+Celestial Familiar	BoED p41	crystalkeep+realmshelps
+Celestial Heritage	Planar Handbook	realmshelps
+Celestial Light	DR311 p35	crystalkeep+realmshelps
+Celestial Mount	BoED p42	crystalkeep+realmshelps
+Celestial Scion	Dragon #315	realmshelps
+Celestial Scion – Cranden	DR315 p52	crystalkeep
+Celestial Scion – Darmen	DR315 p52	crystalkeep
+Celestial Scion – Garasteth	DR315 p52	crystalkeep
+Celestial Scion – Naelax	DR315 p52	crystalkeep
+Celestial Scion – Rax-Nyrond	DR315 p52	crystalkeep
+Celestial Scion – Torquana	DR315 p52	crystalkeep
+Celestial Sorcerer Aura	PH2 p90	crystalkeep+realmshelps
+Celestial Sorcerer Heritage	PH2 p90	crystalkeep+realmshelps
+Celestial Sorcerer Lance	PH2 p90	crystalkeep+realmshelps
+Celestial Sorcerer Lore	PH2 p90	crystalkeep+realmshelps
+Celestial Sorcerer Wings	PH2 p91	crystalkeep+realmshelps
+Celestial Summoning Specialist	Planar Handbook	realmshelps
+Centaur Trample	RotW p148	crystalkeep+realmshelps
+Cerebremetamagic	Dragon #349	realmshelps
+Cerebrosis	Dragon #330	realmshelps
+Ceremonial Empowerment	Faiths of Eberron	dndtools
+Cerulean Fortitude	Magic of Incarnum	realmshelps
+Cerulean Reflexes	Magic of Incarnum	realmshelps
+Cerulean Will	Magic of Incarnum	realmshelps
+Chain Link	Web	realmshelps
+Chain Power	Expanded Psionics Handbook	realmshelps
+Chain Spell	CArc p76	crystalkeep+realmshelps
+Chakram Ricochet	Champions of Ruin	realmshelps
+Chameleon Blood	Dragon #335	realmshelps
+Chameleon Crafting	Dragon #349	realmshelps
+Chameleon Hide	Serpent Kingdoms	realmshelps
+Channath Vale		crystalkeep
+Channel Charge	Lost Empires of Faerûn	realmshelps
+Channel Legacy	Weapons of Legacy	realmshelps
+Channeled Rage	RoD p150	crystalkeep+realmshelps
+Chant Of Fortitude	Complete Adventurer	realmshelps
+Chant Of The Long Road	Complete Scoundrel	realmshelps
+Chant of Fortitude	CAdv p113	crystalkeep
+Chaos Devotion	Complete Champion	realmshelps
+Chaos Music	DR326 p80	crystalkeep+realmshelps
+Chaos Rage	DR326 p80	crystalkeep+realmshelps
+Chaotic Mind	Expanded Psionics Handbook	realmshelps
+Chaotic Rage	Epic Level Handbook	realmshelps
+Chaotic Spell Recall	Fiendish Codex I	realmshelps
+Character Reading	Dragon #315	realmshelps
+Chariot Archery	Sword and Fist	realmshelps
+Chariot Charge	Sword and Fist	realmshelps
+Chariot Combat	Sword and Fist	realmshelps
+Chariot Sideswipe	Sword and Fist	realmshelps
+Chariot Trample	Sword and Fist	realmshelps
+Chariotteer Commander	Dragon #348	realmshelps
+Charlatan	Song and Silence	realmshelps
+Charm Immunity	Serpent Kingdoms	realmshelps
+Charm Resistance	Serpent Kingdoms	realmshelps
+Charmed Life	Web	realmshelps
+Charmer	DR325 p77	crystalkeep+realmshelps
+Charming	DR312 p51	crystalkeep+realmshelps
+Charming the Arrow	Web	realmshelps
+Charnel Miasma	Complete Champion	realmshelps
+Cheetah Tribe Sprint	Shining South	realmshelps
+Cheetah's Speed	CDiv p79	crystalkeep+realmshelps
+Chessenta		crystalkeep
+Child of Winter	Eb p51	crystalkeep+realmshelps
+Child of the Swamps	PGE p119	crystalkeep
+Chink In The Armor	Song and Silence	realmshelps
+Chivalrous Courtesy	Dragon #324	realmshelps
+Choke Hold	Oriental Adventures	realmshelps
+Chondalwood		crystalkeep
+Chondathan Missionary	Races of Faerûn	realmshelps
+Chord Of Distraction	Complete Scoundrel	realmshelps
+Chosen Foe	Drow of the Underdark	realmshelps
+Chosen Weapon Specialization	Player's Guide to Faerûn	realmshelps
+Chosen of Evil	Elder Evils	dndtools
+Chosen of Iborighu	Frostburn	realmshelps
+Chosen of the Deathless	Players Guide to Eberron	dndtools
+Chronicle	Dragon #347	realmshelps
+Circle Kick	Sword and Fist	realmshelps
+Circle Magic	Ghostwalk	realmshelps
+Circle Master		realmshelps
+Circle Student		realmshelps
+City Magic	Cityscape	realmshelps
+City Slicker	RoD p150	crystalkeep+realmshelps
+City Slicker (flaw)	Dragon #324	realmshelps
+Clan Prestige	RoS p137	crystalkeep+realmshelps
+Clap Of Thunder	Complete Mage	realmshelps
+Clarion Commander	Tome of Battle	realmshelps
+Clarity of Vision	Complete Scoundrel	dndtools
+Class Champion	DR346 p53	crystalkeep+realmshelps
+Claustrophobia	Dragon #324	realmshelps
+Clawed Spell	Dragon #315	realmshelps
+Claws Of The Beast	Fiendish Codex I	realmshelps
+Cleave	PH p92	crystalkeep+realmshelps
+Cleaver Wrestling	CWar p97; Dcn p103	crystalkeep
+Clever Improviser	Complete Scoundrel	dndtools
+Clever Opportunist	Drow of the Underdark	realmshelps
+Clever Wrestling		realmshelps
+Cliffwalk	Eberron Campaign Setting	dndtools
+Cliffwalk Elite	Eb p52	crystalkeep+realmshelps
+Climb Like An Ape	Complete Adventurer	realmshelps
+Climb Like an Ape	CAdv p114	crystalkeep
+Clinging Breath		realmshelps
+Cloak Dance	Expanded Psionics Handbook	realmshelps
+Cloak Of The Obyrith	Fiendish Codex I	realmshelps
+Cloak of Shadows	DR330 p48	crystalkeep+realmshelps
+Close Cohort	DR346 p53	crystalkeep+realmshelps
+Close-Quarter Defense	DR309 p110	crystalkeep+realmshelps
+Close-Quarters Fighting	CWar p97	crystalkeep+realmshelps
+Closed Mind	Expanded Psionics Handbook	realmshelps
+Cloudy Conjuration	Complete Mage	realmshelps
+Clutch Of Earth	Complete Mage	realmshelps
+Cobalt Charge	Magic of Incarnum	realmshelps
+Cobalt Critical	Magic of Incarnum	realmshelps
+Cobalt Expertise	Magic of Incarnum	realmshelps
+Cobalt Power	Magic of Incarnum	realmshelps
+Cobalt Precision	Magic of Incarnum	realmshelps
+Cobalt Rage	Magic of Incarnum	realmshelps
+Cobolt Charge	Magic of Incarnum	dndtools
+Cobolt Critical	Magic of Incarnum	dndtools
+Cobolt Precision	Magic of Incarnum	dndtools
+Cobra Head	Serpent Kingdoms	realmshelps
+Code of Arms	Dragon #324	realmshelps
+Coercive Spell	Drow of the Underdark	realmshelps
+Cold Endurance	Frostburn	realmshelps
+Cold Focus	Frostburn	realmshelps
+Cold Iron Tracery	RoE p119	crystalkeep
+Cold Spell Specialization	Frostburn	realmshelps
+Cold-Blooded	Dragon #324	realmshelps
+Collector of Stories	Complete Scoundrel	dndtools
+Collegiate Wizard	CArc p181	crystalkeep+realmshelps
+Colossal Wild Shape	Epic Level Handbook	realmshelps
+Combat Acrobat	PH2 p76	crystalkeep+realmshelps
+Combat Archery		realmshelps
+Combat Awareness	PH2 p86	crystalkeep+realmshelps
+Combat Brute	CWar p110	crystalkeep+realmshelps
+Combat Casting	PH p92	crystalkeep+realmshelps
+Combat Charm	DR312 p51	crystalkeep+realmshelps
+Combat Cloak Expert	DR340 p86; PH2 p93	crystalkeep+realmshelps
+Combat Defense	PH2 p87	crystalkeep+realmshelps
+Combat Engineer	DR334 p88	crystalkeep+realmshelps
+Combat Expertise	CAdv p10; PH p92	crystalkeep+realmshelps
+Combat Familiar	PH2 p76	crystalkeep+realmshelps
+Combat Focus	PH2 p87	crystalkeep+realmshelps
+Combat Insight	Web	realmshelps
+Combat Intuition	CAdv p106	crystalkeep+realmshelps
+Combat Manifestation	Expanded Psionics Handbook	realmshelps
+Combat Panache	PH2 p93	crystalkeep+realmshelps
+Combat Reflexes	PH p92	crystalkeep+realmshelps
+Combat Stability	PH2 p87	crystalkeep+realmshelps
+Combat Strike	PH2 p87	crystalkeep+realmshelps
+Combat Tactician	PH2 p77	crystalkeep+realmshelps
+Combat Tinkering	Dungeonscape	realmshelps
+Combat Vigor	PH2 p88	crystalkeep+realmshelps
+Combined Empathy	DR325 p61	crystalkeep+realmshelps
+Cometary Collision	PH2 p77	crystalkeep+realmshelps
+Comforting Madness	DR332 p44	crystalkeep+realmshelps
+Commander	DR323 p28	crystalkeep+realmshelps
+Commanding	DR312 p51	crystalkeep+realmshelps
+Communicator	CArc p76	crystalkeep+realmshelps
+Companion Guard Style	DR315 p52	crystalkeep+realmshelps
+Companion Spellbond	PH2 p77	crystalkeep+realmshelps
+Compelling Madness	DR332 p44	crystalkeep+realmshelps
+Complementary Insight	RoD p150	crystalkeep+realmshelps
+Conceal Spellcasting	Complete Scoundrel	dndtools
+Concealed Ambush	DR339 p87	crystalkeep
+Concussion Attack	Complete Scoundrel	realmshelps
+Concussive Blast	Dragon #313	realmshelps
+Conductivity	UA p92	crystalkeep+realmshelps
+Confound The Big Folk	Races of the Wild	realmshelps
+Confound the Big Folk	RotW p153	crystalkeep
+Conjunctive Mind	Web	realmshelps
+Consecrate Spell	BoED p42; CDiv p79	crystalkeep+realmshelps
+Consecrate Spell Trigger	BoED p42	crystalkeep+realmshelps
+Consecrate Spell-like Ability	Book of Exalted Deeds	realmshelps
+Constant Guardian	Drow of the Underdark	realmshelps
+Construct Familiar	Dragon #280	realmshelps
+Construct Grafter	Faiths of Eberron	dndtools
+Construct Lock	RoE p119	crystalkeep
+Contagious Paralysis	Libris Mortis	realmshelps
+Control Visage	Ghostwalk	realmshelps
+Controlled Immolation	UA p92	crystalkeep+realmshelps
+Controlled Respiration	Savage Species	realmshelps
+Cool Head	Complete Scoundrel	realmshelps
+Cool Head (CS)	Complete Scoundrel	dndtools
+Cool Head (OA)	Oriental Adventures	realmshelps
+Cooperative Spell	CArc p76	crystalkeep+realmshelps
+Coordinated Archery	DR316 p84	crystalkeep
+Coordinated Shot	Heroes of Battle	realmshelps
+Coordinated Strike	RotW p149	crystalkeep+realmshelps
+Copper Dragon Lineage	Dragon Magic	realmshelps
+Cormanthor Drow		crystalkeep
+Cormanthyran Moon Magic	Lost Empires of Faerûn	realmshelps
+Cormyr		crystalkeep
+Corner Perch	Complete Scoundrel	dndtools
+Cornered Rat	Dragonlance Campaign Setting	dndtools
+Corona	DR334 p86	crystalkeep+realmshelps
+Corpse Malevolence	Ghostwalk	realmshelps
+Corpsecrafter	LM p25	crystalkeep+realmshelps
+Corrupt Arcana	Heroes of Horror	realmshelps
+Corrupt Arcane Studies	Ghostwalk	realmshelps
+Corrupt Spell	CDiv p79	crystalkeep+realmshelps
+Corrupt Spell Focus	Heroes of Horror	realmshelps
+Corrupt Spell-like Ability	Book of Vile Darkness	realmshelps
+Corrupt Summoning	Dragon #347	realmshelps
+Corrupted Wild Shape	Libris Mortis	realmshelps
+Corrupting Touch	Ghostwalk	realmshelps
+Cosmopolitan	PGF p37	crystalkeep+realmshelps
+Cougar's Vision	CAdv p114	crystalkeep+realmshelps
+Countenance of the Mage	Dragon #359	realmshelps
+Courageous Rally	Heroes of Battle	realmshelps
+Courteous Magocracy	Forgotten Realms Campaign Setting	realmshelps
+Cover Your Tracks	Shining South	realmshelps
+Coward	Dragon #324	realmshelps
+Craft Aboleth Glyph	Lords of Madness	realmshelps
+Craft Alchemical Item	Unearthed Arcana	realmshelps
+Craft Cognizance Crystal	Expanded Psionics Handbook	realmshelps
+Craft Construct	MM p303; MM3 p206	crystalkeep+realmshelps
+Craft Contingent Spell	CArc p77	crystalkeep+realmshelps
+Craft Crystal Weapon	Oriental Adventures	realmshelps
+Craft Dorje	Expanded Psionics Handbook	realmshelps
+Craft Drilbu	Web	realmshelps
+Craft Epic Magic Arms And Armor	Epic Level Handbook	realmshelps
+Craft Epic Rod	Epic Level Handbook	realmshelps
+Craft Epic Staff	Epic Level Handbook	realmshelps
+Craft Epic Wondrous Item	Epic Level Handbook	realmshelps
+Craft Expertise	DR339 p34	crystalkeep
+Craft Magic Arms And Armor	Player's Handbook	realmshelps
+Craft Magic Arms and Armor	PH p92	crystalkeep
+Craft Masterpiece Performance	Dragon #301	realmshelps
+Craft Masterwork Armor	Unearthed Arcana	realmshelps
+Craft Masterwork Ranged Weapon	Unearthed Arcana	realmshelps
+Craft Masterwork Weapon	Unearthed Arcana	realmshelps
+Craft Psicrown	Expanded Psionics Handbook	realmshelps
+Craft Psionic Arms And Armor	Expanded Psionics Handbook	realmshelps
+Craft Psionic Construct	Expanded Psionics Handbook	realmshelps
+Craft Psionic Seal	Lords of Madness	realmshelps
+Craft Rod	PH p92	crystalkeep+realmshelps
+Craft Rune Circle	RoS p137	crystalkeep+realmshelps
+Craft Scepter	Lost Empires of Faerûn	realmshelps
+Craft Skull Talisman	Frostburn	realmshelps
+Craft Staff	PH p92	crystalkeep+realmshelps
+Craft Talisman	Oriental Adventures	realmshelps
+Craft Universal Item	Expanded Psionics Handbook	realmshelps
+Craft Wand	PH p92	crystalkeep+realmshelps
+Craft Wondrous Item	PH p92	crystalkeep+realmshelps
+Craven	Champions of Ruin	realmshelps
+Create Infusion	Masters of the Wild	realmshelps
+Create Moving Portal	Web	realmshelps
+Create Portal	Forgotten Realms Campaign Setting	realmshelps
+Create Psionic Seal	Lords of Madness	realmshelps
+Crescent Moon	CWar p113	crystalkeep+realmshelps
+Crossbow Sniper	PH2 p77	crystalkeep+realmshelps
+Crowd Tactics	RoD p156	crystalkeep+realmshelps
+Crush	Savage Species	realmshelps
+Crushing Hug	Dragon #313	realmshelps
+Crushing Strike	Player's Handbook II	crystalkeep+realmshelps
+Cryptic Psychology	Dragon #304	realmshelps
+Cull Wand Essence	Magic of Eberron	dndtools
+Cultured Courtier	Dragon #318	realmshelps
+Cumbrous Dodge	Savage Species	realmshelps
+Cumbrous Fortitude	Savage Species	realmshelps
+Cumbrous Reflexes	Savage Species	realmshelps
+Cumbrous Will	Savage Species	realmshelps
+Cunning Evasion	PH2 p78	crystalkeep+realmshelps
+Cunning Sidestep	Dcn p103	crystalkeep+realmshelps
+Cunning Wit	Dungeon #294	realmshelps
+Curative Legacy	Weapons of Legacy	realmshelps
+Curious	Dragon #328	realmshelps
+Curling Wave Strike	Stormwrack	realmshelps
+Customize Domain	Dragon #325	realmshelps
+Cuthbert's Smite	Dragon Compendium	dndtools
+Cuthburt's Smite		realmshelps
+Cutpurse	DR322 p37	crystalkeep+realmshelps
+Dalelands		crystalkeep
+Dallah Thaun's Luck	RoW p149	crystalkeep+realmshelps
+Damage Mastery	DR327 p71	crystalkeep+realmshelps
+Damage Reduction		realmshelps
+Dambrath		crystalkeep
+Dampen Spell	PH2 p78	crystalkeep+realmshelps
+Dancing Blade	Ghostwalk	realmshelps
+Dancing with Shadows	Races of Eberron	dndtools
+Danger Sense	CAdv p10; CAdv p106; DR333 p84	crystalkeep+realmshelps
+Daredevil Athlete	Complete Scoundrel	realmshelps
+Darguun Mauler	RoE p108	crystalkeep
+Daring Outlaw	Complete Scoundrel	realmshelps
+Daring Warrior	Complete Scoundrel	realmshelps
+Dark Blood	DR330 p48	crystalkeep+realmshelps
+Dark Speech		realmshelps
+Dark Whispers	Elder Evils	dndtools
+Darkness Adaptation	DR333 p84	crystalkeep+realmshelps
+Darkness Familiar	DR322 p67	crystalkeep
+Darkstalker	Lords of Madness	realmshelps
+Darmara		crystalkeep
+Dash	CWar p97	crystalkeep+realmshelps
+Daunting Nuisance	DR343 p93	crystalkeep
+Daunting Presence	LM p25	crystalkeep+realmshelps
+Dauntless	PGF p37	crystalkeep+realmshelps
+Daylight Adaptation	PGF p37; RoE p108; Und p13	crystalkeep+realmshelps
+Dazzling Energy	Complete Psionic	realmshelps
+Dazzling Fire	Drow of the Underdark	realmshelps
+Dazzling Illusion	Complete Mage	realmshelps
+Dazzling Strike	DR344 p102	crystalkeep+realmshelps
+Dderwydd Chymdeithas Initiate	DR332 p87	crystalkeep+realmshelps
+Dead Eye		realmshelps
+Deadeye Shot	PH2 p78	crystalkeep+realmshelps
+Deadly Chill	LM p25	crystalkeep+realmshelps
+Deadly Concussion	DR333 p88	crystalkeep+realmshelps
+Deadly Defense	Complete Scoundrel	realmshelps
+Deadly Poison		realmshelps
+Deadly Precision	Expanded Psionics Handbook	realmshelps
+Deadly Spittle	Serpent Kingdoms	realmshelps
+Deafening Blow	DR345 p91	crystalkeep+realmshelps
+Deafening Song	Epic Level Handbook	realmshelps
+Deafening Spell	Drow of the Underdark	realmshelps
+Deafening Strike	Complete Scoundrel	realmshelps
+Death Blow	CAdv p106	crystalkeep+realmshelps
+Death Curse	Dragon #312	realmshelps
+Death Devotion	Complete Champion	realmshelps
+Death Frenzy	Lords of Madness	realmshelps
+Death Frost Spell	DU109 p50	crystalkeep
+Death Master	Libris Mortis	realmshelps
+Death Of Enemies	Epic Level Handbook	realmshelps
+Deathless Fleshgrafter	Magic of Eberron	dndtools
+Debilitating Spell	Heroes of Horror	realmshelps
+Debilitating Strike	Heroes of Horror	realmshelps
+Deceitful	PH p93	crystalkeep+realmshelps
+Deceitful Appearances	Dragon #333	realmshelps
+Deceptive Dodge		realmshelps
+Deceptive Illumination	Drow of the Underdark	realmshelps
+Deceptive Spell	Cityscape	realmshelps
+Dedicated Nuisance	Dragon #343	realmshelps
+Deep Breather	DR335 p56	crystalkeep+realmshelps
+Deep Denizen	Savage Species	realmshelps
+Deep Impact	Expanded Psionics Handbook	realmshelps
+Deep Poisoning	DR322 p37	crystalkeep+realmshelps
+Deep Vision		realmshelps
+Deepening Darkness	Races of Faerûn	realmshelps
+Deepseer	DR319 p56	crystalkeep+realmshelps
+Deepspawn	Lords of Madness	realmshelps
+Defender of the Homeland	Champions of Valor	realmshelps
+Defending Spirit	Complete Mage	realmshelps
+Defense Against the Supernatural	Tome of Magic	realmshelps
+Defense of the Righteous	DR323 p28	crystalkeep+realmshelps
+Defensive Archery	RoW p148; RotW p148	crystalkeep+realmshelps
+Defensive Climber	DR343 p32	crystalkeep+realmshelps
+Defensive Expert	DR315 p52	crystalkeep+realmshelps
+Defensive Magic	DR351 p89	crystalkeep+realmshelps
+Defensive Metered Foot	DR337 p97	crystalkeep+realmshelps
+Defensive Opportunist	DR340 p87	crystalkeep+realmshelps
+Defensive Shell	Complete Psionic	realmshelps
+Defensive Strike	CWar p97	crystalkeep+realmshelps
+Defensive Sweep	PH2 p78	crystalkeep+realmshelps
+Defensive Throw	CWar p97	crystalkeep+realmshelps
+Defiler	Dragon #351	realmshelps
+Deflect Arrows	PH p79; PH p93	crystalkeep+realmshelps
+Deflect Energy	DR343 p90	crystalkeep+realmshelps
+Deflective Armor	Races of Stone	realmshelps
+Deformity (Madness)	Elder Evils	dndtools
+Deformity (Parasite)	Elder Evils	dndtools
+Deformity (Skin)	Heroes of Horror	realmshelps
+Deformity (Tall)	Heroes of Horror	realmshelps
+Deformity (Teeth)	Heroes of Horror	realmshelps
+Deformity (Tongue)	Heroes of Horror	realmshelps
+Deformity (clawed hands)	Book of Vile Darkness	realmshelps
+Deformity (eyes)	Book of Vile Darkness	realmshelps
+Deformity (face)	Book of Vile Darkness	realmshelps
+Deformity (gaunt)	Book of Vile Darkness	realmshelps
+Deformity (obese)	Book of Vile Darkness	realmshelps
+Deft Fist	DR319 p71	crystalkeep+realmshelps
+Deft Hands	PH p93	crystalkeep+realmshelps
+Deft Opportunist	CAdv p106	crystalkeep+realmshelps
+Deft Strike	Dcn p103; Den p103	crystalkeep+realmshelps
+Delay Potion	Complete Mage	realmshelps
+Delay Power	Expanded Psionics Handbook	realmshelps
+Delay Spell	CArc p77	crystalkeep+realmshelps
+Demon Mastery	Fiendish Codex I	realmshelps
+Demonic Conduit	Fiendish Codex I	realmshelps
+Demonic Skin	Fiendish Codex I	realmshelps
+Demonic Sneak Attack	Fiendish Codex I	realmshelps
+Demonsworn Knight	Champions of Ruin	realmshelps
+Deneith	EB p66; EB p80	crystalkeep
+Denouncement of Energy	Dragon #346	realmshelps
+Denouncement of Focused Aggression	Dragon #346	realmshelps
+Denouncement of Garbled Words	Dragon #346	realmshelps
+Denouncement of the Stalwart Shield	Dragon #346	realmshelps
+Denouncement of the Unleashed Spell	Dragon #346	realmshelps
+Denouncement of the Untouchable Form	Dragon #346	realmshelps
+Desecrated Animation	Dragon #298	realmshelps
+Desert Dweller	Savage Species	realmshelps
+Desert Fighter	DR319 p56	crystalkeep+realmshelps
+Desert Fire	Tome of Battle	realmshelps
+Desert Wind Dodge	Tome of Battle	realmshelps
+Desertborn	DR323 p90	crystalkeep+realmshelps
+Despana School	Drow of the Underdark	realmshelps
+Destruction Devotion	Complete Champion	realmshelps
+Destruction Retribution	Libris Mortis	realmshelps
+Destructive Attack	Dragon #297	realmshelps
+Destructive Rage	CWar p97	crystalkeep+realmshelps
+Destructive Retribution	LM p26	crystalkeep
+Detach	Savage Species	realmshelps
+Detached	Unearthed Arcana	realmshelps
+Detect Shadow Weave User	Champions of Valor	realmshelps
+Detoxifying Touch	DR337 p98	crystalkeep+realmshelps
+Devastating Critical		realmshelps
+Devastating Thunder	Dragon #332	crystalkeep+realmshelps
+Devil's Aura	Fiendish Codex II	realmshelps
+Devil's Favor	Fiendish Codex II	realmshelps
+Devil's Flesh	Fiendish Codex Ii Tyrants of the Nine Hells	dndtools
+Devil's Sight	Fiendish Codex II	realmshelps
+Devil's Stamina	Fiendish Codex II	realmshelps
+Devil's Tongue	Fiendish Codex II	realmshelps
+Devoted Bulwark	Tome of Battle	realmshelps
+Devoted Inquisitor	CAdv p107	crystalkeep+realmshelps
+Devoted Performer	CAdv p107	crystalkeep+realmshelps
+Devoted Tracker	CAdv p107	crystalkeep+realmshelps
+Dexterous Fortitude	Epic Level Handbook	realmshelps
+Dexterous Will	Epic Level Handbook	realmshelps
+Diehard	PH p93	crystalkeep+realmshelps
+Dilate Aura	Fiendish Codex II	realmshelps
+Diligent	PH p93	crystalkeep+realmshelps
+Dimensional Jaunt	Complete Mage	realmshelps
+Dimensional Reach	Complete Mage	realmshelps
+Diminutive Wild Shape	Epic Level Handbook	realmshelps
+Dinosaur Hunter	RoE p108	crystalkeep
+Dinosaur Wrangler	RoE p108	crystalkeep
+Diplomat	Dungeon #294	realmshelps
+Dire Charge		realmshelps
+Dire Flail Mind Blade	Complete Psionic	realmshelps
+Dire Flail Smash	Champions of Ruin	realmshelps
+Dire Stun	Complete Psionic	realmshelps
+Direction Sense	Dragon #315	realmshelps
+Dirty Fighting	Sword and Fist	realmshelps
+Dirty Rat	Champions of Ruin	realmshelps
+Disabling Strike	DR339 p87	crystalkeep
+Disciple Of Darkness		realmshelps
+Disciple Of The Sun	Complete Divine	realmshelps
+Disciple of the Sun	CDiv p80	crystalkeep
+Discipline	PGF p38	crystalkeep+realmshelps
+Discipline (OA)	Oriental Adventures	realmshelps
+Disciplined Mind	Web	realmshelps
+Disease Bolt	DR327 p71	crystalkeep+realmshelps
+Disease Immunity	Heroes of Horror	realmshelps
+Disease Shield	DR327 p71	crystalkeep+realmshelps
+Disemboweling Strike	Complete Scoundrel	realmshelps
+Disentangler	Races of Faerûn	realmshelps
+Disguise Spell	CAdv p108	crystalkeep+realmshelps
+Dishonest	Unearthed Arcana	realmshelps
+Disintegration Finesse	Lords of Madness	realmshelps
+Disjunction Ray	Lords of Madness	realmshelps
+Dismount Attack	Complete Scoundrel	dndtools
+Disrupting Spell	Fiendish Codex II	realmshelps
+Disrupting Strike	Dragon #355	realmshelps
+Distant Horizon	Tome of Battle	realmshelps
+Distant Shot	Epic Level Handbook	realmshelps
+Distant Touch	Dragon #309	realmshelps
+Distinctive	Unearthed Arcana	realmshelps
+Distracting Attack	Miniatures Handbook	realmshelps
+Disturbing Spell	Dragon #332	crystalkeep+realmshelps
+Disturbing Visage	RoE p117	crystalkeep
+Dive For Cover	Complete Adventurer	realmshelps
+Dive for Cover	CArc p108	crystalkeep
+Diverse Background	RoD p150	crystalkeep+realmshelps
+Diversified Casting	DR325 p61	crystalkeep+realmshelps
+Divine Accuracy	LM p112	crystalkeep+realmshelps
+Divine Alacrity	FoE p145	crystalkeep
+Divine Armor	PH2 p88	crystalkeep+realmshelps
+Divine Censure	Fiendish Codex II	realmshelps
+Divine Channeler	Dragon #305	realmshelps
+Divine Cleansing	CWar p106	crystalkeep+realmshelps
+Divine Conduit		realmshelps
+Divine Countermagic	FoE p146	crystalkeep
+Divine Damage Reduction	Races of Stone	crystalkeep+realmshelps
+Divine Defiance	Fiendish Codex II	realmshelps
+Divine Denial	Exemplars of Evil	dndtools
+Divine Energy Focus	Ghostwalk	realmshelps
+Divine Fervor		realmshelps
+Divine Fortification	Dragon #305	realmshelps
+Divine Fortune	PH2 p88	crystalkeep+realmshelps
+Divine Fury	Dragon #305	realmshelps
+Divine Gesture	Dragon #326	realmshelps
+Divine Infusion	Web	realmshelps
+Divine Inspiration	DR330 p85	crystalkeep+realmshelps
+Divine Intercession	Drow of the Underdark	realmshelps
+Divine Justice	PH2 p88	crystalkeep+realmshelps
+Divine Metamagic	CDiv p80; DR324 p103	crystalkeep+realmshelps
+Divine Might	CWar p106	crystalkeep+realmshelps
+Divine Resistance	CWar p106	crystalkeep+realmshelps
+Divine Shield	CWar p106	crystalkeep+realmshelps
+Divine Sorcery	Dragon #343	realmshelps
+Divine Soultouch	Magic of Incarnum	realmshelps
+Divine Spell Penetration	Player's Guide to Faerûn	realmshelps
+Divine Spell Power	CDiv p80	crystalkeep+realmshelps
+Divine Spellshield	Races of Stone	realmshelps
+Divine Spellshield Reduction		crystalkeep
+Divine Spirit	Tome of Battle	realmshelps
+Divine Vengeance		realmshelps
+Divine Vigor	CWar p107	crystalkeep+realmshelps
+Divine Ward	PH2 p88	crystalkeep+realmshelps
+Divine Warrior	FoE p146	crystalkeep
+Diving Charge	Races of the Wild	realmshelps
+Dodge	CAdv p10; CPH p93; CWar p110; PH p93	crystalkeep+realmshelps
+Domain Devotion	Dragon #326	realmshelps
+Domain Focus	Complete Divine	realmshelps
+Domain Spontaneity	CDiv p80; FoE p147	crystalkeep+realmshelps
+Don Mantle	Complete Psionic	realmshelps
+Doomspeak	Champions of Ruin	realmshelps
+Dorje Mastery	Complete Psionic	realmshelps
+Double Chakra	Magic of Incarnum	realmshelps
+Double Draconic Aura	Dragon Magic	realmshelps
+Double Hit	Miniatures Handbook	realmshelps
+Double Steel Strike	Eb p52	crystalkeep+realmshelps
+Double Team		realmshelps
+Double Team (Animal)	Dragon #357	realmshelps
+Double Wand Wielder	CArc p77	crystalkeep+realmshelps
+Double Weapon Disarm	DR309 p110	crystalkeep+realmshelps
+Draconian Breath Weapon	Dragonlance Campaign Setting	dndtools
+Draconic Arcane Grace	Races of the Dragon	realmshelps
+Draconic Archivist	Heroes of Horror	realmshelps
+Draconic Armor	Dragon Magic	realmshelps
+Draconic Aura	Dragon Magic	realmshelps
+Draconic Bloodline		realmshelps
+Draconic Breath	CArc p77	crystalkeep+realmshelps
+Draconic Claw	CArc p77	crystalkeep+realmshelps
+Draconic Flight	CArc p77	crystalkeep+realmshelps
+Draconic Heritage	CArc p77	crystalkeep+realmshelps
+Draconic Knowledge	Draconomicon	realmshelps
+Draconic Knowledge - Draconic	Dragon Magic	realmshelps
+Draconic Legacy	CArc p78	crystalkeep+realmshelps
+Draconic Persuasion	Races of the Dragon	realmshelps
+Draconic Power	CArc p78	crystalkeep+realmshelps
+Draconic Presence	CArc p78	crystalkeep+realmshelps
+Draconic Resistance	CArc p78	crystalkeep+realmshelps
+Draconic Senses	Dragon Magic	realmshelps
+Draconic Skin	CArc p78	crystalkeep+realmshelps
+Draconic Toughness	Races of the Dragon	realmshelps
+Draconic Vigor	Dragon Magic	realmshelps
+Dragon	DR340 p30	crystalkeep
+Dragon Breath	Races of the Dragon	realmshelps
+Dragon Coast		crystalkeep
+Dragon Cohort	Dcn p105	crystalkeep+realmshelps
+Dragon Familiar	Dcn p104	crystalkeep+realmshelps
+Dragon Foe	Den p105	crystalkeep
+Dragon Friend	Dcn p105	crystalkeep
+Dragon Hunter	Den p104	crystalkeep+realmshelps
+Dragon Hunter Bravery	Den p104	crystalkeep+realmshelps
+Dragon Hunter Defense	Den p104	crystalkeep+realmshelps
+Dragon Magic	Dragon #308	realmshelps
+Dragon Prophesier	Magic of Eberron	dndtools
+Dragon Rage	Eberron Campaign Setting	crystalkeep+realmshelps
+Dragon Sight		realmshelps
+Dragon Song	Dcn p105	crystalkeep
+Dragon Steed	Dcn p105; Den p105	crystalkeep+realmshelps
+Dragon Tail	Races of the Dragon	realmshelps
+Dragon Totem	Eb p52	crystalkeep+realmshelps
+Dragon Totem Focus	Magic of Eberron	dndtools
+Dragon Totem Lorekeeper	Magic of Eberron	dndtools
+Dragon Totem Scion	Magic of Eberron	dndtools
+Dragon Trainer	Races of the Dragon	realmshelps
+Dragon Ward	Eyes Lich Queen	dndtools
+Dragon Wild Shape	Dcn p105	crystalkeep+realmshelps
+Dragon Wings	Races of the Dragon	realmshelps
+Dragon's Insight	PGE p48	crystalkeep
+Dragon's Toughness	Masters of the Wild	realmshelps
+Dragonbane	Den p105	crystalkeep+realmshelps
+Dragoncrafter	Dcn p105	crystalkeep+realmshelps
+Dragondoom	Den p105	crystalkeep+realmshelps
+Dragonfire Assault	Dragon Magic	realmshelps
+Dragonfire Channeling	Dragon Magic	realmshelps
+Dragonfire Inspiration	Dragon Magic	realmshelps
+Dragonfire Strike	Dragon Magic	realmshelps
+Dragonfoe	Draconomicon	realmshelps
+Dragonfriend	Draconomicon	realmshelps
+Dragonmark Adept	Dragonmarked	dndtools
+Dragonmark Battlestrike	Dragonmarked	dndtools
+Dragonmark Fist	Dragonmarked	dndtools
+Dragonmark Luck	Eyes Lich Queen	dndtools
+Dragonmark Mastery	Dragonmarked	dndtools
+Dragonmark Prodigy	Dragonmarked	dndtools
+Dragonmark Rage	Dragonmarked	dndtools
+Dragonmark Smite	Dragonmarked	dndtools
+Dragonmark Spellturning	Dragonmarked	dndtools
+Dragonmark Visionary	Dragonmarked	dndtools
+Dragonmarked	DR351 p77	crystalkeep
+Dragonmarked Sorcerer	Dragon #351	realmshelps
+Dragonmarked Summoner	Dragonmarked	dndtools
+Dragonsong	Draconomicon	realmshelps
+Dragonthrall	Dcn p105	crystalkeep+realmshelps
+Dragontouched	Dragon Magic	realmshelps
+Dragonwrought	Races of the Dragon	realmshelps
+Draw From the Land	Unapproachable East	realmshelps
+Dread Shadow	DR330 p48	crystalkeep+realmshelps
+Dread Tyranny	RoD p154	crystalkeep+realmshelps
+Dreadful Wrath	PGF p38	crystalkeep+realmshelps
+Dream Scion	Secrets of Sarlona	dndtools
+Dream of Contact	Secrets of Sarlona	dndtools
+Dream of Insight	Secrets of Sarlona	dndtools
+Dream of Instinct	Secrets of Sarlona	dndtools
+Dream of Perception	Secrets of Sarlona	dndtools
+Dream of Strength	Secrets of Sarlona	dndtools
+Dream of the Moment	Secrets of Sarlona	dndtools
+Dreamsight Elite	RoE p113	crystalkeep
+Dreamtelling	Heroes of Horror	realmshelps
+Drift Magic	Sandstorm	realmshelps
+Driftwalker	DR315 p52	crystalkeep+realmshelps
+Driving Attack	Player's Handbook II	crystalkeep+realmshelps
+Dromite Barrier	Complete Psionic	realmshelps
+Dromite Ray	Complete Psionic	realmshelps
+Drow Eyes	Races of Faerûn	realmshelps
+Drow Legacy	Drow of the Underdark	realmshelps
+Drow Scorpion Warrior	Secrets of Xendrik	dndtools
+Drow Skirmisher	RoE p109	crystalkeep
+Drowning Glance	Complete Mage	realmshelps
+Druidic Theurgy	DR325 p61	crystalkeep+realmshelps
+Druuth Slayer	Champions of Valor	realmshelps
+Dryad	DR340 p28	crystalkeep
+Du'ulora Ancestor	Players Guide to Eberron	dndtools
+Dual Dorje	Complete Psionic	realmshelps
+Dual Strike	CAdv p108	crystalkeep+realmshelps
+Dual-Plane Summons	Dragon #313	realmshelps
+Duergar Expansion	Complete Psionic	realmshelps
+Duergar Invisibility	Complete Psionic	realmshelps
+Duergar Mindshaper	Races of Faerûn	realmshelps
+Duerran Metaform Training	Champions of Valor	realmshelps
+Duerran Stealth Training	Champions of Valor	realmshelps
+Dumb Luck	Complete Scoundrel	realmshelps
+Dungeoneer's Intuition	City of Splendors: Waterdeep	realmshelps
+Durable Form	Lords of Madness	realmshelps
+Dust Cloud	Savage Species	realmshelps
+Dutiful Guardian	Drow of the Underdark	realmshelps
+Dwarf Lore	DR315 p53	crystalkeep
+Dwarf's Toughness	Masters of the Wild	realmshelps
+Dwarflore	Dragon #315	realmshelps
+Dwarven Ancestry	DR338 p97	crystalkeep
+Dwarven Armor Proficiency	RoS p138	crystalkeep+realmshelps
+Dwarven Urgrosh Mind Blade	Complete Psionic	realmshelps
+Eagle Claw Attack	CWar p97	crystalkeep+realmshelps
+Eagle Tribe Vision	Shining South	realmshelps
+Eagle's Fury	Sandstorm	realmshelps
+Eagle's Wings	CDiv p80	crystalkeep+realmshelps
+Ears of the Mage	Dragon #359	realmshelps
+Earth Adept	RoS p138	crystalkeep+realmshelps
+Earth Bloodline		realmshelps
+Earth Devotion	Complete Champion	realmshelps
+Earth Fist	RoS p138	crystalkeep+realmshelps
+Earth Focus	DR314 p29	crystalkeep+realmshelps
+Earth Heritage	Planar Handbook	realmshelps
+Earth Master	RoS p138	crystalkeep+realmshelps
+Earth Power	Races of Stone	realmshelps
+Earth Sense	RoS p138	crystalkeep+realmshelps
+Earth Spell	RoS p138	crystalkeep+realmshelps
+Earth's Embrace	CWar p97	crystalkeep+realmshelps
+Earth's Warding	Races of Stone	crystalkeep+realmshelps
+Earthbound Spell	Player's Handbook II	crystalkeep+realmshelps
+Earthcraft	DR314 p29	crystalkeep+realmshelps
+Earthquake Stomp	Secrets of Xendrik	dndtools
+Easy Escape	Complete Scoundrel	dndtools
+Easy Metamagic	DR325 p62	crystalkeep+realmshelps
+Easygoing	Unearthed Arcana	realmshelps
+Ecclesiarch	Eb p52	crystalkeep+realmshelps
+Echoing Spell	Secrets of Xendrik	dndtools
+Ecto Manipulation	Web	realmshelps
+Ectopic Form	Complete Psionic	realmshelps
+Ectopic Form (Agile Loper)	Complete Psionic	realmshelps
+Ectopic Form (Alabaster Aerial)	Complete Psionic	realmshelps
+Ectopic Form (Amber Tunneler)	Complete Psionic	realmshelps
+Ectopic Form (Anathemic Carapace)	Complete Psionic	realmshelps
+Ectopic Form (Astral Aquan)	Complete Psionic	realmshelps
+Ectopic Form (Ebony Stinger)	Complete Psionic	realmshelps
+Ectopic Form (Emerald Gyre)	Complete Psionic	realmshelps
+Ectopic Form (Iridescent Serpent)	Complete Psionic	realmshelps
+Ectoplasm	Ghostwalk	realmshelps
+Edgewalker Sentinel	Secrets of Sarlona	dndtools
+Education	Eb p52; PGF p38	crystalkeep+realmshelps
+Education (E)	Eberron Campaign Setting	realmshelps
+Education (G)	Ghostwalk	realmshelps
+Efficient Defender	Cityscape	realmshelps
+Efficient Hunter	DR333 p84	crystalkeep+realmshelps
+Efficient Item Creation	Epic Level Handbook	realmshelps
+Efficient Pull	DR350 p90	crystalkeep+realmshelps
+Ehlonna's Way	DR315 p53	crystalkeep+realmshelps
+Eilservs School	Drow of the Underdark	realmshelps
+Einhander	PH2 p94	crystalkeep+realmshelps
+Elan Repletion	Complete Psionic	dndtools
+Elan Repletion, Enhanced	Complete Psionic	realmshelps
+Elan Resilience	Complete Psionic	dndtools
+Elan Resilience, Enhanced	Complete Psionic	realmshelps
+Elan Resistance, Enhanced	Complete Psionic	realmshelps
+Elan Retainment	Complete Psionic	realmshelps
+Eldeen Plantgrafter	Magic of Eberron	dndtools
+Elder Giant Magic	Secrets of Xendrik	dndtools
+Eldritch Claws	Dragon #358	realmshelps
+Eldritch Corruption	Heroes of Horror	dndtools
+Eldritch Dragonbane	Dragonmarked	dndtools
+Eldritch Erosion	DR344 p103	crystalkeep+realmshelps
+Eldritch Linguist	Races of Faerûn	realmshelps
+Eldritch Mark	Dragonmarked	dndtools
+Elemalefic Spellcaster	Dragon #311	realmshelps
+Elemental Adept	Complete Mage	realmshelps
+Elemental Bloodline	Races of Faerûn	realmshelps
+Elemental Envoy	Complete Psionic	realmshelps
+Elemental Essence	Complete Champion	realmshelps
+Elemental Focus	DR319 p56	crystalkeep+realmshelps
+Elemental Grafter	Magic of Eberron	dndtools
+Elemental Healing	Complete Divine	crystalkeep+realmshelps
+Elemental Helmsman	Magic of Eberron	dndtools
+Elemental Smite	Magic of Eberron	dndtools
+Elemental Smiting	Complete Divine	crystalkeep+realmshelps
+Elemental Spellcasting	Planar Handbook	realmshelps
+Elemental Spellcasting [Air]	Planar Handbook	dndtools
+Elemental Spellcasting [Earth]	Planar Handbook	dndtools
+Elemental Spellcasting [Fire]	Planar Handbook	dndtools
+Elemental Spellcasting [Water]	Planar Handbook	dndtools
+Elemental Stalker	Dragon #357	realmshelps
+Elemental Strike	DR343 p90	crystalkeep+realmshelps
+Elemental Theurgy	DR325 p61	crystalkeep+realmshelps
+Elephant's Hide	CDiv p81	crystalkeep+realmshelps
+Elf Dilettante	RotW p150	crystalkeep+realmshelps
+Elf Lore	DR315 p53	crystalkeep
+Elfhunter	Und p25	crystalkeep+realmshelps
+Elflore	Dragon #315	realmshelps
+Eluctable Echo	Unearthed Arcana	realmshelps
+Elusive Dance	DR333 p88	crystalkeep+realmshelps
+Elusive Target	CWar p110	crystalkeep+realmshelps
+Elven Court		crystalkeep
+Elven Pride of Arms	Dragon #328	realmshelps
+Elven Spell Lore	PH2 p78	crystalkeep+realmshelps
+Embed Spell Focus	Draconomicon	realmshelps
+Embody Energy	Exemplars of Evil	dndtools
+Empower Construction	Web	realmshelps
+Empower Legacy	Weapons of Legacy	realmshelps
+Empower Mystery	Tome of Magic	realmshelps
+Empower Power	Expanded Psionics Handbook	realmshelps
+Empower Psi-like Ability	Dragon Magic	realmshelps
+Empower Spell	PH p93	crystalkeep+realmshelps
+Empower Spell-Like Ability		crystalkeep
+Empower Spell-like Ability		realmshelps
+Empower Spell-like Ability (V)	Book of Vile Darkness	realmshelps
+Empower Supernatural Ability	Tome of Magic	realmshelps
+Empower Turning	CDiv p81	crystalkeep+realmshelps
+Empower Turning (G)	Ghostwalk	realmshelps
+Empower Utterance	Tome of Magic	realmshelps
+Empowered Ability Damage	Libris Mortis	realmshelps
+Empowered Psicrystal	Web	realmshelps
+Empty Hand Mastery	Oriental Adventures	realmshelps
+Enchant Staff	DR338 p60	crystalkeep+realmshelps
+Enchanting Song	RoS p139	crystalkeep+realmshelps
+Endless Malevolence	Web	realmshelps
+Endurance	CAdv p10; PH p93	crystalkeep+realmshelps
+Endure Blows	Draconomicon	realmshelps
+Endure Sunlight	Libris Mortis	realmshelps
+Enduring Ki	Complete Scoundrel	realmshelps
+Enduring Life	LM p26	crystalkeep+realmshelps
+Enemy of Good	Elder Evils	dndtools
+Energize Armor		realmshelps
+Energize Spell	LM p26	crystalkeep+realmshelps
+Energy Abjuration	Complete Mage	realmshelps
+Energy Admixture	CArc p78	crystalkeep+realmshelps
+Energy Affinity	Miniatures Handbook	realmshelps
+Energy Flare	Dragon #313	realmshelps
+Energy Gestalt	Complete Mage	realmshelps
+Energy Resistance	Libris Mortis	realmshelps
+Energy Resistance (Epic)	Epic Level Handbook	realmshelps
+Energy Resistance: Acid	Epic Level Handbook	dndtools
+Energy Resistance: Cold	Epic Level Handbook	dndtools
+Energy Resistance: Electricity	Epic Level Handbook	dndtools
+Energy Resistance: Fire	Epic Level Handbook	dndtools
+Energy Resistance: Sonic	Epic Level Handbook	dndtools
+Energy Strike	DR343 p91	crystalkeep+realmshelps
+Energy Substitution	CArc p79; DR325 p58	crystalkeep+realmshelps
+Enervate Spell	LM p26	crystalkeep+realmshelps
+Enervating Touch	Ghostwalk	realmshelps
+Enervation Endurance	Complete Psionic	realmshelps
+Enervative Healing	Races of Faerûn	realmshelps
+Enhance Effect	Player's Guide to Faerûn	realmshelps
+Enhance Item	Epic Level Handbook	realmshelps
+Enhance Spell		realmshelps
+Enhance Turning	Web	realmshelps
+Enhanced Adhesive	Und p24	crystalkeep+realmshelps
+Enhanced Beneficence	Complete Psionic	realmshelps
+Enhanced Construction	Web	realmshelps
+Enhanced Power Sigils	RoD p152	crystalkeep+realmshelps
+Enhanced Reputation	Dungeon #294	realmshelps
+Enhanced Shadow Reality	DR325 p77	crystalkeep+realmshelps
+Enlarge Breath	Draconomicon	realmshelps
+Enlarge Mucus Cloud	Lords of Madness	realmshelps
+Enlarge Mystery	Tome of Magic	realmshelps
+Enlarge Power	Expanded Psionics Handbook	realmshelps
+Enlarge Spell	PH p94	crystalkeep+realmshelps
+Enlarge Supernatural Ability	Tome of Magic	realmshelps
+Enlarge Utterance	Tome of Magic	realmshelps
+Enspell Familiar		realmshelps
+Entangling Exhalation	Races of the Dragon	realmshelps
+Entangling Spell	Champions of Ruin	realmshelps
+Envoy Cognizance	Complete Psionic	realmshelps
+Epic Ancestral Daisho	Web	realmshelps
+Epic Combat Expertise	Compete Warrior	realmshelps
+Epic Counterspell	Player's Guide to Faerûn	realmshelps
+Epic Devotion		realmshelps
+Epic Divine Might	Web	realmshelps
+Epic Divine Resistance	Web	realmshelps
+Epic Divine Vengeance	Web	realmshelps
+Epic Divine Vigor	Web	realmshelps
+Epic Dodge		realmshelps
+Epic Endurance	Epic Level Handbook	realmshelps
+Epic Enervating Touch	Web	realmshelps
+Epic Essentia 1	Magic of Incarnum	dndtools
+Epic Essentia 2	Magic of Incarnum	dndtools
+Epic Essentia 3	Magic of Incarnum	dndtools
+Epic Essentia 4	Magic of Incarnum	dndtools
+Epic Essentia 5	Magic of Incarnum	dndtools
+Epic Evil Brand	Web	realmshelps
+Epic Expanded Knowledge	Expanded Psionics Handbook	realmshelps
+Epic Feats		crystalkeep
+Epic Fortitude		realmshelps
+Epic Horrific Appearance	Web	realmshelps
+Epic Improved Skirmish	Complete Adventurer	dndtools
+Epic Inner Harmony	Web	realmshelps
+Epic Inspiration	Epic Level Handbook	realmshelps
+Epic Ki Frenzy	Web	realmshelps
+Epic Leadership	Epic Level Handbook	realmshelps
+Epic Of The Lost King	Complete Scoundrel	realmshelps
+Epic Poison Crafter	Web	realmshelps
+Epic Prowess		realmshelps
+Epic Psionic Focus	Expanded Psionics Handbook	realmshelps
+Epic Psychic Meditation	Web	realmshelps
+Epic Reflexes		realmshelps
+Epic Reputation		realmshelps
+Epic Skill Focus		realmshelps
+Epic Speed	Epic Level Handbook	realmshelps
+Epic Spell Focus		realmshelps
+Epic Spell Penetration		realmshelps
+Epic Spell Secret	Web	realmshelps
+Epic Spell Specialization	Web	realmshelps
+Epic Spellcasting		realmshelps
+Epic Spellcasting (Arcana)	Epic Level Handbook	dndtools
+Epic Spellcasting (Nature)	Epic Level Handbook	dndtools
+Epic Spellcasting (Religion)	Epic Level Handbook	dndtools
+Epic Spellfire Wielder	Player's Guide to Faerûn	realmshelps
+Epic Sunder	Compete Warrior	realmshelps
+Epic Toughness		realmshelps
+Epic Trigger Power	Web	realmshelps
+Epic Weapon Focus		realmshelps
+Epic Weapon Specialization	Epic Level Handbook	realmshelps
+Epic Will		realmshelps
+Epic Witchlight	Web	realmshelps
+Escape Attack	Complete Scoundrel	dndtools
+Eschew Materials		realmshelps
+Escrew Materials	PH p94	crystalkeep
+Etch Rune	DR324 p26	crystalkeep
+Etch Schema	Magic of Eberron	dndtools
+Eternal Strength	RoD p155	crystalkeep+realmshelps
+Ethereal Leap	Web	realmshelps
+Ethereal Sidestep	Ghostwalk	realmshelps
+Ethereal Tendril	Dragon #311	realmshelps
+Ethran	PGF p38	crystalkeep+realmshelps
+Ettercap Berserker	Unapproachable East	realmshelps
+Ettin	DR340 p28	crystalkeep
+Euphoric Reduction	Complete Psionic	realmshelps
+Evasive Maneuvers	Exemplars of Evil	dndtools
+Evasive Reflexes	Tome of Battle	realmshelps
+Evereska		crystalkeep
+Evermeet		crystalkeep
+Evil Brand		realmshelps
+Evil Devotion	Complete Champion	realmshelps
+Evil Embraced	Champions of Ruin	realmshelps
+Evil?s Blessin	Elder Evils	dndtools
+Eviscerator	Libris Mortis	realmshelps
+Evocation Resistance	DR325 p77	crystalkeep+realmshelps
+Evokers Mark	Dragonmarked	dndtools
+Evolved	Dragon #350	realmshelps
+Exalted Companion	BoED p42	crystalkeep+realmshelps
+Exalted Smite	BoED p42	crystalkeep+realmshelps
+Exalted Spell Resistance	Book of Exalted Deeds	realmshelps
+Exalted Turning	BoED p42	crystalkeep+realmshelps
+Exalted Wild Shape	BoED p42	crystalkeep+realmshelps
+Exceptional Artisan	Eb p52	crystalkeep+realmshelps
+Exceptional Deflection	Epic Level Handbook	realmshelps
+Excised From The Web Of Life	Dragon #336	realmshelps
+Excised from the Web of Life	DR336 p108	crystalkeep
+Exercises of Arn	DR319 p56	crystalkeep
+Exercises of Arnd	Dragon #319	realmshelps
+Exhaled Barrier	Races of the Dragon	realmshelps
+Exhaled Immunity	Races of the Dragon	realmshelps
+Exhausting Defense	D345 p91; DR345 p91	crystalkeep+realmshelps
+Exhausting Rage	Dragon #325	realmshelps
+Exotic Armor Proficiency	RoS p139; Und p25	crystalkeep+realmshelps
+Exotic Armor Proficiency (Heavy)	Races of Stone	dndtools
+Exotic Armor Proficiency (Light)	Races of Stone	dndtools
+Exotic Armor Proficiency (Medium)	Races of Stone	dndtools
+Exotic Armour Proficiency (Heavy)	Underdark	dndtools
+Exotic Armour Proficiency (Light)	Underdark	dndtools
+Exotic Armour Proficiency (Medium)	Underdark	dndtools
+Exotic Shield Proficiency	RoS p139	crystalkeep+realmshelps
+Exotic Weapon Proficiency	PH p94	crystalkeep+realmshelps
+Expanded Aura Of Courage	Heroes of Battle	realmshelps
+Expanded Ki Pool	Complete Scoundrel	realmshelps
+Expanded Knowledge	Expanded Psionics Handbook	realmshelps
+Expanded Possession	Ghostwalk	realmshelps
+Expanded Soulmeld Capacity	Magic of Incarnum	realmshelps
+Expeditious Dodge	RoW p150; RotW p150	crystalkeep+realmshelps
+Expel Vestige	Tome of Magic	realmshelps
+Expert Dungeoneer	DR315 p53	crystalkeep+realmshelps
+Expert Siege Engineer	Heroes of Battle	realmshelps
+Expert Swimmer	Stormwrack	realmshelps
+Expert Tactician	CAdv p109	crystalkeep+realmshelps
+Expert Tumbler	DR322 p37	crystalkeep+realmshelps
+Exploit Adjustment	DR340 p87	crystalkeep+realmshelps
+Explosive Spell		crystalkeep+realmshelps
+Extend Defense	DR339 p87	crystalkeep
+Extend Mystery	Tome of Magic	realmshelps
+Extend Power	Expanded Psionics Handbook	realmshelps
+Extend Rage	CWar p97; Eb p52	crystalkeep+realmshelps
+Extend Spell	PH p94	crystalkeep+realmshelps
+Extend Spreading Breath	Draconomicon	realmshelps
+Extend Supernatural Ability	Tome of Magic	realmshelps
+Extend Utterance	Tome of Magic	realmshelps
+Extended Construction	Web	realmshelps
+Extended Full Manifestation	Web	realmshelps
+Extended Life Span	Epic Level Handbook	realmshelps
+Extended Rage		realmshelps
+Extended Reach	Savage Species	realmshelps
+Extended Spirit Form	DR343 p91	crystalkeep+realmshelps
+Extra Arms	Dragon #327	realmshelps
+Extra Aura	Complete Psionic	realmshelps
+Extra Chakra Bind	Magic of Incarnum	dndtools
+Extra Contacts	Cityscape	realmshelps
+Extra Divine Power	DR343 p91	crystalkeep+realmshelps
+Extra Domain Spell	Miniatures Handbook	realmshelps
+Extra Edge	CArc p79	crystalkeep+realmshelps
+Extra Exhalation	Races of the Dragon	realmshelps
+Extra Familiar	Dragon #280	realmshelps
+Extra Favored Enemy		realmshelps
+Extra Followers	Heroes of Battle	realmshelps
+Extra Granted Maneuver	Tome of Battle	realmshelps
+Extra Invocation	CArc p79	crystalkeep+realmshelps
+Extra Item Space	Savage Species	realmshelps
+Extra Music	CAdv p109; Eb p52	crystalkeep+realmshelps
+Extra Power	Dragon #287	realmshelps
+Extra Rage	CWar p98	crystalkeep+realmshelps
+Extra Readied Maneuver	Tome of Battle	realmshelps
+Extra Remove Disease	DR337 p98	crystalkeep+realmshelps
+Extra Rings	Eb p53	crystalkeep+realmshelps
+Extra Shifter Trait	Eb p53; MM3 p150; RoE p114	crystalkeep+realmshelps
+Extra Silence	RoS p139	crystalkeep+realmshelps
+Extra Slot	CArc p79	crystalkeep+realmshelps
+Extra Smiting	CWar p98	crystalkeep+realmshelps
+Extra Spell	CArc p79	crystalkeep+realmshelps
+Extra Spell Secret	CArc p80	crystalkeep+realmshelps
+Extra Stunning	CWar p98	crystalkeep+realmshelps
+Extra Stunning Attacks	Sword and Fist	realmshelps
+Extra Tricks	Complete Arcane	realmshelps
+Extra Turning	PH p94	crystalkeep+realmshelps
+Extra Unique Power	Dragon #319	realmshelps
+Extra Wild Shape	CDiv p81; Und p25	crystalkeep+realmshelps
+Extract Demonic Essence	Fiendish Codex I	realmshelps
+Extraordinary Artisan	Eb p53	crystalkeep+realmshelps
+Extraordinary Concentration	CAdv p109	crystalkeep+realmshelps
+Extraordinary Spell Aim	CAdv p109	crystalkeep+realmshelps
+Extraordinary Trapsmith	Races of the Dragon	realmshelps
+Extreme Leap	Complete Scoundrel	dndtools
+Eye For Talent	Dragon #346	realmshelps
+Eye for Talent	DR346 p53	crystalkeep
+Eye of Medani	Dragonmarked	dndtools
+Eyes In The Back of Your Head		realmshelps
+Eyes Of The Abyss	Fiendish Codex I	realmshelps
+Eyes in the Back of Your Head	CWar p98	crystalkeep
+Eyes of Light	Races of Faerûn	realmshelps
+Eyes of the Mage	Dragon #359	realmshelps
+Eyes to the Sky	UA p93	crystalkeep+realmshelps
+Face In The Crowd	Dungeon #294	realmshelps
+Face-changer	Complete Mage	realmshelps
+Fade	Ghostwalk	realmshelps
+Fade Into Darkness	Drow of the Underdark	realmshelps
+Fade Into Violence	Player's Handbook II	realmshelps
+Fade into Violence	PH2 p79	crystalkeep
+Faerie Mysteries Initiate	DR319 p58	crystalkeep+realmshelps
+Faith In The Frost	Frostburn	realmshelps
+Faith Unswerving	Tome of Battle	realmshelps
+Falling Star Strike	Oriental Adventures	realmshelps
+Falling Sun Attack	Tome of Battle	realmshelps
+False Pretenses	UA p93	crystalkeep+realmshelps
+False Theurgy	Complete Scoundrel	dndtools
+Familiar Concentration	Lost Empires of Faerûn	realmshelps
+Familiar Spell	Und p25	crystalkeep+realmshelps
+Familiar Spell (Epic)	Epic Level Handbook	realmshelps
+Familiarity	DR325 p49	crystalkeep+realmshelps
+Fanatical Devotion	Dragon #346	realmshelps
+Fanational Devotion	DR346 p53	crystalkeep
+Far Horizons	RoD p155	crystalkeep+realmshelps
+Far Look	Dragon #330	realmshelps
+Far Shot	CAdv p10; CDv p10; PH p94; PH2 p79	crystalkeep+realmshelps
+Farsighted	Unearthed Arcana	realmshelps
+Fascinating Illumination	Drow of the Underdark	realmshelps
+Fast Healing		realmshelps
+Fast Rider	Dragon #285	realmshelps
+Fast Wild Shape	CDiv p81	crystalkeep+realmshelps
+Faster Healing		crystalkeep+realmshelps
+Favored	Cityscape	realmshelps
+Favored Critical	Masters of the Wild	realmshelps
+Favored Dodge	DR335 p90	crystalkeep+realmshelps
+Favored In Guild	Dungeon Master's Guide II	realmshelps
+Favored In House	Eberron Campaign Setting	realmshelps
+Favored Magic Foe	Complete Mage	realmshelps
+Favored Mystery	Tome of Magic	realmshelps
+Favored Power Attack	CWar p98; DR310 p58	crystalkeep+realmshelps
+Favored Vestige	Tome of Magic	realmshelps
+Favored Vestige Focus	Tome of Magic	realmshelps
+Favored in House	Eb p53	crystalkeep
+Favored of The Companions	Book of Exalted Deeds	realmshelps
+Favored of the Companions	BoED p43	crystalkeep
+Favored of the Zulkirs	Player's Guide to Faerûn	realmshelps
+Fear	Dragon #315	realmshelps
+Fear No Binds	Dragon #355	realmshelps
+Fearless	PGF p38	crystalkeep+realmshelps
+Fearless Destiny	Races of Destiny	realmshelps
+Fearsome Necromancy	Complete Mage	realmshelps
+Fearsome and Fearless	Oriental Adventures	realmshelps
+Feeble	Unearthed Arcana	realmshelps
+Feed the Hungry Slaad	Dragon #306	realmshelps
+Feign Weakness	Sword and Fist	realmshelps
+Fell Animate	LM p26	crystalkeep+realmshelps
+Fell Conspiracy	Exemplars of Evil	dndtools
+Fell Drain	LM p27	crystalkeep+realmshelps
+Fell Energy Spell	DR312 p37	crystalkeep+realmshelps
+Fell Frighten	LM p27	crystalkeep+realmshelps
+Fell Shot	Expanded Psionics Handbook	realmshelps
+Fell Weaken	LM p27	crystalkeep+realmshelps
+Feral Animal Companion	Champions of Ruin	realmshelps
+Feral Mark	Dragonmarked	dndtools
+Fey Bloodline		realmshelps
+Fey Heritage	Complete Mage	realmshelps
+Fey Legacy	Complete Mage	realmshelps
+Fey Power	Complete Mage	realmshelps
+Fey Prescience	Dragon #335	realmshelps
+Fey Presence	Complete Mage	realmshelps
+Fey Skin	Complete Mage	realmshelps
+Fey's Fate		realmshelps
+Fickle Fate	DR325 p49	crystalkeep+realmshelps
+Fiendish Bloodline	DR311 p37	crystalkeep+realmshelps
+Fiendish Bloodline (FR)	Races of Faerûn	realmshelps
+Fiendish Heritage		realmshelps
+Fiendish Legacy	Complete Mage	realmshelps
+Fiendish Pact	DR338 p97	crystalkeep
+Fiendish Power	Complete Mage	realmshelps
+Fiendish Presence	Complete Mage	realmshelps
+Fiendish Resistance	Complete Mage	realmshelps
+Fiendish Summoning Specialist	Planar Handbook	realmshelps
+Fiendsign	DR315 p53	crystalkeep+realmshelps
+Fierce Mind	Dragon #355	realmshelps
+Fiery Burst	Complete Mage	realmshelps
+Fiery Fist	PH2 p79	crystalkeep+realmshelps
+Fiery Ki Defense	PH2 p79	crystalkeep+realmshelps
+Fiery Spell	Sandstorm	realmshelps
+Filth Eater	Sharn p157	crystalkeep
+Filthy Outburst	Elder Evils	dndtools
+Final Strike	Savage Species	realmshelps
+Find Flaw	Dragon #359	realmshelps
+Find Relic	DR347 p89	crystalkeep+realmshelps
+Fine Wild Shape	Epic Level Handbook	realmshelps
+Fire Bloodline		realmshelps
+Fire Devotion	Complete Champion	realmshelps
+Fire Feet	Dragon #311	realmshelps
+Fire Heritage	Planar Handbook	realmshelps
+Fist of The Heavens	Book of Exalted Deeds	realmshelps
+Fist of the Heavens	BoED p43; PH2 p79	crystalkeep
+Fists of Iron	CWar p99	crystalkeep+realmshelps
+Five Stars Mastery I	Dragon #315	realmshelps
+Five Stars Mastery II	Dragon #315	realmshelps
+Flash Casting	DR314 p21	crystalkeep+realmshelps
+Flash Frost Spell	Player's Handbook II	crystalkeep+realmshelps
+Flay	PH2 p79	crystalkeep+realmshelps
+Flay Foe	Champions of Ruin	realmshelps
+Fleet of Foot	PGF p38	crystalkeep+realmshelps
+Fleet of Foot (FR)	Player's Guide to Faerûn	realmshelps
+Fleet of Foot'	CWar p99	crystalkeep
+Flensing Strike	Ab p53; PH p95; Ph2 p53	crystalkeep+realmshelps
+Flesh of the Ice Tomb	DU109 p50	crystalkeep
+Flexible Mind	DR326 p80	crystalkeep+realmshelps
+Flick of the Wrist	CWar p99; RoW p150; RotW p150	crystalkeep+realmshelps
+Fling Ally	Races of Stone	crystalkeep+realmshelps
+Fling Enemy		realmshelps
+Fling Foe		crystalkeep
+Floatation	DR314 p45	crystalkeep
+Flotation	Dragon #314	realmshelps
+Flow With the Current	Dragon #314	realmshelps
+Flow with the Current	DR314 p45	crystalkeep
+Flurry of Throws	Dragon #344	crystalkeep+realmshelps
+Flyby Attack		realmshelps
+Flyby Breath	Dragonlance Campaign Setting	dndtools
+Flying Fish Leap	Stormwrack	realmshelps
+Flying Kick	CWar p99	crystalkeep+realmshelps
+Flying Tiger	Secrets of Sarlona	dndtools
+Focused	Unearthed Arcana	realmshelps
+Focused Antimagic	Lords of Madness	realmshelps
+Focused Body	Web	realmshelps
+Focused Lexicon	Tome of Magic	realmshelps
+Focused Mind	RoW p151; RotW p151	crystalkeep+realmshelps
+Focused Perception	Complete Psionic	realmshelps
+Focused Performance	DR338 p89	crystalkeep+realmshelps
+Focused Performer	DR338 p89	crystalkeep+realmshelps
+Focused Shield		realmshelps
+Focused Skill User	Complete Psionic	realmshelps
+Focused Specialist	DR351 p89	crystalkeep+realmshelps
+Focused Spell Penetration	Web	realmshelps
+Focused Sunder	Expanded Psionics Handbook	realmshelps
+Foe Hunter		realmshelps
+Foe Hunter (GW)	Ghostwalk	realmshelps
+Foe Hunter – Demons	PGF p38	crystalkeep
+Foe Hunter – Dragons	PGF p38	crystalkeep
+Foe Hunter – Goblinoids	PGF p38	crystalkeep
+Foe Hunter – Orcs	PGF p38	crystalkeep
+Foe Hunter – Yuan-ti	PGF p38	crystalkeep
+Foe Specialist	Miniatures Handbook	realmshelps
+Foe Specialist (flaw)	Dragon #329	realmshelps
+Follower of the Scaly Way	Dragons of Faerun	dndtools
+Font of Inspiration	Web	realmshelps
+Font of Life	Heroes of Horror	realmshelps
+Fool	Dragon #324	realmshelps
+Foot and Fist Mastery	Oriental Adventures	realmshelps
+Footsteps of the Mage	Dragon #359	realmshelps
+Forbidden Lore	Heroes of Horror	realmshelps
+Force Of Personality	Complete Adventurer	realmshelps
+Force Of Will	Expanded Psionics Handbook	realmshelps
+Force of Personality	CAdv p109	crystalkeep
+Forceful Magic	Dragon #308	realmshelps
+Forceful Spell	Dragon #358	realmshelps
+Forceful Staff Style	Ghostwalk	realmshelps
+Forest Ambusher	Dragon #315	realmshelps
+Forest Gnome Phantasist	Races of Faerûn	realmshelps
+Forest of Lethyr		crystalkeep
+Forester	PGF p38	crystalkeep+realmshelps
+Forge Epic Ring	Epic Level Handbook	realmshelps
+Forge Ring	PH p94	crystalkeep+realmshelps
+Forgeheart	PGF p38	crystalkeep+realmshelps
+Forked Tongue	Serpent Kingdoms	realmshelps
+Forlorn	Dragon #333	realmshelps
+Forlorn of Men	Dragon #324	realmshelps
+Formation Expert	CWar p110; PH2 p92	crystalkeep+realmshelps
+Fortify Power	Dragon #287	realmshelps
+Fortify Spell	CArc p80	crystalkeep+realmshelps
+Fortuitous Strike	Complete Scoundrel	realmshelps
+Fragile Construct	Complete Champion	realmshelps
+Frail	Unearthed Arcana	realmshelps
+Frail (Flaw)	Dragon #328	realmshelps
+Frantic Rage	FoE p147	crystalkeep
+Free-Spirited	Dragon #328	realmshelps
+Freerunner	Complete Scoundrel	realmshelps
+Freezing The Lifeblood	Compete Warrior	realmshelps
+Freezing Touch	Ghostwalk	realmshelps
+Freezing the Lifeblood	CWar p99	crystalkeep
+Frenzied Hunt	Dragon #342	crystalkeep+realmshelps
+Friend of Earth	DR314 p29	crystalkeep+realmshelps
+Friend of the Earth		realmshelps
+Friend of the Tribes	PGE p75	crystalkeep
+Friend to the Tribe	Dragon #352	realmshelps
+Friends of the Tribes	Players Guide to Eberron	dndtools
+Frightful Moan	Ghostwalk	realmshelps
+Frightful Presence	Dcn p106	crystalkeep+realmshelps
+Frightful Presence (GW)	Ghostwalk	realmshelps
+Frivolous Performer	Dragon #324	realmshelps
+From Smite to Song	Champions of Valor	realmshelps
+Frontline Archer	DR332 p88	crystalkeep+realmshelps
+Frostfell Prodigy	Frostburn	realmshelps
+Frozen Berserker	Frostburn	realmshelps
+Frozen Magic	Frostburn	realmshelps
+Frozen Wild Shape	Frostburn	realmshelps
+Full Manifestation	Ghostwalk	realmshelps
+Furious Charge	PGF p38	crystalkeep+realmshelps
+Furious Inhalation	Races of the Dragon	realmshelps
+Fury of Stone	DR333 p84	crystalkeep+realmshelps
+Fussy	Dragon #328	realmshelps
+Galifaran Scholar	PGE p77	crystalkeep
+Gang Tactics	DR323 p28	crystalkeep+realmshelps
+Gape of the Serpent		realmshelps
+Gargantuan Wild Shape	Epic Level Handbook	realmshelps
+Gatekeeper Initiate	Eb p54	crystalkeep+realmshelps
+Gatekeepers Mark	Dragonmarked	dndtools
+Generous Sacrifice	Exemplars of Evil	dndtools
+Genie Lore	Races of Faerûn	realmshelps
+Gestalt Anchor	Complete Psionic	realmshelps
+Gestalt Might	Secrets of Sarlona	dndtools
+Ghallanda	EB p64; EB p80	crystalkeep
+Ghost Attack	Expanded Psionics Handbook	realmshelps
+Ghost Flight	Ghostwalk	realmshelps
+Ghost Glide	Ghostwalk	realmshelps
+Ghost Hand	Ghostwalk	realmshelps
+Ghost Healing	Ghostwalk	realmshelps
+Ghost Ride	Ghostwalk	realmshelps
+Ghost Scarred	LM p27	crystalkeep+realmshelps
+Ghost Smiting	Ghostwalk	realmshelps
+Ghost-Touch Spell	Ghostwalk	realmshelps
+Ghostly Grasp	Libris Mortis	realmshelps
+Giant Banemagic	Secrets of Xendrik	dndtools
+Giant's Toughness	Masters of the Wild	realmshelps
+Giantbane	CWar p111	crystalkeep+realmshelps
+Giantkiller	DR315 p53	crystalkeep+realmshelps
+Gift Of The Spider Queen	Drow of the Underdark	realmshelps
+Gift of Discernment	Player's Guide to Faerûn	realmshelps
+Gift of Faith	BoED p43	crystalkeep+realmshelps
+Gift of Grace	BoED p43	crystalkeep+realmshelps
+Gift of Tongues	Races of Faerûn	realmshelps
+Gift of Tongues (G)	Ghostwalk	realmshelps
+Gift of Xoriat	Dragon #332	realmshelps
+Gift of the Xoriat	DR332 p45	crystalkeep
+Gifted General	Dragon #315	realmshelps
+Gifted General (OA)	Oriental Adventures	realmshelps
+Girded Soul	DR325 p77	crystalkeep+realmshelps
+Githyanki Battlecaster	Monster Manual IV	realmshelps
+Githyanki Charm	Complete Psionic	realmshelps
+Githyanki Control	Complete Psionic	realmshelps
+Githyanki Dismissal	Complete Psionic	realmshelps
+Githyanki Dragonrider	Monster Manual IV	realmshelps
+Githyanki Ectoform	Complete Psionic	realmshelps
+Githzerai Burst	Complete Psionic	realmshelps
+Githzerai Feedback	Complete Psionic	realmshelps
+Githzerai Knock	Complete Psionic	realmshelps
+Githzerai Link	Complete Psionic	realmshelps
+Gloom Razor	Tome of Battle	realmshelps
+Gloom Strike	Drow of the Underdark	realmshelps
+Glorious Weapons	Complete Divine	crystalkeep+realmshelps
+Glory-Hound	Dragon #328	realmshelps
+Glyph Scriber		realmshelps
+Gnoll Ferocity	Races of the Wild	crystalkeep+realmshelps
+Gnome Foe Killer	RoS p140	crystalkeep+realmshelps
+Gnome Tunnel Acrobatics	Dungeonscape	realmshelps
+Gnomelore	Dragon #315	realmshelps
+Gnorme Lore	DR315 p53	crystalkeep
+Goad	CAdv p109	crystalkeep+realmshelps
+God Touched	Dragon #305	realmshelps
+Godsblood Spelltheft	Web	realmshelps
+Godsight	Lost Empires of Faerûn	realmshelps
+Gold Dragon Lineage	Dragon Magic	realmshelps
+Gold Dwarf Dweomersmith	Races of Faerûn	realmshelps
+Golden Water		crystalkeep
+Good Devotion	Complete Champion	realmshelps
+Good Karma	Complete Scoundrel	realmshelps
+Good Manners	Dragon #305	realmshelps
+Good Neighbor	Dragon #305	realmshelps
+Gore Toss	Dragon #313	realmshelps
+Gorebrute Elite	RoE p114	crystalkeep
+Gout of Flame	Dragon #314	realmshelps
+Grace of Ghallanda	Dragonmarked	dndtools
+Graceful Edge	CAdv p109	crystalkeep+realmshelps
+Graft Flesh		realmshelps
+Graft Flesh – Aboleth	LM p27	crystalkeep
+Graft Flesh – Beholder	LM p27	crystalkeep
+Graft Flesh – Fiendish	LM p27	crystalkeep
+Graft Flesh – Undead	LM p27	crystalkeep
+Graft Flesh – Yuan-ti	LM p27	crystalkeep
+Graft Flesh –Illithid	LM p27; Und p25	crystalkeep
+Graft Illithid Flesh	Underdark	realmshelps
+Graft Yuan-ti Flesh	Serpent Kingdoms	realmshelps
+Grand Malevolence	Ghostwalk	realmshelps
+Grappling Blast	Dragon #358	realmshelps
+Grappling Block	Oriental Adventures	realmshelps
+Grass Trekker	Savage Species	realmshelps
+Grasshopper Strike	Dragon #279	realmshelps
+Grave Friend	Dragon #325	realmshelps
+Graveborn Expert	Dragon #312	realmshelps
+Graveborn Warrior	Dragon #312	realmshelps
+Great And Small	Complete Champion	realmshelps
+Great Bite	Eb p54	crystalkeep+realmshelps
+Great Captain	Stormwrack	realmshelps
+Great Charisma	Epic Level Handbook	realmshelps
+Great Cleave	CAdv p109; PH p94	crystalkeep+realmshelps
+Great Constitution	Epic Level Handbook	realmshelps
+Great Crafter	Oriental Adventures	realmshelps
+Great Dale		crystalkeep
+Great Dexterity	Epic Level Handbook	realmshelps
+Great Diplomat	Oriental Adventures	realmshelps
+Great Fervor	DR315 p53	crystalkeep+realmshelps
+Great Flyby Attack	Savage Species	realmshelps
+Great Fortitude	CAdv p10; PH p94	crystalkeep+realmshelps
+Great Intelligence	Epic Level Handbook	realmshelps
+Great Ki Shout	Oriental Adventures	realmshelps
+Great Rend	Eb p54	crystalkeep+realmshelps
+Great Smiting		realmshelps
+Great Smiting (Smite Evil)	Epic Level Handbook	dndtools
+Great Smiting (Smite Good)	Epic Level Handbook	dndtools
+Great Stag Berserker	Unapproachable East	realmshelps
+Great Stamina	Oriental Adventures	realmshelps
+Great Strength	Epic Level Handbook	realmshelps
+Great Teamwork	Oriental Adventures	realmshelps
+Great Throw	Oriental Adventures	dndtools
+Great Wisdom	Epic Level Handbook	realmshelps
+Greater Aberrant Dragonmark	Dragonmarked	dndtools
+Greater Cold Focus	Frostburn	realmshelps
+Greater Combat Reflexes	CAdv p109	crystalkeep+realmshelps
+Greater Corrupt Spell Focus	Heroes of Horror	realmshelps
+Greater Dragonmark	Eb p54	crystalkeep+realmshelps
+Greater Ghost Attack	Dragon #316	realmshelps
+Greater Heavy Armor Optimization	CAdv p109; RoS p141	crystalkeep+realmshelps
+Greater Kaiishout	CWar p99	crystalkeep
+Greater Kiai Shout	Compete Warrior	realmshelps
+Greater Legacy	Weapons of Legacy	realmshelps
+Greater Manyshot	Expanded Psionics Handbook	realmshelps
+Greater Mighty Roar	Savage Species	realmshelps
+Greater Mind Shield	Dragon #341	realmshelps
+Greater Multigrab		realmshelps
+Greater Multiweapon Fighting		realmshelps
+Greater Path Focus	Tome of Magic	realmshelps
+Greater Power Penetration	Expanded Psionics Handbook	realmshelps
+Greater Power Specialization	Expanded Psionics Handbook	realmshelps
+Greater Powerful Charge	RoS p141	crystalkeep+realmshelps
+Greater Psionic Combat Buffer	Web	realmshelps
+Greater Psionic Endowment	Expanded Psionics Handbook	realmshelps
+Greater Psionic Fist	Expanded Psionics Handbook	realmshelps
+Greater Psionic Shot	Expanded Psionics Handbook	realmshelps
+Greater Psionic Weapon	Expanded Psionics Handbook	realmshelps
+Greater Resiliency	CWar p99	crystalkeep+realmshelps
+Greater Shifter Defense	Eberron Campaign Setting	realmshelps
+Greater Spell Focus	PH p94	crystalkeep+realmshelps
+Greater Spell Penetration	PH p94	crystalkeep+realmshelps
+Greater Two-Weapon Defense	CWar p100; RoS p141	crystalkeep
+Greater Two-Weapon Fighting	PH p95; RoS p141	crystalkeep
+Greater Two-weapon Defense	Compete Warrior	realmshelps
+Greater Two-weapon Fighting		realmshelps
+Greater Undead Legion	Dragon #298	realmshelps
+Greater Weapon Focus	PH p95	crystalkeep+realmshelps
+Greater Weapon Specialization	PH p95	crystalkeep+realmshelps
+Greater Witchlight	Ghostwalk	realmshelps
+Green Bond	Ghostwalk	realmshelps
+Green Dragon Lineage	Dragon Magic	realmshelps
+Green Ear	CAdv p110	crystalkeep+realmshelps
+Green Heart	Dragon #325	realmshelps
+Greenbound Summoning	Lost Empires of Faerûn	realmshelps
+Greensinger Initiate	Eb p54	crystalkeep+realmshelps
+Greensingers Mark	Dragonmarked	dndtools
+Grell Alchemy	Lords of Madness	realmshelps
+Grenade	PH p95	crystalkeep
+Grenadier	PH2 p79	crystalkeep+realmshelps
+Greyhawk Method	DR315 p53	crystalkeep+realmshelps
+Grim Visage	Races of Faerûn	realmshelps
+Grizzly's Claws	CDiv p82	crystalkeep+realmshelps
+Group Fake-Out	Complete Scoundrel	dndtools
+Group Inspiration		realmshelps
+Grudge Keeper	Dragon #328	realmshelps
+Gruesome Finish	Exemplars of Evil	dndtools
+Guard Commander	Dragon #348	realmshelps
+Guardian Spirit	CArc p80	crystalkeep+realmshelps
+Guerilla Commander	Dragon #348	realmshelps
+Guerilla Scout	Heroes of Battle	dndtools
+Guerilla Trapsmith	DR342 p85	crystalkeep+realmshelps
+Guerilla Warrior	Heroes of Battle	dndtools
+Guerrilla Scout	Heroes of Battle	realmshelps
+Guerrilla Warrior	Heroes of Battle	realmshelps
+Guided Spell		realmshelps
+Guildmaster	Dungeon Master's Guide II	realmshelps
+Gullible	Dragon #325	realmshelps
+Haft Strike	DR331 p28	crystalkeep+realmshelps
+Half-Blood Outcast	Dragon #328	realmshelps
+Half-Dragon Form	Dragons Ebberon	dndtools
+Half-Giant Stomp	Complete Psionic	realmshelps
+Half-Giant Thunderer	Complete Psionic	realmshelps
+Halfling Lore	DR315 p53	crystalkeep+realmshelps
+Halfling's Cunning	DR323 p29	crystalkeep+realmshelps
+Halruaa		crystalkeep
+Halruaan Adept	Shining South	realmshelps
+Halruuan Adept	Shining South	dndtools
+Hammer Fist		realmshelps
+Hammer and Piton	Dungeonscape	realmshelps
+Hammer's Edge	CWar p113	crystalkeep+realmshelps
+Hamstring	CWar p100	crystalkeep+realmshelps
+Hamstring Attack	Dragon #313	realmshelps
+Hand Crossbow Focus	Drow of the Underdark	realmshelps
+Hand of Tyr	City of Splendors: Waterdeep	realmshelps
+Hands of a Healer	Book of Exalted Deeds	realmshelps
+Hands of the Healer	BoED p43	crystalkeep
+Hands of the Mage	Dragon #359	realmshelps
+Hard of Hearing	Unearthed Arcana	realmshelps
+Hard to Fool	DR317 p82	crystalkeep+realmshelps
+Harden Energy	Dragon #313	realmshelps
+Hardened Flesh	LM p27	crystalkeep+realmshelps
+Hardy	Unearthed Arcana	realmshelps
+Hardy Commander	Dragon #348	realmshelps
+Hardy Soul	Dragon #315	realmshelps
+Harem Trained	Races of Faerûn	realmshelps
+Harpy	DR340 p27	crystalkeep
+Harvester of Souls	Elder Evils	dndtools
+Hashalaq Ancestor	Players Guide to Eberron	dndtools
+Hasty Spirit	Complete Mage	realmshelps
+Hatred	Dragon #329	realmshelps
+Haunted	Dragon #327	realmshelps
+Haunting Appearance	Ghostwalk	realmshelps
+Haunting Melody	Eb p54	crystalkeep+realmshelps
+Haunting Similarity	DU127 p49	crystalkeep+realmshelps
+Haunting Voice	Ghostwalk	realmshelps
+Haunting Weapons	DR334 p86	crystalkeep+realmshelps
+Hawk's Vision	CAdv p114	crystalkeep+realmshelps
+Hazing Strike	Secrets of Sarlona	dndtools
+Head Shot	Complete Scoundrel	realmshelps
+Headlong Rush	Races of Faerûn	realmshelps
+Heads Up	DR328 p69	crystalkeep+realmshelps
+Healer's Luck	Complete Scoundrel	realmshelps
+Healing Devotion	Complete Champion	realmshelps
+Healing Factor	Eb p55; MM3 p150	crystalkeep+realmshelps
+Healing Flames	Races of Faerûn	realmshelps
+Healing Hands	Complete Scoundrel	dndtools
+Healing Soul	Magic of Incarnum	realmshelps
+Healing Strike	Dragonmarked	dndtools
+Hear The Unseen	Complete Adventurer	realmshelps
+Hear the Unseen	CAdv p10; CAdv p119	crystalkeep
+Heart		crystalkeep
+Heart Of Incarnum	Magic of Incarnum	realmshelps
+Heart Of The Nabassu	Fiendish Codex I	realmshelps
+Heart of Dragons	Dragon Magic	realmshelps
+Heart of Siberys	Dragonmarked	dndtools
+Heat Endurance	Sandstorm	realmshelps
+Heat Tolerance	Shining South	realmshelps
+Heavy Armor Optimization	RoS p141	crystalkeep+realmshelps
+Heavy Lithoderms	RoS p141	crystalkeep+realmshelps
+Heavy Teleport	DR325 p77	crystalkeep+realmshelps
+Heavyweight Wings	Races of the Dragon	realmshelps
+Heighten Breath	Draconomicon	realmshelps
+Heighten Spell	Player's Handbook	realmshelps
+Heighten Spell-like Ability	Complete Arcane	realmshelps
+Heighten Turning		crystalkeep+realmshelps
+Heightened Agility	Dragon #312	realmshelps
+Heightened Strength	Dragon #312	realmshelps
+Heir of Lendore	DR319 p59	crystalkeep+realmshelps
+Hellbound Knight	Champions of Ruin	realmshelps
+Hellsworn	Exemplars of Evil	dndtools
+Heretic of the Faith	Power of Faerun	dndtools
+Heroic Channeling	FoE p147	crystalkeep
+Heroic Companion	Magic of Eberron	dndtools
+Heroic Destiny	RoD p152	crystalkeep+realmshelps
+Heroic Devotion	Faiths of Eberron	dndtools
+Heroic Focus	Magic of Eberron	dndtools
+Heroic Metamagic	RoE p111	crystalkeep
+Heroic Spirit	Eberron Campaign Setting	realmshelps
+Hibernate		crystalkeep+realmshelps
+Hidden Blade	Complete Scoundrel	dndtools
+Hidden Kingdom Jutsu	DR342 p84	crystalkeep+realmshelps
+Hidden Strength	Dragons Ebberon	dndtools
+Hidden Talent	Expanded Psionics Handbook	realmshelps
+Hidden Thoughts	DR325 p77	crystalkeep+realmshelps
+High Forest		crystalkeep
+High Society	DR333 p89	crystalkeep+realmshelps
+High Sword Low Axe	CWar p113	crystalkeep+realmshelps
+Highborn Drow	Und p25	crystalkeep+realmshelps
+Hill Fighter	Dragon #285	realmshelps
+Hin Wandermage	Races of Faerûn	realmshelps
+Hinder	DR344 p103	crystalkeep+realmshelps
+Hindering Opportunist	PH2 p79	crystalkeep+realmshelps
+Hindering Song	Epic Level Handbook	realmshelps
+Hold The Line		realmshelps
+Hold the Line	CWar p100	crystalkeep
+Holy Calling	Dragon #334	crystalkeep+realmshelps
+Holy Ki Strike	BoED p43; BoED p44	crystalkeep+realmshelps
+Holy Mount	DR325 p62	crystalkeep+realmshelps
+Holy Potency	Complete Champion	realmshelps
+Holy Radiance	BoED p44	crystalkeep+realmshelps
+Holy Strike		realmshelps
+Holy Subdual	BoED p44	crystalkeep+realmshelps
+Holy Warrior	Complete Champion	realmshelps
+Hometown Advantage	Dragon #305	realmshelps
+Honest	Unearthed Arcana	realmshelps
+Honest Merchant	Oriental Adventures	realmshelps
+Honor of The Duel	Dragon #324	realmshelps
+Honor-Bound	Dragonlance Campaign Setting	realmshelps
+Honorable Challenge	Dragon #324	realmshelps
+Hordelands		crystalkeep
+Horrific Appearance	Ghostwalk	realmshelps
+Horse Lore	DR315 p53	crystalkeep
+Horse Nomad	PGF p38	crystalkeep+realmshelps
+Horse Nomad (FR)		realmshelps
+Horselore	Dragon #315	realmshelps
+Host Focus	Complete Psionic	realmshelps
+Hostile Mind	Expanded Psionics Handbook	realmshelps
+Hostile Mind, Improved	Complete Psionic	realmshelps
+Hot-Blooded	Dragon #324	realmshelps
+Hover		realmshelps
+Hulking Brute	Dragonlance Campaign Setting	dndtools
+Human Blood	DR324 p78	crystalkeep+realmshelps
+Human Heritage	RoD p152	crystalkeep+realmshelps
+Hunters Mark	Dragonmarked	dndtools
+Hurling Charge	Miniatures Handbook	realmshelps
+Hurricane Breath	Complete Mage	realmshelps
+Hydra	DR340 p31	crystalkeep
+Hyena Tribe Hunter	Shining South	realmshelps
+Hymnist	DR325 p62	crystalkeep+realmshelps
+Hypnotic Focus	Dragon #349	realmshelps
+Iaijutsu Master	Oriental Adventures	realmshelps
+Ice Harmonics	Frostburn	realmshelps
+Ice Troll Berserker	Unapproachable East	realmshelps
+Icy Calling	Frostburn	realmshelps
+Ignore Material Components	Epic Level Handbook	realmshelps
+Ignore Special Requirements	Tome of Magic	realmshelps
+Ignore Turn Resistance	Web	realmshelps
+Ildritch Corruption	Heroes of Horror	realmshelps
+Illiterate	Unearthed Arcana	realmshelps
+Illithid Blast	Complete Psionic	realmshelps
+Illithid Bloodline		realmshelps
+Illithid Compulsion	Complete Psionic	realmshelps
+Illithid Enthusiast	Complete Psionic	realmshelps
+Illithid Extraction	Complete Psionic	realmshelps
+Illithid Grapple	Complete Psionic	realmshelps
+Illithid Heritage	Complete Psionic	realmshelps
+Illithid Legacy	Complete Psionic	realmshelps
+Illithid Legacy, Greater	Complete Psionic	realmshelps
+Illithid Skin	Complete Psionic	realmshelps
+Imbue Summoning		crystalkeep
+Imbue Weapon	Dragon #343	crystalkeep+realmshelps
+Imbued Defense	DR338 p60	crystalkeep+realmshelps
+Imbued Healing	Complete Champion	realmshelps
+Imbued Strength	DR338 p60	crystalkeep+realmshelps
+Imbued Summoning	Player's Handbook II	realmshelps
+Impeding Attack	Complete Scoundrel	realmshelps
+Imperious Command	Drow of the Underdark	realmshelps
+Impiltur		crystalkeep
+Implacable	Dragon #328	realmshelps
+Imprint Stone	Expanded Psionics Handbook	realmshelps
+Improve Disguise	Dragon #335	realmshelps
+Improved Acrobatic Skirmisher	DR346 p86	crystalkeep
+Improved Aid	Oriental Adventures	realmshelps
+Improved Aid Another	Dragon #323	realmshelps
+Improved Aid Other	DR339 p34	crystalkeep
+Improved Alignment-Based Casting (Chaos)	Epic Level Handbook	dndtools
+Improved Alignment-Based Casting (Evil)	Epic Level Handbook	dndtools
+Improved Alignment-Based Casting (Good)	Epic Level Handbook	dndtools
+Improved Alignment-Based Casting (Law)	Epic Level Handbook	dndtools
+Improved Alignment-based Casting	Epic Level Handbook	realmshelps
+Improved Animation	Dragon #298	realmshelps
+Improved Armor Dance	Dragon #315	realmshelps
+Improved Arrow Of Death	Epic Level Handbook	realmshelps
+Improved Assume Supernatural Ability	Savage Species	realmshelps
+Improved Aura of Courage	Epic Level Handbook	realmshelps
+Improved Aura of Despair	Epic Level Handbook	realmshelps
+Improved Binding	Tome of Magic	realmshelps
+Improved Buckler Defense	CWar p100	crystalkeep+realmshelps
+Improved Bull Rush	Player's Handbook	realmshelps
+Improved Cohort	Heroes of Battle	realmshelps
+Improved Cold Endurance	Frostburn	realmshelps
+Improved Combat Casting		realmshelps
+Improved Combat Expertise	CWar p100	crystalkeep+realmshelps
+Improved Combat Reflexes	DR340 p87	crystalkeep+realmshelps
+Improved Combat Reflexes (Epic)	Epic Level Handbook	realmshelps
+Improved Control Visage	Ghostwalk	realmshelps
+Improved Cooperative Metamagic	Player's Guide to Faerûn	realmshelps
+Improved Counterspell	PH p95	crystalkeep+realmshelps
+Improved Critical	PH p95	crystalkeep+realmshelps
+Improved Damage Reduction	Eb p55	crystalkeep+realmshelps
+Improved Darkvision	Epic Level Handbook	realmshelps
+Improved Death Attack	Epic Level Handbook	realmshelps
+Improved Deflection	Ghostwalk	realmshelps
+Improved Disarm	PH p95	crystalkeep+realmshelps
+Improved Disguise	DR335 p92	crystalkeep
+Improved Diversion	CAdv p110	crystalkeep+realmshelps
+Improved Domination	Dungeon #128	realmshelps
+Improved Draconian Breath Weapon	Dragonlance Campaign Setting	dndtools
+Improved Draconic Aura	Dragonmarked	dndtools
+Improved Dragon Wings	Races of the Dragon	realmshelps
+Improved Element Focus	Web	realmshelps
+Improved Elemental Heritage	Planar Handbook	realmshelps
+Improved Elemental Heritage [Air]	Planar Handbook	dndtools
+Improved Elemental Heritage [Earth]	Planar Handbook	dndtools
+Improved Elemental Heritage [Fire]	Planar Handbook	dndtools
+Improved Elemental Heritage [Water]	Planar Handbook	dndtools
+Improved Elemental Wild Shape		realmshelps
+Improved Encumbrance	Dragon #292	realmshelps
+Improved Energy Drain	Libris Mortis	realmshelps
+Improved Energy Resistance	Races of Faerûn	realmshelps
+Improved Essentia Capacity	Magic of Incarnum	realmshelps
+Improved Familiar	CWar p100; DMG p200; PGF p39	crystalkeep+realmshelps
+Improved Favored Enemy	CWar p101; DR310 p58	crystalkeep+realmshelps
+Improved Favored Enemy (Epic)	Epic Level Handbook	realmshelps
+Improved Feint	PH p95	crystalkeep+realmshelps
+Improved Fiendish Servant	DU115 p82	crystalkeep+realmshelps
+Improved Flight	CAdv p110	crystalkeep+realmshelps
+Improved Flight Item	Sharn City of Towers	dndtools
+Improved Flyby Attack		realmshelps
+Improved Fortification	Eb p55	crystalkeep+realmshelps
+Improved Frosty Touch	Frostburn	realmshelps
+Improved Ghost Flight	Ghostwalk	realmshelps
+Improved Grapple	PH p95; PH p96	crystalkeep+realmshelps
+Improved Grapple (OA)	Oriental Adventures	realmshelps
+Improved Heat Endurance	Sandstorm	realmshelps
+Improved Heighten Spell	Epic Level Handbook	realmshelps
+Improved Homunculus	Magic of Eberron	dndtools
+Improved Iaijutsu Focus	Web	realmshelps
+Improved Inertial Armor	Web	realmshelps
+Improved Initiative	CAdv p10; PH p96	crystalkeep+realmshelps
+Improved Ki Strike	Epic Level Handbook	realmshelps
+Improved Leadership	DR317 p82	crystalkeep+realmshelps
+Improved Levitation	Und p25	crystalkeep+realmshelps
+Improved Low Blow	Races of Faerûn	realmshelps
+Improved Low-light Vision	Epic Level Handbook	realmshelps
+Improved Maneuverability	Draconomicon	realmshelps
+Improved Manifestation		realmshelps
+Improved Manyshot	Epic Level Handbook	realmshelps
+Improved Metamagic		realmshelps
+Improved Metapsionics	Expanded Psionics Handbook	realmshelps
+Improved Mounted Archery	CWar p101	crystalkeep+realmshelps
+Improved Multiattack		realmshelps
+Improved Multiweapon Fighting		realmshelps
+Improved Natural Armor		realmshelps
+Improved Natural Attack	Eb p55	crystalkeep+realmshelps
+Improved Oneiromancy	Heroes of Horror	realmshelps
+Improved Outer Planar Heritage	Planar Handbook	realmshelps
+Improved Outer plane Heritage [Anarchic]	Planar Handbook	dndtools
+Improved Outer plane Heritage [Axiomatic]	Planar Handbook	dndtools
+Improved Outer plane Heritage [Celestial]	Planar Handbook	dndtools
+Improved Outer plane Heritage [Fiendish]	Planar Handbook	dndtools
+Improved Overrun	PH p96	crystalkeep+realmshelps
+Improved Paralysis	Libris Mortis	realmshelps
+Improved Poltergeist Hand	Ghostwalk	realmshelps
+Improved Power	Dragon #342	realmshelps
+Improved Precise Shot	PH p96	crystalkeep+realmshelps
+Improved Psicrystal	Expanded Psionics Handbook	realmshelps
+Improved Psionic Sidestep	Web	realmshelps
+Improved Rapid Shot	CWar p101	crystalkeep+realmshelps
+Improved Rapidstrike	Draconomicon	realmshelps
+Improved Resiliency	RoE p119	crystalkeep
+Improved Resist Dragonfear	Dragonlance Campaign Setting	dndtools
+Improved Rock Hurling	Races of Stone	crystalkeep+realmshelps
+Improved Scent	Savage Species	realmshelps
+Improved Shield Bash	PH p96	crystalkeep+realmshelps
+Improved Shield Snare	D309 p110; DR309 p110	crystalkeep+realmshelps
+Improved Shieldmate	Miniatures Handbook	realmshelps
+Improved Sigil (Aesh)	Races of Destiny	realmshelps
+Improved Sigil (Hoon)	Races of Destiny	realmshelps
+Improved Sigil (Krau)	Races of Destiny	realmshelps
+Improved Sigil (Naen)	Races of Destiny	realmshelps
+Improved Sigil (Uur)	Races of Destiny	realmshelps
+Improved Sigil (Vaul)	Races of Destiny	realmshelps
+Improved Skirmish	Complete Scoundrel	realmshelps
+Improved Skirmish (Epic)	Complete Adventurer	realmshelps
+Improved Smiting	CDiv p82	crystalkeep+realmshelps
+Improved Snatch	Draconomicon	realmshelps
+Improved Snatch Spell	Player's Guide to Faerûn	realmshelps
+Improved Sneak Attack		realmshelps
+Improved Speed	Draconomicon	realmshelps
+Improved Spell Capacity		realmshelps
+Improved Spell Resistance	Epic Level Handbook	realmshelps
+Improved Spellpool Access	Player's Guide to Faerûn	realmshelps
+Improved Spit	Serpent Kingdoms	realmshelps
+Improved Stunning Fist		realmshelps
+Improved Sudden Strike	Complete Adventurer	realmshelps
+Improved Sunder	PH p96	crystalkeep+realmshelps
+Improved Swimming	CAdv p10; CAdv p110	crystalkeep+realmshelps
+Improved Toughness	CWar p101; MM3 p207	crystalkeep+realmshelps
+Improved Trip	PH p96	crystalkeep+realmshelps
+Improved Turn Resistance		realmshelps
+Improved Turn Resistance (GW)	Ghostwalk	realmshelps
+Improved Turning	Player's Handbook	crystalkeep+realmshelps
+Improved Two-Weapon Defense	CWar p101	crystalkeep
+Improved Two-Weapon Fighting	PH p96	crystalkeep+realmshelps
+Improved Two-weapon Defense	Compete Warrior	realmshelps
+Improved Unarmed Strike	PH p96; PH2 p80	crystalkeep+realmshelps
+Improved Weapon Familiarity	CWar p101	crystalkeep+realmshelps
+Improved Web	Savage Species	realmshelps
+Improved Whirlwind Attack	DR343 p93	crystalkeep+realmshelps
+Improvised Trip Attack	Dragon #295	realmshelps
+Improvised Weapon Proficiency	Dragon #295	realmshelps
+Inatenttive	Unearthed Arcana	dndtools
+Inattentive	Unearthed Arcana	realmshelps
+Inattentive (Flaw)	Unearthed Arcana	realmshelps
+Incarnum Resistance	Magic of Incarnum	realmshelps
+Incarnum Spellshaping	Magic of Incarnum	realmshelps
+Incarnum-fortified Body	Magic of Incarnum	realmshelps
+Incite Rage	Epic Level Handbook	realmshelps
+Incorporeal Form	Ghostwalk	realmshelps
+Incorporeal Spell Targeting	Ghostwalk	realmshelps
+Incorporeal Target Fighting	Ghostwalk	realmshelps
+Increased Carrying Capacity	DR327 p71	crystalkeep+realmshelps
+Index		crystalkeep
+Indigo Strike	Magic of Incarnum	realmshelps
+Indistinct	DR330 p48	crystalkeep+realmshelps
+Individualist	Dragon #329	realmshelps
+Indomitable Discipline	Players Guide to Eberron	dndtools
+Indomitable Soul	PH2 p80	crystalkeep+realmshelps
+Ineluctable Echo	UA p93	crystalkeep
+Infamous Traitor	Dragon #318	realmshelps
+Infernal Bargainer	Races of Faerûn	realmshelps
+Infernal Sorcerer Eyes	PH2 p91	crystalkeep+realmshelps
+Infernal Sorcerer Heritage	PH2 p91	crystalkeep+realmshelps
+Infernal Sorcerer Howl	PH2 p91	crystalkeep+realmshelps
+Infernal Sorcerer Resistance	PH2 p91	crystalkeep+realmshelps
+Infinite Deflection	Epic Level Handbook	realmshelps
+Infused Construction	Web	realmshelps
+Infusion of Balance	Dragon #297	realmshelps
+Inheritor	Dragon #315	realmshelps
+Inhuman Reach	Lords of Madness	realmshelps
+Inhuman Vision	Lords of Madness	realmshelps
+Initiate of Aasterinian	Dragon Magic	realmshelps
+Initiate of Amaunator	Power of Faerun	dndtools
+Initiate of Anhur	Champions of Valor	realmshelps
+Initiate of Arvoreen	Champions of Valor	realmshelps
+Initiate of Astilabor	Dragon Magic	realmshelps
+Initiate of Bahamut	Dragon Magic	realmshelps
+Initiate of Bane	PGF p80	crystalkeep+realmshelps
+Initiate of Baravar Cloakshadow	Champions of Valor	realmshelps
+Initiate of Boccob	DR342 p49	crystalkeep+realmshelps
+Initiate of Cyric	PGF p80	crystalkeep+realmshelps
+Initiate of Ehlonna	DR342 p50	crystalkeep+realmshelps
+Initiate of Eilistraee	Champions of Valor	realmshelps
+Initiate of Erythnul	DR342 p50	crystalkeep+realmshelps
+Initiate of Falazure	Dragon Magic	realmshelps
+Initiate of Fharlanghn	DR342 p51	crystalkeep+realmshelps
+Initiate of Garyx	Dragon Magic	realmshelps
+Initiate of Ghaunadaur	Champions of Ruin	realmshelps
+Initiate of Gond	PGF p80	crystalkeep+realmshelps
+Initiate of Gruumsh	Champions of Ruin	realmshelps
+Initiate of Heironeous	DR342 p51	crystalkeep+realmshelps
+Initiate of Helm	Player's Guide to Faerûn	crystalkeep+realmshelps
+Initiate of Hextor	Dragon #342	realmshelps
+Initiate of Hlal	Dragon Magic	realmshelps
+Initiate of Horus-Re	Champions of Valor	realmshelps
+Initiate of Illmater		crystalkeep
+Initiate of Ilmater	Player's Guide to Faerûn	realmshelps
+Initiate of Io	Dragon Magic	realmshelps
+Initiate of Kord	Dragon #342	realmshelps
+Initiate of Kossuth	Champions of Ruin	realmshelps
+Initiate of Lathander	Player's Guide to Faerûn	crystalkeep+realmshelps
+Initiate of Lendys	Dragon Magic	realmshelps
+Initiate of Loviatar		realmshelps
+Initiate of Malar	Player's Guide to Faerûn	crystalkeep+realmshelps
+Initiate of Milil	Champions of Valor	realmshelps
+Initiate of Mystra	Player's Guide to Faerûn	realmshelps
+Initiate of Nature	Player's Guide to Faerûn	realmshelps
+Initiate of Nerull	Dragon #342	realmshelps
+Initiate of Nobanion	Champions of Valor	realmshelps
+Initiate of Obad-Hai	DR342 p51	crystalkeep
+Initiate of Obad-hai	Dragon #342	realmshelps
+Initiate of Olidammara	DR342 p51	crystalkeep+realmshelps
+Initiate of Pelor	DR342 p52	crystalkeep+realmshelps
+Initiate of Selune	Player's Guide to Faerûn	realmshelps
+Initiate of Selüne	PGF p81	crystalkeep
+Initiate of Shar		realmshelps
+Initiate of St. Cuthbert	DR342 p52	crystalkeep
+Initiate of St4 Cuthbert		realmshelps
+Initiate of Tamara	Dragon Magic	realmshelps
+Initiate of Tchazzar	Dragons of Faerun	dndtools
+Initiate of Tiamat	Dragon Magic	realmshelps
+Initiate of Torm	Champions of Valor	realmshelps
+Initiate of Tymora	Champions of Valor	realmshelps
+Initiate of Tyr	PGF p81	crystalkeep+realmshelps
+Initiate of Varae	Champions of Ruin	realmshelps
+Initiate of Vecna	DR342 p52	crystalkeep+realmshelps
+Initiate of Wee Jas	DR342 p52	crystalkeep+realmshelps
+Initiate of the Holy Realm	Champions of Valor	realmshelps
+Inlindl School	Drow of the Underdark	realmshelps
+Innate Magic	DR324 p78	crystalkeep+realmshelps
+Innate Spell	PGF p39	crystalkeep+realmshelps
+Innate Spell'	CArc p80	crystalkeep
+Inner Fortitude	Web	realmshelps
+Inner Sea		crystalkeep
+Inquisitor	Expanded Psionics Handbook	realmshelps
+Insane Defiance	Elder Evils	dndtools
+Inscribe Epic Rune	Player's Guide to Faerûn	realmshelps
+Inscribe Epic Runes	Players Guide to Faerun	dndtools
+Inscribe Rune	PGF p40	crystalkeep+realmshelps
+Inside Connection	Races of Destiny	realmshelps
+Inside Connections	RoD p153	crystalkeep
+Insidious Magic		realmshelps
+Insidious Mind	Web	realmshelps
+Insidious Terror	Secrets of Sarlona	dndtools
+Insightful	CArc p80	crystalkeep+realmshelps
+Insightful Divination	Complete Mage	realmshelps
+Insightful Reflexes	CAdv p110	crystalkeep+realmshelps
+Insomniac	Dragon #328	realmshelps
+Inspirational Leadership	Heroes of Battle	realmshelps
+Inspire Beast	DR339 p87	crystalkeep
+Inspire Bloodletting	DR323 p29	crystalkeep+realmshelps
+Inspire Bloodthirst	DR323 p29	crystalkeep+realmshelps
+Inspire Excellence	Epic Level Handbook	realmshelps
+Inspire Spellpower	RoS p141	crystalkeep+realmshelps
+Inspired Master	DR339 p34	crystalkeep
+Inspiring Commander	Dragon #348	realmshelps
+Instant Clarity	Tome of Battle	realmshelps
+Instant Reload	Epic Level Handbook	realmshelps
+Instantaneous Rage	CWar p102	crystalkeep+realmshelps
+Instinctive Consummator		realmshelps
+Instinctive Darkness	Drow of the Underdark	realmshelps
+Instinctive Dispatcher	Dragon #316	realmshelps
+Intensify Darkness	Drow of the Underdark	realmshelps
+Intensify Spell	Epic Level Handbook	realmshelps
+Intensify Turning	Web	realmshelps
+Intimidate The Enemy	Dragon #335	realmshelps
+Intimidate the Enemy	DR335 p90	crystalkeep
+Intimidating Rage	CWar p102	crystalkeep+realmshelps
+Intimidating Strike	PH2 p79	crystalkeep+realmshelps
+Intuitive Attack	BoED p44	crystalkeep+realmshelps
+Intuitive Trapsmith	DR351 p87	crystalkeep+realmshelps
+Inured To Energy	Savage Species	realmshelps
+Invest Armor		realmshelps
+Invest Spell	DR338 p60	crystalkeep+realmshelps
+Investigate	Eberron Campaign Setting	realmshelps
+Investigator	PH p97	crystalkeep+realmshelps
+Invigorating Spellcaster	Dragon #311	realmshelps
+Invisible Needle	Complete Mage	realmshelps
+Invisible Spell	Cityscape	realmshelps
+Invoke Divine Wrath	Web	realmshelps
+Involuntary Rage	Savage Species	realmshelps
+Iron Hand Mastery	Dragon #315	realmshelps
+Iron Mind	Races of Faerûn	realmshelps
+Iron Will	CAdv p10; PH p97	crystalkeep+realmshelps
+Ironheart Aura	Tome of Battle	realmshelps
+Ironskin Chant	CAdv p113	crystalkeep+realmshelps
+Ironwood Body	RoE p119	crystalkeep
+Irresistible Embrace	Dragon #305	realmshelps
+Irresistible Gaze		realmshelps
+Item Familiar	UA p170	crystalkeep+realmshelps
+Item Reprieve	Lost Empires of Faerûn	realmshelps
+Jack Of All Trades		realmshelps
+Jack of All Trades	CAdv p110	crystalkeep
+Jaws of Death	RoE p119	crystalkeep
+Jergal's Pact	Lost Empires of Faerûn	realmshelps
+Jester's Magic	City of Splendors: Waterdeep	realmshelps
+Jinnbond	Dragon #319	realmshelps
+Jinnbound – Dao	DR319 p60	crystalkeep
+Jinnbound – Djinni	DR319 p60	crystalkeep
+Jinnbound – Efreeti	DR319 p60	crystalkeep
+Jinnbound – Marid	DR319 p60	crystalkeep
+Jorasco	EB p64; EB p80	crystalkeep
+Jotunbrud	Races of Faerûn	realmshelps
+Judged By Aurifar	Sandstorm	realmshelps
+Jungle Fighter	DR315 p53	crystalkeep+realmshelps
+Jungle Stamina	Races of Faerûn	realmshelps
+Jungle Veteran	Secrets of Xendrik	dndtools
+Jutsu Focus	DR342 p85	crystalkeep+realmshelps
+Kahiko	Dragon #352	realmshelps
+Kahiko Master	Dragon #352	realmshelps
+Kalashtar Mindlink	Secrets of Sarlona	dndtools
+Kalashtar Thoughtshifter	Races of Eberron	dndtools
+Kami's Intuition	Oriental Adventures	realmshelps
+Karmic Healing	DR351 p87	crystalkeep+realmshelps
+Karmic Strike	CWar p102	crystalkeep+realmshelps
+Karmic Twin	Oriental Adventures	realmshelps
+Keen Intellect	Oriental Adventures	realmshelps
+Keen Strike	Epic Level Handbook	realmshelps
+Keen-Eared Scout	PH2 p80	crystalkeep+realmshelps
+Keeper Of Forbidden Lore	Fiendish Codex I	realmshelps
+Khyber's Fury	Dragon #332	crystalkeep+realmshelps
+Khyber’s Fury	DR332 p45	crystalkeep
+Ki Barrage	Dragon #306	realmshelps
+Ki Blast	CWar p99; PH2 p80; Ph2 p57; Ph2 p80	crystalkeep+realmshelps
+Ki Shout	Oriental Adventures	realmshelps
+Ki Smite	DR351 p87	crystalkeep+realmshelps
+Ki Strike	Book of Vile Darkness	realmshelps
+Kiai Shout	CWar p102	crystalkeep+realmshelps
+Kihu-Sherem Guardian	Ghostwalk	realmshelps
+Killoren Ancient	RotW p151	crystalkeep+realmshelps
+Killoren Destroyer	Races of the Wild	crystalkeep+realmshelps
+Killoren Hunter	Races of the Wild	crystalkeep+realmshelps
+Kin Mastery	DR311 p40	crystalkeep+realmshelps
+Knifefighter	PGF p38	crystalkeep+realmshelps
+Knight Of The Lolth	Drow of the Underdark	dndtools
+Knight Training	DR330 p91; Eb p56	crystalkeep+realmshelps
+Knight of Lolth	Drow of the Underdark	realmshelps
+Knight of Stars	BoED p44	crystalkeep+realmshelps
+Knight of Tyr'S Merciful Sword	Champions of Valor	realmshelps
+Knight of Tyr's Holy Judgement	Champions of Valor	realmshelps
+Knight of Tyr's Holy Judgment	Champions of Valor	dndtools
+Knight of the Red Falcom	Champions of Valor	realmshelps
+Knight of the Red Falcon	Champions of Valor	dndtools
+Knight of the Risen Scepter	Champions of Valor	realmshelps
+Knight ot Tyr's Merciful Sword	Champions of Valor	dndtools
+Knock-down		realmshelps
+Knockback	RoS p142	crystalkeep+realmshelps
+Knockdown Power	Complete Psionic	realmshelps
+Knowledge Devotion	Complete Champion	realmshelps
+Kobold Endurance	Races of the Dragon	realmshelps
+Kobold Foe Strike	Races of the Dragon	realmshelps
+Koumajutsu Mastery I	Dragon #309	realmshelps
+Koumajutsu Mastery II	Dragon #309	realmshelps
+Kraken	DR340 p31	crystalkeep
+Kundarak	EB p67; EB p80	crystalkeep
+Kung Fu Genius	DR319 p71	crystalkeep+realmshelps
+Kuo-Toan Monasticism	Monster Manual V	realmshelps
+Lacerate	DR344 p103	crystalkeep+realmshelps
+Lady's Gambit	Dragon #317	realmshelps
+Lady’s Gambit	DR317 p82	crystalkeep
+Lake of Mists		crystalkeep
+Lake of Steam		crystalkeep
+Landless Nobility	DR315 p53	crystalkeep+realmshelps
+Landlord	Stronghold Builder's Guidebook	realmshelps
+Landwalker		realmshelps
+Lantan		crystalkeep
+Lapaliiya		crystalkeep
+Large and In Charge		realmshelps
+Last Survivor	DR350 p69	crystalkeep+realmshelps
+Lasting Inspiration		realmshelps
+Lasting Life	LM p28	crystalkeep+realmshelps
+Law Devotion	Complete Champion	realmshelps
+Law Inviate	RoD p155	crystalkeep
+Law Inviolate	Races of Destiny	realmshelps
+Lawful Disciple	DR325 p50	crystalkeep+realmshelps
+Lawful Discipline	Libris Mortis the Book of the Dead	dndtools
+Lays of the Northern Adepts	DR315 p54	crystalkeep+realmshelps
+Leadership	DMG p106; PH p106	crystalkeep+realmshelps
+League Militiaman	Dragon #337	realmshelps
+League Militianan	DR337 p92	crystalkeep
+Leap Attack	CAdv p110; PH2 p80	crystalkeep+realmshelps
+Leap Of The Heavens	Player's Handbook II	realmshelps
+Leap of the Heavens	Player's Handbook II	crystalkeep
+Leaping Climber	Complete Scoundrel	dndtools
+Least Dragonmark	Eb p56	crystalkeep+realmshelps
+Least Legacy	Weapons of Legacy	realmshelps
+Legacy Focus	Weapons of Legacy	realmshelps
+Legendary Acrobat	Complete Adventurer	realmshelps
+Legendary Artisan	Eb p56	crystalkeep+realmshelps
+Legendary Climber		realmshelps
+Legendary Commander	Epic Level Handbook	realmshelps
+Legendary Leaper		realmshelps
+Legendary Rider		realmshelps
+Legendary Sniper	Dragon #297	realmshelps
+Legendary Tracker	Dragon #315	realmshelps
+Legendary Tracker (Epic)		realmshelps
+Legendary Wrestler	Epic Level Handbook	realmshelps
+Lesser Aberrant Dragonmark	Dragonmarked	dndtools
+Lesser Dragonmark	Eb p56	crystalkeep+realmshelps
+Lesser Legacy	Weapons of Legacy	realmshelps
+Lich Loved	Book of Vile Darkness	realmshelps
+Lichloved	Book of Vile Darkness	dndtools
+Life Drain	Libris Mortis	realmshelps
+Life Leech	UA p93	crystalkeep+realmshelps
+Life Restorer	Dragon #342	realmshelps
+Life Tap	DR327 p71	crystalkeep+realmshelps
+Lifebond	Libris Mortis	realmshelps
+Lifesense	Libris Mortis	realmshelps
+Light Sensitivity	Dragon #328	realmshelps
+Light To Daylight	Races of Faerûn	realmshelps
+Light of Aurifar	Sandstorm	realmshelps
+Lightbringer	Races of Faerûn	realmshelps
+Lightfeet	Races of the Wild	crystalkeep+realmshelps
+Lightning Fists	Sword and Fist	realmshelps
+Lightning Mace	CWar p113	crystalkeep+realmshelps
+Lightning Reflexes	CAdv p10; PH p97	crystalkeep+realmshelps
+Lightweight	Dragon #328	realmshelps
+Limbo Strike	Dragon #306	realmshelps
+Line Of Shadow	Tome of Magic	realmshelps
+Line of Credit	Dragon #305	realmshelps
+Lingering Breath		realmshelps
+Lingering Breath ,		realmshelps
+Lingering Damage	Epic Level Handbook	realmshelps
+Lingering Death	Dragon #297	realmshelps
+Lingering Song	CAdv p111	crystalkeep+realmshelps
+Lingering Spell	Champions of Ruin	realmshelps
+Linked Power	Complete Psionic	realmshelps
+Lion Spy	Oriental Adventures	realmshelps
+Lion Tribe Warrior	Shining South	realmshelps
+Lion's Pounce	CDiv p82	crystalkeep+realmshelps
+Listen to This	Complete Scoundrel	dndtools
+Live My Nightmare	UA p94	crystalkeep+realmshelps
+Living Faith	Dragon #326	realmshelps
+Lliira's Blessing	Player's Guide to Faerûn	realmshelps
+Lolth's Blessing	Races of Faerûn	realmshelps
+Lolth's Boon	Drow of the Underdark	realmshelps
+Lolth's Caress	Drow of the Underdark	realmshelps
+Lolth's Meat	Und p26	crystalkeep+realmshelps
+Loner	Dragon #327	realmshelps
+Long Reach	Unapproachable East	realmshelps
+Long Strike	DR331 p28	crystalkeep+realmshelps
+Longstride	Eberron Campaign Setting	dndtools
+Longstride Elite	Eb p57; RoE p114	crystalkeep+realmshelps
+Longtooth	Eberron Campaign Setting	dndtools
+Longtooth Elite	RoE p114	crystalkeep
+Lord Of The Uttercold	Complete Arcane	realmshelps
+Lord of the Uttercold	CArc p80	crystalkeep
+Lore of the Ur-Flan	DR315 p54	crystalkeep+realmshelps
+Loudmouth	Dragon #324	realmshelps
+Love of Nature	Dragon #324	realmshelps
+Low Blow	Races of Faerûn	realmshelps
+Low Profile	Unearthed Arcana	realmshelps
+Lucid Channeling	RoE p147	crystalkeep
+Luck Devotion	Complete Champion	realmshelps
+Luck Of Heroes (OA)	Oriental Adventures	realmshelps
+Luck of Heroes	PGF p38	crystalkeep+realmshelps
+Lucky Break	Complete Scoundrel	realmshelps
+Lucky Catch	Complete Scoundrel	realmshelps
+Lucky Fingers	Complete Scoundrel	realmshelps
+Lucky Start	Complete Scoundrel	realmshelps
+Luiren		crystalkeep
+Lunar Magic	City of Splendors: Waterdeep	realmshelps
+Lunatic Insight	Heroes of Horror	realmshelps
+Lunging Strike	PH2 p80	crystalkeep+realmshelps
+Lurk Augment, Extra	Complete Psionic	realmshelps
+Lurk Augment, Ranged	Complete Psionic	realmshelps
+Lurk Master	Complete Psionic	realmshelps
+Lurking Familiar	PH2 p80	crystalkeep+realmshelps
+Lycanthropic Spell	Faiths & Pantheons	realmshelps
+Lyrandar	EB p66; EB p80	crystalkeep
+Lyric Spell	CAdv p113	crystalkeep+realmshelps
+Mad Alchemist	Player's Handbook II	realmshelps
+Mad Faith	Heroes of Horror	realmshelps
+Mad Foam Rager	PH2 p80	crystalkeep+realmshelps
+Maenad Deafening Scream	Complete Psionic	realmshelps
+Maenad Fury	Complete Psionic	realmshelps
+Maenad Scream	Complete Psionic	realmshelps
+Mage Slayer	CArc p81	crystalkeep+realmshelps
+Magic Artisan		realmshelps
+Magic Artisan (OA)	Oriental Adventures	realmshelps
+Magic Device Attunement	Complete Mage	realmshelps
+Magic Devotion	Complete Champion	realmshelps
+Magic Disruption	Complete Mage	realmshelps
+Magic Sensitive	Complete Mage	realmshelps
+Magic in the Blood	PGF p40	crystalkeep+realmshelps
+Magic in the Blood (OA)	Oriental Adventures	realmshelps
+Magic of the Land	RotW p152	crystalkeep+realmshelps
+Magical Appraisal	Complete Scoundrel	dndtools
+Magical Aptitude	PH p97	crystalkeep+realmshelps
+Magical Artisan	PGF p41	crystalkeep
+Magical Beast Wild Shape		realmshelps
+Magical Fascination	Dragon #328	realmshelps
+Magical Fortune	Complete Scoundrel	realmshelps
+Magical Insight	DR351 p89	crystalkeep+realmshelps
+Magical Overload	Dragon #327	realmshelps
+Magical Training	PGF p41	crystalkeep+realmshelps
+Magically Adept	Dragon #291	realmshelps
+Magistrate's Mind	Oriental Adventures	realmshelps
+Maiming Strike	Exemplars of Evil	dndtools
+Make Your Own Luck	Complete Scoundrel	realmshelps
+Malevolence	Ghostwalk	realmshelps
+Malign Spell Focus		realmshelps
+Manifest Druid	Players Guide to Eberron	dndtools
+Manifest Flight	Sharn City of Towers	dndtools
+Manifest Leap		crystalkeep
+Manticore's Sting	Dragonmarked	dndtools
+Mantis Leap	Sword and Fist	realmshelps
+Mantle Focus	Complete Psionic	realmshelps
+Many Masks	Oriental Adventures	realmshelps
+Manyshot	PH p97	crystalkeep+realmshelps
+Mark Of Hleid	Frostburn	realmshelps
+Mark of Avernus	Fiendish Codex II	realmshelps
+Mark of Cania	Fiendish Codex II	realmshelps
+Mark of Deflection	Dragonmarked	dndtools
+Mark of Destiny	Dragonmarked	dndtools
+Mark of Dis	Fiendish Codex II	realmshelps
+Mark of Madness	Dragonmarked	dndtools
+Mark of Maladomini	Fiendish Codex II	realmshelps
+Mark of Malbolge	Fiendish Codex II	realmshelps
+Mark of Minauros	Fiendish Codex II	realmshelps
+Mark of Nessus	Fiendish Codex II	realmshelps
+Mark of Phlegethos	Fiendish Codex II	realmshelps
+Mark of Purity	Dragonmarked	dndtools
+Mark of Resilience	Dragonmarked	dndtools
+Mark of Stars	Dragonmarked	dndtools
+Mark of Stygia	Fiendish Codex II	realmshelps
+Mark of Truth	Dragonmarked	dndtools
+Mark of Twelve Moons	Dragonmarked	dndtools
+Mark of Vengeance	Dragonmarked	dndtools
+Mark of Vermin	Dragonmarked	dndtools
+Mark of Xoriat	Dragonmarked	dndtools
+Mark of the Dauntless	Dragonmarked	dndtools
+Mark of the Recovery	Dragonmarked	dndtools
+Mark of the Triad	Champions of Valor	dndtools
+Mark of the Wilderness	Dragonmarked	dndtools
+Marking of the Blessed		crystalkeep
+Marking of the Hunter		crystalkeep
+Marking of the Magi		crystalkeep
+Marking of the Maker		crystalkeep
+Marking of the Warrior	RoS p142	crystalkeep
+Markings of The Blessed	Races of Stone	realmshelps
+Markings of The Hunter	Races of Stone	realmshelps
+Markings of The Magi	Races of Stone	realmshelps
+Markings of The Maker	Races of Stone	realmshelps
+Markings of The Warrior	Races of Stone	realmshelps
+Martial Stalker	Complete Scoundrel	realmshelps
+Martial Stance	Tome of Battle	realmshelps
+Martial Study	Tome of Battle	realmshelps
+Martial Throw	Miniatures Handbook	realmshelps
+Martial Weapon Proficiency	PH p97	crystalkeep+realmshelps
+Mask of Gentility	Exemplars of Evil	dndtools
+Master Bowyer	DR350 p90	crystalkeep+realmshelps
+Master Discipline	Web	realmshelps
+Master Legacy	Weapons of Legacy	realmshelps
+Master Linguist	RoE p111	crystalkeep
+Master Manipulator	PH2 p80	crystalkeep+realmshelps
+Master Of Poisons	Drow of the Underdark	realmshelps
+Master Of Shadow	Drow of the Underdark	realmshelps
+Master Of Undeath	Complete Mage	realmshelps
+Master Spellthief	Complete Scoundrel	realmshelps
+Master Staff		realmshelps
+Master Swimmer	DR343 p32	crystalkeep+realmshelps
+Master Wand		realmshelps
+Master of Arms	Dragon #304	realmshelps
+Master of Knowledge	Heroes of Horror	realmshelps
+Master of Mockery	DR333 p88	crystalkeep+realmshelps
+Master of Wards	Dragonmarked	dndtools
+Master's Voice	Dragon #354	realmshelps
+Master?s Wil	Elder Evils	dndtools
+Mastery of Chaos and Order	Players Guide to Eberron	dndtools
+Mastery of Day and Night	Players Guide to Eberron	dndtools
+Mastery of Dreams	Players Guide to Eberron	dndtools
+Mastery of Faerie Enchantment	Players Guide to Eberron	dndtools
+Mastery of Ice and Fire	Players Guide to Eberron	dndtools
+Mastery of Madness	Players Guide to Eberron	dndtools
+Mastery of Twilight Denizens	Players Guide to Eberron	dndtools
+Mastery of Twisted Shadow	Players Guide to Eberron	dndtools
+Mastery of the Azure Sky	Players Guide to Eberron	dndtools
+Mastery of the Battleground	Players Guide to Eberron	dndtools
+Mastery of the Dead	Players Guide to Eberron	dndtools
+Mastery of the Mists	Players Guide to Eberron	dndtools
+Mastery of the Silver Void	Players Guide to Eberron	dndtools
+Material Devotion	Dragon #326	realmshelps
+Maw of Power	Dragon #313	realmshelps
+Maximize Breath	Draconomicon	realmshelps
+Maximize Mystery	Tome of Magic	realmshelps
+Maximize Power	Expanded Psionics Handbook	realmshelps
+Maximize Spell	Player's Handbook	realmshelps
+Maximize Spell-like Ability	Complete Arcane	realmshelps
+Meager Fortitude	Unearthed Arcana	realmshelps
+Meagre Fortitude	Unearthed Arcana	dndtools
+Medani	EB p63; EB p80	crystalkeep
+Meditation of War Mastery	Oriental Adventures	realmshelps
+Megaraptor's Leap	Dragon #315	realmshelps
+Melee Evasion	PH2 p81	crystalkeep+realmshelps
+Melee Weapon Mastery	Player's Handbook II	realmshelps
+Melee Weapon Mastery – Bludgeoning	PH2 p81	crystalkeep
+Melee Weapon Mastery – Piercing	PH2 p81	crystalkeep
+Melee Weapon Mastery – Slashing		crystalkeep
+Melodic Casting	Complete Mage	realmshelps
+Memory Eater	Lords of Madness	realmshelps
+Menacing Demeanor	RoS p142	crystalkeep+realmshelps
+Mental Adversary	Psionics Handbook	realmshelps
+Mental Juggernaut	Complete Psionic	realmshelps
+Mental Leap	Expanded Psionics Handbook	realmshelps
+Mental Resistance	Expanded Psionics Handbook	realmshelps
+Mentor	Dungeon Master's Guide II	realmshelps
+Menzoberranyr		crystalkeep
+Mercantile Background	DR315 p54	crystalkeep+realmshelps
+Mercantile Background (FR)		realmshelps
+Mercantile Background (G)	Dragon #315	realmshelps
+Mercenary Background	DR315 p54	crystalkeep+realmshelps
+Merciful Strike	Complete Scoundrel	realmshelps
+Mercurial Strike		realmshelps
+Metal Intolerance	Dragon #324	realmshelps
+Metallurgy	Races of Faerûn	realmshelps
+Metamagic School Focus	Complete Mage	realmshelps
+Metamagic Song	RoS p142	crystalkeep+realmshelps
+Metamagic Spell Trigger	Complete Mage	realmshelps
+Metamagic Vigor	Complete Mage	realmshelps
+Metamorphic Transfer	Expanded Psionics Handbook	realmshelps
+Metanode Spell	Und p26	crystalkeep+realmshelps
+Metapower	Complete Psionic	realmshelps
+Metaray	Lords of Madness	realmshelps
+Methodical Magical Methods	Dragon #333	realmshelps
+Meticulous Performer	Dragon #324	realmshelps
+Midnight Augmentation	Magic of Incarnum	realmshelps
+Midnight Dodge	Magic of Incarnum	realmshelps
+Midnight Metamagic	Magic of Incarnum	realmshelps
+Might Makes Right	Races of Faerûn	realmshelps
+Mighty Are Fallen	DR309 p110	crystalkeep+realmshelps
+Mighty Dragonmark	Dragonmarked	dndtools
+Mighty Leaping	Savage Species	realmshelps
+Mighty Rage	Epic Level Handbook	realmshelps
+Mighty Roar	Savage Species	realmshelps
+Mighty Sunder	Web	realmshelps
+Mighty Works Mastery I	Oriental Adventures	realmshelps
+Mighty Works Mastery II	Oriental Adventures	realmshelps
+Militia	PGF p41	crystalkeep+realmshelps
+Militia (GW)	Ghostwalk	realmshelps
+Mind Blind	Dragon #287	realmshelps
+Mind Cleave	Complete Psionic	realmshelps
+Mind Daggers	Dragon #341	realmshelps
+Mind Drain	Complete Scoundrel	realmshelps
+Mind Empowerment	Complete Psionic	realmshelps
+Mind Mask	Secrets of Sarlona	dndtools
+Mind Over Body		realmshelps
+Mind Over Body (A)	Dragon #315	realmshelps
+Mind Over Body (FR)	Player's Guide to Faerûn	realmshelps
+Mind Shield	Dragon #341	realmshelps
+Mind Strike	Complete Psionic	dndtools
+Mind Strike Focused	Complete Psionic	realmshelps
+Mind Strike, Swift	Complete Psionic	realmshelps
+Mind Trap	Psionics Handbook	realmshelps
+Mind Weapon		realmshelps
+Mind over Body	PGF p41	crystalkeep
+Mind-Shattering Strike	Monster Manual V	realmshelps
+Mindsight	Lords of Madness	realmshelps
+Minor Divine Spellcaster	Dragon #305	realmshelps
+Minor Malevolence	Ghostwalk	realmshelps
+Minor Shapeshift	Complete Mage	realmshelps
+Minor Utterance of the Evolving Mind	Tome of Magic	realmshelps
+Miscellaneous Skipped Feats		crystalkeep
+Miser's Fortune	Complete Scoundrel	realmshelps
+Misleading Song	RoS p142	crystalkeep+realmshelps
+Mithral Body	Eb p57; RoE p119	crystalkeep+realmshelps
+Mithral Fluidity	Eb p57	crystalkeep+realmshelps
+Mitigate Suffering	Complete Champion	realmshelps
+Mixed Omen	Dragon #340	realmshelps
+Mobile Defense	Epic Level Handbook	realmshelps
+Mobile Spell-Casting	Complete Adventurer	dndtools
+Mobile Spellcasting	CAdv p111; CDav p111	crystalkeep+realmshelps
+Mobility	CAdv p10; DR335 p88; PH p98	crystalkeep+realmshelps
+Momentary Alteration	UA p94	crystalkeep+realmshelps
+Monastic Training	Eb p57; Ph2 p101	crystalkeep+realmshelps
+Monk		crystalkeep
+Monk of the Triad	Champions of Valor	realmshelps
+Monk's Spade Mind Blade	Secrets of Sarlona	dndtools
+Monkey Grip	CWar p103	crystalkeep+realmshelps
+Monstrous Animal Companion	DR326 p32	crystalkeep+realmshelps
+Moonsea		crystalkeep
+Moonshae Isles		crystalkeep
+Moonwarrior	DR313 p31	crystalkeep+realmshelps
+Moradin's Smile	Races of Stone	realmshelps
+Moradin’s Smile	RoS p153	crystalkeep
+Mortalbane	Book of Vile Darkness	realmshelps
+Mortifying Attack	Champions of Ruin	realmshelps
+Mosquito's Bite	Complete Scoundrel	dndtools
+Mother Cyst	LM p28	crystalkeep+realmshelps
+Mountain Fighter	DR315 p54	crystalkeep+realmshelps
+Mountain Hunter	Dragon #315	realmshelps
+Mountain Stance	Secrets of Sarlona	dndtools
+Mountain Warrior	RoS p142	crystalkeep+realmshelps
+Mountaineer	Frostburn	realmshelps
+Mounted Archery	PH p98	crystalkeep+realmshelps
+Mounted Casting	Miniatures Handbook	realmshelps
+Mounted Combat	PH p98	crystalkeep+realmshelps
+Mounted Fighting	DR346 p86	crystalkeep+realmshelps
+Mounted Fury	Web	realmshelps
+Mounted Mobility	Heroes of Battle	realmshelps
+Mounted Spellcasting	Web	realmshelps
+Mounted Warrior	Dragon #324	realmshelps
+Mourning Mutate	Dragon #359	realmshelps
+Mror Stalwart	RoE p109	crystalkeep
+Mulhorand		crystalkeep
+Multiattack		realmshelps
+Multicultural	Song and Silence	realmshelps
+Multidexterity		realmshelps
+Multigrab		realmshelps
+Multilingual	Lost Empires of Faerûn	realmshelps
+Multisnatch	Draconomicon	realmshelps
+Multispell	Epic Level Handbook	realmshelps
+Multitasking		realmshelps
+Multiturning	Web	realmshelps
+Multivoice	Savage Species	realmshelps
+Multiweapon Fighting		realmshelps
+Multiweapon Rend	Epic Level Handbook	realmshelps
+Murderous Intent	Elder Evils	dndtools
+Murky-Eyed	Unearthed Arcana	realmshelps
+Musclebound	Unearthed Arcana	realmshelps
+Music Of Growth	Eberron Campaign Setting	realmshelps
+Music Of Making	Eberron Campaign Setting	realmshelps
+Music of Growth	Eb p57	crystalkeep
+Music of Making	Eb p57	crystalkeep
+Music of the Gods	Epic Level Handbook	realmshelps
+Music of the Outer Spheres	Lords of Madness	realmshelps
+Mutable Body	RoE p110	crystalkeep
+Mutilator	Champions of Ruin	realmshelps
+Mysterious Magic	Secrets of Xendrik	dndtools
+Mystic Backlash	Complete Mage	realmshelps
+Mystic Companion	DR339 p87	crystalkeep
+Mystic Focus	Dragon #349	realmshelps
+Mystic Stability	Dragon #349	realmshelps
+Name of the Mage	Dragon #359	realmshelps
+Named Spell	Dragon #346	realmshelps
+Named Spell, Greater	Dragon #346	realmshelps
+Narfell		crystalkeep
+Narrow Mind	Expanded Psionics Handbook	realmshelps
+Narrowed Gaze		realmshelps
+Natural Bond	CAdv p114	crystalkeep+realmshelps
+Natural Bully	Champions of Ruin	realmshelps
+Natural Dowser	DR323 p90	crystalkeep+realmshelps
+Natural Heavyweight	Planar Handbook	realmshelps
+Natural Leader	DR346 p53	crystalkeep+realmshelps
+Natural Leader b	Dragon #346	realmshelps
+Natural Scavenger	Shining South	realmshelps
+Natural Spell	PH p98	crystalkeep+realmshelps
+Natural Trickster	RoS p143	crystalkeep+realmshelps
+Naturalized Denizen	UA p94	crystalkeep+realmshelps
+Nature's Fists	CAdv p114	crystalkeep+realmshelps
+Nauseating Touch	Ghostwalk	realmshelps
+Naval Commander	Dragon #348	realmshelps
+Nearsighted	Unearthed Arcana	realmshelps
+Necrocarnum Acolyte	Magic of Incarnum	realmshelps
+Necromantic Bloodline		realmshelps
+Necromantic Might	Libris Mortis	realmshelps
+Necromantic Presence	Libris Mortis	realmshelps
+Necromatic Might	LM p28	crystalkeep
+Necromatic Presence	LM p28	crystalkeep
+Necropolis Born	CArc p81	crystalkeep+realmshelps
+Necropotent	LM p29	crystalkeep+realmshelps
+Necrotic Reserve	Libris Mortis	realmshelps
+Negative Energy Burst		realmshelps
+Negotiator	PH p98	crystalkeep+realmshelps
+Nelanther Isles		crystalkeep
+Nemesis	BoED p44	crystalkeep+realmshelps
+Neraph Charge	Planar Handbook	realmshelps
+Neraph Throw	Planar Handbook	realmshelps
+Net and Trident	CWar p114	crystalkeep+realmshelps
+Netherese Battle Curse	Lost Empires of Faerûn	realmshelps
+Never Outnumbered	Complete Scoundrel	dndtools
+Nexus Method	DR319 p60	crystalkeep+realmshelps
+Night Haunt	CArc p81	crystalkeep+realmshelps
+Night Sighted	Unearthed Arcana	dndtools
+Nightborn Dragonmark	Dragonmarked	dndtools
+Nightbringer Initiate	FoE p147	crystalkeep
+Nightsighted	Unearthed Arcana	realmshelps
+Nimble Bones	LM p29	crystalkeep+realmshelps
+Nimble Charge	Complete Scoundrel	dndtools
+Nimble Deflections	CAdv p10; DR335 p87; DR335 p88	crystalkeep+realmshelps
+Nimble Fingers	PH p98	crystalkeep+realmshelps
+Nimble Flier	Dragon #313	realmshelps
+Nimble Stand	Complete Scoundrel	dndtools
+Nimbral		crystalkeep
+Nimbus of Light	BoED p44	crystalkeep+realmshelps
+No Threat To Me	Dragon #335	realmshelps
+No Threat to Me	DR335 p90	crystalkeep
+No Time For Book Learning	Dragon #324	realmshelps
+Noble Born	DR333 p45	crystalkeep+realmshelps
+Noble Soul	DR315 p54	crystalkeep+realmshelps
+Noble Warrior	DR317 p83	crystalkeep+realmshelps
+Nobody's Fool	Races of Faerûn	realmshelps
+Nocturnal Caster	Tome of Magic	realmshelps
+Node Defense	Und p26	crystalkeep+realmshelps
+Node Sensitive	Und p26	crystalkeep+realmshelps
+Node Spellcasting	Und p26	crystalkeep+realmshelps
+Node Store	Und p26	crystalkeep+realmshelps
+Nomadic Trekker	Shining South	realmshelps
+Noncombatant	Unearthed Arcana	realmshelps
+Nonlethal Substitution	BoED p44; CArc p81	crystalkeep+realmshelps
+Nonverbal Spell	Planar Handbook	realmshelps
+Northern Fist Mastery	Dragon #315	realmshelps
+Nymph's Kiss	BoED p44	crystalkeep+realmshelps
+Nymph’s Kiss	BoED p44	crystalkeep
+Oaken Resilience	DR343 p91	crystalkeep+realmshelps
+Obese	Dragon #328	realmshelps
+Obscure Lore	CAdv p111	crystalkeep+realmshelps
+Obscure Personal Truename	Tome of Magic	realmshelps
+Obtain Familiar	CArc p81	crystalkeep+realmshelps
+Occult Opportunist	DR340 p87	crystalkeep+realmshelps
+Ocular Spell	Lords of Madness	realmshelps
+Off-hand Parry		realmshelps
+Offensive Metered Foot	DR337 p97	crystalkeep+realmshelps
+Old Salt	Stormwrack	realmshelps
+Omen of Bones	Dragon #340	realmshelps
+Omen of Crows	Dragon #340	realmshelps
+Omen of Flies	Dragon #340	realmshelps
+Omen of Loss	Dragon #340	realmshelps
+Omen of Snakes	Dragon #340	realmshelps
+Omen of Storms	Dragon #340	realmshelps
+Omniscient Whispers	UA p94	crystalkeep+realmshelps
+One With Earth and Water	Dragon #351	realmshelps
+One with Earth and Water	DR351 p87	crystalkeep
+One with the Darkness	DR330 p48	crystalkeep+realmshelps
+Oneiromancy	Heroes of Horror	realmshelps
+Oni's Bane	Oriental Adventures	realmshelps
+Open Greater Chakra	Magic of Incarnum	realmshelps
+Open Greater Chakra (Throat)	Magic of Incarnum	dndtools
+Open Greater Chakra (Waist)	Magic of Incarnum	dndtools
+Open Least Chakra	Magic of Incarnum	realmshelps
+Open Least Chakra (Crown)	Magic of Incarnum	dndtools
+Open Least Chakra (Feet)	Magic of Incarnum	dndtools
+Open Least Chakra (Hands)	Magic of Incarnum	dndtools
+Open Lesser Chakra	Magic of Incarnum	realmshelps
+Open Lesser Chakra (Arms)	Magic of Incarnum	dndtools
+Open Lesser Chakra (Brow)	Magic of Incarnum	dndtools
+Open Lesser Chakra (Shoulders)	Magic of Incarnum	dndtools
+Open Minded		realmshelps
+Open Soul Chakra	Magic of Incarnum	dndtools
+Open heart Chakra	Magic of Incarnum	dndtools
+Opening Tap	Complete Scoundrel	dndtools
+Opportunistic Tactician	DR340 p87; PH2 p82	crystalkeep+realmshelps
+Opportunity Power	Expanded Psionics Handbook	realmshelps
+Oral History	Races of Faerûn	realmshelps
+Orc Blooded	DR315 p54	crystalkeep+realmshelps
+Orc Descent	DR338 p97	crystalkeep
+Orc Double Axe Mind Blade	Complete Psionic	realmshelps
+Orcus's Bloodthirst Ritual	Dragon #315	realmshelps
+Orcus’ Bloodthirst Ritual	DR315 p58	crystalkeep
+Ordered Chaos	Fiendish Codex I	realmshelps
+Orien	EB p65; EB p80	crystalkeep
+Orien Battle Stride	Dragonmarked	dndtools
+Otherworldly	DR349 p58	crystalkeep+realmshelps
+Otherworldly Countenance	Fiendish Codex I	realmshelps
+Outer Sea		crystalkeep
+Outsider Wings	Races of Faerûn	realmshelps
+Outsider Wings (Celestial)	Races of Faerun	dndtools
+Outsider Wings (Fiendish)	Races of Faerun	dndtools
+Overchannel	Expanded Psionics Handbook	realmshelps
+Overcome Shadow Weave	Champions of Valor	realmshelps
+Overcome Weakness	Draconomicon	realmshelps
+Overhead Thrust	Dcn p106	crystalkeep+realmshelps
+Overload Metabolism	PGE p151	crystalkeep
+Overpower	Web	realmshelps
+Oversized Two-Weapon Fighting	CAdv p111	crystalkeep
+Oversized Two-weapon Fighting	Complete Adventurer	realmshelps
+Overwhelming Assault	PH2 p81	crystalkeep+realmshelps
+Overwhelming Critical		realmshelps
+Owlbear Berserker	Unapproachable East	realmshelps
+Pacifist	Complete Psionic	realmshelps
+Pack Feint	DR313 p31	crystalkeep+realmshelps
+Pack Tactics	DR313 p31	crystalkeep+realmshelps
+Packrat	Dragon #354	realmshelps
+Pain Mastery	Savage Species	realmshelps
+Pain Touch	CWar p103	crystalkeep+realmshelps
+Painful Strike	DR344 p103	crystalkeep+realmshelps
+Paladin		crystalkeep
+Paladin of the Noble Heart	Champions of Valor	realmshelps
+Paraelemental Power	Complete Psionic	realmshelps
+Paralyzing Fists	Drow of the Underdark	realmshelps
+Parrying Shield	Lords of Madness	realmshelps
+Passionate	Unearthed Arcana	realmshelps
+Passive Reconnoiter	DR346 p87	crystalkeep+realmshelps
+Path Focus	Tome of Magic	realmshelps
+Path of Shadows	Races of Eberron	dndtools
+Pathetic	Unearthed Arcana	realmshelps
+Pathfinder	DR339 p87	crystalkeep
+Pawn in the Great Game	Dragon #354	realmshelps
+Peak Hopper	Savage Species	realmshelps
+Pebble Underfoot		realmshelps
+Pelt	PM332 p91	crystalkeep
+Penetrate Damage Reduction	Epic Level Handbook	realmshelps
+Penetrating Shot	PH2 p81	crystalkeep+realmshelps
+Penumbra Bloodline		realmshelps
+Perfect Clarity of Mind and Body	Tome of Battle	realmshelps
+Perfect Health	Epic Level Handbook	realmshelps
+Perfect Multiweapon Fighting	Epic Level Handbook	realmshelps
+Perfect Reflection		crystalkeep
+Perfect Two-weapon Fighting		realmshelps
+Permanent Emanation	Epic Level Handbook	realmshelps
+Pernicious Magic		realmshelps
+Persistent Attacker	Complete Scoundrel	realmshelps
+Persistent Refusal	Fiendish Codex II	realmshelps
+Persistent Spell	CArc p81	crystalkeep+realmshelps
+Persona Immersion		crystalkeep
+Personal Touchstone	Planar Handbook	realmshelps
+Personal Truename Backlash	Tome of Magic	realmshelps
+Persuasive	PH p98	crystalkeep+realmshelps
+Pervasive Gaze		realmshelps
+Petrification Immunity	Serpent Kingdoms	realmshelps
+Petrification Resistance	Serpent Kingdoms	realmshelps
+Phalanx Fighting	CWar p103	crystalkeep+realmshelps
+Phantom Spark	Dragon #327	realmshelps
+Pharaoh's Fist	Sandstorm	realmshelps
+Phiarlan	EB p66; EB p80	crystalkeep
+Photosynthesize	CDiv p82	crystalkeep+realmshelps
+Photosynthetic Skin	UA p94	crystalkeep+realmshelps
+Phrenic Blast	Dragon #316	realmshelps
+Phrenic Leech		realmshelps
+Picket Commander	Dragon #348	realmshelps
+Pierce Magical Concealment	CArc p81	crystalkeep+realmshelps
+Pierce Magical Protection	CArc p82	crystalkeep+realmshelps
+Pierce The Darkness	Races of Stone	realmshelps
+Pierce the Darkness	RoS p143	crystalkeep
+Piercing Cold	Frostburn	realmshelps
+Piercing Evocation	Complete Mage	realmshelps
+Piercing Gaze		realmshelps
+Piercing Sight	RoS p143	crystalkeep+realmshelps
+Piercing Spell	Dragon #315	realmshelps
+Pike Hedge	DR317 p83	crystalkeep+realmshelps
+Pilgrim	DU142 p93	crystalkeep
+Pin Shield	CWar p103	crystalkeep+realmshelps
+Pinpoint Shot	Web	realmshelps
+Pious Defense	Complete Divine	realmshelps
+Pious Defiance	Fiendish Codex II	realmshelps
+Pious Soul	Complete Divine	realmshelps
+Pious Spellsurge	Complete Divine	realmshelps
+Pirate Luck	DR323 p90	crystalkeep+realmshelps
+Plague Resistant	Races of Faerûn	realmshelps
+Planar Familiar	Planar Handbook	realmshelps
+Planar Touchstone	Planar Handbook	realmshelps
+Planar Tracker	Dragon #306	realmshelps
+Planar Turning		realmshelps
+Planetouched Animal Affinity	Races of Faerûn	realmshelps
+Plant Bloodline		realmshelps
+Plant Control		realmshelps
+Plant Defiance		realmshelps
+Plant Devotion	Complete Champion	realmshelps
+Plant Wild Shape	Epic Level Handbook	realmshelps
+Plucky	Unearthed Arcana	realmshelps
+Plunging Shot	RotW p152	crystalkeep+realmshelps
+Point Blank Shot	CAdv p10; PH p98	crystalkeep+realmshelps
+Point it Out	Complete Scoundrel	dndtools
+Poison Expert	Complete Scoundrel	realmshelps
+Poison Healer	Fiendish Codex I	realmshelps
+Poison Immunity		realmshelps
+Poison Immunity (monstrous)	Savage Species	realmshelps
+Poison Master	Complete Scoundrel	realmshelps
+Poison Resistance		realmshelps
+Poison Specialization	Dragon #303	realmshelps
+Poison Spell	Drow of the Underdark	realmshelps
+Poison Talons	Fiendish Codex I	realmshelps
+Polar Chill	UA p94	crystalkeep+realmshelps
+Pole Balance		crystalkeep+realmshelps
+Pole Fighter		realmshelps
+Pole Fighting	DR331 p28	crystalkeep
+Pole Master	Secrets of Sarlona	dndtools
+Polite	Unearthed Arcana	realmshelps
+Poltergeist Hand	Ghostwalk	realmshelps
+Poltergeist Rage	Ghostwalk	realmshelps
+Poltergeist Shield	Web	realmshelps
+Polyglot	Dragon #323	realmshelps
+Polyglot (Epic)		realmshelps
+Polyglot’	DR323 p90	crystalkeep
+Ponderous Spellcaster	Dragon #326	realmshelps
+Poor Reflexes	Unearthed Arcana	realmshelps
+Portal Master	PGF p42	crystalkeep+realmshelps
+Portal Sensitive	DR338 p97	crystalkeep+realmshelps
+Positive Energy Aura		realmshelps
+Positive Energy Resistance	Libris Mortis	realmshelps
+Postpone Enervation	Complete Psionic	realmshelps
+Potent Dweomercraft	DR351 p89	crystalkeep+realmshelps
+Potent Enchantment	DR325 p77	crystalkeep+realmshelps
+Power Attack	CAdv p10; PH p98	crystalkeep+realmshelps
+Power Attack--Iajutsu	Oriental Adventures	dndtools
+Power Attack-Shadowlands	Oriental Adventures	realmshelps
+Power Attack-iaijutsu	Oriental Adventures	realmshelps
+Power Climb	Draconomicon	realmshelps
+Power Critical	CWar p103	crystalkeep+realmshelps
+Power Dive		realmshelps
+Power Knowledge	Expanded Psionics Handbook	realmshelps
+Power Lunge		realmshelps
+Power Penetration	Expanded Psionics Handbook	realmshelps
+Power Soar	Dragon #313	realmshelps
+Power Specialization	Expanded Psionics Handbook	realmshelps
+Power Surge	Dragon #313	realmshelps
+Power Throw	CAdv p111	crystalkeep+realmshelps
+Power in the Blood	DR311 p40	crystalkeep+realmshelps
+Powerful Bite	Lords of Madness	realmshelps
+Powerful Charge	EB p57; MM3 p207	crystalkeep+realmshelps
+Powerful Voice	Oriental Adventures	realmshelps
+Powerful Wild Shape	DR343 p91	crystalkeep+realmshelps
+Practical Metamagic	Races of the Dragon	realmshelps
+Practiced Binder	Tome of Magic	realmshelps
+Practiced Cohort	Heroes of Battle	realmshelps
+Practiced Manifester	Complete Psionic	realmshelps
+Practiced Mind Blade	Dragon #341	realmshelps
+Practiced Spellcaster	CArc p82; CDiv p82	crystalkeep+realmshelps
+Precise Shot	CAdv p10; PH p98	crystalkeep+realmshelps
+Precise Strike	DR310 p69	crystalkeep+realmshelps
+Precise Swing	Ab p58	crystalkeep+realmshelps
+Precocious Apprentice	CArc p181; CArc p81	crystalkeep+realmshelps
+Precognitive Visions	Fiendish Codex I	realmshelps
+Predator's Step	Dragon #315	realmshelps
+Predict Outcome	Dragon #292	realmshelps
+Predict Path	Dragon #292	realmshelps
+Prehensile Tail		realmshelps
+Presence of the Mage	Dragon #359	realmshelps
+Pressure Point Strike	CWar p103; DR336 p103	crystalkeep+realmshelps
+Pressure Resistance	Dragon #314	realmshelps
+Pride of Arms	Dragon #324	realmshelps
+Priest of the Waste	Sandstorm	realmshelps
+Primary Contact	Cityscape	realmshelps
+Primeval Wild Shape	Frostburn	realmshelps
+Primitive Caster		realmshelps
+Primordial Scion	Fiendish Codex I	realmshelps
+Privileged Energy	Complete Psionic	realmshelps
+Profane Agony	Drow of the Underdark	realmshelps
+Profane Aura	PH2 p89	crystalkeep+realmshelps
+Profane Boost	CDiv p84	crystalkeep+realmshelps
+Profane Lifeleech	LM p29	crystalkeep+realmshelps
+Profane Outburst	Champions of Ruin	realmshelps
+Profane Vigor	LM p29	crystalkeep+realmshelps
+Prone Attack	CArw p103; CWar p103	crystalkeep+realmshelps
+Prophecy's Artifex	Magic of Eberron	dndtools
+Prophecy's Explorer	Magic of Eberron	dndtools
+Prophecy's Hero	Magic of Eberron	dndtools
+Prophecy's Mind	Magic of Eberron	dndtools
+Prophecy's Shaper	Magic of Eberron	dndtools
+Prophecy's Shepherd	Magic of Eberron	dndtools
+Prophecy's Slayer	Magic of Eberron	dndtools
+Prophet of the Divine	Power of Faerun	dndtools
+Proportionate Wild Shape	Masters of the Wild	realmshelps
+Protected Destiny	RoD p153	crystalkeep+realmshelps
+Protection Devotion	Complete Champion	realmshelps
+Protective Mark	Dragonmarked	dndtools
+Protective Talons	Dragon #357	realmshelps
+Protective Ward	Complete Champion	realmshelps
+Proteus	Exemplars of Evil	dndtools
+Psicrystal Affinity	Expanded Psionics Handbook	realmshelps
+Psicrystal Containment	Expanded Psionics Handbook	realmshelps
+Psicrystal Power	Expanded Psionics Handbook	realmshelps
+Psiforged Body	Magic of Eberron	dndtools
+Psiomancer	Dragon #349	realmshelps
+Psionic Affinity	Expanded Psionics Handbook	realmshelps
+Psionic Body	Expanded Psionics Handbook	realmshelps
+Psionic Charge	Expanded Psionics Handbook	realmshelps
+Psionic Combat Buffer	Web	realmshelps
+Psionic Defense	Dragon #287	realmshelps
+Psionic Dodge	Expanded Psionics Handbook	realmshelps
+Psionic Endowment	Expanded Psionics Handbook	realmshelps
+Psionic Energy Admixture	Dragon #287	realmshelps
+Psionic Energy Substitution	Dragon #287	realmshelps
+Psionic Feedback	Dragon #316	realmshelps
+Psionic Feint	Web	realmshelps
+Psionic Fist	Expanded Psionics Handbook	realmshelps
+Psionic Hole	Expanded Psionics Handbook	realmshelps
+Psionic Luck	Magic of Eberron	dndtools
+Psionic Mastery	Complete Psionic	realmshelps
+Psionic Meditation	Expanded Psionics Handbook	realmshelps
+Psionic Prodigy	Web	realmshelps
+Psionic Shot	Expanded Psionics Handbook	realmshelps
+Psionic Sidestep	Web	realmshelps
+Psionic Talent	Expanded Psionics Handbook	realmshelps
+Psionic Tumble	Web	realmshelps
+Psionic Weapon	Expanded Psionics Handbook	realmshelps
+Psiotheurgist	Dragon #349	realmshelps
+Psithief	Complete Scoundrel	realmshelps
+Psycarnum Blade	Magic of Incarnum	realmshelps
+Psycarnum Crystal	Magic of Incarnum	realmshelps
+Psycarnum Infusion	Magic of Incarnum	realmshelps
+Psychic Assault	Web	realmshelps
+Psychic Bastion	Psionics Handbook	realmshelps
+Psychic Luck	Complete Scoundrel	realmshelps
+Psychic Refusal	Drow of the Underdark	realmshelps
+Psychic Renewal	Tome of Battle	realmshelps
+Psychic Rush	Magic of Eberron	dndtools
+Psychic Warfare	Secrets of Sarlona	dndtools
+Psychoanalyst	Psionics Handbook	realmshelps
+Psymbiot		realmshelps
+Puff Torso	Serpent Kingdoms	realmshelps
+Pulverize Foe	Champions of Ruin	realmshelps
+Puppet Master	DR312 p51	crystalkeep+realmshelps
+Pure Soul	Heroes of Horror	realmshelps
+Pureblooded Suel	DR319 p60	crystalkeep+realmshelps
+Pureheart	DR346 p66	crystalkeep+realmshelps
+Purify Spell	Book of Exalted Deeds	crystalkeep+realmshelps
+Purify Spell Trigger	BoED p45	crystalkeep+realmshelps
+Purify Spell-like Ability	Book of Exalted Deeds	realmshelps
+Purify Summoning	Dragon #353	realmshelps
+Pursue	Eberron Campaign Setting	crystalkeep+realmshelps
+Pushback	Miniatures Handbook	realmshelps
+Pyro	Song and Silence	realmshelps
+Quarter Elf	Dragon #328	realmshelps
+Quell The Profane	Book of Exalted Deeds	realmshelps
+Quell the Profane	BoED p45	crystalkeep
+Quick	Unearthed Arcana	realmshelps
+Quick Burning Rage	Dragon #325	realmshelps
+Quick Change		crystalkeep+realmshelps
+Quick Cleave	DR343 p93	crystalkeep+realmshelps
+Quick Draw	CAdv p10; PH p98	crystalkeep+realmshelps
+Quick Escape	Complete Scoundrel	dndtools
+Quick Reconnoiter	CAdv p10; CAdv p112; Eb p58	crystalkeep+realmshelps
+Quick Recovery	Lords of Madness	realmshelps
+Quick Staff	CWar p114	crystalkeep+realmshelps
+Quick Swimmer	Complete Scoundrel	dndtools
+Quicken Breath	Draconomicon	realmshelps
+Quicken Dragonmark	Dragonmarked	dndtools
+Quicken Legacy	Weapons of Legacy	realmshelps
+Quicken Manifestation	Libris Mortis	realmshelps
+Quicken Mystery	Tome of Magic	realmshelps
+Quicken Power	Expanded Psionics Handbook	realmshelps
+Quicken Psi-like Ability	Dragon Magic	realmshelps
+Quicken Spell	Player's Handbook	realmshelps
+Quicken Spell-Like Ability		crystalkeep
+Quicken Spell-like Ability		realmshelps
+Quicken Turning		crystalkeep+realmshelps
+Quicken Utterance	Tome of Magic	realmshelps
+Quicken Wildshape	Dragon #297	realmshelps
+Quicker Than The Eye	Song and Silence	realmshelps
+Quickslime	Lords of Madness	realmshelps
+Quiet Feet	DR343 p32	crystalkeep+realmshelps
+Quill of Sivis	Dragonmarked	dndtools
+Quori Dread	Secrets of Sarlona	dndtools
+Rabbit Prince Jutsu	DR342 p85	crystalkeep+realmshelps
+Racial Emulation		crystalkeep
+Radiant Fire	RoD p155	crystalkeep+realmshelps
+Radiant Flicker	Drow of the Underdark	realmshelps
+Radiant Spell	Dragon #314	crystalkeep+realmshelps
+Rage Casting	DR310 p30	crystalkeep+realmshelps
+Rage of the Raptor	Dragon #315	realmshelps
+Ragewild Fighter		crystalkeep
+Ragewild Fighting	Races of Eberron	dndtools
+Raging Bull Rush	DR310 p30	crystalkeep+realmshelps
+Raging Luck	Eberron Campaign Setting	crystalkeep+realmshelps
+Raging Overrun	DR310 p30	crystalkeep+realmshelps
+Raging Spell Penetration	DR310 p30	crystalkeep+realmshelps
+Raging Sunder	DR310 p30	crystalkeep+realmshelps
+Raider's Spirit	DR315 p54	crystalkeep+realmshelps
+Rampaging Bull Rush	RoS p150	crystalkeep+realmshelps
+Rampart Commander	Dragon #348	realmshelps
+Ranged Disarm	CArw p103; CWar p103	crystalkeep+realmshelps
+Ranged Inspiration	Epic Level Handbook	realmshelps
+Ranged Pin	CArw p104; CWar p104	crystalkeep+realmshelps
+Ranged Recall	Complete Mage	realmshelps
+Ranged Skirmisher	DR346 p87	crystalkeep+realmshelps
+Ranged Smite Evil	BoED p45	crystalkeep+realmshelps
+Ranged Spell Specialization	CArc p82	crystalkeep+realmshelps
+Ranged Sunder	CArw p104; CWar p104	crystalkeep+realmshelps
+Ranged Threat	DR350 p90	crystalkeep+realmshelps
+Ranged Weapon Mastery	Player's Handbook II	realmshelps
+Ranged Weapon Mastery – Bludgeoning	PH2 p82	crystalkeep
+Ranged Weapon Mastery – Piercing	PH2 p82	crystalkeep
+Ranged Weapon Mastery – Slashing	PH2 p82	crystalkeep
+Rapid Assault	Tome of Battle	realmshelps
+Rapid Blitz	PH2 p82	crystalkeep+realmshelps
+Rapid Breath	Savage Species	realmshelps
+Rapid Ghost Flight	Web	realmshelps
+Rapid Infusion	Magic of Eberron	dndtools
+Rapid Inspiration	Epic Level Handbook	realmshelps
+Rapid Meldshaping	Magic of Incarnum	dndtools
+Rapid Metabolism	Expanded Psionics Handbook	realmshelps
+Rapid Metamagic	Complete Mage	realmshelps
+Rapid Pact Making	Tome of Magic	realmshelps
+Rapid Recovery	Tome of Magic	realmshelps
+Rapid Regeneration	Fiendish Codex I	realmshelps
+Rapid Reload	CAdv p10; CAdv p10+; PH p99	crystalkeep+realmshelps
+Rapid Shot	PH p99	crystalkeep+realmshelps
+Rapid Spell	Complete Divine	crystalkeep+realmshelps
+Rapid Stunning	CWar p104	crystalkeep+realmshelps
+Rapid Swimming		realmshelps
+Rapidstrike	Draconomicon	realmshelps
+Rapier Wit	Dungeon #294	realmshelps
+Rapscallion	DR315 p54	crystalkeep+realmshelps
+Raptor School	Compete Warrior	crystalkeep+realmshelps
+Rashemen		crystalkeep
+Rashemi Elemental Summoning	Unapproachable East	realmshelps
+Rattlesnake Strike	Sandstorm	realmshelps
+Raumathor Heritor	Dragon #349	realmshelps
+Ray Burst	Dragon Annual 5	realmshelps
+Ray Coning	Dragon Annual 5	realmshelps
+Ray Extension	Dragon Annual 5	realmshelps
+Ray Focus	Dragon Annual 5	realmshelps
+Ray Splitting	Dragon Annual 5	realmshelps
+Razing Strike	CAdv p112	crystalkeep+realmshelps
+Razorclaw	Eberron Campaign Setting	dndtools
+Razorclaw Elite	RoE p114	crystalkeep
+Reach Bite	Lords of Madness	realmshelps
+Reach Mystery	Tome of Magic	realmshelps
+Reach Power	Dragon #287	realmshelps
+Reach Spell	DR314 p21	crystalkeep+realmshelps
+Reactive Countersong	Epic Level Handbook	realmshelps
+Reactive Counterspell	PGF p42	crystalkeep+realmshelps
+Reactive Resistance	Drow of the Underdark	realmshelps
+Reactive Shifting	RoE p115	crystalkeep
+Ready Shot	Heroes of Battle	realmshelps
+Reaping Spell	Champions of Ruin	realmshelps
+Reaping Talons	Tome of Battle	realmshelps
+Rebind Chakra	Magic of Incarnum	dndtools
+Recharge Staff	DR338 p60	crystalkeep+realmshelps
+Recitation of Meditative State	Tome of Magic	realmshelps
+Recitation of Mindful State	Tome of Magic	realmshelps
+Recitation of Vital State	Tome of Magic	realmshelps
+Recitation of the Fortified State	Tome of Magic	realmshelps
+Recitation of the Meditative State	Tome of Magic	dndtools
+Recitation of the Sanguine State	Tome of Magic	realmshelps
+Reckless	Unearthed Arcana	realmshelps
+Reckless Charge	Miniatures Handbook	realmshelps
+Reckless Offense	Expanded Psionics Handbook	realmshelps
+Reckless Offensive		realmshelps
+Reckless Rage	RoS p143	crystalkeep+realmshelps
+Reckless Wand Wielder	CArc p82	crystalkeep+realmshelps
+Recognize Imposter	Eb p58	crystalkeep
+Recognize Impostor	Eberron Campaign Setting	realmshelps
+Recognized Elder	Dragon #334	realmshelps
+Recognized Leader	DR334 p84	crystalkeep
+Recover Breath	Draconomicon	realmshelps
+Red Dragon Heritage	Dragon Magic	realmshelps
+Red Dragon Lineage	Dragon Magic	dndtools
+Reflect Arrows	Epic Level Handbook	realmshelps
+Reflexive Psychosis	Elder Evils	dndtools
+Reinforced Wings	Races of the Dragon	realmshelps
+Relentless	Unearthed Arcana	realmshelps
+Relic Hunter	RoE p111	crystalkeep
+Relicguard Spell	DR347 p89	crystalkeep+realmshelps
+Remain Conscious		realmshelps
+Rend	Draconomicon	realmshelps
+Rend Ghost	Ghostwalk	realmshelps
+Rending Claws	Secrets of Xendrik	dndtools
+Rending Constriction		realmshelps
+Renown	Unearthed Arcana	realmshelps
+Renowned Courtesan	Dragon #315	realmshelps
+Repeat Power	Dragon #287	realmshelps
+Repeat Spell	CArc p82	crystalkeep+realmshelps
+Repel Aberration	Eb p58	crystalkeep+realmshelps
+Repel Outsiders	Secrets of Sarlona	dndtools
+Reptilian Healing	Dragon #335	realmshelps
+Requiem	LM p29	crystalkeep+realmshelps
+Requires Jump Source		crystalkeep
+Requires Spot Source		crystalkeep
+Resculpt Mind	Dragon #287	realmshelps
+Research	Eb p59	crystalkeep+realmshelps
+Reserves of Strength	Dragonlance Campaign Setting	dndtools
+Reshape Mind Blade	Dragon #341	realmshelps
+Residual Magic	Complete Mage	realmshelps
+Residual Rebound	UA p94	crystalkeep+realmshelps
+Resinbond	DU118 p42	crystalkeep
+Resist Death	Epic Level Handbook	realmshelps
+Resist Disease		realmshelps
+Resist Dragonfear	Dragonlance Campaign Setting	dndtools
+Resist Ghost	Ghostwalk	realmshelps
+Resist Poison	Masters of the Wild	realmshelps
+Resist Poison (FR)		realmshelps
+Resist Poison (OA)	Oriental Adventures	realmshelps
+Resist Taint	Oriental Adventures	realmshelps
+Resist Telekinesis	DR309 p110	crystalkeep+realmshelps
+Resistance To Energy	Masters of the Wild	realmshelps
+Resounding Blow	BoED p45	crystalkeep+realmshelps
+Resourceful Buyer	RoD p153	crystalkeep+realmshelps
+Restricted Sorcery	Dragon #327	realmshelps
+Retribution	DR326 p33	crystalkeep+realmshelps
+Retributive Spell	Complete Mage	realmshelps
+Retrieve Spell	Complete Champion	realmshelps
+Retrograde Chain	Web	realmshelps
+Return Shot	Expanded Psionics Handbook	realmshelps
+Reverberation	Savage Species	realmshelps
+Rhenn Lore	DR315 p54	crystalkeep
+Rhennlore	Dragon #315	realmshelps
+Rhinoceros Tribe Charge	Shining South	realmshelps
+Ricochet	DR343 p93	crystalkeep+realmshelps
+Ride-By Attack	PH p99	crystalkeep
+Ride-by Attack	Player's Handbook	realmshelps
+Right Of Counsel	Eberron Campaign Setting	realmshelps
+Right of Counsel	Eb p59	crystalkeep
+Righteous Strike	Epic Level Handbook	realmshelps
+Righteous Wrath	BoED p45	crystalkeep+realmshelps
+Ring the Ear	DR344 p103	crystalkeep+realmshelps
+Ring the Gold Bell	CWar p104	crystalkeep
+Ring the Golden Bell		realmshelps
+Ringing Fist Jutsu	DR342 p85	crystalkeep+realmshelps
+Riposte		realmshelps
+Ritual Blessing	PH2 p86	crystalkeep+realmshelps
+Ritual Blood Bonds	PH2 p86; Und p27	crystalkeep+realmshelps
+Ritual of Arcane Opposition	Players Guide to Eberron	dndtools
+Ritual of Blight's Embrace	Players Guide to Eberron	dndtools
+Ritual of the Timeless Soul	Players Guide to Eberron	dndtools
+Ritual of the Woodland Bond	Players Guide to Eberron	dndtools
+River Eel Jutsu	DR342 p85	crystalkeep+realmshelps
+Robilar's Gambit	PH2 p82	crystalkeep+realmshelps
+Rock Gnome Trickster	Races of Faerûn	realmshelps
+Rock Hurling	RoS p143	crystalkeep+realmshelps
+Rogue		crystalkeep
+Roll With It	Savage Species	realmshelps
+Roof-Jumper	Cityscape	realmshelps
+Roofwalker		crystalkeep+realmshelps
+Roots of The Mountain	Races of Stone	realmshelps
+Roundabout Kick	CWar p105	crystalkeep+realmshelps
+Rouse Courage	DR323 p29	crystalkeep+realmshelps
+Rudimentary Intelligence	Dragon #327	realmshelps
+Ruinous Rage	Epic Level Handbook	realmshelps
+Rulership	Power of Faerûn	realmshelps
+Run	Player's Handbook	crystalkeep+realmshelps
+Run On Air	Web	realmshelps
+Runesmith	Races of Faerûn	realmshelps
+Rustic Charm	DR319 p60	crystalkeep+realmshelps
+Sacred Boost	CDiv p84	crystalkeep+realmshelps
+Sacred Healing	CDiv p84	crystalkeep+realmshelps
+Sacred Healing’	PH2 p89	crystalkeep
+Sacred Outlaw	Dragon #357	realmshelps
+Sacred Performer	Dragon #357	realmshelps
+Sacred Purification	PH2 p89	crystalkeep+realmshelps
+Sacred Radiance	PH2 p89	crystalkeep+realmshelps
+Sacred Resilience	FoE p147	crystalkeep
+Sacred Spell		realmshelps
+Sacred Strike	BoED p45	crystalkeep+realmshelps
+Sacred Tattoo	Races of Faerûn	realmshelps
+Sacred Vengeance		realmshelps
+Sacred Vitality	LM p30	crystalkeep+realmshelps
+Sacred Vow	BoED p45	crystalkeep+realmshelps
+Sacrificial Divination	Dragon #336	realmshelps
+Sacrificial Mastery	Book of Vile Darkness	realmshelps
+Saddleback	PGF p43	crystalkeep+realmshelps
+Saddleback (FR)	Player's Guide to Faerûn	realmshelps
+Saddleback (OA)	Oriental Adventures	realmshelps
+Saddleborn	Unearthed Arcana	realmshelps
+Sadistic Reward	Drow of the Underdark	realmshelps
+Sagacious Method	DR319 p60	crystalkeep+realmshelps
+Sahuagin Flip	Stormwrack	realmshelps
+Sailor Will	DR323 p90	crystalkeep+realmshelps
+Sailor's Balance	Stormwrack	realmshelps
+Samarach		crystalkeep
+Sanctify Ki Strike	BoED p45; BoED p46; DR336 p103	crystalkeep+realmshelps
+Sanctify Martial Strike	BoED p46	crystalkeep+realmshelps
+Sanctify Natural Attack	Book of Exalted Deeds	realmshelps
+Sanctify Relic	Complete Divine	realmshelps
+Sanctify Relic Item	CDiv p84	crystalkeep
+Sanctify Water	Stormwrack	realmshelps
+Sanctify Weapon	BoED p46	crystalkeep+realmshelps
+Sanctum Spell	CArc p82	crystalkeep+realmshelps
+Sand Camouflage	Sandstorm	realmshelps
+Sand Dancer	Sandstorm	realmshelps
+Sand Snare	Sandstorm	realmshelps
+Sand Spinner	Sandstorm	realmshelps
+Sandskimmer	Sandstorm	realmshelps
+Sandstep	DR323 p90	crystalkeep+realmshelps
+Sapphire Fist	Magic of Incarnum	realmshelps
+Sapphire Smite	Magic of Incarnum	realmshelps
+Sapphire Sprint	Magic of Incarnum	realmshelps
+Savage Empathy	DR326 p33	crystalkeep+realmshelps
+Savage Grapple	CAdv p114; RoS p143	crystalkeep+realmshelps
+Savage Mobility	CAdv p114	crystalkeep+realmshelps
+Savvy Rogue	Complete Scoundrel	realmshelps
+Savvy Swimmer	DR323 p90	crystalkeep+realmshelps
+Scalding Faith of the Sun		realmshelps
+Scathing Wit		realmshelps
+Scathing Wit (Wit)	Dungeon #294	realmshelps
+Scavenging Gullet	Lords of Madness	realmshelps
+Scent	DR326 p33	crystalkeep+realmshelps
+Scholar Of Nature	Oriental Adventures	realmshelps
+Scion of Sorrow	Champions of Ruin	realmshelps
+Scorching Sirocco	Tome of Battle	realmshelps
+Scorpion's Grasp	DU120 p35	crystalkeep+realmshelps
+Scorpion's Instincts	Sandstorm	realmshelps
+Scorpion's Resolve	Sandstorm	realmshelps
+Scorpion's Sense	Sandstorm	realmshelps
+Scourge Of The Seas	Stormwrack	realmshelps
+Scout the Path	DR346 p87	crystalkeep+realmshelps
+Scramble	Savage Species	realmshelps
+Screen	Dragon #357	realmshelps
+Scribe Epic Scroll	Epic Level Handbook	realmshelps
+Scribe Martial Script	Tome of Battle	realmshelps
+Scribe Scroll	PH p99	crystalkeep+realmshelps
+Scribe Tattoo	Expanded Psionics Handbook	realmshelps
+Sculpt Ghost Body	Ghostwalk	realmshelps
+Sculpt Power	Dragon #287	realmshelps
+Sculpt Self	Dragon #304	realmshelps
+Sculpt Spell		crystalkeep+realmshelps
+Sea Legs	DR314 p45	crystalkeep+realmshelps
+Sea Legs (OA)	Oriental Adventures	realmshelps
+Seafarer	DR337 p96	crystalkeep+realmshelps
+Searing Spell	Sandstorm	realmshelps
+Second Impression	Complete Scoundrel	dndtools
+Second Sight	DR319 p60	crystalkeep+realmshelps
+Second Slam	RoE p120	crystalkeep
+Second Wind	Miniatures Handbook	realmshelps
+Secret Society	Dragon #315	realmshelps
+Secrets of Dusk	DR340 p48	crystalkeep+realmshelps
+Seelie Court Member	Web	realmshelps
+Seelie Court Noble Kelir	Web	realmshelps
+Seer		realmshelps
+Selective Spell	Shining South	realmshelps
+Self-Medicating	Dragon #354	realmshelps
+Self-Sufficient	PH p100	crystalkeep+realmshelps
+Self-concealment	Epic Level Handbook	realmshelps
+Sembia		crystalkeep
+Sense Quintessence	Monster Manual V	realmshelps
+Sense Weakness	Draconomicon	realmshelps
+Sentinel Stance	Dragonmarked	dndtools
+Serenity		realmshelps
+Serpent Bloodline		realmshelps
+Serpent Fang	Sandstorm	realmshelps
+Serpent Strike	Eb p60	crystalkeep+realmshelps
+Serpent's Venom	CDiv p84	crystalkeep+realmshelps
+Servant of The Heavens	Book of Exalted Deeds	realmshelps
+Servant of a Dragon Ascendant	Dragons of Faerun	dndtools
+Servant of the Fallen	Lost Empires of Faerûn	realmshelps
+Servant of the Heavens	BoED p46	crystalkeep
+Shaar		crystalkeep
+Shadow		realmshelps
+Shadow Blade	Tome of Battle	realmshelps
+Shadow Cast	Tome of Magic	realmshelps
+Shadow Familiar	Tome of Magic	realmshelps
+Shadow Heritage	Planar Handbook	realmshelps
+Shadow Marches Warmonger	PH2 p86; RoE p111	crystalkeep
+Shadow Puppet Jutsu	DR342 p85	crystalkeep+realmshelps
+Shadow Reflection	Tome of Magic	realmshelps
+Shadow Shield	Races of Faerûn	realmshelps
+Shadow Shift	DR330 p48	crystalkeep+realmshelps
+Shadow Song	Races of Faerûn	realmshelps
+Shadow Striker	PH2 p94	crystalkeep+realmshelps
+Shadow Trickster	Tome of Battle	realmshelps
+Shadow Veil	Complete Mage	realmshelps
+Shadow Vision	Tome of Magic	realmshelps
+Shadow Weave Magic		realmshelps
+Shadowar		crystalkeep
+Shadowborn Warrior	Drow of the Underdark	realmshelps
+Shadowbound	DR319 p60	crystalkeep+realmshelps
+Shadowform Familiar	Champions of Ruin	realmshelps
+Shadowstrike	Champions of Ruin	realmshelps
+Shaky	Unearthed Arcana	realmshelps
+Shape Breath	Draconomicon	realmshelps
+Shape Ectoplasm	Ghostwalk	realmshelps
+Shape Soulmeld	Magic of Incarnum	realmshelps
+Shaped Splash	RoE p111	crystalkeep
+Shards of Granite	Tome of Battle	realmshelps
+Share Soulmeld	Magic of Incarnum	realmshelps
+Shared Fury	RotW p152	crystalkeep+realmshelps
+Sharp-Shooting	CWar p105	crystalkeep+realmshelps
+Shatter Confidence	Dungeon #294	realmshelps
+Shattering Strike	Epic Level Handbook	realmshelps
+Sherem-Lar Sorcery	Ghostwalk	realmshelps
+Sherezem-Lar Sorcery	Ghostwalk	realmshelps
+Shi'Quos School	Drow of the Underdark	realmshelps
+Shield Charge	CWar p105	crystalkeep+realmshelps
+Shield Dwarf Warder	Races of Faerûn	realmshelps
+Shield Expert	Sword and Fist	realmshelps
+Shield Maiden's Grace		realmshelps
+Shield Proficiency	PH p100	crystalkeep+realmshelps
+Shield Slam	CWar p105	crystalkeep+realmshelps
+Shield Sling	PH2 p82	crystalkeep+realmshelps
+Shield Snare	D309 p110; DR309 p110	crystalkeep+realmshelps
+Shield Specialization	PH2 p82	crystalkeep+realmshelps
+Shield Wall	Heroes of Battle	realmshelps
+Shield Ward	PH2 p82	crystalkeep+realmshelps
+Shield and Pike Style	D338 p92; DR338 p92	crystalkeep+realmshelps
+Shield of Blades	Players Guide to Eberron	dndtools
+Shield of Deneith	PGE p48	crystalkeep
+Shield of Siberys	Dragonmarked	dndtools
+Shield of Thought	Races of Eberron	dndtools
+Shielded Axe	RoS p144	crystalkeep+realmshelps
+Shielded Casting	RoS p144	crystalkeep+realmshelps
+Shielded Manifesting	Races of Stone	realmshelps
+Shieldmate	Miniatures Handbook	realmshelps
+Shifter Acrobatics		crystalkeep
+Shifter Agility	PGE p135	crystalkeep
+Shifter Defense	RoE p115	crystalkeep+realmshelps
+Shifter Defense, Greater	Eb p60; MM3 p150	crystalkeep
+Shifter Fercocity	Eb p54	crystalkeep
+Shifter Ferocity		realmshelps
+Shifter Instincts	Eb p60; RoE p115	crystalkeep+realmshelps
+Shifter Magnetism	PGE p135	crystalkeep
+Shifter Multiattack	Eb p60	crystalkeep+realmshelps
+Shifter Savagery	RoE p115	crystalkeep
+Shifter Stamina	RoE p115	crystalkeep
+Shifter Stealth	PGE p135	crystalkeep
+Shiftsilver Mastery	Dragon #355	realmshelps
+Ship Savvy	RoE p112	crystalkeep
+Ship's Mage	Compete Warrior	realmshelps
+Shipborn	DR323 p90	crystalkeep+realmshelps
+Shock Trooper	CWar p112	crystalkeep+realmshelps
+Shock Wave	Draconomicon	realmshelps
+Shocking Fist	PGE p151	crystalkeep
+Short Attention Span	Dragon #328	realmshelps
+Short Haft	PH2 p82	crystalkeep+realmshelps
+Short Temper	Dragon #328	realmshelps
+Short of Breath	Dragon #333	realmshelps
+Shorten Grip	DR331 p28	crystalkeep+realmshelps
+Shot on the Run	CAdv p10; PH p100	crystalkeep+realmshelps
+Shou Expatriate		crystalkeep
+Shriveling Touch	Miniatures Handbook	realmshelps
+Shrouded Dance	Complete Scoundrel	dndtools
+Shuffled Interior	Dragon #354	realmshelps
+Sickening Grasp	Complete Mage	realmshelps
+Sickening Sonata	DR336 p99	crystalkeep+realmshelps
+Sickening Strike	Drow of the Underdark	realmshelps
+Sidestep	Miniatures Handbook	realmshelps
+Sidestep Charge	Races of Stone	realmshelps
+Siege Commander	Dragon #348	realmshelps
+Signature Spell	PGF p43	crystalkeep
+Signature spell	Player's Guide to Faerûn	realmshelps
+Sildəyur		crystalkeep
+Silencing Strike	RoS p144	crystalkeep+realmshelps
+Silent Method	DR319 p60	crystalkeep+realmshelps
+Silent Spell	PH p100	crystalkeep+realmshelps
+Silver Blood	Champions of Valor	realmshelps
+Silver Dragon Lineage	Dragon Magic	realmshelps
+Silver Fang	Champions of Valor	realmshelps
+Silver Marches		crystalkeep
+Silver Mind Blade	Dragon #341	realmshelps
+Silver Palm	PGF p43	crystalkeep+realmshelps
+Silver Smite	Eb p60	crystalkeep+realmshelps
+Silver Tongue	Oriental Adventures	realmshelps
+Silver Tracery	RoE p120	crystalkeep
+Silverymoon		crystalkeep
+Simple Weapon Proficiency	PH p100	crystalkeep+realmshelps
+Single Blade Style		realmshelps
+Sivis	EB p65; EB p80	crystalkeep
+Skewer Foe	Champions of Ruin	realmshelps
+Skill Attunement	DR351 p87	crystalkeep+realmshelps
+Skill Focus	CAdv p10; PH p100	crystalkeep+realmshelps
+Skill Knowledge	Unearthed Arcana	dndtools
+Skilled Pact Making	Tome of Magic	realmshelps
+Skilled Telekinetic	Lords of Madness	realmshelps
+Skin Of The Construct	Complete Psionic	realmshelps
+Skincaster	Dragon #359	realmshelps
+Skinny	Unearthed Arcana	realmshelps
+Skipped From Dragon Magazine		crystalkeep
+Skulker	Dragon #328	realmshelps
+Skyrider	Races of Faerûn	realmshelps
+Slashing Flurry	Player's Handbook II	crystalkeep+realmshelps
+Slave to Evil	Elder Evils	dndtools
+Slaver Seeker	Dragon #352	realmshelps
+Slayer of Dragons	Dragon Magic	realmshelps
+Slender	DR324 p78	crystalkeep+realmshelps
+Slimy Spell	Dragon #358	realmshelps
+Slippery	Unearthed Arcana	realmshelps
+Slippery Skin	Exemplars of Evil	dndtools
+Slipping Past	Complete Scoundrel	dndtools
+Slow	Unearthed Arcana	realmshelps
+Slow (Flaw)	Unearthed Arcana	realmshelps
+Slow (trait)	Unearthed Arcana	dndtools
+Slow Healing	Dragon #328	realmshelps
+Slow Maturation	DR324 p78	crystalkeep+realmshelps
+Slow To Anger	Dragon #325	realmshelps
+Sly	Dungeon #294	realmshelps
+Sly Fortune	Complete Scoundrel	realmshelps
+Smatterings	RoD p153	crystalkeep+realmshelps
+Smite Carrier	DR337 p98	crystalkeep+realmshelps
+Smite Fiery Foe	Frostburn	realmshelps
+Smiting Power	Champions of Valor	realmshelps
+Smiting Spell	Player's Handbook II	crystalkeep+realmshelps
+Smooth Talk	PGF p43	crystalkeep+realmshelps
+Smooth Talk (FR)		realmshelps
+Smooth Talk (OA)	Oriental Adventures	realmshelps
+Snake Blood	PGF p43	crystalkeep+realmshelps
+Snap Kick	Tome of Battle	realmshelps
+Snatch		realmshelps
+Snatch And Swallow	Draconomicon	realmshelps
+Snatch Arrows	PH p100; PH1 p100	crystalkeep+realmshelps
+Snatch Trophy		realmshelps
+Snatch Weapon	Champions of Ruin	realmshelps
+Sneak Attack of Opportunity	DR340 p87	crystalkeep+realmshelps
+Sneak Attack of Opportunity (Epic)	Epic Level Handbook	realmshelps
+Snow Eagle Aerie		crystalkeep
+Snow Tiger Berserker	Unapproachable East	realmshelps
+Snowcasting	Frostburn	realmshelps
+Snowflake Wardance	Frostburn	realmshelps
+Snowrunner	Frostburn	realmshelps
+Sociable Personality	RoD p153	crystalkeep+realmshelps
+Social Recovery	Complete Scoundrel	dndtools
+Solid Freeze	Dragon #313	realmshelps
+Solid Visage	Ghostwalk	realmshelps
+Solitary Paragon	Dragon #324	realmshelps
+Somatic Weaponry	Complete Mage	realmshelps
+Song Of The Heart	Eberron Campaign Setting	realmshelps
+Song of the Dead	DR312 p37	crystalkeep+realmshelps
+Song of the Heart	Eb p60	crystalkeep
+Song of the White Raven	Tome of Battle	realmshelps
+Soothe The Beast	Eberron Campaign Setting	realmshelps
+Soothe the Beast	EB p60	crystalkeep
+Soul Of The North	Complete Arcane	realmshelps
+Soul of Honor	Oriental Adventures	realmshelps
+Soul of Loyalty	Oriental Adventures	realmshelps
+Soul of Sincerity	Oriental Adventures	realmshelps
+Soul of the North	CArc p83	crystalkeep
+Soulblade Warrior	Races of Eberron	dndtools
+Soulsight	Magic of Incarnum	realmshelps
+Soultouched Spellcasting	Magic of Incarnum	realmshelps
+Soultouched Spellshaping	Magic of Incarnum	dndtools
+Sound Of Silence	Complete Scoundrel	realmshelps
+Southern Magician	Races of Faerûn	realmshelps
+Southern Star Mastery	Dragon #315	realmshelps
+Speak to the Masses	DR339 p36	crystalkeep
+Speaking Wild Shape	Masters of the Wild	realmshelps
+Spear Master	DR30 p89	crystalkeep+realmshelps
+Spear of Doom	Dragonlance Campaign Setting	dndtools
+Special Dispensation	Cityscape	realmshelps
+Specialized	Unearthed Arcana	realmshelps
+Spectacular Death Throes	Dragonlance Campaign Setting	dndtools
+Spectral Skirmisher	PH2 p83	crystalkeep+realmshelps
+Spectral Strike	Complete Divine	realmshelps
+Speed of Thought	Expanded Psionics Handbook	realmshelps
+Speedy Ascent	Complete Scoundrel	dndtools
+Spell Drain		realmshelps
+Spell Focus	PH p100	crystalkeep+realmshelps
+Spell Focus (Chaos)	Complete Divine	dndtools
+Spell Focus (Chaos, Evil, Good, or Law)	Libris Mortis	realmshelps
+Spell Focus (Evil)	Complete Divine	dndtools
+Spell Focus (Good)	Book of Exalted Deeds	dndtools
+Spell Focus (Law)	Complete Divine	dndtools
+Spell Girding	Complete Divine	realmshelps
+Spell Graft	DR336 p103	crystalkeep+realmshelps
+Spell Hand	CArc p83	crystalkeep+realmshelps
+Spell Knowledge	Magic of Faerûn	realmshelps
+Spell Mastery	PH p100	crystalkeep+realmshelps
+Spell Opportunity		realmshelps
+Spell Penetration	PH p100	crystalkeep+realmshelps
+Spell Power	Epic Level Handbook	realmshelps
+Spell Rehearsal	Races of the Dragon	realmshelps
+Spell Reprieve	Lost Empires of Faerûn	realmshelps
+Spell Siphoning	Web	realmshelps
+Spell Specialization		realmshelps
+Spell Stowaway	Tome and Blood	realmshelps
+Spell Thematics	PGF p44	crystalkeep+realmshelps
+Spell Toughness		realmshelps
+Spell-Linked Familiar	PH2 p83	crystalkeep+realmshelps
+Spell-like Ability Focus	Races of Faerûn	realmshelps
+Spellbinder	Dragon #311	realmshelps
+Spellcaster Support	Oriental Adventures	realmshelps
+Spellcasting Harrier	Oriental Adventures	realmshelps
+Spellcasting Prodigy	PGF p44	crystalkeep+realmshelps
+Spellchanneling		realmshelps
+Spellfire Wielder	Magic of Faerûn	realmshelps
+Spellgifted	Unearthed Arcana	realmshelps
+Spellrazor	RoS p144	crystalkeep+realmshelps
+Spellstrike	Dragon #311	realmshelps
+Spellwise	Player's Guide to Faerûn	realmshelps
+Spellwise (OA)	Dragon #318	realmshelps
+Spider Bite	Player's Guide to Faerûn	realmshelps
+Spider Companion	Drow of the Underdark	realmshelps
+Spiderfriend Magic	Drow of the Underdark	realmshelps
+Spiked Body	RoE p120	crystalkeep
+Spinning Defense		crystalkeep+realmshelps
+Spinning Halberd	CWar p114	crystalkeep+realmshelps
+Spire Walking	Races of Faerûn	realmshelps
+Spirit Sense	Heroes of Horror	realmshelps
+Spirit Spell	DR343 p91	crystalkeep+realmshelps
+Spirit of Dawn	DR340 p48	crystalkeep+realmshelps
+Spirit of the Beast	Dragon #313	realmshelps
+Spirit of the Sea	DR319 p60	crystalkeep+realmshelps
+Spirit of the Stallion	Players Guide to Eberron	dndtools
+Spirited Charge	PH p101	crystalkeep+realmshelps
+Spiritual Counter	Complete Champion	realmshelps
+Spiritual Force	Complete Psionic	realmshelps
+Spit Poison	Lords of Madness	realmshelps
+Spit Venom	Serpent Kingdoms	realmshelps
+Split Breath	Draconomicon	realmshelps
+Split Chakra	Magic of Incarnum	realmshelps
+Split Psionic Ray	Expanded Psionics Handbook	realmshelps
+Split Ray	CDiv p84	crystalkeep+realmshelps
+Spontaneous Casting	Eberron Campaign Setting	crystalkeep+realmshelps
+Spontaneous Domain Access	Epic Level Handbook	realmshelps
+Spontaneous Domains	Complete Champion	realmshelps
+Spontaneous Healer	CDiv p84	crystalkeep+realmshelps
+Spontaneous Spell	Epic Level Handbook	realmshelps
+Spontaneous Summoner	Complete Divine	realmshelps
+Spontaneous Wounder	CDiv p84	crystalkeep+realmshelps
+Spook Animals	Dragon Annual 5	realmshelps
+Spot the Weak Point	Complete Scoundrel	dndtools
+Spreading Breath	Draconomicon	realmshelps
+Spring Attack	Player's Handbook	realmshelps
+Sprinter	DR313 p31	crystalkeep+realmshelps
+Spurn Death's Touch	Libris Mortis	realmshelps
+Spurn Death’s Touch	LM p30	crystalkeep
+Stable Footing	RoE p112	crystalkeep
+Staff Expertise	Web	realmshelps
+Staggering Blow		realmshelps
+Staggering Critical	Drow of the Underdark	realmshelps
+Staggering Strike	CAdv p112	crystalkeep+realmshelps
+Staggering Strike (Epic)	Dragon #297	realmshelps
+Stalwart	DR323 p96	crystalkeep+realmshelps
+Stalwart Defender	Dragon #315	realmshelps
+Stalwart Defense	PH2 p83	crystalkeep+realmshelps
+Stalwart Planar Ally	Planar Handbook	realmshelps
+Stamp	Savage Species	realmshelps
+Stand Still	Expanded Psionics Handbook	realmshelps
+Starblessed	DR340 p26	crystalkeep+realmshelps
+Starborn	DR340 p26	crystalkeep+realmshelps
+Starspawn	Lords of Madness	realmshelps
+Startouched	DR340 p26	crystalkeep+realmshelps
+Steadfast Determination	PH2 p83	crystalkeep+realmshelps
+Steady Concentration	RoS p144	crystalkeep+realmshelps
+Steady Mountaineer	RoS p144	crystalkeep+realmshelps
+Steady Rider	Web	realmshelps
+Steal And Strike	Drow of the Underdark	realmshelps
+Stealthy	PH p101	crystalkeep+realmshelps
+Steam Magic	Forgotten Realms Campaign Setting	realmshelps
+Stench of the Dead	UA p94	crystalkeep+realmshelps
+Sterling Reputation	Dungeon #294	realmshelps
+Stigmata	BoED p46	crystalkeep+realmshelps
+Still Mystery	Tome of Magic	realmshelps
+Still Spell	PH p101	crystalkeep+realmshelps
+Sting Strike	DR345 p40	crystalkeep+realmshelps
+Stirge	DR340 p28	crystalkeep
+Stitched Flesh Familiar	LM p30	crystalkeep+realmshelps
+Stocky	DR324 p78	crystalkeep+realmshelps
+Stone Breaker	Secrets of Sarlona	dndtools
+Stone Colossus	Races of Faerûn	realmshelps
+Stone Form	RoS p144	crystalkeep+realmshelps
+Stone Monkey	DR319 p71	crystalkeep+realmshelps
+Stone Power	Tome of Battle	realmshelps
+Stone Rage	RoS p144	crystalkeep+realmshelps
+Stone Slide	Races of Faerûn	realmshelps
+Stone Soul	Und p27	crystalkeep+realmshelps
+Stoneback	RoS p144	crystalkeep+realmshelps
+Stoneblood	Races of Faerûn	realmshelps
+Stoneshaper	Races of Faerûn	realmshelps
+Stonewalker Fist	Races of Faerûn	realmshelps
+Storm Bolt	Complete Mage	realmshelps
+Storm Magic		realmshelps
+Storm of Flying Strikes	DR332 p88	crystalkeep+realmshelps
+Storm of Throws	Epic Level Handbook	realmshelps
+Stormguard Warrior	Tome of Battle	realmshelps
+Stormheart	PGF p44	crystalkeep+realmshelps
+Stormheart (OA)	Dragon #318	realmshelps
+Stormrider	Dragonmarked	dndtools
+Storms Riposte	Dragonmarked	dndtools
+Stout	Unearthed Arcana	realmshelps
+Stowaway	DR350 p69	crystalkeep+realmshelps
+Strafing Breath	Dragonlance Campaign Setting	dndtools
+Strategic Reassignment	Dragon #341	realmshelps
+Street Smart		realmshelps
+Strength Devotion	Complete Champion	realmshelps
+Strength Of Two	Complete Psionic	realmshelps
+Strength of Conviction	Exemplars of Evil	dndtools
+Strength of The Charger	Oriental Adventures	realmshelps
+Strength of The Crab	Oriental Adventures	realmshelps
+Strength of The Shadows	Dragon #330	realmshelps
+Strength of the Shadows	DR330 p48	crystalkeep
+Strengthen Astral Cord	Dragon #306	realmshelps
+Strengthen Bloodline	Dragon #315	realmshelps
+Strengthen Resilience	DR337 p98	crystalkeep
+Strengthened Resilience	Dragon #337	realmshelps
+Strong Coils	Dragon #313	realmshelps
+Strong Mind	Eb p61; Und p27	crystalkeep+realmshelps
+Strong Soul		realmshelps
+Strong Soul (OA)	Oriental Adventures	realmshelps
+Strong Stomach	DR326 p55	crystalkeep+realmshelps
+Stubby Fingers	Dragon #328	realmshelps
+Stunning Fist	DR309 p68; PH2 p85	crystalkeep+realmshelps
+Stunning Master	Secrets of Sarlona	dndtools
+Stygian Archon	Complete Psionic	realmshelps
+Stygian Power	Complete Psionic	realmshelps
+Subdual Substitution		realmshelps
+Subduing Strike	BoED p46	crystalkeep+realmshelps
+Subsonics	CAdv p112	crystalkeep+realmshelps
+Subtle Sigil	RoD p154	crystalkeep+realmshelps
+Sudden Ability Focus	Tome of Magic	realmshelps
+Sudden Draw	Complete Scoundrel	dndtools
+Sudden Empower	CArc p83	crystalkeep+realmshelps
+Sudden Energy Affinity	Miniatures Handbook	realmshelps
+Sudden Enlarge	Miniatures Handbook	realmshelps
+Sudden Extend	CArc p83	crystalkeep+realmshelps
+Sudden Maximize	CArc p83	crystalkeep+realmshelps
+Sudden Quicken	CArc p83	crystalkeep+realmshelps
+Sudden Recovery	Tome of Battle	realmshelps
+Sudden Silent	CArc p83	crystalkeep+realmshelps
+Sudden Still	CArc p83	crystalkeep+realmshelps
+Sudden Widen	CArc p83	crystalkeep+realmshelps
+Sudden Willow Strike	PGE p109	crystalkeep
+Sugliin Mastery	Frostburn	realmshelps
+Summon Earth Elemental	Races of Faerûn	realmshelps
+Summon Elemental	Complete Mage	realmshelps
+Sun Devotion	Complete Champion	realmshelps
+Sun School	CWar p112	crystalkeep+realmshelps
+Sun Soul Monk	Champions of Valor	realmshelps
+Sunder	Players Handbook V35	dndtools
+Sunken Song	Stormwrack	realmshelps
+Sunlight Eyes	Complete Mage	realmshelps
+Superior Expertise		realmshelps
+Superior Flanking	DR343 p93	crystalkeep+realmshelps
+Superior Hearing	DR324 p78	crystalkeep+realmshelps
+Superior Initiative	Epic Level Handbook	realmshelps
+Superior Sense of Smell	DR324 p78	crystalkeep+realmshelps
+Superior Summons	Dragon #311	realmshelps
+Superior Taste	DR324 p78	crystalkeep+realmshelps
+Superior Touch	DR324 p78	crystalkeep+realmshelps
+Superior Unarmed Strike	Tome of Battle	realmshelps
+Superior Vision	DR324 p78	crystalkeep+realmshelps
+Supernatural Blow	Masters of the Wild	realmshelps
+Supernatural Crusader	Tome of Magic	realmshelps
+Supernatural Instincts	Fiendish Codex II	realmshelps
+Supernatural Opportunist	Tome of Magic	realmshelps
+Supernatural Transformation	Savage Species	realmshelps
+Superstitious	Dragon #325	realmshelps
+Suppress Presence	DR343 p32	crystalkeep+realmshelps
+Suppress Weakness	Draconomicon	realmshelps
+Supremely Confident	DR335 p88	crystalkeep+realmshelps
+Sure Hand	Complete Scoundrel	realmshelps
+Surefooted	Player's Guide to Faerûn	realmshelps
+Surge of Malevolence	Heroes of Horror	realmshelps
+Surprising Riposte	Drow of the Underdark	realmshelps
+Surrogate Spellcasting	Savage Species	realmshelps
+Survivor	Dragon #315	realmshelps
+Survivor (FR)		realmshelps
+Survivor (GW)	Ghostwalk	realmshelps
+Survivor's Luck	Complete Scoundrel	realmshelps
+Suspicious	Unearthed Arcana	realmshelps
+Sustaining Darkness	DR330 p48	crystalkeep+realmshelps
+Svirfneblin Figment Master	Races of Faerûn	realmshelps
+Swamp Stalker	Savage Species	realmshelps
+Swarm Fighting	CWar p105	crystalkeep
+Swarm Of Arrows	Epic Level Handbook	realmshelps
+Swarm's Embrace	Sham p158	crystalkeep
+Swarmfighting		realmshelps
+Sweeping Trip	Dragon #343	realmshelps
+Sweet Talker	Complete Scoundrel	realmshelps
+Swift Ambusher	Complete Scoundrel	realmshelps
+Swift Avenger	Dragon #357	realmshelps
+Swift Call	Complete Champion	realmshelps
+Swift Concentration	Complete Scoundrel	dndtools
+Swift Hunter	Complete Scoundrel	realmshelps
+Swift Tumbler	Cityscape	realmshelps
+Swift Wild Shape	Complete Champion	realmshelps
+Swift and Silent	Player's Guide to Faerûn	realmshelps
+Swiftness of Orien	PGE p48	crystalkeep
+Swiftwing Elite	RoE p116	crystalkeep
+Swim Like A Fish	Complete Divine	realmshelps
+Swim like a Fish	CDiv p85	crystalkeep
+Swim-by Attack	Stormwrack	realmshelps
+Sword of the Arcane Order	Champions of Valor	realmshelps
+Symbiont Mastery	Magic of Eberron	dndtools
+Synad Multitask, Enhanced	Complete Psionic	realmshelps
+Tactical Advantage	DR335 p90	crystalkeep+realmshelps
+Tactical Reassignment	Dragon #341	realmshelps
+Tactile Trapsmith	CAdv p112	crystalkeep+realmshelps
+Tail Constrict	Draconomicon	realmshelps
+Tail Rattle	Serpent Kingdoms	realmshelps
+Tail Snap	Dragon #314	realmshelps
+Tail Sweep Knockdown	Draconomicon	realmshelps
+Taint Spell	Dragon #303	realmshelps
+Tainted Construction	Web	realmshelps
+Tainted Druid	Web	realmshelps
+Tainted Fury	Heroes of Horror	realmshelps
+Tainted Strike	DR327 p71	crystalkeep+realmshelps
+Talenta Dinosaur Bond	PGE p75	crystalkeep
+Talenta Drifter	PGE p75	crystalkeep
+Talenta Warrior	RoE p112	crystalkeep
+Talented	Expanded Psionics Handbook	realmshelps
+Talented Crafter	Unearthed Arcana	realmshelps
+Talfirian Song	Races of Faerûn	realmshelps
+Tall Mouther Hunter	Shining South	realmshelps
+Tap Mantle	Complete Psionic	realmshelps
+Tashalar		crystalkeep
+Tashalatora	Secrets of Sarlona	dndtools
+Tattoo Focus		realmshelps
+Tattoo Magic		realmshelps
+Technomagical Implant	DR351 p92	crystalkeep+realmshelps
+Telepathic Affinity	Complete Psionic	realmshelps
+Telling Blow	PH2 p83	crystalkeep+realmshelps
+Temerad Mastery I	Dragon #309	realmshelps
+Temerad Mastery II	Dragon #309	realmshelps
+Temper Ectoplasm	Ghostwalk	realmshelps
+Tempest Breath	Draconomicon	realmshelps
+Tempting Fate	Complete Scoundrel	realmshelps
+Tenacious Magic		realmshelps
+Tenacious Magic (Epic)	Epic Level Handbook	realmshelps
+Tenacious Mind	Web	realmshelps
+Tentacular Stalk	Dragon #313	realmshelps
+Terrain Specialist	Dragon #329	realmshelps
+Terrifying Rage		realmshelps
+Terrifying Strike	Drow of the Underdark	realmshelps
+Terrifying Warrior	DR343 p93	crystalkeep+realmshelps
+Test Subject	Dragon #333	realmshelps
+Tested	Dragon #319	realmshelps
+Tested – Gift of Prophesy	DR319 p61	crystalkeep
+Tested – Gift of Sight	DR319 p61	crystalkeep
+Tested – Ye’Cind’s Ear	DR319 p61	crystalkeep
+Tethyr		crystalkeep
+Tharashk	EB p64; EB p80	crystalkeep
+Tharsult		crystalkeep
+Thay		crystalkeep
+The Gentle Way Mastery	Oriental Adventures	realmshelps
+The North		crystalkeep
+The Ride		crystalkeep
+The Vast		crystalkeep
+Theocrat	Races of Faerûn	realmshelps
+Thesk		crystalkeep
+Theurgic Bond	DR325 p62	crystalkeep+realmshelps
+Theurgic Creationist	DR325 p62	crystalkeep+realmshelps
+Theurgic Empathy	DR325 p62	crystalkeep+realmshelps
+Theurgic Mount	DR325 p62	crystalkeep+realmshelps
+Theurgic Specialist	DR325 p62	crystalkeep+realmshelps
+Thick-skinned	Savage Species	realmshelps
+Thicken Mucus	Lords of Madness	realmshelps
+Thindol		crystalkeep
+Third Time's The Charm	Complete Scoundrel	realmshelps
+Thorny Reputation	Dungeon #294	realmshelps
+Thousand Faces Jutsu	DR342 p85	crystalkeep+realmshelps
+Thrall Bred	Lords of Madness	realmshelps
+Thrall To Demon		realmshelps
+Three Mountains	CWar p114	crystalkeep+realmshelps
+Thri-kreen Carapace	Complete Psionic	realmshelps
+Thri-kreen Claw	Complete Psionic	realmshelps
+Thri-kreen Displacement	Complete Psionic	realmshelps
+Thri-kreen Poison	Complete Psionic	realmshelps
+Throat Punch	Complete Scoundrel	realmshelps
+Throw Anything	CWar p105	crystalkeep+realmshelps
+Thug		realmshelps
+Thunder Twin		realmshelps
+Thunderclap	Savage Species	realmshelps
+Thundering Rage	Epic Level Handbook	realmshelps
+Thuranni	EB p66; EB p80	crystalkeep
+Tiger Blooded	Tome of Battle the Book of Nine Swords	dndtools
+Tigerblooded	Tome of Battle	realmshelps
+Tightening Coils	Dragon #305	realmshelps
+Timely Misdirection	Complete Scoundrel	dndtools
+Tireless	Player's Guide to Faerûn	realmshelps
+Tireless (OA)	Dragon #318	realmshelps
+Titan Fighting	RoS p145	crystalkeep+realmshelps
+Token	TM332 p91	crystalkeep
+Token Familiar	Dragon #280	realmshelps
+Tomb-Born Fortitude	LM p30	crystalkeep
+Tomb-Born Resilience	LM p30	crystalkeep
+Tomb-Born Vitality	LM p31	crystalkeep
+Tomb-Tainted Soul	LM p31	crystalkeep
+Tomb-born Fortitude	Libris Mortis	realmshelps
+Tomb-born Resilience	Libris Mortis	realmshelps
+Tomb-born Vitality	Libris Mortis	realmshelps
+Tomb-tainted Soul	Libris Mortis	realmshelps
+Tongue of Mouqol	DR315 p54	crystalkeep+realmshelps
+Toothed Blow	Stormwrack	realmshelps
+Tormented Knight	Champions of Ruin	realmshelps
+Tormtor School	Drow of the Underdark	realmshelps
+Torpid	Unearthed Arcana	realmshelps
+Torpoid	Unearthed Arcana	dndtools
+Totem Companion	Eberron Campaign Setting	crystalkeep+realmshelps
+Touch Attack Specialization	Ghostwalk	realmshelps
+Touch Of Distraction	Complete Mage	realmshelps
+Touch Of Healing	Complete Champion	realmshelps
+Touch Spell Specialization	CArc p83	crystalkeep+realmshelps
+Touch of Benevolence	Champions of Ruin	realmshelps
+Touch of Captivation	PGE p35	crystalkeep
+Touch of Deception	PGE p35	crystalkeep
+Touch of Golden Ice	BoED p47	crystalkeep+realmshelps
+Touch of Hate	Player's Guide to Faerûn	realmshelps
+Touch of Madness	Dragon #332	crystalkeep+realmshelps
+Touch of Silver	FoE p148	crystalkeep
+Touch of Summoning	PGE p35	crystalkeep
+Touch of Taint	Heroes of Horror	realmshelps
+Touched By Ether	Dragon #343	realmshelps
+Touched by Ether	DR343 p32	crystalkeep
+Touchstone	Sandstorm	realmshelps
+Toughening Transmutation	Complete Mage	realmshelps
+Toughness	PH p101	crystalkeep+realmshelps
+Tower Shield Proficiency	PH p101	crystalkeep+realmshelps
+Toxic Mucus	Lords of Madness	realmshelps
+Track	CAdv p10; CDav p10; Eb p61; PH p101; RoD p154	crystalkeep+realmshelps
+Trade-Off	Web	realmshelps
+Trample	PH p101	crystalkeep+realmshelps
+Transdimensional Breath	Dragons of Faerun	dndtools
+Transdimensional Power		realmshelps
+Transdimensional Spell	CArc p84; CDiv p85	crystalkeep+realmshelps
+Transfer Legacy	Weapons of Legacy	realmshelps
+Transfer Spell	Dungeon #307	realmshelps
+Trap Engineer	Dungeonscape	realmshelps
+Trap Mastery	Dragon #347	realmshelps
+Trap Sense	Epic Level Handbook	realmshelps
+Trap Sensitivity	Dungeonscape	realmshelps
+Trap Warden	Dragonmarked	dndtools
+Trapmaster	Lost Empires of Faerûn	realmshelps
+Travel Devotion	Complete Champion	realmshelps
+Treefriend	Savage Species	realmshelps
+Treetopper		realmshelps
+Tremendous Charge	Dragonlance Campaign Setting	dndtools
+Tribal Trait	Dragon #352	realmshelps
+Triceratop's Charge	Dragon #315	realmshelps
+Trickery Devotion	Complete Champion	realmshelps
+Trivial Knowledge	RoS p145	crystalkeep+realmshelps
+Trivial Performer	Dragon #324	realmshelps
+Troll Blooded	DR319 p61	crystalkeep+realmshelps
+Trophy Collector	Player's Handbook II	realmshelps
+Trophy Hunter	DR332 p91	crystalkeep+realmshelps
+True Believer	CDiv p86; DR333 p50	crystalkeep+realmshelps
+Truebond	Dungeon Master's Guide II	realmshelps
+Truedive Elite	RoE p116	crystalkeep
+Truename	Dragon #317	realmshelps
+Truename Rebuttal	Tome of Magic	realmshelps
+Truename Research	Tome of Magic	realmshelps
+Truename Scholar	Dragon #346	realmshelps
+Truename Training	Tome of Magic	realmshelps
+Trustworthy	Song and Silence	realmshelps
+Tumbling Crawl	Complete Scoundrel	dndtools
+Tumbling Feint	PH2 p84	crystalkeep+realmshelps
+Tunnel Fighting	RoS p145	crystalkeep+realmshelps
+Tunnel Rat	DR326 p55	crystalkeep+realmshelps
+Tunnel Riding	Races of Stone	realmshelps
+Tunnelfighter	Und p27	crystalkeep+realmshelps
+Tunnelrunner	Und p27	crystalkeep+realmshelps
+Turn Elemental	DR343 p91	crystalkeep+realmshelps
+Turtle Dart	RoS p145	crystalkeep+realmshelps
+Tutor	DR310 p70	crystalkeep+realmshelps
+Twin Power	Expanded Psionics Handbook	realmshelps
+Twin Spell	PH p98	crystalkeep+realmshelps
+Twin Sword Style		realmshelps
+Twin Sword Style (OA)	Dragon #318	realmshelps
+Twist the Knife	Exemplars of Evil	dndtools
+Twisted Charge	Complete Scoundrel	dndtools
+Two-Bladed Mind Blade	Complete Psionic	realmshelps
+Two-Weapon Attack of Opportunity	DR340 p87	crystalkeep+realmshelps
+Two-Weapon Defense	PH p102	crystalkeep+realmshelps
+Two-Weapon Fighting	PH p102	crystalkeep+realmshelps
+Two-Weapon Pounce	PH2 p84	crystalkeep+realmshelps
+Two-Weapon Rend	PH2 p84	crystalkeep+realmshelps
+Umbral Mark	Dragonmarked	dndtools
+Umbral Shroud	Complete Champion	realmshelps
+Umbral Spell	Drow of the Underdark	realmshelps
+Unarmored Body	RoE p120	crystalkeep
+Unavoidable Strike	Expanded Psionics Handbook	realmshelps
+Unbalancing Blow	Dragon #295	realmshelps
+Unbalancing Strike	Oriental Adventures	realmshelps
+Unbelievable Luck	Complete Scoundrel	realmshelps
+Uncanny Accuracy	Epic Level Handbook	realmshelps
+Uncanny Forethought	Exemplars of Evil	dndtools
+Uncanny Scent	Savage Species	realmshelps
+Uncanny Speed	Dragon #312	realmshelps
+Uncivilized	Unearthed Arcana	realmshelps
+Unconditional Power	Expanded Psionics Handbook	realmshelps
+Uncontrollable Rage	Dragon #325	realmshelps
+Undead Command	DR327 p71	crystalkeep+realmshelps
+Undead Empathy	Eb p61	crystalkeep+realmshelps
+Undead Familiar	Dragon #280	realmshelps
+Undead Leadership	LM p31	crystalkeep+realmshelps
+Undead Legion	Dragon #298	realmshelps
+Undead Mastery		realmshelps
+Undead Meldshaper	Magic of Incarnum	realmshelps
+Underfoot Combat	RotW p152	crystalkeep+realmshelps
+Undermountain Tactics	Dungeonscape	realmshelps
+Undertone of Heresy	DR336 p99	crystalkeep+realmshelps
+Undo Resistance	Fiendish Codex II	realmshelps
+Undying Fate	RoD p155	crystalkeep+realmshelps
+Unholy Strike		realmshelps
+Unicorn	DR340 p30	crystalkeep
+Unlock Dragonmark	Dragonmarked	dndtools
+Unnatural Enemy	Players Guide to Eberron	dndtools
+Unnatural Will	Heroes of Horror	realmshelps
+Unnerving Calm	Tome of Battle	realmshelps
+Unorthodox Flurry		realmshelps
+Unquenchable Flame of Life	FoE p148; LM p31	crystalkeep+realmshelps
+Unreactive	Unearthed Arcana	realmshelps
+Unseelie Court Member	Web	realmshelps
+Unseelie Court Noble Kelir	Web	realmshelps
+Unseen Arrow	Tome of Magic	realmshelps
+Unsettling Enchantment	Complete Mage	realmshelps
+Unspeakable Vow	Drow of the Underdark	realmshelps
+Unther		crystalkeep
+Unyielding Bond of Soul	FoE p148	crystalkeep
+Up The Walls	Expanded Psionics Handbook	realmshelps
+Up the Hill	Complete Scoundrel	dndtools
+Upgrade Chain	Web	realmshelps
+Upgrade Power	Dragon #287	realmshelps
+Urban Stealth	RoD p154	crystalkeep+realmshelps
+Urban Tracking	Eb p61; RoD p154	crystalkeep+realmshelps
+Uthgardt Tribefolk		crystalkeep
+Utterance Focus	Tome of Magic	realmshelps
+Utterance of the Crafted Tool	Tome of Magic	realmshelps
+Utterance of the Evolving Mind	Tome of Magic	realmshelps
+Utterance of the Perfected Map	Tome of Magic	realmshelps
+Vaasa		crystalkeep
+Vadalis	EB p64; EB p80	crystalkeep
+Vae School	Drow of the Underdark	realmshelps
+Valenar Trample	Players Guide to Eberron	dndtools
+Vampire Hunter	LM p31	crystalkeep+realmshelps
+Vast		crystalkeep
+Vathrin Stigmata	DR319 p61	crystalkeep+realmshelps
+Vatic Gaze	PH2 p85	crystalkeep+realmshelps
+Vatun's Touch	DR319 p61	crystalkeep+realmshelps
+Vault		crystalkeep+realmshelps
+Veil of Cyric	City of Splendors: Waterdeep	realmshelps
+Venerable Elder	DR334 p84	crystalkeep+realmshelps
+Vengeance of Noon	DR340 p48	crystalkeep+realmshelps
+Vengeful Spirit	Complete Mage	realmshelps
+Vengeful Surge	Fiendish Codex II	realmshelps
+Venom's Gift	Complete Champion	realmshelps
+Venomless	Dragon #325	realmshelps
+Venomous Strike	Drow of the Underdark	realmshelps
+Vermin Companion	Eb p62	crystalkeep+realmshelps
+Vermin Shape	Eb p62	crystalkeep+realmshelps
+Vermin Trainer	Drow of the Underdark	realmshelps
+Vermin Wild Shape	Epic Level Handbook	realmshelps
+Verminfriend	Drow of the Underdark	realmshelps
+Verminous Graft	Dragon #336	realmshelps
+Verninous Graft	DR336 p108	crystalkeep
+Versatile Combatant	Drow of the Underdark	realmshelps
+Versatile Performer	CAdv p112	crystalkeep+realmshelps
+Versatile Spellcaster	Races of the Dragon	realmshelps
+Versatile Tyrant	Dragon #313	realmshelps
+Versatile Unarmed Strike	PH2 p85	crystalkeep+realmshelps
+Vestige, Improved	Tome of Magic	realmshelps
+Vestigial Wings	Fiendish Codex I	realmshelps
+Veteran Knowledge	Heroes of Battle	realmshelps
+Vexing Flanker	PH2 p85	crystalkeep+realmshelps
+Via Negativa	Champions of Ruin	realmshelps
+Vicious Claws	Dragon #312	realmshelps
+Vicious Wound	Savage Species	realmshelps
+Victor's Luck	Complete Scoundrel	realmshelps
+Vile Deathstrike	Web	realmshelps
+Vile Ki Strike	Book of Vile Darkness	realmshelps
+Vile Martial Strike	Book of Vile Darkness	realmshelps
+Vile Natural Attack	Book of Vile Darkness	realmshelps
+Vile Smite	Web	realmshelps
+Vilhon Reach		crystalkeep
+Violate Spell	Book of Vile Darkness	realmshelps
+Violate Spell-Like Ability	Book of Vile Darkness	realmshelps
+Virulent Poison	Savage Species	realmshelps
+Vital Recovery	Tome of Battle	realmshelps
+Vohoun Eye	DR350 p69	crystalkeep+realmshelps
+Voice of Bitter Experience	Dragon #354	realmshelps
+Voice of Winds	Dragon #311	realmshelps
+Voice of the Green	Dragon #325	realmshelps
+Voice of the Mage	Dragon #359	realmshelps
+Voice of the Void	DR330 p48	crystalkeep
+Voices of The Void	Dragon #330	realmshelps
+Volatile Escalation	Complete Psionic	realmshelps
+Volatile Leech	Complete Psionic	realmshelps
+Volley Commander	Dragon #348	realmshelps
+Vorpal Strike	Epic Level Handbook	realmshelps
+Vow of Abstinence	BoED p47	crystalkeep+realmshelps
+Vow of Chastity	BoED p47	crystalkeep+realmshelps
+Vow of Decadance	Drow of the Underdark	dndtools
+Vow of Decadence	Drow of the Underdark	realmshelps
+Vow of Nonviolence	BoED p47	crystalkeep+realmshelps
+Vow of Obedience	BoED p48	crystalkeep+realmshelps
+Vow of Peace	BoED p48	crystalkeep+realmshelps
+Vow of Poverty	BoED p48	crystalkeep+realmshelps
+Vow of Purity	DR324 p103	crystalkeep+realmshelps
+Vow of The Spider Queen	Drow of the Underdark	realmshelps
+Vow of Vengeance	Drow of the Underdark	realmshelps
+Vremyonni Training	Unapproachable East	realmshelps
+Vulnerable	Unearthed Arcana	realmshelps
+Wakefulness	Web	realmshelps
+Walk the Walls	Complete Scoundrel	dndtools
+Wall Breaker	Dragon #285	realmshelps
+Wall Jumper	Complete Scoundrel	dndtools
+Wand Expertise	Web	realmshelps
+Wand Mastery	Eb p62	crystalkeep+realmshelps
+Wand Surge	Magic of Eberron	dndtools
+Wanderer's Diplomacy	PH2 p85	crystalkeep+realmshelps
+Wandstrike	CArc p84	crystalkeep+realmshelps
+War Chant	DR335 p88	crystalkeep+realmshelps
+War Devotion	Complete Champion	realmshelps
+War Magic Study	DR309 p46	crystalkeep+realmshelps
+Ward of Khyber	Dragonmarked	dndtools
+Warden Initiate	Abp p62	crystalkeep+realmshelps
+Warning Shout	Complete Scoundrel	realmshelps
+Warped Mind	Lords of Madness	realmshelps
+Warrior Instinct	Oriental Adventures	realmshelps
+Warrior Shugenja	Oriental Adventures	realmshelps
+Warrior of The Phalanx	Dragon #324	realmshelps
+Wastri's Blessing	DR315 p54	crystalkeep+realmshelps
+Water Adaptation		realmshelps
+Water Bloodline		realmshelps
+Water Devotion	Complete Champion	realmshelps
+Water Focus	DR314 p45	crystalkeep+realmshelps
+Water Heritage	Planar Handbook	realmshelps
+Water Splitting Stone	PH2 p85	crystalkeep+realmshelps
+Waterborn	Dragon #311	realmshelps
+Waterspawn	Lords of Madness	realmshelps
+We Few, We Happy Few	DR335 p88	crystalkeep+realmshelps
+Weak Will	Unearthed Arcana	realmshelps
+Weaken the Heart	DR344 p103	crystalkeep+realmshelps
+Weakening Touch	CWar p106	crystalkeep+realmshelps
+Wealdath		crystalkeep
+Weapon Bound	Dragon #326	realmshelps
+Weapon Finesse	PH p102	crystalkeep+realmshelps
+Weapon Focus	PH p102	crystalkeep+realmshelps
+Weapon Group (Axes)	Unearthed Arcana	realmshelps
+Weapon Group (Basic Weapons)	Unearthed Arcana	realmshelps
+Weapon Group (Bows)	Unearthed Arcana	realmshelps
+Weapon Group (Claw Weapons)	Unearthed Arcana	realmshelps
+Weapon Group (Crossbows)	Unearthed Arcana	realmshelps
+Weapon Group (Double Weapons)	Unearthed Arcana	dndtools
+Weapon Group (Druid Weapons)	Unearthed Arcana	realmshelps
+Weapon Group (Exotic Double Weapons)	Unearthed Arcana	realmshelps
+Weapon Group (Exotic Weapons)	Unearthed Arcana	realmshelps
+Weapon Group (Flails and Chains)	Unearthed Arcana	realmshelps
+Weapon Group (Heavy Blades)	Unearthed Arcana	realmshelps
+Weapon Group (Light Blades)	Unearthed Arcana	realmshelps
+Weapon Group (Maces and Clubs)	Unearthed Arcana	realmshelps
+Weapon Group (Monk Weapons)	Unearthed Arcana	realmshelps
+Weapon Group (Picks and Hammers)	Unearthed Arcana	realmshelps
+Weapon Group (Polearms)	Unearthed Arcana	realmshelps
+Weapon Group (Slings and Thrown Weapon	Unearthed Arcana	dndtools
+Weapon Group (Slings and Thrown Weapons)	Unearthed Arcana	realmshelps
+Weapon Group (Spears and Lances)	Unearthed Arcana	realmshelps
+Weapon Specialization	PH p102	crystalkeep+realmshelps
+Weapon Supremacy	PH2 p85	crystalkeep+realmshelps
+Weapon and Torch	Dungeonscape	realmshelps
+Weathered Traveler	Dragon #308	realmshelps
+Wedded to History	Dragon #354	realmshelps
+Wedded to the Light	Dragon #358	realmshelps
+Well Read	DR315 p54	crystalkeep+realmshelps
+Well Traveled	DR319 p61	crystalkeep+realmshelps
+Western Heartlands		crystalkeep
+Whip Climber	Complete Scoundrel	dndtools
+Whirling Steel Strike	Eb p62	crystalkeep+realmshelps
+Whirlwind Attack	PH p102	crystalkeep+realmshelps
+Whirlwind Tail Sweep	Draconomicon	realmshelps
+Whispered Secrets	RoD p155	crystalkeep+realmshelps
+White Dragon Lineage	Dragon Magic	realmshelps
+White Raven Defense	Tome of Battle	realmshelps
+White Scorpion Strike	RoE p112	crystalkeep
+Wholesome Fare	DR337 p98	crystalkeep
+Wholesome Fire	Dragon #337	realmshelps
+Widen Aura of Courage	Epic Level Handbook	realmshelps
+Widen Aura of Despair	Epic Level Handbook	realmshelps
+Widen Power	Expanded Psionics Handbook	realmshelps
+Widen Spell		realmshelps
+Widen Supernatural Ability	Tome of Magic	realmshelps
+Wield Oversized Weapon	Compete Warrior	realmshelps
+Wightblade	Dragon #348	realmshelps
+Wild	Dragon #329	realmshelps
+Wild Cohort	Web	realmshelps
+Wild Talent		realmshelps
+Wild Touch	DR326 p80	crystalkeep+realmshelps
+Wildhunt	Eberron Campaign Setting	dndtools
+Wildhunt Elite	RoE p116	crystalkeep
+Wildspeak	Dragon #291	realmshelps
+Willing Deformity		realmshelps
+Wind Oxen Jutsu	DR342 p85	crystalkeep+realmshelps
+Wind and Fire	Secrets of Sarlona	dndtools
+Wind-Guided Arrows	Complete Mage	realmshelps
+Windsinger	Stormwrack	realmshelps
+Wing Expert	Races of the Dragon	realmshelps
+Winged Warrior	RotW p153	crystalkeep+realmshelps
+Wingover		realmshelps
+Wings of The Wraith	Dragon #330	realmshelps
+Wings of the Wraith	DR330 p48	crystalkeep
+Wingstorm		realmshelps
+Winter's Blast	Complete Mage	realmshelps
+Winter's Champion	Frostburn	realmshelps
+Winter's Child	Savage Species	realmshelps
+Winter's Mount	Frostburn	realmshelps
+Winters Mark	Dragonmarked	dndtools
+Wisdom Breeds Caution	Und p27	crystalkeep+realmshelps
+Wise Elder	DR334 p84	crystalkeep+realmshelps
+Wise to Your Ways	Ghostwalk	realmshelps
+Witchlight	Ghostwalk	realmshelps
+Wizards' Reach		crystalkeep
+Wolf Berserker	Unapproachable East	realmshelps
+Wolf's Bite	DR351 p87	crystalkeep+realmshelps
+Wolfpack	RotW p153	crystalkeep+realmshelps
+Wolverine's Rage	CDiv p86	crystalkeep+realmshelps
+Woodland Archer	RotW p154	crystalkeep+realmshelps
+Woodwise		realmshelps
+Word Given Form	Tome of Magic	realmshelps
+Words of Creation	BoED p48	crystalkeep+realmshelps
+Words of Draconic Power	Dragon Magic	realmshelps
+World Weary	DR319 p61	crystalkeep+realmshelps
+Worldly Focus	FoE p147	crystalkeep
+Wormbound	Dragon #343	crystalkeep+realmshelps
+Wounding Attack	Expanded Psionics Handbook	realmshelps
+Wounding Spell	Lost Empires of Faerûn	realmshelps
+Wrest Possession	RoE p148	crystalkeep
+Wyrmgrafter	Races of the Dragon	realmshelps
+Wyvern	DR340 p29	crystalkeep
+Xaniqos School	Drow of the Underdark	realmshelps
+Xeph Burst Extra	Complete Psionic	realmshelps
+Xeph Celerity	Complete Psionic	realmshelps
+Yondalla's Sense	RoW p152	crystalkeep+realmshelps
+Yuirwood		crystalkeep
+Zagyg's Favor	DR319 p61	crystalkeep+realmshelps
+Zen Archery	CWar p106	crystalkeep+realmshelps
+Zen Fortitude	DR351 p87	crystalkeep+realmshelps
+Zone of Animation		realmshelps
+[Creature Type] Trainer	Arms and Equipment Guide	dndtools

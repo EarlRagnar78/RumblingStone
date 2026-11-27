@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: canali
+expected_outcome: |
+  unstable, testing, stable; almeno 14 giorni e 10 run della CI su main.

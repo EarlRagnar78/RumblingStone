@@ -4,6 +4,9 @@
 ```statblocco
 gs: 9
 tipo: Medium dragon (augmented outsider, native), Esperto 2 / Acolita 6, CB
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 20
 ca-dettaglio: contatto 15, colta alla sprovvista 16 (+4 Des, +4 naturale, +1 amuleto, +1 deviazione)
 pf: 44
@@ -17,6 +20,8 @@ attacchi:
   - Distanza balestra leggera perfetta +9 (1d8/19-20)
 voci:
   - Incantesimi:  14 + Livello Incantesimo
+  - Equipaggiamento da combattimento: perla del potere 1° (2), perla del potere 2° (2)
+  - Altro equipaggiamento: amuleto dell'armatura naturale +1, anello di protezione +1, mantello del carisma +4, balestra leggera perfetta con 10 quadrelli, lente d'ingrandimento
 ```
 
 **Razza:** Tiefling Mezzo-Drago (Bianco)
@@ -205,3 +210,7 @@ Boost log: correzione dei conti (SRD) — GS 9 → 9 — incantesimi al giorno, 
 > - era: tipo Esterno (Nativo, Potenziato) → ora Drago (esterno nativo potenziato), come vuole il template mezzo-drago
 > - era: Carisma 18 «+3 potenziamento» → ora 19, col *Mantello del Carisma +4*; il modificatore resta +4
 <!-- /storico -->
+
+> RC-001 (2026-11-15, ADR-0134) `[CANONE — DM 2026-11-15, RC-001]`: tutto l'elenco di §Equipaggiamento Posseduto: amuleto e anello nella CA 20, mantello del Carisma +4 nel Carisma 19 (DM 2026-10-18), quattro perle per gli incantesimi che la tabella dell'Acolita da sola non dà, balestra perfetta nell'attacco, lente. Vestiario e diario senza valore. Nessun numero cambia.
+
+> Equipaggiamento sopra la tabella: scelta del DM (card del 2026-11-15). Vale almeno 30.436 mo (2.000 + 2.000 + 16.000 + 10.000 + 335 + 100 + 1 dei quadrelli) contro i 9.400 della Tabella 4-23 del DMG 3.5 per i suoi 8 livelli di classe (il modificatore di livello del suo modello draconico la scheda non lo scrive, e alzerebbe il tetto); il GS resta 9 e nessun numero cambia.

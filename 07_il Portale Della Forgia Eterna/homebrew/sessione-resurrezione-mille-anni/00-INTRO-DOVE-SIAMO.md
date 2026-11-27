@@ -75,7 +75,7 @@ I capitoli segnano **✉ Si consegna qui** nel punto esatto di ogni foglio, e
 `DEF-3` §0 ha la stessa tabella in ordine di gioco.
 
 <!-- apparato -->
-**Come si stampa** (lo standard di [`GUIDA-BOOKLET-E-PDF`](../../../docs/guides/GUIDA-BOOKLET-E-PDF.md)):
+**Come si stampa** (lo standard di [`GUIDA-BOOKLET-E-PDF`](../../../docs/how-to/GUIDA-BOOKLET-E-PDF.md)):
 il corredo intero, con un comando dalla radice del repo:
 `python3 scripts/dm.py corredo "07_il Portale Della Forgia Eterna/homebrew/sessione-resurrezione-mille-anni/ARC07-SERATA-RESURREZIONE.corredo.json" --stampa`.
 Fa questo booklet e il volume dei giocatori, e ne misura i PDF. Per una pagina ✉ per file, da mandare a un giocatore:

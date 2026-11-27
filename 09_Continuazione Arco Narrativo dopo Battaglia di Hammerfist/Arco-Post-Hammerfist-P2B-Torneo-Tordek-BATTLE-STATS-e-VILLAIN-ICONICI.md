@@ -63,15 +63,16 @@ Gladiatore brutale che usa catene chiodate e acrobazie; perfetto come boss di me
 
 **Kragar “Re delle Catene”** – Fighter 8 / Rogue 4, Umano malvagio
 
-- PF 88 (8d10 + 4d6, Cos 16)  
+- PF 98 (8d10 + 4d6 + 36, Cos 16)  
 - CA 23 (armatura a bande + Des + schivare)  
 - Iniziativa +3; Velocità 9 m  
-- For 18, Des 16, Cos 16, Int 12, Sag 10, Car 12  
+- For 18, Des 16, Cos 16, Int 13, Sag 10, Car 12  
 - Attacchi:
   - Catena chiodata +16/+11 (2d4+6, portata 3 m, Tripping)  
-  - Attacco furtivo +3d6 (quando flanka o il bersaglio è sbilanciato)  
+  - Attacco furtivo +2d6 (quando fiancheggia o il bersaglio è sbilanciato)  
 - TS: Temp +9, Rif +7, Vol +4  
-- Talenti: Combat Reflexes, Improved Trip, Weapon Focus (catena chiodata), Improved Disarm, Power Attack.
+- Talenti: Exotic Weapon Proficiency (catena chiodata), Combat Expertise, Combat Reflexes, Improved Trip, Weapon Focus (catena chiodata), Improved Disarm, Power Attack.
+<!-- storico: fino al 2026-11-19 pf 88, furtivo +3d6, Int 12 e senza Competenza nelle armi esotiche né Maestria in combattimento. Ladro 4 dà +2d6; 8d10+4d6 col primo dado pieno e Cos +3 danno 98; Sbilanciare e Disarmare Migliorato vogliono Maestria in combattimento, che vuole Int 13 (scelta del DM sulla card del 2026-11-19) -->
 
 **Mosse speciali**
 
@@ -79,6 +80,18 @@ Gladiatore brutale che usa catene chiodate e acrobazie; perfetto come boss di me
   - 1/round come azione di round completo, attacca fino a 3 nemici entro 3 m con –2 a tutti gli attacchi; se colpisce almeno 2 bersagli, può tentare un Trip gratuito su uno di loro.  
 - **Pioggia di Ferri** (Ex):  
   - 1/giorno, azione standard: colpisce un bersaglio con un attacco a catena che infligge +2d6 danni extra e prova di Riflessi CD 18 o il bersaglio è considerato “entangled” per 1 round (catene che avvolgono).
+
+**Tattiche** `[CANONE — DM 2026-11-15, card]` (schema delle tattiche dei draghi; numeri della scheda, nessuno nuovo)
+
+- *Carattere e obiettivo*: è un gladiatore da pubblico, e vuole vincere bene davanti alla folla più che uccidere. Teme una cosa sola: restare senza spazio per la catena. Entra a sorpresa nella Fase 2 dell'incontro 5 (variante «brutale», MINIMAPPA-TIMELINE, Incontro 5), quando l'Ironclad ha già consumato i PG. Vuole Tordek a terra davanti a tutti.
+- *Cosa sa dei PG*: ha visto Tordek dagli spalti nei Giorni 1 e 2. Sa che carica e chiude la distanza, e che da nano è difficile da sbilanciare (stabilità, +4 nell'SRD). Lo sbilancia lo stesso: misurato, gli conviene più che disarmarlo (vedi sotto).
+- *Ambiente*: colonne fluttuanti e piastre elettriche. Sta a 3 m, al limite della portata della catena, con una colonna fra sé e chi carica. Sbilancia **verso una piastra attiva** chi non è un nano.
+- *Round 1*: entra dal lato opposto all'Ironclad, per prendere i PG in mezzo e avere l'attacco furtivo sul fiancheggiamento. Con Riflessi in Combattimento colpisce chi attraversa la sua portata di 3 m.
+- *Round 2 e dopo*: se ha due PG entro 3 m usa Danza delle Catene. Altrimenti attacca con tutti e due i colpi della catena e con il primo prova Sbilanciare Migliorato: se riesce, l'attacco gratuito arriva con Tordek prono, e quando Tordek si rialza provoca un altro attacco (Riflessi in Combattimento). Tiene Pioggia di Ferri per chi tenta di uscire dalla sua portata.
+- *Adattamento*: se l'Ironclad cade, smette di recitare per il pubblico e mira al PG più ferito. Il passo indietro per tenere la portata non serve: la catena chiodata minaccia anche a 1,5 m, e Tordek lo raggiunge con un passo di 1,5 m e attacca con tutta la serie.
+- *Misura* (Tordek da solo, senza l'Ironclad; `plans/esperimenti/tattiche-2026-11-15/duelli_arc09.py`, 20.000 prove): Kragar si arrende sempre, in 2 round. Tordek finisce con 79 pf se Kragar lo sbilancia, 81 se si limita a colpire, 86 se prova a disarmarlo. Da solo contro Tordek è un ostacolo, non un pericolo: la minaccia vera è la Fase 2 dopo l'Ironclad.
+- *Morale*: sotto i 25 pf si arrende in modo teatrale, perché è un torneo. Nel Giorno 3, con l'invasione, sta sull'anello esterno a proteggere la folla (MINIMAPPA-TIMELINE, Giorno 3).
+- ⚠ Danza delle Catene e Pioggia di Ferri non sono SRD: la prima ricorda Attacco Turbinante, la seconda è una manovra della casa. Sono segnalate al thread delle regole e qui non si toccano.
 
 **Frase presentatore**
 

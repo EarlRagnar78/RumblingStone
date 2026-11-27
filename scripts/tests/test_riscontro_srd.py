@@ -45,6 +45,10 @@ def _db(percorso: Path) -> None:
     con.close()
 
 
+# Nell'SRD i titoli dei talenti portano il tipo fra <small>: il nome da solo deve trovarli.
+TALENTO = "### Improved Trip <small>[General]</small>\n\n**Benefit:** +4 bonus on your Strength check.\n"
+
+
 class Base(unittest.TestCase):
     """Una cache con due file dell'SRD e un libro del PRD, e un repo con un master."""
 
@@ -54,7 +58,8 @@ class Base(unittest.TestCase):
         self.cache = t / "cache"
         self.repo = t / "repo"
         self.repo.mkdir()
-        self.srd_file = {"magic-items/frecce.md": FRECCIA.encode(), "rules/scent.md": FIUTO.encode()}
+        self.srd_file = {"magic-items/frecce.md": FRECCIA.encode(), "rules/scent.md": FIUTO.encode(),
+                         "feats.md": TALENTO.encode()}
         srd_base = R.SRD35.cartella(self.cache)
         for rel, dati in self.srd_file.items():
             (srd_base / rel).parent.mkdir(parents=True, exist_ok=True)
@@ -206,6 +211,11 @@ class Comandi(Base):
         codice, _, err = self.esegui("--offline", "riscontra", f)
         self.assertEqual(codice, 2)
         self.assertIn("regex", err)
+
+    def test_regola_trova_il_talento_col_tipo_nel_titolo(self):
+        codice, out, _ = self.esegui("--offline", "regola", "Improved Trip", "--fonte", "srd35")
+        self.assertEqual(codice, 0)
+        self.assertIn("SRD 3.5, feats.md:1", out)
 
     def test_regola_per_nome(self):
         codice, out, _ = self.esegui("--offline", "regola", "Scent")

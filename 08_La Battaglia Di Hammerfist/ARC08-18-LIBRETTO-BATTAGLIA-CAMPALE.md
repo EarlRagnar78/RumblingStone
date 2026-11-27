@@ -41,7 +41,7 @@ Giorno 1, insieme ai modi di gioco (§9):
 | Eroe | Settore | Reparti | Fronte |
 |---|---|---|---|
 | **Borin** | il Cancello | due di Guardia del Cancello | 3 |
-| **Thorin** | le Mura | due di veterani | 3 |
+| **Harbek** | le Mura | due di veterani | 3 |
 | **Dara** | la Torre Ovest | due di balestrieri | 2 |
 | **Nala** | la Torre Est | due di veterani | 2 |
 
@@ -130,7 +130,7 @@ Ogni round il tuo eroe fa **una** di queste cose.
 
 - **Combattere.** Tira d20 + il **miglior bonus d'attacco** della sua scheda
   contro la DU di un reparto nemico del tuo settore, e usa la tabella unica.
-  Borin e Dara valgono da soli due reparti; Thorin e Nala poco più di uno.
+  Borin e Dara valgono da soli due reparti; Harbek e Nala poco più di uno.
   Dara, con l'arco, può tirare anche contro un reparto di un settore vicino.
 - **Comandare.** L'eroe non colpisce: gira fra i suoi, chiama i nomi, tiene
   la linea. **+2** a tutti i dadi, rossi e bianchi, dei suoi reparti per quel
@@ -286,11 +286,12 @@ hobgoblin (AU 12, DU 22), uno di guerrieri (AU 8, DU 20) e uno d'orchi (AU
 9, DU 16), arrivati al round prima. Il morale della rocca è +1, il primo
 giorno dà +1 al bianco. Il settore ha una tacca.
 
-1. **L'orda avanza.** Il fronte è pieno. Il DM gioca i giganti: un macigno
-   su un reparto di Borin. Il macigno lo tira il DM, ed è l'unico tiro che
-   non tirate voi: d20 = 17, + AU 14 =
-   **31**, contro DU 22 + 1 + 1 = **24**: supera di 7, il primo reparto perde
-   **2 PFU** (ne restano 10).
+1. **L'orda avanza.** Il fronte è pieno. Il DM gioca i giganti: due macigni
+   sul settore di Borin, e tutti e due cadono sul primo reparto. I macigni li
+   tira il DM, e sono gli unici tiri che non tirate voi. Il primo: d20 = 17,
+   + AU 9 = **26**, contro DU 22 + 1 + 1 = **24**: supera di 2, il reparto
+   perde 1 PFU. Il secondo: d20 = 16, + 9 = **25**: supera di 1, un altro PFU.
+   Il primo reparto ha perso **2 PFU** (ne restano 10).
 2. **Gli ordini.** Il giocatore mette il primo reparto contro gli hobgoblin e
    il secondo contro i guerrieri; l'orco resta senza nessuno davanti. Tutti e
    due **Colpire**; Borin **Combattere** sull'orco.
@@ -328,11 +329,12 @@ il DM racconta il conto.
 | **Guerrieri hobgoblin** | 8 | 20 | 11 | lenti, duri da finire |
 | **Orchi** | 9 | 16 | 8 | caricano a testa bassa: conviene **Caricare** |
 | **Lupi e goblin** | 9 | 19 | 10 | veloci, arrivano dai fianchi |
-| **Giganti** (carta) | 14 | — | — | lanciano macigni dal gomito della strada, a ~100 m; non si attaccano dalle mura |
+| **Giganti** (carta) | 9 | — | — | due per settore: lanciano macigni dal gomito della strada, a ~100 m; non si attaccano dalle mura |
 
 **Gli eroi.** Bonus d'attacco per **Combattere**, dalle schede del Bestiario:
 Borin **+21**, Dara **+19** (+25 contro gli orchi, +23 contro i giganti, +21
-con *grazia del gatto*), Thorin **+14**, Nala **+13**.
+con *grazia del gatto*), Harbek **+13**, Nala **+13**.
+<!-- storico: fino al 2026-11-19 Harbek +14, con Arma Focalizzata dal dominio della Guerra che Moradin non dà (scelta del DM sulla card del 2026-11-19) -->
 
 ---
 
@@ -360,7 +362,7 @@ arrivi alle mura. Il libretto si spiega subito prima, dopo il drago (§12), e
 questa è la prima volta che si tira.
 
 **La scena.** Ogni eroe guida una **squadra di guastatori**: un solo reparto
-(Borin la Guardia del Cancello, Thorin e Nala veterani, Dara balestrieri),
+(Borin la Guardia del Cancello, Harbek e Nala veterani, Dara balestrieri),
 sul pendio sotto le mura, senza merlature. Scavano fosse, abbattono pini sul
 sentiero, preparano frane. Le trappole sono già a metà: i round sono gli
 ultimi colpi di piccone. Ogni ora che rubano all'orda è un'ora in più per le

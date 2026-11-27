@@ -15,9 +15,9 @@
 
 **Implicazioni:**
 - PG hanno vinto battaglia tattica Hammerfist
-- MA l'orda strategica principale avanza comunque (Terrelton → Nimon's Gap → Brindol)
-- Hammerfist è sicura ma isolata (non può aiutare direttamente Brindol, troppo lontana)
-- I 90 nani salvati possono rinforzare Brindol (se PG li dirigono là)
+- MA l'orda strategica principale avanza comunque (Terrelton → Nimon's Gap → Rethmar)
+- Hammerfist è sicura ma isolata (non può aiutare direttamente Rethmar, troppo lontana)
+- I 90 nani salvati possono rinforzare Rethmar (se PG li dirigono là)
 
 ---
 
@@ -244,7 +244,7 @@ NEMICI arrivano da:
 🔴 Guerr. 5-6: Col T-U, Riga 32 (center push)
 
 PG DIFENSORI:
-🔵 Borin: Col T, Riga 22 (frontline, 3m da Hella)
+🔵 Borin Giuraferro: Col T, Riga 22 (frontline, 3m da Hella)
 🔵 PG2: Col Q, Riga 20 (flank west)
 🔵 PG3: Col X, Riga 20 (flank east)
 🔵 Hella: Col T, Riga 20 (CENTRO, casting, vulnerabile!)
@@ -264,9 +264,12 @@ SE Seedlings piantati:
   - 2 try bypass verso Hella (Athletics per jump over seedlings)
   - 2 ranged crossbow su Hella (attacchi disturbano Concentration!)
 
-**Aegis Fang Bonus (Borin):**
-- **Cleaving Finish:** Se Borin uccide Hell Hound, attacco gratis vs secondo!
-- **Dragon Taint Sense:** Avvisa Round 7: "Bestie fuoco... arrivano! Sud!"
+> **Borin Giuraferro** `[CANONE — DM 2026-11-15]`: è il pregen di Hammerfist sopravvissuto, che accompagna il gruppo; porta il suo *Martello da Guerra degli Avi +2* (ritornante), non Aegis Fang. Statistiche: `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md` §PNG giocabili e `Bestiario/png/Borin_Giuraferro.md` (CA 25, 142 pf, +21/+16/+11, 1d8+9/×3; Colpo Devastante +4d6 3/giorno, Postura Difensiva 3/giorno, Presenza Comandante +2 morale entro 9 m; talenti Incalzare e Riflessi in Combattimento). Se Borin è morto nel flashback, la scena va rifatta per il PG che ne prende il posto.
+> <!-- storico -->Fino al 2026-11-15 questa parte la teneva un «Borin» con Aegis Fang, che è l'ascia di Thorik: il DM ha scelto sulla card del 15/11 che sia il pregen Borin Giuraferro, col suo martello. Tolti i poteri dell'ascia (Purifying Strike, senso della corruzione, Defensive Stand, dragon bane).<!-- /storico -->
+
+**Borin Giuraferro (Martello degli Avi):**
+- **Incalzare (talento):** se Borin abbatte un Hell Hound, ha un attacco extra contro un altro nemico adiacente.
+- **Presenza Comandante:** +2 morale agli alleati entro 9 m finché resta in piedi.
 
 **Corona Adamantio:**
 - Chi indossa può **Command** Hell Hound (DC 18 Will): "Siediti!" o "Attacca alleato!"
@@ -300,7 +303,8 @@ SE Seedlings piantati:
 
 **Forze:**
 - 1 Drow Assassin (Rogue 9) - Invisibility pre-cast
-- 2 Drow Clerics (Cleric 8, dominio Guerra + Fuoco)
+- 2 Drow Clerics (Cleric 8, domini Distruzione + Inganno)
+<!-- storico: fino al 2026-11-19 «dominio Guerra + Fuoco» qui e «War + Trickery» nella scheda: Lolth non dà né Guerra né Fuoco (scelta del DM sulla card del 2026-11-19) -->
 - 4 Drow Veterans (Fighter 8)
 
 #### Battle Stats - Drow Assassin
@@ -338,14 +342,13 @@ SE Seedlings piantati:
 
 **Counterplay:**
 - **Ring Chaotic Illumination:** *Faerie Fire* at-will svela invisibile!
-- **Aegis Fang:** Borin ha "sense" tingle se assassino entro 15m (Wisdom DC 15 notice)
 - **Treant Seedlings:** Tremorsense 30ft, auto-detect assassino se entro 9m
 
 ---
 
 #### Battle Stats - Drow Clerics (2)
 
-**Drow Cleric of Lolth** (Cleric 8, domini: War + Trickery)
+**Drow Cleric of Lolth** (Cleric 8, domini: Destruction + Trickery)
 - **CR:** 9
 - **Init:** +1
 - **AC:** 22 (+7 armor [mithral chainmail +2], +1 Dex, +2 shield, +2 deflection)
@@ -358,27 +361,30 @@ SE Seedlings piantati:
 - **Spells:** CL 8th (DC 14 + spell level)
 
 **Prepared Spells:**
-- **4th (3):** *Flame Strike* (DC 18, 8d6 half fire/half divine), *Divine Power*, *Freedom of Movement*
-- **3rd (4):** *Dispel Magic*, *Searing Light* (+7 ranged touch, 8d8 vs undead), *Prayer*, *Invisibility Purge*
-- **2nd (5):** *Hold Person* (DC 16), *Spiritual Weapon*, *Bull's Strength* ×2, *Silence*
-- **1st (6):** *Bane*, *Bless*, *Divine Favor* ×2, *Shield of Faith* ×2
+- **4th (3+1):** *Poison* (DC 18, 1d10 Con, 1d10 Con a minute later), *Divine Power*, *Freedom of Movement*, *Confusion* (D, DC 18)
+<!-- storico: fino al 2026-11-19 al 4° c'era Flame Strike, che è di 5° e un chierico 8 non lancia (scelta del DM sulla card del 2026-11-19) -->
+- **3rd (4+1):** *Dispel Magic*, *Searing Light* (+7 ranged touch, 8d8 vs undead), *Prayer*, *Invisibility Purge*, *Contagion* (D, DC 17)
+- **2nd (4+1):** *Hold Person* (DC 16), *Spiritual Weapon*, *Bull's Strength*, *Silence*, *Invisibility* (D)
+- **1st (5+1):** *Bane*, *Bless*, *Divine Favor* ×2, *Shield of Faith*, *Disguise Self* (D)
+<!-- storico: fino al 2026-11-19 nessuno slot di dominio segnato, 3° e 4° senza lo slot (D), Bull's Strength ×2 e Shield of Faith ×2; slot dalla tabella SRD del chierico 8 con Sag 18 (scelta del DM sulla card del 2026-11-19) -->
 - **0 (6):** *Cure Minor Wounds* ×3, *Detect Magic* ×2, *Read Magic*
 
 **Domain Abilities:**
-- **War:** +8 BAB (already calculated), weapon focus free
-- **Trickery:** Bluff/Hide +2, *Disguise Self* 1/day
+- **Destruction:** smite 1/day, +4 to attack and +8 damage (SRD); BAB is +6 (cleric 8)
+- **Trickery:** Bluff, Disguise and Hide are class skills (SRD)
+<!-- storico: fino al 2026-11-19 «War: +8 BAB (already calculated), weapon focus free» e «Trickery: Bluff/Hide +2, Disguise Self 1/day»; il chierico 8 ha BAB +6, e il +10/+5 col morning star torna senza Weapon Focus (+6 BAB, +3 For con Bull's Strength, +1 arma) -->
 
 **Tactics:**
 - **Pre-Combat:** Cast *Shield of Faith*, *Divine Favor*, *Bull's Strength* (buffed già)
 - **Round 1:** *Prayer* (30ft radius: allies +1 luck, enemies -1)
-- **Round 2:** *Flame Strike* centered on Hella (8d6, Ref DC 18 half)
-  - Hella must Concentration DC 24 (10 + 8d6 half average = 14) or rituale interrupted!
+- **Round 2:** *Hold Person* on Hella (Will DC 16 negates; a new save each round) <!-- storico: fino al 2026-11-19 qui la chierica lanciava *Flame Strike* su Hella (8d6, Rifl CD 18, Concentrazione CD 24), che un chierico 8 non ha; *Hold Person* è la scelta del DM sulla card del 2026-11-19 -->
+  - If Hella fails she is paralyzed: the ritual stops while she is held, and the assassin goes for the coup de grace.
 - **Round 3+:** *Spiritual Weapon* (floating morningstar) harass Hella
 - **Healing:** *Cure Serious Wounds* 3d8+8 su alleati injured
 
 **Positioning:**
 - Start: Col P, Riga 25 (Cleric 1) + Col Z, Riga 25 (Cleric 2)
-- Range: 120ft *Flame Strike* easily reach Hella centro
+- Range: *Hold Person* is medium range (180 ft at CL 8), easily reaches Hella at the centre
 
 ---
 
@@ -460,7 +466,7 @@ LEGENDA · 🌿 zona verde protetta (raggio 15 m, +2 PF/round) · 🟧 cenere ca
 
 DISTANZE:
 - Hella (T20) → Hell Hounds (T35): 22.5m (15 quadrati) - 2 rounds arrival
-- Clerics (P-X, 27) → Hella: 10.5m (7 quadrati) - FLAME STRIKE RANGE!
+- Clerics (P-X, 27) → Hella: 10.5m (7 quadrati) - in range for HOLD PERSON
 - Assassin (T35) → Hella: 22.5m (15 quadrati) - 3 rounds sneak if undetected
 
 SCALA: Ogni quadrato = 1.5m × 1.5m · stessa radura e stesse coordinate della mappa del Cerchio Sacro (P1B)
@@ -477,8 +483,8 @@ SCALA: Ogni quadrato = 1.5m × 1.5m · stessa radura e stesse coordinate della m
 - **Assassin:** Move 40ft + Stealth +28 → Riga 31 (invisibile)
 
 **Round 23:**
-- **Cleric 1:** *Flame Strike* on Hella! (8d6, Ref DC 18)
-  - Hella MUST Concentration DC 24 or ritual phase FAILS!
+- **Cleric 1:** *Hold Person* on Hella! (Will DC 16) <!-- storico: fino al 2026-11-19 qui la chierica lanciava *Flame Strike* su Hella (8d6, Rifl CD 18, Concentrazione CD 24), che un chierico 8 non ha; *Hold Person* è la scelta del DM sulla card del 2026-11-19 -->
+  - If Hella fails, she is paralyzed and the ritual phase stops while she is held; the assassin closes in.
 - **Cleric 2:** *Spiritual Weapon* (floating morningstar harass Hella ogni round +10, 1d8+2)
 - **Veterans:** Engage PG defenders (full attack)
 - **Hell Hounds:** Breath weapon 30ft cone (include Hella + Seedlings!)
@@ -504,8 +510,7 @@ SCALA: Ogni quadrato = 1.5m × 1.5m · stessa radura e stesse coordinate della m
 **Counterplay PG:**
 - **Spot DC 28** notice assassino invisible (può tentare ogni round)
 - **Ring Faerie Fire:** Auto-reveals se cast entro 60ft
-- **Aegis Fang Warning (Borin):** Round 26, ascia sussurra: "Pericolo! Dietro druida!"
-  - Borin può ready action intercept assassin
+- **Borin Giuraferro:** nessun avviso dal martello. Se qualcuno vede l'assassino, Borin può preparare un'azione per mettersi fra lui e Hella
 
 ---
 
@@ -643,23 +648,16 @@ SCALA: 1 quadrato = 1.5m × 1.5m
 
 ### INTERAZIONI ARTEFATTI - FASE CRITICA
 
-**Aegis Fang Ultimate (Borin - Round 37):**
+**Borin Giuraferro contro la carica (Round 37):**
 
-> Mentre il Wyrmlord carica, **Aegis Fang URLA** nella mente di Borin. Non parole, ma pura determinazione nanica: "PROTEGGI! DRUIDA! NATURA! FRATELLO FORGIA!"
+Il martello non ha poteri suoi: Borin ferma il Wyrmlord con le regole.
+- **Azione preparata (round prima):** Borin prepara un movimento «se qualcuno carica Hella, mi metto sulla sua linea». La carica vuole un percorso libero: se Borin occupa la linea, il Wyrmlord non arriva a Hella e deve fermarsi o attaccare lui.
+- **Attacco d'opportunità:** il Wyrmlord che entra nell'area minacciata di Borin ne provoca uno: +21, 1d8+9/×3, +4d6 con Colpo Devastante. Riflessi in Combattimento gli dà più attacchi d'opportunità nello stesso round.
+- **Postura Difensiva:** se è già attiva, +4 For e Cos (+2 a colpire e ai danni, +2 pf per DV).
 
-**ABILITY UNLOCK: Defensive Stand (1/day):**
-- **Immediate Action** quando nemico carica alleato entro 15ft
-- Borin può **Intercept Charge** (si mette tra nemico e alleato)
-- Ottiene:
-  - +4 AC (total AC 28+)
-  - Attack of Opportunity con +8 bonus (+25 total hit!)
-  - Se colpisce: Nemico **FERMA charge** (no movement completo)
-- **Visual:** Aegis Fang lascia scia blu energia, Borin = muro invalicabile
-
-**Se Borin usa vs Wyrmlord Round 37:**
-- Wyrmlord fermato Col T, Riga 26 (prima raggiungere Hella!)
-- Borin colpo AoO: +25 hit, 1d10+15 + 2d6 dragon bane (Wyrmlord serve draghi!)
-- Wyrmlord forced melee duello con Borin (Hella safe!)
+**Se Borin si mette sulla linea al Round 37:**
+- Wyrmlord fermato Col T, Riga 26 (prima di raggiungere Hella)
+- Il duello è fra Borin e il Wyrmlord: Hella resta fuori portata
 
 ---
 
@@ -891,7 +889,7 @@ DIMENSIONI TOTALI MAPPA: 40 colonne × 40 righe = 60 m × 60 m, la stessa radura
 @north N
 @tipo tattica esterno
 @luogo Witchwood, Cerchio Sacro della Foresta
-@quota 300 m ; s.l.m., fondovalle della Witchwood [INFERRED — needs DM confirmation]
+@quota 300 m ; s.l.m., fondovalle della Witchwood [CANONE — DM 2026-11-05, P16, quota]
 @dislivello 0 m ; la radura è in piano con il bosco intorno
 @deroga m1/copertura ; radura del rituale bruciata dai drow: i ripari sono i sei menhir e i quattro alberelli, e difendere un altare scoperto è la scena
 @deroga m2/vuoto ; l'anello di cenere è campo aperto per costruzione: i drow lo attraversano sotto il tiro dei PG, ed è voluto
@@ -943,7 +941,7 @@ DIMENSIONI TOTALI MAPPA: 40 colonne × 40 righe = 60 m × 60 m, la stessa radura
 
 **ROUND 37 - CRITICAL:**
 - **Wyrmlord:** CHARGE Hella! (60ft, arriva Col T, Riga 26 se non intercettato!)
-  - **Aegis Fang Intercept:** Borin può bloccare (vedi sopra)
+  - **Intercetto di Borin Giuraferro:** può mettersi sulla linea di carica (vedi sopra)
   - Se non bloccato: Full attack vs Hella AC 10! (+20/+15/+10, quasi auto-hit!)
 - **Ogres:** Full Attack vs Treants NW/NE
   - Power Attack -5/+5: +13 (2d8+18) each swing
@@ -987,7 +985,7 @@ DIMENSIONI TOTALI MAPPA: 40 colonne × 40 righe = 60 m × 60 m, la stessa radura
 **Guadagni:**
 - ✅ Hella forma Elementale Natura (7 giorni, perfect stats)
 - ✅ 4 Young Treants alleati permanenti
-- ✅ Radicesaggio (Treant antico) + 20 Treant minori per battaglia Brindol
+- ✅ Radicesaggio (Treant antico) + 20 Treant minori per battaglia Rethmar
 - ✅ Benedizioni tutti artefatti (abilità unlocked permanent)
 - ✅ Intel completo campi drow (può sabotare pre-battaglia)
 - ✅ +100 reputation druidi/natura factions (aiuto battaglia finale)
@@ -1033,25 +1031,25 @@ DIMENSIONI TOTALI MAPPA: 40 colonne × 40 righe = 60 m × 60 m, la stessa radura
 - Day 21: Rituale (3 ore)
 - **COMPLETED:** Day 21 ore 09:00
 
-**Remaining Time to Brindol:**
+**Remaining Time to Rethmar:**
 - Day 21 → Day 42 = **21 giorni!**
 - Ma Nimon's Gap cade Day 26 (5 giorni!) se non aiutato
 
 **PG Choices Now:**
-1. **Return Brindol** (prep defenses, 3 giorni viaggio)
+1. **Return Rethmar** (prep defenses, 3 giorni viaggio)
 2. **Sabotage Campi Drow** (rallenta orda, 1-2 giorni)
 3. **Altre Quest Personali** (Warlock/Monaco, 2-3 giorni ciascuna)
 4. **Missioni Secondarie** (vedi Parte 2)
 
 **DM Pressure Message:**
 
-> Messaggero elfico arriva galoppo: "Hella! Trasformazione... incredibile! Ma... urgente! Nimon's Gap... mura deboli... cadono 5 giorni! Brindol chiede aiuto! E... c'è altro. Torre invisibile apparsa Old North Road. Warlock... il tuo Ring... risponde?"
+> Messaggero elfico arriva galoppo: "Hella! Trasformazione... incredibile! Ma... urgente! Nimon's Gap... mura deboli... cadono 5 giorni! Rethmar chiede aiuto! E... c'è altro. Torre invisibile apparsa Old North Road. Warlock... il tuo Ring... risponde?"
 
 **→ Hook per Quest 2 Warlock (Torre Invisibile)**
 
 ---
 
-**Prossimo File: PARTE 2 - Missioni Secondarie RHoD (Starsong Hill, Rhest, Ghostlord)**
+**Prossimo File: PARTE 2 - Missioni Secondarie RHoD (Starsong Hill, Lhesper, Ghostlord)**
 
 SCALA COMPLETATA TUTTI I DOCUMENTI: 1 quadrato = 1.5m × 1.5m!
 

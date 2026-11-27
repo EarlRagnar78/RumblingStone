@@ -108,3 +108,11 @@ Su `ARC07-TEASER-GIOCATORI-STAMPA.pdf` (3 pagine A4), `pdfcpu v0.11.0`:
 **Cosa NON decide.** Non apre la porta a una terza dipendenza binaria: la terza
 sarà un'altra decisione, con lo stesso onere: licenza aperta, eseguibile
 singolo, ripiego dichiarato, e una riga in `binari.TUTTI`.
+
+---
+
+## Emendamento del 2026-11-08 — lo strumento è pdfimpose
+
+**Stato**: accettato dal DM il 2026-11-08 · **Dettaglio**: [ADR-0116](ADR-0116-typst-si-installa-da-pypi.md).
+
+pdfcpu esce: era l'ultimo binario scaricato da GitHub Releases, e non è su PyPI. L'imposizione la fa `pdfimpose` (AGPL-3.0-or-later, da `requirements.txt`) con `saddle --signature 2x1`, misurato con lo stesso accoppiamento delle pagine di `pdfcpu booklet` su 19 booklet A5 e lo stesso foglio A4 (orizzontale invece che verticale). Resta tutto il resto di questo ADR: è opzionale, se manca la catena lo dice e prosegue, e il libretto non si versiona perché due esecuzioni non danno gli stessi byte. `-c disable` non serve più: pdfimpose non scrive configurazione nella casa di chi lo esegue.

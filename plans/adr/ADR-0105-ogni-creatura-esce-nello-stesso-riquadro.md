@@ -1,6 +1,6 @@
 # ADR-0105 — Ogni creatura esce in stampa nello stesso riquadro
 
-**Stato**: proposta
+**Stato**: proposta · il punto 7 è emendato da [ADR-0107](ADR-0107-chi-si-incontra-sta-nel-capitolo.md) (accettata, 2026-11-03): il riquadro sta anche nel capitolo, l'appendice resta
 **Data**: 2026-10-29
 **Decisione-fonte**: il DM (Jfs), 2026-10-29, sfogliando i booklet: *«perché i png i villan i mostri e gli altri pg che compaiono nello ap hanno sempre layout visivi diversi per esempio non so i draghi sembrano parti di testo mentre i png e forse boss minori hanno un layout grafico migliore […] possiamo rendere il layout uniforme per tutti i tipi di creature e png villan e mostri in modo che seguano lo stile layout migliore possibile misurando questo miglioramento anche nei booklet che vengono stampati?»*
 **Rapporti**: completa [ADR-0021](ADR-0021-statblocchi-machine-readable.md) (i numeri sono un blocco) e [ADR-0091](ADR-0091-la-scheda-del-png-ha-una-forma.md) (la scheda si legge in Difesa, Attacco, Statistiche, Capacità speciali, Tattiche), che fissavano la forma nel sorgente e non sulla carta; usa il tema di [ADR-0020](ADR-0020-edizione-da-stampa-su-un-secondo-binario.md). Il numero 0104 resta al thread delle immagini dei personaggi in posa, che lo ha proposto senza prenotarlo.

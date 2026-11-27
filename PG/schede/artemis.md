@@ -12,12 +12,12 @@ Classe, PF e stato di oggi: `campaign/state.yaml`, blocco `party` (e [`state.md`
 
 | | Catena | Oggi |
 |---|---|---:|
-| **FOR** | `[INFERRED]` — non attestato | — |
-| **DES** | `[INFERRED]` — non attestato | — |
-| **COS** | `[INFERRED]` — non attestato | — |
-| **INT** | `[INFERRED]` — non attestato | — |
-| **SAG** | `[INFERRED]` — non attestato | — |
-| **CAR** | `[INFERRED]` — non attestato | — |
+| **FOR** | 10 | 10 |
+| **DES** | 18 | 18 |
+| **COS** | 14 | 14 |
+| **INT** | 10 | 10 |
+| **SAG** | 10 | 10 |
+| **CAR** | 18 | 18 |
 
 ## Modificatori permanenti — 0
 

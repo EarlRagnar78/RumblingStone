@@ -48,6 +48,8 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
+from .sistemi import predefinito, sistema_di
+
 #: Le marche meccaniche che distinguono uno statblocco dalla prosa.
 _MARCA = r"(?:Taglia/Tipo|Taglia|DV|CA|PF|TS|BAB|GS|CR)"
 
@@ -149,10 +151,11 @@ def documenti_con_statistiche(root: Path) -> "list[str]":
             rel = str(p.relative_to(root))
             if "homebrew" in Path(rel).parts:
                 continue
-            # Il Drappo (PF1e, Golarion) non entra nel Bestiario (ADR-0017 §1).
-            # Stava fuori dal raggio finche' era in STANDALONE-*; dal 2026-11-01
-            # e' in 10-stand-alone/ e va escluso per nome, come fa il catalogo.
-            if "Il-Drappo-di-Tarsilia" in Path(rel).parts:
+            # Un modulo di un altro sistema (il Drappo e il Giardino PF1e) non
+            # entra nel Bestiario della campagna (ADR-0017 §1): lo dice
+            # sistemi.toml [moduli] (ADR-0111, L2). Prima si escludeva il Drappo
+            # per nome, e l'appendice del Giardino PF1e restava nel censimento.
+            if sistema_di(rel, root) != predefinito(root):
                 continue
             if _in_archivio(rel) and rel not in eletti:
                 continue

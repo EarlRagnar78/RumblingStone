@@ -1,10 +1,14 @@
-# Flind (Gnoll Elite — MM II) [ACCEPTED — DM-canon 2026-05-05]
+# Flind (Gnoll Elite — MM II) [CANONE — DM 2026-05-05]
 **Faction**: gnoll | **Role**: melee-elite | **Environment**: any | **CR**: 3 | **Source**: MM II p.104 Flind | **Status**: inferred
 
 
 ```statblocco
 gs: 3
 tipo: Medium humanoid (gnoll) HD 3d8+6 (19 HP)
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
+sensi: scurovisione 18 m
 ca: 18
 ca-dettaglio: (+5 breastplate, +1 Dex, +2 natural)
 pf: 19
@@ -18,3 +22,5 @@ attributi: For 17 Des 12 Cos 14 Int 10 Sag 12 Car 9
 > [GENERATO] `attributi` copiati dalla riga delle caratteristiche di questa stessa scheda da `scripts/genera_attributi.py`.
 
 Medium humanoid (gnoll) HD 3d8+6 (19 HP). AC 18 (+5 breastplate, +1 Dex, +2 natural). Fort +5 Ref +2 Will +2. BAB/Grapple +2/+5. Flindbar +6 (2d4+3 + entangle Ref CD 13) or unarmed +5 (1d3+3). Str 17 Dex 12 Con 14 Int 10 Wis 12 Cha 9. Special: flindbar entangle, +2 vs disarm. Darkvision 60 ft. Notes: Flinderoso élite, ~50 unità. Entangle letale contro PG.
+
+> correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12, lotto 1-bis): campo `sensi` aggiunto, gnoll: scurovisione 18 m (SRD). La scheda non la scriveva.

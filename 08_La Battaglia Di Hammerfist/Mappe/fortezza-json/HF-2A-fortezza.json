@@ -244,7 +244,7 @@
     6.0,
     1.5
    ],
-   "label": "CANCELLO PRINCIPALE: luce 6 m, alto 8 m, 200 pf; soglia a +80 m sulla piana (950 m s.l.m.)"
+   "label": "CANCELLO PRINCIPALE: luce 6 m, alto 8 m, 200 pf; soglia a +80 m sulla piana (600 m s.l.m.)"
   },
   {
    "type": "🌉",
@@ -512,7 +512,7 @@
   },
   {
    "faction": "Nani",
-   "name": "Madre Dana Forgiapietra",
+   "name": "Madre Dagmar Forgiapietra",
    "token": "🔵",
    "at": [
     90.0,
@@ -537,7 +537,7 @@
   },
   {
    "faction": "Nani",
-   "name": "Thorin Runaforte",
+   "name": "Harbek Runaforte",
    "token": "🔵",
    "at": [
     87.0,
@@ -577,7 +577,7 @@
   },
   {
    "faction": "Nani",
-   "name": "Borin Ferropugno",
+   "name": "Borin Giuraferro",
    "token": "🔵",
    "at": [
     88.5,
@@ -773,7 +773,7 @@
   "Geometria di riferimento: tabella MISURE in testa a Hammerfist-L2-REVISED-Ultra-Clear.md (2026-10-21); quote a gradoni decise dal DM il 2026-10-22 (+80 cortile esterno, +100 cortile interno, +120 torri e cittadella)."
  ],
  "luogo": "Hammerfist, porta principale",
- "quota": "950 m ; s.l.m., la soglia del cancello principale",
+ "quota": "600 m ; s.l.m., la soglia del cancello principale",
  "dislivello": "+80 m ; sulla piana, in fondo alla strada a tornanti",
  "deroghe": [
   {

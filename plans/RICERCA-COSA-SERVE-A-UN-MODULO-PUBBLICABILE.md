@@ -127,6 +127,29 @@ Un audit onesto dice anche cosa lasciar stare:
 
 Chiuso nel **Lotto 5** del `PIANO-DRAPPO-DI-TARSILIA-STANDALONE-PF1E.md` (2026-08-15):
 A1-A5, B1-B2, B4, C1-C2, D1-D4, E (UVTT + template prop).
-Restano ⬜: **B3** (carte da tavolo), **C3** (recap automatico fra le serate),
-**D5** (budget PF1e come script) — tutti e tre gated su una sessione vera, perché
-senza tempi reali si ottimizzerebbe alla cieca.
+Restavano ⬜ (decise il 2026-11-13, qui sotto): **B3** (carte da tavolo) e **C3** (recap automatico fra le serate),
+gated su una sessione vera, perché senza tempi reali si ottimizzerebbe alla
+cieca.
+
+📅 **B3, 2026-11-13, Jfs sulla card (D5 del piano di recupero): «subito»**, non
+la consigliata (che era aspettare una serata giocata). 🟡 **Fatta dalla PR #423**:
+36 carte in `homebrew/DRAPPO-CARTE-DA-TAVOLO.manifest.json` (`"layout": "carte"`,
+`scripts/typst/carte-tavolo.typ`, dati letti dai master da
+`scripts/dmcore/carte_tavolo.py`), PDF/UA-1 e PDF/A-2a. Il limite resta quello
+scritto sopra: sono disegnate senza i tempi di una corsa giocata e si rivedono
+dopo la prima serata. Il 🟡 diventa ✅ solo allora.
+
+⏳ **C3, 2026-11-13, Jfs sulla card: «dopo una serata del Drappo»**. Parte
+quando Jfs dice di averne giocata una; con i tempi veri di quella serata si
+decide che cosa il riassunto deve leggere (oggi `session_recap.py` legge lo
+`state.md` della campagna). Fuori da `adozioni-in-attesa.json`: il modulo non
+registra le serate in un file che uno script possa contare (R-6 del piano di
+recupero). Legata a C3: la trascrizione locale di
+[RICERCA-TOOL-ESTERNI §3](RICERCA-TOOL-ESTERNI-DM-2026-08.md), che Jfs vuole
+provare su una serata.
+
+**D5** ✅ **superata il 2026-11-09, già fatta** da un altro piano: il budget
+PF1e è nel plugin del sistema (`sistemi/pf1e/dati/incontri.toml`, PE per GS e
+difficoltà dal PRD; metodo «somma_px» in `sistemi/pf1e/codice/incontri.py`), e
+`suggest_encounter.py --sistema pf1e` combina i GS con quello (SISTEMI-DI-GIOCO
+L4, 2026-11-07; MOTORE-AGNOSTICO F5, 2026-11-08).

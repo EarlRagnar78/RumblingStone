@@ -226,7 +226,7 @@ niente da indagare** e l'orco è solo un orco, ma sono duecento.
 
 ## 8. Applicazione proposta agli archi in corso
 
-> ⚠️ **`[PROPOSTA — needs DM confirmation]`.** Questa sezione non è canone e
+> ⚠️ **`[PROPOSTA — da confermare dal DM]`.** Questa sezione non è canone e
 > non è stata scritta in `state.md`: ARC-08 e ARC-09 sono **preparati** e la
 > loro colorazione è una decisione del DM, non di un agente
 > (`campaign-coherence.md` §0). Serve come esempio lavorato del §1 e come
@@ -282,7 +282,7 @@ sceglie dove andare.
 | Campi Drow | infiltrazione (Andor) | — | procedurale, non deduttivo: giusto così |
 | Rethmar (battaglia finale) | guerra | — | il dominante torna, ed è giusto che torni **alla fine** |
 | P1A/P1B/P1C (Hellas, Treant, Rituale) | esplorazione / rito | — | ⚠️ **sono il primo blocco dell'arco: puliti** (regola anti-ritmo 3) |
-| Rhest · Starsong Hill · Missioni CR12 | battaglia / esplorazione | — | il fondo neutro che fa risaltare gli speciali (§6.2 riga 1) |
+| Lhesper · Starsong Hill · Missioni CR12 | battaglia / esplorazione | — | il fondo neutro che fa risaltare gli speciali (§6.2 riga 1) |
 
 🔎 **La questione «un congegno per arco» è risolta dal §6.3**, non lasciata
 aperta: ARC-09 è modulare e vale più di un arco lineare, quindi il tetto è

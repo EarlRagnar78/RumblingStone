@@ -1,4 +1,4 @@
-# La cella Zhentarim al Torneo di Dauth [NON-CREATURA] [ACCEPTED — DM-canon 2026-09-17]
+# La cella Zhentarim al Torneo di Dauth [NON-CREATURA] [CANONE — DM 2026-09-17]
 
 > **Canone dichiarato dal DM il 2026-09-17**: *«sono emissari al soldo degli
 > Zhentarim; gli interessano gli scambi commerciali di merci del mercato nero

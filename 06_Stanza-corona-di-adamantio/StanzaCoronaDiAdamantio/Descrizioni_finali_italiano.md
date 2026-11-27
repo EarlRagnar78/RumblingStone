@@ -31,7 +31,7 @@ Portale
 **Goal:** Annihilate the party, protect the hidden portal, and fulfill Lolth's ritual.
 **Conditions:** Triggered when one of the two lesser yochlols is defeated. The *desecrate* effect is active. Urialle becomes active.
 
-> Un urlo psichico di pura, incandescente rabbia assale le vostre menti, crudo e straziante. Il ronzio ritmico da dietro il trono si trasforma in un ruggito fragoroso e caotico, e il muro di pietra dietro di esso luccica, poi svanisce come un brutto sogno. Oltre, vedete un vortice di energia viola e verde vorticante – un portale nascente – e in piedi davanti ad esso, una figura simile a una drow di immensa potenza, i suoi quattro tentacoli che si contorcono di furia. "Vi siete condannati!" la voce di Urialle urla direttamente nei vostri pensieri, bruciante di forza psichica. "Il dolore di mia sorella sarà ripagato mille volte! Voi sarete i primi sacrifici alla Ragnatela!"
+> Un urlo psichico di pura, incandescente rabbia assale le vostre menti, crudo e straziante. Il ronzio ritmico da dietro il trono si trasforma in un ruggito fragoroso e caotico, e il muro di pietra dietro di esso luccica, poi svanisce come un brutto sogno. Oltre, vedete un vortice di energia viola e verde vorticante – un portale nascente – e in piedi davanti a esso, una figura simile a una drow di immensa potenza, i suoi quattro tentacoli che si contorcono di furia. "Vi siete condannati!" la voce di Urialle urla direttamente nei vostri pensieri, bruciante di forza psichica. "Il dolore di mia sorella sarà ripagato mille volte! Voi sarete i primi sacrifici alla Ragnatela!"
 
 
 

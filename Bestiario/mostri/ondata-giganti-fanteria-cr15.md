@@ -1,4 +1,4 @@
-# ondata-giganti-fanteria-cr15 [ACCEPTED — DM-canon 2026-05-05] [NON-CREATURA]
+# ondata-giganti-fanteria-cr15 [CANONE — DM 2026-05-05] [NON-CREATURA]
 
 > **Non è una creatura** (ADR-0033): è un **aggregato di combattimento di massa** (2 giganti del fuoco + 4 capitani hobgoblin): il suo «GS 15» è un EL, non il GS di una creatura. I numeri stanno nelle schede dei componenti.
 > Per questo non ha un blocco `statblocco` e non conta

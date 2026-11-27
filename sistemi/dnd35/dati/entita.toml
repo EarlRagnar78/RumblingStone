@@ -1,0 +1,28 @@
+# sistemi/dnd35/dati/entita.toml — classi e razze come le scrivono gli archi (ADR-0111, L3)
+#
+# `classi`: l'ultima parola di una classe o di una classe di prestigio, come
+# la scrivono gli archi («Nano Guerriero 15°/Nobile 2°»): senza questo filtro
+# «APL 13» e «CA 28» diventavano classi. `razze`: le razze riconosciute nei
+# nomi. Spostate qui da coerenza_campagna.py (CLASSI, RAZZE), stesse voci,
+# in ordine alfabetico. Un modulo PF1e aggiunge le voci del lessico PF1e
+# (coerenza_campagna.entita_di).
+
+classi = [
+  "adepto", "arcano", "aristocratico", "assassin", "assassino", "barbarian",
+  "barbaro", "bard", "barda", "bardo", "berserker", "blackguard", "campione",
+  "chierica", "chierico", "cleric", "combattente", "danzatrice", "difensore",
+  "divina", "divino", "druid", "druida", "druido", "esperto", "esploratore",
+  "esploratrice", "fabbro", "fighter", "gish", "guerra", "guerriera",
+  "guerriero", "illusionista", "ladra", "ladro", "maestra", "maestro",
+  "maga", "mago", "monaca", "monaco", "monk", "nanico", "nera", "nobile",
+  "ombre", "paladin", "paladino", "picchi", "popolano", "psion", "ranger",
+  "rogue", "runaio", "rune", "sacerdote", "sorcerer", "spia", "strega",
+  "stregone", "tempeste", "templare", "teurgo", "warlock", "warpriest",
+  "wizard"
+]
+razze = [
+  "dello", "dream", "drow", "dwarf", "elfa", "elfo", "gnomo", "goblin",
+  "halfling", "hobgoblin", "human", "mezzelfa", "mezzelfo", "mezzo-ogre",
+  "mezzorco", "nana", "nano", "ogre", "orco", "orog", "scudo", "umana",
+  "umano"
+]

@@ -1,10 +1,11 @@
 """binari.py — le dipendenze binarie del repo, e la regola di degradazione.
 
-Il repo ha deciso due volte di accettare un eseguibile esterno invece di un
+Il repo aveva deciso due volte di accettare un eseguibile esterno invece di un
 toolchain: `typst` per l'edizione da stampa ([ADR-0020]) e `pdfcpu` per
-l'imposizione ([ADR-0027]). Sono decisioni buone — un singolo binario statico,
-licenza aperta, nessuna installazione di sistema — a **una** condizione, che è
-poi la parte che si dimentica di scrivere:
+l'imposizione ([ADR-0027]). Dal 2026-11-08 tutti e due arrivano da PyPI
+([ADR-0116]: il modulo `typst` e `pdfimpose`), e qui resta la CLI di typst come
+ripiego. La regola vale per ogni dipendenza, binaria o no, a **una** condizione,
+che è poi la parte che si dimentica di scrivere:
 
     se il binario manca, lo script dice come installarlo ed ESCE.
     Non fallisce a meta'.
@@ -44,6 +45,7 @@ from __future__ import annotations
 
 import shutil
 import sys
+from pathlib import Path
 from typing import NamedTuple
 
 MANCA = 2  # exit code: dipendenza assente. Distinto da 1 = fallimento vero.
@@ -73,38 +75,24 @@ class Binario(NamedTuple):
 
 TYPST = Binario(
     nome="typst",
-    a_cosa_serve="l'edizione da stampa: un volume unico con segnalibri veri",
+    a_cosa_serve="il ripiego dell'edizione da stampa, se manca il modulo PyPI «typst»",
     licenza="Apache-2.0",
     adr="ADR-0020",
     installa="""\
-  Linux/macOS   curl -sSL https://github.com/typst/typst/releases/latest/download/\\
-                  typst-x86_64-unknown-linux-musl.tar.xz | tar xJ
-                  sudo install typst-*/typst /usr/local/bin/
-  Fedora/Bazzite  brew install typst        (oppure il tarball qui sopra)
-  Arch            pacman -S typst
-  Windows         winget install --id Typst.Typst""",
-    ripiego="`export_booklet_pdf.py` continua a produrre i PDF per capitolo con "
+  Standard       pip install -r requirements.txt
+                 (il modulo PyPI «typst», versione fissata: ADR-0116)
+  Ripiego        una CLI typst nel PATH, dal gestore di pacchetti o da
+                 github.com/typst/typst/releases: compila, ma se la versione
+                 non e' quella di requirements.txt i PDF non sono quelli della CI.""",
+    ripiego="basta il modulo PyPI «typst» (lo standard, ADR-0116); senza tutti e due "
+            "`export_booklet_pdf.py` continua a produrre i PDF per capitolo con "
             "Chromium. Questo esportatore serve al volume da stampa.",
 )
 
-PDFCPU = Binario(
-    nome="pdfcpu",
-    a_cosa_serve="l'imposizione: un libretto da piegare, invece di una risma",
-    licenza="Apache-2.0",
-    adr="ADR-0027",
-    installa="""\
-  Con Go (qualsiasi sistema)   go install github.com/pdfcpu/pdfcpu/cmd/pdfcpu@v0.11.0
-  Linux/macOS   scarica il binario da https://github.com/pdfcpu/pdfcpu/releases
-                e mettilo nel PATH — e' un eseguibile statico, niente altro
-  Arch          pacman -S pdfcpu
-  Windows       winget install pdfcpu""",
-    ripiego="il PDF da stampa resta valido e stampabile pagina per pagina: "
-            "l'imposizione e' un di piu' per chi rilega, non un passaggio "
-            "obbligato della catena.",
-)
-
 #: I binari che uno script **pretende** con `esigi()`, ciascuno con il suo ADR.
-TUTTI = (TYPST, PDFCPU)
+#: Dal 2026-11-08 (ADR-0116) typst e l'imposizione arrivano da PyPI: resta solo
+#: la CLI di typst, come ripiego di `typst_motore`.
+TUTTI = (TYPST,)
 
 
 def _opz(nome: str, a_cosa_serve: str, installa: str, ripiego: str) -> Binario:
@@ -127,6 +115,11 @@ OPZIONALI = (
          "  macOS          xcode-select --install",
          "senza git il repo non si clona: in pratica c'e' sempre, ed e' l'unico "
          "di questo gruppo che non ha un ripiego vero."),
+    _opz("claude", "eseguire i casi fissi degli agenti (`prove_skill.py esegui`, ADR-0148)",
+         "  npm install -g @anthropic-ai/claude-code\n"
+         "  (o l'installatore di https://claude.com/claude-code)",
+         "senza la CLI i casi non si eseguono, ma `prove_skill.py controlla --agenti`, "
+         "`esempi`, `valuta` e `cricchetto` girano lo stesso; la CI non la usa."),
     _opz("gh", "il workflow Release: allineare le note dei rilasci pubblicati al "
                "CHANGELOG (`release_notes.py sync`, ADR-0100)",
          "  sui runner di GitHub c'e' gia'\n"
@@ -271,6 +264,18 @@ LIBRERIE = (
         ripiego="nessuno: `misura_resa.py` esce con 2 e la CI lo installa. Le mappe "
                 "si disegnano e si renderizzano senza.",
     ),
+    # ADR-0154: le metriche dell'instradamento (F1, kappa, baseline) sono di
+    # scikit-learn, fissata in requirements-dev.txt (canale testing, ADR-0099).
+    Libreria(
+        nome="scikit-learn", modulo="sklearn",
+        a_cosa_serve="le metriche di `eval_metriche.py` per l'instradamento degli "
+                     "agenti e la raccolta dei casi (macro-F1, kappa di Cohen, "
+                     "DummyClassifier)",
+        installa="  pip install -r requirements-dev.txt",
+        obbligatoria=False,
+        ripiego="nessuno: `instradamento_agenti.py --eval` e `raccogli_casi_agenti.py` "
+                "non misurano senza; l'hook dei prompt gira lo stesso.",
+    ),
     Libreria(
         nome="torch", modulo="torch",
         a_cosa_serve="il secondo parere della misura della resa (`misura_resa_appresa.py`, D26)",
@@ -311,6 +316,64 @@ LIBRERIE = (
                 "`migliora_prosa.py` stima la subordinata spezzata dal numero di "
                 "frasi e di subordinanti. Nessun cancello della CI ne dipende.",
     ),
+    # Il testo delle pagine stampate: l'apparato in stampa (ADR-0070) e la
+    # distanza fra scena e numeri (ADR-0108). AGPL, solo strumento di sviluppo.
+    Libreria(
+        nome="pymupdf", modulo="pymupdf",
+        a_cosa_serve="leggere il testo delle pagine dei PDF stampati: apparato in "
+                     "stampa (`validate_booklets --stampa`) e distanza fra scena e "
+                     "numeri (`misura_distanza_pagine.py`)",
+        installa="  pip install -r requirements-dev.txt",
+        obbligatoria=False,
+        ripiego="`validate_booklets --stampa` salta il conto dell'apparato e lo "
+                "dice; `misura_distanza_pagine.py` esce con 2 e dice come installarla. Il booklet "
+                "si stampa uguale.",
+    ),
+    # ADR-0116: il compilatore typst dentro un modulo Python (typst-py), al
+    # posto della CLI scaricata da GitHub Releases.
+    Libreria(
+        nome="typst-py", modulo="typst",
+        a_cosa_serve="l'edizione da stampa: un volume unico con segnalibri veri "
+                     "(`export_booklet_typst.py`, via `typst_motore`)",
+        installa="  pip install -r requirements.txt",
+        obbligatoria=False,
+        ripiego="`typst_motore` usa la CLI `typst` se c'e' nel PATH; senza tutte e due "
+                "`export_booklet_pdf.py` continua a fare i PDF per capitolo con Chromium.",
+    ),
+    # ADR-0116, al posto di pdfcpu (ADR-0027): stesso accoppiamento delle pagine
+    # su 19 booklet A5. AGPL come pymupdf, che porta con se': strumento, non opera.
+    Libreria(
+        nome="pdfimpose", modulo="pdfimpose",
+        a_cosa_serve="l'imposizione: un libretto da piegare, invece di una risma "
+                     "(`dm.py volume --imposto`)",
+        installa="  pip install -r requirements.txt",
+        obbligatoria=False,
+        ripiego="il PDF da stampa resta valido e stampabile pagina per pagina: "
+                "l'imposizione e' un di piu' per chi rilega, non un passaggio "
+                "obbligato della catena.",
+    ),
+    # Le immagini ripetute fra i box, frase per frase (RICERCA-GUARDRAIL §8).
+    # Porta torch: resta fuori dai requisiti del repo (canale unstable, ADR-0099).
+    Libreria(
+        nome="sentence-transformers", modulo="sentence_transformers",
+        a_cosa_serve="le ripetizioni fra box frase per frase "
+                     "(`misura_ripetizioni_frasi.py`, modello MiniLM multilingue)",
+        installa="  pip install sentence-transformers   (porta torch; solo in locale)",
+        obbligatoria=False,
+        ripiego="`misura_ripetizioni_frasi.py` esce con 2 e dice come installarla. "
+                "Nessun cancello della CI ne dipende.",
+    ),
+    # La fedeltà del riscritto, riga per riga (RICERCA-GUARDRAIL §9). Porta
+    # torch: fuori dai requisiti del repo (canale unstable, ADR-0099).
+    Libreria(
+        nome="transformers", modulo="transformers",
+        a_cosa_serve="la fedeltà del riscritto all'originale con un modello NLI "
+                     "(`misura_fedelta_nli.py`, dentro `ciclo_prosa revisione` e `misura`)",
+        installa="  pip install transformers torch   (solo in locale)",
+        obbligatoria=False,
+        ripiego="`misura_fedelta_nli.py` esce con 2; `ciclo_prosa` scrive nel documento "
+                "che la fedeltà non è stata controllata e prosegue.",
+    ),
     Libreria(
         nome="fonttools", modulo="fontTools",
         a_cosa_serve="ricavare i sottoinsiemi dei font OFL che le mappe incorporano",
@@ -327,8 +390,8 @@ CATENE = {
     "sessione (prep, recap, state)": (),
     "booklet HTML": (),
     "booklet PDF": ("chromium",),
-    "edizione da stampa": ("typst",),
-    "libretto imposto": ("typst", "pdfcpu"),
+    "edizione da stampa": ("typst-py",),
+    "libretto imposto": ("typst-py", "pdfimpose"),
     "mappe SVG": (),
     "mappe PNG": ("chromium",),
     "collaudo mappe": ("tcod", "scipy"),
@@ -358,7 +421,10 @@ def python_ok() -> bool:
 def libreria_presente(lib: Libreria) -> bool:
     """Se il modulo si importa. Nessun effetto collaterale oltre l'import."""
     import importlib.util
-    return importlib.util.find_spec(lib.modulo) is not None
+    spec = importlib.util.find_spec(lib.modulo)
+    # Un namespace package non e' la libreria: con scripts/ nel sys.path,
+    # `typst` troverebbe la cartella scripts/typst/ del tema (ADR-0116).
+    return spec is not None and spec.origin not in (None, "namespace")
 
 
 def disponibile(nome: str) -> bool:

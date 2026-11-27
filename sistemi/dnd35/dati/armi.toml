@@ -1,0 +1,769 @@
+# sistemi/dnd35/dati/armi.toml — le armi dell'SRD 3.5 (ADR-0126, lotto 2)
+#
+# Scritto da plans/esperimenti/regole-senza-omissioni-2026-11-12/estrai_armi.py
+# da «Table: Weapons» (SRD 3.5, Equipment) e dai nomi italiani di
+# scripts/lessico_it_35.tsv. Solo nomi e numeri. Non si modifica a mano.
+#
+# dado = danno per taglia Media; critico = «19-20/x2», oppure il solo
+# moltiplicatore («3») quando la minaccia è il 20.
+
+[[armi]]
+nome = "Gauntlet"
+nomi = ["gauntlet", "guanto d'arme"]
+dado = "1d3"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "semplice"
+
+[[armi]]
+nome = "Unarmed strike"
+nomi = ["colpo senz'armi", "pugno", "unarmed strike"]
+dado = "1d3"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "semplice"
+
+[[armi]]
+nome = "Dagger"
+nomi = ["dagger", "pugnale"]
+dado = "1d4"
+minaccia = 19
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "semplice"
+gittata = "10 ft."
+
+[[armi]]
+nome = "Dagger, punching"
+nomi = ["dagger, punching", "pugnale da mischia", "punching dagger"]
+dado = "1d4"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "leggera"
+competenza = "semplice"
+
+[[armi]]
+nome = "Gauntlet, spiked"
+nomi = ["gauntlet, spiked", "guanto d'arme chiodato", "spiked gauntlet"]
+dado = "1d4"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "semplice"
+
+[[armi]]
+nome = "Mace, light"
+nomi = ["light mace", "mace, light", "mazza leggera"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "semplice"
+
+[[armi]]
+nome = "Sickle"
+nomi = ["falcetto", "sickle"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "semplice"
+
+[[armi]]
+nome = "Club"
+nomi = ["club", "randello"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "una mano"
+competenza = "semplice"
+gittata = "10 ft."
+
+[[armi]]
+nome = "Mace, heavy"
+nomi = ["heavy mace", "mace, heavy", "mazza pesante"]
+dado = "1d8"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "una mano"
+competenza = "semplice"
+
+[[armi]]
+nome = "Morningstar"
+nomi = ["morning star", "morningstar", "stella del mattino"]
+dado = "1d8"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "una mano"
+competenza = "semplice"
+
+[[armi]]
+nome = "Shortspear"
+nomi = ["lancia corta", "shortspear"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "una mano"
+competenza = "semplice"
+gittata = "20 ft."
+
+[[armi]]
+nome = "Longspear"
+nomi = ["lancia lunga", "longspear", "picca", "picca lunga"]
+dado = "1d8"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "due mani"
+competenza = "semplice"
+portata = true
+
+[[armi]]
+nome = "Quarterstaff"
+nomi = ["bastone da viaggio", "bastone ferrato", "quarterstaff"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "due mani"
+competenza = "semplice"
+doppia = true
+
+[[armi]]
+nome = "Spear"
+nomi = ["lancia", "spear"]
+dado = "1d8"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "due mani"
+competenza = "semplice"
+gittata = "20 ft."
+
+[[armi]]
+nome = "Crossbow, heavy"
+nomi = ["balestra pesante", "crossbow, heavy", "heavy crossbow"]
+dado = "1d10"
+minaccia = 19
+moltiplicatore = 2
+impugnatura = "distanza"
+competenza = "semplice"
+gittata = "120 ft."
+
+[[armi]]
+nome = "Crossbow, light"
+nomi = ["balestra leggera", "crossbow, light", "light crossbow"]
+dado = "1d8"
+minaccia = 19
+moltiplicatore = 2
+impugnatura = "distanza"
+competenza = "semplice"
+gittata = "80 ft."
+
+[[armi]]
+nome = "Dart"
+nomi = ["dardi", "dardo", "dart"]
+dado = "1d4"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "distanza"
+competenza = "semplice"
+gittata = "20 ft."
+
+[[armi]]
+nome = "Javelin"
+nomi = ["giavellotti", "giavellotto", "javelin"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "distanza"
+competenza = "semplice"
+gittata = "30 ft."
+
+[[armi]]
+nome = "Sling"
+nomi = ["fionda", "sling"]
+dado = "1d4"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "distanza"
+competenza = "semplice"
+gittata = "50 ft."
+
+[[armi]]
+nome = "Axe, throwing"
+nomi = ["ascia da lancio", "axe, throwing", "throwing axe"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "da guerra"
+gittata = "10 ft."
+
+[[armi]]
+nome = "Hammer, light"
+nomi = ["hammer, light", "light hammer", "martello leggero"]
+dado = "1d4"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "da guerra"
+gittata = "20 ft."
+
+[[armi]]
+nome = "Handaxe"
+nomi = ["ascia", "handaxe"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "leggera"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Kukri"
+nomi = ["kukri"]
+dado = "1d4"
+minaccia = 18
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Pick, light"
+nomi = ["light pick", "piccone leggero", "pick, light"]
+dado = "1d4"
+minaccia = 20
+moltiplicatore = 4
+impugnatura = "leggera"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Sap"
+nomi = ["manganello", "sap"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Shield, light"
+nomi = ["colpo di scudo leggero", "light shield", "scudo leggero", "shield, light"]
+dado = "1d3"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Spiked armor"
+nomi = ["armatura chiodata", "spiked armor"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Spiked shield, light"
+nomi = ["light spiked shield", "spiked shield, light"]
+dado = "1d4"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Sword, short"
+nomi = ["short sword", "spada corta", "sword, short"]
+dado = "1d6"
+minaccia = 19
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Battleaxe"
+nomi = ["ascia da battaglia", "battleaxe"]
+dado = "1d8"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "una mano"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Flail"
+nomi = ["flagello", "flail", "mazzafrusto"]
+dado = "1d8"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "una mano"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Longsword"
+nomi = ["longsword", "spada lunga"]
+dado = "1d8"
+minaccia = 19
+moltiplicatore = 2
+impugnatura = "una mano"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Pick, heavy"
+nomi = ["heavy pick", "piccone pesante", "pick, heavy"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 4
+impugnatura = "una mano"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Rapier"
+nomi = ["rapier", "stocco"]
+dado = "1d6"
+minaccia = 18
+moltiplicatore = 2
+impugnatura = "una mano"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Scimitar"
+nomi = ["scimitar", "scimitarra"]
+dado = "1d6"
+minaccia = 18
+moltiplicatore = 2
+impugnatura = "una mano"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Shield, heavy"
+nomi = ["colpo di scudo pesante", "heavy shield", "scudo pesante", "shield, heavy"]
+dado = "1d4"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "una mano"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Spiked shield, heavy"
+nomi = ["heavy spiked shield", "spiked shield, heavy"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "una mano"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Trident"
+nomi = ["trident", "tridente"]
+dado = "1d8"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "una mano"
+competenza = "da guerra"
+gittata = "10 ft."
+
+[[armi]]
+nome = "Warhammer"
+nomi = ["martello da guerra", "warhammer"]
+dado = "1d8"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "una mano"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Falchion"
+nomi = ["falchion"]
+dado = "2d4"
+minaccia = 18
+moltiplicatore = 2
+impugnatura = "due mani"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Glaive"
+nomi = ["falcione", "glaive"]
+dado = "1d10"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "due mani"
+competenza = "da guerra"
+portata = true
+
+[[armi]]
+nome = "Greataxe"
+nomi = ["ascia a due mani", "ascia bipenne", "grande ascia", "greataxe"]
+dado = "1d12"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "due mani"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Greatclub"
+nomi = ["grande randello", "greatclub", "randello enorme", "randello pesante"]
+dado = "1d10"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "due mani"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Flail, heavy"
+nomi = ["flail, heavy", "heavy flail", "mazzafrusto pesante"]
+dado = "1d10"
+minaccia = 19
+moltiplicatore = 2
+impugnatura = "due mani"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Greatsword"
+nomi = ["greatsword", "spadone"]
+dado = "2d6"
+minaccia = 19
+moltiplicatore = 2
+impugnatura = "due mani"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Guisarme"
+nomi = ["giusarma", "guisarme"]
+dado = "2d4"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "due mani"
+competenza = "da guerra"
+portata = true
+
+[[armi]]
+nome = "Halberd"
+nomi = ["alabarda", "halberd"]
+dado = "1d10"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "due mani"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Lance"
+nomi = ["lance", "lancia da carica", "lancia da cavaliere"]
+dado = "1d8"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "due mani"
+competenza = "da guerra"
+portata = true
+
+[[armi]]
+nome = "Ranseur"
+nomi = ["corsesca", "ranseur"]
+dado = "2d4"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "due mani"
+competenza = "da guerra"
+portata = true
+
+[[armi]]
+nome = "Scythe"
+nomi = ["falce", "scythe"]
+dado = "2d4"
+minaccia = 20
+moltiplicatore = 4
+impugnatura = "due mani"
+competenza = "da guerra"
+
+[[armi]]
+nome = "Longbow"
+nomi = ["arco lungo", "longbow"]
+dado = "1d8"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "distanza"
+competenza = "da guerra"
+gittata = "100 ft."
+
+[[armi]]
+nome = "Longbow, composite"
+nomi = ["arco lungo composito", "composite longbow", "longbow, composite"]
+dado = "1d8"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "distanza"
+competenza = "da guerra"
+gittata = "110 ft."
+
+[[armi]]
+nome = "Shortbow"
+nomi = ["arco corto", "shortbow"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "distanza"
+competenza = "da guerra"
+gittata = "60 ft."
+
+[[armi]]
+nome = "Shortbow, composite"
+nomi = ["arco corto composito", "composite shortbow", "shortbow, composite"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "distanza"
+competenza = "da guerra"
+gittata = "70 ft."
+
+[[armi]]
+nome = "Kama"
+nomi = ["kama"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "esotica"
+
+[[armi]]
+nome = "Nunchaku"
+nomi = ["nunchaku"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "esotica"
+
+[[armi]]
+nome = "Sai"
+nomi = ["sai"]
+dado = "1d4"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "esotica"
+gittata = "10 ft."
+
+[[armi]]
+nome = "Siangham"
+nomi = ["siangham"]
+dado = "1d6"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "leggera"
+competenza = "esotica"
+
+[[armi]]
+nome = "Sword, bastard"
+nomi = ["bastard sword", "spada bastarda", "sword, bastard"]
+dado = "1d10"
+minaccia = 19
+moltiplicatore = 2
+impugnatura = "una mano"
+competenza = "esotica"
+
+[[armi]]
+nome = "Waraxe, dwarven"
+nomi = ["ascia da guerra nanica", "ascia nanica", "dwarven waraxe", "waraxe, dwarven"]
+dado = "1d10"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "una mano"
+competenza = "esotica"
+
+[[armi]]
+nome = "Whip"
+nomi = ["frusta", "whip"]
+dado = "1d3"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "una mano"
+competenza = "esotica"
+portata = true
+
+[[armi]]
+nome = "Axe, orc double"
+nomi = ["axe, orc double", "doppia ascia orchesca", "orc double axe"]
+dado = "1d8"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "due mani"
+competenza = "esotica"
+doppia = true
+
+[[armi]]
+nome = "Chain, spiked"
+nomi = ["catena chiodata", "chain, spiked", "spiked chain"]
+dado = "2d4"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "due mani"
+competenza = "esotica"
+portata = true
+
+[[armi]]
+nome = "Flail, dire"
+nomi = ["dire flail", "flail, dire", "mazzafrusto doppio"]
+dado = "1d8"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "due mani"
+competenza = "esotica"
+doppia = true
+
+[[armi]]
+nome = "Hammer, gnome hooked"
+nomi = ["gnome hooked hammer", "hammer, gnome hooked", "martello-picca gnomesco"]
+dado = "1d8"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "due mani"
+competenza = "esotica"
+doppia = true
+
+[[armi]]
+nome = "Sword, two-bladed"
+nomi = ["spada a due lame", "sword, two-bladed", "two-bladed sword"]
+dado = "1d8"
+minaccia = 19
+moltiplicatore = 2
+impugnatura = "due mani"
+competenza = "esotica"
+doppia = true
+
+[[armi]]
+nome = "Urgrosh, dwarven"
+nomi = ["dwarven urgrosh", "urgrosh nanico", "urgrosh, dwarven"]
+dado = "1d8"
+minaccia = 20
+moltiplicatore = 3
+impugnatura = "due mani"
+competenza = "esotica"
+doppia = true
+
+[[armi]]
+nome = "Bolas"
+nomi = ["bolas"]
+dado = "1d4"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "distanza"
+competenza = "esotica"
+gittata = "10 ft."
+
+[[armi]]
+nome = "Crossbow, hand"
+nomi = ["balestra a mano", "crossbow, hand", "hand crossbow"]
+dado = "1d4"
+minaccia = 19
+moltiplicatore = 2
+impugnatura = "distanza"
+competenza = "esotica"
+gittata = "30 ft."
+
+[[armi]]
+nome = "Crossbow, repeating heavy"
+nomi = ["balestra a ripetizione pesante", "crossbow, repeating heavy", "repeating heavy crossbow"]
+dado = "1d10"
+minaccia = 19
+moltiplicatore = 2
+impugnatura = "distanza"
+competenza = "esotica"
+gittata = "120 ft."
+
+[[armi]]
+nome = "Crossbow, repeating light"
+nomi = ["balestra a ripetizione leggera", "crossbow, repeating light", "repeating light crossbow"]
+dado = "1d8"
+minaccia = 19
+moltiplicatore = 2
+impugnatura = "distanza"
+competenza = "esotica"
+gittata = "80 ft."
+
+[[armi]]
+nome = "Shuriken (5)"
+nomi = ["shuriken", "shuriken (5)"]
+dado = "1d2"
+minaccia = 20
+moltiplicatore = 2
+impugnatura = "distanza"
+competenza = "esotica"
+gittata = "10 ft."
+
+# Il dado al cambiare della taglia di chi impugna (SRD 3.5, Equipment, «Weapon
+# Size», Table: Tiny and Large Weapon Damage). `su` = una taglia in più, `giu` =
+# una in meno, a partire dal dado della taglia Media.
+[scala.su]
+"1d2" = "1d3"
+"1d3" = "1d4"
+"1d4" = "1d6"
+"1d6" = "1d8"
+"1d8" = "2d6"
+"1d10" = "2d8"
+"1d12" = "3d6"
+"2d4" = "2d6"
+"2d6" = "3d6"
+"2d8" = "3d8"
+"3d6" = "4d6"
+"3d8" = "4d8"
+"4d6" = "6d6"
+"4d8" = "6d8"
+
+[scala.giu]
+"1d2" = "1"
+"1d3" = "1d2"
+"1d4" = "1d3"
+"1d6" = "1d4"
+"1d8" = "1d6"
+"1d10" = "1d8"
+"1d12" = "1d10"
+"2d4" = "1d6"
+"2d6" = "1d10"
+"2d8" = "2d6"
+
+# Passi di taglia rispetto alla Media, coi nomi che le schede scrivono in `tipo:`.
+[taglie]
+"fine" = -4
+"piccolissima" = -4
+"piccolissimo" = -4
+"diminutive" = -3
+"minuta" = -3
+"minuto" = -3
+"tiny" = -2
+"minuscola" = -2
+"minuscolo" = -2
+"small" = -1
+"piccola" = -1
+"piccolo" = -1
+"medium" = 0
+"media" = 0
+"medio" = 0
+"large" = 1
+"grande" = 1
+"huge" = 2
+"enorme" = 2
+"gargantuan" = 3
+"mastodontica" = 3
+"mastodontico" = 3
+"colossal" = 4
+"colossale" = 4
+
+# Bonus al danno che una scheda può dichiarare con un talento (SRD 3.5, Feats).
+[[sorgenti]]
+nome = "Arma Specializzata"
+schema = '(?:weapon specialization|arma specializzata)(?! superiore)'
+valore = 2
+fonte = "SRD 3.5, Feats, «Weapon Specialization»"
+
+[[sorgenti]]
+nome = "Arma Specializzata Superiore"
+schema = '(?:greater weapon specialization|arma specializzata superiore)'
+valore = 2
+fonte = "SRD 3.5, Feats, «Greater Weapon Specialization»"
+
+[[sorgenti]]
+nome = "specialista del martello (livello di sostituzione del chierico nano)"
+schema = '(?:hammer specialist|specialista del martello)'
+valore = 2
+armi = ["Warhammer"]
+fonte = "D&D 3.5, Races of Stone (solo nome e numero)"

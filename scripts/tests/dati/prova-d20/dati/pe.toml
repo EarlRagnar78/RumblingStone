@@ -1,0 +1,9 @@
+# Soglie inventate: ogni livello costa 2000 PE per livello raggiunto.
+etichetta = "prova"
+
+[soglie.unica]
+1 = 0
+2 = 2000
+3 = 6000
+4 = 12000
+5 = 20000

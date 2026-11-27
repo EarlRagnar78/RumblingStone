@@ -5,6 +5,9 @@
 ```statblocco
 gs: 11
 tipo: Huge construct (extraplanar), 10d10+80
+taglia: Enorme
+spazio: 4,5 m
+portata: 3 m
 ca: 21
 ca-dettaglio: contatto 11, colto alla sprovvista 18 (-2 taglia, +3 Des, +10 naturale)
 pf: 135
@@ -42,12 +45,6 @@ Huge construct (extraplanar), 10d10+80. Demone-costrutto del SRD (*Demon, Retrie
 - **elettricità** — 12d6 elettricità, Rifl dimezza
 - **pietrificazione** — Temp nega, o diventa pietra per sempre
 
-**Statistiche** For 31, Des 17, Cos —, Int —, Sag 11, Car 1 · BAB +7; Lotta +25 · **Talenti** nessuno (privo di mente)
-
-**Capacità speciali**
-- **Trovare il bersaglio** (Mag): quando gli si ordina di trovare un oggetto o una creatura, lo trova senza sbagliare, come *localizzazione* (incantesimo di 8° livello). Chi dà l'ordine deve aver visto la creatura, o avere un suo oggetto, o aver toccato l'oggetto da trovare.
-- **Afferrare migliorato** (Str): se colpisce col morso, può iniziare una lotta come azione gratuita senza provocare attacchi di opportunità; se vince, tiene la preda in bocca.
-
 **Tattiche**
 - *Prima del combattimento*: non si nasconde e non aspetta: arriva in linea retta verso chi porta Aegis Fang, guidato da *trovare il bersaglio*, e gli altri sono solo ostacoli. Non tratta e non si ferma a parlare.
 - *Durante il combattimento*:
@@ -56,6 +53,12 @@ Huge construct (extraplanar), 10d10+80. Demone-costrutto del SRD (*Demon, Retrie
   - **Round 3**: se tiene il portatore in bocca, lo stringe e si ritira di 15 m per round, verso dove l'hanno chiamato; raggio di **freddo** su chi lo insegue. Se non lo tiene, artigli sul portatore, raggio di **elettricità** sull'incantatore.
   - **Round 4 e seguenti**: ricomincia dalla pietrificazione. La guarigione rapida gli dà tempo: non si ferma a finire chi cade.
 - *Morale*: nessuno. È un costrutto e combatte finché è distrutto o finché ha l'arma, poi torna dai chierici di Abbathor. Se il portatore lascia cadere Aegis Fang, il retriever raccoglie l'arma e se ne va, e gli altri smettono di esistere per lui.
+
+**Statistiche** For 31, Des 17, Cos —, Int —, Sag 11, Car 1 · BAB +7; Lotta +25 · **Talenti** nessuno (privo di mente)
+
+**Capacità speciali**
+- **Trovare il bersaglio** (Mag): quando gli si ordina di trovare un oggetto o una creatura, lo trova senza sbagliare, come *localizzazione* (incantesimo di 8° livello). Chi dà l'ordine deve aver visto la creatura, o avere un suo oggetto, o aver toccato l'oggetto da trovare.
+- **Afferrare migliorato** (Str): se colpisce col morso, può iniziare una lotta come azione gratuita senza provocare attacchi di opportunità; se vince, tiene la preda in bocca.
 
 **Benchmark** PF T1-1 riga 11 (CA 25, pf 145, att. +19, danno medio 50, CD 20): CA 21 ✗ · pf 135 ≈ · att. +15 ✗ · danno completo ≈ 70 col raggio ✓ · CD 18 ✗. Ha la tenuta di un GS 11 grazie alla guarigione rapida e alla pietrificazione, non ai numeri.
 
@@ -66,5 +69,5 @@ Boost log: correzione sul SRD — GS 11 → 11 — quarto raggio di pietrificazi
 <!-- storico -->
 era: «⚠ La prosa diceva BAB +10 e «4 zampe (1d6+…)»: il SRD dice BAB +7 e 2d6+10. Corretto sulla fonte.»
 era: raggio degli occhi «fuoco/freddo/elettricità/*rendere lento*, 1/round, danno alto»; afferrare migliorato sulle zampe.
-era: talenti Fendere, Multiattacco, Attacco Poderoso; immunità scritta «a incantesimi di ammaliamento/schema».
+era: talenti Incalzare, Multiattacco, Attacco Poderoso; immunità scritta «a incantesimi di ammaliamento/schema».
 <!-- /storico -->

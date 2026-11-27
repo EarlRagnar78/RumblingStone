@@ -1,0 +1,82 @@
+2026-11-08T19:56 42517527086 main: 2529 16 xdist: 2529 16  [] 2437 passed, 14 skipped, 5291 subtests passed| 92 passed, 2 skipped, 2451 deselected, 19 subtests passed
+2026-11-08T16:33 42500519025 main: 2515 16 xdist: 2515 16  [] 2423 passed, 14 skipped, 5278 subtests passed| 92 passed, 2 skipped, 2437 deselected, 19 subtests passed
+2026-11-08T16:11 42498600247 main: 2506 16 xdist: 2506 16  [] 2414 passed, 14 skipped, 5273 subtests passed| 92 passed, 2 skipped, 2428 deselected, 19 subtests passed
+2026-11-08T15:53 42497067742 main: 2506 16 xdist: 2506 16  [] 2414 passed, 14 skipped, 5272 subtests passed| 92 passed, 2 skipped, 2428 deselected, 19 subtests passed
+2026-11-08T15:43 42496229460 main: 2500 16 xdist: 2500 16  [] 2408 passed, 14 skipped, 5179 subtests passed| 92 passed, 2 skipped, 2422 deselected, 19 subtests passed
+2026-11-08T15:30 42495186710 main: 2500 16 xdist: 2500 16  [] 2408 passed, 14 skipped, 5179 subtests passed| 92 passed, 2 skipped, 2422 deselected, 19 subtests passed
+2026-11-08T15:16 42493967982 main: 2494 16 xdist: 2494 16  [] 2402 passed, 14 skipped, 5172 subtests passed| 92 passed, 2 skipped, 2416 deselected, 19 subtests passed
+2026-11-08T14:31 42490213791 main: 2489 16 xdist: 2489 16  [] 2397 passed, 14 skipped, 5173 subtests passed| 92 passed, 2 skipped, 2411 deselected, 19 subtests passed
+2026-11-08T13:58 42487451154 main: 2489 16 xdist: 2489 16  [] 2397 passed, 14 skipped, 5173 subtests passed| 92 passed, 2 skipped, 2411 deselected, 19 subtests passed
+2026-11-08T13:46 42486570914 main: 2489 16 xdist: 2489 16  [] 2397 passed, 14 skipped, 5173 subtests passed| 92 passed, 2 skipped, 2411 deselected, 19 subtests passed
+2026-11-08T11:36 42476489605 main: 2489 16 xdist: 2489 16  [] 2397 passed, 14 skipped, 5171 subtests passed| 92 passed, 2 skipped, 2411 deselected, 19 subtests passed
+2026-11-08T10:26 42471424305 main: 2494 15 xdist: 2485 24 DIVERSI [] 2395 passed, 22 skipped, 5167 subtests passed| 90 passed, 2 skipped, 2417 deselected, 19 subtests passed
+2026-11-08T10:09 42470188023 main: 2494 15 xdist: 2485 24 DIVERSI [] 2395 passed, 22 skipped, 5165 subtests passed| 90 passed, 2 skipped, 2417 deselected, 19 subtests passed
+2026-11-08T09:36 42467914863 main: 0 0 xdist: 2485 24 DIVERSI [] 2395 passed, 22 skipped, 5165 subtests passed| 90 passed, 2 skipped, 2417 deselected, 19 subtests passed
+2026-11-08T08:59 42465245964 main: 0 0 xdist: 2464 24 DIVERSI [] 2374 passed, 22 skipped, 5162 subtests passed| 90 passed, 2 skipped, 2396 deselected, 19 subtests passed
+2026-11-08T08:38 42463765089 main: 2467 15 xdist: 2458 24 DIVERSI [] 2368 passed, 22 skipped, 4996 subtests passed| 90 passed, 2 skipped, 2390 deselected, 19 subtests passed
+2026-11-07T22:53 42422684491 main: 2464 15 xdist: 2455 24 DIVERSI [] 2365 passed, 22 skipped, 4992 subtests passed| 90 passed, 2 skipped, 2387 deselected, 19 subtests passed
+2026-11-07T22:42 42421836325 main: 2455 15 xdist: 2446 24 DIVERSI [] 2356 passed, 22 skipped, 4992 subtests passed| 90 passed, 2 skipped, 2378 deselected, 19 subtests passed
+2026-11-07T22:28 42420743198 main: 2452 15 xdist: 2443 24 DIVERSI [] 2353 passed, 22 skipped, 4992 subtests passed| 90 passed, 2 skipped, 2375 deselected, 19 subtests passed
+2026-11-07T22:13 42419591240 main: 2447 15 xdist: 2438 24 DIVERSI [] 2348 passed, 22 skipped, 4992 subtests passed| 90 passed, 2 skipped, 2370 deselected, 19 subtests passed
+2026-11-07T21:59 42418450439 main: 2445 15 xdist: 2436 24 DIVERSI [] 2346 passed, 22 skipped, 4991 subtests passed| 90 passed, 2 skipped, 2368 deselected, 19 subtests passed
+2026-11-07T21:51 42417853645 main: 2442 15 xdist: 2433 24 DIVERSI [] 2343 passed, 22 skipped, 4991 subtests passed| 90 passed, 2 skipped, 2365 deselected, 19 subtests passed
+2026-11-07T21:33 42416445656 main: 2437 15 xdist: 2428 24 DIVERSI [] 2338 passed, 22 skipped, 4991 subtests passed| 90 passed, 2 skipped, 2360 deselected, 19 subtests passed
+2026-11-07T21:15 42415001282 main: 2436 15 xdist: 2427 24 DIVERSI [] 2337 passed, 22 skipped, 4991 subtests passed| 90 passed, 2 skipped, 2359 deselected, 19 subtests passed
+2026-11-07T20:55 42413380578 main: 2433 15 xdist: 2424 24 DIVERSI [] 2334 passed, 22 skipped, 4991 subtests passed| 90 passed, 2 skipped, 2356 deselected, 19 subtests passed
+2026-11-07T20:39 42412090750 main: 2433 15 xdist: 2424 24 DIVERSI [] 2334 passed, 22 skipped, 4991 subtests passed| 90 passed, 2 skipped, 2356 deselected, 19 subtests passed
+2026-11-07T20:10 42409740366 main: 2431 15 xdist: 2422 24 DIVERSI [] 2332 passed, 22 skipped, 4991 subtests passed| 90 passed, 2 skipped, 2354 deselected, 19 subtests passed
+2026-11-07T19:40 42407315734 main: 2431 15 xdist: 2422 24 DIVERSI [] 2332 passed, 22 skipped, 4991 subtests passed| 90 passed, 2 skipped, 2354 deselected, 19 subtests passed
+2026-11-07T19:19 42405650961 main: 2426 15 xdist: 2417 24 DIVERSI [] 2327 passed, 22 skipped, 4991 subtests passed| 90 passed, 2 skipped, 2349 deselected, 19 subtests passed
+2026-11-07T16:07 42389676316 main: 2426 15 xdist: 2417 24 DIVERSI [] 2327 passed, 22 skipped, 4991 subtests passed| 90 passed, 2 skipped, 2349 deselected, 19 subtests passed
+2026-11-07T15:49 42388269948 main: 2426 15 xdist: 2417 24 DIVERSI [] 2327 passed, 22 skipped, 4991 subtests passed| 90 passed, 2 skipped, 2349 deselected, 19 subtests passed
+2026-11-07T15:41 42387632261 main: 2424 15 xdist: 2415 24 DIVERSI [] 2325 passed, 22 skipped, 4991 subtests passed| 90 passed, 2 skipped, 2347 deselected, 19 subtests passed
+2026-11-07T15:21 42385980133 main: 2417 15 xdist: 2408 24 DIVERSI [] 2318 passed, 22 skipped, 4990 subtests passed| 90 passed, 2 skipped, 2340 deselected, 19 subtests passed
+2026-11-07T15:00 42384210013 main: 2410 15 xdist: 2401 24 DIVERSI [] 2311 passed, 22 skipped, 4990 subtests passed| 90 passed, 2 skipped, 2333 deselected, 19 subtests passed
+2026-11-07T14:38 42382536923 main: 2401 15 xdist: 2392 24 DIVERSI [] 2302 passed, 22 skipped, 4992 subtests passed| 90 passed, 2 skipped, 2324 deselected, 19 subtests passed
+2026-11-07T14:26 42381628594 main: 2357 14 xdist: 2348 23 DIVERSI [] 2258 passed, 21 skipped, 4991 subtests passed| 90 passed, 2 skipped, 2279 deselected, 19 subtests passed
+2026-11-07T14:01 42379629477 main: 2357 14 xdist: 2348 23 DIVERSI [] 2258 passed, 21 skipped, 4990 subtests passed| 90 passed, 2 skipped, 2279 deselected, 19 subtests passed
+2026-11-07T13:47 42378584919 main: 2336 12 xdist: 2327 21 DIVERSI [] 2235 passed, 21 skipped, 4975 subtests passed| 92 passed, 2256 deselected, 19 subtests passed
+2026-11-07T13:37 42377782624 main: 2322 12 xdist: 2313 21 DIVERSI [] 2221 passed, 21 skipped, 4941 subtests passed| 92 passed, 2242 deselected, 19 subtests passed
+2026-11-07T08:48 42357040648 main: 2320 14 xdist: 2311 23 DIVERSI [] 2221 passed, 21 skipped, 4939 subtests passed| 90 passed, 2 skipped, 2242 deselected, 19 subtests passed
+2026-11-05T07:37 41988533028 main: 2320 14 xdist: 2311 23 DIVERSI [] 2221 passed, 21 skipped, 4935 subtests passed| 90 passed, 2 skipped, 2242 deselected, 19 subtests passed
+2026-11-04T20:21 41905866292 main: 2320 14 xdist: 2311 23 DIVERSI [] 2221 passed, 21 skipped, 4933 subtests passed| 90 passed, 2 skipped, 2242 deselected, 19 subtests passed
+2026-11-04T07:21 41791750542 main: 2320 14 xdist: 2311 23 DIVERSI [] 2221 passed, 21 skipped, 4932 subtests passed| 90 passed, 2 skipped, 2242 deselected, 19 subtests passed
+2026-11-04T05:51 41781791808 main: 2317 14 xdist: 2308 23 DIVERSI [] 2218 passed, 21 skipped, 4931 subtests passed| 90 passed, 2 skipped, 2239 deselected, 19 subtests passed
+2026-11-03T18:44 41696718269 main: 2317 14 xdist: 2308 23 DIVERSI [] 2218 passed, 21 skipped, 4931 subtests passed| 90 passed, 2 skipped, 2239 deselected, 19 subtests passed
+2026-11-03T18:27 41693934267 main: 2317 14 xdist: 2308 23 DIVERSI [] 2218 passed, 21 skipped, 4931 subtests passed| 90 passed, 2 skipped, 2239 deselected, 19 subtests passed
+2026-11-03T15:04 41660101268 main: 2306 14 xdist: 2297 23 DIVERSI [] 2207 passed, 21 skipped, 4927 subtests passed| 90 passed, 2 skipped, 2228 deselected, 19 subtests passed
+2026-11-03T11:52 41630966624 main: 2292 14 xdist: 2283 23 DIVERSI [] 2193 passed, 21 skipped, 4922 subtests passed| 90 passed, 2 skipped, 2214 deselected, 19 subtests passed
+2026-11-02T18:15 41498784436 main: 2263 14 xdist: 2254 23 DIVERSI [] 2164 passed, 21 skipped, 4851 subtests passed| 90 passed, 2 skipped, 2185 deselected, 19 subtests passed
+2026-11-02T17:58 41496105232 main: 2263 14 xdist: 2254 23 DIVERSI [] 2164 passed, 21 skipped, 4851 subtests passed| 90 passed, 2 skipped, 2185 deselected, 19 subtests passed
+2026-11-02T06:59 41403361418 main: 2263 14 xdist: 2254 23 DIVERSI [] 2164 passed, 21 skipped, 4851 subtests passed| 90 passed, 2 skipped, 2185 deselected, 19 subtests passed
+2026-11-01T23:04 41360232861 main: 2263 14 xdist: 2254 23 DIVERSI [] 2164 passed, 21 skipped, 4821 subtests passed| 90 passed, 2 skipped, 2185 deselected, 19 subtests passed
+2026-10-31T00:24 41149975328 main: 2255 14 xdist: 2246 23 DIVERSI [] 2156 passed, 21 skipped, 4818 subtests passed| 90 passed, 2 skipped, 2177 deselected, 19 subtests passed
+2026-10-29T22:21 40965243099 main: 2239 14 xdist: 2230 23 DIVERSI [] 2140 passed, 21 skipped, 4815 subtests passed| 90 passed, 2 skipped, 2161 deselected, 19 subtests passed
+2026-10-29T21:06 40954932819 main: 2238 14 xdist: 2229 23 DIVERSI [] 2139 passed, 21 skipped, 4815 subtests passed| 90 passed, 2 skipped, 2160 deselected, 19 subtests passed
+2026-10-29T08:13 40840644186 main: 2218 14 xdist: 2211 21 DIVERSI [] 2121 passed, 19 skipped, 4809 subtests passed| 90 passed, 2 skipped, 2140 deselected, 19 subtests passed
+2026-10-29T00:56 40797335785 main: 2218 14 xdist: 2211 21 DIVERSI [] 2121 passed, 19 skipped, 4809 subtests passed| 90 passed, 2 skipped, 2140 deselected, 19 subtests passed
+2026-10-29T00:44 40796054364 main: 2218 14 xdist: 2211 21 DIVERSI [] 2121 passed, 19 skipped, 4809 subtests passed| 90 passed, 2 skipped, 2140 deselected, 19 subtests passed
+2026-10-28T07:20 40649450482 main: 2218 14 xdist: 2211 21 DIVERSI [] 2121 passed, 19 skipped, 4809 subtests passed| 90 passed, 2 skipped, 2140 deselected, 19 subtests passed
+2026-10-26T08:08 40290235304 main: 2218 14 xdist: 2211 21 DIVERSI [] 2121 passed, 19 skipped, 4807 subtests passed| 90 passed, 2 skipped, 2140 deselected, 19 subtests passed
+2026-10-24T10:12 40084983750 main: 2218 14 xdist: 2211 21 DIVERSI [] 2121 passed, 19 skipped, 4807 subtests passed| 90 passed, 2 skipped, 2140 deselected, 19 subtests passed
+2026-10-24T00:49 40046907884 main: 2218 14 xdist: 2211 21 DIVERSI [] 2121 passed, 19 skipped, 4807 subtests passed| 90 passed, 2 skipped, 2140 deselected, 19 subtests passed
+2026-10-24T00:34 40045624948 main: 2218 14 xdist: 2211 21 DIVERSI [] 2121 passed, 19 skipped, 4808 subtests passed| 90 passed, 2 skipped, 2140 deselected, 19 subtests passed
+2026-10-24T00:04 40043147386 main: 2206 14 xdist: 2199 21 DIVERSI [] 2109 passed, 19 skipped, 4807 subtests passed| 90 passed, 2 skipped, 2128 deselected, 19 subtests passed
+2026-10-23T21:11 40024978665 main: 2206 14 xdist: 2199 21 DIVERSI [] 2109 passed, 19 skipped, 4807 subtests passed| 90 passed, 2 skipped, 2128 deselected, 19 subtests passed
+2026-10-23T20:50 40022368174 main: 2206 14 xdist: 2199 21 DIVERSI [] 2109 passed, 19 skipped, 4807 subtests passed| 90 passed, 2 skipped, 2128 deselected, 19 subtests passed
+2026-10-23T20:40 40021047056 main: 2206 14 xdist: 2199 21 DIVERSI [] 2109 passed, 19 skipped, 4803 subtests passed| 90 passed, 2 skipped, 2128 deselected, 19 subtests passed
+2026-10-23T20:26 40019184798 main: 2206 14 xdist: 2199 21 DIVERSI [] 2109 passed, 19 skipped, 4803 subtests passed| 90 passed, 2 skipped, 2128 deselected, 19 subtests passed
+2026-10-23T20:11 40017289441 main: 2204 14 xdist: 2197 21 DIVERSI [] 2107 passed, 19 skipped, 4803 subtests passed| 90 passed, 2 skipped, 2126 deselected, 19 subtests passed
+2026-10-23T20:00 40015910431 main: 2204 14 xdist: 2197 21 DIVERSI [] 2107 passed, 19 skipped, 4802 subtests passed| 90 passed, 2 skipped, 2126 deselected, 19 subtests passed
+2026-10-23T19:44 40013776616 main: 2197 14 xdist: 2190 21 DIVERSI [] 2100 passed, 19 skipped, 4802 subtests passed| 90 passed, 2 skipped, 2119 deselected, 19 subtests passed
+2026-10-23T19:32 40012199559 main: 2172 12 xdist: 2165 19 DIVERSI [] 2073 passed, 19 skipped, 4799 subtests passed| 92 passed, 2092 deselected, 19 subtests passed
+2026-10-23T16:12 39984785015 main: 2143 12 xdist: 2136 19 DIVERSI [] 2044 passed, 19 skipped, 4718 subtests passed| 92 passed, 2063 deselected, 19 subtests passed
+2026-10-23T15:42 39980620277 main: 2140 12 xdist: 2133 19 DIVERSI [] 2041 passed, 19 skipped, 4718 subtests passed| 92 passed, 2060 deselected, 19 subtests passed
+2026-10-23T15:23 39977822126 main: 2140 12 xdist: 2133 19 DIVERSI [] 2041 passed, 19 skipped, 4716 subtests passed| 92 passed, 2060 deselected, 19 subtests passed
+2026-10-23T15:06 39975441646 main: 2081 1 xdist: 2074 8 DIVERSI [] 1982 passed, 8 skipped, 4683 subtests passed| 92 passed, 1990 deselected, 32 subtests passed
+2026-10-23T14:53 39973496787 main: 2081 1 xdist: 2074 8 DIVERSI [] 1982 passed, 8 skipped, 4683 subtests passed| 92 passed, 1990 deselected, 32 subtests passed
+2026-10-23T14:41 39971729535 main: 2072 1 xdist: 2065 8 DIVERSI [] 1973 passed, 8 skipped, 4681 subtests passed| 92 passed, 1981 deselected, 32 subtests passed
+2026-10-23T13:06 39958456687 main: 2072 1 xdist: 2065 8 DIVERSI [] 1973 passed, 8 skipped, 4681 subtests passed| 92 passed, 1981 deselected, 32 subtests passed
+2026-10-23T11:53 39949262959 main: 2055 1 xdist: 2048 8 DIVERSI [] 1956 passed, 8 skipped, 4658 subtests passed| 92 passed, 1964 deselected, 32 subtests passed
+2026-10-23T10:48 39941670776 main: 2042 1 xdist: 2035 8 DIVERSI [] 1944 passed, 8 skipped, 4652 subtests passed| 91 passed, 1952 deselected, 32 subtests passed
+diversi 70

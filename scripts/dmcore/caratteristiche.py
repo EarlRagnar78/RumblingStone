@@ -18,13 +18,17 @@ Solo stdlib.
 """
 from __future__ import annotations
 
+from functools import cache as _cache
+
 import random
 import re
 from pathlib import Path
 
+from dmcore import lettura_creatura as _LC
+from dmcore.formule import formula
 from dmcore import tabelle as T
 from dmcore.lettura_creatura import (
-    BAB_SCRITTO, BONUS_DADO, CLASSE_NEL_TIPO, INIZIATIVA_MIGLIORATA, INIZIATIVA_SCRITTA,
+    BAB_SCRITTO, BONUS_DADO, INIZIATIVA_MIGLIORATA, INIZIATIVA_SCRITTA,
     LOTTA_MIGLIORATA, LOTTA_SCRITTA, LOTTA_TAGLIA, ORDINE, PEZZO_DADO, PF_DADO,
     dalla_scheda, numeri_della_fonte, parole_del_file, pf_dado_sospetto, plausibile,
     robustezza, senza_note, sestine_citate, taglia_di, tetti_dai_ts,
@@ -39,59 +43,22 @@ __all__ = [
 ]
 
 
-#: Manuale del DM 3.5 — gli array dei PNG (identici alle *heroic*/*basic* PF1e).
-ARRAY_ELITE = T.ELITE
-ARRAY_STANDARD = T.BASIC
-#: Il ruolo dichiarato decide **l'ordine di priorita'** delle sei
-#: caratteristiche: il valore piu' alto dell'array va alla prima della riga.
-#: Si cerca la prima parola chiave che compare nel ruolo, in quest'ordine.
-PROFILI = (
-    ("psionic",     ("Int", "Cos", "Des", "Sag", "Car", "For")),
-    ("psi",         ("Int", "Cos", "Des", "Sag", "Car", "For")),
-    ("arcane",      ("Int", "Des", "Cos", "Car", "Sag", "For")),
-    ("blaster",     ("Int", "Des", "Cos", "Car", "Sag", "For")),
-    ("divine",      ("Sag", "Cos", "For", "Car", "Des", "Int")),
-    ("divino",      ("Sag", "Cos", "For", "Car", "Des", "Int")),
-    ("warpriest",   ("Sag", "For", "Cos", "Car", "Des", "Int")),
-    ("envoy",       ("Car", "Des", "Cos", "Int", "Sag", "For")),
-    ("subdolo",     ("Car", "Des", "Cos", "Int", "Sag", "For")),
-    ("infiltrator", ("Des", "Car", "Cos", "Int", "Sag", "For")),
-    ("stealth",     ("Des", "Car", "Cos", "Int", "Sag", "For")),
-    ("caster",      ("Car", "Des", "Cos", "Int", "Sag", "For")),
-    ("gish",        ("For", "Int", "Cos", "Des", "Sag", "Car")),
-    ("ranged",      ("Des", "For", "Cos", "Sag", "Int", "Car")),
-    ("scout",       ("Des", "Sag", "Cos", "For", "Int", "Car")),
-    ("skirmisher",  ("Des", "For", "Cos", "Sag", "Int", "Car")),
-    ("ambusher",    ("Des", "Sag", "Cos", "For", "Int", "Car")),
-    ("flier",       ("Des", "For", "Cos", "Sag", "Car", "Int")),
-    ("aerial",      ("Des", "Cos", "For", "Sag", "Car", "Int")),
-    ("mount",       ("For", "Cos", "Des", "Sag", "Car", "Int")),
-    ("brute",       ("For", "Cos", "Des", "Sag", "Car", "Int")),
-    ("defender",    ("Cos", "For", "Des", "Sag", "Car", "Int")),
-    ("guard",       ("Cos", "For", "Des", "Sag", "Car", "Int")),
-    ("tank",        ("Cos", "For", "Des", "Sag", "Car", "Int")),
-    ("guardian",    ("Cos", "For", "Des", "Sag", "Car", "Int")),
-    ("commander",   ("Car", "For", "Cos", "Sag", "Des", "Int")),
-    ("leader",      ("Car", "For", "Cos", "Sag", "Des", "Int")),
-    ("officer",     ("Car", "For", "Cos", "Sag", "Des", "Int")),
-    ("shock",       ("For", "Des", "Cos", "Sag", "Car", "Int")),
-    ("melee",       ("For", "Cos", "Des", "Sag", "Car", "Int")),
-    ("fodder",      ("For", "Cos", "Des", "Sag", "Car", "Int")),
-    ("wave",        ("For", "Cos", "Des", "Sag", "Car", "Int")),
-    ("hazard",      ("Cos", "For", "Des", "Sag", "Car", "Int")),
-)
-PROFILO_DI_RIPIEGO = ("For", "Cos", "Des", "Sag", "Car", "Int")
 ELITE = T.RUOLI_ELITE
 DES_SCRITTA = re.compile(r"([+-]\s*\d+)\s*(?:Des|Dex|destrezza)\b", re.I)
 CONTATTO = re.compile(r"(?:touch|contatto)\s*(\d+)", re.I)
+# bonus che entrano nella CA di contatto senza essere Destrezza (SRD, *Touch Attacks*)
+NON_DES_CONTATTO = re.compile(
+    r"([+-]\s*\d+)\s*(?:deviazione|deflessione|deflection|schivata|dodge)\b", re.I)
 NON_MORTO = re.compile(r"\b(?:undead|non[ -]?mort[oi])\b", re.I)
 MODELLO_SENZA_MENTE = re.compile(r"skelet|schelet|zombi", re.I)
 mod = T.mod
 
 
 def da_modificatore(m: int) -> int:
-    """Il punteggio piu' basso che da' quel modificatore: 10 + 2m."""
-    return max(1, 10 + 2 * m)
+    """Il punteggio piu' basso che da' quel modificatore: 10 + 2m, mai sotto 1.
+
+    La formula sta nei dati del plugin (`punteggio_minimo`, F3 di ADR-0112)."""
+    return formula("punteggio_minimo", "dnd35")(modificatore=m)
 
 
 def des_vincolata(testo: str, gs: float = 30.0) -> "tuple[int, str] | None":
@@ -107,6 +74,8 @@ def des_vincolata(testo: str, gs: float = 30.0) -> "tuple[int, str] | None":
     if c and ca:
         # contatto = 10 + mod Des + taglia  →  mod Des = contatto − 10 − taglia
         m_des = int(c.group(1)) - 10 - taglia_di(testo)
+        # deviazione e schivata scritte nel dettaglio non sono Destrezza
+        m_des -= sum(int(x.replace(" ", "")) for x in NON_DES_CONTATTO.findall(d.group(1)))
         # la CA di contatto somma anche deviazione e schivata: se il numero
         # che ne esce non e' credibile per il GS, la differenza non e' Destrezza
         if -5 <= m_des and plausibile(m_des, gs):
@@ -246,10 +215,10 @@ def iniziativa_ambigua(testo: str) -> "tuple[int, int] | None":
 
 def profilo_di(ruolo: str) -> "tuple[str, ...]":
     basso = ruolo.lower()
-    for chiave, ordine in PROFILI:
+    for chiave, ordine in _derivate()["PROFILI"]:
         if chiave in basso:
             return ordine
-    return PROFILO_DI_RIPIEGO
+    return _derivate()["PROFILO_DI_RIPIEGO"]
 
 
 def profilo_esatto(chiave: str) -> "tuple[str, ...]":
@@ -260,7 +229,7 @@ def profilo_esatto(chiave: str) -> "tuple[str, ...]":
     profilo per nome, come i ruoli di `genera_creatura`, deve invece fallire:
     un profilo tolto o rinominato qui e' un `KeyError`, non un ordine sbagliato.
     """
-    for nome, ordine in PROFILI:
+    for nome, ordine in _derivate()["PROFILI"]:
         if nome == chiave:
             return ordine
     raise KeyError(f"nessun profilo {chiave!r} in PROFILI")
@@ -291,7 +260,7 @@ def matrice_png(profilo: str, livelli: int, elite: bool,
     # combatte; la classe dice su *cosa* lancia, e sulla seconda non si tratta.
     if lancia_su and ordine[0] != lancia_su:
         ordine = (lancia_su,) + tuple(c for c in ordine if c != lancia_su)
-    valori = dict(zip(ordine, ARRAY_ELITE if elite else ARRAY_STANDARD))
+    valori = dict(zip(ordine, _derivate()["ARRAY_ELITE"] if elite else _derivate()["ARRAY_STANDARD"]))
     # SRD: +1 a un punteggio al 4° livello e ogni 4 livelli, sulla
     # caratteristica primaria. Senza, un mago di 9° usciva con Intelligenza 15,
     # che al 9° livello e' un apprendista con nove livelli.
@@ -299,42 +268,47 @@ def matrice_png(profilo: str, livelli: int, elite: bool,
     return valori
 
 
-#: SRD 3.5, *Improving Monsters*, «Changes to Statistics by Size», sommati a
-#: partire da Media. Si applicano solo alle **creature**: un PNG con livelli
-#: di classe ha gia' la taglia nella razza.
-PER_TAGLIA = {
-    8: (-10, 8, -2), 4: (-10, 6, -2), 2: (-8, 4, -2), 1: (-4, 2, -2), 0: (0, 0, 0),
-    -1: (8, -2, 4), -2: (16, -4, 8), -4: (24, -4, 12), -8: (32, -4, 16),
-}
-#: SRD 3.5, modificatori razziali, per i PNG con livelli di classe. L'ordine
-#: conta: `hobgoblin` prima di `goblin`, `duergar` prima di `nano`.
-RAZZE = (
-    ("hobgoblin",   {"Des": 2, "Cos": 2}),
-    ("bugbear",     {"For": 4, "Des": 2, "Cos": 2, "Car": -2}),
-    ("goblin",      {"For": -2, "Des": 2, "Car": -2}),
-    ("half-orc",    {"For": 2, "Int": -2, "Car": -2}),
-    ("mezzorc",     {"For": 2, "Int": -2, "Car": -2}),
-    ("orc",         {"For": 4, "Int": -2, "Sag": -2, "Car": -2}),
-    ("orco",        {"For": 4, "Int": -2, "Sag": -2, "Car": -2}),
-    ("duergar",     {"Cos": 2, "Car": -4}),
-    ("dwarf",       {"Cos": 2, "Car": -2}),
-    ("nano",        {"Cos": 2, "Car": -2}),
-    ("drow",        {"Des": 2, "Cos": -2, "Int": 2, "Car": 2}),
-    ("elf",         {"Des": 2, "Cos": -2}),
-    ("elfo",        {"Des": 2, "Cos": -2}),
-    ("svirfneblin", {"For": -2, "Des": 2, "Sag": 2, "Car": -4}),
-    ("gnome",       {"For": -2, "Cos": 2}),
-    ("gnomo",       {"For": -2, "Cos": 2}),
-    ("halfling",    {"For": -2, "Des": 2}),
-    ("kobold",      {"For": -4, "Des": 2, "Cos": -2}),
-    ("gnoll",       {"For": 4, "Cos": 2, "Int": -2, "Car": -2}),
-    ("lizardfolk",  {"For": 2, "Cos": 2, "Int": -2}),
-)
+
+
+_PIGRE = ("ARRAY_ELITE", "ARRAY_STANDARD", "PROFILI", "PROFILO_DI_RIPIEGO", "PER_TAGLIA", "RAZZE")
+
+
+@_cache
+def _derivate() -> dict:
+    """Le costanti che vengono dai dati di un sistema, lette alla prima richiesta
+    e non all'import (F2 di ADR-0112)."""
+    #: Manuale del DM 3.5 — gli array dei PNG (identici alle *heroic*/*basic* PF1e).
+    ARRAY_ELITE = T.ELITE
+    ARRAY_STANDARD = T.BASIC
+    #: Il ruolo dichiarato decide **l'ordine di priorita'** delle sei
+    #: caratteristiche: il valore piu' alto dell'array va alla prima della riga.
+    #: Si cerca la prima parola chiave che compare nel ruolo, in quest'ordine.
+    #: Le righe stanno in `[[profili.ruolo]]` del plugin dnd35 (ADR-0111, L5b),
+    #: nello stesso ordine.
+    PROFILI = tuple((r["chiave"], tuple(r["ordine"])) for r in T._DATI["profili"]["ruolo"])
+    PROFILO_DI_RIPIEGO = tuple(T._DATI["profili"]["ripiego"])
+    #: SRD 3.5, *Improving Monsters*, «Changes to Statistics by Size», sommati a
+    #: partire da Media. Si applicano solo alle **creature**: un PNG con livelli
+    #: di classe ha gia' la taglia nella razza.
+    PER_TAGLIA = {int(k): tuple(v) for k, v in T._DATI["per_taglia"].items()}
+    #: SRD 3.5, modificatori razziali, per i PNG con livelli di classe. Stanno in
+    #: `[[razze]]` del plugin dnd35 (ADR-0111, L5b). L'ordine conta: `hobgoblin`
+    #: prima di `goblin`, `duergar` prima di `nano`.
+    RAZZE = tuple((r["nome"], dict(r["modificatori"])) for r in T._DATI["razze"])
+    luogo = locals()
+    return {n: luogo[n] for n in _PIGRE}
+
+
+def __getattr__(nome: str):
+    if nome in _PIGRE:
+        return _derivate()[nome]
+    raise AttributeError(f"module {__name__!r} has no attribute {nome!r}")
+
 
 
 def razza_di(nome_file: str, tipo: str) -> "tuple[str, dict] | None":
     dove = (nome_file + " " + tipo).lower()
-    for nome, mods in RAZZE:
+    for nome, mods in _derivate()["RAZZE"]:
         if re.search(rf"(?<![a-z]){re.escape(nome)}", dove):
             return nome, mods
     return None
@@ -352,7 +326,7 @@ def _dall_array(nome_file: str, ruolo: str, gs: float, testo: str, png: bool) ->
     # un gigante e una naga, perche' la loro prosa nomina «Barbaro 2» e
     # «Sorcerer 8» — varianti e note, non il loro tipo. Si guarda **solo** il
     # campo `tipo`, che e' quello che lo dichiara.
-    array = list(ARRAY_ELITE if (elite or not png) else ARRAY_STANDARD)
+    array = list(_derivate()["ARRAY_ELITE"] if (elite or not png) else _derivate()["ARRAY_STANDARD"])
     note.append(f"array {'elite' if (elite or not png) else 'standard'} del "
                 f"Manuale del DM ({'PNG con classe' if png else 'creatura'})")
     priorita = list(profilo_di(ruolo))
@@ -402,7 +376,7 @@ def _dall_array(nome_file: str, ruolo: str, gs: float, testo: str, png: bool) ->
     else:
         # una creatura, o un PNG con livelli di classe ma di razza mostruosa
         # (minotauro, ogre): la taglia gli spetta comunque
-        f, d, c = PER_TAGLIA.get(taglia_di(testo), (0, 0, 0))
+        f, d, c = _derivate()["PER_TAGLIA"].get(taglia_di(testo), (0, 0, 0))
         if (f, d, c) != (0, 0, 0):
             valori["For"] += f
             valori["Des"] += d
@@ -430,7 +404,7 @@ def genera(nome_file: str, ruolo: str, gs: float, testo: str,
     # campo `tipo`, che e' quello che lo dichiara.
     m_tipo = re.search(r"^tipo:\s*(.+)$", testo, re.M)
     tipo = m_tipo.group(1) if m_tipo else ""
-    png = bool(CLASSE_NEL_TIPO.search(tipo))
+    png = bool(_LC.CLASSE_NEL_TIPO.search(tipo))
     scheda = dalla_scheda(testo) if usa_fonte else None
     fonte = scheda or (dalla_fonte(nome_file, testo) if usa_fonte else None)
     if fonte:

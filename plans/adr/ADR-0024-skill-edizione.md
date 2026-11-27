@@ -14,7 +14,7 @@ costo della frammentazione, e le skill sono sedici. Una diciassettesima va
 **motivata**, non aggiunta per simmetria. La motivazione qui non è «manca un
 argomento»: è che **una regola scritta che nessun agente carica non è una regola**.
 
-Il fatto misurato: `docs/guides/GUIDA-CONDIVISIONE-IP.md` ha al §7 una *«checklist
+Il fatto misurato: `docs/how-to/GUIDA-CONDIVISIONE-IP.md` ha al §7 una *«checklist
 prima di far uscire qualcosa dal repo»* — cioè il gate d'uscita, scritto e
 completo. `grep -rl "GUIDA-CONDIVISIONE-IP" skills/` restituiva **un solo file**,
 e per un'altra ragione (l'art direction, sulle immagini). Un agente che genera un

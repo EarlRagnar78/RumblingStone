@@ -23,11 +23,14 @@ voci originali (pasta corrosiva, Ritmo dei cavalli) sono marcate come tali.
 nome: Vidalia Roncetti, Sovrintendente al Drappo
 gs: 4
 tipo: Umana esperta 6 · LN · femmina, 61 anni
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 13
 ca-dettaglio: +2 armatura, +1 Des
 pf: 33
 pf-dado: 6d8+6
-ts: Tem +3, Rif +3, Vol +6
+ts: Tem +3, Rif +3, Vol +8
 attributi: For 10 Des 12 Cos 12 Int 15 Sag 16 Car 14
 velocita: 9 m
 iniziativa: +1
@@ -37,11 +40,11 @@ attacchi:
 ```
 **Iniziativa** +1 · **Percezione** +11 · **Velocità** 9 m
 
-**Difesa** **CA** 13 (+2 armatura, +1 Des) · **pf** 33 (6d8+6) · **TS** Tem +3, Rif +3, Vol +6
+**Difesa** **CA** 13 (+2 armatura, +1 Des) · **pf** 33 (6d8+6) · **TS** Tem +3, Rif +3, Vol +8
 
 **Attacco** **Mischia** bastone +4 (1d6) · **BAB** +4 · **CMB** +4 · **CMD** 15
 
-**Statistiche** For 10, Des 12, Cos 12, Int 15, Sag 16, Car 14 · **Abilità** Percepire Intenzioni **+14**, Percezione +11, Diplomazia +11, Valutare +11, Conoscenze (locali) +11, Professione (amministratrice) +12, Linguistica +6
+**Statistiche** For 10, Des 12, Cos 12, Int 15, Sag 16, Car 14 · **Abilità** Intuizione **+14**, Percezione +11, Diplomazia +11, Valutare +11, Conoscenze (locali) +11, Professione (amministratrice) +12, Linguistica +6
 
 *Forestiera residente da trentotto anni. Terzo mandato. Non si compra e — cosa più
 scomoda — non si convince.*
@@ -62,7 +65,7 @@ decidono che non si può.
 
 | Capitano | Contrada | Classe | GS | pf | CA | Il numero che conta |
 |---|---|---|---|---|---|---|
-| **Ottavia Vesca** | Bruco | esperta 5 | 3 | 27 | 12 | Percepire Intenzioni +11, Diplomazia +10 |
+| **Ottavia Vesca** | Bruco | esperta 5 | 3 | 27 | 12 | Intuizione +11, Diplomazia +10 |
 | **Gerlando Attu** | Oca | esperto 5 | 3 | 25 | 13 | Valutare +13, Raggirare +11 |
 | **Zoe Barbanera** | Onda | guerriera 4 | 3 | 38 | 17 | Professione (pilota) +9, Intimidire +8 |
 | **Ubalda Trenchi** | Torre | guerriera 6 | 5 | 55 | 20 | attacco +11 (1d8+5), e **dodici miliziani** |
@@ -83,8 +86,11 @@ decidono che non si può.
 nome: Sfregio
 gs: 3
 tipo: Umano ladro 4 · NM · maschio, età incerta
-ca: 18
-ca-dettaglio: contatto 15, colto alla sprovvista 14 (+3 armatura, +4 Des, +1 anello)
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
+ca: 19
+ca-dettaglio: contatto 16, colto alla sprovvista 14 (+3 armatura, +4 Des, +1 schivare, +1 anello)
 pf: 26
 pf-dado: 4d8+4
 ts: Tempra +2, Riflessi +8, Volontà +2
@@ -98,13 +104,13 @@ attacchi:
 ```
 **Iniziativa** +4 · **Percezione** +8 · **Velocità** 9 m
 
-**Difesa** **CA** 18, contatto 15, colto alla sprovvista 14 (+3 armatura, +4 Des, +1 anello) · **pf** 26 (4d8+4) · **TS** Tempra **+2**, Riflessi **+8**, Volontà **+2** · **Schivare prodigioso** *(non è mai colto alla sprovvista)* · **schivare in movimento +1**
+**Difesa** **CA** 19, contatto 16, colto alla sprovvista 14 (+3 armatura, +4 Des, +1 schivare, +1 anello) · **pf** 26 (4d8+4) · **TS** Tempra **+2**, Riflessi **+8**, Volontà **+2** · **Schivare prodigioso** *(non è mai colto alla sprovvista)* · **schivare in movimento +1**
 
-**Attacco** **Mischia** pugnale da maestro **+8** (1d4+1/19–20) *(Finezza nell'Arma)* · **Distanza** balestra a mano +7 (1d4/19–20) · **Attacco furtivo** +2d6 · **BAB** +3 · **CMB** +4 · **CMD** 18
-
-**Statistiche** For 12, Des 18, Cos 12, Int 13, Sag 12, Car 10 · **Talenti** Finezza nell'Arma · Schivare · Mobilità *(trucco di combattimento)* · **Talenti da ladro** Furtività Rapida · Trucco di Combattimento · **Abilità** Furtività **+15** *(+19 in movimento grazie a Furtività Rapida)*, Acrobazia +11, Rapidità di Mano +11, Disattivare Congegni +10, Percezione +8, Scalare +8, Cavalcare +9 · **Equipaggiamento** cuoio borchiato da maestro · pugnale da maestro · balestra a mano · anello di protezione +1 · **2 dosi di pasta corrosiva** (§7) · 2 pozioni di *cura ferite leggere* · corda da scalata con rampino · **scudiscio da corsa di ottima fattura** *(che non usa: gliel'hanno dato perché lo lasciasse sul posto)*
+**Attacco** **Mischia** pugnale da maestro **+8** (1d4+1/19–20) *(Finezza nell'Arma)* · **Distanza** balestra a mano +7 (1d4/19–20) · **Attacco furtivo** +2d6 · **BAB** +3 · **CMB** +4 · **CMD** 20
 
 **Tattiche** **Non ingaggia mai volontariamente.** Il suo mestiere è entrare, fare, uscire. Se lo scoprono usa l'olio e il fumo, poi le finestre alte. **Fugge a 8 pf, sempre**, anche a lavoro mezzo fatto, anche se sta vincendo. Catturato vivo: **non parla**. Non per lealtà — perché il mediatore paga i silenzi e non paga più i morti.
+
+**Statistiche** For 12, Des 18, Cos 12, Int 13, Sag 12, Car 10 · **Talenti** Arma Accurata · Schivare · Mobilità *(trucco di combattimento)* · **Talenti da ladro** Furtività Rapida · Trucco di Combattimento · **Abilità** Furtività **+15** *(+19 in movimento grazie a Furtività Rapida)*, Acrobazia +11, Rapidità di Mano +11, Disattivare Congegni +10, Percezione +8, Scalare +8, Cavalcare +9 · **Equipaggiamento** cuoio borchiato da maestro · pugnale da maestro · balestra a mano · anello di protezione +1 · **2 dosi di pasta corrosiva** (§7) · 2 pozioni di *cura ferite leggere* · corda da scalata con rampino · **scudiscio da corsa di ottima fattura** *(che non usa: gliel'hanno dato perché lo lasciasse sul posto)*
 
 *Adepto di Norgorber nel modo pratico: non prega, esegue. Non conosce Ottavia Vesca e
 non l'ha mai vista. Lavora per un mediatore, e il mediatore ha tre clienti.*
@@ -119,6 +125,9 @@ non l'ha mai vista. Lavora per un mediatore, e il mediatore ha tre clienti.*
 nome: Tintore mezzo ubriaco
 gs: 1/3
 tipo: Umano esperto 1
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 12
 pf: 6
 ts: Tem +1, Rif +0, Vol +2
@@ -131,9 +140,9 @@ attacchi:
 
 **Attacco** **Mischia** bastone da tinozza +1 *(1d6 non letale)* · pugno +1 (1d3 non letale)
 
-**Statistiche** For 12, Des 11, Cos 12, Int 10, Sag 11, Car 10 · **Abilità** Artigianato (tintura) +6, Professione +4
-
 **Tattiche** Male, e in gruppo. Si ferma se vede una lama vera, se vede sangue, o se qualcuno più anziano di lui alza la voce.
+
+**Statistiche** For 12, Des 11, Cos 12, Int 10, Sag 11, Car 10 · **Abilità** Artigianato (tintura) +6, Professione +4
 
 ### 4.2 · Bravaccio del canale — GS 1/2
 
@@ -141,25 +150,28 @@ attacchi:
 nome: Bravaccio del canale
 gs: 1/2
 tipo: Umano guerriero 1
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 16
 ca-dettaglio: +4 camicia di maglia, +2 scudo
-pf: 13
+pf: 16
 ts: Tem +4, Rif +1, Vol +0
 attributi: For 15 Des 12 Cos 14 Int 9 Sag 10 Car 8
 iniziativa: +1
 attacchi:
   - Mischia mazza pesante +4 (1d8+2)
-  - Mischia coltello +4 (1d4+2/19–20)
+  - Mischia coltello +3 (1d4+2/19–20)
 ```
 **Iniziativa** +1
 
-**Difesa** **CA** 16 (+4 camicia di maglia, +2 scudo) · **pf** 13 · TS Tem +4, Rif +1, Vol +0
+**Difesa** **CA** 16 (+4 camicia di maglia, +2 scudo) · **pf** 16 · TS Tem +4, Rif +1, Vol +0
 
-**Attacco** **Mischia** mazza pesante +4 (1d8+2) · coltello +4 (1d4+2/19–20) · **BAB** +1 · **CMB** +3 · **CMD** 14
-
-**Statistiche** For 15, Des 12, Cos 14, Int 9, Sag 10, Car 8 · **Talenti** Attacco Poderoso, Vigore Sovrannaturale
+**Attacco** **Mischia** mazza pesante +4 (1d8+2) · coltello +3 (1d4+2/19–20) · **BAB** +1 · **CMB** +3 · **CMD** 14
 
 **Tattiche** Per la paga della serata. **Si arrende** se ne cadono due, o a un Intimidire CD 14 fatto da chi ne ha appena messo giù uno. Nessuno di loro morirà per Sfregio.
+
+**Statistiche** For 15, Des 12, Cos 14, Int 9, Sag 10, Car 8 · **Talenti** Arma Focalizzata (mazza pesante), Attacco Poderoso, Robustezza
 
 **Pico** — uno dei quattro, diciassette anni, quello della rissa alla fontana.
 
@@ -169,6 +181,9 @@ attacchi:
 nome: Miliziano della Torre
 gs: 1
 tipo: Umano guerriero 2
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m (3 m con la lancia lunga, e allora non i quadretti adiacenti)
 ca: 18
 ca-dettaglio: +5 corazza a scaglie, +2 scudo, +1 Des
 pf: 20
@@ -176,15 +191,15 @@ ts: Tem +5, Rif +1, Vol +0
 attributi: For 15 Des 12 Cos 14 Int 10 Sag 11 Car 10
 attacchi:
   - Mischia lancia lunga +5 (1d8+3)
-  - Mischia spada corta +5 (1d6+2/19–20)
+  - Mischia spada corta +4 (1d6+2/19–20)
 ```
 **Difesa** **CA** 18 (+5 corazza a scaglie, +2 scudo, +1 Des) · **pf** 20 · TS Tem +5, Rif +1, Vol +0
 
-**Attacco** **Mischia** lancia lunga +5 (1d8+3) · spada corta +5 (1d6+2/19–20)
-
-**Statistiche** For 15, Des 12, Cos 14, Int 10, Sag 11, Car 10
+**Attacco** **Mischia** lancia lunga +5 (1d8+3) · spada corta +4 (1d6+2/19–20) · **BAB** +2
 
 **Tattiche** In formazione, con le lance, e mai da soli. Trenchi ne ha **dodici** e li usa tutti insieme o nessuno.
+
+**Statistiche** For 15, Des 12, Cos 14, Int 10, Sag 11, Car 10 · **Talenti** Arma Focalizzata (lancia lunga)
 
 ### 4.4 · Cerbo, guardiano del magazzino — GS 1/2
 
@@ -192,6 +207,9 @@ attacchi:
 nome: Cerbo, guardiano del magazzino
 gs: 1/2
 tipo: Umano popolano 2
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 11
 pf: 9
 ts: Tem +3, Rif +0, Vol +0
@@ -203,9 +221,9 @@ attacchi:
 
 **Attacco** **Mischia** randello +2 (1d6+1)
 
-**Statistiche** **Percezione** +2
-
 **Tattiche** Non combatte. **Urla.**
+
+**Statistiche** **Percezione** +2
 
 *Ha sessantun anni e dorme in magazzino perché a casa c'è la nuora.*
 
@@ -219,7 +237,11 @@ Profilo base: **cavallo** del Bestiario Core.
 nome: Cavallo (profilo base)
 gs: 1
 tipo: Animale Grande · Bestiario Core
+taglia: Grande
+spazio: 3 m
+portata: 1,5 m
 ca: 11
+sensi: visione crepuscolare, fiuto
 pf: 15
 pf-dado: 2d8+6
 ts: Tempra +6, Riflessi +5, Volontà +1
@@ -231,7 +253,7 @@ attacchi:
 ```
 **Difesa** **CA** 11 · **pf** 15 (2d8+6) · TS Tempra +6, Riflessi +5, Volontà +1
 
-**Attacco** Vel 15 m · morso +3 (1d4+3), due zoccoli −2 (1d6+1) · **CMD** 18
+**Attacco** Vel 15 m · morso +3 (1d4+3), due zoccoli −2 (1d6+1) · **CMD** 17 (21 contro sbilanciare)
 
 **Statistiche** For 16, Des 14, Cos 17, Int 2, Sag 13, Car 6
 

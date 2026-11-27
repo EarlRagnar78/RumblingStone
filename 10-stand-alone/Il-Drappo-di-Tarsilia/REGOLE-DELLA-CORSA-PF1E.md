@@ -4,7 +4,7 @@
 > Tutto il resto lo puoi leggere mentre i giocatori parlano.
 >
 > **Sistema**: PF1e Core Rulebook. Le abilità sono chiamate all'italiana come al
-> tavolo: Cavalcare, Percezione, Raggirare, Percepire Intenzioni, Intrattenere,
+> tavolo: Cavalcare, Percezione, Raggirare, Intuizione, Intrattenere,
 > Furtività, Addestrare Animali, Sapienza Magica.
 
 ---
@@ -132,7 +132,7 @@ mette al centro del tavolo. In Corsa vale così com'è scritto, non come i gioca
 ricordano di averlo inteso — ed è il punto: **leggete le clausole**.
 
 **Rompere un patto** durante la Corsa: si può, sempre. Costa **Morale −2** e un nemico
-per tutta la vita. Percepire Intenzioni CD 20 durante la trattativa rivela se
+per tutta la vita. Intuizione CD 20 durante la trattativa rivela se
 l'altro ha già intenzione di romperlo (Attu sì, sulla clausola piccola; Barbanera no,
 mai).
 
@@ -210,7 +210,7 @@ le azioni della folla.
 | Posto | Chi ci sta bene | Azioni disponibili |
 |---|---|---|
 | **Alle funi** | Capitano | *Urlare un ordine* (Intimidire CD 15: il proprio fantino ripete un tiro); *Trattenere* (§5.2) |
-| **Palco della Sovrintendente** | Tenente, Vicario | *Protestare* (Diplomazia CD 18: annulla una scudisciata avversaria); *Testimoniare* (Percepire Intenzioni CD 15: smaschera un fallo, l'avversario perde 1 Lunghezza) |
+| **Palco della Sovrintendente** | Tenente, Vicario | *Protestare* (Diplomazia CD 18: annulla una scudisciata avversaria); *Testimoniare* (Intuizione CD 15: smaschera un fallo, l'avversario perde 1 Lunghezza) |
 | **Curva Nord, dentro il transennato** | Stalliere | *Chiamare il cavallo* (Addestrare Animali CD 15: +2 al tiro del tratto); *Fermare un cavallo scosso* (Addestrare Animali CD 20) |
 | **Sul carro degli alfieri** | Alfiere | *Il canto sopra il rumore* (Intrattenere CD 16: +2 a tutti i tiri della propria contrada per un tratto) |
 | **Fra la folla, alla curva sud** | chiunque | *Aprire un varco* (Furtività CD 15 per non farsi vedere + Forza CD 13); *Raccogliere chi cade* (§6.5) |

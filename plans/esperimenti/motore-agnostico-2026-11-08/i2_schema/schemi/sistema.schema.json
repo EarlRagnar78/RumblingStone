@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sistema.schema.json",
+  "title": "Plugin di sistema di gioco (ADR-0111)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "nome",
+    "tipo",
+    "licenza",
+    "fonti",
+    "skill",
+    "capacita"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*$"
+    },
+    "nome": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tipo": {
+      "enum": [
+        "sistema",
+        "famiglia"
+      ]
+    },
+    "famiglia": {
+      "type": "string"
+    },
+    "licenza": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fonti": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "riconosci": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "skill": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9-]+$"
+      },
+      "uniqueItems": true
+    },
+    "capacita": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z]+\\.[a-z_]+$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "dati": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "codice": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^[^:]+:[A-Za-z_][A-Za-z0-9_]*$"
+            },
+            "minItems": 1
+          },
+          "eredita": {
+            "type": "string",
+            "minLength": 1
+          },
+          "non_supportato": {
+            "type": "string",
+            "minLength": 1
+          },
+          "motivo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "lotto": {
+            "type": "string",
+            "pattern": "^L[0-9]+[a-z]?$"
+          },
+          "nota": {
+            "type": "string"
+          }
+        },
+        "oneOf": [
+          {
+            "required": [
+              "dati"
+            ]
+          },
+          {
+            "required": [
+              "codice",
+              "lotto"
+            ]
+          },
+          {
+            "required": [
+              "eredita",
+              "motivo"
+            ]
+          },
+          {
+            "required": [
+              "non_supportato"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

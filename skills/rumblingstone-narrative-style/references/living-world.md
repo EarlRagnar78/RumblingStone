@@ -10,7 +10,7 @@
 - 5. Encounter tables as world sensors
 - 5-bis. Session-level living world — the milestone grid (Palio pattern)
 - 6. The world initiates
-- 7. Self-check additions (run with the SKILL.md self-check)
+- 7. Self-check additions (run with the SKILL.md «Prima di consegnare»)
 <!-- /indice -->
 
 Principle: **the world does not orbit the PCs**. NPCs, villains, and
@@ -165,7 +165,7 @@ camera rule (a PC decision inside the scene). This is the BG2
 stronghold pattern generalized: existence at the PCs' level of fame
 *generates* inbound events.
 
-## 7. Self-check additions (run with the SKILL.md self-check)
+## 7. Self-check additions (run with the SKILL.md «Prima di consegnare»)
 
 1. Does every named NPC in this content have a Want that isn't about
    the PCs? (If no → deepen it one level.)

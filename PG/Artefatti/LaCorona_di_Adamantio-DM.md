@@ -512,7 +512,7 @@ Il mondo si congela. Moradin parla alla mente del Portatore.
 
 "Figlio della Pietra, hai risvegliato la Memoria del Mondo. La battaglia che infuria ora, sulle
 
-mura di Hammerfist, è già iniziata. Il tuo corpo è lontano, ma il tuo spirito, legato a Aegis
+mura di Hammerfist, è già iniziata. Il tuo corpo è lontano, ma il tuo spirito, legato ad Aegis
 
 Fang e ora a questa corona, può ancora colpire. Hai dieci rintocchi di martello (10
 
@@ -689,7 +689,7 @@ Poteri della Corona
 ◦ Sblocco: Rituale 1. Attivazione: Continuo. LI: 20°.
 ◦ Effetto: +1 morale attacco/danni e +2 intuizione CA toccando pietra/terra. Individuare
 
-Porte Segrete, Scoprire Trappole e Comprendere Linguaggi a volontà *(decisione DM 2026-07-04: valgono entrambe le liste master/HTML)*.
+Porte Segrete, Scoprire Trappole e Comprendere Linguaggi a volontà [CANONE — DM 2026-07-04: valgono entrambe le liste master/HTML].
 
 • Power: Crown of Protection +2 (Corona della Protezione +2) (Str)
 
@@ -725,7 +725,7 @@ Le Gemme Divine
 
 • Gem: Gem of Immutable Time (Gemma del Tempo Immutabile)
 
-◦ Sblocco: Rituale 2. Attivazione: 1 ora di concentrazione in un Nodo Terrestre *(decisione DM 2026-07-04: vale la versione HTML `02`; «10 minuti» superato)*.
+◦ Sblocco: Rituale 2. Attivazione: 1 ora di concentrazione in un Nodo Terrestre [CANONE — DM 2026-07-04: vale la versione HTML `02`; «10 minuti» superato].
 
 Frequenza: 1/mese. LI: 20°. TS: Tempra CD 25 (per alleati non protetti).
 
@@ -884,12 +884,12 @@ Scena B: GENERALE GRIMJAW
 • Obiettivo: Infliggere > 60 danni a Grimjaw in 10 round.
 • Statistiche dei Nemici:
 
-◦ GENERALE GRIMJAW (Orog Guerriero 10/Signore della Guerra 3, GS 14):
+◦ GENERALE GRIMJAW (Orog Guerriero 11/Signore della Guerra 3, GS 15):
 
-▪ PF: 178; CA: 25; TS: Temp +16, Rifl +8, Vol +10
+▪ PF: 122 (150 in Furia); CA: 27; TS: Temp +14, Rifl +6, Vol +7
 ▪ Tattiche: Non attacca. Usa Tattico Superiore. Attiva Presenza Intimidatoria (CD
 
-16) se il Portatore si avvicina.
+19) se il Portatore si avvicina.
 
 ◦ OROG GUARDIE NERE (4 Orog Guerrieri 6):
 
@@ -978,7 +978,7 @@ conoscenza e scopo.
 
 "Figlio della Pietra, hai risvegliato la Memoria del Mondo. La battaglia che infuria ora, sulle
 
-mura di Hammerfist, è già iniziata. Il tuo corpo è lontano, ma il tuo spirito, legato a Aegis
+mura di Hammerfist, è già iniziata. Il tuo corpo è lontano, ma il tuo spirito, legato ad Aegis
 
 Fang e ora a questa corona, può ancora colpire. Hai dieci rintocchi di martello (10
 
@@ -1151,8 +1151,8 @@ Obiettivo: Superare le guardie e infliggere più di 70 danni direttamente al Gen
 
 Statistiche Chiave:
 
-• Generale Grimjaw (GS 14):
-◦ PF: 178; CA: 25
+• Generale Grimjaw (GS 15):
+◦ PF: 122 (150 in Furia); CA: 27 (scheda in Bestiario/villain/Generale_Grimjaw.md; fino al 2026-11-26 qui c'era GS 14, PF 178, CA 25)
 ◦ Tattiche: Non attacca. Ogni round usa Tattico Superiore per potenziare gli Hobgoblin o
 le sue guardie. Se il Portatore si avvicina a meno di 9m, attiva Presenza Intimidatoria.
 

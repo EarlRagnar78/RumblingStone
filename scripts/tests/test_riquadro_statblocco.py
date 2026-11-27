@@ -107,6 +107,39 @@ class TestLeTreUscite(unittest.TestCase):
         self.assertNotIn("Sotto 15 pf scavano via.\n\n", out.split("#statblocco(", 1)[0])
 
 
+class TestEtichetteDalPlugin(unittest.TestCase):
+    """L7 (ADR-0111): le sigle del riquadro vengono da stampa.etichette."""
+
+    def setUp(self):
+        self._html, self._typ = bh.ET, ex.ET
+
+    def tearDown(self):
+        bh.ET, ex.ET = self._html, self._typ
+
+    def test_d20_da_le_sigle_di_sempre(self):
+        from dmcore import sistemi as S
+        for sis in ("dnd35", "pf1e"):
+            e = S.etichette(sis)
+            self.assertEqual((e["ca"], e["pf"], e["ts"], e["vel"], e["gs"]), ("CA", "pf", "TS", "Vel", "GS"), sis)
+
+    def test_una_sigla_diversa_arriva_nelle_tre_uscite(self):
+        finte = dict(bh.ET, ca="DIF", gs="SF", iniziativa="Init")
+        bh.ET = ex.ET = finte
+        corpo = BLOCCO.split("\n", 1)[1].rsplit("\n", 1)[0]
+        html = bh.statblocco_html(corpo, "", [])
+        self.assertIn("<b>DIF</b>", html)
+        self.assertIn("SF 6", html)
+        self.assertNotIn("GS 6", html)
+        typ = ex.md_to_typ(BLOCCO + "\n")
+        self.assertIn('ca: "DIF"', typ)
+        self.assertIn("SF 6", typ)
+
+    def test_il_typst_passa_le_sigle_al_tema(self):
+        typ = ex.md_to_typ(BLOCCO + "\n")
+        self.assertIn('etichette: (ca: "CA", pf: "pf", ts: "TS", vel: "Vel", '
+                      'iniziativa: "Iniziativa", sensi: "Sensi")', typ)
+
+
 class TestLaMisura(unittest.TestCase):
 
     def test_riquadro_e_forme_libere(self):

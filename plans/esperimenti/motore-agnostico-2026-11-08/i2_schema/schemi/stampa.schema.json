@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "stampa.schema.json",
+  "title": "stampa.etichette",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "etichette"
+  ],
+  "properties": {
+    "etichette": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "ca",
+        "pf",
+        "ts",
+        "vel",
+        "gs",
+        "iniziativa",
+        "sensi"
+      ],
+      "properties": {
+        "ca": {
+          "type": "string",
+          "minLength": 1
+        },
+        "pf": {
+          "type": "string",
+          "minLength": 1
+        },
+        "ts": {
+          "type": "string",
+          "minLength": 1
+        },
+        "vel": {
+          "type": "string",
+          "minLength": 1
+        },
+        "gs": {
+          "type": "string",
+          "minLength": 1
+        },
+        "iniziativa": {
+          "type": "string",
+          "minLength": 1
+        },
+        "sensi": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    }
+  }
+}

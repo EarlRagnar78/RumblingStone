@@ -1,0 +1,307 @@
+{
+ "data": "2026-11-03",
+ "domanda": "il DOPO dice qualcosa che non può essere vero insieme al PRIMA?",
+ "modello": "MoritzLaurer/mDeBERTa-v3-base-xnli-multilingual-nli-2mil7",
+ "coppie": [
+  {
+   "n": 1,
+   "sha": "89e73d85",
+   "prima": "sé**, come una serratura che riconosce la chiave. La Corona passa a **+3**.",
+   "dopo": "sé**, come una serratura che riconosce la chiave. Ma **la Corona non cambia",
+   "dm": "S",
+   "claude": "S",
+   "nli": 0.998,
+   "solo_numeri": 1
+  },
+  {
+   "n": 2,
+   "sha": "e8a34807",
+   "prima": "Come azione rapida, avvolge il portatore e gli alleati entro 9 metri in una luce divina per 10 round, conferendo *Giusto Potere* e *Pelle di Pietra* al portatore, *Potere divino* e *Ispirare Coraggio* (+3) agli alleati.",
+   "dopo": "Come azione veloce, avvolge il portatore e gli alleati entro 9 metri in una luce divina per 10 round, conferendo *Giusto Potere* e *Pelle di Pietra* al portatore, *Potere divino* e *Ispirare Coraggio* (+3) agli alleati.",
+   "dm": "S",
+   "claude": "N",
+   "nli": 0.015,
+   "solo_numeri": 0
+  },
+  {
+   "n": 3,
+   "sha": "c63a8c09",
+   "prima": "le Benedizioni di Moradin +2/+2, la mappa accurata del campo **e la dotazione",
+   "dopo": "le Benedizioni di Moradin +2/+2 (morale, al colpire e ai danni, 12 ore), la mappa accurata del campo **e la dotazione",
+   "dm": "N",
+   "claude": "N",
+   "nli": 0.017,
+   "solo_numeri": 1
+  },
+  {
+   "n": 4,
+   "sha": "23d45309",
+   "prima": "◦ Sblocco: Rituale 2. Attivazione: 10 minuti di concentrazione in un Nodo Terrestre.",
+   "dopo": "◦ Sblocco: Rituale 2. Attivazione: 1 ora di concentrazione in un Nodo Terrestre *(decisione DM 2026-07-04: vale la versione HTML `02`; «10 minuti» superato)*.",
+   "dm": "S",
+   "claude": "S",
+   "nli": 0.982,
+   "solo_numeri": 1
+  },
+  {
+   "n": 5,
+   "sha": "888cead8",
+   "prima": "> *L'oro e i gioielli che offri non bruciano. Si smaterializzano in pura energia creativa, risucchiati dall'Incudine del Mondo. La corona sulla tua fronte diventa incandescente, e senti i poteri di tutte e tre le gemme scattare in posizione, come i meccanismi perfetti di una serratura divina. Ora non è più solo un oggetto che indossi. È una parte di te. E tu sei una parte di essa.*",
+   "dopo": "> *L'oro e i gioielli che offri non bruciano. Si smaterializzano in pura energia creativa, risucchiati dall'Incudine del Mondo. La corona sulla tua fronte diventa incandescente, e i poteri di tutte e tre le gemme scattano in posizione, come i meccanismi perfetti di una serratura divina. Ora non è più solo un oggetto che indossi. È una parte di te. E tu sei una parte di essa.*",
+   "dm": "N",
+   "claude": "N",
+   "nli": 0.041,
+   "solo_numeri": 0
+  },
+  {
+   "n": 6,
+   "sha": "192b896e",
+   "prima": "La checklist del rapporto di Channathgate, punto per punto, applicata qui:",
+   "dopo": "La checklist del rapporto di Channathgate, punto per punto, **allo stato attuale**:",
+   "dm": "N",
+   "claude": "N",
+   "nli": 0.032,
+   "solo_numeri": 0
+  },
+  {
+   "n": 7,
+   "sha": "f124b967",
+   "prima": "> **Read-aloud (Andor lead) — la postierla.** *Poco prima di mezzanotte si apre",
+   "dopo": "> **Read-aloud (Andor lead) — la postierla.** *Nel cuore della notte si apre",
+   "dm": "N",
+   "claude": "N",
+   "nli": 0.27,
+   "solo_numeri": 0
+  },
+  {
+   "n": 8,
+   "sha": "57fd37e6",
+   "prima": "> **Legenda stato**: **MASTER** = versione viva da usare al tavolo ·",
+   "dopo": "> **Legenda stato**: **MASTER** = era la versione viva *prima* del consolidamento",
+   "dm": "?",
+   "claude": "S",
+   "nli": 0.107,
+   "solo_numeri": 0
+  },
+  {
+   "n": 9,
+   "sha": "8c849532",
+   "prima": "> **Legenda stato**: **MASTER** = era la versione viva *prima* del consolidamento",
+   "dopo": "> **Legenda stato**: **MASTER** *(fino al consolidamento)* = era la versione viva *prima* del consolidamento",
+   "dm": "N",
+   "claude": "N",
+   "nli": 0.694,
+   "solo_numeri": 0
+  },
+  {
+   "n": 10,
+   "sha": "4ab0cc5c",
+   "prima": "nano di cui non esistono nè PF nè CA. E' la forma d'errore di **ADR-0053** —",
+   "dopo": "nano di cui non esistono né PF né CA. È la forma d'errore di **ADR-0053** —",
+   "dm": "N",
+   "claude": "N",
+   "nli": 0.205,
+   "solo_numeri": 0
+  },
+  {
+   "n": 11,
+   "sha": "d4684623",
+   "prima": "20 → +2. Analizzare/estirpare il Seme di Varis = Sapienza Magica CD 20.",
+   "dopo": "Analizzare/estirpare il Seme di Varis = Sapienza Magica CD 20.",
+   "dm": "N",
+   "claude": "N",
+   "nli": 0.184,
+   "solo_numeri": 1
+  },
+  {
+   "n": 12,
+   "sha": "cbc083c8",
+   "prima": "contare dopo il consiglio. Il drago è Skullcrusher e **non attacca**: aspetta",
+   "dopo": "prime quattro se ne vanno fra l'arrivo, la porta e il consiglio `[INFERRED — needs DM confirmation]`. Il drago è Skullcrusher e **non attacca**: aspetta",
+   "dm": "?",
+   "claude": "N",
+   "nli": 0.056,
+   "solo_numeri": 1
+  },
+  {
+   "n": 13,
+   "sha": "a98eee1e",
+   "prima": "- **Divinità**: Shar (perdita, vendetta, segreti). **Colori**: nero e rosso listati di",
+   "dopo": "- **Divinità**: Shar (perdita, vendetta, segreti). **Colori**: nero e viola di Shar, listati",
+   "dm": "S",
+   "claude": "S",
+   "nli": 0.936,
+   "solo_numeri": 0
+  },
+  {
+   "n": 14,
+   "sha": "3a504477",
+   "prima": "consiglia un riposo lungo — **nella Sala costa solo −4 h**, e loro non sanno",
+   "dopo": "consiglia di dormire otto ore — **nella Sala costano solo −4 h**, e loro non sanno",
+   "dm": "N",
+   "claude": "N",
+   "nli": 0.153,
+   "solo_numeri": 0
+  },
+  {
+   "n": 15,
+   "sha": "0718a676",
+   "prima": "> **Regia (asimmetria).** Thorik **non sa** che la presenza verde è Hella;",
+   "dopo": "> **Regia (asimmetria).** Thorik **non sa** che la presenza verde è Hella; per",
+   "dm": "N",
+   "claude": "N",
+   "nli": 0.271,
+   "solo_numeri": 0
+  },
+  {
+   "n": 16,
+   "sha": "5ebfc685",
+   "prima": "> *E tu sai leggere i tagli delle gemme come altri leggono le insegne delle",
+   "dopo": "> **Read-aloud — il corridoio, 3 di 3.** *E tu sai leggere i tagli delle gemme come altri leggono le insegne delle",
+   "dm": "N",
+   "claude": "N",
+   "nli": 0.266,
+   "solo_numeri": 1
+  },
+  {
+   "n": 17,
+   "sha": "f42094d3",
+   "prima": "La scelta determina l'orientamento permanente di Hella e la forma di Nymeria.",
+   "dopo": "La scelta determina l'orientamento permanente di Hella e la forma di Durik.",
+   "dm": "S",
+   "claude": "S",
+   "nli": 0.367,
+   "solo_numeri": 1
+  },
+  {
+   "n": 18,
+   "sha": "8115dcbd",
+   "prima": "**Mischia** 4 zampe (1d6+ afferrare) + morso; **Raggio degli occhi** (fuoco/freddo/elettricità/*rendere lento*, 1/round, danno alto), *find the path* verso il bersaglio designato, immune a incantesimi di ammaliamento/schema. Talenti: Fendere, Multiattacco, Attacco Poderoso.",
+   "dopo": "**Mischia** 4 zampe +15 (2d6+10, afferrare migliorato) e morso +10 (1d8+5); **Raggio degli occhi** (fuoco/freddo/elettricità/*rendere lento*, 1/round, danno alto), *find the path* verso il bersaglio designato, immune a incantesimi di ammaliamento/schema. Talenti: Fendere, Multiattacco, Attacco Poderoso.",
+   "dm": "S",
+   "claude": "S",
+   "nli": 0.919,
+   "solo_numeri": 1
+  },
+  {
+   "n": 19,
+   "sha": "f2a4fab2",
+   "prima": "sole forgiato. È… una leggenda?»* **Tre modi di farsi riconoscere** (tutti",
+   "dopo": "forgiato. È… una leggenda?»* **Tre modi di farsi riconoscere** (tutti",
+   "dm": "?",
+   "claude": "N",
+   "nli": 0.164,
+   "solo_numeri": 0
+  },
+  {
+   "n": 20,
+   "sha": "031ea047",
+   "prima": "Immune freddo e fuoco · Resistenza all'elettricità 10 · Percezione tremorica 18 m · TS Temp +16, Rifl +12, Vol +12 (buoni da esterno a 21 DV: +12) ·",
+   "dopo": "Immune freddo e fuoco · Resistenza all'elettricità 10 · Percezione tremorica 18 m · TS Temp +16, Rifl +12, Vol +14 (buoni da esterno a 21 DV: +12; Volontà di Ferro +2) ·",
+   "dm": "S",
+   "claude": "S",
+   "nli": 0.863,
+   "solo_numeri": 1
+  },
+  {
+   "n": 21,
+   "sha": "9bff7044",
+   "prima": "Therysol lo veglia da giorni (DEF-2 §2); il corpo si gira verso sud. I PG lo",
+   "dopo": "sud, dove Therysol lo veglia da giorni (DEF-2 §2); il corpo si gira verso sud. I PG lo",
+   "dm": "N",
+   "claude": "N",
+   "nli": 0.024,
+   "solo_numeri": 1
+  },
+  {
+   "n": 22,
+   "sha": "4bd95442",
+   "prima": "Il Cuore è incastrato in quattro perni di bronzo calishita sull'isolotto. Staccarlo: rompere due perni (durezza 10, 30 pf ciascuno) o una prova di Forza CD 28. Chi lo tiene in mano subisce ogni round un tentativo di *asservire* di Karkator (Volontà CD 29) finché l'aboleth vive.",
+   "dopo": "Il Cuore è incastrato in quattro perni di bronzo calishita sull'isolotto. Staccarlo: rompere due perni di bronzo vecchio (durezza 5, 20 pf ciascuno) o una prova di Forza CD 24. È la chiave dello scontro: senza il Cuore, Karkator perde rigenerazione, volo e *armatura magica*. Chi lo tiene in mano subisce ogni round un tentativo di *asservire* di Karkator (Volontà CD 29) finché l'aboleth vive.",
+   "dm": "S",
+   "claude": "S",
+   "nli": 0.993,
+   "solo_numeri": 1
+  },
+  {
+   "n": 23,
+   "sha": "7db0f7a8",
+   "prima": "> - **La presenza verde** (§9 Fase 1) si è stretta alle spalle di **Tordek**:",
+   "dopo": "> - **La presenza verde** (§9 Fase 1) si è stretta alle spalle di **Thorik**:",
+   "dm": "S",
+   "claude": "S",
+   "nli": 0.472,
+   "solo_numeri": 0
+  },
+  {
+   "n": 24,
+   "sha": "fe058a86",
+   "prima": "> che tiene la cappella**, passa la mano sulle due che fermano Kettra. La",
+   "dopo": "> che tiene la cappella**, passa la mano sulla sola che ferma Kettra. La",
+   "dm": "S",
+   "claude": "S",
+   "nli": 0.987,
+   "solo_numeri": 0
+  },
+  {
+   "n": 25,
+   "sha": "291d8216",
+   "prima": "> **Chiusura.** Tre pietre accese, un'ascia che ha appena parlato, e un cortile",
+   "dopo": "> **Chiusura.** Due pietre accese e una che aspetta, un'ascia che ha appena parlato, e un cortile",
+   "dm": "S",
+   "claude": "S",
+   "nli": 0.999,
+   "solo_numeri": 1
+  },
+  {
+   "n": 26,
+   "sha": "82d2507f",
+   "prima": "> *\"Il Sovrintendente Tordek e il Magister Veylan invitano formalmente i guerrieri di valore comprovato. Il Custode Eterno Tordek Stonefist [se Tordek è presente] è uno di loro.\"*",
+   "dopo": "> *\"Il Sovrintendente Tordek e il Magister Veylan invitano formalmente i guerrieri di valore comprovato. Il Custode Eterno Tordek Durinheart [se Tordek è presente] è uno di loro.\"*",
+   "dm": "S",
+   "claude": "S",
+   "nli": 0.953,
+   "solo_numeri": 1
+  },
+  {
+   "n": 27,
+   "sha": "2b76bb8d",
+   "prima": "MANI grandi, sulle ginocchia, con il callo della presa d'ascia",
+   "dopo": "MANI grandi, aperte verso la luce con i palmi in su, e il callo della presa d'ascia",
+   "dm": "?",
+   "claude": "S",
+   "nli": 0.95,
+   "solo_numeri": 0
+  },
+  {
+   "n": 28,
+   "sha": "79da1be7",
+   "prima": "Thorgrim è un vecchio, vivo e fragile, che non combatte (Q47). Se il tavolo li porta in combattimento, è una",
+   "dopo": "Thorgrim è un vecchio, vivo e fragile, che non combatte. Se il tavolo li porta in combattimento, è una",
+   "dm": "N",
+   "claude": "N",
+   "nli": 0.015,
+   "solo_numeri": 1
+  },
+  {
+   "n": 29,
+   "sha": "292f3495",
+   "prima": "**Per tutto il tavolo**: si legge insieme e si passa di mano.",
+   "dopo": "**Per tutto il tavolo**: si legge insieme, si passa di mano, e ognuno la",
+   "dm": "N",
+   "claude": "N",
+   "nli": 0.002,
+   "solo_numeri": 0
+  },
+  {
+   "n": 30,
+   "sha": "f42094d3",
+   "prima": "- Fuori da 18m: Nymeria agisce secondo il suo ultimo ordine o secondo il suo istinto (difendere Hella o i suoi alleati)",
+   "dopo": "- Fuori da 18m: Durik agisce secondo il suo ultimo ordine o secondo il suo istinto (difendere Hella o i suoi alleati)",
+   "dm": "S",
+   "claude": "S",
+   "nli": 0.847,
+   "solo_numeri": 0
+  }
+ ]
+}

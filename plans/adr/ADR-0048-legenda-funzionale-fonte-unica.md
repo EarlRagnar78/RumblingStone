@@ -9,11 +9,11 @@
 > motivo per cui la #72 non era più mergiabile: *«i numeri ADR 0014-0018 della
 > #72 erano stati occupati da altre decisioni nel frattempo»*. Questa era la
 > terza, ed è rimasta indietro. L'ha trovata il lotto 4b, non guardando gli ADR
-> ma **un link rotto**: `docs/guides/LEGENDA-FUNZIONALE-SPEC.md` citava un file
+> ma **un link rotto**: `docs/reference/LEGENDA-FUNZIONALE-SPEC.md` citava un file
 > che non esiste in nessun posto.
 
 **Data**: 2026-07-26 (corpo) · 2026-09-10 (recupero e riverifica)
-**Decisione-fonte**: lotto A1 di `PIANO-LEVEL-DESIGN-E-INQUADRATURA-SCENICA`; misura in `docs/audit/AUDIT-LEVEL-DESIGN-E-INQUADRATURA.md` §2.1. Specifica normativa: [`LEGENDA-FUNZIONALE-SPEC`](../../docs/guides/LEGENDA-FUNZIONALE-SPEC.md).
+**Decisione-fonte**: lotto A1 di `PIANO-LEVEL-DESIGN-E-INQUADRATURA-SCENICA`; misura in `docs/audit/AUDIT-LEVEL-DESIGN-E-INQUADRATURA.md` §2.1. Specifica normativa: [`LEGENDA-FUNZIONALE-SPEC`](../../docs/reference/LEGENDA-FUNZIONALE-SPEC.md).
 **Attuazione**: lotto **1.1** di [`PIANO-VENDIBILITA`](../PIANO-VENDIBILITA.md) — ✅ **fatta** (§9).
 
 ## Contesto
@@ -182,7 +182,7 @@ invece di una riga presa di straforo.
 Qui ci sono `wall`, `door`, `light`, `hazard`: **solo i fatti che il codice già
 applica**. `cover`, `obscurement`, `move_cost`, `elevation_m`, `climb`,
 `nameable` non ci sono perché
-[`LEGENDA-FUNZIONALE-SPEC`](../../docs/guides/LEGENDA-FUNZIONALE-SPEC.md) è
+[`LEGENDA-FUNZIONALE-SPEC`](../../docs/reference/LEGENDA-FUNZIONALE-SPEC.md) è
 ancora *«proposta, gate DM»* (sua riga 32): sono una proposta di luglio mai
 approvata, non canone.
 

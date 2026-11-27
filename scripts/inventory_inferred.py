@@ -16,12 +16,24 @@ La distinzione che rende il gate utile
   smaltisce un debito, si scrive nel changelog che l'hai smaltito, e il totale
   resta uguale. Un ratchet così si disattiva da solo entro una settimana.
 
-  Quindi qui i marcatori sono divisi in tre classi, e **solo la prima conta**:
+  Quindi qui i marcatori sono divisi in quattro classi, e **solo la prima conta**:
 
   - **aperti** — documenti vivi: canone, moduli d'arco, bestiario, schede PG.
     È il debito vero, ed è l'unico numero che il ratchet sorveglia.
   - **storici** — `plans/**` e i changelog: raccontano debiti, non li aprono.
-  - **meta** — `docs/audit/**`: citano il marcatore *per misurarlo*.
+  - **meta** — `docs/audit/**`, e le righe che *nominano* la convenzione
+    («oggetti marcati `[INFERRED]`»): citano il marcatore, non lo aprono.
+    Dal 2026-11-07 (ADR-0109, scheda 6) anche skill, modelli (`templates/`),
+    README, fixture dei test e GUIDA-MARCATURE: spiegano come si marca.
+
+  - **copie** — la stessa marca ristampata in un file generato (`<!-- GENERATO
+    da scripts/…` in testa, per esempio un booklet `.hb.md`): il debito è già
+    contato nel sorgente da cui il file viene. Una marca che sta solo nel file
+    generato, senza la stessa marca in un sorgente, resta fra gli aperti.
+
+  Ogni marcatore ha anche una **forma**: `nuova` se porta domanda e base come
+  vuole GUIDA-MARCATURE, `vecchia` se ha una nota d'altro tipo («needs DM
+  confirmation»), `nuda` se non ne ha.
 
   I record tipizzati di `campaign/state.yaml` (`inferred:`) sono elencati per
   primi e a parte: sono gli unici che portano già **la domanda da fare al DM**,
@@ -50,6 +62,7 @@ Exit  0 = ok · 1 = il debito aperto è salito sopra la baseline · 2 = errore d
 from __future__ import annotations
 
 import argparse
+import bisect
 import json
 import re
 import sys
@@ -65,10 +78,51 @@ SKIP_DIRS = {".git", "build", ".claude", ".cursor", ".gemini", ".chatgpt",
              ".windsurf", ".kilo", ".agents", ".github", "_ARCHIVIO", "Old"}
 SUFFISSI = {".md", ".yaml", ".yml"}
 
-MARCATORE = re.compile(r"\[INFERRED(?P<coda>[^\]]*)\]")
+# La nota può andare a capo, al massimo tre volte (oltre è un refuso).
+MARCATORE = re.compile(r"\[INFERRED(?P<coda>[^\]\n]*(?:\n[^\]\n]*){0,3})\]")
 
 # `[INFERRED` seguito da `:` o ` —` porta una nota; da solo è nudo.
 NOTA = re.compile(r"^\s*[—:-]\s*(?P<testo>.+)$")
+
+# Una riga che *nomina* la convenzione («oggetti marcati `[INFERRED]`», «flag
+# [INFERRED]», «`null` = [INFERRED]») non apre un debito: dice come si marca.
+# Si guarda solo il testo subito prima del marcatore (P16, 2026-11-04).
+CONVENZIONE = re.compile(
+    r"(?:\bmarcat\w*|\bmarcar\w*|\bmarca|\bflag\w*|\bmarche|\bmarcature|\bmarcatore"
+    r"|\bnon (?:è |sono )?più|`?null`? =|\bscelte)\s*(?:come\s*)?[`(\"«]*\s*$",
+    re.IGNORECASE)
+
+
+def cita_la_convenzione(prima: str) -> bool:
+    """Vero se il marcatore è l'oggetto di «marcato», «flag» e simili."""
+    return bool(CONVENZIONE.search(prima))
+
+
+# La grammatica di GUIDA-MARCATURE (ADR-0109): `[INFERRED — domanda?; base: …]`.
+DOMANDA_E_BASE = re.compile(r"^(?P<domanda>[^;]*\?)\s*;\s*base:\s*(?P<base>\S.*)$")
+
+
+# `[INFERRED — <domanda>; base: <…>]`: è lo schema da copiare, non un fatto.
+SCHEMA = re.compile(r"^(?:<[^>]*>|domanda|…)\s*;\s*base:", re.IGNORECASE)
+
+
+def forma(nota: str) -> str:
+    """nuova (domanda e base) | vecchia (nota d'altro tipo) | nuda (nessuna nota)."""
+    if not nota:
+        return "nuda"
+    return "nuova" if DOMANDA_E_BASE.match(nota.strip()) else "vecchia"
+
+
+def e_regola(rel: str) -> bool:
+    """Skill, modelli, README, fixture, AGENTS.md e la guida delle marche spiegano come si
+    marca: le loro marche sono esempi, non fatti aperti (ADR-0109, scheda 6 = A)."""
+    nome = rel.rsplit("/", 1)[-1]
+    return (rel.startswith("skills/")
+            or "/templates/" in f"/{rel}"
+            or "/fixtures/" in f"/{rel}"
+            or nome.upper().startswith("README")
+            or rel in ("AGENTS.md", "CLAUDE.md")
+            or rel == "docs/reference/GUIDA-MARCATURE.md")
 
 
 def classe(rel: str) -> str:
@@ -77,7 +131,23 @@ def classe(rel: str) -> str:
         return "meta"
     if rel.startswith("plans/") or "CHANGELOG" in rel or rel.endswith("state-changelog.md"):
         return "storici"
+    if e_regola(rel):
+        return "meta"
     return "aperti"
+
+
+#: La testa dei file che uno script del repo scrive (ADR-0013): booklet `.hb.md` e simili.
+GENERATO = re.compile(r"<!--\s*GENERATO da scripts/")
+
+
+def e_generato(testo: str) -> bool:
+    """Vero se il file dichiara in testa di essere scritto da uno script del repo."""
+    return bool(GENERATO.search(testo[:400]))
+
+
+def _marca(testo: str) -> str:
+    """La marca con gli spazi normalizzati, per riconoscere la stessa marca in due file."""
+    return " ".join(testo.split())
 
 
 def area(rel: str) -> str:
@@ -125,18 +195,45 @@ def scansiona(base: Path) -> list[dict]:
         except OSError:
             continue
         rel = _rel(p, base)
-        for lineno, riga in enumerate(testo.splitlines(), start=1):
-            for m in MARCATORE.finditer(riga):
-                coda = m.group("coda").strip()
-                nota = NOTA.match(coda)
-                trovati.append({
-                    "file": rel,
-                    "line": lineno,
-                    "classe": classe(rel),
-                    "area": area(rel),
-                    "nota": nota.group("testo").strip() if nota else "",
-                    "contesto": riga.strip()[:180],
-                })
+        generato = e_generato(testo)
+        righe = testo.splitlines()
+        # Sul testo intero, non riga per riga: un marcatore lungo va a capo
+        # dentro le parentesi, e per riga non si vedeva (P16, 2026-11-04).
+        inizi = [0]
+        for r in righe:
+            inizi.append(inizi[-1] + len(r) + 1)
+        for m in MARCATORE.finditer(testo):
+            lineno = bisect.bisect_right(inizi, m.start())
+            riga = righe[lineno - 1] if lineno - 1 < len(righe) else ""
+            col = m.start() - inizi[lineno - 1]
+            coda = " ".join(m.group("coda").split())
+            nota = NOTA.match(coda)
+            cl = classe(rel)
+            if cl == "aperti" and (cita_la_convenzione(riga[:col])
+                                   or (nota and SCHEMA.match(nota.group("testo").strip()))):
+                cl = "meta"
+            testo_nota = nota.group("testo").strip() if nota else ""
+            trovati.append({
+                "file": rel,
+                "line": lineno,
+                "classe": cl,
+                "area": area(rel),
+                "forma": forma(testo_nota),
+                "nota": testo_nota,
+                "contesto": riga.strip()[:180],
+                "marca": _marca(m.group(0)),
+                "generato": generato,
+            })
+    # Una marca ristampata in un file generato è una copia se la stessa marca sta
+    # in un sorgente: il debito è già contato lì, e contarlo due volte alzerebbe
+    # la baseline a ogni rigenerazione di un booklet.
+    # Solo un sorgente vivo vale: la stessa marca citata in `plans/**` o in un
+    # changelog racconta un debito, non lo tiene aperto (revisione di Codex, #467).
+    nei_sorgenti = {t["marca"] for t in trovati
+                    if not t["generato"] and t["classe"] == "aperti"}
+    for t in trovati:
+        if t["generato"] and t["classe"] == "aperti" and t["marca"] in nei_sorgenti:
+            t["classe"] = "copie"
     return trovati
 
 
@@ -179,7 +276,18 @@ def scrivi_inventario(trovati: list[dict], tipizzati: list[dict]) -> str:
       "bestiario, schede. **È il debito vero**, ed è l'unico numero sorvegliato |")
     w(f"| storici | {per_classe['storici']} | `plans/**` e i changelog: *raccontano* un "
       "debito, non lo aprono. Contarli renderebbe il totale incapace di scendere |")
-    w(f"| meta | {per_classe['meta']} | `docs/audit/**`: citano il marcatore **per misurarlo** |")
+    w(f"| meta | {per_classe['meta']} | `docs/audit/**`, skill, modelli, README, fixture, "
+      "la guida delle marche e le righe che nominano la convenzione "
+      "(«marcati `[INFERRED]`»): citano il marcatore, **non lo aprono** |")
+    w(f"| copie | {per_classe['copie']} | La stessa marca ristampata in un file generato "
+      "(booklet `.hb.md` e simili): il debito è già contato nel sorgente |")
+    w("")
+    forme = defaultdict(int)
+    for t in aperti:
+        forme[t["forma"]] += 1
+    w(f"Forma degli aperti ([GUIDA-MARCATURE](../reference/GUIDA-MARCATURE.md)): "
+      f"**{forme['nuova']}** con domanda e base, {forme['vecchia']} con una nota "
+      f"d'altro tipo, {forme['nuda']} nudi.")
     w("")
 
     if tipizzati:
@@ -265,6 +373,13 @@ def main(argv: list[str] | None = None) -> int:
             return 1
         segno = "" if aperti == atteso else f" (−{atteso - aperti}, baseline da abbassare)"
         print(f"✓ inventory_inferred: {aperti} [INFERRED] aperti, baseline {atteso}{segno}")
+        forme = defaultdict(int)
+        for t in trovati:
+            if t["classe"] == "aperti":
+                forme[t["forma"]] += 1
+        if aperti:
+            print(f"  forma degli aperti: {forme['nuova']} con domanda e base, "
+                  f"{forme['vecchia']} vecchia, {forme['nuda']} nudi (GUIDA-MARCATURE)")
         return 0
 
     testo = scrivi_inventario(trovati, tipizzati)

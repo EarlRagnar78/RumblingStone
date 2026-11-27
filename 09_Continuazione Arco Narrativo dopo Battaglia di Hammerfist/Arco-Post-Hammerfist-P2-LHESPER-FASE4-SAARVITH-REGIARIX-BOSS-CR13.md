@@ -1,0 +1,193 @@
+Arco-Post-Hammerfist-P2-LHESPER-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md
+==================================================================
+
+# Lhesper Fase 4 – Boss Saarvith & Regiarix (CR 13)
+
+> **Versione**: v2 (2026-07-02) — espansa a standard "pacchetto Palio" (Lotto B,
+> task B1.4): read-aloud, arena a **3 quote**, fasi del drago (hit-and-run +
+> Darkness come da RHoD), trigger di fuga di Saarvith, sinergia con i poteri
+> **attuali** degli artefatti (`campaign/state.md` §6). Le **statistiche** sono in
+> `Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md`
+> (Saarvith ranger, ~75 pf; Regiarix drago nero giovane adulto SRD, GS 9, 152 pf `[CANONE — DM 2026-11-15]`; l'incontro è intorno a EL 11-12, soffio
+> **acido**). Questo file è la **regia dello scontro**; non duplica gli statblock.
+
+---
+
+## 0. Read-aloud d'apertura
+
+> *La sala del consiglio di Lhesper è un guscio: metà tetto crollato, il pavimento
+> spezzato in due — un piano alto ancora asciutto e un piano basso già inghiottito
+> dall'acqua nera. Su una trave alta, un goblin dalle braccia lunghe incocca una
+> freccia senza fretta: **Wyrmlord Saarvith**. E sotto, dove l'acqua è più profonda
+> del buio, due occhi come lanterne spente si aprono. L'acqua **ribolle di acido**
+> mentre **Regiarix** solleva il muso e vi guarda come si guarda la cena.*
+
+---
+
+## 1. L'arena a tre quote
+
+Lo scontro si gioca su **tre livelli sovrapposti**. Chi li padroneggia vince;
+chi resta bloccato su uno solo viene isolato e ucciso.
+
+| Quota | Dove | Chi la usa |
+|---|---|---|
+| **Acqua profonda** (piano inferiore + attorno) | sotto e intorno alla sala | **Regiarix**: si immerge, sparisce (occultamento acqua), riemerge altrove. Regole subacquee: FASE3 §2. |
+| **Superficie** (piano alto, passerelle, travi) | il "ring" dei PG | Corpo a corpo, copertura dietro le colonne, cadute nell'acqua profonda. |
+| **Volo/quota alta** (tetto aperto) | sopra la sala | **Regiarix** in volo radente + **Saarvith** appollaiato in posizione da tiratore. |
+
+- **Terreno difficile**: macerie sul piano alto (primi quadretti dalle colonne).
+- **Cadute**: spingere o essere spinti oltre il bordo del piano alto = caduta in
+  **acqua profonda** (regole subacquee + esposti a Regiarix).
+- **Buio**: se Regiarix usa **Darkness** (§3), metà arena perde la luce → chi non
+  ha scurovisione/vedere nell'oscurità combatte con occultamento totale.
+
+---
+
+## 2. Setup e sorpresa (dipende da Fase 3)
+
+Riporta lo **stato di allerta** deciso in Fase 3:
+
+- **Sorpresa dei PG** (infiltrazione riuscita): Saarvith **non preparato** — niente
+  pozioni pre-bevute, iniziativa di gruppo **−1**; i PG possono aprire con un
+  round di sorpresa.
+- **Saarvith allerta** (assalto rumoroso / rete allertata): pozioni già attive,
+  posizione da tiratore già scelta, Regiarix **già in posizione** sotto la sala.
+- **Prigionieri liberati** (diplomazia, Fase 3): **−2 alle forze di Saarvith** e
+  possibile **diversivo lucertoloide** al round 1 (i defezionati creano scompiglio).
+
+---
+
+## 3. Regiarix — le fasi del drago (hit-and-run)
+
+> Statblock: STATBLOCCHI §2. Regia (allineata allo script §4 di quel file):
+>
+> Quando usa *armatura magica*, *scudo*, le pergamene di *invisibilità* e le pozioni lo dice STATBLOCCHI §2, «Incantesimi e corredo in battaglia» `[CANONE — DM 2026-11-21, card]`.
+
+- **Fase A — Bombardamento acido** (round 1–2): emerge parzialmente, **soffio di
+  acido in linea** (24 m, 10d4, Riflessi CD 21 per metà) su 2–3 PG allineati,
+  poi **si reimmerge** o prende quota bassa. Non resta in mischia.
+- **Fase B — Darkness e isolamento** (round 3–4): usa **Darkness** (3 al giorno,
+  raggio 15 m, SRD del nero giovane adulto) per spegnere metà arena e **separare** i
+  PG; colpisce con voli radenti (artigli/morso) chi è isolato o in acqua, poi
+  sparisce di nuovo nell'occultamento.
+- **Fase C — Disperata** (sotto un terzo dei pf, 50): **tuffo e fuga a nuoto** nei canali; esce sull'asciutto per l'attacco completo solo su un PG caduto (STATBLOCCHI §2) (vedi
+  CONSEGUENZE: Regiarix fuggito ≠ Regiarix morto per il conteggio di Rethmar).
+
+> **Nota acido, non fuoco**: Regiarix è un drago **nero** → soffio **acido**. La
+> Resistenza al Fuoco 10 dei Bracieri di Tordek **non** aiuta qui (vedi §5). È un
+> trucco onesto: i PG che si aspettano un drago "di fuoco" vanno corretti dalla prova di
+> Conoscenze (arcane) CD 20 già seminata in Fase 1/3.
+
+---
+
+## 4. Saarvith — il tiratore, e quando fugge
+
+> Statblock: STATBLOCCHI §1 (ranger arciere, Manyshot/Rapid Shot, ~75 pf).
+
+- Apre **a distanza** dal piano alto, **focus-fire** sul PG più fragile/pericoloso
+  (caster o guaritore). Coordina col drago: tira dove Regiarix ha reso prono o
+  isolato un bersaglio.
+- Usa **corde, travi, salti nell'acqua** per non farsi mai bloccare in mischia
+  (mobilità da ranger). Se raggiunto, disingaggia.
+- **Trigger di fuga di Saarvith**: scatta se **(a)** Regiarix muore o fugge, **o**
+  **(b)** Saarvith scende sotto ~30% pf. In fuga: salto in acqua profonda +
+  invisibilità (se disponibile) e sparizione nella palude coi **documenti**.
+  → **Saarvith fuggito** = nemesi futura (cecchino a Rethmar, vedi CONSEGUENZE).
+- **Rompere il morale**: la morte di uno spezza l'altro (Regiarix morto →
+  Saarvith più propenso a fuga/resa, e viceversa). Un buon uso di Intimidire o
+  della testa di uno dei due può accelerare il finale.
+
+---
+
+## 5. Sinergia con gli artefatti (poteri ATTUALI, state.md §6)
+
+> Usa i **poteri attualmente disponibili**, non i massimi teorici. Fonte:
+> `campaign/state.md` §6. Non far "riusare" poteri già spesi (Cuore di Moradin,
+> gemma Rubino) — sarebbe una violazione di coerenza.
+
+- **Hella — Collana dei Semi Eterni + druidismo**: è la **chiave dell'acqua**.
+  *Water Breathing* / controllo dell'acqua / *Freedom of Movement* annullano il
+  vantaggio subacqueo di Regiarix; l'**evocazione di Treant** (limitata) e i **3
+  doni di gruppo** non spesi possono dare al party respiro e mobilità anfibia.
+  La **forma Avatar 1/giorno** è l'asso per stare alla pari col drago.
+- **Tordek — Bracieri Gemelli (Fuoco + Terra)**: **Salto Infuocato 3/giorno** e
+  **Salto +10** per raggiungere Saarvith sulla trave alta o il drago in quota
+  bassa; **RD 5/adamantino** per reggere gli artigli. ⚠️ **Resistenza al Fuoco 10
+  inutile contro l'acido** — la mobilità è il suo contributo, non la resistenza.
+- **Thorik — Corona di Adamantio + Aegis Fang**: **Aegis Fang (+2, Returning)**
+  si lancia contro Regiarix **quando emerge** (l'arma torna in mano; ricorda: le
+  armi da lancio non funzionano **sott'**acqua, ma il drago **emerge**);
+  **Terremoto dello Smeraldo 1/settimana** può far crollare una sezione o
+  sconvolgere l'acqua bassa; **+2 CA da deflessione** e **Percezione della
+  Pietra** aiutano contro il cecchino e il drago immerso.
+- **Artemis — Anello dell'Illuminazione Caotica**: **Eldritch Blast** è l'arma a
+  distanza ideale contro un drago che riemerge e un cecchino appollaiato; le
+  **Ali d'Ombra** coprono la **quota di volo**, negando a Regiarix il cielo tutto
+  suo. (Poteri base pieni; l'evoluzione arriva alla Torre, non qui.)
+
+> **Design**: la vittoria "pulita" a Lhesper nasce dal **negare a Regiarix il suo
+> elemento** (acqua + buio) e dal **raggiungere Saarvith** malgrado la sua
+> mobilità. Premia i giocatori che lo capiscono.
+
+---
+
+## 6. Varianti di difficoltà
+
+- **Party molto forte**: +1–2 lucertoloidi guardia del corpo di Saarvith; per
+  Regiarix la via legale è l'età adulta dell'SRD (GS 11, 199 pf, soffio 12d4 CD 23),
+  non capacità inventate `[CANONE — DM 2026-11-15]`; da adulto fugge anche lui a un
+  terzo dei pf, 66.
+- **Party medio**: Regiarix giovane adulto è già il drago più debole della
+  campagna (152 pf); togli un attacco per round a Saarvith. (Vedi nota nello STATBLOCCHI.)
+
+---
+
+## 7. Esiti e collegamento all'assedio
+
+Dettaglio pieno: `Arco-Post-Hammerfist-P2-LHESPER-CONSEGUENZE-ESITI.md`. Ancoraggio
+canonico: `campaign/state.md` §2.3.
+
+| Esito | Effetto a Rethmar |
+|---|---|
+| **Saarvith e Regiarix uccisi** + nido distrutto (Fase 2) | **−1 drago, −2 Razorfiend** all'Orda (`campaign/state.md` §2.3); Lhesper non è più un avamposto; Tiri‑Kitor al pieno appoggio. |
+| **Regiarix morto, Saarvith fuggito** | −1 drago; Saarvith torna come **cecchino** a Rethmar; alleanza elfica forte ma prudente. |
+| **Regiarix fuggito** (a un terzo dei pf, 50, tuffo `[CANONE — DM 2026-11-15]`) | Il drago **non** è tolto dal conteggio: può comparire a Rethmar come rinforzo aereo. |
+| **Fuga PG / sconfitta** | Lhesper resta fortezza Mano Rossa: ondata Razorfiend + drago a Rethmar; Tiri‑Kitor tiepidi. |
+
+---
+
+## 8. Checklist DM (Fase 4)
+
+- [ ] Riportato lo **stato di allerta** da Fase 3 (sorpresa? Saarvith preparato? diversivo?)
+- [ ] Chiare le **tre quote** e le regole di caduta/acqua/Darkness?
+- [ ] Giocato Regiarix a **fasi** (bombardamento → Darkness/isolamento → disperata), non come sacco di pf fermo?
+- [ ] Ricordato che il soffio è **acido** (non fuoco) e corretto l'aspettativa dei PG?
+- [ ] Offerte le **sinergie d'artefatto attuali** (senza far riusare poteri spesi)?
+- [ ] Applicato il **trigger di fuga di Saarvith** (Regiarix giù o Saarvith <30%)?
+- [ ] Registrato l'esito esatto (morti/fuggiti) per il conteggio **−1 drago/−2 Razorfiend**?
+
+---
+
+## 9. SIDEBAR — SE FALLISCONO (C3)
+
+> **Lotto C3 (2026-07-02).** Uniforma l'esito "Fuga PG / sconfitta" già in §7 al
+> formato standard dell'arco. Fallimento a metà = costo, non stop. Protocollo
+> morte PG: `campaign/DM-QUICKSTART-ARC09.md` §"Risorse di resurrezione nel Vale".
+
+**Se i PG si ritirano o perdono a Lhesper (Regiarix vivo, Saarvith fugge)**:
+- **Non scatta il −1 drago/−2 Razorfiend** (state.md §2.3): l'Orda arriva a
+  Rethmar con Regiarix e i Razorfiend interi → uno scenario ARMATE-SYNC §3 più
+  duro (+1 CR a un'ondata di Fase 1).
+- **Lhesper resta fortezza** (clock Saarvith 3/8→pieno, state.md §3): +1 CR e i
+  Tiri-Kitor restano **tiepidi** (nessun eco-vendetta di Lanikar, B1.5).
+- **Costo, non blocco**: i PG possono aggirare Lhesper e affrontarne le conseguenze
+  a Rethmar, oppure tornare in una finestra Day ≤32 per un secondo tentativo (con
+  Lhesper ora **in allerta** = niente sorpresa, +2 alle difese di Saarvith).
+
+**Fallimento parziale (Regiarix ucciso ma Saarvith fugge)**: −1 drago **sì**,
+−2 Razorfiend **no** (Saarvith li riassegna); a Rethmar arriva come Wyrmlord
+minore con 2 Razorfiend.
+
+**Morte di un PG nell'arena a 3 quote**: protocollo unico (DM-QUICKSTART). Occhio
+alle **cadute in acqua/vuoto**: recuperare un corpo dal fondo del lago è parte del
+costo narrativo prima di poter anche solo tentare un raise.

@@ -57,9 +57,9 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from dmcore.testo import capitoli_del_volume, leggi_per_la_stampa, riscala_link, togli_storico  # noqa: E402
+from dmcore.testo import capitoli_del_volume, con_apertura, con_chiusura, fondi_contratto_e_scheda, leggi_per_la_stampa, riscala_link, togli_storico  # noqa: E402
 from dmcore.statblock import (  # noqa: E402
-    FASCE, StatblockError, accosta_parte_leggibile, caratteristiche, etichetta_gs, leggi as leggi_statblocco,
+    FASCE, StatblockError, accosta_parte_leggibile, caratteristiche, etichetta_gs, ingombro, leggi as leggi_statblocco,
     sezioni_leggibili, senza_caratteristiche,
 )
 
@@ -88,6 +88,13 @@ FACCE = (
 
 
 INCORPORA_FONT = True
+
+
+def _letto(f, capitoli, sezioni):
+    """Il capitolo per la stampa; dove la scheda da tavolo si stampa (capitoli
+    letti per `sezioni`) la riga «In scena» entra nella scheda."""
+    md = leggi_per_la_stampa(f, capitoli, sezioni)
+    return fondi_contratto_e_scheda(md) if sezioni else md
 
 
 def css_font_face() -> str:
@@ -369,8 +376,21 @@ def spoglia_homebrewery(testo: str) -> str:
 
 #: Le schede intere raccolte per l'appendice (ADR-0105 punto 7): chiave →
 #: (nome, ancora, riquadro senza tattica). ``None`` quando il volume le vuole
-#: dove sono scritte (`"schede": "qui"` nel manifest).
+#: dove sono scritte (`"schede": "qui"` nel manifest). Con `"entrambe"` l'HTML
+#: le tiene dove sono scritte, come «qui»: l'appendice in più è solo del PDF.
 APPENDICE: dict[str, tuple[str, str, str]] | None = None
+
+#: Le sigle del riquadro (CA, pf, TS, Vel, GS…) dal plugin del sistema del
+#: booklet (ADR-0111, L7). `build()` e `testo_hb()` le rileggono per il
+#: manifest che stampano; qui vale il sistema predefinito.
+from dmcore import sistemi as _SIS  # noqa: E402
+ET: dict[str, str] = _SIS.etichette()
+
+
+def _etichette_per(manifest_path: Path) -> None:
+    """Le sigle del sistema a cui appartiene il manifest (sistemi.toml [moduli])."""
+    global ET
+    ET = _SIS.etichette(_SIS.sistema_di(manifest_path.resolve()))
 
 
 def statblocco_html(corpo: str, titolo: str = "", sezioni=()) -> str:
@@ -392,8 +412,8 @@ def statblocco_html(corpo: str, titolo: str = "", sezioni=()) -> str:
     per = {s.etichetta: s for s in sezioni}
     pf = sb.pf + (f" ({sb.pf_dado})" if sb.pf_dado else "")
     ca = sb.ca + (f", {sb.ca_dettaglio}" if sb.ca_dettaglio else "")
-    gs = etichetta_gs(sb.gs)
-    conti = " · ".join(f"<b>{e}</b> {inline_md(v)}" for e, v in (("CA", ca), ("pf", pf)) if v)
+    gs = etichetta_gs(sb.gs, ET["gs"])
+    conti = " · ".join(f"<b>{e}</b> {inline_md(v)}" for e, v in ((ET["ca"], ca), (ET["pf"], pf)) if v)
     if "Tattiche" in per:
         t = per["Tattiche"]
         tattica = (f"<p>{inline_md(t.testo)}</p>" if t.testo else "") + (
@@ -436,8 +456,8 @@ def _statblocco_intero(corpo: str, titolo: str, sezioni, con_tattica: bool = Tru
     pf = sb.pf + (f" ({sb.pf_dado})" if sb.pf_dado else "")
     ca = sb.ca + (f", {sb.ca_dettaglio}" if sb.ca_dettaglio else "")
     dai_campi = {
-        "Difesa": in_riga(("CA", ca), ("pf", pf), ("TS", sb.ts)),
-        "Attacco": in_riga(("Vel", sb.velocita),
+        "Difesa": in_riga((ET["ca"], ca), (ET["pf"], pf), (ET["ts"], sb.ts)),
+        "Attacco": in_riga((ET["vel"], sb.velocita),
                            *(tuple((a.split(None, 1) + [""])[:2]) for a in sb.attacchi)),
         "Statistiche": in_riga(
             *([] if len(coppie) == 6 else coppie),
@@ -449,14 +469,16 @@ def _statblocco_intero(corpo: str, titolo: str, sezioni, con_tattica: bool = Tru
     parti = ['<div class="statblocco">',
              '<div class="sb-testa"><span class="sb-nome">'
              + inline_md(sb.nome or titolo) + "</span>"
-             + (f'<span class="sb-gs">{html.escape(etichetta_gs(sb.gs))}</span>' if etichetta_gs(sb.gs) else "") + "</div>"]
+             + (f'<span class="sb-gs">{html.escape(etichetta_gs(sb.gs, ET["gs"]))}</span>' if etichetta_gs(sb.gs, ET["gs"]) else "") + "</div>"]
     if sb.tipo:
         parti.append(f'<div class="sb-tipo">{inline_md(sb.tipo)}</div>')
+    if ingombro(sb):
+        parti.append(f'<p class="sb-ingombro">{inline_md(ingombro(sb))}</p>')
     if "Iniziativa" in per:
-        parti.append(f"<p><b>Iniziativa</b> {inline_md(per['Iniziativa'].testo)}</p>")
+        parti.append(f"<p><b>{ET['iniziativa']}</b> {inline_md(per['Iniziativa'].testo)}</p>")
     else:
-        pezzi = [f"<b>Iniziativa</b> {inline_md(sb.iniziativa)}"] if sb.iniziativa else []
-        pezzi += [f"<b>Sensi</b> {inline_md(sb.sensi)}"] if sb.sensi else []
+        pezzi = [f"<b>{ET['iniziativa']}</b> {inline_md(sb.iniziativa)}"] if sb.iniziativa else []
+        pezzi += [f"<b>{ET['sensi']}</b> {inline_md(sb.sensi)}"] if sb.sensi else []
         if pezzi:
             parti.append("<p>" + " · ".join(pezzi) + "</p>")
     for fascia in FASCE:
@@ -509,13 +531,15 @@ def statblocchi_homebrewery(md: str) -> str:
         nome = sb.nome or next((r.lstrip("#").strip() for r in reversed(fuori)
                                 if r.startswith("#")), "")
         hb = ["{{monster,frame", f"## {nome}",
-              f"*{sb.tipo}*" + (f" · {etichetta_gs(sb.gs)}" if etichetta_gs(sb.gs) else ""), "___"]
+              f"*{sb.tipo}*" + (f" · {etichetta_gs(sb.gs, ET['gs'])}" if etichetta_gs(sb.gs, ET["gs"]) else ""), "___"]
+        if ingombro(sb):
+            hb.append(ingombro(sb))
         if "Iniziativa" in per:
-            hb.append(f"**Iniziativa** {per['Iniziativa'].testo}")
+            hb.append(f"**{ET['iniziativa']}** {per['Iniziativa'].testo}")
         elif sb.iniziativa or sb.sensi:
             hb.append(" · ".join(x for x in (
-                f"**Iniziativa** {sb.iniziativa}" if sb.iniziativa else "",
-                f"**Sensi** {sb.sensi}" if sb.sensi else "") if x))
+                f"**{ET['iniziativa']}** {sb.iniziativa}" if sb.iniziativa else "",
+                f"**{ET['sensi']}** {sb.sensi}" if sb.sensi else "") if x))
         pf = sb.pf + (f" ({sb.pf_dado})" if sb.pf_dado else "")
         ca = sb.ca + (f", {sb.ca_dettaglio}" if sb.ca_dettaglio else "")
         dai_campi = {
@@ -547,8 +571,8 @@ def statblocchi_homebrewery(md: str) -> str:
         else:
             # ADR-0105 punto 7: il riquadro in appendice, qui la riga e la tattica.
             APPENDICE_HB.setdefault("\n".join(hb), (nome, "\n".join(hb)))
-            gs = etichetta_gs(sb.gs)
-            conti = " · ".join(f"**{e}** {v}" for e, v in (("CA", ca), ("pf", pf)) if v.strip())
+            gs = etichetta_gs(sb.gs, ET["gs"])
+            conti = " · ".join(f"**{e}** {v}" for e, v in ((ET["ca"], ca), (ET["pf"], pf)) if v.strip())
             fuori += ["{{note", f"##### {nome}" + (f" · {gs}" if gs else ""),
                       (conti + " · " if conti else "") + "*scheda in appendice*"]
             if tattica:
@@ -754,6 +778,7 @@ def colophon_html(mf: dict, footer: str) -> str:
 
 def build(manifest_path: Path, out_override: Path | None = None) -> Path:
     font_face = css_font_face()
+    _etichette_per(manifest_path)
     base = manifest_path.parent
     mf = json.loads(manifest_path.read_text(encoding="utf-8"))
     title = mf.get("title", "Booklet")
@@ -798,7 +823,12 @@ def build(manifest_path: Path, out_override: Path | None = None) -> Path:
     tabs = ['<button role="tab" aria-selected="true" data-pane="c0">Copertina</button>']
     for k, ch in enumerate(mf["chapters"], 1):
         p = base / ch["file"]
-        body = md_to_html(spoglia_homebrewery(leggi_per_la_stampa(p, capitoli)), p.parent)
+        md = _letto(p, capitoli, ch.get("sezioni"))
+        if ch.get("apertura"):   # ADR-0122, S1: l'introduzione del capitolo
+            md = con_apertura(md, (base / ch["apertura"]).read_text(encoding="utf-8"))
+        if ch.get("chiusura"):   # i PX del capitolo, in fondo
+            md = con_chiusura(md, (base / ch["chiusura"]).read_text(encoding="utf-8"))
+        body = md_to_html(spoglia_homebrewery(md), p.parent)
         tag = TAGS.get(ch.get("tag", ""), "")
         foot = player_footer if ch.get("tag") == "player" else footer
         tabs.append(f'<button role="tab" aria-selected="false" data-pane="c{k}">'
@@ -897,6 +927,7 @@ def percorso_hb(manifest_path: Path, out_override: Path | None = None) -> Path:
 def testo_hb(manifest_path: Path, out_override: Path | None = None) -> tuple[Path, str]:
     """Il .hb.md del manifest, senza scriverlo: (dove va, il testo).
     `validate_booklets` lo confronta con quello committato."""
+    _etichette_per(manifest_path)
     base = manifest_path.parent
     mf = json.loads(manifest_path.read_text(encoding="utf-8"))
     title = mf.get("title", "Booklet")
@@ -925,8 +956,8 @@ def testo_hb(manifest_path: Path, out_override: Path | None = None) -> tuple[Pat
 
     capitoli = capitoli_del_volume(base, mf)
 
-    def _incorpora(sorgente: Path) -> str:
-        return riscala_link(statblocchi_homebrewery(togli_storico(leggi_per_la_stampa(sorgente, capitoli))),
+    def _incorpora(sorgente: Path, sezioni=None) -> str:
+        return riscala_link(statblocchi_homebrewery(togli_storico(_letto(sorgente, capitoli, sezioni))),
                             sorgente.resolve().parent, dest)
 
     if mf.get("intro_md"):
@@ -939,7 +970,12 @@ def testo_hb(manifest_path: Path, out_override: Path | None = None) -> tuple[Pat
         tag = HB_TAGS.get(ch.get("tag", ""))
         if tag:
             parts.append(tag + "\n")
-        parts.append(_incorpora(base / ch["file"]))
+        corpo = _incorpora(base / ch["file"], ch.get("sezioni"))
+        if ch.get("apertura"):   # ADR-0122, S1: l'introduzione del capitolo
+            corpo = con_apertura(corpo, (base / ch["apertura"]).read_text(encoding="utf-8"))
+        if ch.get("chiusura"):
+            corpo = con_chiusura(corpo, (base / ch["chiusura"]).read_text(encoding="utf-8"))
+        parts.append(corpo)
     if APPENDICE_HB:
         parts += ["\n\\page\n", "# Appendice: le creature\n"]
         parts += [r for _, r in sorted(APPENDICE_HB.values(), key=lambda v: v[0].lower())]

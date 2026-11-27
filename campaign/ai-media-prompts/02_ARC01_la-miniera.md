@@ -10,7 +10,7 @@
 >
 > **Atmosfera visiva:** Verticalità abissale — un pozzo verticale quasi infinito nel cuore della terra. Mithral luccicante delle staffe runiche nella luce fioca. Oscurità profonda interrotta solo da fonti di luce dei PG. Meccanismi nanici di precisione corrosi dal tempo. Grell che fluttuano come meduse predatrici nell'oscurità.
 >
-> **Tono:** Le Miniere di Moria (LOTR) + l'arena sotterranea del Gladiatore + la tensione verticale di un abisso impossibile. Paura del vuoto e del buio.
+> **Tono:** Le sale colossali di un regno nanico abbandonato, colonne che spariscono nel buio + un'arena sotterranea da combattimento gladiatorio + la tensione verticale di un abisso impossibile. Paura del vuoto e del buio.
 
 ---
 
@@ -20,7 +20,8 @@
 
 ```
 [STILE] Cinematic underground dark fantasy, volumetric torchlight, 4K, 
-film grain, Moria-inspired dwarven architecture scale.
+film grain, colossal abandoned dwarven halls: pillars hundreds of feet 
+tall vanishing into darkness, figures small as insects.
 
 [SCENA] Massive stone doors carved with gargoyle faces slowly grind open, 
 revealing an enormous circular shaft — a lava tube 120 feet across — 
@@ -46,7 +47,7 @@ mithral glow, pitch black void below. No natural light.
 ```
 
 ### 🎵 NOTE MUSICA/MOOD
-- Riferimento: LOTR — "A Journey in the Dark" (Howard Shore)
+- Riferimento: archi gravi sostenuti e lenti (circa 60 bpm), coro maschile basso a bocca chiusa che entra appena, colpi isolati di timpano lontano; dinamica dal pianissimo, che sale per gradi
 - Strumenti: Corde basse, percussioni di pietra, eco metallico
 - Silenzio quasi totale con crescendo di tensione
 
@@ -70,7 +71,7 @@ is staggering: the figures are tiny against the shaft's immense opening.
 Spider webs hang in corners. Ancient dust covers everything.
 
 [STILE] Dark fantasy architectural illustration, extreme vertical 
-perspective looking down, dwarven Moria-scale grandeur.
+perspective looking down, colossal dwarven-hall grandeur dwarfing every figure.
 
 [PALETTE] Warm torchlight (amber, orange) fighting against cold 
 blue-grey stone and silver mithral glow. Absolute black void below.
@@ -96,8 +97,8 @@ fighter crouches behind cover, waraxe ready. Magical turret
 gargoyles on stone doors glow faintly with dormant spell energy.
 
 [STILE] Horror-fantasy combat scene, claustrophobic underground 
-setting, dramatic torchlight and shadow. Lovecraftian creature design 
-for the grell.
+setting, dramatic torchlight and shadow. Cosmic-horror creature design 
+for the grell: boneless, wet, translucent, wrongly proportioned.
 
 [PALETTE] Orange torchlight, grey stone, sickly yellow-green 
 bioluminescence from grell, deep shadows.

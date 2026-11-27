@@ -40,49 +40,49 @@ archi:
   tempo: giocato
   stato: completato
   march_clock: Day 0
-  pg_livello: '5'
+  pg_livello: '8'
   note: null
 - arco: 01 Miniera
   tempo: giocato
   stato: completato
   march_clock: null
-  pg_livello: '6'
+  pg_livello: '10-11'
   note: null
 - arco: 02 Scaladossa-abbattor-funghi
   tempo: giocato
   stato: completato
   march_clock: null
-  pg_livello: '7'
+  pg_livello: '11'
   note: null
 - arco: 03 La Cittadella
   tempo: giocato
   stato: completato
   march_clock: null
-  pg_livello: '8'
+  pg_livello: '11'
   note: null
 - arco: 04 Tomba di Belkram
   tempo: giocato
   stato: completato
   march_clock: null
-  pg_livello: '9'
+  pg_livello: '12'
   note: null
 - arco: 05 Stanza Runica
   tempo: giocato
   stato: completato
   march_clock: null
-  pg_livello: '10'
+  pg_livello: '12'
   note: null
 - arco: 06 Corona di Adamantio
   tempo: giocato
   stato: completato
   march_clock: null
-  pg_livello: '11'
+  pg_livello: '13'
   note: null
 - arco: 07 Portale della Forgia Eterna
   tempo: in_corso
   stato: '**in corso**'
   march_clock: null
-  pg_livello: 13 (D8)
+  pg_livello: 13 (14 dai PX, al primo riposo dopo Hammerfist)
   note: 'Giocati: Forgia (P1-P2), Piano del Fuoco/Topazio (P3), viaggio spirituale Hella+Durik (P3B-spirito); **in corso: Piano della Terra (P4)**'
 - arco: 07 P3B Resurrezione di Hella + P5 Viaggio 1.000 anni
   tempo: preparato
@@ -114,7 +114,7 @@ archi:
   march_clock: Day 25-30
   pg_livello: '13'
   note: null
-- arco: 09 P2 Rhest (Saarvith + Regiarix)
+- arco: 09 P2 Lhesper (Saarvith + Regiarix)
   tempo: preparato
   stato: '**preparato in anticipo**'
   march_clock: Day 25-32
@@ -327,11 +327,11 @@ villain:
   trigger: Tower goes mobile; harder to find next session
 - villain: Wyrmlord Saarvith + Regiarix
   png_id: saarvith-regiarix
-  dove: Lake Rhest ruins
+  dove: Lhesper ruins
   agenda: Rebuild dragonrider corps from black dragon spawn
   clock: 3/8
   stato: attivo
-  trigger: Rhest becomes a fortified war camp; CR +1 to assault
+  trigger: Lhesper becomes a fortified war camp; CR +1 to assault
 - villain: Xal'thor (Illithid Coordinator, psionic)
   png_id: xal-thor
   dove: En route with an Illithid invasion force (psionic thralls, larvae, a small core of dominated Githyanki — NOT the free Githyanki dragon-rider force led by Vaereth, which is a separate and hostile faction)
@@ -393,122 +393,157 @@ conoscenze:
   png_id: sonjak
   sa_che: The party freed the Cristal Warriors but does NOT know they have all 3 Crown gems
   come: Drow scouts witnessed the mine assault
+  dal_giorno: 0
 - png: Ghaurush «Cenerevento»
   png_id: ghaurush
   sa_che: Che i Custodi Eterni portano **artefatti divini**; **non** sa quali
   come: Rapporti dell'avanguardia della Mano Rossa (2026-08-05)
+  dal_giorno: 22
 - png: Zin'thara Vel'Ryn
   png_id: zin-thara
   sa_che: Che i Custodi Eterni hanno liberato i Guerrieri di Cristallo, come Sonjak; **non** sa nulla della Corona
   come: Rete di informatori drow nei campi (2026-08-05)
+  dal_giorno: 22
 - png: Ushgar «Occhio Reso»
   png_id: ushgar
   sa_che: Che i quattro Custodi viaggiano con artefatti; **non** sa quali, **e non gli importa**
   come: Voci di caserma fra gli ausiliari (2026-08-05)
+  dal_giorno: 22
 - png: Sonjak
   png_id: sonjak
   sa_che: Sal is operating on the desert road toward Rethmar; does NOT know Sal's temporal identity (Vatore)
   come: Standard briefing to field agent
+  dal_giorno: 23
 - png: Ghostlord / Zeth il Murato
   png_id: ghostlord
   sa_che: Party existence unknown; aware of Red Hand using his lair as undead factory
   come: Sensed via lair's magical senses
+  dal_giorno: 0
 - png: Conte Valerius
   png_id: conte-valerius
   sa_che: The party visited Hammerfist; does NOT know about the Crown or Sal
   come: Public dispatches — updated 2026-05-02
+  dal_giorno: 23
 - png: Azarr Kul
   png_id: azarr-kul
   sa_che: Party are Custodi Eterni; does NOT know artifact details
   come: General intelligence from Red Hand scouts
+  dal_giorno: 22
 - png: Xal'thor
   png_id: xal-thor
   sa_che: Tordek carries the Twin Braziers (planar keys to Eternal Forge)
   come: Planar observation; cross-referenced with Forgia Eterna records
+  dal_giorno: 19
 - png: Zalkatar (via Sethrax)
   png_id: zalkatar
   sa_che: The Orbe delle Otto Porte at Dauth Tournament has Githyanki planar origin and emits a "Seme di Porta" extractable at peak resonance
   come: Telepathic dispatch from Sethrax (covert) — refreshed daily; updated 2026-05-03
+  dal_giorno: 26
+  informato_da: sethrax
 - png: Sethrax il Velato
   png_id: sethrax
   sa_che: Tordek is the orb's primary attuned monk; the orb's first opening triggers a Githyanki "Eco delle Fenditure" vision; does NOT yet know Xal'thor's separate invasion plan
   come: Direct observation Day 1–2 of Tournament
+  dal_giorno: 26
 - png: Varis "Seta-Argento"
   png_id: varis
   sa_che: Some statues might be alive; does NOT know Sal is the supplier chain origin
   come: Involuntary observation 3 months ago
+  dal_giorno: 0
 - png: Il Collezionista
   png_id: il-collezionista
   sa_che: Artemis carries the Ring of Chaotic Illumination
   come: Witnessed at minotaur lair; sent guild operatives to track
+  dal_giorno: 0
 - png: Il Collezionista
   png_id: il-collezionista
   sa_che: Therysol is alive and hunting him
   come: Inferred from missing guild operatives in Underdark
+- png: Il Collezionista
+  png_id: il-collezionista
+  sa_che: The party are the Custodi Eterni and carry major divine artifacts; knows their names, abilities, and routes
+  come: His own guild operatives, who have tracked the party since the minotaur lair, report after the Cerimonia delle 100 Asce (Day 21); set by the DM on 2026-11-13
+  dal_giorno: 22
 - png: Re Thorek Hammerfist
   png_id: re-thorek
   sa_che: The party are now Custodi Eterni; he has named them so
   come: Awarded post-siege
+  dal_giorno: 21
 - png: Maestro Varis "Seta-Argento"
   png_id: varis
   sa_che: Artemis is a buyer of Underdark relics; willing to broker
   come: Three transactions to date
+  dal_giorno: 0
 - png: Salvatore "Sal"
   png_id: salvatore
   sa_che: The party are Custodi Eterni carrying major divine artifacts; knows their names, abilities, and routes
   come: Briefed by Il Collezionista before deploying to desert road
-- png: Conte Valerius
-  png_id: conte-valerius
-  sa_che: The party visited Hammerfist; does NOT yet know about the Crown
-  come: Public dispatches
+  dal_giorno: 23
+  informato_da: il-collezionista
 - png: Druid Circle of the Sacred Forest
   png_id: cerchio-sacro
   sa_che: Hella is approaching for the ritual; reserves judgment
   come: Hella's letter, sent two days ago
+  dal_giorno: 22
 - png: Capitana Lythiel Alar-Wen (Wood Elf Ranger 8, Sacred Forest scout, GS 8)
   png_id: lythiel
   sa_che: Hella is the druidess Saraah promised the Acorn of the Circle to
   come: Direct recognition during Hammerfist Battle Sessione 4; canonized 2026-05-04
-- png: Maestro Tempestas (Half-elf Bard 12/Stormsinger 2 [Frostburn], GS 14, Rethmar **intelligence agent** — NOT delivery service)
+  dal_giorno: 19
+- png: Maestro Tempestas (Half-elf Bard 12/Stormsinger 3 [Frostburn], GS 15, Rethmar **intelligence agent** — NOT delivery service)
   png_id: tempestas
-  sa_che: The party survived Lorana's city (Arco 00); they are Custodi Eterni; he carries **only one letter** (Brenna Sorvane → Thorik) on Day 21 + intel exchange mission; intercepted drow conversation 3 weeks ago about "il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Mirtul, poi la torre cammina" — relevance recognized only when Artemis's Ring vibrates
+  sa_che: The party survived Lorana's city (Arco 00); they are Custodi Eterni; he carries **only one letter** (Brenna Sorvane → Thorik) on Day 22 + intel exchange mission; intercepted drow conversation 3 weeks ago about "il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Flamerule, poi la torre cammina" — relevance recognized only when Artemis's Ring vibrates
   come: Intercepted via accidental Shadow Walk side-emergence near Cannath Vale Nord (fiume con tre rapide); revised v2 2026-05-04 (Tempestas role narrowed to intel agent; he no longer delivers Tordek/Hella/Artemis personal hooks)
+  dal_giorno: 21
 - png: Sorella Maewen "Pugno-di-Cedro" (Mezza-elfa Monk 9/Cleric 2 of Ilmater, GS 10, monk-courier of Confraternita Monastica di Dauth)
   png_id: maewen
   sa_che: Aeleth Verdebronzo is dead (will discover on arrival); Tordek matches the description of the 4th tournament invitee "Pugno di Pietra del Nord" (recognizable by Custode Eterno rune)
   come: Travels Cannath Vale with 5 tournament invites; arrives Sacred Forest Day 24 looking for Aeleth; canonized 2026-05-04
+  dal_giorno: 24
 - png: Lathander + Mask (divine, divinatory)
   png_id: lathander-mask
   sa_che: Artemis rejected the Lord of Sun and Shadow PrC at Belkram (Arco 04); the Ring he carries is Zalkatar's research instrument; Zalkatar is a 3-century-old ex-cleric of Mask who became Mind Flayer by choice; both deities OBSERVE without intervening unless Artemis explicitly requests post-Tower "courtesy"
   come: Direct divine awareness; activates as dream visitation Notte 22-23 of post-Hammerfist; canonized 2026-05-04
+  dal_giorno: 0
 - png: Brenna Sorvane (Consigliere militare Rethmar)
   png_id: brenna-sorvane
-  sa_che: Hammerfist defeated Red Hand vanguard; Custodi Eterni include Thorik who is a battle-tested commander; Halveth is corrupt by Conte Valerius; Lorana is alive in Rethmar
-  come: Reports from Tempestas (her primary messenger); canonized 2026-05-04 via her sealed letter to Thorik
+  sa_che: Hammerfist defeated Red Hand vanguard; Thorik is the battle-tested commander of the party; Halveth is corrupt by Conte Valerius; Lorana is alive in Rethmar
+  come: Messenger birds reached Rethmar on Day 19 with the victory; Tempestas (her primary messenger) reports on Hammerfist only; she knows Lorana in person, both in Rethmar since Day 16-18; canonized 2026-05-04 via her sealed letter to Thorik, days and sources set by the DM on 2026-11-13
+  dal_giorno: 19
 - png: Therysol
   png_id: therysol
   sa_che: Il Collezionista's guild has a hidden cell in Dauth
   come: Captured guild operative interrogated
 - png: Norro Wiston (ex-Portavoce del Guado di Drellin, profugo a Rethmar)
   png_id: norro-wiston
-  sa_che: The party are the Custodi Eterni; Thorik died and was resurrected at the Guado (he was present, Arco 00)
+  sa_che: Thorik died and was resurrected at the Guado (he was present, Arco 00)
   come: Direct witness; arrived Rethmar ~Day 16-18 with the refugee wave — canonized 2026-07-20
+  dal_giorno: 0
+- png: Norro Wiston (ex-Portavoce del Guado di Drellin, profugo a Rethmar)
+  png_id: norro-wiston
+  sa_che: The party are now called the Custodi Eterni (before Day 23 he knows them by their old name, the Rumbling Stones)
+  come: News of the Cerimonia delle 100 Asce (Day 21) reaches Rethmar around Day 23; set by the DM on 2026-11-13
+  dal_giorno: 23
 - png: Sertieren il Saggio (mago halfling profugo, ospite della biblioteca di Pyriel)
   png_id: sertieren
   sa_che: His *sending* to Silverymoon is blocked by a ritual interference on the Wyrmbones; does NOT know who runs it
   come: Failed attempts Day 14-18 — canonized 2026-07-20
+  dal_giorno: 14
 - png: Lirien Amaranti («Il Giullare Spezzato»)
   png_id: lirien
   sa_che: He can recognize the Maestro's hand in the living statues (does NOT know the network leads to Varis/Sal/Il Collezionista); knows the street-talk of the Ponte Nuovo
   come: Apprenticeship trauma + tavern ears — canonized 2026-07-20
+  dal_giorno: 0
 - png: Mira Serani «l'Aranea»
   png_id: mira-serani
   sa_che: The party already met her (disguised as a refugee child) on the road to Hammerfist and let her go; knows fragments of the PCs' artifacts/routes; does NOT know Lorana survived and is at Rethmar
   come: Embedded Red Hand spy since Drellin's Ferry — canonized 2026-07-20
+  dal_giorno: 12
 - png: Lorana (hard counter to l'Aranea)
   png_id: lorana
   sa_che: Believes her daughter Mira is dead (carries her brooch); does NOT know the child was murdered and impersonated by an aranea — will recognize the impostor **on sight** if they meet
   come: Grief + the brooch; the truth is a DM secret in `Bestiario/png/Lorana/…/Lorana.md` — canonized 2026-07-20
+  dal_giorno: 0
 - png: Tiri Kitor wild elves
   png_id: tiri-kitor
   sa_che: Nothing yet — first contact pending Starsong Hill
@@ -554,7 +589,7 @@ scenari_rethmar:
   orda: 8,000
   difensori: 2,620
   rapporto: '**3.1:1**'
-- scenario: Ottimale (tutte quest + Rhest + Tower)
+- scenario: Ottimale (tutte quest + Lhesper + Tower)
   orda: 6,800
   difensori: 3,770
   rapporto: '**1.80:1**'
@@ -596,7 +631,7 @@ march_clock:
     waypoint: '**Terrelton equivalent falls**'
     stato: 🎯 **SYNC POINT = End of Battle of Hammerfist**
   - giorno: '25'
-    waypoint: Marth Fen / Blackfens (Rhest area)
+    waypoint: Marth Fen / Lhespenbog (Lhesper area)
     stato: ⏳ Pending
   - giorno: 33–35
     waypoint: Elsir Crossroads / Channath Crocevia
@@ -608,7 +643,7 @@ march_clock:
     waypoint: Notte dei Drow / advance scout phase (Fase 0 begins)
     stato: ⏳ Pending
   - giorno: '**42**'
-    waypoint: '**Horde arrives at Rethmar (ex-Brindol) and encamps**'
+    waypoint: '**Horde arrives at Rethmar and encamps**'
     stato: 🎯 **Rethmar assault begins**
 
 # ---------------------------------------------------------------------------
@@ -654,7 +689,7 @@ png:
 - id: saarvith-regiarix
   nome: Wyrmlord Saarvith + Regiarix
   tipo: persona
-  scheda: 09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md
+  scheda: 09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md
 - id: xal-thor
   nome: Xal'thor (Illithid Coordinator)
   tipo: persona

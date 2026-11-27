@@ -1,0 +1,25 @@
+# sistemi/d20/sistema.toml — la famiglia d20 (ADR-0111)
+#
+# Non è un sistema da attivare: è quello che 3.5 e PF1e hanno in comune, e
+# che i due plugin ereditano dichiarandolo. Un sistema della stessa famiglia
+# può ereditare da qui senza riscrivere niente.
+
+id = "d20"
+nome = "Famiglia d20 (3.5 e derivati)"
+tipo = "famiglia"
+licenza = "OGL 1.0a"
+fonti = []
+skill = []
+
+[capacita]
+"termini.vietati" = { dati = ["sistemi/d20/dati/termini-vietati.toml"], nota = "una lista sola, letta da validate_modules e validate_standalone" }
+"stampa.etichette" = { dati = ["sistemi/d20/dati/stampa.toml"], nota = "L7: le sigle del riquadro, uguali in 3.5 e PF1e" }
+"statblocco.campi" = { dati = ["sistemi/d20/dati/statblocco.toml"], nota = "L5d: campi obbligatori, ammessi e a lista del blocco statblock" }
+"statblocco.taglie" = { dati = ["sistemi/d20/dati/taglie.toml"], nota = "ADR-0128: spazio e portata per taglia, tabella SRD uguale in 3.5 e PF1e" }
+"formule.regole" = { dati = ["sistemi/d20/dati/formule.toml"], nota = "F3 di ADR-0112: modificatore, TS buono e cattivo, CD, punteggio minimo; uguali in 3.5 e PF1e" }
+"bonus.cumulo" = { dati = ["sistemi/d20/dati/bonus.toml"], nota = "ADR-0126: cumulo dei bonus per tipo e sorgenti che una scheda può dichiarare; uguale in 3.5 e PF1e" }
+
+# F5 di ADR-0112: il codice del plugin, per nome (modulo:funzione in codice/).
+# Lo carica dmcore.sistemi.modulo con importlib, solo da questa cartella.
+[moduli]
+potenze = "incontri:potenze"

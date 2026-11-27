@@ -21,7 +21,7 @@
 ## 0. VERSIONI VIVE — il registro (ADR-0071, dal 2026-09-25)
 
 > **Perché c'è.** Il DM, il 2026-09-25: *«non c'è stato mai un versionamento,
-> che credo sia la scelta migliore per gestire questi artefatti complessi ed
+> che credo sia la scelta migliore per gestire questi artefatti complessi e
 > integrati nella campagna»*. Fino a oggi una pagina si correggeva sul posto e
 > niente diceva quale delle quattro pagine HTML di una cartella fosse quella
 > viva; la pagina a due gemme della Corona portava ancora i Doni superati.

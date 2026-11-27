@@ -1,0 +1,986 @@
+{
+ "prima": {
+  "ACCEPTED": 137,
+  "decisione DM datata": 7,
+  "needs DM confirmation": 16
+ },
+ "dopo": {
+  "ACCEPTED": 4,
+  "decisione DM datata": 2,
+  "needs DM confirmation": 16
+ },
+ "data_da": {
+  "scritta": 84,
+  "file": 47,
+  "comparsa": 3,
+  "dossier": 4
+ },
+ "cambi": [
+  {
+   "file": ".pr-body.md",
+   "riga": 10,
+   "data_da": "scritta",
+   "prima": "- **60 statblock unità** in `Bestiario/` tutti `[ACCEPTED — DM-canon 2026-05-05]`",
+   "dopo": "- **60 statblock unità** in `Bestiario/` tutti `[CANONE — DM 2026-05-05]`"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md",
+   "riga": 7,
+   "data_da": "scritta",
+   "prima": "> immediato. Flag globale: `[ACCEPTED — DM-canon 2026-05-05]`.",
+   "dopo": "> immediato. Flag globale: `[CANONE — DM 2026-05-05]`."
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md",
+   "riga": 33,
+   "data_da": "scritta",
+   "prima": "sono concettuali, stat blocks restano a cura del DM o [ACCEPTED].",
+   "dopo": "sono concettuali, stat blocks restano a cura del DM o [CANONE — DM data]."
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-CALCOLI-ESERCITI-DINAMICI.md",
+   "riga": 142,
+   "data_da": "scritta",
+   "prima": "> `[ACCEPTED — DM-canon 2026-05-05]` salvo nominati AP.",
+   "dopo": "> `[CANONE — DM 2026-05-05]` salvo nominati AP."
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 6,
+   "data_da": "scritta",
+   "prima": "> campagna. Flag `[INFERRED]` → `[ACCEPTED — DM-canon 2026-05-05]`.",
+   "dopo": "> campagna. Flag `[INFERRED]` → `[CANONE — DM 2026-05-05]`."
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 12,
+   "data_da": "scritta",
+   "prima": "> fazione, con link al file statblock canonico (o marcate `[ACCEPTED]`",
+   "dopo": "> fazione, con link al file statblock canonico (o marcate `[CANONE — DM data]`"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 17,
+   "data_da": "scritta",
+   "prima": "> `[ACCEPTED — DM-canon 2026-05-05]` con base MM/FRCS/AP-RHoD.",
+   "dopo": "> `[CANONE — DM 2026-05-05]` con base MM/FRCS/AP-RHoD."
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 75,
+   "data_da": "file",
+   "prima": "| Hobgoblin Sergente (Fighter 5) | 5 | [ACCEPTED] `Bestiario/mostri/hobgoblin-sergente-cr5.md` | 240 unità, capo compagnia |",
+   "dopo": "| Hobgoblin Sergente (Fighter 5) | 5 | [CANONE — DM 2026-05-05] `Bestiario/mostri/hobgoblin-sergente-cr5.md` | 240 unità, capo compagnia |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 84,
+   "data_da": "file",
+   "prima": "| Goblin Warrior 1 | 1/2 | [ACCEPTED] `Bestiario/mostri/goblin-warrior1-cr05.md` | MM Goblin |",
+   "dopo": "| Goblin Warrior 1 | 1/2 | [CANONE — DM 2026-05-05] `Bestiario/mostri/goblin-warrior1-cr05.md` | MM Goblin |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 122,
+   "data_da": "file",
+   "prima": "| Blue (psionic goblinoid) | 1 | [ACCEPTED] `Bestiario/mostri/blue-psion-cr1.md` | MM II p.38; 10 unità |",
+   "dopo": "| Blue (psionic goblinoid) | 1 | [CANONE — DM 2026-05-05] `Bestiario/mostri/blue-psion-cr1.md` | MM II p.38; 10 unità |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 123,
+   "data_da": "file",
+   "prima": "| Warpriest di Tiamat (Cleric 7) | 7 | [ACCEPTED] `Bestiario/mostri/warpriest-tiamat-cr7.md` | 20 unità; PHB Cleric |",
+   "dopo": "| Warpriest di Tiamat (Cleric 7) | 7 | [CANONE — DM 2026-05-05] `Bestiario/mostri/warpriest-tiamat-cr7.md` | 20 unità; PHB Cleric |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 135,
+   "data_da": "file",
+   "prima": "| **Tyrgarun** | **Blue Old (terrore dei cieli, D11 v2)** | **18** | [ACCEPTED] `Bestiario/villain/Tyrgarun/tyrgarun-blue-old-cr18.md` | Vivo; hazard aereo Fasi",
+   "dopo": "| **Tyrgarun** | **Blue Old (terrore dei cieli, D11 v2)** | **18** | [CANONE — DM 2026-05-05] `Bestiario/villain/Tyrgarun/tyrgarun-blue-old-cr18.md` | Vivo; haz"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 150,
+   "data_da": "file",
+   "prima": "| Razorfiend Red | 9 | [ACCEPTED] `Bestiario/mostri/razorfiend-red-cr9.md` | Wyrmlord Karruk |",
+   "dopo": "| Razorfiend Red | 9 | [CANONE — DM 2026-05-05] `Bestiario/mostri/razorfiend-red-cr9.md` | Wyrmlord Karruk |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 151,
+   "data_da": "file",
+   "prima": "| Razorfiend Blue | 9 | [ACCEPTED] `Bestiario/mostri/razorfiend-blue-cr9.md` | Ozyrrandion/Tower |",
+   "dopo": "| Razorfiend Blue | 9 | [CANONE — DM 2026-05-05] `Bestiario/mostri/razorfiend-blue-cr9.md` | Ozyrrandion/Tower |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 152,
+   "data_da": "file",
+   "prima": "| Razorfiend White | 8 | [ACCEPTED] `Bestiario/mostri/razorfiend-white-cr8.md` | Azarr Kul guard |",
+   "dopo": "| Razorfiend White | 8 | [CANONE — DM 2026-05-05] `Bestiario/mostri/razorfiend-white-cr8.md` | Azarr Kul guard |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 153,
+   "data_da": "file",
+   "prima": "| Razorfiend Green | 9 | [ACCEPTED] `Bestiario/mostri/razorfiend-green-cr9.md` | Azarr Kul support |",
+   "dopo": "| Razorfiend Green | 9 | [CANONE — DM 2026-05-05] `Bestiario/mostri/razorfiend-green-cr9.md` | Azarr Kul support |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 165,
+   "data_da": "file",
+   "prima": "| Karruk | 13 | [ACCEPTED] `Bestiario/villain/Wyrmlord_Karruk/wyrmlord-karruk-cr13.md` | Rethmar Fase 1 assault leader |",
+   "dopo": "| Karruk | 13 | [CANONE — DM 2026-05-05] `Bestiario/villain/Wyrmlord_Karruk/wyrmlord-karruk-cr13.md` | Rethmar Fase 1 assault leader |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 180,
+   "data_da": "file",
+   "prima": "| Drow Warrior (base) | 1 | [ACCEPTED] `Bestiario/mostri/drow-warrior-cr1.md` | FRCS; fanteria drow |",
+   "dopo": "| Drow Warrior (base) | 1 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-warrior-cr1.md` | FRCS; fanteria drow |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 181,
+   "data_da": "file",
+   "prima": "| Drow Fighter 3 | 4 | [ACCEPTED] `Bestiario/mostri/drow-fighter3-cr4.md` | Guardia casata |",
+   "dopo": "| Drow Fighter 3 | 4 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-fighter3-cr4.md` | Guardia casata |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 182,
+   "data_da": "file",
+   "prima": "| Drow Priestess 9 of Lolth | 11 | [ACCEPTED] `Bestiario/mostri/drow-priestess9-cr11.md` | Sajak rituali Fase 0 |",
+   "dopo": "| Drow Priestess 9 of Lolth | 11 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-priestess9-cr11.md` | Sajak rituali Fase 0 |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 183,
+   "data_da": "file",
+   "prima": "| Drow Wizard 7 | 8 | [ACCEPTED] `Bestiario/mostri/drow-wizard7-cr8.md` | Supporto mago |",
+   "dopo": "| Drow Wizard 7 | 8 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-wizard7-cr8.md` | Supporto mago |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 184,
+   "data_da": "file",
+   "prima": "| Drow Noble House Guard | 5 | [ACCEPTED] `Bestiario/mostri/drow-noble-guard-cr5.md` | Élite Sajak |",
+   "dopo": "| Drow Noble House Guard | 5 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-noble-guard-cr5.md` | Élite Sajak |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 202,
+   "data_da": "file",
+   "prima": "| Gnoll Warrior 2 | 2 | [ACCEPTED] `Bestiario/mostri/gnoll-warrior2-cr2.md` | Fanteria tribale |",
+   "dopo": "| Gnoll Warrior 2 | 2 | [CANONE — DM 2026-05-05] `Bestiario/mostri/gnoll-warrior2-cr2.md` | Fanteria tribale |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 203,
+   "data_da": "file",
+   "prima": "| Gnoll Ranger 4 | 5 | [ACCEPTED] `Bestiario/mostri/gnoll-ranger4-cr5.md` | Scout Artigli Neri |",
+   "dopo": "| Gnoll Ranger 4 | 5 | [CANONE — DM 2026-05-05] `Bestiario/mostri/gnoll-ranger4-cr5.md` | Scout Artigli Neri |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 204,
+   "data_da": "file",
+   "prima": "| Gnoll Cleric 6 of Yeenoghu | 7 | [ACCEPTED] `Bestiario/mostri/gnoll-cleric-yeenoghu-cr7.md` | Shaman tribale |",
+   "dopo": "| Gnoll Cleric 6 of Yeenoghu | 7 | [CANONE — DM 2026-05-05] `Bestiario/mostri/gnoll-cleric-yeenoghu-cr7.md` | Shaman tribale |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 205,
+   "data_da": "file",
+   "prima": "| Flind (MM II) | 3 | [ACCEPTED] `Bestiario/mostri/flind-cr3.md` | MM II p.104; Flinderoso élite |",
+   "dopo": "| Flind (MM II) | 3 | [CANONE — DM 2026-05-05] `Bestiario/mostri/flind-cr3.md` | MM II p.104; Flinderoso élite |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 206,
+   "data_da": "file",
+   "prima": "| Gnoll Hyenodon Rider | 4 | [ACCEPTED] `Bestiario/mostri/gnoll-hyenodon-rider-cr4.md` | Cavalry Abbattitori |",
+   "dopo": "| Gnoll Hyenodon Rider | 4 | [CANONE — DM 2026-05-05] `Bestiario/mostri/gnoll-hyenodon-rider-cr4.md` | Cavalry Abbattitori |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 207,
+   "data_da": "file",
+   "prima": "| Gnoll Chieftain (Barbarian 8) | 10 | [ACCEPTED] `Bestiario/mostri/gnoll-chieftain-cr10.md` | Comandante tribù |",
+   "dopo": "| Gnoll Chieftain (Barbarian 8) | 10 | [CANONE — DM 2026-05-05] `Bestiario/mostri/gnoll-chieftain-cr10.md` | Comandante tribù |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 218,
+   "data_da": "file",
+   "prima": "| Loxo Warrior 3 | 4 | [ACCEPTED] `Bestiario/mostri/loxo-warrior3-cr4.md` | MM II Loxo + Warrior 3 |",
+   "dopo": "| Loxo Warrior 3 | 4 | [CANONE — DM 2026-05-05] `Bestiario/mostri/loxo-warrior3-cr4.md` | MM II Loxo + Warrior 3 |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 219,
+   "data_da": "file",
+   "prima": "| Loxo Shaman 6 | 7 | [ACCEPTED] `Bestiario/mostri/loxo-shaman6-cr7.md` | Druid variant |",
+   "dopo": "| Loxo Shaman 6 | 7 | [CANONE — DM 2026-05-05] `Bestiario/mostri/loxo-shaman6-cr7.md` | Druid variant |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 220,
+   "data_da": "file",
+   "prima": "| Centaur Ranger 4 (corrotto) | 5 | [ACCEPTED] `Bestiario/mostri/centaur-ranger4-corrupted-cr5.md` | MM Centaur + Ranger 4 |",
+   "dopo": "| Centaur Ranger 4 (corrotto) | 5 | [CANONE — DM 2026-05-05] `Bestiario/mostri/centaur-ranger4-corrupted-cr5.md` | MM Centaur + Ranger 4 |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 221,
+   "data_da": "file",
+   "prima": "| Centaur Chieftain (Fighter 6) | 7 | [ACCEPTED] `Bestiario/mostri/centaur-chieftain-cr7.md` | Leader band |",
+   "dopo": "| Centaur Chieftain (Fighter 6) | 7 | [CANONE — DM 2026-05-05] `Bestiario/mostri/centaur-chieftain-cr7.md` | Leader band |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 231,
+   "data_da": "file",
+   "prima": "| Githyanki Warrior 3 | 4 | [ACCEPTED] `Bestiario/mostri/githyanki-warrior3-cr4.md` | MM p.128 + Fighter 3 |",
+   "dopo": "| Githyanki Warrior 3 | 4 | [CANONE — DM 2026-05-05] `Bestiario/mostri/githyanki-warrior3-cr4.md` | MM p.128 + Fighter 3 |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 232,
+   "data_da": "file",
+   "prima": "| Githyanki Captain (Gish, Ftr8/Wiz3) | 12 | [ACCEPTED] `Bestiario/mostri/githyanki-captain-gish-cr12.md` | Élite |",
+   "dopo": "| Githyanki Captain (Gish, Ftr8/Wiz3) | 12 | [CANONE — DM 2026-05-05] `Bestiario/mostri/githyanki-captain-gish-cr12.md` | Élite |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 245,
+   "data_da": "file",
+   "prima": "| Thayan Heavy Infantry (Fighter 3) | 3 | [ACCEPTED] `Bestiario/mostri/thayan-heavy-infantry-cr3.md` | Human Fighter 3 |",
+   "dopo": "| Thayan Heavy Infantry (Fighter 3) | 3 | [CANONE — DM 2026-05-05] `Bestiario/mostri/thayan-heavy-infantry-cr3.md` | Human Fighter 3 |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 246,
+   "data_da": "file",
+   "prima": "| Thayan Red Wizard 7 (Evoker) | 9 | [ACCEPTED] `Bestiario/mostri/thayan-red-wizard7-cr9.md` | FRCS Red Wizard PrC |",
+   "dopo": "| Thayan Red Wizard 7 (Evoker) | 9 | [CANONE — DM 2026-05-05] `Bestiario/mostri/thayan-red-wizard7-cr9.md` | FRCS Red Wizard PrC |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 247,
+   "data_da": "file",
+   "prima": "| Teschio Nero Commander (Ftr 8/Bbn 2) | 10 | [ACCEPTED] `Bestiario/mostri/teschio-nero-commander-cr10.md` | CR 10 boss |",
+   "dopo": "| Teschio Nero Commander (Ftr 8/Bbn 2) | 10 | [CANONE — DM 2026-05-05] `Bestiario/mostri/teschio-nero-commander-cr10.md` | CR 10 boss |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 248,
+   "data_da": "file",
+   "prima": "| Thayan Knight (PrC) | 8 | [ACCEPTED] `Bestiario/mostri/thayan-knight-cr8.md` | Complete Warrior |",
+   "dopo": "| Thayan Knight (PrC) | 8 | [CANONE — DM 2026-05-05] `Bestiario/mostri/thayan-knight-cr8.md` | Complete Warrior |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 259,
+   "data_da": "file",
+   "prima": "| Cultista Rakshasa (human Rog 3) | 3 | [ACCEPTED] `Bestiario/mostri/cultista-rakshasa-cr3.md` | Minion |",
+   "dopo": "| Cultista Rakshasa (human Rog 3) | 3 | [CANONE — DM 2026-05-05] `Bestiario/mostri/cultista-rakshasa-cr3.md` | Minion |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 281,
+   "data_da": "file",
+   "prima": "| Bone Naga (Ghostlord) | 10 | [ACCEPTED] `Bestiario/mostri/bone-naga-cr10.md` | MM II |",
+   "dopo": "| Bone Naga (Ghostlord) | 10 | [CANONE — DM 2026-05-05] `Bestiario/mostri/bone-naga-cr10.md` | MM II |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 282,
+   "data_da": "file",
+   "prima": "| Deathlock | 8 | [ACCEPTED] `Bestiario/mostri/deathlock-cr8.md` | MM III |",
+   "dopo": "| Deathlock | 8 | [CANONE — DM 2026-05-05] `Bestiario/mostri/deathlock-cr8.md` | MM III |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 283,
+   "data_da": "file",
+   "prima": "| Skeletal Dire Lion | 6 | [ACCEPTED] `Bestiario/mostri/skeletal-dire-lion-cr6.md` | Pride Ghostlord |",
+   "dopo": "| Skeletal Dire Lion | 6 | [CANONE — DM 2026-05-05] `Bestiario/mostri/skeletal-dire-lion-cr6.md` | Pride Ghostlord |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 299,
+   "data_da": "file",
+   "prima": "| Rethmar Militia (Warrior 1) | 1/2 | [ACCEPTED] `Bestiario/mostri/rethmar-militia-cr05.md` | 1.200 guarnigione |",
+   "dopo": "| Rethmar Militia (Warrior 1) | 1/2 | [CANONE — DM 2026-05-05] `Bestiario/mostri/rethmar-militia-cr05.md` | 1.200 guarnigione |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 300,
+   "data_da": "file",
+   "prima": "| Rethmar City Guard (Fighter 2) | 2 | [ACCEPTED] `Bestiario/mostri/rethmar-city-guard-cr2.md` | Guardia |",
+   "dopo": "| Rethmar City Guard (Fighter 2) | 2 | [CANONE — DM 2026-05-05] `Bestiario/mostri/rethmar-city-guard-cr2.md` | Guardia |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 306,
+   "data_da": "file",
+   "prima": "| Dauth Dwarf Defender (Ftr 6) | 6 | [ACCEPTED] `Bestiario/mostri/dauth-dwarf-defender-cr6.md` | +400 Dauth |",
+   "dopo": "| Dauth Dwarf Defender (Ftr 6) | 6 | [CANONE — DM 2026-05-05] `Bestiario/mostri/dauth-dwarf-defender-cr6.md` | +400 Dauth |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 312,
+   "data_da": "file",
+   "prima": "| Cerchio Sacro Druid 7 (Hella ally) | 7 | [ACCEPTED] `Bestiario/mostri/cerchio-druid7-cr7.md` | +150 |",
+   "dopo": "| Cerchio Sacro Druid 7 (Hella ally) | 7 | [CANONE — DM 2026-05-05] `Bestiario/mostri/cerchio-druid7-cr7.md` | +150 |"
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 331,
+   "data_da": "scritta",
+   "prima": "Tutti marcati `[ACCEPTED — DM-canon 2026-05-05]`; fonte AP RHoD + SRD/MM/FRCS.",
+   "dopo": "Tutti marcati `[CANONE — DM 2026-05-05]`; fonte AP RHoD + SRD/MM/FRCS."
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-COMPOSIZIONE-DETTAGLIATA.md",
+   "riga": 406,
+   "data_da": "scritta",
+   "prima": "- [ ] Finalizzare tutti gli [ACCEPTED] in `Bestiario/` (file separati).",
+   "dopo": "- [ ] Finalizzare tutti gli [CANONE — DM data] in `Bestiario/` (file separati)."
+  },
+  {
+   "file": "00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md",
+   "riga": 7,
+   "data_da": "scritta",
+   "prima": "> Flag: `[ACCEPTED — DM-canon 2026-05-05]`. I trigger scheduling sono",
+   "dopo": "> Flag: `[CANONE — DM 2026-05-05]`. I trigger scheduling sono"
+  },
+  {
+   "file": "07_il Portale Della Forgia Eterna/Mappe/ARC07-MAPPE-DEFINITIVO.md",
+   "riga": 19,
+   "data_da": "scritta",
+   "prima": "> **ASCII = fonte canonica** (decisione DM 2026-07-23): l'ASCII ultra-clear porta",
+   "dopo": "> **ASCII = fonte canonica** [CANONE — DM 2026-07-23]: l'ASCII ultra-clear porta"
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ESITI-CONSEGUENZE.md",
+   "riga": 311,
+   "data_da": "scritta",
+   "prima": "- **Durgan Tozzefort** `[ACCEPTED — DM-canon 2026-07-12]` (300 nani mercenari di Dauth):",
+   "dopo": "- **Durgan Tozzefort** `[CANONE — DM 2026-07-12]` (300 nani mercenari di Dauth):"
+  },
+  {
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md",
+   "riga": 186,
+   "data_da": "scritta",
+   "prima": "## 7. Durgan Tozzefort — Comandante dei 300 Mercenari Nani (CR 12) `[ACCEPTED — DM-canon 2026-07-12]`",
+   "dopo": "## 7. Durgan Tozzefort — Comandante dei 300 Mercenari Nani (CR 12) `[CANONE — DM 2026-07-12]`"
+  },
+  {
+   "file": "Bestiario/mostri/README-CATALOGO-STORICO.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Armate — Unità Nuove [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Armate — Unità Nuove [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/README-CATALOGO-STORICO.md",
+   "riga": 11,
+   "data_da": "scritta",
+   "prima": "> Tutti i file in questa cartella sono **`[ACCEPTED — DM-canon 2026-05-05]`**",
+   "dopo": "> Tutti i file in questa cartella sono **`[CANONE — DM 2026-05-05]`**"
+  },
+  {
+   "file": "Bestiario/mostri/abishai-azzurro-mano-cr11.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Abishai azzurro della Mano — il cane da guardia di Tiamat (esterno, baatezu) [ACCEPTED — DM-canon 2026-10-18]",
+   "dopo": "# Abishai azzurro della Mano — il cane da guardia di Tiamat (esterno, baatezu) [CANONE — DM 2026-10-18]"
+  },
+  {
+   "file": "Bestiario/mostri/blue-psion-cr1.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Blue (Psionic Goblinoid) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Blue (Psionic Goblinoid) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/bone-naga-cr10.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Bone Naga (Ghostlord servant) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Bone Naga (Ghostlord servant) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/bruto-deforme-sottosuolo-cr11.md",
+   "riga": 1,
+   "data_da": "file",
+   "prima": "# Bruto Deforme del Sottosuolo (Gigante di Pietra deforme, Barbaro 2) [ACCEPTED — DM-canon]",
+   "dopo": "# Bruto Deforme del Sottosuolo (Gigante di Pietra deforme, Barbaro 2) [CANONE — DM 2026-08-05]"
+  },
+  {
+   "file": "Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Bugbear assassino — Ladro 5 / Assassino 2 (umanoide goblinoide) [ACCEPTED — DM-canon 2026-10-19, D10]",
+   "dopo": "# Bugbear assassino — Ladro 5 / Assassino 2 (umanoide goblinoide) [CANONE — DM 2026-10-19, D10]"
+  },
+  {
+   "file": "Bestiario/mostri/centaur-chieftain-cr7.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Centaur Chieftain (Fighter 6) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Centaur Chieftain (Fighter 6) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/centaur-ranger4-corrupted-cr5.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Centaur Ranger 4 (Corrupted) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Centaur Ranger 4 (Corrupted) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/cerchio-druid7-cr7.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Cerchio Sacro Druid 7 (Hella ally) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Cerchio Sacro Druid 7 (Hella ally) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/chierico-gruumsh-cr11.md",
+   "riga": 1,
+   "data_da": "comparsa",
+   "prima": "# Chierico di Gruumsh (Orco, Chierico 11) [ACCEPTED — DM-canon]",
+   "dopo": "# Chierico di Gruumsh (Orco, Chierico 11) [CANONE — DM 2026-10-06]"
+  },
+  {
+   "file": "Bestiario/mostri/cultista-rakshasa-cr3.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Cultista Rakshasa (Rog 3) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Cultista Rakshasa (Rog 3) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/dauth-dwarf-defender-cr6.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Dauth Dwarf Defender (Fighter 6) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Dauth Dwarf Defender (Fighter 6) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/deathlock-cr8.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Deathlock (Ghostlord mage) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Deathlock (Ghostlord mage) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/drow-assassina-lolth-cr10.md",
+   "riga": 1,
+   "data_da": "file",
+   "prima": "# Drow Assassina di Lolth (Ladro 4 / Assassino 5) [ACCEPTED — DM-canon]",
+   "dopo": "# Drow Assassina di Lolth (Ladro 4 / Assassino 5) [CANONE — DM 2026-09-23]"
+  },
+  {
+   "file": "Bestiario/mostri/drow-fighter3-cr4.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Drow Fighter 3 (House Soldier) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Drow Fighter 3 (House Soldier) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/drow-noble-guard-cr5.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Drow Noble House Guard (Ftr 2/Rog 2) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Drow Noble House Guard (Ftr 2/Rog 2) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/drow-priestess9-cr11.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Drow Priestess of Lolth 9 (Sajak rituals) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Drow Priestess of Lolth 9 (Sajak rituals) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/drow-trickster-arcano-cr11.md",
+   "riga": 1,
+   "data_da": "file",
+   "prima": "# Drow Trickster Arcano — «Dita di Ragnatela» (Ladro 3 / Mago 5 / Trickster Arcano 2) [ACCEPTED — DM-canon]",
+   "dopo": "# Drow Trickster Arcano — «Dita di Ragnatela» (Ladro 3 / Mago 5 / Trickster Arcano 2) [CANONE — DM 2026-09-23]"
+  },
+  {
+   "file": "Bestiario/mostri/drow-warrior-cr1.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Drow Warrior [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Drow Warrior [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/drow-wizard7-cr8.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Drow Wizard 7 (Arcanist) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Drow Wizard 7 (Arcanist) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/flind-cr3.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Flind (Gnoll Elite — MM II) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Flind (Gnoll Elite — MM II) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/furia-della-mano-cr10.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Furia della Mano — chi grida il nome dei suoi morti (hobgoblin, barbaro 10) [ACCEPTED — DM-canon 2026-10-18]",
+   "dopo": "# Furia della Mano — chi grida il nome dei suoi morti (hobgoblin, barbaro 10) [CANONE — DM 2026-10-18]"
+  },
+  {
+   "file": "Bestiario/mostri/ghost-lion-spettrale-cr8.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# ghost-lion-spettrale-cr8 [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# ghost-lion-spettrale-cr8 [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/githyanki-captain-gish-cr12.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Githyanki Captain (Ftr 8/Wiz 3 Gish) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Githyanki Captain (Ftr 8/Wiz 3 Gish) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/githyanki-knight-elite-cr10.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# githyanki-knight-elite-cr10 [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# githyanki-knight-elite-cr10 [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/githyanki-warrior3-cr4.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Githyanki Warrior (Ftr 3) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Githyanki Warrior (Ftr 3) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/gnoll-chieftain-cr10.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Gnoll Chieftain (Barbarian 8) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Gnoll Chieftain (Barbarian 8) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/gnoll-cleric-yeenoghu-cr7.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Gnoll Cleric 6 of Yeenoghu [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Gnoll Cleric 6 of Yeenoghu [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/gnoll-hyenodon-rider-cr4.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Gnoll Hyenodon Rider [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Gnoll Hyenodon Rider [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/gnoll-ranger4-cr5.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Gnoll Ranger 4 (Artigli Neri scout) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Gnoll Ranger 4 (Artigli Neri scout) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/gnoll-warrior2-cr2.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Gnoll Warrior 2 [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Gnoll Warrior 2 [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/goblin-warrior1-cr05.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Goblin Warrior 1 [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Goblin Warrior 1 [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/gufo-gigante-celestiale-cr6.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Gufo gigante celestiale — cavalcatura dei ranger (bestia magica) [ACCEPTED — DM-canon 2026-10-19, D10]",
+   "dopo": "# Gufo gigante celestiale — cavalcatura dei ranger (bestia magica) [CANONE — DM 2026-10-19, D10]"
+  },
+  {
+   "file": "Bestiario/mostri/hobgoblin-captain-cr8.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# hobgoblin-captain-cr8 [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# hobgoblin-captain-cr8 [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/hobgoblin-sergente-cr5.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Hobgoblin Sergente (Fighter 5) [ACCEPTED — DM-canon 2026-05-05; ricalcolato al conto SRD — DM 2026-10-12, D78]",
+   "dopo": "# Hobgoblin Sergente (Fighter 5) [CANONE — DM 2026-05-05; ricalcolato al conto SRD — DM 2026-10-12, D78]"
+  },
+  {
+   "file": "Bestiario/mostri/loxo-shaman6-cr7.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Loxo Shaman (Druid 6) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Loxo Shaman (Druid 6) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/loxo-warrior3-cr4.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Loxo Warrior 3 [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Loxo Warrior 3 [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/lucertola-del-tuono-cr10.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Lucertola del tuono — progenie azzurra di Tiamat (drago) [ACCEPTED — DM-canon 2026-10-18]",
+   "dopo": "# Lucertola del tuono — progenie azzurra di Tiamat (drago) [CANONE — DM 2026-10-18]"
+  },
+  {
+   "file": "Bestiario/mostri/ogre-frantumapietra-barbaro6-cr9.md",
+   "riga": 1,
+   "data_da": "comparsa",
+   "prima": "# Ogre Frantumapietra delle Fauci Profonde (Barbaro 6) [ACCEPTED — DM-canon]",
+   "dopo": "# Ogre Frantumapietra delle Fauci Profonde (Barbaro 6) [CANONE — DM 2026-10-06]"
+  },
+  {
+   "file": "Bestiario/mostri/ogre-micelio-sporeborn-cr8.md",
+   "riga": 1,
+   "data_da": "comparsa",
+   "prima": "# Ogre Micelio — Sporeborn di Sonjak (Barbaro 4) [ACCEPTED — DM-canon]",
+   "dopo": "# Ogre Micelio — Sporeborn di Sonjak (Barbaro 4) [CANONE — DM 2026-10-06]"
+  },
+  {
+   "file": "Bestiario/mostri/ondata-giganti-fanteria-cr15.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# ondata-giganti-fanteria-cr15 [ACCEPTED — DM-canon 2026-05-05] [NON-CREATURA]",
+   "dopo": "# ondata-giganti-fanteria-cr15 [CANONE — DM 2026-05-05] [NON-CREATURA]"
+  },
+  {
+   "file": "Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Orog Guardia Nera — Guerriero 6 (guardia del corpo di Grimjaw) [ACCEPTED — DM-canon 2026-10-19, D10]",
+   "dopo": "# Orog Guardia Nera — Guerriero 6 (guardia del corpo di Grimjaw) [CANONE — DM 2026-10-19, D10]"
+  },
+  {
+   "file": "Bestiario/mostri/razorfiend-blackspawn-alfa-cr13.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Razorfiend «Blackspawn Alfa» — spawn draconico d'élite [ACCEPTED — DM-canon 2026-07-20]",
+   "dopo": "# Razorfiend «Blackspawn Alfa» — spawn draconico d'élite [CANONE — DM 2026-07-20]"
+  },
+  {
+   "file": "Bestiario/mostri/razorfiend-blue-cr9.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Razorfiend — Blue Variant [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Razorfiend — Blue Variant [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/razorfiend-green-cr9.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Razorfiend — Green Variant [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Razorfiend — Green Variant [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/razorfiend-red-cr9.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Razorfiend (Draconic Spawn) — Red Variant [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Razorfiend (Draconic Spawn) — Red Variant [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/razorfiend-white-cr8.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Razorfiend — White Variant [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Razorfiend — White Variant [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/rethmar-city-guard-cr2.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Rethmar City Guard (Fighter 2) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Rethmar City Guard (Fighter 2) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/rethmar-militia-cr05.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Rethmar Militia (Warrior 1) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Rethmar Militia (Warrior 1) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/skeletal-dire-lion-cr6.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Skeletal Dire Lion (Ghostlord Pride) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Skeletal Dire Lion (Ghostlord Pride) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/spezzamente-kulkor-zhul-cr12.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Spezzamente del Kulkor Zhul — la voce che fa voltare le spade (hobgoblin, mago ammaliatore 12) [ACCEPTED — DM-canon 2026-10-18]",
+   "dopo": "# Spezzamente del Kulkor Zhul — la voce che fa voltare le spade (hobgoblin, mago ammaliatore 12) [CANONE — DM 2026-10-18]"
+  },
+  {
+   "file": "Bestiario/mostri/teschio-nero-commander-cr10.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Teschio Nero Commander (Ftr 8/Bbn 2) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Teschio Nero Commander (Ftr 8/Bbn 2) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/thayan-heavy-infantry-cr3.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Thayan Heavy Infantry (Fighter 3) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Thayan Heavy Infantry (Fighter 3) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/thayan-knight-cr8.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Thayan Knight (PrC Complete Warrior) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Thayan Knight (PrC Complete Warrior) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/thayan-red-wizard7-cr9.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Thayan Red Wizard 7 (Evoker) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Thayan Red Wizard 7 (Evoker) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/tiamat-warpriest-elite-cr11.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# tiamat-warpriest-elite-cr11 [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# tiamat-warpriest-elite-cr11 [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/mostri/warpriest-tiamat-cr7.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Warpriest di Tiamat (Cleric 7) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Warpriest di Tiamat (Cleric 7) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/png/Khorn/khorn-ufficiale-hammerfist-cr8.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Khorn, ufficiale nanico di Hammerfist (Fighter 8) [ACCEPTED — DM-canon 2026-07-12]",
+   "dopo": "# Khorn, ufficiale nanico di Hammerfist (Fighter 8) [CANONE — DM 2026-07-12]"
+  },
+  {
+   "file": "Bestiario/png/arci-druido-circolo-cr17.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# arci-druido-circolo-cr17 [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# arci-druido-circolo-cr17 [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/png/arcimago-circolo-otto-cr17.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# arcimago-circolo-otto-cr17 [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# arcimago-circolo-otto-cr17 [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/png/dauth-commander-mercenari-nani-cr12.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# dauth-commander-mercenari-nani-cr12 [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# dauth-commander-mercenari-nani-cr12 [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/png/druid-bear-ally-cr12.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# druid-bear-ally-cr12 [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# druid-bear-ally-cr12 [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/png/thorgrim-barbadiferro.md",
+   "riga": 13,
+   "data_da": "scritta",
+   "prima": "🩸 **Cugino di Re Thorek I** *(decisione DM 2026-09-24)*: nipoti dello stesso",
+   "dopo": "🩸 **Cugino di Re Thorek I** [CANONE — DM 2026-09-24]: nipoti dello stesso"
+  },
+  {
+   "file": "Bestiario/villain/Avatar_Tiamat/avatar-tiamat-cr17.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# avatar-tiamat-cr17 [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# avatar-tiamat-cr17 [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/villain/Azarr_Kul/azarr-kul-final-cr17.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# azarr-kul-final-cr17 [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# azarr-kul-final-cr17 [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/villain/Ghaurush_Cenerevento/Ghaurush_Cenerevento.md",
+   "riga": 3,
+   "data_da": "file",
+   "prima": "> **[ACCEPTED — DM-canon]** Approvato dal DM il **2026-08-05**.",
+   "dopo": "> **[CANONE — DM 2026-08-05]** Approvato dal DM il **2026-08-05**."
+  },
+  {
+   "file": "Bestiario/villain/Ghaurush_Cenerevento/ghaurush-cenerevento-cr16.md",
+   "riga": 1,
+   "data_da": "dossier",
+   "prima": "# Ghaurush «Cenerevento» — Generale Elementalista della Mano Rossa [ACCEPTED — DM-canon]",
+   "dopo": "# Ghaurush «Cenerevento» — Generale Elementalista della Mano Rossa [CANONE — DM 2026-08-05]"
+  },
+  {
+   "file": "Bestiario/villain/Ghaurush_Cenerevento/ghaurush-cenerevento-secondo-incontro-cr18.md",
+   "riga": 1,
+   "data_da": "dossier",
+   "prima": "# Ghaurush «Cenerevento» — Secondo Incontro, «il preventivo è scaduto» [ACCEPTED — DM-canon]",
+   "dopo": "# Ghaurush «Cenerevento» — Secondo Incontro, «il preventivo è scaduto» [CANONE — DM 2026-08-05]"
+  },
+  {
+   "file": "Bestiario/villain/Tyrgarun/tyrgarun-blue-old-cr18.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Tyrgarun — Blue Old Dragon (Sky-Terror of Rethmar) [ACCEPTED — DM-canon 2026-07-02, D11 v2]",
+   "dopo": "# Tyrgarun — Blue Old Dragon (Sky-Terror of Rethmar) [CANONE — DM 2026-07-02, D11 v2]"
+  },
+  {
+   "file": "Bestiario/villain/Ushgar_Occhio_Reso/Ushgar_Occhio_Reso.md",
+   "riga": 6,
+   "data_da": "file",
+   "prima": "> **[ACCEPTED — DM-canon]** Approvato dal DM il **2026-08-05**.",
+   "dopo": "> **[CANONE — DM 2026-08-05]** Approvato dal DM il **2026-08-05**."
+  },
+  {
+   "file": "Bestiario/villain/Ushgar_Occhio_Reso/ushgar-occhio-reso-cr13.md",
+   "riga": 1,
+   "data_da": "dossier",
+   "prima": "# Ushgar «Occhio Reso» — Capo-guerra degli ausiliari orcheschi (Orco, Barbaro 13) [ACCEPTED — DM-canon]",
+   "dopo": "# Ushgar «Occhio Reso» — Capo-guerra degli ausiliari orcheschi (Orco, Barbaro 13) [CANONE — DM 2026-08-05]"
+  },
+  {
+   "file": "Bestiario/villain/Wyrmlord_Karruk/wyrmlord-karruk-cr13.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Wyrmlord Karruk [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Wyrmlord Karruk [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/villain/Zarim/zarim-illithid-luogotenente-cr12.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# Zarim — luogotenente illithid di Xal'thor (illithid, Psion 4) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Zarim — luogotenente illithid di Xal'thor (illithid, Psion 4) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "Bestiario/villain/Zhentarim_Dauth/Zhentarim_Dauth.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# La cella Zhentarim al Torneo di Dauth [NON-CREATURA] [ACCEPTED — DM-canon 2026-09-17]",
+   "dopo": "# La cella Zhentarim al Torneo di Dauth [NON-CREATURA] [CANONE — DM 2026-09-17]"
+  },
+  {
+   "file": "Bestiario/villain/Zin_thara_Vel_Ryn/Zin_thara_Vel_Ryn.md",
+   "riga": 3,
+   "data_da": "file",
+   "prima": "> **[ACCEPTED — DM-canon]** Approvata dal DM il **2026-08-05**.",
+   "dopo": "> **[CANONE — DM 2026-08-05]** Approvata dal DM il **2026-08-05**."
+  },
+  {
+   "file": "Bestiario/villain/Zin_thara_Vel_Ryn/zin-thara-vel-ryn-cr12.md",
+   "riga": 1,
+   "data_da": "dossier",
+   "prima": "# Zin'thara Vel'Ryn «la Voce di Ragnatela» — Ombraiola di Sonjak [ACCEPTED — DM-canon]",
+   "dopo": "# Zin'thara Vel'Ryn «la Voce di Ragnatela» — Ombraiola di Sonjak [CANONE — DM 2026-08-05]"
+  },
+  {
+   "file": "Bestiario/villain/emissario-red-hand-cr12.md",
+   "riga": 1,
+   "data_da": "scritta",
+   "prima": "# emissario-red-hand-cr12 — diplomatico-sacerdote hobgoblin (Chierico 12 di Tiamat) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# emissario-red-hand-cr12 — diplomatico-sacerdote hobgoblin (Chierico 12 di Tiamat) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "PG/Artefatti/Artefatti-Pg/Tordek/00_Cintura_della_Devastazione.md",
+   "riga": 38,
+   "data_da": "scritta",
+   "prima": "Sala della Forgia, le cariche salgono a **4/giorno**, **per sempre** (decisione DM 2026-07-04: la Benedizione della Forgia è permanente; «fino a fine avventura»",
+   "dopo": "Sala della Forgia, le cariche salgono a **4/giorno**, **per sempre** [CANONE — DM 2026-07-04: la Benedizione della Forgia è permanente; «fino a fine avventura» "
+  },
+  {
+   "file": "PG/Artefatti/LaCorona_di_Adamantio-DM.md",
+   "riga": 692,
+   "data_da": "scritta",
+   "prima": "Porte Segrete, Scoprire Trappole e Comprendere Linguaggi a volontà *(decisione DM 2026-07-04: valgono entrambe le liste master/HTML)*.",
+   "dopo": "Porte Segrete, Scoprire Trappole e Comprendere Linguaggi a volontà [CANONE — DM 2026-07-04: valgono entrambe le liste master/HTML]."
+  },
+  {
+   "file": "PG/Artefatti/LaCorona_di_Adamantio-DM.md",
+   "riga": 728,
+   "data_da": "scritta",
+   "prima": "◦ Sblocco: Rituale 2. Attivazione: 1 ora di concentrazione in un Nodo Terrestre *(decisione DM 2026-07-04: vale la versione HTML `02`; «10 minuti» superato)*.",
+   "dopo": "◦ Sblocco: Rituale 2. Attivazione: 1 ora di concentrazione in un Nodo Terrestre [CANONE — DM 2026-07-04: vale la versione HTML `02`; «10 minuti» superato]."
+  },
+  {
+   "file": "campaign/DM-QUICKSTART-ARC09.md",
+   "riga": 9,
+   "data_da": "file",
+   "prima": "`[ACCEPTED — DM-canon]`. March Clock = Day 19. Ritual Clock = 9/18.",
+   "dopo": "`[CANONE — DM 2026-05-05]`. March Clock = Day 19. Ritual Clock = 9/18."
+  },
+  {
+   "file": "campaign/DM-QUICKSTART-ARC09.md",
+   "riga": 66,
+   "data_da": "scritta",
+   "prima": "(54 file, tutti `[ACCEPTED — DM-canon 2026-05-05]`).",
+   "dopo": "(54 file, tutti `[CANONE — DM 2026-05-05]`)."
+  },
+  {
+   "file": "campaign/DM-QUICKSTART-ARC09.md",
+   "riga": 192,
+   "data_da": "scritta",
+   "prima": "flaggala `[ACCEPTED — DM-canon]` e cita fonte (MM/FRCS/AP).",
+   "dopo": "flaggala `[CANONE — DM data]` e cita fonte (MM/FRCS/AP)."
+  },
+  {
+   "file": "docs/how-to/GUIDA-BESTIARIO.md",
+   "riga": 68,
+   "data_da": "scritta",
+   "prima": "# Nome Creatura (contesto) [ACCEPTED — DM-canon 2026-05-05]",
+   "dopo": "# Nome Creatura (contesto) [CANONE — DM 2026-05-05]"
+  },
+  {
+   "file": "docs/reference/GUIDA-MARCATURE.md",
+   "riga": 29,
+   "data_da": "file",
+   "prima": "1. **Una parola per concetto.** Niente `[ACCEPTED]`, «(decisione DM …)»,",
+   "dopo": "1. **Una parola per concetto.** Niente `[CANONE — DM 2026-11-04]`, «(decisione DM …)»,"
+  }
+ ]
+}

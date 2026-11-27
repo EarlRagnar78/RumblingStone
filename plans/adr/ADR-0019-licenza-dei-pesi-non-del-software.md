@@ -113,7 +113,7 @@ segnaposto vettoriali esistenti restano validi come artefatto consegnabile.
 
 - `skills/rumblingstone-art-direction/SKILL.md` §7: il ciclo, con la provenienza
   come ultimo passo
-- [`docs/guides/GUIDA-IMMAGINI.md`](../../docs/guides/GUIDA-IMMAGINI.md) §1: la
+- [`docs/how-to/GUIDA-IMMAGINI.md`](../../docs/how-to/GUIDA-IMMAGINI.md) §1: la
   tabella dei generatori, con la colonna licenza
 - [ADR-0015](ADR-0015-standard-prompt-immagine.md): cosa si può chiedere
 - [ADR-0005](ADR-0005-confini-ip-uso-non-commerciale.md): il perimetro IP generale

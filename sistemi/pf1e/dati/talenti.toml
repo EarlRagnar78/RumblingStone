@@ -1,0 +1,8296 @@
+# sistemi/pf1e/dati/talenti.toml — talenti PF1e e talenti bonus delle classi, dal PRD.
+# Generato da plans/esperimenti/regole-complete-2026-11-10/estrai_talenti.py (non a mano).
+# Fonte: devonjones/PSRD-Data@76ea4784, sezioni di tipo «feat» e tabelle delle classi. OGL 1.0a.
+
+# [capacita]: classi che hanno la capacità chiesta da un talento, e da quale livello
+# (colonna «Special» delle tabelle; per «cast … spells» la prima riga della griglia).
+[capacita]
+"bardic performance" = { "bard" = 1 }
+"cast arcane spells" = { "arcanist" = 1, "bard" = 1, "bloodrager" = 4, "magus" = 1, "skald" = 1, "sorcerer" = 1, "summoner" = 1, "witch" = 1, "wizard" = 1 }
+"cast divine spells" = { "adept" = 1, "cleric" = 1, "druid" = 1, "hunter" = 1, "inquisitor" = 1, "oracle" = 1, "paladin" = 5, "ranger" = 5, "shaman" = 1, "warpriest" = 1 }
+"cast spells" = { "adept" = 1, "arcanist" = 1, "bard" = 1, "bloodrager" = 4, "cleric" = 1, "druid" = 1, "hunter" = 1, "inquisitor" = 1, "magus" = 1, "oracle" = 1, "paladin" = 5, "ranger" = 5, "shaman" = 1, "skald" = 1, "sorcerer" = 1, "summoner" = 1, "warpriest" = 1, "witch" = 1, "wizard" = 1 }
+"channel energy" = { "cleric" = 1, "holy vindicator" = 1, "warpriest" = 4 }
+"channel negative energy" = { "cleric" = 1, "holy vindicator" = 1, "antipaladin" = 4, "warpriest" = 4 }
+"channel positive energy" = { "cleric" = 1, "paladin" = 4, "holy vindicator" = 1, "warpriest" = 4 }
+"ki pool" = { "monk" = 4, "ninja" = 2 }
+"lay on hands" = { "paladin" = 2 }
+"mercy" = { "paladin" = 3 }
+"rage" = { "barbarian" = 1, "rage prophet" = 2, "skald" = 3 }
+"wild shape" = { "druid" = 4 }
+
+# [talenti."Nome inglese"]: it, tipi, prerequisiti (car, bab, lic, talenti, classe, gradi).
+# `altro` = prerequisiti che il testo dice e la regola non sa leggere: il generatore salta il talento.
+# [bonus."classe"]: livelli dei talenti bonus, lista (tipi e nomi; nomi per livello d'ingresso),
+# senza_prerequisiti se la classe li ignora, concessi = talenti dati per nome dalla tabella o dal
+# testo delle capacità; tipi_livello e scelte = la lista di quel solo livello (tattico del cavaliere,
+# compagno preciso del cacciatore); stili = liste per stile di combattimento o stirpe.
+
+[bonus."alchemist"]
+livelli = []
+tipi = []
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = { "1" = ["Brew Potion", "Throw Anything"] }
+fonte = "book-apg 835 (tabella della classe)"
+
+[bonus."battle herald"]
+livelli = [6]
+tipi = []
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = {  }
+tipi_livello = { "6" = ["Teamwork"] }
+fonte = "book-apg 899 (tabella della classe); testo: Teamwork Feat"
+
+[bonus."bloodrager"]
+livelli = [6, 9, 12, 15, 18]
+tipi = []
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = { "4" = ["Eschew Materials"] }
+stili."Aberrant" = { "1" = ["Combat Reflexes", "Great Fortitude", "Improved Disarm", "Improved Grapple", "Improved Initiative", "Improved Unarmed Strike", "Iron Will"] }
+stili."Abyssal" = { "1" = ["Cleave", "Great Fortitude", "Improved Bull Rush", "Improved Sunder", "Intimidating Prowess", "Power Attack", "Toughness"] }
+stili."Arcane" = { "1" = ["Combat Reflexes", "Disruptive", "Improved Initiative", "Iron Will", "Power Attack", "Quick Draw", "Spellbreaker"] }
+stili."Celestial" = { "1" = ["Dodge", "Improved Initiative", "Iron Will", "Mobility", "Mounted Combat", "Ride-By Attack", "Weapon Focus"] }
+stili."Destined" = { "1" = ["Diehard", "Endurance", "Improved Initiative", "Intimidating Prowess", "Leadership", "Lightning Reflexes", "Weapon Focus"] }
+stili."Draconic" = { "1" = ["Blind-Fight", "Cleave", "Great Fortitude", "Improved Initiative", "Power Attack", "Skill Focus", "Toughness"] }
+stili."Elemental" = { "1" = ["Cleave", "Dodge", "Great Fortitude", "Improved Initiative", "Lightning Reflexes", "Power Attack", "Weapon Focus"] }
+stili."Fey" = { "1" = ["Combat Reflexes", "Dodge", "Improved Initiative", "Lightning Reflexes", "Mobility", "Step Up", "Intimidating Prowess"] }
+stili."Infernal" = { "1" = ["Blind-Fight", "Combat Reflexes", "Deceitful", "Improved Disarm", "Improved Sunder", "Intimidating Prowess", "Iron Will"] }
+stili."Undead" = { "1" = ["Diehard", "Dodge", "Endurance", "Intimidating Prowess", "Iron Will", "Mobility", "Toughness"] }
+fonte = "book-acg 630 (tabella della classe); testo: Bonus Feats"
+
+[bonus."brawler"]
+livelli = [2, 5, 8, 11, 14, 17, 20]
+tipi = ["Combat"]
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = { "1" = ["Improved Unarmed Strike"], "16" = ["Awesome Blow"], "20" = ["Improved Awesome Blow"] }
+fonte = "book-acg 758 (tabella della classe)"
+
+[bonus."cavalier"]
+livelli = [1, 6, 9, 12, 17, 18]
+tipi = ["Combat"]
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = {  }
+tipi_livello = { "1" = ["Teamwork"], "9" = ["Teamwork"], "17" = ["Teamwork"] }
+fonte = "book-apg 934 (tabella della classe); testo: Bonus Feat"
+
+[bonus."dragon disciple"]
+livelli = [2, 5, 8]
+tipi = []
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = {  }
+fonte = "book-cr 2008 (tabella della classe); testo: Bloodline Feat"
+
+[bonus."duelist"]
+livelli = []
+tipi = []
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = { "1" = ["Precise Strike"], "4" = ["Combat Reflexes"], "9" = ["Deflect Arrows"], "10" = ["Crippling Critical"] }
+fonte = "book-cr 2117 (tabella della classe)"
+
+[bonus."eldritch knight"]
+livelli = [1, 5, 9]
+tipi = ["Combat"]
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = {  }
+fonte = "book-cr 2140 (tabella della classe); testo: Bonus Feat"
+
+[bonus."fighter"]
+livelli = [1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+tipi = ["Combat"]
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = {  }
+fonte = "book-cr 2159 (tabella della classe); testo: Bonus Feats"
+
+[bonus."gunslinger"]
+livelli = [4, 8, 12, 16, 20]
+tipi = ["Combat", "Grit"]
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = { "1" = ["Gunsmithing"] }
+fonte = "book-uc 1099 (tabella della classe); testo: Bonus Feats"
+
+[bonus."holy vindicator"]
+livelli = []
+tipi = []
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = { "5" = ["Channel Smite"] }
+fonte = "book-apg 1013 (tabella della classe)"
+
+[bonus."hunter"]
+livelli = [2, 3, 6, 9, 12, 15, 18]
+tipi = ["Teamwork"]
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = {  }
+scelte = { "2" = ["Precise Shot", "Outflank"] }
+fonte = "book-acg 781 (tabella della classe); testo: Teamwork Feat"
+
+[bonus."inquisitor"]
+livelli = [3, 6, 9, 12, 15, 18]
+tipi = ["Teamwork"]
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = { "11" = ["Stalwart"] }
+fonte = "book-apg 1082 (tabella della classe); testo: Teamwork Feat"
+
+[bonus."magus"]
+livelli = [5, 11, 17]
+tipi = ["Combat", "Item Creation", "Metamagic"]
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = {  }
+fonte = "book-um 598 (tabella della classe); testo: Bonus Feats"
+
+[bonus."monk"]
+livelli = [1, 2, 6, 10, 14, 18]
+tipi = []
+nomi = { "1" = ["Catch Off-Guard", "Combat Reflexes", "Deflect Arrows", "Dodge", "Improved Grapple", "Scorpion Style", "Throw Anything"], "6" = ["Gorgon's Fist", "Improved Bull Rush", "Improved Disarm", "Improved Feint", "Improved Trip", "Mobility"], "10" = ["Improved Critical", "Medusa's Wrath", "Snatch Arrows", "Spring Attack"] }
+senza_prerequisiti = true
+cumulativa = true
+concessi = { "1" = ["Stunning Fist", "Improved Unarmed Strike"] }
+fonte = "book-cr 2210 (tabella della classe); testo: Bonus Feat"
+
+[bonus."ranger"]
+livelli = [2, 6, 10, 14, 18]
+tipi = []
+nomi = {  }
+senza_prerequisiti = true
+cumulativa = true
+concessi = { "3" = ["Endurance"] }
+stili."Archery" = { "1" = ["Far Shot", "Point-Blank Shot", "Precise Shot", "Rapid Shot"], "6" = ["Improved Precise Shot", "Manyshot"], "10" = ["Pinpoint Targeting", "Shot on the Run"] }
+stili."Two-Weapon" = { "1" = ["Double Slice", "Improved Shield Bash", "Quick Draw", "Two-Weapon Fighting"], "6" = ["Improved Two-Weapon Fighting", "Two-Weapon Defense"], "10" = ["Greater Two-Weapon Fighting", "Two-Weapon Rend"] }
+fonte = "book-cr 2332 (tabella della classe); testo: Archery, Combat Style Feat, Two-Weapon"
+
+[bonus."samurai"]
+livelli = [6, 12, 18]
+tipi = ["Combat"]
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = {  }
+fonte = "book-uc 1058 (tabella della classe); testo: Bonus Feat"
+
+[bonus."skald"]
+livelli = []
+tipi = []
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = { "1" = ["Scribe Scroll"] }
+fonte = "book-acg 1084 (tabella della classe)"
+
+[bonus."sorcerer"]
+livelli = [7, 13, 19]
+tipi = []
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = { "1" = ["Eschew Materials"] }
+stili."Aberrant" = { "1" = ["Combat Casting", "Improved Disarm", "Improved Grapple", "Improved Initiative", "Improved Unarmed Strike", "Iron Will", "Silent Spell", "Skill Focus"] }
+stili."Abyssal" = { "1" = ["Augment Summoning", "Cleave", "Empower Spell", "Great Fortitude", "Improved Bull Rush", "Improved Sunder", "Power Attack", "Skill Focus"] }
+stili."Arcane" = { "1" = ["Combat Casting", "Improved Counterspell", "Improved Initiative", "Iron Will", "Scribe Scroll", "Skill Focus", "Spell Focus", "Still Spell"] }
+stili."Celestial" = { "1" = ["Dodge", "Extend Spell", "Iron Will", "Mobility", "Mounted Combat", "Ride-By Attack", "Skill Focus", "Weapon Finesse"] }
+stili."Destined" = { "1" = ["Arcane Strike", "Diehard", "Endurance", "Leadership", "Lightning Reflexes", "Maximize Spell", "Skill Focus", "Weapon Focus"] }
+stili."Draconic" = { "1" = ["Blind-Fight", "Great Fortitude", "Improved Initiative", "Power Attack", "Quicken Spell", "Skill Focus", "Toughness"] }
+stili."Elemental" = { "1" = ["Dodge", "Empower Spell", "Great Fortitude", "Improved Initiative", "Lightning Reflexes", "Power Attack", "Skill Focus", "Weapon Finesse"] }
+stili."Fey" = { "1" = ["Dodge", "Improved Initiative", "Lightning Reflexes", "Mobility", "Point-Blank Shot", "Precise Shot", "Quicken Spell", "Skill Focus"] }
+stili."Infernal" = { "1" = ["Blind-Fight", "Combat Expertise", "Deceitful", "Extend Spell", "Improved Disarm", "Iron Will", "Skill Focus", "Spell Penetration"] }
+stili."Undead" = { "1" = ["Combat Casting", "Diehard", "Endurance", "Iron Will", "Skill Focus", "Spell Focus", "Still Spell", "Toughness"] }
+fonte = "book-cr 2443 (tabella della classe); testo: Bonus Feats"
+
+[bonus."swashbuckler"]
+livelli = [4, 8, 12, 16, 20]
+tipi = ["Combat"]
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = {  }
+fonte = "book-acg 1145 (tabella della classe); testo: Bonus Feats"
+
+[bonus."warpriest"]
+livelli = [3, 6, 9, 12, 15, 18]
+tipi = ["Combat"]
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = { "1" = ["Weapon Focus"] }
+fonte = "book-acg 1183 (tabella della classe); testo: Bonus Feats"
+
+[bonus."wizard"]
+livelli = [5, 10, 15, 20]
+tipi = ["Item Creation", "Metamagic"]
+nomi = { "1" = ["Spell Mastery"] }
+senza_prerequisiti = false
+cumulativa = true
+concessi = { "1" = ["Scribe Scroll"] }
+fonte = "book-cr 2581 (tabella della classe); testo: Bonus Feats"
+
+# [requisiti."classe di prestigio"]: BAB, talenti (oppure = uno a scelta), gradi, livello
+# d'incantesimo arcano/divino, capacità; `altro` = ciò che decide il DM (allineamento, imprese…).
+
+[requisiti."arcane archer"]
+bab = 6
+talenti = ["Point-Blank Shot", "Precise Shot", "Weapon Focus"]
+incantesimi = { "arcani" = 1 }
+armi = { "Weapon Focus" = "longbow or shortbow" }
+fonte = "book-cr 1648"
+
+[requisiti."arcane trickster"]
+altro = ["alignment: Any nonlawful", "incantesimi: Ability to cast mage hand and at least one arcane spell of 2nd level or higher", "special: Sneak attack +2d6"]
+gradi = { "Disable Device" = 4, "Escape Artist" = 4, "Knowledge (arcana)" = 4 }
+fonte = "book-cr 1666"
+
+[requisiti."assassin"]
+altro = ["alignment: Any evil", "special: The character must kill someone for no other reason than to become an assassin"]
+gradi = { "Disguise" = 2, "Stealth" = 5 }
+fonte = "book-cr 1691"
+
+[requisiti."battle herald"]
+bab = 4
+altro = ["special: Challenge and inspire courage class features"]
+gradi = { "Diplomacy" = 5, "Intimidate" = 5, "Perform (oratory)" = 5, "Profession (soldier)" = 2 }
+fonte = "book-apg 893"
+
+[requisiti."dragon disciple"]
+altro = ["race: Any nondragon", "languages: Draconic", "incantesimi: Ability to cast 1st-level arcane spells without preparation. If the character has sorcerer levels, he must have the draconic bloodline. If the character gains levels of sorcerer after taking this class, he must take the draconic bloodline"]
+gradi = { "Knowledge (arcana)" = 5 }
+incantesimi = { "arcani" = 1 }
+fonte = "book-cr 2001"
+
+[requisiti."duelist"]
+bab = 6
+talenti = ["Dodge", "Mobility", "Weapon Finesse"]
+gradi = { "Acrobatics" = 2, "Perform" = 2 }
+fonte = "book-cr 2111"
+
+[requisiti."eldritch knight"]
+altro = ["weapon proficiency: Must be proficient with all martial weapons"]
+incantesimi = { "arcani" = 3 }
+fonte = "book-cr 2135"
+
+[requisiti."holy vindicator"]
+bab = 5
+capacita = ["channel energy"]
+oppure = [["Alignment Channel", "Elemental Channel"]]
+gradi = { "Knowledge (religion)" = 5 }
+incantesimi = { "divini" = 1 }
+fonte = "book-apg 1005"
+
+[requisiti."horizon walker"]
+talenti = ["Endurance"]
+gradi = { "Knowledge (geography)" = 6 }
+fonte = "book-apg 1030"
+
+[requisiti."loremaster"]
+altro = ["gradi: Knowledge (any two) 7 ranks in each", "talenti: Any three metamagic or item creation feats", "talenti: plus Skill Focus (Knowledge [any individual Knowledge skill])", "incantesimi: Able to cast seven different divination spells, one of which must be 3rd level or higher"]
+fonte = "book-cr 2188"
+
+[requisiti."master chymist"]
+altro = ["incantesimi: Ability to create 3rd-level extracts", "special: Mutagen class feature, feral mutagen or infuse mutagen discovery"]
+fonte = "book-apg 1125"
+
+[requisiti."master spy"]
+talenti = ["Deceitful", "Iron Will"]
+gradi = { "Bluff" = 7, "Disguise" = 7, "Perception" = 5, "Sense Motive" = 5 }
+fonte = "book-apg 1157"
+
+[requisiti."mystic theurge"]
+gradi = { "Knowledge (arcana)" = 3, "Knowledge (religion)" = 3 }
+incantesimi = { "divini" = 2, "arcani" = 2 }
+fonte = "book-cr 2245"
+
+[requisiti."nature warden"]
+bab = 4
+altro = ["special: Animal companion class feature*, favored terrain class feature, wild empathy class feature"]
+gradi = { "Handle Animal" = 5, "Knowledge (geography)" = 5, "Knowledge (nature)" = 5, "Survival" = 5 }
+incantesimi = { "divini" = 2 }
+fonte = "book-apg 1183"
+
+[requisiti."pathfinder chronicler"]
+altro = ["special: Must have authored or scribed something (other than a magical scroll or other device) for which another person (not a PC) paid at least 50 gp"]
+gradi = { "Linguistics" = 3, "Perform (oratory)" = 5, "Profession (scribe)" = 5 }
+fonte = "book-cr 2306"
+
+[requisiti."rage prophet"]
+bab = 5
+altro = ["special: Oracle's curse class feature, moment of clarity rage power"]
+gradi = { "Knowledge (religion)" = 5 }
+incantesimi = { "divini" = 1 }
+fonte = "book-apg 1388"
+
+[requisiti."shadowdancer"]
+talenti = ["Combat Reflexes", "Dodge", "Mobility"]
+gradi = { "Stealth" = 5, "Perform (dance)" = 2 }
+fonte = "book-cr 2414"
+
+[requisiti."stalwart defender"]
+bab = 7
+talenti = ["Dodge", "Endurance", "Toughness"]
+altro = ["special: Proficiency with light and medium armor"]
+fonte = "book-apg 1412"
+
+[talenti."Aberrant Tumor"]
+it = "Tumore Aberrante"
+tipi = ["General"]
+libro = "acg"
+altro = ["Aberrant bloodline"]
+
+[talenti."Ability Focus"]
+it = "Capacità Focalizzata"
+tipi = ["Monster"]
+libro = "b1"
+altro = ["Special attack"]
+
+[talenti."Abundant Revelations"]
+it = "Rivelazioni Abbondanti"
+tipi = ["General"]
+libro = "um"
+altro = ["Mystery class feature"]
+
+[talenti."Accursed"]
+it = "Maledetto"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must carry a curse that can be lifted only by a quest or similar great undertaking", "or have the Cursed Birth background"]
+
+[talenti."Accursed Critical"]
+it = "Critico Maledetto"
+tipi = ["Critical"]
+libro = "um"
+lic = 9
+talenti = ["Critical Focus"]
+altro = ["ability to cast bestow curse or major curse"]
+
+[talenti."Accursed Hex"]
+it = "Fattura Maledetta"
+tipi = ["General"]
+libro = "um"
+altro = ["Hex class feature"]
+
+[talenti."Accursed Hex, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Accursed Hex"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Acrobatic"]
+it = "Acrobatico"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Acrobatic Steps"]
+it = "Passo Acrobatico"
+tipi = ["General"]
+libro = "cr"
+car = { "Des" = 15 }
+talenti = ["Nimble Moves"]
+
+[talenti."Acrobatic, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Acrobatic"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Adaptive Fortune"]
+it = "Fortuna Adattiva"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Adder Strike"]
+it = "Colpo dell'Aspide"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "craft (alchemy)" = 1 }
+talenti = ["Improved Unarmed Strike"]
+altro = ["Poison use class feature"]
+
+[talenti."Additional Traits"]
+it = "Tratti Addizionali"
+tipi = ["General"]
+libro = "apg"
+
+[talenti."Adept Champion"]
+it = "Campione Esperto"
+tipi = ["General"]
+libro = "uc"
+bab = 5
+altro = ["Smite evil class feature"]
+
+[talenti."Advanced Ranger Trap"]
+it = "Trappole da Ranger Avanzate"
+tipi = ["General"]
+libro = "um"
+classe = { "ranger" = 5 }
+altro = ["Trap class feature"]
+
+[talenti."Agile Maneuvers"]
+it = "Manovre Agili"
+tipi = ["Combat"]
+libro = "cr"
+
+[talenti."Agile Tongue"]
+it = "Lingua Agile"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Airy Step"]
+it = "Passo Arioso"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Alertness"]
+it = "Allerta"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Alertness, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Alertness"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Alignment Channel"]
+it = "Incanalare Allineamento"
+tipi = ["General"]
+libro = "cr"
+capacita = ["channel energy"]
+
+[talenti."Alignment Channel, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Alignment Channel"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Allied Spellcaster"]
+it = "Incantatore Alleato"
+tipi = ["Teamwork"]
+libro = "apg"
+lic = 1
+
+[talenti."Amateur Gunslinger"]
+it = "Pistolero Amatoriale"
+tipi = ["Combat"]
+libro = "uc"
+altro = ["You have no levels in a class that has the grit class feature"]
+
+[talenti."Amateur Investigator"]
+it = "Investigatore Amatoriale"
+tipi = ["General"]
+libro = "acg"
+car = { "Int" = 13 }
+altro = ["1 rank in at least one Knowledge skill", "no levels in a class that has the inspiration class feature"]
+
+[talenti."Amateur Swashbuckler"]
+it = "Intrepido Amatoriale"
+tipi = ["Combat"]
+libro = "acg"
+altro = ["No levels in a class that has the panache class feature"]
+
+[talenti."Angel Wings"]
+it = "Ali Angeliche"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Angelic Blood"]
+it = "Sangue Angelico"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Angelic Flesh"]
+it = "Carni Angeliche"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Animal Affinity"]
+it = "Affinità Animale"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Animal Affinity, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Animal Affinity"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Animal Soul"]
+it = "Spirito Animale"
+tipi = ["General"]
+libro = "acg"
+altro = ["Animal companion or mount class feature"]
+
+[talenti."Antagonize"]
+it = "Istigare"
+tipi = ["General"]
+libro = "um"
+
+[talenti."Anticipate Dodge"]
+it = "Prevenire Schivare"
+tipi = ["Combat"]
+libro = "acg"
+classe = { "brawler" = 4, "or monk" = 4 }
+bab = 7
+talenti = ["Dodge", "Mobility"]
+
+[talenti."Aquatic Ancestry"]
+it = "Discendenza Acquatica"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Arc Slinger"]
+it = "Fromboliere"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Point-Blank Shot"]
+
+[talenti."Arcane Armor Mastery"]
+it = "Maestria Arcana nelle Armature"
+tipi = ["Combat"]
+libro = "cr"
+lic = 7
+talenti = ["Arcane Armor Training", "Armor Proficiency, Medium"]
+
+[talenti."Arcane Armor Training"]
+it = "Addestramento Arcano nelle Armature"
+tipi = ["Combat"]
+libro = "cr"
+lic = 3
+talenti = ["Armor Proficiency, Light"]
+
+[talenti."Arcane Armor Training, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Arcane Armor Training"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Arcane Blast"]
+it = "Esplosione Arcana"
+tipi = ["General"]
+libro = "apg"
+lic = 10
+altro = ["Arcane spellcaster"]
+
+[talenti."Arcane Blast, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Arcane Blast"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Arcane Shield"]
+it = "Scudo Arcano"
+tipi = ["General"]
+libro = "apg"
+lic = 10
+altro = ["Arcane spellcaster"]
+
+[talenti."Arcane Shield, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Arcane Shield"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Arcane Strike"]
+it = "Colpo Arcano"
+tipi = ["Combat"]
+libro = "cr"
+capacita = ["cast arcane spells"]
+
+[talenti."Arcane Strike, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Arcane Strike"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Arcane Talent"]
+it = "Dote Arcana"
+tipi = ["General"]
+libro = "apg"
+car = { "Car" = 10 }
+altro = ["elf", "half-elf", "or gnome"]
+
+[talenti."Arisen"]
+it = "Risorto"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have been slain", "brought back from the dead", "or have the Left to Die or Cursed Birth background"]
+
+[talenti."Armor Proficiency, Heavy"]
+it = "Competenza nelle Armature Pesanti"
+tipi = ["Combat"]
+libro = "cr"
+talenti = ["Armor Proficiency, Light", "Armor Proficiency, Medium"]
+
+[talenti."Armor Proficiency, Light"]
+it = "Competenza nelle Armature Leggere"
+tipi = ["Combat"]
+libro = "cr"
+
+[talenti."Armor Proficiency, Medium"]
+it = "Competenza nelle Armature Medie"
+tipi = ["Combat"]
+libro = "cr"
+talenti = ["Armor Proficiency, Light"]
+
+[talenti."Armor of the Pit"]
+it = "Armatura della Fossa"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Ascendant Spell, Mythic"]
+it = ""
+tipi = ["Metamagic"]
+libro = "ma"
+
+[talenti."Aspect of the Beast"]
+it = "Aspetto della Bestia"
+tipi = ["General"]
+libro = "apg"
+capacita = ["wild shape"]
+altro = ["see Special"]
+
+[talenti."Aspect of the Beast, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Aspect of the Beast"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Athletic"]
+it = "Atletico"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Athletic, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Athletic"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Attuned to the Wild"]
+it = "Armonia con le Terre Selvagge"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Augment Summoning"]
+it = "Aumentare Evocazione"
+tipi = ["General"]
+libro = "cr"
+talenti = ["Spell Focus"]
+
+[talenti."Augment Summoning, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Augment Summoning"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Awesome Blow"]
+it = "Colpo Terrificante"
+tipi = ["Combat", "Monster"]
+libro = "b1"
+car = { "For" = 25 }
+talenti = ["Power Attack", "Improved Bull Rush"]
+altro = ["size Large or larger"]
+
+[talenti."Back to Back"]
+it = "Schiena Contro Schiena"
+tipi = ["Teamwork"]
+libro = "uc"
+gradi = { "perception" = 3 }
+
+[talenti."Barroom Brawler"]
+it = "Rissaiolo da Taverna"
+tipi = ["Combat"]
+libro = "acg"
+bab = 4
+
+[talenti."Bashing Finish"]
+it = "Chiusura con Scudo"
+tipi = ["Combat"]
+libro = "apg"
+bab = 11
+talenti = ["Improved Shield Bash", "Shield Master", "Two-Weapon Fighting"]
+
+[talenti."Battle Cry"]
+it = "Grido di Battaglia"
+tipi = ["Combat"]
+libro = "acg"
+car = { "Car" = 13 }
+gradi = { "or sing)" = 5 }
+bab = 5
+altro = ["oratory"]
+
+[talenti."Battlefield Healer"]
+it = "Guaritore da Campo"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must successfully cast a conjuration (healing) spell on an ally after being hit by an attack of opportunity", "or have the Battle", "Chaplain", "or Healed background"]
+
+[talenti."Beast Rider"]
+it = "Cavalca Bestie"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Befuddling Strike"]
+it = "Colpo Confusionario"
+tipi = ["Combat"]
+libro = "acg"
+car = { "Des" = 13, "Sag" = 13 }
+bab = 8
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Believer's Boon"]
+it = "Dono del Credente"
+tipi = ["General"]
+libro = "acg"
+car = { "Sag" = 13 }
+altro = ["alignment must be within one step of your deity's"]
+
+[talenti."Believer's Hands"]
+it = "Mani del Credente"
+tipi = ["General"]
+libro = "acg"
+car = { "Sag" = 13 }
+talenti = ["Believer's Boon"]
+altro = ["must be lawful good", "alignment must be within one step of your deity's"]
+
+[talenti."Bestow Luck"]
+it = "Concedere Fortuna"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Betrayer"]
+it = "Traditore"
+tipi = ["General"]
+libro = "uc"
+bab = 3
+talenti = ["Quick Draw", "Persuasive"]
+
+[talenti."Binding Throw"]
+it = "Lancio Opprimente"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Improved Grapple", "Improved Trip", "Improved Unarmed Strike", "Ki Throw"]
+
+[talenti."Black Cat"]
+it = "Gatto Nero"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Blasting Charge"]
+it = "Carica Esplosiva"
+tipi = ["General"]
+libro = "acg"
+bab = 7
+altro = ["ability to cast 2nd-level bloodrager spells", "bloodrage class feature"]
+
+[talenti."Blazing Aura"]
+it = "Aura Fiammante"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Bleeding Critical"]
+it = "Critico Sanguinante"
+tipi = ["Combat", "Critical"]
+libro = "cr"
+bab = 11
+talenti = ["Critical Focus"]
+
+[talenti."Bleeding Critical, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Bleeding Critical", "Critical Focus, Mythic"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Blessed Striker"]
+it = "Attaccante Benedetto"
+tipi = ["General"]
+libro = "acg"
+bab = 11
+capacita = ["cast divine spells"]
+altro = ["alignment must be within one step of your deity's"]
+
+[talenti."Blighted Critical"]
+it = "Critico Piagante"
+tipi = ["Critical"]
+libro = "um"
+lic = 5
+
+[talenti."Blighted Critical Mastery"]
+it = "Critico Piagante Prodigioso"
+tipi = ["General"]
+libro = "um"
+lic = 9
+talenti = ["Blighted Critical"]
+
+[talenti."Blind-Fight"]
+it = "Combattere alla Cieca"
+tipi = ["Combat"]
+libro = "cr"
+
+[talenti."Blind-Fight, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Blind-Fight"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Blinding Critical"]
+it = "Critico Accecante"
+tipi = ["Combat", "Critical"]
+libro = "cr"
+bab = 15
+talenti = ["Critical Focus"]
+
+[talenti."Blistering Feint"]
+it = "Finta Ustionante"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Blood Beak"]
+it = "Becco Sanguinario"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Blood Drinker"]
+it = "Succhiasangue"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Blood Feaster"]
+it = "Banchettatore di Sangue"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Blood Salvage"]
+it = "Recuperare Sangue"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Blood Vengeance"]
+it = "Vendetta di Sangue"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Blood of Heroes"]
+it = "Sangue dell'Eroe"
+tipi = ["Hero Point", "Optional"]
+libro = "apg"
+
+[talenti."Blooded Arcane Strike"]
+it = "Colpo Arcano Sanguinario"
+tipi = ["Combat"]
+libro = "acg"
+talenti = ["Arcane Strike"]
+capacita = ["cast arcane spells"]
+altro = ["bloodrage class feature"]
+
+[talenti."Bloody Assault"]
+it = "Assalto Sanguinario"
+tipi = ["Combat"]
+libro = "apg"
+car = { "For" = 13 }
+bab = 6
+talenti = ["Power Attack"]
+
+[talenti."Bludgeoner"]
+it = "Picchiatore"
+tipi = ["Combat"]
+libro = "uc"
+
+[talenti."Blundering Defense"]
+it = "Difesa Impacciata"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Boar Ferocity"]
+it = "Ferocia del Cinghiale"
+tipi = ["Combat", "Style"]
+libro = "uc"
+gradi = { "intimidate" = 6 }
+talenti = ["Improved Unarmed Strike", "Boar Style"]
+
+[talenti."Boar Shred"]
+it = "Trinciatura del Cinghiale"
+tipi = ["Combat", "Style"]
+libro = "uc"
+gradi = { "intimidate" = 9 }
+talenti = ["Improved Unarmed Strike", "Boar Ferocity", "Boar Style"]
+
+[talenti."Boar Style"]
+it = "Stile del Cinghiale"
+tipi = ["Combat", "Style"]
+libro = "uc"
+gradi = { "intimidate" = 3 }
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Body Shield"]
+it = "Farsi Scudo"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 13 }
+bab = 6
+talenti = ["Improved Grapple", "Improved Unarmed Strike"]
+
+[talenti."Bodyguard"]
+it = "Guardia del Corpo"
+tipi = ["Combat"]
+libro = "apg"
+talenti = ["Combat Reflexes"]
+
+[talenti."Bolstered Resilience"]
+it = "Resistenza Potenziata"
+tipi = ["General"]
+libro = "uc"
+altro = ["Damage reduction"]
+
+[talenti."Bonebreaker"]
+it = "Spaccaossa"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 13 }
+gradi = { "heal" = 9 }
+talenti = ["Improved Grapple", "Improved Unarmed Strike", "Jawbreaker", "Stunning Fist"]
+
+[talenti."Bookish Rogue"]
+it = "Ladro Studioso"
+tipi = ["General"]
+libro = "acg"
+altro = ["Minor magic rogue talent"]
+
+[talenti."Born Alone"]
+it = "Unico Nato"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Bouncing Spell"]
+it = "Incantesimi Rimbalzanti"
+tipi = ["Metamagic"]
+libro = "apg"
+
+[talenti."Branded for Retribution"]
+it = "Marchiato dal Castigo"
+tipi = ["General"]
+libro = "uc"
+altro = ["Bane class feature"]
+
+[talenti."Breadth of Experience"]
+it = "Grande Esperienza"
+tipi = ["General"]
+libro = "apg"
+altro = ["Dwarf", "elf", "or gnome", "100+ years old"]
+
+[talenti."Break Guard"]
+it = "Rompere la Guardia"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 15, "Int" = 13 }
+talenti = ["Combat Expertise", "Improved Disarm", "Two-Weapon Fighting"]
+
+[talenti."Brew Potion"]
+it = "Mescere Pozioni"
+tipi = ["Item Creation"]
+libro = "cr"
+lic = 3
+
+[talenti."Brewmaster"]
+it = "Mastro Birraio"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Broken Wing Gambit"]
+it = "Gambetto dell'Ala Spezzata"
+tipi = ["Combat", "Teamwork"]
+libro = "uc"
+gradi = { "bluff" = 5 }
+
+[talenti."Bull Rush Strike"]
+it = "Colpo Respingente"
+tipi = ["Combat"]
+libro = "apg"
+car = { "For" = 13 }
+bab = 9
+talenti = ["Improved Bull Rush", "Power Attack"]
+
+[talenti."Bullying Blow"]
+it = "Colpo Prepotente"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Burn! Burn! Burn!"]
+it = "Brucia! Brucia! Brucia!"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Burning Spell"]
+it = "Incantesimi Brucianti"
+tipi = ["Metamagic"]
+libro = "um"
+
+[talenti."Burrowing Teeth"]
+it = "Denti da Scavo"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Canny Tumble"]
+it = "Acrobazia Astuta"
+tipi = ["Combat"]
+libro = "acg"
+gradi = { "acrobatics" = 5 }
+talenti = ["Dodge", "Mobility"]
+
+[talenti."Carrion Feeder"]
+it = "Mangia Carogne"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Cartwheel Dodge"]
+it = "Schivare Ruotando"
+tipi = ["General"]
+libro = "uc"
+gradi = { "acrobatics" = 12 }
+altro = ["Evasion class feature", "improved evasion class feature"]
+
+[talenti."Casual Illusionist"]
+it = "Illusionista Disinvolto"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Catch Off-Guard"]
+it = "Cogliere di Sorpresa"
+tipi = ["Combat"]
+libro = "cr"
+
+[talenti."Catch Off-Guard, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Catch Off-Guard"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Catfolk Exemplar"]
+it = "Felinide Esemplare"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Cautious Fighter"]
+it = "Guerriero Prudente"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Cavalry Formation"]
+it = "Formazione di Cavalleria"
+tipi = ["Combat", "Teamwork"]
+libro = "uc"
+talenti = ["Mounted Combat"]
+
+[talenti."Celestial Servant"]
+it = "Servitore Celestiale"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Champion"]
+it = "Campione"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have defeated a single challenging foe without any aid from another", "or have the Champion of a God", "Champion of the People", "Competition Champion", "or Gladiator background"]
+
+[talenti."Channel Force"]
+it = "Incanalare Forza"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Channel Smite"]
+it = "Incanalare Punizione"
+tipi = ["Combat"]
+libro = "cr"
+capacita = ["channel energy"]
+
+[talenti."Channel Smite, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Channel Smite"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Channeled Blessing"]
+it = "Benedizione Incanalata"
+tipi = ["General"]
+libro = "acg"
+capacita = ["channel energy"]
+altro = ["Blessings class feature"]
+
+[talenti."Channeled Revival"]
+it = "Incanalare Forza Vitale"
+tipi = ["General"]
+libro = "uc"
+altro = ["Channel energy 6d6 (positive energy)"]
+
+[talenti."Channeled Shield Wall"]
+it = "Incanalare Barriera Protettiva"
+tipi = ["General"]
+libro = "um"
+capacita = ["channel energy"]
+altro = ["3d6 proficiency with a shield"]
+
+[talenti."Channeling Force"]
+it = ""
+tipi = ["Combat"]
+libro = "acg"
+capacita = ["channel energy"]
+altro = ["Ability to cast at least one force spell"]
+
+[talenti."Channeling Scourge"]
+it = "Incanalare Flagello"
+tipi = ["General"]
+libro = "uc"
+classe = { "inquisitor" = 1 }
+capacita = ["channel energy"]
+
+[talenti."Charge Through"]
+it = "Attraversare"
+tipi = ["Combat"]
+libro = "apg"
+car = { "For" = 13 }
+bab = 1
+talenti = ["Improved Overrun", "Power Attack"]
+
+[talenti."Charge Through, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Charge Through"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Charging Hurler"]
+it = "Lanciare in Carica"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Point-Blank Shot"]
+
+[talenti."Childlike"]
+it = "Aspetto Infantile"
+tipi = ["General"]
+libro = "apg"
+car = { "Car" = 13 }
+altro = ["halfling"]
+
+[talenti."Chokehold"]
+it = "Morsa Soffocante"
+tipi = ["Combat"]
+libro = "uc"
+bab = 6
+talenti = ["Improved Grapple", "Improved Unarmed Strike"]
+
+[talenti."Claw Pounce"]
+it = "Balzo Graffiante"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Cleave"]
+it = "Incalzare"
+tipi = ["Combat"]
+libro = "cr"
+car = { "For" = 13 }
+bab = 1
+talenti = ["Power Attack"]
+
+[talenti."Cleave Through"]
+it = "Incalzare Mobile"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Cleave, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Cleave"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Cleaving Finish"]
+it = "Incalzare Terminale"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 13 }
+talenti = ["Cleave", "Power Attack"]
+
+[talenti."Close-Quarters Thrower"]
+it = "Colpo Ravvicinato"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 13 }
+talenti = ["Dodge"]
+altro = ["Weapon Focus with selected thrown weapon"]
+
+[talenti."Cloud Gazer"]
+it = "Osservatore tra le Nubi"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Cloud Step"]
+it = "Passo delle Nuvole"
+tipi = ["General"]
+libro = "apg"
+classe = { "monk" = 12 }
+talenti = ["Spider Step"]
+
+[talenti."Cloven Helm"]
+it = "Elmo Deformabile"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Clustered Shots"]
+it = "Colpi Raggruppati"
+tipi = ["Combat"]
+libro = "uc"
+bab = 6
+talenti = ["Point-Blank Shot", "Precise Shot"]
+
+[talenti."Cockatrice Strike"]
+it = "Colpo della Cockatrice"
+tipi = ["Combat"]
+libro = "apg"
+bab = 16
+talenti = ["Improved Unarmed Strike", "Gorgon's Fist", "Medusa's Wrath"]
+
+[talenti."Combat Casting"]
+it = "Incantare in Combattimento"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Combat Expertise"]
+it = "Maestria in Combattimento"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Int" = 13 }
+
+[talenti."Combat Expertise, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Combat Expertise"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Combat Medic"]
+it = "Medico da Battaglia"
+tipi = ["Teamwork"]
+libro = "uc"
+gradi = { "heal" = 5 }
+
+[talenti."Combat Patrol"]
+it = "Combattente di Pattuglia"
+tipi = ["Combat"]
+libro = "apg"
+bab = 5
+talenti = ["Combat Reflexes", "Mobility"]
+
+[talenti."Combat Reflexes"]
+it = "Riflessi in Combattimento"
+tipi = ["Combat"]
+libro = "cr"
+
+[talenti."Combat Reflexes, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Combat Reflexes"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Combat Style Master"]
+it = "Maestria negli Stili di Combattimento"
+tipi = ["Combat"]
+libro = "uc"
+bab = 6
+talenti = ["Improved Unarmed Strike"]
+altro = ["two or more style feats"]
+
+[talenti."Command Undead"]
+it = "Comandare Non Morti"
+tipi = ["General"]
+libro = "cr"
+capacita = ["channel negative energy"]
+
+[talenti."Command Undead, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Command Undead"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Concussive Spell"]
+it = "Incantesimi Concussivi"
+tipi = ["Metamagic"]
+libro = "um"
+
+[talenti."Confounding Tumble Deed"]
+it = "Gesta dell'Acrobazia Confondente"
+tipi = ["Panache"]
+libro = "acg"
+gradi = { "acrobatics" = 7 }
+talenti = ["Canny Tumble"]
+altro = ["Amateur Swashbuckler feat or panache class feature"]
+
+[talenti."Contingent Channeling"]
+it = "Incanalare Contingente"
+tipi = ["General"]
+libro = "uc"
+talenti = ["Selective Channeling"]
+altro = ["True healer class feature"]
+
+[talenti."Cooperative Crafting"]
+it = "Creazione Cooperativa"
+tipi = ["General"]
+libro = "apg"
+altro = ["1 rank in any Craft skill", "any item creation feat"]
+
+[talenti."Coordinated Charge"]
+it = "Carica Coordinata"
+tipi = ["Combat", "Teamwork"]
+libro = "uc"
+bab = 10
+altro = ["You have at least two other teamwork feats"]
+
+[talenti."Coordinated Defense"]
+it = "Difesa Coordinata"
+tipi = ["Combat", "Teamwork"]
+libro = "apg"
+
+[talenti."Coordinated Maneuvers"]
+it = "Manovre Coordinate"
+tipi = ["Combat", "Teamwork"]
+libro = "apg"
+
+[talenti."Coordinated Shot"]
+it = "Tiro Coordinato"
+tipi = ["Combat", "Teamwork"]
+libro = "acg"
+talenti = ["Point-Blank Shot"]
+
+[talenti."Cosmopolitan"]
+it = "Cosmopolita"
+tipi = ["General"]
+libro = "apg"
+
+[talenti."Counter Reflexes"]
+it = "Contrastare Riflessi"
+tipi = ["Combat"]
+libro = "acg"
+classe = { "brawler" = 6, "or monk" = 6 }
+bab = 9
+talenti = ["Anticipate Dodge", "Dodge", "Mobility"]
+
+[talenti."Counterpunch"]
+it = "Pugno di Risposta"
+tipi = ["Combat"]
+libro = "acg"
+car = { "Des" = 18 }
+bab = 16
+talenti = ["Combat Reflexes", "Improved Unarmed Strike", "Weapon Focus"]
+
+[talenti."Courageous Resolve"]
+it = "Risolutezza Coraggiosa"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Covering Defense"]
+it = "Concedere Copertura"
+tipi = ["Combat"]
+libro = "apg"
+bab = 6
+talenti = ["Shield Focus"]
+
+[talenti."Craft Construct"]
+it = "Creare Costrutti"
+tipi = ["Item Creation", "Monster"]
+libro = "b1"
+lic = 5
+talenti = ["Craft Wondrous Item"]
+altro = ["Craft Magic Arms", "Armor"]
+
+[talenti."Craft Magic Arms and Armor"]
+it = "Creare Armi e Armature Magiche"
+tipi = ["Item Creation"]
+libro = "cr"
+lic = 5
+
+[talenti."Craft Rod"]
+it = "Creare Verghe"
+tipi = ["Item Creation"]
+libro = "cr"
+lic = 9
+
+[talenti."Craft Staff"]
+it = "Creare Bastoni"
+tipi = ["Item Creation"]
+libro = "cr"
+lic = 11
+
+[talenti."Craft Wand"]
+it = "Creare Bacchette"
+tipi = ["Item Creation"]
+libro = "cr"
+lic = 5
+
+[talenti."Craft Wondrous Item"]
+it = "Creare Oggetti Meravigliosi"
+tipi = ["Item Creation"]
+libro = "cr"
+lic = 3
+
+[talenti."Crane Riposte"]
+it = "Risposta della Gru"
+tipi = ["Combat"]
+libro = "uc"
+bab = 8
+talenti = ["Crane Style", "Crane Wing", "Dodge", "Improved Unarmed Strike"]
+
+[talenti."Crane Style"]
+it = "Stile della Gru"
+tipi = ["Combat", "Style"]
+libro = "uc"
+bab = 2
+talenti = ["Dodge", "Improved Unarmed Strike"]
+
+[talenti."Crane Wing"]
+it = "Ala della Gru"
+tipi = ["Combat"]
+libro = "uc"
+bab = 5
+talenti = ["Crane Style", "Dodge", "Improved Unarmed Strike"]
+
+[talenti."Create Reliquary Arms and Shields"]
+it = "Creare Armi e Armature Reliquiari"
+tipi = ["General"]
+libro = "um"
+altro = ["Craft Magic Arms", "Armor", "ability to cast consecrate or desecrate"]
+
+[talenti."Create Sanguine Elixir"]
+it = "Creare Elisir Sanguigno"
+tipi = ["General"]
+libro = "um"
+car = { "Car" = 15 }
+classe = { "sorcerer" = 3 }
+gradi = { "craft (alchemy)" = 12 }
+talenti = ["Brew Potion"]
+
+[talenti."Crippling Critical"]
+it = "Critico Menomante"
+tipi = ["Combat"]
+libro = "apg"
+bab = 13
+talenti = ["Critical Focus"]
+
+[talenti."Critical Focus"]
+it = "Critico Focalizzato"
+tipi = ["Combat"]
+libro = "cr"
+bab = 9
+
+[talenti."Critical Focus, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Critical Focus"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Critical Mastery"]
+it = "Critico Prodigioso"
+tipi = ["Combat"]
+libro = "cr"
+classe = { "fighter" = 14 }
+talenti = ["Critical Focus"]
+altro = ["any two critical feats"]
+
+[talenti."Critical Mastery, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Critical Focus, Mythic", "Critical Mastery"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Critical Versatility"]
+it = "Versatilità Critica"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Crossbow Mastery"]
+it = "Padronanza delle Balestre"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Des" = 15 }
+talenti = ["Point-Blank Shot", "Rapid Reload", "Rapid Shot"]
+
+[talenti."Crusader's Fist"]
+it = "Pugno del Crociato"
+tipi = ["Combat"]
+libro = "uc"
+bab = 6
+talenti = ["Improved Unarmed Strike"]
+altro = ["Lay on hands class feature or touch of corruption class feature"]
+
+[talenti."Crusader's Flurry"]
+it = "Raffica del Crociato"
+tipi = ["General"]
+libro = "uc"
+capacita = ["channel energy"]
+altro = ["flurry of blows class feature", "Weapon Focus with your deity's favored melee weapon"]
+
+[talenti."Crushing Blow"]
+it = "Colpo Tremendo"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Improved Unarmed Strike", "Stunning Fist"]
+
+[talenti."Damned"]
+it = "Dannato"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have had friendly contact with an evil-aligned outsider that would qualify as a challenging foe", "have a fiend-related sorcerous bloodline such as abyssal or infernal", "have direct fiendish ancestry (such as being a tiefling or half-fiend)", "or have the Fiend Raised or The Fiend background"]
+
+[talenti."Dark Sight"]
+it = "Visione Oscura"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Dastardly Finish"]
+it = "Vile Uccisione"
+tipi = ["Combat"]
+libro = "apg"
+altro = ["Sneak attack +5d6"]
+
+[talenti."Dastardly Finish, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Dastardly Finish"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Dauntless Destiny"]
+it = "Destino Impavido"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Dazing Assault"]
+it = "Assalto Frastornante"
+tipi = ["Combat"]
+libro = "apg"
+car = { "For" = 13 }
+bab = 11
+talenti = ["Power Attack"]
+
+[talenti."Dazing Fist"]
+it = "Pugno Frastornante"
+tipi = ["Combat"]
+libro = "acg"
+car = { "Des" = 13, "Sag" = 13 }
+bab = 4
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Dazing Spell"]
+it = "Incantesimi Frastornanti"
+tipi = ["Metamagic"]
+libro = "apg"
+
+[talenti."Dazzling Display"]
+it = "Maestria Intimorente"
+tipi = ["Combat"]
+libro = "cr"
+talenti = ["Weapon Focus"]
+
+[talenti."Dazzling Display, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Dazzling Display"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Deadly Aim"]
+it = "Mira Letale"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 13 }
+bab = 1
+
+[talenti."Deadly Aim, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Deadly Aim"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Deadly Finish"]
+it = "Assalto Mortale"
+tipi = ["Combat"]
+libro = "uc"
+bab = 11
+
+[talenti."Deadly Stroke"]
+it = "Colpo Mortale"
+tipi = ["Combat"]
+libro = "cr"
+bab = 11
+talenti = ["Dazzling Display", "Greater Weapon Focus", "Shatter Defenses", "Weapon Focus"]
+
+[talenti."Deadly Stroke, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Deadly Stroke"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Deafening Critical"]
+it = "Critico Assordante"
+tipi = ["Combat", "Critical"]
+libro = "cr"
+bab = 13
+talenti = ["Critical Focus"]
+
+[talenti."Deafening Explosion"]
+it = "Esplosione Assordante"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Death from Above"]
+it = "Morte dall'Alto"
+tipi = ["Combat"]
+libro = "uc"
+
+[talenti."Death from Above, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Death from Above"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Death or Glory"]
+it = "Gloria o Morte"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 13 }
+bab = 6
+talenti = ["Power Attack"]
+
+[talenti."Deathless Initiate"]
+it = "Iniziato dell'Immortalità"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 13, "Cos" = 13 }
+bab = 6
+talenti = ["Diehard", "Endurance"]
+altro = ["orc or half-orc"]
+
+[talenti."Deathless Master"]
+it = "Maestro dell'Immortalità"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 13, "Cos" = 15 }
+bab = 9
+talenti = ["Deathless Initiate", "Diehard", "Endurance", "Ironhide"]
+altro = ["orc or half-orc"]
+
+[talenti."Deathless Zealot"]
+it = "Zelota dell'Immortalità"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 13, "Cos" = 17 }
+bab = 12
+talenti = ["Deathless Initiate", "Deathless Master", "Diehard", "Endurance", "Ironhide"]
+altro = ["orc or half-orc"]
+
+[talenti."Deceitful"]
+it = "Ingannevole"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Deceitful, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Deceitful"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Deceptive Exchange"]
+it = "Scambio Ingannevole"
+tipi = ["General"]
+libro = "uc"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise", "Improved Feint"]
+
+[talenti."Deep Drinker"]
+it = "Ottimo Bevitore"
+tipi = ["General"]
+libro = "apg"
+car = { "Cos" = 13 }
+altro = ["monk level 11", "drunken ki class feature"]
+
+[talenti."Deepsight"]
+it = "Vista delle Profondità"
+tipi = ["General"]
+libro = "apg"
+altro = ["Darkvision 60 feet"]
+
+[talenti."Deepsight, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Deepsight"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Defending Eidolon"]
+it = "Eidolon Difensore"
+tipi = ["General"]
+libro = "um"
+altro = ["Shield ally feature"]
+
+[talenti."Defensive Combat Training"]
+it = "Addestramento nel Combattimento Difensivo"
+tipi = ["Combat"]
+libro = "cr"
+
+[talenti."Defensive Combat Training, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Defensive Combat Training"]
+altro = ["4th mythic tier", "grado mitico (Mythic Adventures)"]
+
+[talenti."Defensive Weapon Training"]
+it = "Addestramento Difensivo Contro Armi"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13 }
+bab = 5
+
+[talenti."Defiant Luck"]
+it = "Fortuna Sprezzante"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Deflect Arrows"]
+it = "Deviare Frecce"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 13 }
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Deflect Arrows, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Deflect Arrows"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Deft Hands"]
+it = "Manolesta"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Deft Hands, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Deft Hands"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Deft Shootist Deed"]
+it = ""
+tipi = ["Grit"]
+libro = "uc"
+talenti = ["Dodge", "Mobility"]
+altro = ["Grit class feature or Amateur Gunslinger feat"]
+
+[talenti."Demoralizing Lash"]
+it = "Sferzata Demoralizzante"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Dented Helm"]
+it = "Elmo Ammaccabile"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Deny Death"]
+it = "Rifiutare la Morte"
+tipi = ["General"]
+libro = "um"
+talenti = ["Endurance"]
+capacita = ["ki pool"]
+
+[talenti."Deny the Reaper"]
+it = "Respingere il Mietitore"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have witnessed the death of a close companion in battle—a death that could have been prevented", "such as from bleeding", "failure to stabilize", "or ongoing poison damage—or have the Death in the Family or The War background"]
+
+[talenti."Desperate Swing"]
+it = "Colpo Disperato"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Destroyer's Blessing"]
+it = "Benedizione del Distruttore"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Destructive Dispel"]
+it = "Dissolvere Distruttivo"
+tipi = ["General"]
+libro = "uc"
+lic = 11
+altro = ["Ability to cast dispel magic or greater dispel magic"]
+
+[talenti."Detect Expertise"]
+it = "Maestria nell'Individuazione"
+tipi = ["General"]
+libro = "um"
+car = { "Int" = 13 }
+altro = ["ability to cast detect chaos", "detect evil", "detect good", "detect law", "or detect magic"]
+
+[talenti."Detect Expertise, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Detect Expertise"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Devastating Strike"]
+it = "Colpo Devastante"
+tipi = ["Combat"]
+libro = "uc"
+bab = 9
+talenti = ["Vital Strike"]
+
+[talenti."Die for Your Master"]
+it = "Muori per il Tuo Padrone"
+tipi = ["General"]
+libro = "um"
+altro = ["Tumor familiar alchemist discovery"]
+
+[talenti."Diehard"]
+it = "Duro a Morire"
+tipi = ["General"]
+libro = "cr"
+talenti = ["Endurance"]
+
+[talenti."Dimensional Agility"]
+it = "Agilità Dimensionale"
+tipi = ["General"]
+libro = "uc"
+altro = ["Ability to use the abundant step class feature or cast dimension door"]
+
+[talenti."Dimensional Assault"]
+it = "Assalto Dimensionale"
+tipi = ["General"]
+libro = "uc"
+talenti = ["Dimensional Agility"]
+altro = ["Ability to use the abundant step class feature or cast dimension door"]
+
+[talenti."Dimensional Dervish"]
+it = "Derviscio Dimensionale"
+tipi = ["General"]
+libro = "uc"
+bab = 6
+talenti = ["Dimensional Agility", "Dimensional Assault"]
+altro = ["Ability to use the abundant step class feature or cast dimension door"]
+
+[talenti."Dimensional Maneuvers"]
+it = "Manovre Dimensionali"
+tipi = ["General"]
+libro = "uc"
+bab = 9
+talenti = ["Dimensional Agility", "Dimensional Assault", "Dimensional Dervish"]
+altro = ["Ability to use the abundant step class feature or cast dimension door"]
+
+[talenti."Dimensional Savant"]
+it = "Saggio Dimensionale"
+tipi = ["General"]
+libro = "uc"
+bab = 9
+talenti = ["Dimensional Agility", "Dimensional Assault", "Dimensional Dervish"]
+altro = ["ability to use the abundant step class feature or cast dimension door"]
+
+[talenti."Disable Dweomer"]
+it = "Disattivare Dweomer"
+tipi = ["General"]
+libro = "acg"
+gradi = { "disable device" = 5, "use magic device" = 5 }
+altro = ["trapfinding"]
+
+[talenti."Disarming Strike"]
+it = "Colpo Disarmante"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Int" = 13 }
+bab = 9
+talenti = ["Combat Expertise", "Improved Disarm"]
+
+[talenti."Disarming Threat Deed"]
+it = "Gesta della Minaccia Disarmante"
+tipi = ["Panache"]
+libro = "acg"
+gradi = { "diplomacy" = 2, "intimidate" = 2 }
+altro = ["Amateur Swashbuckler or panache class feature"]
+
+[talenti."Discerning Eye"]
+it = "Occhi Acuti"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Discordant Voice"]
+it = "Voce Discordante"
+tipi = ["General"]
+libro = "uc"
+gradi = { "perform (oratory or sing)" = 10 }
+capacita = ["bardic performance"]
+
+[talenti."Disengaging Feint"]
+it = "Fintare Disimpegnante"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise", "Improved Feint"]
+
+[talenti."Disengaging Flourish"]
+it = "Mulinello Disimpegnante"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise", "Disengaging Feint", "Improved Feint"]
+
+[talenti."Disengaging Shot"]
+it = "Colpo Disimpegnante"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise", "Disengaging Feint", "Dodge", "Improved Feint", "Mobility"]
+
+[talenti."Disheartening Display"]
+it = "Maestria Demoralizzante"
+tipi = ["Combat"]
+libro = "acg"
+bab = 6
+talenti = ["Dazzling Display", "Weapon Focus"]
+
+[talenti."Disorienting Maneuver"]
+it = "Manovra Disorientante"
+tipi = ["General"]
+libro = "uc"
+gradi = { "acrobatics" = 5 }
+talenti = ["Dodge"]
+
+[talenti."Dispel Synergy"]
+it = "Sinergia Dissolvente"
+tipi = ["General"]
+libro = "uc"
+gradi = { "spellcraft" = 5 }
+
+[talenti."Dispelling Critical"]
+it = "Critico Dissolvente"
+tipi = ["Critical"]
+libro = "uc"
+bab = 11
+talenti = ["Arcane Strike"]
+altro = ["ability to cast dispel magic"]
+
+[talenti."Dispelling Fist"]
+it = "Pugno Dissolvente"
+tipi = ["General"]
+libro = "uc"
+bab = 11
+lic = 7
+talenti = ["Improved Unarmed Strike"]
+altro = ["ability to cast dispel magic"]
+
+[talenti."Disposable Weapon"]
+it = "Arma Usa e Getta"
+tipi = ["General"]
+libro = "uc"
+bab = 1
+
+[talenti."Disrupting Shot"]
+it = "Tiro Dirompente"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Des" = 13 }
+classe = { "fighter" = 6 }
+talenti = ["Point-Blank Shot"]
+
+[talenti."Disruptive"]
+it = "Dirompente"
+tipi = ["Combat"]
+libro = "cr"
+classe = { "fighter" = 6 }
+
+[talenti."Disruptive Recall"]
+it = "Ricordare Distruttivo"
+tipi = ["General"]
+libro = "uc"
+gradi = { "spellcraft" = 5 }
+altro = ["Spell recall class feature"]
+
+[talenti."Disruptive Spell"]
+it = "Incantesimi Dirompenti"
+tipi = ["Metamagic"]
+libro = "apg"
+
+[talenti."Disruptive, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Disruptive"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Distance Thrower"]
+it = "Tiro a Distanza"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 13 }
+
+[talenti."Distance Thrower, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+car = { "For" = 17 }
+talenti = ["Distance Thrower"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Distracting Charge"]
+it = "Carica Distraente"
+tipi = ["Combat", "Teamwork"]
+libro = "acg"
+
+[talenti."Diverse Palate"]
+it = "Palato Diverso"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Divine Interference"]
+it = "Interferenza Divina"
+tipi = ["General"]
+libro = "um"
+lic = 10
+altro = ["Divine spellcaster"]
+
+[talenti."Divine Interference, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Divine Interference"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Divine Protection"]
+it = "Protezione Divina"
+tipi = ["General"]
+libro = "acg"
+car = { "Car" = 13 }
+gradi = { "knowledge (religion)" = 5 }
+altro = ["ability to cast 2nd-level divine spells", "blessings", "domains", "or mystery class feature"]
+
+[talenti."Diviner's Delving"]
+it = "Ricerca del Divinatore"
+tipi = ["General"]
+libro = "apg"
+talenti = ["Spell Focus"]
+
+[talenti."Djinni Spin"]
+it = "Trama del Djinni"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Cos" = 15, "Sag" = 17 }
+bab = 13
+talenti = ["Djinni Style", "Djinni Spirit", "Elemental Fist", "Improved Unarmed Strike"]
+
+[talenti."Djinni Spirit"]
+it = "Spirito del Djinni"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Cos" = 15, "Sag" = 15 }
+bab = 11
+talenti = ["Djinni Style", "Elemental Fist", "Improved Unarmed Strike"]
+
+[talenti."Djinni Style"]
+it = "Stile del Djinni"
+tipi = ["Combat", "Style"]
+libro = "uc"
+car = { "Cos" = 13, "Sag" = 15 }
+bab = 9
+talenti = ["Elemental Fist", "Improved Unarmed Strike"]
+
+[talenti."Dodge"]
+it = "Schivare"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 13 }
+
+[talenti."Dodge, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Dodge"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Domain Strike"]
+it = "Colpo del Dominio"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Improved Unarmed Strike"]
+altro = ["Domain class feature"]
+
+[talenti."Double Bane"]
+it = "Doppio Anatema"
+tipi = ["General"]
+libro = "uc"
+talenti = ["Two-Weapon Fighting"]
+altro = ["Bane class feature"]
+
+[talenti."Double Slice"]
+it = "Doppio Taglio"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 15 }
+talenti = ["Two-Weapon Fighting"]
+
+[talenti."Draconic Aspect"]
+it = "Aspetto Draconico"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Draconic Breath"]
+it = "Soffio Draconico"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Draconic Glide"]
+it = "Planata Draconica"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Draconic Paragon"]
+it = "Esemplare Draconico"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Drag Down"]
+it = "Trascinare Giù"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise", "Improved Trip"]
+
+[talenti."Dragon Ferocity"]
+it = "Ferocia del Drago"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 15 }
+gradi = { "acrobatics" = 5 }
+talenti = ["Improved Unarmed Strike", "Dragon Style", "Stunning Fist"]
+
+[talenti."Dragon Roar"]
+it = "Ruggito del Drago"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 15 }
+gradi = { "acrobatics" = 8 }
+talenti = ["Improved Unarmed Strike", "Dragon Style", "Stunning Fist"]
+
+[talenti."Dragon Style"]
+it = "Stile del Drago"
+tipi = ["Combat", "Style"]
+libro = "uc"
+car = { "For" = 15 }
+gradi = { "acrobatics" = 3 }
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Dragonbane Aura"]
+it = "Aura Anatema dei Draghi"
+tipi = ["General"]
+libro = "um"
+lic = 8
+altro = ["Aura of courage class feature"]
+
+[talenti."Draining Strike"]
+it = "Colpo Prosciugante"
+tipi = ["Combat"]
+libro = "acg"
+car = { "Des" = 13, "Sag" = 13 }
+bab = 8
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Dramatic Display"]
+it = "Mostrare Drammaticità"
+tipi = ["Combat", "Performance"]
+libro = "uc"
+talenti = ["Dazzling Display"]
+
+[talenti."Dreadful Carnage"]
+it = "Massacro Terrificante"
+tipi = ["Combat"]
+libro = "apg"
+car = { "For" = 15 }
+bab = 11
+talenti = ["Power Attack", "Furious Focus"]
+
+[talenti."Dreadful Carnage, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Dreadful Carnage"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Drink Is Life, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+car = { "Cos" = 19 }
+altro = ["3rd mythic tier", "grado mitico (Mythic Adventures)"]
+
+[talenti."Drow Nobility"]
+it = "Nobiltà Drow"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Dual Enhancement"]
+it = "Duplice Potenziamento"
+tipi = ["General"]
+libro = "acg"
+talenti = ["Two-Weapon Fighting"]
+altro = ["divine bond (weapon) or sacred weapon class feature"]
+
+[talenti."Dual Path, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+altro = ["1st mythic tier", "grado mitico (Mythic Adventures)"]
+
+[talenti."Duck and Cover"]
+it = "Al Riparo"
+tipi = ["Teamwork"]
+libro = "apg"
+
+[talenti."Dueling Cape"]
+it = ""
+tipi = ["Combat", "Panache"]
+libro = "acg"
+gradi = { "sleight of hand" = 1 }
+talenti = ["Dodge"]
+
+[talenti."Dwarf Blooded"]
+it = "Sangue Nanico"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Eagle Eyes"]
+it = "Occhio di Falco"
+tipi = ["General"]
+libro = "apg"
+car = { "Sag" = 13 }
+altro = ["keen senses racial trait"]
+
+[talenti."Eagle Eyes, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Eagle Eyes"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Earth Child Binder"]
+it = "Legato del Figlio della Terra"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Sag" = 13 }
+gradi = { "acrobatics" = 9 }
+talenti = ["Earth Child Style", "Earth Child Topple", "Greater Trip", "Improved Trip", "Improved Unarmed Strike", "Stunning Fist"]
+altro = ["dwarf or gnome", "defensive training racial trait"]
+
+[talenti."Earth Child Style"]
+it = "Stile del Figlio della Terra"
+tipi = ["Combat", "Style"]
+libro = "uc"
+car = { "Sag" = 13 }
+gradi = { "acrobatics" = 3 }
+talenti = ["Improved Unarmed Strike"]
+altro = ["dwarf or gnome", "defensive training racial trait"]
+
+[talenti."Earth Child Topple"]
+it = "Rovesciata del Figlio della Terra"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Sag" = 13 }
+gradi = { "acrobatics" = 6 }
+talenti = ["Earth Child Style", "Improved Trip", "Improved Unarmed Strike"]
+altro = ["dwarf or gnome", "defensive training racial trait"]
+
+[talenti."Echoes of Stone"]
+it = "Echi della Pietra"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Echoing Spell"]
+it = "Incantesimi Echeggianti"
+tipi = ["Metamagic"]
+libro = "um"
+
+[talenti."Eclectic"]
+it = "Versatilità"
+tipi = ["General"]
+libro = "apg"
+altro = ["Human"]
+
+[talenti."Ectoplasmic Spell"]
+it = "Incantesimi Ectoplasmatici"
+tipi = ["Metamagic"]
+libro = "apg"
+
+[talenti."Efreeti Stance"]
+it = "Posizione dell'Efreeti"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Cos" = 15, "Sag" = 15 }
+bab = 11
+talenti = ["Efreeti Style", "Elemental Fist", "Improved Unarmed Strike"]
+
+[talenti."Efreeti Style"]
+it = "Stile dell'Efreeti"
+tipi = ["Combat", "Style"]
+libro = "uc"
+car = { "Cos" = 13, "Sag" = 15 }
+bab = 9
+talenti = ["Elemental Fist", "Improved Unarmed Strike"]
+
+[talenti."Efreeti Touch"]
+it = "Tocco dell'Efreeti"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Cos" = 15, "Sag" = 17 }
+bab = 13
+talenti = ["Efreeti Style", "Efreeti Stance", "Elemental Fist", "Improved Unarmed Strike"]
+
+[talenti."Eldritch Claws"]
+it = "Artigli Arcani"
+tipi = ["Combat"]
+libro = "apg"
+car = { "For" = 15 }
+bab = 6
+altro = ["natural weapons"]
+
+[talenti."Eldritch Heritage"]
+it = "Retaggio Stregonesco"
+tipi = ["General"]
+libro = "um"
+car = { "Car" = 13 }
+classe = { "character" = 3 }
+altro = ["Skill Focus with the class skill of bloodline selected for this feat (see below)"]
+
+[talenti."Eldritch Heritage, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Eldritch Heritage"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Eldritch Researcher"]
+it = "Ricercatore Arcano"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have created a new spell", "or have The Way Things Work background"]
+
+[talenti."Elemental Channel"]
+it = "Incanalare Elementale"
+tipi = ["General"]
+libro = "cr"
+capacita = ["channel energy"]
+
+[talenti."Elemental Channel, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Elemental Channel"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Elemental Fist"]
+it = "Pugno Elementale"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Cos" = 13, "Sag" = 13 }
+bab = 8
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Elemental Fist, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Elemental Fist"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Elemental Focus"]
+it = "Elemento Focalizzato"
+tipi = ["General"]
+libro = "apg"
+
+[talenti."Elemental Focus, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Elemental Focus"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Elemental Jaunt"]
+it = "Transizione Elementale"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Elemental Spell"]
+it = "Incantesimi Elementali"
+tipi = ["Metamagic"]
+libro = "apg"
+
+[talenti."Elusive Redirection"]
+it = "Ridirigere Elusivo"
+tipi = ["General"]
+libro = "uc"
+classe = { "flowing monk" = 12 }
+talenti = ["Combat Expertise", "Improved Unarmed Strike"]
+altro = ["Elusive target class feature"]
+
+[talenti."Elven Accuracy"]
+it = "Accuratezza Elfica"
+tipi = ["Combat"]
+libro = "apg"
+altro = ["Elf"]
+
+[talenti."Elven Accuracy, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Elven Accuracy"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Elven Battle Training"]
+it = "Addestramento Marziale Elfico"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Elven Spirit"]
+it = "Spirito Elfico"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Empower Spell"]
+it = "Incantesimi Potenziati"
+tipi = ["Metamagic"]
+libro = "cr"
+
+[talenti."Empower Spell-Like Ability"]
+it = "Capacità Magica Potenziata"
+tipi = ["Monster"]
+libro = "b1"
+lic = 6
+
+[talenti."Endurance"]
+it = "Resistenza Fisica"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Endurance, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Endurance"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Energy Channel"]
+it = "Canale Energetico"
+tipi = ["General"]
+libro = "acg"
+capacita = ["channel energy"]
+altro = ["Air", "Earth", "Fire", "or Water domain or blessing"]
+
+[talenti."Enfilading Fire"]
+it = "Fuoco di Infilata"
+tipi = ["Combat", "Teamwork"]
+libro = "uc"
+talenti = ["Point-Blank Shot", "Precise Shot"]
+altro = ["one other teamwork feat"]
+
+[talenti."Enforcer"]
+it = "Sgherro"
+tipi = ["Combat"]
+libro = "apg"
+gradi = { "intimidate" = 1 }
+
+[talenti."Enlarge Spell"]
+it = "Incantesimi Ingranditi"
+tipi = ["Metamagic"]
+libro = "cr"
+
+[talenti."Ensemble"]
+it = "Ensemble"
+tipi = ["Teamwork"]
+libro = "um"
+gradi = { "perform" = 5 }
+
+[talenti."Escape Route"]
+it = "Via di Fuga"
+tipi = ["Teamwork"]
+libro = "uc"
+
+[talenti."Eschew Materials"]
+it = "Escludere Materiali"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Eschew Materials, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Eschew Materials"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Esoteric Linguistics"]
+it = "Linguistica Esoterica"
+tipi = ["General"]
+libro = "acg"
+talenti = ["Skill Focus"]
+
+[talenti."Evolved Companion"]
+it = "Compagno Evoluto"
+tipi = ["General"]
+libro = "acg"
+car = { "Car" = 13 }
+altro = ["animal companion class feature"]
+
+[talenti."Evolved Familiar"]
+it = "Famiglio Evoluto"
+tipi = ["General"]
+libro = "um"
+car = { "Int" = 13, "Car" = 13 }
+altro = ["familiar class feature"]
+
+[talenti."Evolved Summoned Monster"]
+it = "Mostri Evocati Evoluti"
+tipi = ["General"]
+libro = "acg"
+talenti = ["Spell Focus"]
+altro = ["Augmented Summoning", "ability to cast summon monster I"]
+
+[talenti."Exhausting Critical"]
+it = "Critico Inesorabile"
+tipi = ["Combat", "Critical"]
+libro = "cr"
+bab = 15
+talenti = ["Critical Focus", "Tiring Critical"]
+
+[talenti."Exile's Path"]
+it = "Strada dell'Esilio"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Exotic Weapon Proficiency"]
+it = "Competenza nelle Armi Esotiche"
+tipi = ["Combat"]
+libro = "cr"
+bab = 1
+
+[talenti."Expanded Arcana"]
+it = "Incantesimi Aggiuntivi"
+tipi = ["General"]
+libro = "apg"
+lic = 1
+altro = ["see Special"]
+
+[talenti."Expanded Fiendish Resistance"]
+it = "Resistenze Immonde Ampliate"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Expanded Preparation"]
+it = "Preparazione Aggiuntiva"
+tipi = ["General"]
+libro = "acg"
+classe = { "arcanist" = 1 }
+
+[talenti."Expanded Resistance"]
+it = "Resistenza Ampliata"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Experimental Spellcaster"]
+it = "Incantatore Sperimentale"
+tipi = ["Optional", "Words of Power"]
+libro = "um"
+
+[talenti."Expert Driver"]
+it = "Guidatore Esperto"
+tipi = ["General"]
+libro = "uc"
+altro = ["Skilled Driver with the selected vehicle type"]
+
+[talenti."Exploit Lore"]
+it = "Sfruttare Conoscenze"
+tipi = ["General"]
+libro = "um"
+bab = 11
+altro = ["Monster lore class feature"]
+
+[talenti."Extend Spell"]
+it = "Incantesimi Estesi"
+tipi = ["Metamagic"]
+libro = "cr"
+
+[talenti."Extended Animal Focus"]
+it = "Animale Focalizzato Esteso"
+tipi = ["General"]
+libro = "acg"
+altro = ["Animal focus class feature"]
+
+[talenti."Extended Bane"]
+it = "Anatema Esteso"
+tipi = ["General"]
+libro = "um"
+altro = ["Bane class feature"]
+
+[talenti."Extra Arcana"]
+it = "Segreto Extra"
+tipi = ["General"]
+libro = "um"
+altro = ["Magus arcana class feature"]
+
+[talenti."Extra Arcane Pool"]
+it = "Riserva Arcana Extra"
+tipi = ["General"]
+libro = "um"
+altro = ["Arcane pool class feature"]
+
+[talenti."Extra Arcanist Exploit"]
+it = "Exploit dell'Arcanista Extra"
+tipi = ["General"]
+libro = "acg"
+altro = ["Arcanist exploit class feature"]
+
+[talenti."Extra Bane"]
+it = "Anatema Extra"
+tipi = ["General"]
+libro = "uc"
+altro = ["Bane class feature"]
+
+[talenti."Extra Bombs"]
+it = "Bombe Extra"
+tipi = ["General"]
+libro = "apg"
+altro = ["Bomb class feature"]
+
+[talenti."Extra Cantrips or Orisons"]
+it = "Orazioni o Trucchetti Extra"
+tipi = ["General"]
+libro = "um"
+altro = ["Ability to cast cantrips or orisons"]
+
+[talenti."Extra Channel"]
+it = "Incanalare Extra"
+tipi = ["General"]
+libro = "cr"
+capacita = ["channel energy"]
+
+[talenti."Extra Discovery"]
+it = "Scoperta Extra"
+tipi = ["General"]
+libro = "apg"
+altro = ["Discovery class feature"]
+
+[talenti."Extra Elemental Assault"]
+it = "Assalto Elementale Extra"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Extra Evolution"]
+it = "Evoluzione Extra"
+tipi = ["General"]
+libro = "um"
+altro = ["Eidolon class feature"]
+
+[talenti."Extra Grit"]
+it = "Grinta Extra"
+tipi = ["Grit"]
+libro = "uc"
+altro = ["Grit class feature or the Amateur Gunslinger feat"]
+
+[talenti."Extra Hex"]
+it = "Fattura Extra"
+tipi = ["General"]
+libro = "apg"
+altro = ["Hex class feature"]
+
+[talenti."Extra Inspiration"]
+it = "Ispirazione Extra"
+tipi = ["General"]
+libro = "acg"
+altro = ["Amateur Investigator or inspiration class feature"]
+
+[talenti."Extra Investigator Talent"]
+it = "Dote da Investigatore Extra"
+tipi = ["General"]
+libro = "acg"
+altro = ["Investigator talent class feature"]
+
+[talenti."Extra Ki"]
+it = "Ki Extra"
+tipi = ["General"]
+libro = "cr"
+capacita = ["ki pool"]
+
+[talenti."Extra Lay On Hands"]
+it = "Imposizione delle Mani Extra"
+tipi = ["General"]
+libro = "cr"
+capacita = ["lay on hands"]
+
+[talenti."Extra Martial Flexibility"]
+it = "Flessibilità Marziale Extra"
+tipi = ["General"]
+libro = "acg"
+altro = ["Martial flexibility class feature"]
+
+[talenti."Extra Mercy"]
+it = "Indulgenza Extra"
+tipi = ["General"]
+libro = "cr"
+capacita = ["lay on hands", "mercy"]
+
+[talenti."Extra Mythic Power, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Extra Panache"]
+it = "Eleganza Extra"
+tipi = ["Panache"]
+libro = "acg"
+altro = ["Amateur Swashbuckler or panache class feature"]
+
+[talenti."Extra Path Ability, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+altro = ["3rd mythic tier", "grado mitico (Mythic Adventures)"]
+
+[talenti."Extra Performance"]
+it = "Esibizione Bardica Extra"
+tipi = ["General"]
+libro = "cr"
+capacita = ["bardic performance"]
+
+[talenti."Extra Rage"]
+it = "Ira Extra"
+tipi = ["General"]
+libro = "cr"
+capacita = ["rage"]
+
+[talenti."Extra Rage Power"]
+it = "Potere d'Ira Extra"
+tipi = ["General"]
+libro = "apg"
+altro = ["Rage power class feature"]
+
+[talenti."Extra Ranger Trap"]
+it = "Trappola da Ranger Extra"
+tipi = ["General"]
+libro = "um"
+altro = ["Trap class feature"]
+
+[talenti."Extra Reservoir"]
+it = "Scorta Extra"
+tipi = ["General"]
+libro = "acg"
+altro = ["Arcane reservoir class feature"]
+
+[talenti."Extra Revelation"]
+it = "Rivelazione Extra"
+tipi = ["General"]
+libro = "apg"
+altro = ["Revelation class feature"]
+
+[talenti."Extra Rogue Talent"]
+it = "Dote da Ladro Extra"
+tipi = ["General"]
+libro = "apg"
+altro = ["Rogue talent class feature"]
+
+[talenti."Extra Slayer Talent"]
+it = "Dote da Predatore Extra"
+tipi = ["General"]
+libro = "acg"
+altro = ["Slayer talent class feature"]
+
+[talenti."Extra Summons"]
+it = "Evocazioni Extra"
+tipi = ["General"]
+libro = "um"
+altro = ["Ability to cast summon monster as a spell-like ability", "summoner 1st"]
+
+[talenti."Extra Word"]
+it = "Parola Extra"
+tipi = ["Optional", "Words of Power"]
+libro = "um"
+
+[talenti."Extreme Prejudice"]
+it = "Pregiudizio Estremo"
+tipi = ["Combat"]
+libro = "acg"
+talenti = ["Seething Hatred"]
+altro = ["sneak attack +3d6", "studied target class feature"]
+
+[talenti."Eyes of Judgment"]
+it = "Occhi del Giudizio"
+tipi = ["General"]
+libro = "um"
+lic = 6
+altro = ["Detect alignment class feature"]
+
+[talenti."Fabulous Figments, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Spell Focus"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Faerie's Strike"]
+it = "Colpo Fatato"
+tipi = ["Combat"]
+libro = "acg"
+gradi = { "knowledge (nature)" = 5 }
+talenti = ["Vital Strike"]
+altro = ["Nature Magic or the ability to cast druid or ranger spells"]
+
+[talenti."False Opening"]
+it = "Falsa Apertura"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 13 }
+talenti = ["Dodge"]
+altro = ["Close Quarters Thrower or Point-Blank Master", "Weapon Focus with selected ranged weapon"]
+
+[talenti."Far Shot"]
+it = "Tiro Lontano"
+tipi = ["Combat"]
+libro = "cr"
+talenti = ["Point-Blank Shot"]
+
+[talenti."Far Shot, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Far Shot"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Fast Drinker"]
+it = "Bere a Garganella"
+tipi = ["General"]
+libro = "apg"
+car = { "Cos" = 18 }
+altro = ["drunken ki class feature"]
+
+[talenti."Fast Empathy"]
+it = "Empatia Rapida"
+tipi = ["General"]
+libro = "um"
+gradi = { "handle animal" = 5 }
+altro = ["wild empathy class feature"]
+
+[talenti."Fast Empathy, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Fast Empathy"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Fast Healer"]
+it = "Guarire Rapidamente"
+tipi = ["General"]
+libro = "apg"
+car = { "Cos" = 13 }
+talenti = ["Diehard", "Endurance"]
+
+[talenti."Fast Learner"]
+it = "Apprendimento Rapido"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Favored Defense"]
+it = "Difesa Prescelta"
+tipi = ["General"]
+libro = "apg"
+altro = ["Favored enemy class feature"]
+
+[talenti."Favored Enemy Spellcasting"]
+it = "Nemico Prescelto per gli Incantesimi"
+tipi = ["General"]
+libro = "acg"
+capacita = ["cast spells"]
+
+[talenti."Favored Judgment"]
+it = "Giudizio Prescelto"
+tipi = ["General"]
+libro = "um"
+car = { "Sag" = 13 }
+altro = ["judgment class feature"]
+
+[talenti."Fearless Aura"]
+it = "Aura Indomita"
+tipi = ["General"]
+libro = "um"
+lic = 8
+altro = ["Aura of courage class feature"]
+
+[talenti."Fearless Curiosity"]
+it = "Curiosità Intrepida"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Fearless Zeal"]
+it = "Zelo Indomito"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must be ordained as a sacred (or profane) champion of your faith by a high-ranking member of its clergy", "or have the Devoted", "Faith-Bringer", "or Moral Debt background. Such an honor goes above", "beyond the normal oaths required of a cleric or paladin"]
+
+[talenti."Feint Partner"]
+it = "Finta del Compagno"
+tipi = ["Combat", "Teamwork"]
+libro = "uc"
+gradi = { "bluff" = 1 }
+
+[talenti."Feline Grace"]
+it = "Grazia Felina"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Felling Escape"]
+it = "Fuga Sbilanciante"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise", "Improved Trip"]
+
+[talenti."Felling Smash"]
+it = "Botta Sbilanciante"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13, "For" = 13 }
+bab = 6
+talenti = ["Combat Expertise", "Improved Trip", "Power Attack"]
+
+[talenti."Feral Combat Training"]
+it = "Addestramento al Combattimento Bestiale"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Improved Unarmed Strike"]
+altro = ["Weapon Focus with selected natural weapon"]
+
+[talenti."Feral Heart"]
+it = "Cuore Ferino"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have reverted to savage behavior through a traumatic event or extended period in the wilderness", "or have the Raised by Beasts background"]
+
+[talenti."Ferocious Action"]
+it = "Azione Feroce"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Ferocious Resolve"]
+it = "Risolutezza Feroce"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Ferocious Summons"]
+it = "Evocazioni Feroci"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Ferocious Tenacity"]
+it = "Tenacia Feroce"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Field Repair"]
+it = "Riparazione sul Campo"
+tipi = ["General"]
+libro = "uc"
+gradi = { "craft" = 4 }
+
+[talenti."Fiend Sight"]
+it = "Vista Immonda"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Fight On"]
+it = "Combattere Ancora"
+tipi = ["General"]
+libro = "apg"
+car = { "Cos" = 13 }
+altro = ["dwarf", "half-orc", "or orc"]
+
+[talenti."Final Embrace"]
+it = "Abbraccio Letale"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 13, "Int" = 3 }
+bab = 3
+altro = ["naga", "serpentfolk", "or creature that has the constrict special attack"]
+
+[talenti."Final Embrace Horror"]
+it = "Orrore dell'Abbraccio Letale"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 15, "Int" = 3 }
+bab = 6
+talenti = ["Final Embrace"]
+altro = ["naga", "serpentfolk", "or creature that has the constrict special attack"]
+
+[talenti."Final Embrace Master"]
+it = "Maestro dell'Abbraccio Letale"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 17, "Int" = 3 }
+bab = 9
+talenti = ["Ability Focus", "Final Embrace", "Final Embrace Horror"]
+altro = ["naga", "serpentfolk", "or creature that has the constrict special attack"]
+
+[talenti."Fire Hand"]
+it = "Mano di Fuoco"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Fire Music"]
+it = "Musica della Fiamma"
+tipi = ["General"]
+libro = "um"
+gradi = { "spellcraft" = 5 }
+altro = ["ability to cast bard spells", "ability to cast an arcane fire spell from some other spellcasting class"]
+
+[talenti."Fire Music, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Fire Music"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Fire Tamer"]
+it = "Domatore del Fuoco"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Firesight"]
+it = "Focovisione"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Flame Heart"]
+it = "Cuore di Fiamma"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Flanking Foil"]
+it = "Sventare Fiancheggiamento"
+tipi = ["Combat"]
+libro = "uc"
+
+[talenti."Flaring Spell"]
+it = "Incantesimi Brillanti"
+tipi = ["Metamagic"]
+libro = "um"
+
+[talenti."Fleet"]
+it = "Agile"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Fleet, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Fleet"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Flexible Hex"]
+it = "Fattura Flessibile"
+tipi = ["General"]
+libro = "acg"
+altro = ["Wandering hex class feature"]
+
+[talenti."Flexible Wizardry"]
+it = "Magia Adattabile"
+tipi = ["General"]
+libro = "acg"
+classe = { "wizard" = 1 }
+talenti = ["Spell Mastery"]
+
+[talenti."Flyby Attack"]
+it = "Attacco in Volo"
+tipi = ["Monster"]
+libro = "b1"
+altro = ["Fly speed"]
+
+[talenti."Focused Eidolon"]
+it = "Eidolon Focalizzante"
+tipi = ["General"]
+libro = "um"
+altro = ["Shield ally class feature"]
+
+[talenti."Focused Inspiration"]
+it = "Ispirazione Focalizzata"
+tipi = ["General"]
+libro = "acg"
+altro = ["Inspiration class feature", "keen recollection class feature"]
+
+[talenti."Focused Shot"]
+it = "Tiro Concentrato"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Int" = 13 }
+talenti = ["Point-Blank Shot", "Precise Shot"]
+
+[talenti."Focused Spell"]
+it = "Incantesimi Concentrati"
+tipi = ["Metamagic"]
+libro = "apg"
+
+[talenti."Focusing Blow"]
+it = "Colpo Focalizzante"
+tipi = ["Teamwork"]
+libro = "arg"
+
+[talenti."Foeslayer"]
+it = "Ammazza Nemici"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have been defeated", "robbed of at least half your possessions by a particular group of humanoids or monstrous humanoids", "or have the An Eye for an Eye", "Hated Foe", "Raiders", "or Vengeance background. You may choose a specific race", "such as duergar", "or a broader group", "such as goblinoids. At the GM's option", "you may instead choose residents of a particular country", "settlement", "or tribe"]
+
+[talenti."Following Step"]
+it = "Ancora un Passo"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Des" = 13 }
+talenti = ["Step Up"]
+
+[talenti."Foment the Blood"]
+it = "Infervorare il Sangue"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Force Dash"]
+it = "Scatto di Forza"
+tipi = ["General"]
+libro = "acg"
+bab = 4
+altro = ["ability to cast 2nd-level arcane spells", "ability to cast at least one arcane force spell"]
+
+[talenti."Forge Ring"]
+it = "Forgiare Anelli"
+tipi = ["Item Creation"]
+libro = "cr"
+lic = 7
+
+[talenti."Forgotten Past"]
+it = "Passato Dimenticato"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have suffered permanent memory loss or have the Reincarnated background"]
+
+[talenti."Formula Recollection"]
+it = "Ricordare Formula"
+tipi = ["General"]
+libro = "acg"
+gradi = { "spellcraft" = 5 }
+altro = ["keen recollection class feature"]
+
+[talenti."Fortified Armor Training"]
+it = "Addestramento nelle Armature Fortificate"
+tipi = ["Combat"]
+libro = "uc"
+
+[talenti."Fortunate One"]
+it = "Tipo Fortunato"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Furious Finish"]
+it = "Assalto Furioso"
+tipi = ["General"]
+libro = "uc"
+bab = 6
+talenti = ["Vital Strike"]
+capacita = ["rage"]
+
+[talenti."Furious Focus"]
+it = "Furia Focalizzata"
+tipi = ["Combat"]
+libro = "apg"
+car = { "For" = 13 }
+bab = 1
+talenti = ["Power Attack"]
+
+[talenti."Furious Focus, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Furious Focus"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Gang Up"]
+it = "Rissa"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise"]
+
+[talenti."Giant Killer"]
+it = "Uccisore di Giganti"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Giant Steps"]
+it = "Passi da Gigante"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Gliding Steps"]
+it = "Passo Pattinato"
+tipi = ["General"]
+libro = "um"
+talenti = ["Dodge", "Mobility", "Nimble Moves"]
+capacita = ["ki pool"]
+
+[talenti."Glimpse Beyond"]
+it = "Guardare Oltre"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have faced an undead", "evil outsider", "or aberration with a CR greater than your level +4", "or have the Raised Among the Dead or The Dead One background"]
+
+[talenti."Gloom Sight"]
+it = "Visione Tenebrosa"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Gloom Strike"]
+it = "Colpo Tenebroso"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Gnome Trickster"]
+it = "Gnomo Ingannatore"
+tipi = ["General"]
+libro = "apg"
+car = { "Car" = 13 }
+altro = ["gnome", "gnome magic racial trait"]
+
+[talenti."Gnome Trickster, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Gnome Trickster"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Gnome Weapon Focus"]
+it = "Arma Focalizzata Gnomesca"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Go Unnoticed"]
+it = "Inosservato"
+tipi = ["General"]
+libro = "apg"
+car = { "Des" = 13 }
+altro = ["Small size or smaller"]
+
+[talenti."Goblin Cleaver"]
+it = "Incalzatore di Goblin"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Goblin Gunslinger"]
+it = "Pistolero Goblin"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Gore Fiend"]
+it = "Sanguinario Immondo"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Gorgon's Fist"]
+it = "Pugno della Gorgone"
+tipi = ["Combat"]
+libro = "cr"
+bab = 6
+talenti = ["Improved Unarmed Strike", "Scorpion Style"]
+
+[talenti."Gorgon's Fist, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Gorgon's Fist"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Gory Finish"]
+it = "Assalto Cruento"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Dazzling Display", "Weapon Focus"]
+
+[talenti."Grabbing Drag"]
+it = "Trascinata con Presa"
+tipi = ["Combat"]
+libro = "acg"
+classe = { "brawler" = 4, "or monk" = 4 }
+bab = 8
+talenti = ["Grabbing Style", "Improved Grapple"]
+
+[talenti."Grabbing Master"]
+it = "Maestro delle Prese"
+tipi = ["Combat"]
+libro = "acg"
+classe = { "brawler" = 8, "or monk" = 8 }
+bab = 12
+talenti = ["Grabbing Drag", "Grabbing Style", "Improved Grapple"]
+
+[talenti."Grabbing Style"]
+it = "Stile delle Prese"
+tipi = ["Combat", "Style"]
+libro = "acg"
+bab = 6
+talenti = ["Improved Grapple"]
+altro = ["brawler's flurry class feature", "or flurry of blows class feature"]
+
+[talenti."Grant Initiative"]
+it = "Concedere Iniziativa"
+tipi = ["General"]
+libro = "um"
+altro = ["Cunning initiative class feature"]
+
+[talenti."Grasping Strike"]
+it = "Colpo Avvinghiante"
+tipi = ["Combat"]
+libro = "acg"
+gradi = { "knowledge (nature)" = 5 }
+talenti = ["Vital Strike"]
+altro = ["Nature Magic or the ability to cast druid or ranger spells"]
+
+[talenti."Grasping Tail"]
+it = "Coda Afferrante"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Great Cleave"]
+it = "Incalzare Potenziato"
+tipi = ["Combat"]
+libro = "cr"
+car = { "For" = 13 }
+bab = 4
+talenti = ["Cleave", "Power Attack"]
+
+[talenti."Great Fortitude"]
+it = "Tempra Possente"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Great Fortitude, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Great Fortitude"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Great Hatred"]
+it = "Grande Odio"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Greater Blighted Critical"]
+it = "Critico Piagante Superiore"
+tipi = ["Critical"]
+libro = "um"
+lic = 12
+talenti = ["Blighted Critical"]
+
+[talenti."Greater Blind-Fight"]
+it = "Combattere alla Cieca Superiore"
+tipi = ["Combat"]
+libro = "apg"
+gradi = { "perception" = 15 }
+talenti = ["Improved Blind-Fight"]
+
+[talenti."Greater Bull Rush"]
+it = "Spingere Superiore"
+tipi = ["Combat"]
+libro = "cr"
+car = { "For" = 13 }
+bab = 6
+talenti = ["Improved Bull Rush", "Power Attack"]
+
+[talenti."Greater Called Shot"]
+it = "Colpo Mirato Superiore"
+tipi = ["Called Shot", "Combat", "Optional"]
+libro = "uc"
+
+[talenti."Greater Channel Force"]
+it = "Incanalare Forza Superiore"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Greater Channel Smite"]
+it = "Incanalare Punizione Superiore"
+tipi = ["General"]
+libro = "uc"
+bab = 8
+talenti = ["Channel Smite"]
+capacita = ["channel energy"]
+
+[talenti."Greater Dirge of Doom"]
+it = "Ispirare Terrore Superiore"
+tipi = ["General"]
+libro = "acg"
+talenti = ["Improved Dirge of Doom"]
+altro = ["ability to perform dirge of doom"]
+
+[talenti."Greater Dirty Trick"]
+it = "Sporco Trucco Superiore"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Int" = 13 }
+bab = 6
+talenti = ["Combat Expertise", "Improved Dirty Trick"]
+
+[talenti."Greater Disarm"]
+it = "Disarmare Superiore"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Int" = 13 }
+bab = 6
+talenti = ["Combat Expertise", "Improved Disarm"]
+
+[talenti."Greater Drag"]
+it = "Trascinare Superiore"
+tipi = ["Combat"]
+libro = "apg"
+car = { "For" = 13 }
+bab = 6
+talenti = ["Improved Drag", "Power Attack"]
+
+[talenti."Greater Drow Nobility"]
+it = "Nobiltà Drow Superiore"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Greater Eldritch Heritage"]
+it = "Retaggio Stregonesco Superiore"
+tipi = ["General"]
+libro = "um"
+car = { "Car" = 17 }
+classe = { "character" = 17 }
+talenti = ["Eldritch Heritage", "Improved Eldritch Heritage"]
+
+[talenti."Greater Elemental Focus"]
+it = "Elemento Focalizzato Superiore"
+tipi = ["General"]
+libro = "apg"
+talenti = ["Elemental Focus"]
+
+[talenti."Greater Feint"]
+it = "Fintare Superiore"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Int" = 13 }
+bab = 6
+talenti = ["Combat Expertise", "Improved Feint"]
+
+[talenti."Greater Grapple"]
+it = "Lottare Superiore"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 13 }
+bab = 6
+talenti = ["Improved Grapple", "Improved Unarmed Strike"]
+
+[talenti."Greater Mercy"]
+it = "Indulgenza Superiore"
+tipi = ["General"]
+libro = "um"
+car = { "Car" = 13 }
+capacita = ["lay on hands", "mercy"]
+
+[talenti."Greater Overrun"]
+it = "Oltrepassare Superiore"
+tipi = ["Combat"]
+libro = "cr"
+car = { "For" = 13 }
+bab = 6
+talenti = ["Improved Overrun", "Power Attack"]
+
+[talenti."Greater Penetrating Strike"]
+it = "Colpo Penetrante Superiore"
+tipi = ["Combat"]
+libro = "cr"
+classe = { "fighter" = 16 }
+talenti = ["Penetrating Strike", "Weapon Focus"]
+
+[talenti."Greater Rending Fury"]
+it = "Furia Lacerante Superiore"
+tipi = ["Combat"]
+libro = "uc"
+bab = 12
+talenti = ["Improved Rending Fury", "Rending Fury"]
+altro = ["rend special attack"]
+
+[talenti."Greater Reposition"]
+it = "Riposizionare Superiore"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Int" = 13 }
+bab = 6
+talenti = ["Combat Expertise", "Improved Reposition"]
+
+[talenti."Greater Shield Focus"]
+it = "Scudo Focalizzato Superiore"
+tipi = ["Combat"]
+libro = "cr"
+classe = { "fighter" = 8 }
+bab = 1
+talenti = ["Shield Focus", "Shield Proficiency"]
+
+[talenti."Greater Shield Specialization"]
+it = "Scudo Specializzato Superiore"
+tipi = ["Combat"]
+libro = "apg"
+classe = { "fighter" = 12 }
+talenti = ["Greater Shield Focus", "Shield Focus"]
+altro = ["Shield Specialization with selected shield"]
+
+[talenti."Greater Skald's Vigor"]
+it = "Vigore dello Scaldo Superiore"
+tipi = ["General"]
+libro = "acg"
+gradi = { "perform (song)" = 10 }
+talenti = ["Skald's Vigor"]
+
+[talenti."Greater Snap Shot"]
+it = "Tiro Scattante Superiore"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 17 }
+bab = 12
+talenti = ["Improved Snap Shot", "Point-Blank Shot", "Rapid Shot", "Snap Shot"]
+
+[talenti."Greater Spell Focus"]
+it = "Incantesimi Focalizzati Superiore"
+tipi = ["General"]
+libro = "cr"
+talenti = ["Spell Focus"]
+
+[talenti."Greater Spell Penetration"]
+it = "Incantesimi Inarrestabili Superiore"
+tipi = ["General"]
+libro = "cr"
+talenti = ["Spell Penetration"]
+
+[talenti."Greater Spell Specialization"]
+it = "Incantesimo Specializzato Superiore"
+tipi = ["General"]
+libro = "um"
+car = { "Int" = 13 }
+talenti = ["Spell Focus", "Spell Specialization"]
+altro = ["able to prepare 5th-level spells"]
+
+[talenti."Greater Steal"]
+it = "Rubare Superiore"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Int" = 13 }
+bab = 6
+talenti = ["Combat Expertise", "Improved Steal"]
+
+[talenti."Greater Sunder"]
+it = "Spezzare Superiore"
+tipi = ["Combat"]
+libro = "cr"
+car = { "For" = 13 }
+bab = 6
+talenti = ["Improved Sunder", "Power Attack"]
+
+[talenti."Greater Trip"]
+it = "Sbilanciare Superiore"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Int" = 13 }
+bab = 6
+talenti = ["Combat Expertise", "Improved Trip"]
+
+[talenti."Greater Two-Weapon Fighting"]
+it = "Combattere con Due Armi Superiore"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 19 }
+bab = 11
+talenti = ["Improved Two-Weapon Fighting", "Two-Weapon Fighting"]
+
+[talenti."Greater Vital Strike"]
+it = "Colpo Vitale Superiore"
+tipi = ["Combat"]
+libro = "cr"
+bab = 16
+talenti = ["Improved Vital Strike", "Vital Strike"]
+
+[talenti."Greater Weapon Focus"]
+it = "Arma Focalizzata Superiore"
+tipi = ["Combat"]
+libro = "cr"
+classe = { "fighter" = 8 }
+bab = 1
+talenti = ["Weapon Focus"]
+
+[talenti."Greater Weapon Specialization"]
+it = "Arma Specializzata Superiore"
+tipi = ["Combat"]
+libro = "cr"
+classe = { "fighter" = 12 }
+talenti = ["Greater Weapon Focus", "Weapon Focus", "Weapon Specialization"]
+
+[talenti."Greater Weapon of the Chosen"]
+it = "Arma del Prescelto Superiore"
+tipi = ["Combat"]
+libro = "acg"
+talenti = ["Improved Weapon of the Chosen", "Weapon of the Chosen"]
+altro = ["Weapon Focus with deity's favored weapon", "worship", "receive spells from a deity"]
+
+[talenti."Greater Whip Mastery"]
+it = "Maestria con la Frusta Superiore"
+tipi = ["Combat"]
+libro = "uc"
+bab = 8
+talenti = ["Improved Whip Mastery", "Weapon Focus", "Whip Mastery"]
+
+[talenti."Greater Wild Empathy"]
+it = "Empatia Selvatica Superiore"
+tipi = ["General"]
+libro = "um"
+gradi = { "knowledge (nature)" = 5 }
+altro = ["wild empathy class feature"]
+
+[talenti."Groundling"]
+it = "Terricolo"
+tipi = ["General"]
+libro = "apg"
+car = { "Car" = 13 }
+altro = ["gnome", "gnome magic racial trait"]
+
+[talenti."Grudge Fighter"]
+it = "Guerriero Rancoroso"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Gruesome Slaughter"]
+it = "Orribile Massacro"
+tipi = ["Combat"]
+libro = "acg"
+classe = { "slayer" = 11 }
+gradi = { "intimidate" = 11 }
+talenti = ["Intimidating Prowess", "Killing Flourish"]
+
+[talenti."Guardian of the Wild"]
+it = "Guardiano delle Terre Selvagge"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Guided Hand"]
+it = "Mano Guidata"
+tipi = ["General"]
+libro = "uc"
+talenti = ["Channel Smite"]
+capacita = ["channel energy"]
+
+[talenti."Guided Hand, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Guided Hand"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Gunsmithing"]
+it = "Armaiolo"
+tipi = ["General"]
+libro = "uc"
+
+[talenti."Half-Drow Paragon"]
+it = "Mezzodrow Esemplare"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Hammer the Gap"]
+it = "Martellare lo Squarcio"
+tipi = ["Combat"]
+libro = "uc"
+bab = 6
+
+[talenti."Hard-Headed"]
+it = "Testa Dura"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Harmonic Sage"]
+it = "Esperto Armonico"
+tipi = ["General"]
+libro = "uc"
+gradi = { "knowledge (engineering)" = 5 }
+capacita = ["bardic performance"]
+
+[talenti."Haunted Gnome"]
+it = "Gnomo Stregato"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Car" = 13 }
+gradi = { "knowledge (arcana)" = 1 }
+altro = ["gnome magic racial trait"]
+
+[talenti."Haunted Gnome Assault"]
+it = "Assalto dello Gnomo Stregato"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Car" = 13 }
+gradi = { "knowledge (arcana)" = 3 }
+talenti = ["Haunted Gnome"]
+altro = ["gnome magic racial trait"]
+
+[talenti."Haunted Gnome Shroud"]
+it = "Sudario dello Gnomo Stregato"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Car" = 13 }
+gradi = { "knowledge (arcana)" = 6 }
+talenti = ["Haunted Gnome", "Haunted Gnome Assault"]
+altro = ["gnome magic racial trait"]
+
+[talenti."Heavenly Radiance"]
+it = "Radianza Paradisiaca"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Heighten Spell"]
+it = "Incantesimi Intensificati"
+tipi = ["Metamagic"]
+libro = "cr"
+
+[talenti."Hero's Display"]
+it = "Mostrare Eroismo"
+tipi = ["Combat", "Performance"]
+libro = "uc"
+talenti = ["Dazzling Display", "Weapon Focus"]
+
+[talenti."Hero's Fortune"]
+it = "Destino dell'Eroe"
+tipi = ["Hero Point", "Optional"]
+libro = "apg"
+
+[talenti."Heroic Defiance"]
+it = "Sfida Eroica"
+tipi = ["General"]
+libro = "apg"
+talenti = ["Diehard", "Endurance"]
+altro = ["base Fortitude save +8"]
+
+[talenti."Heroic Defiance, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Heroic Defiance"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Heroic Recovery"]
+it = "Recupero Eroico"
+tipi = ["General"]
+libro = "apg"
+talenti = ["Diehard", "Endurance"]
+altro = ["base Fortitude save +4"]
+
+[talenti."Heroic Recovery, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Heroic Recovery"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Heroic Will"]
+it = "Volontà Eroica"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Hex Strike"]
+it = "Colpo della Fattura"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Improved Unarmed Strike"]
+altro = ["Hex class feature"]
+
+[talenti."Hobgoblin Discipline"]
+it = "Disciplina Hobgoblin"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Horde Charge"]
+it = "Carica dell'Orda"
+tipi = ["Teamwork"]
+libro = "arg"
+
+[talenti."Horse Master"]
+it = "Maestro delle Cavalcature"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "ride" = 6 }
+altro = ["Expert trainer class feature (Advanced Player's Guide 33)"]
+
+[talenti."Hover"]
+it = "Fluttuare"
+tipi = ["Monster"]
+libro = "b1"
+altro = ["Fly speed"]
+
+[talenti."Human Spirit"]
+it = "Spirito Umano"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Huntmaster"]
+it = "Signore della Caccia"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Hydraulic Maneuver"]
+it = "Manovra Idraulica"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Impact Critical Shot"]
+it = "Colpo Critico Impattante"
+tipi = ["Combat", "Critical"]
+libro = "uc"
+car = { "Des" = 13 }
+bab = 9
+talenti = ["Point-Blank Shot"]
+
+[talenti."Impaling Critical"]
+it = "Critico Impalante"
+tipi = ["Combat", "Critical"]
+libro = "uc"
+bab = 11
+talenti = ["Critical Focus"]
+altro = ["Weapon Specialization with selected piercing melee weapon"]
+
+[talenti."Implant Bomb"]
+it = "Impiantare Bomba"
+tipi = ["General"]
+libro = "um"
+gradi = { "heal" = 5 }
+altro = ["delayed bomb alchemist discovery"]
+
+[talenti."Improved Awesome Blow"]
+it = "Colpo Terrificante Migliorato"
+tipi = ["Combat"]
+libro = "acg"
+car = { "For" = 13 }
+talenti = ["Power Attack"]
+altro = ["Awesome Blow or awesome blow class feature"]
+
+[talenti."Improved Back to Back"]
+it = "Schiena Contro Schiena Migliorato"
+tipi = ["Teamwork"]
+libro = "uc"
+gradi = { "perception" = 5 }
+talenti = ["Back to Back"]
+
+[talenti."Improved Blind-Fight"]
+it = "Combattere alla Cieca Migliorato"
+tipi = ["Combat"]
+libro = "apg"
+gradi = { "perception" = 10 }
+talenti = ["Blind-Fight"]
+
+[talenti."Improved Bull Rush"]
+it = "Spingere Migliorato"
+tipi = ["Combat"]
+libro = "cr"
+car = { "For" = 13 }
+bab = 1
+talenti = ["Power Attack"]
+
+[talenti."Improved Bull Rush, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Bull Rush"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Called Shot"]
+it = "Colpo Mirato Migliorato"
+tipi = ["Called Shot", "Combat", "Optional"]
+libro = "uc"
+
+[talenti."Improved Channel"]
+it = "Incanalare Migliorato"
+tipi = ["General"]
+libro = "cr"
+capacita = ["channel energy"]
+
+[talenti."Improved Channel Force"]
+it = "Incanalare Forza Migliorato"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Improved Channel, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Channel"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Charging Hurler"]
+it = "Lanciare in Carica Migliorato"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Charging Hurler", "Point-Blank Shot"]
+
+[talenti."Improved Cleaving Finish"]
+it = "Incalzare Terminale Migliorato"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 13 }
+bab = 6
+talenti = ["Cleave", "Cleaving Finish", "Great Cleave", "Power Attack"]
+
+[talenti."Improved Counterspell"]
+it = "Controincantesimo Migliorato"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Improved Counterspell, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Counterspell"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Critical"]
+it = "Critico Migliorato"
+tipi = ["Combat"]
+libro = "cr"
+bab = 8
+
+[talenti."Improved Critical, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+bab = 8
+talenti = ["Improved Critical"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Dark Sight"]
+it = "Visione Oscura Migliorata"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Improved Devastating Strike"]
+it = "Colpo Devastante Migliorato"
+tipi = ["Combat"]
+libro = "uc"
+bab = 13
+talenti = ["Devastating Strike", "Vital Strike"]
+
+[talenti."Improved Dirge of Doom"]
+it = "Ispirare Terrore Migliorato"
+tipi = ["General"]
+libro = "acg"
+altro = ["Ability to perform dirge of doom"]
+
+[talenti."Improved Dirty Trick"]
+it = "Sporco Trucco Migliorato"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise"]
+
+[talenti."Improved Dirty Trick, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Dirty Trick"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Disarm"]
+it = "Disarmare Migliorato"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise"]
+
+[talenti."Improved Disarm, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Disarm"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Drag"]
+it = "Trascinare Migliorato"
+tipi = ["Combat"]
+libro = "apg"
+car = { "For" = 13 }
+bab = 1
+talenti = ["Power Attack"]
+
+[talenti."Improved Drag, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Drag"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Drow Nobility"]
+it = "Nobiltà Drow Migliorata"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Improved Duck and Cover"]
+it = "Al Riparo Migliorato"
+tipi = ["Teamwork"]
+libro = "acg"
+altro = ["Duck", "Cover"]
+
+[talenti."Improved Eldritch Heritage"]
+it = "Retaggio Stregonesco Migliorato"
+tipi = ["General"]
+libro = "um"
+car = { "Car" = 15 }
+classe = { "character" = 11 }
+talenti = ["Eldritch Heritage"]
+
+[talenti."Improved Familiar"]
+it = "Famiglio Migliorato"
+tipi = ["General"]
+libro = "cr"
+altro = ["Ability to acquire a new familiar", "compatible alignment", "sufficiently high level (see below)"]
+
+[talenti."Improved Familiar, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Familiar"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Feint"]
+it = "Fintare Migliorato"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise"]
+
+[talenti."Improved Feint Partner"]
+it = "Finta del Compagno Migliorata"
+tipi = ["Combat", "Teamwork"]
+libro = "uc"
+gradi = { "bluff" = 1 }
+bab = 6
+talenti = ["Combat Reflexes", "Feint Partner"]
+
+[talenti."Improved Flexible Wizardry"]
+it = "Magia Adattabile Migliorata"
+tipi = ["General"]
+libro = "acg"
+classe = { "wizard" = 8 }
+talenti = ["Flexible Wizardry", "Spell Mastery"]
+
+[talenti."Improved Grapple"]
+it = "Lottare Migliorato"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 13 }
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Improved Grapple, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Grapple"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Great Fortitude"]
+it = "Tempra Possente Migliorata"
+tipi = ["General"]
+libro = "cr"
+talenti = ["Great Fortitude"]
+
+[talenti."Improved Impaling Critical"]
+it = "Critico Impalante Migliorato"
+tipi = ["Combat", "Critical"]
+libro = "uc"
+bab = 13
+talenti = ["Impaling Critical", "Critical Focus"]
+altro = ["Weapon Specialization with selected piercing melee weapon"]
+
+[talenti."Improved Improvisation"]
+it = "Improvvisazione Migliorata"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Improved Initiative"]
+it = "Iniziativa Migliorata"
+tipi = ["Combat"]
+libro = "cr"
+
+[talenti."Improved Initiative, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Initiative"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Iron Will"]
+it = "Volontà di Ferro Migliorata"
+tipi = ["General"]
+libro = "cr"
+talenti = ["Iron Will"]
+
+[talenti."Improved Ki Throw"]
+it = "Lancio Ki Migliorato"
+tipi = ["Combat"]
+libro = "apg"
+talenti = ["Improved Bull Rush", "Ki Throw"]
+
+[talenti."Improved Lightning Reflexes"]
+it = "Riflessi Fulminei Migliorati"
+tipi = ["General"]
+libro = "cr"
+talenti = ["Lightning Reflexes"]
+
+[talenti."Improved Low Blow"]
+it = "Colpo Basso Migliorato"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Improved Monster Lore"]
+it = "Conoscenza dei Mostri Migliorata"
+tipi = ["General"]
+libro = "um"
+altro = ["Monster lore class feature"]
+
+[talenti."Improved Natural Armor"]
+it = "Armatura Naturale Migliorata"
+tipi = ["Monster"]
+libro = "b1"
+car = { "Cos" = 13 }
+altro = ["Natural armor"]
+
+[talenti."Improved Natural Attack"]
+it = "Attacco Naturale Migliorato"
+tipi = ["Monster"]
+libro = "b1"
+bab = 4
+altro = ["Natural weapon"]
+
+[talenti."Improved Overrun"]
+it = "Oltrepassare Migliorato"
+tipi = ["Combat"]
+libro = "cr"
+car = { "For" = 13 }
+bab = 1
+talenti = ["Power Attack"]
+
+[talenti."Improved Overrun, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Overrun"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Precise Shot"]
+it = "Tiro Preciso Migliorato"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 19 }
+bab = 11
+talenti = ["Point-Blank Shot", "Precise Shot"]
+
+[talenti."Improved Rending Fury"]
+it = "Furia Lacerante Migliorata"
+tipi = ["Combat"]
+libro = "uc"
+bab = 9
+talenti = ["Rending Fury"]
+altro = ["rend special attack"]
+
+[talenti."Improved Reposition"]
+it = "Riposizionare Migliorato"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise"]
+
+[talenti."Improved Reposition, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Reposition"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Second Chance"]
+it = "Seconda Possibilità Migliorato"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Int" = 13 }
+bab = 11
+talenti = ["Combat Expertise", "Second Chance"]
+
+[talenti."Improved Share Spells"]
+it = "Condividere Incantesimi Migliorato"
+tipi = ["General"]
+libro = "apg"
+gradi = { "spellcraft" = 10 }
+altro = ["ability to acquire an animal companion", "eidolon", "familiar", "or special mount"]
+
+[talenti."Improved Shield Bash"]
+it = "Attacco con lo Scudo Migliorato"
+tipi = ["Combat"]
+libro = "cr"
+talenti = ["Shield Proficiency"]
+
+[talenti."Improved Sidestep"]
+it = "Passo Laterale Migliorato"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Des" = 15 }
+talenti = ["Dodge", "Mobility", "Sidestep"]
+
+[talenti."Improved Snap Shot"]
+it = "Tiro Scattante Migliorato"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 15 }
+bab = 9
+talenti = ["Point-Blank Shot", "Rapid Shot", "Snap Shot", "Weapon Focus"]
+
+[talenti."Improved Spell Sharing"]
+it = ""
+tipi = ["Teamwork"]
+libro = "acg"
+altro = ["Ability to acquire an animal companion", "eidolon", "familiar", "or special mount"]
+
+[talenti."Improved Stalwart"]
+it = "Prestante Migliorato"
+tipi = ["General"]
+libro = "uc"
+bab = 11
+talenti = ["Diehard", "Endurance", "Stalwart"]
+
+[talenti."Improved Steal"]
+it = "Rubare Migliorato"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise"]
+
+[talenti."Improved Steal, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Steal"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Stonecunning"]
+it = "Esperto Minatore Migliorato"
+tipi = ["General"]
+libro = "apg"
+car = { "Sag" = 13 }
+altro = ["dwarf", "stonecunning racial trait"]
+
+[talenti."Improved Stonecunning, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Stonecunning"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Studied Combatant"]
+it = "Combattente Studiato Migliorato"
+tipi = ["General"]
+libro = "acg"
+car = { "Int" = 13 }
+bab = 8
+talenti = ["Amateur Investigator", "Studied Combatant"]
+altro = ["1 rank in at least one Knowledge skill", "no levels in a class that has the inspiration class feature"]
+
+[talenti."Improved Sunder"]
+it = "Spezzare Migliorato"
+tipi = ["Combat"]
+libro = "cr"
+car = { "For" = 13 }
+bab = 1
+talenti = ["Power Attack"]
+
+[talenti."Improved Sunder, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Sunder"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Surprise Follow-Through"]
+it = "Incalzare Sorprendente Migliorato"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Improved Swap Places"]
+it = "Scambiare Posto Migliorato"
+tipi = ["Combat", "Teamwork"]
+libro = "acg"
+talenti = ["Swap Places"]
+
+[talenti."Improved Trip"]
+it = "Sbilanciare Migliorato"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise"]
+
+[talenti."Improved Trip, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Trip"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Two-Weapon Feint"]
+it = "Fintare con Due Armi Migliorato"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 17, "Int" = 13 }
+bab = 6
+talenti = ["Combat Expertise", "Improved Two-Weapon Fighting", "Two-Weapon Fighting"]
+
+[talenti."Improved Two-Weapon Fighting"]
+it = "Combattere con Due Armi Migliorato"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 17 }
+bab = 6
+talenti = ["Two-Weapon Fighting"]
+
+[talenti."Improved Umbral Scion"]
+it = "Discendenza Oscura Migliorata"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Improved Unarmed Strike"]
+it = "Colpo Senz'Armi Migliorato"
+tipi = ["Combat"]
+libro = "cr"
+
+[talenti."Improved Unarmed Strike, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Unarmed Strike"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Improved Vital Strike"]
+it = "Colpo Vitale Migliorato"
+tipi = ["Combat"]
+libro = "cr"
+bab = 11
+talenti = ["Vital Strike"]
+
+[talenti."Improved Weapon of the Chosen"]
+it = "Arma del Prescelto Migliorata"
+tipi = ["Combat"]
+libro = "acg"
+talenti = ["Weapon of the Chosen"]
+altro = ["Weapon Focus with your deity's favored weapon"]
+
+[talenti."Improved Whip Mastery"]
+it = "Maestria con la Frusta Migliorata"
+tipi = ["Combat"]
+libro = "uc"
+bab = 5
+talenti = ["Weapon Focus", "Whip Mastery"]
+
+[talenti."Improvisation"]
+it = "Improvvisazione"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Improvised Weapon Mastery"]
+it = "Maestria nelle Armi Improvvisate"
+tipi = ["Combat"]
+libro = "cr"
+bab = 8
+altro = ["Catch Off-Guard or Throw Anything"]
+
+[talenti."In Harm's Way"]
+it = "Frapporsi"
+tipi = ["Combat"]
+libro = "apg"
+talenti = ["Bodyguard"]
+
+[talenti."Incremental Elemental Assault"]
+it = "Assalto Elementale Incrementale"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Inexplicable Luck"]
+it = "Fortuna Inspiegabile"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Inner Breath"]
+it = "Respiro Interiore"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Inner Flame"]
+it = "Fiamma Interiore"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Innocent Blood"]
+it = "Sangue Innocente"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must slay at least 50 intelligent noncombatants for either your own personal gain or for no cause at all", "or have the Bloodthirsty", "First Kill", "or The Kill background"]
+
+[talenti."Insightful Delivery"]
+it = "Affondo Arguto"
+tipi = ["General"]
+libro = "acg"
+altro = ["Poison use class feature", "studied strike +4d6"]
+
+[talenti."Insightful Gaze"]
+it = "Sguardo Perspicace"
+tipi = ["General"]
+libro = "um"
+gradi = { "sense motive" = 5 }
+altro = ["Stern gaze class feature"]
+
+[talenti."Inspired Alchemy"]
+it = "Alchimia Ispirata"
+tipi = ["General"]
+libro = "acg"
+altro = ["Ability to create 2nd-level extracts", "alchemy class feature", "inspiration class feature"]
+
+[talenti."Inspired Strike"]
+it = "Colpo Ispirato"
+tipi = ["General"]
+libro = "acg"
+altro = ["Studied combat class feature"]
+
+[talenti."Inspired by Fear"]
+it = "Ispirato dalla Paura"
+tipi = ["General"]
+libro = "acg"
+altro = ["Ability to perform dirge of doom"]
+
+[talenti."Instant Judgment"]
+it = "Giudizio Istantaneo"
+tipi = ["General"]
+libro = "uc"
+altro = ["Second judgment class feature"]
+
+[talenti."Intensified Spell"]
+it = "Incantesimi Intensi"
+tipi = ["Metamagic"]
+libro = "apg"
+
+[talenti."Intercept Charge"]
+it = "Intercettare Carica"
+tipi = ["Combat", "Teamwork"]
+libro = "acg"
+
+[talenti."Intimidating Bane"]
+it = "Anatema Intimidatorio"
+tipi = ["General"]
+libro = "uc"
+classe = { "character" = 8 }
+talenti = ["Dazzling Display", "Weapon Focus"]
+altro = ["Bane class feature"]
+
+[talenti."Intimidating Confidence"]
+it = "Sicurezza Intimidatrice"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Intimidating Gaze"]
+it = "Sguardo Intimidatorio"
+tipi = ["General"]
+libro = "um"
+gradi = { "intimidate" = 5 }
+altro = ["Cha 13+", "stern gaze class feature"]
+
+[talenti."Intimidating Performance"]
+it = "Esibizione Intimidatrice"
+tipi = ["General"]
+libro = "acg"
+altro = ["Ability to start a performance (or raging song) as a move action", "bardic performance or raging song class feature"]
+
+[talenti."Intimidating Prowess"]
+it = "Prodezza Intimidatrice"
+tipi = ["Combat"]
+libro = "cr"
+
+[talenti."Intimidating Prowess, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Intimidating Prowess"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Iron Will"]
+it = "Volontà di Ferro"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Iron Will, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Iron Will"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Ironguts"]
+it = "Stomaco di Ferro"
+tipi = ["General"]
+libro = "apg"
+car = { "Cos" = 13 }
+altro = ["dwarf", "half-orc", "or orc"]
+
+[talenti."Ironhide"]
+it = "Pelle di Ferro"
+tipi = ["General"]
+libro = "apg"
+car = { "Cos" = 13 }
+altro = ["dwarf", "half-orc", "or orc"]
+
+[talenti."Jabbing Dancer"]
+it = "Danzatore degli Affondi"
+tipi = ["Combat"]
+libro = "acg"
+classe = { "brawler" = 5, "or monk" = 5 }
+bab = 9
+talenti = ["Dodge", "Improved Unarmed Strike", "Jabbing Style", "Mobility"]
+
+[talenti."Jabbing Master"]
+it = "Maestro degli Affondi"
+tipi = ["Combat"]
+libro = "acg"
+classe = { "brawler" = 8, "or monk" = 8 }
+bab = 12
+talenti = ["Dodge", "Improved Unarmed Strike", "Jabbing Dancer", "Jabbing Style", "Mobility", "Power Attack"]
+
+[talenti."Jabbing Style"]
+it = "Stile degli Affondi"
+tipi = ["Combat", "Style"]
+libro = "acg"
+bab = 6
+talenti = ["Improved Unarmed Strike"]
+altro = ["brawler's flurry class feature", "or flurry of blows class feature"]
+
+[talenti."Janni Rush"]
+it = "Assalto del Janni"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "acrobatics" = 8, "perform (dance)" = 8 }
+talenti = ["Improved Unarmed Strike", "Janni Style", "Janni Tempest"]
+
+[talenti."Janni Style"]
+it = "Stile del Janni"
+tipi = ["Combat", "Style"]
+libro = "uc"
+gradi = { "acrobatics" = 3, "perform (dance)" = 3 }
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Janni Tempest"]
+it = "Tempesta del Janni"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "acrobatics" = 5, "perform (dance)" = 5 }
+talenti = ["Improved Unarmed Strike", "Janni Style"]
+
+[talenti."Jawbreaker"]
+it = "Spaccamascella"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "heal" = 6 }
+talenti = ["Improved Unarmed Strike", "Stunning Fist"]
+
+[talenti."Judgment Surge"]
+it = "Impulso Giudicante"
+tipi = ["General"]
+libro = "um"
+altro = ["Judgment class feature"]
+
+[talenti."Keen Scent"]
+it = "Olfatto Acuto"
+tipi = ["General"]
+libro = "apg"
+car = { "Sag" = 13 }
+altro = ["half-orc or orc"]
+
+[talenti."Ki Stand"]
+it = "Rialzarsi Ki"
+tipi = ["General"]
+libro = "um"
+capacita = ["ki pool"]
+
+[talenti."Ki Throw"]
+it = "Lancio Ki"
+tipi = ["Combat"]
+libro = "apg"
+talenti = ["Improved Trip", "Improved Unarmed Strike"]
+
+[talenti."Kick Up"]
+it = "Sollevare Calciando"
+tipi = ["Combat"]
+libro = "acg"
+car = { "Des" = 12 }
+gradi = { "acrobatics" = 1 }
+talenti = ["Acrobatic"]
+altro = ["slayer level 1st or swashbuckler level 1st"]
+
+[talenti."Killing Flourish"]
+it = "Uccisione Plateale"
+tipi = ["Combat"]
+libro = "acg"
+classe = { "slayer" = 4 }
+gradi = { "intimidate" = 4 }
+talenti = ["Intimidating Prowess"]
+
+[talenti."Kirin Path"]
+it = "Percorso del Kirin"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13 }
+gradi = { "knowledge (arcana)" = 12, "or religion)" = 5 }
+talenti = ["Kirin Strike", "Kirin Style", "Improved Unarmed Strike"]
+altro = ["Knowledge (dungeoneering", "local", "nature", "planes"]
+
+[talenti."Kirin Strike"]
+it = "Colpo del Kirin"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13 }
+gradi = { "knowledge (arcana)" = 9, "or religion)" = 3 }
+talenti = ["Kirin Style", "Improved Unarmed Strike"]
+altro = ["Knowledge (dungeoneering", "local", "nature", "planes"]
+
+[talenti."Kirin Style"]
+it = "Stile del Kirin"
+tipi = ["Combat", "Style"]
+libro = "uc"
+gradi = { "knowledge (arcana)" = 6, "or religion)" = 1 }
+talenti = ["Improved Unarmed Strike"]
+altro = ["Knowledge (dungeoneering", "local", "nature", "planes"]
+
+[talenti."Knockout Artist"]
+it = "Artista del Knockout"
+tipi = ["General"]
+libro = "uc"
+talenti = ["Improved Unarmed Strike"]
+altro = ["Sneak attack class feature"]
+
+[talenti."Knockout Artist, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Knockout Artist"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Kobold Ambusher"]
+it = "Assalitore Coboldo"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Kobold Sniper"]
+it = "Tiratore Coboldo"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Landing Roll"]
+it = "Rotolare per Terra"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 13 }
+talenti = ["Dodge", "Mobility"]
+
+[talenti."Lay of the Land"]
+it = "Disposizione dell'Ambiente"
+tipi = ["General"]
+libro = "acg"
+altro = ["Animal focus class feature", "wild empathy class feature"]
+
+[talenti."Leadership"]
+it = "Autorità"
+tipi = ["General"]
+libro = "cr"
+classe = { "character" = 7 }
+
+[talenti."Leaf Singer"]
+it = "Canto Silvano"
+tipi = ["General"]
+libro = "apg"
+car = { "Car" = 13 }
+capacita = ["bardic performance"]
+altro = ["elf or half-elf"]
+
+[talenti."Leaping Shot Deed"]
+it = ""
+tipi = ["Grit"]
+libro = "uc"
+car = { "Des" = 13 }
+bab = 4
+talenti = ["Dodge", "Mobility"]
+altro = ["grit class feature or Amateur Gunslinger feat"]
+
+[talenti."Learn Ranger Trap"]
+it = "Imparare Trappole da Ranger"
+tipi = ["General"]
+libro = "um"
+gradi = { "survival" = 5 }
+
+[talenti."Ledge Walker"]
+it = "Camminatore delle Cenge"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Legendary Teamwork, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+altro = ["Any two teamwork feats", "grado mitico (Mythic Adventures)"]
+
+[talenti."Liberator"]
+it = "Liberatore"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have been enslaved for at least 6 months", "or have the Imprisoned or Kidnapped background"]
+
+[talenti."Life Lure"]
+it = "Richiamo della Vita"
+tipi = ["General"]
+libro = "um"
+capacita = ["channel positive energy"]
+
+[talenti."Life's Blood"]
+it = "Sangue di Vita"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Light Step"]
+it = "Movimenti Agili"
+tipi = ["General"]
+libro = "apg"
+talenti = ["Acrobatic Steps", "Nimble Moves"]
+altro = ["elf"]
+
+[talenti."Lightning Reflexes"]
+it = "Riflessi Fulminei"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Lightning Reflexes, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Lightning Reflexes"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Lightning Stance"]
+it = "Andatura Fulminea"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 17 }
+bab = 11
+talenti = ["Dodge", "Wind Stance"]
+
+[talenti."Lingering Invisibility"]
+it = "Invisibilità Durevole"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Lingering Performance"]
+it = "Esibizione Durevole"
+tipi = ["General"]
+libro = "apg"
+capacita = ["bardic performance"]
+
+[talenti."Lingering Spell"]
+it = "Incantesimi Durevoli"
+tipi = ["Metamagic"]
+libro = "apg"
+
+[talenti."Long-Nose Form"]
+it = "Forma dal Naso Lungo"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Lookout"]
+it = "In Guardia"
+tipi = ["Combat", "Teamwork"]
+libro = "apg"
+
+[talenti."Lost Legacy"]
+it = "Retaggio Perduto"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["Your family must have claim to an inherited title or position that no longer belongs to them", "or have the Dishonored Family background. You can take this feat even if you have no knowledge of this lost family title"]
+
+[talenti."Low Profile"]
+it = "Basso Profilo"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Des" = 13 }
+altro = ["Small size or smaller"]
+
+[talenti."Luck of Heroes"]
+it = "Fortuna dell'Eroe"
+tipi = ["Hero Point", "Optional"]
+libro = "apg"
+
+[talenti."Lucky Halfling"]
+it = "Halfling Fortunato"
+tipi = ["General"]
+libro = "apg"
+altro = ["Halfling"]
+
+[talenti."Lucky Halfling, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Lucky Halfling"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Lucky Healer"]
+it = "Guaritore Fortunato"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Lucky Strike"]
+it = "Colpo Fortunato"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Lucky Surge, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+altro = ["Potent Surge", "3rd mythic tier", "grado mitico (Mythic Adventures)"]
+
+[talenti."Lunge"]
+it = "Stoccata"
+tipi = ["Combat"]
+libro = "cr"
+bab = 6
+
+[talenti."Lunge, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Lunge"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Lunging Spell Touch"]
+it = "Incantesimo di Contatto in Allungo"
+tipi = ["General"]
+libro = "acg"
+gradi = { "spellcraft" = 6 }
+
+[talenti."Mage of the Wild"]
+it = "Malioso delle Terre Selvagge"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Magical Aptitude"]
+it = "Vocazione Magica"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Magical Aptitude, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Magical Aptitude"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Magical Tail"]
+it = "Coda Magica"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Magnum Opus"]
+it = "Opera Magna"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must either have sold five or more self-created works of art worth a total of at least 5", "000 gp", "have performed at least five performances for audiences of 50 or more while achieving a great performance result or better on your Perform check", "or have the Virtuoso background"]
+
+[talenti."Major Spell Expertise"]
+it = "Maestria negli Incantesimi Maggiore"
+tipi = ["General"]
+libro = "apg"
+talenti = ["Minor Spell Expertise"]
+altro = ["ability to cast 9th-level spells"]
+
+[talenti."Manifested Blood"]
+it = "Stirpe Manifesta"
+tipi = ["General"]
+libro = "acg"
+car = { "Car" = 13 }
+altro = ["draconic or elemental bloodline"]
+
+[talenti."Mantis Style"]
+it = "Stile della Mantide"
+tipi = ["Combat", "Style"]
+libro = "uc"
+gradi = { "heal" = 3 }
+talenti = ["Improved Unarmed Strike", "Stunning Fist"]
+
+[talenti."Mantis Torment"]
+it = "Tormento della Mantide"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "heal" = 9 }
+talenti = ["Improved Unarmed Strike", "Mantis Style", "Mantis Wisdom", "Stunning Fist"]
+
+[talenti."Mantis Wisdom"]
+it = "Saggezza della Mantide"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "heal" = 6 }
+talenti = ["Improved Unarmed Strike", "Mantis Style", "Stunning Fist"]
+
+[talenti."Manyshot"]
+it = "Tiro Multiplo"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 17 }
+bab = 6
+talenti = ["Point-Blank Shot", "Rapid Shot"]
+
+[talenti."Manyshot, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Manyshot"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Marid Coldsnap"]
+it = "Ondata Gelida del Marid"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Cos" = 15, "Sag" = 17 }
+bab = 13
+talenti = ["Elemental Fist", "Marid Spirit", "Marid Style", "Improved Unarmed Strike"]
+
+[talenti."Marid Spirit"]
+it = "Spirito del Marid"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Cos" = 15, "Sag" = 15 }
+bab = 11
+talenti = ["Elemental Fist", "Marid Style", "Improved Unarmed Strike"]
+
+[talenti."Marid Style"]
+it = "Stile del Marid"
+tipi = ["Combat", "Style"]
+libro = "uc"
+car = { "Cos" = 13, "Sag" = 15 }
+bab = 9
+talenti = ["Elemental Fist", "Improved Unarmed Strike"]
+
+[talenti."Marked for Glory, Mythic"]
+it = ""
+tipi = ["General"]
+libro = "ma"
+talenti = ["Great Fortitude", "Iron Will"]
+altro = ["or Lightning Reflexes"]
+
+[talenti."Martial Mastery"]
+it = "Padronanza Marziale"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Martial Versatility"]
+it = "Versatilità Marziale"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Martial Weapon Proficiency"]
+it = "Competenza nelle Armi da Guerra"
+tipi = ["Combat"]
+libro = "cr"
+
+[talenti."Master Alchemist"]
+it = "Maestro Alchimista"
+tipi = ["General"]
+libro = "apg"
+gradi = { "craft (alchemy)" = 5 }
+
+[talenti."Master Combat Performer"]
+it = "Maestro dell'Esibizione in Combattimento"
+tipi = ["Combat"]
+libro = "uc"
+bab = 6
+altro = ["Performing Combatant or at least three performance feats"]
+
+[talenti."Master Craftsman"]
+it = "Mastro Artigiano"
+tipi = ["General"]
+libro = "cr"
+altro = ["5 ranks in any Craft or Profession skill"]
+
+[talenti."Master Siege Engineer"]
+it = "Mastro Ingegnere d'Assedio"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "knowledge (engineering)" = 10 }
+altro = ["Siege Weapon Engineer"]
+
+[talenti."Masterful Display"]
+it = "Mostrare Maestria"
+tipi = ["Combat", "Performance"]
+libro = "uc"
+talenti = ["Dazzling Display"]
+altro = ["any two performance feats"]
+
+[talenti."Maximize Spell"]
+it = "Incantesimi Massimizzati"
+tipi = ["Metamagic"]
+libro = "cr"
+
+[talenti."Maximize Surge, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+altro = ["6th mythic tier", "grado mitico (Mythic Adventures)"]
+
+[talenti."Maximized Spellstrike"]
+it = "Colpi Incantati Massimizzati"
+tipi = ["General"]
+libro = "uc"
+altro = ["Maximized magic magus arcana", "weapon expertise class feature or Quick Draw"]
+
+[talenti."Medusa's Wrath"]
+it = "Collera della Medusa"
+tipi = ["Combat"]
+libro = "cr"
+bab = 11
+talenti = ["Improved Unarmed Strike", "Gorgon's Fist", "Scorpion Style"]
+
+[talenti."Medusa's Wrath, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Medusa's Wrath"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Menacing Bane"]
+it = "Anatema Minaccioso"
+tipi = ["General"]
+libro = "uc"
+altro = ["Bane class feature"]
+
+[talenti."Merciful Bane"]
+it = "Anatema Pietoso"
+tipi = ["General"]
+libro = "uc"
+altro = ["Bane class feature"]
+
+[talenti."Merciful Spell"]
+it = "Incantesimi Pietosi"
+tipi = ["Metamagic"]
+libro = "apg"
+
+[talenti."Merciless Butchery"]
+it = "Carneficina Spietata"
+tipi = ["Combat"]
+libro = "acg"
+talenti = ["Dastardly Finish"]
+altro = ["sneak attack +5d6", "studied target class feature"]
+
+[talenti."Meta Word Mastery"]
+it = "Padronanza delle Metaparole"
+tipi = ["Optional", "Words of Power"]
+libro = "um"
+
+[talenti."Metallic Wings"]
+it = "Ali Metalliche"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Minor Spell Expertise"]
+it = "Maestria negli Incantesimi Minore"
+tipi = ["General"]
+libro = "apg"
+altro = ["Ability to cast 4th-level spells"]
+
+[talenti."Missile Shield"]
+it = "Scudo Contro Proiettili"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Des" = 13 }
+talenti = ["Shield Focus"]
+
+[talenti."Missile Shield, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Missile Shield"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Mobility"]
+it = "Mobilità"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 13 }
+talenti = ["Dodge"]
+
+[talenti."Mobility, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Mobility"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Mocking Dance"]
+it = "Balletto Canzonatorio"
+tipi = ["Combat", "Performance"]
+libro = "uc"
+altro = ["Acrobatics 4 ranks or Perform (dance) 4 ranks"]
+
+[talenti."Monastic Legacy"]
+it = "Eredità Monastica"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Improved Unarmed Strike"]
+altro = ["Still mind class feature"]
+
+[talenti."Monastic Legacy, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Monastic Legacy"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Monkey Moves"]
+it = "Movimenti della Scimmia"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Sag" = 13 }
+gradi = { "acrobatics" = 8, "climb" = 8 }
+talenti = ["Improved Unarmed Strike", "Monkey Style"]
+
+[talenti."Monkey Shine"]
+it = "Rissa della Scimmia"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Sag" = 13 }
+gradi = { "acrobatics" = 11, "climb" = 11 }
+talenti = ["Improved Unarmed Strike", "Monkey Moves", "Monkey Style", "Stunning Fist"]
+
+[talenti."Monkey Style"]
+it = "Stile della Scimmia"
+tipi = ["Combat", "Style"]
+libro = "uc"
+car = { "Sag" = 13 }
+gradi = { "acrobatics" = 5, "climb" = 5 }
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Monument Builder"]
+it = "Costruttore di Monumenti"
+tipi = ["Story"]
+libro = "ucampaign"
+gradi = { "knowledge (engineering)" = 1 }
+altro = ["you must have built a structure worth at least 5", "000 gp"]
+
+[talenti."Moonlight Stalker"]
+it = "Predatore del Chiar di Luna"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13 }
+gradi = { "bluff" = 3 }
+talenti = ["Blind-Fight", "Combat Expertise"]
+altro = ["darkvision or low-light vision racial trait"]
+
+[talenti."Moonlight Stalker Feint"]
+it = "Fintare del Predatore del Chiar di Luna"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13 }
+gradi = { "bluff" = 6 }
+talenti = ["Blind-Fight", "Combat Expertise", "Moonlight Stalker"]
+altro = ["darkvision or low-light vision racial trait"]
+
+[talenti."Moonlight Stalker Master"]
+it = "Maestria del Predatore del Chiar di Luna"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13 }
+gradi = { "bluff" = 9 }
+talenti = ["Blind-Fight", "Combat Expertise", "Improved Feint", "Moonlight Stalker", "Moonlight Stalker Feint"]
+altro = ["darkvision or low-light vision racial trait"]
+
+[talenti."Moonlight Summons"]
+it = "Evocazioni della Luce Lunare"
+tipi = ["General"]
+libro = "um"
+talenti = ["Spell Focus"]
+altro = ["able to cast summon nature's ally"]
+
+[talenti."Mother's Gift"]
+it = "Dono della Madre"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Mounted Archery"]
+it = "Tirare in Sella"
+tipi = ["Combat"]
+libro = "cr"
+gradi = { "ride" = 1 }
+talenti = ["Mounted Combat"]
+
+[talenti."Mounted Archery, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Mounted Archery"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Mounted Combat"]
+it = "Combattere in Sella"
+tipi = ["Combat"]
+libro = "cr"
+gradi = { "ride" = 1 }
+
+[talenti."Mounted Combat, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Mounted Combat"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Mounted Shield"]
+it = "Scudo in Sella"
+tipi = ["Combat"]
+libro = "apg"
+talenti = ["Mounted Combat", "Shield Focus"]
+
+[talenti."Mounted Skirmisher"]
+it = "Cavallerizzo da Guerra"
+tipi = ["Combat"]
+libro = "apg"
+talenti = ["Mounted Combat", "Trick Riding"]
+altro = ["Ride rank 14"]
+
+[talenti."Multiattack"]
+it = "Multiattacco"
+tipi = ["Combat", "Monster"]
+libro = "b1"
+altro = ["Three or more natural attacks"]
+
+[talenti."Multitalented Mastery"]
+it = "Padronanza delle Doti Innate"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Multiweapon Fighting"]
+it = "Combattere con Più Armi"
+tipi = ["Combat", "Monster"]
+libro = "b1"
+car = { "Des" = 13 }
+altro = ["three or more hands"]
+
+[talenti."Murderer's Circle"]
+it = "Cerchia dell'Assassino"
+tipi = ["Combat", "Performance"]
+libro = "uc"
+gradi = { "acrobatics" = 4 }
+talenti = ["Dodge"]
+
+[talenti."Murmurs of Earth"]
+it = "Sussurri della Terra"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Mystic Stride"]
+it = "Andatura Mistica"
+tipi = ["General"]
+libro = "um"
+car = { "Des" = 15 }
+talenti = ["Nimble Moves"]
+altro = ["woodland stride class feature"]
+
+[talenti."Mythic Companion, Mythic"]
+it = ""
+tipi = ["General"]
+libro = "ma"
+altro = ["You must be non-mythic"]
+
+[talenti."Mythic Crafter, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+altro = ["Any item creation feat", "grado mitico (Mythic Adventures)"]
+
+[talenti."Mythic Paragon, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Mythic Spell Lore, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+capacita = ["cast spells"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Nation Builder"]
+it = "Fondatore di Nazioni"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have explored", "claimed an area of at least 100 square miles"]
+
+[talenti."Natural Charmer"]
+it = "Seduttore Naturale"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Natural Spell"]
+it = "Incantesimi Naturali"
+tipi = ["General"]
+libro = "cr"
+car = { "Sag" = 13 }
+capacita = ["wild shape"]
+
+[talenti."Natural Spell, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Natural Spell"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Nature Magic"]
+it = "Magia della Natura"
+tipi = ["General"]
+libro = "acg"
+gradi = { "knowledge (nature)" = 1 }
+
+[talenti."Neckbreaker"]
+it = "Spaccacollo"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "heal" = 12 }
+talenti = ["Bonebreaker", "Greater Grapple", "Improved Grapple", "Improved Unarmed Strike", "Jawbreaker", "Stunning Fist"]
+
+[talenti."Neither Elf nor Human"]
+it = "Né Elfo né Umano"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Nemesis"]
+it = "Nemesi"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have at least one enemy who wishes to cause you great harm. If you have multiple enemies", "the GM may keep the specific nemesis secret", "or have many of your enemies work together against you. If your nemesis is not already a challenging foe", "it either advances in strength to become a challenging foe or allies with others to achieve a higher challenge rating"]
+
+[talenti."Net Adept"]
+it = "Adepto della Rete"
+tipi = ["Combat"]
+libro = "uc"
+bab = 1
+talenti = ["Exotic Weapon Proficiency"]
+
+[talenti."Net Maneuvering"]
+it = "Manovra della Rete"
+tipi = ["Combat"]
+libro = "uc"
+bab = 3
+talenti = ["Exotic Weapon Proficiency", "Net Adept"]
+
+[talenti."Net Trickery"]
+it = "Inganno della Rete"
+tipi = ["Combat"]
+libro = "uc"
+bab = 6
+talenti = ["Exotic Weapon Proficiency", "Net Adept", "Net Maneuvering"]
+
+[talenti."Net and Trident"]
+it = "Rete e Tridente"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 15 }
+talenti = ["Exotic Weapon Proficiency", "Net Adept", "Two-Weapon Fighting"]
+
+[talenti."Nightmare Fist"]
+it = "Pugno da Incubo"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "intimidate" = 1 }
+talenti = ["Improved Unarmed Strike"]
+altro = ["ability to create magical darkness"]
+
+[talenti."Nightmare Striker"]
+it = "Colpo da Incubo"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "heal" = 5 }
+talenti = ["Improved Unarmed Strike", "Nightmare Fist", "Nightmare Weaver", "Stunning Fist"]
+altro = ["ability to cast faerie fire"]
+
+[talenti."Nightmare Weaver"]
+it = "Tessitore di Incubi"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "intimidate" = 2 }
+talenti = ["Improved Unarmed Strike", "Nightmare Fist"]
+altro = ["ability to cast darkness"]
+
+[talenti."Nimble Moves"]
+it = "Passo Leggero"
+tipi = ["General"]
+libro = "cr"
+car = { "Des" = 13 }
+
+[talenti."Nimble Moves, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Nimble Moves"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Nimble Striker"]
+it = "Agile Attaccante"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."No Name"]
+it = "Senza Nome"
+tipi = ["Grit"]
+libro = "uc"
+gradi = { "bluff" = 4 }
+altro = ["Grit class feature or Amateur Gunslinger feat"]
+
+[talenti."Noble Spell Resistance"]
+it = "Resistenza Nobile alla Magia"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Opening Volley"]
+it = "Salva Iniziale"
+tipi = ["Combat"]
+libro = "uc"
+
+[talenti."Oracular Intuition"]
+it = "Intuito Oracolare"
+tipi = ["General"]
+libro = "um"
+altro = ["Mystery class feature"]
+
+[talenti."Orator"]
+it = "Oratore"
+tipi = ["General"]
+libro = "acg"
+talenti = ["Skill Focus"]
+
+[talenti."Orc Hewer"]
+it = "Massacratore di Orchi"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Orc Weapon Expertise"]
+it = "Maestria nelle Armi Orchesche"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Oread Burrower"]
+it = "Oreade Scavatore"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Oread Earth Glider"]
+it = "Scorrere sulla Terra Oreade"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Outflank"]
+it = "Grande Fiancheggiatore"
+tipi = ["Combat", "Teamwork"]
+libro = "apg"
+bab = 4
+
+[talenti."Pack Attack"]
+it = "Attacco di Gruppo"
+tipi = ["Combat", "Teamwork"]
+libro = "uc"
+bab = 1
+
+[talenti."Pack Flanking"]
+it = "Fiancheggiare in Branco"
+tipi = ["Teamwork"]
+libro = "acg"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise"]
+altro = ["ability to acquire an animal companion"]
+
+[talenti."Painful Anchor"]
+it = "Ancora Dolorosa"
+tipi = ["General"]
+libro = "um"
+altro = ["Anchoring aura class feature"]
+
+[talenti."Paired Opportunists"]
+it = "Doppi Opportunisti"
+tipi = ["Combat", "Teamwork"]
+libro = "apg"
+
+[talenti."Panther Claw"]
+it = "Artigli della Pantera"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Sag" = 15 }
+talenti = ["Combat Reflexes", "Improved Unarmed Strike", "Panther Style"]
+
+[talenti."Panther Parry"]
+it = "Parata della Pantera"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Sag" = 15 }
+talenti = ["Combat Reflexes", "Improved Unarmed Strike", "Panther Claw", "Panther Style"]
+
+[talenti."Panther Style"]
+it = "Stile della Pantera"
+tipi = ["Combat", "Style"]
+libro = "uc"
+car = { "Sag" = 13 }
+talenti = ["Combat Reflexes", "Improved Unarmed Strike"]
+
+[talenti."Paralyzing Strike"]
+it = "Colpo Paralizzante"
+tipi = ["Combat"]
+libro = "acg"
+car = { "Des" = 13, "Sag" = 13 }
+bab = 14
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Parry Spell"]
+it = "Parare Incantesimo"
+tipi = ["General"]
+libro = "apg"
+gradi = { "spellcraft" = 15 }
+talenti = ["Improved Counterspell"]
+
+[talenti."Parting Shot"]
+it = "Colpo di Addio"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Des" = 13 }
+bab = 6
+talenti = ["Dodge", "Mobility", "Point-Blank Shot", "Shot on the Run"]
+
+[talenti."Pass For Human"]
+it = "Passare per Umano"
+tipi = ["General"]
+libro = "apg"
+altro = ["Half-elf", "half-orc", "or halfling (see Special)"]
+
+[talenti."Passing Trick"]
+it = "Passaggio Truccato"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise", "Dodge", "Improved Feint", "Mobility"]
+altro = ["size Small or smaller"]
+
+[talenti."Penetrating Strike"]
+it = "Colpo Penetrante"
+tipi = ["Combat"]
+libro = "cr"
+classe = { "fighter" = 12 }
+bab = 1
+talenti = ["Weapon Focus"]
+
+[talenti."Penetrating Strike, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Penetrating Strike"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Perfect Strike"]
+it = "Colpo Perfetto"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Des" = 13, "Sag" = 13 }
+bab = 8
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Performance Weapon Mastery"]
+it = "Maestria nelle Armi da Esibizione"
+tipi = ["Combat"]
+libro = "uc"
+
+[talenti."Performing Combatant"]
+it = "Combattente da Esibizione"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Dazzling Display"]
+altro = ["any one performance feat"]
+
+[talenti."Persistent Spell"]
+it = "Incantesimi Persistenti"
+tipi = ["Metamagic"]
+libro = "apg"
+
+[talenti."Persuasive"]
+it = "Persuasivo"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Persuasive, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Persuasive"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Piercing Spell"]
+it = "Incantesimi Penetranti"
+tipi = ["Metamagic"]
+libro = "um"
+
+[talenti."Pin Down"]
+it = "Incastrare"
+tipi = ["Combat"]
+libro = "uc"
+classe = { "fighter" = 11 }
+talenti = ["Combat Reflexes"]
+
+[talenti."Pinning Knockout"]
+it = "Picchiare Immobilizzati"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 13 }
+bab = 9
+talenti = ["Greater Grapple", "Improved Grapple", "Improved Unarmed Strike"]
+
+[talenti."Pinning Rend"]
+it = "Squartare Immobilizzati"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 13 }
+bab = 9
+talenti = ["Greater Grapple", "Improved Grapple", "Improved Unarmed Strike"]
+
+[talenti."Pinpoint Poisoner"]
+it = "Punte Avvelenate"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "craft (alchemy)" = 6 }
+talenti = ["Adder Strike", "Improved Unarmed Strike"]
+altro = ["Poison use class feature", "Two-Weapon Fighting or flurry of blows class feature"]
+
+[talenti."Pinpoint Targeting"]
+it = "Mira Inesorabile"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 19 }
+bab = 16
+talenti = ["Improved Precise Shot", "Point-Blank Shot", "Precise Shot"]
+
+[talenti."Pinpoint Targeting, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Pinpoint Targeting"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Planar Preservationist"]
+it = "Preservatore Planare"
+tipi = ["General"]
+libro = "um"
+altro = ["Preservationist alchemist archetype"]
+
+[talenti."Planar Wild Shape"]
+it = "Forma Selvatica Planare"
+tipi = ["General"]
+libro = "uc"
+gradi = { "knowledge (planes)" = 5 }
+capacita = ["wild shape"]
+
+[talenti."Point Blank Master"]
+it = "Maestro Ravvicinato"
+tipi = ["Combat"]
+libro = "apg"
+altro = ["Weapon Specialization with selected ranged weapon"]
+
+[talenti."Point-Blank Shot"]
+it = "Tiro Ravvicinato"
+tipi = ["Combat"]
+libro = "cr"
+
+[talenti."Point-Blank Shot, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Point-Blank Shot"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Pommel Strike Deed"]
+it = "Gesta del Colpo con l'Elsa"
+tipi = ["Panache"]
+libro = "acg"
+bab = 3
+altro = ["Amateur Swashbuckler or panache class feature"]
+
+[talenti."Potent Surge, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Power Attack"]
+it = "Attacco Poderoso"
+tipi = ["Combat"]
+libro = "cr"
+car = { "For" = 13 }
+bab = 1
+
+[talenti."Power Attack, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Power Attack"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Powerful Shape"]
+it = "Forma Possente"
+tipi = ["General"]
+libro = "um"
+classe = { "druid" = 8 }
+capacita = ["wild shape"]
+
+[talenti."Powerful Shape, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Powerful Shape"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Practiced Tactician"]
+it = "Tattico Esperto"
+tipi = ["General"]
+libro = "apg"
+altro = ["Tactician class feature"]
+
+[talenti."Precise Shot"]
+it = "Tiro Preciso"
+tipi = ["Combat"]
+libro = "cr"
+talenti = ["Point-Blank Shot"]
+
+[talenti."Precise Strike"]
+it = "Colpo Preciso"
+tipi = ["Combat", "Teamwork"]
+libro = "apg"
+car = { "Des" = 13 }
+bab = 1
+
+[talenti."Preferred Spell"]
+it = "Incantesimo Preferito"
+tipi = ["General"]
+libro = "apg"
+gradi = { "spellcraft" = 5 }
+talenti = ["Heighten Spell"]
+
+[talenti."Prodigy"]
+it = "Prodigio"
+tipi = ["General"]
+libro = "um"
+
+[talenti."Prone Shooter"]
+it = "Sparatore Prono"
+tipi = ["Combat"]
+libro = "uc"
+bab = 1
+talenti = ["Weapon Focus"]
+
+[talenti."Prone Slinger"]
+it = "Fromboliere Prono"
+tipi = ["Combat"]
+libro = "uc"
+
+[talenti."Prophet"]
+it = "Profeta"
+tipi = ["Story"]
+libro = "ucampaign"
+capacita = ["cast divine spells"]
+altro = ["you must either have received a vision from your god (or another appropriate supernatural entity) or have the Marked by the Gods background"]
+
+[talenti."Prophetic Visionary"]
+it = "Visionario Profetico"
+tipi = ["General"]
+libro = "um"
+altro = ["Mystery class feature"]
+
+[talenti."Prophetic Visionary, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Prophetic Visionary"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Pummeling Bully"]
+it = "Prepotenza dei Pestaggi"
+tipi = ["Combat"]
+libro = "acg"
+classe = { "brawler" = 5, "or monk" = 5 }
+bab = 9
+talenti = ["Improved Reposition", "Improved Trip", "Improved Unarmed Strike", "Pummeling Style"]
+
+[talenti."Pummeling Charge"]
+it = "Carica dei Pestaggi"
+tipi = ["Combat"]
+libro = "acg"
+classe = { "brawler" = 8, "or monk" = 8 }
+bab = 12
+talenti = ["Improved Unarmed Strike", "Pummeling Style"]
+
+[talenti."Pummeling Style"]
+it = "Stile dei Pestaggi"
+tipi = ["Combat", "Style"]
+libro = "acg"
+bab = 6
+talenti = ["Improved Unarmed Strike"]
+altro = ["brawler's flurry class feature", "or flurry of blows class feature"]
+
+[talenti."Punishing Kick"]
+it = "Calcio Distruttivo"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Cos" = 13, "Sag" = 13 }
+bab = 8
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Pure Faith"]
+it = "Fede Pura"
+tipi = ["General"]
+libro = "um"
+altro = ["Divine health class feature"]
+
+[talenti."Pushing Assault"]
+it = "Assalto Respingente"
+tipi = ["Combat"]
+libro = "apg"
+car = { "For" = 15 }
+bab = 1
+talenti = ["Power Attack"]
+
+[talenti."Quarterstaff Master"]
+it = "Maestria nei Bastoni Ferrati"
+tipi = ["Combat"]
+libro = "um"
+bab = 5
+talenti = ["Weapon Focus"]
+
+[talenti."Quick Bull Rush"]
+it = "Spingere Rapido"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 13 }
+bab = 6
+talenti = ["Improved Bull Rush", "Power Attack"]
+
+[talenti."Quick Channel"]
+it = "Incanalare Rapido"
+tipi = ["General"]
+libro = "um"
+gradi = { "knowledge (religion)" = 5 }
+capacita = ["channel energy"]
+
+[talenti."Quick Dirty Trick"]
+it = "Sporco Trucco Rapido"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13 }
+bab = 6
+talenti = ["Combat Expertise", "Improved Dirty Trick"]
+
+[talenti."Quick Drag"]
+it = "Trascinare Rapido"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 13 }
+bab = 6
+talenti = ["Improved Drag", "Power Attack"]
+
+[talenti."Quick Draw"]
+it = "Estrazione Rapida"
+tipi = ["Combat"]
+libro = "cr"
+bab = 1
+
+[talenti."Quick Draw, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Quick Draw"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Quick Reposition"]
+it = "Riposizionare Rapido"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13 }
+bab = 6
+talenti = ["Combat Expertise", "Improved Reposition"]
+
+[talenti."Quick Steal"]
+it = "Rubare Rapido"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Int" = 13 }
+bab = 6
+talenti = ["Combat Expertise", "Improved Steal"]
+
+[talenti."Quick Wild Shape"]
+it = "Forma Selvatica Rapida"
+tipi = ["General"]
+libro = "um"
+lic = 8
+capacita = ["wild shape"]
+
+[talenti."Quicken Blessing"]
+it = "Benedizione Rapida"
+tipi = ["General"]
+libro = "acg"
+altro = ["Access to a blessing's major power", "blessings class feature"]
+
+[talenti."Quicken Spell"]
+it = "Incantesimi Rapidi"
+tipi = ["Metamagic"]
+libro = "cr"
+
+[talenti."Quicken Spell-Like Ability"]
+it = "Capacità Magica Rapida"
+tipi = ["Monster"]
+libro = "b1"
+altro = ["Spell-like ability at CL 10th or higher"]
+
+[talenti."Racial Heritage"]
+it = "Eredità Razziale"
+tipi = ["General"]
+libro = "apg"
+altro = ["Human"]
+
+[talenti."Racial Heritage, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Racial Heritage"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Radiant Charge"]
+it = "Carica Radiosa"
+tipi = ["General"]
+libro = "um"
+capacita = ["lay on hands"]
+
+[talenti."Rage Casting"]
+it = "Incantamento Furioso"
+tipi = ["General"]
+libro = "acg"
+altro = ["Blood casting class feature"]
+
+[talenti."Raging Absorption"]
+it = "Assorbimento Iracondo"
+tipi = ["General"]
+libro = "acg"
+altro = ["Ability to cast 2nd-level bloodrager spells", "bloodrage class feature"]
+
+[talenti."Raging Blood"]
+it = "Sangue Furioso"
+tipi = ["General"]
+libro = "acg"
+altro = ["Eldritch Heritage or sorcerer bloodline class feature"]
+
+[talenti."Raging Brutality"]
+it = "Brutalità Indomabile"
+tipi = ["General"]
+libro = "uc"
+car = { "For" = 13 }
+bab = 12
+talenti = ["Power Attack"]
+capacita = ["rage"]
+
+[talenti."Raging Concentration"]
+it = "Concentrazione Iraconda"
+tipi = ["General"]
+libro = "acg"
+altro = ["Blood casting class feature"]
+
+[talenti."Raging Deathblow"]
+it = "Colpo di Grazia Indomabile"
+tipi = ["General"]
+libro = "uc"
+altro = ["Greater rage class feature"]
+
+[talenti."Raging Hurler"]
+it = "Lanciatore Indomabile"
+tipi = ["General"]
+libro = "uc"
+talenti = ["Throw Anything"]
+capacita = ["rage"]
+
+[talenti."Raging Throw"]
+it = "Lancio Indomabile"
+tipi = ["General"]
+libro = "uc"
+car = { "For" = 13, "Cos" = 13 }
+bab = 6
+talenti = ["Improved Bull Rush", "Power Attack"]
+capacita = ["rage"]
+
+[talenti."Raging Vitality"]
+it = "Furia Vitale"
+tipi = ["General"]
+libro = "apg"
+car = { "Cos" = 15 }
+capacita = ["rage"]
+
+[talenti."Ranged Study"]
+it = "Studio a Distanza"
+tipi = ["General"]
+libro = "acg"
+altro = ["Weapon Focus with the chosen weapon", "studied combat class feature"]
+
+[talenti."Rapid Grappler"]
+it = "Lottatore Rapido"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 13 }
+bab = 9
+talenti = ["Greater Grapple", "Improved Grapple", "Improved Unarmed Strike"]
+
+[talenti."Rapid Reload"]
+it = "Ricarica Rapida"
+tipi = ["Combat"]
+libro = "uc"
+
+[talenti."Rapid Reload, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Rapid Reload"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Rapid Shot"]
+it = "Tiro Rapido"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 13 }
+talenti = ["Point-Blank Shot"]
+
+[talenti."Rapid Shot, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Rapid Shot"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Ray Shield"]
+it = "Scudo Contro Raggi"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Des" = 15 }
+talenti = ["Missile Shield", "Spellbreaker"]
+
+[talenti."Razortusk"]
+it = "Zanna Affilata"
+tipi = ["General"]
+libro = "apg"
+altro = ["Half-orc"]
+
+[talenti."Reach Spell"]
+it = "Incantesimi con Portata"
+tipi = ["Metamagic"]
+libro = "apg"
+
+[talenti."Reactive Healing"]
+it = "Cura Reattiva"
+tipi = ["General"]
+libro = "acg"
+altro = ["Quick Channel or Quicken Spell", "channel energy or lay on hands class feature"]
+
+[talenti."Realistic Likeness"]
+it = "Aspetto Realistico"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Rebounding Leap"]
+it = "Rimontare al Volo"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "acrobatics" = 5, "ride" = 11 }
+altro = ["Leaping lance class feature"]
+
+[talenti."Rebuffing Reduction"]
+it = "Riduzione Respingente"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 13 }
+bab = 1
+talenti = ["Improved Bull Rush", "Power Attack"]
+altro = ["damage reduction"]
+
+[talenti."Reckless Rage"]
+it = "Ira Avventata"
+tipi = ["General"]
+libro = "acg"
+talenti = ["Power Attack"]
+altro = ["rage or raging song class feature"]
+
+[talenti."Recovered Rage"]
+it = "Ira Recuperata"
+tipi = ["General"]
+libro = "acg"
+altro = ["Rage or raging song class feature"]
+
+[talenti."Redemption"]
+it = "Redenzione"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have lost class features by violating the code of conduct of a class that possesses such a code", "or have the Dishonored Family background"]
+
+[talenti."Remote Bomb"]
+it = "Bomba a Distanza"
+tipi = ["General"]
+libro = "um"
+altro = ["Delayed bomb discovery"]
+
+[talenti."Rending Claws"]
+it = "Artigli Squartanti"
+tipi = ["Combat"]
+libro = "apg"
+car = { "For" = 13 }
+bab = 6
+altro = ["two claw natural weapon attacks"]
+
+[talenti."Rending Fury"]
+it = "Furia Lacerante"
+tipi = ["Combat"]
+libro = "uc"
+bab = 6
+altro = ["rend special attack"]
+
+[talenti."Repositioning Strike"]
+it = "Colpo Riposizionante"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Int" = 13 }
+bab = 9
+talenti = ["Combat Expertise", "Improved Trip"]
+
+[talenti."Resilient Armor"]
+it = "Armatura Resiliente"
+tipi = ["General"]
+libro = "acg"
+altro = ["Divine bond (armor or shield)", "or sacred armor class feature"]
+
+[talenti."Resilient Brute"]
+it = "Gagliardia del Bruto"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Resilient Eidolon"]
+it = "Eidolon Persistente"
+tipi = ["General"]
+libro = "um"
+altro = ["Eidolon class feature"]
+
+[talenti."Resolute Rager"]
+it = "Iracondo Risoluto"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Revelation Strike"]
+it = "Colpo Rivelante"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Improved Unarmed Strike"]
+altro = ["Revelation class feature"]
+
+[talenti."Reverse-Feint"]
+it = "Controfinta"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Reward of Grace"]
+it = "Ricompensa di Grazia"
+tipi = ["General"]
+libro = "um"
+capacita = ["lay on hands"]
+
+[talenti."Reward of Life"]
+it = "Ricompensa di Vita"
+tipi = ["General"]
+libro = "um"
+capacita = ["lay on hands"]
+
+[talenti."Rhetorical Flourish"]
+it = "Ostentazione di Retorica"
+tipi = ["General"]
+libro = "uc"
+car = { "Car" = 13 }
+talenti = ["Persuasive"]
+
+[talenti."Rhetorical Flourish, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Rhetorical Flourish"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Ricochet Shot Deed"]
+it = "Gesta del Colpo di Rimbalzo"
+tipi = ["Grit"]
+libro = "uc"
+talenti = ["Blind-Fight"]
+altro = ["Grit class feature or Amateur Gunslinger feat"]
+
+[talenti."Ricochet Splash Weapon"]
+it = "Armi a Spargimento Rimbalzanti"
+tipi = ["General"]
+libro = "um"
+car = { "Des" = 13 }
+talenti = ["Throw Anything"]
+
+[talenti."Ride-By Attack"]
+it = "Attacco in Sella"
+tipi = ["Combat"]
+libro = "cr"
+gradi = { "ride" = 1 }
+talenti = ["Mounted Combat"]
+
+[talenti."Ride-By Attack, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Ride-By Attack"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Righteous Healing"]
+it = "Giusta Guarigione"
+tipi = ["General"]
+libro = "uc"
+altro = ["Judgment class feature"]
+
+[talenti."Rime Spell"]
+it = "Incantesimi Gelidi"
+tipi = ["Metamagic"]
+libro = "um"
+
+[talenti."Risky Striker"]
+it = "Attacco Rischioso"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Riving Strike"]
+it = "Colpo Lacerante"
+tipi = ["Combat"]
+libro = "acg"
+talenti = ["Arcane Strike"]
+capacita = ["cast arcane spells"]
+
+[talenti."Run"]
+it = "Correre"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Run, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Run"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Sacred Summons"]
+it = "Evocazioni Sacre"
+tipi = ["General"]
+libro = "um"
+altro = ["Aura class feature", "ability to cast summon monster"]
+
+[talenti."Sap Adept"]
+it = "Adepto del Manganello"
+tipi = ["Combat"]
+libro = "uc"
+altro = ["Sneak attack +1d6"]
+
+[talenti."Sap Master"]
+it = "Maestro del Manganello"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Sap Adept"]
+altro = ["Sneak attack +3d6"]
+
+[talenti."Savage Display"]
+it = "Mostrare Ferocia"
+tipi = ["Combat", "Performance"]
+libro = "uc"
+talenti = ["Dazzling Display"]
+
+[talenti."Saving Shield"]
+it = "Proteggere Alleato"
+tipi = ["Combat"]
+libro = "apg"
+talenti = ["Shield Proficiency"]
+
+[talenti."Saving Shield, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Saving Shield"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Scavenger's Eye"]
+it = "Occhio del Dissotterratore"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."School Strike"]
+it = "Colpo della Scuola"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Improved Unarmed Strike"]
+altro = ["Wizard school class feature"]
+
+[talenti."Scorching Weapons"]
+it = "Armi Roventi"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Scorpion Style"]
+it = "Stile dello Scorpione"
+tipi = ["Combat"]
+libro = "cr"
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Scorpion Style, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Scorpion Style"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Scribe Scroll"]
+it = "Scrivere Pergamene"
+tipi = ["Item Creation"]
+libro = "cr"
+lic = 1
+
+[talenti."Sea Hunter"]
+it = "Cacciatore Marino"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Sea Legs"]
+it = "Gambe da Marinaio"
+tipi = ["General"]
+libro = "uc"
+gradi = { "profession (sailor)" = 5 }
+
+[talenti."Second Chance"]
+it = "Seconda Possibilità"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Int" = 13 }
+bab = 6
+talenti = ["Combat Expertise"]
+
+[talenti."Secret Stash Deed"]
+it = "Gesta del Nascondiglio Segreto"
+tipi = ["Grit"]
+libro = "uc"
+gradi = { "sleight of hand" = 1 }
+altro = ["Grit class feature or Amateur Gunslinger feat"]
+
+[talenti."Seen and Unseen"]
+it = "Visto e Non Visto"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Seething Hatred"]
+it = "Odio Ribollente"
+tipi = ["Combat"]
+libro = "acg"
+altro = ["Studied target class feature"]
+
+[talenti."Seize Advantage"]
+it = "Prendere il Vantaggio"
+tipi = ["Combat"]
+libro = "acg"
+altro = ["Opportune parry", "riposte deed"]
+
+[talenti."Seize the Moment"]
+it = "Approfittarne per Muoversi"
+tipi = ["Combat", "Teamwork"]
+libro = "uc"
+talenti = ["Combat Reflexes", "Improved Critical"]
+
+[talenti."Selective Channeling"]
+it = "Incanalare Selettivo"
+tipi = ["General"]
+libro = "cr"
+car = { "Car" = 13 }
+capacita = ["channel energy"]
+
+[talenti."Selective Channeling, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Selective Channeling"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Selective Spell"]
+it = "Incantesimi Selettivi"
+tipi = ["Metamagic"]
+libro = "apg"
+gradi = { "spellcraft" = 10 }
+
+[talenti."Self-Sufficient"]
+it = "Autosufficiente"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Self-sufficient, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Self-Sufficient"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Sense Link"]
+it = "Legame Percettivo"
+tipi = ["General"]
+libro = "um"
+altro = ["Bond senses class feature"]
+
+[talenti."Shadow Caster"]
+it = "Incantatore delle Ombre"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Shadow Ghost"]
+it = "Fantasma delle Ombre"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Shadow Strike"]
+it = "Colpire fra le Ombre"
+tipi = ["Combat"]
+libro = "apg"
+bab = 1
+
+[talenti."Shadow Walker"]
+it = "Camminatore delle Ombre"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Shadowy Dash"]
+it = "Scatto Ombroso"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Shaitan Earthblast"]
+it = "Scoppio Terroso dello Shaitan"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Cos" = 15, "Sag" = 17 }
+bab = 13
+talenti = ["Elemental Fist", "Improved Unarmed Strike", "Shaitan Skin", "Shaitan Style"]
+
+[talenti."Shaitan Skin"]
+it = "Pelle dello Shaitan"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Cos" = 15, "Sag" = 15 }
+bab = 11
+talenti = ["Elemental Fist", "Improved Unarmed Strike", "Shaitan Style"]
+
+[talenti."Shaitan Style"]
+it = "Stile dello Shaitan"
+tipi = ["Combat", "Style"]
+libro = "uc"
+car = { "Cos" = 13, "Sag" = 15 }
+bab = 9
+talenti = ["Elemental Fist", "Improved Unarmed Strike"]
+
+[talenti."Shake It Off"]
+it = "Scrollarselo di Dosso"
+tipi = ["Teamwork"]
+libro = "uc"
+
+[talenti."Shamed"]
+it = "Umiliato"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have been publicly embarrassed", "or must have the Bastard Born background. If the embarrassment didn't cause significant harm to your personal honor or social standing", "it does not qualify for the feat prerequisites. The humiliation doesn't need to have been unjustified"]
+
+[talenti."Shapeshifter Foil"]
+it = "Sventare Metamorfosi"
+tipi = ["General"]
+libro = "uc"
+altro = ["Knowledge (arcana) 5 ranks or Knowledge (nature) 5 ranks", "ability to use any polymorph effect"]
+
+[talenti."Shapeshifting Hunter"]
+it = "Cacciatore Cambiaforma"
+tipi = ["General"]
+libro = "uc"
+capacita = ["wild shape"]
+altro = ["Favored enemy class feature"]
+
+[talenti."Shaping Focus"]
+it = "Forme Focalizzate"
+tipi = ["General"]
+libro = "um"
+gradi = { "knowledge (nature)" = 5 }
+capacita = ["wild shape"]
+
+[talenti."Share Healing"]
+it = "Guarigione Condivisa"
+tipi = ["Teamwork"]
+libro = "acg"
+altro = ["Ability to acquire an animal companion", "eidolon", "familiar", "or special mount"]
+
+[talenti."Shared Insight"]
+it = "Condividere Percezioni"
+tipi = ["General"]
+libro = "apg"
+car = { "Sag" = 13 }
+altro = ["half-elf"]
+
+[talenti."Shared Judgment"]
+it = "Giudizio Condiviso"
+tipi = ["General"]
+libro = "uc"
+altro = ["Second judgment class feature"]
+
+[talenti."Shared Manipulation"]
+it = "Manipolazione Condivisa"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Sharp Senses"]
+it = "Sensi Accurati"
+tipi = ["General"]
+libro = "apg"
+altro = ["Keen senses racial trait"]
+
+[talenti."Sharpclaw"]
+it = "Artiglitaglienti"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Shatter Defenses"]
+it = "Spezzare le Difese"
+tipi = ["Combat"]
+libro = "cr"
+bab = 6
+talenti = ["Weapon Focus", "Dazzling Display"]
+
+[talenti."Shatter Defenses, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Shatter Defenses"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Shatterspell"]
+it = "Frantumaincantesimi"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Shield Focus"]
+it = "Scudo Focalizzato"
+tipi = ["Combat"]
+libro = "cr"
+bab = 1
+talenti = ["Shield Proficiency"]
+
+[talenti."Shield Focus, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Shield Focus"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Shield Master"]
+it = "Maestria negli Scudi"
+tipi = ["Combat"]
+libro = "cr"
+bab = 11
+talenti = ["Improved Shield Bash", "Shield Proficiency", "Shield Slam", "Two-Weapon Fighting"]
+
+[talenti."Shield Proficiency"]
+it = "Competenza negli Scudi"
+tipi = ["Combat"]
+libro = "cr"
+
+[talenti."Shield Slam"]
+it = "Botta di Scudo"
+tipi = ["Combat"]
+libro = "cr"
+bab = 6
+talenti = ["Improved Shield Bash", "Shield Proficiency", "Two-Weapon Fighting"]
+
+[talenti."Shield Slam, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Shield Slam"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Shield Specialization"]
+it = "Scudo Specializzato"
+tipi = ["Combat"]
+libro = "apg"
+classe = { "fighter" = 4 }
+talenti = ["Shield Focus"]
+
+[talenti."Shield Wall"]
+it = "Muro di Scudi"
+tipi = ["Combat", "Teamwork"]
+libro = "apg"
+talenti = ["Shield Proficiency"]
+
+[talenti."Shield of Swings"]
+it = "Scudo di Fendenti"
+tipi = ["Combat"]
+libro = "apg"
+car = { "For" = 13 }
+bab = 1
+talenti = ["Power Attack"]
+
+[talenti."Shielded Caster"]
+it = "Incantatore Protetto"
+tipi = ["Teamwork"]
+libro = "apg"
+
+[talenti."Shot on the Run"]
+it = "Tirare in Movimento"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 13 }
+bab = 4
+talenti = ["Dodge", "Mobility", "Point-Blank Shot"]
+
+[talenti."Shot on the Run, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+bab = 6
+talenti = ["Shot on the Run"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Sickening Critical"]
+it = "Critico Debilitante"
+tipi = ["Combat", "Critical"]
+libro = "cr"
+bab = 11
+talenti = ["Critical Focus"]
+
+[talenti."Sickening Spell"]
+it = "Incantesimi Debilitanti"
+tipi = ["Metamagic"]
+libro = "apg"
+
+[talenti."Sidestep"]
+it = "Passo Laterale"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Des" = 13 }
+talenti = ["Dodge", "Mobility"]
+
+[talenti."Siege Commander"]
+it = "Comandante d'Assedio"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "craft (siege weapon)" = 5 }
+altro = ["Knowledge (engineering) 5 ranks or Profession (siege engineer) 1 rank"]
+
+[talenti."Siege Engineer"]
+it = "Ingegnere d'Assedio"
+tipi = ["Combat"]
+libro = "uc"
+altro = ["Knowledge (engineering) 5 ranks or Profession (siege engineer) 5 ranks"]
+
+[talenti."Siege Gunner"]
+it = "Tiratore d'Assedio"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "profession (siege engineer)" = 5 }
+talenti = ["Siege Engineer"]
+
+[talenti."Signature Deed"]
+it = "Gesta Personali"
+tipi = ["Grit"]
+libro = "uc"
+classe = { "gunslinger" = 11 }
+altro = ["Grit class feature"]
+
+[talenti."Silent Kill"]
+it = "Uccisione Silenziosa"
+tipi = ["Combat"]
+libro = "acg"
+gradi = { "stealth" = 12 }
+altro = ["assassinate advanced slayer talent or ninja master trick"]
+
+[talenti."Silent Spell"]
+it = "Incantesimi Silenziosi"
+tipi = ["Metamagic"]
+libro = "cr"
+
+[talenti."Simple Weapon Proficiency"]
+it = "Competenza nelle Armi Semplici"
+tipi = ["Combat"]
+libro = "cr"
+
+[talenti."Sin Seer"]
+it = "Vedere Peccato"
+tipi = ["General"]
+libro = "um"
+altro = ["Detect undead paladin class feature"]
+
+[talenti."Skald's Vigor"]
+it = "Vigore dello Scaldo"
+tipi = ["General"]
+libro = "acg"
+altro = ["Raging song class feature"]
+
+[talenti."Skeleton Summoner"]
+it = "Evocatore di Scheletri"
+tipi = ["General"]
+libro = "um"
+talenti = ["Spell Focus"]
+altro = ["ability to cast summon monster"]
+
+[talenti."Skill Focus"]
+it = "Abilità Focalizzata"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Skill Focus, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Skill Focus"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Skilled Driver"]
+it = "Guidatore Abile"
+tipi = ["General"]
+libro = "uc"
+
+[talenti."Skilled Rager"]
+it = "Iracondo Esperto"
+tipi = ["General"]
+libro = "acg"
+capacita = ["rage"]
+
+[talenti."Slashing Grace"]
+it = "Grazia Tagliente"
+tipi = ["Combat"]
+libro = "acg"
+car = { "Des" = 13 }
+talenti = ["Weapon Finesse"]
+altro = ["Weapon Focus with chosen weapon"]
+
+[talenti."Slayer's Feint"]
+it = "Finta del Predatore"
+tipi = ["Combat"]
+libro = "acg"
+car = { "Des" = 15 }
+classe = { "acrobatic or slayer" = 1 }
+gradi = { "acrobatics" = 1 }
+talenti = ["Combat Expertise"]
+
+[talenti."Slayer's Knack"]
+it = "Bravura dell'Uccisore"
+tipi = ["General"]
+libro = "uc"
+bab = 6
+altro = ["Favored enemy class feature"]
+
+[talenti."Sleep Venom"]
+it = "Veleno del Sonno"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Sling Flail"]
+it = "Fionda Mazzafrusto"
+tipi = ["Combat"]
+libro = "uc"
+bab = 1
+talenti = ["Weapon Focus"]
+
+[talenti."Slow Faller"]
+it = "Cascatore Lento"
+tipi = ["General"]
+libro = "acg"
+altro = ["Acrobatics 5 ranks or slow fall class feature"]
+
+[talenti."Smash"]
+it = "Frantumare"
+tipi = ["Combat"]
+libro = "apg"
+talenti = ["Power Attack"]
+altro = ["half-orc"]
+
+[talenti."Smell Fear"]
+it = "Fiutare Paura"
+tipi = ["General"]
+libro = "apg"
+talenti = ["Keen Scent"]
+altro = ["half-orc or orc"]
+
+[talenti."Snake Fang"]
+it = "Zanna del Serpente"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "acrobatics" = 6, "sense motive" = 9 }
+talenti = ["Combat Reflexes", "Improved Unarmed Strike", "Snake Sidewind", "Snake Style"]
+
+[talenti."Snake Sidewind"]
+it = "Scatto del Serpente"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "acrobatics" = 3, "sense motive" = 6 }
+talenti = ["Improved Unarmed Strike", "Snake Style"]
+
+[talenti."Snake Style"]
+it = "Stile del Serpente"
+tipi = ["Combat", "Style"]
+libro = "uc"
+gradi = { "acrobatics" = 1, "sense motive" = 3 }
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Snap Shot"]
+it = "Tiro Scattante"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 13 }
+bab = 6
+talenti = ["Point-Blank Shot", "Rapid Shot", "Weapon Focus"]
+
+[talenti."Snapping Turtle Clutch"]
+it = "Zampata della Tartaruga Azzannatrice"
+tipi = ["Combat"]
+libro = "uc"
+bab = 3
+talenti = ["Snapping Turtle Style", "Improved Grapple", "Improved Unarmed Strike"]
+
+[talenti."Snapping Turtle Shell"]
+it = "Guscio della Tartaruga Azzannatrice"
+tipi = ["Combat"]
+libro = "uc"
+bab = 5
+talenti = ["Snapping Turtle Clutch", "Snapping Turtle Style", "Improved Grapple", "Improved Unarmed Strike"]
+
+[talenti."Snapping Turtle Style"]
+it = "Stile della Tartaruga Azzannatrice"
+tipi = ["Combat", "Style"]
+libro = "uc"
+bab = 1
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Snatch"]
+it = "Ghermire"
+tipi = ["Monster"]
+libro = "b1"
+altro = ["Size Huge or larger"]
+
+[talenti."Snatch Arrows"]
+it = "Afferrare Frecce"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 15 }
+talenti = ["Deflect Arrows", "Improved Unarmed Strike"]
+
+[talenti."Snatch Arrows, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Snatch Arrows"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Sneaking Precision"]
+it = "Precisione Furtiva"
+tipi = ["General"]
+libro = "uc"
+bab = 9
+talenti = ["Critical Focus"]
+altro = ["Sneak attack class feature", "any critical feat"]
+
+[talenti."Sociable"]
+it = "Socievole"
+tipi = ["General"]
+libro = "apg"
+car = { "Car" = 13 }
+altro = ["half-elf"]
+
+[talenti."Sociable, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Sociable"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Sorcerous Bloodstrike"]
+it = "Colpo Sanguinario Stregonesco"
+tipi = ["General"]
+libro = "um"
+car = { "Car" = 13 }
+altro = ["sorcerer bloodline class feature"]
+
+[talenti."Sorcerous Strike"]
+it = "Colpo Stregonesco"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Improved Unarmed Strike"]
+altro = ["Sorcerer bloodline class feature"]
+
+[talenti."Spell Bane"]
+it = "Anatema Incantato"
+tipi = ["General"]
+libro = "uc"
+altro = ["Bane class feature"]
+
+[talenti."Spell Bluff"]
+it = "Incantesimi Ingannevoli"
+tipi = ["General"]
+libro = "um"
+gradi = { "bluff" = 5, "spellcraft" = 5 }
+
+[talenti."Spell Focus"]
+it = "Incantesimi Focalizzati"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Spell Focus, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Spell Focus"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Spell Hex"]
+it = "Fattura Incantata"
+tipi = ["General"]
+libro = "um"
+altro = ["Major hex class feature"]
+
+[talenti."Spell Mastery"]
+it = "Padronanza degli Incantesimi"
+tipi = ["General"]
+libro = "cr"
+classe = { "wizard" = 1 }
+
+[talenti."Spell Mastery, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Spell Mastery"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Spell Penetration"]
+it = "Incantesimi Inarrestabili"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Spell Penetration, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Spell Penetration"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Spell Perfection"]
+it = "Incantesimo Perfetto"
+tipi = ["General"]
+libro = "apg"
+gradi = { "spellcraft" = 15 }
+altro = ["at least three metamagic feats"]
+
+[talenti."Spell Specialization"]
+it = "Incantesimo Specializzato"
+tipi = ["General"]
+libro = "um"
+car = { "Int" = 13 }
+talenti = ["Spell Focus"]
+
+[talenti."Spellbreaker"]
+it = "Spezzaincantesimi"
+tipi = ["Combat"]
+libro = "cr"
+classe = { "fighter" = 10 }
+talenti = ["Disruptive"]
+
+[talenti."Spellbreaker, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Spellbreaker"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Spellsong"]
+it = "Canzone Incantata"
+tipi = ["General"]
+libro = "um"
+car = { "Car" = 13 }
+altro = ["bardic performance class ability", "able to cast 1st-level spells"]
+
+[talenti."Spider Step"]
+it = "Passo del Ragno"
+tipi = ["General"]
+libro = "apg"
+classe = { "monk" = 6 }
+gradi = { "acrobatics" = 6, "climb" = 6 }
+
+[talenti."Spider Summoner"]
+it = "Evocatore di Ragni"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Spinning Throw"]
+it = "Lancio Rotante"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Combat Expertise", "Improved Bull Rush", "Improved Trip", "Improved Unarmed Strike", "Ki Throw"]
+
+[talenti."Spirit Talker"]
+it = "Comunicatore Spirituale"
+tipi = ["General"]
+libro = "acg"
+altro = ["Hex class feature", "shaman level 6th or witch level 6th"]
+
+[talenti."Spirit of the Wild"]
+it = "Spirito delle Terre Selvagge"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Spirit's Gift"]
+it = "Dono dello Spirito"
+tipi = ["General"]
+libro = "acg"
+altro = ["Animal companion class feature or familiar class feature"]
+
+[talenti."Spirited Charge"]
+it = "Carica Devastante"
+tipi = ["Combat"]
+libro = "cr"
+gradi = { "ride" = 1 }
+talenti = ["Mounted Combat", "Ride-By Attack"]
+
+[talenti."Spirited Charge, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Spirited Charge"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Spiritual Guardian"]
+it = "Guardiano Spirituale"
+tipi = ["General"]
+libro = "acg"
+altro = ["Ability to cast spiritual weapon or spiritual ally", "spirit magic class feature"]
+
+[talenti."Spit Venom"]
+it = "Sputare Veleno"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Splintering Weapon"]
+it = "Arma Scheggiata"
+tipi = ["General"]
+libro = "uc"
+bab = 1
+altro = ["weapon made of primitive material"]
+
+[talenti."Split Hex"]
+it = "Dividere Fatture"
+tipi = ["General"]
+libro = "um"
+classe = { "witch" = 10 }
+
+[talenti."Split Major Hex"]
+it = "Dividere Fatture Maggiori"
+tipi = ["General"]
+libro = "um"
+lic = 18
+talenti = ["Split Hex"]
+
+[talenti."Spontaneous Metafocus"]
+it = "Metafocus Spontaneo"
+tipi = ["General"]
+libro = "um"
+car = { "Car" = 13 }
+altro = ["one metamagic feat", "able to spontaneously cast spells"]
+
+[talenti."Spontaneous Metafocus, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Spontaneous Metafocus"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Spontaneous Nature's Ally"]
+it = "Alleato Naturale Spontaneo"
+tipi = ["General"]
+libro = "acg"
+gradi = { "knowledge (nature)" = 5 }
+altro = ["ability to spontaneously cast cure or inflict spells", "Animal or Plant domain"]
+
+[talenti."Spring Attack"]
+it = "Attacco Rapido"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 13 }
+bab = 4
+talenti = ["Dodge", "Mobility"]
+
+[talenti."Spring Attack, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+bab = 6
+talenti = ["Spring Attack"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Stabbing Shot"]
+it = "Tiro Pugnalante"
+tipi = ["Combat"]
+libro = "apg"
+talenti = ["Rapid Shot"]
+altro = ["elf"]
+
+[talenti."Stage Combatant"]
+it = "Combattente da Palcoscenico"
+tipi = ["Combat"]
+libro = "uc"
+bab = 5
+talenti = ["Weapon Focus"]
+
+[talenti."Staggering Critical"]
+it = "Critico Incapacitante"
+tipi = ["Combat", "Critical"]
+libro = "cr"
+bab = 13
+talenti = ["Critical Focus"]
+
+[talenti."Staggering Fist"]
+it = "Pugno Barcollante"
+tipi = ["Combat"]
+libro = "acg"
+car = { "Des" = 13, "Sag" = 13 }
+bab = 2
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Stalker's Focus"]
+it = "Bersaglio del Cacciatore"
+tipi = ["General"]
+libro = "acg"
+gradi = { "knowledge (nature)" = 3, "survival" = 3 }
+altro = ["no levels in a class that has the animal focus class  feature"]
+
+[talenti."Stalwart"]
+it = "Prestante"
+tipi = ["General"]
+libro = "uc"
+bab = 4
+talenti = ["Diehard", "Endurance"]
+
+[talenti."Stand Still"]
+it = "Impedire il Movimento"
+tipi = ["Combat"]
+libro = "cr"
+talenti = ["Combat Reflexes"]
+
+[talenti."Starlight Summons"]
+it = "Evocazioni della Luce Stellare"
+tipi = ["General"]
+libro = "um"
+talenti = ["Spell Focus"]
+altro = ["able to cast summon nature's ally"]
+
+[talenti."Steadfast Personality"]
+it = "Personalità Incrollabile"
+tipi = ["General"]
+libro = "acg"
+
+[talenti."Stealth Synergy"]
+it = "Sinergia alla Furtività"
+tipi = ["Teamwork"]
+libro = "uc"
+
+[talenti."Stealthy"]
+it = "Furtivo"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Stealthy, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Stealthy"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Steam Caster"]
+it = "Incantatore del Vapore"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Steel Soul"]
+it = "Anima di Ferro"
+tipi = ["General"]
+libro = "apg"
+altro = ["Dwarf", "hardy racial trait"]
+
+[talenti."Step Up"]
+it = "Inseguire"
+tipi = ["Combat"]
+libro = "cr"
+bab = 1
+
+[talenti."Step Up and Strike"]
+it = "Inseguire e Colpire"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Des" = 13 }
+bab = 6
+talenti = ["Following Step", "Step Up"]
+
+[talenti."Still Spell"]
+it = "Incantesimi Immobili"
+tipi = ["Metamagic"]
+libro = "cr"
+
+[talenti."Stoic Pose"]
+it = "Postura Stoica"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Stone Sense"]
+it = "Percezione della Pietra"
+tipi = ["General"]
+libro = "apg"
+gradi = { "perception" = 10 }
+talenti = ["Improved Stonecunning"]
+
+[talenti."Stone Singer"]
+it = "Canto delle Pietre"
+tipi = ["General"]
+libro = "apg"
+car = { "Car" = 13 }
+capacita = ["bardic performance"]
+altro = ["dwarf"]
+
+[talenti."Stone-Faced"]
+it = "Volto di Pietra"
+tipi = ["General"]
+libro = "apg"
+altro = ["Dwarf"]
+
+[talenti."Stony Step"]
+it = "Passo Pietroso"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Stouthearted"]
+it = "Valoroso"
+tipi = ["General"]
+libro = "acg"
+altro = ["Raging song class feature"]
+
+[talenti."Strangler"]
+it = "Talenti/Strangolatore"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 13 }
+talenti = ["Improved Grapple", "Improved Unarmed Strike"]
+altro = ["sneak attack +1d6"]
+
+[talenti."Stretched Wings"]
+it = "Ali Sviluppate"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Strike Back"]
+it = "Colpo di Ritorno"
+tipi = ["Combat"]
+libro = "cr"
+bab = 11
+
+[talenti."Strike Back, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Strike Back"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Strong Comeback"]
+it = "Rimonta Portentosa"
+tipi = ["General"]
+libro = "uc"
+
+[talenti."Strong Comeback, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Strong Comeback"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Stronghold"]
+it = "Roccaforte"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have the Leadership feat", "must lead at least 10 combat-capable followers (such as fighters or rangers)"]
+
+[talenti."Studied Combatant"]
+it = "Combattente Studiato"
+tipi = ["General"]
+libro = "acg"
+car = { "Int" = 13 }
+bab = 6
+talenti = ["Amateur Investigator"]
+altro = ["1 rank in at least one Knowledge skill", "no levels in a class that has the inspiration class feature"]
+
+[talenti."Stunning Assault"]
+it = "Assalto Stordente"
+tipi = ["Combat"]
+libro = "apg"
+car = { "For" = 13 }
+bab = 16
+talenti = ["Power Attack"]
+
+[talenti."Stunning Critical"]
+it = "Critico Stordente"
+tipi = ["Combat", "Critical"]
+libro = "cr"
+bab = 17
+talenti = ["Critical Focus", "Staggering Critical"]
+
+[talenti."Stunning Fist"]
+it = "Pugno Stordente"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 13, "Sag" = 13 }
+bab = 8
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Stunning Fist, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Stunning Fist"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Stunning Pin"]
+it = "Stordire Immobilizzati"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Improved Grapple", "Improved Unarmed Strike", "Stunning Fist"]
+
+[talenti."Summoner's Call"]
+it = "Richiamo del Convocatore"
+tipi = ["General"]
+libro = "apg"
+altro = ["Eidolon class feature"]
+
+[talenti."Sundering Strike"]
+it = "Colpo Spezzante"
+tipi = ["Combat"]
+libro = "apg"
+car = { "For" = 13 }
+bab = 9
+talenti = ["Improved Sunder", "Power Attack"]
+
+[talenti."Sunlight Summons"]
+it = "Evocazioni della Luce Solare"
+tipi = ["General"]
+libro = "um"
+talenti = ["Spell Focus"]
+altro = ["able to cast summon nature's ally"]
+
+[talenti."Superior Summoning"]
+it = "Evocazione Superiore"
+tipi = ["General"]
+libro = "um"
+lic = 3
+talenti = ["Augment Summoning"]
+
+[talenti."Sure Grasp"]
+it = "Presa Salda"
+tipi = ["General"]
+libro = "uc"
+gradi = { "climb" = 1 }
+
+[talenti."Sure and Fleet"]
+it = "Saldo e Agile"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Surge of Success"]
+it = "Impulso di Successo"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Surprise Follow-Through"]
+it = "Incalzare Sorprendente"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Surprise Maneuver"]
+it = "Manovra a Sorpresa"
+tipi = ["General"]
+libro = "acg"
+talenti = ["Combat Expertise"]
+altro = ["sneak attack +3d6 or studied strike +3d6"]
+
+[talenti."Surprise Strike"]
+it = "Colpo a Sorpresa"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Swap Places"]
+it = "Scambiare Posto"
+tipi = ["Combat", "Teamwork"]
+libro = "apg"
+
+[talenti."Swift Aid"]
+it = "Aiutare Rapido"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Int" = 13 }
+bab = 6
+talenti = ["Combat Expertise"]
+
+[talenti."Sword and Pistol"]
+it = "Spada e Pistola"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 13 }
+bab = 6
+talenti = ["Point-Blank Shot", "Rapid Shot", "Snap Shot", "Two-Weapon Fighting"]
+
+[talenti."Sympathetic Rage"]
+it = "Ira Armonica"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Tail Terror"]
+it = "Coda Temibile"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Talented Magician"]
+it = "Malioso Dotato"
+tipi = ["General"]
+libro = "acg"
+altro = ["Major magic rogue talent", "minor magic rogue talent. Benefit: You gain an additional daily use of each of your minor magic", "major magic rogue talents"]
+
+[talenti."Tandem Trip"]
+it = "Sbilanciare in Tandem"
+tipi = ["Combat", "Teamwork"]
+libro = "uc"
+
+[talenti."Tangle Feet"]
+it = "In Mezzo ai Piedi"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Target of Opportunity"]
+it = "Bersaglio di Opportunità"
+tipi = ["Combat", "Teamwork"]
+libro = "uc"
+bab = 6
+talenti = ["Point-Blank Shot"]
+
+[talenti."Taskmaster"]
+it = "Sorvegliante Tirannico"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Taunt"]
+it = "Schernire"
+tipi = ["General"]
+libro = "apg"
+car = { "Car" = 13 }
+altro = ["Small size or smaller"]
+
+[talenti."Team Pickpocketing"]
+it = "Borseggiare in Gruppo"
+tipi = ["Teamwork"]
+libro = "uc"
+gradi = { "bluff" = 1, "sleight of hand" = 1 }
+
+[talenti."Team Up"]
+it = "Unirsi"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Int" = 13 }
+bab = 6
+talenti = ["Combat Expertise", "Gang Up"]
+
+[talenti."Teleport Tactician"]
+it = "Tattico del Teletrasporto"
+tipi = ["Combat"]
+libro = "apg"
+talenti = ["Combat Reflexes", "Disruptive", "Spellbreaker"]
+
+[talenti."Tenacious Survivor"]
+it = "Tenacia del Sopravvissuto"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Tenacious Transmutation"]
+it = "Trasmutazione Tenace"
+tipi = ["General"]
+libro = "apg"
+talenti = ["Spell Focus"]
+
+[talenti."Tengu Raven Form"]
+it = "Forma di Corvo Tengu"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Tengu Wings"]
+it = "Ali Tengu"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Terrorizing Display"]
+it = "Maestria Terrificante"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Thanatopic Spell"]
+it = "Incantesimi Tanatopici"
+tipi = ["Metamagic"]
+libro = "um"
+gradi = { "knowledge (religion)" = 6 }
+talenti = ["Spell Focus"]
+
+[talenti."Theurgy"]
+it = "Teurgia"
+tipi = ["General"]
+libro = "um"
+car = { "Sag" = 13 }
+altro = ["Int or Cha 13", "able to cast 1st-level arcane spells", "able to cast 1st-level divine spells"]
+
+[talenti."Thief of Legend"]
+it = "Ladro Leggendario"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have stolen at least 1", "000 gp worth of treasure without being caught", "kept mementos of these thefts worth at least 500 gp", "or have the Greed background"]
+
+[talenti."Thoughtful Discernment"]
+it = "Discernimento Oculato"
+tipi = ["General"]
+libro = "um"
+altro = ["Discern lies class feature"]
+
+[talenti."Threnodic Spell"]
+it = "Incantesimi Trenodici"
+tipi = ["Metamagic"]
+libro = "um"
+gradi = { "knowledge (religion)" = 6 }
+talenti = ["Spell Focus"]
+
+[talenti."Thrill of the Kill"]
+it = "Brivido dell'Uccisione"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Throw Anything"]
+it = "Lanciare Oggetti"
+tipi = ["Combat"]
+libro = "cr"
+
+[talenti."Throw Anything, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Throw Anything"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Thundering Spell"]
+it = "Incantesimi Tonanti"
+tipi = ["Metamagic"]
+libro = "apg"
+
+[talenti."Tiger Claws"]
+it = "Artigli della Tigre"
+tipi = ["Combat"]
+libro = "uc"
+bab = 6
+talenti = ["Improved Unarmed Strike", "Tiger Style"]
+
+[talenti."Tiger Pounce"]
+it = "Balzo della Tigre"
+tipi = ["Combat"]
+libro = "uc"
+bab = 9
+talenti = ["Improved Unarmed Strike", "Power Attack", "Tiger Claws", "Tiger Style"]
+
+[talenti."Tiger Style"]
+it = "Stile della Tigre"
+tipi = ["Combat", "Style"]
+libro = "uc"
+bab = 3
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Tiring Critical"]
+it = "Critico Affaticante"
+tipi = ["Combat", "Critical"]
+libro = "cr"
+bab = 13
+talenti = ["Critical Focus"]
+
+[talenti."Titan Strike, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Improved Unarmed Strike, Mythic"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Toppling Spell"]
+it = "Incantesimi Sbilancianti"
+tipi = ["Metamagic"]
+libro = "um"
+
+[talenti."Touch of Serenity"]
+it = "Tocco di Serenità"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Sag" = 18 }
+bab = 8
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Toughness"]
+it = "Robustezza"
+tipi = ["General"]
+libro = "cr"
+
+[talenti."Toughness, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Toughness"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Tower Shield Proficiency"]
+it = "Competenza negli Scudi Torre"
+tipi = ["Combat"]
+libro = "cr"
+talenti = ["Shield Proficiency"]
+
+[talenti."Town Tamer"]
+it = "Ripulisci Città"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have 5 ranks in Intimidate", "a personal motivation to clean up a particular town (such as an old friend calling in a favor", "or seeking a place to settle down)", "or you must have the Bounty Hunter or Champion of the People background"]
+
+[talenti."Toxic Recovery"]
+it = "Recupero dalle Tossine"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Trample"]
+it = "Travolgere"
+tipi = ["Combat"]
+libro = "cr"
+gradi = { "ride" = 1 }
+talenti = ["Mounted Combat"]
+
+[talenti."Trample, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Trample"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Trap Wrecker"]
+it = "Distruttore di Trappole"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Trapper's Setup"]
+it = "Predisporre Trappole"
+tipi = ["General"]
+libro = "uc"
+gradi = { "craft (traps)" = 5 }
+
+[talenti."Tree Hanger"]
+it = "Penzolare dai Rami"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Trick Riding"]
+it = "Cavallerizzo"
+tipi = ["Combat"]
+libro = "apg"
+gradi = { "ride" = 9 }
+talenti = ["Mounted Combat"]
+
+[talenti."Tripping Staff"]
+it = "Bastone Sbilanciante"
+tipi = ["Combat"]
+libro = "um"
+car = { "Int" = 13 }
+bab = 6
+talenti = ["Combat Expertise", "Improved Trip", "Weapon Focus"]
+
+[talenti."Tripping Staff, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Tripping Staff"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Tripping Strike"]
+it = "Colpo Sbilanciante"
+tipi = ["Combat"]
+libro = "apg"
+car = { "Int" = 13 }
+bab = 9
+talenti = ["Combat Expertise", "Improved Trip"]
+
+[talenti."Tripping Twirl"]
+it = "Giravolta Sbilanciante"
+tipi = ["Combat"]
+libro = "um"
+car = { "Int" = 13 }
+bab = 12
+talenti = ["Combat Expertise", "Improved Trip", "Tripping Staff", "Weapon Focus", "Weapon Specialization"]
+
+[talenti."Triton Portal"]
+it = "Portale del Tritone"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."True Love"]
+it = "Vero Amore"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have found love with a person you can't be with", "have a current lover", "or have the Current Lover", "For Love", "or The Lover background. Possible complications include distance", "your love being with another", "your feelings being unrequited", "or your relationship being forbidden"]
+
+[talenti."Tunnel Rat"]
+it = "Ratto dei Tunnel"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Turn Undead"]
+it = "Scacciare Non Morti"
+tipi = ["General"]
+libro = "cr"
+capacita = ["channel positive energy"]
+
+[talenti."Turn Undead, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Turn Undead"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Twin Thunders"]
+it = "Doppi Tuoni"
+tipi = ["Combat"]
+libro = "uc"
+altro = ["Dwarf or gnome", "defensive training racial trait", "Two-Weapon Fighting or flurry of blows class feature", "Weapon Focus with both wielded weapons"]
+
+[talenti."Twin Thunders Flurry"]
+it = "Raffica di Doppi Tuoni"
+tipi = ["Combat"]
+libro = "uc"
+bab = 6
+talenti = ["Improved Two-Weapon Fighting", "Two-Weapon Fighting", "Twin Thunders"]
+altro = ["Dwarf or gnome", "defensive training racial trait", "or flurry of blows class feature", "Weapon Focus with both wielded weapons"]
+
+[talenti."Twin Thunders Master"]
+it = "Maestro dei Doppi Tuoni"
+tipi = ["Combat"]
+libro = "uc"
+bab = 9
+talenti = ["Improved Two-Weapon Fighting", "Two-Weapon Fighting", "Twin Thunders", "Twin Thunders Flurry"]
+altro = ["Dwarf or gnome", "defensive training racial trait", "or flurry of blows class feature", "Weapon Focus with both wielded weapons"]
+
+[talenti."Twinned Feint"]
+it = "Finta Gemella"
+tipi = ["Combat"]
+libro = "acg"
+car = { "Car" = 13 }
+
+[talenti."Twist Away"]
+it = "Ruotare Via"
+tipi = ["General"]
+libro = "acg"
+altro = ["Evasion"]
+
+[talenti."Two-Fisted Drinker, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Quick Draw"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Two-Handed Thrower"]
+it = "Lanciare a Due Mani"
+tipi = ["Combat"]
+libro = "uc"
+car = { "For" = 15 }
+
+[talenti."Two-Weapon Defense"]
+it = "Difendere con Due Armi"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 15 }
+talenti = ["Two-Weapon Fighting"]
+
+[talenti."Two-Weapon Defense, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Two-Weapon Defense"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Two-Weapon Feint"]
+it = "Fintare con Due Armi"
+tipi = ["Combat"]
+libro = "uc"
+car = { "Des" = 15, "Int" = 13 }
+talenti = ["Combat Expertise", "Two-Weapon Fighting"]
+
+[talenti."Two-Weapon Fighting"]
+it = "Combattere con Due Armi"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 15 }
+
+[talenti."Two-Weapon Fighting, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Two-Weapon Fighting"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Two-Weapon Rend"]
+it = "Attacco Lacerante a Due Armi"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 17 }
+bab = 11
+talenti = ["Double Slice", "Improved Two-Weapon Fighting", "Two-Weapon Fighting"]
+
+[talenti."Two-Weapon Rend, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Two-Weapon Rend"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Ultimate Mercy"]
+it = "Indulgenza Suprema"
+tipi = ["General"]
+libro = "um"
+car = { "Car" = 19 }
+talenti = ["Greater Mercy"]
+capacita = ["lay on hands", "mercy"]
+
+[talenti."Ultimate Resolve"]
+it = "Fermezza Suprema"
+tipi = ["General"]
+libro = "um"
+altro = ["Aura of resolve class feature"]
+
+[talenti."Umbral Scion"]
+it = "Discendenza Oscura"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Uncanny Alertness"]
+it = "Allerta Prodigiosa"
+tipi = ["General"]
+libro = "um"
+talenti = ["Alertness"]
+
+[talenti."Uncanny Concentration"]
+it = "Concentrazione Prodigiosa"
+tipi = ["General"]
+libro = "um"
+talenti = ["Combat Casting"]
+
+[talenti."Uncanny Defense"]
+it = "Difesa Prodigiosa"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Undead Master"]
+it = "Padrone dei Non Morti"
+tipi = ["General"]
+libro = "um"
+talenti = ["Spell Focus"]
+altro = ["the ability to cast animate dead or command undead"]
+
+[talenti."Undead Master, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Undead Master"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Under and Over"]
+it = "Scivolata Beffarda"
+tipi = ["Combat"]
+libro = "apg"
+talenti = ["Agile Maneuvers"]
+altro = ["Small size or smaller"]
+
+[talenti."Underfoot"]
+it = "Sgattaiolare"
+tipi = ["Combat"]
+libro = "apg"
+talenti = ["Dodge", "Mobility"]
+altro = ["Small size or smaller"]
+
+[talenti."Undersized Mount"]
+it = "Cavalcatura Ridotta"
+tipi = ["Combat"]
+libro = "acg"
+gradi = { "ride" = 1 }
+
+[talenti."Unfettered Familiar"]
+it = "Famiglio Senza Restrizioni"
+tipi = ["General"]
+libro = "acg"
+lic = 5
+altro = ["familiar class feature"]
+
+[talenti."Unforgotten"]
+it = "Indimenticato"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have a close relative", "spouse", "or other person dear to your heart who never returned from a journey", "was captured", "or otherwise vanished with little trace", "or you have the Major Disaster background"]
+
+[talenti."Unsanctioned Detection"]
+it = "Individuazione Non Autorizzata"
+tipi = ["General"]
+libro = "um"
+altro = ["Detect evil class feature"]
+
+[talenti."Unsanctioned Knowledge"]
+it = "Conoscenza Non Autorizzata"
+tipi = ["General"]
+libro = "um"
+car = { "Int" = 13 }
+altro = ["ability to cast 1st-level paladin spells"]
+
+[talenti."Unseat"]
+it = "Disarcionare"
+tipi = ["Combat"]
+libro = "cr"
+car = { "For" = 13 }
+gradi = { "ride" = 1 }
+bab = 1
+talenti = ["Mounted Combat", "Power Attack", "Improved Bull Rush"]
+
+[talenti."Unseat, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Unseat"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Valiant Vault, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+gradi = { "ride" = 5 }
+talenti = ["Mounted Combat", "Ride-By Attack"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Vast Hatred"]
+it = "Odio Immenso"
+tipi = ["Combat"]
+libro = "arg"
+
+[talenti."Vengeance"]
+it = "Vendetta"
+tipi = ["Story"]
+libro = "ucampaign"
+altro = ["You must have a close family member or other loved one slain by a specific challenging foe or that foe's minions", "or have the Raiders or Vengeance background"]
+
+[talenti."Vermin Heart"]
+it = "Amico dei Parassiti"
+tipi = ["General"]
+libro = "apg"
+altro = ["Wild empathy class feature"]
+
+[talenti."Versatile Channeler"]
+it = "Incanalare Versatile"
+tipi = ["General"]
+libro = "um"
+capacita = ["channel energy"]
+altro = ["necromancer or neutrally aligned cleric (see below)"]
+
+[talenti."Vicious Stomp"]
+it = "Mossa Infame"
+tipi = ["Combat"]
+libro = "uc"
+talenti = ["Combat Reflexes", "Improved Unarmed Strike"]
+
+[talenti."Vigilant Eidolon"]
+it = "Eidolon Vigile"
+tipi = ["General"]
+libro = "um"
+altro = ["Eidolon class feature"]
+
+[talenti."Vital Strike"]
+it = "Colpo Vitale"
+tipi = ["Combat"]
+libro = "cr"
+bab = 6
+
+[talenti."Vital Strike, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Vital Strike"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Voice of the Sibyl"]
+it = "Voce della Sibilla"
+tipi = ["General"]
+libro = "um"
+car = { "Car" = 15 }
+
+[talenti."Voice of the Sibyl, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Voice of the Sibyl"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."War Blessing"]
+it = "Benedizione da Battaglia"
+tipi = ["General"]
+libro = "acg"
+altro = ["Mystery or domain class feature"]
+
+[talenti."War Singer"]
+it = "Cantore di Guerra"
+tipi = ["General"]
+libro = "apg"
+car = { "Car" = 13 }
+capacita = ["bardic performance"]
+altro = ["half-orc or orc"]
+
+[talenti."Warrior Priest"]
+it = "Prete Combattente"
+tipi = ["General"]
+libro = "um"
+capacita = ["cast divine spells"]
+altro = ["domain or mystery class feature"]
+
+[talenti."Warrior Priest, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Warrior Priest"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Water Skinned"]
+it = "Pelle d'Acqua"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Wave Strike"]
+it = "Colpo Infido"
+tipi = ["Combat"]
+libro = "uc"
+gradi = { "bluff" = 1 }
+altro = ["Weapon expertise class feature or Quick Draw"]
+
+[talenti."Weapon Finesse"]
+it = "Arma Accurata"
+tipi = ["Combat"]
+libro = "cr"
+
+[talenti."Weapon Finesse, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Weapon Finesse"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Weapon Focus"]
+it = "Arma Focalizzata"
+tipi = ["Combat"]
+libro = "cr"
+bab = 1
+
+[talenti."Weapon Focus, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Weapon Focus"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Weapon Specialization"]
+it = "Arma Specializzata"
+tipi = ["Combat"]
+libro = "cr"
+classe = { "fighter" = 4 }
+talenti = ["Weapon Focus"]
+
+[talenti."Weapon Specialization, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Weapon Specialization"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Weapon of the Chosen"]
+it = "Arma del Prescelto"
+tipi = ["Combat"]
+libro = "acg"
+altro = ["Weapon Focus with deity's favored weapon", "must worship", "receive spells from a deity"]
+
+[talenti."Well-Prepared"]
+it = "Ben Preparato"
+tipi = ["General"]
+libro = "apg"
+altro = ["Halfling"]
+
+[talenti."Whip Mastery"]
+it = "Maestria con la Frusta"
+tipi = ["Combat"]
+libro = "uc"
+bab = 2
+talenti = ["Weapon Focus"]
+
+[talenti."Whirlwind Attack"]
+it = "Attacco Turbinante"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 13, "Int" = 13 }
+bab = 4
+talenti = ["Combat Expertise", "Dodge", "Mobility", "Spring Attack"]
+
+[talenti."Widen Spell"]
+it = "Incantesimi Ampliati"
+tipi = ["Metamagic"]
+libro = "cr"
+
+[talenti."Wild Speech"]
+it = "Lingua Selvaggia"
+tipi = ["General"]
+libro = "um"
+classe = { "druid" = 6 }
+capacita = ["wild shape"]
+
+[talenti."Wind Stance"]
+it = "Posizione Velata"
+tipi = ["Combat"]
+libro = "cr"
+car = { "Des" = 15 }
+bab = 6
+talenti = ["Dodge"]
+
+[talenti."Wingover"]
+it = "Virare"
+tipi = ["Monster"]
+libro = "b1"
+altro = ["Fly speed"]
+
+[talenti."Wings of Air"]
+it = "Ali di Aria"
+tipi = ["General"]
+libro = "arg"
+
+[talenti."Winter's Strike"]
+it = "Colpo dell'Inverno"
+tipi = ["Combat"]
+libro = "acg"
+gradi = { "knowledge (nature)" = 5 }
+talenti = ["Vital Strike"]
+altro = ["Nature Magic or the ability to cast druid or ranger spells"]
+
+[talenti."Witch Knife"]
+it = "Coltello del Fattucchiere"
+tipi = ["General"]
+libro = "um"
+altro = ["Witch class"]
+
+[talenti."Witch Knife, Mythic"]
+it = ""
+tipi = ["Mythic"]
+libro = "ma"
+talenti = ["Witch Knife"]
+altro = ["grado mitico (Mythic Adventures)"]
+
+[talenti."Word of Healing"]
+it = "Parola di Guarigione"
+tipi = ["General"]
+libro = "um"
+capacita = ["lay on hands"]
+
+[talenti."Wounded Paw Gambit"]
+it = "Gambetto della Zampa Ferita"
+tipi = ["Combat", "Teamwork"]
+libro = "acg"
+gradi = { "bluff" = 5 }
+talenti = ["Broken Wing Gambit"]

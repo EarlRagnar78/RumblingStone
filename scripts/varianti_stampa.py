@@ -20,7 +20,6 @@ import argparse
 import json
 import random
 import statistics
-import subprocess
 import sys
 from pathlib import Path
 
@@ -29,6 +28,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 
 import export_booklet_typst as ex  # noqa: E402
 import misura_stampa as ms  # noqa: E402
+import typst_motore  # noqa: E402
 
 #: nome → (valori per il tema, cosa cambia rispetto al libro di sempre, quali pagine mostrare)
 VARIANTI: dict[str, tuple[dict[str, str], str, str]] = {
@@ -49,16 +49,12 @@ def compila_variante(mp: Path, nome: str, valori: dict[str, str], cartella: Path
     pdf = cartella / f"{nome}.pdf"
     typ.write_text(ex.sorgente(man, mp.parent, True, formato=man.get("formato", "a4")),
                    encoding="utf-8")
-    ingressi = [x for k, v in valori.items() for x in ("--input", f"{k}={v}")]
+    ingressi = dict(valori)
     try:
-        cmd = ["typst", "compile", *ms.SOLO_FONT_DEL_REPO, *ingressi, "--root", str(ROOT),
-               "--package-path", str(ex.PACCHETTI)]
-        esito = subprocess.run(cmd + [str(typ), str(pdf)], capture_output=True, text=True)
-        if esito.returncode != 0 and "internal error" in esito.stderr:
-            esito = subprocess.run(cmd + ["--no-pdf-tags", str(typ), str(pdf)],
-                                   capture_output=True, text=True)
-        if esito.returncode != 0:
-            raise RuntimeError(f"{nome}: typst non compila\n{esito.stderr[-1500:]}")
+        esito = typst_motore.compila(typ, pdf, root=ROOT, font=ex.FONTS, pacchetti=ex.PACCHETTI,
+                                     solo_font_del_repo=True, ingressi=ingressi)
+        if not esito.ok:
+            raise RuntimeError(f"{nome}: typst non compila\n{esito.errore[-1500:]}")
         schede = schede_con(typ, ingressi)
         pagine_leggi = interroga(typ, ingressi, "query(<leggi>).map(m => m.location().page())")
     finally:
@@ -72,17 +68,13 @@ def compila_variante(mp: Path, nome: str, valori: dict[str, str], cartella: Path
     return pdf
 
 
-def interroga(typ: Path, ingressi: list[str], espressione: str):
-    """Un `typst eval` sul documento, con gli stessi --input della variante."""
-    cmd = ["typst", "eval", "--in", str(typ), *ms.SOLO_FONT_DEL_REPO, *ingressi,
-           "--root", str(ROOT), "--package-path", str(ex.PACCHETTI), espressione]
-    esito = subprocess.run(cmd, capture_output=True, text=True)
-    if esito.returncode != 0:
-        raise RuntimeError(f"typst eval: {esito.stderr[-1000:]}")
-    return json.loads(esito.stdout or "[]")
+def interroga(typ: Path, ingressi: dict[str, str], espressione: str):
+    """Un `typst eval` sul documento, con gli stessi ingressi della variante."""
+    return typst_motore.valuta(typ, espressione, root=ROOT, font=ex.FONTS, pacchetti=ex.PACCHETTI,
+                               solo_font_del_repo=True, ingressi=ingressi)
 
 
-def schede_con(typ: Path, ingressi: list[str]) -> list[dict]:
+def schede_con(typ: Path, ingressi: dict[str, str]) -> list[dict]:
     """Come ``misura_stampa.interroga_schede``, con gli stessi --input della variante."""
     return ms.accoppia_segnaposti(interroga(typ, ingressi, (
         "query(selector(<sb-inizio>).or(<sb-fine>))"

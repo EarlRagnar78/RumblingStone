@@ -93,6 +93,7 @@ import statistics
 import subprocess
 import sys
 from collections import Counter
+from functools import lru_cache
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -1069,36 +1070,42 @@ CARATTERISTICHE = ("forza", "destrezza", "costituzione", "intelligenza",
 #: è il nome 5e/PF, e questa campagna è 3.5. Quindicesimo caso della stessa
 #: famiglia — un criterio largo che si inventa copertura — e il primo in cui a
 #: trovarlo è stato il controllo nuovo prima del commit, non una PR dopo.
-ABILITA = ("acrobazia", "addestrare animali", "artigianato", "artista della fuga",
-           "ascoltare", "camuffare", "cavalcare", "cercare", "concentrazione",
-           "decifrare scritture", "diplomazia", "disattivare congegni",
-           "equilibrio", "falsificare", "guarire", "intimidire",
-           "nascondersi", "nuotare", "osservare", "percepire intenzioni",
-           "professione", "raccogliere informazioni", "rapidità di mano",
-           "saltare", "sapienza magica", "scalare", "scassinare serrature",
-           "seguire tracce", "sopravvivenza", "utilizzare congegni magici",
-           "valutare")
-_TUTTE = "|".join(re.escape(x) for x in CARATTERISTICHE + ABILITA)
-_CAR = "|".join(re.escape(x) for x in CARATTERISTICHE)
-_ABI = "|".join(re.escape(x) for x in ABILITA)
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore import sistemi as _S  # noqa: E402
 
-FORME_CARATTERISTICA = (
-    ("F1 punteggio nello statblock", re.compile(rf"\b({_CAR})\s+(\d{{1,2}})\b", re.I), None),
-    ("F2 abilità col modificatore", re.compile(rf"\b({_ABI})\s*[+-]\d{{1,2}}\b", re.I), None),
-    ("F3 prova con una CD", re.compile(
-        rf"\b(?:prov[ae]|tiri?|TS|test|verifich?[ae])\s+(?:di|su|sulla|sul|della|del)\s+({_TUTTE})\b", re.I),
-     re.compile(r"\b(?:CD|DC)\s*\d+", re.I)),
-    ("F4 modificatore o bonus", re.compile(
-        rf"\b(?:mod\.?|modificatore|bonus|malus|penalità)\s+(?:di|a|alla|al)\s+({_TUTTE})\b", re.I), None),
-)
+#: Le abilità del sistema predefinito (3.5), dal plugin (ADR-0111, L3): prima
+#: erano scritte qui; i moduli PF1e usano le loro (`forme_caratteristica`).
+ABILITA = tuple(_S.abilita()["nomi"])
+
+
+@lru_cache(maxsize=None)
+def forme_caratteristica(sistema: "str | None" = None) -> tuple:
+    """Le quattro forme, con le abilità di `sistema` (predefinito: 3.5)."""
+    abilita = tuple(_S.abilita(sistema)["nomi"]) if sistema else ABILITA
+    tutte = "|".join(re.escape(x) for x in CARATTERISTICHE + abilita)
+    car = "|".join(re.escape(x) for x in CARATTERISTICHE)
+    abi = "|".join(re.escape(x) for x in abilita)
+    return (
+        ("F1 punteggio nello statblock", re.compile(rf"\b({car})\s+(\d{{1,2}})\b", re.I), None),
+        ("F2 abilità col modificatore", re.compile(rf"\b({abi})\s*[+-]\d{{1,2}}\b", re.I), None),
+        ("F3 prova con una CD", re.compile(
+            rf"\b(?:prov[ae]|tiri?|TS|test|verifich?[ae])\s+(?:di|su|sulla|sul|della|del)\s+({tutte})\b", re.I),
+         re.compile(r"\b(?:CD|DC)\s*\d+", re.I)),
+        ("F4 modificatore o bonus", re.compile(
+            rf"\b(?:mod\.?|modificatore|bonus|malus|penalità)\s+(?:di|a|alla|al)\s+({tutte})\b", re.I), None),
+    )
+
+
+FORME_CARATTERISTICA = forme_caratteristica()
 
 
 def controlla_caratteristiche(f: Path) -> list[str]:
     """Caratteristiche e abilità maiuscole, cercate per forma e non per parola."""
     rel = f.relative_to(ROOT) if ROOT in f.parents else f
     fuori: list[str] = []
+    forme = forme_caratteristica(_S.sistema_di(rel)) if ROOT in f.parents else FORME_CARATTERISTICA
     for n, riga in enumerate(f.read_text(encoding="utf-8", errors="ignore").splitlines(), 1):
-        for nome, rx, condizione in FORME_CARATTERISTICA:
+        for nome, rx, condizione in forme:
             if condizione is not None and not condizione.search(riga):
                 continue
             for m in rx.finditer(riga):

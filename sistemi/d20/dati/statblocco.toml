@@ -1,0 +1,9 @@
+# sistemi/d20/dati/statblocco.toml — i campi del blocco ```statblock (ADR-0111, L5d)
+#
+# Gli stessi in 3.5 e PF1e: GS, CA, pf e TS sono campi della famiglia d20.
+# Spostati senza cambiarli da scripts/dmcore/statblock.py (2026-11-07).
+
+obbligatori = ["gs", "ca", "pf", "ts"]
+ammessi = ["nome", "gs", "tipo", "taglia", "spazio", "portata", "ca", "ca-dettaglio", "pf", "pf-dado", "ts", "velocita", "iniziativa", "sensi", "attributi", "attacchi", "voci", "tattica", "fonte"]
+# campi che si ripetono e fanno una lista
+liste = ["attacchi", "voci"]

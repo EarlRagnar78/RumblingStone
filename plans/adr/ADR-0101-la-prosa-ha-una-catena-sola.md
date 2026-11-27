@@ -87,7 +87,7 @@ vere fra ARC-07 e ARC-08 ed è diventata un cancello.
 
 - Un agente che riscrive un box ha un promemoria (`dm.py prosa` senza azione)
   e una riga in più nella checklist di `rumblingstone-narrative-style`.
-- `docs/ARCHITETTURA.md` §10 disegna la catena, i casi d'uso in sequenza e le
+- `docs/explanation/ARCHITETTURA.md` §10 disegna la catena, i casi d'uso in sequenza e le
   dipendenze fra gli script.
 - Un test (`test_dm_prosa.py`) tiene l'ordine delle azioni uguale a questa
   tabella: cambiare la catena vuol dire cambiare l'ADR.

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "sistemi.schema.json",
+  "title": "Configurazione dei sistemi (sistemi.toml)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "progetto"
+  ],
+  "properties": {
+    "progetto": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "predefinito",
+        "attivi"
+      ],
+      "properties": {
+        "predefinito": {
+          "type": "string"
+        },
+        "attivi": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "uniqueItems": true
+        },
+        "rinforzo": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "uniqueItems": true
+        }
+      }
+    },
+    "moduli": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "opzioni": {
+      "type": "object",
+      "properties": {
+        "pf1e": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "traccia_pe": {
+              "enum": [
+                "lenta",
+                "media",
+                "veloce"
+              ]
+            },
+            "velocita_tesoro": {
+              "enum": [
+                "lenta",
+                "media",
+                "veloce"
+              ]
+            }
+          }
+        }
+      },
+      "additionalProperties": {
+        "type": "object"
+      }
+    },
+    "ambientazioni": {
+      "type": "object"
+    }
+  }
+}

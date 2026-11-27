@@ -45,20 +45,20 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
 
 | Arc | Fase | Stato | March Clock | PG Lv | Note |
 |---|---|---|---|---|---|
-| 00 Setup RHoD | ✅ | completato | Day 0 | 5 | — |
-| 01 Miniera | ✅ | completato | — | 6 | — |
-| 02 Scaladossa-abbattor-funghi | ✅ | completato | — | 7 | — |
-| 03 La Cittadella | ✅ | completato | — | 8 | — |
-| 04 Tomba di Belkram | ✅ | completato | — | 9 | — |
-| 05 Stanza Runica | ✅ | completato | — | 10 | — |
-| 06 Corona di Adamantio | ✅ | completato | — | 11 | — |
-| 07 Portale della Forgia Eterna | 🟡 | **in corso** | — | 13 (D8) | Giocati: Forgia (P1-P2), Piano del Fuoco/Topazio (P3), viaggio spirituale Hella+Durik (P3B-spirito); **in corso: Piano della Terra (P4)** |
+| 00 Setup RHoD | ✅ | completato | Day 0 | 8 | — |
+| 01 Miniera | ✅ | completato | — | 10-11 | — |
+| 02 Scaladossa-abbattor-funghi | ✅ | completato | — | 11 | — |
+| 03 La Cittadella | ✅ | completato | — | 11 | — |
+| 04 Tomba di Belkram | ✅ | completato | — | 12 | — |
+| 05 Stanza Runica | ✅ | completato | — | 12 | — |
+| 06 Corona di Adamantio | ✅ | completato | — | 13 | — |
+| 07 Portale della Forgia Eterna | 🟡 | **in corso** | — | 13 (14 dai PX, al primo riposo dopo Hammerfist) | Giocati: Forgia (P1-P2), Piano del Fuoco/Topazio (P3), viaggio spirituale Hella+Durik (P3B-spirito); **in corso: Piano della Terra (P4)** |
 | 07 P3B Resurrezione di Hella + P5 Viaggio 1.000 anni | ⬜ | da giocare | — | 13 | Si gioca DOPO la Terra (ARC-07 D2); raccordo D16 (Rubino) riporta i PG al 1372, Cuore della Montagna → ARC-08 |
 | 08 Battaglia di Hammerfist | ⬜ | **pianificato — canone preparato, NON giocato** | **Day 19 (target sync)** | 13 (consolida, D9) | Esito atteso: vittoria, Cerimonia 100 Asce, Custodi Eterni (piano ARC-08 §0, E1-E8) |
 | 09 P1A Quest Hella (Cerchio Sacro) | ⬜ | **preparato in anticipo** | Day 20-30 window | 13 | Deadline Day 30 |
 | 09 P1B Cerchio Treant | ⬜ | **preparato in anticipo** | Day 22-28 | 13 | — |
 | 09 P1C Rituale Hella | ⬜ | **preparato in anticipo** | Day 25-30 | 13 | — |
-| 09 P2 Rhest (Saarvith + Regiarix) | ⬜ | **preparato in anticipo** | Day 25-32 | 13 | -1 drago se fatto |
+| 09 P2 Lhesper (Saarvith + Regiarix) | ⬜ | **preparato in anticipo** | Day 25-32 | 13 | -1 drago se fatto |
 | 09 P2A Torre Invisibile (Zalkatar) | ⬜ | **preparato in anticipo** | Day 28-35 | 13 | -1 drago se fatto |
 | 09 P2B Torneo di Dauth (Tordek) | ⬜ | **preparato in anticipo** | Day 25-34 | 13 | +300 mercenari nani |
 | 09 P2C Salvatore Mercante | ⬜ | **preparato in anticipo** | Day 28-36 | 13 | Sal clock 0/6 |
@@ -106,7 +106,7 @@ Cruscotto sintetico. Aggiornato a fine sessione. Vedi sezioni successive per det
   companion. The earlier "stone rhinoceros, DR 5/adamantine, animated" label
   was a mix-up with Durik. DM clarified 2026-07-03.)
 - Therysol (Tiefling Half-Dragon NPC, **she** — born Ysolde, see `Bestiario/png/Therysol/`; traveling separately, hunting Il Collezionista's guild)
-- **Maestro Tempestas** (Half-elf Bard 12/Stormsinger 2 [Frostburn], GS 14, recurring messenger of Rethmar; canonized 2026-05-04 as the "bard storm caller" who helped the party escape Lorana's city in Arc 00 — vedi `Bestiario/png/Tempestas/Tempestas.md`). Not constantly present; drops in via *Shadow Walk* every 1–2 sessions with intel.
+- **Maestro Tempestas** (Half-elf Bard 12/Stormsinger 3 [Frostburn], GS 15, recurring messenger of Rethmar; canonized 2026-05-04 as the "bard storm caller" who helped the party escape Lorana's city in Arc 00 — vedi `Bestiario/png/Tempestas/Tempestas.md`). Not constantly present; drops in via *Shadow Walk* every 1–2 sessions with intel.
 - **Lirien Amaranti** — «Il Giullare Spezzato» (Mezzelfo CN, Ladro-Scout 4/
   Bardo 1, GS 4; canonizzato 2026-07-20 — vedi `Bestiario/png/Lirien/Lirien.md`).
   NON viaggia col party: PNG ricorrente urbano (Rethmar, quartiere basso —
@@ -148,11 +148,11 @@ Two independent clocks drive Arc 09:
 | 8–9 | **Skull Gorge bridge** — crossed intact (PG did NOT sabotage, confirmed) | ✅ Past |
 | 12–13 | Drellin's Ferry equivalent falls (burned) | ✅ Past |
 | **19** | **Terrelton equivalent falls** | 🎯 **SYNC POINT = End of Battle of Hammerfist** |
-| 25 | Marth Fen / Blackfens (Rhest area) | ⏳ Pending |
+| 25 | Marth Fen / Lhespenbog (Lhesper area) | ⏳ Pending |
 | 33–35 | Elsir Crossroads / Channath Crocevia | ⏳ Pending |
 | 35-37 | **Sonjak halt** — aberrazioni experiments + supply convoy wait | ⏳ Pending |
 | 40 | Notte dei Drow / advance scout phase (Fase 0 begins) | ⏳ Pending |
-| **42** | **Horde arrives at Rethmar (ex-Brindol) and encamps** | 🎯 **Rethmar assault begins** |
+| **42** | **Horde arrives at Rethmar and encamps** | 🎯 **Rethmar assault begins** |
 <!-- /gen:state:waypoints -->
 
 <!-- gen:state:march_clock -->
@@ -167,7 +167,7 @@ trascorso.** Terrelton cadrà mentre la Battaglia di Hammerfist si chiude, e la
 Battaglia **non è stata giocata**. Il Giorno 19 non è «dove siamo»: è **dove il
 calendario tornerà**, perché i PG viaggiano indietro nel tempo nel P5 e
 riemergono al Cuore della Montagna al Giorno 3 dell'orologio interno, che è il
-March Clock Day 18-19 (`ARC08-00-INDICE` §17-19; `ARC07-DEF-5` §94; §0 riga «Day
+March Clock Day 18-19 (`ARC08-00-INDICE` §17-19; `ARC07-DEF-5` §0-bis; §0 riga «Day
 19 (target sync)»). *Il calendario avanti non è un difetto: è la Forgia Eterna
 che fa il suo mestiere — DM 2026-09-11, D3.*
 
@@ -185,7 +185,7 @@ che fa il suo mestiere — DM 2026-09-11, D3.*
 | Giganti + Ogre + Ettin | 180 | NO PG alliance — stay with Red Hand |
 | Forze Alate (Manticore, Wyvern, Hell Hounds, Chimera) | 140 | |
 | Casters Mano Rossa (War Adepts, Blue, Warpriests di Tiamat) | 55 | |
-| **Dragons (5 AP-original upscaled)** | 5 | Abithriax (Red adult) / Regiarix (Black young, Rhest) / Ozyrrandion (Green adult, Tower — colore RHoD) / **Tyrgarun (Blue Old, CR 18 — sky-terror of the battle, NOT Azarr Kul's mount, D11 v2)** / **Fauci di Palude** (Black adult, Hammerfist vanguard — **conditional branch, D10, not yet resolved**: default = flees gravely wounded, may return later as a narrative hook, not guaranteed at Rethmar; PG-kill branch = dies at Hammerfist, −1 dragon, see §2.3) |
+| **Dragons (5 AP-original upscaled)** | 5 | Abithriax (Red adult) / Regiarix (Black young, Lhesper) / Ozyrrandion (Green adult, Tower — colore RHoD) / **Tyrgarun (Blue Very Old, CR 19 — sky-terror of the battle, NOT Azarr Kul's mount, D11 v2)** / **Fauci di Palude** (Black adult, Hammerfist vanguard — **conditional branch, D10, not yet resolved**: default = flees gravely wounded, may return later as a narrative hook, not guaranteed at Rethmar; PG-kill branch = dies at Hammerfist, −1 dragon, see §2.3) |
 | **Draconic spawn = Razorfiend (Tiamat colors)** | 8 | Assigned to Wyrmlord villains upscaled — **tier élite CR 13 «Blackspawn Alfa»** (`Bestiario/mostri/razorfiend-blackspawn-alfa-cr13.md`, DM 2026-07-20); i razorfiend CR 8-9 restano truppa d'ondata |
 | Compagnia Drow di Sonjak | 305 | |
 | Githyanki di Vaereth | 375 | |
@@ -215,7 +215,7 @@ B1 (not yet written), not in this tracker.
 | Il Collezionista intervenes | +300 Rakshasa cultists |
 | PG destroy Skull Gorge bridge | (N/A — already crossed intact) |
 | PG sabotage Centaur/Loxo → revolt | −480 horde |
-| PG defeat Regiarix at Rhest | −1 dragon, −2 Razorfiend |
+| PG defeat Regiarix at Lhesper | −1 dragon, −2 Razorfiend |
 | PG defeat Ozyrrandion at Tower | −1 dragon |
 | PG kill Fauci di Palude at Hammerfist (D10 alternate branch, before he flees under 50 hp) | −1 dragon (removed from Rethmar pool entirely) |
 | Fauci di Palude flees under 50 hp (D10 **default** branch — Hammerfist Schede §1 Tattiche) | No change to horde total; he is simply absent from Rethmar unless a later narrative hook brings him back (piano ARC-08 C2/EVENT-DECK, not yet written) |
@@ -266,7 +266,7 @@ Difensori con la stessa metodologia dual-clock di §2 qui sopra).
 | Worst (Ghostlord ostile, Xal'thor allea, 0 quest) | 12,700 | 2,200 | **5.8:1** ☠ |
 | Baseline (0 quest) | 9,400 | 2,200 | **4.3:1** |
 | Medio (2–3 quest + sabotaggi parziali) | 8,000 | 2,620 | **3.1:1** |
-| Ottimale (tutte quest + Rhest + Tower) | 6,800 | 3,770 | **1.80:1** |
+| Ottimale (tutte quest + Lhesper + Tower) | 6,800 | 3,770 | **1.80:1** |
 | Leggendario (ottimale + Ghostlord redento + Collezionista stop) | 6,400 | 4,370 | **1.46:1** |
 <!-- /gen:state:scenari -->
 
@@ -307,7 +307,7 @@ the listed consequence triggers.
 | Salvatore "Sal" della Luna d'Argento | 🔴 attivo | Desert road, Cannath Vale → Rethmar (Shaar) | Profile party's artifacts and magical defenses; plant Sabotage Oil on weapons before Rethmar; deliver living statues to Varis | 0/6 | Sabotage Oil applied — weapon TS failure risk at Phase 3 boss; Phase 4 statue activation proceeds at full strength |
 | Il Collezionista (Rakshasa) | 🔴 attivo | Mobile — last seen brokering with drow | Acquire the Crown's spare gem before party can use it; manipulate Conte Valerius | 5/8 | Sponsors anti-party legal pressure; Conte Valerius freezes assets |
 | Zalkatar (Illithid Warlock) | 🔴 attivo | Invisible Tower, Dauth region | Mind-strip a captured githyanki for fleet intel | 6/8 | Tower goes mobile; harder to find next session |
-| Wyrmlord Saarvith + Regiarix | 🔴 attivo | Lake Rhest ruins | Rebuild dragonrider corps from black dragon spawn | 3/8 | Rhest becomes a fortified war camp; CR +1 to assault |
+| Wyrmlord Saarvith + Regiarix | 🔴 attivo | Lhesper ruins | Rebuild dragonrider corps from black dragon spawn | 3/8 | Lhesper becomes a fortified war camp; CR +1 to assault |
 | Xal'thor (Illithid Coordinator, psionic) | 🔴 attivo | En route with an Illithid invasion force (psionic thralls, larvae, a small core of dominated Githyanki — NOT the free Githyanki dragon-rider force led by Vaereth, which is a separate and hostile faction) | Day 3 fixed assault on the Dauth Tournament to seize Tordek's **Bracieri Gemelli** (planar keys to the Eternal Forge); does NOT target the Orbe delle Otto Porte | Fixed: triggers Day 3 of Tournament regardless | Tournament becomes combat encounter |
 | Sethrax il Velato (Illithid emissary, Zalkatar's conclave) | 🔴 attivo | Dauth — infiltrated as tournament finalist "Kethran Mano di Pietra" | Extract a "Seme di Porta" from the Orbe delle Otto Porte during the Tournament's peak resonance, deliver it to Zalkatar at the Invisible Tower | Sync to Tournament (Day 1 = arrival; Day 2 = entered as finalist; Day 3 Round 7 = forced unmasking by Xal'thor's portal) | Sethrax flees to Invisible Tower with the seed → Zalkatar gains +2 effective CR + new orb-derived Mind Blast in P2A finale (Artemis's quest) |
 | Azarr Kul (High Wyrmlord) — **Ritual Clock, see §2.0** (NOT the March Clock; the horde's physical approach is tracked separately in §2.1, currently Day 19 of 42) | 🔴 attivo | Fane of Tiamat (Shaar) | Ritual sacrifices/planar conjunctions to summon the Avatar of Tiamat during the Rethmar siege (Day 40-42, Phase 2). Advances only on explicit triggers: +1 per Warpriest élite mass sacrifice (Day 35-38), +2 if Giant Wave ×1 breaches the walls (Phase 1), +3 if Giant Wave ×2 breaches (Phase 3) — see `00_Red Hand Of Doom/Armate-SINCRONIZZAZIONE-CAMPAGNA.md` §4b | 9/18 | Avatar of Tiamat manifests over Rethmar during Phase 2's 10-round ritual (D8) |
@@ -345,18 +345,19 @@ the listed consequence triggers.
 | Varis "Seta-Argento" | Some statues might be alive; does NOT know Sal is the supplier chain origin | Involuntary observation 3 months ago |
 | Il Collezionista | Artemis carries the Ring of Chaotic Illumination | Witnessed at minotaur lair; sent guild operatives to track |
 | Il Collezionista | Therysol is alive and hunting him | Inferred from missing guild operatives in Underdark |
+| Il Collezionista | The party are the Custodi Eterni and carry major divine artifacts; knows their names, abilities, and routes | His own guild operatives, who have tracked the party since the minotaur lair, report after the Cerimonia delle 100 Asce (Day 21); set by the DM on 2026-11-13 |
 | Re Thorek Hammerfist | The party are now Custodi Eterni; he has named them so | Awarded post-siege |
 | Maestro Varis "Seta-Argento" | Artemis is a buyer of Underdark relics; willing to broker | Three transactions to date |
 | Salvatore "Sal" | The party are Custodi Eterni carrying major divine artifacts; knows their names, abilities, and routes | Briefed by Il Collezionista before deploying to desert road |
-| Conte Valerius | The party visited Hammerfist; does NOT yet know about the Crown | Public dispatches |
 | Druid Circle of the Sacred Forest | Hella is approaching for the ritual; reserves judgment | Hella's letter, sent two days ago |
 | Capitana Lythiel Alar-Wen (Wood Elf Ranger 8, Sacred Forest scout, GS 8) | Hella is the druidess Saraah promised the Acorn of the Circle to | Direct recognition during Hammerfist Battle Sessione 4; canonized 2026-05-04 |
-| Maestro Tempestas (Half-elf Bard 12/Stormsinger 2 [Frostburn], GS 14, Rethmar **intelligence agent** — NOT delivery service) | The party survived Lorana's city (Arco 00); they are Custodi Eterni; he carries **only one letter** (Brenna Sorvane → Thorik) on Day 21 + intel exchange mission; intercepted drow conversation 3 weeks ago about "il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Mirtul, poi la torre cammina" — relevance recognized only when Artemis's Ring vibrates | Intercepted via accidental Shadow Walk side-emergence near Cannath Vale Nord (fiume con tre rapide); revised v2 2026-05-04 (Tempestas role narrowed to intel agent; he no longer delivers Tordek/Hella/Artemis personal hooks) |
+| Maestro Tempestas (Half-elf Bard 12/Stormsinger 3 [Frostburn], GS 15, Rethmar **intelligence agent** — NOT delivery service) | The party survived Lorana's city (Arco 00); they are Custodi Eterni; he carries **only one letter** (Brenna Sorvane → Thorik) on Day 22 + intel exchange mission; intercepted drow conversation 3 weeks ago about "il dottore della torre invisibile vuole il portatore dell'anello caotico" + "fine Flamerule, poi la torre cammina" — relevance recognized only when Artemis's Ring vibrates | Intercepted via accidental Shadow Walk side-emergence near Cannath Vale Nord (fiume con tre rapide); revised v2 2026-05-04 (Tempestas role narrowed to intel agent; he no longer delivers Tordek/Hella/Artemis personal hooks) |
 | Sorella Maewen "Pugno-di-Cedro" (Mezza-elfa Monk 9/Cleric 2 of Ilmater, GS 10, monk-courier of Confraternita Monastica di Dauth) | Aeleth Verdebronzo is dead (will discover on arrival); Tordek matches the description of the 4th tournament invitee "Pugno di Pietra del Nord" (recognizable by Custode Eterno rune) | Travels Cannath Vale with 5 tournament invites; arrives Sacred Forest Day 24 looking for Aeleth; canonized 2026-05-04 |
 | Lathander + Mask (divine, divinatory) | Artemis rejected the Lord of Sun and Shadow PrC at Belkram (Arco 04); the Ring he carries is Zalkatar's research instrument; Zalkatar is a 3-century-old ex-cleric of Mask who became Mind Flayer by choice; both deities OBSERVE without intervening unless Artemis explicitly requests post-Tower "courtesy" | Direct divine awareness; activates as dream visitation Notte 22-23 of post-Hammerfist; canonized 2026-05-04 |
-| Brenna Sorvane (Consigliere militare Rethmar) | Hammerfist defeated Red Hand vanguard; Custodi Eterni include Thorik who is a battle-tested commander; Halveth is corrupt by Conte Valerius; Lorana is alive in Rethmar | Reports from Tempestas (her primary messenger); canonized 2026-05-04 via her sealed letter to Thorik |
+| Brenna Sorvane (Consigliere militare Rethmar) | Hammerfist defeated Red Hand vanguard; Thorik is the battle-tested commander of the party; Halveth is corrupt by Conte Valerius; Lorana is alive in Rethmar | Messenger birds reached Rethmar on Day 19 with the victory; Tempestas (her primary messenger) reports on Hammerfist only; she knows Lorana in person, both in Rethmar since Day 16-18; canonized 2026-05-04 via her sealed letter to Thorik, days and sources set by the DM on 2026-11-13 |
 | Therysol | Il Collezionista's guild has a hidden cell in Dauth | Captured guild operative interrogated |
-| Norro Wiston (ex-Portavoce del Guado di Drellin, profugo a Rethmar) | The party are the Custodi Eterni; Thorik died and was resurrected at the Guado (he was present, Arco 00) | Direct witness; arrived Rethmar ~Day 16-18 with the refugee wave — canonized 2026-07-20 |
+| Norro Wiston (ex-Portavoce del Guado di Drellin, profugo a Rethmar) | Thorik died and was resurrected at the Guado (he was present, Arco 00) | Direct witness; arrived Rethmar ~Day 16-18 with the refugee wave — canonized 2026-07-20 |
+| Norro Wiston (ex-Portavoce del Guado di Drellin, profugo a Rethmar) | The party are now called the Custodi Eterni (before Day 23 he knows them by their old name, the Rumbling Stones) | News of the Cerimonia delle 100 Asce (Day 21) reaches Rethmar around Day 23; set by the DM on 2026-11-13 |
 | Sertieren il Saggio (mago halfling profugo, ospite della biblioteca di Pyriel) | His *sending* to Silverymoon is blocked by a ritual interference on the Wyrmbones; does NOT know who runs it | Failed attempts Day 14-18 — canonized 2026-07-20 |
 | Lirien Amaranti («Il Giullare Spezzato») | He can recognize the Maestro's hand in the living statues (does NOT know the network leads to Varis/Sal/Il Collezionista); knows the street-talk of the Ponte Nuovo | Apprenticeship trauma + tavern ears — canonized 2026-07-20 |
 | Mira Serani «l'Aranea» | The party already met her (disguised as a refugee child) on the road to Hammerfist and let her go; knows fragments of the PCs' artifacts/routes; does NOT know Lorana survived and is at Rethmar | Embedded Red Hand spy since Drellin's Ferry — canonized 2026-07-20 |

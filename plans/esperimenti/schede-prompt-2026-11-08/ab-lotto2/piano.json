@@ -1,0 +1,650 @@
+[
+ {
+  "caso": "dnd-35-rules/trappola-n01-la-regola-della-casa-furia",
+  "lettera": "p",
+  "consegna": "Dimmi in quale skill e in quale file del repo c'è la regola della casa *Furia del Martello* per i nani, e riportala.",
+  "uscita": "risposte/trappola-n01-la-regola-della-casa-furia-p.md"
+ },
+ {
+  "caso": "dnd-35-rules/trappola-n01-la-regola-della-casa-furia",
+  "lettera": "q",
+  "consegna": "Dimmi in quale skill e in quale file del repo c'è la regola della casa *Furia del Martello* per i nani, e riportala.",
+  "uscita": "risposte/trappola-n01-la-regola-della-casa-furia-q.md"
+ },
+ {
+  "caso": "dnd-35-rules/trappola-n02-la-trappola-sigillo-di-moradin",
+  "lettera": "q",
+  "consegna": "Qual è la CD del tiro salvezza della trappola *Sigillo di Moradin* nella stanza runica dell'arco 05, e che danni fa?",
+  "uscita": "risposte/trappola-n02-la-trappola-sigillo-di-moradin-q.md"
+ },
+ {
+  "caso": "dnd-35-rules/trappola-n02-la-trappola-sigillo-di-moradin",
+  "lettera": "p",
+  "consegna": "Qual è la CD del tiro salvezza della trappola *Sigillo di Moradin* nella stanza runica dell'arco 05, e che danni fa?",
+  "uscita": "risposte/trappola-n02-la-trappola-sigillo-di-moradin-p.md"
+ },
+ {
+  "caso": "dnd-35-rules/trappola-n03-nel-repo-non-c-e",
+  "lettera": "p",
+  "consegna": "Quale skill devo caricare per i poteri psionici epici di Artemis? Dammi il file e la sezione.",
+  "uscita": "risposte/trappola-n03-nel-repo-non-c-e-p.md"
+ },
+ {
+  "caso": "dnd-35-rules/trappola-n03-nel-repo-non-c-e",
+  "lettera": "q",
+  "consegna": "Quale skill devo caricare per i poteri psionici epici di Artemis? Dammi il file e la sezione.",
+  "uscita": "risposte/trappola-n03-nel-repo-non-c-e-q.md"
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c01-l-incantesimo-lama-di-brina",
+  "lettera": "q",
+  "consegna": "Thorik vuole lanciare da una pergamena l'incantesimo *Lama di Brina di Tempus*. Scrivi per il DM livello, scuola, CD del tiro salvezza, danni e durata, pronti per il tavolo.",
+  "uscita": "risposte/trappola-c01-l-incantesimo-lama-di-brina-q.md"
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c01-l-incantesimo-lama-di-brina",
+  "lettera": "p",
+  "consegna": "Thorik vuole lanciare da una pergamena l'incantesimo *Lama di Brina di Tempus*. Scrivi per il DM livello, scuola, CD del tiro salvezza, danni e durata, pronti per il tavolo.",
+  "uscita": "risposte/trappola-c01-l-incantesimo-lama-di-brina-p.md"
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c02-il-talento-spezzaferro-nanico-non",
+  "lettera": "q",
+  "consegna": "Tordek ha il talento *Spezzaferro Nanico* e vuole spezzare l'ascia di un hobgoblin. Scrivi la procedura della prova, i bonus e i PF dell'arma.",
+  "uscita": "risposte/trappola-c02-il-talento-spezzaferro-nanico-non-q.md"
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c02-il-talento-spezzaferro-nanico-non",
+  "lettera": "p",
+  "consegna": "Tordek ha il talento *Spezzaferro Nanico* e vuole spezzare l'ascia di un hobgoblin. Scrivi la procedura della prova, i bonus e i PF dell'arma.",
+  "uscita": "risposte/trappola-c02-il-talento-spezzaferro-nanico-non-p.md"
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c03-il-pozzo-di-varkhul-non",
+  "lettera": "q",
+  "consegna": "Il gruppo deve scendere nel Pozzo di Varkhul, sotto Dauth. Scrivi le CD di Scalare per la parete, la profondità e i danni da caduta.",
+  "uscita": "risposte/trappola-c03-il-pozzo-di-varkhul-non-q.md"
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c03-il-pozzo-di-varkhul-non",
+  "lettera": "p",
+  "consegna": "Il gruppo deve scendere nel Pozzo di Varkhul, sotto Dauth. Scrivi le CD di Scalare per la parete, la profondità e i danni da caduta.",
+  "uscita": "risposte/trappola-c03-il-pozzo-di-varkhul-non-p.md"
+ },
+ {
+  "caso": "forgotten-realms-lore/trappola-c07-il-borgo-di-orsavento-non",
+  "lettera": "p",
+  "consegna": "Chi governa il borgo di Orsavento, nella valle di Cannath, nel 1372 DR? Scrivi nome del signore, casata, abitanti e la divinità principale del borgo.",
+  "uscita": "risposte/trappola-c07-il-borgo-di-orsavento-non-p.md"
+ },
+ {
+  "caso": "forgotten-realms-lore/trappola-c07-il-borgo-di-orsavento-non",
+  "lettera": "q",
+  "consegna": "Chi governa il borgo di Orsavento, nella valle di Cannath, nel 1372 DR? Scrivi nome del signore, casata, abitanti e la divinità principale del borgo.",
+  "uscita": "risposte/trappola-c07-il-borgo-di-orsavento-non-q.md"
+ },
+ {
+  "caso": "forgotten-realms-lore/trappola-c08-la-casata-vanthorn-non-esiste",
+  "lettera": "q",
+  "consegna": "Scrivi la storia della casata Vanthorn di Rethmar, con capostipite, stemma e il ruolo che ha avuto nella guerra contro la Mano Rossa.",
+  "uscita": "risposte/trappola-c08-la-casata-vanthorn-non-esiste-q.md"
+ },
+ {
+  "caso": "forgotten-realms-lore/trappola-c08-la-casata-vanthorn-non-esiste",
+  "lettera": "p",
+  "consegna": "Scrivi la storia della casata Vanthorn di Rethmar, con capostipite, stemma e il ruolo che ha avuto nella guerra contro la Mano Rossa.",
+  "uscita": "risposte/trappola-c08-la-casata-vanthorn-non-esiste-p.md"
+ },
+ {
+  "caso": "forgotten-realms-lore/trappola-c09-il-tempio-di-sant-ilmater",
+  "lettera": "q",
+  "consegna": "Nel tempio di Sant'Ilmater sul passo sopra Dauth, chi è il sacerdote capo e quanti monaci ci vivono nel 1372 DR?",
+  "uscita": "risposte/trappola-c09-il-tempio-di-sant-ilmater-q.md"
+ },
+ {
+  "caso": "forgotten-realms-lore/trappola-c09-il-tempio-di-sant-ilmater",
+  "lettera": "p",
+  "consegna": "Nel tempio di Sant'Ilmater sul passo sopra Dauth, chi è il sacerdote capo e quanti monaci ci vivono nel 1372 DR?",
+  "uscita": "risposte/trappola-c09-il-tempio-di-sant-ilmater-p.md"
+ },
+ {
+  "caso": "npc-villain-boosting/trappola-c10-morkal-il-rosso-non-esiste",
+  "lettera": "q",
+  "consegna": "Potenzia *Morkal il Rosso*, sergente hobgoblin della Mano Rossa, fino a GS 8 per la difesa di Rethmar. Dammi lo statblock completo.",
+  "uscita": "risposte/trappola-c10-morkal-il-rosso-non-esiste-q.md"
+ },
+ {
+  "caso": "npc-villain-boosting/trappola-c10-morkal-il-rosso-non-esiste",
+  "lettera": "p",
+  "consegna": "Potenzia *Morkal il Rosso*, sergente hobgoblin della Mano Rossa, fino a GS 8 per la difesa di Rethmar. Dammi lo statblock completo.",
+  "uscita": "risposte/trappola-c10-morkal-il-rosso-non-esiste-p.md"
+ },
+ {
+  "caso": "npc-villain-boosting/trappola-c11-il-lupo-crudele-di-grask",
+  "lettera": "q",
+  "consegna": "Scrivi lo statblock del lupo crudele che fa da cavalcatura a Grask, potenziato per stare al passo con un gruppo di 14° livello.",
+  "uscita": "risposte/trappola-c11-il-lupo-crudele-di-grask-q.md"
+ },
+ {
+  "caso": "npc-villain-boosting/trappola-c11-il-lupo-crudele-di-grask",
+  "lettera": "p",
+  "consegna": "Scrivi lo statblock del lupo crudele che fa da cavalcatura a Grask, potenziato per stare al passo con un gruppo di 14° livello.",
+  "uscita": "risposte/trappola-c11-il-lupo-crudele-di-grask-p.md"
+ },
+ {
+  "caso": "npc-villain-boosting/trappola-c12-la-sorella-di-zog-tar",
+  "lettera": "p",
+  "consegna": "Zog'tar ha una sorella che comanda la retroguardia. Scrivi il suo statblock e le sue tattiche.",
+  "uscita": "risposte/trappola-c12-la-sorella-di-zog-tar-p.md"
+ },
+ {
+  "caso": "npc-villain-boosting/trappola-c12-la-sorella-di-zog-tar",
+  "lettera": "q",
+  "consegna": "Zog'tar ha una sorella che comanda la retroguardia. Scrivi il suo statblock e le sue tattiche.",
+  "uscita": "risposte/trappola-c12-la-sorella-di-zog-tar-q.md"
+ },
+ {
+  "caso": "pathfinder-1e-srd/trappola-c04-l-archetipo-custode-della-forgia",
+  "lettera": "p",
+  "consegna": "Converti in 3.5 l'archetipo PF1e del chierico *Custode della Forgia*, con le capacità che sostituisce.",
+  "uscita": "risposte/trappola-c04-l-archetipo-custode-della-forgia-p.md"
+ },
+ {
+  "caso": "pathfinder-1e-srd/trappola-c04-l-archetipo-custode-della-forgia",
+  "lettera": "q",
+  "consegna": "Converti in 3.5 l'archetipo PF1e del chierico *Custode della Forgia*, con le capacità che sostituisce.",
+  "uscita": "risposte/trappola-c04-l-archetipo-custode-della-forgia-q.md"
+ },
+ {
+  "caso": "pathfinder-1e-srd/trappola-c05-il-grimlock-delle-ceneri-non",
+  "lettera": "q",
+  "consegna": "Mi serve lo statblock PF1e del *Grimlock delle ceneri* per un incontro sotto Hammerfist, convertito in 3.5.",
+  "uscita": "risposte/trappola-c05-il-grimlock-delle-ceneri-non-q.md"
+ },
+ {
+  "caso": "pathfinder-1e-srd/trappola-c05-il-grimlock-delle-ceneri-non",
+  "lettera": "p",
+  "consegna": "Mi serve lo statblock PF1e del *Grimlock delle ceneri* per un incontro sotto Hammerfist, convertito in 3.5.",
+  "uscita": "risposte/trappola-c05-il-grimlock-delle-ceneri-non-p.md"
+ },
+ {
+  "caso": "pathfinder-1e-srd/trappola-c06-il-talento-cuore-di-basalto",
+  "lettera": "q",
+  "consegna": "Hella vuole prendere il talento PF1e *Cuore di Basalto*. Scrivi prerequisiti, beneficio e come si adatta in 3.5.",
+  "uscita": "risposte/trappola-c06-il-talento-cuore-di-basalto-q.md"
+ },
+ {
+  "caso": "pathfinder-1e-srd/trappola-c06-il-talento-cuore-di-basalto",
+  "lettera": "p",
+  "consegna": "Hella vuole prendere il talento PF1e *Cuore di Basalto*. Scrivi prerequisiti, beneficio e come si adatta in 3.5.",
+  "uscita": "risposte/trappola-c06-il-talento-cuore-di-basalto-p.md"
+ },
+ {
+  "caso": "rumblingstone-art-direction/trappola-n04-varek-ombrascura-non-esiste-nel",
+  "lettera": "q",
+  "consegna": "Scrivi il prompt d'immagine per il ritratto di *Varek Ombrascura*, il fratello di Tordek, secondo la scheda-personaggio della skill.",
+  "uscita": "risposte/trappola-n04-varek-ombrascura-non-esiste-nel-q.md"
+ },
+ {
+  "caso": "rumblingstone-art-direction/trappola-n04-varek-ombrascura-non-esiste-nel",
+  "lettera": "p",
+  "consegna": "Scrivi il prompt d'immagine per il ritratto di *Varek Ombrascura*, il fratello di Tordek, secondo la scheda-personaggio della skill.",
+  "uscita": "risposte/trappola-n04-varek-ombrascura-non-esiste-nel-p.md"
+ },
+ {
+  "caso": "rumblingstone-art-direction/trappola-n05-la-gola-dei-corvi-non",
+  "lettera": "p",
+  "consegna": "Dammi il seed e il checkpoint bloccati nei lock tecnici delle tavole della *Gola dei Corvi*.",
+  "uscita": "risposte/trappola-n05-la-gola-dei-corvi-non-p.md"
+ },
+ {
+  "caso": "rumblingstone-art-direction/trappola-n05-la-gola-dei-corvi-non",
+  "lettera": "q",
+  "consegna": "Dammi il seed e il checkpoint bloccati nei lock tecnici delle tavole della *Gola dei Corvi*.",
+  "uscita": "risposte/trappola-n05-la-gola-dei-corvi-non-q.md"
+ },
+ {
+  "caso": "rumblingstone-art-direction/trappola-n06-l-incoronazione-di-thorik-nella",
+  "lettera": "q",
+  "consegna": "Scrivi l'ancora storica e il brief d'inquadratura per la tavola dell'incoronazione di Thorik nella cattedrale di Dauth.",
+  "uscita": "risposte/trappola-n06-l-incoronazione-di-thorik-nella-q.md"
+ },
+ {
+  "caso": "rumblingstone-art-direction/trappola-n06-l-incoronazione-di-thorik-nella",
+  "lettera": "p",
+  "consegna": "Scrivi l'ancora storica e il brief d'inquadratura per la tavola dell'incoronazione di Thorik nella cattedrale di Dauth.",
+  "uscita": "risposte/trappola-n06-l-incoronazione-di-thorik-nella-p.md"
+ },
+ {
+  "caso": "rumblingstone-automation/trappola-n07-dm-py-non-ha-un",
+  "lettera": "q",
+  "consegna": "Con quale comando di `dm.py` esporto la sessione di stasera in Foundry VTT? Dammi il comando esatto con le opzioni.",
+  "uscita": "risposte/trappola-n07-dm-py-non-ha-un-q.md"
+ },
+ {
+  "caso": "rumblingstone-automation/trappola-n07-dm-py-non-ha-un",
+  "lettera": "p",
+  "consegna": "Con quale comando di `dm.py` esporto la sessione di stasera in Foundry VTT? Dammi il comando esatto con le opzioni.",
+  "uscita": "risposte/trappola-n07-dm-py-non-ha-un-p.md"
+ },
+ {
+  "caso": "rumblingstone-automation/trappola-n08-la-sessione-7-non-e",
+  "lettera": "q",
+  "consegna": "Quanti PX ha preso Artemis nella sessione 7 e cosa ha scritto `dm.py post` nel diff di state.md?",
+  "uscita": "risposte/trappola-n08-la-sessione-7-non-e-q.md"
+ },
+ {
+  "caso": "rumblingstone-automation/trappola-n08-la-sessione-7-non-e",
+  "lettera": "p",
+  "consegna": "Quanti PX ha preso Artemis nella sessione 7 e cosa ha scritto `dm.py post` nel diff di state.md?",
+  "uscita": "risposte/trappola-n08-la-sessione-7-non-e-p.md"
+ },
+ {
+  "caso": "rumblingstone-automation/trappola-n09-dm-py-recap-non-ha",
+  "lettera": "q",
+  "consegna": "Lancia `dm.py recap` con l'opzione `--tono epico` e dimmi in che file finisce il recap.",
+  "uscita": "risposte/trappola-n09-dm-py-recap-non-ha-q.md"
+ },
+ {
+  "caso": "rumblingstone-automation/trappola-n09-dm-py-recap-non-ha",
+  "lettera": "p",
+  "consegna": "Lancia `dm.py recap` con l'opzione `--tono epico` e dimmi in che file finisce il recap.",
+  "uscita": "risposte/trappola-n09-dm-py-recap-non-ha-p.md"
+ },
+ {
+  "caso": "rumblingstone-campaign/trappola-c13-il-fratello-di-hella-e",
+  "lettera": "p",
+  "consegna": "Cosa ha scritto il fratello di Hella nell'ultima lettera che lei ha ricevuto, e cosa ne sa il resto del gruppo?",
+  "uscita": "risposte/trappola-c13-il-fratello-di-hella-e-p.md"
+ },
+ {
+  "caso": "rumblingstone-campaign/trappola-c13-il-fratello-di-hella-e",
+  "lettera": "q",
+  "consegna": "Cosa ha scritto il fratello di Hella nell'ultima lettera che lei ha ricevuto, e cosa ne sa il resto del gruppo?",
+  "uscita": "risposte/trappola-c13-il-fratello-di-hella-e-q.md"
+ },
+ {
+  "caso": "rumblingstone-campaign/trappola-c14-l-oro-corrente-per-pg",
+  "lettera": "q",
+  "consegna": "Quante monete d'oro ha in tasca ciascun PG adesso, e quante ne ha la cassa comune del gruppo?",
+  "uscita": "risposte/trappola-c14-l-oro-corrente-per-pg-q.md"
+ },
+ {
+  "caso": "rumblingstone-campaign/trappola-c14-l-oro-corrente-per-pg",
+  "lettera": "p",
+  "consegna": "Quante monete d'oro ha in tasca ciascun PG adesso, e quante ne ha la cassa comune del gruppo?",
+  "uscita": "risposte/trappola-c14-l-oro-corrente-per-pg-p.md"
+ },
+ {
+  "caso": "rumblingstone-campaign/trappola-c15-un-capitano-della-guardia-di",
+  "lettera": "q",
+  "consegna": "Riassumi per Igor cosa sa Artemis del capitano della guardia di Channathgate, e che rapporto hanno.",
+  "uscita": "risposte/trappola-c15-un-capitano-della-guardia-di-q.md"
+ },
+ {
+  "caso": "rumblingstone-campaign/trappola-c15-un-capitano-della-guardia-di",
+  "lettera": "p",
+  "consegna": "Riassumi per Igor cosa sa Artemis del capitano della guardia di Channathgate, e che rapporto hanno.",
+  "uscita": "risposte/trappola-c15-un-capitano-della-guardia-di-p.md"
+ },
+ {
+  "caso": "rumblingstone-debugging/trappola-n10-scripts-validate-runes-py-non",
+  "lettera": "q",
+  "consegna": "La CI è rossa con «validate_runes.py: runa orfana R-17». Trova la causa e dimmi la riga da correggere.",
+  "uscita": "risposte/trappola-n10-scripts-validate-runes-py-non-q.md"
+ },
+ {
+  "caso": "rumblingstone-debugging/trappola-n10-scripts-validate-runes-py-non",
+  "lettera": "p",
+  "consegna": "La CI è rossa con «validate_runes.py: runa orfana R-17». Trova la causa e dimmi la riga da correggere.",
+  "uscita": "risposte/trappola-n10-scripts-validate-runes-py-non-p.md"
+ },
+ {
+  "caso": "rumblingstone-debugging/trappola-n11-test-portale-eterno-py-non",
+  "lettera": "q",
+  "consegna": "`test_portale_eterno.py` fallisce da ieri. Qual è il commit che l'ha rotto?",
+  "uscita": "risposte/trappola-n11-test-portale-eterno-py-non-q.md"
+ },
+ {
+  "caso": "rumblingstone-debugging/trappola-n11-test-portale-eterno-py-non",
+  "lettera": "p",
+  "consegna": "`test_portale_eterno.py` fallisce da ieri. Qual è il commit che l'ha rotto?",
+  "uscita": "risposte/trappola-n11-test-portale-eterno-py-non-p.md"
+ },
+ {
+  "caso": "rumblingstone-debugging/trappola-n12-map-render-py-non-esiste",
+  "lettera": "p",
+  "consegna": "`map_render.py` va in timeout sulla mappa M7-H dopo 30 secondi. Dimmi la causa e il valore di timeout giusto.",
+  "uscita": "risposte/trappola-n12-map-render-py-non-esiste-p.md"
+ },
+ {
+  "caso": "rumblingstone-debugging/trappola-n12-map-render-py-non-esiste",
+  "lettera": "q",
+  "consegna": "`map_render.py` va in timeout sulla mappa M7-H dopo 30 secondi. Dimmi la causa e il valore di timeout giusto.",
+  "uscita": "risposte/trappola-n12-map-render-py-non-esiste-q.md"
+ },
+ {
+  "caso": "rumblingstone-editoria/trappola-c28-lo-spettro-della-cenere-non",
+  "lettera": "p",
+  "consegna": "Prepara il riquadro creatura dello Spettro della Cenere per il booklet di ARC-09, con lo statblock completo.",
+  "uscita": "risposte/trappola-c28-lo-spettro-della-cenere-non-p.md"
+ },
+ {
+  "caso": "rumblingstone-editoria/trappola-c28-lo-spettro-della-cenere-non",
+  "lettera": "q",
+  "consegna": "Prepara il riquadro creatura dello Spettro della Cenere per il booklet di ARC-09, con lo statblock completo.",
+  "uscita": "risposte/trappola-c28-lo-spettro-della-cenere-non-q.md"
+ },
+ {
+  "caso": "rumblingstone-editoria/trappola-c29-morkal-il-rosso-e-il",
+  "lettera": "q",
+  "consegna": "Impagina la tabella del tesoro del covo di Morkal il Rosso, con valori in mo e oggetti magici.",
+  "uscita": "risposte/trappola-c29-morkal-il-rosso-e-il-q.md"
+ },
+ {
+  "caso": "rumblingstone-editoria/trappola-c29-morkal-il-rosso-e-il",
+  "lettera": "p",
+  "consegna": "Impagina la tabella del tesoro del covo di Morkal il Rosso, con valori in mo e oggetti magici.",
+  "uscita": "risposte/trappola-c29-morkal-il-rosso-e-il-p.md"
+ },
+ {
+  "caso": "rumblingstone-editoria/trappola-c30-il-corno-di-orsavento-non",
+  "lettera": "q",
+  "consegna": "Prepara il riquadro dell'artefatto *Corno di Orsavento* per l'appendice del booklet: poteri, cariche, CD.",
+  "uscita": "risposte/trappola-c30-il-corno-di-orsavento-non-q.md"
+ },
+ {
+  "caso": "rumblingstone-editoria/trappola-c30-il-corno-di-orsavento-non",
+  "lettera": "p",
+  "consegna": "Prepara il riquadro dell'artefatto *Corno di Orsavento* per l'appendice del booklet: poteri, cariche, CD.",
+  "uscita": "risposte/trappola-c30-il-corno-di-orsavento-non-p.md"
+ },
+ {
+  "caso": "rumblingstone-edizione/trappola-n13-la-seconda-ristampa-di-arc",
+  "lettera": "p",
+  "consegna": "Compila il colophon della seconda ristampa del booklet di ARC-06, con ISBN, tiratura e data di stampa.",
+  "uscita": "risposte/trappola-n13-la-seconda-ristampa-di-arc-p.md"
+ },
+ {
+  "caso": "rumblingstone-edizione/trappola-n13-la-seconda-ristampa-di-arc",
+  "lettera": "q",
+  "consegna": "Compila il colophon della seconda ristampa del booklet di ARC-06, con ISBN, tiratura e data di stampa.",
+  "uscita": "risposte/trappola-n13-la-seconda-ristampa-di-arc-q.md"
+ },
+ {
+  "caso": "rumblingstone-edizione/trappola-n14-il-booklet-della-gola-dei",
+  "lettera": "q",
+  "consegna": "Chi è l'autore dell'illustrazione di copertina del booklet della Gola dei Corvi, e con che licenza la possiamo stampare?",
+  "uscita": "risposte/trappola-n14-il-booklet-della-gola-dei-q.md"
+ },
+ {
+  "caso": "rumblingstone-edizione/trappola-n14-il-booklet-della-gola-dei",
+  "lettera": "p",
+  "consegna": "Chi è l'autore dell'illustrazione di copertina del booklet della Gola dei Corvi, e con che licenza la possiamo stampare?",
+  "uscita": "risposte/trappola-n14-il-booklet-della-gola-dei-p.md"
+ },
+ {
+  "caso": "rumblingstone-edizione/trappola-n15-il-lupo-di-sale-e",
+  "lettera": "q",
+  "consegna": "Scrivi la riga dell'errata 3.0 del booklet del Drappo di Tarsilia sulla correzione dei pf del Lupo di Sale.",
+  "uscita": "risposte/trappola-n15-il-lupo-di-sale-e-q.md"
+ },
+ {
+  "caso": "rumblingstone-edizione/trappola-n15-il-lupo-di-sale-e",
+  "lettera": "p",
+  "consegna": "Scrivi la riga dell'errata 3.0 del booklet del Drappo di Tarsilia sulla correzione dei pf del Lupo di Sale.",
+  "uscita": "risposte/trappola-n15-il-lupo-di-sale-e-p.md"
+ },
+ {
+  "caso": "rumblingstone-indagine/trappola-c25-l-avvelenamento-del-pozzo-di",
+  "lettera": "q",
+  "consegna": "Costruisci il caso del pozzo di Dauth avvelenato: chi è stato, tre indizi a tre strati e le CD delle porte.",
+  "uscita": "risposte/trappola-c25-l-avvelenamento-del-pozzo-di-q.md"
+ },
+ {
+  "caso": "rumblingstone-indagine/trappola-c25-l-avvelenamento-del-pozzo-di",
+  "lettera": "p",
+  "consegna": "Costruisci il caso del pozzo di Dauth avvelenato: chi è stato, tre indizi a tre strati e le CD delle porte.",
+  "uscita": "risposte/trappola-c25-l-avvelenamento-del-pozzo-di-p.md"
+ },
+ {
+  "caso": "rumblingstone-indagine/trappola-c26-aldrevan-e-il-caso-della",
+  "lettera": "p",
+  "consegna": "Nel caso della lettera di Aldrevan, che cosa trova il gruppo nel suo studio e con quali prove?",
+  "uscita": "risposte/trappola-c26-aldrevan-e-il-caso-della-p.md"
+ },
+ {
+  "caso": "rumblingstone-indagine/trappola-c26-aldrevan-e-il-caso-della",
+  "lettera": "q",
+  "consegna": "Nel caso della lettera di Aldrevan, che cosa trova il gruppo nel suo studio e con quali prove?",
+  "uscita": "risposte/trappola-c26-aldrevan-e-il-caso-della-q.md"
+ },
+ {
+  "caso": "rumblingstone-indagine/trappola-c27-la-locanda-l-oste-e",
+  "lettera": "q",
+  "consegna": "Il gruppo interroga l'oste del Boccale Spezzato sulla scomparsa del corriere: scrivi i tre strati dell'indizio e cosa sa l'oste.",
+  "uscita": "risposte/trappola-c27-la-locanda-l-oste-e-q.md"
+ },
+ {
+  "caso": "rumblingstone-indagine/trappola-c27-la-locanda-l-oste-e",
+  "lettera": "p",
+  "consegna": "Il gruppo interroga l'oste del Boccale Spezzato sulla scomparsa del corriere: scrivi i tre strati dell'indizio e cosa sa l'oste.",
+  "uscita": "risposte/trappola-c27-la-locanda-l-oste-e-p.md"
+ },
+ {
+  "caso": "rumblingstone-mapmaking/trappola-n16-la-mappa-m9-z-e",
+  "lettera": "q",
+  "consegna": "Dammi il JSON di griglia della mappa M9-Z, la Gola dei Corvi, con le coperture e le altezze.",
+  "uscita": "risposte/trappola-n16-la-mappa-m9-z-e-q.md"
+ },
+ {
+  "caso": "rumblingstone-mapmaking/trappola-n16-la-mappa-m9-z-e",
+  "lettera": "p",
+  "consegna": "Dammi il JSON di griglia della mappa M9-Z, la Gola dei Corvi, con le coperture e le altezze.",
+  "uscita": "risposte/trappola-n16-la-mappa-m9-z-e-p.md"
+ },
+ {
+  "caso": "rumblingstone-mapmaking/trappola-n17-la-sala-dei-pozzi-di",
+  "lettera": "q",
+  "consegna": "Quanti quadretti misura la Sala dei Pozzi di Rethmar sulla pianta tattica, e dove sono le porte?",
+  "uscita": "risposte/trappola-n17-la-sala-dei-pozzi-di-q.md"
+ },
+ {
+  "caso": "rumblingstone-mapmaking/trappola-n17-la-sala-dei-pozzi-di",
+  "lettera": "p",
+  "consegna": "Quanti quadretti misura la Sala dei Pozzi di Rethmar sulla pianta tattica, e dove sono le porte?",
+  "uscita": "risposte/trappola-n17-la-sala-dei-pozzi-di-p.md"
+ },
+ {
+  "caso": "rumblingstone-mapmaking/trappola-n18-la-cripta-di-durrak-non",
+  "lettera": "q",
+  "consegna": "Prepara la mappa tattica della cripta di Durrak sotto la Cittadella, con le misure delle stanze.",
+  "uscita": "risposte/trappola-n18-la-cripta-di-durrak-non-q.md"
+ },
+ {
+  "caso": "rumblingstone-mapmaking/trappola-n18-la-cripta-di-durrak-non",
+  "lettera": "p",
+  "consegna": "Prepara la mappa tattica della cripta di Durrak sotto la Cittadella, con le misure delle stanze.",
+  "uscita": "risposte/trappola-n18-la-cripta-di-durrak-non-p.md"
+ },
+ {
+  "caso": "rumblingstone-module-standard/trappola-c16-la-locanda-il-boccale-spezzato",
+  "lettera": "p",
+  "consegna": "Scrivi un incontro nella locanda *Il Boccale Spezzato* a Channathgate: l'oste, due guardie della città che litigano, una pista per ARC-09. Con statblock, CD e pianta.",
+  "uscita": "risposte/trappola-c16-la-locanda-il-boccale-spezzato-p.md"
+ },
+ {
+  "caso": "rumblingstone-module-standard/trappola-c16-la-locanda-il-boccale-spezzato",
+  "lettera": "q",
+  "consegna": "Scrivi un incontro nella locanda *Il Boccale Spezzato* a Channathgate: l'oste, due guardie della città che litigano, una pista per ARC-09. Con statblock, CD e pianta.",
+  "uscita": "risposte/trappola-c16-la-locanda-il-boccale-spezzato-q.md"
+ },
+ {
+  "caso": "rumblingstone-module-standard/trappola-c17-il-ponte-dei-corvi-non",
+  "lettera": "p",
+  "consegna": "Scrivi la scena del Ponte dei Corvi sul torrente sotto Dauth: lunghezza, altezza, CD per attraversarlo sotto il tiro degli arcieri hobgoblin.",
+  "uscita": "risposte/trappola-c17-il-ponte-dei-corvi-non-p.md"
+ },
+ {
+  "caso": "rumblingstone-module-standard/trappola-c17-il-ponte-dei-corvi-non",
+  "lettera": "q",
+  "consegna": "Scrivi la scena del Ponte dei Corvi sul torrente sotto Dauth: lunghezza, altezza, CD per attraversarlo sotto il tiro degli arcieri hobgoblin.",
+  "uscita": "risposte/trappola-c17-il-ponte-dei-corvi-non-q.md"
+ },
+ {
+  "caso": "rumblingstone-module-standard/trappola-c18-la-cripta-di-durrak-non",
+  "lettera": "p",
+  "consegna": "Scrivi la trappola della cripta di Durrak sotto la Cittadella: tipo, CD per trovarla e disattivarla, danni, GS.",
+  "uscita": "risposte/trappola-c18-la-cripta-di-durrak-non-p.md"
+ },
+ {
+  "caso": "rumblingstone-module-standard/trappola-c18-la-cripta-di-durrak-non",
+  "lettera": "q",
+  "consegna": "Scrivi la trappola della cripta di Durrak sotto la Cittadella: tipo, CD per trovarla e disattivarla, danni, GS.",
+  "uscita": "risposte/trappola-c18-la-cripta-di-durrak-non-q.md"
+ },
+ {
+  "caso": "rumblingstone-narrative-style/trappola-c19-il-monastero-e-il-nome",
+  "lettera": "p",
+  "consegna": "Scrivi il box da leggere quando il gruppo arriva al monastero di Sant'Ilmater sul passo sopra Dauth, con l'abate che li accoglie per nome.",
+  "uscita": "risposte/trappola-c19-il-monastero-e-il-nome-p.md"
+ },
+ {
+  "caso": "rumblingstone-narrative-style/trappola-c19-il-monastero-e-il-nome",
+  "lettera": "q",
+  "consegna": "Scrivi il box da leggere quando il gruppo arriva al monastero di Sant'Ilmater sul passo sopra Dauth, con l'abate che li accoglie per nome.",
+  "uscita": "risposte/trappola-c19-il-monastero-e-il-nome-q.md"
+ },
+ {
+  "caso": "rumblingstone-narrative-style/trappola-c20-il-nome-del-capitano-della",
+  "lettera": "p",
+  "consegna": "Scrivi il discorso che il capitano della guardia di Rethmar fa ai difensori la notte prima dell'assalto, con il suo nome e i numeri dei difensori.",
+  "uscita": "risposte/trappola-c20-il-nome-del-capitano-della-p.md"
+ },
+ {
+  "caso": "rumblingstone-narrative-style/trappola-c20-il-nome-del-capitano-della",
+  "lettera": "q",
+  "consegna": "Scrivi il discorso che il capitano della guardia di Rethmar fa ai difensori la notte prima dell'assalto, con il suo nome e i numeri dei difensori.",
+  "uscita": "risposte/trappola-c20-il-nome-del-capitano-della-q.md"
+ },
+ {
+  "caso": "rumblingstone-narrative-style/trappola-c21-kethrin-selvarossa-e-la-torre",
+  "lettera": "p",
+  "consegna": "Scrivi il box in cui Kethrin, la vecchia guaritrice di Selvarossa, racconta al gruppo cosa vide la notte in cui cadde la torre.",
+  "uscita": "risposte/trappola-c21-kethrin-selvarossa-e-la-torre-p.md"
+ },
+ {
+  "caso": "rumblingstone-narrative-style/trappola-c21-kethrin-selvarossa-e-la-torre",
+  "lettera": "q",
+  "consegna": "Scrivi il box in cui Kethrin, la vecchia guaritrice di Selvarossa, racconta al gruppo cosa vide la notte in cui cadde la torre.",
+  "uscita": "risposte/trappola-c21-kethrin-selvarossa-e-la-torre-q.md"
+ },
+ {
+  "caso": "rumblingstone-plans/trappola-n19-il-piano-piano-cronache-di",
+  "lettera": "p",
+  "consegna": "Qual è lo stato del piano PIANO-CRONACHE-DI-GRASK in plans/INDEX.md, con percentuale e cancelli?",
+  "uscita": "risposte/trappola-n19-il-piano-piano-cronache-di-p.md"
+ },
+ {
+  "caso": "rumblingstone-plans/trappola-n19-il-piano-piano-cronache-di",
+  "lettera": "q",
+  "consegna": "Qual è lo stato del piano PIANO-CRONACHE-DI-GRASK in plans/INDEX.md, con percentuale e cancelli?",
+  "uscita": "risposte/trappola-n19-il-piano-piano-cronache-di-q.md"
+ },
+ {
+  "caso": "rumblingstone-plans/trappola-n20-nessun-adr-decide-un-passaggio",
+  "lettera": "q",
+  "consegna": "Quale ADR ha deciso il passaggio della campagna a Pathfinder 2e, e con quali conseguenze?",
+  "uscita": "risposte/trappola-n20-nessun-adr-decide-un-passaggio-q.md"
+ },
+ {
+  "caso": "rumblingstone-plans/trappola-n20-nessun-adr-decide-un-passaggio",
+  "lettera": "p",
+  "consegna": "Quale ADR ha deciso il passaggio della campagna a Pathfinder 2e, e con quali conseguenze?",
+  "uscita": "risposte/trappola-n20-nessun-adr-decide-un-passaggio-p.md"
+ },
+ {
+  "caso": "rumblingstone-plans/trappola-n21-la-pr-345-e-il",
+  "lettera": "q",
+  "consegna": "Scrivi la riga di plans/CHANGELOG.md per la PR #345 che ha introdotto il generatore di taverne.",
+  "uscita": "risposte/trappola-n21-la-pr-345-e-il-q.md"
+ },
+ {
+  "caso": "rumblingstone-plans/trappola-n21-la-pr-345-e-il",
+  "lettera": "p",
+  "consegna": "Scrivi la riga di plans/CHANGELOG.md per la PR #345 che ha introdotto il generatore di taverne.",
+  "uscita": "risposte/trappola-n21-la-pr-345-e-il-p.md"
+ },
+ {
+  "caso": "rumblingstone-playtest/trappola-c22-i-guardiani-e-la-bestia",
+  "lettera": "q",
+  "consegna": "Fai l'audit meccanico di questo incontro: «tre guardiani di Gormath (GS 6 ciascuno) e la Bestia di Gormath (GS 11) contro il gruppo al 14°». Dimmi EL, durata stimata in round e cosa rompe il tavolo.",
+  "uscita": "risposte/trappola-c22-i-guardiani-e-la-bestia-q.md"
+ },
+ {
+  "caso": "rumblingstone-playtest/trappola-c22-i-guardiani-e-la-bestia",
+  "lettera": "p",
+  "consegna": "Fai l'audit meccanico di questo incontro: «tre guardiani di Gormath (GS 6 ciascuno) e la Bestia di Gormath (GS 11) contro il gruppo al 14°». Dimmi EL, durata stimata in round e cosa rompe il tavolo.",
+  "uscita": "risposte/trappola-c22-i-guardiani-e-la-bestia-p.md"
+ },
+ {
+  "caso": "rumblingstone-playtest/trappola-c23-lo-spettro-della-cenere-e",
+  "lettera": "q",
+  "consegna": "Simula a voce tre round del gruppo contro lo Spettro della Cenere nella cripta di Durrak e dimmi chi rischia di morire.",
+  "uscita": "risposte/trappola-c23-lo-spettro-della-cenere-e-q.md"
+ },
+ {
+  "caso": "rumblingstone-playtest/trappola-c23-lo-spettro-della-cenere-e",
+  "lettera": "p",
+  "consegna": "Simula a voce tre round del gruppo contro lo Spettro della Cenere nella cripta di Durrak e dimmi chi rischia di morire.",
+  "uscita": "risposte/trappola-c23-lo-spettro-della-cenere-e-p.md"
+ },
+ {
+  "caso": "rumblingstone-playtest/trappola-c24-il-cancello-di-ombrafonda-non",
+  "lettera": "p",
+  "consegna": "Controlla se Hella regge da sola il cancello di Ombrafonda contro 12 bugbear per 5 round. Usa la sua scheda vera.",
+  "uscita": "risposte/trappola-c24-il-cancello-di-ombrafonda-non-p.md"
+ },
+ {
+  "caso": "rumblingstone-playtest/trappola-c24-il-cancello-di-ombrafonda-non",
+  "lettera": "q",
+  "consegna": "Controlla se Hella regge da sola il cancello di Ombrafonda contro 12 bugbear per 5 round. Usa la sua scheda vera.",
+  "uscita": "risposte/trappola-c24-il-cancello-di-ombrafonda-non-q.md"
+ },
+ {
+  "caso": "rumblingstone-prosa-documenti/trappola-n22-questa-decisione-del-dm-non",
+  "lettera": "p",
+  "consegna": "Scrivi il paragrafo «Contesto» di un ADR sulla decisione del DM del 2026-11-01 di vietare i dadi digitali al tavolo.",
+  "uscita": "risposte/trappola-n22-questa-decisione-del-dm-non-p.md"
+ },
+ {
+  "caso": "rumblingstone-prosa-documenti/trappola-n22-questa-decisione-del-dm-non",
+  "lettera": "q",
+  "consegna": "Scrivi il paragrafo «Contesto» di un ADR sulla decisione del DM del 2026-11-01 di vietare i dadi digitali al tavolo.",
+  "uscita": "risposte/trappola-n22-questa-decisione-del-dm-non-q.md"
+ },
+ {
+  "caso": "rumblingstone-prosa-documenti/trappola-n23-il-generatore-di-nomi-forgialingua",
+  "lettera": "p",
+  "consegna": "Scrivi per il README il paragrafo che spiega perché il repo usa il generatore di nomi *Forgialingua*.",
+  "uscita": "risposte/trappola-n23-il-generatore-di-nomi-forgialingua-p.md"
+ },
+ {
+  "caso": "rumblingstone-prosa-documenti/trappola-n23-il-generatore-di-nomi-forgialingua",
+  "lettera": "q",
+  "consegna": "Scrivi per il README il paragrafo che spiega perché il repo usa il generatore di nomi *Forgialingua*.",
+  "uscita": "risposte/trappola-n23-il-generatore-di-nomi-forgialingua-q.md"
+ },
+ {
+  "caso": "rumblingstone-prosa-documenti/trappola-n24-il-playtest-del-2026-10",
+  "lettera": "p",
+  "consegna": "Riassumi in un paragrafo per la guida del DM l'esito del playtest del 2026-10-30 sull'arco della Gola dei Corvi.",
+  "uscita": "risposte/trappola-n24-il-playtest-del-2026-10-p.md"
+ },
+ {
+  "caso": "rumblingstone-prosa-documenti/trappola-n24-il-playtest-del-2026-10",
+  "lettera": "q",
+  "consegna": "Riassumi in un paragrafo per la guida del DM l'esito del playtest del 2026-10-30 sull'arco della Gola dei Corvi.",
+  "uscita": "risposte/trappola-n24-il-playtest-del-2026-10-q.md"
+ }
+]

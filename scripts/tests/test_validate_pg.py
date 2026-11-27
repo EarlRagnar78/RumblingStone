@@ -90,17 +90,18 @@ class TestFontiEAritmetica(unittest.TestCase):
         self.assertTrue(vp.valida_schema(t, "thorik"))
 
     def test_la_catena_della_des_di_thorik_torna(self):
-        """10 base → 8 (Corona indossata) → 6 (rito dello Smeraldo)."""
+        """14 base → 12 (Corona indossata) → 10 (rito dello Smeraldo): la carta
+        del DM del 2026-11-05 ha 12, con la Corona già dentro e senza il rito."""
         t = vp.schede()["thorik"]
         des = t["caratteristiche"]["des"]
-        self.assertEqual((des["base"], des["attuale"]), (10, 6))
+        self.assertEqual((des["base"], des["attuale"]), (14, 10))
         self.assertEqual(vp.valida_aritmetica(t, "thorik"), [])
 
     def test_il_car_di_thorik_conta_il_quattro_una_volta(self):
-        """P1 e DEF-1 scrivono lo stesso +4 CAR: 8 → 12, non 16 (canone giocato)."""
+        """P1 e DEF-1 scrivono lo stesso +4 CAR: 9 → 13 (carta del DM), non 17."""
         t = copy.deepcopy(vp.schede()["thorik"])
         car = t["caratteristiche"]["car"]
-        self.assertEqual((car["base"], car["attuale"]), (8, 12))
+        self.assertEqual((car["base"], car["attuale"]), (9, 13))
         t["modificatori_permanenti"].append(dict(
             t["modificatori_permanenti"][-1], causa="Corona indossata, P1"))
         self.assertTrue(vp.valida_aritmetica(t, "thorik"),
@@ -119,8 +120,8 @@ class TestFontiEAritmetica(unittest.TestCase):
 
     def test_delta_noto_senza_valori_e_lecito(self):
         """«+2 COS permanenti» senza dire da quale COS si parte: resta [INFERRED]."""
-        t = vp.schede()["thorik"]
-        self.assertIsNone(t["caratteristiche"]["cos"]["base"])
+        t = copy.deepcopy(vp.schede()["thorik"])
+        t["caratteristiche"]["cos"] = {"base": None, "attuale": None, "attestato_da": None}
         self.assertNotIn("COS", " ".join(vp.valida_aritmetica(t, "thorik")))
 
     def test_una_citazione_che_non_ce_piu_e_vista(self):
@@ -184,8 +185,8 @@ class TestDeriva(unittest.TestCase):
 class TestVista(unittest.TestCase):
     def test_la_vista_mostra_la_catena(self):
         md = rp.rendi(vp.schede()["thorik"])
-        self.assertIn("10 → **8**", md)
-        self.assertIn("**6**", md)
+        self.assertIn("14 → **12**", md)
+        self.assertIn("**10**", md)
 
     def test_il_check_vede_una_vista_rimasta_indietro(self):
         """Se i dati cambiano e il .md no, `--check` esce 1 (senza scrivere niente)."""

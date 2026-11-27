@@ -138,7 +138,7 @@ Istrice. Chiede se può entrare. Aspetta che le dicano di sì.
 > *«Il vostro registro dei morti l'ho letto anch'io. Quei nove sono morti di resina
 > scaldata male, e nella mia tintoria si scalda bene.»*
 
-**L'offerta è vera.** Percepire Intenzioni CD 20: Vesca **non sta mentendo su
+**L'offerta è vera.** Intuizione CD 20: Vesca **non sta mentendo su
 niente**, e questo la rende molto più difficile da odiare. Chi supera la CD 25 coglie
 anche l'altra cosa: le fa schifo essere quella che scioglie una contrada, e lo fa lo
 stesso.
@@ -202,7 +202,7 @@ settimane. Serve **tutto il rione**, e il rione va convinto.
 La Oca anticipa il Peso intero. Nessuna prova: basta chiedere.
 **Costo**: il debito sale di 150 mo e — clausola detta ad alta voce, con
 noncuranza — l'Istrice **non ostacoleranno l'Oca in Corsa**.
-Chi ascolta con Percepire Intenzioni CD 15 capisce che quella clausola vale più dei
+Chi ascolta con Intuizione CD 15 capisce che quella clausola vale più dei
 150 mo.
 
 ### Via 3 — Il legno vecchio (grigia)

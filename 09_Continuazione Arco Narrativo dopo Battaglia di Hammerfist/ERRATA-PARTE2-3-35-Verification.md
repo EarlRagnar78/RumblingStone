@@ -1,5 +1,5 @@
 # ERRATA CORRIGE PARTE 2 & 3 (3.5 Verification)
-## Verifica meccanica D&D 3.5 SRD dei blocchi statistica di P2A/P2B/P2-RHEST/P3 + upscale del boss finale
+## Verifica meccanica D&D 3.5 SRD dei blocchi statistica di P2A/P2B/P2-LHESPER/P3 + upscale del boss finale
 
 > **Versione**: v1 (2026-07-02) — task **B5** del `PIANO-REVISIONE-ARC09`.
 > **Formato**: gemello di `ERRATA-PARTE1-Quest-Hellas-35-Verification.md`.
@@ -14,7 +14,7 @@
 **File analizzati (blocchi statistica):**
 1. `Arco-Post-Hammerfist-P2A-Torre-PARTE*-STATBLOCCHI-*.md` (Torre Invisibile, boss Zalkatar)
 2. `Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md` (Torneo di Dauth, Xal'thor/Sethrax/monaci)
-3. `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-*-STATBLOCCHI.md` (Saarvith + Regiarix, nido Razorfiend)
+3. `Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-*-STATBLOCCHI.md` (Saarvith + Regiarix, nido Razorfiend)
 4. `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` (Azarr Kul, Avatar, Erinni, Arcimago)
 5. `Bestiario/*.md` (catalogo unità riusate)
 
@@ -89,14 +89,15 @@ lista di buff pre-cast con **durate esplicite** e **2 effetti a innesco**. CR sa
        → durante *righteous might*: taglia Grande, CA 27 (−1 taglia, +2 nat), contatto 13
 - BAB / Lotta: +13 / +18 (Str 20 ; +19 sotto righteous might, taglia Grande)
 - TS: Temp +15, Rif +7, Vol +15  [+2 dai livelli di chierico in più]
-- Caratteristiche: For 20, Des 12, Cos 18, Int 12, Sag 20, Car 16
+- Caratteristiche: For 20, Des 12, Cos 18, Int 12, Sag 22 (pietra ioun sfera blu, +2), Car 16  [fino al 2026-11-19 Sag 20: le CD sotto erano già quelle di Sag 22, come la scheda viva `Bestiario/villain/Azarr_Kul/azarr-kul-final-cr17.md`; scelta del DM sulla card del 2026-11-19]
 
 **Attacco:**
 - Spadone sacrificale +2 +21/+16/+11 (2d6+9, 19-20/×2; +2d6 vs buoni)
   → sotto *divine power*: +25/+20/+15/+10 e For effettiva superiore
 - Soffio mezzodrago blu: linea elettricità 6 m, 6d8, Rif CD 20 metà, ogni 1d4 round
 
-**Incantesimi (Chierico 12, CL 14 con oggetti; domini Guerra + Tirannia/Tiamat):**
+**Incantesimi (Chierico 12, CL 14 con oggetti; domini Male + Tirannia/Tiamat):**
+<!-- storico: fino al 2026-11-19 domini Guerra + Tirannia; Tiamat non dà Guerra (scelta del DM sulla card del 2026-11-19) -->
 - 6°: *blade barrier* (CD 22), *harm* (CD 22)
 - 5°: *flame strike* cromatico (CD 21), *righteous might*, *slay living*
 - 4°: *divine power*, *freedom of movement*, *unholy blight* (CD 20), *air walk*
@@ -138,10 +139,10 @@ formazione, poi carica il buffer/guaritore del party sotto *divine power*; usa
 
 ---
 
-## 2. P2-RHEST — Saarvith & Regiarix
+## 2. P2-LHESPER — Saarvith & Regiarix
 
 ### 2.1 Saarvith (Goblin Ranger 10, Piccolo) — correzioni di taglia
-`...P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` §1.
+`...P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` §1.
 - ❌ **CA 22 / contatto 14** non contano il **+1 taglia (Piccolo)** → ✅ **CA 23,
   contatto 15**, colto alla sprovvista 19.
 - ❌ **Lotta +7** → con BAB +10, For +2, taglia Piccola −4 = ✅ **+8**.
@@ -149,7 +150,7 @@ formazione, poi carica il buffer/guaritore del party sotto *divine power*; usa
 - ✅ TS e talenti da arciere corretti.
 
 ### 2.2 Regiarix (Drago Nero, Grande) — attacchi naturali
-`...P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` §2 (e file gemello ENCOUNTER).
+`...P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` §2 (e file gemello ENCOUNTER).
 - ❌ **Morso +31** → BAB +22, For +8, taglia −1 = ✅ **+29** (salvo Weapon Focus
   esplicito, che va **dichiarato**).
 - ❌ **Artigli/ali +29 al valore pieno**: sono **secondari a −5** → ✅ **artigli +24,
@@ -256,7 +257,7 @@ place quando si tocca il file, o si tengono come **checklist di verifica al tavo
 
 ## 8. FILE DA AGGIORNARE (quando si toccano)
 
-1. `Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` — Saarvith taglia, Regiarix attacchi naturali.
+1. `Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` — Saarvith taglia, Regiarix attacchi naturali.
 2. `Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md` — CA contatto/colto, raffica monaci, RI.
 3. `Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` — RI non cumulativa, azioni 3.5.
 4. `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` — ✅ Azarr Kul fatto; Erinni/Avatar note.

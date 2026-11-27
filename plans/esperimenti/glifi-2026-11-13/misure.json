@@ -1,0 +1,781 @@
+{
+ "base": "main 43d42b96 (le pagine dei booklet sono le stesse su 4fdbd914)",
+ "verapdf": {
+  "main": {
+   "conformi": 18,
+   "booklet": 20,
+   "controlli_falliti": 7,
+   "font_nel_pdf": [
+    "Cinzel-Regular",
+    "EBGaramond-Italic",
+    "EBGaramond-Regular",
+    "FreeSans",
+    "FreeSansBold",
+    "Inconsolata-Regular",
+    "Inter-Regular-Identity-H",
+    "Inter-SemiBold-Identity-H",
+    "LiberationSerif",
+    "LiberationSerif-Bold",
+    "LiberationSerif-Italic",
+    "LibertinusSerif-Bold-Identity-H",
+    "LibertinusSerif-Regular-Identity-H",
+    "LibertinusSerif-Semibold-Identity-H",
+    "NewCMMath-Regular-Identity-H",
+    "NotoColorEmoji",
+    "Unifont-Identity-H",
+    "UnifontUpper-Identity-H"
+   ],
+   "per_booklet": {
+    "ARC07-GRUPPO-CAMMINO-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-MILLE-ANNI-VOLUME-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-NOTTE-E-ALBA-BOOKLET-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-NOTTE-E-ALBA-GIOCATORI-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-NOTTE-E-ALBA-SERATA-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-RITORNO-FORGIA-BOOKLET-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-SERATA-GIOCATORI-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-SERATA-RESURREZIONE-BOOKLET-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-SESSIONE-TERROS-BOOKLET-STAMPA.pdf": {
+     "conforme": false,
+     "falliti": 2,
+     "per_regola": {
+      "7.21.5-1": 2
+     }
+    },
+    "ARC07-TEASER-GIOCATORI-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "DRAPPO-BENVENUTO-TAVOLO-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "DRAPPO-BOOKLET-DM-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "DRAPPO-BOOKLET-GIOCATORI-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "DRAPPO-FASCICOLO-SCHEDE-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "DRAPPO-PROP-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "DRAPPO-SCHEDE-PG-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "PALIO-BOOKLET-STAMPA.pdf": {
+     "conforme": false,
+     "falliti": 5,
+     "per_regola": {
+      "7.21.5-1": 5
+     }
+    },
+    "abbazia-rotta-sicura-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "giardino-sale-calce-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "giardino-sale-calce-pf1e-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    }
+   }
+  },
+  "ramo": {
+   "conformi": 20,
+   "booklet": 20,
+   "controlli_falliti": 0,
+   "font_nel_pdf": [
+    "Cinzel-Regular",
+    "DejaVuSansMono",
+    "EBGaramond-Italic",
+    "EBGaramond-Regular",
+    "Inconsolata-Regular",
+    "LibertinusSerif-Bold-Identity-H",
+    "LibertinusSerif-Regular-Identity-H",
+    "LibertinusSerif-Semibold-Identity-H",
+    "NewCMMath-Bold-Identity-H",
+    "NewCMMath-Regular-Identity-H",
+    "NotoColorEmoji"
+   ],
+   "per_booklet": {
+    "ARC07-GRUPPO-CAMMINO-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-MILLE-ANNI-VOLUME-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-NOTTE-E-ALBA-BOOKLET-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-NOTTE-E-ALBA-GIOCATORI-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-NOTTE-E-ALBA-SERATA-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-RITORNO-FORGIA-BOOKLET-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-SERATA-GIOCATORI-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-SERATA-RESURREZIONE-BOOKLET-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-SESSIONE-TERROS-BOOKLET-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "ARC07-TEASER-GIOCATORI-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "DRAPPO-BENVENUTO-TAVOLO-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "DRAPPO-BOOKLET-DM-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "DRAPPO-BOOKLET-GIOCATORI-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "DRAPPO-FASCICOLO-SCHEDE-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "DRAPPO-PROP-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "DRAPPO-SCHEDE-PG-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "PALIO-BOOKLET-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "abbazia-rotta-sicura-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "giardino-sale-calce-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    },
+    "giardino-sale-calce-pf1e-STAMPA.pdf": {
+     "conforme": true,
+     "falliti": 0,
+     "per_regola": {}
+    }
+   }
+  }
+ },
+ "pixel_60dpi_sopra_il_piede": {
+  "ARC07-GRUPPO-CAMMINO-STAMPA": {
+   "pagine": 4,
+   "diverse_sopra_il_piede": [],
+   "parole_spostate": []
+  },
+  "ARC07-MILLE-ANNI-VOLUME-STAMPA": {
+   "pagine": 105,
+   "diverse_sopra_il_piede": [
+    [
+     2,
+     6614
+    ],
+    [
+     7,
+     37088
+    ],
+    [
+     15,
+     10913
+    ],
+    [
+     16,
+     67788
+    ],
+    [
+     17,
+     14653
+    ],
+    [
+     18,
+     22416
+    ],
+    [
+     21,
+     15057
+    ],
+    [
+     36,
+     1364
+    ],
+    [
+     52,
+     27234
+    ],
+    [
+     53,
+     9975
+    ],
+    [
+     59,
+     12287
+    ],
+    [
+     65,
+     181
+    ],
+    [
+     66,
+     7712
+    ],
+    [
+     69,
+     4638
+    ],
+    [
+     99,
+     14077
+    ]
+   ],
+   "parole_spostate": [
+    2,
+    7,
+    15,
+    16,
+    17,
+    18,
+    21,
+    52,
+    53,
+    59,
+    66,
+    69,
+    99
+   ]
+  },
+  "ARC07-NOTTE-E-ALBA-BOOKLET-STAMPA": {
+   "pagine": 158,
+   "diverse_sopra_il_piede": [
+    [
+     2,
+     6624
+    ],
+    [
+     13,
+     51022
+    ],
+    [
+     61,
+     37088
+    ],
+    [
+     69,
+     10913
+    ],
+    [
+     70,
+     67788
+    ],
+    [
+     71,
+     14653
+    ],
+    [
+     72,
+     22416
+    ],
+    [
+     75,
+     15057
+    ],
+    [
+     90,
+     1364
+    ],
+    [
+     106,
+     27234
+    ],
+    [
+     107,
+     9975
+    ],
+    [
+     113,
+     12287
+    ],
+    [
+     119,
+     181
+    ],
+    [
+     120,
+     7712
+    ],
+    [
+     123,
+     4638
+    ]
+   ],
+   "parole_spostate": [
+    2,
+    13,
+    61,
+    69,
+    70,
+    71,
+    72,
+    75,
+    106,
+    107,
+    113,
+    120,
+    123
+   ]
+  },
+  "ARC07-NOTTE-E-ALBA-GIOCATORI-STAMPA": {
+   "pagine": 7,
+   "diverse_sopra_il_piede": [],
+   "parole_spostate": []
+  },
+  "ARC07-NOTTE-E-ALBA-SERATA-STAMPA": {
+   "pagine": 125,
+   "diverse_sopra_il_piede": [
+    [
+     2,
+     7417
+    ],
+    [
+     14,
+     51521
+    ],
+    [
+     53,
+     6232
+    ],
+    [
+     66,
+     29709
+    ],
+    [
+     67,
+     8715
+    ],
+    [
+     79,
+     21158
+    ],
+    [
+     87,
+     181
+    ],
+    [
+     88,
+     6946
+    ]
+   ],
+   "parole_spostate": [
+    2,
+    14,
+    53,
+    66,
+    67,
+    79,
+    88
+   ]
+  },
+  "ARC07-RITORNO-FORGIA-BOOKLET-STAMPA": {
+   "pagine": 29,
+   "diverse_sopra_il_piede": [],
+   "parole_spostate": []
+  },
+  "ARC07-SERATA-GIOCATORI-STAMPA": {
+   "pagine": 19,
+   "diverse_sopra_il_piede": [
+    [
+     12,
+     29376
+    ]
+   ],
+   "parole_spostate": [
+    12
+   ]
+  },
+  "ARC07-SERATA-RESURREZIONE-BOOKLET-STAMPA": {
+   "pagine": 173,
+   "diverse_sopra_il_piede": [
+    [
+     2,
+     6061
+    ],
+    [
+     11,
+     102
+    ],
+    [
+     13,
+     170200
+    ],
+    [
+     15,
+     50958
+    ],
+    [
+     67,
+     26455
+    ],
+    [
+     75,
+     36597
+    ],
+    [
+     83,
+     10913
+    ],
+    [
+     84,
+     67788
+    ],
+    [
+     85,
+     14653
+    ],
+    [
+     86,
+     22416
+    ],
+    [
+     89,
+     15057
+    ],
+    [
+     104,
+     1364
+    ],
+    [
+     120,
+     27234
+    ],
+    [
+     121,
+     9975
+    ],
+    [
+     127,
+     12287
+    ],
+    [
+     133,
+     181
+    ],
+    [
+     134,
+     7712
+    ],
+    [
+     137,
+     4638
+    ],
+    [
+     170,
+     17591
+    ]
+   ],
+   "parole_spostate": [
+    2,
+    13,
+    15,
+    67,
+    75,
+    83,
+    84,
+    85,
+    86,
+    89,
+    120,
+    121,
+    127,
+    134,
+    137,
+    170
+   ]
+  },
+  "ARC07-SESSIONE-TERROS-BOOKLET-STAMPA": {
+   "pagine": 66,
+   "diverse_sopra_il_piede": [
+    [
+     19,
+     84489
+    ],
+    [
+     32,
+     19258
+    ],
+    [
+     38,
+     106714
+    ],
+    [
+     55,
+     1704
+    ],
+    [
+     65,
+     40686
+    ]
+   ],
+   "parole_spostate": [
+    19,
+    32,
+    38,
+    65
+   ]
+  },
+  "ARC07-TEASER-GIOCATORI-STAMPA": {
+   "pagine": 3,
+   "diverse_sopra_il_piede": [],
+   "parole_spostate": []
+  },
+  "DRAPPO-BENVENUTO-TAVOLO-STAMPA": {
+   "pagine": 2,
+   "diverse_sopra_il_piede": [],
+   "parole_spostate": []
+  },
+  "DRAPPO-BOOKLET-DM-STAMPA": {
+   "pagine": 88,
+   "diverse_sopra_il_piede": [
+    [
+     22,
+     264922
+    ],
+    [
+     23,
+     17944
+    ]
+   ],
+   "parole_spostate": [
+    22
+   ]
+  },
+  "DRAPPO-BOOKLET-GIOCATORI-STAMPA": {
+   "pagine": 8,
+   "diverse_sopra_il_piede": [],
+   "parole_spostate": []
+  },
+  "DRAPPO-FASCICOLO-SCHEDE-STAMPA": {
+   "pagine": 11,
+   "diverse_sopra_il_piede": [],
+   "parole_spostate": []
+  },
+  "DRAPPO-PROP-STAMPA": {
+   "pagine": 6,
+   "diverse_sopra_il_piede": [],
+   "parole_spostate": []
+  },
+  "DRAPPO-SCHEDE-PG-STAMPA": {
+   "pagine": 6,
+   "diverse_sopra_il_piede": [],
+   "parole_spostate": []
+  },
+  "PALIO-BOOKLET-STAMPA": {
+   "pagine": 65,
+   "diverse_sopra_il_piede": [
+    [
+     2,
+     3876
+    ],
+    [
+     7,
+     7812
+    ],
+    [
+     16,
+     2880
+    ],
+    [
+     17,
+     6657
+    ],
+    [
+     18,
+     7033
+    ],
+    [
+     19,
+     6488
+    ],
+    [
+     20,
+     3797
+    ],
+    [
+     21,
+     23324
+    ],
+    [
+     46,
+     106137
+    ],
+    [
+     58,
+     4392
+    ],
+    [
+     60,
+     19604
+    ],
+    [
+     61,
+     1071
+    ],
+    [
+     62,
+     28773
+    ],
+    [
+     63,
+     762
+    ]
+   ],
+   "parole_spostate": [
+    2,
+    7,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    46,
+    60,
+    62
+   ]
+  },
+  "abbazia-rotta-sicura-STAMPA": {
+   "pagine": 45,
+   "diverse_sopra_il_piede": [
+    [
+     2,
+     6360
+    ]
+   ],
+   "parole_spostate": [
+    2
+   ]
+  },
+  "giardino-sale-calce-STAMPA": {
+   "pagine": 40,
+   "diverse_sopra_il_piede": [
+    [
+     2,
+     7584
+    ],
+    [
+     9,
+     35
+    ]
+   ],
+   "parole_spostate": [
+    2
+   ]
+  },
+  "giardino-sale-calce-pf1e-STAMPA": {
+   "pagine": 25,
+   "diverse_sopra_il_piede": [
+    [
+     2,
+     6595
+    ]
+   ],
+   "parole_spostate": [
+    2
+   ]
+  }
+ }
+}

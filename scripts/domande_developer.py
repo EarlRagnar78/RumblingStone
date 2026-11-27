@@ -74,6 +74,8 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import copertura_scene as cs  # noqa: E402
+from dmcore.sistemi import sistema_di  # noqa: E402
+from dmcore import sistemi as _S  # noqa: E402
 import componenti as comp  # noqa: E402
 
 CONFIG = ROOT / "plans" / "domande-developer.json"
@@ -120,11 +122,12 @@ SC_CHI = re.compile(r"(?i)prova di gruppo|tirano tutti|tutti e \w+ i PG|ogni PG|
 SC_SUCCESSO = re.compile(r"(?i)\b(?:ogni|un|il) (?:successo|blocco)\b|\briesce se\b|\bsuccesso\s*\(|"
                          r"\*\*\d+ successi\*\*|successo pieno|\bSuccesso\b")
 SC_COPPIA = re.compile(r"(\d+)\s+successi\s*(?:prima di|/)\s*(\d+)\s+fallimenti")
-#: Le abilità che nel sistema del modulo non esistono. In PF1e Percezione,
-#: Furtività e Intuizione ci sono (Perception, Stealth, Sense Motive): alla
-#: prima prova il Drappo, che è PF1e, ne risultava pieno.
-ABILITA_ESTRANEE = {"3.5": ("Atletica", "Intuizione", "Percezione", "Furtività"),
-                    "pf1e": ("Atletica",)}
+#: Le abilità che nel sistema del modulo non esistono, dal plugin del sistema
+#: (`estranee` di lessico.abilita, ADR-0111 L3). In PF1e Percezione, Furtività
+#: e Intuizione ci sono: alla prima prova il Drappo, che è PF1e, ne risultava pieno.
+#: Il nome del sistema in ABILITA_ESTRANEE per l'id del plugin (sistemi/).
+SISTEMA_DEL_PLUGIN = {"dnd35": "3.5", "pf1e": "pf1e"}
+ABILITA_ESTRANEE = {nome: tuple(_S.abilita(pid)["estranee"]) for pid, nome in SISTEMA_DEL_PLUGIN.items()}
 
 
 def _abilita_estranee(sistema: str) -> "re.Pattern":
@@ -162,7 +165,10 @@ USCITA = re.compile(r"(?i)il giocatore|chi è (?:dominat|paralizzat|pietrificat|
 #: «Se lo divinano» della D9: una riga **Domanda:** o **Posta in gioco:** che
 #: finisce col punto di domanda. Si accetta anche la domanda già scritta nella
 #: prosa del DM, «la domanda non è X, ma se Y» (DEF-4, Scena 4).
-SOCIALE = re.compile(r"\b(?:Diplomazia|Raggirare|Intimidire|Percepire Intenzioni)\b")
+#: «Intuizione» è il nome PF1e di Sense Motive (3.5: Percepire Intenzioni); è
+#: anche una parola comune, quindi conta solo nella forma meccanica (CD o bonus).
+SOCIALE = re.compile(r"\b(?:Diplomazia|Raggirare|Intimidire|Percepire Intenzioni)\b"
+                     r"|\bIntuizione\s*(?:CD\s*\d|[+−-]\d|\()")
 DOMANDA = re.compile(r"(?im)^[>\s*-]*\*\*(?:Domanda(?: drammatica)?|Posta in gioco)\s*:?\*\*\s*:?[^\n]*\?"
                      r"|\b[Ll]a domanda (?:della scena )?(?:è se\b|non è[^.\n]{0,80}?\bma se\b)"
                      r"|^#*\s*\*\*Obiettivo\b")
@@ -466,6 +472,12 @@ def esegui(cfg: dict) -> "tuple[list, list, list]":
         if not f.exists():
             continue
         prof = {**mod, **profili.get(mod["file"], {})}
+        # Il sistema viene da sistemi.toml [moduli], un posto solo (ADR-0111, L2):
+        # prima stava anche nei profili di plans/domande-developer.json.
+        if "sistema" in profili.get(mod["file"], {}):
+            raise SystemExit(f"domande_developer: «sistema» nel profilo di {mod['file']}: "
+                             "il sistema di un modulo si dichiara in sistemi.toml [moduli]")
+        prof["sistema"] = SISTEMA_DEL_PLUGIN.get(sistema_di(mod["file"]), sistema_di(mod["file"]))
         testo = f.read_text(encoding="utf-8")
         gruppo = prof.get("modulo")
         for regola, scena, dettaglio in analizza(testo, prof, con_ts=not gruppo):

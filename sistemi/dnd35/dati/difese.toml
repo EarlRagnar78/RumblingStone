@@ -1,0 +1,63 @@
+# sistemi/dnd35/dati/difese.toml — resistenza agli incantesimi e riduzione del danno 3.5
+# che razza e classe danno (ADR-0126, lotto 7)
+#
+# GENERATO da plans/esperimenti/regole-senza-omissioni-2026-11-12/estrai_difese.py
+# dall'SRD 3.5 (olimot/srd-v3.5-md@c7f30a0c, OGL). Non si corregge a mano.
+
+[difese.ri.razze]
+# SRD, mostri: «spell resistance equal to N + class levels»
+"azer" = 13
+"drow" = 11
+"hound archon" = 16
+"pixie" = 15
+"rakshasa" = 27
+"svirfneblin" = 11
+
+[difese.ri.nomi]
+# come una scheda chiama la razza (espressioni regolari; non vengono dall'SRD)
+"azer" = ["azer"]
+"drow" = ["drow"]
+"hound archon" = ["hound archons?", "arcont[ei] segugi[oi]?"]
+"pixie" = ["pixie"]
+"rakshasa" = ["rakshasa"]
+"svirfneblin" = ["svirfneblin", "gnom[oi] delle profondità", "deep gnomes?"]
+
+[difese.ri.classi]
+# monaco, «Diamond Soul»: livello di monaco + `piu`, dal livello `dal`
+monk = { dal = 13, piu = 10 }
+
+[difese.rd.classi]
+# barbaro, «Damage Reduction»: N/— per livello (dal 1° al 20°)
+barbarian = { per_livello = [0, 0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3, 3, 4, 4, 4, 5, 5] }
+
+[difese.immunita.tipi]
+# SRD, tipi di creatura: le righe «Immunity to …» dei tratti di ogni tipo
+"construct" = ["influenza mentale", "veleno", "sonno", "paralisi", "stordimento", "malattia", "effetti di morte", "necromanzia"]
+"dragon" = ["sonno", "paralisi"]
+"elemental" = ["veleno", "sonno", "paralisi", "stordimento"]
+"ooze" = ["influenza mentale", "veleno", "sonno", "paralisi", "stordimento", "metamorfosi"]
+"plant" = ["influenza mentale", "veleno", "sonno", "paralisi", "stordimento", "metamorfosi"]
+"undead" = ["influenza mentale", "veleno", "sonno", "paralisi", "stordimento", "malattia", "effetti di morte"]
+"vermin" = ["influenza mentale"]
+
+[difese.immunita.nomi]
+# come una scheda chiama il tipo in italiano, per la formula «tratti dei …» (non viene dall'SRD)
+"construct" = "costrutt[oi]"
+"dragon" = "dragh?[oi]"
+"elemental" = "elemental[ei]"
+"ooze" = "melm[ae]"
+"plant" = "vegetal[ei]"
+"undead" = "non[ -]mort[oi]"
+"vermin" = "parassit[ai]"
+
+[difese.immunita.parole]
+# come una scheda scrive ogni immunità (espressioni regolari; non vengono dall'SRD)
+"influenza mentale" = 'mental|mind-affecting|\bmente\b'
+"veleno" = 'velen|poison'
+"sonno" = 'sonno|sleep'
+"paralisi" = 'paralisi|paraly'
+"stordimento" = 'stordi|stun'
+"malattia" = 'malatti|disease'
+"effetti di morte" = 'morte|death'
+"necromanzia" = 'necromanzi|necromanc'
+"metamorfosi" = 'metamorf|polimorf|polymorph'

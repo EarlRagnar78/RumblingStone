@@ -15,8 +15,8 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | **Fauci di Palude** | SCENA 2 | oggi, che le mura lo guardino. Il Giorno 3, un re davanti all'orda | non parla coi nani. Il cavaliere grida gli ordini in goblin, e il drago non li ascolta |
 | i troll dell'ariete | SCENA 2 | — | non parlano: annusano |
 | i giganti della strada | SCENA 2 | — | ridono a ogni masso che arriva |
-| **la Madre Superiora Dana Forgiapietra** | SCENA 3 | tenere in piedi il Re e le Cantitrici, in quest'ordine | sussurra le preghiere e tuona le benedizioni; ai feriti dice il nome del loro clan |
-| **Melodia Echopietra** | SCENA 4 | finire il canto prima che finisca il giorno | parla solo fra un canto e l'altro, e solo per dire il nome di chi è caduto |
+| **la Madre Superiora Dagmar Forgiapietra** | SCENA 3 | tenere in piedi il Re e le Cantitrici, in quest'ordine | sussurra le preghiere e tuona le benedizioni; ai feriti dice il nome del loro clan |
+| **Sigrun Cantoprofondo** | SCENA 4 | finire il canto prima che finisca il giorno | parla solo fra un canto e l'altro, e solo per dire il nome di chi è caduto |
 | **Grimjaw** | SCENA 4 | il Re in ginocchio davanti all'orda, e Hammerfist intera: una fortezza che si arrende vale più di una che brucia | frasi lunghe, da uomo che ha studiato; parla in comune ai nani perché lo capiscano tutti, e in orchesco ai suoi |
 | le Cantitrici | SCENA 4 | — | cantano; fra un canto e l'altro, niente |
 | la guardia nera | SCENA 4 | — | non parlano: parla Grimjaw per loro |
@@ -30,15 +30,21 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 
 | Scena | Prova | CD |
 |---|---|---:|
-| SCENA 2 | 12d6 a chi la attraversa (Riflessi | 22 |
+| SCENA 2 | con un Riflessi per la barriera | 22 |
+| SCENA 2 | Gorthak tira Volontà | 15 |
 | SCENA 2 | corda annodata contro il muro (Scalare | 0 |
 | SCENA 2 | pregen entro 90 m tirano Volontà | 25 |
 | SCENA 2 | 14d4 acido, Riflessi | 29 |
 | SCENA 2 | colpo infuocato (12d6, Riflessi | 21 |
 | SCENA 2 | magie mirato (d20 + 10 contro | 18 |
+| SCENA 2 | Uscire senza provocare vuole Acrobazia | 15 |
+| SCENA 2 | dei due orog davanti con Acrobazia | 25 |
+| SCENA 2 | Nala lo evita con Acrobazia | 15 |
 | SCENA 3 | Torre Ovest, la vede crescere (Osservare | 15 |
 | SCENA 4 | 9 m o lo sente (Ascoltare | 15 |
 | SCENA 4 | alla guardia) e Presenza intimidatoria (Volontà | 19 |
+| SCENA 4 | e prendono 12d6, metà col Riflessi | 22 |
+| SCENA 4 | allora tirano Volontà | 15 |
 | SCENA 4 | Coro della Montagna (terremoto sulla roccia | 22 |
 | SCENA 6 | se è sulle Mura, tira Riflessi | 29 |
 | SCENA 6 | Volontà | 25 |
@@ -46,7 +52,11 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 6 | chi è colpito tira Tempra | 20 |
 | SCENA 6 | d20 + 10 contro | 18 |
 | SCENA 6 | L'invocazione a Moradin (Carisma | 22 |
-| SCENA 6 | Fauci tira Volontà +19 contro | 15 |
+| SCENA 6 | Fauci tira Volontà +22 contro | 15 |
+| SCENA 6 | Palla di fuoco ritardata (13d6, Riflessi | 26 |
+| SCENA 6 | palla di fuoco rapida (10d6, Riflessi | 22 |
+| SCENA 6 | passa, Fauci tira Tempra +24 contro | 23 |
+| SCENA 6 | contro la Presenza terrificante (Volontà | 25 |
 | SCENA 6 | contro | 29 |
 | SCENA 6 | una cura qualunque o con Guarire | 15 |
 | SCENA 7 | La statua si sposta con Forza | 20 |
@@ -54,9 +64,13 @@ Il foglio del cast, l'inserto con le CD e l'indice dei read-aloud, presi dai com
 | SCENA 7 | suo bonus Combattere (Appendice A.11) contro | 28 |
 | SCENA 7 | statua dietro di sé (una Forza | 20 |
 | SCENA 8 | salire su S5 (Dara, Scalare | 10 |
+| SCENA 8 | di un veterano (Acrobazia +11 contro | 25 |
 | SCENA 8 | Tempra | 16 |
-| SCENA 8 | sigilla (12d6 a chi passa, Riflessi | 22 |
+| SCENA 8 | con un Riflessi per la barriera | 22 |
 | SCENA 8 | azione di round completo, Tempra | 10 |
+| SCENA 8 | Contro l'attacco mortale tira Tempra +14 | 16 |
+| SCENA 8 | contro l'attacco mortale Tempra +11 | 16 |
+| SCENA 8 | palla i bugbear tirano Riflessi +13 | 22 |
 
 ## L'indice dei read-aloud, in ordine di gioco
 

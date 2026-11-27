@@ -1,0 +1,295 @@
+{
+  "schema_version": "1.0",
+  "title": "T-5 · ANTICAMERA DELLA MAGNETITE — esagono Ø 18 m (12 col × 11 righe · 1,5 m)",
+  "scale_m_per_square": 1.5,
+  "units_in": "squares",
+  "map_size": [
+    12,
+    11
+  ],
+  "base_terrain": "⬜",
+  "north": "N",
+  "regions": [
+    {
+      "terrain": "🏰",
+      "rect": [
+        0,
+        0,
+        3,
+        1
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        9,
+        0,
+        3,
+        1
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        10,
+        1,
+        2,
+        2
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        11,
+        3,
+        1,
+        2
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        0,
+        6,
+        1,
+        5
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        11,
+        6,
+        1,
+        5
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        1,
+        8,
+        1,
+        3
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        10,
+        8,
+        1,
+        3
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        2,
+        10,
+        1,
+        1
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        9,
+        10,
+        1,
+        1
+      ],
+      "label": "Muro / roccia solida"
+    }
+  ],
+  "structures": [
+    {
+      "type": "🚪",
+      "rect": [
+        5,
+        10,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🤖",
+      "at": [
+        5,
+        5
+      ]
+    },
+    {
+      "type": "🧲",
+      "at": [
+        0,
+        5
+      ]
+    },
+    {
+      "type": "🧲",
+      "rect": [
+        1,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🧲",
+      "rect": [
+        1,
+        6,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🧲",
+      "rect": [
+        2,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🧲",
+      "rect": [
+        2,
+        8,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🧲",
+      "rect": [
+        3,
+        0,
+        6,
+        1
+      ]
+    },
+    {
+      "type": "🧲",
+      "rect": [
+        3,
+        10,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🧲",
+      "rect": [
+        7,
+        10,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "🧲",
+      "rect": [
+        9,
+        1,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🧲",
+      "rect": [
+        9,
+        8,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🧲",
+      "rect": [
+        10,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🧲",
+      "rect": [
+        10,
+        6,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "🧲",
+      "at": [
+        11,
+        5
+      ]
+    }
+  ],
+  "units": [
+    {
+      "token": "🔵",
+      "area": {
+        "rect": [
+          5,
+          1,
+          2,
+          1
+        ]
+      },
+      "quantity": 2,
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "at": [
+        5,
+        7
+      ],
+      "name": "PG / alleati"
+    }
+  ],
+  "notes": [
+    "Contratto ricavato il 2026-11-09 dalla griglia di `07_il Portale Della Forgia Eterna/Mappe/ARC07-MAPPE-SCHEMATICHE-IN-SCALA.md` (mappa 1) con `import_ultraclear.py`. Griglia e contratto restano identici: lo controlla `scripts/tests/test_contratti_mappe.py`. Chi cambia la mappa cambia questo file e rigenera la griglia con `compile_map_json.py`."
+  ],
+  "simboli_locali": {
+    "🤖": "la Sentinella",
+    "🧲": "parete di magnetite: incolla chi porta metallo"
+  }
+}

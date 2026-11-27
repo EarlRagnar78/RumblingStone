@@ -1,0 +1,33 @@
+{
+ "_cos_e": "Annotazione dell'estratto di Red Hand of Doom (WotC 2006, 22 pagine non contigue del libro, PDF comprato dal DM, fuori dal repo). Misurabili: S1 (Introduzione e Parte I) e S2/S3 sulla mappa di Drellin's Ferry (luoghi 1-9 alle pp. 14-15 del PDF, mappa a p. 15). Le pagine del Fane of Tiamat (21-22) non hanno la loro mappa nell'estratto e restano fuori. S4 e S5 non si misurano su un estratto.",
+ "sha256_pdf": "4ef9e4e2ac716f8567ddbfa74c579e3507f6ae861df1d6f8c564b07dba04414e",
+ "capitoli": {
+  "livello": 2,
+  "filtro": "^Part"
+ },
+ "codici_numerici": true,
+ "pagine_testo": [
+  [
+   14,
+   15
+  ]
+ ],
+ "mappe": [
+  {
+   "pagina": 15,
+   "nome": "Drellin's Ferry",
+   "codici": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+   ],
+   "nota": "la mappa ha i luoghi 1-19; i luoghi 10-19 sono descritti in pagine che l'estratto non ha, quindi si annotano solo 1-9"
+  }
+ ]
+}

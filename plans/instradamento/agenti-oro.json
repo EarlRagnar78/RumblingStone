@@ -1,0 +1,328 @@
+{
+ "nota": "Set d'oro dell'instradamento degli agenti (ADR-0154). Messaggi veri: le radici dei thread del progetto scritte da Jfs (dal 10/10 al 27/11), più gli avvisi del coordinatore e i resoconti dei sottoagenti che l'hook UserPromptSubmit riceve come se fossero messaggi. «atteso» è il primo agente che il lavoro chiede, o «nessuno» se il messaggio non chiede lavoro a uno specialista; etichetta del thread «Misurare e migliorare agenti, skill e automatismi», poi una seconda etichettatura alla cieca (annotatore_b, un sottoagente che non vedeva le prime: kappa di Cohen 0,78 sui primi 28, accordo 23 su 28). Dove le due etichette differiscono, quella di B è fra le «accettabili». Split temporale: «dev» prima del 2026-11-19, «test» dal 2026-11-19; le regole si tarano solo sul dev. I testi lunghi con un articolo incollato tengono solo la parte scritta da Jfs. Etichette confermate dal DM caso per caso su card il 2026-11-27 (scelte in /mnt/project-files/agenti-eval-2026-11-27/SCELTE-JFS.tsv): cambiati i casi «stack MCP» (→ piattaforma), «ricerca accanto al changelog» (→ autore-documenti), «Skullcrusher nel cortile» (→ autore-master), «best practice di Claude Code» (→ sviluppatore), «uso reale di connettori» (→ piattaforma); tolto «Sì grazie» perché senza contesto non si etichetta. Dopo l'arrivo di custode-memoria (#529, ADR-0151), Jfs ha rietichettato «memoria del progetto oltre il limite» da sviluppatore a custode-memoria (card del 2026-11-27). Il kappa sopra è quello misurato prima della conferma.",
+ "tetto": {
+  "nota": "Cricchetto di instradamento_agenti.py --check sullo split test (ADR-0154): conteggi interi minimi e macro-F1 esatta. Rimesso il 2026-11-27 dopo la conferma delle etichette da parte del DM: è cambiato il set, non l'hook (prima 4/18, 107/1155 sulle etichette non confermate), poi alzato dopo il riallineo a main 77748c5b con la rietichettatura di custode-memoria. Alzato il 2026-11-27 dalla macro-F1 41/252 a 58/315 con gli omonimi dei trigger (M2, tecnica 2; giusti invariati). Si alza a mano quando --check avvisa che la misura è salita; non si abbassa.",
+  "giusti": 4,
+  "giusti_indulgenti": 4,
+  "macro_f1": "58/315"
+ },
+ "casi": [
+  {
+   "data": "2026-10-10",
+   "fonte": "thread «LLM locale per la prosa»",
+   "tipo": "dm",
+   "testo": "one other task to evaluate think to search measure and test if is worth for prose gnerationio there are in this repo roles skills but it is worth to use a local specialized llm to be used as for example confui ? what are the best community evalualted tools  and maybe plugin to be used to crete the best and measured usisng the best tool to get quality of the proze with role ans skills contrains ?",
+   "atteso": "piattaforma",
+   "accettabili": [],
+   "annotatore_b": "piattaforma",
+   "split": "dev"
+  },
+  {
+   "data": "2026-10-29",
+   "fonte": "thread «Immagini dei personaggi in posa con l'AI»",
+   "tipo": "dm",
+   "testo": "Cerca anche nei threads precedenti se esiste un threads che parla di immagini di personaggi che con l ai specializzati possono essere generati in varie pose e ce anche un elenco dei migliori servizi ol line con immagini generate disponibili e se possibile importare nel repo come mettere in posa i personaggi magari nelle scene e nelle immagini da mostrare ai pg durante le ambientazioni dell avventura",
+   "atteso": "art-director",
+   "accettabili": [],
+   "annotatore_b": "art-director",
+   "split": "dev"
+  },
+  {
+   "data": "2026-11-11",
+   "fonte": "thread «Completare le regole senza omissioni» (solo la parte scritta da Jfs, senza l'esempio incollato)",
+   "tipo": "dm",
+   "testo": "Use a threads to evacuate this stack and check if can be useful and measure the adoption in the repi can be pissible and use the call to the rules using mcp server so avoid rules problem : the exact failing rule or counterexample back to the LLM to self-correct. Example: Verifying State-Changing Code with Prolog",
+   "atteso": "piattaforma",
+   "accettabili": [
+    "integratore-dm",
+    "sviluppatore",
+    "regolista"
+   ],
+   "annotatore_b": "piattaforma",
+   "split": "dev"
+  },
+  {
+   "data": "2026-11-12",
+   "fonte": "thread «Salvare la memoria storica nel repo»",
+   "tipo": "dm",
+   "testo": "Ok solo per essere sicuri fai questa ricerca e se trovi qualcosa salvalo in un file nel repo collegato al.changelog cosi puo avere tutto e diventare anche piu grande della memoria?",
+   "atteso": "autore-documenti",
+   "accettabili": [
+    "sviluppatore"
+   ],
+   "annotatore_b": "autore-documenti",
+   "split": "dev"
+  },
+  {
+   "data": "2026-11-13",
+   "fonte": "thread «Applicare Document AI e Explainable AI»",
+   "tipo": "dm",
+   "testo": "Quali tecniche di document ai ed expleinable ai and generative AI che usano i best standard e glinstandard dinfattonsononapplicabilinal repo e utilizzano librerie std di fatto applicabili e misurabili che migliorerebbe il repo e i contenuti generati? Fai una ricerca completa e applicazione misurando il miglioramento prima nella fase di testing e poi approvando secondo lo schema del repo",
+   "atteso": "piattaforma",
+   "accettabili": [
+    "impaginatore"
+   ],
+   "annotatore_b": "piattaforma",
+   "split": "dev"
+  },
+  {
+   "data": "2026-11-15",
+   "fonte": "thread «Preparare le prove sul portatile RTX 4050»",
+   "tipo": "dm",
+   "testo": "Di tutti i theads che hanno bisogno della prova sul pc 4050 ci sono le istruzioni dettagliate e gli script necessari per fare la prove  che possonlanciare sul portatile cosi la prova diventa possibile?",
+   "atteso": "sviluppatore",
+   "accettabili": [
+    "piattaforma",
+    "nessuno"
+   ],
+   "annotatore_b": "nessuno",
+   "split": "dev"
+  },
+  {
+   "data": "2026-11-15",
+   "fonte": "thread «Rivedere le tattiche di tutti i draghi»",
+   "tipo": "dm",
+   "testo": "Aggiungi in un altro thread la revisione delle tattichebdei draghi in relazione al loro carattere i loro obbiettivi e cosa conoscono dei nemico e delle loro motivazioni personali .loro sono le creature piu smart del gioco devono muoversi e avere tattiche superiori e se ha senso anchebdiaboliche per dominare distruggere ed terrorizzare i nemici non. Credi . Quindi valuta le tattiche dei draghi applica simulazioni alle possibili tattiche in modo che siano diverse per ogni drago ed in linea con loro simulando le tattiche e correggendo se sono palesemente sbagliate fidandosi e tenendo in conto quello che sanno dei pg e dei suoi avversari? Ha senso questa cosa?De darebbe piu avvincenti le battaglie? Come cambiano le tattiche in relazione alla ambiente circostante e allo stato dei pg png se presenti ad esempio volare ed invisibilita se lo sanno o se dinamicamente adattano le loro tattiche in relazione a quello che sanno percepiscono e il loro carattere e obbiettivi",
+   "atteso": "regolista",
+   "accettabili": [],
+   "annotatore_b": "regolista",
+   "split": "dev"
+  },
+  {
+   "data": "2026-11-15",
+   "fonte": "thread «Rivedere le tattiche di villain e PNG»",
+   "tipo": "dm",
+   "testo": "Ha senso rivedere anche in un altro thread le tattichebdi tutti i villan e magari dei png importanti usando lo schema usato per i draghi? Ovviamente usando un meccanismo nsimile a quello per i draghi e per le simulazioni l ambiente dove sono e appaiono indraghi e importante ed e entrato nelle simulazioni e soprattutto potrebbe migliorare le tattiche e cosi anche quelle dei villan e dei png principali? Coordinato con gli altri threads coinvolti",
+   "atteso": "regolista",
+   "accettabili": [],
+   "annotatore_b": "regolista",
+   "split": "dev"
+  },
+  {
+   "data": "2026-11-15",
+   "fonte": "thread «Rendere dinamica la tattica di Skullcrusher»",
+   "tipo": "dm",
+   "testo": "Una altra cosa ma skullcruscer attacca solo nel cortile e se i pg lo obbligano a controllarlo nella Cittadella nanica controlla se c e una tattica che possa essere dinamica in relazione a quello che fanno i pg. Perché i pg dovrebbero incontrare skullcruscer nel cortile ?quanto questa cosa ha senso logico e perche dovrebbero essere costretti ad incontrarlo li? E se sono tutti di nuovo in volo che tattica usano o che una tattica per gestire questo caso anche nel caso di pg volanti ed invisibili e se il drago non sa nulla dei pg a arte il nome perche attaccarli?",
+   "atteso": "autore-master",
+   "accettabili": [
+    "regolista"
+   ],
+   "annotatore_b": "autore-master",
+   "split": "dev"
+  },
+  {
+   "data": "2026-11-17",
+   "fonte": "thread «Preparare il kit unico di prove per la 4050»",
+   "tipo": "dm",
+   "testo": "coordina tutti i threads che hanno dei test da fare sul laptop con la 4050 e fai un kit completo con tutti i test necessari da fare con gli script e le configurazioni e i deploy automatici e le verifiche dei test (bazzite os, debian 13 , chaucy os,windows os)",
+   "atteso": "sviluppatore",
+   "accettabili": [
+    "piattaforma"
+   ],
+   "annotatore_b": "sviluppatore",
+   "split": "dev"
+  },
+  {
+   "data": "2026-11-18",
+   "fonte": "thread «Rendere obbligatoria la memoria storica»",
+   "tipo": "dm",
+   "testo": "Allora controlla se la memoria storica obbligatoria su tutte le chat e attiva quale e lo stato attuale implementato e cosa fare per migliorarla ed utilizzarla per tutti i threads aperti e quelli nuovi cosi non si perdono dati. Vedi il progetto phd per insight su come e configurata e verifica cosa manca qui per migliorarla e renderla obbligatoria per tutto il progetto",
+   "atteso": "sviluppatore",
+   "accettabili": [
+    "autore-documenti"
+   ],
+   "annotatore_b": "sviluppatore",
+   "split": "dev"
+  },
+  {
+   "data": "2026-11-19",
+   "fonte": "thread «Riportare la memoria sotto il limite»",
+   "tipo": "dm",
+   "testo": "Allora controlla perche la memoria del progetto e oltre il limite ?ma non avevamo implementato la memoria storica per risolvere questi problemi puoi controllare e fixare questi problemi?",
+   "atteso": "custode-memoria",
+   "accettabili": [
+    "sviluppatore"
+   ],
+   "annotatore_b": "sviluppatore",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-19",
+   "fonte": "thread «Applicare le best practice di Claude Code» (solo la parte scritta da Jfs, senza l'articolo incollato)",
+   "tipo": "dm",
+   "testo": "Apri u threads per la verifica e l'utilizzo di queste best pratices e nella misura del miglioramento del progetto : Claude Code Best Practices: Planning, Context Transfer, TDD",
+   "atteso": "sviluppatore",
+   "accettabili": [
+    "piattaforma"
+   ],
+   "annotatore_b": "sviluppatore",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-19",
+   "fonte": "thread «Preparare i booklet di ARC-07 per venerdì»",
+   "tipo": "dm",
+   "testo": "Mmm on Friday i will master the la notte e l alba i nuovi bookelt sono aggiornati e migliorati evitando ripetitori e mettendo le info necessarie al master facili e vicini da gestire in piu il booklet ha informazioni superflue che possono essere evitate nella sessione con i giocatori o sintetizzate e invece hanno senso per la stampa del ap completo? Dopo l analisi mi fai la stampa sia della sessione che del ap per l arc07 e verifica se sono perfetti e se hanno le informazioni importanti e la struttura editoriale adatta per i 2 tipi di stampa magari in una pr e poi mi fai tutto quello che serve avere pronto per la sessione dal distacco del barile in avanti un pdf da essere utilizzato dal master (non so un booklet migliorato) misura tutto mettendo le caratteristiche tecniche che migliorano i due tipi di stampa e i contenuti e l ordinamento utilizzando le best pratices della community per questi due casi . Se hai bisogno fai nel thread padre le schede con le soluzioni consigliate se hai dei dubbi spiegando i pro e i contro dell adozione",
+   "atteso": "impaginatore",
+   "accettabili": [],
+   "annotatore_b": "impaginatore",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-19",
+   "fonte": "thread «Valutare le tecniche di prosa del repo»",
+   "tipo": "dm",
+   "testo": "se hai dei dubbi chiedi con schede con soluzioni consigliate (le parti peculiari della prosa con le tecniche e le idee proprie di questo repo valutiamone la bonta e misuriamo cosa portano davvero al gioco e quanto sono peculiari senza appesantire il gioco ma renderlo + profondo ed adatto ad un pubblico adulto di giocatori)",
+   "atteso": "autore-prosa-gioco",
+   "accettabili": [
+    "lettore-a-freddo"
+   ],
+   "annotatore_b": "autore-prosa-gioco",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-20",
+   "fonte": "thread «Vincolare gli agenti all'uso delle skill»",
+   "tipo": "dm",
+   "testo": "si grazie perchè mi sembra che si perdano sempre pezzi vedi se puoi fare anche degli agent tarati per lo sviluppo quello per le mappe e quello per le altre sezioni del repo in mod che sono specializzati e ottimizzano dividi in categorie e classi coerenti questi agenti specializzati se ha senso organizzandoli bene",
+   "atteso": "sviluppatore",
+   "accettabili": [
+    "piattaforma"
+   ],
+   "annotatore_b": "sviluppatore",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-20",
+   "fonte": "thread «Aggiungere verificatori deterministici e prove per agente»",
+   "tipo": "dm",
+   "testo": "quindi bisogna aggiungere in maniera determisitica misurabile e testabile queste cose giusto : Verificatori deterministici: script che controllano numeri, regole e canone, come verifica_scheda o i test, invece di un altro modello che «rilegge». Casi di prova fissi per agente: si vede subito se un aggiornamento peggiora qualcosa. puoi farlo in maniera deterministia con test e verifiche vere",
+   "atteso": "sviluppatore",
+   "accettabili": [],
+   "annotatore_b": "sviluppatore",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-21",
+   "fonte": "thread «Equipaggiare tutti i draghi della campagna»",
+   "tipo": "dm",
+   "testo": "La coa che mi spaventa e che poi fauci di Palude diventi una marionetta in confronto a questo e in generale tutti i draghi della campagna hanno un corredo di ogetti magici adeguato al loro tesoro ed integrati nelle scene complete anche di incantesimi?",
+   "atteso": "regolista",
+   "accettabili": [],
+   "annotatore_b": "regolista",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-21",
+   "fonte": "thread «Creare l'agente che sincronizza il giocato»",
+   "tipo": "dm",
+   "testo": "Fammi le domande che servono qui e Pescia le modifiche e le patch su quel ramo cosi quando faccio il pullman e aggiornato tutto anche con tutte le path che servono. Ps ha senso ed e importante avere un agente che si occupa soltanto di sincronizzare le varie campagne con le sessioni giocate simile per campagne giocate dal master come sto provando a fare ora ovviamente anche questo agente coordinato e gestito dal coordinato cosi come gli altri con hooks e veri?",
+   "atteso": "sincronizzatore-giocato",
+   "accettabili": [
+    "sviluppatore"
+   ],
+   "annotatore_b": "sincronizzatore-giocato",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-21",
+   "fonte": "thread «Unire le PR in bozza dopo la stampa»",
+   "tipo": "dm",
+   "testo": "La stampa e chiusa puoi procedere",
+   "atteso": "nessuno",
+   "accettabili": [],
+   "annotatore_b": "nessuno",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-24",
+   "fonte": "thread «Rendere epica la parte dei pregen»",
+   "tipo": "dm",
+   "testo": "vedi se ha senso correggendo gli errori per il passaggio dall'arc07 all'arco08 con i pregen rendendo gli scontri epici .",
+   "atteso": "autore-master",
+   "accettabili": [
+    "regolista"
+   ],
+   "annotatore_b": "autore-master",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-26",
+   "fonte": "thread «Contare l'uso reale di connettori e plugin»",
+   "tipo": "dm",
+   "testo": "Cerca nelle chat di questo progetto e nei suoi documenti ogni uso reale di connettori, plugin e skill: Gmail, Google Drive, bioRxiv, Canva, Firecrawl, Tavily, Mem0, Context7, draw.io, tldraw, Fonts, Mobbin, Unstructured, GitHub, e i plugin sdd, sadd, tdd, review, reflexion, fpf, ddd, docs, engineering, operations. Per ciascuno dimmi: quante volte è stato chiamato davvero, data dell'ultima chiamata, e se era solo citato. Rispondi con una tabella e niente altro.",
+   "atteso": "piattaforma",
+   "accettabili": [],
+   "annotatore_b": "nessuno",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-27",
+   "fonte": "thread «Creare l'agente custode della memoria»",
+   "tipo": "dm",
+   "testo": "Magari per obbligare questo meccanismi si puo creare un agente specializzato che si oppure della memoria storica che sposta dalla memoria storica del progetto alla memoria del repo e poi se richiesto dagli altri agenti si occupa di leggere dalla memoria storica e dalla memoria del progetto e dare le info agli altri agenti che hanno richiesto in più fa una copia sul repo della memoria del progetto in modontalenchebsianpossibile utilizzare anche la memoria del progetto e quellanstor9ca dal repo tutto con i metodi migliori e le best pratices per lo sviluppo software e degli Agenti? Ovviamente dando tutta la documentazione da aggiornare all agent della documentazione? In questo modo i threads prima di mergiare fanno la richiesta a questo agente che gestisce la memoria centrale del progetto la copia locale sul repo e il file che tiene la memoria storica e tutte le API per le richieste di lettura e scrittura magari coordinato dal thread padre del progetto come regola o hook che lo obbliga a chiamare l agent prima del merge? Verifica le idee la fattibilità e se possibie la realizzazione in un altro thread coordinato con il padre in maniera integrata e con i tre stages.",
+   "atteso": "sviluppatore",
+   "accettabili": [
+    "autore-documenti"
+   ],
+   "annotatore_b": "sviluppatore",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-27",
+   "fonte": "thread «Far scattare l'agente roadmap alle milestone»",
+   "tipo": "dm",
+   "testo": "Verifica se esiste lafente che si preoccupa della roadmap e delle Milestone della piattaforma e se ha bisogno di un hook per i merge dei threads nel thread padre o di un altro meccanismo che scatti in automatico al raggiungimento delle Milestone. In pratica determina le Milestone del progetto che triggerano l'agente e vedi se un hook e sufficiente per triggerarlo sempre in un altro thread",
+   "atteso": "piattaforma",
+   "accettabili": [
+    "sviluppatore"
+   ],
+   "annotatore_b": "piattaforma",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-27",
+   "fonte": "thread «Garantire che la documentazione si aggiorni da sola»",
+   "tipo": "dm",
+   "testo": "In un altro thread vedi se l agente per la documentazione e stato chiamato in automatico ed e stato triggerato dal thead padre per le merge che cambiano la struttura del progetto e controlla se deve essere creato e creato se necessario l hook per il thread padre o per uno schedulazione che si preoccupa di chiamare la agent della documentazione se la documentazione non e aggiornata in maniera automatica sempre in un altro threads coordinato con il padte",
+   "atteso": "sviluppatore",
+   "accettabili": [
+    "autore-documenti"
+   ],
+   "annotatore_b": "sviluppatore",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-27",
+   "fonte": "thread «Misurare e migliorare agenti, skill e automatismi»",
+   "tipo": "dm",
+   "testo": "In un altro thread separato coordinato con il padre controlla se qualcosa non ja funzionato tra agenti skills e plugin ed i meccanismi automatici del progetto e dove e come migliorandoli utilizzando tdd i migliori metodi dell sviluppo software perla creazione di agenti plugin skill e migliori metodi di machine learning e deep learning per le varie parti del progetto e verificare e migliorare utilizzando le best pratices usate dalle community e dai ricercatori per avere il risultati migliori con f1 migliori accuracy e precision e gli altri parametri adatti e standard da usare",
+   "atteso": "sviluppatore",
+   "accettabili": [
+    "piattaforma"
+   ],
+   "annotatore_b": "sviluppatore",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-27",
+   "fonte": "avviso del coordinatore al thread «Misurare e migliorare agenti, skill e automatismi»",
+   "tipo": "coordinatore",
+   "testo": "Avviso: la riga «Catena:» scritta nelle istruzioni di avvio non viene registrata, perché l'hook non scatta sul primo messaggio del thread. La correzione la fa il thread «Garantire che la documentazione si aggiorni da sola»: tu non toccarla, ma mettila fra i casi dell'audit. Segui comunque la catena assegnata.",
+   "atteso": "nessuno",
+   "accettabili": [],
+   "annotatore_b": "nessuno",
+   "split": "test"
+  },
+  {
+   "data": "2026-11-27",
+   "fonte": "resoconto di un sottoagente (piattaforma) rientrato nel thread «Misurare e migliorare agenti, skill e automatismi», prime righe",
+   "tipo": "sottoagente",
+   "testo": "Ho deciso le quattro questioni di piattaforma senza toccare file. Il repo è a 076a74d1 (main) e il comando fase1 sui quattro bersagli non segnala archivi. 1. Il cancello entra in testing, non bloccante da subito. Decisione: il passo CI del cricchetto entra con continue-on-error: true. Le prove pytest stanno nel passo pytest, che è stable, e bloccano dal primo giorno.",
+   "atteso": "nessuno",
+   "accettabili": [],
+   "annotatore_b": null,
+   "split": "test"
+  }
+ ]
+}

@@ -74,16 +74,16 @@ BMC/DMC):
 **Iniziativa** … · **Sensi** … (facoltativa, come la prima riga delle AP)
 **Difesa** CA …, contatto …, colto alla sprovvista … · pf … (DV …) · TS Temp …, Rifl …, Vol … · RD, immunità, resistenze
 **Attacco** Vel … · Mischia … · Distanza … · attacchi speciali · incantesimi (livello e CD, mai il testo)
-**Statistiche** For … Des … Cos … Int … Sag … Car … · BAB …; Lotta … · Talenti … · Abilità … · Linguaggi … · Qualità speciali … · Equipaggiamento …
-**Capacità speciali** una voce per capacità, col tipo (Str, Sop, Mag)
 **Tattiche** *Prima del combattimento* … · *Durante il combattimento* … · *Morale* … (la soglia di pf o la condizione in cui smette)
+**Statistiche** For … Des … Cos … Int … Sag … Car … · BAB …; Lotta … · Talenti … · Abilità … · Linguaggi … · Qualità speciali … · Equipaggiamento da combattimento … · Altro equipaggiamento …
+**Capacità speciali** una voce per capacità, col tipo (Str, Sop, Mag)
 
 Benchmark, combinazioni ed EL (facoltativi)
 Notes: dove si usa nella campagna, e il rimando al dossier
 Boost log: …
 ````
 
-Le cinque etichette in grassetto sono obbligatorie e in quest'ordine. Dove
+Le cinque etichette in grassetto sono obbligatorie e in quest'ordine (dal 2026-11-13 le Tattiche stanno dopo l'Attacco: vedi l'aggiornamento in fondo). Dove
 manca il contenuto si scrive l'etichetta con `[DA SCRIVERE — …]`, oppure con il
 rimando al master che lo tiene (le tattiche di Balvar stanno nella Scena 7 di
 `ARC07-DEF-4`).
@@ -186,3 +186,29 @@ stessa sezione obbligatoria in più della metà dei casi (vuol dire che non era
 obbligatoria), oppure il blocco ` ```statblocco ` arriva a portare talenti,
 abilità ed equipaggiamento come campi propri, e allora la parte leggibile dello
 statblocco si può generare (terza alternativa).
+
+## Aggiornamento del 2026-11-13: l'ordine di Burnt Offerings
+
+**Contesto.** Jfs ha messo le schede accanto a *Burnt Offerings* e a *Red Hand
+of Doom*: «secondo me si è perso qualcosa, manca ad esempio la voce
+dell'equipaggiamento». Il confronto voce per voce
+(`plans/esperimenti/schede-ordine-2026-11-13/CONFRONTO-SCHEDE.md`) dice che lo
+schema di questo ADR nominava già Linguaggi, Qualità speciali ed
+Equipaggiamento, ma le schede non li portano (46, 26 e 15 su 205), e che le
+Tattiche stavano in fondo, mentre le AP PF1e le mettono fra Attacco e
+Statistiche.
+
+**Decisione** (Jfs, card del 2026-11-13: «Voci mancanti, ordine PF1e»).
+L'ordine delle etichette è **Difesa · Attacco · Tattiche · Statistiche ·
+Capacità speciali**, nel sorgente e in stampa. L'equipaggiamento si scrive in
+due voci, come nei due manuali: quello che il PNG usa in combattimento
+(pozioni, pergamene, bacchette) e il resto.
+
+**Conseguenze.** 99 schede riordinate spostando le sezioni intere: 89 a
+macchina (`riordina_fasce.py`, stessa cartella), 6 col secondo passo per le
+Tattiche staccate dalla scheda da una nota (`riordina_staccate.py`), 4 a mano
+(i due Ghaurush, Zin'thara, Tyrgarun). Una sola parola cambia: in Tyrgarun il
+rimando «Tattiche qui sotto» diventa «qui sopra». La riga breve nel capitolo e
+la scheda in appendice senza Tattiche restano come sono (ADR-0107). Le pagine dei booklet si spostano. Le voci mancanti si riempiono in
+PR successive, solo da testo già nel repo o dall'SRD; ciò che non è scritto da
+nessuna parte va a Jfs scheda per scheda.

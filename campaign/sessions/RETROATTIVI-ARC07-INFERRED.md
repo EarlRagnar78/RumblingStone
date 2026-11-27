@@ -89,7 +89,7 @@ Corona attiva oggi (G2). I Bracieri di Tordek si risvegliano sul versante Fuoco.
 
 **In-world**: mentre il party attraversa il Piano della Terra
 **Fonte**: `07_.../PortaleForgia-P4-PianoTerra-P3B-HELLA-...-MONDO-risultati.md`
-(questo NON è [INFERRED]: è il **canone giocato**, D12)
+(questo NON è un'inferenza: è il **canone giocato**, D12)
 
 ### Summary
 Lo spirito di Hella compie il **Viaggio nell'Incudine del Mondo**. Compagno =

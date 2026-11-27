@@ -1,0 +1,42 @@
+# sistemi/dnd35/sistema.toml — Dungeons & Dragons 3.5 (ADR-0111)
+#
+# Il sistema base della campagna. Le capacità «codice» sono le tabelle che
+# il censimento del 2026-11-07 ha trovato cablate negli script: il lotto
+# dice quando diventano dati di questa cartella.
+
+id = "dnd35"
+nome = "Dungeons & Dragons 3.5 (SRD)"
+tipo = "sistema"
+famiglia = "d20"
+licenza = "OGL 1.0a"
+fonti = ["SRD 3.5 in cache (riscontro_srd.py, chiave srd35)"]
+# Come si scrive il sistema nella riga «**Sistema:**» di un modulo (regex).
+riconosci = ["3\\.5", "D&D", "Dungeons & Dragons"]
+skill = ["dnd-35-srd", "dnd-35-rules", "npc-villain-boosting"]
+
+[capacita]
+"termini.vietati" = { eredita = "d20", motivo = "le meccaniche 5e sono vietate in tutta la famiglia" }
+"stampa.etichette" = { eredita = "d20", motivo = "le sigle del riquadro sono le stesse in 3.5 e PF1e" }
+"statblocco.campi" = { eredita = "d20", motivo = "GS, CA, pf e TS sono gli stessi campi in 3.5 e PF1e" }
+"statblocco.taglie" = { eredita = "d20", motivo = "la tabella di spazio e portata per taglia è la stessa in 3.5 e PF1e" }
+"formule.regole" = { eredita = "d20", motivo = "modificatore, TS e CD si calcolano allo stesso modo in 3.5 e PF1e" }
+"creature.armi" = { dati = ["sistemi/dnd35/dati/armi.toml"], nota = "SRD 3.5, Equipment, «Table: Weapons» e «Weapon Size»; scritto da estrai_armi.py" }
+"creature.incantatori" = { dati = ["sistemi/dnd35/dati/incantatori.toml"], nota = "SRD 3.5, tabelle delle classi e «Table: Ability Modifiers and Bonus Spells»; scritto da estrai_incantatori.py" }
+"creature.prestigio" = { dati = ["sistemi/dnd35/dati/prestigio.toml"], nota = "SRD 3.5 (Prestige Classes) e, per le classi dei manuali, i tag PRE di PCGen; scritto da estrai_prestigio.py. Solo nomi e numeri: i requisiti speciali sono contati, non copiati" }
+"creature.base" = { dati = ["sistemi/dnd35/dati/creature_base.toml"], nota = "SRD 3.5, blocchi di statistiche di monsters/*.md; scritto da estrai_creature_base.py. 409 creature; i draghi veri (tabelle per età) e i mostri dei manuali non ci sono" }
+"bonus.cumulo" = { eredita = "d20", motivo = "il cumulo dei bonus per tipo è lo stesso in 3.5 e PF1e (SRD e PRD, «Bonus Types»)" }
+"lessico.abilita" = { dati = ["sistemi/dnd35/dati/abilita.toml"] }
+"lessico.entita" = { dati = ["sistemi/dnd35/dati/entita.toml"] }
+"lessico.italiano" = { dati = ["scripts/lessico_it_35.tsv"] }
+"fonti.regole" = { dati = ["sistemi/dnd35/dati/fonti.toml"], nota = "F1 di ADR-0112: repo, commit, licenza e sha256 delle fonti scaricate; li legge riscontro_srd.py" }
+"pe.soglie" = { dati = ["sistemi/dnd35/dati/pe.toml"] }
+"tesoro.per_livello" = { dati = ["scripts/loot_tables.yaml", "scripts/magic_items_srd.yaml"] }
+"incontri.livello" = { dati = ["sistemi/dnd35/dati/incontri.toml"], nota = "metodo e parametro nei dati, la formula in suggest_encounter.combine_el" }
+"creature.costruzione" = { dati = ["sistemi/dnd35/dati/creature.toml", "sistemi/dnd35/dati/classi_manuali.toml", "sistemi/dnd35/dati/talenti_in_piu.toml", "sistemi/dnd35/dati/gs.toml", "sistemi/dnd35/dati/movimento.toml", "sistemi/dnd35/dati/difese.toml", "sistemi/dnd35/dati/linguaggi.toml", "sistemi/dnd35/dati/oggetti.toml", "sistemi/dnd35/dati/mdl.toml"], nota = "classi dei manuali 3.5 fuori SRD in classi_manuali.toml (solo nome e numeri, ADR-0124 §8); L5a: tipi, classi, BAB, taglie, armature, scudi, matrici; L5b: griglie degli incantatori, classi incantatrici, prestigio, profili, taglie e razze" }
+"creature.statistiche_per_gs" = { eredita = "pf1e", motivo = "l'SRD 3.5 non ha bersagli per GS: si usa la Tab. 1-1 PF1e come guardia, non come fonte (dmcore/tabelle.py)" }
+"creature.incantesimi" = { dati = ["sistemi/dnd35/dati/incantesimi.toml"], nota = "L5c: liste per classe × funzione, nomi canonici, ripieghi; le funzioni tattiche restano in dmcore/incantesimi.py" }
+"creature.regole_di_tipo" = { dati = ["sistemi/dnd35/dati/creature.toml"], nota = "L5d: [tipi] e [alias_tipo]; normalizza_tipo in dmcore/tabelle.py" }
+"creature.conformita" = { dati = ["sistemi/dnd35/dati/conformita.toml"], nota = "F4 di ADR-0112: arrotondamento dei pf e conti di conformita_statblocchi" }
+"creature.talenti" = { dati = ["sistemi/dnd35/dati/talenti.toml", "sistemi/dnd35/dati/talenti_manuali.toml", "sistemi/dnd35/dati/talenti_equivalenti.toml"], nota = "talenti, prerequisiti, bonus delle classi e capacità, generati dal SRD 3.5 da plans/esperimenti/regole-complete-2026-11-10/estrai_talenti.py; i prerequisiti dei talenti dei manuali 3.5 fuori SRD dai dati PCGen (talenti_manuali.toml, estrai_pcgen.py); regola in dmcore/talenti.py" }
+"creature.gradi" = { dati = ["sistemi/dnd35/dati/gradi.toml", "sistemi/dnd35/dati/effetti_talenti.toml", "sistemi/dnd35/dati/classi_manuali.toml"], nota = "generato dall'SRD 3.5 da plans/esperimenti/verifica-scheda-2026-11-12/estrai_gradi.py; lo usa verifica_scheda.py" }
+"creature.liste_incantesimi" = { dati = ["sistemi/dnd35/dati/liste_incantesimi.toml", "sistemi/dnd35/dati/liste_incantesimi_manuali.toml"], nota = "liste dell'SRD 3.5 (estrai_liste.py) e dei manuali 3.5 da PCGen, solo nomi e livelli (estrai_liste_manuali.py), in plans/esperimenti/incantesimi-35-2026-11-12/; le usa verifica_scheda.py" }

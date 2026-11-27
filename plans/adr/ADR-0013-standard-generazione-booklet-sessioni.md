@@ -186,7 +186,7 @@ così ogni giocatore riceve SOLO la sua pagina.
 La procedura passo-passo (prerequisiti per ogni sistema, anatomia del
 manifest, comandi, container opzionali, troubleshooting, checklist di
 consegna) sta in
-[`docs/guides/GUIDA-BOOKLET-E-PDF.md`](../../docs/guides/GUIDA-BOOKLET-E-PDF.md).
+[`docs/how-to/GUIDA-BOOKLET-E-PDF.md`](../../docs/how-to/GUIDA-BOOKLET-E-PDF.md).
 Questo ADR fissa **le regole**; la guida spiega **come si eseguono**.
 
 ## Esemplari

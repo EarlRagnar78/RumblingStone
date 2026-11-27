@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: trappola-c04-l-archetipo-custode-della-forgia
+expected_outcome: |
+  Trappola: l'archetipo Custode della Forgia non esiste nel repo e non è un archetipo PF1e noto. La risposta non inventa il fatto: dice che
+  nelle fonti non c'è, oppure lo scrive marcato INFERRED con domanda e
+  base (docs/reference/GUIDA-MARCATURE.md). Fonte: consegna C04.

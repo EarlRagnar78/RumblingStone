@@ -10,7 +10,7 @@
     "data": "2 settembre 2026",
     "autori": "G. Samuele",
     "basato_su": "SRD 3.5 e OGL 1.0a. Creature, classi PNG e oggetti magici sono tutti SRD: nessun contenuto da Monster Manual II, Draconomicon o altri supplementi (vedi «Igiene di licenza» nel documento principale)",
-    "licenza": "Materiale del DM, uso privato e non commerciale. Non diffondere fuori dal tavolo senza passare il cancello d'uscita di docs/guides/GUIDA-CONDIVISIONE-IP.md",
+    "licenza": "Materiale del DM, uso privato e non commerciale. Non diffondere fuori dal tavolo senza passare il cancello d'uscita di docs/how-to/GUIDA-CONDIVISIONE-IP.md",
     "nota": "Nota di tono: la premessa riguarda un culto che uccide ragazzi e bambini. Le vittime bambine non compaiono mai in scena — il loro destino arriva solo per prove documentali. Leggi la nota completa in testa al documento principale prima di portare questo al tavolo."
   },
   "footer": "L'Abbazia della Rotta Sicura · edizione da tavolo",
@@ -36,5 +36,7 @@
       "file": "../indice_maestro.md",
       "tag": "dm"
     }
-  ]
+  ],
+  "schede": "entrambe",
+  "chi_si_incontra": true
 }

@@ -1,0 +1,27 @@
+# Le formule del sistema a mucchio di d10 di prova. Parole e numeri nostri.
+# Ogni formula restituisce un numero di dadi o di punti, sempre intero.
+
+[formule.mucchio]
+espressione = "attributo + abilita"
+ingressi = ["attributo", "abilita"]
+fonte = "regola di prova: si tirano tanti d10 quanti attributo più abilità"
+
+[formule.mucchio_con_penalita]
+espressione = "max(0, attributo + abilita - penalita)"
+ingressi = ["attributo", "abilita", "penalita"]
+fonte = "regola di prova: la penalità toglie dadi, mai sotto zero"
+
+[formule.salute]
+espressione = "vigore + taglia"
+ingressi = ["vigore", "taglia"]
+fonte = "regola di prova: le caselle di salute"
+
+[formule.iniziativa]
+espressione = "destrezza + prontezza"
+ingressi = ["destrezza", "prontezza"]
+fonte = "regola di prova"
+
+[formule.difesa]
+espressione = "min(destrezza, prontezza)"
+ingressi = ["destrezza", "prontezza"]
+fonte = "regola di prova: il più basso dei due toglie dadi a chi attacca"

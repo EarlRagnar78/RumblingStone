@@ -1,0 +1,6 @@
+# Le abilità del sistema di prova (nomi nostri, generici) e quelle d20 che
+# in un suo modulo non esistono.
+nomi = ["atletica", "rissa", "furtività", "sopravvivenza", "intimidire",
+        "empatia", "medicina", "occulto", "fiuto", "persuasione"]
+estranee = ["Concentrazione", "Artista della Fuga", "Utilizzare Congegni Magici",
+            "Sapienza Magica", "Osservare"]

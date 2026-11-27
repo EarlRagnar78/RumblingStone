@@ -1,0 +1,182 @@
+[
+ {
+  "nome": "thorik_posa_artemis",
+  "riferimento": "img/rif_thorik.png",
+  "posa_png": "img/posa_artemis.png",
+  "seed": 1000,
+  "prompt": "Thorik, a broad muscular shield dwarf, short and stocky, grey beard, battle-scarred face, heavy silver and steel plate armor with a blue glowing gem on the chest plate, dark red cape, a glowing golden crown with three large gems (yellow, purple, blue) on his head, holding a heavy double-crescent runic steel waraxe, dark fantasy illustration, painterly, cinematic lighting, highly detailed, full body, plain dark background",
+  "misura": {
+   "riferimento": "img/rif_thorik.png",
+   "posa": "img/posa_artemis.json",
+   "descrizione": "Thorik, a broad muscular shield dwarf, short and stocky, grey beard, battle-scarred face, heavy silver and steel plate armor with a blue glowing gem on the chest plate, dark red cape, a glowing golden crown with three large gems (yellow, purple, blue) on his head, holding a heavy double-crescent runic steel waraxe",
+   "segni": [
+    "a golden crown with three colored gems",
+    "a double-bladed steel battle axe"
+   ]
+  }
+ },
+ {
+  "nome": "thorik_posa_tordek",
+  "riferimento": "img/rif_thorik.png",
+  "posa_png": "img/posa_tordek.png",
+  "seed": 1010,
+  "prompt": "Thorik, a broad muscular shield dwarf, short and stocky, grey beard, battle-scarred face, heavy silver and steel plate armor with a blue glowing gem on the chest plate, dark red cape, a glowing golden crown with three large gems (yellow, purple, blue) on his head, holding a heavy double-crescent runic steel waraxe, dark fantasy illustration, painterly, cinematic lighting, highly detailed, full body, plain dark background",
+  "misura": {
+   "riferimento": "img/rif_thorik.png",
+   "posa": "img/posa_tordek.json",
+   "descrizione": "Thorik, a broad muscular shield dwarf, short and stocky, grey beard, battle-scarred face, heavy silver and steel plate armor with a blue glowing gem on the chest plate, dark red cape, a glowing golden crown with three large gems (yellow, purple, blue) on his head, holding a heavy double-crescent runic steel waraxe",
+   "segni": [
+    "a golden crown with three colored gems",
+    "a double-bladed steel battle axe"
+   ]
+  }
+ },
+ {
+  "nome": "tordek_posa_thorik",
+  "riferimento": "img/rif_tordek.png",
+  "posa_png": "img/posa_thorik.png",
+  "seed": 1020,
+  "prompt": "Tordek, a stocky muscular dwarf monk, short and broad, bald head, thick black beard, yellow and orange monk robes with a dark sash, bare muscular arms, two heavy metal gauntlets, the left burning with green fire and green runes, the right with orange forge-fire and red runes, dark fantasy illustration, painterly, cinematic lighting, highly detailed, full body, plain dark background",
+  "misura": {
+   "riferimento": "img/rif_tordek.png",
+   "posa": "img/posa_thorik.json",
+   "descrizione": "Tordek, a stocky muscular dwarf monk, short and broad, bald head, thick black beard, yellow and orange monk robes with a dark sash, bare muscular arms, two heavy metal gauntlets, the left burning with green fire and green runes, the right with orange forge-fire and red runes",
+   "segni": [
+    "two heavy metal gauntlets with magical fire",
+    "a bald head and a thick black beard"
+   ]
+  }
+ },
+ {
+  "nome": "tordek_posa_artemis",
+  "riferimento": "img/rif_tordek.png",
+  "posa_png": "img/posa_artemis.png",
+  "seed": 1030,
+  "prompt": "Tordek, a stocky muscular dwarf monk, short and broad, bald head, thick black beard, yellow and orange monk robes with a dark sash, bare muscular arms, two heavy metal gauntlets, the left burning with green fire and green runes, the right with orange forge-fire and red runes, dark fantasy illustration, painterly, cinematic lighting, highly detailed, full body, plain dark background",
+  "misura": {
+   "riferimento": "img/rif_tordek.png",
+   "posa": "img/posa_artemis.json",
+   "descrizione": "Tordek, a stocky muscular dwarf monk, short and broad, bald head, thick black beard, yellow and orange monk robes with a dark sash, bare muscular arms, two heavy metal gauntlets, the left burning with green fire and green runes, the right with orange forge-fire and red runes",
+   "segni": [
+    "two heavy metal gauntlets with magical fire",
+    "a bald head and a thick black beard"
+   ]
+  }
+ },
+ {
+  "nome": "hella_posa_artemis",
+  "riferimento": "img/rif_hella.png",
+  "posa_png": "img/posa_artemis.png",
+  "seed": 1040,
+  "prompt": "Hella, a short stocky female dwarf druid, pointed ears, light wavy blonde hair with green leaves, armor of cracked grey stone plates and green oak leaves, a glowing green acorn crystal pendant on her chest, hands glowing with green druidic magic, dark fantasy illustration, painterly, cinematic lighting, highly detailed, full body, plain dark background",
+  "misura": {
+   "riferimento": "img/rif_hella.png",
+   "posa": "img/posa_artemis.json",
+   "descrizione": "Hella, a short stocky female dwarf druid, pointed ears, light wavy blonde hair with green leaves, armor of cracked grey stone plates and green oak leaves, a glowing green acorn crystal pendant on her chest, hands glowing with green druidic magic",
+   "segni": [
+    "pointed ears",
+    "a glowing green acorn pendant on the chest"
+   ]
+  }
+ },
+ {
+  "nome": "hella_posa_tordek",
+  "riferimento": "img/rif_hella.png",
+  "posa_png": "img/posa_tordek.png",
+  "seed": 1050,
+  "prompt": "Hella, a short stocky female dwarf druid, pointed ears, light wavy blonde hair with green leaves, armor of cracked grey stone plates and green oak leaves, a glowing green acorn crystal pendant on her chest, hands glowing with green druidic magic, dark fantasy illustration, painterly, cinematic lighting, highly detailed, full body, plain dark background",
+  "misura": {
+   "riferimento": "img/rif_hella.png",
+   "posa": "img/posa_tordek.json",
+   "descrizione": "Hella, a short stocky female dwarf druid, pointed ears, light wavy blonde hair with green leaves, armor of cracked grey stone plates and green oak leaves, a glowing green acorn crystal pendant on her chest, hands glowing with green druidic magic",
+   "segni": [
+    "pointed ears",
+    "a glowing green acorn pendant on the chest"
+   ]
+  }
+ },
+ {
+  "nome": "artemis_posa_thorik",
+  "riferimento": "img/rif_artemis.png",
+  "posa_png": "img/posa_thorik.png",
+  "seed": 1060,
+  "prompt": "Artemis, a slender young human warlock, dark messy hair, sly confident smile, elegant long black coat, large black feathered wings on his back, blue and white lightning arcing around his hands, a dark ring on his left hand, dark fantasy illustration, painterly, cinematic lighting, highly detailed, full body, plain dark background",
+  "misura": {
+   "riferimento": "img/rif_artemis.png",
+   "posa": "img/posa_thorik.json",
+   "descrizione": "Artemis, a slender young human warlock, dark messy hair, sly confident smile, elegant long black coat, large black feathered wings on his back, blue and white lightning arcing around his hands, a dark ring on his left hand",
+   "segni": [
+    "large black feathered wings",
+    "blue lightning around the hands"
+   ]
+  }
+ },
+ {
+  "nome": "artemis_posa_hella",
+  "riferimento": "img/rif_artemis.png",
+  "posa_png": "img/posa_hella.png",
+  "seed": 1070,
+  "prompt": "Artemis, a slender young human warlock, dark messy hair, sly confident smile, elegant long black coat, large black feathered wings on his back, blue and white lightning arcing around his hands, a dark ring on his left hand, dark fantasy illustration, painterly, cinematic lighting, highly detailed, full body, plain dark background",
+  "misura": {
+   "riferimento": "img/rif_artemis.png",
+   "posa": "img/posa_hella.json",
+   "descrizione": "Artemis, a slender young human warlock, dark messy hair, sly confident smile, elegant long black coat, large black feathered wings on his back, blue and white lightning arcing around his hands, a dark ring on his left hand",
+   "segni": [
+    "large black feathered wings",
+    "blue lightning around the hands"
+   ]
+  }
+ },
+ {
+  "nome": "scena_caverne_thorik",
+  "riferimento": "img/rif_thorik.png",
+  "posa_png": "img/posa_thorik.png",
+  "seed": 2000,
+  "prompt": "Thorik, a broad muscular shield dwarf, short and stocky, grey beard, battle-scarred face, heavy silver and steel plate armor with a blue glowing gem on the chest plate, dark red cape, a glowing golden crown with three large gems (yellow, purple, blue) on his head, holding a heavy double-crescent runic steel waraxe, dark fantasy illustration, painterly, full body, plain background",
+  "stile": "img/scena_caverne_arc07.png",
+  "scena_sfondo": "img/scena_caverne_arc07.png",
+  "riquadro": [
+   0.38,
+   0.25,
+   0.62,
+   0.95
+  ],
+  "forza_stile": 0.35,
+  "prompt_scena": "Thorik, a broad muscular shield dwarf, short and stocky, grey beard, battle-scarred face, heavy silver and steel plate armor with a blue glowing gem on the chest plate, dark red cape, a glowing golden crown with three large gems (yellow, purple, blue) on his head, holding a heavy double-crescent runic steel waraxe, standing inside a giant crystal geode cavern, glowing crystals, dark fantasy illustration, painterly, cinematic lighting",
+  "misura": {
+   "riferimento": "img/rif_thorik.png",
+   "descrizione": "Thorik, a broad muscular shield dwarf, short and stocky, grey beard, battle-scarred face, heavy silver and steel plate armor with a blue glowing gem on the chest plate, dark red cape, a glowing golden crown with three large gems (yellow, purple, blue) on his head, holding a heavy double-crescent runic steel waraxe",
+   "segni": [
+    "a golden crown with three colored gems",
+    "a double-bladed steel battle axe"
+   ],
+   "stile": "img/scena_caverne_arc07.png"
+  }
+ },
+ {
+  "nome": "scena_caverne_hella",
+  "riferimento": "img/rif_hella.png",
+  "posa_png": "img/posa_artemis.png",
+  "seed": 2000,
+  "prompt": "Hella, a short stocky female dwarf druid, pointed ears, light wavy blonde hair with green leaves, armor of cracked grey stone plates and green oak leaves, a glowing green acorn crystal pendant on her chest, hands glowing with green druidic magic, dark fantasy illustration, painterly, full body, plain background",
+  "stile": "img/scena_caverne_arc07.png",
+  "scena_sfondo": "img/scena_caverne_arc07.png",
+  "riquadro": [
+   0.55,
+   0.3,
+   0.75,
+   0.95
+  ],
+  "forza_stile": 0.35,
+  "prompt_scena": "Hella, a short stocky female dwarf druid, pointed ears, light wavy blonde hair with green leaves, armor of cracked grey stone plates and green oak leaves, a glowing green acorn crystal pendant on her chest, hands glowing with green druidic magic, standing inside a giant crystal geode cavern, glowing crystals, dark fantasy illustration, painterly, cinematic lighting",
+  "misura": {
+   "riferimento": "img/rif_hella.png",
+   "descrizione": "Hella, a short stocky female dwarf druid, pointed ears, light wavy blonde hair with green leaves, armor of cracked grey stone plates and green oak leaves, a glowing green acorn crystal pendant on her chest, hands glowing with green druidic magic",
+   "segni": [
+    "pointed ears",
+    "a glowing green acorn pendant on the chest"
+   ],
+   "stile": "img/scena_caverne_arc07.png"
+  }
+ }
+]

@@ -17,6 +17,11 @@ descrizione intera, o AGENTS.md, puo' arrivare alla skill giusta anche senza
 un trigger letterale; e un trigger puo' scattare su una frase che parla
 d'altro. Misura il pavimento, non il soffitto.
 
+Contro il secondo caso, ``OMONIMI`` (M2 di PIANO-MISURA-AGENTI-E-AUTOMATISMI,
+ADR-0154): per alcuni trigger («coordinate», «hook», «caso», «png», «master»,
+«corredo», «Canva») una regex degli usi che parlano d'altro, tolti dalla
+frase, e una del contesto che spegne il trigger in tutta la frase.
+
 Il gate (`--check`) e' a cricchetto: fallisce se le omissioni superano il
 `tetto_omissioni` scritto nel file dei casi. Il tetto si abbassa a mano
 quando le descrizioni migliorano, mai in automatico.
@@ -96,12 +101,64 @@ def _prende(t: str, f: str, parole: "set[str]") -> bool:
     return any(p.startswith(radice) and len(p) <= len(t) + 1 and p[len(radice):] in ("a", "e", "i", "o") for p in parole)
 
 
+# Gli omonimi (M2 di PIANO-MISURA-AGENTI-E-AUTOMATISMI, ADR-0154): per un trigger, gli usi
+# della stessa parola che parlano d'altro. Le regex leggono il testo normalizzato (minuscolo,
+# senza accenti, l'elisione staccata). «uso» toglie solo le occorrenze che combaciano;
+# «contesto» spegne il trigger in tutto il messaggio. Valgono per il trigger scritto qui e non
+# per un trigger più lungo con la stessa parola («hook pre-push fallisce» resta).
+_HOOK_TECNICO = (r"\b(?:claude code|claude|userpromptsubmit|pretooluse|posttooluse|sessionstart|"
+                 r"subagentstop|settings|pre-push|pre-commit|post-commit|git|githooks|py|json|"
+                 r"script\w*|bash|stdin|push|"
+                 # il cancello del repo, non quello della scena (Codex, #534)
+                 r"cancell[oi] (?:a cricchetto|del push|di ci|della ci|bloccant\w*|locale))\b")
+_CANVA_PIATTAFORMA = r"\b(?:connettor\w*|mcp|server|plugin|integrazion\w*|oauth|api)\b"
+OMONIMI: "dict[str, tuple[str | None, str | None]]" = {
+    # «coordinato con il padre», «coordinate the threads»: il verbo, non le coordinate
+    "coordinate": (r"\bcoordinat[oi]\b|\bcoordinat[ae] (?:con|col|coi|fra|tra|the|with|all|i|gli|"
+                   r"tutt\w*)\b", None),
+    # gli hook di Claude Code e di git, non l'aggancio narrativo
+    "hook": (None, _HOOK_TECNICO),
+    # le locuzioni («nel caso», «in ogni caso») e i casi di test o del set d'oro
+    "caso": (r"\b(?:nel|nei|in|in ogni|in tal|in questo|in quel|in nessun|per|a|al) caso\b|"
+             r"\be il caso di\b|\bcaso per caso\b|\bcas[oi] (?:d uso|di (?:test|prova|uso)|"
+             r"limite)\b|\bcasi\b", r"\b(?:set d oro|etichett\w*|split|pytest|unittest|eval)\b"),
+    # il formato d'immagine, non i personaggi non giocanti
+    "png": (r"\b(?:in|formato|file|immagin\w*|esport\w*|export|token|webp|jpe?g|svg|icon\w*|"
+            r"screenshot|render\w*) png\b|\bpng (?:e|o|in|a|da|con) (?:webp|jpe?g|svg)\b|"
+            r"\bpng (?:trasparent\w*|local\w*|committat\w*)\b", None),
+    # il ramo di git e i tre master del canone, non il master del modulo
+    "master": (r"\b(?:su|verso|ramo|branch|origin|main|in) master\b|\bmaster (?:branch|main)\b|"
+               r"\btre master\b", None),
+    # l'equipaggiamento di qualcuno, non il corredo della serata
+    "corredo": (r"\bcorred[oi] (?:del|dello|della|dei|degli|delle|di|d) (?!serat\w*|session\w*)\w+|"
+                r"\bcorred[oi] (?:funebr\w*|magic\w*|nuzial\w*)\b", None),
+    # il connettore di Canva come strumento della piattaforma, non le immagini
+    "canva": (None, _CANVA_PIATTAFORMA),
+    "canva ai": (None, _CANVA_PIATTAFORMA),
+}
+# L'estensione di un file d'immagine («token-orco.png») non è una parola della frase.
+_ESTENSIONE_IMMAGINE = re.compile(r"(?<=[\w-])\.(?:png|webp|jpe?g|svg)\b", re.I)
+
+
 def raggiunte(frase: str, skill: "dict[str, list[str]]") -> "dict[str, list[str]]":
-    f = " " + normalizza(frase) + " "
+    f = " " + normalizza(_ESTENSIONE_IMMAGINE.sub(" ", frase)) + " "
     parole = set(f.split())
     out = {}
     for nome, trig in skill.items():
-        presi = [t for t in trig if t and _prende(t, f, parole)]
+        presi = []
+        for t in trig:
+            if not t:
+                continue
+            ff, pp = f, parole
+            if t in OMONIMI:
+                uso, contesto = OMONIMI[t]
+                if contesto and re.search(contesto, f):
+                    continue
+                if uso:
+                    ff = re.sub(uso, " ", f)
+                    pp = set(ff.split())
+            if _prende(t, ff, pp):
+                presi.append(t)
         if presi:
             out[nome] = presi
     return out

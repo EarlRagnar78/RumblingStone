@@ -8,11 +8,14 @@
 ```statblocco
 gs: 18
 tipo: Medium outsider (native, evil, lawful), rakshasa / Stregone 11 (18 DV), LM
-ca: 25
-ca-dettaglio: (+2 Des, +9 naturale, +4 *armatura magica* sempre attiva), contatto 12, colto alla sprovvista 23
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
+ca: 26
+ca-dettaglio: (+2 Des, +9 naturale, +4 *armatura magica* sempre attiva, +1 deviazione), contatto 13, colto alla sprovvista 24
 pf: 113
 pf-dado: 7d8+11d4+54
-ts: Temp +11, Rifl +10, Vol +13
+ts: Temp +13, Rifl +12, Vol +15
 velocita: 12 m
 iniziativa: +2
 sensi: scurovisione 18 m
@@ -26,8 +29,10 @@ voci:
   - CD degli incantesimi: 15 + livello (9° livello: CD 24)
   - Conosciuti — 1°: armatura magica, riduzione dei nemici, scudo, sonno · 2°: immagine speculare, invisibilità, raggio di indebolimento, risata incontenibile di Tasha · 3°: dissolvi magie, lentezza, vento vorticoso, volare · 4°: confusione, muro di fuoco, porta dimensionale, terreno illusorio · 5°: dominare persone, muro di forza, nube mortale, telecinesi · 6°: contingenza, dissolvi magie superiore, disintegrazione · 7°: dito della morte, gabbia di forza, desiderio limitato · 8°: labirinto, urlo superiore · 9°: arresto del tempo
   - ⚠ **Non è inteso per lo scontro fisico.** La scheda dichiara GS 17-19 e dice che il villain non combatte mai in campo aperto: questi numeri servono se i PG lo mettono all'angolo, non a progettare un incontro
-  - Rakshasa (SRD): RD 15/bene e perforante, RI 27, cambiare forma, individuazione del pensiero a volontà
+  - Rakshasa (SRD): RD 15/bene e perforante, RI 38 (27 del rakshasa + 11 livelli di classe), cambiare forma, individuazione del pensiero a volontà
   - Amuleto dell'Eclissi Planare: vuoto mentale e anti-individuazione continui a LI 20 — nemmeno la visione del vero lo smaschera
+  - Equipaggiamento da combattimento: pozione di cura ferite moderate, pozione di cura ferite gravi, pozione di splendore dell'aquila, pozione di volare, pozione di invisibilità, bacchetta di scudo (44 cariche)
+  - Altro equipaggiamento: anello di protezione +1, mantello della resistenza +2, Amuleto dell'Eclissi Planare, monile di ossidiana
 fonte: rakshasa (SRD 3.5) 7 DV + Stregone 11, rifatto a mano: vedi Boost log in fondo
 ```
 
@@ -84,7 +89,7 @@ fonte: rakshasa (SRD 3.5) 7 DV + Stregone 11, rifatto a mano: vedi Boost log in 
 ## Nella campagna
 
 * **Il piano di Varis:**
-ha un piano per far si che i PG si uccidano tra di loro. e che poi lui possa depredare i cadaveri dagli artefatti dei PG e venderli al miglior offerente.ha una gilda di ladri ed assassini che lavora per lui (simile al libro di R.A. Salvatore per la parte del capo della gilda di ladri).Ha un clone di se stesso incontrato dai pg all'inizio della campagna nel minotaur lair che poi si rivelerà essere stato inviato per fare affari con i drow e la regina dei funghi.
+ha un piano per far si che i PG si uccidano tra di loro. e che poi lui possa depredare i cadaveri dagli artefatti dei PG e venderli al miglior offerente.ha una gilda di ladri e assassini che lavora per lui (simile al libro di R.A. Salvatore per la parte del capo della gilda di ladri).Ha un clone di se stesso incontrato dai pg all'inizio della campagna nel minotaur lair che poi si rivelerà essere stato inviato per fare affari con i drow e la regina dei funghi.
 
 ## Con i PG
 
@@ -132,7 +137,20 @@ Il Collezionista indossa l'**Amuleto dell'Eclissi Planare** (Artefatto Minore):
 
 ## Esiti possibili
 
-[DA SCRIVERE — la scheda non ha rami scritti per il Collezionista. Ci sono il patto per ogni PG (§Con i PG) e la sua uscita di scena se attaccato (§In combattimento).]
+Un ramo per patto (§Con i PG) e uno per l'attacco (§In combattimento). La colonna «Che cosa gli resta» è `[INFERRED — Che cosa fa il Collezionista con quello che ottiene da ogni patto?; base: la scheda dà il patto e il suo prezzo (r.102-128), non il dopo; da rivedere quando si fonde il master DEF-04/05]`.
+
+| Scelta dei PG | Conseguenza scritta nella scheda | Che cosa gli resta |
+|:---|:---|:---|
+| **Artemis accetta** lo scambio (il mantello per il registro degli Ironforge) | Artemis ricco ma compromesso moralmente (r.102) | Ha il registro e una prova del furto: una leva su Artemis da usare più avanti |
+| **Thorik usa i Fuochi di Baator** | Un'ala dell'orda distrutta, fumi letali nei tunnel di evacuazione (r.108) | Ha venduto un'arma e ha i morti civili da raccontare: una leva sul Senso del Dovere di Thorik |
+| **Tordek ruba i Cristalli di Risonanza** | Tordek apre i forzieri dimensionali e si prende gli esplosivi, mentre Artemis distrae Varis (r.114) | Perde merce e lo sa: Tordek entra nella lista di chi gli deve qualcosa |
+| **Hella lo minaccia** e difende i rifugiati | Rancore eterno del Rakshasa verso Hella (r.120) | Hella diventa il suo bersaglio personale nelle scene successive |
+| **I PG lo attaccano** | Contingenza con *porta dimensionale*: sparisce senza combattere (r.128) | Nessuna perdita per lui; il mercato con i PG si chiude e restano solo le leve già prese |
+| **Nessun patto** | — | Continua a depredare i clan mentre Hammerfist e l'orda si consumano (§Gli obiettivi) |
+
+<!-- storico -->
+- era (17/11, corretto il 18/11): riga di Tordek, conseguenza «Gli esplosivi tornano ai nani». La scheda dice solo che Tordek li ruba (r.114); a chi vanno dopo non è scritto.
+<!-- /storico -->
 
 ## Fonti e canone
 
@@ -140,7 +158,9 @@ Il Collezionista indossa l'**Amuleto dell'Eclissi Planare** (Artefatto Minore):
 - L'intermediario umano: `Bestiario/png/Varis_Seta_Argento/Varis_Seta_Argento.md`.
 - `il-collezionista-rakshasa-cr18.md` è un rimando a questa scheda.
 
-Benchmark: PF T1-1 riga 18: CA 25 (−8), pf 113 (−187), att +13 (−15), CD 24 (−1). Per somma il GS sarebbe 21 (rakshasa GS 10 + 11 livelli di stregone, classe associata); sulle difese ne vale 13-14, sulle CD 17. Resta 18 per gli incantesimi di 8° e 9°, *contingenza* e l'amuleto, che sono quello che lo rende imprendibile.
+Benchmark: PF T1-1 riga 18: CA 26 (−7), pf 113 (−187), att +13 (−15), CD 24 (−1). Per somma il GS sarebbe 21 (rakshasa GS 10 + 11 livelli di stregone, classe associata); sulle difese ne vale 13-14, sulle CD 17. Resta 18 per gli incantesimi di 8° e 9°, *contingenza* e l'amuleto, che sono quello che lo rende imprendibile.
+
+> RC-001 (2026-11-15, ADR-0134) `[CANONE — DM 2026-11-15, RC-001]`: pozioni, bacchetta, anello e mantello vengono dal PNG dei Codex PF1e «Lucky Mage» (Stregone 11). L'anello di protezione +1 porta la CA da 25 a 26 (contatto 13, colto alla sprovvista 24); il mantello della resistenza +2 porta i tiri salvezza da +11/+10/+13 a +13/+12/+15. Non entrano l'amuleto dell'armatura naturale (al collo c'è già l'Amuleto dell'Eclissi Planare), la fascia del Carisma (nel 3.5 è un mantello, e il posto è del mantello della resistenza), la balestra e la lancia lunga. Valore 9.060 mo senza l'Amuleto e il monile, che non hanno prezzo; il livello effettivo è oltre il 20° e la Tabella 4-23 del DMG 3.5 non arriva (al 20° sono 220.000 mo).
 
 Boost log: DV razziali aggiunti (rakshasa SRD 7 DV + Stregone 11, l'innato del rakshasa sommato alla classe come incantatore di 18°) — GS 18 → 18 — il blocco contava solo 18 livelli da stregone e nessun DV razziale.
 
@@ -149,4 +169,5 @@ Boost log: DV razziali aggiunti (rakshasa SRD 7 DV + Stregone 11, l'innato del r
 - era: attributi Car 19 Int 14 Des 13 Cos 12 Sag 10 For 8; bastone ferrato +8 (1d6−1)
 - era: incantesimi al giorno 6/6/6/6/6/6/6/6/5/3, CD massima 23; *campo antimagia* fra gli incantesimi di 8°, *desiderio limitato* e *sfera di annichilimento* fra quelli di 9°
 - era: fuga con *parola del ritiro*
+- era: CA 25, contatto 12, colto alla sprovvista 23; tiri salvezza +11 / +10 / +13 (prima del corredo scelto con RC-001 il 2026-11-15)
 <!-- /storico -->

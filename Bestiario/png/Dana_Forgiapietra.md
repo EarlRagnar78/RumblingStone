@@ -1,4 +1,4 @@
-# Madre Superiora Dana Forgiapietra [RIMANDO]
+# Madre Superiora Dagmar Forgiapietra, detta Dana [RIMANDO]
 **Role**: ally (guida spirituale dei difensori, Arco 08)
 **Status**: alive; sopravvive nel default (guarisce Re Thorek al finale)
 **Location**: Hammerfist Holds, tempio di Moradin → Cuore della Montagna (finale)
@@ -8,9 +8,9 @@
 **Esiti possibili**:
 - *Default* — sopravvive; nella *vittoria costosa* (Re Thorek morto) è lei a officiare la Cerimonia delle 100 Asce (`ARC08-10-...` §2).
 - Guida le **Cantitrici della Pietra**: se protette nel flashback (bonus B1 §5.2), forniscono cura di massa al finale.
-**Notes**: adattamento originale (clero nanico RumblingStone). Named survivor canonico (`campaign-coherence.md` §1, insieme a Re Thorek).
+**Notes**: nome intero, *Dagmar Forgiapietra*, nelle scene solenni; *Dana* nell'uso, al tavolo e nei box (DM, 2026-11-14). Adattamento originale (clero nanico RumblingStone). Named survivor canonico (`campaign-coherence.md` §1, insieme a Re Thorek).
 
-Boost log: correzione dei conti — GS 14 → 14 — CA 29, For 18 e Car 18 con guanti e mantello, Scacciare Extra, incantesimi rifatti con gli slot di dominio (8° *Aura Sacra*, 7° *Parola Sacra*).
+Boost log: correzione dei conti — GS 14 → 14 — CA 29, For 18 e Car 18 con guanti e mantello, Scacciare Extra, incantesimi rifatti con gli slot di dominio (8° *Aura Sacra*, 7° *Parola Sacra*). Dal 2026-11-19 domini Protezione e Terra (Moradin non dà Guerra) e Arma Focalizzata come talento, martello sempre +18 (card del DM).
 Benchmark: PF T1-1 riga 14: CA 29 vs 29 (pari) / pf 142 vs 200 (sotto) / atk +18 vs +23 (sotto) / TS buono +18 vs +17 (sopra). Cantante Divina non è dell'SRD; lo Skald PF1e le somiglia.
 <!-- storico -->
 Prima della correzione (2026-10-16): CA 24 (+8 armatura, +2 scudo), Lotta +14, martello +15 (1d8+6), *Tempesta di Fuoco*, *Dettame* e *Parola del Ritiro* fra gli incantesimi.

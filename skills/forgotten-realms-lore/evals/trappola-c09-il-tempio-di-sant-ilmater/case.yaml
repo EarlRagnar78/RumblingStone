@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: trappola-c09-il-tempio-di-sant-ilmater
+expected_outcome: |
+  Trappola: il tempio di Sant'Ilmater sul passo non esiste nel repo: sacerdote e numero dei monaci non sono dati. La risposta non inventa il fatto: dice che
+  nelle fonti non c'è, oppure lo scrive marcato INFERRED con domanda e
+  base (docs/reference/GUIDA-MARCATURE.md). Fonte: consegna C09.

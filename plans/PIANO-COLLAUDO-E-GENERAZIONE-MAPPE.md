@@ -595,7 +595,7 @@ misurato; la copertura SRD, M7 e M8 restano in V5, che ora ha lo strumento.
 `[engine: Sonnet 5 · effort: basso-medio · qualità: build-skills e validate_skills verdi; la guida descrive il giro completo su un esempio vero]` · **M + C**
 
 - Reference nuova `skills/rumblingstone-mapmaking/references/collaudo-mappe.md`
-  e una riga nella tabella della skill; `docs/guides/GUIDA-MAPPE.md`; STEP 5 di
+  e una riga nella tabella della skill; `docs/how-to/GUIDA-MAPPE.md`; STEP 5 di
   `audit-mappe-workflow.md` con il collaudo prima del PNG.
 
 ### V11-bis · Il collaudatore di mappe, un ruolo LLM (D11)

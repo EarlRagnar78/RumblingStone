@@ -37,7 +37,7 @@ Day 24  SACRED FOREST arrival (for those who go).
         └─ Optional: drow scout encounter for Artemis if heading to Tower
 
 Day 25  Saraah's RITO DI DIVINAZIONE.
-        ├─ Hella   → 3 visions: Rhest base / Mother of Fungi / Talar in fiamme
+        ├─ Hella   → 3 visions: Lhesper base / Mother of Fungi / Talar in fiamme
         ├─ Hella   → optional EL-11 descent under Quercia Vecchia
         └─ Artemis → optional 4th confirmation of Tower direction
 
@@ -97,7 +97,7 @@ Giorno 24  ARRIVO AL SACRED FOREST (per chi ci va).
              come "Pugno di Pietra del Nord" sulla sua lista. Offre
              invito al Torneo di Dauth.
 Giorno 25  RITO DRUIDICO DI HELLA + DIVINAZIONE DI SARAAH.
-           - Saraah rivela: base Red Hand a Rhest + ombra scura
+           - Saraah rivela: base Red Hand a Lhesper + ombra scura
              sul Cerchio + visione Talar in fiamme.
            - Opzionale: encounter Mother of Fungi sotto la Quercia.
 Giorno 23-28 Possibili incontri sulla strada:
@@ -115,7 +115,7 @@ Giorno 31  Day 2 Torneo.
 Giorno 32  Day 3 Torneo + assedio Vanguard a Dauth.
 Giorno 33-35  Hella completa rituale Sacred Forest;
               Artemis affronta Zalkatar nella Torre Invisibile
-              (se entro Mirtul = ~Day 30, altrimenti Torre cammina).
+              (se entro Flamerule = ~Day 30, altrimenti Torre cammina).
 Giorno 36  Convoglio dei superstiti del Torneo parte per Rethmar.
 Giorno 37  Convergenza dei PG verso Rethmar.
 Giorno 40  Notte dei Drow (Phase 0).
@@ -211,7 +211,7 @@ Il party **resta unito**. Va a Sacred Forest per primo (Giorno 23-26 — rito + 
 
 **Costo:**
 - **Tempo:** Hella + Sacred Forest + viaggio = il party arriva a Dauth solo Giorno 30-31. **Probabilmente perde Day 1 o Day 2 del Torneo.** Tordek deve fare le preliminari da solo o saltare.
-- **Artemis ha finestra Mirtul stretta** (Day 30 = fine Mirtul). Se parte solo Giorno 26 dal Sacred Forest, arriva Torre Giorno 28-29. Stretto ma fattibile.
+- **Artemis ha finestra Flamerule stretta** (Day 30 = fine Flamerule). Se parte solo Giorno 26 dal Sacred Forest, arriva Torre Giorno 28-29. Stretto ma fattibile.
 - **Niente sub-quest Beriah/Mask cult al Torneo** se Artemis va alla Torre invece di a Dauth.
 
 ### 4.3 PATH-C — *Hybrid* (2+2 o 3+1)
@@ -229,7 +229,7 @@ Compromesso: il party si divide in **2 gruppi**.
 | Path | Hella ritual | Tordek invito | Artemis Torre | Thorik politica | Drama RP |
 |---|---|---|---|---|---|
 | A (split) | Solo, CD ↑ | NO sigillo (–150 lance) | OK ma alla cieca | Solo |  Diviso |
-| B (together) | Pieno, CD ↓ | Sigillo via Maewen | Stretto Mirtul | Pieno |  Unito |
+| B (together) | Pieno, CD ↓ | Sigillo via Maewen | Stretto Flamerule | Pieno |  Unito |
 | C (hybrid) | Variabile | Variabile | Variabile | Variabile | Misto |
 
 > **DM nota:** non spingere il party verso una path. Lascialo emergere dalla discussione di tavolo. Qualunque scelta sia gestibile narrativamente.
@@ -308,7 +308,7 @@ Sintesi rapida per i 4 PG:
 | Lythiel + 2 ranger Phase 1 | +1 squadrone aerea (CR 8 each) |
 | Mother of Fungi spore distrutta sotto Quercia | Sonjak Phase 0 –1 CR effettivo |
 | Mother of Fungi ignorata | Sonjak Phase 0 +1 CR effettivo |
-| Saarvith disturbato a Rhest | Saarvith Phase 1 –1 CR (drago meno preparato) |
+| Saarvith disturbato a Lhesper | Saarvith Phase 1 –1 CR (drago meno preparato) |
 | Saarvith ignorato | Saarvith Phase 1 al CR pieno |
 | Lorana mobilita Riserva volontari | +30 a +150 difensori (depending on relationship) |
 | Lorana ignorata | +0 |

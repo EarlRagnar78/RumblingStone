@@ -126,12 +126,15 @@ class AncoreIncantatori(unittest.TestCase):
     def test_bardo(self):
         """Il bardo serviva davvero: `lomyn-redtongue-bardo8-cr8` è nel
         Bestiario, e fino al lotto I il generatore non sapeva costruirlo."""
-        righe = _righe_markdown(self.testo, "Verified anchor rows (SRD Table: The Bard")
+        righe = _righe_markdown(self.testo, "Verified anchor rows (PRD PF1e Table: Bard")
         self.assertTrue(righe, "la skill non ha le righe d'ancora del bardo")
         for cella in righe:
             liv = int(cella[0])
             with self.subTest(livello=liv):
-                self.assertEqual(_senza_coda(tabelle.BARDO[liv]), _slot(cella[1]))
+                # tabella PF1e (card del DM del 2026-11-09): lo 0 finto dei
+                # trucchetti a volontà non è nell'ancora, che parte dal 1° livello
+                self.assertEqual(tabelle.BARDO[liv][0], 0)
+                self.assertEqual(_senza_coda(tabelle.BARDO[liv][1:]), _slot(cella[1]))
                 self.assertEqual(_senza_coda(tabelle.BARDO_CONOSCIUTI[liv]),
                                  _slot(cella[2]))
 
@@ -143,14 +146,14 @@ class AncoreIncantatori(unittest.TestCase):
         quelle degli altri incantatori. Il confronto deve togliere quello zero,
         o il test controllerebbe due cose diverse e non se ne accorgerebbe.
         """
-        righe = _righe_markdown(self.testo, "Verified anchor rows (SRD Table: The Ranger")
+        righe = _righe_markdown(self.testo, "Verified anchor rows (PRD PF1e Table: Ranger")
         self.assertTrue(righe, "la skill non ha le righe d'ancora del ranger")
         for cella in righe:
             liv = int(cella[0])
             with self.subTest(livello=liv):
                 self.assertEqual(_senza_coda(tabelle.RANGER[liv][1:]), _slot(cella[1]))
         self.assertIs(tabelle.PALADINO, tabelle.RANGER,
-                      "nel SRD ranger e paladino hanno la stessa griglia")
+                      "in PF1e ranger e paladino hanno la stessa griglia")
         for liv in range(1, 21):
             with self.subTest(livello=liv, cosa="nessun incantesimo di livello 0"):
                 self.assertEqual(tabelle.RANGER[liv][0], 0)

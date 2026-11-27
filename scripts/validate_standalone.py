@@ -65,16 +65,14 @@ SESSION_RE = re.compile(r"^0[1-3]-GIORNO-.*\.md$")
 # vantaggio» è lingua normale: bandirla sarebbe un falso positivo, e un validatore
 # che grida al lupo viene disattivato entro una settimana.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from validate_modules import RIPOSO_5E  # noqa: E402
+from dmcore.sistemi import sistema_di, termini_vietati  # noqa: E402
 
-BANNED = {
-    r"\bazione bonus\b": "azione bonus (5e) → azione veloce",
-    r"\bcon (?:un )?vantaggio\b": "tirare «con vantaggio» (5e) → nessun equivalente",
-    r"\bcon (?:uno )?svantaggio\b": "tirare «con svantaggio» (5e) → nessun equivalente",
-    r"\blair action": "lair action (5e)",
-    r"(?<![A-Za-z])DC\s+\d": "DC → CD (Classe Difficoltà)",
-    RIPOSO_5E: "riposo breve/lungo (5e) → otto ore di sonno, guarigione naturale",
-}
+
+def vietati(path: Path) -> "list[tuple[str, str]]":
+    """I termini vietati nel sistema del modulo: la lista sola del plugin d20,
+    la stessa di validate_modules (ADR-0111, L3)."""
+    return termini_vietati(sistema_di(path))
+
 
 PREGEN_SECTIONS = ("Difesa", "Attacco", "Statistiche", "Equipaggiamento")
 
@@ -209,7 +207,7 @@ def check_banned(mod: Path, errors: list[str]) -> None:
         if f.name.endswith(".hb.md"):
             continue  # generati dai sorgenti: il difetto va segnalato una volta sola
         text = f.read_text(encoding="utf-8", errors="ignore")
-        for pattern, why in BANNED.items():
+        for pattern, why in vietati(f):
             for m in re.finditer(pattern, text, re.I):
                 line = text[: m.start()].count("\n") + 1
                 errors.append(f"{f.relative_to(ROOT)}:{line}: termine vietato — {why}")
@@ -410,7 +408,7 @@ def check_html_module(mod: Path, errors: list[str], warnings: list[str]) -> None
     check_aree_ambigue(pagine, mod.name, warnings)
 
     testo = "\n".join(_testo(f.read_text(encoding="utf-8", errors="ignore")) for f in pagine)
-    for pattern, why in BANNED.items():
+    for pattern, why in vietati(mod):
         if re.search(pattern, testo, re.I):
             errors.append(f"{mod.name}: termine vietato nel testo — {why}")
 

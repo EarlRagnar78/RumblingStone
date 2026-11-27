@@ -109,7 +109,7 @@ regge.
 
 | Chi | Chiede | Offre | La trappola |
 |---|---|---|---|
-| **Attu** (Oca) | ostacolare l'Onda alla curva nord | cancella un terzo del debito | vale **solo se l'Oca arriva prima**. Percepire Intenzioni CD 20 per accorgersene, oppure **leggere il foglio** — che è lì, e nessuno lo legge mai |
+| **Attu** (Oca) | ostacolare l'Onda alla curva nord | cancella un terzo del debito | vale **solo se l'Oca arriva prima**. Intuizione CD 20 per accorgersene, oppure **leggere il foglio** — che è lì, e nessuno lo legge mai |
 | **Barbanera** (Onda) | niente, se non che l'Istrice non aiutino Attu | scorta ai battellieri per il cavallo e la stalla, stanotte | mantiene alla lettera e non oltre: se il patto dice «alla stalla», al fantino non ci pensa nessuno |
 | **Vesca** (Bruco) | il ritiro, ancora | il contratto di ieri, immutato | nessuna. E questo è il problema |
 
@@ -477,7 +477,7 @@ facilmente: è il patto.
 **3 · Vanno loro al Bruco, di notte.** Vesca è sveglia, in tintoria, e
 sta lavorando. Lascia che la trovino così. Non nega niente e non ammette niente:
 dice che di Sfregio non sa nulla, ed è vero. Se lo dice guardando in faccia Melchio
-(Percepire Intenzioni +9), il giocatore ci crederà, e avrà ragione.
+(Intuizione +9), il giocatore ci crederà, e avrà ragione.
 
 **4 · Denunciano tutto alla milizia.** Ubalda Trenchi apre un'inchiesta, che è la
 cosa più lenta di Tarsilia. Manda due miliziani a fare la guardia alla stalla:

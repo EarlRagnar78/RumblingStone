@@ -117,7 +117,7 @@ Defensive casting: DC 15 + spell level
 - **Slow**: negate haste; −1 attack; −1 AC dodge; −1 Ref; half speed; 1 round/level
 
 ### 4th Level
-- **Confusion**: 1 creature/level; confused condition; Will negates
+- **Confusion**: all creatures in a 15-ft.-radius burst; confused condition; Will negates; 1 round/level
 - **Dimension Door**: teleport self (+carried) up to long range; no error
 - **Enervation**: 1d4 negative levels; ranged touch; no save; SR Yes
 - **Greater Invisibility**: invisible even while attacking; 1 round/level
@@ -125,7 +125,7 @@ Defensive casting: DC 15 + spell level
 
 ### 5th Level
 - **Cone of Cold**: 60-ft cone; 1d6/level cold (max 15d6); Ref half
-- **Dominate Person**: humanoid fully controlled; Will negates; permanent until dispelled
+- **Dominate Person**: humanoid fully controlled; Will negates; 1 day/level; casting time 1 round; new save when forced against its nature
 - **Hold Monster**: as Hold Person but any creature
 - **Teleport**: teleport up to 100 miles/level; possible error table
 - **Wall of Force**: invisible wall; impervious to most attacks; cannot be dispelled
@@ -217,79 +217,86 @@ classe indicata, e **lo stesso incantesimo sta a livelli diversi per classi
 diverse** — *dissolvi magie* è 3° per mago, chierico e bardo e 4° per il druido,
 e leggerlo dalla riga sbagliata è esattamente l'errore che il test cerca.
 
+I nomi sono quelli ufficiali italiani del lessico (`scripts/lessico_it_35.tsv`,
+ADR-0110), separati da « · » perché alcuni portano la virgola dentro
+(*parola del potere, stordire*). Fino al 2026-11-10 108 nomi erano traduzioni
+libere (*spruzzo di colori* per *spruzzo colorato*, *grasso* per *unto*), e due
+incantesimi stavano al livello sbagliato: *scudo della legge* è 8° per il
+chierico, non 6°; *spaventare* è 2° per il bardo, non 3°.
+
 ### Mago / Stregone
 Lista arcana condivisa (SRD «Sorcerer/Wizard Spells»). Le due classi hanno la
 stessa lista; cambia il modo di accedervi, non il contenuto.
 
-- **0**: prestidigitazione, luce, lettura del magico, mano magica, individuazione del magico, raggio di gelo, resistenza, bagliore
-- **1**: dardo incantato, mani brucianti, armatura magica, scudo, sonno, charme su persone, spruzzo di colori, raggio di indebolimento, riduzione dei nemici, grasso, allarme, caduta morbida
-- **2**: immagine speculare, invisibilità, raggio rovente, freccia acida di Melf, sfocatura, ragnatela, polvere scintillante, risata incontenibile di Tasha, tocco della stupidità, frantumare, nube di nebbia, resistere all'energia, raffica di vento, individuazione dei pensieri
-- **3**: palla di fuoco, fulmine, volare, dissolvi magie, lentezza, velocità, blocca persone, nube maleodorante, tempesta di nevischio, spostamento, suggestione, forma gassosa, tocco vampirico, muro di vento, luce del giorno
-- **4**: muro di fuoco, confusione, porta dimensionale, terreno illusorio, tempesta di ghiaccio, occhio arcano, invisibilità superiore, pelle di pietra, prosciugare, polimorfismo, scudo di fuoco, muro di ghiaccio, charme su mostri, evocare mostri IV
-- **5**: muro di forza, dominare persone, telecinesi, nube mortale, cono di freddo, blocca mostri, muro di pietra, teletrasporto, metamorfosi funesta, deficienza, passapareti, mano interposta di Bigby, evocare mostri V
-- **6**: disintegrazione, catena di fulmini, sfera congelante di Otiluke, dissolvi magie superiore, globo d'invulnerabilità, cerchio della morte, nube acida, campo antimagia, muro di ferro, visione del vero, repulsione, occhio maligno, carne in pietra
-- **7**: dito della morte, inversione della gravità, palla di fuoco ritardata, gabbia di forza, spada arcana, esilio, spruzzo prismatico, follia, teletrasporto superiore, deviazione degli incantesimi, desiderio limitato, blocca persone di massa
-- **8**: labirinto, nube incendiaria, avvizzimento orrendo, raggio polare, parola del potere: stordire, danza irresistibile di Otto, schermo mentale, esplosione solare, urlo superiore, pugno serrato, muro prismatico, corpo di ferro
-- **9**: desiderio, arresto del tempo, meteore, parola del potere: uccidere, prigione, urlo della banshee, dominare mostri, disgiunzione di Mordenkainen, preveggenza, porta, prosciugamento di energia, sfera prismatica
+- **0**: prestidigitazione · luce · lettura del magico · mano magica · individuazione del magico · raggio di gelo · resistenza · lampo
+- **1**: dardo incantato · mani brucianti · armatura magica · scudo · sonno · charme su persone · spruzzo colorato · raggio di indebolimento · riduzione dei nemici · unto · allarme · caduta morbida
+- **2**: immagine speculare · invisibilità · raggio rovente · freccia acida di Melf · sfocatura · ragnatela · polvere luccicante · risata incontenibile di Tasha · tocco di idiozia · frantumare · nube di nebbia · resistere all'energia · folata di vento · individuazione dei pensieri
+- **3**: palla di fuoco · fulmine · volare · dissolvi magie · lentezza · velocità · blocca persone · nube maleodorante · tempesta di nevischio · distorsione · suggestione · forma gassosa · tocco vampirico · muro di vento · luce diurna
+- **4**: muro di fuoco · confusione · porta dimensionale · terreno illusorio · tempesta di ghiaccio · occhio arcano · invisibilità superiore · pelle di pietra · debilitazione · metamorfosi · scudo di fuoco · muro di ghiaccio · charme sui mostri · evocare mostri IV
+- **5**: muro di forza · dominare persone · telecinesi · nube mortale · cono di freddo · blocca mostri · muro di pietra · teletrasporto · metamorfosi funesta · regressione mentale · passapareti · mano interposta di Bigby · evoca mostri V
+- **6**: disintegrazione · catena di fulmini · sfera congelante di Otiluke · dissolvi magie superiore · globo di invulnerabilità · cerchio di morte · nebbia acida · campo anti-magia · muro di ferro · visione del vero · repulsione · sguardo penetrante · carne in pietra
+- **7**: dito della morte · inversione della gravità · palla di fuoco ritardata · gabbia di forza · spada di Mordenkainen · esilio · spruzzo prismatico · demenza · teletrasporto superiore · riflettere incantesimo · desiderio limitato · blocca persone di massa
+- **8**: labirinto · nube incendiaria · orrido avvizzimento · raggio polare · parola del potere, stordire · danza irresistibile di Otto · vuoto mentale · esplosione solare · grido superiore · pugno serrato · muro prismatico · corpo di ferro
+- **9**: desiderio · fermare il tempo · sciame di meteore · parola del potere, uccidere · imprigionare · lamento della banshee · dominare mostri · disgiunzione di Mordenkainen · previsione · portale · risucchio di energia · sfera prismatica
 
 ### Chierico
 SRD «Cleric Spells». Gli incantesimi di dominio **non** sono qui: il dominio è
 una scelta, e il generatore non la fa al posto del DM.
 
-- **0**: individuazione del magico, guida, resistenza, luce, riparare, cura ferite minime, individuazione del veleno, virtù
-- **1**: benedizione, scudo della fede, santuario, cura ferite leggere, comando, protezione dal male, arma magica, favore divino, rimuovi paura, scudo entropico, infliggere ferite leggere
-- **2**: arma spirituale, aiuto, resistere all'energia, silenzio, blocca persone, cura ferite moderate, forza del toro, saggezza del gufo, oscurità, zona di verità, ristorare inferiore, calmare emozioni, consacrare
-- **3**: preghiera, dissolvi magie, luce bruciante, cecità/sordità, paramento magico, glifo di interdizione, protezione dall'energia, infliggere maledizione, elusione dell'invisibilità, muro di vento, cura ferite gravi, animare morti
-- **4**: potere divino, libertà di movimento, immunità agli incantesimi, cura ferite gravi, congedo, ristorare, divinazione, ancora dimensionale, veleno, camminare nell'aria, protezione dalla morte, arma magica superiore
-- **5**: colonna di fuoco, cura ferite leggere di massa, scacciare il male, potenza virtuosa, uccidere i viventi, visione del vero, muro di pietra, resistenza agli incantesimi, comando superiore, rianimare morti, spezzare incantesimo, piaga d'insetti
-- **6**: danno, guarigione, scudo di legge, barriera di lame, dissolvi magie superiore, cura ferite moderate di massa, esilio, parola del richiamo, animare oggetti, camminare nel vento, trovare il sentiero
-- **7**: parola sacra, rigenerazione, distruzione, ristorare superiore, cura ferite gravi di massa, controllare il clima, repulsione, resurrezione, bestemmia, dettame, parola del caos
-- **8**: terremoto, tempesta di fuoco, aura sacra, campo antimagia, cura ferite critiche di massa, immunità agli incantesimi superiore, manto del caos, simbolo di morte, blocco dimensionale
-- **9**: miracolo, guarigione di massa, implosione, tempesta di vendetta, porta, prosciugamento di energia, risurrezione pura, legare l'anima
+- **0**: individuazione del magico · guida · resistenza · luce · riparare · cura ferite minori · individuazione del veleno · virtù
+- **1**: benedizione · scudo della fede · santuario · cura ferite leggere · comando · protezione dal male · arma magica · favore divino · rimuovi paura · scudo entropico · infliggi ferite leggere
+- **2**: arma spirituale · aiuto · resistere all'energia · silenzio · blocca persone · cura ferite moderate · forza del toro · saggezza del gufo · oscurità · zona di verità · ristorare inferiore · calmare emozioni · consacrare
+- **3**: preghiera · dissolvi magie · luce incandescente · cecità/sordità · veste magica · glifo di interdizione · protezione dall'energia · scagliare maledizione · epurare invisibilità · muro di vento · cura ferite gravi · animare morti
+- **4**: potere divino · libertà di movimento · immunità agli incantesimi · cura ferite critiche · congedo · ristorare · divinazione · ancora dimensionale · veleno · camminare nell'aria · interdizione alla morte · arma magica superiore
+- **5**: colpo infuocato · cura ferite leggere di massa · dissolvi il male · giusto potere · distruggere viventi · visione del vero · muro di pietra · resistenza agli incantesimi · comando superiore · rianimare morti · spezzare incantamento · piaga degli insetti
+- **6**: ferire · guarigione · barriera di lame · dissolvi magie superiore · cura ferite moderate di massa · esilio · parola del ritiro · animare oggetti · camminare nel vento · scopri il percorso
+- **7**: parola sacra · rigenerazione · distruzione · ristorare superiore · cura ferite gravi di massa · controllare tempo atmosferico · repulsione · resurrezione · blasfemia · dettame · parola del caos
+- **8**: terremoto · tempesta di fuoco · aura sacra · campo anti-magia · cura ferite critiche di massa · immunità agli incantesimi superiore · mantello del caos · simbolo di morte · serratura dimensionale · scudo della legge
+- **9**: miracolo · guarigione di massa · implosione · tempesta di vendetta · portale · risucchio di energia · resurrezione pura · legare anima
 
 ### Druido
 SRD «Druid Spells». È la lista che il generatore sbagliava: **niente** di quello
 che sta qui compare nella lista arcana con lo stesso livello, e *benedizione*,
 *santuario* e *scudo della fede* non ci sono affatto — sono da chierico.
 
-- **0**: individuazione del magico, luce, guida, resistenza, riparare, bagliore, creare acqua, cura ferite minime
-- **1**: intralciare, fuoco fatuo, nebbia oscurante, produrre fiamma, zanna magica, randello incantato, passo senza tracce, cura ferite leggere, bacca curativa, sopportare gli elementi, evoca alleato naturale I
-- **2**: corteccia, lama di fuoco, sfera infuocata, raffica di vento, arroventare il metallo, blocca animali, resistere all'energia, saggezza del gufo, forza del toro, scalare come un ragno, resistenza dell'orso, evoca alleato naturale II
-- **3**: chiamare il fulmine, crescita vegetale, crescita di spine, tempesta di nevischio, muro di vento, dominare animali, protezione dall'energia, veleno, modellare la pietra, luce del giorno, zanna magica superiore, evoca alleato naturale III
-- **4**: dissolvi magie, colonna di fuoco, libertà di movimento, tempesta di ghiaccio, controllare piante, spine di pietra, avvizzimento, camminare nell'aria, controllare l'acqua, rimuovi malattia, evoca alleato naturale IV
-- **5**: muro di spine, muro di fuoco, tempesta di fulmini, pelle di pietra, piaga d'insetti, metamorfosi funesta, controllare i venti, viaggio arboreo, trasmutare roccia in fango, crescita animale, evoca alleato naturale V
-- **6**: muro di pietra, semi di fuoco, dissolvi magie superiore, guscio antivita, respingere il legno, spostare la terra, trasporto vegetale, resistenza dell'orso di massa, legno di ferro, evoca alleato naturale VI
-- **7**: tempesta di fuoco, controllare il clima, fato strisciante, animare piante, guarigione, raggio di sole, camminare nel vento, visione del vero, evoca alleato naturale VII
-- **8**: terremoto, esplosione solare, forma animale di massa, turbine, inversione della gravità, dito della morte, controllare le piante, respingere metallo o pietra, evoca alleato naturale VIII
-- **9**: tempesta di vendetta, sciame elementale, mutare forma, preveggenza, rigenerazione, antipatia, guarigione di massa, evoca alleato naturale IX
+- **0**: individuazione del magico · luce · guida · resistenza · riparare · lampo · creare acqua · cura ferite minori
+- **1**: intralciare · luminescenza · foschia occultante · produrre fiamma · zanna magica · randello incantato · passare senza tracce · cura ferite leggere · bacche benefiche · contrastare elementi · evoca alleato naturale I
+- **2**: pelle coriacea · lama infuocata · sfera infuocata · folata di vento · riscaldare il metallo · blocca animali · resistere all'energia · saggezza del gufo · forza del toro · movimenti del ragno · resistenza dell'orso · evoca alleato naturale II
+- **3**: invocare il fulmine · crescita vegetale · crescita di spine · tempesta di nevischio · muro di vento · dominare animali · protezione dall'energia · veleno · scolpire pietra · luce diurna · zanna magica superiore · evoca alleato naturale III
+- **4**: dissolvi magie · colpo infuocato · libertà di movimento · tempesta di ghiaccio · comandare vegetali · rocce aguzze · inaridire · camminare nell'aria · controllare acqua · cura ferite gravi · evoca alleato naturale IV
+- **5**: muro di spine · muro di fuoco · invocare tempesta di fulmini · pelle di pietra · piaga degli insetti · metamorfosi funesta · controllare venti · traslazione arborea · trasmutare roccia in fango · crescita animale · evoca alleato naturale V
+- **6**: muro di pietra · semi di fuoco · dissolvi magie superiore · guscio anti-vita · respingere legno · muovere il terreno · trasporto vegetale · resistenza dell'orso di massa · legno di ferro · evoca alleato naturale VI
+- **7**: tempesta di fuoco · controllare tempo atmosferico · piaga strisciante · animare vegetali · guarigione · bagliore solare · camminare nel vento · visione del vero · evoca alleato naturale VII
+- **8**: terremoto · esplosione solare · forme animali · turbine · inversione della gravità · dito della morte · controllare vegetali · respingere metallo o pietra · evoca alleato naturale VIII
+- **9**: tempesta di vendetta · sciame elementale · trasformazione · previsione · rigenerazione · antipatia · cura ferite critiche di massa · evoca alleato naturale IX
 
 ### Bardo
 SRD «Bard Spells». Ibrida, e **non** è né la lista arcana né quella divina: si
 ferma al 6° livello, e ci sono dentro cose che il mago non ha (*suggestione* al
 2°) e manca tutto il ramo del danno d'area.
 
-- **0**: luci danzanti, suono fantasma, individuazione del magico, luce, mano magica, messaggio, prestidigitazione, lettura del magico, resistenza
-- **1**: charme su persone, cura ferite leggere, immagine silenziosa, sonno, ipnotismo, confusione minore, grasso, caduta morbida, ventriloquio, rimuovi paura, ritirata veloce
-- **2**: risata incontenibile di Tasha, suggestione, blocca persone, invisibilità, calmare emozioni, sfocatura, polvere scintillante, immagine speculare, silenzio, eroismo, schema ipnotico, frantumare, cura ferite moderate
-- **3**: dissolvi magie, spavento, confusione, disperazione opprimente, velocità, lentezza, immagine maggiore, charme su mostri, buona speranza, spostamento, sonno profondo, cura ferite gravi
-- **4**: dominare persone, invisibilità superiore, libertà di movimento, blocca mostri, porta dimensionale, urlo, schema arcobaleno, modificare memoria, spezzare incantesimo, evocazione ombrosa, cura ferite critiche
-- **5**: suggestione di massa, eroismo superiore, dissolvi magie superiore, canto della discordia, nebbia mentale, traviare, cura ferite leggere di massa, immagine persistente, camminare nell'ombra, incubo
-- **6**: danza irresistibile di Otto, urlo superiore, charme su mostri di massa, animare oggetti, banchetto degli eroi, occhio maligno, immagine permanente, trovare il sentiero, velo, cura ferite moderate di massa
+- **0**: luci danzanti · suono fantasma · individuazione del magico · luce · mano magica · messaggio · prestidigitazione · lettura del magico · resistenza
+- **1**: charme su persone · cura ferite leggere · immagine silenziosa · sonno · ipnosi · confusione inferiore · unto · caduta morbida · ventriloquio · rimuovi paura · ritirata rapida · risata incontenibile di Tasha
+- **2**: suggestione · blocca persone · invisibilità · calmare emozioni · sfocatura · polvere luccicante · immagine speculare · silenzio · eroismo · trama ipnotica · frantumare · cura ferite moderate · spaventare
+- **3**: dissolvi magie · confusione · disperazione opprimente · velocità · lentezza · immagine maggiore · charme sui mostri · buone speranze · distorsione · sonno profondo · cura ferite gravi
+- **4**: dominare persone · invisibilità superiore · libertà di movimento · blocca mostri · porta dimensionale · grido · trama iridescente · modificare memoria · spezzare incantamento · ombra di una evocazione · cura ferite critiche
+- **5**: suggestione di massa · eroismo superiore · dissolvi magie superiore · canto di discordia · nebbia mentale · fuorviare · cura ferite leggere di massa · immagine persistente · camminare nelle ombre · incubo
+- **6**: danza irresistibile di Otto · grido superiore · charme sui mostri di massa · animare oggetti · banchetto degli eroi · sguardo penetrante · immagine permanente · scopri il percorso · velo · cura ferite moderate di massa
 
 ### Ranger
 SRD «Ranger Spells» — quattro livelli e non oltre, e il primo slot arriva al 4°
 livello di classe.
 
-- **1**: intralciare, zanna magica, passo senza tracce, resistere all'energia, ritardare veleno, sopportare gli elementi, individuare trappole e fosse, falcata prolungata, salto, evoca alleato naturale I
-- **2**: corteccia, resistenza dell'orso, grazia felina, cura ferite leggere, blocca animali, protezione dall'energia, crescita di spine, muro di vento, laccio, evoca alleato naturale II
-- **3**: zanna magica superiore, cura ferite moderate, scurovisione, crescita vegetale, neutralizzare veleni, respingere parassiti, rimuovi malattia, camminare sull'acqua, controllare piante, evoca alleato naturale III
-- **4**: libertà di movimento, cura ferite gravi, crescita animale, comunione con la natura, non individuazione, viaggio arboreo, evoca alleato naturale IV
+- **1**: intralciare · zanna magica · passare senza tracce · resistere all'energia · ritarda veleno · contrastare elementi · individuazione di calappi e trabocchetti · passo veloce · saltare · evoca alleato naturale I
+- **2**: pelle coriacea · resistenza dell'orso · grazia del gatto · cura ferite leggere · blocca animali · protezione dall'energia · crescita di spine · muro di vento · calappio · evoca alleato naturale II
+- **3**: zanna magica superiore · cura ferite moderate · scurovisione · crescita vegetale · neutralizza veleno · respingere parassiti · rimuovi malattia · camminare sull'acqua · comandare vegetali · evoca alleato naturale III
+- **4**: libertà di movimento · cura ferite gravi · crescita animale · comunione con la natura · anti-individuazione · traslazione arborea · evoca alleato naturale IV
 
 ### Paladino
 SRD «Paladin Spells» — quattro livelli, primo slot al 4°, e la CD si calcola
 sulla **Saggezza** (vedi la nota in `classes.md`).
 
-- **1**: benedizione, benedire arma, favore divino, arma magica, cura ferite leggere, protezione dal male, sopportare gli elementi, ristorare inferiore, individuazione dei non morti, virtù
-- **2**: forza del toro, scudo altrui, resistere all'energia, ritardare veleno, rimuovi paralisi, zona di verità, splendore dell'aquila, allineamento non individuabile
-- **3**: dissolvi magie, preghiera, arma magica superiore, cura ferite moderate, cerchio magico contro il male, individuare menzogne, luce del giorno, rimuovi maledizione, curare cavalcatura
-- **4**: spada sacra, scacciare il male, cura ferite gravi, ristorare, protezione dalla morte, spezzare incantesimo, neutralizzare veleni, marchio della giustizia
+- **1**: benedizione · benedire un'arma · favore divino · arma magica · cura ferite leggere · protezione dal male · contrastare elementi · ristorare inferiore · individuazione dei non morti · virtù
+- **2**: forza del toro · scudo su altri · resistere all'energia · ritarda veleno · rimuovi paralisi · zona di verità · splendore dell'aquila · allineamento imperscrutabile
+- **3**: dissolvi magie · preghiera · arma magica superiore · cura ferite moderate · cerchio magico contro il male · rivela bugie · luce diurna · rimuovi maledizione · guarire cavalcatura
+- **4**: spada sacra · dissolvi il male · cura ferite gravi · ristorare · interdizione alla morte · spezzare incantamento · neutralizza veleno · sigillo di giustizia

@@ -1,10 +1,13 @@
-# Centaur Ranger 4 (Corrupted) [ACCEPTED — DM-canon 2026-05-05]
+# Centaur Ranger 4 (Corrupted) [CANONE — DM 2026-05-05]
 **Faction**: loxo-centaur-corrupted | **Role**: ranged-skirmisher | **Environment**: plain/forest | **CR**: 5 | **Source**: MM p.33 Centaur + PHB Ranger 4 | **Status**: inferred
 
 
 ```statblocco
 gs: 5
 tipo: Large monstrous HD 4d8+4d8+24 (60 HP)
+taglia: Grande
+spazio: 3 m
+portata: 1,5 m
 ca: 17
 ca-dettaglio: (-1 size, +2 Dex, +3 natural, +3 studded)
 pf: 60

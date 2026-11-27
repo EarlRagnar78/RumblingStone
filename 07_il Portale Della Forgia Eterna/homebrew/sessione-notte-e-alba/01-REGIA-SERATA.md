@@ -1,10 +1,15 @@
-# Regia della serata — dalla postierla al drago
+# Regia della serata — dal barile al drago
 
 > **Cos'è.** La scaletta della serata, in ordine di gioco. Non riscrive il
 > master: dice **quale paragrafo aprire, quando, per quanto**, cosa consegnare
 > e cosa annotare. Per l'ordine della serata e per cosa leggere prima vale
 > questa regia, anche contro la lista «La vostra serata» del §0 di `DEF-4`.
 > Per le regole vince il master, e prima ancora vince lo stato della campagna.
+>
+> **Stasera** `[CANONE — DM 2026-11-02]`. Le scelte nella fortezza
+> e il giro delle pozioni di Kettra sono giocati. Il gruppo è in volo sopra il
+> campo, invisibile, con la botte e i due barilotti, e **si rigioca lo
+> sgancio** sulla tenda di Zog'tar. La serata comincia lì: Atto I, il barile.
 >
 > **Pilastri della serata**: Andor guida la notte (un orologio, una tenda, un
 > ladro che non è di qui), Salvatore guida l'alba (le mura e il duello), Mercer
@@ -21,30 +26,29 @@
 
 | Atto | Cosa | Master | Tre ore | Intera | Si consegna |
 |---|---|---|---:|---:|---|
-| **0** | Prima di cominciare | questa pagina, e il box in testa al booklet | 10 | 10 | ✉ gli echi, uno a testa · ✉ le dieci boccette |
-| **I** | Le ultime scelte nella fortezza | questa regia §2, poi `DEF-4` §4 l'orologio e Scena 5 | 15 | 20 | ✉ il contratto del Seme, solo dopo il box dell'ora della pergamena (cap. II); se il Seme si rinvia, resta nel volume |
-| **II** | Il campo, andata e ritorno | `DEF-4` Scene 6-9 | 90 | 115 | — |
+| **0** | Prima di cominciare: dove sono, cosa tengono in mano, le tacche | questa pagina | 5 | 10 | ✉ gli echi, se non li hanno già |
+| **I** | Il barile: lo sgancio e i round nel fuoco | `02-CHI-CE-STANOTTE.md` per chi c'è e le mappe; `ARC07-BARILE-SULLA-TENDA.md`, la scheda da tavolo, §2-bis e §8; `DEF-4` Scena 6, «Variante — il barile sulla tenda» | 45 | 60 | — |
+| **II** | Dopo il barile: il ritorno, Vatore, la notte che resta | `DEF-4` Scene 6 («Il ritorno», «Se il corno suona di notte») e 9; Scene 7-8 solo se scendono | 30 | 45 | ✉ il contratto del Seme, solo se il Seme si gioca al ritorno |
 | — | Pausa | | 10 | 15 | |
 | **III** | L'alba | `DEF-4` Scene 10 e 11 | 75 | 90 | — |
 | **Stop** | L'esito del duello | `DEF-4` Scena 11, fine | 5 | 5 | |
 
-**Totale**: circa **3 ore e 25** nella colonna «tre ore», **4 ore e 15** in
-quella intera. Il ritorno dalla tenda è dentro l'Atto II. La differenza sta in
-due scelte, scritte sotto ogni atto alla voce **«Per stare nelle tre ore»**: il
-mare di tende a montaggio e il duello con la regia veloce se il tavolo è
-stanco. Per stare davvero nelle tre ore si tolgono altri 25 minuti, in
-quest'ordine: il Seme rinviato al 1372 (dieci minuti), poi il duello in tre
-scambi, `DEF-4` Appendice C.3, al posto della Scena 11. **Balvar e Zog'tar non si
-tagliano**: sono le due scene che cambiano il duello.
+**Totale**: circa **2 ore e 50** nella colonna «tre ore», **3 ore e 45** in
+quella intera. Per stare nelle tre ore si taglia, in quest'ordine: il ritorno
+in un tiro solo (`DEF-4` Appendice C.2), poi il duello in tre scambi (`DEF-4`
+Appendice C.3). **Il barile non si taglia**: è la scena che il tavolo ha
+costruito, e da lì vengono le mura e il duello.
 
 **Le immagini e la musica**, nell'ordine in cui servono:
 
-- Balvar e Zog'tar, Scene 7 e 8: i ritratti sotto le loro schede d'entrata, da
-  mostrare **dopo** l'incontro, non prima;
-- Skullcrusher nel cortile, Scena 11:
-  `Immagini/web/tavola-skullcrusher-nel-cortile.jpg`, solo quando il drago
-  scende;
-- la mappa **M7-C** per la tenda e la **M7-B** per il cortile, Appendice D;
+- la mappa **M7-H**, il campo attorno allo spiazzo, e la **M7-C**, lo spiazzo
+  e la tenda, in fondo al `02-CHI-CE-STANOTTE.md`: dall'alto i PG vedono tutte e due, con
+  i fuochi accesi;
+- Balvar e Zog'tar: i ritratti nel `02-CHI-CE-STANOTTE.md`, accanto alle loro schede, da
+  mostrare solo se uno dei due si fa vedere nella luce dell'incendio;
+- Skullcrusher nel cortile, Scena 11: la tavola è nel `02-CHI-CE-STANOTTE.md`, solo
+  quando il drago scende;
+- la **M7-B** per il cortile<!-- apparato -->, `09-M7B-CORTILE.md`<!-- /apparato -->, la stessa del master (`DEF-4` Appendice D);
 - *La canzone delle pietre* non si usa stasera: è del Rubino, la serata dopo.
 
 ---
@@ -52,45 +56,50 @@ tagliano**: sono le due scene che cambiano il duello.
 ## §1 · Atto 0 — Prima di cominciare
 
 **Cosa leggere prima, in un'ora.** Questa lista sostituisce quella del §0 di
-`DEF-4`, che conta anche la Scena 6 a piedi e non sta nell'ora. Il gruppo
-vola, quindi lo skill challenge a piedi si apre solo se scendono.
+`DEF-4`.
 
 | Minuti | Cosa |
 |---:|---|
 | 10 | questa regia, per intero |
-| 5 | `DEF-4` §4, l'orologio e la tabella d'uscita |
-| 3 | `DEF-4` Scena 5: la tabella «I Treant: come lo viene a sapere Hella, e dove possono andare», e la riga dei Treant in A.6 |
-| 5 | `DEF-4` Scena 6: la variante dall'alto, le rune di Balvar alla tenda, Grask, «Come torna il drago» |
-| 20 | `DEF-4` Scene 7 e 8: le schede d'entrata, «Da dove entrano», «Cosa fa quando comincia lo scontro», la Catena, le tattiche di Zog'tar, «Come si decide», la mappa M7-C, le Appendici A.2 e A.4 |
-| 3 | `DEF-4` Scena 9: la tabella di Vatore e «Se tornano in volo» |
-| 5 | `DEF-4` Scena 10: la tabella «Dalla notte», le tre vie, la tabella dei successi |
-| 9 | `DEF-4` Scena 11: la scheda d'entrata, il giro round per round, «Chi sceglie», «Chi non vola», la sidebar di scala, l'Appendice A.1 e le wyvern in A.6 |
+| 5 | `ARC07-BARILE-SULLA-TENDA.md`, «La scheda da tavolo»: i dieci passi dello sgancio |
+| 5 | `ARC07-BARILE-SULLA-TENDA.md` §2-bis: la tabella delle quote e chi vede il colmo |
+| 12 | `ARC07-BARILE-SULLA-TENDA.md` §8: chi li può trovare, l'iniziativa, le rune, le tattiche round per round, chi suona il corno, l'orda |
+| 3 | `ARC07-BARILE-SULLA-TENDA.md` §9 (i barilotti) e §10 (che cosa cambia) |
+| 5 | `DEF-4` Scena 6: «Variante — il barile sulla tenda», «Il ritorno», «Come torna il drago», «Se il corno suona di notte» |
+| 3 | `DEF-4` Scena 9: «Dopo il barile» e «Se tornano in volo» |
+| 5 | `DEF-4` Scena 10: la tabella «Dalla notte», con le righe del barile, le tre vie, la tabella dei successi |
+| 9 | `DEF-4` Scena 11: «Dopo il barile», la scheda d'entrata, il giro round per round, «Chi sceglie», «Chi non vola», la sidebar di scala, l'Appendice A.1-bis e le wyvern in A.6 |
 
-Il Seme (capitolo II) si legge al tavolo, con il giocatore di Artemis. La
-Forgia ricorda (capitolo V) si apre durante il duello.
+Il Seme (`02-IL-SEME.md`), se non è ancora stato giocato, si fa al ritorno: §3. La
+Forgia ricorda (`PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md`) si apre durante il duello.
 
-**Sul tavolo**: il foglio dell'orologio della notte con **3 tacche** segnate e
-5 vuote, in vista; la mappa M7-C coperta; la scheda di Durik vicino alla
-giocatrice di Hella. Nel volume dei giocatori di stasera non c'è: lei usa la
-sua copia della sessione del 25 `[CANONE — DM 2026-10-19, giro 4 n. 26]`, e se non l'ha più le passi il
-capitolo VI del tuo volume. La lavagna del banco di Gunnvor (`DEF-4` §9) non serve: le richieste
-aperte si chiudono a voce al passo 0 dell'Atto I.
+**Sul tavolo**: il foglio dell'orologio della notte con le tacche segnate come
+le ha il tavolo, compresa quella del volo; le mappe M7-H e M7-C scoperte,
+perché dall'alto il campo si vede; un d8 e i dadi della quota per la
+deviazione; la scheda di Durik vicino alla giocatrice di Hella. Durik non
+vola: è alla postierla o nel terzo seme della Collana (`DEF-4` Scena 6). La scheda di Durik nel volume dei giocatori non c'è: lei usa la
+sua copia della sessione del 25 `[CANONE — DM 2026-10-19, giro 4 n. 26]`, e se non l'ha più le passi la
+scheda del tuo volume, `08-SCHEDA-DURIK.md`.
 
-**Le schede che contano stasera**, da tenere a portata:
+**Le schede che contano stasera**, da tenere a portata. Quelle dei cattivi
+sono tutte nel `02-CHI-CE-STANOTTE.md`, nell'ordine in cui arrivano, con chi è, cosa
+vuole, l'aspetto e il ritratto accanto ai numeri:
 
 | Scheda | Perché |
 |---|---|
-| Skullcrusher, `DEF-4` Appendice A.1 | il duello. Il soffio contro Durik è nella Scena 11, riga 4-bis |
-| Le due wyvern, `DEF-4` Appendice A.6 | questo gruppo conta come straripante: ci sono, dal round 2 del duello |
-| Durik, capitolo VI | +50% di danni dall'acido: il soffio lo prende in pieno. Con la runa prima il +50%, poi −20 (cap. IV §1, Hella). Senza runa il soffio gli fa in media più di 50: Tempra CD 15 o torna polvere, e la carica rimasta dopo i Treant dell'alba lo riporta per un'ora (Scena 11, riga 4-bis) |
-| Zog'tar e le quattro guardie, Appendice A.2 | la tenda, o le mura se Zog'tar è vivo all'alba |
-| Balvar, Appendice A.4 | parla prima di combattere, o durante |
-| La Forgia ricorda le ferite, capitolo V | si segnano le ferite durante il duello, non dopo |
+| Skullcrusher Vecchio, `02-CHI-CE-STANOTTE.md` | il duello. Il soffio contro Durik è nella Scena 11, riga 4-bis |
+| Le due wyvern, `02-CHI-CE-STANOTTE.md` | questo gruppo conta come straripante: ci sono, dal round 2 del duello |
+| Durik, `08-SCHEDA-DURIK.md` | +50% di danni dall'acido: il soffio lo prende in pieno. Con la runa prima il +50%, poi −20 (`DEF-4` §1, Hella). Senza runa il soffio gli fa in media più di 50: Tempra CD 15 o torna polvere, e la carica rimasta dopo i Treant dell'alba lo riporta per un'ora (Scena 11, riga 4-bis) |
+| `ARC07-BARILE-SULLA-TENDA.md`, la scheda da tavolo e il §8 | lo sgancio e i round nel fuoco: è lo scontro con cui si apre |
+| Zog'tar, le quattro guardie, il sacerdote e Grask, `02-CHI-CE-STANOTTE.md` | i round nel fuoco, o le mura se Zog'tar è vivo all'alba |
+| Balvar, `02-CHI-CE-STANOTTE.md` | il *dissolvi* al round 4. Dopo il barile non tratta più da solo, ma chi gli parla per primo del nipote Hald lo trova ancora aperto (`ARC07-BARILE-SULLA-TENDA.md` §10) |
+| La Forgia ricorda le ferite, `PortaleForgia-P5-B4-CARRYOVER-Forgia-Ricorda.md` | si segnano le ferite durante il duello, non dopo |
 
-**Leggi il box in testa al booklet**, poi **consegna gli echi**, uno a testa,
-piegati. Di' solo: *«Questo è quello che vi è rimasto addosso della notte.
-Leggetelo quando ve lo dico.»* All'inizio dell'Atto I li fai leggere ad alta
-voce, uno per giocatore, prima delle scelte: **solo il riquadro**. Dillo così:
+**Gli echi.** Se il tavolo li ha già avuti in fortezza, salta questo
+paragrafo. Se no, **consegnali** adesso, uno a testa, piegati. Di' solo:
+*«Questo è quello che vi è rimasto addosso della notte. Leggetelo quando ve lo
+dico.»* Li fai leggere ad alta voce, uno per giocatore, prima dello sgancio:
+**solo il riquadro**. Dillo così:
 *«Leggete il riquadro. La riga sotto, quella che comincia con "Solo per te",
 è vostra: non leggetela.»* La pagina stampata lo dice anche lei, sopra il
 riquadro e sulla riga privata, ma dillo tu: chi legge ad alta voce di solito
@@ -100,25 +109,28 @@ Prima di consegnare l'eco di Thorik, chiedi al giocatore se alla Scena 4 ha
 porto l'ascia a Thorgrim: la riga privata lo dà per avvenuto, e il registro
 della sessione 4 non lo dice `[CANONE — DM 2026-10-19, giro 4 n. 18]`.
 
-Tre cose da fissare prima di cominciare, perché il testo non le decide:
+Tre cose da fissare prima di cominciare, se non le hai già fissate nelle
+serate passate, perché il testo non le decide:
 
-- **il Seme, capitolo II**: il tono dell'Anello (A o B) lo scegli adesso `[CANONE — DM 2026-10-19, giro 4 n. 20]`;
+- **il Seme, `02-IL-SEME.md`**, se si gioca al ritorno: il tono dell'Anello (A o B) lo scegli adesso `[CANONE — DM 2026-10-19, giro 4 n. 20]`;
   i Bracieri, se Tordek li interroga, rispondono con una frase sola e mai
   sul Seme `[CANONE — DM 2026-10-19, giro 4 n. 19]`. Il testo copiato nel
-  capitolo II dice ancora «non commentano» e «in base a come Artemis ha
+  `02-IL-SEME.md` dice ancora «non commentano» e «in base a come Artemis ha
   gestito»: valgono queste due righe;
-- **il dono a metà di Hella** (cap. IV §1): dipende dai successi dello Step 5
+- **il dono a metà di Hella** (`DEF-4` §1): dipende dai successi dello Step 5
   del rito, e il log del 25 dice solo che i tre Doni sono stati dati tutti.
   Fissa adesso se sono stati tre su tre o due su tre;
 - **lo Smeraldo della Corona**, 1 a settimana: il passaggio nel tempo ricarica
   solo gli usi giornalieri (`DEF-4` Scena 1). Il registro non dice quando
   Thorik l'ha usato l'ultima volta: chiedilo al giocatore.
 
-**Le dieci boccette**: se il tavolo non ha ancora il foglio di Kettra, va dato
-adesso. Le pozioni identificate sono già nel loro inventario.
+**Le dieci boccette**: il giro di Kettra è giocato, quindi il foglio ce
+l'hanno. Le pozioni identificate sono già nel loro inventario.
 
 **Cosa hanno in mano**, dal log del 25 settembre. Chi porta cosa non è stato
-registrato: lo si chiede al tavolo al passo 0 dell'Atto I.
+registrato: lo si chiede al tavolo al passo 0 dell'Atto I. Quello che hanno
+bevuto o comprato dopo il 25 lo sanno loro: la tabella è il punto di
+partenza, non il conto.
 
 | Cosa | Quante, e cosa fa | Quando conta |
 |---|---|---|
@@ -139,115 +151,95 @@ registrato: lo si chiede al tavolo al passo 0 dell'Atto I.
 
 ---
 
-## §2 · Atto I — Le ultime scelte nella fortezza
+## §2 · Atto I — Il barile
 
-**Chi parla per primo.** Dopo gli echi entra **Durin**, con la mappa del campo
-arrotolata sotto il braccio, e chiede una cosa sola: *«Quando uscite?»*
-(`DEF-4` §0). Poi, in quest'ordine:
+**Già giocato, e non si rigioca**: le richieste aperte, le scelte in
+fortezza, il giro delle pozioni di Kettra, la partenza in volo dalla
+postierla. Il volo ha già la sua tacca.
 
-**0 · Le richieste aperte, e chi porta cosa** (due minuti). Chiudi la tabella
-«Le richieste rimaste aperte» di `DEF-4` Scena 5. Si pagano in monete del
-1372, dentro la tacca della fucina già segnata, quindi non costano tacche. Il
-conto del 25 è stato pagato senza la trattenuta del pesatore; per
-quello di stasera vale lo stesso `[INFERRED — needs DM confirmation]`:
+**0 · Prima del primo tiro** (cinque minuti). Fai dire al tavolo, e segna:
 
-- *silenzio*: 2 pergamene a 150 mo, oppure la pietra di Brynja a 160, che dura
-  8 minuti e copre il volo e l'atterraggio;
-- *identificare*: 1 pergamena a 125 mo, quella che serve al Seme;
-- *rimuovi paralisi*: 3 pergamene a 150 mo; *rimuovi maledizione*: l'ultima, a
-  375 mo;
-- il piccone d'adamantio solo in scambio, con Zeth; *ingrandire persona* non ce
-  n'è.
+- **chi tiene che cosa**: la botte (in due, è pesante), i due barilotti, chi
+  è invisibile e con quale pozione, quanti round di *volare* e di
+  *invisibilità* restano (il volo dura 50 round, le invisibilità comprate 30);
+- **la quota** da cui sganciano. La sceglie il tavolo, e prima di sceglierla
+  il tavolo può sapere solo quello che vede: dì quali fuochi illuminano la
+  tenda e chi di loro vede il colmo a quella quota (`ARC07-BARILE-SULLA-TENDA.md` §2-bis). Da
+  48 m la botte fa 15d6 e devia poco; più in basso devia meno, fa meno male, e
+  dal round dopo i PG sono a portata del campo;
+- **le tacche**: lo stato di Grask si fissa adesso. Sveglio se l'ultima tacca
+  segnata è la 4ª, addormentato dalla 5ª (B9). Non dirlo al tavolo.
 
-Poi ognuno dice cosa porta, pozione per pozione, e lo segni.
+**1 · Lo sgancio.** L'iniziativa si tira quando decidono di sganciare. Il round
+di sorpresa è solo loro, e lasciar cadere è un'azione gratuita: botte e
+barilotti possono andare giù nello stesso round, e nessuno diventa visibile.
+Poi la scheda da tavolo di `ARC07-BARILE-SULLA-TENDA.md`, passo per passo: dove cade (d8 e il
+dado della quota), che cosa prende, le fiale, l'olio, chi brucia. Tira i
+danni ad alta voce e descrivi la tenda che si accende: la luce dell'incendio
+è intensa entro 12 m e fioca fino a 24 m (B24).
 
-**1 · Il conto delle tacche.** **Apri** `DEF-4` §4, la tabella dell'orologio e
-la tabella d'uscita sotto. Restano **5 tacche**. Dillo con i numeri, è la
-regola dell'orologio: il tavolo deve sapere quanto ha in mano. Questo gruppo
-vola, e i conti sono due:
+**Se chiedono dove far cadere i barilotti**, la risposta è in
+`ARC07-BARILE-SULLA-TENDA.md` §9: su Grask, prima che suoni. È l'unico modo di tenere lontano il drago
+senza scendere. Dillo solo se lo chiedono.
 
-- **in volo**: l'andata costa 1 e il ritorno in volo 1. 3 + 1 + 1 fa **5**, e
-  resta **una tacca libera** prima del 6, che è ancora «in tempo»;
-- **a piedi**: 2 per il mare di tende e 1 per il ritorno, più 1 per ogni
-  blocco fallito. 3 + 3 fa **6**, e non avanza niente.
+**2 · I round nel fuoco.** Segui la tabella «Le tattiche, round per round»
+(`ARC07-BARILE-SULLA-TENDA.md` §8) per Zog'tar, le guardie, il sacerdote, Balvar e Grask, e
+la tabella «L'orda» per il campo. Le quattro cose che possono far male a chi
+è in alto, e che hanno un nome:
 
-Parlare con Balvar prima di colpire costa 1; parlargli durante lo scontro, 0.
-Una tacca spesa qui, col volo, porta a **6**: si arriva in tempo. Due tacche
-qui, o una sola col campo a piedi, portano a 7: si rientra di corsa, con −1 ai
-TS del primo round del duello. Oltre, l'alba li coglie fuori.
+- **il corno**: Grask suona entro 1d4 round dal boato. Se è morto, la parola
+  di Balvar, Zog'tar che strappa la custodia, o il primo capolancia (B19). Il
+  drago arriva 70 round dopo il primo suono;
+- **il giavellotto con la luce**, al round 3, se il sacerdote è vivo: mostra
+  chi è entro 6 m dal punto più alto del tiro, a 45 m sopra la tenda;
+- **il *dissolvi magie* di Balvar**, al round 4, dove il giavellotto li ha
+  mostrati o alla cieca sulla verticale, una volta su sei. Chi perde il volo
+  scende di 18 m a round per 1d6 round: da 48 m arriva illeso 4 volte su 6,
+  altrimenti cade da 12 m (4d6) o da 30 m (10d6) (B13, corretta il 15/11);
+- **il drago**, se il corno ha suonato e sono ancora lì al round 70.
 
-**Grask, l'araldo col corno, è tuo**: il conto delle tacche si dice, lui no
-(`DEF-4` §0 e Scena 6). La tacca del volo si segna alla partenza, e lo stato
-di Grask si fissa quando atterrano: sveglio se l'ultima tacca segnata è la 4ª,
-addormentato dalla 5ª.
+Ricorda ai giocatori i round che restano di *volare* e di *invisibilità*
+quando li chiedono, non prima.
 
-- Con 3 tacche e il volo subito, atterrano alla 4ª: **Grask è sveglio**, e chi
-  scende tira contro il suo Osservare o il suo Ascoltare.
-- Con una tacca spesa prima in fortezza, o con il campo a piedi, arrivano alla
-  5ª: **Grask dorme**.
+**3 · Il danno massiccio** è attivo: 50 o più da un solo attacco, Tempra CD 15
+o si muore, e le palle di fuoco nate insieme contano come un attacco solo
+(B5). Due colpi diretti su tre, da 48 m, superano i 50.
 
-Qui una tacca spesa in fortezza **aiuta** alla tenda, e il tavolo non lo sa.
+**4 · Quando lasciano il cielo sopra la tenda**, chiudi con una frase su
+quello che vedono da lassù: chi è uscito dal fuoco, chi no, se il corno ha
+suonato. Poi segna nel registro (§6) chi è morto, il corno e la quota.
 
-E sveglio o no, Grask ha il corno al polso: **quello che si dice lì vicino lo
-sente il drago**. All'alba Skullcrusher grida i nomi che i PG si sono detti
-alla tenda, e non li chiede mai (`DEF-4` Scena 6 e Scena 7, «Che cosa muove
-Skullcrusher») `[CANONE — DM 2026-10-19]`. Segna quali nomi sono stati detti
-fuori dal telo.
+**I PE per la trovata** sono nel §13 di `ARC07-BARILE-SULLA-TENDA.md` (B15): la fascia di
+mezzo, o quella alta se il corno non suona. Si danno a fine serata, insieme a
+quelli dei nemici caduti davvero.
 
-**2 · Il Seme.** Insieme alle boccette, è la prima cosa che il tavolo
-chiederà: Artemis vuole sapere cos'è la gemma nello zaino di Tordek. La scena
-è il capitolo II di questo booklet, «L'ora della pergamena», e vuole la
-pergamena di *identificare* del passo 0. Costa **1 tacca**: col volo porta a
-6, in tempo. Dillo prima che scelgano. La si può rimandare: al ritorno dalla
-tenda, con le tacche che restano prima dell'8 (riga «≤ 6» della tabella
-d'uscita), oppure nel 1372. Il passo 3 della scena dice «verso le 7 tacche»:
-è il conto a piedi.
-
-**3 · Le scelte che valgono una tacca stasera**, dalla tabella:
-
-- Hella veglia i semi della Collana: all'alba i due Treant caricano il fianco
-  dell'orda (Scena 10, un successo in più alle mura);
-- il banchetto e le benedizioni: +1 morale per 12 ore;
-- una sosta di tre ore costa **2**: col volo porta a 7, cioè di corsa; con il
-  campo a piedi porta a 8, l'alba fuori dalle mura. Va detto prima che la
-  scelgano.
-
-⚠️ **L'orologio corre sulle scelte, non sul tempo reale.** Un tavolo che
-discute non spende tacche.
-
-**Per stare nelle tre ore**: se il tavolo esita, proponi tu le due opzioni da
-una tacca e chiedi un sì o un no a testa.
+**Per stare nelle tre ore**: se lo scontro si allunga, dal round 5 in poi
+racconta l'orda a blocchi di due round, e tira solo l'olio e il fuoco su chi
+conta (Zog'tar, Balvar, il sacerdote, Grask).
 
 ---
 
-## §3 · Atto II — Il campo
+## §3 · Atto II — Dopo il barile
 
-**Scena 6, il mare di tende** (`DEF-4` Scena 6). Il gruppo vola quasi di
-sicuro: è la **variante dall'alto**, 1 tacca invece di 2 e nessuna prova di
-gruppo. Il rischio si sposta all'atterraggio, ed è Grask (§2). Durik non vola:
-resta alla postierla, o Hella lo rimanda nel terzo seme per la notte. Se
-qualcuno va a piedi, la prova di gruppo a CD fissa costa **2 tacche**, più 1
-per ogni fallimento. Le tre pozioni d'invisibilità coprono mezzo blocco
-l'una, quindi a piedi si tira **Nascondersi CD 22** dal primo blocco.
+**Il ritorno** (`DEF-4` Scena 6, «Il ritorno»). Si torna in volo finché
+bastano pozioni e pergamene; quando finiscono, a piedi o portati da Artemis.
+Il ritorno in volo costa **1 tacca**, come quello a piedi. Chi torna a piedi
+tira il viaggio della Scena 6 a **CD +2**: dopo il barile i lupi si sono
+stretti sotto le vie (B25). Se il corno ha suonato, vale «Se il corno suona di
+notte»: chi riparte in volo subito è dentro le mura prima del drago.
 
-**Le quote, in una riga** `[CANONE — DM 2026-10-22]`. La postierla è 100 m sopra la
-piana dell'orda: dalla soglia il campo si vede dall'alto, ed è lì che si cerca
-la tenda nera. In volo si parte già sopra il campo e si scende al doppio della
-velocità; a piedi il primo blocco è la discesa del fianco est, senza Scalare
-(`DEF-4` Scena 6, «La discesa»).
+**Se scendono a finire il lavoro** (`DEF-4` Scene 7 e 8, mappa M7-C,
+Appendice A.2). La Scena 8 si gioca com'è, ma con la tenda in fiamme o
+crollata, il campo sveglio e i rinforzi della tabella «L'orda»
+(`ARC07-BARILE-SULLA-TENDA.md` §8) già in strada. Balvar, se è vivo, non tratta più da solo: è stato
+attaccato (`ARC07-BARILE-SULLA-TENDA.md` §10). Resta la lastra d'ardesia col nome di Hald: chi
+gli parla del ragazzo per primo lo trova ancora aperto. La Cintura di Tordek qui funziona. Il danno massiccio è
+attivo.
 
-**Scena 7, la tenda del comando** (`DEF-4` Scena 7). **Balvar** è nella tenda.
-Parlargli prima di colpire costa **1 tacca**; parlargli durante lo scontro
-**0**. La trattativa di una tacca dura più di ogni invisibilità del gruppo: a
-metà finisce, e chi torna visibile fuori dalle coperture (i tre pali, la
-tavola, lo schienale del seggio) è visto. È la scena che si ricorda: se il
-tavolo ha poco tempo, si taglia altro.
-
-**Scena 8, Zog'tar** (`DEF-4` Scena 8, mappa M7-C, Appendice A.2). La Cintura
-di Tordek qui funziona. Il danno massiccio è attivo: regola SRD, tenuta dalle
-regole della casa. 50 danni in un colpo, e il bersaglio tira Tempra CD 15 o muore. Il ritorno a
-piedi alle mura costa **1 tacca**, quello in volo anche. A piedi l'ultimo
-blocco è la salita del fianco est: dura il doppio, e la tacca resta una.
+**Il Seme**, se non è stato giocato: si fa al ritorno, con le tacche che
+restano prima dell'8 (riga «≤ 6» della tabella d'uscita), oppure si rinvia al
+1372. Costa **1 tacca**. Il contratto ✉ si consegna solo dopo il box dell'ora
+della pergamena (`02-IL-SEME.md`).
 
 **Scena 9, Vatore** (`DEF-4` Scena 9). Dieci minuti, al ritorno. L'Anello di
 Artemis lo sente prima di chiunque: dagli lo spotlight. Se tornano in volo e
@@ -256,17 +248,15 @@ tornano in volo»).
 
 **Gli scontri che possono capitare per strada**, tutti con la loro tattica nel
 master: la pattuglia dei tre fallimenti e la squadra dei lupi (Scena 6), lo
-sciamano che vede l'invisibile al ritorno (Scena 6, dopo il corno), le quattro
-guardie della tenda (Scena 8). Lo scontro con la pattuglia o con i lupi costa
+sciamano che vede l'invisibile al ritorno (Scena 6, dopo il corno), Zog'tar e
+le guardie se scendono (Scena 8). Lo scontro con la pattuglia o con i lupi costa
 una tacca in più. Le tattiche sono canone.
 
 **Quando escono dalla tenda**, conta le tacche e leggi la riga della tabella
 d'uscita: ≤ 6 in tempo, 7 di corsa, 8 o più l'alba li coglie fuori.
 
-**Per stare nelle tre ore**: il mare di tende passa alla versione veloce,
-`DEF-4` Appendice C.2, la parte «Infiltrazione»: tre tiri e dieci minuti,
-2 tacche più 1 per ogni tiro fallito, e il ritorno in un tiro solo. Zog'tar
-resta completo.
+**Per stare nelle tre ore**: il ritorno passa alla versione veloce, `DEF-4`
+Appendice C.2, un tiro solo.
 
 **Gli scontri senza griglia.** La pattuglia dei tre fallimenti e i lupi della
 Scena 6 non hanno una mappa in scala: M7-A non lo è. Giocali su M7-H, il
@@ -279,7 +269,10 @@ loro fuochi, i ripari dei clan degli orchi a ovest.
 
 **Scena 10, le mura** (`DEF-4` Scena 10). Il box, poi **«Che fate?»**: una via
 su tre, prova collettiva. **Prima di contare i successi**, applica la tabella
-«Dalla notte»: i Treant, il campo allertato, Zog'tar vivo o morto. E tira il
+«Dalla notte»: i Treant, il campo allertato, Zog'tar vivo o morto, e le tre
+righe del barile. Il boato è un allarme (un successo in meno); Zog'tar
+tirato fuori dal fuoco davanti ai suoi vale «umiliato» e lo annulla (B11);
+Zog'tar vivo all'alba è un altro successo in meno. E tira il
 **dado dei caduti**: quattro tiri di 1d4, uno per ogni tipo di cura comprata
 alla cappella; il numero è quanti difensori con un nome muoiono sulle mura, e
 i nomi vanno fra i caduti del 372. Se Zog'tar è vivo all'alba, con 0-1
@@ -289,9 +282,12 @@ tabella «Dalla notte».
 Se le tacche sono 8 o più, la Scena 10 **non si gioca**: il dado dei caduti si
 tira all'alba, prima del duello, e il duello comincia con i PG fuori dalle mura.
 
-**Scena 11, il duello** (`DEF-4` Scena 11, mappa M7-B, Appendice A.1-bis: stasera il drago è il **Vecchio**; l'Adulto di A.1 resta per un gruppo più debole) `[CANONE — DM 2026-10-19]`. La
-prima battuta del drago usa uno dei nomi che hai segnato alla tenda; se non ne
-hai, un epiteto. Poi cinque cose da tenere davanti:
+**Scena 11, il duello** (`DEF-4` Scena 11, mappa M7-B, Appendice A.1-bis: stasera il drago è il **Vecchio**; l'Adulto di A.1 resta per un gruppo più debole) `[CANONE — DM 2026-10-19]`. Dopo il
+barile il drago **guarda in alto**: ha sentito i gridi della notte
+attraverso la Catena, e sa che i nani volano (B21). Se il corno ha suonato di
+notte, parte già in quota; se nessuno l'ha suonato, arriva a metà mattina,
+furioso. La prima battuta del drago usa uno dei nomi che ha sentito gridare
+vicino al corno; se non ne ha, un epiteto. Poi cinque cose da tenere davanti:
 
 - la **Cintura di Tordek** si rifiuta contro il drago (§1 del master): dillo
   al primo tentativo, in una riga, e non spiegarlo. I Bracieri invece valgono;
@@ -302,7 +298,7 @@ hai, un epiteto. Poi cinque cose da tenere davanti:
   A.6) vanno su chi tiene la corda e su chi vola. Fuggono quando il drago fugge
   o muore. Il duello è EL 17, il tetto, e vale circa 4.060 PX a testa (`DEF-4` §8) `[CANONE — DM 2026-10-19]`;
 - **la passata e il nome**: il drago non si ferma in aria. Attraversa il
-  cortile con Attacco in Volo e Virata, e a metà passata soffia o grida un
+  cortile con Attacco in Volo e Virare, e a metà passata soffia o grida un
   nome; al turno dopo morde chi ha nominato. Non ghermisce nessuno: la presa
   in bocca è di Fauci, nel 1372. Si ferma in aria una volta sola, a ⅓ dei pf,
   ed è la prima paura (`DEF-4` Scena 11) `[CANONE — DM 2026-10-19]`;
@@ -348,13 +344,14 @@ gruppo**<!-- apparato --> (`python3 scripts/dm.py session end`, mai su `main`, A
 
 | | Cosa | Esito |
 |---|---|---|
-| ☐ | Le richieste aperte comprate, e chi porta cosa | |
-| ☐ | Il Seme: identificato · estirpato · tenuto · dato · firmato (e da chi); cosa ha detto Artemis a Tordek | |
-| ☐ | Scelte in fortezza: semi vegliati · banchetto · sosta | |
-| ☐ | Mare di tende: fallimenti · dall'alto o a piedi · Grask sveglio o addormentato all'atterraggio | |
-| ☐ | Balvar: ascoltato · ucciso · ignorato · «dite che c'ero»: promesso? Portato dentro le mura? Hald l'ha visto? | |
-| ☐ | Zog'tar: ucciso in silenzio · spettacolare · umiliato e vivo · vivo all'alba | |
-| ☐ | Il corno: rubato · suonato · lasciato | |
+| ☐ | Il barile: la quota, dove sono caduti botte e barilotti, Grask sveglio o addormentato | |
+| ☐ | Chi è morto nel fuoco: Zog'tar · Balvar · il sacerdote · Grask · le guardie (quante) | |
+| ☐ | Zog'tar tirato fuori dal fuoco davanti ai suoi? Vivo all'alba? | |
+| ☐ | Il giavellotto con la luce e il *dissolvi* di Balvar: chi è stato visto, chi è caduto | |
+| ☐ | I PE per la trovata (`ARC07-BARILE-SULLA-TENDA.md` §13): fascia | |
+| ☐ | Il Seme, se giocato al ritorno: identificato · estirpato · tenuto · dato · firmato (e da chi) | |
+| ☐ | Balvar, se è sceso qualcuno: ucciso · ignorato · «dite che c'ero»? Hald l'ha visto? | |
+| ☐ | Il corno: suonato (da chi, a che round) · rubato · rimasto nella custodia | |
 | ☐ | I Treant: dove sono andati (tenda, fianco, duello) | |
 | ☐ | Vatore: ignorato · parlato · derubato · ferito · tentato di uccidere. Chi ha bevuto la n. 4, e se Vatore ha visto il segno | |
 | ☐ | Tacche spese all'arrivo alle mura | … su 8 |
@@ -373,4 +370,5 @@ gruppo**<!-- apparato --> (`python3 scripts/dm.py session end`, mai su `main`, A
 | E-07h | Balvar, «dite che c'ero» | grigio, lunga |
 | E-07i | Vatore, qualunque esito | grigio, lunga (ARC-09) |
 | E-07j | Zog'tar vivo all'alba | scuro, ARC-08 |
+| E-07l | la notte del barile: chi è morto nel fuoco, e la lastra di Hald se Balvar è morto | grigio, ARC-09 |
 | E-07k | la frase del finisher | intimo |

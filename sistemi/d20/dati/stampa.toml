@@ -1,0 +1,15 @@
+# sistemi/d20/dati/stampa.toml — le sigle stampate nel riquadro della creatura (ADR-0111, L7)
+#
+# Uguali in 3.5 e PF1e, quindi stanno nella famiglia. Un sistema che ne usa
+# altre (BMC/DMC sulla scheda PF1e, o un sistema non d20) le ridichiara nel
+# suo plugin. Spostate senza cambiarle da build_booklet_html.py,
+# dmcore/statblock.py e typst/tema-rumblingstone.typ (2026-11-07).
+
+[etichette]
+ca = "CA"
+pf = "pf"
+ts = "TS"
+vel = "Vel"
+gs = "GS"
+iniziativa = "Iniziativa"
+sensi = "Sensi"

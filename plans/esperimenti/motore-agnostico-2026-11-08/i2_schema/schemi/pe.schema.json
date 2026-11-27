@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "pe.schema.json",
+  "title": "pe.soglie",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "fonte",
+    "soglie"
+  ],
+  "properties": {
+    "fonte": {
+      "type": "string",
+      "minLength": 1
+    },
+    "etichetta": {
+      "type": "string"
+    },
+    "soglie": {
+      "type": "object",
+      "minProperties": 1,
+      "propertyNames": {
+        "enum": [
+          "unica",
+          "lenta",
+          "media",
+          "veloce"
+        ]
+      },
+      "additionalProperties": {
+        "type": "object",
+        "propertyNames": {
+          "pattern": "^([1-9]|1[0-9]|20)$"
+        },
+        "additionalProperties": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "minProperties": 20,
+        "maxProperties": 20
+      }
+    }
+  }
+}

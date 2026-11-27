@@ -5,6 +5,9 @@
 ```statblocco
 gs: 15
 tipo: Huge dragon (fire), 19 HD, LE
+taglia: Enorme
+spazio: 4,5 m
+portata: 3 m (4,5 m con il morso)
 ca: 32
 ca-dettaglio: (−2 taglia, +24 naturale); contatto 8, colto alla sprovvista 32
 pf: 237
@@ -16,7 +19,7 @@ iniziativa: +4
 attacchi:
   - Mischia morso +27 (2d8+10); 2 artigli +22 (2d6+5); 2 ali +22 (1d8+5); coda +22 (2d6+15); schiacciare (2d8+15)
 voci:
-  - Talenti: Colpo Possente, Attacco in Volo, Spingere Migliorato, Iniziativa Migliorata, Attacco Poderoso, Ghermire, Virata
+  - Talenti: Colpo Terrificante, Attacco in Volo, Spingere Migliorato, Iniziativa Migliorata, Attacco Poderoso, Ghermire, Virare
   - Soffio: cono di fuoco 15 m, 10d10, Rifl CD 25; presenza terrificante 45 m, Vol CD 24
   - RI 19; RD 5/magia; immune al fuoco, al sonno e alla paralisi; vulnerabile al freddo (l'anello resiste 10)
   - Incantesimi da stregone di 5° livello, al giorno 6/8/5, CD 15 + livello; localizzare oggetti 5/giorno
@@ -29,23 +32,27 @@ fonte: PCGen export della scheda; Cos e Car con gli oggetti che la stessa fonte 
 
 Huge dragon (fire), 19 HD, LE.
 
-**Iniziativa** +4 · **Sensi** vista cieca 18 m, scurovisione 36 m, visione crepuscolare; Ascoltare +24, Osservare +24, Cercare +24
+**Iniziativa** +4 · **Sensi** percezione cieca 18 m, scurovisione 36 m, visione crepuscolare; Ascoltare +24, Osservare +24, Cercare +24
 
 **Difesa** **AC 32**, touch 8, flat-footed 32 (−2 taglia, +24 naturale) · **hp 237** (19d12+114) · TS Temp +17, Rifl +11, Vol +13 · immunità fuoco, sonno, paralisi; vulnerabilità freddo (anello minore di resistenza al freddo, 10) · RD 5/magia · RI 19
 
 **Attacco** Vel 12 m, Volare 45 m (scarsa) · **Mischia** morso +27 (2d8+10); 2 artigli +22 (2d6+5); 2 ali +22 (1d8+5); coda +22 (2d6+15); schiacciare (2d8+15, Rifl CD 25 o bloccato) · **Spazio** 4,5 m; **portata** 3 m (4,5 m col morso) · **Soffio** cono di fuoco 15 m, **10d10** (Rifl CD 25 dimezza) · **Incantesimi** da stregone di 5° livello (al giorno 6/8/5, CD 15 + livello; conosciuti — 0: *luci danzanti*, *individuazione del magico*, *guida*, *mano magica*, *prestidigitazione*, *lettura del magico*; 1°: *allarme*, *favore divino*, *dardo incantato*, *scudo*; 2°: *grazia del gatto*, *cura ferite moderate*) · **Capacità magiche** *localizzare oggetti* 5/giorno
 
-**Statistiche** For 31 Des 10 Cos 23 Int 14 Sag 15 Car 20 · BAB +19; Lotta +37 · **Talenti** Colpo Possente, Attacco in Volo, Spingere Migliorato, Iniziativa Migliorata, Attacco Poderoso, Ghermire, Virata · **Abilità** Ascoltare +24, Osservare +24, Cercare +24, Concentrazione +28, Intimidire +29, Raggirare +15, Valutare +10, Conoscenze (arcane) +12, Conoscenze (religioni) +10 · **Equipaggiamento** amuleto della salute +2, anello minore di resistenza al freddo, mantello del Carisma +6
+**Tattiche**
+- *Prima del combattimento*: come drago guardiano dell'altare campale (lì si chiama Abithriax) si libra a 6-9 m sopra l'anello medio dei ritualisti, nell'arco 09, Battaglia finale fase 2, «Anello medio – Guardiani draconici» e §8.1. Prima che i PG arrivino si lancia *scudo* e *grazia del gatto*.
+- *Durante il combattimento*: round 1, soffio di fuoco sul gruppo più compatto che entra nell'anello, e la presenza terrificante scatta al primo attacco. Round 2, Attacco in Volo: scende, morde il PG più esposto e risale fuori portata, o lo ghermisce e lo porta in alto. Round 3, se il soffio è pronto lo ripete; altrimenti Colpo Terrificante sul PG che sta colpendo un focus, per scagliarlo fuori dal cerchio. Contro gli incantatori usa *dardo incantato* dall'alto. Non atterra se non per schiacciare cultisti e PG Piccoli; se i PG lo isolano con un muro di forza, combatte da terra con l'attacco completo. Contro un PG invisibile, la percezione cieca a 18 m gli dice il quadretto, ma il 50% di mancare resta (SRD).
+- *Chi è, e cosa cambia* `[CANONE — DM 2026-11-15]`: il più giovane e il meno astuto dei draghi della Mano Rossa (INT 14), vanitoso e bullo, vuole farsi vedere dai sacerdoti della Regina. I sacerdoti gli hanno detto che i PG puntano ai focus. Sa di essere vulnerabile al freddo: chi lo ferisce col freddo diventa il primo bersaglio, del soffio e dei morsi in passata. Se il soffio morde poco (i PG si sono protetti dal fuoco), smette di soffiare su di loro e passa ai morsi in passata su chi lancia. Sotto 150 pf si cura con *cura ferite moderate* (legale: il rosso SRD lancia anche incantesimi da chierico come arcani). **Il difetto, leggibile:** il primo nano che lo ferisce in mischia lo offende, e Arbitrax atterra a schiacciarlo per due round, con l'attacco completo e poi il Colpo Terrificante. È l'apertura che un gruppo attento sfrutta. Simulazione: `plans/esperimenti/tattiche-draghi-2026-11-15/`.
+- *Morale*: sotto 80 pf abbandona l'altare e vola via verso le linee dell'Orda, ruggendo la ritirata: ha un tesoro da difendere e non muore per un rito. Se il Mythal è attivo e lo inchioda a terra, combatte fino alla morte.
 
-**Capacità speciali** **Presenza Terrificante** (Str): 45 m, creature con meno di 19 DV, Vol CD 24 (10 + ½ DV + Car) o scosse per 4d6 round (panico sotto i 5 DV). **Schiacciare** (Str): atterrando su creature Piccole o più piccole, Rifl CD 25 o bloccate. **Ghermire** e **Colpo Possente**: afferra con morso o artigli e scaglia via (Colpo Possente: 3 m e prono).
+**Statistiche** For 31 Des 10 Cos 23 Int 14 Sag 15 Car 20 · BAB +19; Lotta +37 · **Talenti** Colpo Terrificante, Attacco in Volo, Spingere Migliorato, Iniziativa Migliorata, Attacco Poderoso, Ghermire, Virare · **Abilità** Ascoltare +24, Osservare +24, Cercare +24, Concentrazione +28, Intimidire +29, Raggirare +15, Valutare +10, Conoscenze (arcane) +12, Conoscenze (religioni) +10 · **Equipaggiamento** amuleto della salute +2, anello minore di resistenza al freddo, mantello del Carisma +6
+
+**Capacità speciali** **Presenza Terrificante** (Str): 45 m, creature con meno di 19 DV, Vol CD 24 (10 + ½ DV + Car) o scosse per 4d6 round (panico sotto i 5 DV). **Schiacciare** (Str): atterrando su creature Piccole o più piccole, Rifl CD 25 o bloccate. **Ghermire** e **Colpo Terrificante**: afferra con morso o artigli e scaglia via (Colpo Terrificante: 3 m e prono).
 
 > ⚠ **Non SRD** (DM 2026-10-18, vince la versione più forte): la CA 32 della fonte PCGen supera di 6 l'SRD del rosso giovane adulto (26, +18 naturale). I +6 di armatura naturale sono un tratto suo, scaglie più spesse di quelle della sua età, e non un oggetto: il collo, l'unico posto per un amuleto dell'armatura naturale, porta già l'amuleto della salute +2 che tiene Cos 23, i 237 pf e la CD 25 del soffio.
 
-**Tattiche**
-- *Prima del combattimento*: come drago guardiano dell'altare campale (lì si chiama Abithriax) si libra a 6-9 m sopra l'anello medio dei ritualisti, nell'arco 09, Battaglia finale fase 2, «Anello medio – Guardiani draconici» e §8.1. Prima che i PG arrivino si lancia *scudo* e *grazia del gatto*.
-- *Durante il combattimento*: round 1, soffio di fuoco sul gruppo più compatto che entra nell'anello, e la presenza terrificante scatta al primo attacco. Round 2, Attacco in Volo: scende, morde il PG più esposto e risale fuori portata, o lo ghermisce e lo porta in alto. Round 3, se il soffio è pronto lo ripete; altrimenti Colpo Possente sul PG che sta colpendo un focus, per scagliarlo fuori dal cerchio. Contro gli incantatori usa *dardo incantato* dall'alto. Non atterra se non per schiacciare cultisti e PG Piccoli; se i PG lo isolano con un muro di forza, combatte da terra con l'attacco completo. Contro un PG invisibile, vista cieca a 18 m.
-- *Morale*: sotto 80 pf abbandona l'altare e vola via verso le linee dell'Orda, ruggendo la ritirata: ha un tesoro da difendere e non muore per un rito. Se il Mythal è attivo e lo inchioda a terra, combatte fino alla morte.
-
+> `[CANONE — DM 2026-11-14, RC-002]` Variante del DM, numeri di oggi.
+> Armatura naturale diversa dalla base: +24 contro il +18 del rosso giovane adulto dell'SRD 3.5, scelta del DM (RC-002).
+> Grado di sfida diverso dalla regola: 15 contro il 13 del rosso giovane adulto dell'SRD 3.5, scelta del DM (RC-002).
 
 Benchmark: PF T1-1 riga 15: CA 32 sopra (30) / pf 237 sopra (220) / attacco +27 sopra (+24) / danno pieno ~84 sopra (70) / CD 25 sopra (23) / TS buono +17 sotto (18). È il GS che `state.md` e i calcoli degli eserciti danno ad Abithriax («Red adult», GS 15).
 

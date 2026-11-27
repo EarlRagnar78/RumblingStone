@@ -11,7 +11,7 @@ Fa rispettare lo standard della libreria di mostri/villain/PNG (T-D12):
      - header obbligatori: **Faction**, **Role**, **Environment**, **CR**,
        **Source**, **Status**;
      - CR del filename coerente col CR dichiarato nell'header;
-     - stato dichiarato nel titolo o nell'header ([ACCEPTED]/[INFERRED]/Status).
+     - stato dichiarato nel titolo o nell'header ([CANONE]/[INFERRED]/Status).
   3. Ogni DOSSIER (gli altri .md in villain|png) ha un titolo H1.
   4. `mostri/` contiene SOLO statblock (+ README*).
   5. `scripts/monster_catalog.yaml` è in sync con la libreria (rigenerazione
@@ -74,6 +74,7 @@ def warn(msg: str):
 #: le fasce si ricavano dalla Tabella 1–1 in `pf1e-statistiche-per-gs.yaml`
 #: con la tolleranza scritta nello stesso file: un dato, un posto.
 sys.path.insert(0, str(Path(__file__).resolve().parent))
+from dmcore import sistemi as S  # noqa: E402
 from dmcore.tabelle import TABELLA_1_1, TOLLERANZA_PER_GS  # noqa: E402
 
 
@@ -87,7 +88,15 @@ def banda(cr: float):
             riga["ca"] - t["ca_sotto"], riga["ca"] + t["ca_sopra"], riga["pf"], riga["ca"])
 
 
+#: Schede il cui grado di sfida è cambiato per decisione del DM col nome del file rimasto com'era
+#: (card del 2026-11-13: goblin combattente di 1° a GS 1/3, «il nome del file resta»). La stessa
+#: eccezione sta in `extract_statblocks.GS_COL_NOME_VECCHIO`.
+GS_COL_NOME_VECCHIO = {"goblin-warrior1-cr05.md": 1 / 3}
+
+
 def filename_cr(name: str):
+    if name in GS_COL_NOME_VECCHIO:
+        return GS_COL_NOME_VECCHIO[name]
     m = HAS_CR_RE.search(name)
     if not m:
         return None
@@ -123,9 +132,11 @@ def check_statblock(path: Path):
     if h_cr is None:
         err(f"{rel}: CR non leggibile dall'header **CR**")
     first = text.splitlines()[0] if text.splitlines() else ""
-    if not (re.search(r"\[(ACCEPTED|INFERRED)", first)
+    # CANONE è la marca di GUIDA-MARCATURE (ADR-0109); ACCEPTED resta letto
+    # finché esistono schede non migrate fuori dalla libreria.
+    if not (re.search(r"\[(CANONE|ACCEPTED|INFERRED)", first)
             or re.search(r"\*\*Status\*\*[:\s]*\S", text)):
-        err(f"{rel}: stato non dichiarato ([ACCEPTED]/[INFERRED] nel titolo o **Status** valorizzato)")
+        err(f"{rel}: stato non dichiarato ([CANONE — DM data]/[INFERRED — domanda; base: …] nel titolo o **Status** valorizzato)")
 
 
 def check_dossier(path: Path):
@@ -244,7 +255,7 @@ def check_rules(path: Path):
 
 
 #: ADR-0091 §1: le etichette dello statblocco, in quest'ordine, a inizio riga.
-FORMA_STATBLOCCO = ["Difesa", "Attacco", "Statistiche", "Capacità speciali", "Tattiche"]
+FORMA_STATBLOCCO = ["Difesa", "Attacco", "Tattiche", "Statistiche", "Capacità speciali"]
 #: ADR-0091 §2: le sezioni del dossier in ordine, con l'obbligo. «In
 #: combattimento» è obbligatoria solo se il dossier rimanda a uno statblocco.
 FORMA_DOSSIER = [
@@ -370,6 +381,13 @@ def main(argv=None):
             if path.name.startswith("README") or in_archivio(path):
                 continue
             if is_statblock(path):
+                # F4 di ADR-0112: i bersagli per GS e i campi devono essere
+                # quelli del sistema del file, non solo del 3.5
+                diverse = S.regole_diverse(S.sistema_di(path), "validate_bestiario")
+                if diverse:
+                    warn(f"{path.relative_to(ROOT)}: sistema {S.sistema_di(path)}, "
+                         f"regole {', '.join(diverse)} diverse da quelle 3.5: scheda non controllata")
+                    continue
                 check_statblock(path)
                 if do_rules:
                     check_rules(path)

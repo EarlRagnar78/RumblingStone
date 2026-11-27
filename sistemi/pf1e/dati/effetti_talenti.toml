@@ -1,0 +1,19 @@
+# sistemi/pf1e/dati/effetti_talenti.toml — generato, non si corregge a mano
+# Da plans/esperimenti/regole-senza-omissioni-2026-11-12/estrai_effetti_talenti.py (ADR-0126, lotto 4).
+# 11 talenti che alzano il bonus scritto di un'abilità: solo nomi e numeri.
+# `abilita` = le due abilità che prendono il bonus; `a_scelta` = un'abilità scelta,
+# scritta fra parentesi accanto al talento; `bonus_con_gradi` = il bonus con almeno
+# `con_gradi` gradi nell'abilità (PF1e).
+
+[effetti_talenti]
+"acrobatic" = { bonus = 2, abilita = ["acrobatics", "fly"], con_gradi = 10, bonus_con_gradi = 4, fonte = "PRD PF1e, Core Rulebook, Feats" }
+"alertness" = { bonus = 2, abilita = ["perception", "sense motive"], con_gradi = 10, bonus_con_gradi = 4, fonte = "PRD PF1e, Core Rulebook, Feats" }
+"animal affinity" = { bonus = 2, abilita = ["handle animal", "ride"], con_gradi = 10, bonus_con_gradi = 4, fonte = "PRD PF1e, Core Rulebook, Feats" }
+"athletic" = { bonus = 2, abilita = ["climb", "swim"], con_gradi = 10, bonus_con_gradi = 4, fonte = "PRD PF1e, Core Rulebook, Feats" }
+"deceitful" = { bonus = 2, abilita = ["bluff", "disguise"], con_gradi = 10, bonus_con_gradi = 4, fonte = "PRD PF1e, Core Rulebook, Feats" }
+"deft hands" = { bonus = 2, abilita = ["disable device", "sleight of hand"], con_gradi = 10, bonus_con_gradi = 4, fonte = "PRD PF1e, Core Rulebook, Feats" }
+"magical aptitude" = { bonus = 2, abilita = ["spellcraft", "use magic device"], con_gradi = 10, bonus_con_gradi = 4, fonte = "PRD PF1e, Core Rulebook, Feats" }
+"persuasive" = { bonus = 2, abilita = ["diplomacy", "intimidate"], con_gradi = 10, bonus_con_gradi = 4, fonte = "PRD PF1e, Core Rulebook, Feats" }
+"self-sufficient" = { bonus = 2, abilita = ["heal", "survival"], con_gradi = 10, bonus_con_gradi = 4, fonte = "PRD PF1e, Core Rulebook, Feats" }
+"skill focus" = { bonus = 3, a_scelta = true, con_gradi = 10, bonus_con_gradi = 6, fonte = "PRD PF1e, Core Rulebook, Feats" }
+"stealthy" = { bonus = 2, abilita = ["escape artist", "stealth"], con_gradi = 10, bonus_con_gradi = 4, fonte = "PRD PF1e, Core Rulebook, Feats" }

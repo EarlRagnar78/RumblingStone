@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: risponde-da-tre-fonti
+expected_outcome: |
+  Risponde con memoria_custode.py cerca, citando per ogni fatto la fonte (memoria del progetto con file e riga, voce MS-NNNN del file storico, file di coda con riga) e dicendo in quale fonte non ha trovato niente.

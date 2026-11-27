@@ -67,6 +67,7 @@
   {
    "faction": "Guastatori",
    "name": "Guerriero drow (drow-fighter3-cr4), solo se le cisterne sono guaste",
+   "scheda": "Bestiario/mostri/drow-fighter3-cr4.md",
    "token": "🔴",
    "at": [
     2,

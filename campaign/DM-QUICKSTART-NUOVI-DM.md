@@ -31,7 +31,7 @@
 ## 2. Setup una-tantum (5 min)
 
 > 📘 Se la **macchina è nuova** (o sei un secondo DM), parti da
-> [`docs/guides/GUIDA-SETUP-MACCHINA.md`](../docs/guides/GUIDA-SETUP-MACCHINA.md):
+> [`docs/tutorials/GUIDA-SETUP-MACCHINA.md`](../docs/tutorials/GUIDA-SETUP-MACCHINA.md):
 > prerequisiti, skill per agenti, hook git, branch di gruppo e verifica finale.
 
 ```bash
@@ -72,7 +72,7 @@ python3 scripts/dm.py booklet <manifest-booklet>.json --pdf-all   # hint pg- + s
 ```
 
 📘 Procedura completa (prerequisiti, come si scrive un manifest, container
-opzionali, troubleshooting): [`docs/guides/GUIDA-BOOKLET-E-PDF.md`](../docs/guides/GUIDA-BOOKLET-E-PDF.md).
+opzionali, troubleshooting): [`docs/how-to/GUIDA-BOOKLET-E-PDF.md`](../docs/how-to/GUIDA-BOOKLET-E-PDF.md).
 
 ## 4. Dopo la sessione (10 min)
 

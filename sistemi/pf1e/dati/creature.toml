@@ -1,0 +1,75 @@
+# sistemi/pf1e/dati/creature.toml — tipi e taglie PF1e (generato da estrai_prd_pf1e.py)
+fonte = "PRD PF1e, devonjones/PSRD-Data@76ea4784, book-b1.db sezione 116 «Table: Creature Statistics by Type»"
+fonte_taglie = "book-b1.db sezione 160 «Table: Size Bonuses and Penalties»"
+
+# tipo = { dv = faccia del dado, bab = per DV, ts_buoni, ts_a_scelta (umanoide 1, esterno 2), gradi = per DV + Int }
+[tipi]
+"aberration" = { dv = 8, bab = 0.75, ts_buoni = ["vol"], ts_a_scelta = 0, gradi = 4 }
+"animal" = { dv = 8, bab = 0.75, ts_buoni = ["temp", "rifl"], ts_a_scelta = 0, gradi = 2 }
+"construct" = { dv = 10, bab = 1.0, ts_buoni = [], ts_a_scelta = 0, gradi = 2 }
+"dragon" = { dv = 12, bab = 1.0, ts_buoni = ["temp", "rifl", "vol"], ts_a_scelta = 0, gradi = 6 }
+"fey" = { dv = 6, bab = 0.5, ts_buoni = ["rifl", "vol"], ts_a_scelta = 0, gradi = 6 }
+"humanoid" = { dv = 8, bab = 0.75, ts_buoni = [], ts_a_scelta = 1, gradi = 2 }
+"magical beast" = { dv = 10, bab = 1.0, ts_buoni = ["temp", "rifl"], ts_a_scelta = 0, gradi = 2 }
+"monstrous humanoid" = { dv = 10, bab = 1.0, ts_buoni = ["rifl", "vol"], ts_a_scelta = 0, gradi = 4 }
+"ooze" = { dv = 8, bab = 0.75, ts_buoni = [], ts_a_scelta = 0, gradi = 2 }
+"outsider" = { dv = 10, bab = 1.0, ts_buoni = [], ts_a_scelta = 2, gradi = 6 }
+"plant" = { dv = 8, bab = 0.75, ts_buoni = ["temp"], ts_a_scelta = 0, gradi = 2 }
+"undead" = { dv = 8, bab = 0.75, ts_buoni = ["vol"], ts_a_scelta = 0, gradi = 4 }
+"vermin" = { dv = 8, bab = 0.75, ts_buoni = ["temp"], ts_a_scelta = 0, gradi = 2 }
+
+# taglia = { ca_attacco, bmc_dmc }
+[taglie]
+"fine" = { ca_attacco = 8, bmc_dmc = -8 }
+"diminutive" = { ca_attacco = 4, bmc_dmc = -4 }
+"tiny" = { ca_attacco = 2, bmc_dmc = -2 }
+"small" = { ca_attacco = 1, bmc_dmc = -1 }
+"medium" = { ca_attacco = 0, bmc_dmc = 0 }
+"large" = { ca_attacco = -1, bmc_dmc = 1 }
+"huge" = { ca_attacco = -2, bmc_dmc = 2 }
+"gargantuan" = { ca_attacco = -4, bmc_dmc = 4 }
+"colossal" = { ca_attacco = -8, bmc_dmc = 8 }
+
+# --- pf bonus dei costrutti per taglia. La tabella del tipo costrutto (book-b1
+# sezione 366, «as shown on the following table») nel PSRD-Data in cache non c'è:
+# il numero è ricavato dalle schede dei Bestiary 1-4, come «+X» di `hp N (NdF+X)`
+# nei costrutti senza Robustezza, senza Costituzione e non mitici, e deve concordare
+# con la tabella del PRD pubblicato (legacy.aonprd.com/bestiary/creatureTypes.html, Construct). Le taglie che
+# nessuna scheda prova prendono il valore della tabella («—» = 0).
+[pf_bonus_costrutti]
+fine = 0  # tabella del PRD («—»); nessuna scheda di costrutto nel PSRD-Data
+diminutive = 0  # tabella del PRD («—»); nessuna scheda di costrutto nel PSRD-Data
+tiny = 0  # 2 schede concordi, come la tabella del PRD; prova: Homunculus 2d10 (book-b1 1838)
+small = 10  # 3 schede concordi, come la tabella del PRD; prova: Iron Cobra 1d10+10 (book-b1 1891)
+medium = 20  # 13 schede concordi, come la tabella del PRD; prova: Animated Object 3d10+20 (book-b1 517)
+large = 30  # 15 schede concordi, come la tabella del PRD; prova: Golem, Clay 13d10+30 (book-b1 1670)
+huge = 40  # 7 schede concordi, come la tabella del PRD; prova: Golem, Adamantine 30d10+40 (book-b2 956)
+gargantuan = 60  # 2 schede concordi, come la tabella del PRD; prova: Clockwork Goliath 28d10+60 (book-b3 386)
+colossal = 80  # 1 scheda sola, come la tabella del PRD; prova: Wickerman 14d10+80 (book-b4 2079)
+# schede escluse dal conto: 7 (Retriever Robustezza; Soulbound Doll Robustezza; Flesh Colossus mitica; Iron Colossus mitica; Stone Colossus mitica; Soulbound Mannequin Robustezza; Soulbound Shell Robustezza)
+
+# --- armature e scudi: book-cr.db sezione 2955 «Table: Armor and Shields»
+# armatura = { ca, des_max, prova = penalità di armatura alla prova, fallimento = % arcano, categoria, it }
+# `it` è il nome italiano del lessico PF1e, quando c'è.
+[armature]
+"padded" = { ca = 1, des_max = 8, prova = 0, fallimento = 5, categoria = "leggera", it = "imbottita" }
+"leather" = { ca = 2, des_max = 6, prova = 0, fallimento = 10, categoria = "leggera", it = "cuoio" }
+"studded leather" = { ca = 3, des_max = 5, prova = -1, fallimento = 15, categoria = "leggera", it = "cuoio borchiato" }
+"chain shirt" = { ca = 4, des_max = 4, prova = -2, fallimento = 20, categoria = "leggera", it = "giaco di maglia" }
+"hide" = { ca = 4, des_max = 4, prova = -3, fallimento = 20, categoria = "media", it = "pelle" }
+"scale mail" = { ca = 5, des_max = 3, prova = -4, fallimento = 25, categoria = "media", it = "corazza a scaglie" }
+"chainmail" = { ca = 6, des_max = 2, prova = -5, fallimento = 30, categoria = "media", it = "cotta di maglia" }
+"breastplate" = { ca = 6, des_max = 3, prova = -4, fallimento = 25, categoria = "media", it = "corazza di piastre" }
+"splint mail" = { ca = 7, des_max = 0, prova = -7, fallimento = 40, categoria = "pesante", it = "corazza a strisce" }
+"banded mail" = { ca = 7, des_max = 1, prova = -6, fallimento = 35, categoria = "pesante", it = "corazza di bande" }
+"half-plate" = { ca = 8, des_max = 0, prova = -7, fallimento = 40, categoria = "pesante", it = "mezza armatura" }
+"full plate" = { ca = 9, des_max = 1, prova = -6, fallimento = 35, categoria = "pesante", it = "armatura completa" }
+
+# scudo = { ca, des_max (solo lo scudo torre), prova, fallimento, it }
+[scudi]
+"buckler" = { ca = 1, prova = -1, fallimento = 5, it = "buckler" }
+"shield, light wooden" = { ca = 1, prova = -1, fallimento = 5, it = "scudo leggero di legno" }
+"shield, light steel" = { ca = 1, prova = -1, fallimento = 5, it = "scudo leggero di acciaio" }
+"shield, heavy wooden" = { ca = 2, prova = -2, fallimento = 15, it = "scudo pesante di legno" }
+"shield, heavy steel" = { ca = 2, prova = -2, fallimento = 15, it = "scudo pesante di acciaio" }
+"shield, tower" = { ca = 4, des_max = 2, prova = -10, fallimento = 50, it = "scudo torre" }

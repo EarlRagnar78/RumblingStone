@@ -12,6 +12,7 @@ stemmi vettoriali inline, **niente dipendenze esterne**.
 | **`DRAPPO-FASCICOLO-SCHEDE.html`** | ✉ giocatori | le sei schede (numeri) + il retro (background, legami, ritratto). Da stampare fronte-retro |
 | **`DRAPPO-PROP.html`** | ✉ da consegnare | i quattro prop: il contratto, il registro, la ricevuta, il decreto. Una pagina l'uno |
 | **`DRAPPO-SCHEDE-PG.manifest.json`** | ✉ giocatori | **solo stampa**: le sei schede vere, una pagina A4 a testa, ritratto compreso — vedi più sotto |
+| **`DRAPPO-CARTE-DA-TAVOLO.manifest.json`** | ✉ al tavolo | **solo stampa**: trentasei carte da ritagliare, segnaposto delle contrade, ordine alle funi, tratti della Ruota, posti dei PG e patti — vedi più sotto |
 
 Accanto a ogni `.html` c'è il gemello **`.hb.md`**: è il sorgente da incollare in
 [Homebrewery](https://homebrewery.naturalcrit.com/) se preferisci impaginare là.
@@ -82,6 +83,33 @@ frontespizio**.
 > spende nelle tre serate, e che il PDF completo brucia tutti insieme prima
 > ancora di cominciare. Il fascicolo è per te e per la stampante; ai giocatori
 > vanno i singoli.
+
+## Le carte da tavolo — quattro fogli da ritagliare
+
+```bash
+python3 ../../../scripts/export_booklet_typst.py DRAPPO-CARTE-DA-TAVOLO.manifest.json
+```
+
+Produce `DRAPPO-CARTE-DA-TAVOLO-STAMPA.pdf`: **quattro fogli A4, trentasei carte
+da 63 × 88 mm**, nove per foglio, con la linea di taglio tratteggiata. Servono a
+far vedere lo stato della gara senza spiegarlo:
+
+| Foglio | Carte | Come si usano |
+|---|---|---|
+| 1 | otto **segnaposto** delle contrade + un patto | uno per contrada, in fila sul tavolo nell'ordine della gara. Dopo la Sorte si scrive il cavallo e il Ritmo; in corsa si segnano a matita le Lunghezze, tratto per tratto |
+| 2 | **alle funi** 1-7 + **di rincorsa** + un patto | si danno allo Stacco, con l'ordine estratto (§5): ogni carta dice le tre finte |
+| 3 | i nove **tratti** della Ruota | un mazzetto in ordine: si gira una carta a ogni tratto. Giro, tratto, CD e cosa succede se si sbaglia di 5 |
+| 4 | i sei **posti** dei PG + tre patti | ogni PG non fantino prende la carta del posto che sceglie prima dello Stacco (§6.2); i patti stretti si scrivono e si mettono al centro (§4) |
+
+Tutto viene dai master (`../REGOLE-DELLA-CORSA-PF1E.md` e
+`../CONTRADE-DI-TARSILIA.md`): cambia una CD lì e cambia sulla carta. Le carte
+sono solo fronte; un cartoncino da 200 g basta.
+
+> ⚠️ **Disegnate senza una serata giocata.** La ricerca (§5) teneva ferma questa
+> voce finché non ci fossero i tempi di una corsa vera, e questa versione è
+> uscita prima per scelta del DM. Dopo la prima serata vanno riviste: quali
+> carte sono rimaste sul tavolo, quali nessuno ha guardato, se la griglia delle
+> Lunghezze si usa o se basta mettere i segnaposto in fila.
 
 ## I PDF per capitolo
 

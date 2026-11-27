@@ -4,6 +4,9 @@
 
 ```statblocco
 gs: 12
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 22
 ca-dettaglio: (10 base, +1 Des, +3 armatura [tuta psicoadattiva], +4 naturale, +4 deviazione [scudo psionico passivo]), contatto 15, colto alla sprovvista 21
 pf: 74
@@ -156,7 +159,7 @@ Lo accompagna sempre come traduttore/voce. È un monaco umano (Adept 1, PF 6, AC
 > ⚠ Prerequisito: un Psion 5 manifesta poteri fino al 3° livello; *Psionic Dimension Door* è del 4°, e lo manifesta un Psion 7. Tenuto, perché è nella scheda. PF1e: Psichico (*Occult Adventures*, OGL) — si avvicina: incantatore mentale spontaneo con *porta dimensionale* al 4° livello, ma senza punti potere.
 
 #### Talenti
-Improved Initiative, Combat Casting, Combat Manifestation, Inner Strength, Iron Will, Lightning Reflexes, Psionic Endowment: 13 DV e i due talenti bonus del Psion danno sette talenti. *Combat Manifestation* prende il posto di «Psicocrafter», che fra i talenti psionici SRD non c'è, e gli tiene la canalizzazione sul piedistallo quando lo minacciano; *Psionic Endowment* è il settimo, e dà +1 alla CD di *Charm Monster* e *Suggestion* quando spende la concentrazione psionica (DM 2026-10-18). Car 17 viene da un *mantello del carisma +2*, nascosto sotto la veste monastica: tiene le CD della versione di prima.
+Improved Initiative, Combat Casting, Combat Manifestation, Psionic Talent, Iron Will, Lightning Reflexes, Psionic Endowment: 13 DV e i due talenti bonus del Psion danno sette talenti. *Combat Manifestation* prende il posto di «Psicocrafter», che fra i talenti psionici SRD non c'è, e gli tiene la canalizzazione sul piedistallo quando lo minacciano; *Psionic Talent* (Dote Psionica, ⚠ **Non SRD** [Private source — Expanded Psionics Handbook]) prende il posto di *Inner Strength*, talento del Psionics Handbook 3.0 che la 3.5 ha sostituito con questo (DM 2026-11-07); *Psionic Endowment* è il settimo, e dà +1 alla CD di *Charm Monster* e *Suggestion* quando spende la concentrazione psionica (DM 2026-10-18). Car 17 viene da un *mantello del carisma +2*, nascosto sotto la veste monastica: tiene le CD della versione di prima.
 
 #### Abilità chiave
 Bluff +12, Camuffare +14 (+22 con *Disguise Self* psionico attivo), Conoscenze (arcane, planari, dungeoneering) +18, Diplomazia +12, Ascoltare e Osservare +14, Psicocrafting +18.

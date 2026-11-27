@@ -1,0 +1,58 @@
+{
+ "bonus +1": {
+  "mutanti": 97,
+  "persi": [
+   "ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "02-CHI-CE-STANOTTE.md",
+   "02-CHI-CE-STANOTTE.md",
+   "02-CHI-CE-STANOTTE.md",
+   "bugbear-assassino-ladro5-assassino2-cr9.md",
+   "duergar-chierico3-cr4.md",
+   "duergar-guerriero2-cr3.md",
+   "hobgoblin-captain-cr8.md",
+   "hobgoblin-veterans-warrior6-cr5.md",
+   "hobgoblin-veterans-warrior6-cr5.md",
+   "Maewen.md",
+   "koth-signore-dei-dragoni-cr8.md"
+  ],
+  "trovati": 80
+ },
+ "bonus -2": {
+  "mutanti": 97,
+  "persi": [
+   "ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "02-CHI-CE-STANOTTE.md",
+   "02-CHI-CE-STANOTTE.md",
+   "02-CHI-CE-STANOTTE.md",
+   "Maewen.md"
+  ],
+  "trovati": 87
+ },
+ "critico tolto": {
+  "mutanti": 54,
+  "persi": [],
+  "trovati": 54
+ },
+ "critico x": {
+  "mutanti": 20,
+  "persi": [],
+  "trovati": 20
+ },
+ "dado": {
+  "mutanti": 96,
+  "persi": [
+   "Maewen.md"
+  ],
+  "trovati": 95
+ }
+}

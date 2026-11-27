@@ -218,6 +218,28 @@ un ordine diverso dall'alfabetico.
   la loro gabbia di 1 cm (geometria `scheda`), quindi 0 righe fuori margine
   invece di 299. Resta da portarle nel tema comune.
 
+## Lo standard del volume (blocco 1-bis della roadmap, 2026-11-10)
+
+Domanda del DM del 2026-11-09: gli AP di carta hanno introduzione per capitolo,
+mappe con le chiavi vicino alla descrizione, appendice su regione e PNG; quale
+standard seguiamo e come lo misuriamo? Deciso dal DM: **schema Paizo come base,
+schede in appendice come *Red Hand of Doom***. [ADR-0122](adr/ADR-0122-il-volume-segue-lo-schema-degli-adventure-path.md) (proposta).
+
+- [x] **VOL-1** Misure S1-S5 sul PDF: `misura_distanza_pagine.py --volume`
+  (estende lo script della distanza). Riferimenti misurati: *Burnt Offerings*
+  intero e l'estratto di RHoD, chiavi delle mappe trascritte a vista in
+  `esperimenti/standard-volume-2026-11-10/riferimenti/`. Soglie in
+  `docs/audit/volume-booklet.json`; passo non bloccante in CI (testing).
+- [x] **VOL-2** Misura dei 10 booklet del DM: 36 misure sotto soglia, nessuna
+  chiave d'area sulle nostre mappe, nessuna appendice di regione
+  ([RISULTATO](esperimenti/standard-volume-2026-11-10/RISULTATO.md)).
+- [x] **VOL-3** Card al DM: dove va ogni contenuto dei booklet di oggi nella
+  struttura nuova, prima di togliere qualcosa (richiesta del 2026-11-10).
+  Le quattro card hanno la risposta del DM dal 2026-11-10 (prima opzione).
+- [ ] **VOL-4** Una versione del booklet centrata sulla serata, che tiene il
+  buono dell'attuale, misurata con S1-S5 e `misura_stampa` contro l'attuale.
+- [ ] **VOL-5** Promozione a stable dopo le scelte del DM, 14 giorni e 10 corse.
+
 ## Fase 3 — Validazione
 
 - [ ] **V1** Ogni PR mostra le misure prima e dopo; nessuna sale (la CI lo fa

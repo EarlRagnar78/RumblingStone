@@ -56,7 +56,7 @@ originale è nostra, ciò che deriva dall'SRD è OGC.
 Chi ridistribuisce materiale che contiene OGC deve accompagnarlo con la
 **Sezione 15** dell'OGL. Non è un adempimento nostro finché il repo resta a uso
 privato: lo diventa nel momento in cui qualcosa esce, ed **entra nel cancello
-d'uscita** di `docs/guides/GUIDA-CONDIVISIONE-IP.md` §7.
+d'uscita** di `docs/how-to/GUIDA-CONDIVISIONE-IP.md` §7.
 
 ### 2. I marchi altrui non si licenziano perché si nominano
 

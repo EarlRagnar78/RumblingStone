@@ -1,0 +1,526 @@
+{
+  "schema_version": "1.0",
+  "title": "CM-2 · IL CUORE DELLA MONTAGNA, LATO NORD — 42 m × 48 m (28 col × 32 righe · 1,5 m)",
+  "scale_m_per_square": 1.5,
+  "units_in": "squares",
+  "map_size": [
+    28,
+    32
+  ],
+  "base_terrain": "🟤",
+  "north": "N",
+  "regions": [
+    {
+      "terrain": "⛰",
+      "rect": [
+        0,
+        0,
+        10,
+        2
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "⛰",
+      "rect": [
+        18,
+        0,
+        10,
+        2
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "⛰",
+      "rect": [
+        0,
+        2,
+        5,
+        1
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "⛰",
+      "rect": [
+        23,
+        2,
+        5,
+        1
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "⛰",
+      "rect": [
+        0,
+        3,
+        4,
+        1
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "⛰",
+      "rect": [
+        24,
+        3,
+        4,
+        1
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "⛰",
+      "rect": [
+        0,
+        4,
+        3,
+        1
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "⛰",
+      "rect": [
+        25,
+        4,
+        3,
+        1
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "⛰",
+      "rect": [
+        0,
+        5,
+        2,
+        1
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "⛰",
+      "rect": [
+        26,
+        5,
+        2,
+        1
+      ],
+      "label": "Montagne / creste rocciose"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        10,
+        0,
+        2,
+        2
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        16,
+        0,
+        2,
+        2
+      ],
+      "label": "Muro / roccia solida"
+    }
+  ],
+  "structures": [
+    {
+      "type": "⭐",
+      "at": [
+        12,
+        24
+      ]
+    },
+    {
+      "type": "⭐",
+      "rect": [
+        13,
+        25,
+        2,
+        3
+      ]
+    },
+    {
+      "type": "⭐",
+      "rect": [
+        12,
+        26,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "⭐",
+      "rect": [
+        15,
+        26,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "⭐",
+      "at": [
+        15,
+        24
+      ]
+    },
+    {
+      "type": "🏮",
+      "at": [
+        6,
+        13
+      ]
+    },
+    {
+      "type": "🏮",
+      "at": [
+        10,
+        22
+      ]
+    },
+    {
+      "type": "🏮",
+      "at": [
+        10,
+        29
+      ]
+    },
+    {
+      "type": "🏮",
+      "at": [
+        17,
+        22
+      ]
+    },
+    {
+      "type": "🏮",
+      "at": [
+        17,
+        29
+      ]
+    },
+    {
+      "type": "🏮",
+      "at": [
+        21,
+        13
+      ]
+    },
+    {
+      "type": "🗿",
+      "rect": [
+        2,
+        22,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🗿",
+      "rect": [
+        2,
+        30,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🗿",
+      "rect": [
+        6,
+        16,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🗿",
+      "rect": [
+        14,
+        12,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🗿",
+      "rect": [
+        22,
+        16,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🗿",
+      "rect": [
+        26,
+        22,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🗿",
+      "rect": [
+        26,
+        30,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🦴",
+      "at": [
+        4,
+        12
+      ]
+    },
+    {
+      "type": "🦴",
+      "at": [
+        8,
+        10
+      ]
+    },
+    {
+      "type": "🦴",
+      "at": [
+        9,
+        4
+      ]
+    },
+    {
+      "type": "🦴",
+      "at": [
+        11,
+        3
+      ]
+    },
+    {
+      "type": "🦴",
+      "at": [
+        12,
+        4
+      ]
+    },
+    {
+      "type": "🦴",
+      "at": [
+        12,
+        11
+      ]
+    },
+    {
+      "type": "🦴",
+      "at": [
+        14,
+        3
+      ]
+    },
+    {
+      "type": "🦴",
+      "at": [
+        15,
+        10
+      ]
+    },
+    {
+      "type": "🦴",
+      "at": [
+        16,
+        4
+      ]
+    },
+    {
+      "type": "🦴",
+      "at": [
+        19,
+        4
+      ]
+    },
+    {
+      "type": "🦴",
+      "at": [
+        19,
+        9
+      ]
+    },
+    {
+      "type": "🦴",
+      "at": [
+        23,
+        12
+      ]
+    },
+    {
+      "type": "🪨",
+      "at": [
+        12,
+        2
+      ]
+    },
+    {
+      "type": "🪨",
+      "at": [
+        15,
+        2
+      ]
+    }
+  ],
+  "units": [
+    {
+      "token": "🔴",
+      "area": {
+        "rect": [
+          11,
+          14,
+          2,
+          1
+        ]
+      },
+      "quantity": 2,
+      "name": "Nemico standard"
+    },
+    {
+      "token": "🔵",
+      "area": {
+        "rect": [
+          9,
+          5,
+          10,
+          5
+        ]
+      },
+      "quantity": 50,
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "area": {
+        "rect": [
+          4,
+          9,
+          5,
+          1
+        ]
+      },
+      "quantity": 5,
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "area": {
+        "rect": [
+          4,
+          10,
+          4,
+          2
+        ]
+      },
+      "quantity": 8,
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "area": {
+        "rect": [
+          11,
+          10,
+          4,
+          1
+        ]
+      },
+      "quantity": 4,
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "at": [
+        16,
+        10
+      ],
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "area": {
+        "rect": [
+          5,
+          12,
+          3,
+          1
+        ]
+      },
+      "quantity": 3,
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "at": [
+        12,
+        25
+      ],
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "area": {
+        "rect": [
+          13,
+          24,
+          2,
+          1
+        ]
+      },
+      "quantity": 2,
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "at": [
+        15,
+        25
+      ],
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "area": {
+        "rect": [
+          20,
+          9,
+          4,
+          3
+        ]
+      },
+      "quantity": 12,
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "area": {
+        "rect": [
+          20,
+          12,
+          3,
+          1
+        ]
+      },
+      "quantity": 3,
+      "name": "PG / alleati"
+    }
+  ],
+  "notes": [
+    "Contratto ricavato il 2026-11-09 dalla griglia di `07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md` (mappa 2) con `import_ultraclear.py`. Griglia e contratto restano identici: lo controlla `scripts/tests/test_contratti_mappe.py`. Chi cambia la mappa cambia questo file e rigenera la griglia con `compile_map_json.py`."
+  ]
+}

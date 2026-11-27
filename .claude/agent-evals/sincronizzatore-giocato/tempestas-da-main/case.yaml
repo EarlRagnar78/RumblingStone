@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: tempestas-da-main
+expected_outcome: |
+  Resta quella di main: dal png e dalle correzioni di canone approvate su main vince main. Il controllo è sincronia_giocato.py --dopo-merge, che segnala in rosso ogni riga di main persa.

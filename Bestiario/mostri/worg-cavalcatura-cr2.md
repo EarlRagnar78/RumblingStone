@@ -5,6 +5,9 @@
 ```statblocco
 gs: 2
 tipo: Medium magical beast, NE, 6 HD (avanzato dal worg MM 4 HD)
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 14
 ca-dettaglio: touch 12, flat-footed 12
 pf: 51

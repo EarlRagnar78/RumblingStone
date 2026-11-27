@@ -61,8 +61,8 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @tipo strategica abitato
 @vista giocatori
 @luogo Tarsilia, la Ruota
-@quota 3 m ; sopra il pelo del Sellen in magra [INFERRED — needs DM confirmation]
-@dislivello +1,5 m ; sul canale del Ponte Storto, a nord della pista [INFERRED — needs DM confirmation]
+@quota 1,5 m ; sopra il pelo del Sellen in magra: la piena del G3 sera entra in piazza [CANONE — DM 2026-11-05, P16, quota]
+@dislivello +1,5 m ; sul canale del Ponte Storto, a nord della pista (3 m sul Sellen in magra) [CANONE — DM 2026-11-05, P16, quota]
 @path Giro della Ruota (3 giri, senso orario) ; L10 AZ10 AZ37 L37 loop ; #b94a3c
 @zone S15-AT32 ; Mercato coperto del grano — i Partiti si trattano qui; dal tetto si vede tutta la pista
 @zone B18-E26 ; Palco della Sovrintendente — Tesio e Melchio: protestare, testimoniare

@@ -3,18 +3,18 @@
 > **🛡️ Canonizzazione 2026-05-05**: il DM ha **accettato** tutte le
 > derivazioni delle unità prima non confermate (unità in
 > `Bestiario/`) e tutti i puntatori a `PNG/` come canone di
-> campagna. Flag `[INFERRED]` → `[ACCEPTED — DM-canon 2026-05-05]`.
+> campagna. Flag `[INFERRED]` → `[CANONE — DM 2026-05-05]`.
 > Le unità restano valide per encounter building e mass combat; i
 > numeri §2.x di `Armate-CALCOLI-ESERCITI-DINAMICI.md` sono la verità.
 
 > **Versione**: v1.1 (2026-05-05, canonizzata). Indice maestro di tutte le unità
 > potenzialmente in campo nella campagna RumblingStone, organizzate per
-> fazione, con link al file statblock canonico (o marcate `[ACCEPTED]`
+> fazione, con link al file statblock canonico (o marcate `[CANONE — DM data]`
 > quando serve produzione dedicata in `Bestiario/`).
 >
 > **Regola cardine** (`AGENTS.md`): niente invenzioni. Ogni unit card è
 > un puntatore a file esistente o una derivazione marcata
-> `[ACCEPTED — DM-canon 2026-05-05]` con base MM/FRCS/AP-RHoD.
+> `[CANONE — DM 2026-05-05]` con base MM/FRCS/AP-RHoD.
 >
 > **Canonical references**:
 >
@@ -72,7 +72,7 @@
 | Hobgoblin Bladebearer (longsword) | 5 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/hobgoblin bladebearer 6 liv longsword.htm` | Variante |
 | Hobgoblin Doom Hand Cleric 5° | 5 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/hobgoblin doom hand cleric 5 liv.htm` | Warpriest di Tiamat + spells |
 | Hobgoblin Shamano Draconico cr8 | 8 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/hobgoblin shamano draconico cr8 .htm` | Caster cluster leader |
-| Hobgoblin Sergente (Fighter 5) | 5 | [ACCEPTED] `Bestiario/mostri/hobgoblin-sergente-cr5.md` | 240 unità, capo compagnia |
+| Hobgoblin Sergente (Fighter 5) | 5 | [CANONE — DM 2026-05-05] `Bestiario/mostri/hobgoblin-sergente-cr5.md` | 240 unità, capo compagnia |
 | Bugbear Draconico Koth | 8 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/bugbear_draconic_koth.pcg` | NPC nominato |
 
 ---
@@ -81,7 +81,7 @@
 
 | Unità | CR | Statblock file | Note |
 |---|---|---|---|
-| Goblin Warrior 1 | 1/2 | [ACCEPTED] `Bestiario/mostri/goblin-warrior1-cr05.md` | MM Goblin |
+| Goblin Warrior 1 | 1/3 | [CANONE — DM 2026-05-05] `Bestiario/mostri/goblin-warrior1-cr05.md` | MM Goblin |
 | Goblin Worg Rider | 5 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/goblin worg raider cr5.htm` | 300 unità |
 | Worg (cavalcatura) | 2 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Worg.htm` | MM |
 | Orc Regular | 1/2 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/orc_regular.pcg` | MM Orc |
@@ -119,8 +119,8 @@
 | KulkorZhul War Adept cr9 — Ice | 9 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/KulkorZhul war Adept cr9 ice.htm` | Variante |
 | KulkorZhul War Adept cr9 — Lightning | 9 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/KulkorZhul war Adept cr9 lightining.htm` | Variante |
 | Draxoksus (shamano draconico mezzo-immondo) | 7 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Draxoksus.htm` | NPC cluster leader |
-| Blue (psionic goblinoid) | 1 | [ACCEPTED] `Bestiario/mostri/blue-psion-cr1.md` | MM II p.38; 10 unità |
-| Warpriest di Tiamat (Cleric 7) | 7 | [ACCEPTED] `Bestiario/mostri/warpriest-tiamat-cr7.md` | 20 unità; PHB Cleric |
+| Blue (psionic goblinoid) | 1 | [CANONE — DM 2026-05-05] `Bestiario/mostri/blue-psion-cr1.md` | MM II p.38; 10 unità |
+| Warpriest di Tiamat (Cleric 7) | 7 | [CANONE — DM 2026-05-05] `Bestiario/mostri/warpriest-tiamat-cr7.md` | 20 unità; PHB Cleric |
 | Lómyn RedTongue (Bard 8) | 8 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Lómyn redTongue bard 8.pcg` | NPC bardo |
 
 ---
@@ -130,9 +130,9 @@
 | Drago | Tipo / Età | CR | File | Stato campagna |
 |---|---|---|---|---|
 | **Abithriax** | Red Adult | 15 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Arbitrax Drago Rosso.htm` | Vivo, Rethmar Fase 1 |
-| **Regiarix** | Black Young Adult | 10 | `09_.../Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | A rischio (P2 Rhest) |
+| **Regiarix** | Black Young Adult | 10 | `09_.../Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | A rischio (P2 Lhesper) |
 | **Ozyrrandion** | Green Adult (AP), 22 DV | 14 | `Bestiario/villain/ozyrrandion-drago-verde-cr14.md` (base storica: `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Ozyrrandion drago Verde cr8.pcg` + `green dragon.htm`) | A rischio (P2A Torre) |
-| **Tyrgarun** | **Blue Old (terrore dei cieli, D11 v2)** | **18** | [ACCEPTED] `Bestiario/villain/Tyrgarun/tyrgarun-blue-old-cr18.md` | Vivo; hazard aereo Fasi 1-3, inchiodato dal Mythal in Fase 4 (CR eff. ~16-17) — NON cavalcatura di Azarr Kul |
+| **Tyrgarun** | **Blue Very Old (terrore dei cieli, D11 v2)** | **19** | [CANONE — DM 2026-05-05] `Bestiario/villain/Tyrgarun/tyrgarun-blue-very-old-cr19.md` | Vivo; hazard aereo Fasi 1-3, inchiodato dal Mythal in Fase 4 (CR eff. ~16-17) — NON cavalcatura di Azarr Kul |
 | **Fauci di Palude** | Black Adult avanzato | 15 | `08_…/00_Schede_dei_Personaggi_Unità_…md` §1 | Ramo condizionale D10, non deciso (default: fugge <50 PF, assente da Rethmar; alternativa: ucciso ad Hammerfist) |
 | Draon-hamann (cr8) | Red Young (escort) | 8 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Draon-hamann-cr8.pcg` | Gith mount |
 | Green dragon (generic) | — | 8 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/green dragon.htm` | Swap pool |
@@ -145,12 +145,12 @@ Varianti colore Tiamat. Base template + delta per colore.
 
 | Variante | CR | File | Assegnazione |
 |---|---|---|---|
-| Razorfiend base (Black) | 8 | `09_…/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-RAZORFIEND-NIDO.md` | Saarvith/Rhest |
+| Razorfiend base (Black) | 8 | `09_…/Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-RAZORFIEND-NIDO.md` | Saarvith/Lhesper |
 | Razorfiend Black (alt statblock) | 8 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Incontro-RedHandof-doom/` | — |
-| Razorfiend Red | 9 | [ACCEPTED] `Bestiario/mostri/razorfiend-red-cr9.md` | Wyrmlord Karruk |
-| Razorfiend Blue | 9 | [ACCEPTED] `Bestiario/mostri/razorfiend-blue-cr9.md` | Ozyrrandion/Tower |
-| Razorfiend White | 8 | [ACCEPTED] `Bestiario/mostri/razorfiend-white-cr8.md` | Azarr Kul guard |
-| Razorfiend Green | 9 | [ACCEPTED] `Bestiario/mostri/razorfiend-green-cr9.md` | Azarr Kul support |
+| Razorfiend Red | 9 | [CANONE — DM 2026-05-05] `Bestiario/mostri/razorfiend-red-cr9.md` | Wyrmlord Karruk |
+| Razorfiend Blue | 9 | [CANONE — DM 2026-05-05] `Bestiario/mostri/razorfiend-blue-cr9.md` | Ozyrrandion/Tower |
+| Razorfiend White | 8 | [CANONE — DM 2026-05-05] `Bestiario/mostri/razorfiend-white-cr8.md` | Azarr Kul guard |
+| Razorfiend Green | 9 | [CANONE — DM 2026-05-05] `Bestiario/mostri/razorfiend-green-cr9.md` | Azarr Kul support |
 
 ---
 
@@ -160,9 +160,9 @@ Varianti colore Tiamat. Base template + delta per colore.
 |---|---|---|---|
 | Azarr Kul (Gran Signore) | 17 | `09_…/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md` | Boss finale Fase 3 |
 | Koth (Signore dei Dragoni) | 9 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/signore dei Dragoni Koth.htm` | Vraath Keep / field commander |
-| Saarvith | 11 | `09_…/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Rhest boss |
+| Saarvith | 11 | `09_…/Arco-Post-Hammerfist-P2-LHESPER-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md` | Lhesper boss |
 | Zalkatar | 13 | `09_…/Arco-Post-Hammerfist-P2A-Torre-PARTE4-STATBLOCCHI-Zalkatar.md` | Torre Invisibile boss |
-| Karruk | 13 | [ACCEPTED] `Bestiario/villain/Wyrmlord_Karruk/wyrmlord-karruk-cr13.md` | Rethmar Fase 1 assault leader |
+| Karruk | 13 | [CANONE — DM 2026-05-05] `Bestiario/villain/Wyrmlord_Karruk/wyrmlord-karruk-cr13.md` | Rethmar Fase 1 assault leader |
 | Ulwai Stormcaller (Bard) | 8 | Base: `Lómyn redTongue bard 8.pcg` | Variante nominata |
 
 ---
@@ -177,11 +177,11 @@ Comanda **Sonjak**, la Matrona: una persona sola, che Salvatore conosce soltanto
 | Underdark Cleric 6° (Ainin) | 6 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Underdark cleric cr6 Ainin.htm` | Upgrade |
 | Underdark Deep Warden Brieyn | 7 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/underdark deep warden brieyn.htm` | Ranger-type |
 | Underdark Dovil Runecaster (Deep Diviner) | 7 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Underdark dovil runecaster deep diviner cr7.htm` | Wizard |
-| Drow Warrior (base) | 1 | [ACCEPTED] `Bestiario/mostri/drow-warrior-cr1.md` | FRCS; fanteria drow |
-| Drow Fighter 3 | 4 | [ACCEPTED] `Bestiario/mostri/drow-fighter3-cr4.md` | Guardia casata |
-| Drow Priestess 9 of Lolth | 11 | [ACCEPTED] `Bestiario/mostri/drow-priestess9-cr11.md` | Sajak rituali Fase 0 |
-| Drow Wizard 7 | 8 | [ACCEPTED] `Bestiario/mostri/drow-wizard7-cr8.md` | Supporto mago |
-| Drow Noble House Guard | 5 | [ACCEPTED] `Bestiario/mostri/drow-noble-guard-cr5.md` | Élite Sajak |
+| Drow Warrior (base) | 1 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-warrior-cr1.md` | FRCS; fanteria drow |
+| Drow Fighter 3 | 4 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-fighter3-cr4.md` | Guardia casata |
+| Drow Priestess 9 of Lolth | 10 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-priestess9-cr10.md` | Sajak rituali Fase 0 |
+| Drow Wizard 7 | 8 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-wizard7-cr8.md` | Supporto mago |
+| Drow Noble House Guard | 5 | [CANONE — DM 2026-05-05] `Bestiario/mostri/drow-noble-guard-cr5.md` | Élite Sajak |
 | Sonjak, la Matrona (per Sal «Matrona Sajak») | 13 | `Bestiario/villain/Sonjak/Sonjak.md` | Villain nominato; GS dalla scheda |
 
 Statblocchi già presenti per drow in P3 Fase 0:
@@ -199,12 +199,12 @@ Statblocchi già presenti per drow in P3 Fase 0:
 | Unità | CR | File | Note |
 |---|---|---|---|
 | Gnoll base (MM) | 1 | [REF MM p.130] | Warrior tier 0 |
-| Gnoll Warrior 2 | 2 | [ACCEPTED] `Bestiario/mostri/gnoll-warrior2-cr2.md` | Fanteria tribale |
-| Gnoll Ranger 4 | 5 | [ACCEPTED] `Bestiario/mostri/gnoll-ranger4-cr5.md` | Scout Artigli Neri |
-| Gnoll Cleric 6 of Yeenoghu | 7 | [ACCEPTED] `Bestiario/mostri/gnoll-cleric-yeenoghu-cr7.md` | Shaman tribale |
-| Flind (MM II) | 3 | [ACCEPTED] `Bestiario/mostri/flind-cr3.md` | MM II p.104; Flinderoso élite |
-| Gnoll Hyenodon Rider | 4 | [ACCEPTED] `Bestiario/mostri/gnoll-hyenodon-rider-cr4.md` | Cavalry Abbattitori |
-| Gnoll Chieftain (Barbarian 8) | 10 | [ACCEPTED] `Bestiario/mostri/gnoll-chieftain-cr10.md` | Comandante tribù |
+| Gnoll Warrior 2 | 2 | [CANONE — DM 2026-05-05] `Bestiario/mostri/gnoll-warrior2-cr2.md` | Fanteria tribale |
+| Gnoll Ranger 4 | 5 | [CANONE — DM 2026-05-05] `Bestiario/mostri/gnoll-ranger4-cr5.md` | Scout Artigli Neri |
+| Gnoll Cleric 6 of Yeenoghu | 7 | [CANONE — DM 2026-05-05] `Bestiario/mostri/gnoll-cleric-yeenoghu-cr7.md` | Shaman tribale |
+| Flind (MM II) | 3 | [CANONE — DM 2026-05-05] `Bestiario/mostri/flind-cr3.md` | MM II p.104; Flinderoso élite |
+| Gnoll Hyenodon Rider | 4 | [CANONE — DM 2026-05-05] `Bestiario/mostri/gnoll-hyenodon-rider-cr4.md` | Cavalry Abbattitori |
+| Gnoll Chieftain (Barbarian 8) | 10 | [CANONE — DM 2026-05-05] `Bestiario/mostri/gnoll-chieftain-cr10.md` | Comandante tribù |
 | Hyenodon (mount) | 3 | [REF MM p.153 Dire Hyena adattato] | Cavalcatura |
 
 ---
@@ -215,10 +215,10 @@ Contingente Shaar, ~480 unità. Revolt trigger se PG diplomazia.
 
 | Unità | CR | File | Note |
 |---|---|---|---|
-| Loxo Warrior 3 | 4 | [ACCEPTED] `Bestiario/mostri/loxo-warrior3-cr4.md` | MM II Loxo + Warrior 3 |
-| Loxo Shaman 6 | 7 | [ACCEPTED] `Bestiario/mostri/loxo-shaman6-cr7.md` | Druid variant |
-| Centaur Ranger 4 (corrotto) | 5 | [ACCEPTED] `Bestiario/mostri/centaur-ranger4-corrupted-cr5.md` | MM Centaur + Ranger 4 |
-| Centaur Chieftain (Fighter 6) | 7 | [ACCEPTED] `Bestiario/mostri/centaur-chieftain-cr7.md` | Leader band |
+| Loxo Warrior 3 | 4 | [CANONE — DM 2026-05-05] `Bestiario/mostri/loxo-warrior3-cr4.md` | MM II Loxo + Warrior 3 |
+| Loxo Shaman 6 | 7 | [CANONE — DM 2026-05-05] `Bestiario/mostri/loxo-shaman6-cr7.md` | Druid variant |
+| Centaur Ranger 4 (corrotto) | 5 | [CANONE — DM 2026-05-05] `Bestiario/mostri/centaur-ranger4-corrupted-cr5.md` | MM Centaur + Ranger 4 |
+| Centaur Chieftain (Fighter 6) | 7 | [CANONE — DM 2026-05-05] `Bestiario/mostri/centaur-chieftain-cr7.md` | Leader band |
 
 ---
 
@@ -228,8 +228,8 @@ Dragonrider corps, ~375 unità (cavaliere + 1 red young dragon + reclute).
 
 | Unità | CR | File | Note |
 |---|---|---|---|
-| Githyanki Warrior 3 | 4 | [ACCEPTED] `Bestiario/mostri/githyanki-warrior3-cr4.md` | MM p.128 + Fighter 3 |
-| Githyanki Captain (Gish, Ftr8/Wiz3) | 12 | [ACCEPTED] `Bestiario/mostri/githyanki-captain-gish-cr12.md` | Élite |
+| Githyanki Warrior 3 | 4 | [CANONE — DM 2026-05-05] `Bestiario/mostri/githyanki-warrior3-cr4.md` | MM p.128 + Fighter 3 |
+| Githyanki Captain (Gish, Ftr8/Wiz3) | 12 | [CANONE — DM 2026-05-05] `Bestiario/mostri/githyanki-captain-gish-cr12.md` | Élite |
 | Githyanki Knight | 10 | `09_…/Arco-Post-Hammerfist-P3-MISSIONI-BREVI-CR12-STATBLOCCHI-FUNGHI-GITH-DROW.md` | File esistente |
 | Red Young Dragon (mount) | 8 | `Draon-hamann-cr8.pcg` | Cavalcatura |
 | Vaereth (leader gith) | 14 | `09_…/Arco-Post-Hammerfist-P3-MISSIONI-BREVI-CR12-STATBLOCCHI-FUNGHI-GITH-DROW.md` | NPC nominato |
@@ -242,10 +242,10 @@ Dragonrider corps, ~375 unità (cavaliere + 1 red young dragon + reclute).
 
 | Unità | CR | File | Note |
 |---|---|---|---|
-| Thayan Heavy Infantry (Fighter 3) | 3 | [ACCEPTED] `Bestiario/mostri/thayan-heavy-infantry-cr3.md` | Human Fighter 3 |
-| Thayan Red Wizard 7 (Evoker) | 9 | [ACCEPTED] `Bestiario/mostri/thayan-red-wizard7-cr9.md` | FRCS Red Wizard PrC |
-| Teschio Nero Commander (Ftr 8/Bbn 2) | 10 | [ACCEPTED] `Bestiario/mostri/teschio-nero-commander-cr10.md` | CR 10 boss |
-| Thayan Knight (PrC) | 8 | [ACCEPTED] `Bestiario/mostri/thayan-knight-cr8.md` | Complete Warrior |
+| Thayan Heavy Infantry (Fighter 3) | 3 | [CANONE — DM 2026-05-05] `Bestiario/mostri/thayan-heavy-infantry-cr3.md` | Human Fighter 3 |
+| Thayan Red Wizard 7 (Evoker) | 9 | [CANONE — DM 2026-05-05] `Bestiario/mostri/thayan-red-wizard7-cr9.md` | FRCS Red Wizard PrC |
+| Teschio Nero Commander (Ftr 8/Bbn 2) | 10 | [CANONE — DM 2026-05-05] `Bestiario/mostri/teschio-nero-commander-cr10.md` | CR 10 boss |
+| Thayan Knight (PrC) | 8 | [CANONE — DM 2026-05-05] `Bestiario/mostri/thayan-knight-cr8.md` | Complete Warrior |
 
 ---
 
@@ -256,7 +256,7 @@ Incursione condizionale (+300 cultisti Rakshasa se trigger).
 | Unità | CR | File | Note |
 |---|---|---|---|
 | Il Collezionista (Rakshasa) | 13+ | `Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md` | NPC nominato |
-| Cultista Rakshasa (human Rog 3) | 3 | [ACCEPTED] `Bestiario/mostri/cultista-rakshasa-cr3.md` | Minion |
+| Cultista Rakshasa (human Rog 3) | 3 | [CANONE — DM 2026-05-05] `Bestiario/mostri/cultista-rakshasa-cr3.md` | Minion |
 | Tiger guardian | 4 | [REF MM p.281] | Compagno |
 
 ---
@@ -278,11 +278,15 @@ Fonte principale: file Arc-04/05/06/07 + `Bestiario/pregen-pcgen/` vari.
 | Cubo Gelatinoso (power-up) | 3+ | `04_tomba_di_Belkram/00_Cubo Gelatinoso powerup.txt` | Tomba |
 | Celebromorfosi (brain-transformed) | vari | `04_tomba_di_Belkram/00_Celebromorfosi/` | Arc-04 |
 | Grell Necromante / Patriarca | 7/9 | `01_LaMiniera/grell necromante.txt` / `grellPatriarca.txt` | Miniera |
-| Bone Naga (Ghostlord) | 10 | [ACCEPTED] `Bestiario/mostri/bone-naga-cr10.md` | MM II |
-| Deathlock | 8 | [ACCEPTED] `Bestiario/mostri/deathlock-cr8.md` | MM III |
-| Skeletal Dire Lion | 6 | [ACCEPTED] `Bestiario/mostri/skeletal-dire-lion-cr6.md` | Pride Ghostlord |
+| Bone Naga (Ghostlord) | 10 | [CANONE — DM 2026-05-05] `Bestiario/mostri/bone-naga-cr10.md` | MM II |
+| Deathlock | 8 | [CANONE — DM 2026-05-05] `Bestiario/mostri/deathlock-cr8.md` | MM III |
+| Skeletal Dire Lion | 7 | [CANONE — DM 2026-05-05] `Bestiario/mostri/skeletal-dire-lion-cr7.md` | Pride Ghostlord |
 | Spectre | 7 | [REF MM p.232] | Ghostlord pride |
 | Allip | 3 | [REF MM p.11] | Minion non-morto |
+
+<!-- storico -->
+> Storia della tabella: Skeletal Dire Lion da GS 6 a GS 7 e file `skeletal-dire-lion-cr7.md` (decisione del DM del 2026-11-14: 16 dadi vita da scheletro, ADR-0126); Tyrgarun da «Old» GS 18 a «Very Old» GS 19 (decisione del DM del 2026-11-14).
+<!-- /storico -->
 
 Ghostlord branch completo:
 
@@ -296,30 +300,30 @@ Per l'uso in Rethmar Fase 1-4 (difensori) o encounter di supporto.
 
 | Unità | CR | File | Contingente |
 |---|---|---|---|
-| Rethmar Militia (Warrior 1) | 1/2 | [ACCEPTED] `Bestiario/mostri/rethmar-militia-cr05.md` | 1.200 guarnigione |
-| Rethmar City Guard (Fighter 2) | 2 | [ACCEPTED] `Bestiario/mostri/rethmar-city-guard-cr2.md` | Guardia |
+| Rethmar Militia (Warrior 1) | 1/2 | [CANONE — DM 2026-05-05] `Bestiario/mostri/rethmar-militia-cr05.md` | 1.200 guarnigione |
+| Rethmar City Guard (Fighter 2) | 2 | [CANONE — DM 2026-05-05] `Bestiario/mostri/rethmar-city-guard-cr2.md` | Guardia |
 | Conte Valerius (Captain Ftr 10) | 10 | `Bestiario/villain/Conte_Valerius/` | NPC nominato |
 | Starsong Elf Ranger 6 | 7 | `09_…/Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-STATBLOCCHI.md` | +500 alleanza |
 | Starsong Owl Cavalry (celestial) | — | Idem | Aerial |
 | Maewen (Ranger/Scout) | 9 | `Bestiario/png/Maewen/` | NPC |
 | Lythiel | — | `Bestiario/png/Lythiel/` | NPC |
-| Dauth Dwarf Defender (Ftr 6) | 6 | [ACCEPTED] `Bestiario/mostri/dauth-dwarf-defender-cr6.md` | +400 Dauth |
+| Dauth Dwarf Defender (Ftr 6) | 6 | [CANONE — DM 2026-05-05] `Bestiario/mostri/dauth-dwarf-defender-cr6.md` | +400 Dauth |
 | Morlin Coalhewer (dwarf cr12) | 12 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/nano Morlin Coalhewer cr12.htm` | NPC |
 | Rurik Gorunn (Martello di Moradin 10) | 10 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Rurik Gorunn martello di moradin 10 liv.htm` | NPC |
 | Jorr Natherson (Ranger 8) | 8 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/Jorr Natherson 8liv.htm` | NPC |
 | Capitan Loranna Anitah | ~8 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/capitan loranna anitah.htm` | NPC |
 | Druido Avarthel cr9 | 9 | `Bestiario/pregen-pcgen/png_La_mano_rossa_del_destino/druido Avarthel cr9.htm` | Cerchio Sacro support |
-| Cerchio Sacro Druid 7 (Hella ally) | 7 | [ACCEPTED] `Bestiario/mostri/cerchio-druid7-cr7.md` | +150 |
+| Cerchio Sacro Druid 7 (Hella ally) | 7 | [CANONE — DM 2026-05-05] `Bestiario/mostri/cerchio-druid7-cr7.md` | +150 |
 | Treant (ally) | 8 | [REF MM p.244] | +Cerchio Treant |
 | Tempestas (Bardo/Cantore delle tempeste) | 14 | `Bestiario/png/Tempestas/` + `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
 | Signore Ventolesto (Gufo Celestiale Alpha) | 8 | `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
 | Orion Pelleorsa (Druido umano) | 9 | `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
 | Capitano Lunapiena (Ranger elfico) | 10 | `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
-| Dana Forgiapietra (Madre Superiora) | 12 | `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
+| Dagmar Forgiapietra (Madre Superiora) | 12 | `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
 | Re Thorek Hammerfist | 13 | `08_…/00_Schede_dei_Personaggi…md` §2 | NPC |
-| Borin Ferropugno (Ftr/Champion) | 8 | `08_…/00_Schede_dei_Personaggi…md` §3 | NPC giocabile |
+| Borin Giuraferro (Ftr/Champion) | 8 | `08_…/00_Schede_dei_Personaggi…md` §3 | NPC giocabile |
 | Dara Occhiolesto (Ranger) | 8 | `08_…/00_Schede_dei_Personaggi…md` §3 | NPC giocabile |
-| Thorin Runaforte (Cleric) | 8 | `08_…/00_Schede_dei_Personaggi…md` §3 | NPC giocabile |
+| Harbek Runaforte (Cleric) | 8 | `08_…/00_Schede_dei_Personaggi…md` §3 | NPC giocabile |
 | Nala Cantapietre (Bard) | 8 | `08_…/00_Schede_dei_Personaggi…md` §3 | NPC giocabile |
 
 ---
@@ -328,7 +332,7 @@ Per l'uso in Rethmar Fase 1-4 (difensori) o encounter di supporto.
 
 Unità **alto-CR** (10-18) aggiunte per il tier finale della campagna
 (PG livello 13 in ingresso; Arc 09 Fase 2-3 + finale Rethmar).
-Tutti marcati `[ACCEPTED — DM-canon 2026-05-05]`; fonte AP RHoD + SRD/MM/FRCS.
+Tutti marcati `[CANONE — DM 2026-05-05]`; fonte AP RHoD + SRD/MM/FRCS.
 
 ### 16a. Mano Rossa — Epic Tier
 
@@ -390,7 +394,7 @@ Tutti marcati `[ACCEPTED — DM-canon 2026-05-05]`; fonte AP RHoD + SRD/MM/FRCS.
 | 07 Portale Forgia | Aberrazioni, Fauci (pre-ritorno), Terros |
 | 08 Hammerfist | Mano Rossa §1-4, Fauci §5, Ogre/Ettin §3, Difensori §15 |
 | 09 P1 Hella | Druidi §15, Mano Rossa skirmish §1-2 |
-| 09 P2 Rhest | Drow §8 (Saarvith subset), Razorfiend §6, Regiarix §5 |
+| 09 P2 Lhesper | Drow §8 (Saarvith subset), Razorfiend §6, Regiarix §5 |
 | 09 P2A Torre | Ozyrrandion §5, Zalkatar §7, Aberrazioni (Illithid) |
 | 09 P2B Dauth | Difensori nani §15, Villain torneo (vedi file P2B-VILLAIN) |
 | 09 P3 Fase 0 | Drow Sonjak §8 full |
@@ -403,7 +407,7 @@ Tutti marcati `[ACCEPTED — DM-canon 2026-05-05]`; fonte AP RHoD + SRD/MM/FRCS.
 
 ## TODO (da espandere)
 
-- [ ] Finalizzare tutti gli [ACCEPTED] in `Bestiario/` (file separati).
+- [ ] Finalizzare tutti gli [CANONE — DM data] in `Bestiario/` (file separati).
 - [ ] Catalogare anche `04_tomba_di_Belkram/00_Celebromorfosi/` e `02_Celebromorfosi/` (script Step 2 lo fa automaticamente).
 - [ ] Integrare `05_aa-stanza-runica/` e `06_Stanza-corona-di-adamantio/` (inspection).
 - [ ] Collegamento ODS `Armate-AGGIORNATO.ods` → atlas (rebuild manuale DM).

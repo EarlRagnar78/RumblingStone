@@ -32,6 +32,7 @@ Dipendenze: solo stdlib.
 from __future__ import annotations
 
 import argparse
+import difflib
 import re
 import sys
 from pathlib import Path
@@ -41,7 +42,9 @@ from dmcore.testo import slug  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 
-READ_ALOUD = re.compile(r"^>\s*\*\*Read[- ]aloud([^*]*)\*\*\.?\s*(.*)$", re.I)
+# Il gruppo 1 arriva fino al primo «**» che chiude il grassetto, non al primo
+# «*»: un corsivo dentro l'etichetta troncava l'etichetta e il box.
+READ_ALOUD = re.compile(r"^>\s*\*\*Read[- ]aloud(.*?)\*\*\.?\s*(.*)$", re.I)
 HEADING = re.compile(r"^(#{1,4})\s+(.*)$")
 IMG_EXT = {".webp", ".png", ".jpg", ".jpeg"}
 
@@ -50,6 +53,31 @@ def clean(s: str) -> str:
     """Toglie marcatori markdown da un estratto, per leggibilità."""
     s = re.sub(r"[*_`]", "", s)
     return re.sub(r"\s+", " ", s).strip()
+
+
+def parse_label(raw: str) -> str:
+    """Etichetta di regia dal grassetto del read-aloud.
+
+    ``(LotR lead, Salvatore support) — la Sala.`` diventa
+    ``LotR lead, Salvatore support — la Sala``. Le parentesi si contano, così
+    una parentesi annidata non tronca l'etichetta; il punto finale del
+    grassetto non è etichetta. Senza niente resta ``scena``.
+    """
+    s = clean(raw).strip().rstrip(".").strip()
+    if s.startswith("("):
+        depth = 0
+        for i, ch in enumerate(s):
+            depth += (ch == "(") - (ch == ")")
+            if depth == 0:
+                inner, rest = s[1:i].strip(), s[i + 1:]
+                break
+        else:                       # parentesi mai chiusa: si tiene tutto
+            inner, rest = s[1:].strip(), ""
+        rest = rest.strip().lstrip("—–-:,").strip().rstrip(".").strip()
+        s = f"{inner} — {rest}" if inner and rest else (inner or rest)
+    else:
+        s = s.lstrip("—–-:,").strip()
+    return s or "scena"
 
 
 def extract_scenes(arc_dir: Path) -> list[dict]:
@@ -78,7 +106,7 @@ def extract_scenes(arc_dir: Path) -> list[dict]:
             scenes.append({
                 "file": md.name,
                 "section": section,
-                "label": clean(m.group(1)).strip("() ") or "scena",
+                "label": parse_label(m.group(1)),
                 "excerpt": excerpt[:600],
             })
     return scenes
@@ -171,11 +199,68 @@ def build_document(arc_name: str, scenes: list[dict], images: list[str]) -> str:
 MANUAL_HEADER = "## Schede aggiunte a mano (oggetti, artefatti, ritratti)\n"
 
 
+def _card_pattern(key: str = r"([a-z0-9-]+)") -> re.Pattern[str]:
+    return re.compile(rf"^### [^\n]*`\[{key}\]`[^\n]*\n.*?(?=\n### |\n## |\Z)",
+                      re.S | re.M)
+
+
+EXCERPT = re.compile(r"^> (?!\*Estratto)(.+)$", re.M)
+HEAD_FIELDS = re.compile(r"\A### [^\n]*\n\n?- \*\*Fonte\*\*: [^\n]*\n(?:- \*\*Etichetta regia\*\*: [^\n]*\n)?")
+FONTE_FILE = re.compile(r"^- \*\*Fonte\*\*: `([^`]+)`", re.M)
+SOGLIA_ESTRATTO = 0.6
+
+
+def _excerpt(block: str) -> str:
+    m = EXCERPT.search(block)
+    return m.group(1).strip() if m else ""
+
+
+def _fonte(block: str) -> str:
+    m = FONTE_FILE.search(block)
+    return m.group(1) if m else ""
+
+
+def _same_scene(old: str, new: str) -> float:
+    """Somiglianza fra due schede dello stesso file sorgente (0 se i file
+    differiscono): un box riscritto resta riconoscibile, uno diverso no."""
+    if not _fonte(old) or _fonte(old) != _fonte(new):
+        return 0.0
+    a, b = _excerpt(old), _excerpt(new)
+    return difflib.SequenceMatcher(None, a, b).ratio() if a and b else 0.0
+
+
+def _refresh_head(block: str, fresh: str) -> str:
+    """Titolo, fonte ed etichetta sono campi meccanici: vince l'estrazione nuova."""
+    head = HEAD_FIELDS.match(fresh)
+    return HEAD_FIELDS.sub(lambda _m: head.group(0), block, count=1) if head else block
+
+
+LABEL_LINE = re.compile(r"^(- \*\*Etichetta regia\*\*: )(.*)$", re.M)
+
+
+def _tidy_label_line(block: str) -> str:
+    """Scheda senza più la sua scena: l'etichetta non si può rifare dal box,
+    si toglie almeno il residuo del vecchio troncamento (punto finale,
+    parentesi chiusa senza la sua aperta)."""
+    def fix(m: re.Match[str]) -> str:
+        lab = m.group(2).strip().rstrip(".").strip()
+        while lab.endswith(")") and lab.count(")") > lab.count("("):
+            lab = lab[:-1].rstrip().rstrip(".").strip()
+        return m.group(1) + (lab or "scena")
+    return LABEL_LINE.sub(fix, block, count=1)
+
+
 def merge_with_existing(new_doc: str, out: Path) -> str:
     """Non perde MAI lavoro già fatto (ADR-0015 §4).
 
     - scheda già compilata la cui chiave esiste ancora fra le scene estratte
       → sostituisce quella nuova (vuota) con quella scritta;
+    - scheda compilata la cui chiave non c'è più ma il cui estratto somiglia
+      (≥ ``SOGLIA_ESTRATTO``, stesso file sorgente) a quello di una scena
+      nuova ancora vuota (la sezione del master ha cambiato nome, il box è
+      stato ritoccato) → prende il posto di quella scena;
+    - in tutti e due i casi titolo, fonte ed etichetta di regia si rifanno
+      dall'estrazione nuova, il prompt resta quello scritto;
     - scheda compilata **senza** corrispondenza fra le scene (aggiunta a mano
       per un artefatto/ritratto, o scena rimossa dal master) → viene
       **riportata in coda**, non buttata.
@@ -183,21 +268,23 @@ def merge_with_existing(new_doc: str, out: Path) -> str:
     if not out.exists():
         return new_doc
     old = out.read_text(encoding="utf-8")
-    new_keys = set(re.findall(r"`\[([a-z0-9-]+)\]`", new_doc))
     kept, carried = 0, []
-    card_re = re.compile(r"^### [^\n]*`\[([a-z0-9-]+)\]`[^\n]*\n.*?(?=\n### |\n## |\Z)",
-                         re.S | re.M)
-    for m in card_re.finditer(old):
+    for m in _card_pattern().finditer(old):
         block, key = m.group(0).rstrip() + "\n", m.group(1)
         if "DA SCRIVERE" in block:
             continue
-        if key in new_keys:
-            new_doc = re.sub(
-                rf"^### [^\n]*`\[{re.escape(key)}\]`[^\n]*\n.*?(?=\n### |\n## |\Z)",
-                lambda _m: block, new_doc, count=1, flags=re.S | re.M)
-            kept += 1
-        else:
-            carried.append(block)
+        target = _card_pattern(re.escape(key)).search(new_doc)
+        if target is None:
+            empty = [c for c in _card_pattern().finditer(new_doc) if "DA SCRIVERE" in c.group(0)]
+            best = max(empty, key=lambda c: _same_scene(block, c.group(0)), default=None)
+            if best is not None and _same_scene(block, best.group(0)) >= SOGLIA_ESTRATTO:
+                target = best
+        if target is None:
+            carried.append(_tidy_label_line(block))
+            continue
+        block = _refresh_head(block, target.group(0))
+        new_doc = new_doc[:target.start()] + block.rstrip("\n") + new_doc[target.end():]
+        kept += 1
     if carried:
         new_doc = new_doc.rstrip() + "\n\n---\n\n" + MANUAL_HEADER + "\n" + "\n".join(carried) + "\n"
     if kept or carried:

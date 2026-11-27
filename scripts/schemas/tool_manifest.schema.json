@@ -331,6 +331,24 @@
       "type": "boolean",
       "description": "Ri-eseguibile senza effetti cumulativi indesiderati."
     },
+    "sistema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "capacita"
+      ],
+      "description": "Lo strumento dipende dal sistema di gioco (ADR-0111): le capacità che chiede ai plugin in sistemi/. Il nome di ogni capacità sta in sistemi/catalogo.toml; scripts/sistemi.py --check verifica che ogni sistema attivo la dichiari.",
+      "properties": {
+        "capacita": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "pattern": "^[a-z_]+\\.[a-z_]+$"
+          }
+        }
+      }
+    },
     "consumes_schema": {
       "type": [
         "string",

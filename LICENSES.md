@@ -47,11 +47,13 @@ Le fonti OGC sono **due**, e per un po' questo file ne dichiarava una sola:
 | Fonte | Cosa ne viene | Dove sta |
 |---|---|---|
 | **SRD 3.5** (d20 System Reference Document) | regole, incantesimi, classi, mostri, oggetti — il sistema su cui la campagna gira | ovunque |
-| **Pathfinder 1e** (PRD, OGL) | i bersagli per GS e i template semplici (Bestiary Table 1-1), la ricchezza per livello del PNG (Core Rulebook), le liste di incantesimi APG | `skills/pathfinder-1e-srd/`, `scripts/dmcore/tabelle.py`, `scripts/dmcore/incantesimi.py` |
+| **Pathfinder 1e** (PRD, OGL) | i bersagli per GS e i template semplici (Bestiary Table 1-1), la ricchezza per livello del PNG (Core Rulebook), le liste di incantesimi APG; i dati del plugin PF1e: classi, talenti, razze, creature (Core, APG, ACG, ARG, UM, UC, UCampaign, UE, Mythic Adventures, Bestiary 1-4, GMG, NPC e Monster Codex, Technology Guide) | `skills/pathfinder-1e-srd/`, `scripts/dmcore/tabelle.py`, `scripts/dmcore/incantesimi.py`, `sistemi/pf1e/dati/` |
 
 > **La catena della Sezione 15 sta in [`OGL.txt`](OGL.txt)**, insieme al testo
-> integrale della licenza. Sono **sei voci**: quelle del materiale da cui il repo
-> deriva davvero. La catena del PRD di Pathfinder ne ha 93, perché raccoglie
+> integrale della licenza. Sono le voci del materiale da cui il repo deriva
+> davvero: sei fino al 2026-11-10, poi 25 quando i dati del plugin PF1e sono stati
+> confrontati coi libri da cui vengono (14 libri Paizo e 5 creature del Tome of
+> Horrors). La catena del PRD di Pathfinder ne ha 93, perché raccoglie
 > l'intera linea Paizo più il Tome of Horrors — copiarle tutte dichiarerebbe un
 > uso che qui non c'è, ed è il modo più rapido di rendere inutile una catena di
 > copyright.
@@ -63,7 +65,7 @@ Le fonti OGC sono **due**, e per un po' questo file ne dichiarava una sola:
 > Averlo scritto non è un adempimento finché il repo resta a uso privato: lo
 > diventa nel momento in cui qualcosa esce (Sezione 10: una copia della licenza va
 > con ogni copia dell'OGC), ed è **parte del cancello d'uscita** di
-> [`docs/guides/GUIDA-CONDIVISIONE-IP.md`](docs/guides/GUIDA-CONDIVISIONE-IP.md) §7.
+> [`docs/how-to/GUIDA-CONDIVISIONE-IP.md`](docs/how-to/GUIDA-CONDIVISIONE-IP.md) §7.
 > Il file c'è perché quel cancello si possa **passare**, invece che solo citare.
 
 ### 2. I marchi altrui non si licenziano perché si nominano
@@ -87,10 +89,27 @@ cui possiamo tenerli:
 **MIT su `scripts/` non si applica a `scripts/typst/packages/`**: quella cartella
 è codice di terzi, e le sue licenze sono quelle della tabella.
 
-Dipendenze **non** vendorizzate, cioè eseguibili che ognuno installa da sé e che
-non stanno nel repo: `typst` (Apache-2.0, [ADR-0020](plans/adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md))
-e `pdfcpu` (Apache-2.0, [ADR-0027](plans/adr/ADR-0027-imposizione-con-pdfcpu.md)).
-L'elenco vivo sta in [`scripts/binari.py`](scripts/binari.py).
+Dipendenze **non** vendorizzate, che si installano da PyPI con
+`pip install -r requirements.txt` e non stanno nel repo:
+- `typst` (typst-py, Apache-2.0), il compilatore dell'edizione da stampa
+  ([ADR-0020](plans/adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md),
+  [ADR-0116](plans/adr/ADR-0116-typst-si-installa-da-pypi.md));
+- `pdfimpose` (AGPL-3.0-or-later) per l'imposizione del libretto, con le sue
+  dipendenze `pymupdf` (AGPL-3.0), `papersize` (GPL-3.0+), `argdispatch`
+  (GPL-3.0+) e `pyxdg` (LGPL-2.0) ([ADR-0027](plans/adr/ADR-0027-imposizione-con-pdfcpu.md),
+  [ADR-0116](plans/adr/ADR-0116-typst-si-installa-da-pypi.md)). Sono strumenti
+  che girano sulla macchina di chi stampa: non si distribuiscono col repo e non
+  finiscono dentro i PDF, quindi le loro licenze non toccano né il codice MIT né
+  i volumi. Il bundle offline del rilascio le ridistribuisce come wheel
+  invariate, con le loro licenze dentro;
+- `markdown-it-py` 4.2.0 o successiva (MIT) con la sua dipendenza `mdurl` (MIT),
+  il parser CommonMark che dice a `validate_lingua.py` quali righe sono codice
+  ([ADR-0120](plans/adr/ADR-0120-la-d-eufonica-si-misura-con-una-regex-tarata-su-languagetool.md),
+  emendamento del 2026-11-11). Entra nel bundle offline come le altre wheel di
+  `requirements.txt`.
+
+Fino al 2026-11-08 typst e `pdfcpu` (Apache-2.0) erano eseguibili scaricati da
+GitHub Releases. L'elenco vivo sta in [`scripts/binari.py`](scripts/binari.py).
 
 ## Se vuoi usare qualcosa
 

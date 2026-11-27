@@ -1,0 +1,26 @@
+{
+ "conto": {
+  "schede col grado": 126,
+  "giudicate in regola": 49,
+  "dubbie": 74,
+  "già fuori regola": 3
+ },
+ "mutazioni": {
+  "più uno": {
+   "trovate": 46,
+   "scritte": 49
+  },
+  "meno uno": {
+   "trovate": 46,
+   "scritte": 49
+  }
+ },
+ "perse": [
+  "Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md: meno uno (9 → 8) resta legale",
+  "Bestiario/mostri/ogre-frantumapietra-barbaro6-cr9.md: meno uno (9 → 8) resta legale",
+  "Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md: più uno (18 → 19) resta legale",
+  "Bestiario/villain/Il_Collezionista_Rakshasa/Il_Collezionista_Rakshasa.md: meno uno (18 → 17) resta legale",
+  "Bestiario/villain/Mira_Serani/mira-serani-aranea-cr8.md: più uno (8 → 9) resta legale",
+  "Bestiario/villain/koth-signore-dei-dragoni-cr8.md: più uno (8 → 9) resta legale"
+ ]
+}

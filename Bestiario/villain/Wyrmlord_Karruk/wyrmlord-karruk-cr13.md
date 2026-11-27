@@ -1,8 +1,11 @@
-# Wyrmlord Karruk [ACCEPTED — DM-canon 2026-05-05]
+# Wyrmlord Karruk [CANONE — DM 2026-05-05]
 **Faction**: red-hand | **Role**: melee-commander | **Environment**: battlefield | **CR**: 13 | **Source**: AP RHoD Karruk (Hill Giant barbarian) base + campaign upscale | **Status**: inferred
 
 ```statblocco
 gs: 13
+taglia: Grande
+spazio: 3 m
+portata: 3 m
 ca: 23
 ca-dettaglio: (-1 size, +8 natural, +6 +1 breastplate)
 pf: 181
@@ -29,13 +32,20 @@ attacchi:
 **Full**: +2 greatclub +23/+18/+13 (2d8+12), o 2 schianti +20 (1d4+7) e squartare
 **Ranged**: roccia +13 (2d6+7), 36 m
 
+**Tattiche**
+- *Prima del combattimento*: sfida il campione dei difensori in pubblico, sui gradini della breccia (Carta 13 del mazzo degli eventi della battaglia finale). Non entra in ira prima del duello: la tiene per quando il campione lo ferisce, perché l'ira intimidatoria colpisce meglio a vista.
+- *Durante il combattimento*: round 1, attacco completo col randello e Attacco Poderoso a −5 se il campione ha CA sotto 25; contro un'arma magica comune tenta Spezzare Migliorato, ma non contro Aegis Fang: è un artefatto, e un artefatto non si spezza coi mezzi normali (scelta del DM del 15/11). Round 2, quando è ferito, entra in ira (217 pf, randello +25/+20/+15, 2d8+15) e chiunque lo veda deve resistere all'ira intimidatoria. Round 3 e seguenti, Incalzare e Incalzare Potenziato sui soldati che il campione si porta dietro. Contro chi vola o resta a distanza scaglia rocce (+13, 2d6+7). Combatte d'onore finché è in vantaggio; se perde, **bara**: sotto metà dei pf fischia al razorfiend Alfa che lo segue, e la scorta entra nel duello.
+- *Misura* (Monte Carlo, `plans/esperimenti/tattiche-2026-11-15/duelli_arc09.py`, 20.000 prove, senza la scorta e senza il razorfiend; campioni coi numeri della carta del 05/11): questa tattica è già la migliore delle tre provate. Contro Thorik il campione muore nel 79% dei duelli e Karruk ripiega nel 5%; con l'Attacco Poderoso sempre a −5 il campione muore nel 57% (contro la CA 27 di Thorik conviene non usarlo, come dice la scheda); entrare in ira al primo turno non cambia niente (79%). Contro Tordek muore nel 77% in tutte e tre. ⚠ Il duello sui gradini, così, è quasi sempre mortale per il campione: lo deve sapere il DM prima di giocare la Carta 13.
+- *Morale*: sotto 60 pf, o quando l'ira finisce e lui è affaticato, ripiega verso le sue linee in sella al razorfiend (12 m, scavare): il duello resta «inconcluso» e il settore non cambia di grado. Se è circondato e non può fuggire, combatte fino alla morte; non si arrende a un nano.
+
 **Statistiche** **Abilities**: Str 24, Dex 10, Con 20, Int 10, Wis 12, Cha 10 · **BAB/Grapple**: +14/+25
 **Feats**: Power Attack, Cleave, Great Cleave, Improved Sunder, Weapon Focus (greatclub), Intimidating Rage `[Private source — Complete Warrior]`, Leadership — sette, quanti ne danno 18 DV
 
 **Capacità speciali**
 **Special**: Rage 2/day (+4 Str/Con, +2 Will, -2 AC, 10 rounds; fatigued afterwards), rock throwing (36 m, 2d6+7), afferrare rocce, schivare prodigioso migliorato, percepire trappole +1, Red Hand command aura (+1 morale to hobgoblin 30 ft; non SRD, canone del DM 2026-10-18).
 - **Squartare (Str)**: se colpisce con tutti e due gli schianti, 2d6+10. Un gigante delle colline non ha artigli: la scheda lo dava «con gli artigli»; si tiene sugli schianti come capacità speciale aggiunta (SRD, *Improving Monsters*: attacco speciale minore, +1 GS). PF1e: *rend* è una regola universale dei mostri che vuole due attacchi naturali, e gli schianti lo sono — si avvicina, non stravolge.
-- **Ira intimidatoria** `[Private source — Complete Warrior]`: entrando in ira, un nemico che lo vede è scosso finché l'ira dura (Volontà nega). PF1e: il potere d'ira *intimidating glare* fa la stessa cosa con Intimidire — si avvicina.
+- **Ira intimidatoria** `[Private source — Complete Warrior, p. 102]`: in ira, una volta per scontro, sceglie un nemico entro 9 m e prova a demoralizzarlo con Intimidire come azione gratuita; se riesce, il nemico resta scosso finché dura l'ira (verificato su dnd.arkalseif.info il 2026-11-19). PF1e: il potere d'ira *intimidating glare* fa la stessa cosa con Intimidire — si avvicina.
+<!-- storico: fino al 2026-11-19 «entrando in ira, un nemico che lo vede è scosso finché l'ira dura (Volontà nega)»: il talento usa una prova di Intimidire, non un tiro salvezza -->
 > ⚠ Prerequisito: sette talenti chiedono 18 DV; la scheda ne contava 17. Il gigante passa da 12 a 13 DV razziali (dentro l'avanzamento SRD del gigante delle colline, 13-18 DV Grande; +1 DV non cambia il GS) e tiene così anche Comandare.
 
 **I tre stati dell'ira** (D9, decisione del DM 2026-09-23). Lo statblocco sopra è Karruk **fuori ira**; la scheda precedente mescolava i tre stati.
@@ -47,12 +57,6 @@ attacchi:
 | **Affaticato**, finita l'ira | 22 · 8 · 20 | 181 | 22 | +17 · +4 · +6 | +24 | +22/+17/+12 (2d8+11) | 2d6+6 | 2d6+9 | −1 |
 
 Affaticato: niente corsa né carica fino alla fine dell'incontro (SRD, barbaro). In ira i pf salgono di +36 (Cos +2 × 18 DV) e li perde quando l'ira finisce.
-
-**Tattiche**
-- *Prima del combattimento*: sfida il campione dei difensori in pubblico, sui gradini della breccia (Carta 13 del mazzo degli eventi della battaglia finale). Non entra in ira prima del duello: la tiene per quando il campione lo ferisce, perché l'ira intimidatoria colpisce meglio a vista.
-- *Durante il combattimento*: round 1, attacco completo col randello e Attacco Poderoso a −5 se il campione ha CA sotto 25; contro un PG che brandisce Aegis Fang o un'arma magica tenta Spezzare Migliorato. Round 2, quando è ferito, entra in ira (217 pf, randello +25/+20/+15, 2d8+15) e chiunque lo veda deve resistere all'ira intimidatoria. Round 3 e seguenti, Incalzare e Incalzare Potenziato sui soldati che il campione si porta dietro. Contro chi vola o resta a distanza scaglia rocce (+13, 2d6+7). Combatte d'onore finché è in vantaggio; se perde, **bara**: sotto metà dei pf fischia al razorfiend Alfa che lo segue, e la scorta entra nel duello.
-- *Morale*: sotto 60 pf, o quando l'ira finisce e lui è affaticato, ripiega verso le sue linee in sella al razorfiend (12 m, scavare): il duello resta «inconcluso» e il settore non cambia di grado. Se è circondato e non può fuggire, combatte fino alla morte; non si arrende a un nano.
-
 
 Benchmark: PF T1-1 riga 13: CA 23 sotto (28) / pf 181 in linea (180; 217 in ira) / attacco +23 sopra (+22) / danno pieno ~58 sotto (60) / TS buono +17 sopra (16). Per l'SRD gigante delle colline (GS 7) + 5 livelli di barbaro associati + squartare = GS 13; la Carta 13 mette lo scontro a EL 12-14.
 

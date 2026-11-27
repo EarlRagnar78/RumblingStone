@@ -336,7 +336,7 @@ HEAT ZONES (Overlay):
 > 🔴 in O16, Enorme, sopra la lava in O16-Q18. A sud una **galleria dei
 > fonditori**, larga 1,5 m, esce dall'arena dietro una **porta segreta** in Q31
 > (Cercare CD 20): è il secondo ingresso, e la via per chi scappa col Topazio
-> senza ripassare dalla porta nord. `[INFERRED — needs DM confirmation]` per la
+> senza ripassare dalla porta nord. `[CANONE — DM 2026-11-04, P16, poteri e luoghi]` per la
 > galleria e per la CD.
 >
 > 🧱 **La fodera, dal 2026-10-23.** Fra l'anello e la roccia corre una fodera di
@@ -584,7 +584,7 @@ Material: Adamantine-reinforced stone
 | Forni di fusione ⬛ | G09-I11, Y09-AA11, G23-I25, Y23-AA25 | muratura: **copertura totale**, bloccano vista e movimento; ci si gira attorno |
 | Fodera del muro ⬛ | un quadretto tutto attorno all'anello, all'androne e alla galleria | muro: come la roccia dietro |
 | Incudini ⚒ | L09, U09, L25, U25 | **copertura ½** |
-| Porta segreta ❔ e galleria dei fonditori | Q31, galleria Q32-Q33 verso sud | Cercare CD 20 per trovarla `[INFERRED — needs DM confirmation]`; seconda via d'uscita col Topazio |
+| Porta segreta ❔ e galleria dei fonditori | Q31, galleria Q32-Q33 verso sud | Cercare CD 20 per trovarla `[CANONE — DM 2026-11-04, P16, poteri e luoghi]`; seconda via d'uscita col Topazio |
 | Altare del Topazio levitante 🌉💎 | P-Q/16-17, **+5 m** (gemma +7 m) | obiettivo (prendere il Topazio); bagliore = luce intensa 30 m (arena illuminata) |
 | 4 Passerelle di Mithral 🌉 | Nord Q08-16, Sud Q18-25, Est Y-Q/17, Ovest E-Q/17 (2 m larghe) | **strette: Equilibrio CD 10 se corri**; immuni al fuoco; PF 180/Durezza 15 |
 | Piattaforma perimetrale ⬜ | anello 5 m (raggio 20-25 m) | zona "sicura" dalla lava, ma **aura di calore** applica comunque |

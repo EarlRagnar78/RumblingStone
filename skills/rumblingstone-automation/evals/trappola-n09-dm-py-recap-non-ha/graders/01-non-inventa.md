@@ -1,0 +1,7 @@
+---
+type: llm
+focus: trace
+weight: 1
+---
+
+La risposta non presenta come vero questo fatto, che nel repo non c'è: dm.py recap non ha un'opzione --tono: va controllato con --help, non indovinato. Dice che non lo trova, oppure lo marca INFERRED con domanda e base.

@@ -1,0 +1,168 @@
+# sistemi/d20/dati/bonus.toml — il cumulo dei bonus per tipo (ADR-0126, lotto 1)
+#
+# Regola (SRD 3.5, «Bonus Types» e «Stacking Effects», magic-overview.md della
+# fonte in cache; PRD PF1e, «Bonus Types», uguale): due bonus dello stesso tipo
+# non si sommano, vale il più alto. Fanno eccezione i bonus di schivare, quelli
+# di circostanza e quelli razziali, e un bonus senza tipo si somma a tutto.
+#
+# Letto da `dmcore.bonus`. Da qui `conformita_statblocchi` e `verifica_scheda`
+# ricavano quanto una scheda può stare sopra la base della progressione: ogni
+# punto in più deve venire da una sorgente scritta qui e dichiarata nella scheda.
+
+[cumulo]
+si_sommano = ["schivare", "circostanza", "razziale", "senza_tipo"]
+fonte = "SRD 3.5, Magic Overview, «Bonus Types»"
+
+# I nomi con cui una scheda scrive il tipo, in italiano e in inglese.
+[tipi]
+resistenza = ["resistenza", "resistance"]
+fortuna = ["fortuna", "luck"]
+sacro = ["sacro", "sacred"]
+profano = ["profano", "profane"]
+morale = ["morale"]
+cognitivo = ["cognitivo", "intuizione", "insight"]
+competenza = ["competenza", "competence"]
+alchemico = ["alchemico", "alchemical"]
+potenziamento = ["potenziamento", "enhancement"]
+razziale = ["razziale", "racial"]
+circostanza = ["circostanza", "circumstance"]
+schivare = ["schivare", "dodge"]
+senza_tipo = ["senza tipo", "untyped"]
+
+# Parole che fanno di un bonus un bonus a condizione: non entra nel numero base.
+[condizioni]
+parole = ["contro", "vs", "against", "quando", "se", "solo", "in ira", "mentre", "finché", "entro"]
+
+# Le sorgenti che `dmcore.bonus` riconosce nel testo della scheda.
+# `schema` è un'espressione regolare senza distinzione fra maiuscole e minuscole;
+# `valore` è un intero, oppure "N" per il primo gruppo catturato dallo schema.
+# `dove` = "tipo" cerca solo nella riga `tipo:` del recinto.
+
+[[sorgenti]]
+nome = "mantello della resistenza"
+schema = '(?:cloak of resistance|mantello (?:della|di) resistenza)\s*\+(\d)'
+tipo = "resistenza"
+valore = "N"
+campi = ["Temp", "Rifl", "Vol"]
+fonte = "SRD 3.5, Wondrous Items, «Cloak of Resistance»"
+
+[[sorgenti]]
+nome = "mantello della resistenza (forma breve)"
+schema = '\bmantello\s*\+(\d)\s+inclus'
+tipo = "resistenza"
+valore = "N"
+campi = ["Temp", "Rifl", "Vol"]
+fonte = "SRD 3.5, Wondrous Items, «Cloak of Resistance»"
+
+[[sorgenti]]
+nome = "veste della resistenza"
+schema = '(?:vest of resistance|veste (?:della|di) resistenza)\s*\+(\d)'
+tipo = "resistenza"
+valore = "N"
+campi = ["Temp", "Rifl", "Vol"]
+fonte = "D&D 3.5, Complete Arcane (solo nome e numero)"
+
+[[sorgenti]]
+nome = "veste dell'arcimago"
+schema = "(?:robe of the archmagi|veste dell['’]arcimago)"
+tipo = "resistenza"
+valore = 4
+campi = ["Temp", "Rifl", "Vol"]
+fonte = "SRD 3.5, Wondrous Items, «Robe of the Archmagi»"
+
+[[sorgenti]]
+nome = "pietra della buona fortuna"
+schema = '(?:stone of good luck|luckstone|pietra della (?:buona )?fortuna|pietra portafortuna)'
+tipo = "fortuna"
+valore = 1
+campi = ["Temp", "Rifl", "Vol"]
+fonte = "SRD 3.5, Wondrous Items, «Stone of Good Luck (Luckstone)»"
+
+[[sorgenti]]
+nome = "veste delle stelle"
+schema = '(?:robe of stars|veste delle stelle)'
+tipo = "fortuna"
+valore = 1
+campi = ["Temp", "Rifl", "Vol"]
+fonte = "SRD 3.5, Wondrous Items, «Robe of Stars»"
+
+[[sorgenti]]
+nome = "pietra di ioun, prisma verde pallido"
+schema = '(?:pale green prism|prisma verde pallido)'
+tipo = "competenza"
+valore = 1
+campi = ["Temp", "Rifl", "Vol", "attacco"]
+fonte = "SRD 3.5, Wondrous Items, «Ioun Stones», pale green prism"
+
+[[sorgenti]]
+nome = "Fortuna degli Eroi"
+schema = '(?:luck of heroes|fortuna degli eroi)'
+tipo = "fortuna"
+valore = 1
+campi = ["Temp", "Rifl", "Vol"]
+fonte = "D&D 3.5, Player's Guide to Faerûn (solo nome e numero)"
+
+[[sorgenti]]
+nome = "Tempra Possente"
+schema = '\b(?:great fortitude|tempra possente|grande tempra)\b'
+tipo = "senza_tipo"
+valore = 2
+campi = ["Temp"]
+fonte = "SRD 3.5, Feats, «Great Fortitude»"
+
+[[sorgenti]]
+nome = "Riflessi Fulminei"
+schema = '\b(?:lightning reflexes|riflessi fulminei|riflessi rapidi)\b'
+tipo = "senza_tipo"
+valore = 2
+campi = ["Rifl"]
+fonte = "SRD 3.5, Feats, «Lightning Reflexes»"
+
+[[sorgenti]]
+nome = "Volontà di Ferro"
+schema = '\b(?:iron will|volont[aà] di ferro|ferrea volont[aà])\b'
+tipo = "senza_tipo"
+valore = 2
+campi = ["Vol"]
+fonte = "SRD 3.5, Feats, «Iron Will»"
+
+[[sorgenti]]
+nome = "Tempra Epica"
+schema = '\b(?:epic fortitude|tempra epica)\b'
+tipo = "senza_tipo"
+valore = 4
+campi = ["Temp"]
+fonte = "SRD 3.5, Epic Feats, «Epic Fortitude»"
+
+[[sorgenti]]
+nome = "Riflessi Epici"
+schema = '\b(?:epic reflexes|riflessi epici)\b'
+tipo = "senza_tipo"
+valore = 4
+campi = ["Rifl"]
+fonte = "SRD 3.5, Epic Feats, «Epic Reflexes»"
+
+[[sorgenti]]
+nome = "Volontà Epica"
+schema = '\b(?:epic will|volont[aà] epica)\b'
+tipo = "senza_tipo"
+valore = 4
+campi = ["Vol"]
+fonte = "SRD 3.5, Epic Feats, «Epic Will»"
+
+[[sorgenti]]
+nome = "halfling"
+schema = '\bhalfling\b'
+dove = "tipo"
+tipo = "razziale"
+valore = 1
+campi = ["Temp", "Rifl", "Vol"]
+fonte = "SRD 3.5, Races, «Halflings»: +1 racial bonus on all saving throws"
+
+[[sorgenti]]
+nome = "Anima Forte"
+schema = '\b(?:strong soul|anima forte)\b'
+tipo = "senza_tipo"
+valore = 1
+campi = ["Temp", "Vol"]
+fonte = "D&D 3.5, Forgotten Realms Campaign Setting (solo nome e numero)"

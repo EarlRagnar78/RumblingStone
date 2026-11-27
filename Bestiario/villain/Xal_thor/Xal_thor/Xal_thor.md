@@ -6,6 +6,9 @@
 
 ```statblocco
 gs: 14
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 24
 pf: 96
 ts: Temp +9, Rifl +10, Vol +16
@@ -50,7 +53,7 @@ Xal'thor non è venuto per il torneo. Vuole i **Bracieri Gemelli di Moradin** �
 
 **L'obiettivo militare:** Non *rubare* i Bracieri — convincere Tordek che il Piano della Terra è in pericolo e che deve aprire un portale. Questo porterebbe all'Hammerfist di -1000 DR dove i Githyanki hanno già posizionato forze.
 
-**L'ambiguità narrativa:** Xal'thor *potrebbe* avere ragione riguardo al pericolo nel Piano della Terra. O potrebbe mentire. Usa *Detect Thoughts* e *Suggestion* — se Tordek non supera un TS Volontà CD 20, crede che il pericolo sia reale per 1 ora.
+**L'ambiguità narrativa:** Xal'thor *potrebbe* avere ragione riguardo al pericolo nel Piano della Terra. O potrebbe mentire. Usa *Detect Thoughts* e *Suggestion* — se Tordek non supera un TS Volontà CD 16 (la *Suggestion* dei poteri innati; scelta del DM del 19/11), crede che il pericolo sia reale per 1 ora.
 
 ## Nella campagna
 
@@ -119,8 +122,8 @@ Xal'thor **non è l'unico Illithid presente al Torneo di Dauth**. Un secondo con
 #### Mind Blast (Su) — Potere Iconico
 - **Effetto:** Cono 18 m (60 ft) emanato dai tentacoli
 - **Danno:** Stordito per 3d4 round (TS Volontà CD 17 nega); in Fase 2 la CD sale a 19
-- **Usi:** Nessun limite (abilità innata) ma ricarica 1d4 round
-- **Tattica:** Apre il combattimento con Mind Blast su tutto il gruppo compatto, poi avanza sui bersagli storditi
+- **Usi:** a volontà, senza ricarica, come l'illithid dell'SRD `[CANONE — DM 2026-11-15, card]`
+- **Tattica:** Apre il combattimento con Mind Blast su tutto il gruppo compatto, poi avanza sui bersagli storditi. **Tordek no** `[CANONE — DM 2026-11-15, card]`: lo vuole vivo, perché apra il portale (§L'obiettivo reale). Su Tordek stordito non estrae il cervello: usa *Suggestion* (Vol CD 16) ogni round finché è stordito. Misurato in duello (`plans/esperimenti/tattiche-2026-11-15/duelli_arc09.py`, 20.000 prove): Tordek convinto nel 27% dei duelli, mai morto; se gli estraesse il cervello, morirebbe nel 24%.
 
 #### Poteri Psionici Innati (a volontà, come l'illithid del *Monster Manual*; trattati come incantesimi CL 14)
 - *Charm Monster* (Vol CD 17) — domina un avversario per usarlo come scudo
@@ -154,7 +157,7 @@ Attivata nella Fase 3 del Torneo (quando emerge dal nucleo psionico):
 
 #### Fase 2 — Proiezioni e Larve (Round 10–11)
 - Evoca 2 Proiezioni Psioniche (trattarle come Mirror Image avanzato — 3 immagini ciascuna)
-- Aumenta frequenza Mind Blast
+- Mind Blast ogni round in cui almeno due PG sono nel cono (a volontà, vedi sopra)
 - Usa *Suggestion* su Tordek: *"Apri il portale. Il tuo popolo ha bisogno di te."*
 
 #### Fase 3 — Nucleo (Round 12+)
@@ -202,6 +205,8 @@ Boost log: correzione dei conti 3.5 sulla build della scheda (illithid 8 DV + Ps
 - era: poteri razziali 3/giorno; punti potere 51
 - era: Forma del Nucleo a 110 pf
 - era: For 12, Cos 14; tentacoli 1d4+1
+- era: *Suggestion* su Tordek «TS Volontà CD 20» nella scena e nella tattica, contro la CD 16 dei poteri innati (10 + 3 + Car 3); misura col 20: convinto nel 35% (fino al 2026-11-19, card del DM)
+- era: Mind Blast «nessun limite ma ricarica 1d4 round»: l'illithid dell'SRD lo usa a volontà, senza ricarica (ADR-0118, scelta del DM del 15/11)
 - non ripristinati dalla scheda d'arco del Torneo: Sag 18 (qui 17, lo slot del collo è dell'amuleto della salute) e CA di contatto 18 (la scomposizione della CA di questa scheda dà 16)
 - la scheda d'arco del Torneo (Parte 2, §6) dava 90 pf come 12d8+24, tentacoli +12 (1d6+2), TS +8/+9/+13, Int 20, Sag 18: allineata a questa scheda
 <!-- /storico -->

@@ -1,0 +1,52 @@
+PROVENIENZA DELLE IMMAGINI — ARC-09, carta del cielo di Zalkatar (handout 7)
+==========================================================================
+Formato di riga (ADR-0019 §2):
+  <file> · <strumento> · <licenza/contratto> · seed <n> · <data> · <chi>
+
+carta-del-cielo-zalkatar.png         · Stellarium 26.2 (GPL-2.0+, AppImage ufficiale), plugin ArchaeoLines, script carta-del-cielo-zalkatar.ssc, cultura del cielo cultura-del-cielo/rumblingstone (index.json) · catalogo stellare Hipparcos di Stellarium; immagine e figure del repo · seed — (deterministico: quattro lanci di fila dello stesso script danno la stessa immagine pixel per pixel; il primo lancio dopo aver copiato la cultura del cielo può differire di un livello di grigio in circa 1800 pixel sparsi, quasi tutti fuori dall'orizzonte, e la variante da stampa esce comunque identica) · 2026-11-14 · Claude per Jfs
+carta-del-cielo-zalkatar-stampa.png  · derivata dalla precedente con Pillow (comando sotto) · come sopra · seed — · 2026-11-14 · Claude per Jfs
+
+Prima versione (#422, 2026-11-14): Stellarium 23.4 da apt, cultura nel formato
+vecchio (.fab). La 26.2 non legge più quel formato; la 23.4 non ha il segno fisso
+(MarkerMgr non disegnava) e segnava la stella con la selezione, che è animata:
+due lanci differivano in 619 pixel. Il parallelo del Sigillo è stato aggiunto
+su scelta del DM (card del 2026-11-14).
+
+Terza versione (2026-11-18): la carta mostrava la mezzanotte del 30 Mirtul
+(2000-06-01 00:04 UT, stella-chiave HIP 81833, latitudine 38,922). Il DM ha
+deciso sulla card del 2026-11-18 che la Torre cammina il 30 Flamerule, come
+vuole l'ancora del calendario del 2026-07-12 (Giorno di Marcia 1 = 1 Flamerule).
+Ora: 2000-07-31 00:05:45 UT, stella-chiave HIP 102098, latitudine 45,281. Il
+Sigillo è ridisegnato intorno alla nuova stella, le Ali sono spostate a
+nord-est, il Ragno a quell'ora è tramontato e sulla carta non c'è.
+
+Come si rifà (container Ubuntu 24.04, nessuno schermo):
+  scaricare Stellarium-26.2-qt6-x86_64.AppImage dalle release di
+    github.com/Stellarium/stellarium (592 MB; NON è una dipendenza del repo) ed
+    estrarla con --appimage-extract se FUSE manca
+  se c'è uno Stellarium installato da apt, spostare /usr/share/stellarium:
+    l'AppImage altrimenti legge quei dati
+  cp -r cultura-del-cielo/rumblingstone ~/.stellarium/skycultures/
+  in ~/.stellarium/config.ini: [video] fullscreen=false, screen_w=1400, screen_h=1400;
+    [scripts] flag_allow_screenshots_dir=true; [init_location] location fissa
+    (per esempio Paris, Western Europe), non «auto»; automatic_updates_enabled=false;
+    flag_search_online=false (senza questi tre Stellarium resta appeso alla
+    chiusura); [plugins_load_at_startup] ArchaeoLines=true, gli altri come vengono
+  LIBGL_ALWAYS_SOFTWARE=1 xvfb-run -a -s "-screen 0 1500x1500x24 +extension GLX" \
+    ./squashfs-root/AppRun --startup-script carta-del-cielo-zalkatar.ssc
+  Variante da stampa (inchiostro su carta, fuori dall'orizzonte vuoto):
+    python3 -c 'import sys;from PIL import Image,ImageOps,ImageDraw as D;i=Image.open(sys.argv[1]).convert("RGB");w,h=i.size;g=ImageOps.invert(ImageOps.grayscale(i)).point(lambda v:255 if v>248 else int(v*.55));k,c=(52,30,16),(236,222,190);s=ImageOps.colorize(g,black=k,white=c);m=Image.new("L",(w,h));D.Draw(m).ellipse((12,12,w-12,h-12),fill=255);o=Image.new("RGB",(w,h),c);o.paste(s,(0,0),m);D.Draw(o).ellipse((12,12,w-12,h-12),outline=k,width=3);o.save(sys.argv[2],optimize=True)' \
+      carta-del-cielo-zalkatar.png carta-del-cielo-zalkatar-stampa.png
+
+Confini IP (ADR-0005): il cielo è quello vero della Terra, le posizioni delle stelle
+sono dati. Le dieci figure e i loro nomi sono del repo (La Torre, la Corona
+d'Adamantio, il Sigillo, l'Anello, il Carro di Pietra, il Ragno, le Ali,
+l'Incudine, il Fiume di Mercurio, il Chiodo): nessun nome di costellazione di
+Faerûn. I tracciati di sei figure seguono le linee che ogni atlante disegna
+fra quelle stelle (Corona, Carro, Fiume, Chiodo, Ragno, Ali): sono la forma
+evidente delle stelle, non un'opera di altri.
+
+Cosa questa carta NON fissa: dove sta la Torre oggi. L'immagine dipende solo
+dal luogo del passo (latitudine = declinazione della stella-chiave) e dalla
+notte; la distanza e la direzione dal punto di partenza sono nella nota DM
+dell'handout 7 (un grado a sud, deciso dal DM il 2026-11-14).

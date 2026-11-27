@@ -44,11 +44,11 @@
 
 | d% | Incontro | EL | Tipo |
 |---|---|---|---|
-| 01-15 | 🕊 **Pattuglia di ranger Tiri Kitor** — diffidenti; se il funerale di Lanikar è noto, amichevoli (intel su Rhest/druidi corrotti). | — | Non-combat |
+| 01-15 | 🕊 **Pattuglia di ranger Tiri Kitor** — diffidenti; se il funerale di Lanikar è noto, amichevoli (intel su Lhesper/druidi corrotti). | — | Non-combat |
 | 16-28 | 🕊 **Druido eremita** che cura un bosco malato — chiede aiuto (Sapienza Naturale), dà componenti. | — | Non-combat |
 | 29-40 | 🕊 **Profughi di un casale bruciato** diretti a Dauth (eco `HOOKS-Ghostlord-Refugees`). | — | Non-combat |
 | 41-55 | **Lupi/orsi mannari-corrotti** o animali spaventati dall'orda. `.../centaur-ranger4-corrupted-cr5.md` ×2. | 9 | Combat |
-| 56-70 | **Squadra di piromanti drow** in ricognizione (bruciano nodi druidici). `.../drow-wizard7-cr8.md` + `.../drow-warrior-cr1.md` ×4. | 10 | Combat |
+| 56-70 | **Squadra di piromanti drow** in ricognizione (bruciano nodi druidici). `.../drow-wizard7-cr8.md` + `.../drow-warrior-cr1.md` ×4. Il mago porta la carta del cielo (handout 7). La squadra è anche una **scena fissa** fra il Day 22 e il 26 sulla strada che il gruppo fa davvero; se esce di nuovo al tiro, è un'altra squadra senza carta [DM 2026-11-14]. | 10 | Combat |
 | 71-84 | **Treant infuriato** (scambia i PG per taglialegna) — evitabile con Diplomazia/Natura (→ diventa 🕊). | 8/— | Misto |
 | 85-95 | **Avanguardia gnoll** sbandata. `.../gnoll-ranger4-cr5.md` ×2 + `.../gnoll-warrior2-cr2.md` ×4. | 10 | Combat |
 | 96-00 | → **MB-2** Rovine del Patto (drow + funghi). | 11-12 | Combat (lungo) |
@@ -59,7 +59,7 @@
 |---|---|---|---|
 | 01-14 | 🕊 **Ultimi druidi in ritirata** verso Starsong — intel disperata, un favore druidico. | — | Non-combat |
 | 15-26 | 🕊 **Gufo gigante ferito dei Tiri Kitor** — curarlo = eco alleanza (+goodwill Starsong). | — | Non-combat |
-| 27-40 | **Cerchio drow corrotto** che pianta spore (eco `SUBQUEST-Hella`). `.../drow-priestess9-cr11.md`. | 12 | Combat |
+| 27-40 | **Cerchio drow corrotto** che pianta spore (eco `SUBQUEST-Hella`). `.../drow-priestess9-cr10.md`. | 12 | Combat |
 | 41-55 | **Branco fungino-mutato**. `.../centaur-ranger4-corrupted-cr5.md` ×3 + spore (→ MB-4). | 12 | Combat |
 | 56-70 | **Cavalcatori di iene gnoll** in caccia di profughi (salvarli = 🕊 eco). `.../gnoll-hyenodon-rider-cr4.md` ×4. | 12 | Misto |
 | 71-84 | **Razorfiend** in perlustrazione bassa sul bosco. `.../razorfiend-green-cr9.md`. | 11 | Combat |
@@ -90,7 +90,7 @@
 | d% | Incontro | EL | Tipo |
 |---|---|---|---|
 | 01-14 | 🕊 **Ultima carovana di Sal in fuga** — se l'olio di sabotaggio è stato pagato, eco a Rethmar (Fase 1). | — | Non-combat |
-| 15-27 | 🕊 **Esploratore ferito di Rethmar/Brenna** con dispacci sull'orda (intel −1 CR a una fase, come Rhest). | — | Non-combat |
+| 15-27 | 🕊 **Esploratore ferito di Rethmar/Brenna** con dispacci sull'orda (intel −1 CR a una fase, come Lhesper). | — | Non-combat |
 | 28-42 | **Colonna di fanteria della Mano Rossa** (retroguardia). `.../thayan-heavy-infantry-cr3.md` ×6 + `.../hobgoblin-captain-cr8.md`; oppure, in testa alla colonna, `.../furia-della-mano-cr10.md` ×3 dietro 6 fanti. | 13 | Combat |
 | 43-57 | **Cavaliere Thayan + Mago Rosso** (mercenari alleati dell'orda). `.../thayan-knight-cr8.md` + `.../thayan-red-wizard7-cr9.md`. | 12 | Combat |
 | 58-72 | **Élite Warpriest di Tiamat** (sacrifici lungo la marcia). `.../tiamat-warpriest-elite-cr11.md`. | 12 | Combat |
@@ -102,7 +102,7 @@
 
 ## 3. VALE CENTRALE / STRADE DI DAUTH
 
-*Insediamenti, mercanti, strade verso Dauth, Torre Invisibile, Brindol.*
+*Insediamenti, mercanti, strade verso Dauth, Torre Invisibile, Rethmar.*
 
 ### 3.1 Day 20-30 (EL medio 9-11)
 
@@ -142,7 +142,7 @@
 |---|---|---|---|
 | 01-15 | 🕊 **Profughi allo stremo** al margine della brughiera (eco `HOOKS-Ghostlord-Refugees`). | — | Non-combat |
 | 16-28 | 🕊 **Leone spettrale solitario** che *osserva* — messaggero del Ghostlord, non ostile se non provocato. `.../ghost-lion-spettrale-cr8.md`. | —/8 | Misto |
-| 29-45 | **Sciame di non-morti minori** dalla fabbrica. `.../skeletal-dire-lion-cr6.md` + scheletri/zombie SRD. | 10 | Combat |
+| 29-45 | **Sciame di non-morti minori** dalla fabbrica. `.../skeletal-dire-lion-cr7.md` + scheletri/zombie SRD. | 10 | Combat |
 | 46-62 | **Deathlock** (guardiano non-morto). `.../deathlock-cr8.md`. | 10 | Combat |
 | 63-78 | **Bone Naga** che pattuglia un sentiero. `.../bone-naga-cr10.md`. | 11 | Combat |
 | 79-92 | **Campo hobgoblin abbandonato** (assorbito dai non-morti) — loot + indizi (→ 🕊 se esplorato con cautela). | 10 | Misto |
@@ -153,7 +153,7 @@
 | d% | Incontro | EL | Tipo |
 |---|---|---|---|
 | 01-14 | 🕊 **Emissari del Ghostlord** (leoni spettrali) con un messaggio/offerta (eco ramo alleanza). | — | Non-combat |
-| 15-30 | **Orda di non-morti traboccante** (la fabbrica è al massimo). `.../skeletal-dire-lion-cr6.md` ×2 + `.../deathlock-cr8.md`. | 12 | Combat |
+| 15-30 | **Orda di non-morti traboccante** (la fabbrica è al massimo). `.../skeletal-dire-lion-cr7.md` ×2 + `.../deathlock-cr8.md`. | 12 | Combat |
 | 31-47 | **Bone Naga** + scheletri élite. `.../bone-naga-cr10.md` + non-morti SRD. | 12 | Combat |
 | 48-64 | **Aberrazione fungina alfa** (eco MB-2/4, spore aggressive). | 12 | Combat |
 | 65-80 | **Distaccamento della Mano Rossa** che raccoglie non-morti come truppa. `.../emissario-red-hand-cr12.md` + non-morti, oppure `.../spezzamente-kulkor-zhul-cr12.md` + non-morti. | 13 | Combat |
@@ -172,7 +172,7 @@
 - **Scalata Day 31-42**: la seconda colonna di ogni zona è deliberatamente più dura e
   con **meno civili vivi** — è il termometro dell'orda che avanza (March Clock, D6).
 - **Intel di viaggio**: gli incontri 🕊 con esploratori/dispacci possono concedere il
-  bonus "intel → −1 CR a una fase" già canonico a Rhest (`...P2-RHEST-CONSEGUENZE-ESITI.md`).
+  bonus "intel → −1 CR a una fase" già canonico a Lhesper (`...P2-LHESPER-CONSEGUENZE-ESITI.md`).
 
 ### 5.1 Le creature della Mano Rossa nella fase avanzata
 

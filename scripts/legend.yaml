@@ -63,7 +63,7 @@
 #    supportare 3.5, PF1e e 5e senza tre legende.
 #
 # ⚠️ LIMITE DICHIARATO, e non e' una svista. La specifica normativa
-#    (docs/guides/LEGENDA-FUNZIONALE-SPEC.md §4) descrive un `function` molto
+#    (docs/reference/LEGENDA-FUNZIONALE-SPEC.md §4) descrive un `function` molto
 #    piu' ricco — cover, obscurement, move_cost, elevation_m, climb, nameable.
 #    Quei valori NON sono qui perche' quella spec e' ancora «proposta, gate DM»
 #    (sua riga 32): non sono canone, sono una proposta di luglio mai approvata.

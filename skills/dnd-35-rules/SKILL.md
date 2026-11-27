@@ -1,22 +1,31 @@
 ---
 name: dnd-35-rules
 description: >
-  Meta-router skill kept for backwards compatibility (docs and older agent
-  configs still point here). Real content was split into focused skills:
-  dnd-35-srd (mechanics), forgotten-realms-lore (1372 DR setting),
-  rumblingstone-campaign (this campaign), pathfinder-1e-srd (PF1e rules +
-  conversion), npc-villain-boosting (boost/advance NPCs, villains, monsters),
-  rumblingstone-narrative-style (style engine for generated content),
-  rumblingstone-mapmaking (battle-map pipeline), rumblingstone-automation
-  (dm.py CLI + session-state pipeline), rumblingstone-plans (plan-archive
-  discipline). Trigger words identical to those skills combined.
+  Meta-router legacy (D&D 3.5 Rules), tenuto per compatibilità: documenti e
+  vecchie configurazioni degli agenti puntano ancora qui. Non ha contenuto
+  proprio: instrada verso le skill focalizzate in cui è stato diviso —
+  dnd-35-srd (meccanica), forgotten-realms-lore (ambientazione, 1372 DR),
+  rumblingstone-campaign (questa campagna), pathfinder-1e-srd (regole PF1e e
+  conversione), npc-villain-boosting (potenziare e avanzare PNG, villain,
+  mostri), rumblingstone-narrative-style (motore di stile per i contenuti
+  generati), rumblingstone-mapmaking (pipeline delle mappe di battaglia),
+  rumblingstone-automation (CLI dm.py e pipeline dello stato di sessione),
+  rumblingstone-plans (disciplina dell'archivio dei piani). Si usa con le
+  stesse parole d'innesco di quelle skill messe insieme (ADR-0008).
 ---
 
-# D&D 3.5 Rules — Meta Router (legacy)
+# D&D 3.5 Rules — meta-router (legacy)
 
-This skill is a routing entrypoint only — it has no reference content of its
-own. The actual material was split into focused skills so agents load only
-what's relevant:
+## Quando no
+
+Mai in un documento nuovo: lì si citano le skill focalizzate. Lo shim si
+toglie quando niente nel repo (né una config agent supportata) punta più a
+`dnd-35-rules` (ADR-0008).
+
+## Fonti
+
+Nessun reference proprio: il materiale sta nelle skill focalizzate, così si
+carica solo quello che serve.
 
 | If the question is about... | Load skill |
 |---|---|
@@ -30,25 +39,32 @@ what's relevant:
 | Session lifecycle & scripts — `dm.py`, "fine sessione", recap, brief, `state.md`, Homebrewery | `rumblingstone-automation` |
 | Work plans, lotti, INDEX/CHANGELOG, ADRs ("piano", "traccia le modifiche") | `rumblingstone-plans` |
 
-A typical campaign-prep question loads, in this order:
+## Procedura
 
-1. `rumblingstone-campaign/SKILL.md` (and its `references/campaign-coherence.md`
-   plus `campaign/state.md`) — establishes what is currently true.
-2. `forgotten-realms-lore/SKILL.md`: establishes the setting frame.
-3. `dnd-35-srd/SKILL.md`: establishes the rules frame.
+1. Carica la skill della riga giusta.
+2. Preparazione della campagna, in quest'ordine:
+   1. `rumblingstone-campaign/SKILL.md` (più `references/campaign-coherence.md`
+      e `campaign/state.md`): ciò che oggi è vero;
+   2. `forgotten-realms-lore/SKILL.md`: la cornice dell'ambientazione;
+   3. `dnd-35-srd/SKILL.md`: la cornice delle regole.
+3. Ogni *generazione* carica anche `rumblingstone-narrative-style` (motore
+   di stile obbligatorio, regola 11 di AGENTS.md).
+4. Più alberi toccati: caricali tutti, la divisione non costa nulla in più
+   (domanda stretta ~4–12K token invece di ~60K; ADR-0008).
 
-Any *generation* request additionally loads `rumblingstone-narrative-style`
-(mandatory style engine — AGENTS.md rule 11).
+## Formato d'uscita
 
-## Why split skills, not one
+Nessuno proprio: lo fissa la skill caricata.
 
-The previous monolithic skill loaded ~60K tokens of references for any query.
-Splitting lets agents load only the relevant tree (a narrow question costs
-~4–12K tokens instead of ~60K). If a question genuinely needs several trees,
-the split costs nothing extra.
+## Prima di consegnare
 
-## Deprecation status
+- Risposta dalla skill focalizzata, non da qui?
+- Generazione: caricata anche `rumblingstone-narrative-style`?
 
-New docs must reference the focused skills directly, never this router.
-This shim gets removed the day nothing in the repo (and no supported agent
-config) points at `dnd-35-rules` anymore.
+## Cancelli deterministici
+
+I controlli che non chiedono un giudizio, da far girare prima di consegnare.
+Quello che qui non c'è resta giudizio di chi legge (registro delle norme).
+
+- `python3 scripts/conformita_statblocchi.py --master`: pf, CA, lotta, CD di soffio/schiacciare/presenza e sensi degli statblocchi nei master; cricchetto in test_conformita_statblocchi.
+- `python3 scripts/riscontro_srd.py`: la regola citata contro l'SRD in cache (ADR-0103).

@@ -1,0 +1,25 @@
+# sistemi/dnd35/dati/abilita.toml — le abilità 3.5 in italiano (ADR-0111, L3)
+#
+# `nomi`: le abilità dell'SRD 3.5 come le scrivono i moduli; validate_prosa
+# controlla che siano maiuscole («Diplomazia +5», «prova di Osservare»).
+# Spostate qui da validate_prosa.py:ABILITA, identiche e nello stesso ordine.
+# `estranee`: i nomi di abilità di altri sistemi che in un modulo 3.5 non
+# esistono (domande_developer, D6-5E): Percezione, Furtività e Intuizione
+# sono PF1e, Atletica è 5e. Prima stavano in domande_developer.py:ABILITA_ESTRANEE.
+
+nomi = ["acrobazia", "addestrare animali", "artigianato", "artista della fuga",
+        "ascoltare", "camuffare", "cavalcare", "cercare", "concentrazione",
+        "decifrare scritture", "diplomazia", "disattivare congegni",
+        "equilibrio", "falsificare", "guarire", "intimidire",
+        "nascondersi", "nuotare", "osservare", "percepire intenzioni",
+        "professione", "raccogliere informazioni", "rapidità di mano",
+        "saltare", "sapienza magica", "scalare", "scassinare serrature",
+        "seguire tracce", "sopravvivenza", "utilizzare congegni magici",
+        "valutare",
+        # Audit del 2026-11-09: le sette abilità SRD 3.5 che mancavano, col nome
+        # del lessico (lessico_it_35.tsv); «utilizzare congegni magici» resta
+        # perché tre moduli la scrivono così, e «seguire tracce» è il talento
+        # Track (non un'abilità) ma si scrive maiuscolo lo stesso.
+        "raggirare", "conoscenze", "intrattenere", "muoversi silenziosamente",
+        "parlare linguaggi", "utilizzare corde", "utilizzare oggetti magici"]
+estranee = ["Atletica", "Intuizione", "Percezione", "Furtività"]

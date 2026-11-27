@@ -55,7 +55,7 @@ avvocato IP.
 
 La traduzione pratica di questa posture, caso per caso (mandare materiale ai
 giocatori, stampare, pubblicare gratis, vendere, illustrazioni), sta in
-[`docs/guides/GUIDA-CONDIVISIONE-IP.md`](../../docs/guides/GUIDA-CONDIVISIONE-IP.md).
+[`docs/how-to/GUIDA-CONDIVISIONE-IP.md`](../../docs/how-to/GUIDA-CONDIVISIONE-IP.md).
 
 ## Conseguenze
 

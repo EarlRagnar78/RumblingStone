@@ -44,6 +44,9 @@ CR_NEL_NOME = re.compile(r"-cr(\d{1,2})\.md$", re.I)
 # `-cr05.md` nel nome vuole dire GS 1/2: la convenzione del repo evita il punto
 # nei nomi di file, e confrontarlo alla lettera darebbe due falsi allarmi.
 FRAZIONI = {"05": "1/2", "025": "1/4"}
+#: Schede il cui grado di sfida è cambiato per decisione del DM col nome del file rimasto com'era
+#: (card del 2026-11-13: il goblin combattente di 1° è GS 1/3 come nell'SRD, «il nome del file resta»).
+GS_COL_NOME_VECCHIO = {"goblin-warrior1-cr05.md": "1/3"}
 
 
 def gs_numerico(v: str) -> float | None:
@@ -252,6 +255,7 @@ def controlla(f: Path) -> list[str]:
     problemi = []
     m = CR_NEL_NOME.search(f.name)
     atteso = FRAZIONI.get(m.group(1), m.group(1)) if m else None
+    atteso = GS_COL_NOME_VECCHIO.get(f.name, atteso)
     if atteso and sb.gs and gs_numerico(sb.gs) != gs_numerico(atteso):
         problemi.append(f"{rel}: il blocco dice GS {sb.gs} e il nome del file dice "
                         f"GS {atteso} — uno dei due è rimasto indietro")

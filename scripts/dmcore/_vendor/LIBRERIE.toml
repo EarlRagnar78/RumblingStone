@@ -1,0 +1,21 @@
+# scripts/dmcore/_vendor/LIBRERIE.toml — le librerie portate dentro il pacchetto
+#
+# Regola di ADR-0112 (D1 del 2026-11-08): una libreria oltre la libreria
+# standard entra se è lo standard di fatto della comunità per quel campo e la
+# misura dice che migliora davvero. Entra copiata qui, intera e non toccata,
+# con versione, sha256 e licenza, così gira dove non c'è `pip` (modello
+# iemod-fetch). `test_formule.py` ricontrolla lo sha256 di ogni file.
+#
+# Aggiornare = scaricare la wheel nuova, copiare il file, riscrivere qui
+# versione e sha256, rifare il banco delle formule.
+
+[simpleeval]
+versione = "1.0.8"
+licenza = "MIT"
+file_licenza = "LICENCE-simpleeval"
+fonte = "https://pypi.org/project/simpleeval/1.0.8/"
+repo = "https://github.com/danthedeckie/simpleeval"
+wheel = "simpleeval-1.0.8-py3-none-any.whl"
+wheel_sha256 = "c9c4ff42879ebf0c05f6562cb81031869948916be343bcc950b81fcc081fe9ce"
+file = { "simpleeval.py" = "e5f725e0dad1cd27b846263b024efd88cde59b14d5a1670dd491a2bc9d05dcd7" }
+perche = "I1 di PIANO-MOTORE-AGNOSTICO-D20: ristretto passa 7/7 formule su 598 casi e rifiuta 50/50 espressioni ostili; CEL non è impacchettabile e tronca la divisione"

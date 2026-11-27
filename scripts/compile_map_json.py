@@ -281,10 +281,23 @@ def validate(spec: dict) -> tuple[int, int]:
     else:
         cols, rows = size
 
+    locali = spec.get("simboli_locali") or {}
+    if not (isinstance(locali, dict)
+            and all(isinstance(k, str) and isinstance(v, str) and v.strip()
+                    for k, v in locali.items())):
+        errors.append("'simboli_locali': {emoji: descrizione}, descrizione non vuota.")
+        locali = {}
+    for k in locali:
+        if k in SYMBOLS:
+            errors.append(f"simboli_locali: '{k}' è già nella legenda universale, "
+                          f"non va ridichiarato.")
+
     def check_symbol(sym, where, want_fill=False, want_unit=False):
+        if isinstance(sym, str) and sym in locali and not want_unit and sym != base:
+            return  # simbolo locale, spiegato dalla legenda della mappa
         if not isinstance(sym, str) or sym not in SYMBOLS:
             errors.append(f"{where}: simbolo '{sym}' non nella legenda universale "
-                          f"(vedi SYMBOLS in render_map_svg.py).")
+                          f"né in 'simboli_locali' (vedi SYMBOLS in render_map_svg.py).")
             return
         mode = SYMBOLS[sym].get("mode")
         if want_fill and mode != "fill":
@@ -599,8 +612,9 @@ def _annotation_lines(spec: dict) -> list[str]:
     for obj in (spec.get("structures", []) or []) + (spec.get("hazards", []) or []):
         if "rect" in obj and obj.get("label"):
             x, y, w, h = obj["rect"]
+            codice = f" ; {obj['codice']}" if obj.get("codice") else ""   # chiave d'area (ADR-0122, S2)
             lines.append(f"@zone {_coord_label(x, y)}-{_coord_label(x + w - 1, y + h - 1)}"
-                         f" ; {obj['label']}")
+                         f" ; {obj['label']}{codice}")
     return lines
 
 
@@ -638,6 +652,12 @@ def emit_master(spec: dict, grid: list[list[str]]) -> str:
         cells = " ".join(grid[y])
         out.append(f"{y + 1:02d} {cells}")
 
+    # local symbols: the same «LEGENDA · 🧲 descrizione · …» line a hand-drawn
+    # master carries, so render_map_svg names them in the SVG legend
+    locali = spec.get("simboli_locali") or {}
+    if locali:
+        out.append("LEGENDA · " + " · ".join(f"{k} {v}" for k, v in locali.items()))
+
     # --- annotation directives (compass, routes, callouts, zones) -----------
     ann_lines = _annotation_lines(spec)
     if ann_lines:
@@ -656,7 +676,7 @@ def emit_master(spec: dict, grid: list[list[str]]) -> str:
         for h in hz:
             where = _placement_coords(h)
             label = h.get("label") or SYMBOLS.get(h["type"], {}).get("it", h["type"])
-            effect = h.get("effect", "[INFERRED — needs DM confirmation]")
+            effect = h.get("effect", "[INFERRED — Che effetto meccanico ha?; base: nessuna, manca nel JSON]")
             out.append(f"| {h['type']} {label} | {where} | {effect} |")
     else:
         out.append("| Luce | … | [luce/oscurità, scurovisione a X m] |")

@@ -1,0 +1,33 @@
+# sistemi/pf1e/dati/fonti.toml — capacità fonti.regole (ADR-0112, F1)
+#
+# PRD di Pathfinder 1e in SQLite (Paizo, OGL 1.0a); l'avviso è nel libro book-ogl.db.
+# Fissate il 2026-10-23 dai cloni della ricerca in rete: sha256 di ogni file
+# com'è servito da raw.githubusercontent.com a quel commit. Le legge
+# scripts/riscontro_srd.py; ogni cambio di commit o di sha256 si rivede nel diff.
+
+chiave = "pf1"
+nome = "PRD PF1e"
+repo = "devonjones/PSRD-Data"
+commit = "76ea4784604145ba3dea40eb56f83bb904759467"
+licenza = "Open Game License 1.0a. Pathfinder Roleplaying Game Reference Document © Paizo Publishing, LLC; avviso e sezione 15 nel libro book-ogl.db."
+file_licenza = "book-ogl.db"
+
+[file]
+"book-acg.db" = "b5028bda1a6ec73dd59274818a6f1b4476f9fa00455582c635326e07080ef4fc"
+"book-apg.db" = "4a0c20cbfeba5380c6d45843dc900fc37e6de889bd54fdea12714467e253616c"
+"book-arg.db" = "4e315e8544db87fe9a9f04fa25667d869e121976a4c8e9af7a10f2fda64aef97"
+"book-b1.db" = "a7ac330dd0dae5f0bf1098a8f94c4e44d3bb696e3f25b156cb16400dc3188fed"
+"book-b2.db" = "096a6e6a0d2061f7aca3a82b2ca9deab7f046ab3882fdf2c97e5676cbf2beb25"
+"book-b3.db" = "be2bdb22e5eb2a77ce3ea78eb135c15a0a70893cbed1e9debdb69addeb72e64c"
+"book-b4.db" = "fc138687c1eac32d78295321486ad6057764720bf74bb911dec4ddc4b6edaabd"
+"book-cr.db" = "28d0b07b1da94061220561b29c81cfcece25f79291537d0ff2f7b84d982440ab"
+"book-gmg.db" = "a870bc0d0e7d461fb05c6c9747b29ae407d86d1b72db5086507c00ed75d2b8d2"
+"book-ma.db" = "d8cad9b71251335f3f8d981f71700361255bda8fea31f01b0c77a7f67cc224bd"
+"book-mc.db" = "3d0b8454151c5f6886fe82f3327aba083df0abbe3f1feeca852d058dc515fed1"
+"book-npc.db" = "00907c6c65a9fbb19ac97014b167ea82ca5e00b63d847169490045abf791eb26"
+"book-ogl.db" = "1bf702e44699af26b398efffd75c89c5efd2ab18d3f91515c3af895370986a8a"
+"book-tech.db" = "e2882116576f2ce1cb91969b15508b98fb952a00b4fcda46a13633c42033172a"
+"book-uc.db" = "0ebffab6b0ca1d6448e432710c3c34f780d1d268cad815bbf34348e39550a5cb"
+"book-ucampaign.db" = "2a74f5b5566a1c01fda8b4d131c9561cf99ee78a9b1398653a08f3048fe11d81"
+"book-ue.db" = "f08936bfede97770cd50fd6d3cf14df7bcd25b910631b298e15991fe32fa9168"
+"book-um.db" = "019e2257e6265e568a6103bd9b733615d91d4353c3102cc0664740631fb970d8"

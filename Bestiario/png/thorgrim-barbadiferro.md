@@ -10,7 +10,7 @@
 
 ### Chi è, al tavolo
 
-🩸 **Cugino di Re Thorek I** *(decisione DM 2026-09-24)*: nipoti dello stesso
+🩸 **Cugino di Re Thorek I** [CANONE — DM 2026-09-24]: nipoti dello stesso
 re, quello che perse la Corona contro Skullcrusher. **Frostcleaver è del re**;
 Thorgrim porta **Aegis Fang**.
 

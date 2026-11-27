@@ -1,0 +1,91 @@
+{
+ "violazioni": [
+  {
+   "regola": "S2 giorno del waypoint",
+   "atteso": "Skull Gorge: Giorno 8-9",
+   "ha": "Giorno 5",
+   "file": "campaign/DM-CAMPAIGN-PLAYBOOK.md",
+   "riga": 332,
+   "testo": "- Day 5: PG non interferiscono a Skull Gorge ✓"
+  },
+  {
+   "regola": "S1 arrivo dell'orda",
+   "atteso": "Giorno 42",
+   "ha": "Giorno 40",
+   "file": "campaign/DM-CAMPAIGN-PLAYBOOK.md",
+   "riga": 334,
+   "testo": "- Day 40: Orda arriva a Rethmar"
+  }
+ ],
+ "file_letti": 41,
+ "non_verificabili": {
+  "conoscenze senza tempo (chi sa cosa)": 0
+ },
+ "ancore": {
+  "giorno_arrivo": 42,
+  "waypoint": {
+   "Vraath": [
+    6,
+    6
+   ],
+   "Skull Gorge": [
+    8,
+    9
+   ],
+   "Drellin": [
+    12,
+    13
+   ],
+   "Terrelton": [
+    19,
+    19
+   ],
+   "Marth Fen / Blackfens": [
+    25,
+    25
+   ],
+   "Elsir": [
+    33,
+    35
+   ]
+  },
+  "quest": {
+   "P2A Torre": [
+    28,
+    35
+   ],
+   "P2 Rhest": [
+    25,
+    32
+   ],
+   "P2B Torneo": [
+    25,
+    34
+   ],
+   "P3 Starsong": [
+    30,
+    35
+   ],
+   "P3 Ghostlord": [
+    25,
+    32
+   ]
+  },
+  "livelli": {
+   "07": [
+    13,
+    13
+   ],
+   "08": [
+    13,
+    13
+   ],
+   "09": [
+    13,
+    14
+   ]
+  },
+  "portatori": {},
+  "modifiche": {}
+ }
+}

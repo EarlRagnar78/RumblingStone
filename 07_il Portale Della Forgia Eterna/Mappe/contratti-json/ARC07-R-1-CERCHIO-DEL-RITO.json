@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0",
+  "title": "R-1 · IL CERCHIO DEL RITO — 10 m × 10 m (10 col × 10 righe · 1 m)",
+  "scale_m_per_square": 1.0,
+  "units_in": "squares",
+  "map_size": [
+    10,
+    10
+  ],
+  "base_terrain": "⬜",
+  "north": "N",
+  "structures": [
+    {
+      "type": "✨",
+      "rect": [
+        2,
+        3,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "✨",
+      "at": [
+        2,
+        6
+      ]
+    },
+    {
+      "type": "✨",
+      "at": [
+        3,
+        2
+      ]
+    },
+    {
+      "type": "✨",
+      "rect": [
+        3,
+        7,
+        4,
+        1
+      ]
+    },
+    {
+      "type": "✨",
+      "rect": [
+        5,
+        2,
+        2,
+        1
+      ]
+    },
+    {
+      "type": "✨",
+      "at": [
+        7,
+        3
+      ]
+    },
+    {
+      "type": "✨",
+      "rect": [
+        7,
+        5,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "⭐",
+      "rect": [
+        4,
+        4,
+        2,
+        2
+      ]
+    }
+  ],
+  "units": [
+    {
+      "token": "🔵",
+      "at": [
+        2,
+        5
+      ],
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "at": [
+        4,
+        2
+      ],
+      "name": "PG / alleati"
+    },
+    {
+      "token": "🔵",
+      "at": [
+        7,
+        4
+      ],
+      "name": "PG / alleati"
+    }
+  ],
+  "notes": [
+    "Contratto ricavato il 2026-11-09 dalla griglia di `07_il Portale Della Forgia Eterna/Mappe/ARC07-MAPPE-SCHEMATICHE-IN-SCALA.md` (mappa 2) con `import_ultraclear.py`. Griglia e contratto restano identici: lo controlla `scripts/tests/test_contratti_mappe.py`. Chi cambia la mappa cambia questo file e rigenera la griglia con `compile_map_json.py`."
+  ]
+}

@@ -261,6 +261,11 @@
             "type": "string",
             "description": "Etichetta per il companion DM (non disegnata sulla griglia)."
           },
+          "codice": {
+            "type": "string",
+            "pattern": "^[A-Z]{1,2}[0-9]{1,2}$",
+            "description": "Chiave d'area del testo (ADR-0122, S2), es. «C1»: con rect e label il compilatore la scrive come quarta parte di @zone e la stampa la mette al posto della lettera della zona."
+          },
           "collega": {
             "type": "string",
             "minLength": 3,
@@ -300,6 +305,11 @@
           },
           "label": {
             "type": "string"
+          },
+          "codice": {
+            "type": "string",
+            "pattern": "^[A-Z]{1,2}[0-9]{1,2}$",
+            "description": "Chiave d'area del testo (ADR-0122, S2), es. «C1»: con rect e label il compilatore la scrive come quarta parte di @zone e la stampa la mette al posto della lettera della zona."
           },
           "effect": {
             "type": "string",
@@ -394,6 +404,11 @@
           },
           "note": {
             "type": "string"
+          },
+          "scheda": {
+            "type": "string",
+            "minLength": 4,
+            "description": "La scheda di questa unità: il file col recinto statblocco, dalla radice del repo, e dopo «#» il nome della scheda se il file ne ha più d'una (es. «Bestiario/mostri/hobgoblin-sergente-cr5.md», «…/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md#Guardia di Zog'tar (4)»). Da qui misura_mappe_schede.py controlla che la taglia sulla pianta sia quella della scheda e che nello scontro esca la variante giusta."
           }
         }
       }
@@ -476,6 +491,14 @@
       "description": "Paragrafi per il DM dopo la tabella EVOLUZIONE, resi come citazioni.",
       "items": {
         "type": "string"
+      }
+    },
+    "simboli_locali": {
+      "type": "object",
+      "description": "Simboli fuori dalla legenda universale che la mappa usa e spiega nella sua legenda (la riga «LEGENDA · 🧲 pareti magnetiche · …» dentro la griglia, letta da render_map_svg). Chiave: l'emoji; valore: la descrizione. Un simbolo locale si usa in structures, hazards e regions come uno universale.",
+      "additionalProperties": {
+        "type": "string",
+        "minLength": 1
       }
     }
   }

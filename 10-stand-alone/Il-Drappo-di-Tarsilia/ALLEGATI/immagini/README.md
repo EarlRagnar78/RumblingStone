@@ -214,5 +214,5 @@ I booklet le pescano da sé, per nome di file: non c'è niente da agganciare a m
 | Il mestiere: coerenza, schede-personaggio, lock, gate | [`rumblingstone-art-direction`](../../../../skills/rumblingstone-art-direction/SKILL.md) |
 | Quali pesi si possono usare, e cosa si registra | [ADR-0019](../../../../plans/adr/ADR-0019-licenza-dei-pesi-non-del-software.md) |
 | ComfyUI in container su Bazzite | [`scripts/comfyui-local/README.md`](../../../../scripts/comfyui-local/README.md) |
-| La procedura generale delle immagini di campagna | [`GUIDA-IMMAGINI.md`](../../../../docs/guides/GUIDA-IMMAGINI.md) |
-| Come i tool si incastrano fra loro | [`GUIDA-FLUSSO-LOCALE.md`](../../../../docs/guides/GUIDA-FLUSSO-LOCALE.md) |
+| La procedura generale delle immagini di campagna | [`GUIDA-IMMAGINI.md`](../../../../docs/how-to/GUIDA-IMMAGINI.md) |
+| Come i tool si incastrano fra loro | [`GUIDA-FLUSSO-LOCALE.md`](../../../../docs/explanation/GUIDA-FLUSSO-LOCALE.md) |

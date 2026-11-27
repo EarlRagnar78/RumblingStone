@@ -1,4 +1,4 @@
-# Razorfiend «Blackspawn Alfa» — spawn draconico d'élite [ACCEPTED — DM-canon 2026-07-20]
+# Razorfiend «Blackspawn Alfa» — spawn draconico d'élite [CANONE — DM 2026-07-20]
 
 **Faction**: red-hand | **Role**: elite-brute | **Environment**: any | **CR**: 13 | **Source**: boost della base **Razorfiend (Draconic Spawn)** del repo (`razorfiend-red/blue/green/white-cr8-9.md`) via `skills/npc-villain-boosting/` (advancement HD + taglia) | **Status**: ACCEPTED — DM-canon 2026-07-20 (tier élite per l'orda ingrandita)
 
@@ -6,17 +6,20 @@
 ```statblocco
 gs: 13
 tipo: Huge dragon (earth), 16 DV, LE
+taglia: Enorme
+spazio: 4,5 m
+portata: 4,5 m
 ca: 25
 ca-dettaglio: (−2 taglia, +0 Des, +17 naturale)
 pf: 215
 ts: Temp +17, Rifl +10, Vol +11
 attributi: For 30 Des 10 Cos 24 Int 8 Sag 13 Car 12
-velocita: 12 m, scavare
+velocita: 12 m, scavare 6 m, volare 18 m (mediocre)
 iniziativa: +4
 attacchi:
   - Mischia morso +24 (3d6+10 + 1d6 acido)
 voci:
-  - Talenti: Iniziativa Migliorata, Attacco Poderoso, Multiattacco, Armatura
+  - Talenti: Iniziativa Migliorata, Attacco Poderoso, Multiattacco, Armatura Naturale Migliorata, Sventrare (Rend), Fluttuare
 fonte: valori approssimati nella prosa d'origine (scritti con «~»)
 ```
 
@@ -45,7 +48,7 @@ TS **Temp +17, Rifl +10, Vol +11**. BAB +16; Lotta **+34**.
 Str 30, Des 10, Cos 24, Int 8, Sag 13, Car 12.
 **SR** 22 | **RD** 10/magico | **Immune**: acido, paralisi, sonno | **Vulnerabile**: freddo (come base).
 Talenti: Iniziativa Migliorata, Attacco Poderoso, Multiattacco, Armatura
-Naturale Migliorata, Sventrare (rend, con 2 artigli a segno: +2d6+15), Volare.
+Naturale Migliorata, Sventrare (Rend; con 2 artigli a segno: +2d6+15), Fluttuare (Hover). «Volare» non è un talento ma il movimento (volare 18 m, mediocre): il sesto talento dei 16 DV è Fluttuare, che gli lascia usare gli artigli in volo (DM 2026-11-07).
 
 **Tattiche**: apre col soffio a linea sui gruppi, poi carica il bersaglio
 più fragile (Lotta +34 = grapple devastante su incantatori); usa Attacco

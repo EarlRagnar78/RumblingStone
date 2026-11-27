@@ -244,7 +244,7 @@
   },
   {
    "faction": "Nani",
-   "name": "Borin Ferropugno (Ftr)",
+   "name": "Borin Giuraferro (Ftr)",
    "token": "🔵",
    "at": [
     27.0,
@@ -253,7 +253,7 @@
   },
   {
    "faction": "Nani",
-   "name": "Thorin Runaforte (Clr)",
+   "name": "Harbek Runaforte (Clr)",
    "token": "🔵",
    "at": [
     42.0,
@@ -271,7 +271,7 @@
   },
   {
    "faction": "Nani",
-   "name": "Madre Dana Forgiapietra (Clr 14)",
+   "name": "Madre Dagmar Forgiapietra (Clr 14)",
    "token": "🔵",
    "at": [
     30.0,
@@ -369,6 +369,6 @@
   }
  ],
  "luogo": "Hammerfist, bastioni sud",
- "quota": "965 m ; s.l.m., la piattaforma sopra il cancello",
+ "quota": "615 m ; s.l.m., la piattaforma sopra il cancello",
  "dislivello": "+15 m ; sul cortile esterno (+95 m sulla piana)"
 }

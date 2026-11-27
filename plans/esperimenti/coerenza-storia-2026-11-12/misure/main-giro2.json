@@ -1,0 +1,205 @@
+{
+ "violazioni": [
+  {
+   "regola": "S3 finestra della quest",
+   "atteso": "P2B Torneo: Giorno 25-34",
+   "ha": "Giorno 27-36",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 341,
+   "testo": "- **Palio di Channathgate (P2D) arc:** HUB in `Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md` (opzionale, parallelo al Torneo, Day 27-36; il Drappellone = Matrice del Mythal alimenta la Fase 4; muove il voto del Consiglio di R"
+  },
+  {
+   "regola": "S4 livello del party",
+   "atteso": "13-14",
+   "ha": "11",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md",
+   "riga": 52,
+   "testo": "- EL target: 13 per gruppo di 3–4 PG di livello 11–12.[file:20]"
+  },
+  {
+   "regola": "S4 livello del party",
+   "atteso": "13-14",
+   "ha": "11",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1B-Cerchio-Treant-COMPLETO.md",
+   "riga": 10,
+   "testo": "- EL consigliato: 13 (4 PG di livello 11–12). [file:21]"
+  },
+  {
+   "regola": "S4 livello del party",
+   "atteso": "13-14",
+   "ha": "11",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE1.md",
+   "riga": 15,
+   "testo": "- EL medio: 11–12 per gruppo di 4 PG di livello 11–12."
+  },
+  {
+   "regola": "S4 livello del party",
+   "atteso": "13-14",
+   "ha": "11",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md",
+   "riga": 8,
+   "testo": "Tutti i valori sono pensati per un party di livello 11–12. Adatta leggermente pf o talenti se necessario."
+  },
+  {
+   "regola": "S2 giorno del waypoint",
+   "atteso": "Terrelton: Giorno 19",
+   "ha": "Giorno 27-28",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+   "riga": 137,
+   "testo": "> - **Day 27-28**: *\"Terrelton è caduta da giorni — i suoi profughi intasano la Dawn Way.\"*"
+  },
+  {
+   "regola": "S2 giorno del waypoint",
+   "atteso": "Elsir: Giorno 33-35",
+   "ha": "Giorno 30-31",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+   "riga": 139,
+   "testo": "> - **Day 30-31**: *\"L'orda converge sul Crocevia del Channath — sarà lì entro due giorni.\"* (canone: Day 33)"
+  },
+  {
+   "regola": "S2 giorno del waypoint",
+   "atteso": "Vraath: Giorno 6",
+   "ha": "Giorno 1",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md",
+   "riga": 11,
+   "testo": "- **Baseline Orda al Day 1 (Vraath Keep)**: ~**10.000** combattenti (6.600 core hobgoblin + 430 supporto + 2.910 alleati razziali + 5 draghi nominati + 8 Razorfiend Draconic Spawn sui Wyrmlord upscalati)."
+  },
+  {
+   "regola": "S4 livello del party",
+   "atteso": "13-14",
+   "ha": "12",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-Upscale-CR12.md",
+   "riga": 7,
+   "testo": "- Pensato per party di 4–5 PG di **livello 12**."
+  },
+  {
+   "regola": "S2 giorno del waypoint",
+   "atteso": "Skull Gorge: Giorno 8-9",
+   "ha": "Giorno 5",
+   "file": "campaign/DM-CAMPAIGN-PLAYBOOK.md",
+   "riga": 455,
+   "testo": "- Day 5: PG non interferiscono a Skull Gorge ✓"
+  },
+  {
+   "regola": "S1 arrivo dell'orda",
+   "atteso": "Giorno 42",
+   "ha": "Giorno 40",
+   "file": "campaign/DM-CAMPAIGN-PLAYBOOK.md",
+   "riga": 457,
+   "testo": "- Day 40: Orda arriva a Rethmar"
+  }
+ ],
+ "file_letti": 219,
+ "non_verificabili": {
+  "conoscenze senza tempo (chi sa cosa)": 31
+ },
+ "ancore": {
+  "giorno_arrivo": 42,
+  "waypoint": {
+   "Vraath": [
+    6,
+    6
+   ],
+   "Skull Gorge": [
+    8,
+    9
+   ],
+   "Drellin": [
+    12,
+    13
+   ],
+   "Terrelton": [
+    19,
+    19
+   ],
+   "Marth Fen / Blackfens": [
+    25,
+    25
+   ],
+   "Elsir": [
+    33,
+    35
+   ]
+  },
+  "quest": {
+   "P2 Rhest": [
+    25,
+    32
+   ],
+   "P2A Torre": [
+    28,
+    35
+   ],
+   "P2B Torneo": [
+    25,
+    34
+   ],
+   "P3 Starsong": [
+    30,
+    35
+   ],
+   "P3 Ghostlord": [
+    25,
+    32
+   ]
+  },
+  "livelli": {
+   "00": [
+    8,
+    8
+   ],
+   "01": [
+    10,
+    11
+   ],
+   "02": [
+    11,
+    11
+   ],
+   "03": [
+    11,
+    11
+   ],
+   "04": [
+    12,
+    12
+   ],
+   "05": [
+    12,
+    12
+   ],
+   "06": [
+    13,
+    13
+   ],
+   "07": [
+    13,
+    14
+   ],
+   "08": [
+    9,
+    13
+   ],
+   "09": [
+    13,
+    14
+   ]
+  },
+  "portatori": {
+   "Aegis Fang": "Thorik",
+   "Corona di Adamantio": "Thorik",
+   "Ring of Chaotic Illumination": "Artemis",
+   "Bracieri Gemelli di Moradin": "Tordek",
+   "Cintura della Devastazione": "Tordek",
+   "Collana dei Semi Eterni": "Hella"
+  },
+  "modifiche": {
+   "Thorik": {
+    "DES": -4,
+    "COS": 2,
+    "CAR": 4
+   },
+   "Tordek": {}
+  }
+ }
+}

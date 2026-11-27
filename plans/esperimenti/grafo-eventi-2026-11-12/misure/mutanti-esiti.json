@@ -1,0 +1,974 @@
+{
+ "regex": {
+  "etichetta": "regex",
+  "per_gruppo": {
+   "T0 parafrasi": "0/3",
+   "T0 piana": "4/4",
+   "T1 catena parafrasi": "0/2",
+   "T1 catena piana": "2/2",
+   "T1 parafrasi": "0/3",
+   "T1 piana": "4/4",
+   "T3 parafrasi": "0/3",
+   "T3 piana": "3/4"
+  },
+  "piana": "13/14",
+  "parafrasi": "0/11",
+  "rilievi_fuori_dai_mutanti": 3,
+  "esiti": [
+   {
+    "id": "T0-p1",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+    "riga": 7,
+    "testo": "Il gruppo, ormai per tutti i Custodi Eterni, attraversa la sala delle forge.",
+    "preso": true
+   },
+   {
+    "id": "T0-p2",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-3-RESURREZIONE-HELLA.md",
+    "riga": 7,
+    "testo": "I nani di guardia salutano i Custodi Eterni con l'ascia alzata.",
+    "preso": true
+   },
+   {
+    "id": "T0-p3",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-03-REGISTRO-PERDITE.md",
+    "riga": 14,
+    "testo": "Il Seme di Porta pulsa già dentro l'Orbe di Dauth.",
+    "preso": true
+   },
+   {
+    "id": "T0-p4",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-00-INDICE.md",
+    "riga": 10,
+    "testo": "Nei campi si parla del Seme di Porta estratto dall'Orbe.",
+    "preso": true
+   },
+   {
+    "id": "T0-a1",
+    "regola": "T0",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-00-INDICE.md",
+    "riga": 13,
+    "testo": "I nani li salutano col titolo che il re darà loro: guardiani per sempre di Hammerfist.",
+    "preso": false
+   },
+   {
+    "id": "T0-a2",
+    "regola": "T0",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+    "riga": 7,
+    "testo": "Sulla porta della sala è già incisa la runa dei protettori eterni della rocca.",
+    "preso": false
+   },
+   {
+    "id": "T0-a3",
+    "regola": "T0",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/APPARATO-ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+    "riga": 7,
+    "testo": "Dall'Orbe delle Otto Porte qualcuno ha già ricavato il germe del varco planare.",
+    "preso": false
+   },
+   {
+    "id": "T1-p1",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+    "riga": 15,
+    "testo": "Sethrax sa già che l'Orbe genera un Seme di Porta.",
+    "preso": true
+   },
+   {
+    "id": "T1-p2",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+    "riga": 7,
+    "testo": "Azarr Kul sa che i Custodi Eterni sono in marcia verso sud.",
+    "preso": true
+   },
+   {
+    "id": "T1-p3",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+    "riga": 7,
+    "testo": "Re Thorek dice ai suoi consiglieri che sono i Custodi Eterni.",
+    "preso": true
+   },
+   {
+    "id": "T1-p4",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+    "riga": 21,
+    "testo": "Ushgar sa che i Custodi Eterni viaggiano armati.",
+    "preso": true
+   },
+   {
+    "id": "T1-a1",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/APPARATO-ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+    "riga": 7,
+    "testo": "Sethrax intuisce il germe planare che l'Orbe libererà al suo apice.",
+    "preso": false
+   },
+   {
+    "id": "T1-a2",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+    "riga": 25,
+    "testo": "Il generale della Mano Rossa ha già saputo che i quattro sono i protettori nominati dal re.",
+    "preso": false
+   },
+   {
+    "id": "T1-a3",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+    "riga": 28,
+    "testo": "Ghaurush ha capito chi sono i quattro eroi a cui il re darà il titolo.",
+    "preso": false
+   },
+   {
+    "id": "R-p1",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+    "riga": 8,
+    "testo": "Zalkatar sa che il Seme di Porta è pronto.",
+    "preso": true
+   },
+   {
+    "id": "R-p2",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md",
+    "riga": 12,
+    "testo": "Brenna sa che i Custodi Eterni hanno salvato Hammerfist.",
+    "preso": true
+   },
+   {
+    "id": "R-a1",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md",
+    "riga": 18,
+    "testo": "La mente della Torre ha già in pugno il segreto del varco nell'Orbe.",
+    "preso": false
+   },
+   {
+    "id": "R-a2",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+    "riga": 14,
+    "testo": "La signora del porto ha già letto nei rapporti che i quattro sono stati nominati guardiani.",
+    "preso": false
+   },
+   {
+    "id": "T3-p1",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE.md",
+    "riga": 8,
+    "testo": "Sonjak sa che il gruppo ha tutte e tre le gemme.",
+    "preso": true
+   },
+   {
+    "id": "T3-p2",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-TESTO.md",
+    "riga": 8,
+    "testo": "Mira Serani scopre che Lorana è viva.",
+    "preso": false
+   },
+   {
+    "id": "T3-p3",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md",
+    "riga": 12,
+    "testo": "Lorana scopre che sua figlia è stata uccisa e sostituita da un'aranea.",
+    "preso": true
+   },
+   {
+    "id": "T3-p4",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md",
+    "riga": 18,
+    "testo": "Sethrax conosce il piano d'invasione.",
+    "preso": true
+   },
+   {
+    "id": "T3-a1",
+    "regola": "T3",
+    "forma": "parafrasi",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-TESTO.md",
+    "riga": 13,
+    "testo": "Gli elfi di Witchwood accolgono i quattro col titolo nanico che già conoscono.",
+    "preso": false
+   },
+   {
+    "id": "T3-a2",
+    "regola": "T3",
+    "forma": "parafrasi",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+    "riga": 10,
+    "testo": "Il Conte, nei suoi dispacci, parla già del diadema di adamantio che i quattro hanno recuperato.",
+    "preso": false
+   },
+   {
+    "id": "T3-a3",
+    "regola": "T3",
+    "forma": "parafrasi",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-Upscale-CR12.md",
+    "riga": 7,
+    "testo": "Zin'thara, informata dalle sue ragnatele, sa del diadema che il nano porta in testa.",
+    "preso": false
+   }
+  ]
+ },
+ "rag-k5": {
+  "etichetta": "rag-k5",
+  "per_gruppo": {
+   "T0 parafrasi": "1/3",
+   "T0 piana": "3/4",
+   "T1 catena parafrasi": "0/2",
+   "T1 catena piana": "2/2",
+   "T1 parafrasi": "2/3",
+   "T1 piana": "2/4",
+   "T3 parafrasi": "0/3",
+   "T3 piana": "0/4"
+  },
+  "piana": "7/14",
+  "parafrasi": "3/11",
+  "rilievi_fuori_dai_mutanti": 7,
+  "esiti": [
+   {
+    "id": "T0-p1",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+    "riga": 7,
+    "testo": "Il gruppo, ormai per tutti i Custodi Eterni, attraversa la sala delle forge.",
+    "preso": true
+   },
+   {
+    "id": "T0-p2",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-3-RESURREZIONE-HELLA.md",
+    "riga": 7,
+    "testo": "I nani di guardia salutano i Custodi Eterni con l'ascia alzata.",
+    "preso": false
+   },
+   {
+    "id": "T0-p3",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-03-REGISTRO-PERDITE.md",
+    "riga": 14,
+    "testo": "Il Seme di Porta pulsa già dentro l'Orbe di Dauth.",
+    "preso": true
+   },
+   {
+    "id": "T0-p4",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-00-INDICE.md",
+    "riga": 10,
+    "testo": "Nei campi si parla del Seme di Porta estratto dall'Orbe.",
+    "preso": true
+   },
+   {
+    "id": "T0-a1",
+    "regola": "T0",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-00-INDICE.md",
+    "riga": 13,
+    "testo": "I nani li salutano col titolo che il re darà loro: guardiani per sempre di Hammerfist.",
+    "preso": false
+   },
+   {
+    "id": "T0-a2",
+    "regola": "T0",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+    "riga": 7,
+    "testo": "Sulla porta della sala è già incisa la runa dei protettori eterni della rocca.",
+    "preso": false
+   },
+   {
+    "id": "T0-a3",
+    "regola": "T0",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/APPARATO-ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+    "riga": 7,
+    "testo": "Dall'Orbe delle Otto Porte qualcuno ha già ricavato il germe del varco planare.",
+    "preso": true
+   },
+   {
+    "id": "T1-p1",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+    "riga": 15,
+    "testo": "Sethrax sa già che l'Orbe genera un Seme di Porta.",
+    "preso": true
+   },
+   {
+    "id": "T1-p2",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+    "riga": 7,
+    "testo": "Azarr Kul sa che i Custodi Eterni sono in marcia verso sud.",
+    "preso": false
+   },
+   {
+    "id": "T1-p3",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+    "riga": 7,
+    "testo": "Re Thorek dice ai suoi consiglieri che sono i Custodi Eterni.",
+    "preso": true
+   },
+   {
+    "id": "T1-p4",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+    "riga": 21,
+    "testo": "Ushgar sa che i Custodi Eterni viaggiano armati.",
+    "preso": false
+   },
+   {
+    "id": "T1-a1",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/APPARATO-ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+    "riga": 7,
+    "testo": "Sethrax intuisce il germe planare che l'Orbe libererà al suo apice.",
+    "preso": true
+   },
+   {
+    "id": "T1-a2",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+    "riga": 25,
+    "testo": "Il generale della Mano Rossa ha già saputo che i quattro sono i protettori nominati dal re.",
+    "preso": false
+   },
+   {
+    "id": "T1-a3",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+    "riga": 28,
+    "testo": "Ghaurush ha capito chi sono i quattro eroi a cui il re darà il titolo.",
+    "preso": true
+   },
+   {
+    "id": "R-p1",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+    "riga": 8,
+    "testo": "Zalkatar sa che il Seme di Porta è pronto.",
+    "preso": true
+   },
+   {
+    "id": "R-p2",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md",
+    "riga": 12,
+    "testo": "Brenna sa che i Custodi Eterni hanno salvato Hammerfist.",
+    "preso": true
+   },
+   {
+    "id": "R-a1",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md",
+    "riga": 18,
+    "testo": "La mente della Torre ha già in pugno il segreto del varco nell'Orbe.",
+    "preso": false
+   },
+   {
+    "id": "R-a2",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+    "riga": 14,
+    "testo": "La signora del porto ha già letto nei rapporti che i quattro sono stati nominati guardiani.",
+    "preso": false
+   },
+   {
+    "id": "T3-p1",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE.md",
+    "riga": 8,
+    "testo": "Sonjak sa che il gruppo ha tutte e tre le gemme.",
+    "preso": false
+   },
+   {
+    "id": "T3-p2",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-TESTO.md",
+    "riga": 8,
+    "testo": "Mira Serani scopre che Lorana è viva.",
+    "preso": false
+   },
+   {
+    "id": "T3-p3",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md",
+    "riga": 12,
+    "testo": "Lorana scopre che sua figlia è stata uccisa e sostituita da un'aranea.",
+    "preso": false
+   },
+   {
+    "id": "T3-p4",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md",
+    "riga": 18,
+    "testo": "Sethrax conosce il piano d'invasione.",
+    "preso": false
+   },
+   {
+    "id": "T3-a1",
+    "regola": "T3",
+    "forma": "parafrasi",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-TESTO.md",
+    "riga": 13,
+    "testo": "Gli elfi di Witchwood accolgono i quattro col titolo nanico che già conoscono.",
+    "preso": false
+   },
+   {
+    "id": "T3-a2",
+    "regola": "T3",
+    "forma": "parafrasi",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+    "riga": 10,
+    "testo": "Il Conte, nei suoi dispacci, parla già del diadema di adamantio che i quattro hanno recuperato.",
+    "preso": false
+   },
+   {
+    "id": "T3-a3",
+    "regola": "T3",
+    "forma": "parafrasi",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-Upscale-CR12.md",
+    "riga": 7,
+    "testo": "Zin'thara, informata dalle sue ragnatele, sa del diadema che il nano porta in testa.",
+    "preso": false
+   }
+  ]
+ },
+ "rag-k20": {
+  "etichetta": "rag-k20",
+  "per_gruppo": {
+   "T0 parafrasi": "1/3",
+   "T0 piana": "3/4",
+   "T1 catena parafrasi": "1/2",
+   "T1 catena piana": "2/2",
+   "T1 parafrasi": "2/3",
+   "T1 piana": "3/4",
+   "T3 parafrasi": "1/3",
+   "T3 piana": "1/4"
+  },
+  "piana": "9/14",
+  "parafrasi": "5/11",
+  "rilievi_fuori_dai_mutanti": 39,
+  "esiti": [
+   {
+    "id": "T0-p1",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+    "riga": 7,
+    "testo": "Il gruppo, ormai per tutti i Custodi Eterni, attraversa la sala delle forge.",
+    "preso": true
+   },
+   {
+    "id": "T0-p2",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-3-RESURREZIONE-HELLA.md",
+    "riga": 7,
+    "testo": "I nani di guardia salutano i Custodi Eterni con l'ascia alzata.",
+    "preso": false
+   },
+   {
+    "id": "T0-p3",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-03-REGISTRO-PERDITE.md",
+    "riga": 14,
+    "testo": "Il Seme di Porta pulsa già dentro l'Orbe di Dauth.",
+    "preso": true
+   },
+   {
+    "id": "T0-p4",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-00-INDICE.md",
+    "riga": 10,
+    "testo": "Nei campi si parla del Seme di Porta estratto dall'Orbe.",
+    "preso": true
+   },
+   {
+    "id": "T0-a1",
+    "regola": "T0",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-00-INDICE.md",
+    "riga": 13,
+    "testo": "I nani li salutano col titolo che il re darà loro: guardiani per sempre di Hammerfist.",
+    "preso": false
+   },
+   {
+    "id": "T0-a2",
+    "regola": "T0",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+    "riga": 7,
+    "testo": "Sulla porta della sala è già incisa la runa dei protettori eterni della rocca.",
+    "preso": false
+   },
+   {
+    "id": "T0-a3",
+    "regola": "T0",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/APPARATO-ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+    "riga": 7,
+    "testo": "Dall'Orbe delle Otto Porte qualcuno ha già ricavato il germe del varco planare.",
+    "preso": true
+   },
+   {
+    "id": "T1-p1",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+    "riga": 15,
+    "testo": "Sethrax sa già che l'Orbe genera un Seme di Porta.",
+    "preso": true
+   },
+   {
+    "id": "T1-p2",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+    "riga": 7,
+    "testo": "Azarr Kul sa che i Custodi Eterni sono in marcia verso sud.",
+    "preso": false
+   },
+   {
+    "id": "T1-p3",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+    "riga": 7,
+    "testo": "Re Thorek dice ai suoi consiglieri che sono i Custodi Eterni.",
+    "preso": true
+   },
+   {
+    "id": "T1-p4",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+    "riga": 21,
+    "testo": "Ushgar sa che i Custodi Eterni viaggiano armati.",
+    "preso": true
+   },
+   {
+    "id": "T1-a1",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/APPARATO-ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+    "riga": 7,
+    "testo": "Sethrax intuisce il germe planare che l'Orbe libererà al suo apice.",
+    "preso": true
+   },
+   {
+    "id": "T1-a2",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+    "riga": 25,
+    "testo": "Il generale della Mano Rossa ha già saputo che i quattro sono i protettori nominati dal re.",
+    "preso": false
+   },
+   {
+    "id": "T1-a3",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+    "riga": 28,
+    "testo": "Ghaurush ha capito chi sono i quattro eroi a cui il re darà il titolo.",
+    "preso": true
+   },
+   {
+    "id": "R-p1",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+    "riga": 8,
+    "testo": "Zalkatar sa che il Seme di Porta è pronto.",
+    "preso": true
+   },
+   {
+    "id": "R-p2",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md",
+    "riga": 12,
+    "testo": "Brenna sa che i Custodi Eterni hanno salvato Hammerfist.",
+    "preso": true
+   },
+   {
+    "id": "R-a1",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md",
+    "riga": 18,
+    "testo": "La mente della Torre ha già in pugno il segreto del varco nell'Orbe.",
+    "preso": true
+   },
+   {
+    "id": "R-a2",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+    "riga": 14,
+    "testo": "La signora del porto ha già letto nei rapporti che i quattro sono stati nominati guardiani.",
+    "preso": false
+   },
+   {
+    "id": "T3-p1",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE.md",
+    "riga": 8,
+    "testo": "Sonjak sa che il gruppo ha tutte e tre le gemme.",
+    "preso": true
+   },
+   {
+    "id": "T3-p2",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-TESTO.md",
+    "riga": 8,
+    "testo": "Mira Serani scopre che Lorana è viva.",
+    "preso": false
+   },
+   {
+    "id": "T3-p3",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md",
+    "riga": 12,
+    "testo": "Lorana scopre che sua figlia è stata uccisa e sostituita da un'aranea.",
+    "preso": false
+   },
+   {
+    "id": "T3-p4",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md",
+    "riga": 18,
+    "testo": "Sethrax conosce il piano d'invasione.",
+    "preso": false
+   },
+   {
+    "id": "T3-a1",
+    "regola": "T3",
+    "forma": "parafrasi",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-TESTO.md",
+    "riga": 13,
+    "testo": "Gli elfi di Witchwood accolgono i quattro col titolo nanico che già conoscono.",
+    "preso": false
+   },
+   {
+    "id": "T3-a2",
+    "regola": "T3",
+    "forma": "parafrasi",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+    "riga": 10,
+    "testo": "Il Conte, nei suoi dispacci, parla già del diadema di adamantio che i quattro hanno recuperato.",
+    "preso": true
+   },
+   {
+    "id": "T3-a3",
+    "regola": "T3",
+    "forma": "parafrasi",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-Upscale-CR12.md",
+    "riga": 7,
+    "testo": "Zin'thara, informata dalle sue ragnatele, sa del diadema che il nano porta in testa.",
+    "preso": false
+   }
+  ]
+ },
+ "regex+rag-k20": {
+  "etichetta": "regex+rag-k20",
+  "per_gruppo": {
+   "T0 parafrasi": "1/3",
+   "T0 piana": "4/4",
+   "T1 catena parafrasi": "1/2",
+   "T1 catena piana": "2/2",
+   "T1 parafrasi": "2/3",
+   "T1 piana": "4/4",
+   "T3 parafrasi": "1/3",
+   "T3 piana": "3/4"
+  },
+  "piana": "13/14",
+  "parafrasi": "5/11",
+  "rilievi_fuori_dai_mutanti": 42,
+  "esiti": [
+   {
+    "id": "T0-p1",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+    "riga": 7,
+    "testo": "Il gruppo, ormai per tutti i Custodi Eterni, attraversa la sala delle forge.",
+    "preso": true
+   },
+   {
+    "id": "T0-p2",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-3-RESURREZIONE-HELLA.md",
+    "riga": 7,
+    "testo": "I nani di guardia salutano i Custodi Eterni con l'ascia alzata.",
+    "preso": true
+   },
+   {
+    "id": "T0-p3",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-03-REGISTRO-PERDITE.md",
+    "riga": 14,
+    "testo": "Il Seme di Porta pulsa già dentro l'Orbe di Dauth.",
+    "preso": true
+   },
+   {
+    "id": "T0-p4",
+    "regola": "T0",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-00-INDICE.md",
+    "riga": 10,
+    "testo": "Nei campi si parla del Seme di Porta estratto dall'Orbe.",
+    "preso": true
+   },
+   {
+    "id": "T0-a1",
+    "regola": "T0",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-00-INDICE.md",
+    "riga": 13,
+    "testo": "I nani li salutano col titolo che il re darà loro: guardiani per sempre di Hammerfist.",
+    "preso": false
+   },
+   {
+    "id": "T0-a2",
+    "regola": "T0",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+    "riga": 7,
+    "testo": "Sulla porta della sala è già incisa la runa dei protettori eterni della rocca.",
+    "preso": false
+   },
+   {
+    "id": "T0-a3",
+    "regola": "T0",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/APPARATO-ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+    "riga": 7,
+    "testo": "Dall'Orbe delle Otto Porte qualcuno ha già ricavato il germe del varco planare.",
+    "preso": true
+   },
+   {
+    "id": "T1-p1",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+    "riga": 15,
+    "testo": "Sethrax sa già che l'Orbe genera un Seme di Porta.",
+    "preso": true
+   },
+   {
+    "id": "T1-p2",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+    "riga": 7,
+    "testo": "Azarr Kul sa che i Custodi Eterni sono in marcia verso sud.",
+    "preso": true
+   },
+   {
+    "id": "T1-p3",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+    "riga": 7,
+    "testo": "Re Thorek dice ai suoi consiglieri che sono i Custodi Eterni.",
+    "preso": true
+   },
+   {
+    "id": "T1-p4",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+    "riga": 21,
+    "testo": "Ushgar sa che i Custodi Eterni viaggiano armati.",
+    "preso": true
+   },
+   {
+    "id": "T1-a1",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/APPARATO-ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+    "riga": 7,
+    "testo": "Sethrax intuisce il germe planare che l'Orbe libererà al suo apice.",
+    "preso": true
+   },
+   {
+    "id": "T1-a2",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+    "riga": 25,
+    "testo": "Il generale della Mano Rossa ha già saputo che i quattro sono i protettori nominati dal re.",
+    "preso": false
+   },
+   {
+    "id": "T1-a3",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+    "riga": 28,
+    "testo": "Ghaurush ha capito chi sono i quattro eroi a cui il re darà il titolo.",
+    "preso": true
+   },
+   {
+    "id": "R-p1",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+    "riga": 8,
+    "testo": "Zalkatar sa che il Seme di Porta è pronto.",
+    "preso": true
+   },
+   {
+    "id": "R-p2",
+    "regola": "T1",
+    "forma": "piana",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md",
+    "riga": 12,
+    "testo": "Brenna sa che i Custodi Eterni hanno salvato Hammerfist.",
+    "preso": true
+   },
+   {
+    "id": "R-a1",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md",
+    "riga": 18,
+    "testo": "La mente della Torre ha già in pugno il segreto del varco nell'Orbe.",
+    "preso": true
+   },
+   {
+    "id": "R-a2",
+    "regola": "T1",
+    "forma": "parafrasi",
+    "file": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+    "riga": 14,
+    "testo": "La signora del porto ha già letto nei rapporti che i quattro sono stati nominati guardiani.",
+    "preso": false
+   },
+   {
+    "id": "T3-p1",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE.md",
+    "riga": 8,
+    "testo": "Sonjak sa che il gruppo ha tutte e tre le gemme.",
+    "preso": true
+   },
+   {
+    "id": "T3-p2",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-TESTO.md",
+    "riga": 8,
+    "testo": "Mira Serani scopre che Lorana è viva.",
+    "preso": false
+   },
+   {
+    "id": "T3-p3",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md",
+    "riga": 12,
+    "testo": "Lorana scopre che sua figlia è stata uccisa e sostituita da un'aranea.",
+    "preso": true
+   },
+   {
+    "id": "T3-p4",
+    "regola": "T3",
+    "forma": "piana",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md",
+    "riga": 18,
+    "testo": "Sethrax conosce il piano d'invasione.",
+    "preso": true
+   },
+   {
+    "id": "T3-a1",
+    "regola": "T3",
+    "forma": "parafrasi",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-TESTO.md",
+    "riga": 13,
+    "testo": "Gli elfi di Witchwood accolgono i quattro col titolo nanico che già conoscono.",
+    "preso": false
+   },
+   {
+    "id": "T3-a2",
+    "regola": "T3",
+    "forma": "parafrasi",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+    "riga": 10,
+    "testo": "Il Conte, nei suoi dispacci, parla già del diadema di adamantio che i quattro hanno recuperato.",
+    "preso": true
+   },
+   {
+    "id": "T3-a3",
+    "regola": "T3",
+    "forma": "parafrasi",
+    "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-Upscale-CR12.md",
+    "riga": 7,
+    "testo": "Zin'thara, informata dalle sue ragnatele, sa del diadema che il nano porta in testa.",
+    "preso": false
+   }
+  ]
+ }
+}

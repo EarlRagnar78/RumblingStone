@@ -1,9 +1,12 @@
-# Loxo Shaman (Druid 6) [ACCEPTED — DM-canon 2026-05-05]
+# Loxo Shaman (Druid 6) [CANONE — DM 2026-05-05]
 **Faction**: loxo-centaur-corrupted | **Role**: divine-caster | **Environment**: plain | **CR**: 7 | **Source**: MM II Loxo + PHB Druid 6 | **Status**: inferred
 
 
 ```statblocco
 gs: 7
+taglia: Grande
+spazio: 3 m
+portata: 3 m
 ca: 17
 ca-dettaglio: (-1 size, +7 natural, +1 Dex)
 pf: 64

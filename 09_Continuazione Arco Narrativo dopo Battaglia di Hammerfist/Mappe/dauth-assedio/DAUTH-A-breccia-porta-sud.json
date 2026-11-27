@@ -134,6 +134,7 @@
   {
    "faction": "Vanguard della Mano Rossa",
    "name": "Comandante del Vanguard (hobgoblin-captain-cr8)",
+   "scheda": "Bestiario/mostri/hobgoblin-captain-cr8.md",
    "token": "⚫",
    "at": [
     5,
@@ -144,6 +145,7 @@
   {
    "faction": "Vanguard della Mano Rossa",
    "name": "Sergente hobgoblin (hobgoblin-sergente-cr5)",
+   "scheda": "Bestiario/mostri/hobgoblin-sergente-cr5.md",
    "token": "🔴",
    "at": [
     4,
@@ -154,6 +156,7 @@
   {
    "faction": "Vanguard della Mano Rossa",
    "name": "Sergente hobgoblin (hobgoblin-sergente-cr5)",
+   "scheda": "Bestiario/mostri/hobgoblin-sergente-cr5.md",
    "token": "🔴",
    "at": [
     6,

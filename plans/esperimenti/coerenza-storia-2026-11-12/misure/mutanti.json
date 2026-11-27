@@ -1,0 +1,573 @@
+[
+ {
+  "id": "S1-p1",
+  "regola": "S1",
+  "forma": "piana",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+  "riga": 7,
+  "testo": "- Day 39: l'orda della Mano Rossa arriva a Rethmar e si accampa.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S1 arrivo dell'orda",
+   "atteso": "Giorno 42",
+   "ha": "Giorno 39",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 7,
+   "testo": "- Day 39: l'orda della Mano Rossa arriva a Rethmar e si accampa."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S1-p2",
+  "regola": "S1",
+  "forma": "piana",
+  "file": "campaign/DM-QUICKSTART-ARC09.md",
+  "riga": 8,
+  "testo": "L'armata di Azarr Kul giunge sotto Rethmar al Giorno 44.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S1 arrivo dell'orda",
+   "atteso": "Giorno 42",
+   "ha": "Giorno 44",
+   "file": "campaign/DM-QUICKSTART-ARC09.md",
+   "riga": 8,
+   "testo": "L'armata di Azarr Kul giunge sotto Rethmar al Giorno 44."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S1-p3",
+  "regola": "S1",
+  "forma": "piana",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE1.md",
+  "riga": 8,
+  "testo": "**Arrivo dell'orda a Rethmar:** Giorno 38.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S1 arrivo dell'orda",
+   "atteso": "Giorno 42",
+   "ha": "Giorno 38",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE1.md",
+   "riga": 8,
+   "testo": "**Arrivo dell'orda a Rethmar:** Giorno 38."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S1-a1",
+  "regola": "S1",
+  "forma": "parafrasi",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+  "riga": 7,
+  "testo": "Quaranta giorni dopo la partenza dal Fane, le tende hobgoblin coprono la piana sotto Rethmar.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S1-a2",
+  "regola": "S1",
+  "forma": "parafrasi",
+  "file": "campaign/DM-QUICKSTART-ARC09.md",
+  "riga": 8,
+  "testo": "Le mura di Rethmar vedranno le insegne della Mano Rossa il trentottesimo giorno di marcia.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S1-a3",
+  "regola": "S1",
+  "forma": "parafrasi",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE1.md",
+  "riga": 8,
+  "testo": "Il Day 40 è quello dell'assalto: l'orda è lì da una notte sola.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S2-p1",
+  "regola": "S2",
+  "forma": "piana",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+  "riga": 7,
+  "testo": "- Day 15: Terrelton cade.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S2 giorno del waypoint",
+   "atteso": "Terrelton: Giorno 19",
+   "ha": "Giorno 15",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 7,
+   "testo": "- Day 15: Terrelton cade."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S2-p2",
+  "regola": "S2",
+  "forma": "piana",
+  "file": "campaign/DM-QUICKSTART-ARC09.md",
+  "riga": 8,
+  "testo": "Il ponte di Skull Gorge viene attraversato al Giorno 4.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S2 giorno del waypoint",
+   "atteso": "Skull Gorge: Giorno 8-9",
+   "ha": "Giorno 4",
+   "file": "campaign/DM-QUICKSTART-ARC09.md",
+   "riga": 8,
+   "testo": "Il ponte di Skull Gorge viene attraversato al Giorno 4."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S2-p3",
+  "regola": "S2",
+  "forma": "piana",
+  "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+  "riga": 8,
+  "testo": "Drellin's Ferry brucia il Giorno 10, mentre i nani si preparano.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S2 giorno del waypoint",
+   "atteso": "Drellin: Giorno 12-13",
+   "ha": "Giorno 10",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 8,
+   "testo": "Drellin's Ferry brucia il Giorno 10, mentre i nani si preparano."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S2-a1",
+  "regola": "S2",
+  "forma": "parafrasi",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+  "riga": 7,
+  "testo": "Terrelton resiste fino al ventiduesimo giorno, poi apre le porte.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S2-a2",
+  "regola": "S2",
+  "forma": "parafrasi",
+  "file": "campaign/DM-QUICKSTART-ARC09.md",
+  "riga": 8,
+  "testo": "La gola del ponte la passano il sesto giorno, senza che nessuno la difenda.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S2-a3",
+  "regola": "S2",
+  "forma": "parafrasi",
+  "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+  "riga": 8,
+  "testo": "Quando il traghetto di Drellin brucia sono passati dieci giorni dal Fane.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S3-p1",
+  "regola": "S3",
+  "forma": "piana",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+  "riga": 7,
+  "testo": "- Torneo di Dauth: Day 20-22.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S3 finestra della quest",
+   "atteso": "P2B Torneo: Giorno 25-34",
+   "ha": "Giorno 20-22",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 7,
+   "testo": "- Torneo di Dauth: Day 20-22."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S3-p2",
+  "regola": "S3",
+  "forma": "piana",
+  "file": "campaign/DM-QUICKSTART-ARC09.md",
+  "riga": 8,
+  "testo": "La Torre Invisibile si affronta nei Giorni 22-24.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S3-p3",
+  "regola": "S3",
+  "forma": "piana",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE1.md",
+  "riga": 8,
+  "testo": "Il raid a Rhest va giocato al Day 36.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S3 finestra della quest",
+   "atteso": "P2 Rhest: Giorno 25-32",
+   "ha": "Giorno 36",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE1.md",
+   "riga": 8,
+   "testo": "Il raid a Rhest va giocato al Day 36."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S3-a1",
+  "regola": "S3",
+  "forma": "parafrasi",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+  "riga": 7,
+  "testo": "Il torneo comincia tre giorni dopo la Cerimonia delle 100 Asce.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S3-a2",
+  "regola": "S3",
+  "forma": "parafrasi",
+  "file": "campaign/DM-QUICKSTART-ARC09.md",
+  "riga": 8,
+  "testo": "I campioni si sfidano a Dauth fra il ventesimo e il ventiduesimo giorno.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S3-a3",
+  "regola": "S3",
+  "forma": "parafrasi",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE1.md",
+  "riga": 8,
+  "testo": "Zalkatar va raggiunto prima che finisca la terza settimana di marcia.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S4-p1",
+  "regola": "S4",
+  "forma": "piana",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE1.md",
+  "riga": 8,
+  "testo": "Pensato per un party di livello 10.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S4 livello del party",
+   "atteso": "13-14",
+   "ha": "10",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE1.md",
+   "riga": 8,
+   "testo": "Pensato per un party di livello 10."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S4-p2",
+  "regola": "S4",
+  "forma": "piana",
+  "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+  "riga": 8,
+  "testo": "I PG di livello 16 affrontano qui l'ondata finale.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S4 livello del party",
+   "atteso": "9-13",
+   "ha": "16",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 8,
+   "testo": "I PG di livello 16 affrontano qui l'ondata finale."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S4-p3",
+  "regola": "S4",
+  "forma": "piana",
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+  "riga": 32,
+  "testo": "Scontro calibrato per 4 PG di livello 11.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S4 livello del party",
+   "atteso": "13-14",
+   "ha": "11",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 32,
+   "testo": "Scontro calibrato per 4 PG di livello 11."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S4-a1",
+  "regola": "S4",
+  "forma": "parafrasi",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE1.md",
+  "riga": 8,
+  "testo": "Gli eroi, ormai al decimo livello, entrano nella Torre.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S4-a2",
+  "regola": "S4",
+  "forma": "parafrasi",
+  "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+  "riga": 8,
+  "testo": "Quattro personaggi di sedicesimo reggono l'ondata senza i pregen.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S4-a3",
+  "regola": "S4",
+  "forma": "parafrasi",
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+  "riga": 32,
+  "testo": "EL 13 per un gruppo di 11°.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S4 livello del party",
+   "atteso": "13-14",
+   "ha": "11",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 32,
+   "testo": "EL 13 per un gruppo di 11°."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S5-p1",
+  "regola": "S5",
+  "forma": "piana",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+  "riga": 7,
+  "testo": "Hella impugna Aegis Fang contro il drago.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S5 portatore dell'artefatto",
+   "atteso": "Aegis Fang: Thorik",
+   "ha": "Hella",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 7,
+   "testo": "Hella impugna Aegis Fang contro il drago."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S5-p2",
+  "regola": "S5",
+  "forma": "piana",
+  "file": "campaign/DM-QUICKSTART-ARC09.md",
+  "riga": 8,
+  "testo": "La Corona di Adamantio di Tordek brilla nella sala.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S5 portatore dell'artefatto",
+   "atteso": "Corona di Adamantio: Thorik",
+   "ha": "Tordek",
+   "file": "campaign/DM-QUICKSTART-ARC09.md",
+   "riga": 8,
+   "testo": "La Corona di Adamantio di Tordek brilla nella sala."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S5-p3",
+  "regola": "S5",
+  "forma": "piana",
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+  "riga": 32,
+  "testo": "Artemis indossa la Collana dei Semi Eterni.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S5 portatore dell'artefatto",
+   "atteso": "Collana dei Semi Eterni: Hella",
+   "ha": "Artemis",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 32,
+   "testo": "Artemis indossa la Collana dei Semi Eterni."
+  },
+  "coerenza_campagna": true,
+  "validate_state": false
+ },
+ {
+  "id": "S5-a1",
+  "regola": "S5",
+  "forma": "parafrasi",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+  "riga": 7,
+  "testo": "L'ascia di Thorik ora la porta Tordek, che la stringe senza saperla usare.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S5-a2",
+  "regola": "S5",
+  "forma": "parafrasi",
+  "file": "campaign/DM-QUICKSTART-ARC09.md",
+  "riga": 8,
+  "testo": "Sulla testa di Artemis la Corona pesa come un debito.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S5-a3",
+  "regola": "S5",
+  "forma": "parafrasi",
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+  "riga": 32,
+  "testo": "L'anello caotico è passato al dito di Hella.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S6-p1",
+  "regola": "S6",
+  "forma": "piana",
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+  "riga": 32,
+  "testo": "Thorik paga −2 COS permanente.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S6 modifica permanente",
+   "atteso": "Thorik: DES −4 / COS +2 / CAR +4",
+   "ha": "COS −2",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 32,
+   "testo": "Thorik paga −2 COS permanente."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S6-p2",
+  "regola": "S6",
+  "forma": "piana",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+  "riga": 7,
+  "testo": "Tordek ha −2 DES permanenti dal rito.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S6 modifica permanente",
+   "atteso": "Tordek: nessuna",
+   "ha": "DES −2",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 7,
+   "testo": "Tordek ha −2 DES permanenti dal rito."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S6-p3",
+  "regola": "S6",
+  "forma": "piana",
+  "file": "campaign/DM-QUICKSTART-ARC09.md",
+  "riga": 8,
+  "testo": "Thorik: −2 SAG permanente dalla Corona.",
+  "verifica_storia": true,
+  "dettaglio": {
+   "regola": "S6 modifica permanente",
+   "atteso": "Thorik: DES −4 / COS +2 / CAR +4",
+   "ha": "SAG −2",
+   "file": "campaign/DM-QUICKSTART-ARC09.md",
+   "riga": 8,
+   "testo": "Thorik: −2 SAG permanente dalla Corona."
+  },
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S6-a1",
+  "regola": "S6",
+  "forma": "parafrasi",
+  "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+  "riga": 32,
+  "testo": "Il rito toglie a Thorik due punti di Costituzione per sempre.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S6-a2",
+  "regola": "S6",
+  "forma": "parafrasi",
+  "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+  "riga": 7,
+  "testo": "Tordek ne esce più lento: perde due punti di Destrezza, e non li riavrà.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S6-a3",
+  "regola": "S6",
+  "forma": "parafrasi",
+  "file": "campaign/DM-QUICKSTART-ARC09.md",
+  "riga": 8,
+  "testo": "Thorik porta il segno del rito: la sua Saggezza scende di 2, definitivamente.",
+  "verifica_storia": false,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false
+ },
+ {
+  "id": "S7-p1",
+  "regola": "S7",
+  "forma": "piana",
+  "file": "campaign/state.yaml",
+  "riga": 0,
+  "testo": "eco E-99z armata senza scena (fatto e payoff di 10+ caratteri)",
+  "verifica_storia": true,
+  "dettaglio": null,
+  "coerenza_campagna": false,
+  "validate_state": false,
+  "nota": "rifatto a mano il 2026-11-12: la prima versione del mutante aveva `fatto` di 7 caratteri e validate_state la bocciava per lo schema (minLength 10), non per la scena mancante; con testi lunghi validate_state passa e verifica_storia la segnala"
+ }
+]

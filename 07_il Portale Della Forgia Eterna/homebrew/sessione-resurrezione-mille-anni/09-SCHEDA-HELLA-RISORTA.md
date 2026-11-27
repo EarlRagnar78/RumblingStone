@@ -70,14 +70,17 @@ non si fonde nel corpo nuovo.
 nome: Treant di Adamantio (evocato)
 gs: —
 tipo: Vegetale Grande
+taglia: Grande
+spazio: 3 m
+portata: 3 m
 ca: 24
-pf: 90
+pf: 95
 ts: Temp +12, Rifl +3, Vol +8
 velocita: 9 m
 attacchi:
   - 2 schianti +18 (2d8+9)
 ```
-**Difesa** **CA 24** · **pf 90** · TS Tempra +12, Riflessi +3, Volontà +8 · **RD 10/adamantio** `[CANONE — DM 2026-10-18]`
+**Difesa** **CA 24** · **pf 95** · TS Tempra +12, Riflessi +3, Volontà +8 · **RD 10/adamantio** `[CANONE — DM 2026-10-18]`
 
 **Attacco** Vel 9 m · **Mischia** 2 schianti **+18** (2d8+9) · portata 3 m
 

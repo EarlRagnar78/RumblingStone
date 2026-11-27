@@ -16,8 +16,14 @@ sottomissioni *State of Libre Graphics*, changelog e roadmap in
 > fuori perimetro, e il §4 dice per ciascuno *quale* perimetro.
 
 **STATO ATTUAZIONE**: §2 **applicato** in questa passata (`export_map_png.py`,
-manifest, tre guide, cinque test). §3.1, §3.2, §3.3 sono **proposte**: nessun codice,
-nessuna decisione presa.
+manifest, tre guide, cinque test). §3.1, §3.2, §3.3 erano **proposte**; il
+2026-11-13 Jfs le ha decise sulle card (D5 del piano di recupero):
+§3.1 **sì, per ARC-09** (lotto, vedi sotto), §3.2 è una regola e non chiede
+lavoro, §3.3 **in attesa** con una condizione misurata da
+`adozioni_in_attesa.py` (voce `blockbench-stanze-3d`).
+§3.1 **applicato** il 2026-11-14: handout 7 di ARC-09, carta del cielo di Zalkatar
+(pista della Torre invisibile) fatta con Stellarium 23.4 e una cultura del cielo del
+repo, senza codice nel toolkit (`09_…/Immagini-Handout/carta-del-cielo/PROVENIENZA.txt`).
 
 ---
 
@@ -174,6 +180,29 @@ aggiunge un asset. **Gate**: serve che il DM voglia quell'handout in un modulo
 preciso. Farlo «perché è bello» produrrebbe una figura senza posto nel testo, che è
 esattamente il difetto che il capitolato del Drappo elenca fra i sei.
 
+📅 **2026-11-13, Jfs sulla card: «sì, per ARC-09»**, non la consigliata. Il
+gate qui sopra è soddisfatto (il modulo è ARC-09). Tensione dichiarata: il
+dossier delle piste di ARC-09 ([TRAVASO A6](PIANO-TRAVASO-DRAPPO-CAMPAGNA.md))
+aspetta la fine di ARC-07 al tavolo, quindi la carta nasce prima delle piste a
+cui si lega: chi la prepara chiede prima a Jfs a quale pista e a quale scena
+serve. Nomi delle costellazioni propri del repo (ADR-0005). Limite tecnico:
+Stellarium è un programma a finestre, il lavoro è in gran parte manuale, e nel
+container va verificato se gira.
+
+✅ **2026-11-14, fatto (#422).** Nel container gira (Stellarium 23.4 da apt, Xvfb e
+Mesa software). Jfs ha scelto sulle card la pista della Torre invisibile, la carta
+addosso al mago dei piromanti drow con Sethrax come seconda occasione, e il passo
+della Torre un grado a sud. Handout 7 in `Arco-Post-Hammerfist-HANDOUTS.md`, file e
+provenienza in `09_…/Immagini-Handout/carta-del-cielo/`.
+Lo stesso giorno la carta passa a Stellarium 26.2 (AppImage ufficiale): cultura in
+`index.json`, segno fisso sulla stella-chiave (due lanci identici, prima 619 pixel
+diversi) e parallelo del Sigillo col plugin ArchaeoLines, scelto da Jfs sulla card.
+SkyCultureMaker c'è ma è solo a finestre: non migliora nulla che si misuri.
+Il 2026-11-18, al ricontrollo chiesto da Jfs, la carta è rifatta per la mezzanotte del
+30 Flamerule (prima 30 Mirtul): il Giorno di Marcia 30 cade in Flamerule per l'ancora
+del calendario del 2026-07-12, e Jfs l'ha confermato sulla card. Nuova stella-chiave,
+Sigillo ridisegnato; i passi sono in PROVENIENZA.
+
 ### §3.2 · Krita e GIMP: banco del DM, mai passo di catena
 
 Nessuna novità rispetto ad agosto (§3-ter li aveva già nominati), ma la lista LGM
@@ -192,6 +221,9 @@ vuole master di testo e layout generati; un binario di Krita in `git` non si dif
 si valida e non si rigenera. Entra nel repo **il PNG esportato con la sua riga di
 PROVENIENZA** (ADR-0019 §2), mai il progetto.
 
+✅ **2026-11-13 (D5 del piano di recupero)**: è una regola, non un lavoro;
+nessuna casella resta aperta su questo paragrafo.
+
 ### §3.3 · Blockbench: la geometria, a un decimo del costo di Blender
 
 Il §3-ter di agosto ha scritto il pezzo più caro della pila: *geometria dal JSON della
@@ -208,6 +240,15 @@ di profondità resta a Blender. Quindi non è un'alternativa al piano di agosto:
 **l'anello di modellazione** di quello stesso piano, reso abbordabile. Resta l'ultimo
 in ordine di priorità, come già scritto: dopo Typst (fatto) e dopo lo script di batch
 su ComfyUI (non fatto).
+
+⏳ **2026-11-13, Jfs su due card (D5 del piano di recupero)**. La riga qui sopra
+era ferma: lo script di batch è su main dal 2026-09-05 (`scripts/comfyui_batch.py`,
+494174ce), quindi la prima condizione scelta («quando lo script è su main») era
+già vera. Jfs ha scelto la nuova: **Blockbench parte quando la catena ComfyUI ha
+prodotto una serie vera**. La misura è nel registro
+(`plans/adozioni-in-attesa.json`, voce `blockbench-stanze-3d`): almeno 3 righe
+scritte da `comfyui_batch.py` (quelle col seed) in un `PROVENIENZA.txt` del repo.
+Oggi 0; `adozioni_in_attesa.py --check` in CI dice quando scatta.
 
 ---
 

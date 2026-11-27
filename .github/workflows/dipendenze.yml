@@ -50,7 +50,9 @@ jobs:
           righe = []
           for f in ("requirements.txt", "requirements-dev.txt"):
               for r in open(f, encoding="utf-8"):
-                  m = re.match(r"^([A-Za-z0-9_.\-\[\]]+)\s*>=\s*([^\s;#,]+)", r)
+                  # `>=` diventa `==`; una versione già fissata (`==`, typst per
+                  # ADR-0116) resta quella: il pavimento è lei.
+                  m = re.match(r"^([A-Za-z0-9_.\-\[\]]+)\s*(?:>=|==)\s*([^\s;#,]+)", r)
                   if m:
                       righe.append(f"{m.group(1)}=={m.group(2)}")
           open("minime.txt", "w").write("\n".join(righe) + "\n")
@@ -85,7 +87,7 @@ jobs:
           righe = []
           for f in ("requirements.txt", "requirements-dev.txt"):
               for r in open(f, encoding="utf-8"):
-                  m = re.match(r"^([A-Za-z0-9_.\-\[\]]+)\s*>=\s*([^\s;#,]+)", r)
+                  m = re.match(r"^([A-Za-z0-9_.\-\[\]]+)\s*(?:>=|==)\s*([^\s;#,]+)", r)
                   if m:
                       righe.append(f"{m.group(1)}=={m.group(2)}")
           open("minime.txt", "w").write("\n".join(righe) + "\n")

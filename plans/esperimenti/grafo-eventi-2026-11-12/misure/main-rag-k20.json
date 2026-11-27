@@ -1,0 +1,5272 @@
+{
+ "citazioni": [
+  {
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 292,
+   "testo": "Connessioni NPC:   Serve sia il   Collezionista (Rakshasa)   che la   Matrona Sajak (Drow)   — agente di campo doppio.",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "giorno_da": 28,
+   "giorno_a": 36,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+   "riga": 14,
+   "testo": "Sal sa già — grazie al Collezionista — che il gruppo sta arrivando con i loro artefatti.",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 451,
+   "testo": "Con le parole di Sal.   Sal chiama Sonjak «Matrona Sajak» nei suoi codici",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 292,
+   "testo": "Connessioni NPC:   Serve sia il   Collezionista (Rakshasa)   che la   Matrona Sajak (Drow)   — agente di campo doppio.",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "giorno_da": 42,
+   "giorno_a": 42,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md",
+   "riga": 57,
+   "testo": "-   Drow di Sonjak   (Matrona Sajak): agiscono principalmente in Fase 0 (Notte dei Drow, infiltrazione cripte Tempio di Rethmar).",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+   "riga": 177,
+   "testo": "-   Clock Sonjak / Collezionista / Sal   toccati.",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "giorno_da": 28,
+   "giorno_a": 36,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+   "riga": 14,
+   "testo": "Sal sa già — grazie al Collezionista — che il gruppo sta arrivando con i loro artefatti.",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 605,
+   "testo": "- Artifacts: 5 legacy items (Aegis Fang, Corona, Ring, Bracieri, Collana) —   già",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "giorno_da": 25,
+   "giorno_a": 32,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md",
+   "riga": 116,
+   "testo": "-   Thorik — Corona di Adamantio + Aegis Fang  :   Aegis Fang (+2, Returning)",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "giorno_da": 42,
+   "giorno_a": 42,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-MYTHAL-FOCUS-PG-SCENA-EROICA.md",
+   "riga": 35,
+   "testo": "- canalizza la Corona di Adamantio nel focus del Mythal,",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "giorno_da": 14,
+   "giorno_a": 19,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3786,
+   "testo": "Aegis Fang allo Stage 1   (Scena 12)   l'ascia ha smesso di interrogare Thorik —   oppure   lo giudica, e il giudizio finisce la prima volta che lui rischia qualcosa di suo per Hella   ARC-08, alla prima scena che riguarda Hella o nani da p",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 193,
+   "testo": "-   Conte Valerius   sta cercando di finanziare politicamente la guerra del Red Hand passando per \"patriotic emergency loans\" (canon: vedi  state.md  §2 Clock 2/8).",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 189,
+   "testo": "-   Halveth è corrotto   dal Conte Valerius (vedi anche la lettera di Brenna).",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md",
+   "riga": 27,
+   "testo": "comprato: prende l'argento del   Conte Valerius  , e vota come gli si dice.",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+   "riga": 87,
+   "testo": "La Civetta       Conte Valerius   (nobiltà decaduta)   Shar    (esterno)    Coprire i \"prestiti patriottici\" alla Mano Rossa, insabbiare i registri",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 1014,
+   "testo": "La   Civetta   compra il nome di chi le ha vendute   il Conte Valerius lo sa la sera stessa.",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "giorno_da": 14,
+   "giorno_a": 19,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 2844,
+   "testo": "È   Vatore  : mille anni prima di diventare   Salvatore",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "giorno_da": 25,
+   "giorno_a": 34,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-MINIMAPPA-TIMELINE-ALLEANZE.md",
+   "riga": 55,
+   "testo": "In realtà è   Sethrax il Velato  , Mind Flayer   emissario di Zalkatar dalla Torre Invisibile   — vedi  PARTE2 – Mattina  e  STATBLOCCHI-COMPLETO  voce 10.",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 292,
+   "testo": "È il fornitore a monte di   Maestro Varis \"Seta-Argento\"   (le statue del suo carro diventano le \"sculture\" nelle case dei nobili di Rethmar).",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md",
+   "riga": 31,
+   "testo": "Il Collezionista opera attraverso   Maestro Varis \"Seta-Argento\"   (già menzionato nel profilo di Artemis), un mercante planare senza scrupoli con una facciata di rispettabilità perfetta.",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+   "riga": 61,
+   "testo": "Varis \"Seta-Argento\" tira i fili dall'esterno e il mercato nero prospera",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "giorno_da": 28,
+   "giorno_a": 36,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+   "riga": 14,
+   "testo": "Sal sa già — grazie al Collezionista — che il gruppo sta arrivando con i loro artefatti.",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "giorno_da": 28,
+   "giorno_a": 36,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+   "riga": 14,
+   "testo": "Sal sa già — grazie al Collezionista — che il gruppo sta arrivando con i loro artefatti.",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 292,
+   "testo": "È il fornitore a monte di   Maestro Varis \"Seta-Argento\"   (le statue del suo carro diventano le \"sculture\" nelle case dei nobili di Rethmar).",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md",
+   "riga": 31,
+   "testo": "Il Collezionista opera attraverso   Maestro Varis \"Seta-Argento\"   (già menzionato nel profilo di Artemis), un mercante planare senza scrupoli con una facciata di rispettabilità perfetta.",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "giorno_da": 20,
+   "giorno_a": 41,
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md",
+   "riga": 49,
+   "testo": "Aeleth Verdebronzo era il primo, ma il vento ha cambiato l'ordine.",
+   "estrattore": "rag",
+   "domanda": "T3"
+  },
+  {
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "giorno_da": 14,
+   "giorno_a": 19,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "testo": "Cronache dei Quattro Eroi     La profezia compiuta diventa   fama crescente presso i nani       ARC-08 E5   (Custodi Eterni) e Cerimonia delle 100 Asce   ARC-08 E5 / handout C2",
+   "estrattore": "rag",
+   "domanda": "T1"
+  },
+  {
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "giorno_da": 14,
+   "giorno_a": 19,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "testo": "Cronache dei Quattro Eroi     La profezia compiuta diventa   fama crescente presso i nani       ARC-08 E5   (Custodi Eterni) e Cerimonia delle 100 Asce   ARC-08 E5 / handout C2",
+   "estrattore": "rag",
+   "domanda": "T1"
+  },
+  {
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "giorno_da": 14,
+   "giorno_a": 19,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "testo": "Cronache dei Quattro Eroi     La profezia compiuta diventa   fama crescente presso i nani       ARC-08 E5   (Custodi Eterni) e Cerimonia delle 100 Asce   ARC-08 E5 / handout C2",
+   "estrattore": "rag",
+   "domanda": "T1"
+  },
+  {
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "giorno_da": 14,
+   "giorno_a": 19,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "testo": "Cronache dei Quattro Eroi     La profezia compiuta diventa   fama crescente presso i nani       ARC-08 E5   (Custodi Eterni) e Cerimonia delle 100 Asce   ARC-08 E5 / handout C2",
+   "estrattore": "rag",
+   "domanda": "T1"
+  },
+  {
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "giorno_da": 14,
+   "giorno_a": 19,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "testo": "Cronache dei Quattro Eroi     La profezia compiuta diventa   fama crescente presso i nani       ARC-08 E5   (Custodi Eterni) e Cerimonia delle 100 Asce   ARC-08 E5 / handout C2",
+   "estrattore": "rag",
+   "domanda": "T1"
+  },
+  {
+   "png": null,
+   "fatto": "F_custodi",
+   "giorno_da": 14,
+   "giorno_a": 19,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "testo": "Cronache dei Quattro Eroi     La profezia compiuta diventa   fama crescente presso i nani       ARC-08 E5   (Custodi Eterni) e Cerimonia delle 100 Asce   ARC-08 E5 / handout C2",
+   "estrattore": "rag",
+   "domanda": "T0"
+  },
+  {
+   "png": null,
+   "fatto": "F_seme_porta",
+   "giorno_da": 1,
+   "giorno_a": 21,
+   "file": "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md",
+   "riga": 151,
+   "testo": "Dicono che le ultime due Porte non sono state mai aperte da quando l'Orbe è arrivata a Dauth.\"  Niente di nuovo, ma   costruisce atmosfera  .",
+   "estrattore": "rag",
+   "domanda": "T0"
+  },
+  {
+   "png": null,
+   "fatto": "F_seme_porta",
+   "giorno_da": 14,
+   "giorno_a": 19,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1039,
+   "testo": "Come fa a essere QUI (per il DM).   Il Seme è un   innesto planare",
+   "estrattore": "rag",
+   "domanda": "T0"
+  },
+  {
+   "png": null,
+   "fatto": "F_seme_porta",
+   "giorno_da": 14,
+   "giorno_a": 19,
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1173,
+   "testo": "Il Seme     ✅   posseduto  , integro, tiepido, nello   zaino di Tordek",
+   "estrattore": "rag",
+   "domanda": "T0"
+  }
+ ],
+ "violazioni": [
+  {
+   "regola": "T2 catena rotta",
+   "atteso": "il-collezionista sa F_custodi",
+   "ha": "il-collezionista non lo sa nel grafo",
+   "file": "eventi.yaml",
+   "riga": 0,
+   "png": "salvatore",
+   "fatto": "F_custodi"
+  },
+  {
+   "regola": "T2 catena rotta",
+   "atteso": "il-collezionista sa F_artefatti_quali",
+   "ha": "il-collezionista non lo sa nel grafo",
+   "file": "eventi.yaml",
+   "riga": 0,
+   "png": "salvatore",
+   "fatto": "F_artefatti_quali"
+  },
+  {
+   "regola": "T2 catena rotta",
+   "atteso": "tempestas sa F_lorana_viva",
+   "ha": "tempestas non lo sa nel grafo",
+   "file": "eventi.yaml",
+   "riga": 0,
+   "png": "brenna-sorvane",
+   "fatto": "F_lorana_viva"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "sonjak non sa F_gemme",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 292,
+   "png": "sonjak",
+   "fatto": "F_gemme"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "sonjak non sa F_gemme",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+   "riga": 14,
+   "png": "sonjak",
+   "fatto": "F_gemme"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "sonjak non sa F_sal_vatore",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 451,
+   "png": "sonjak",
+   "fatto": "F_sal_vatore"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "sonjak non sa F_sal_vatore",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 292,
+   "png": "sonjak",
+   "fatto": "F_sal_vatore"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "sonjak non sa F_sal_vatore",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md",
+   "riga": 57,
+   "png": "sonjak",
+   "fatto": "F_sal_vatore"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "sonjak non sa F_sal_vatore",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+   "riga": 177,
+   "png": "sonjak",
+   "fatto": "F_sal_vatore"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "sonjak non sa F_sal_vatore",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+   "riga": 14,
+   "png": "sonjak",
+   "fatto": "F_sal_vatore"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "ghaurush non sa F_artefatti_quali",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 605,
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "ghaurush non sa F_artefatti_quali",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md",
+   "riga": 116,
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "zin-thara non sa F_corona",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-MYTHAL-FOCUS-PG-SCENA-EROICA.md",
+   "riga": 35,
+   "png": "zin-thara",
+   "fatto": "F_corona"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "ushgar non sa F_artefatti_quali",
+   "ha": "lo mostra di sapere",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3786,
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "conte-valerius non sa F_sal_vatore",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 193,
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "conte-valerius non sa F_sal_vatore",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 189,
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "conte-valerius non sa F_sal_vatore",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md",
+   "riga": 27,
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "conte-valerius non sa F_sal_vatore",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+   "riga": 87,
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "conte-valerius non sa F_sal_vatore",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 1014,
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "conte-valerius non sa F_sal_vatore",
+   "ha": "lo mostra di sapere",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 2844,
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "sethrax non sa F_xal_piano",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-MINIMAPPA-TIMELINE-ALLEANZE.md",
+   "riga": 55,
+   "png": "sethrax",
+   "fatto": "F_xal_piano"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "varis non sa F_rete_varis",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 292,
+   "png": "varis",
+   "fatto": "F_rete_varis"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "varis non sa F_rete_varis",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md",
+   "riga": 31,
+   "png": "varis",
+   "fatto": "F_rete_varis"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "varis non sa F_rete_varis",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+   "riga": 61,
+   "png": "varis",
+   "fatto": "F_rete_varis"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "varis non sa F_rete_varis",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+   "riga": 14,
+   "png": "varis",
+   "fatto": "F_rete_varis"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "lirien non sa F_rete_varis",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+   "riga": 14,
+   "png": "lirien",
+   "fatto": "F_rete_varis"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "lirien non sa F_rete_varis",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 292,
+   "png": "lirien",
+   "fatto": "F_rete_varis"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "lirien non sa F_rete_varis",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md",
+   "riga": 31,
+   "png": "lirien",
+   "fatto": "F_rete_varis"
+  },
+  {
+   "regola": "T3 negazione",
+   "atteso": "maewen non sa F_aeleth_morto",
+   "ha": "lo mostra di sapere",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md",
+   "riga": 49,
+   "png": "maewen",
+   "fatto": "F_aeleth_morto"
+  },
+  {
+   "regola": "T0 origine",
+   "atteso": "F_custodi dal Day 21",
+   "ha": "scena Day 14-19",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "png": "ghaurush",
+   "fatto": "F_custodi"
+  },
+  {
+   "regola": "T1 temporale",
+   "atteso": "ghaurush sa F_custodi dal Day 21",
+   "ha": "scena Day 14-19",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "png": "ghaurush",
+   "fatto": "F_custodi"
+  },
+  {
+   "regola": "T0 origine",
+   "atteso": "F_custodi dal Day 21",
+   "ha": "scena Day 14-19",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "png": "re-thorek",
+   "fatto": "F_custodi"
+  },
+  {
+   "regola": "T1 temporale",
+   "atteso": "re-thorek sa F_custodi dal Day 21",
+   "ha": "scena Day 14-19",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "png": "re-thorek",
+   "fatto": "F_custodi"
+  },
+  {
+   "regola": "T0 origine",
+   "atteso": "F_custodi dal Day 21",
+   "ha": "scena Day 14-19",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "png": "tempestas",
+   "fatto": "F_custodi"
+  },
+  {
+   "regola": "T1 temporale",
+   "atteso": "tempestas sa F_custodi dal Day 21",
+   "ha": "scena Day 14-19",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "png": "tempestas",
+   "fatto": "F_custodi"
+  },
+  {
+   "regola": "T0 origine",
+   "atteso": "F_custodi dal Day 21",
+   "ha": "scena Day 14-19",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "png": "norro-wiston",
+   "fatto": "F_custodi"
+  },
+  {
+   "regola": "T1 temporale",
+   "atteso": "norro-wiston sa F_custodi dal Day 21",
+   "ha": "scena Day 14-19",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "png": "norro-wiston",
+   "fatto": "F_custodi"
+  },
+  {
+   "regola": "T0 origine",
+   "atteso": "F_custodi dal Day 21",
+   "ha": "scena Day 14-19",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi"
+  },
+  {
+   "regola": "T1 temporale",
+   "atteso": "brenna-sorvane sa F_custodi dal Day 23",
+   "ha": "scena Day 14-19",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi"
+  },
+  {
+   "regola": "T0 origine",
+   "atteso": "F_custodi dal Day 21",
+   "ha": "scena Day 14-19",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "png": null,
+   "fatto": "F_custodi"
+  },
+  {
+   "regola": "T0 origine",
+   "atteso": "F_seme_porta dal Day 25",
+   "ha": "scena Day 1-21",
+   "file": "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md",
+   "riga": 151,
+   "png": null,
+   "fatto": "F_seme_porta"
+  },
+  {
+   "regola": "T0 origine",
+   "atteso": "F_seme_porta dal Day 25",
+   "ha": "scena Day 14-19",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1039,
+   "png": null,
+   "fatto": "F_seme_porta"
+  },
+  {
+   "regola": "T0 origine",
+   "atteso": "F_seme_porta dal Day 25",
+   "ha": "scena Day 14-19",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1173,
+   "png": null,
+   "fatto": "F_seme_porta"
+  }
+ ],
+ "letture": [
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 28,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 451,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md",
+   "riga": 28,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md",
+   "riga": 57,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 292,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md",
+   "riga": 360,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 244,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md",
+   "riga": 156,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+   "riga": 14,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-INCONTRI-VIAGGIO-CANNATH-VALE.md",
+   "riga": 170,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 88,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+   "riga": 120,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 960,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md",
+   "riga": 141,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+   "riga": 177,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 70,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md",
+   "riga": 49,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md",
+   "riga": 106,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+   "riga": 150,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_gemme",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md",
+   "riga": 98,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 451,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 28,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 292,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md",
+   "riga": 360,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md",
+   "riga": 28,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 244,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md",
+   "riga": 57,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 26,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+   "riga": 120,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-INCONTRI-VIAGGIO-CANNATH-VALE.md",
+   "riga": 170,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-GIORNO2-PARTITI-CENA-SABOTAGGI.md",
+   "riga": 177,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md",
+   "riga": 156,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 2837,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 4409,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md",
+   "riga": 49,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md",
+   "riga": 588,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+   "riga": 14,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md",
+   "riga": 150,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md",
+   "riga": 141,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sonjak",
+   "fatto": "F_sal_vatore",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 2888,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 86,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 1823,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "riga": 955,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 127,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3423,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md",
+   "riga": 18,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 498,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-TESORO-WBL-AUDIT.md",
+   "riga": 42,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md",
+   "riga": 129,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 44,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-13-TESORO-WBL-AUDIT.md",
+   "riga": 42,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 648,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 142,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 605,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 245,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 55,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md",
+   "riga": 116,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE2-RITUALISTI-TESTO.md",
+   "riga": 143,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md",
+   "riga": 76,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghaurush",
+   "fatto": "F_artefatti_quali",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1951,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 295,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 70,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md",
+   "riga": 558,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md",
+   "riga": 106,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1B-Cerchio-Treant-COMPLETO-maps.md",
+   "riga": 433,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-MYTHAL-FOCUS-PG-SCENA-EROICA.md",
+   "riga": 35,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 1192,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 879,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE1.md",
+   "riga": 10,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 437,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 286,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 717,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 2397,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 2374,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE.md",
+   "riga": 666,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-BATTERIA.md",
+   "riga": 69,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ESITI-CONSEGUENZE.md",
+   "riga": 229,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md",
+   "riga": 52,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 1402,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "zin-thara",
+   "fatto": "F_corona",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3795,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 511,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 286,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 590,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 2239,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-TESTO.md",
+   "riga": 206,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3786,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 591,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 86,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 245,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+   "riga": 531,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 2074,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "riga": 1131,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1608,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 1823,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "riga": 741,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "riga": 955,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-13-TESORO-WBL-AUDIT.md",
+   "riga": 42,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 1047,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-CITY-SIEGE.md",
+   "riga": 305,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ushgar",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1-MAPPE-COMPLETO.md",
+   "riga": 191,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md",
+   "riga": 24,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 2421,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 31,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 224,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md",
+   "riga": 241,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-18-LIBRETTO-BATTAGLIA-CAMPALE.md",
+   "riga": 8,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3780,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 359,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "riga": 1395,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 702,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 1063,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+   "riga": 306,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 1143,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md",
+   "riga": 73,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 1009,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "riga": 411,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-STATBLOCCHI.md",
+   "riga": 8,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 2697,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md",
+   "riga": 48,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "ghostlord",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md",
+   "riga": 4,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 193,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Artemis.md",
+   "riga": 243,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 437,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md",
+   "riga": 237,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 9,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 189,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+   "riga": 118,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 8,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 20,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 122,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 37,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1B-Cerchio-Treant-COMPLETO-maps.md",
+   "riga": 433,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ESITI-CONSEGUENZE.md",
+   "riga": 229,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+   "riga": 87,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md",
+   "riga": 27,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 70,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-MYTHAL-FOCUS-PG-SCENA-EROICA.md",
+   "riga": 35,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+   "riga": 16,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 1557,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_corona",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 228,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 193,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+   "riga": 118,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Artemis.md",
+   "riga": 243,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 20,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md",
+   "riga": 237,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 189,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 122,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 8,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 9,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md",
+   "riga": 27,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+   "riga": 87,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 355,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 37,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 1014,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+   "riga": 225,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 26,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 2844,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+   "riga": 24,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md",
+   "riga": 162,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "conte-valerius",
+   "fatto": "F_sal_vatore",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 2950,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md",
+   "riga": 259,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+   "riga": 152,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md",
+   "riga": 102,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 27,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 86,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 313,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+   "riga": 271,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+   "riga": 239,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 44,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md",
+   "riga": 33,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE3-AZARRKUL-AVATAR-TESTO.md",
+   "riga": 20,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE0-NOTTE-DEI-DROW-TESTO.md",
+   "riga": 121,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ESITI-CONSEGUENZE.md",
+   "riga": 160,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE3-AZARRKUL-AVATAR-TESTO.md",
+   "riga": 59,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 1823,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "riga": 955,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md",
+   "riga": 325,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-FASE2-RITUALISTI-TESTO.md",
+   "riga": 10,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ESITI-CONSEGUENZE.md",
+   "riga": 287,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "azarr-kul",
+   "fatto": "F_artefatti_quali",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+   "riga": 5,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE3-Giorno3-Finale-e-Invasione.md",
+   "riga": 67,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md",
+   "riga": 119,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md",
+   "riga": 10,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-OTTO-PORTE-e-ORBE.md",
+   "riga": 307,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE2-Giorno2-Semifinali.md",
+   "riga": 36,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-TESORO-WBL-AUDIT.md",
+   "riga": 106,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md",
+   "riga": 100,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-MINIMAPPA-TIMELINE-ALLEANZE.md",
+   "riga": 240,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md",
+   "riga": 139,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DM-MASTER-REFERENCE.md",
+   "riga": 60,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-MINIMAPPA-TIMELINE-ALLEANZE.md",
+   "riga": 55,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-DAY3-CITY-SIEGE.md",
+   "riga": 28,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 261,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-MYTHAL-FOCUS-PG-SCENA-EROICA.md",
+   "riga": 294,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Artemis.md",
+   "riga": 276,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-OTTO-PORTE-e-ORBE.md",
+   "riga": 38,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-PARTE2-Giorno2-Semifinali.md",
+   "riga": 37,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 417,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 320,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "sethrax",
+   "fatto": "F_xal_piano",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 238,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1065,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 610,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 292,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 308,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md",
+   "riga": 49,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1069,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md",
+   "riga": 31,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+   "riga": 64,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md",
+   "riga": 61,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 1013,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 822,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1209,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "07_il Portale Della Forgia Eterna/APPARATO-ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 17,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+   "riga": 277,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 686,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+   "riga": 14,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 1034,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 244,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 1016,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "varis",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md",
+   "riga": 159,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md",
+   "riga": 49,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md",
+   "riga": 601,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+   "riga": 337,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2C-Salvatore-Mercante-TESTO.md",
+   "riga": 14,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 1013,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 822,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md",
+   "riga": 569,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 867,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 244,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+   "riga": 277,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-LOCANDE.md",
+   "riga": 28,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1209,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CHANNATHGATE-INTEGRAZIONE.md",
+   "riga": 58,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md",
+   "riga": 567,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 1016,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 823,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-MYTHAL-FOCUS-PG-SCENA-EROICA.md",
+   "riga": 130,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 292,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md",
+   "riga": 225,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lirien",
+   "fatto": "F_rete_varis",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md",
+   "riga": 31,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md",
+   "riga": 228,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md",
+   "riga": 68,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 205,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md",
+   "riga": 187,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 124,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 9,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 337,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 411,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+   "riga": 22,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 315,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAR-STRUTTURA.md",
+   "riga": 290,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 34,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 251,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md",
+   "riga": 333,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 20,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 192,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE4-FINALE-Boss-Zalkatar.md",
+   "riga": 53,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 170,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md",
+   "riga": 160,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "mira-serani",
+   "fatto": "F_lorana_viva",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md",
+   "riga": 61,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 609,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md",
+   "riga": 160,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 212,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-LOCANDE.md",
+   "riga": 124,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md",
+   "riga": 30,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 192,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 170,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-EVENT-DECK.md",
+   "riga": 61,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 251,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Hella-SacredForest.md",
+   "riga": 90,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 34,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Ghostlord-Refugees.md",
+   "riga": 228,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 205,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 447,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 411,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Thorik-RethmarLetter.md",
+   "riga": 232,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 951,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONTRADE-STEMMI-CANTI.md",
+   "riga": 79,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 315,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "lorana",
+   "fatto": "F_mira_impostora",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3864,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-TESTO.md",
+   "riga": 173,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 2421,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 224,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-TESTO.md",
+   "riga": 17,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "riga": 1395,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md",
+   "riga": 241,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-18-LIBRETTO-BATTAGLIA-CAMPALE.md",
+   "riga": 8,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 359,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 702,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-INCONTRI-VIAGGIO-CANNATH-VALE.md",
+   "riga": 41,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md",
+   "riga": 118,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-TESTO.md",
+   "riga": 194,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md",
+   "riga": 189,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 2697,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Starsong-Hill-ALLEANZA-ELFI-MAPPE.md",
+   "riga": 77,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md",
+   "riga": 238,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 636,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "riga": 411,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 1009,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "tiri-kitor",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 622,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md",
+   "riga": 179,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md",
+   "riga": 72,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md",
+   "riga": 84,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md",
+   "riga": 16,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md",
+   "riga": 29,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md",
+   "riga": 49,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md",
+   "riga": 16,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md",
+   "riga": 29,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md",
+   "riga": 54,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 1428,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md",
+   "riga": 251,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md",
+   "riga": 52,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md",
+   "riga": 136,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md",
+   "riga": 187,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 330,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 554,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 287,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "riga": 970,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md",
+   "riga": 206,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T3",
+   "png": "maewen",
+   "fatto": "F_aeleth_morto",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-Tordek-DauthInvitation.md",
+   "riga": 85,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 224,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 802,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 57,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 879,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 702,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 211,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3909,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 132,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 135,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3840,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 139,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 359,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 128,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 519,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 8,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3952,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 60,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3908,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zin-thara",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CASSETTA-DEL-DM.md",
+   "riga": 222,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 702,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 224,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 2345,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 132,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CASSETTA-DEL-DM.md",
+   "riga": 49,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 943,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 1605,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 262,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 894,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-BARILE-SULLA-TENDA.md",
+   "riga": 821,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 359,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 57,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 4672,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 4676,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 1140,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 139,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 414,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 802,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ghaurush",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CASSETTA-DEL-DM.md",
+   "riga": 97,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 224,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 306,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 135,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3909,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 590,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 702,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 2239,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 286,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 2568,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 245,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 894,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3554,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 1047,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 491,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 359,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-00-INDICE.md",
+   "riga": 117,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-BARILE-SULLA-TENDA.md",
+   "riga": 888,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 2055,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 2221,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "ushgar",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3883,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3642,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 702,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 359,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 224,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3550,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 57,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3909,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 802,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 262,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 1140,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 132,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 1605,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CASSETTA-DEL-DM.md",
+   "riga": 222,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 710,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 2119,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 894,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-00-INDICE.md",
+   "riga": 117,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-BARILE-SULLA-TENDA.md",
+   "riga": 706,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "azarr-kul",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 394,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 224,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 359,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 702,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 535,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 636,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 132,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 622,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 139,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3909,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 1605,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 894,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 545,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 414,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 211,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 362,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 57,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3908,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CASSETTA-DEL-DM.md",
+   "riga": 222,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "re-thorek",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 879,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 359,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 224,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 702,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 622,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 57,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 139,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3909,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CASSETTA-DEL-DM.md",
+   "riga": 222,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 942,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 636,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 491,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 135,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 211,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 132,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3908,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 1605,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 1278,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 879,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "tempestas",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 1140,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 359,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 224,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 702,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 622,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 132,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 942,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3909,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 636,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 135,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 879,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 139,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CASSETTA-DEL-DM.md",
+   "riga": 222,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 414,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 491,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 211,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 57,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3908,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 894,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "norro-wiston",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 1605,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md",
+   "riga": 138,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 954,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 1278,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 362,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1173,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 1091,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "riga": 333,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 374,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1274,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-HANDOUTS.md",
+   "riga": 138,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 861,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 879,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "riga": 459,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 207,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md",
+   "riga": 151,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md",
+   "riga": 58,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 351,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3642,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3550,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "sethrax",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 2119,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md",
+   "riga": 138,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 362,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 1278,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md",
+   "riga": 159,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md",
+   "riga": 76,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 374,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md",
+   "riga": 206,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 2261,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md",
+   "riga": 151,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 1091,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 954,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md",
+   "riga": 58,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 861,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CASSETTA-DEL-DM.md",
+   "riga": 176,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1337,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 803,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md",
+   "riga": 1468,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "riga": 425,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "riga": 333,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "zalkatar",
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 357,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 2421,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 224,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 359,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-18-LIBRETTO-BATTAGLIA-CAMPALE.md",
+   "riga": 8,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md",
+   "riga": 241,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "riga": 1395,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 702,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-17-BANCO-HAMMERFIST-1372.md",
+   "riga": 238,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md",
+   "riga": 2697,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-00-INDICE.md",
+   "riga": 41,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "riga": 411,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md",
+   "riga": 120,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-15-HANDOUTS-GIOCATORE.md",
+   "riga": 306,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-04-MARCIA-MANO-ROSSA.md",
+   "riga": 61,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 622,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md",
+   "riga": 73,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 132,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-16-CUE-SONORI.md",
+   "riga": 4,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T1",
+   "png": "brenna-sorvane",
+   "fatto": "F_custodi",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-10-ESITI-E-CONTINGENZE.md",
+   "riga": 348,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 702,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 224,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 359,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CONSEGUENZE-ECHI.md",
+   "riga": 29,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 132,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 414,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 622,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-CASSETTA-DEL-DM.md",
+   "riga": 222,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 135,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 636,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 139,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 211,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 1605,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3908,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 3909,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 942,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 2169,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 2319,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 57,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_custodi",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 491,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md",
+   "riga": 151,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md",
+   "riga": 954,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1039,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 138,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 220,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 374,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1179,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 297,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 942,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 353,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md",
+   "riga": 333,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 699,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 315,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md",
+   "riga": 109,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 1316,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md",
+   "riga": 1097,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/ARC08-11-PONTE-ARRIVO.md",
+   "riga": 138,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md",
+   "riga": 1173,
+   "risposta": "SÌ"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md",
+   "riga": 998,
+   "risposta": "NO"
+  },
+  {
+   "domanda": "T0",
+   "png": null,
+   "fatto": "F_seme_porta",
+   "file": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md",
+   "riga": 700,
+   "risposta": "NO"
+  }
+ ],
+ "misure": {
+  "passaggi": 33427,
+  "domande": 31,
+  "candidati": 560,
+  "letture_llm": 560,
+  "letture_nuove": 0,
+  "secondi_recupero": 129.2,
+  "secondi_lettura": 0.0,
+  "k": 20,
+  "modello": "Qwen/Qwen2.5-3B-Instruct",
+  "embed": "intfloat/multilingual-e5-small"
+ }
+}

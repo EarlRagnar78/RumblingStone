@@ -5,6 +5,9 @@
 ```statblocco
 gs: 2
 tipo: Medium humanoid (goblinoid), Warrior 3, LE
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 19
 ca-dettaglio: touch 11, flat-footed 18
 pf: 23
@@ -17,12 +20,16 @@ attacchi:
   - Mischia spada lunga perfetta +6 (1d8+1/19-20); scudo pesante +0 (1d4+1)
 voci:
   - Talenti: Allerta, Arma Focalizzata (spada lunga)
+  - Equipaggiamento da combattimento: pozione di cura ferite moderate
+  - Altro equipaggiamento: cotta di maglia perfetta, scudo pesante di acciaio +1, spada lunga perfetta, arco lungo composito (+1 For), mantello della resistenza +1, abito da esploratore
 ```
 
 
-> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`. ⚠ Sag al più 7 ricavata da Vol +1 (base +3), ma 9 viene da un dato più forte: si tiene, da verificare.
+> [GENERATO] `attributi` trascritti dalla fonte citata in `Bestiario/pregen-pcgen/` da `scripts/genera_attributi.py`.
 
 Medium humanoid (goblinoid), Warrior 3, LE. **hp 23** (3 HD); **AC 19**, touch 11, flat-footed 18. Init +1; Vel 6 m. TS Temp +6, Rifl +3, Vol +1. BAB +3; Lotta +4.
 **Mischia** spada lunga perfetta +6 (1d8+1/19-20); scudo pesante +0 (1d4+1). **Distanza** arco lungo composito (+1) +4 (1d8+1/x3). Scurovisione 18 m. Talenti: Allerta, Arma Focalizzata (spada lunga). Linguaggi: Comune, Goblin.
 **Variante «Combattente GS2»** (`regolari/Hobgoblin Combattente gs2.htm`): hp 19, TS +5/+2/+2, spada +5, Volontà di Ferro al posto di Arma Focalizzata — stessa unità, equip leggermente diverso.
 Notes: la schiera base della Mano Rossa (archi 00-04). Complementare a `goblin-warrior1-cr05` e `hobgoblin-sergente-cr5` già a catalogo.
+
+> RC-001 (2026-11-14, ADR-0134): corredo trascritto dalle «Possessions» dell'export PCGen citato in testa; dal PNG dei Codex PF1e «Guard» (unico Warrior 3 dei Codex) non entra niente: le manette (15 mo) porterebbero il valore sopra il tetto. Armatura e armi restano quelle della scheda; gli oggetti dei Codex che cambierebbero CA o tiri salvezza aspettano la decisione del DM. Valore 3.295 mo, monete escluse, contro i 3.300 del livello effettivo 4 (DMG 3.5, Tabella 4-23).

@@ -5,6 +5,9 @@
 ```statblocco
 gs: 2
 tipo: Small plant, 4d8+16
+taglia: Piccola
+spazio: 1,5 m
+portata: 1,5 m
 ca: 15
 ca-dettaglio: (+1 taglia, +4 naturale), touch 11, flat-footed 15
 pf: 34

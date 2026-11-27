@@ -9,7 +9,7 @@
 >
 > I numeri stanno solo nello statblocco: il dossier ci rimanda con
 > `[RIMANDO]` nel titolo e la riga `**Key stats**: →`. Regole: D&D 3.5 SRD;
-> dato non attestato → `[INFERRED — needs DM confirmation]`; sezione
+> dato non attestato → `[INFERRED — <domanda al DM>; base: <fonte o dato>]` (GUIDA-MARCATURE); sezione
 > obbligatoria senza fonte → `[DA SCRIVERE — …]`, mai riempita a caso; boost
 > solo via `skills/npc-villain-boosting/` con `Boost log:`; prima di scrivere
 > numeri cercare in `Bestiario/` e in `pregen-pcgen/`.
@@ -71,7 +71,7 @@ Boost log: (vuoto finché non boostato)
 <!-- Modello dello statblocco `nome-crN.md`: si copia in un file a parte. -->
 
 ```markdown
-# Nome — epiteto (razza, classi) [ACCEPTED — DM-canon YYYY-MM-DD] | [INFERRED — needs DM confirmation]
+# Nome — epiteto (razza, classi) [CANONE — DM AAAA-MM-GG] | [INFERRED — <domanda>; base: <…>]
 **Faction**: … | **Role**: … | **Environment**: … | **CR**: N | **Source**: … | **Status**: accepted|inferred|transcribed
 
 (blocco statblocco di ADR-0021)

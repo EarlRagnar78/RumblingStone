@@ -18,9 +18,9 @@ PERSONAGGI:
 🔴 = Nemici Elite (Boss/Mini-Boss)
 🟠 = Nemici Veterani 
 🟡 = Nemici Standard
-B = Borin Ferropugno (PNG Giocabile)
+B = Borin Giuraferro (PNG Giocabile)
 D = Dara Occhiolesto (PNG Giocabile)
-T = Thorin Runaforte (PNG Giocabile)
+T = Harbek Runaforte (PNG Giocabile)
 N = Nala Cantapietre (PNG Giocabile)
 🔵 = Alleati Nanici
 👑 = Re Thorek
@@ -80,7 +80,7 @@ VALLE DELL'AVVISTAMENTO (120m x 80m)
 **PNG GIOCABILI:**
 - **Dara (D):** Torre di vedetta, 18m di altezza, vista perfetta
 - **Borin (B):** Sentiero laterale, pronto per combattimento se necessario  
-- **Thorin (T):** Posizione centrale, può lanciare buff/debuff
+- **Harbek (T):** Posizione centrale, può lanciare buff/debuff
 - **Nala (N):** Nascoste tra le rocce, pronta per infiltrazione
 
 **NEMICI:**
@@ -90,7 +90,7 @@ VALLE DELL'AVVISTAMENTO (120m x 80m)
 
 ### **OBIETTIVI TATTICI PER PNG:**
 
-**BORIN FERROPUGNO:**
+**BORIN GIURAFERRO:**
 - **Azione Primaria:** Eliminare silenziosamente la pattuglia avanzata
 - **Azione Secondaria:** Proteggere gli altri PNG se scoperti
 - **Test Chiave:** Intimidire CD 18 per ottenere informazioni dai prigionieri
@@ -100,7 +100,7 @@ VALLE DELL'AVVISTAMENTO (120m x 80m)
 - **Azione Secondaria:** Eliminare scouts con tiro di precisione
 - **Test Chiave:** Sopravvivenza CD 22 per identificare rotte di fuga/attacco
 
-**THORIN RUNAFORTE:**
+**HARBEK RUNAFORTE:**
 - **Azione Primaria:** Lanciare Silence per coprire eliminazioni silenziose
 - **Azione Secondaria:** Detect Magic per identificare minacce magiche
 - **Test Chiave:** Conoscenze (Religione) CD 18 per riconoscere simboli draconici
@@ -180,7 +180,7 @@ BASTIONI DI HAMMERFEST (150m x 100m)
 
 ### **ATTIVITÀ DI PREPARAZIONE (4 ore disponibili):**
 
-**BORIN FERROPUGNO - "Organizzare la Difesa"**
+**BORIN GIURAFERRO - "Organizzare la Difesa"**
 - **Locazione:** Cortile Esterno con Re Thorek
 - **Attività 1:** Addestramento Tattico (Diplomazia CD 18)
   - *Successo:* +2 bonus attacchi a 30 nani veterani
@@ -200,7 +200,7 @@ BASTIONI DI HAMMERFEST (150m x 100m)
   - *Fallimento:* 1 trappola si attiva sui difensori
 - **Test di Sfida:** Individuare il punto esatto dove arriverà l'attacco principale
 
-**THORIN RUNAFORTE - "Benedizioni Divine"**
+**HARBEK RUNAFORTE - "Benedizioni Divine"**
 - **Locazione:** Altare di Moradin, cortile interno
 - **Attività 1:** Rune di Protezione (Conoscenze Arcane CD 19)
   - *Successo:* +2 CA a tutte le mura per 24 ore
@@ -227,7 +227,7 @@ I PNG possono scegliere di lavorare insieme per bonus aggiuntivi:
 - Prove combinate Diplomazia + Sopravvivenza (CD 15 ciascuna)
 - *Successo:* Tutti i difensori ottengono +1 att/+1 CA per primo giorno
 
-**THORIN + NALA:** Benedizione e Inganno
+**HARBEK + NALA:** Benedizione e Inganno
 - Prove combinate Sapienza Magica + Raggirare (CD 18 ciascuna)  
 - *Successo:* Le rune divine diventano invisibili ai nemici, sorpresa garantita
 
@@ -304,7 +304,7 @@ MURA ESTERNE - VISTA DALL'ALTO (200m x 150m)
 - **Round 2:** Tiro su Gigante più pericoloso - Freccia Bane Giganti  
 - **Round 3:** Coordinare altri balestrieri (+3 att per 5 round)
 
-**THORIN - Protezione Magica**
+**HARBEK - Protezione Magica**
 - **Posizione:** Cortile interno vicino all'altare
 - **Round 1:** Prayer (tutti gli alleati +1 att/danni/TS)
 - **Round 2:** Cure Mass Light Wounds (4d8+9 guarigione distribuita)
@@ -370,7 +370,7 @@ I Troll stanno scalando i muri laterali:
 - **Round 7-8:** Eliminare Troll #2 prima che raggiunga i balestrieri  
 - **Frecce Speciali:** Può usare frecce incendiarie per bloccare rigenerazione
 
-**THORIN - Miracoli sul Campo**
+**HARBEK - Miracoli sul Campo**
 - **Round 4:** Divine Power su Borin (+6 For per duello)
 - **Round 5:** Flame Strike su concentrazione orchi (8d6, Riflessi CD 19)
 - **Round 6:** Mass Cure Moderate Wounds sui difensori feriti
@@ -422,7 +422,7 @@ RITIRATA ORGANIZZATA (Round 9-12)
 
 **BORIN:** Azione di ritardo, combatte finché tutti non sono al sicuro
 **DARA:** Copertura con tiro di precisione, elimina inseguitori  
-**THORIN:** Healing di emergenza, benedizioni per la prossima fase
+**HARBEK:** Healing di emergenza, benedizioni per la prossima fase
 **NALA:** Coordinates evacuazione, prepara diversivi e trappole improvvisate
 
 ---
@@ -524,7 +524,7 @@ SOFFIO DRACONICO - AREA EFFETTO (Round 3)
 
 **OPZIONI DIFENSIVE DEI PNG:**
 
-**BORIN FERROPUGNO - "Il Sacrificio del Comandante"**
+**BORIN GIURAFERRO - "Il Sacrificio del Comandante"**
 - **Opzione A:** Interporsi tra drago e Re Thorek
   - Subisce il soffio al posto del Re (TS Riflessi CD 29, 14d4 acido)
   - Re Thorek subisce solo danni dimezzati da splash
@@ -549,7 +549,7 @@ SOFFIO DRACONICO - AREA EFFETTO (Round 3)
   - Se Freccia Slaying colpisce: Drago deve TS Tempra CD 20 o morte
   - Se fallisce morte: 6d6+1 danni comunque
 
-**THORIN RUNAFORTE - "Il Miracolo di Moradin"**
+**HARBEK RUNAFORTE - "Il Miracolo di Moradin"**
 - **Posizione:** Fuori dall'area del soffio
 - **Opzioni Magiche:**
   - **Heal** su Re Thorek (precast Round 2, ready trigger)
@@ -678,7 +678,7 @@ IL CUORE DELLA MONTAGNA - CAVERNA SACRA (100m x 80m)
 **NEMICI IN ARRIVO:**
 - **Ondata 1:** 30 Orchi Berserker (Round 3-4)
 - **Ondata 2:** 20 Hobgoblin + Sergente (Round 5-6)  
-- **Ondata 3:** 15 Bugbear Assassini (Round 7-8; scheda `Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md`)
+- **Ondata 3:** 15 Bugbear Assassini (Round 7-8; scheda `Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md`); 5 di loro risalgono il condotto della sorgente e sbucano dietro l'altare (L3, MAPPA 5) `[CANONE — DM 2026-11-04, P16, condotto della sorgente]` <!-- storico -->Fino al 2026-11-04 i 15 bugbear aggiravano solo dai fianchi e il condotto era una via di fuga in attesa del DM; le marcature di questo file sono state chiuse da P16 (plans/esperimenti/p16-inferred-2026-11-04/ARC08-DECISIONI.md).<!-- /storico -->
 - **Ondata Finale:** Grimjaw + 10 Guardie Nere, se vivo: corno al round 11, ingresso al round 12, quando i PG sono già in campo `[CANONE — DM 2026-10-19, D11]`
 
 ### **ROUND PER ROUND - LA RESISTENZA DISPERATA:**
@@ -833,7 +833,7 @@ I giocatori prendono controllo dei loro veri PG (Rumbling Stones) e ribaltano im
 > - **La serata** `[CANONE — DM 2026-10-19, D18]`: Incontro 3B e Sessione 4 insieme, fino al campo della vittoria. La Cerimonia delle 100 Asce (`Cerimonia-delle-100-Asce.md`) è la serata dopo.
 > - **In un'ora si legge**: il ponte d'arrivo (`ARC08-11-PONTE-ARRIVO.md`), `ARC08-10-ESITI-E-CONTINGENZE.md` §4-§5, la MAPPA 5 e la MAPPA 4 di `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md`, le schede di `ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` §1. Da questo file, i box.
 > - **Se il flashback coi pregen e il P5 non sono stati giocati**: `ARC08-10-ESITI-E-CONTINGENZE.md` §5.5.
-> - **I numeri dei nemici, uno contro uno**: orchi berserker = `Bestiario/mostri/orco-berserk-barbaro2-cr2.md` (GS 2, CA 13, pf 27, grande ascia +9, 1d12+9; in ira For e Cos +4, CA −2); hobgoblin = `Bestiario/mostri/hobgoblin-regular-warrior3-cr2.md` (GS 2, CA 19, pf 23, spada lunga +6, 1d8+1); il loro sergente = `Bestiario/mostri/hobgoblin-sergente-cr5.md` (GS 5, CA 21, pf 37, spada lunga +9, 1d8+4). Le guardie orog di Grimjaw = `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` (GS 7, CA 19, pf 63, ascia bipenne +1 +13/+8, 1d12+10; immuni alla paura finché Grimjaw vive) e, come unità di massa, `ARC08-02` §5, «OROG GUARDIE NERE» (PFU 13, DU 19, AU +12, 1d12+7). I bugbear = `Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md` (GS 9, CA 20, pf 58, morning star +11, 1d8+3, furtivo +4d6). I gufi dei ranger, nella Sessione 4 = `Bestiario/mostri/gufo-gigante-celestiale-cr6.md` (GS 6, CA 16, pf 52, 2 artigli +11, 1d6+4) `[CANONE — DM 2026-10-19, D10]`.
+> - **I numeri dei nemici, uno contro uno**: orchi berserker = `Bestiario/mostri/orco-berserk-barbaro2-cr2.md` (GS 2, CA 15, pf 23, grande ascia +7, 1d12+6; in ira CA 13, pf 27, +9, 1d12+9); hobgoblin = `Bestiario/mostri/hobgoblin-regular-warrior3-cr2.md` (GS 2, CA 19, pf 23, spada lunga +6, 1d8+1); il loro sergente = `Bestiario/mostri/hobgoblin-sergente-cr5.md` (GS 5, CA 21, pf 37, spada lunga +9, 1d8+4). Le guardie orog di Grimjaw = `Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md` (GS 7, CA 21, pf 45, ascia bipenne +1 +14/+9, 1d12+12; immuni alla paura finché Grimjaw vive) e, come unità di massa, `ARC08-02` §5, «OROG GUARDIE NERE» (PFU 13, DU 21, AU +14, 1d12+7). I bugbear = `Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md` (GS 9, CA 20, pf 58, morning star +11, 1d8+3, furtivo +4d6). I gufi dei ranger, nella Sessione 4 = `Bestiario/mostri/gufo-gigante-celestiale-cr6.md` (GS 6, CA 16, pf 52, 2 artigli +11, 1d6+4) `[CANONE — DM 2026-10-19, D10]`. <!-- storico -->fino al 2026-11-20 CA 13, pf 27, grande ascia +9 (1d12+9): i numeri in ira dell'export PCGen<!-- /storico -->
 
 ### **MAPPA: LA TRASFORMAZIONE**
 
@@ -870,7 +870,7 @@ DOPO L'APPARIZIONE - NUOVE FORZE (Round 11-15)
 **AZIONI INIZIALI RUMBLING STONES** *(proposte: decide il giocatore, e valgono i numeri della sua scheda)*:
 
 **THORIK (guerriero 13, Corona di Adamantio, Aegis Fang):**
-- **Aura della Forgia Eterna** (Corona, Rituale 4): 1/settimana, +4 di morale ai nani entro 30 m. Se l'ha già spesa nella battaglia antica, dove la prima volta dura fino all'alba, questa settimana non c'è `[INFERRED — needs DM confirmation]`. La «Presenza Regale +6 a 18 m» della prima stesura non è un potere della Corona.
+- **Aura della Forgia Eterna** (Corona, Rituale 4): 1/settimana, +4 di morale ai nani entro 30 m. Se l'ha già spesa nella battaglia antica, dove la prima volta dura fino all'alba, questa settimana non c'è: conta il tempo di Thorik, per cui sono passati pochi giorni, non i mille anni del mondo `[CANONE — DM 2026-11-04, P16]`. La «Presenza Regale +6 a 18 m» della prima stesura non è un potere della Corona.
 - **Aegis Fang** (+2 Ritornante *Dragondoom*, 1d10): un bersaglio per attacco. Lanciata vale come arma da lancio improvvisata (−4, incremento 3 m, gittata massima 15 m: SRD) e torna in mano.
 - **Movimento:** si mette davanti a Re Thorek.
 
@@ -1053,7 +1053,7 @@ VALLE DELL'AVVISTAMENTO (120m x 80m)
 
 **FAUCI DI PALUDE + CAVALIERE HOBGOBLIN:**
 - **PF di partenza** `[CANONE — DM 2026-10-19, D9]`: 337 meno il carry-over di `ARC08-10` §4.1 (303 se nel P5 Skullcrusher fu ucciso); **337 se il P5 non è stato giocato** (statblock invariato)
-- **Tattiche** (scheda in `ARC08-02` §1): resta in quota col soffio e *nube maleodorante*, sospeso con Fluttuare. Ai round 18-20 la picchiata e la presa di Thorik, una volta (scheda, «La presa di Thorik»); *Ghermire* non lo usa su nessun altro. Atterra solo sotto i 100 pf o per finire Thorik (+4 contro di lui, sempre). Fugge sotto i 50 pf. Non fugge al round 5: la picchiata è ai round 18-20
+- **Tattiche** (scheda in `ARC08-02` §1): resta in quota col soffio e *nube maleodorante*, sospeso con Fluttuare. Ai round 18-20 la picchiata e la presa di Thorik, una volta (scheda, «La presa di Thorik»); *Ghermire* non lo usa su nessun altro. Nell'avvicinamento *invisibilità superiore* da pergamena, e nell'assedio *nebbia acida* sul camminamento `[CANONE — DM 2026-11-21, card]`: qui la prima nebbia va sui bastioni in uno dei round 1-3, mentre il cuneo si forma, e il drago si è già fatto vedere al round 1, come nel box. Prima della picchiata, ai round 15-17, una pergamena o un incantesimo per round: *immagine speculare* se le immagini sono finite (o *dissolvi magie*, se ha visto qualcuno pronto a prenderlo al volo), poi *nebbia acida* sui compagni di Thorik e mai su di lui `[CANONE — DM 2026-11-21, card]`, cioè su chi cura e chi tira da lontano e non su chi deve correre alla zona ⚡, e per ultima *invisibilità superiore*, che dura fino al round 23 `[CANONE — DM 2026-11-21, card]`. Invisibile ha +2 al morso e chi gli tira contro ha il 50% di mancarlo, salvo Artemis, che lo vede (*See the Unseen*); Fauci non lo sa `[CANONE — DM 2026-11-21, card]`. *Nube maleodorante* sui compagni prima di atterrare. Sotto i 150 pf beve una pozione di *cura ferite gravi* `[CANONE — DM 2026-11-21, card]`. Atterra solo per finire Thorik (+4 contro di lui, sempre). Fugge sotto i 112 pf `[CANONE — DM 2026-11-15]`. Non fugge al round 5: la picchiata è ai round 18-20
 - **Cavaliere:** Fornisce spell support e comando tattico
 
 **SIGNORE VENTOLESTO + 2 GUFI SUPPORTO:**
@@ -1104,7 +1104,7 @@ BATTAGLIA AEREA (Altitudine 30-60m)
 - **Monaco:** Readied action per colpire drago se scende troppo
 - **Artemis:** Deflagrazione occulta 6d6 sul cavaliere, gittata 18 m `[Private source — Complete Arcane]`
 
-**L'INVIATA DELLA FORESTA (Round 1-2)** `[CANONE — DM 2026-10-19, D16]`: Lythiel Alar-Wen (`Bestiario/png/Lythiel/Lythiel.md`) cavalca coi gufi, ma non è dei ranger di Lunapiena: è l'inviata della Foresta Sacra. In Sessione 4 riconosce Hella, canone del ramo di gruppo (`campaign/state.md`, tabella dei PNG: «Direct recognition during Hammerfist Battle Sessione 4»). La Ghianda la consegna dopo, alla Cerimonia (`Cerimonia-delle-100-Asce.md` §3.2). Il suo gufo, Inathiel (`Lythiel.md`), si gioca con `Bestiario/mostri/gufo-gigante-celestiale-cr6.md` `[INFERRED — needs DM confirmation]`. La sua scheda dice che atterra vicino a Hella: il box la fa posare sul bastione.
+**L'INVIATA DELLA FORESTA (Round 1-2)** `[CANONE — DM 2026-10-19, D16]`: Lythiel Alar-Wen (`Bestiario/png/Lythiel/Lythiel.md`) cavalca coi gufi, ma non è dei ranger di Lunapiena: è l'inviata della Foresta Sacra. In Sessione 4 riconosce Hella, canone del ramo di gruppo (`campaign/state.md`, tabella dei PNG: «Direct recognition during Hammerfist Battle Sessione 4»). La Ghianda la consegna dopo, alla Cerimonia (`Cerimonia-delle-100-Asce.md` §3.2). Il suo gufo, Inathiel (`Lythiel.md`), si gioca con `Bestiario/mostri/gufo-gigante-celestiale-cr6.md` `[CANONE — DM 2026-11-04, P16, le forze e i pregen]`. La sua scheda dice che atterra vicino a Hella: il box la fa posare sul bastione.
 
 > **Read-aloud (Casa di Davide lead) — l'inviata.** *Un gufo più piccolo degli altri si stacca dalla formazione e si posa sul bastione, a tre passi da Hella. La cavaliera è un'elfa con una treccia fradicia sulla spalla e l'arco in pugno, senza freccia: guarda Hella a lungo, come si guarda un volto che qualcuno ti ha descritto, e dice soltanto «Sei tu». Che fate?*
 
@@ -1121,23 +1121,28 @@ SE IL CAVALIERE CADE (dal round 3)
     30m    
     
     15m    💥 CAVALIERE CADE 💥
-           (CHI LO AFFERRA: RIFLESSI CD 20)
+           (NESSUNO LO AFFERRA: 15d6 A TERRA)
     
      0m  [PG] POSSONO INTERCETTARE
          ===============TERRENO===============
 ```
 
 **OPZIONI PER I PG:**
-- **Thorik:** afferrarlo al volo, Riflessi CD 20 `[INFERRED — needs DM confirmation: l'SRD non ha una regola per afferrare chi cade; una CD sola, quella dello schema]`
+- **Thorik:** non può afferrarlo: un corpo in armatura che cade da 45 m non si prende al volo. Può aspettarlo dove atterra (Aegis Fang pronta) `[CANONE — DM 2026-11-07, P16, la caduta del cavaliere]`
+
+<!-- storico -->
+*Dal 2026-11-05 al 2026-11-07: afferrarlo al volo con Riflessi CD 20, danni della caduta divisi a metà (regola della casa). Prima: Riflessi CD 20 senza danni.*
+<!-- /storico -->
+
 - **Tordek:** Deviare Frecce non devia una caduta; può aspettarlo dove atterra e lottarci
 - **Hella:** *caduta morbida* non è nella lista del druido (SRD: Brd 1, Mag/Str 1); per prenderlo vivo serve una pergamena o una forma selvatica che voli e lo afferri
 - **Artemis:** lasciarlo cadere. Da 45 m sono 15d6 (media 52): coi suoi 95 pf il cavaliere arriva a terra vivo e ferito
 
 #### **ROUND 5: FAUCI RESTA IN ARIA** `[CANONE — DM 2026-10-19, D9]`
 
-Fauci non fugge: logora in quota fino al round 17, e scende ai round 18-20 (sotto, «ROUND 18-23: LA PICCHIATA E IL DUELLO»). Il box qui sotto si legge solo se, nel duello, Fauci scende sotto i 50 pf e i PG non lo bloccano.
+Fauci non fugge: logora in quota fino al round 17, e scende ai round 18-20 (sotto, «ROUND 18-23: LA PICCHIATA E IL DUELLO»). Il box qui sotto si legge solo se, nel duello, Fauci scende sotto i 112 pf e i PG non lo bloccano.
 
-**ULTIMO SOFFIO DI RABBIA** *(solo se fugge, sotto i 50 pf)*:
+**ULTIMO SOFFIO DI RABBIA** *(solo se fugge, sotto i 112 pf)*:
 > *"Fauci di Palude, realizzando che la battaglia è perduta, si volta verso il campo dove stanno avanzando i nani. Con un ultimo atto di pura malvagità, sprigiona il suo soffio acido non per uccidere, ma per distruggere simbolicamente la vittoria nemica. L'acido si riversa sui vessilli della Mano Rossa caduti, dissolvendoli in fumo corrosivo: 'La Mano Rossa tornerà!' ruggisce mentre si allontana verso le montagne meridionali."*
 
 ### **FASE 2: LA STRAGE DAI CIELI (Round 6-10)**
@@ -1219,7 +1224,7 @@ CARICA NANICA DEVASTANTE (Round 4-10)
 
 **BONUS DELLA CARICA** *(regole SRD e regolamento di massa, `ARC08-02` §4)*:
 - **Morale: vale solo il più alto** (SRD: due bonus dello stesso tipo non si sommano). Candidati: *Aura della Forgia Eterna* di Thorik +4, se questa settimana non è già spesa; il discorso di Re Thorek +4; il canto delle Cantitrici; la melodia di Tempestas +2. Nel regolamento di massa il morale di un'unità va da −5 a +5.
-- **Benedizione di Moradin:** +4 sacro, solo se un incantesimo la dà davvero (`ARC08-02` §4, «Incantesimi di supporto») `[INFERRED — needs DM confirmation]`.
+- **Benedizione di Moradin:** +4 sacro, solo se un incantesimo la dà davvero (`ARC08-02` §4, «Incantesimi di supporto»): senza l'incantesimo il +4 non c'è (SRD, i bonus vengono da una fonte).
 - **Carica:** +2 al tiro per colpire (SRD); nessun bonus ai danni.
 - **Terreno in discesa:** +1 al tiro per colpire dall'altura (SRD).
 
@@ -1279,20 +1284,20 @@ VENDETTA DEL GENERALE
 
 Fauci resta in aria e logora fino al round 17, e scende quando lo decide lui.
 
-**Perché scende (legale in 3.5):** lo dice la sua scheda (`ARC08-02` §1, *Tattiche*): atterra solo se è gravemente ferito, sotto i 100 pf, o per finire Thorik dopo averlo preso e lasciato cadere. L'Odio della stirpe (+4 contro Thorik, sempre) è la ragione per cui lo fa. È una picchiata con Attacco in Volo (SRD: un'azione di movimento, anche in picchiata, e un'azione standard in un punto qualsiasi del movimento), e porta **la presa di Thorik** `[CANONE — DM 2026-10-19]`: morso al round 18, salita con Thorik in bocca al 19, soffio con lui in bocca e caduta al 20. Le regole e i numeri sono nella scheda (`ARC08-02` §1, «La presa di Thorik»), una volta per incontro. La presa di Orion da sola non lo porta giù: +24 contro +43 (SRD). Con i tiri nella media succede ai **round 18-20**; se scende sotto i 100 pf prima, la picchiata viene prima. Se Aegis Fang non ha mai cantato né colpito, niente presa: scende nella zona ⚡ e il duello comincia lì.
+**Perché scende (legale in 3.5):** lo dice la sua scheda (`ARC08-02` §1, *Tattiche*): atterra solo per finire Thorik dopo averlo preso e lasciato cadere, e sotto i 112 pf fugge `[CANONE — DM 2026-11-15]`. L'Odio della stirpe (+4 contro Thorik, sempre) è la ragione per cui lo fa. È una picchiata con Attacco in Volo (SRD: un'azione di movimento, anche in picchiata, e un'azione standard in un punto qualsiasi del movimento), e porta **la presa di Thorik** `[CANONE — DM 2026-10-19]`: morso al round 18, salita con Thorik in bocca al 19, soffio con lui in bocca e caduta al 20. Le regole e i numeri sono nella scheda (`ARC08-02` §1, «La presa di Thorik»), una volta per incontro. La presa di Orion da sola non lo porta giù: +24 contro +43 (SRD). Con i tiri nella media succede ai **round 18-20**; se scende sotto i 112 pf prima, fugge e la picchiata non c'è. Se Aegis Fang non ha mai cantato né colpito, niente presa: scende nella zona ⚡ e il duello comincia lì.
 
 **Dove:** lo prende dov'è, sulla linea ⚔ o contro Gorthak, e lo lascia cadere a fine round 20 nella zona ⚡ della MAPPA 4 di `Mappe/Hammerfist-L3-REVISED-Ultra-Clear.md` (AB30-AG32), alle spalle della punta, fra le ultime file del cuneo, a circa 30 m dalla linea. Al round 21 Fauci atterra lì per finirlo. Tremore: Equilibrio CD 15 entro 9 m. I PG convergono in 2 round; il duello è ai **round 21-23**. Se Thorik si libera prima, cade dalla quota in cui è, e Fauci scende comunque dove è caduto.
 
 > **Read-aloud (Salvatore lead) — la picchiata.** *Il drago smette di girare sopra il campo, chiude le ali e scende dritto, e la pioggia gli scivola addosso come su una lama oliata. Non guarda i gufi: guarda la punta del cuneo, l'elmo con la corona. Che fate?*
 
 **Se i PG volano** (lo zaino ha 5 pozioni di *volare*: 18 m, 12 m in armatura media o pesante, manovrabilità buona, 5 minuti a LI 5, SRD) — **Fauci combatte in aria, non fugge**:
-- **Fluttuare** (SRD): resta sospeso e fa l'attacco completo senza le ali, morso +33 (2d8+10), 2 artigli +31 (2d6+5), coda +31 (2d6+15); contro Thorik +4 al colpire e ai danni. Oppure soffia.
+- **Fluttuare** (SRD): resta sospeso e fa l'attacco completo senza le ali, morso +34 (2d8+10), 2 artigli +31 (2d6+5), coda +31 (2d6+15); contro Thorik +4 al colpire e ai danni. Oppure soffia.
 - **Il soffio in linea** (30 m, 14d4, Riflessi CD 29) sui PG in volo che si allineano.
 - **Ghermire** (SRD) solo su Thorik: è la presa della scheda, e gli altri PG in volo non li prende. Se Thorik vola, prima gli toglie il volo con *dissolvi magie* (LI 7°: d20+7 contro CD 16 per una pozione di LI 5°, SRD), poi lo prende; se il volo regge, alla fine non lo lascia ma lo scaglia (azione standard: 1d6×3 m, 1d6 ogni 3 m, SRD). Chi tiene in bocca non ha il TS contro il soffio.
 - **Attacco in Volo** per staccarsi dal più lento: vola a 45 m, un PG in armatura pesante a 12 m.
 - **Il cavaliere** carica in sella e copre il fianco del drago.
 - **Thorik** non subisce la Presenza terrificante: il *Mind Blank* della Corona la blocca (scheda di Fauci).
-- Sotto i 100 pf scende comunque; **sotto i 50 tenta la fuga** (`ARC08-10` §4), e i PG in volo possono inseguirlo.
+- **Sotto i 112 pf tenta la fuga** `[CANONE — DM 2026-11-15]` (`ARC08-10` §4), e i PG in volo possono inseguirlo.
 
 **Il duello (round 21-23):** Fauci atterra accanto a Thorik caduto, per finirlo, e a terra fa l'attacco completo intero, sei attacchi con le ali. Sotto i 50 pf, il default è che rompa il contatto e decolli verso sud; è **ucciso** solo se i PG lo bloccano oltre quel punto. Si decide al tavolo, e i due rami sono in `ARC08-10` §4. In tutti e due l'orda vede il drago fuori gioco, ed è la rotta.
 
@@ -1329,7 +1334,7 @@ CAMPO DOPO LA VITTORIA
 #### **IL CONTEGGIO FINALE:**
 
 **PERDITE NEMICHE:**
-- **Fauci di Palude:** ucciso nel duello dei round 21-23, o fuggito gravemente ferito sotto i 50 pf se i PG non lo hanno bloccato (`ARC08-10` §4; possibile ritorno futuro) `[CANONE — DM 2026-10-19, D9]`
+- **Fauci di Palude:** ucciso nel duello dei round 21-23, o fuggito gravemente ferito sotto i 112 pf `[CANONE — DM 2026-11-15]` se i PG non lo hanno bloccato (`ARC08-10` §4; possibile ritorno futuro) `[CANONE — DM 2026-10-19, D9]`
 - **Generale Grimjaw:** [Variabile - dipende dalle azioni dei PG]
 - **Gorthak Trifronte:** [Variabile - dipende dalle azioni dei PG]  
 - **Truppe:** ~500 morti e ~400 dispersi in rotta, che non si ricongiungono (canone D11, `ARC08-10` §1)
@@ -1396,7 +1401,7 @@ CERIMONIA DELLE ASCE - TRAMONTO
 - **Fama:** La storia si diffonde in tutto Faerûn
 - **Alleanze:** Clan nanici ora alleati permanenti  
 - **Base Operativa:** Fortezza personale nei rifugi
-- **Seguaci:** giovani nani vogliono servire gli eroi; quanti e con che statistiche lo decide il DM (il *Comando* della DMG, non SRD) `[INFERRED — needs DM confirmation]`
+- **Seguaci:** giovani nani vogliono servire gli eroi; quanti e con che statistiche lo decide il DM (il *Comando* della DMG, non SRD) `[CANONE — DM 2026-11-04, P16, dopo la battaglia]`
 
 #### **SEMI PER FUTURE AVVENTURE:**
 - **La Minaccia Rimasta:** Fauci di Palude vivo = vendetta futura

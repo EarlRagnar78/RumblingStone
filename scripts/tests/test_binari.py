@@ -29,15 +29,15 @@ class TestEsigi(unittest.TestCase):
         err = io.StringIO()
         with mock.patch.object(binari.shutil, "which", return_value=None):
             with self.assertRaises(SystemExit) as cm, redirect_stderr(err):
-                binari.esigi(binari.PDFCPU)
+                binari.esigi(binari.TYPST)
         self.assertEqual(cm.exception.code, binari.MANCA)
         self.assertNotEqual(binari.MANCA, 1, "MANCA deve restare distinto da «ho provato e fallito»")
 
     def test_se_c_e_ritorna_il_percorso_e_non_stampa_niente(self):
         err = io.StringIO()
-        with mock.patch.object(binari.shutil, "which", return_value="/usr/local/bin/pdfcpu"):
+        with mock.patch.object(binari.shutil, "which", return_value="/usr/local/bin/typst"):
             with redirect_stderr(err):
-                self.assertEqual(binari.esigi(binari.PDFCPU), "/usr/local/bin/pdfcpu")
+                self.assertEqual(binari.esigi(binari.TYPST), "/usr/local/bin/typst")
         self.assertEqual(err.getvalue(), "")
 
     def test_trova_non_esce_mai(self):
@@ -76,17 +76,23 @@ class TestUsoNegliScript(unittest.TestCase):
         # Con due copie della regola diventano due regole, e una delle due
         # invecchia in silenzio.
         src = (REPO / "scripts" / "export_booklet_typst.py").read_text(encoding="utf-8")
-        self.assertIn("binari.esigi(binari.TYPST)", src)
+        self.assertIn("typst_motore.esigi()", src)  # ADR-0116: PyPI, ripiego la CLI
         self.assertNotRegex(src, r'shutil\.which\(\s*"typst"',
                             "l'exporter ha di nuovo una sua copia della ricerca del binario")
 
-    def test_nessuno_script_cerca_pdfcpu_a_mano(self):
+    def test_nessuno_script_cerca_typst_a_mano(self):
         for f in (REPO / "scripts").glob("*.py"):
-            if f.name == "binari.py":
+            if f.name in ("binari.py", "typst_motore.py"):
                 continue
             src = f.read_text(encoding="utf-8")
-            self.assertIsNone(re.search(r'which\(\s*["\']pdfcpu', src),
-                              f"{f.name} cerca pdfcpu senza passare da binari.esigi()")
+            self.assertIsNone(re.search(r'which\(\s*["\']typst', src),
+                              f"{f.name} cerca typst senza passare da typst_motore")
+
+    def test_pdfcpu_non_torna(self):
+        # ADR-0116: l'imposizione e' pdfimpose, da PyPI; nessun binario Go.
+        for f in (REPO / "scripts").glob("*.py"):
+            src = f.read_text(encoding="utf-8")
+            self.assertNotRegex(src, r'\[\s*["\']pdfcpu["\']', f"{f.name} chiama ancora pdfcpu")
 
 
 if __name__ == "__main__":

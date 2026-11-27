@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: trappola-c21-kethrin-selvarossa-e-la-torre
+expected_outcome: |
+  Trappola: Kethrin, Selvarossa e la torre caduta non esistono nel repo. La risposta non inventa il fatto: dice che
+  nelle fonti non c'è, oppure lo scrive marcato INFERRED con domanda e
+  base (docs/reference/GUIDA-MARCATURE.md). Fonte: consegna C21.

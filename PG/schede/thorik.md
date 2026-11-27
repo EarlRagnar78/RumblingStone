@@ -13,11 +13,11 @@ Classe, PF e stato di oggi: `campaign/state.yaml`, blocco `party` (e [`state.md`
 | | Catena | Oggi |
 |---|---|---:|
 | **FOR** | 20 | 20 |
-| **DES** | 10 → **8** *(ARC-07 P1, Corona indossata)* → **6** *(rito dello Smeraldo, 2026-07-31)* | 6 |
-| **COS** | `[INFERRED]` valore ignoto, ma con +2 (rito dello Smeraldo, 2026-07-31) | — |
-| **INT** | `[INFERRED]` — non attestato | — |
-| **SAG** | `[INFERRED]` — non attestato | — |
-| **CAR** | 8 → **12** *(rito dello Smeraldo, 2026-07-31)* | 12 |
+| **DES** | 14 → **12** *(ARC-07 P1, Corona indossata)* → **10** *(rito dello Smeraldo, 2026-07-31)* | 10 |
+| **COS** | 16 → **18** *(rito dello Smeraldo, 2026-07-31)* | 18 |
+| **INT** | 13 | 13 |
+| **SAG** | 12 | 12 |
+| **CAR** | 9 → **13** *(rito dello Smeraldo, 2026-07-31)* | 13 |
 
 ## Modificatori permanenti — 4
 

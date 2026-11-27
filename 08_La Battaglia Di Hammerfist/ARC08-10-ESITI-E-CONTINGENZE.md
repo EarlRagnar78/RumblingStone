@@ -97,7 +97,7 @@ nessuno lo cura per magia, e **al terzo fallimento muore**
 | Elemento | Variante vittoria costosa |
 |---|---|
 | Superstiti nani | <50 (invece di 90) → Hammerfist può presidiare ma non proiettare forza |
-| Re Thorek | **Morto** → la Cerimonia delle 100 Asce è officiata da **Madre Superiora Dana** (o da Thorin Runaforte pregen se Dana è caduta, D14); il riconoscimento dei Custodi Eterni avviene comunque, per volontà testamentaria del re |
+| Re Thorek | **Morto** → la Cerimonia delle 100 Asce è officiata da **Madre Superiora Dana** (o da Harbek Runaforte pregen se Dana è caduta, D14); il riconoscimento dei Custodi Eterni avviene comunque, per volontà testamentaria del re |
 | 150 lance di Re Thorek | Il flusso politico (D4) si **complica**: senza il re, l'erede/consiglio nanico è più esitante → hook ARC-09 con CD Diplomazia +2 |
 | Cerimonia | Tono più cupo; il Giuramento delle 90 diventa "Giuramento dei <50"; la runa dei Custodi ha peso funebre doppio |
 | Perdite orda | Invariate (−900, D11): l'orda perde comunque l'avanguardia |
@@ -154,7 +154,7 @@ d'esito sopra.
 
 | Ramo | Trigger | Effetto |
 |---|---|---|
-| **Default — fugge** | Fauci scende sotto i **50 pf** e nessuno lo blocca attivamente (soglia di ritirata **alzata** se nel P5 Skullcrusher fuggì — valore in §4.1/tabella B4) | Decolla gravemente ferito verso le montagne meridionali; rimosso dall'assedio ma **vivo**; può tornare come nemesi (hook ARC-10; carta S2 proposta all'EVENT-DECK di Rethmar — vedi §6.3). Nessun cambio ai totali orda |
+| **Default — fugge** | Fauci scende sotto i **112 pf** `[CANONE — DM 2026-11-15]` e nessuno lo blocca attivamente (soglia di ritirata **alzata** se nel P5 Skullcrusher fuggì — valore in §4.1/tabella B4) | Decolla gravemente ferito verso le montagne meridionali; rimosso dall'assedio ma **vivo**; può tornare come nemesi (hook ARC-10; carta S2 proposta all'EVENT-DECK di Rethmar — vedi §6.3). Nessun cambio ai totali orda |
 | **Alternativo — ucciso** | I PG lo portano a 0 pf prima che fugga: lo inseguono in volo, o lo tengono a terra. La presa di Orion da sola non basta, perché la lotta è contrapposta e Fauci ha +43 (SRD) | Morto; **−1 drago** nel pool di Rethmar (`state.md` §2.3 Conditional Additives) |
 
 ### 4.1 Carry-over dall'eredità di Skullcrusher (A12, [CROSS-ARC con ARC-07])
@@ -199,26 +199,26 @@ incantesimo. È una Guardia Nera e non parla per paura: servono *charme*,
 
 1. **Dove va Fauci se fugge**: verso le montagne meridionali (§4; `ARC08-02`
    §1, *Esito della battaglia*). Il punto preciso della tana i file non lo
-   danno `[INFERRED — needs DM confirmation]`.
+   danno `[CANONE — DM 2026-11-04, P16, dopo la battaglia]`.
 2. **A cosa serviva l'avanguardia**: tenere chiusi i nani a nord mentre
    l'Orda prende Terrelton, lo stesso Day 19, e poi scende verso Rethmar
    (`09_…/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md`, Day 19).
    Che il cavaliere conosca il piano oltre Terrelton è una deduzione
-   `[INFERRED — needs DM confirmation]`.
+   `[CANONE — DM 2026-11-04, P16, dopo la battaglia]`.
 3. **Perché Fauci vuole Thorik**, e perché prima di finirlo lo prende in
    bocca (`ARC08-02` §1, «La presa di Thorik»): è della stirpe di Skullcrusher e odia
    chi porta le armi dei nani (`ARC08-02` §1, Odio della stirpe;
    `Bestiario/villain/Fauci_di_Palude.md`). Dell'uovo di Fauci (ARC-07 C3)
    il cavaliere non sa niente: è un'eco per ARC-10, e resta coperta
-   `[INFERRED — needs DM confirmation]`.
+   `[CANONE — DM 2026-11-04, P16, dopo la battaglia]`.
 
 **Se lo divinano** *(una riga per segreto: chi lo rompe, cosa ottiene, come
 prosegue il modulo; `skills/rumblingstone-module-standard/references/sviluppo-degli-incontri.md` §9)*
 
 | Segreto | Chi lo rompe | Cosa ottiene | Come prosegue |
 |---|---|---|---|
-| **Fauci in fuga, dov'è** | Lo *scrutare* di Hella (SRD): Fauci tira Volontà +19 contro la CD della sua scheda. L'hanno visto da vicino (nessun modificatore di conoscenza); con una **scaglia** strappata in battaglia il TS ha −10 (parte del corpo, SRD) | Lo vede ferito e a terra, nelle montagne meridionali; il posto i file non lo descrivono `[INFERRED — needs DM confirmation]` | La carta S2 (§6.3) si può anticipare: i PG lo cacciano prima di Rethmar, e se lo uccidono vale il ramo «ucciso» di §4 (−1 drago a Rethmar) `[INFERRED — needs DM confirmation]` |
-| **Tornerà?** | La **Corona** di Thorik: *comunione* una volta al mese da un Nodo (`campaign/state.md` del ramo di gruppo, Corona di Adamantio) | Moradin risponde sì o no, una domanda per livello dell'incantatore (SRD); il livello della comunione della Corona i file non lo danno `[INFERRED — needs DM confirmation]` | Se chiedono del ritorno, la risposta segue la carta S2 (§6.3): se il DM la tiene nel mazzo, è «sì» `[INFERRED — needs DM confirmation]`. Il modulo non cambia; il tavolo sa che il conto è aperto |
+| **Fauci in fuga, dov'è** | Lo *scrutare* di Hella (SRD): Fauci tira Volontà +22 contro la CD della sua scheda. L'hanno visto da vicino (nessun modificatore di conoscenza); con una **scaglia** strappata in battaglia il TS ha −10 (parte del corpo, SRD) | Lo vede ferito e a terra, nelle montagne meridionali; il posto i file non lo descrivono `[CANONE — DM 2026-11-04, P16, dopo la battaglia]` | La carta S2 (§6.3) si può anticipare: i PG lo cacciano prima di Rethmar, e se lo uccidono vale il ramo «ucciso» di §4 (−1 drago a Rethmar) `[CANONE — DM 2026-11-04, P16, dopo la battaglia]` |
+| **Tornerà?** | La **Corona** di Thorik: *comunione* una volta al mese da un Nodo (`campaign/state.md` del ramo di gruppo, Corona di Adamantio) | Moradin risponde sì o no, una domanda per livello dell'incantatore (SRD); il livello della comunione della Corona i file non lo danno `[CANONE — DM 2026-11-04, P16, dopo la battaglia]` | Se chiedono del ritorno, la risposta segue la carta S2 (§6.3): se il DM la tiene nel mazzo, è «sì», se l'ha tolta è «no». Il modulo non cambia; il tavolo sa che il conto è aperto |
 | **Che cosa sa il cavaliere** | *Zona di verità*, *charme*, *dominare*, *parlare con i morti* se è caduto | Le tre cose qui sopra; con *parlare con i morti* risponde col TS Volontà +6 (SRD) | Nessuna scena nuova: le tre risposte agganciano §4 e §6.3 |
 
 ---
@@ -249,7 +249,7 @@ maturati e si applicano al finale.
 | Obiettivo | Pieno | Parziale | Fallito |
 |---|---|---|---|
 | **Breccia contenuta** (Assedio Mura) | La fortezza regge più a lungo → **1 incontro del finale a −1 CR** (meno nemici filtrati all'interno) | Breccia rallentata → mezzo bonus (−1 CR a un solo round) | Breccia aperta subito → il finale inizia con **+1 ondata** |
-| **Comandanti nemici logorati** (Grimjaw / Gorthak feriti durante l'assedio) | Grimjaw e/o Gorthak arrivano al finale **feriti**: −20% pf iniziali, −2 morale all'orda | Uno solo dei due logorato | Entrambi freschi al finale |
+| **Comandanti nemici logorati** (Grimjaw / Gorthak fuggiti feriti o abbattuti durante l'assedio) | Grimjaw e/o Gorthak arrivano al finale **feriti**: −20% pf iniziali, −2 morale all'orda. Chi è stato abbattuto al finale manca, e per lui il −20% non vale; come il suo −3 sta col −2 è in `ARC08-DEF-2`, §0-bis, «I bonus» | Uno solo dei due logorato | Entrambi freschi al finale |
 | **Cantitrici della Pietra protette** (Soffio del Drago) | Le Cantitrici sopravvivono → nel finale forniscono **Cura Ferite Gravi di Massa 1/incontro** + Ispirare Coraggio ai 90 | Metà Cantitrici → un solo uso di cura | Cantitrici perse → nessun supporto divino di massa nel finale |
 
 ### 5.3 Sessione 3a — Ultima Resistenza (pregen, fino al passaggio di testimone)
@@ -257,7 +257,7 @@ maturati e si applicano al finale.
 | Obiettivo | Pieno | Parziale | Fallito |
 |---|---|---|---|
 | **Posizioni difensive tenute** (ritirata ordinata al Cuore della Montagna) | I 90 arrivano al finale **in formazione** → cuneo di carica ottimale, +2 morale iniziale | Ritirata caotica → formazione ma senza bonus morale | Rotta → i 90 iniziano il finale **shaken** (−2), la carica costa un round in più |
-| **Re Thorek stabilizzato** (Thorin Runaforte lo tiene in vita) | Re Thorek vivo a 8 pf per la riscossa (E6, default) → pronuncia il discorso della carica finale (+4 morale) | Thorek incosciente ma vivo → nessun discorso, +0 | Thorek muore prima della riemersione → **ramo vittoria costosa** (§2) |
+| **Re Thorek stabilizzato** (Harbek Runaforte lo tiene in vita) | Re Thorek vivo a 8 pf per la riscossa (E6, default) → pronuncia il discorso della carica finale (+4 morale) | Thorek incosciente ma vivo → nessun discorso, +0 | Thorek muore prima della riemersione → **ramo vittoria costosa** (§2) |
 | **Evacuazione dei civili/feriti** (Passaggi Antichi) | Tutti evacuati → nessun ostaggio, i PG combattono liberi | Evacuazione parziale → 1 round del finale speso a proteggere feriti | Evacuazione fallita → il finale ha un obiettivo secondario "proteggi i feriti" sotto pressione |
 
 ### 5.4 Regola di somma
@@ -293,12 +293,21 @@ la **Sessione 3a**.
   una tacca del Giorno 1 o del Giorno 2 d'assedio. Contano le trappole
   dell'avanguardia e quella della Preparazione delle difese.
 - Le righe di §5.2 e §5.3 si leggono con la tabella di `ARC08-19` §4
-  (brecce dei giorni 1 e 2, comandanti fuggiti feriti, Mura del giorno 2,
-  reparti vivi alla ritirata). Nell'assedio i comandanti non muoiono: sotto
-  metà dei punti ferita fuggono, così arrivano al finale feriti come vuole
-  §5.2. Re Thorek e l'evacuazione restano come sopra.
+  (brecce dei giorni 1 e 2, comandanti fuggiti feriti o abbattuti, Mura del giorno 2,
+  reparti vivi alla ritirata). Sotto metà dei punti ferita i comandanti
+  fuggono, e arrivano al finale feriti come vuole §5.2. Se i dadi li portano
+  a 0 pf o meno prima della fuga sono abbattuti, e al finale mancano
+  `[CANONE — DM 2026-11-26, card «comandante a 0 pf nell'assedio»]`:
+  la regola è in `ARC08-DEF-2`, §0-bis, «Il comandante a 0 pf o meno». Re
+  Thorek e l'evacuazione restano come sopra.
 
-### 5.5 Se il flashback coi pregen non è stato giocato `[INFERRED — needs DM confirmation]`
+<!-- storico -->
+*Fino al 2026-11-26 questa riga diceva: «Nell'assedio i comandanti non
+muoiono: sotto metà dei punti ferita fuggono, così arrivano al finale feriti
+come vuole §5.2».*
+<!-- /storico -->
+
+### 5.5 Se il flashback coi pregen non è stato giocato `[CANONE — DM 2026-11-04, P16, dopo la battaglia]`
 
 Sul ramo di gruppo l'Arco 08 non è giocato, né le sessioni coi pregen né il P5
 (`campaign/state.md` §0). Finché il DM non decide se giocarli, il finale parte
@@ -309,6 +318,12 @@ da qui:
 - **Comandanti logorati**: Grimjaw e Gorthak sono vivi; Grimjaw è quello logorato (−20% pf iniziali).
 - **Cantitrici**: metà, un solo uso di cura.
 - **P5 non giocato**: statblock di Fauci invariato, e in Sessione 4 Fauci parte da 337 pf (§4.1) `[CANONE — DM 2026-10-19, D9]`.
+
+### 5.6 Se uno o più giocatori non vogliono guidare un eroe `[CANONE — DM 2026-11-15]`
+
+L'eroe rifiutato lo muove il DM sullo sfondo, con le tre righe di tattica di `ARC08-01-GUIDA-DM.md` («Se un giocatore non vuole guidare un eroe»); il giocatore guarda o guida un'unità di nani.
+
+> **Proposte, non decise dal DM:** (1) le righe di §5.1-§5.3 si contano come sempre, quindi un eroe mosso dal DM non toglie e non aggiunge bonus; (2) se rifiutano tre o quattro giocatori, il flashback non si gioca e vale §5.5.
 
 ---
 
@@ -327,7 +342,7 @@ da qui:
 | **Fauci ucciso** (ramo alternativo D10) | −1 drago a Rethmar; nessuna nemesi (ma l'uovo resta) | Day 42 Rethmar | `campaign/state.md` §2.3 |
 | **Runa dei Custodi Eterni** (Cerimonia Atto 3) | Status sociale presso i nani del Vale (§6.2) | Ogni interazione coi nani in ARC-09/10 | `Cerimonia-delle-100-Asce.md` §2; questa §6.2 |
 | **150 lance di Re Thorek** (D4) | Rinforzo condizionale a Rethmar | Day 42, se gli hook politici riescono | `state.md` §2.5; `Bestiario/png/Khorn/Khorn.md`; HOOKS-Thorik |
-| **Eroi di Hammerfist pregen** (D14, se sopravvivono) | Borin campione / Dara staffette / Thorin culto / Nala a Dauth | Sparsi in ARC-09 | schede `PNG/Borin_...`, `PNG/Dara_...`, `Bestiario/png/Thorin_Runaforte.md`, `PNG/Nala_...` |
+| **Eroi di Hammerfist pregen** (D14, se sopravvivono) | Borin campione / Dara staffette / Harbek culto / Nala a Dauth / Ragnhild incide la Runa / Yrsa porta lo stendardo alla Cerimonia `[CANONE — DM 2026-11-15]` | Sparsi in ARC-09 (Ragnhild e Yrsa restano a Hammerfist) | schede `Bestiario/png/Borin_Giuraferro.md`, `Bestiario/png/Dara_Occhiolesto.md`, `Bestiario/png/Harbek_Runaforte.md`, `Bestiario/png/Nala_Cantapietre.md`, `Bestiario/png/Ragnhild_Mantoferro.md`, `Bestiario/png/Yrsa_Portastendardo.md` |
 | **Raid drow al tempio di Hammerfist** (Sonjak, `state.md` §3) | Prefigura la Fase 0 (Notte dei Drow) di Rethmar | Day 40, Fase 0 Rethmar | `state.md` §3; ARC-09 FASE0 |
 | **Lunapiena resta di presidio** (D13) | Hammerfist difesa, ma NON rinforza Rethmar | Statico | `Bestiario/png/Capitano_Lunapiena.md`; ARMATE-SYNC §7 |
 
@@ -351,7 +366,7 @@ La runa di pietra che Re Thorek consegna ai 4 PG (Cerimonia Atto 3;
   della cittadella e alle fucine (aggancio al tesoro `ARC08-13` §3) a
   costo nullo. Il tetto dell'armeria è quello del banco: oggetti
   perfetti e consumabili già in magazzino, niente magia su misura
-  (`ARC08-17` §2-§3) `[INFERRED — needs DM confirmation]`.
+  (`ARC08-17` §2-§3) `[CANONE — DM 2026-11-04, P16, dopo la battaglia]`.
 - **Riconoscimento** da PNG nanici in ARC-09 (es. Maewen riconosce
   Tordek "dalla runa di Custode Eterno" — già canonico in `state.md`
   §4): la runa è il segno visibile.

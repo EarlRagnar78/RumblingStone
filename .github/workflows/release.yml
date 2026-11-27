@@ -11,7 +11,7 @@
 # Niente workflow_dispatch: un run a mano che sceglie la versione eseguirebbe
 # codice di un commit qualsiasi con i permessi del ramo principale (CodeQL,
 # cache poisoning). Per rifare un rilascio si rilancia il run fallito da
-# Actions; per un commit preciso si spinge il tag a mano (docs/RILASCIO.md).
+# Actions; per un commit preciso si spinge il tag a mano (docs/how-to/RILASCIO.md).
 #
 # Una PR che cambia questa catena la prova sul proprio commit: piano e
 # costruzione sì, tag e rilascio mai. Così anche un aggiornamento di
@@ -25,7 +25,7 @@ on:
     tags: ["v*"]
   pull_request:
     paths: [".github/workflows/release.yml", "scripts/release_plan.py",
-            "scripts/release_notes.py"]
+            "scripts/release_notes.py", "scripts/bundle_offline.py", "requirements.txt"]
 
 permissions:
   contents: read
@@ -75,7 +75,7 @@ jobs:
       # GITHUB_TOKEN non può creare un tag su un commit i cui workflow
       # differiscono da quelli di main (non ha mai il permesso `workflows`):
       # GitHub risponde 403 all'ultimo passo. Lo si dice subito, con le due
-      # uscite descritte in docs/RILASCIO.md.
+      # uscite descritte in docs/how-to/RILASCIO.md.
       - name: Il tag si può creare con il token di questo run
         id: gate
         env:
@@ -85,7 +85,7 @@ jobs:
         run: |
           go=true
           if [ "$DIFFER" = "true" ]; then
-            why="$TAG va su $SHA, i cui workflow differiscono da quelli di main: GITHUB_TOKEN non può creare quel tag. Spingi il tag a mano (git tag -a $TAG $SHA -m $TAG && git push origin $TAG). Vedi docs/RILASCIO.md."
+            why="$TAG va su $SHA, i cui workflow differiscono da quelli di main: GITHUB_TOKEN non può creare quel tag. Spingi il tag a mano (git tag -a $TAG $SHA -m $TAG && git push origin $TAG). Vedi docs/how-to/RILASCIO.md."
             echo "::notice::non ancora rilasciata - $why"
             go=false
           fi
@@ -163,7 +163,16 @@ jobs:
           mkdir -p dist
           tar --sort=name --owner=0 --group=0 --numeric-owner --mtime="@$SOURCE_DATE_EPOCH" \
               -C build -cf - . | gzip -n -9 > "dist/rumblingstone-skills-$TAG.tar.gz"
+          # Sul modello dei bundle di iemod-fetch: per ogni piattaforma un zip
+          # con le wheel di requirements.txt, che da ADR-0116 portano anche
+          # typst e pdfimpose: si stampa senza rete. BUNDLE.json ha lo sha256
+          # di ogni wheel; lo zip è riproducibile.
+          python scripts/bundle_offline.py costruisci --uscita dist
+          for z in dist/rumblingstone-offline-*.zip; do
+            mv "$z" "${z%.zip}-$TAG.zip"
+          done
           (cd dist && sha256sum ./* > SHA256SUMS && cat SHA256SUMS)
+
       - uses: actions/upload-artifact@v7
         with:
           name: dist
@@ -189,7 +198,9 @@ jobs:
         with: { name: dist, path: dist }
       - uses: actions/attest-build-provenance@v4
         with:
-          subject-path: "dist/*.tar.gz"
+          subject-path: |
+            dist/*.tar.gz
+            dist/*.zip
 
   publish:
     name: Tag e rilascio GitHub

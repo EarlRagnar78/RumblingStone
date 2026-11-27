@@ -37,7 +37,7 @@ Notable organizations: Force Grey (city militia elite), Watchful Order of Magist
 Masked Lords, Lords' Alliance, most major guilds
 Beneath the city: Undermountain (megadungeon, 23+ levels, Halaster Blackcloak); Skullport
 (pirate haven in Undermountain level 3)
-Regional feats: Waterdhavian Noble (social access), Arcane Accompaniment
+Regional feats: Cosmopolitan, Education, Silver Palm (PGF p37-43), Arcane Accompaniment
 
 ### Baldur's Gate
 Government: Grand Dukes (4) elected by a merchant council (Parliament of Peers)
@@ -95,7 +95,7 @@ Military: War Wizards (crown battle mages) + Purple Dragons (royal army)
 Economy: Trade, farming, light industry. Strongly mercantile with laws.
 Notable: The Stonelands (troubled northern border with goblinoids). Haunted Halls (dungeon near
 Eveningstar). Curse of the Azure Bonds events are historical.
-Regional feats: Cormyrean Conscript, Militia (Cormyr)
+Regional feats: Discipline (PGF p38)
 
 ### Sembia
 Government: Oligarchy of merchant lords; no single ruler; council rules by economic influence
@@ -226,7 +226,7 @@ Climate: Tropical jungle; extremely dangerous
 Races: Human (Chultans), Yuan-ti, dinosaurs, undead (Tomb of the Nine Gods area — not yet 3.5)
 Notable: Dinosaurs roam freely. Heavy jungles. Cursed ruins of Mezro (empty city; returned
 in some novels). Port Nyanzaru is main civilized outpost.
-Regional feats: Chultan Jungle Fighter
+Regional feats: Snake Blood, Spellwise, Survivor (PGF p43-45)
 
 ### Halruaa
 Government: Magehocracy; Halruaan Mages rule all aspects of life
@@ -380,8 +380,8 @@ Each character from a specific region may take 1 bonus Regional feat at characte
 | Amn | Street Smart, Silver Palm |
 | Calimshan | Deft Hands, Smooth Talk |
 | Chessenta | Warrior's Valor, Tactical Insight |
-| Chult | Chultan Jungle Fighter, Serpent Blood |
-| Cormyr | Cormyrean Conscript, Militia (Cormyr) |
+| Chult | Snake Blood, Spellwise, Survivor |
+| Cormyr | Discipline |
 | Dalelands | Forester, Alertness |
 | Dragon Coast | Mercantile Background, Smooth Talk |
 | Halruaa | Magical Artisan, Spellwise |
@@ -395,7 +395,7 @@ Each character from a specific region may take 1 bonus Regional feat at characte
 | Thay | Tattoo Focus, Arcane Schooling |
 | The North | Survivor, Track |
 | Unther | Survivor, Warrior's Valor |
-| Waterdeep | Waterdhavian Noble, Cosmopolitan |
+| Waterdeep | Cosmopolitan, Education, Silver Palm |
 | The Western Heartlands | Militia (various), Survivor |
 
 Full list (50+ regional feats) in Player's Guide to Faerûn (2004).

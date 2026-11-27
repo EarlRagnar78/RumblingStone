@@ -1,0 +1,127 @@
+# nomi propri 281, parole rare candidate 1814, varianti 126
+1	Bruna	3	Bruma	13	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md
+1	Brusa	1	Bruma	13	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Hella.md
+1	Dambrath	3	Damarath	13	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+1	Mangino	3	Mangini	10	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-CONSEGUENZE-ECHI.md
+1	Manuals	1	Manual	21	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+1	Marla	1	Marèa	17	10-stand-alone/Il Giardino di Sale e Calce/guida_al_tavolo.md
+1	Marta	2	Marèa	17	10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md
+1	Multiply	1	Multiplo	16	PG/Artefatti/ARTEFATTI-AUDIT-POTERI-2026-09-25.md
+1	Poderosa	1	Poderoso	146	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md
+1	Sallo	3	Salle	17	10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md
+1	Spire	1	Spires	10	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md
+1	Vella	1	Velda	14	campaign/KIT-ANTI-IMPROVVISAZIONE-VALLE.md
+1	Venere	1	Vènere	10	10-stand-alone/L'abbazia Della Rotta Sicura/abbazia_rotta_sicura.md
+2	Abiurazioni	1	Abjurazione	11	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md
+2	Abjuration	2	Abjurazione	11	07_il Portale Della Forgia Eterna/_ARCHIVIO/doni-v1-2026-09-12/skills~rumblingstone-campaign~references~campaign-artifacts.md
+2	Addestrarlo	1	Addestrare	30	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md
+2	Barik	1	Borin	187	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+2	Beorn	3	Borin	187	07_il Portale Della Forgia Eterna/_ARCHIVIO/doni-v1-2026-09-12/skills~rumblingstone-campaign~references~campaign-party.md
+2	Brimm	1	Bruma	13	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-DAUTH-SUBQUEST-Thorik.md
+2	Brisa	1	Bruma	13	10-stand-alone/Il Giardino di Sale e Calce/guida_al_tavolo.md
+2	Bruce	1	Bruma	13	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+2	Bruna	3	Brynja	39	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-PROVE-AMMISSIONE.md
+2	Brunna	1	Bruma	13	campaign/KIT-ANTI-IMPROVVISAZIONE-VALLE.md
+2	Brunna	1	Brynja	39	campaign/KIT-ANTI-IMPROVVISAZIONE-VALLE.md
+2	Cantatrice	1	Cantitrici	116	Bestiario/png/Witchwood_Tiri_Kitor/Witchwood_e_Tiri_Kitor.md
+2	Cavava	1	Canva	32	Bestiario/png/Lirien/Lirien.md
+2	Cercatemi	1	Cercate	10	08_La Battaglia Di Hammerfist/Cerimonia-delle-100-Asce.md
+2	Cercavo	1	Cercate	10	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HANDOUTS.md
+2	Cresci	1	Crest	10	07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md
+2	Croste	1	Conte	42	07_il Portale Della Forgia Eterna/PortaleForgia-P3-PianoFuoco-PARTE1.md
+2	Croste	1	Crest	10	07_il Portale Della Forgia Eterna/PortaleForgia-P3-PianoFuoco-PARTE1.md
+2	Curst	3	Crest	10	Bestiario/villain/Belkram/Belkram.md
+2	Dagna	1	Desna	10	campaign/KIT-ANTI-IMPROVVISAZIONE-VALLE.md
+2	Dalia	1	David	11	10-stand-alone/Il Giardino di Sale e Calce PF1e/guida_al_tavolo.md
+2	Dazed	1	David	11	PG/Artefatti/Artefatti-Pg/Tordek/02_Risveglio_Bracieri_di_Moradin.md
+2	Delia	2	Desna	10	10-stand-alone/Il-Drappo-di-Tarsilia/08-CASSETTA-DEL-DM.md
+2	Dividi	1	David	11	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/inizio.md
+2	Dividi	1	Davide	78	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/inizio.md
+2	Dovil	1	David	11	Bestiario/mostri/underdark-dovil-runecaster-cr7.md
+2	Drexlyn	3	Drellin	16	campaign/ai-media-prompts/03_ARC02_scala-ossa-funghi.md
+2	Elixir	1	Elsir	43	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+2	Fende	3	Fendere	19	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-BATTLE-STATS-e-VILLAIN-ICONICI-Parte2.md
+2	Gilet	1	Gilded	10	Bestiario/villain/Conte_Valerius/Conte_Valerius/Conte_Valerius.md
+2	Grakh	3	Grask	97	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md
+2	Grand	1	Grask	97	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-DISTRETTI-CHANNATHGATE.md
+2	Grease	1	Grask	97	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+2	Gresh	1	Grask	97	Bestiario/mostri/furia-della-mano-cr10.md
+2	Grima	1	Grimjaw	245	campaign/KIT-ANTI-IMPROVVISAZIONE-VALLE.md
+2	Grima	1	Grinza	18	campaign/KIT-ANTI-IMPROVVISAZIONE-VALLE.md
+2	Gronda	1	Grinza	18	07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-FINAL-P5.md
+2	Hakim	1	Hamid	41	10-stand-alone/Il Giardino di Sale e Calce PF1e/guida_al_tavolo.md
+2	Hamza	1	Hamid	41	10-stand-alone/Il Giardino di Sale e Calce PF1e/guida_al_tavolo.md
+2	Igneo	1	Ignan	19	07_il Portale Della Forgia Eterna/PortaleForgia-P3-PianoFuoco-PARTE1.md
+2	Ignoran	1	Ignan	19	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1B-Cerchio-Treant-COMPLETO-maps.md
+2	Intimate	2	Intimidate	11	PG/Artefatti/Artefatti-Pg/Artemis/Cerebromorphosis/cerebromorphosis_system.md
+2	Italia	1	Ilaria	22	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-VERIFICA-LEGALE-IP.md
+2	Jorel	1	Joran	22	campaign/KIT-ANTI-IMPROVVISAZIONE-VALLE.md
+2	Karrn	3	Kharn	33	07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md
+2	Karrn	3	Khorn	43	07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md
+2	Karrn	3	Koryn	24	07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md
+2	Kettel	1	Kettra	27	10-stand-alone/Il Giardino di Sale e Calce/guida_al_tavolo.md
+2	Kordin	1	Koryn	24	campaign/KIT-ANTI-IMPROVVISAZIONE-VALLE.md
+2	Malar	2	Milah	10	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+2	Malco	2	Manto	39	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md
+2	Malik	1	Milil	11	10-stand-alone/Il Giardino di Sale e Calce PF1e/guida_al_tavolo.md
+2	Marco	1	Manto	39	campaign/sessions/2026-05-03_session-3.md
+2	Marco	1	Marèa	17	campaign/sessions/2026-05-03_session-3.md
+2	Marso	1	Manto	39	10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md
+2	Marso	1	Marèa	17	10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md
+2	Marta	2	Manto	39	10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md
+2	Maysa	1	Marèa	17	10-stand-alone/Il Giardino di Sale e Calce PF1e/guida_al_tavolo.md
+2	Mystic	1	Mystra	21	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+2	Nabil	1	Nadia	14	10-stand-alone/Il Giardino di Sale e Calce PF1e/guida_al_tavolo.md
+2	Nanda	1	Nadia	14	10-stand-alone/Il-Drappo-di-Tarsilia/09-KIT-ANTI-IMPROVVISAZIONE.md
+2	Norris	1	Norro	18	campaign/lore/campaign-chronicle.md
+2	Onoro	1	Ostro	13	PG/Artefatti/Artefatti-Pg/Artemis/Cerebromorphosis/Italiano/cerebromorphosis_italian-final.md
+2	Pillow	2	Pillar	21	10-stand-alone/Il-Drappo-di-Tarsilia/ALLEGATI/immagini/web/README.md
+2	Quaal	2	Quill	10	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-BANCHI-E-MERCATI.md
+2	Rania	1	Rasca	39	10-stand-alone/Il Giardino di Sale e Calce PF1e/guida_al_tavolo.md
+2	Rhestin	1	Rhest	210	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+2	Rimani	3	Rihan	81	07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE1.md
+2	Risuan	1	Rihan	81	PG/Artefatti/Artefatti-Pg/Tordek/02_Risveglio_Bracieri_di_Moradin.md
+2	Saline	2	Salle	17	10-stand-alone/L'abbazia Della Rotta Sicura/appendice_b_oppressione.md
+2	Saline	2	Selûne	20	10-stand-alone/L'abbazia Della Rotta Sicura/appendice_b_oppressione.md
+2	Salma	1	Salle	17	10-stand-alone/Il Giardino di Sale e Calce PF1e/guida_al_tavolo.md
+2	Salma	1	Selva	14	10-stand-alone/Il Giardino di Sale e Calce PF1e/guida_al_tavolo.md
+2	Sarda	3	Saraah	91	10-stand-alone/L'abbazia Della Rotta Sicura/appendice_b_oppressione.md
+2	Sarda	3	Sedda	16	10-stand-alone/L'abbazia Della Rotta Sicura/appendice_b_oppressione.md
+2	Shaaran	1	Shaar	36	Bestiario/png/jorr-natherson-cr8.md
+2	Shaaran	1	Shaarcah	13	Bestiario/png/jorr-natherson-cr8.md
+2	Shaareach	2	Shaarcah	13	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+2	Shaaryan	1	Shaarcah	13	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md
+2	Shark	1	Shaar	36	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+2	Sharp	2	Shaar	36	PG/Artefatti/Artefatti-Pg/Artemis/Cerebromorphosis/cerebromorphosis_system.md
+2	Sigle	1	Salle	17	campaign/GLOSSARIO-E-LOCALIZZAZIONE.md
+2	Sigle	1	Signs	12	campaign/GLOSSARIO-E-LOCALIZZAZIONE.md
+2	Silenz	3	Siena	17	07_il Portale Della Forgia Eterna/_ARCHIVIO/ARC07-DEF-4-VIAGGIO-MILLE-ANNI-prima-riscrittura-2026-09-18.md
+2	Silenz	3	Sirena	16	07_il Portale Della Forgia Eterna/_ARCHIVIO/ARC07-DEF-4-VIAGGIO-MILLE-ANNI-prima-riscrittura-2026-09-18.md
+2	Sisma	2	Siena	17	07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md
+2	Sonda	2	Sedda	16	10-stand-alone/L'abbazia Della Rotta Sicura/abbazia_rotta_sicura.md
+2	Sylvan	1	Selva	14	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1B-Cerchio-Treant-COMPLETO-maps.md
+2	Talon	1	Talar	54	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+2	Talos	1	Talar	54	Bestiario/png/Tempestas/Tempestas.md
+2	Telon	1	Theron	10	Bestiario/mostri/duergar-ladro1-cr1.md
+2	Terry	1	Terran	23	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+2	Terry	1	Terros	276	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+2	Terrò	1	Terran	23	07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md
+2	Terrò	1	Terros	276	07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md
+2	Tessa	3	Tetsu	48	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md
+2	Thrond	1	Theron	10	campaign/KIT-ANTI-IMPROVVISAZIONE-VALLE.md
+2	Thrond	1	Thrones	12	campaign/KIT-ANTI-IMPROVVISAZIONE-VALLE.md
+2	Timore	1	Timoteo	20	07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md
+2	Titan	1	Tidal	11	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+2	Tobin	2	Thorin	154	10-stand-alone/Il Giardino di Sale e Calce/guida_al_tavolo.md
+2	Torino	1	Thorin	154	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+2	Ulfar	1	Ulwai	46	campaign/KIT-ANTI-IMPROVVISAZIONE-VALLE.md
+2	Unificare	1	Unificata	11	07_il Portale Della Forgia Eterna/_ARCHIVIO/PortaleForgia-P6-INTEGRAZIONE-Completa.md
+2	Valor	1	Valkur	10	Bestiario/png/avarthel-druido-cr9.md
+2	Vella	1	Veylan	13	campaign/KIT-ANTI-IMPROVVISAZIONE-VALLE.md
+2	Velroc	1	Verric	15	campaign/lore/dm-guide-to-be-adapted-tips&tricks.md
+2	Velum	2	Velda	14	PG/Artefatti/Ring of Chaotic Illumination.md
+2	Vermin	3	Verric	15	07_il Portale Della Forgia Eterna/PortaleForgia-P2-REVISED-Corretta-PARTE2.md
+2	Vesna	1	Velda	14	campaign/KIT-ANTI-IMPROVVISAZIONE-VALLE.md
+2	Vigor	2	Visir	30	Bestiario/mostri/kulkorzhul-war-adept-cr7.md
+2	Visive	1	Visir	30	PG/Artefatti/Artefatti-Pg/Artemis/Cerebromorphosis/Italiano/cerebromorphosis_italian-final.md
+2	Vizio	1	Visir	30	09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-STATBLOCCHI.md

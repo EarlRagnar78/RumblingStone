@@ -1,0 +1,57 @@
+# sistemi/pf1e/dati/gradi.toml — i gradi delle abilità PF1e (ADR-0124)
+# Generato da plans/esperimenti/verifica-scheda-2026-11-12/estrai_gradi.py dal PRD
+# (devonjones/PSRD-Data@76ea4784): abilità e caratteristica chiave dal Core,
+# «Skill points equal to» di ogni tipo dal Bestiary. I punti per livello delle
+# classi sono in classi.toml (`gradi`).
+
+[regole]
+# gradi massimi = dadi vita; un'abilità di classe con almeno 1 grado dà +3;
+# nessun moltiplicatore al primo dado; almeno 1 grado per dado; umani +1 per livello
+massimo_piu = 0
+primo_dado = 1
+minimo_per_dado = 1
+umano_per_livello = 1
+bonus_di_classe = 3
+
+[chiave]
+"acrobatics" = "Des"
+"appraise" = "Int"
+"bluff" = "Car"
+"climb" = "For"
+"craft" = "Int"
+"diplomacy" = "Car"
+"disable device" = "Des"
+"disguise" = "Car"
+"escape artist" = "Des"
+"fly" = "Des"
+"handle animal" = "Car"
+"heal" = "Sag"
+"intimidate" = "Car"
+"knowledge" = "Int"
+"linguistics" = "Int"
+"perception" = "Sag"
+"perform" = "Car"
+"profession" = "Sag"
+"ride" = "Des"
+"sense motive" = "Sag"
+"sleight of hand" = "Des"
+"spellcraft" = "Int"
+"stealth" = "Des"
+"survival" = "Sag"
+"swim" = "For"
+"use magic device" = "Car"
+
+[tipi]
+"aberration" = 4
+"animal" = 2
+"construct" = 2
+"dragon" = 6
+"fey" = 6
+"humanoid" = 2
+"magical beast" = 2
+"monstrous humanoid" = 4
+"ooze" = 2
+"outsider" = 6
+"plant" = 2
+"undead" = 4
+"vermin" = 2

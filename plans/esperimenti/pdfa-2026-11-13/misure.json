@@ -1,0 +1,931 @@
+{
+ "main": {
+  "ARC07-GRUPPO-CAMMINO-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 3,
+    "regole": {
+     "6.6.2.3.1-2": 1,
+     "6.6.4-1": 1,
+     "6.6.2.3.1-1": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 3,
+    "regole": {
+     "6.6.2.3.1-2": 1,
+     "6.6.2.3.1-1": 1,
+     "6.6.4-1": 1
+    }
+   },
+   "byte": 365293
+  },
+  "ARC07-MILLE-ANNI-VOLUME-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 64,
+    "regole": {
+     "6.2.10-2": 61,
+     "6.6.2.3.1-1": 1,
+     "6.6.2.3.1-2": 1,
+     "6.6.4-1": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 64,
+    "regole": {
+     "6.6.2.3.1-2": 1,
+     "6.6.4-1": 1,
+     "6.6.2.3.1-1": 1,
+     "6.2.10-2": 61
+    }
+   },
+   "byte": 8803673
+  },
+  "ARC07-NOTTE-E-ALBA-BOOKLET-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 77,
+    "regole": {
+     "6.6.2.3.1-2": 1,
+     "6.2.10-2": 74,
+     "6.6.4-1": 1,
+     "6.6.2.3.1-1": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 77,
+    "regole": {
+     "6.6.4-1": 1,
+     "6.6.2.3.1-1": 1,
+     "6.2.10-2": 74,
+     "6.6.2.3.1-2": 1
+    }
+   },
+   "byte": 10343732
+  },
+  "ARC07-NOTTE-E-ALBA-GIOCATORI-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 10,
+    "regole": {
+     "6.2.10-2": 7,
+     "6.6.2.3.1-1": 1,
+     "6.6.2.3.1-2": 1,
+     "6.6.4-1": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 10,
+    "regole": {
+     "6.6.4-1": 1,
+     "6.6.2.3.1-1": 1,
+     "6.6.2.3.1-2": 1,
+     "6.2.10-2": 7
+    }
+   },
+   "byte": 102475
+  },
+  "ARC07-NOTTE-E-ALBA-SERATA-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 49,
+    "regole": {
+     "6.6.2.3.1-1": 1,
+     "6.6.2.3.1-2": 1,
+     "6.2.10-2": 46,
+     "6.6.4-1": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 49,
+    "regole": {
+     "6.6.2.3.1-2": 1,
+     "6.6.2.3.1-1": 1,
+     "6.6.4-1": 1,
+     "6.2.10-2": 46
+    }
+   },
+   "byte": 7459094
+  },
+  "ARC07-RITORNO-FORGIA-BOOKLET-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 22,
+    "regole": {
+     "6.6.4-1": 1,
+     "6.2.10-2": 19,
+     "6.6.2.3.1-1": 1,
+     "6.6.2.3.1-2": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 22,
+    "regole": {
+     "6.6.2.3.1-2": 1,
+     "6.6.2.3.1-1": 1,
+     "6.6.4-1": 1,
+     "6.2.10-2": 19
+    }
+   },
+   "byte": 1255566
+  },
+  "ARC07-SERATA-GIOCATORI-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 22,
+    "regole": {
+     "6.2.10-2": 19,
+     "6.6.2.3.1-2": 1,
+     "6.6.4-1": 1,
+     "6.6.2.3.1-1": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 22,
+    "regole": {
+     "6.6.4-1": 1,
+     "6.6.2.3.1-1": 1,
+     "6.2.10-2": 19,
+     "6.6.2.3.1-2": 1
+    }
+   },
+   "byte": 1553950
+  },
+  "ARC07-SERATA-RESURREZIONE-BOOKLET-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 118,
+    "regole": {
+     "6.2.10-2": 115,
+     "6.6.2.3.1-2": 1,
+     "6.6.4-1": 1,
+     "6.6.2.3.1-1": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 118,
+    "regole": {
+     "6.6.4-1": 1,
+     "6.6.2.3.1-1": 1,
+     "6.6.2.3.1-2": 1,
+     "6.2.10-2": 115
+    }
+   },
+   "byte": 11491972
+  },
+  "ARC07-SESSIONE-TERROS-BOOKLET-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 49,
+    "regole": {
+     "6.6.4-1": 1,
+     "6.6.2.3.1-2": 1,
+     "6.6.2.3.1-1": 1,
+     "6.2.10-2": 46
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 49,
+    "regole": {
+     "6.6.2.3.1-2": 1,
+     "6.6.2.3.1-1": 1,
+     "6.2.10-2": 46,
+     "6.6.4-1": 1
+    }
+   },
+   "byte": 3213773
+  },
+  "ARC07-TEASER-GIOCATORI-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 5,
+    "regole": {
+     "6.6.2.3.1-1": 1,
+     "6.2.10-2": 2,
+     "6.6.2.3.1-2": 1,
+     "6.6.4-1": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 5,
+    "regole": {
+     "6.2.10-2": 2,
+     "6.6.2.3.1-1": 1,
+     "6.6.2.3.1-2": 1,
+     "6.6.4-1": 1
+    }
+   },
+   "byte": 371165
+  },
+  "DRAPPO-BENVENUTO-TAVOLO-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 5,
+    "regole": {
+     "6.6.4-1": 1,
+     "6.6.2.3.1-2": 1,
+     "6.6.2.3.1-1": 1,
+     "6.2.10-2": 2
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 5,
+    "regole": {
+     "6.6.4-1": 1,
+     "6.6.2.3.1-2": 1,
+     "6.2.10-2": 2,
+     "6.6.2.3.1-1": 1
+    }
+   },
+   "byte": 78041
+  },
+  "DRAPPO-BOOKLET-DM-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 27,
+    "regole": {
+     "6.6.4-1": 1,
+     "6.2.10-2": 24,
+     "6.6.2.3.1-1": 1,
+     "6.6.2.3.1-2": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 27,
+    "regole": {
+     "6.6.4-1": 1,
+     "6.6.2.3.1-1": 1,
+     "6.2.10-2": 24,
+     "6.6.2.3.1-2": 1
+    }
+   },
+   "byte": 6270047
+  },
+  "DRAPPO-BOOKLET-GIOCATORI-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 10,
+    "regole": {
+     "6.6.2.3.1-2": 1,
+     "6.2.10-2": 7,
+     "6.6.4-1": 1,
+     "6.6.2.3.1-1": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 10,
+    "regole": {
+     "6.6.2.3.1-1": 1,
+     "6.6.2.3.1-2": 1,
+     "6.2.10-2": 7,
+     "6.6.4-1": 1
+    }
+   },
+   "byte": 2134393
+  },
+  "DRAPPO-FASCICOLO-SCHEDE-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 12,
+    "regole": {
+     "6.6.2.3.1-2": 1,
+     "6.6.4-1": 1,
+     "6.6.2.3.1-1": 1,
+     "6.2.10-2": 9
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 12,
+    "regole": {
+     "6.2.10-2": 9,
+     "6.6.4-1": 1,
+     "6.6.2.3.1-1": 1,
+     "6.6.2.3.1-2": 1
+    }
+   },
+   "byte": 1758898
+  },
+  "DRAPPO-PROP-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 8,
+    "regole": {
+     "6.6.4-1": 1,
+     "6.6.2.3.1-2": 1,
+     "6.2.10-2": 5,
+     "6.6.2.3.1-1": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 8,
+    "regole": {
+     "6.6.4-1": 1,
+     "6.2.10-2": 5,
+     "6.6.2.3.1-1": 1,
+     "6.6.2.3.1-2": 1
+    }
+   },
+   "byte": 293213
+  },
+  "DRAPPO-SCHEDE-PG-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 3,
+    "regole": {
+     "6.6.2.3.1-1": 1,
+     "6.6.2.3.1-2": 1,
+     "6.6.4-1": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 3,
+    "regole": {
+     "6.6.2.3.1-2": 1,
+     "6.6.4-1": 1,
+     "6.6.2.3.1-1": 1
+    }
+   },
+   "byte": 1673661
+  },
+  "PALIO-BOOKLET-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 21,
+    "regole": {
+     "6.2.10-2": 18,
+     "6.6.4-1": 1,
+     "6.6.2.3.1-1": 1,
+     "6.6.2.3.1-2": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 21,
+    "regole": {
+     "6.2.10-2": 18,
+     "6.6.2.3.1-1": 1,
+     "6.6.4-1": 1,
+     "6.6.2.3.1-2": 1
+    }
+   },
+   "byte": 7715289
+  },
+  "abbazia-rotta-sicura-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 16,
+    "regole": {
+     "6.6.4-1": 1,
+     "6.2.10-2": 13,
+     "6.6.2.3.1-2": 1,
+     "6.6.2.3.1-1": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 16,
+    "regole": {
+     "6.6.2.3.1-1": 1,
+     "6.6.4-1": 1,
+     "6.2.10-2": 13,
+     "6.6.2.3.1-2": 1
+    }
+   },
+   "byte": 1236988
+  },
+  "giardino-sale-calce-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 14,
+    "regole": {
+     "6.6.2.3.1-1": 1,
+     "6.6.2.3.1-2": 1,
+     "6.6.4-1": 1,
+     "6.2.10-2": 11
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 14,
+    "regole": {
+     "6.6.4-1": 1,
+     "6.2.10-2": 11,
+     "6.6.2.3.1-2": 1,
+     "6.6.2.3.1-1": 1
+    }
+   },
+   "byte": 5093045
+  },
+  "giardino-sale-calce-pf1e-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": false,
+    "falliti": 9,
+    "regole": {
+     "6.6.2.3.1-2": 1,
+     "6.6.4-1": 1,
+     "6.2.10-2": 6,
+     "6.6.2.3.1-1": 1
+    }
+   },
+   "2b": {
+    "conforme": false,
+    "falliti": 9,
+    "regole": {
+     "6.6.2.3.1-2": 1,
+     "6.6.2.3.1-1": 1,
+     "6.6.4-1": 1,
+     "6.2.10-2": 6
+    }
+   },
+   "byte": 4015433
+  }
+ },
+ "ramo": {
+  "ARC07-GRUPPO-CAMMINO-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 369132
+  },
+  "ARC07-MILLE-ANNI-VOLUME-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 8807523
+  },
+  "ARC07-NOTTE-E-ALBA-BOOKLET-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 10347586
+  },
+  "ARC07-NOTTE-E-ALBA-GIOCATORI-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 106317
+  },
+  "ARC07-NOTTE-E-ALBA-SERATA-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 7462946
+  },
+  "ARC07-RITORNO-FORGIA-BOOKLET-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 1259411
+  },
+  "ARC07-SERATA-GIOCATORI-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 1557790
+  },
+  "ARC07-SERATA-RESURREZIONE-BOOKLET-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 11495826
+  },
+  "ARC07-SESSIONE-TERROS-BOOKLET-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 3217622
+  },
+  "ARC07-TEASER-GIOCATORI-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 375039
+  },
+  "DRAPPO-BENVENUTO-TAVOLO-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 81881
+  },
+  "DRAPPO-BOOKLET-DM-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 6273901
+  },
+  "DRAPPO-BOOKLET-GIOCATORI-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 2138233
+  },
+  "DRAPPO-FASCICOLO-SCHEDE-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 1762753
+  },
+  "DRAPPO-PROP-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 297055
+  },
+  "DRAPPO-SCHEDE-PG-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 1677507
+  },
+  "PALIO-BOOKLET-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 7719138
+  },
+  "abbazia-rotta-sicura-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 1240836
+  },
+  "giardino-sale-calce-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 5096895
+  },
+  "giardino-sale-calce-pf1e-STAMPA.pdf": {
+   "ua1": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2a": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "2b": {
+    "conforme": true,
+    "falliti": 0,
+    "regole": {}
+   },
+   "byte": 4019287
+  }
+ },
+ "_banco": {
+  "main": "683480af",
+  "veraPDF": "1.28.2",
+  "typst": "0.15.2",
+  "pagine": 985,
+  "pagine_testo_diverso": 0,
+  "pagine_pixel_diversi_40dpi": 86,
+  "scarto_massimo_pixel": 3
+ }
+}

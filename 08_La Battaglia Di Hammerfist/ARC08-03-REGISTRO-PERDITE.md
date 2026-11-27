@@ -44,7 +44,7 @@ Queste schede sono progettate per velocizzare il combattimento di massa.
 ## **ESERCITO DELLA MANO ROSSA (ATTACCANTI)**
 
 ### **Fanteria Hobgoblin (Standard)**
-**Quantità Totale:** 30 Unità | **Statistiche Chiave:** AU: **+8** | DU: **18** | Morale Base: **+2**
+**Quantità Totale:** 30 Unità | **Statistiche Chiave:** AU: **+6** | DU: **18** | Morale Base: **+2**
 **Abilità Speciali:** Formazione Tattica (+1 DU se adiacente ad alleati), Disciplina Ferrea (+3 TS Paura)
 
 | # | Punti Ferita Unità (PFU) | Note / Status Attuale | # | Punti Ferita Unità (PFU) | Note / Status Attuale |
@@ -67,8 +67,8 @@ Queste schede sono progettate per velocizzare il combattimento di massa.
 
 ---
 ### **Fanteria Orchesca**
-**Quantità Totale:** 15 Unità | **Statistiche Chiave:** AU: **+6** | DU: **13** | Morale Base: **+1**
-**Abilità Speciali:** Furia Orchesca (AU +8 se PFU ≤ 4), Carica Selvaggia (1° round: AU +8, DU 12)
+**Quantità Totale:** 15 Unità | **Statistiche Chiave:** AU: **+5** | DU: **13** | Morale Base: **+1**
+**Abilità Speciali:** Furia Orchesca (AU +7 se PFU ≤ 4), Carica Selvaggia (1° round: AU +7, DU 12)
 
 | # | Punti Ferita Unità (PFU) | Note / Status Attuale |
 | :- | :--- | :--- |
@@ -124,7 +124,7 @@ Queste schede sono progettate per velocizzare il combattimento di massa.
 ---
 ### **Artiglieria e Unità Pesanti**
 
-**Giganti delle Colline (8 Unità)** | AU: **+14** | DU: **20** | PFU: 15 | Morale: +1
+**Giganti delle Colline (8 Unità)** | AU: **+16 randello, +8 massi** | DU: **20** | PFU: 15 | Morale: +1
 *Abilità: Bombardamento (ignora copertura), Bersaglio Grande (+2 a essere colpiti a distanza)*
 | # | PFU | # | PFU |
 | :- | :--- | :- | :--- |
@@ -133,14 +133,14 @@ Queste schede sono progettate per velocizzare il combattimento di massa.
 | **3** | `[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]` | **7** | `[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]` |
 | **4** | `[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]` | **8** | `[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]` |
 
-**Ettin Standard (2 Unità)** | AU: **+11 (x2)** | DU: **18** | PFU: 13 | Morale: 0
+**Ettin Standard (2 Unità)** | AU: **+12 (x2)** | DU: **18** | PFU: 13 | Morale: 0
 *Abilità: Doppio Attacco, Visione Superiore (no fiancheggiamento)*
 | # | PFU |
 | :- | :--- |
 | **1** | `[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]` |
 | **2** | `[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]` |
 
-**Orog Guardie Nere (1 Unità d'Élite)** | AU: **+12** | DU: **19** | PFU: 13 | Morale: +3
+**Orog Guardie Nere (1 Unità d'Élite)** | AU: **+14** | DU: **21** | PFU: 13 | Morale: +3
 *Abilità: Guardia del Corpo (intercetta danni per Grimjaw), Attacco Poderoso, Lealtà Incrollabile*
 | # | PFU |
 | :- | :--- |
@@ -233,7 +233,10 @@ Queste schede sono progettate per velocizzare il combattimento di massa.
     *   Unità 4: `[ ]`
 
 **Baliste Pesanti Naniche (6 Macchine)**
-**AU:** +10 | **Danno:** 3d8 (ignora durezza con la regola opzionale)
+
+> Uno contro uno: `Bestiario/mostri/nano-mastro-artigliere-guerriero8-cr8.md`
+
+**AU:** +10 | **Danno:** 3d8+2 (ignora durezza con la regola opzionale)
 *Richiede un'unità di Ingegneri per operare e un round completo per ricaricare.*
 
 | # | Stato | Note (Assegnata a Unità Ingegneri #) |
@@ -257,7 +260,7 @@ Queste schede sono progettate per velocizzare il combattimento di massa.
 | **Madre Sup. Dana** | _______ / 142 | Canto di Battaglia `[ ]` |
 | **Le Cantitrici della Pietra** | _______ / 98 (ciascuna) | Coro della Montagna: Terremoto `[ ]` Cura di Massa `[ ]` Urlo `[ ]` |
 | | | |
-| **Generale Grimjaw** | _______ / 178 | Furia Comandante `[ ]` |
+| **Generale Grimjaw** | _______ / 122 (150 in Furia) | Furia Comandante `[ ]` · sotto 61 ripiega e beve, sotto 30 si ritira |
 | **Gorthak il Trifronte** | _______ / 195 | Furia sotto 97 PF |
 | **Fauci di Palude** | _______ / 337 (meno il carry-over, `ARC08-10` §4.1) | Soffio a Cono `[ ]` · Presa di Thorik `[ ]` |
 | | | |
@@ -265,5 +268,9 @@ Queste schede sono progettate per velocizzare il combattimento di massa.
 | **Signore Ventolesto** | _______ / 95 | Punire il Male `[ ]` |
 | **Capitano Lunapiena** | _______ / 88 | Corno del Valhalla `[ ]` Frecce Morte Drago `[ ] [ ] [ ]` |
 | **Orion Pelleorsa** | _______ / 98 | Forma Selvatica `[ ][ ][ ][ ][ ]` |
-| **Maestro Tempestas** | _______ / 91 | Musica Bardica `[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]` |
+| **Maestro Tempestas** | _______ / 97 | Musica Bardica `[ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ][ ]` |
 | **Ranger Elfici (11)** | *Tracciati come unità o narrativamente* | |
+
+<!-- storico -->
+era: fino al 2026-11-20 gli orog della guardia nera avevano AU +13 e DU 19; ora +14 e 21, con la serie d'élite più la razza orog (card del DM del 2026-11-20).
+<!-- /storico -->

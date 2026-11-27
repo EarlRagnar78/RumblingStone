@@ -306,6 +306,11 @@ build/
 
 # Skill-sync status written by .claude/hooks/session-start.sh (async hook)
 .claude/.skills-sync-status
+# Registro delle decisioni dell'hook vincolo_skill (ADR-0146)
+.claude/.uso-skill.jsonl
+.claude/.uso-agenti.jsonl
+# Registro degli hook del custode della memoria (ADR-0151)
+.claude/.custode-memoria.jsonl
 
 # OS artifacts
 .DS_Store
@@ -401,3 +406,8 @@ scripts/llm-locale/dati/
 
 # Generato a richiesta da scripts/inventory_inferred.py (non si committa)
 docs/audit/INFERRED-INVENTARIO.md
+
+# Le cartelle delle installazioni di strumenti.py (ADR-0113, superato da
+# ADR-0116): restano ignorate per chi le ha ancora, si possono cancellare.
+.strumenti/
+.strumenti-cache/

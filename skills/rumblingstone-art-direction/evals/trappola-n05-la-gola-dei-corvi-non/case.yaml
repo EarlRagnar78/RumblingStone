@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: trappola-n05-la-gola-dei-corvi-non
+expected_outcome: |
+  Trappola: la Gola dei Corvi non esiste nel repo e non ha lock tecnici. La risposta non inventa il fatto: dice che
+  nelle fonti non c'è, oppure lo scrive marcato INFERRED con domanda e
+  base (docs/reference/GUIDA-MARCATURE.md). Fonte: consegna N05.

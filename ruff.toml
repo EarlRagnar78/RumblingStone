@@ -40,3 +40,10 @@ select = [
 # Lo spazio di larghezza zero nel docstring è l'esempio di ciò che la funzione
 # toglie: va letto così com'è.
 "scripts/validate_corredo.py" = ["PLE2515"]
+# F2 di ADR-0112: le costanti che vengono dai dati di un sistema si leggono alla
+# prima richiesta, con il `__getattr__` di modulo (PEP 562). Restano in
+# `__all__`, ma ruff non vede un `__getattr__` e le crede non definite.
+# `test_nessun_sistema_all_import.py` prova che si importano tutte.
+"scripts/dmcore/caratteristiche.py" = ["F822"]
+"scripts/dmcore/lettura_creatura.py" = ["F822"]
+"scripts/dmcore/progressione.py" = ["F822"]

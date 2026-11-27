@@ -1,0 +1,242 @@
+# sistemi/dnd35/dati/incantesimi.toml — liste di incantesimi 3.5 per classe × funzione (ADR-0111, L5c)
+#
+# Spostate senza cambiare una voce da scripts/dmcore/incantesimi.py (2026-11-07).
+# Ogni voce viene dall'ancora in dnd-35-srd/references/spells.md per quella classe
+# e quel livello. Poche voci per livello, ed è voluto: sono gli incantesimi che
+# quella funzione lancerebbe davvero, non tutto il SRD.
+
+# nome di classe come lo scrive il DM → chiave delle liste
+[canonica]
+"wizard" = "mago"
+"mago" = "mago"
+"sorcerer" = "stregone"
+"stregone" = "stregone"
+"cleric" = "chierico"
+"chierico" = "chierico"
+"druid" = "druido"
+"druido" = "druido"
+"bard" = "bardo"
+"bardo" = "bardo"
+"ranger" = "ranger"
+"paladin" = "paladino"
+"paladino" = "paladino"
+"adept" = "adepto"
+"adepto" = "adepto"
+
+# cella (classe × funzione) assente → altra funzione della STESSA classe, mai di un'altra
+[ripiego]
+"mago" = "utilita"
+"stregone" = "utilita"
+"chierico" = "supporto"
+"druido" = "controllore"
+"bardo" = "supporto"
+"ranger" = "utilita"
+"paladino" = "supporto"
+
+# Mago e stregone hanno la stessa lista nel SRD: una copia sola, l'altra è un alias.
+# Classi per cui una lista non è scritta: il generatore non sceglie invece di scegliere male.
+[regole]
+alias = { stregone = "mago" }
+senza_lista = ["adept", "adepto"]
+
+
+# ── arcano: mago (e stregone, alias) — SRD «Sorcerer/Wizard Spells» ──
+[liste.mago.controllore]
+"0" = ["prestidigitazione", "luce", "lettura del magico", "mano magica"]
+"1" = ["sonno", "charme su persone", "spruzzo colorato", "raggio di indebolimento", "unto"]
+"2" = ["immagine speculare", "ragnatela", "polvere luccicante", "risata incontenibile di Tasha", "tocco di idiozia"]
+"3" = ["lentezza", "blocca persone", "nube maleodorante", "tempesta di nevischio", "suggestione"]
+"4" = ["confusione", "muro di fuoco", "terreno illusorio", "porta dimensionale", "charme sui mostri"]
+"5" = ["muro di forza", "dominare persone", "blocca mostri", "nube mortale", "regressione mentale"]
+"6" = ["campo anti-magia", "cerchio di morte", "nebbia acida", "muro di ferro", "repulsione"]
+"7" = ["gabbia di forza", "demenza", "spruzzo prismatico", "inversione della gravità", "blocca persone di massa"]
+"8" = ["labirinto", "danza irresistibile di Otto", "muro prismatico", "vuoto mentale", "parola del potere, stordire"]
+"9" = ["imprigionare", "fermare il tempo", "dominare mostri", "sfera prismatica", "disgiunzione di Mordenkainen"]
+
+[liste.mago.blaster]
+"0" = ["raggio di gelo", "luce", "mano magica", "lampo"]
+"1" = ["dardo incantato", "mani brucianti", "spruzzo colorato"]
+"2" = ["raggio rovente", "freccia acida di Melf", "frantumare"]
+"3" = ["palla di fuoco", "fulmine", "tempesta di nevischio"]
+"4" = ["tempesta di ghiaccio", "muro di fuoco", "debilitazione", "scudo di fuoco"]
+"5" = ["cono di freddo", "nube mortale", "telecinesi", "evoca mostri V"]
+"6" = ["catena di fulmini", "disintegrazione", "sfera congelante di Otiluke", "cerchio di morte"]
+"7" = ["palla di fuoco ritardata", "dito della morte", "spruzzo prismatico", "spada di Mordenkainen"]
+"8" = ["orrido avvizzimento", "nube incendiaria", "raggio polare", "esplosione solare", "grido superiore"]
+"9" = ["sciame di meteore", "parola del potere, uccidere", "lamento della banshee", "risucchio di energia"]
+
+[liste.mago.utilita]
+"0" = ["prestidigitazione", "individuazione del magico", "lettura del magico", "luce"]
+"1" = ["armatura magica", "scudo", "allarme", "caduta morbida"]
+"2" = ["invisibilità", "sfocatura", "nube di nebbia", "resistere all'energia", "individuazione dei pensieri"]
+"3" = ["volare", "dissolvi magie", "distorsione", "forma gassosa", "velocità"]
+"4" = ["invisibilità superiore", "pelle di pietra", "occhio arcano", "porta dimensionale", "metamorfosi"]
+"5" = ["teletrasporto", "passapareti", "mano interposta di Bigby", "muro di pietra", "metamorfosi funesta"]
+"6" = ["dissolvi magie superiore", "globo di invulnerabilità", "visione del vero", "carne in pietra", "sguardo penetrante"]
+"7" = ["teletrasporto superiore", "riflettere incantesimo", "esilio", "desiderio limitato"]
+"8" = ["corpo di ferro", "vuoto mentale", "pugno serrato", "muro prismatico"]
+"9" = ["previsione", "portale", "desiderio", "disgiunzione di Mordenkainen"]
+
+
+# ── divino: chierico ──
+[liste.chierico.controllore]
+"0" = ["guida", "individuazione del magico", "resistenza", "luce"]
+"1" = ["comando", "santuario", "protezione dal male", "scudo entropico"]
+"2" = ["blocca persone", "silenzio", "oscurità", "calmare emozioni", "zona di verità"]
+"3" = ["cecità/sordità", "scagliare maledizione", "glifo di interdizione", "epurare invisibilità", "muro di vento"]
+"4" = ["congedo", "ancora dimensionale", "veleno", "divinazione"]
+"5" = ["comando superiore", "distruggere viventi", "piaga degli insetti", "muro di pietra"]
+"6" = ["esilio", "barriera di lame", "animare oggetti", "parola del ritiro"]
+"7" = ["distruzione", "repulsione", "blasfemia", "dettame", "parola del caos"]
+"8" = ["serratura dimensionale", "simbolo di morte", "campo anti-magia", "mantello del caos"]
+"9" = ["implosione", "legare anima", "portale", "tempesta di vendetta"]
+
+[liste.chierico.blaster]
+"0" = ["individuazione del magico", "guida", "luce", "riparare"]
+"1" = ["infliggi ferite leggere", "favore divino", "arma magica", "benedizione"]
+"2" = ["arma spirituale", "forza del toro", "aiuto", "oscurità"]
+"3" = ["luce incandescente", "dissolvi magie", "cura ferite gravi", "animare morti"]
+"4" = ["potere divino", "arma magica superiore", "veleno", "cura ferite critiche"]
+"5" = ["colpo infuocato", "distruggere viventi", "giusto potere", "dissolvi il male"]
+"6" = ["ferire", "barriera di lame", "dissolvi magie superiore", "esilio"]
+"7" = ["parola sacra", "distruzione", "controllare tempo atmosferico", "blasfemia"]
+"8" = ["tempesta di fuoco", "terremoto", "aura sacra", "simbolo di morte"]
+"9" = ["implosione", "risucchio di energia", "tempesta di vendetta", "miracolo"]
+
+[liste.chierico.supporto]
+"0" = ["cura ferite minori", "guida", "resistenza", "virtù"]
+"1" = ["benedizione", "scudo della fede", "cura ferite leggere", "rimuovi paura", "santuario"]
+"2" = ["aiuto", "resistere all'energia", "cura ferite moderate", "forza del toro", "saggezza del gufo", "ristorare inferiore"]
+"3" = ["preghiera", "cura ferite gravi", "veste magica", "protezione dall'energia"]
+"4" = ["libertà di movimento", "immunità agli incantesimi", "ristorare", "cura ferite critiche", "interdizione alla morte"]
+"5" = ["cura ferite leggere di massa", "giusto potere", "resistenza agli incantesimi", "spezzare incantamento", "rianimare morti"]
+"6" = ["guarigione", "cura ferite moderate di massa", "camminare nel vento"]
+"7" = ["rigenerazione", "ristorare superiore", "cura ferite gravi di massa", "resurrezione"]
+"8" = ["aura sacra", "cura ferite critiche di massa", "immunità agli incantesimi superiore", "mantello del caos", "scudo della legge"]
+"9" = ["guarigione di massa", "miracolo", "resurrezione pura", "portale"]
+
+[liste.chierico.utilita]
+"0" = ["individuazione del magico", "luce", "riparare", "individuazione del veleno"]
+"1" = ["protezione dal male", "arma magica", "scudo entropico", "comando"]
+"2" = ["consacrare", "zona di verità", "silenzio", "oscurità"]
+"3" = ["dissolvi magie", "veste magica", "glifo di interdizione", "epurare invisibilità"]
+"4" = ["divinazione", "ancora dimensionale", "camminare nell'aria", "congedo"]
+"5" = ["visione del vero", "muro di pietra", "resistenza agli incantesimi", "spezzare incantamento"]
+"6" = ["scopri il percorso", "camminare nel vento", "parola del ritiro", "dissolvi magie superiore"]
+"7" = ["controllare tempo atmosferico", "ristorare superiore", "repulsione", "resurrezione"]
+"8" = ["campo anti-magia", "serratura dimensionale", "immunità agli incantesimi superiore", "aura sacra"]
+"9" = ["portale", "legare anima", "resurrezione pura", "miracolo"]
+
+
+# ── divino: druido ──
+# La lista per cui il lotto esiste. Niente di qui compare nella lista arcana
+# allo stesso livello, e benedizione, santuario e scudo della fede non ci sono
+# affatto: sono da chierico.
+[liste.druido.controllore]
+"0" = ["guida", "luce", "lampo", "resistenza"]
+"1" = ["intralciare", "foschia occultante", "luminescenza", "passare senza tracce"]
+"2" = ["blocca animali", "folata di vento", "riscaldare il metallo", "movimenti del ragno"]
+"3" = ["crescita vegetale", "crescita di spine", "tempesta di nevischio", "muro di vento", "dominare animali"]
+"4" = ["comandare vegetali", "rocce aguzze", "controllare acqua", "tempesta di ghiaccio"]
+"5" = ["muro di spine", "controllare venti", "metamorfosi funesta", "piaga degli insetti"]
+"6" = ["muro di pietra", "respingere legno", "muovere il terreno", "guscio anti-vita"]
+"7" = ["controllare tempo atmosferico", "piaga strisciante", "animare vegetali", "camminare nel vento"]
+"8" = ["terremoto", "turbine", "inversione della gravità", "controllare vegetali", "respingere metallo o pietra"]
+"9" = ["tempesta di vendetta", "antipatia", "sciame elementale", "trasformazione"]
+
+[liste.druido.blaster]
+"0" = ["lampo", "luce", "guida", "individuazione del magico"]
+"1" = ["produrre fiamma", "luminescenza", "zanna magica", "intralciare"]
+"2" = ["lama infuocata", "sfera infuocata", "folata di vento", "riscaldare il metallo"]
+"3" = ["invocare il fulmine", "crescita di spine", "veleno", "tempesta di nevischio"]
+"4" = ["colpo infuocato", "tempesta di ghiaccio", "inaridire", "rocce aguzze"]
+"5" = ["invocare tempesta di fulmini", "muro di fuoco", "piaga degli insetti", "muro di spine"]
+"6" = ["semi di fuoco", "muovere il terreno", "muro di pietra", "dissolvi magie superiore"]
+"7" = ["tempesta di fuoco", "bagliore solare", "piaga strisciante", "controllare tempo atmosferico"]
+"8" = ["esplosione solare", "terremoto", "dito della morte", "turbine"]
+"9" = ["sciame elementale", "tempesta di vendetta", "trasformazione", "rigenerazione"]
+
+[liste.druido.supporto]
+"0" = ["cura ferite minori", "guida", "resistenza", "creare acqua"]
+"1" = ["bacche benefiche", "cura ferite leggere", "contrastare elementi", "zanna magica", "randello incantato"]
+"2" = ["pelle coriacea", "resistenza dell'orso", "forza del toro", "saggezza del gufo", "resistere all'energia"]
+"3" = ["protezione dall'energia", "zanna magica superiore", "luce diurna", "scolpire pietra"]
+"4" = ["libertà di movimento", "cura ferite gravi", "camminare nell'aria", "evoca alleato naturale IV"]
+"5" = ["pelle di pietra", "crescita animale", "traslazione arborea", "evoca alleato naturale V"]
+"6" = ["resistenza dell'orso di massa", "legno di ferro", "trasporto vegetale", "evoca alleato naturale VI"]
+"7" = ["guarigione", "camminare nel vento", "visione del vero", "evoca alleato naturale VII"]
+"8" = ["forme animali", "esplosione solare", "controllare vegetali", "evoca alleato naturale VIII"]
+"9" = ["cura ferite critiche di massa", "rigenerazione", "previsione", "evoca alleato naturale IX"]
+
+[liste.druido.utilita]
+"0" = ["individuazione del magico", "luce", "riparare", "guida"]
+"1" = ["passare senza tracce", "foschia occultante", "contrastare elementi", "evoca alleato naturale I"]
+"2" = ["movimenti del ragno", "resistere all'energia", "pelle coriacea", "evoca alleato naturale II"]
+"3" = ["scolpire pietra", "luce diurna", "protezione dall'energia", "evoca alleato naturale III"]
+"4" = ["dissolvi magie", "camminare nell'aria", "controllare acqua", "libertà di movimento"]
+"5" = ["traslazione arborea", "trasmutare roccia in fango", "pelle di pietra", "evoca alleato naturale V"]
+"6" = ["trasporto vegetale", "dissolvi magie superiore", "legno di ferro", "muovere il terreno"]
+"7" = ["visione del vero", "camminare nel vento", "controllare tempo atmosferico", "evoca alleato naturale VII"]
+"8" = ["forme animali", "respingere metallo o pietra", "inversione della gravità", "evoca alleato naturale VIII"]
+"9" = ["trasformazione", "previsione", "sciame elementale", "evoca alleato naturale IX"]
+
+
+# ── ibrido: bardo ──
+# Si ferma al 6°, e non è né arcano né divino: suggestione al 2° il mago non ce
+# l'ha, e tutto il ramo del danno d'area qui non esiste: per questo il bardo
+# non ha la cella «blaster».
+[liste.bardo.controllore]
+"0" = ["luci danzanti", "suono fantasma", "prestidigitazione", "messaggio"]
+"1" = ["charme su persone", "sonno", "ipnosi", "immagine silenziosa", "confusione inferiore", "risata incontenibile di Tasha"]
+"2" = ["suggestione", "blocca persone", "trama ipnotica", "calmare emozioni", "spaventare"]
+"3" = ["confusione", "disperazione opprimente", "lentezza", "charme sui mostri"]
+"4" = ["dominare persone", "blocca mostri", "trama iridescente", "modificare memoria", "grido"]
+"5" = ["suggestione di massa", "canto di discordia", "nebbia mentale", "incubo"]
+"6" = ["danza irresistibile di Otto", "charme sui mostri di massa", "sguardo penetrante", "grido superiore"]
+
+[liste.bardo.supporto]
+"0" = ["resistenza", "individuazione del magico", "luce", "prestidigitazione"]
+"1" = ["cura ferite leggere", "rimuovi paura", "ritirata rapida", "caduta morbida"]
+"2" = ["eroismo", "cura ferite moderate", "sfocatura", "calmare emozioni"]
+"3" = ["velocità", "buone speranze", "cura ferite gravi", "distorsione"]
+"4" = ["libertà di movimento", "cura ferite critiche", "spezzare incantamento", "invisibilità superiore"]
+"5" = ["eroismo superiore", "cura ferite leggere di massa", "dissolvi magie superiore", "fuorviare"]
+"6" = ["cura ferite moderate di massa", "banchetto degli eroi", "animare oggetti", "scopri il percorso"]
+
+[liste.bardo.utilita]
+"0" = ["mano magica", "messaggio", "lettura del magico", "luci danzanti"]
+"1" = ["unto", "ventriloquio", "immagine silenziosa", "caduta morbida"]
+"2" = ["invisibilità", "polvere luccicante", "immagine speculare", "silenzio", "frantumare"]
+"3" = ["dissolvi magie", "immagine maggiore", "distorsione", "sonno profondo"]
+"4" = ["porta dimensionale", "ombra di una evocazione", "modificare memoria", "spezzare incantamento"]
+"5" = ["fuorviare", "camminare nelle ombre", "immagine persistente", "nebbia mentale"]
+"6" = ["velo", "immagine permanente", "scopri il percorso", "animare oggetti"]
+
+
+# ── divino parziale: ranger e paladino ──
+# Quattro livelli e non oltre, primo slot al 4° di classe, livello
+# dell'incantatore = livello − 3. Niente incantesimi di livello 0: la chiave "0"
+# qui non c'è, e chi legge deve accorgersene invece di ricevere una lista vuota.
+[liste.ranger.supporto]
+"1" = ["zanna magica", "contrastare elementi", "ritarda veleno", "resistere all'energia"]
+"2" = ["cura ferite leggere", "pelle coriacea", "resistenza dell'orso", "grazia del gatto", "protezione dall'energia"]
+"3" = ["cura ferite moderate", "zanna magica superiore", "neutralizza veleno", "rimuovi malattia"]
+"4" = ["cura ferite gravi", "libertà di movimento", "crescita animale", "evoca alleato naturale IV"]
+
+[liste.ranger.utilita]
+"1" = ["passare senza tracce", "passo veloce", "individuazione di calappi e trabocchetti", "saltare", "intralciare"]
+"2" = ["calappio", "muro di vento", "crescita di spine", "blocca animali", "evoca alleato naturale II"]
+"3" = ["scurovisione", "camminare sull'acqua", "crescita vegetale", "comandare vegetali", "respingere parassiti"]
+"4" = ["anti-individuazione", "traslazione arborea", "comunione con la natura", "libertà di movimento"]
+
+[liste.paladino.supporto]
+"1" = ["benedizione", "cura ferite leggere", "ristorare inferiore", "favore divino", "protezione dal male"]
+"2" = ["scudo su altri", "forza del toro", "resistere all'energia", "rimuovi paralisi", "ritarda veleno"]
+"3" = ["preghiera", "cura ferite moderate", "arma magica superiore", "rimuovi maledizione", "guarire cavalcatura"]
+"4" = ["cura ferite gravi", "ristorare", "interdizione alla morte", "spezzare incantamento", "neutralizza veleno"]
+
+[liste.paladino.utilita]
+"1" = ["benedire un'arma", "arma magica", "individuazione dei non morti", "virtù", "contrastare elementi"]
+"2" = ["zona di verità", "allineamento imperscrutabile", "splendore dell'aquila", "scudo su altri"]
+"3" = ["dissolvi magie", "cerchio magico contro il male", "rivela bugie", "luce diurna"]
+"4" = ["spada sacra", "dissolvi il male", "sigillo di giustizia", "interdizione alla morte"]

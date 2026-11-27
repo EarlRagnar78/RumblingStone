@@ -5,6 +5,9 @@
 ```statblocco
 gs: 9
 tipo: Medium humanoid (elf/human), Druid 9, NG
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 19
 ca-dettaglio: touch 12, flat-footed 17 (pelle +1, scudo pesante di legnoscuro +1, +2 Des)
 pf: 57
@@ -38,18 +41,19 @@ voci:
 - dalla pergamena — *trasporto vegetale* (6°, LI 11; prova di livello dell'incantatore CD 12)
 - 0 — *creare acqua*, *cura ferite minori*, *individuazione del magico*, *individuazione del veleno*, *lettura del magico*, *individuazione dei crocevia* [Private source — supplemento WotC non SRD]
 
-**Statistiche** For 12, Des 14, Cos 13, Int 12, Sag 17, Car 8 · BAB +6; Lotta +7 · **Talenti** Iniziato della Natura [Private source — Player's Guide to Faerûn], Anima Forte [Private source — Forgotten Realms Campaign Setting, talento regionale: Valli], Scrivere Pergamene, Seguire Tracce · **Abilità** Ascoltare +18, Osservare +18, Sopravvivenza +19, Concentrazione +13, Sapienza Magica +9 · **Linguaggi** Chondathan, Comune, Druidico, Elfico · **Equipaggiamento** periapto della Saggezza +4, perla del potere (3° livello), pergamena di *trasporto vegetale* (LI 11), guanti della potenza dell'orco, armatura di pelle +1, scudo pesante di legnoscuro +1, scimitarra +1, lancia perfetta, fionda perfetta e 20 proiettili, 4 pozioni di *cura ferite leggere*, pergamene di *cura ferite minori*, *cura ferite leggere* e 2 di *cura ferite moderate*
-
-**Capacità speciali**
-- **Druido 9** (SRD): compagno animale, senso della natura, empatia selvatica, andatura nel bosco, passo senza tracce, resistere al richiamo della natura, immunità ai veleni, lancio spontaneo delle *cure*. **Forma selvatica** 3/giorno, 9 ore, animali da Piccoli a Grandi.
-- **Livelli di sostituzione Fangshield (4° e 7°)** [Private source — Champions of Valor]: l'export li applica e non ne stampa i privilegi, e il repo non li ha (non verificato).
-- **Iniziato della Natura** (Su): può intimorire o comandare animali e creature vegetali come un chierico malvagio intimorisce i non morti. Patrono: Silvanus.
-- **Mezzelfo**: sangue elfico, immune al sonno magico, +2 contro ammaliamento.
-
 **Tattiche**
 - *Prima del combattimento*: non cerca lo scontro: è un custode, non un guerriero. Se ha un minuto si lancia *artigli dell'orso* e *potere animalesco*, manda avanti il compagno animale e prende posizione dietro alberi o rocce, con un cielo aperto sopra la testa per *richiamo del fulmine*.
 - *Durante il combattimento*: al primo round *richiamo del fulmine* sul nemico più corazzato, e poi un fulmine a round finché dura (9 round). Al secondo *ragnatela di rovi* o *raffreddare il metallo* su chi porta armatura di metallo, per fermare la mischia prima che arrivi; contro un incantatore, *colpo infuocato*. Se il nemico arriva a contatto e il suo compagno animale non lo ferma, prende **forma selvatica** di orso bruno (SRD; con il suo BAB: artigli +13, 1d8+8, e morso +8, 2d6+4, con afferrare migliorato; Cos 19, quindi 84 pf finché resta orso) e tiene a bada chi minaccia gli alberi del Cerchio. Contro gli animali e le piante che il nemico porta con sé usa l'Iniziato della Natura: li comanda, invece di ucciderli.
 - *Morale*: sotto i 25 pf torna druido, beve e si ritira fra gli alberi con *passo senza tracce*, dove nessuno lo segue. Combatte fino alla fine soltanto se il nemico brucia la foresta sacra.
+
+**Statistiche** For 12, Des 14, Cos 13, Int 12, Sag 17, Car 8 · BAB +6; Lotta +7 · **Talenti** Iniziato della Natura [Private source — Player's Guide to Faerûn], Anima Forte [Private source — Forgotten Realms Campaign Setting, talento regionale: Valli], Scrivere Pergamene, Seguire Tracce · **Abilità** Ascoltare +18, Osservare +18, Sopravvivenza +19, Concentrazione +13, Sapienza Magica +9 · **Linguaggi** Chondathan, Comune, Druidico, Elfico · **Equipaggiamento** periapto della Saggezza +4, perla del potere (3° livello), pergamena di *trasporto vegetale* (LI 11), guanti della potenza dell'orco, armatura di pelle +1, scudo pesante di legnoscuro +1, scimitarra +1, lancia perfetta, fionda perfetta e 20 proiettili, 4 pozioni di *cura ferite leggere*, pergamene di *cura ferite minori*, *cura ferite leggere* e 2 di *cura ferite moderate*
+
+**Capacità speciali**
+- **Druido 9** (SRD): compagno animale, senso della natura, empatia selvatica, andatura nel bosco, passo senza tracce, resistere al richiamo della natura, immunità ai veleni, lancio spontaneo di *evocare alleato naturale*. **Forma selvatica** 3/giorno, 9 ore, animali da Piccoli a Grandi.
+- **Niente livelli di sostituzione Fangshield.** L'export li applica al 4° e al 7°, ma *Champions of Valor* p. 40 li dà solo a una creatura non umanoide, e Avarthel è un mezzelfo (verificato su dnd.arkalseif.info il 2026-11-19). Il 4° e il 7° sono livelli da druido standard (scelta del DM sulla card del 2026-11-19).
+<!-- storico: fino al 2026-11-19 i livelli Fangshield restavano «non verificati», e la scheda dava il lancio spontaneo delle cure, che è il loro privilegio del 4° -->
+- **Iniziato della Natura** (Su): può intimorire o comandare animali e creature vegetali come un chierico malvagio intimorisce i non morti. Patrono: Silvanus.
+- **Mezzelfo**: sangue elfico, immune al sonno magico, +2 contro ammaliamento.
 
 
 **Benchmark**: PF T1-1 riga 9 (CA 23, pf 115, att +17, danno 40, CD 18): CA 19 (−4), pf 57 (−58), att +8 (+13 in forma d'orso), CD primaria 19 (+1). Lancia come un GS 9 e si difende come un GS 5: è un alleato di supporto, non un bersaglio da mettere in prima fila.
@@ -63,3 +67,5 @@ Boost log: correzione dei conti con equipaggiamento — GS 9 → 9 — LI 11 →
 - era: incantesimi «tipici» nella scheda (*calmare animali, dominare animali, zanna magica superiore, crescita vegetale, onda fissa*), non presi dall'export.
 - era: tre talenti su quattro (mancava Scrivere Pergamene).
 <!-- /storico -->
+
+> Equipaggiamento sopra la tabella: scelta del DM (card del 2026-11-14). Vale almeno 22.801 mo contro i 12.000 della Tabella 4-23 del DMG 3.5 per il livello effettivo 9; il GS resta 9 e nessun numero cambia.

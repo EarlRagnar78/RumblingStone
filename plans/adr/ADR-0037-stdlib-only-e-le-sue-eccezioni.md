@@ -260,3 +260,44 @@ standard, e `python -m unittest discover -s scripts/tests` resta un comando
 valido sul portatile del DM senza pytest. Cambia solo che la CI non lo esegue
 per intero.
 
+---
+
+## Emendamento del 2026-11-08 — typst entra come quarta libreria
+
+**Stato**: accettato dal DM il 2026-11-08 · **Dettaglio**: [ADR-0116](ADR-0116-typst-si-installa-da-pypi.md).
+
+Il pacchetto PyPI `typst` è la quarta libreria di `requirements.txt`, della famiglia di Pillow: opzionale e con ripiego dichiarato. Senza il modulo, `typst_motore.py` usa una CLI `typst` nel PATH; senza nemmeno quella, i PDF per capitolo restano a Chromium. Il binario `typst` resta in `external_bins` come ripiego. Il rischio delle 20:45 non cresce: prima serviva un binario installato una volta, ora una wheel installata una volta, e il bundle del rilascio le porta tutte e due.
+
+
+## Emendamento del 2026-11-08 — pdfimpose, la quinta
+
+**Stato**: accettato dal DM il 2026-11-08 · **Dettaglio**: [ADR-0116](ADR-0116-typst-si-installa-da-pypi.md).
+
+`pdfimpose` sostituisce il binario pdfcpu per `dm.py volume --imposto` ed è la quinta libreria di `requirements.txt`, ancora della famiglia di Pillow: opzionale, e senza il volume resta stampabile pagina per pagina. Porta con sé PyMuPDF, che finora era solo in `requirements-dev.txt`: chi installa `requirements.txt` ora ha anche PyMuPDF 2.x e onnxruntime. È il prezzo di togliere mise, scritto qui perché è un peso vero.
+
+
+## Emendamento del 2026-11-08 — simpleeval, portata dentro e non installata
+
+**Stato**: accettato dal DM il 2026-11-08 (D1 di ADR-0112) · **Dettaglio**: [ADR-0112](ADR-0112-il-motore-e-agnostico-e-le-regole-d20-sono-dati-e-formule.md), F3.
+
+simpleeval 1.0.8 (MIT, un file, nessuna dipendenza) valuta le formule d20 scritte nei dati dei plugin. Non sta in `requirements.txt`: è copiato intero in `scripts/dmcore/_vendor/simpleeval.py`, con la licenza accanto e versione e sha256 in `_vendor/LIBRERIE.toml` (lo ricontrolla `test_formule.py`). Quindi la catena della sessione resta su Python nudo e il rischio delle 20:45 non cresce. È entrata perché è lo standard di fatto per questo problema e la misura I1 l'ha promossa: 7/7 formule su 598 casi, 50/50 espressioni ostili rifiutate. Aggiornarla vuol dire riscaricare la wheel, ricopiare il file, riscrivere lo sha256 e rifare il banco.
+
+
+## Emendamento del 2026-11-11 — markdown-it-py, la sesta
+
+**Stato**: accettato dal DM il 2026-11-12 (card sul parser) · **Dettaglio**: [ADR-0120](ADR-0120-la-d-eufonica-si-misura-con-una-regex-tarata-su-languagetool.md), emendamento del 2026-11-11.
+
+`markdown-it-py` (MIT, puro Python) è la sesta libreria di `requirements.txt`, della famiglia di Pillow: opzionale e con ripiego dichiarato. Dice a `validate_lingua.py` quali righe rientrate sono codice per CommonMark; senza, il validatore ripiega su una regola stdlib, lo stampa, e sul banco di semina trova gli stessi errori.
+
+
+## Emendamento del 2026-11-27 — scikit-learn sul piano di sviluppo, e scipy che non era scritta qui
+
+**Stato**: scelta di Jfs del 2026-11-27, chiesta in questa PR dal coordinatore · **Dettaglio**: [ADR-0154](ADR-0154-l-instradamento-degli-agenti-si-misura-su-messaggi-veri.md), emendamento del 2026-11-27.
+
+Jfs, alle 07:22: *«Non usare solo la stdlibi ma tutte le librerie utilizzate come standard de facto della community per favore e aggiorna tutto»*. Alle 07:27: *«Se serve usa anche numpy e panda keras e tensorflow se ha senso e segue le best pratices…»*.
+
+`scikit-learn==1.9.1` entra in `requirements-dev.txt` (righe 71-83), licenza BSD-3-Clause, canale testing di [ADR-0099](ADR-0099-la-piattaforma-ha-tre-canali-come-debian.md). Sta sul piano di sviluppo dell'emendamento del 2026-09-21, come `tcod`: la importa solo `scripts/eval_metriche.py`, e `instradamento_agenti.py` la carica solo nei rami `--eval` e `--check`. L'hook dei thread gira a ogni messaggio e sul portatile del DM, quindi resta senza dipendenze: `test_prompt_stop_cancello_non_importano_sklearn` in `scripts/tests/test_instradamento_agenti.py` lo verifica.
+
+`scipy` questa ADR non l'aveva mai registrata. È entrata il 2026-10-08 con l'emendamento serale di [ADR-0084](ADR-0084-il-collaudo-delle-mappe-e-uno-strumento-di-sviluppo.md), per M1 e M2 del collaudo delle mappe, e l'emendamento del 2026-10-08 qui sopra conta quattro librerie senza di lei: è la terza volta che il conto fatto a memoria resta indietro. Ora la usa anche `eval_metriche.py`, per l'intervallo di Wilson e il bootstrap. Resta sviluppo e CI.
+
+La regola per ciò che il DM esegue non cambia. Il prezzo è un pacchetto di sviluppo in più, con joblib, threadpoolctl e narwhals, e `--check` che passa da 0,19 a 1,28 s per l'import.

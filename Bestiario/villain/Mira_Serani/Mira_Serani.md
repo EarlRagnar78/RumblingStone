@@ -43,7 +43,7 @@ Da allora «Mira» cammina tra i vivi: una bimba profuga che desta tenerezza,
 o — invecchiando il travestimento — un'**adolescente**, a seconda di cosa le
 conviene (il *mutare forma* dell'aranea copre l'umanoide Piccolo→Medio). È
 così che ha viaggiato accanto ai PG sulla strada per Hammerfist: una bambina
-da proteggere, che ascoltava tutto e **è sparita** quando ha rischiato di
+da proteggere, che ascoltava tutto ed **è sparita** quando ha rischiato di
 essere scoperta.
 
 > **Coerenza (verificata):** il twist **non cambia l'esito bloccato** — Mira

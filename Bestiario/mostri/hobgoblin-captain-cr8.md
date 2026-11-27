@@ -1,10 +1,13 @@
-# hobgoblin-captain-cr8 [ACCEPTED — DM-canon 2026-05-05]
+# hobgoblin-captain-cr8 [CANONE — DM 2026-05-05]
 
 **Faction**: red-hand | **Role**: elite-officer | **Environment**: any | **CR**: 8
 
 ```statblocco
 gs: 8
 tipo: Medium humanoid, 8d10
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m (3 m con la lancia da cavaliere, e allora non i quadretti adiacenti)
 ca: 20
 ca-dettaglio: (+0 Des, +10 armatura)
 pf: 52
@@ -14,7 +17,7 @@ velocita: 9 m
 iniziativa: +0
 attributi: Car 17 For 14 Cos 13 Sag 12 Des 10 Int 8
 attacchi:
-  - Mischia spada lunga +10 (1d8+2)
+  - Mischia spada lunga +10 (1d8+2/19-20)
 voci:
   - Aura di comando: +3 morale ai tiri degli hobgoblin entro 9 m
   - Esperto in Combattimento + Sbilanciare Migliorato
@@ -36,3 +39,5 @@ Hobgoblin Captain: orda elite officer; +3 morale aura 30 ft to hobgoblins; Comba
 - Advance via HD, class levels, or templates before adding new unique powers.
 - For upscaled variants, apply the Advanced Creature template (MM p.294) or class levels preserving CR math.
 - AP canon names preserved; mechanics derived from SRD/MM/FRCS only.
+
+> correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12, lotto 2 di ADR-0126): critico di «Mischia spada lunga» scritto (19-20, tabella delle armi dell'SRD).

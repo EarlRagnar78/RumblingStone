@@ -126,6 +126,38 @@ class TestDifese(unittest.TestCase):
         r = chiama("state_apply", {"check": True}, scrittura=True)
         self.assertNotIn("error", r, "in scrittura non deve essere rifiutato a priori")
 
+    def test_S7_un_sottocomando_vietato_non_parte_nemmeno_in_scrittura(self):
+        # ADR-0148: «prove_skill esegui» lancia un altro agente, con rete e token.
+        for scrittura in (False, True):
+            r = chiama("prove_skill", {"comando": "esegui"}, scrittura=scrittura)
+            self.assertEqual(r["error"]["code"], M.PARAMETRI)
+            self.assertIn("dalla shell", r["error"]["message"])
+
+    def test_S7_il_motivo_viene_dal_manifest_del_tool(self):
+        # Il messaggio era scritto per prove_skill: su memoria_custode diceva il falso.
+        r = chiama("memoria_custode", {"comando": "archivia"})
+        msg = r["error"]["message"]
+        self.assertEqual(r["error"]["code"], M.PARAMETRI)
+        self.assertIn("memoria_custode archivia", msg)
+        self.assertIn("mcp_vietati", msg)
+        self.assertIn("coda", msg)                   # dalle note del suo manifest
+        self.assertNotIn("altro agente", msg)
+        self.assertIn("claude -p", chiama("prove_skill", {"comando": "esegui"})["error"]["message"])
+
+    def test_S7_senza_note_nel_manifest_una_frase_neutra(self):
+        t = {"id": "finto", "args": [{"name": "comando", "type": "subcommand"}],
+             "side_effects": {"writes_canon": False, "git_commit": False, "network": False,
+                              "mcp_vietati": ["scrivi"]}}
+        with self.assertRaises(M.Rifiuto) as e:
+            M.Server({"finto": t}).tools_call({"name": "finto", "arguments": {"comando": "scrivi"}})
+        self.assertIn("fuori dalla sola lettura", str(e.exception))
+        self.assertIn("dalla shell", str(e.exception))
+        self.assertNotIn("altro agente", str(e.exception))
+
+    def test_S7_gli_altri_sottocomandi_partono(self):
+        argv = M.costruisci(M.carica()["prove_skill"], {"comando": "controlla", "agenti": True})
+        self.assertEqual(argv[-2:], ["controlla", "--agenti"])
+
     def test_S6_il_timeout_e_un_risultato_non_un_guasto(self):
         r = M.esegui({"id": "finto", "exit_codes": {}},
                      [sys.executable, "-c", "import time; time.sleep(5)"], timeout=1)
@@ -192,6 +224,29 @@ class TestAderenzaAlManifest(unittest.TestCase):
         self.assertIn("comando", M.descrittore("campaign_branch", t)["inputSchema"]["properties"])
         argv = M.costruisci(t, {"comando": "status"})
         self.assertEqual(argv[-1], "status")
+
+    def test_le_opzioni_del_sottocomando_vengono_dopo_il_sottocomando(self):
+        # Prima del 2026-11-12 il server scriveva «--json -- fatti DIR»: il parser
+        # principale di coerenza_campagna rifiutava --json e il tool via MCP
+        # rispondeva solo con l'errore d'uso.
+        t = M.carica()["coerenza_campagna"]
+        argv = M.costruisci(t, {"cmd": "fatti", "percorsi": ["campaign"], "state": True,
+                                "json": True})
+        self.assertEqual(argv[2:], ["fatti", "--state", "--json", "--", "campaign"])
+
+    def test_le_opzioni_del_parser_principale_restano_prima(self):
+        t = M.carica()["riscontro_srd"]
+        argv = M.costruisci(t, {"offline": True, "comando": "scarica"})
+        self.assertEqual(argv[2:], ["--offline", "scarica"])
+
+    def test_coerenza_campagna_fatti_state_via_mcp(self):
+        t = M.carica()["coerenza_campagna"]
+        esito = M.esegui(t, M.costruisci(t, {"cmd": "fatti", "percorsi": ["campaign"],
+                                             "state": True, "json": True}))
+        self.assertFalse(esito.get("isError"), esito)
+        testo = esito["content"][0]["text"]
+        self.assertIn('"storia"', testo)
+        self.assertIn('"regole"', testo)
 
     def test_ogni_tool_esposto_esiste_su_disco(self):
         for nome, t in M.carica().items():

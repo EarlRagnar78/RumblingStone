@@ -22,6 +22,7 @@ COLONNE:  A B C D E F G H I J K L M N O P
 @dislivello +12 m ; sul piede esterno delle mura, alte 12 m come ad Ávila
 @collega A01 ; fuori mappa ; la città sotto il bastione non ha una griglia: la carta si gioca sul camminamento e in cielo
 @collega P01 ; fuori mappa ; la città sotto il bastione non ha una griglia: la carta si gioca sul camminamento e in cielo
+@taglia I2 ; Grande
 @mark 1 ; I2 ; Razorfiend rosso, in volo basso a 9 m (razorfiend-red-cr9) (GS 9)
 @mark 2 ; E1 ; Serventi della balista 1
 @mark 3 ; M1 ; Serventi della balista 2

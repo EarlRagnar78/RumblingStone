@@ -400,7 +400,7 @@ canone dal DM. (Piano approvato col merge del PR #28, 2026-07-10.)
   in **ADR-0014** + copertura skill (module-standard §6/§8/§10,
   editorial-standards §2).
 
-- [x] **K-B13** *(2026-07-30)*: **guida completa** `docs/guides/GUIDA-BOOKLET-E-PDF.md`
+- [x] **K-B13** *(2026-07-30)*: **guida completa** `docs/how-to/GUIDA-BOOKLET-E-PDF.md`
   (pipeline, prerequisiti per ogni sistema, anatomia del manifest, tutti i
   comandi, stampa da browser, container, troubleshooting, checklist di
   consegna) + **container PDF opzionale** `scripts/booklet-container/`

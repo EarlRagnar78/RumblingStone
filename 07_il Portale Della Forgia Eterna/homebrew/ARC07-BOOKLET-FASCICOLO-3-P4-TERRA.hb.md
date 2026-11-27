@@ -88,7 +88,7 @@ riflettore — vedi HANDOUT-2.
 
 {{note
 ##### Terros — l'essenziale (DEF-1 §0-bis / §8)
-**345 pf** · soglie 260 (Scudo di Geodi) / 172 (difesa sull'Altare, rigenera) /
+**348 pf** · soglie 260 (Scudo di Geodi) / 172 (difesa sull'Altare, rigenera) /
 0 (si sbriciola → Smeraldo). Rigenera **15/round** a contatto con la pietra;
 **sonico ×1,5**; **−4** contro chi vola. Il "Golem di Mithral" delle immagini è
 la **Sentinella** del §7b, non il boss. ⚠️ Se il party **salta i Cristalli** (§6):

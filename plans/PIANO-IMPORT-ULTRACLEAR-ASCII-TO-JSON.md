@@ -320,3 +320,13 @@ verde, nessun master di canone toccato.
 
 Prerequisiti usati: parser griglia (`render_map_svg`), contratto+compilatore
 (`compile_map_json`), caso pilota committato (`hammerfist-L2-assedio.*`).
+
+**Migrazione delle mappe vive: ✅ fatta il 2026-11-09** ([ADR-0117](adr/ADR-0117-ogni-mappa-ha-il-suo-contratto-json.md),
+richiesta del DM «per le mappe fai sempre il json»). L'importer ora scompone le
+formazioni non rettangolari in rettangoli pieni e porta i simboli della legenda
+locale (`simboli_locali` nel contratto; R3 è ERROR solo per un simbolo senza
+spiegazione). 25 griglie senza contratto (14 ARC-07, 6 fortezza di Hammerfist,
+5 ARC-09) hanno ora il loro JSON, che ricompilato le ridà identiche cella per
+cella; `scripts/tests/test_contratti_mappe.py` lo pretende per ogni griglia
+tracciata. Fuori: le cartelle `_ARCHIVIO/` (4 schizzi su 8 hanno righe di
+lunghezza diversa), lasciate fuori dal DM sulla card del 2026-11-09.

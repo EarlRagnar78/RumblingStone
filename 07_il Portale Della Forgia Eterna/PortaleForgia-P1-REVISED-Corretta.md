@@ -73,7 +73,7 @@
 **BAB:** +13/+8/+3  
 **Attacco Aegis Fang:** +20/+15/+10 (1d10+7, crit x3, +2d6 vs draghi)
 
-**Talenti:** Arma Focalizzata (ascia), Specializzazione (ascia), Robustezza, Volontà di Ferro, Iniziativa Migliorata, Critico Migliorato (ascia), Attacco Poderoso, Incalzare, Fendente Poderoso, Arma Preferita
+**Talenti:** Arma Focalizzata (ascia), Arma Specializzata (ascia), Robustezza, Volontà di Ferro, Iniziativa Migliorata, Critico Migliorato (ascia), Attacco Poderoso, Incalzare, Incalzare Potenziato, Arma Focalizzata Superiore (ascia)
 
 **Stato Attuale (Parte 1):** Ha appena indossato la Corona dopo la battaglia. Sente presenza di Moradin. È scosso dalla morte di Hella ma determinato a recuperare le gemme per resuscitarla.
 
@@ -126,7 +126,7 @@
 - Purezze del Corpo: guarigione 18 HP 1/giorno
 - Colpo Stordente: TS Tempra CD 19 o stordito 1 round
 
-**Talenti:** Stile del Serpente, Colpo Stordente, Deviazione Frecce, Afferrare Frecce, Mobilità, Iniziativa Migliorata, Arma Focalizzata (colpo senz'armi), Attacco Poderoso
+**Talenti:** Stile del Serpente (Snake Style, PF1e), Pugno Stordente, Deviare Frecce, Afferrare Frecce, Mobilità, Iniziativa Migliorata, Arma Focalizzata (colpo senz'armi), Attacco Poderoso
 
 **Stato Attuale (Parte 1):** Medita su morte Hella. Ha iniziato comunicazione spirituale con il suo fantasma. I Cintura della Devastazione gli conferiscono capacità letale contro nemici critici.
 
@@ -325,7 +325,7 @@ I PG hanno appena combattuto una battaglia devastante nella **Stanza della Coron
 - **Posizione:** Centro esatto stanza (H9-I10)
 - **Dimensioni:** 3m x 3m base, 1,5m altezza pedana + 2m altezza trono
 - **Materiale:** Adamantio puro (valore stimato 100.000+ mo)
-- **Incisioni:** Rune nanice che raccontano storia dei re nanici dall'Anno -5000 ad oggi
+- **Incisioni:** Rune nanice che raccontano storia dei re nanici dall'Anno -5000 a oggi
 - **Corona:** Posata sulla sommità dello schienale del trono (non sulla seduta)
 
 **PORTA NORD (Ingresso):**
@@ -481,7 +481,7 @@ Dopo aver preservato corpo Hella, i PG si rivolgono al VERO tesoro della stanza:
 
 **Descrizione Dettagliata Corona:**
 
-> *La Corona giace sulla sommità del trono di adamantio, come se qualcuno l'avesse posata lì un momento fa - anche se sapete che è stata qui per millenni.*
+> *La Corona giace sulla sommità del trono di adamantio, come se qualcuno l'avesse posata lì un momento fa - eppure intorno al trono la polvere è alta un dito, e non c'è un'impronta.*
 >
 > *È un cerchio perfetto di adamantio puro, largo circa 30 centimetri, spesso 2 centimetri. Non è ornata con gemme o decorazioni superflue - la sua bellezza è nella PERFEZIONE del metallo e delle rune incise.*
 >

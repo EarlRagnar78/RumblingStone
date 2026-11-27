@@ -1,10 +1,13 @@
-# druid-bear-ally-cr12 [ACCEPTED — DM-canon 2026-05-05]
+# druid-bear-ally-cr12 [CANONE — DM 2026-05-05]
 
 **Faction**: cerchio-druid | **Role**: ally-wildshape-tank | **Environment**: forest | **CR**: 12
 
 ```statblocco
 gs: 12
 tipo: Large animal (forma selvatica: orso bruno), Druido 10 / Barbaro 2
+taglia: Grande
+spazio: 3 m
+portata: 1,5 m
 ca: 20
 ca-dettaglio: in forma d'orso bruno (−1 taglia, +1 Des, +5 naturale, +5 armatura di pelle +2 selvatica); contatto 10, colto alla sprovvista 19
 pf: 106
@@ -34,18 +37,18 @@ fonte: trascritto dalla fonte d'arco (pf alla media dei dadi, CA spiegata dall'a
 
 **Attacco** Vel 15 m (12 m dell'orso bruno, +3 m movimento veloce da barbaro) · **Mischia** 2 artigli +16 (1d8+8) e morso +11 (2d6+4) · **Incantesimi** da druido di 10° livello (SAG +4), in forma lancia solo con Incantesimi Naturali; al giorno 6/5+1/5/4+1/4/2 (con le due perle del potere), CD 14 + livello (massimo CD 19 al 5°)
 
+**Tattiche**
+- *Prima del combattimento*: entra in forma d'orso fuori vista, con *zanna magica superiore* e *resistenza dell'orso* già addosso, e un *pelle di pietra* se sa che arrivano i giganti.
+- *Ruolo nella battaglia*: arco 09, Battaglia finale. «Stat blocchi epici» §6: prima linea brutale contro giganti, troll e bestie da guerra. Fase 4 («Circolo, Mythal e statue», §7, ruolo degli alleati): i druidi-orsi pattugliano l'anello più esterno abbattendo giganti e bestie residue, e possono comparire una volta in scena per salvare un incantatore in extremis, lanciandosi a intercettare un colpo mortale.
+- *Durante il combattimento* (round per round): round 1, carica il gigante o la bestia più grossa a portata ed entra in ira; round 2 e seguenti, attacco completo e afferrare migliorato su chi è della sua taglia o più piccolo, per tenerlo lontano dal cerchio. Se un incantatore del Circolo è in pericolo, lascia la presa e si mette in mezzo (è il salvataggio che la Fase 4 concede una volta). Finita l'ira, si cura con *bacca curativa* e *cura ferite leggere* lanciati in forma.
+- *Morale*: sotto 30 pf esce dalla mischia a quattro zampe (15 m di movimento) e torna in forma umana dietro la linea dei nani per curarsi; non abbandona il Circolo finché il rituale è in corso, e davanti all'Avatar combatte fino alla fine.
+
 **Statistiche** For 27, Des 13, Cos 19, Int 8, Sag 18, Car 10 (forma d'orso bruno) · BAB +9; Lotta +21 · **Talenti** Incantesimi Naturali e altri quattro che la scheda non elenca · **Equipaggiamento** armatura di pelle +2 *selvatica*, perla del potere (1°), perla del potere (3°) (l'armatura selvatica spiega la CA 20 della fonte in forma d'orso, le perle tengono gli slot che la scheda scriveva)
 
 **Capacità speciali**
 - **Afferrare migliorato** (orso bruno): lotta +21.
 - **Ira 1/giorno** (Barbaro 2): +4 For e Cos, +2 Volontà, −2 CA; schivare prodigioso. In ira: artigli +18 (1d8+10), morso +13 (2d6+5), pf 130, Temp +16, Vol +13, CA 18.
 - **Forma selvatica** 4/giorno (druido 10), fino a Grande; **movimento veloce** +3 m.
-
-**Tattiche**
-- *Prima del combattimento*: entra in forma d'orso fuori vista, con *zanna magica superiore* e *resistenza dell'orso* già addosso, e un *pelle di pietra* se sa che arrivano i giganti.
-- *Ruolo nella battaglia*: arco 09, Battaglia finale. «Stat blocchi epici» §6: prima linea brutale contro giganti, troll e bestie da guerra. Fase 4 («Circolo, Mythal e statue», §7, ruolo degli alleati): i druidi-orsi pattugliano l'anello più esterno abbattendo giganti e bestie residue, e possono comparire una volta in scena per salvare un incantatore in extremis, lanciandosi a intercettare un colpo mortale.
-- *Durante il combattimento* (round per round): round 1, carica il gigante o la bestia più grossa a portata ed entra in ira; round 2 e seguenti, attacco completo e afferrare migliorato su chi è della sua taglia o più piccolo, per tenerlo lontano dal cerchio. Se un incantatore del Circolo è in pericolo, lascia la presa e si mette in mezzo (è il salvataggio che la Fase 4 concede una volta). Finita l'ira, si cura con *bacca curativa* e *cura ferite leggere* lanciati in forma.
-- *Morale*: sotto 30 pf esce dalla mischia a quattro zampe (15 m di movimento) e torna in forma umana dietro la linea dei nani per curarsi; non abbandona il Circolo finché il rituale è in corso, e davanti all'Avatar combatte fino alla fine.
 
 
 ## Forma umana (Druido 10 / Barbaro 2)

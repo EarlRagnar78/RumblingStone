@@ -5,6 +5,9 @@
 ```statblocco
 gs: 3
 tipo: Medium plant, 2d8+6
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 14
 ca-dettaglio: contatto 10, colto alla sprovvista 14 (+4 naturale)
 pf: 15
@@ -35,12 +38,6 @@ Medium plant, 2d8+6. Fungo ambulante del SRD, sempre neutrale.
 
 **Attacco** Vel 6 m · **Mischia** morso +3 (1d6+3); da invisibile, il bersaglio perde la Des alla CA e il fungo ha +2 al tiro per colpire
 
-**Statistiche** For 14, Des 10, Cos 16, Int 2, Sag 11, Car 9 · BAB +1; Lotta +3 · **Talenti** Allerta · **Abilità** Ascoltare +4, Muoversi Silenziosamente +6, Osservare +4
-
-**Capacità speciali**
-- **Invisibilità superiore** (Sop): costante, come l'incantesimo lanciato da un incantatore di 12° livello, finché è vivo. *Epurare invisibilità* non la toglie. Diventa visibile un minuto dopo la morte.
-- **Abilità**: +5 razziale a Muoversi Silenziosamente.
-
 **Tattiche**
 - *Prima del combattimento*: gira in silenzio nei cunicoli fungini e nella scala di ossa, e segue l'odore della preda. Aspetta che uno resti indietro, o che il gruppo si fermi in uno spazio aperto dove non può essere chiuso contro una parete.
 - *Durante il combattimento*:
@@ -48,6 +45,12 @@ Medium plant, 2d8+6. Fungo ambulante del SRD, sempre neutrale.
   - **Round 2 e seguenti**: continua a mordere lo stesso finché cade, poi si sposta. Si muove di 6 m soltanto: non scappa da chi lo ha individuato, ma cambia quadretto perché non sappiano dove colpire. Non insegue oltre la caverna.
   - Contro *polvere luccicante*, farina, sangue o qualunque cosa lo renda visibile: smette di attaccare e si ritira, perché senza l'invisibilità è solo un fungo da 15 pf.
 - *Morale*: sotto 6 pf si ritira nel buio. Due funghi insieme si dividono la fila: uno davanti, uno dietro.
+
+**Statistiche** For 14, Des 10, Cos 16, Int 2, Sag 11, Car 9 · BAB +1; Lotta +3 · **Talenti** Allerta · **Abilità** Ascoltare +4, Muoversi Silenziosamente +6, Osservare +4
+
+**Capacità speciali**
+- **Invisibilità superiore** (Sop): costante, come l'incantesimo lanciato da un incantatore di 12° livello, finché è vivo. *Epurare invisibilità* non la toglie. Diventa visibile un minuto dopo la morte.
+- **Abilità**: +5 razziale a Muoversi Silenziosamente.
 
 **Benchmark** PF T1-1 riga 3 (CA 15, pf 30, att. +6, danno medio 13): CA 14 ≈ · pf 15 ✗ · att. +3 ✗ (+5 da invisibile) · danno 6,5 ✗. Il GS 3 viene dall'invisibilità, non dai numeri: contro un gruppo che sa vedere l'invisibile vale un GS 1.
 

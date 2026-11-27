@@ -47,12 +47,12 @@
   Conte Valerius, Ghostlord, Salvatore, Sethrax, Sonjak, Urialle, Xal'thor,
   Il Collezionista, Fauci di Palude, Generale Grimjaw, Gorthak il Trifronte.
 - **`png/` (6 statblock + 17 dossier)**: statblock di Capitana Lorana,
-  Therysol, Comandante Dauth (Durgan Tozzefort `[INFERRED]`), Arci-druido,
+  Therysol, Comandante Dauth (Durgan Tozzefort, canonizzato dal DM il 2026-07-12), Arci-druido,
   Arcimago del Circolo, Druido-orso; dossier di Consiglio Rethmar, Lorana,
   Lythiel, Maewen, Tempestas, Therysol, Varis + i 10 file singoli
-  (Borin Ferropugno, Capitano Lunapiena, Dana Forgiapietra, Dara
+  (Borin Giuraferro, Capitano Lunapiena, Dagmar Forgiapietra, Dara
   Occhiolesto, Khorn, Nala Cantapietre, Orion Pelleorsa, Re Thorek,
-  Signore Ventolesto, Thorin Runaforte).
+  Signore Ventolesto, Harbek Runaforte).
 
 ## §3 — Sorgenti storiche `pregen-pcgen/` (→ lotto L1) — ✅ FATTO
 
@@ -137,13 +137,13 @@
 ## §4 — Gap (dossier ↔ statblock) → lotti L2/L3 — ✅ FATTO
 
 > ✅ **Chiuso in L2/L3** (2026-07-08): Khorn ha ora lo statblock
-> (`png/Khorn/khorn-ufficiale-hammerfist-cr8.md`, `[INFERRED]`); i 4 villain
+> (`png/Khorn/khorn-ufficiale-hammerfist-cr8.md`, allora da confermare; canonizzato il 2026-07-12); i 4 villain
 > orfani hanno il mini-dossier (Avatar Tiamat, Tyrgarun, Karruk, Zarim); i
 > dossier d'arco 🔗 sono cross-linkati e verificati (zero numeri duplicati).
 > Il «Comandante Dauth» è ora **Durgan Tozzefort** (rinominato da Borin per
-> non confliggere con Borin Ferropugno). La tabella resta come mappa storica.
+> non confliggere con Borin Giuraferro). La tabella resta come mappa storica.
 > ✅ **Khorn e Durgan Tozzefort canonizzati dal DM (2026-07-12)**: i flag
-> `[INFERRED]` sono stati rimossi da statblock, dossier e riferimenti d'arco.
+> INFERRED sono stati rimossi da statblock, dossier e riferimenti d'arco.
 
 **Dossier senza statblock proprio** (lo statblock canonico vive in un file
 d'arco → 🔗 L3 cross-link, oppure manca → 🔁 L2):
@@ -156,9 +156,9 @@ d'arco → 🔗 L3 cross-link, oppure manca → 🔁 L2):
 | Salvatore | `09_.../P2C-Salvatore-Mercante-TESTO.md` | 🔗 L3 |
 | Fauci di Palude / Grimjaw / Gorthak | `08_.../ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` | 🔗 L3 (Gorthak: anche pregen Ettin §3.1) |
 | Belkram | `04_tomba_di_Belkram/**` (storico) | 🔗 L3 (post-mortem, D13) |
-| Eroi di Hammerfist (Borin F., Dara, Nala, Thorin R.) | `08_.../ARC08-02` (pregen) | 🔗 L3 |
+| Eroi di Hammerfist (Borin F., Dara, Nala, Harbek R.) | `08_.../ARC08-02` (pregen) | 🔗 L3 |
 | Maewen, Lythiel, Tempestas, Varis, Consiglio | schede nei dossier stessi | ✅ (verifica L2) |
-| **Khorn** | **nessuno** (`[INFERRED]` dichiarato nel dossier) | 🔁 L2 (generare, flag [INFERRED], via npc-villain-boosting) |
+| **Khorn** | **nessuno** (marcatore INFERRED dichiarato nel dossier, sciolto il 2026-07-12) | 🔁 L2 (generare, flag INFERRED, via npc-villain-boosting) |
 | Re Thorek, Capitano Lunapiena, Dana F., Orion P., Signore Ventolesto | key stats sintetiche nel dossier | ✅ (verifica L2) |
 
 **Statblock senza dossier** (villain/png "orfani" al livello base delle
@@ -198,5 +198,5 @@ Dauth → 🔁 L2 (mini-dossier col template `png-dossier-template.md`).
 > diagnosi e lotti di reintegrazione: `plans/PIANO-REINTEGRAZIONE-PNG-AP-RHOD.md`.
 > **Fatto (R1+R5)**: `png/Guado_di_Drellin/Profughi_Guado_di_Drellin.md`
 > (6 PNG) + `png/Lirien/Lirien.md` (PNG caotico ricorrente). ✅ **Entrambi
-> canonizzati dal DM (2026-07-20)** — flag `[INFERRED]` sciolti, righe in
-> `state.md` §1/§3/§7/§8. **R2+R3 preparati (2026-07-20)**: `png/Secondo_Anello_Rethmar/` (Tredora, Immerstal, Ulverth, Teyani) e `png/Witchwood_Tiri_Kitor/` (Sellyria, Killiar[cross-link], Illian, Trellara, Warklegnaw), tutti `[INFERRED]`. **R4 deciso (2026-07-20)**: Hravek Kharn fuso in Wyrmlord Karruk, Ulwai non reintegrata 1:1, blackspawn rilivellati (nuovo `mostri/razorfiend-blackspawn-alfa-cr13.md` élite). **Piano COMPLETO.**
+> canonizzati dal DM (2026-07-20)** — flag INFERRED sciolti, righe in
+> `state.md` §1/§3/§7/§8. **R2+R3 preparati (2026-07-20)**: `png/Secondo_Anello_Rethmar/` (Tredora, Immerstal, Ulverth, Teyani) e `png/Witchwood_Tiri_Kitor/` (Sellyria, Killiar[cross-link], Illian, Trellara, Warklegnaw), allora tutti da confermare (marcatori sciolti il 2026-10-18). **R4 deciso (2026-07-20)**: Hravek Kharn fuso in Wyrmlord Karruk, Ulwai non reintegrata 1:1, blackspawn rilivellati (nuovo `mostri/razorfiend-blackspawn-alfa-cr13.md` élite). **Piano COMPLETO.**

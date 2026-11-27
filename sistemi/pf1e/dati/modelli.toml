@@ -1,0 +1,122 @@
+# sistemi/pf1e/dati/modelli.toml — i modelli semplici di PF1e (lotto J)
+#
+# Scritto a mano, non generato: sette righe di regola. Solo nomi e numeri.
+# Fonte di ogni riga: PRD di PF1e, Bestiary, «Monster Advancement» → «Simple
+# Templates», regole di ricostruzione («Rebuild Rules»); il campo `fonte` dice
+# la sezione. Riscontro: `plans/esperimenti/regole-senza-omissioni-2026-11-12/
+# riscontra_modelli.py` rilegge il PRD in cache e confronta ogni numero.
+#
+# Campi di un modello:
+#   nome            il nome italiano che finisce nel blocco
+#   gs              quanto vale in grado di sfida
+#   gs_da_dv        se presente, il GS sale solo da quel numero di dadi vita
+#   caratteristiche le variazioni dei punteggi
+#   int_minima      sotto questo punteggio l'Intelligenza non cambia
+#   naturale        la variazione dell'armatura naturale (mai sotto +0)
+#   taglia          le categorie di taglia in più o in meno
+#   dadi            i passi dei dadi di danno in più o in meno
+#   vietato_taglie  le taglie a cui non si applica
+#   vietato_tipi    i tipi a cui non si applica
+#   resistenze, rd, punire   per i quattro modelli planari, con [modelli.difese]
+
+[modelli.advanced]
+nome = "Avanzato"
+gs = 1
+caratteristiche = { For = 4, Des = 4, Cos = 4, Int = 4, Sag = 4, Car = 4 }
+int_minima = 3
+naturale = 2
+fonte = "PRD Bestiary, Simple Templates, Advanced Creature: CR +1; natural armor +2; +4 to all ability scores (except Int scores of 2 or less)"
+
+[modelli.giant]
+nome = "Gigante"
+gs = 1
+caratteristiche = { For = 4, Cos = 4, Des = -2 }
+naturale = 3
+taglia = 1
+dadi = 1
+vietato_taglie = ["colossal"]
+fonte = "PRD Bestiary, Simple Templates, Giant Creature: CR +1; size +1 category; natural armor +3; damage dice +1 step; +4 size bonus to Str and Con, -2 Dex; not for Colossal"
+
+[modelli.young]
+nome = "Giovane"
+gs = -1
+caratteristiche = { For = -4, Cos = -4, Des = 4 }
+naturale = -2
+taglia = -1
+dadi = -1
+vietato_taglie = ["fine"]
+vietato_tipi = ["dragon"]
+fonte = "PRD Bestiary, Simple Templates, Young Creature: CR -1; size -1 category; natural armor -2 (minimum +0); damage dice -1 step; -4 Str, -4 Con, +4 size bonus to Dex; not for Fine creatures nor for those that grow by aging (dragons)"
+
+[modelli.celestial]
+nome = "Celestiale"
+gs = 1
+gs_da_dv = 5
+scurovisione = 18
+resistenze = ["acido", "freddo", "elettricità"]
+rd = "male"
+punire = "il male"
+contro = "malvagie"
+fonte = "PRD Bestiary, Simple Templates, Celestial Creature: CR +1 only with 5 or more HD; darkvision 60 ft.; resist cold, acid, electricity; DR /evil; SR = new CR + 5; smite evil 1/day"
+
+[modelli.fiendish]
+nome = "Immondo"
+gs = 1
+gs_da_dv = 5
+scurovisione = 18
+resistenze = ["freddo", "fuoco"]
+rd = "bene"
+punire = "il bene"
+contro = "buone"
+fonte = "PRD Bestiary, Simple Templates, Fiendish Creature: CR +1 only with 5 or more HD; darkvision 60 ft.; resist cold, fire; DR /good; SR = new CR + 5; smite good 1/day"
+
+[modelli.entropic]
+nome = "Entropico"
+gs = 1
+gs_da_dv = 5
+scurovisione = 18
+resistenze = ["acido", "fuoco"]
+rd = "legale"
+punire = "la legge"
+contro = "legali"
+fonte = "PRD Bestiary, Simple Templates, Entropic Creature: CR +1 only with 5 or more HD; darkvision 60 ft.; resist acid, fire; DR /lawful; SR = new CR + 5; smite law 1/day"
+
+[modelli.resolute]
+nome = "Risoluto"
+gs = 1
+gs_da_dv = 5
+scurovisione = 18
+resistenze = ["acido", "freddo", "fuoco"]
+rd = "caotico"
+punire = "il caos"
+contro = "caotiche"
+fonte = "PRD Bestiary, Simple Templates, Resolute Creature: CR +1 only with 5 or more HD; darkvision 60 ft.; resist acid, cold, fire; DR /chaotic; SR = new CR + 5; smite chaos 1/day"
+
+# Le difese dei quattro modelli planari per dadi vita: la stessa tabella in
+# tutti e quattro («… Creature Defenses»). `da` è il primo dado vita della fascia.
+[[modelli_difese]]
+da = 1
+resistenza = 5
+rd = 0
+
+[[modelli_difese]]
+da = 5
+resistenza = 10
+rd = 5
+
+[[modelli_difese]]
+da = 11
+resistenza = 15
+rd = 10
+
+# La resistenza agli incantesimi dei modelli planari: GS nuovo + questo numero.
+[modelli_regole]
+ri_oltre_il_gs = 5
+punire_al_giorno = 1
+# I passi dei dadi di danno: PRD Bestiary, «Table: Natural Attacks by Size»
+# (1, 1d2, 1d3, 1d4, 1d6, 1d8, 2d6, 2d8, 4d6) e PRD Core Rulebook, «Table: Tiny
+# and Large Weapon Damage» (colonne Medium e Large) per i dadi delle armi.
+scala_naturale = ["1", "1d2", "1d3", "1d4", "1d6", "1d8", "2d6", "2d8", "4d6"]
+# In giù: PRD Core Rulebook, tabelle delle armi, colonne «Dmg (M)» e «Dmg (S)».
+armi_giu = { "1d2" = "1", "1d3" = "1d2", "1d4" = "1d3", "1d6" = "1d4", "1d8" = "1d6", "1d10" = "1d8", "1d12" = "1d10", "2d4" = "1d6", "2d6" = "1d10" }
+armi_su = { "1d2" = "1d3", "1d3" = "1d4", "1d4" = "1d6", "1d6" = "1d8", "1d8" = "2d6", "1d10" = "2d8", "1d12" = "3d6", "2d4" = "2d6", "2d6" = "3d6", "2d8" = "3d8", "2d10" = "4d8" }

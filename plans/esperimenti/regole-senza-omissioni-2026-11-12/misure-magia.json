@@ -1,0 +1,124 @@
+{
+ "campi": {
+  "cd +1": {
+   "lista_non_letta": 34,
+   "mutanti": 126,
+   "persi": [
+    "ARC08-01-GUIDA-DM.md",
+    "lomyn-redtongue-bardo8-cr8.md",
+    "ur-vrax-voce-del-drago-cr10.md",
+    "ur-vrax-voce-del-drago-cr10.md",
+    "ur-vrax-voce-del-drago-cr10.md",
+    "ur-vrax-voce-del-drago-cr10.md",
+    "ur-vrax-voce-del-drago-cr10.md",
+    "ur-vrax-voce-del-drago-cr10.md"
+   ],
+   "trovati": 84
+  },
+  "cd -1": {
+   "lista_non_letta": 34,
+   "mutanti": 126,
+   "persi": [
+    "ARC08-01-GUIDA-DM.md",
+    "ERRATA-PARTE2-3-35-Verification.md",
+    "ERRATA-PARTE2-3-35-Verification.md",
+    "ERRATA-PARTE2-3-35-Verification.md",
+    "ERRATA-PARTE2-3-35-Verification.md",
+    "ERRATA-PARTE2-3-35-Verification.md",
+    "lomyn-redtongue-bardo8-cr8.md",
+    "lomyn-redtongue-bardo8-cr8.md",
+    "lomyn-redtongue-bardo8-cr8.md",
+    "lomyn-redtongue-bardo8-cr8.md",
+    "lomyn-redtongue-bardo8-cr8.md",
+    "ur-vrax-voce-del-drago-cr10.md"
+   ],
+   "trovati": 80
+  },
+  "livello": {
+   "lista_non_letta": 9,
+   "mutanti": 29,
+   "persi": [],
+   "trovati": 20
+  },
+  "slot +1": {
+   "lista_non_letta": 20,
+   "mutanti": 85,
+   "persi": [
+    "ARC05-STANZA-RUNICA-TRASCRIZIONE.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md"
+   ],
+   "trovati": 58
+  },
+  "slot -1": {
+   "lista_non_letta": 20,
+   "mutanti": 85,
+   "persi": [
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+    "ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+    "ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+    "abbathor-cleric11-cr11.md",
+    "ur-vrax-voce-del-drago-cr10.md",
+    "ur-vrax-voce-del-drago-cr10.md",
+    "ur-vrax-voce-del-drago-cr10.md",
+    "ur-vrax-voce-del-drago-cr10.md",
+    "ur-vrax-voce-del-drago-cr10.md"
+   ],
+   "trovati": 48
+  },
+  "uno in più": {
+   "lista_non_letta": 50,
+   "mutanti": 165,
+   "persi": [
+    "ARC05-STANZA-RUNICA-TRASCRIZIONE.md",
+    "ARC05-STANZA-RUNICA-TRASCRIZIONE.md",
+    "ARC05-STANZA-RUNICA-TRASCRIZIONE.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-01-GUIDA-DM.md",
+    "ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+    "ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+    "ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+    "ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md",
+    "Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md",
+    "Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md",
+    "Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md",
+    "Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md",
+    "Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md",
+    "Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md",
+    "Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-STATBLOCCHI-EPICI.md",
+    "ERRATA-PARTE2-3-35-Verification.md",
+    "ERRATA-PARTE2-3-35-Verification.md",
+    "ERRATA-PARTE2-3-35-Verification.md",
+    "ERRATA-PARTE2-3-35-Verification.md",
+    "ERRATA-PARTE2-3-35-Verification.md",
+    "ERRATA-PARTE2-3-35-Verification.md",
+    "ERRATA-PARTE2-3-35-Verification.md"
+   ],
+   "trovati": 86
+  }
+ },
+ "totale": {
+  "lista_non_letta": 167,
+  "mutanti": 616,
+  "persi": 73,
+  "trovati": 376
+ }
+}

@@ -15,7 +15,7 @@ Arco-Post-Hammerfist-P2A-Torre-PARTE2-STATBLOCCHI-Livelli2-3.md
 - Attacco: Sciame (danni 2d6 contusivi + –2 alle prove di Concentrazione e incantesimi con componente verbale).  
 - TS: Temp +4, Rif +5, Vol +3.  
 - Qualità speciali:  
-  - Sciame (immunità ad armi singole, vulnerabile a area).  
+  - Sciame (immunità ad armi singole, vulnerabile ad area).  
   - Distrazione (TS Tempra CD 15 o nausea 1 round).  
 - Resist: RD 5/—, immunità a veleno, critici, effetti di mente (come oggetti animati).  
 

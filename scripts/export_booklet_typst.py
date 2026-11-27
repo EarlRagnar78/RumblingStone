@@ -45,6 +45,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import re
 import subprocess
 import sys
@@ -52,23 +53,43 @@ import unicodedata
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from dmcore.testo import capitoli_del_volume, leggi_per_la_stampa, slug, togli_storico  # noqa: E402
+from dmcore import chi_si_incontra  # noqa: E402
+from dmcore.testo import (  # noqa: E402
+    capitoli_del_volume, con_apertura, con_chiusura, fondi_contratto_e_scheda, leggi_per_la_stampa, piega_ascii, sigle_d_appendice, slug, togli_storico, traduci_rimandi,
+)
 from dmcore.schede import Scheda, SchedaError, leggi_schede  # noqa: E402
+from dmcore import carte_tavolo  # noqa: E402
 from dmcore.statblock import (  # noqa: E402
-    StatblockError, accosta_parte_leggibile, etichetta_gs, caratteristiche, leggi as leggi_statblocco,
+    StatblockError, accosta_parte_leggibile, etichetta_gs, caratteristiche, ingombro, leggi as leggi_statblocco,
     sezioni_leggibili, senza_caratteristiche,
 )
 
 import binari  # noqa: E402  (accanto a questo file)
+import typst_motore  # noqa: E402  (ADR-0116: PyPI, ripiego la CLI)
+from dmcore import sistemi as _SIS  # noqa: E402
+
+#: Le sigle del riquadro dal plugin del sistema del booklet (ADR-0111, L7);
+#: `main()` le rilegge per il manifest, qui vale il predefinito.
+ET: dict[str, str] = _SIS.etichette()
+
+
+def _etichette_per(manifest_path: Path) -> None:
+    global ET
+    ET = _SIS.etichette(_SIS.sistema_di(manifest_path.resolve()))
 
 ROOT = Path(__file__).resolve().parent.parent
 TEMA = ROOT / "scripts" / "typst" / "tema-rumblingstone.typ"
 SCHEDA_PG = ROOT / "scripts" / "typst" / "scheda-pg.typ"
+CARTE_TAVOLO = ROOT / "scripts" / "typst" / "carte-tavolo.typ"
 # Pacchetti Typst vendorizzati (ADR-0026): la build non scarica niente. Senza
 # questo percorso `@preview/...` andrebbe a packages.typst.org, e una build che
 # dipende dalla rete non e' riproducibile — ne' compilabile offline.
 PACCHETTI = ROOT / "scripts" / "typst" / "packages"
 FONTS = ROOT / "scripts" / "fonts"
+#: PDF/A-2a (ISO 19005-2, livello «a»: archiviazione e struttura), insieme a
+#: PDF/UA-1. È il PDF/A più alto che si combina con PDF/UA-1: A-4 chiede PDF 2.0,
+#: UA-1 PDF 1.7 (ADR-0131).
+PDFA = "a-2a"
 
 
 
@@ -229,6 +250,11 @@ def _inline(s: str) -> str:
                 testo = s[i + 1:j].replace("\\", "\\\\").replace('"', '\\"')
                 fuori.append(f'#raw("{testo}")')
                 i = j + 1
+                # `#raw(...);`: il punto e virgola chiude l'espressione e non
+                # si stampa (giro del 2026-11-12, Scena 10: «CA 28 costa −2»)
+                if i < len(s) and s[i] == ";":
+                    fuori.append("\\;")
+                    i += 1
                 continue
         if c == "*":
             n = 0
@@ -245,11 +271,111 @@ def _inline(s: str) -> str:
             else:
                 fuori.append(_esc("*" * n))
             i += n
+            # `#strong[...];`: lo stesso punto e virgola mangiato
+            if fuori[-1].endswith("]") and i < len(s) and s[i] == ";":
+                fuori.append("\\;")
+                i += 1
             continue
         fuori.append(_esc(c))
         i += 1
     fuori.append("]" * len(pila))
     return "".join(fuori)
+
+
+# I rimandi a un capitolo del volume con il numero di pagina (ADR-0144): il
+# manifest lo chiede con `"pagine_nei_rimandi": true`. Il numero lo calcola
+# Typst (`rif-pagina` nel tema), qui si marca solo dove va.
+_ROM = r"(?P<rom>[IVXLC]+)\b"
+_CHIAVE = (r"(?P<key>§\d+(?:\.\d+)?(?:-(?:bis|ter))?|Scen[ae]\s+\d+(?:\s*(?:e|-|–)\s*\d+)?"
+           r"|[Aa]ppendice\s+[A-Z](?:\.\d+)?|«[^»\n]{3,60}»)")
+_RIF_CAPITOLO = re.compile(
+    r"(?<![\w])(?:capp?\.|capitol[oi])\s+" + _ROM + r"(?:,?\s+" + _CHIAVE + r"(?![\w-]))?")
+_RIF_CAPITOLO_DOPO = re.compile(
+    r"(?<![\w§])" + _CHIAVE.replace("key", "key2") + r"\s+(?:del|di)\s+(?:capp?\.|capitolo)\s+" + _ROM)
+
+
+_RIF_SCHEDA_IN_CAPITOLO = re.compile(
+    r"Scheda d'entrata — (?P<nome>[^,\]\n]+?), in breve\][^\n]{0,60}?nel capitolo " + _ROM + r"(?!#rif)")
+_RIF_MAPPA_IN_CAPITOLO = re.compile(r"[Mm]appa [A-Z0-9-]+ è nel capitolo " + _ROM + r"(?!#rif)")
+_RIF_ROMANO_NUDO = re.compile(
+    r"(?:(?<=\()|(?<=; ))" + _ROM + r"(?:,\s+" + _CHIAVE + r")?(?=[;),])")
+_SIGLA_A = re.compile(r"(?<![\w.§-])(?P<sigla>A\.\d+(?:-bis)?)(?![\w-]|\.\d|#rif)")
+
+
+def _parola_del_nome(nome: str) -> str:
+    """La parola che cerca la scheda: «Re Thorek I» → «Re Thorek», «Balvar Fuocospento» → «Balvar».
+
+    >>> _parola_del_nome("Re Thorek I"), _parola_del_nome("Zog'tar Deatheye")
+    ('Re Thorek', "Zog'tar")
+    """
+    parole = nome.split()
+    k = 1
+    while k < len(parole) and len(" ".join(parole[:k])) < 4:
+        k += 1
+    return " ".join(parole[:k])
+
+
+def _chiave_del_titolo(k: str) -> str:
+    """«Scene 7 e 8» → «SCENA 7», «Appendice C.2» → «C.2», ««La scheda»» → «La scheda».
+
+    >>> [_chiave_del_titolo(k) for k in ("Scene 7 e 8", "Appendice C.2", "«La scheda da tavolo»", "§2-bis")]
+    ['SCENA 7', 'C.2', 'La scheda da tavolo', '§2-bis']
+    """
+    k = re.sub(r"\s+", " ", k.strip())
+    if m := re.match(r"[Ss]cen[ae] (\d+)", k):
+        return f"SCENA {m.group(1)}"
+    if m := re.match(r"[Aa]ppendice ([A-Z](?:\.\d+)?)", k):
+        return m.group(1)
+    return k.strip("«»")
+
+
+def numera_rimandi(typ: str, romani: bool = False) -> str:
+    """Dietro ogni «cap. V Scena 6» il segno che Typst riempie con «, p. 50».
+
+    Fuori dai blocchi di codice e dalle stringhe (una virgoletta aperta sulla
+    riga vuol dire che il rimando sta in un argomento, non nel testo).
+
+    >>> numera_rimandi('vedi cap. V Scena 6, poi il §13 del capitolo III.')
+    'vedi cap. V Scena 6#rif-pagina("V", "SCENA 6");, poi il §13 del capitolo III#rif-pagina("III", "§13");.'
+    >>> numera_rimandi('#f(nota: "cap. V")')
+    '#f(nota: "cap. V")'
+    >>> numera_rimandi('statistiche in A.6, e')
+    'statistiche in A.6#rif-pagina("", "A.6");, e'
+    >>> numera_rimandi('(V, Scene 7 e 8): solo se (I, Atto I; III).', romani=True)
+    '(V, Scene 7 e 8#rif-pagina("V", "SCENA 7");): solo se (I#rif-pagina("I", "");, Atto I; III#rif-pagina("III", "");).'
+    """
+    def dentro_stringa(riga_prima: str) -> bool:
+        return (riga_prima.count('"') - riga_prima.count('\\"')) % 2 == 1
+
+    def segna(m: "re.Match", rom: str, key: str) -> str:
+        riga = m.string[m.string.rfind("\n", 0, m.start()) + 1:m.start()]
+        if dentro_stringa(riga) or re.search(r"[#@]\w*$", riga):
+            return m.group(0)
+        chiave = _chiave_del_titolo(key) if key else ""
+        return f"{m.group(0)}#rif-pagina({json.dumps(rom)}, {json.dumps(chiave, ensure_ascii=False)});"
+
+    pezzi = re.split(r"(```.*?```)", typ, flags=re.S)
+    for i in range(0, len(pezzi), 2):
+        # le righe che scrive chi_si_incontra: la scheda di una persona e la
+        # mappa stanno in un punto preciso del capitolo, non alla sua apertura
+        t = _RIF_SCHEDA_IN_CAPITOLO.sub(
+            lambda m: segna(m, m.group("rom"), "?" + _parola_del_nome(m.group("nome"))), pezzi[i])
+        t = _RIF_MAPPA_IN_CAPITOLO.sub(lambda m: segna(m, m.group("rom"), "?mappe"), t)
+        t = _RIF_CAPITOLO_DOPO.sub(lambda m: segna(m, m.group("rom"), m.group("key2")), t)
+        # quel che è già segnato non si risegna: il primo giro lascia «#rif-pagina»
+        t = re.sub(r"(" + _RIF_CAPITOLO.pattern + r")(?!#rif-pagina)",
+                   lambda m: segna(m, m.group("rom"), m.group("key") or ""), t)
+        if romani:
+            t = _RIF_ROMANO_NUDO.sub(lambda m: segna(m, m.group("rom"), m.group("key") or ""), t)
+        # «appendice delle mappe, in fondo» (sigle_d_appendice): la pagina dell'appendice
+        t = re.sub(r"appendice delle (mappe|creature),? in fondo(?!#rif)",
+                   lambda m: segna(m, "", f"Appendice: le {m.group(1)}"), t)
+        # «statistiche in A.6»: la sigla d'appendice senza capitolo (non nei titoli)
+        t = "\n".join(r if r.lstrip().startswith("=") else
+                      _SIGLA_A.sub(lambda m: segna(m, "", m.group("sigla")), r)
+                      for r in t.split("\n"))
+        pezzi[i] = t
+    return "".join(pezzi)
 
 
 # basename del master → etichetta Typst del suo capitolo. Lo riempie
@@ -676,9 +802,10 @@ def statblocco_typ(corpo: str, titolo_corrente: str = "", sezioni=()) -> str:
     nome = sb.nome or titolo_corrente
     voci = [f"nome: {json.dumps(nome, ensure_ascii=False)}"]
     for chiave, valore in (
-        ("tipo", sb.tipo), ("gs", etichetta_gs(sb.gs)), ("iniziativa", sb.iniziativa),
+        ("tipo", sb.tipo), ("gs", etichetta_gs(sb.gs, ET["gs"])), ("iniziativa", sb.iniziativa),
         ("sensi", sb.sensi), ("pf", (sb.pf + (f" ({sb.pf_dado})" if sb.pf_dado else "")).strip()),
         ("velocita", sb.velocita), ("tattica", sb.tattica), ("fonte", sb.fonte),
+        ("ingombro", ingombro(sb)),
     ):
         if valore:
             voci.append(f"{chiave}: [{inline(valore)}]")
@@ -713,6 +840,9 @@ def statblocco_typ(corpo: str, titolo_corrente: str = "", sezioni=()) -> str:
             f"{json.dumps(s.etichetta, ensure_ascii=False)}: "
             f"[{_sezione_typ(s, len(caratteristiche(sb.attributi)) == 6)}], "
             for s in sezioni) + ")")
+    voci.append("etichette: (" + ", ".join(
+        f"{k}: {json.dumps(ET[k], ensure_ascii=False)}"
+        for k in ("ca", "pf", "ts", "vel", "iniziativa", "sensi")) + ")")
     return "#statblocco(\n  " + ",\n  ".join(voci) + ",\n)"
 
 
@@ -723,7 +853,7 @@ def _sezione_typ(s, con_griglia: bool) -> str:
         testo = senza_caratteristiche(testo)
     pezzi = [inline(testo)] if testo else []
     if s.etichetta == "Iniziativa" and pezzi:
-        pezzi[0] = "*Iniziativa* " + pezzi[0]    # la riga sotto il nome, senza fascia
+        pezzi[0] = f"*{ET['iniziativa']}* " + pezzi[0]    # la riga sotto il nome, senza fascia
     pezzi += ["- " + inline(v) for v in s.voci]
     return "\n".join(pezzi)
 
@@ -836,6 +966,71 @@ def schede(cap: dict, base: Path, f: Path) -> str:
     return "\n\n".join(corpo for _, corpo in schede_di(cap, base, f))
 
 
+# ── le carte da tavolo ───────────────────────────────────────────────────────
+# Un capitolo `"layout": "carte"` non si legge: si ritaglia. Il master del
+# capitolo (`file`) sono le regole della corsa; `contrade` è il master delle
+# contrade. I dati li legge `dmcore.carte_tavolo`; la forma sta tutta in
+# `typst/carte-tavolo.typ`. Le carte di un foglio sono nove: un mazzetto che
+# non riempie il foglio si completa con patti in bianco, che a un tavolo di
+# Partiti non bastano mai.
+
+def _carta(mazzo: str, /, **campi: str) -> str:
+    return f"carta-{mazzo}(" + ", ".join(f"{k.replace('_', '-')}: {v}" for k, v in campi.items()) + ")"
+
+
+def carte(cap: dict, base: Path, f: Path) -> str:
+    """Il sorgente Typst dei fogli di carte di un capitolo `"layout": "carte"`."""
+    if not cap.get("contrade"):
+        raise carte_tavolo.CarteError(f"{cap.get('title', f.name)}: manca la chiave «contrade» "
+                                      "(il master delle contrade)")
+    contrade = carte_tavolo.contrade((base / cap["contrade"]).resolve())
+    n_funi = carte_tavolo.cavalli_alle_funi(f)
+    giri = carte_tavolo.giri(f)
+    tratti = carte_tavolo.tratti(f)
+    posti = carte_tavolo.posti(f)
+    nomi_tratti = "(" + "".join(_str(t.nome) + ", " for t in tratti) + ")"
+
+    patto = _carta("patto",
+                   vale=_riga(carte_tavolo.frase(f, "§4", "In Corsa vale")),
+                   rompere=_riga(carte_tavolo.frase(f, "§4", "**Rompere un patto**") + " "
+                                 + carte_tavolo.frase(f, "§4", "Costa **Morale")))
+    finte = "(" + "".join(_riga(x.rstrip(";.") + ".") + ", " for x in carte_tavolo.finte(f)) + ")"
+    esito = _riga(carte_tavolo.frase(f, "6.1", "**Esito del tiro**"))
+    quando = _riga(carte_tavolo.frase(f, "6.2", "Ogni PG non-fantino"))
+    romani = ("I", "II", "III", "IV", "V")
+    if giri > len(romani):
+        raise carte_tavolo.CarteError(f"{f.name} §6: {giri} giri, le carte ne disegnano al massimo {len(romani)}")
+
+    mazzetti: list[tuple[str, list[str]]] = [
+        ("Le contrade · segnaposto", [
+            _carta("contrada", numero=_str(c.numero), nome=_str(c.nome), dei=_str(c.dei),
+                   livrea=_str(c.livrea), motto=_str(c.motto), giri=str(giri), tratti=nomi_tratti,
+                   **({"stemma_file": _str(typ_path(c.stemma))} if c.stemma else {}))
+            for c in contrade]),
+        ("Lo Stacco · l'ordine alle funi", [
+            *(_carta("funi", posto=_str(str(i)), di=_str(str(n_funi)), finte=finte)
+              for i in range(1, n_funi + 1)),
+            _carta("rincorsa", numero=_str(str(n_funi + 1)),
+                   regola=_riga(carte_tavolo.frase(f, "§5", "L'ottavo resta fuori"))),
+        ]),
+        ("La Ruota · i tratti in ordine di corsa", [
+            _carta("tratto", giro=_str(romani[g]), nome=_str(t.nome), cd=_str(t.cd), nota=_riga(t.nota),
+                   numero=_str(str(g * len(tratti) + i + 1)), totale=_str(str(giri * len(tratti))),
+                   esito=esito)
+            for g in range(giri) for i, t in enumerate(tratti)]),
+        ("I posti dei PG e i patti", [
+            _carta("posto", nome=_str(p.nome), chi=_str(p.chi), azioni=_riga(p.azioni), quando=quando)
+            for p in posti]),
+    ]
+    fogli = []
+    for titolo, mazzo in mazzetti:
+        for i in range(0, len(mazzo), 9):
+            pezzo = mazzo[i:i + 9]
+            pezzo += [patto] * (9 - len(pezzo))
+            fogli.append(f"#foglio-carte({_str(titolo)}, (\n  " + ",\n  ".join(pezzo) + ",\n))")
+    return "\n\n".join(fogli)
+
+
 # ── assemblaggio ─────────────────────────────────────────────────────────────
 
 def capitoli(man: dict, base: Path, tutti: bool) -> list[tuple[dict, str, Path]]:
@@ -883,7 +1078,12 @@ CHIAVI_NOTE = {
     "title", "subtitle", "brand", "banner", "meta", "footer", "header",
     "player_footer", "front_matter", "cover_image", "cover_tag", "intro_md",
     "out", "chapters", "carta", "capolettera", "fregio", "colophon", "formato",
-    "schede",
+    "schede", "chi_si_incontra", "pagine_nei_rimandi", "indice_analitico",
+    "guida_righe_finali", "indice_profondita",
+    # Non le compone nessuna delle due catene: le legge misura_ordine.py
+    # (ADR-0145), e il manifest è il loro posto perché stanno accanto ai
+    # capitoli che giudicano.
+    "ruoli_sezioni",
 }
 CHIAVI_SOLO_HTML = {"player_footer", "header", "cover_tag", "out"}
 
@@ -969,9 +1169,12 @@ def intestazione(man: dict, apparato: bool | None = None, base: Path | None = No
         extra.append(f'  carta: {json.dumps(carta, ensure_ascii=False)},')
     if formato != "a4":
         extra.append(f'  formato: {json.dumps(formato, ensure_ascii=False)},')
+    if man.get("indice_profondita"):
+        extra.append(f'  indice-profondita: {int(man["indice_profondita"])},')
     return [
         f'#import "{typ_path(TEMA)}": *',
         f'#import "{typ_path(SCHEDA_PG)}": scheda',
+        f'#import "{typ_path(CARTE_TAVOLO)}": foglio-carte, carta-contrada, carta-funi, carta-rincorsa, carta-tratto, carta-posto, carta-patto',
         "#show: libro.with(",
         f'  titolo: {json.dumps(man.get("title", ""), ensure_ascii=False)},',
         f'  sottotitolo: {json.dumps(man.get("subtitle", ""), ensure_ascii=False)},',
@@ -1015,7 +1218,8 @@ def marca_indice(typ: str) -> str:
     """Marca la PRIMA occorrenza di ogni voce del glossario, per capitolo.
 
     ⚠️ Solo su righe di prosa: una riga che comincia per `#` e' un comando Typst
-    e infilarci dentro una funzione romperebbe l'impaginazione. Solo la prima
+    e infilarci dentro una funzione romperebbe l'impaginazione; una che comincia
+    per `=` e' un titolo, e la voce ci sparirebbe. Solo la prima
     occorrenza: un indice che rimanda a dodici pagine per lo stesso termine non
     aiuta nessuno a trovarlo.
     """
@@ -1026,14 +1230,18 @@ def marca_indice(typ: str) -> str:
     fuori = []
     for riga in typ.split("\n"):
         s = riga.lstrip()
-        if s.startswith("#") or s.startswith("//") or "voce-indice" in riga:
+        # «=» apre un titolo: dentro un titolo la voce spariva dalla pagina e
+        # dai segnalibri («A.5 · Re Thorek I e (Scena 4)», volume d'arco, 2026-11-19)
+        if s.startswith(("#", "//", "=")) or "voce-indice" in riga:
             fuori.append(riga)
             continue
         for v in voci:
             if v in gia:
                 continue
             m = re.search(r"(?<![\w#\[])" + re.escape(v) + r"(?![\w\]])", riga)
-            if m:
+            # dentro una stringa («capitolo: "Il Portale della Forgia Eterna"»)
+            # la marca si stampava com'è, in testatina su ogni pagina (2026-11-19)
+            if m and (riga[:m.start()].count('"') - riga[:m.start()].count('\\"')) % 2 == 0:
                 riga = (riga[:m.start()] + "#voce-indice[" + v + "]" + riga[m.end():])
                 gia.add(v)
         fuori.append(riga)
@@ -1049,7 +1257,9 @@ def sorgente(man: dict, base: Path, tutti: bool, carta: str = "avorio",
     # capitolo 12 non è ancora stato convertito.
     RIMANDI.clear()
     for cap, titolo, f in elenco:
-        RIMANDI[f.name] = "cap-" + slug(f.stem, ripiego="capitolo")
+        # un master può dare più capitoli (chiave `sezioni`): l'etichetta è del primo
+        RIMANDI.setdefault(f.name, "cap-" + slug(f.stem, ripiego="capitolo"))
+    etichettati: set[str] = set()
 
     avvisa_chiavi(man)
     # I rimandi a un master («master #3», «DEF-3 §7») diventano il suo capitolo
@@ -1059,26 +1269,74 @@ def sorgente(man: dict, base: Path, tutti: bool, carta: str = "avorio",
     # Dove sta il riquadro intero delle creature (ADR-0105 punto 7): in
     # appendice, con la riga e la tattica nell'incontro; «qui» per i volumi che
     # le schede le vogliono dove sono scritte.
-    appendice = man.get("schede", "appendice") == "appendice"
+    modo = man.get("schede", "appendice")
+    appendice = modo in ("appendice", "entrambe", "prima-volta")
     if appendice:
-        parti.append('#modo-schede.update("appendice")')
+        parti.append(f'#modo-schede.update("{modo}")')
+    # `"chi_si_incontra": true` (ADR-0107): chi si incontra sta nel capitolo,
+    # con scheda, ritratto, riquadro e mappa, portati dal master che li ha.
+    # Si accompagna a «entrambe», così l'appendice resta.
+    indice = chi_si_incontra.indice_del_repo() if man.get("chi_si_incontra") else None
+    pg = {piega_ascii(p.stem).lower() for p in (ROOT / "PG" / "schede").glob("*.yaml")} if indice else set()
     predefinito = bool(man.get("capolettera", True))
+    # «prima-volta» (ADR-0122): chi è presentato e le mappe stampate, capitolo
+    # per capitolo, perché il corpo li stampi una volta sola
+    volume = {"capitolo": "", "persone": {}, "mappe": {}, "native": {}} \
+        if modo == "prima-volta" and indice is not None else None
+    if volume is not None:
+        for cap, titolo, f in elenco:
+            m_ = re.match(r"^\s*([IVXLC]+)\s*·", titolo)
+            for c in chi_si_incontra.mappe_stampate(leggi_per_la_stampa(f, nel_volume, cap.get("sezioni"))):
+                volume["native"].setdefault(c, f"capitolo {m_.group(1)}" if m_ else f"capitolo «{titolo}»")
     for cap, titolo, f in elenco:
         if cap.get("layout") == "schede":
             parti.append(schede(cap, base, f))
             parti.append("")
             continue
+        if cap.get("layout") == "carte":
+            parti.append(carte(cap, base, f))
+            parti.append("")
+            continue
         fr = fregio_per(titolo, f, base, man.get("fregio"))
         parti.append(f"#capitolo-aperto({json.dumps(titolo, ensure_ascii=False)}, "
                      f"{'none' if not fr else json.dumps(fr, ensure_ascii=False)})")
-        parti.append(f"#metadata(\"capitolo\") <{RIMANDI[f.name]}>")
-        corpo = md_to_typ(leggi_per_la_stampa(f, nel_volume), f.parent,
+        if f.name not in etichettati:
+            etichettati.add(f.name)
+            parti.append(f"#metadata(\"capitolo\") <{RIMANDI[f.name]}>")
+        md = leggi_per_la_stampa(f, nel_volume, cap.get("sezioni"))
+        # la regia e la cassetta nominano tutti, ma lì non si incontra nessuno
+        if indice is not None and not chi_si_incontra.CONSULTAZIONE.search(titolo):
+            if volume is not None:
+                m_ = re.match(r"^\s*([IVXLC]+)\s*·", titolo)
+                volume["capitolo"] = f"capitolo {m_.group(1)}" if m_ else f"capitolo «{titolo}»"
+            md, fatto = chi_si_incontra.arricchisci(md, f, indice, pg, volume=volume)
+            # quel che arriva da un altro master parla ancora di «DEF-4»
+            md = traduci_rimandi(md, f, nel_volume)
+            for riga in fatto:
+                print(f"  · {titolo[:40]}: {riga}", file=sys.stderr)
+        # `"apertura"` (ADR-0122, S1): l'introduzione del capitolo, scritta a
+        # parte perché il master letto per `sezioni` non ne ha una. Dopo il
+        # riquadro «Chi si incontra», così gli sta davanti
+        if cap.get("apertura"):
+            md = con_apertura(md, (base / cap["apertura"]).read_text(encoding="utf-8"))
+        # `"chiusura"`: i PX del capitolo e chi sale, in fondo (§2-quater, punto 5)
+        if cap.get("chiusura"):
+            md = con_chiusura(md, (base / cap["chiusura"]).read_text(encoding="utf-8"))
+        if cap.get("sezioni"):
+            md = fondi_contratto_e_scheda(md)
+        if volume is not None:
+            md = sigle_d_appendice(md)
+        corpo = md_to_typ(md, f.parent,
                           capolettera=bool(cap.get("capolettera", predefinito)))
         corpo = re.sub(r"\A\s*=\s[^\n]*\n", "", corpo)   # il titolo lo dà il manifest
+        if man.get("pagine_nei_rimandi"):
+            corpo = numera_rimandi(corpo, romani=bool(cap.get("rimandi_romani")))
         parti.append(corpo)
         parti.append("")
     if appendice:
         parti.append("#appendice-creature()")
+    if volume is not None and volume["mappe"] and indice is not None:
+        parti.append(appendice_mappe(volume["mappe"], indice, base))
     testo = "\n".join(parti)
     # L'indice analitico e' opt-in dal manifest: non tutti i volumi lo vogliono
     # (un teaser di due pagine con un indice analitico e' una presa in giro).
@@ -1098,22 +1356,137 @@ def sorgente(man: dict, base: Path, tutti: bool, carta: str = "avorio",
     return testo
 
 
-def compila(binario: str, typ: Path, pdf: Path) -> tuple[subprocess.CompletedProcess, bool]:
-    """Un `typst compile`, col ripiego sui tag PDF dichiarato dal chiamante.
+def appendice_mappe(mappe: dict, indice, base: Path) -> str:
+    """L'appendice delle mappe (ADR-0122): ogni mappa usata nel volume, intera
+    con la sua legenda, una per pagina, nell'ordine in cui il volume le usa."""
+    righe = []
+    for codice in mappe:
+        for alt, dove in indice.mappe.get(codice, []):
+            righe += [f"![{alt}]({os.path.relpath(dove, base)})", "", "<!-- nuova-pagina -->", ""]
+    while righe and righe[-1] in ("", "<!-- nuova-pagina -->"):
+        righe.pop()
+    corpo = md_to_typ("\n".join(righe), base, capolettera=False)
+    return "#capitolo-aperto(\"Appendice: le mappe\", none)\n" + corpo
+
+
+#: un titolo del sorgente Typst: «=== Testo» a inizio riga; i capitoli si aprono
+#: con `#capitolo-aperto(` e le schede PG con `#scheda(`: tutti e due aprono al livello 1
+_TITOLO_TYP = re.compile(r"^(=+)\s+(.*)$")
+_APRE_LIVELLO_1 = re.compile(r"^\s*#(?:capitolo-aperto|scheda)\(")
+
+
+def titoli_senza_salti(src: str) -> tuple[str, int]:
+    """Nessun salto di livello fra un titolo e il successivo (PDF/UA-1, 7.4.2-1).
+
+    I master saltano un livello in due casi noti: la tabella «Chi si incontra
+    in questo capitolo» (`###` subito sotto il titolo del capitolo, ADR-0107)
+    e qualche `####` sotto un `##`. Per un lettore di schermo la gerarchia è
+    rotta, e typst con `pdf_standards: ua-1` rifiuta di compilare. Qui il
+    titolo sale al livello giusto nell'albero dei tag, e l'etichetta
+    `<come-N>` dice al tema di disegnarlo come prima: la pagina stampata non
+    cambia. Un titolo che era sotto la profondità dell'indice (3) resta
+    fuori dall'indice. Restituisce il sorgente e quanti titoli ha spostato.
+    """
+    righe = src.split("\n")
+    etichettato = re.compile(r"<[\w-]+>\s*$")
+    # Dentro un capitolo annidato (ADR-0145) il primo livello dei titoli del
+    # master diventa la profondità 1, qualunque fosse (`=` o `==`): così due
+    # sezioni sorelle restano sorelle nei segnalibri. `cala[i]` è quanto
+    # scende ogni titolo del capitolo che comincia alla riga i.
+    cala: dict[int, int] = {}
+    annidato, inizio, minimo = False, None, None
+    for i, r in enumerate(righe + [ANNIDA]):
+        aperta = r.strip() == ANNIDA or bool(_APRE_LIVELLO_1.match(r))
+        if aperta or i == len(righe):
+            if annidato and inizio is not None and minimo:
+                cala[inizio] = minimo - 1
+            if r.strip() == ANNIDA:
+                annidato = True
+            inizio, minimo = i, None
+            continue
+        m = _TITOLO_TYP.match(r)
+        if m:
+            minimo = min(minimo or 99, len(m.group(1)))
+    # `prima`: la profondità dell'ultimo titolo; None prima del primo
+    prima, spostati, annidato, giu = None, 0, False, 0
+    for i, r in enumerate(righe):
+        if r.strip() == ANNIDA:
+            # da qui `=` è il livello 2: sotto il capitolo si riparte da 0
+            annidato, prima, giu = True, 0, cala.get(i, 0)
+            continue
+        if _APRE_LIVELLO_1.match(r):
+            prima, giu = (0 if annidato else 1), cala.get(i, 0)
+            continue
+        m = _TITOLO_TYP.match(r)
+        if not m:
+            continue
+        lvl, corpo = len(m.group(1)), m.group(2)
+        if etichettato.search(corpo):
+            prima = lvl
+            continue
+        nuovo = max(1, lvl - giu)
+        if prima is not None and nuovo > prima + 1:
+            nuovo = prima + 1
+        if nuovo != lvl:
+            # sotto la profondità dell'indice nel master: resta fuori
+            # dall'indice stampato, ma il segnalibro lo tiene
+            indice = "" if lvl <= 3 else ", outlined: false, bookmarked: true"
+            # dentro `[...]` un «1. » o un «- » a inizio riga è un elenco, e il
+            # numero sparirebbe dal titolo («7. Che cosa succede, in numeri»)
+            corpo = re.sub(r"^(\d+)\.(\s)", r"\1\\.\2", corpo)
+            corpo = re.sub(r"^([-+/])(\s)", r"\\\1\2", corpo)
+            righe[i] = f"#heading(depth: {nuovo}{indice})[{corpo}] <come-{lvl}>"
+            spostati += 1
+        prima = nuovo
+    return "\n".join(righe), spostati
+
+
+#: la regola che fa scendere i titoli del corpo sotto il capitolo che li contiene
+ANNIDA = "#set heading(offset: 1)"
+
+
+def titoli_annidati(src: str) -> str:
+    """I segnalibri seguono la gerarchia: capitolo, sezione, sottosezione.
+
+    Il capitolo apre con un titolo di livello 1 (`capitolo-aperto`); i titoli
+    dei master partono anche loro da `=`, e senza questa regola stavano allo
+    stesso livello del capitolo: segnalibri piatti, il difetto dichiarato in
+    ADR-0145. I PDF di Paizo (*Burnt Offerings*, 2007) e di Wizards (*Red
+    Hand of Doom*, 2006) annidano parte → sezione → sottosezione; PDF/UA-1
+    (ISO 14289-1, 7.4.2) chiede che i titoli dicano la struttura vera. Dopo il
+    primo capitolo, `offset: 1` fa di ogni `=` un livello 2 nell'albero dei
+    tag e nei segnalibri; il tema disegna per `depth`, e la pagina non cambia.
+    Il titolo del capitolo ha `level: 1` esplicito e non si sposta.
+    """
+    if ANNIDA in src:
+        return src
+    righe = src.split("\n")
+    for i, r in enumerate(righe):
+        if r.lstrip().startswith("#capitolo-aperto("):
+            righe.insert(i + 1, ANNIDA)
+            return "\n".join(righe)
+    return src
+
+
+def compila(motore: str, typ: Path, pdf: Path,
+            esito_completo: list | None = None) -> tuple[subprocess.CompletedProcess, bool]:
+    """Un `typst compile` (ADR-0116), col ripiego sui tag PDF dichiarato dal chiamante.
 
     Typst 0.15.1 ha un bug interno nella costruzione dell'albero dei tag PDF
     («internal error: parent group») su documenti con float dentro strutture
     annidate. I tag sono accessibilità, non impaginazione: se inciampa lì si
-    riprova senza — e lo si DICE, invece di consegnare un PDF diverso da quello
-    che il comando promette.
+    riprova senza, e lo si DICE, invece di consegnare un PDF diverso da quello
+    che il comando promette. `motore` è quello di `typst_motore.esigi()`:
+    lo decide lui, qui serve solo a dire che il controllo è già stato fatto.
     """
-    cmd = [binario, "compile", "--font-path", str(FONTS), "--root", str(ROOT),
-           "--package-path", str(PACCHETTI)]
-    esito = subprocess.run(cmd + [str(typ), str(pdf)], capture_output=True, text=True)
-    if esito.returncode != 0 and "internal error" in esito.stderr and "tags" in esito.stderr:
-        return subprocess.run(cmd + ["--no-pdf-tags", str(typ), str(pdf)],
-                              capture_output=True, text=True), True
-    return esito, False
+    # Solo i font del repo (scripts/fonts/ più quelli che typst porta con sé),
+    # come misura_stampa e varianti_stampa: emoji e simboli non cadono più su
+    # un font della macchina che compila (ADR-0130).
+    e = typst_motore.compila(typ, pdf, root=ROOT, font=FONTS, pacchetti=PACCHETTI,
+                             solo_font_del_repo=True, pdfua=True, pdfa=PDFA)
+    if esito_completo is not None:
+        esito_completo.append(e)
+    return subprocess.CompletedProcess([motore, "compile", str(typ)], 0 if e.ok else 1, "", e.errore), e.senza_tag
 
 
 def per_scheda(man: dict, base: Path, tutti: bool, binario: str, nome: str,
@@ -1134,7 +1507,7 @@ def per_scheda(man: dict, base: Path, tutti: bool, binario: str, nome: str,
     if not trovate:
         print("✗ --per-scheda: nessun capitolo «\"layout\": \"schede\"» nel manifest.\n"
               "  È la chiave che accende l'impaginazione a scheda — vedi "
-              "docs/guides/GUIDA-BOOKLET-E-PDF.md §1.2.", file=sys.stderr)
+              "docs/how-to/GUIDA-BOOKLET-E-PDF.md §1.2.", file=sys.stderr)
         return 2
 
     fuori.mkdir(exist_ok=True)
@@ -1178,28 +1551,34 @@ def main() -> int:
         return 2
     man = json.loads(mp.read_text(encoding="utf-8"))
     base = mp.parent
+    _etichette_per(mp)
 
     if args.list:
         for cap, t, f in capitoli(man, base, True):
-            marchio = "  [schede]" if cap.get("layout") == "schede" else ""
+            marchio = f"  [{cap['layout']}]" if cap.get("layout") in ("schede", "carte") else ""
             print(f"  {t}{marchio}  ←  {f.relative_to(ROOT) if ROOT in f.parents else f}")
         return 0
 
     # La regola di degradazione pulita sta in `binari.py` (ADR-0027): se manca,
     # dice come installarlo ed esce con 2 — prima di aprire qualunque file.
-    binario = binari.esigi(binari.TYPST)
+    binario = typst_motore.esigi()
 
     typ = base / f"{mp.stem.replace('.manifest', '')}.typ"
     pdf = base / f"{mp.stem.replace('.manifest', '')}-STAMPA.pdf"
     try:
         src = sorgente(man, base, args.all, args.carta,
                        args.formato or man.get("formato", "a4"))
-    except SchedaError as e:
+    except (SchedaError, carte_tavolo.CarteError) as e:
         print(f"✗ export_booklet_typst: {e}", file=sys.stderr)
         return 1
+    src, spostati = titoli_senza_salti(titoli_annidati(src))
+    if spostati:
+        print(f"  · {spostati} titoli saltavano un livello: nell'albero dei tag salgono "
+              "di livello, sulla pagina restano uguali (PDF/UA-1)", file=sys.stderr)
     typ.write_text(src, encoding="utf-8")
 
-    esito, degradato = compila(binario, typ, pdf)
+    completo: list = []
+    esito, degradato = compila(binario, typ, pdf, completo)
 
     if not args.keep_typ:
         typ.unlink(missing_ok=True)
@@ -1214,9 +1593,19 @@ def main() -> int:
               "    di typst — la riga di fallback si toglie il giorno che compila.",
               file=sys.stderr)
 
+    if completo and completo[0].ok and not completo[0].pdfua:
+        print(f"  ⚠ non è PDF/UA-1 (ISO 14289-1): {completo[0].motivo_pdfua}\n"
+              "    Il volume è completo; un lettore di schermo lo legge peggio. Il motivo\n"
+              "    sta nel master (titolo che salta un livello, immagine senza testo\n"
+              "    alternativo): vedi docs/how-to/GUIDA-BOOKLET-E-PDF.md.", file=sys.stderr)
+    if completo and completo[0].ok and completo[0].motivo_pdfa:
+        print(f"  ⚠ non è PDF/A ({PDFA.upper()}): {completo[0].motivo_pdfa}", file=sys.stderr)
     n = len(capitoli(man, base, args.all))
+    ua = ", PDF/UA-1" if completo and completo[0].pdfua else ""
+    if completo and completo[0].pdfa:
+        ua += f", PDF/{completo[0].pdfa[:-1].upper()}{completo[0].pdfa[-1]}"
     print(f"✓ export_booklet_typst: {n} capitoli → {pdf.relative_to(ROOT)} "
-          f"({pdf.stat().st_size // 1024} KB, un volume con segnalibri)")
+          f"({pdf.stat().st_size // 1024} KB, un volume con segnalibri{ua})")
 
     if args.per_scheda:
         return per_scheda(man, base, args.all, binario,

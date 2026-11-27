@@ -4,7 +4,7 @@
 > (Karruk, Saarvith, Zalkatar, Xal'thor, Zarim, Emissario, Azarr Kul,
 > Tiamat Avatar, Il Collezionista, Ondata Giganti, Warpriest élite,
 > Hobgoblin Captain, Ghost Lion) sono **accettate come canone DM**.
-> Flag: `[ACCEPTED — DM-canon 2026-05-05]`. I trigger scheduling sono
+> Flag: `[CANONE — DM 2026-05-05]`. I trigger scheduling sono
 > vincolanti per l'Arco-09 salvo override esplicito in session log.
 
 > **Versione**: v2.1 (AP-canon March Clock Day 1→42, sync point Day 19 =
@@ -52,17 +52,17 @@ Adattamento AP RHoD → Channath Vale/Elsir Vale 1372 DR.
 | 12 | Drellin's Ferry assalto | **Drellin eq.** | Villaggio assaltato | ✅ |
 | 13 | Drellin's Ferry cade | idem | Villaggio bruciato | ✅ |
 | **19** | **Terrelton cade** | **Terrelton eq. (Channath Vale city)** | **SYNC POINT: Battaglia di Hammerfist si conclude simultaneamente** | 🎯 **NOW** |
-| 25 | Marth Fen sweep | **Blackfens / Rhest area** | Razorfiend nest active; Saarvith consolidates | ⏳ |
+| 25 | Marth Fen sweep | **Lhespenbog / Lhesper area** | Razorfiend nest active; Saarvith consolidates | ⏳ |
 | 30 | Vanguard raids continue | Raid minori Channath settentrionale | Distaccamenti locali | ⏳ |
 | 33 | Elsir Crossroads | **Channath Crocevia** | Horde si riunisce | ⏳ |
 | 35 | Last supply consolidation | Witchcross fall | Druidi caduti; bosco bruciato — resistenza druidica +1 giorno | ⏳ |
 | 35-37 | **SOSTA SONJAK — Aberrazioni + Logistica** | Rovine Witchcross | Esperimenti fungini (Servitori Spora, Sporeborn, Guardiani Neri); attesa convogli rifornimento dalle Wyrmbones (35-40 t/gg per 11.000 truppe) | ⏳ |
-| 40 | Advance scouts at Brindol | Scout drow a Rethmar (Notte dei Drow) | Fase 0 inizia | ⏳ |
-| **42** | **Horde arrives Brindol & encamps** | **Horde arriva Rethmar & encamps** | **Rethmar assault Fase 1** | ⏳ |
+| 40 | Advance scouts at Rethmar | Scout drow a Rethmar (Notte dei Drow) | Fase 0 inizia | ⏳ |
+| **42** | **Horde arrives Rethmar & encamps** | **Horde arriva Rethmar & encamps** | **Rethmar assault Fase 1** | ⏳ |
 
 **Window PG per Arc-09**: **Day 20-41** (22 giorni per: Hella Sacred
 Forest, Tordek Dauth Tournament, Artemis Tower, Thorik Rethmar letter,
-P2 Rhest, P3 Ghostlord, eventuali quest secondarie).
+P2 Lhesper, P3 Ghostlord, eventuali quest secondarie).
 
 ---
 
@@ -80,7 +80,7 @@ Numeri baseline partendo da **9.940 iniziali** (vedi
 | 15-17 | Marcia + scontri con partigiani | −80 | — | 9.720 |
 | **19** | **Terrelton assalto + Hammerfist catastrofe simultanea** | −250 (Terrelton) **−900 (Hammerfist vanguard: ~500 morti + ~400 dispersi in rotta, non si ricongiungono — piano ARC-08 D11, scenario di vittoria default)** | +40 (schiavi armati) | **8.610** |
 | 20-24 | Marcia post-Hammerfist, morale −2 | −120 | — | 8.490 |
-| 25 | Blackfens sweep (Razorfiend kills own) | −60 | — | 8.430 |
+| 25 | Lhespenbog sweep (Razorfiend kills own) | −60 | — | 8.430 |
 | 27-32 | Marcia Channath centrale, attrition | −130 | +200 (Compagnia del Teschio Nero si unisce finalmente) | 8.500 |
 | 33-35 | Elsir Crossroads + Witchcross (resistenza druidica) | −110 | — | 8.390 |
 | 35-37 | **Sosta Sonjak** (aberrazioni + rifornimenti) | −20 (attrito sosta) | +83 aberrazioni (Sonjak) | **8.453** |
@@ -138,22 +138,22 @@ logistico, +rischio igiene/cibo).
 |---|---|---|---|
 | **Day 19** (Hammerfist end) | Fauci di Palude (drago CR 15) — **ramo condizionale, non ancora deciso** (D10): default = fugge gravemente ferito, può tornare; alternativa = ucciso dai PG | Hammerfist | Default: resta nel pool draghi ma assente da Rethmar salvo ritorno narrativo. Alternativa: rimosso dall'orda, −1 drago |
 | **Day 20-22** | Wyrmlord Karruk (CR 10) si palesa pubblicamente | Channath settentrionale | Voci arrivano a Rethmar: "un nuovo comandante guida la Mano Rossa" |
-| **Day 22-25** | Saarvith + Regiarix (CR 11 + dragon 10) attivi | Rhest / Blackfens | Window PG per P2 Rhest |
-| **Day 24-26** | Zalkatar + Ozyrrandion (CR 13 + dragon 14) attivi | Torre Invisibile | Window PG per P2A Torre |
 | **Day 25-27** | Ghost Lion Spettrali (CR 8, ~6-12) | Ghostlord pride, Thornwaste | Prima apparizione se P3 Ghostlord non agganciato |
-| **Day 26-30** | Xal'thor (CR 14) + Zarim (CR 12) | Dauth (Torneo P2B) | **Fixed**: Day 2 torneo = Zarim; Day 3 = Xal'thor (invasione) |
+| **Day 25-32** | Saarvith + Regiarix (CR 11 + dragon 10) attivi | Lhesper / Lhespenbog | Window PG per P2 Lhesper |
 | **Day 28-32** | Emissario Red Hand (CR 12) | Ghostlord lair | **Conditional**: parley branch — se PG non intervengono, Ghostlord firma alleanza → +2.400 non-morti a Fase 2 |
+| **Day 28-35** | Zalkatar + Ozyrrandion (CR 13 + dragon 14) attivi | Torre Invisibile | Window PG per P2A Torre |
+| **Day 30-32** | Xal'thor (CR 14) + Zarim (CR 12) | Dauth (Torneo P2B) | **Fixed**: Day 2 torneo (Day 31) = Zarim; Day 3 (Day 32) = Xal'thor (invasione) |
 | **Day 30-35** | Il Collezionista (CR 18) — prime tracce | Rethmar shadow / nobiltà | **Conditional shadow branch**: se Valerius hook attivo, Collezionista muove pedine via socialità |
 | **Day 35-38** | Warpriest élite di Tiamat (CR 11, ~6) radunati | Fane di Tiamat | Ritual Clock: **+1 → `10/18`** se sacrificio di massa riuscito |
 | **Day 38-39** | Hobgoblin Captains (CR 8, ~24) coordinano assalto | Avanguardia Rethmar | Promozione visibile: "ogni compagnia ha un capitano draconico" |
 | **Day 42 (Fase 1)** | Abithriax (CR 15) + Wyrmlord Karruk (CR 10) + Ondata Giganti (EL 15, wave ×1) | Rethmar mura | Assalto inaugurale Fase 1 |
 | **Day 42 (Fase 2)** | Warpriest élite CR 11 (×6) + non-morti Ghostlord (se ostile) | Circolo Mythal / statue | Ritualisti tentano di rompere il Mythal |
-| **Day 42 (Fase 3)** | Azarr Kul (CR 15) + Tyrgarun (drago Old CR 18, inchiodato a terra dal Mythal) + Ondata Giganti wave ×2 | Rethmar breccia | Boss-fight principale |
+| **Day 42 (Fase 3)** | Azarr Kul (CR 15) + Tyrgarun (drago molto vecchio CR 19, inchiodato a terra dal Mythal) + Ondata Giganti wave ×2 | Rethmar breccia | Boss-fight principale |
 | **Ritual Clock `/18 = 18`** | **Avatar di Tiamat (CR 17)** evocato | Sopra Rethmar | **Climax conditional**: solo se Ritual Clock completa |
 | **Ritual Clock `/18 ≥ 15` + Collezionista alleato** | Il Collezionista (CR 18) interviene | Rethmar interno (politica) | **Climax shadow**: non encounter ordinario — social/stealth |
 
 **Regola di scheduling**: il DM può anticipare/ritardare di ±2 giorni
-per ragioni di pacing, ma i *fixed* (Day 26-30 Dauth, Day 42 Abithriax,
+per ragioni di pacing, ma i *fixed* (Day 30-32 Dauth, Day 42 Abithriax,
 Day 42 Azarr Kul) sono sync-canon e non vanno spostati senza
 aggiornare anche `campaign/state.md` §2.
 
@@ -177,7 +177,7 @@ Ogni sessione Arc-09, aggiornare (in ordine):
 1. **March Clock**: day attuale (quale waypoint è il successivo?).
 2. **Ritual Clock**: `/18` — avanzato questa sessione? perché?
 3. **Orda residua**: applicare perdite da eventi di sessione.
-4. **PG sabotaggi**: Rhest? Tower? Ghostlord? Loxo/Centaur?
+4. **PG sabotaggi**: Lhesper? Tower? Ghostlord? Loxo/Centaur?
 5. **Alleanze**: nuovi contributi difensori (Starsong, Dauth, Druidi,
    Ghostlord redento).
 6. **Rifugiati**: nuove ondate arrivate? infiltrati rivelati?
@@ -191,7 +191,7 @@ Ogni sessione Arc-09, aggiornare (in ordine):
 
 File Arc-09 che consumano questo ledger:
 
-- `Arco-Post-Hammerfist-P2-RHEST-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md`
+- `Arco-Post-Hammerfist-P2-LHESPER-FASE4-SAARVITH-REGIARIX-BOSS-CR13.md`
   → −1 drago, −2 Razorfiend, −200 unità se PG vincono.
 - `Arco-Post-Hammerfist-P2A-Torre-PARTE4-FINALE-Boss-Zalkatar.md`
   → −1 drago, −1 Razorfiend, −150 unità se PG vincono.

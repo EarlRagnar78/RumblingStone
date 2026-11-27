@@ -1,0 +1,7 @@
+confronti 19 scarti 6
+('ARC07-DEF-1-PIANO-TERRA-TERROS.md', 162, 'terros', 'pf', 172, [345], "delle volte, e Terros si arrocca sull'Altare dai 172 pf. Lo scontro si")
+('ARC07-DEF-1-PIANO-TERRA-TERROS.md', 210, 'xorn', 'pf', 345, [52, 181], '`Artemis, Tordek, Thorik: dalla scheda · Terros −1` · Xorn e Fauci di Diamante +0 · Sentinella +2 — **Terros 345 pf**')
+('ARC07-DEF-1-PIANO-TERRA-TERROS.md', 210, 'sentinella', 'pf', 345, [160], '`Artemis, Tordek, Thorik: dalla scheda · Terros −1` · Xorn e Fauci di Diamante +0 · Sentinella +2 — **Terros 345 pf**')
+('ARC07-DEF-1-PIANO-TERRA-TERROS.md', 1966, 'terros', 'pf', 391, [345], '> | Party arriva **già al 14°** o straripante di risorse | Terros **avanzato a 34 DV** (391 pf, attacchi +36, CD +1) e lo Scudo di Geodi parte **già a')
+('ARC07-DEF-1-PIANO-TERRA-TERROS.md', 2025, 'terros', 'pf', 172, [345], '| **Parlano con Terros invece di combattere** | Terros è INT 10 e parla Terran: ascolta **una** frase. Ma è un **guardiano con un voto** («la Forza no')
+('ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md', 1956, 'hobgoblin', 'pf', 6, [30], "| **Grask, l'araldo** `[CANONE — DM 2026-09-26]` | hobgoblin di quindici anni, magro. Il corno sta nella custodia col glifo, e la custodia è **incaten")

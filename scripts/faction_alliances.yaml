@@ -68,7 +68,7 @@ factions:
   - id: hammerfist-hero
     label: "Eroi di Hammerfist"
     baseline_env: [ mountain, any ]
-    leader: "Borin Ferropugno"
+    leader: "Borin Giuraferro"
   - id: aberration
     label: "Aberrazioni (illithid, grell, beholder, mind flayer)"
     baseline_env: [ underdark, dungeon ]
@@ -193,7 +193,7 @@ rival_subfactions:
 # ─────────────────────────────────────────────────────────────
 wild_encounter_tables:
   swamp:
-    narrative: "Cannath Vale, paludi di Blackfens. Razorfiend feriti, predatori
+    narrative: "Cannath Vale, paludi del Lhespenbog. Razorfiend feriti, predatori
       opportunisti."
     monsters:
       - {

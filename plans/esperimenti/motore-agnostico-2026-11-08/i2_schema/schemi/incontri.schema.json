@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "incontri.schema.json",
+  "title": "incontri.livello",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "fonte",
+    "metodo"
+  ],
+  "properties": {
+    "fonte": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fonte_difficolta": {
+      "type": "string"
+    },
+    "metodo": {
+      "enum": [
+        "potenze",
+        "somma_px"
+      ]
+    },
+    "raddoppio": {
+      "type": "integer",
+      "minimum": 2
+    },
+    "px_per_gs": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^(1/[2-8]|[1-9][0-9]?)$"
+      },
+      "additionalProperties": {
+        "type": "integer",
+        "minimum": 1
+      }
+    },
+    "difficolta": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "integer"
+      },
+      "minProperties": 1
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "metodo": {
+            "const": "potenze"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "raddoppio"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "metodo": {
+            "const": "somma_px"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "px_per_gs"
+        ]
+      }
+    }
+  ]
+}

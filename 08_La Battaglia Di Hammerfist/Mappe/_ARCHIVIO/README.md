@@ -39,5 +39,5 @@ bisogno.
 - **I riferimenti puntano a `_ARCHIVIO/…`.** L'unico che esisteva —
   `Hammerfist-L2-REVISED-Ultra-Clear.md` §Round-per-round — è stato riscritto.
 - **I log append-only restano intatti** (`plans/CHANGELOG.md`,
-  `docs/guides/LEGENDA-FUNZIONALE-SPEC.md` §6.2 nella parte di censimento):
+  `docs/reference/LEGENDA-FUNZIONALE-SPEC.md` §6.2 nella parte di censimento):
   sono record storici e dicono il vero su quando furono scritti.

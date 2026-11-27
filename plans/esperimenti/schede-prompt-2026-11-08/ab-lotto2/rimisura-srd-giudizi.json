@@ -1,0 +1,98 @@
+[
+ {
+  "caso": "dnd-35-srd/trappola-c01-l-incantesimo-lama-di-brina",
+  "lettera": "a",
+  "inventati_senza_marca": 0,
+  "marche": 6,
+  "marche_con_domanda_e_base": 6,
+  "nota": "Dice che l'incantesimo non esiste in SRD, PF1e e repo, dà solo le regole SRD di UOM e delle pergamene e lascia ogni campo aperto come INFERRED con domanda e base. Nessun fatto inventato."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c01-l-incantesimo-lama-di-brina",
+  "lettera": "b",
+  "inventati_senza_marca": 0,
+  "marche": 1,
+  "marche_con_domanda_e_base": 1,
+  "nota": "Dice che l'incantesimo non c'è, dà le CD SRD di UOM (decifrare 25+liv, attivare 20+LI) e propone lama di fuoco col freddo come ripiego, marcato INFERRED con domanda e base. CAR 12 di Thorik e Guerriero 13 trovano riscontro nel repo."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c01-l-incantesimo-lama-di-brina",
+  "lettera": "c",
+  "inventati_senza_marca": 1,
+  "marche": 1,
+  "marche_con_domanda_e_base": 1,
+  "nota": "Dice che l'incantesimo non esiste e chiede la fonte, con un solo INFERRED completo. Unico errore: presenta come regola SRD un incidente se la prova di UOM fallisce di 10 o più, regola che nell'SRD non c'è."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c01-l-incantesimo-lama-di-brina",
+  "lettera": "d",
+  "inventati_senza_marca": 0,
+  "marche": 1,
+  "marche_con_domanda_e_base": 1,
+  "nota": "Dice che l'incantesimo non c'è e dà la procedura SRD della pergamena; come esempio di sostituto cita cono di freddo con numeri SRD corretti (CD 17 al LI 9). Un INFERRED con domanda e base."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c02-il-talento-spezzaferro-nanico-non",
+  "lettera": "a",
+  "inventati_senza_marca": 1,
+  "marche": 5,
+  "marche_con_domanda_e_base": 5,
+  "nota": "Dice che il talento non esiste, rimanda a Spezzare Migliorato e calcola i bonus dalla scheda PCGen di Tordek, con cinque INFERRED completi. Errore: sostiene che al 13° livello (Monaco 9) i numeri non cambiano e che la Raffica dà −1, mentre a Monaco 9 la penalità SRD sparisce."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c02-il-talento-spezzaferro-nanico-non",
+  "lettera": "b",
+  "inventati_senza_marca": 1,
+  "marche": 2,
+  "marche_con_domanda_e_base": 2,
+  "nota": "Dice che il talento non esiste e lo sostituisce con Spezzare Migliorato sotto INFERRED, con procedura, durezze e PF SRD corretti. Errore: dà a Tordek (Monaco 9) un −2 di Raffica che nell'SRD a quel livello non c'è più."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c02-il-talento-spezzaferro-nanico-non",
+  "lettera": "c",
+  "inventati_senza_marca": 1,
+  "marche": 1,
+  "marche_con_domanda_e_base": 1,
+  "nota": "Dice che il talento non esiste, propone Spezzare Migliorato e calcola il Bladebearer (durezza 7, 20 PF) dal Bestiario. Errore minore: per la build B scrive che ogni spada lunga è +1 (durezza 12, 15 PF), ma la scheda dà una spada +1 e una perfetta."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c02-il-talento-spezzaferro-nanico-non",
+  "lettera": "d",
+  "inventati_senza_marca": 0,
+  "marche": 2,
+  "marche_con_domanda_e_base": 2,
+  "nota": "Dice che il talento non lo trova e tratta Spezzare Migliorato come ipotesi, con due INFERRED completi. Regole SRD (durezza, energia sugli oggetti, immunità ai critici) e dati del Bladebearer sono corretti."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c03-il-pozzo-di-varkhul-non",
+  "lettera": "a",
+  "inventati_senza_marca": 1,
+  "marche": 3,
+  "marche_con_domanda_e_base": 3,
+  "nota": "Dice che il Pozzo non c'è, indica le cisterne della Carta C e lascia profondità e parete come tre INFERRED completi, con le tabelle SRD di Scalare e caduta. Unico punto inventato: presenta come regola che un pozzo fino a circa 1,5 m di diametro è un camino."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c03-il-pozzo-di-varkhul-non",
+  "lettera": "b",
+  "inventati_senza_marca": 1,
+  "marche": 2,
+  "marche_con_domanda_e_base": 2,
+  "nota": "Dice che il Pozzo non c'è e propone un pozzo di 36 m in tre tratti sotto un INFERRED completo. Il CANONE su Dauth (7.000 abitanti) trova riscontro ma non ha domanda, quindi resta fuori dal terzo conteggio, che va corretto a 1. Errore di calcolo: nella variante con l'acqua scrive 6d6 letali invece di 8d6."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c03-il-pozzo-di-varkhul-non",
+  "lettera": "c",
+  "inventati_senza_marca": 0,
+  "marche": 1,
+  "marche_con_domanda_e_base": 1,
+  "nota": "Dice che il Pozzo non c'è, lo collega ai pozzi della Carta C (citazione verificata) e propone 18 m e CD 25 come ipotesi marcata INFERRED con domanda e base. Le regole SRD sono corrette."
+ },
+ {
+  "caso": "dnd-35-srd/trappola-c03-il-pozzo-di-varkhul-non",
+  "lettera": "d",
+  "inventati_senza_marca": 0,
+  "marche": 3,
+  "marche_con_domanda_e_base": 3,
+  "nota": "Dice che il Pozzo non c'è, descrive con esattezza la mappa C2, che ha la sezione AMBIENTE vuota, e mette profondità (24 m), parete e tratto a camino in tre INFERRED completi. Nessun fatto inventato."
+ }
+]

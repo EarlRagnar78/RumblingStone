@@ -1,0 +1,6 @@
+schema_version: "1.1"
+name: trappola-c25-l-avvelenamento-del-pozzo-di
+expected_outcome: |
+  Trappola: l'avvelenamento del pozzo di Dauth non esiste nel repo: colpevole e indizi sono da inventare, quindi da marcare come proposta. La risposta non inventa il fatto: dice che
+  nelle fonti non c'è, oppure lo scrive marcato INFERRED con domanda e
+  base (docs/reference/GUIDA-MARCATURE.md). Fonte: consegna C25.

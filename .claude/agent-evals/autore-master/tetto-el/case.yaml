@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: tetto-el
+expected_outcome: |
+  Tetto EL ≤ APL + 4 = 17 (npc-villain-boosting): un EL 19 lo supera; lo dice.

@@ -1,0 +1,1100 @@
+{
+  "schema_version": "1.0",
+  "title": "CAMPO DROW 2 - FORWARD BASE (98m × 80m, Grid 65×53, Scala 1.5m/sq)",
+  "scale_m_per_square": 1.5,
+  "units_in": "squares",
+  "map_size": [
+    65,
+    53
+  ],
+  "base_terrain": "🟩",
+  "north": "N",
+  "regions": [
+    {
+      "terrain": "⬜",
+      "rect": [
+        30,
+        31,
+        2,
+        1
+      ],
+      "label": "Pavimento lavorato"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        33,
+        31,
+        2,
+        1
+      ],
+      "label": "Pavimento lavorato"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        30,
+        32,
+        1,
+        1
+      ],
+      "label": "Pavimento lavorato"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        32,
+        32,
+        1,
+        1
+      ],
+      "label": "Pavimento lavorato"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        34,
+        32,
+        1,
+        1
+      ],
+      "label": "Pavimento lavorato"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        31,
+        33,
+        1,
+        1
+      ],
+      "label": "Pavimento lavorato"
+    },
+    {
+      "terrain": "⬜",
+      "rect": [
+        33,
+        33,
+        1,
+        1
+      ],
+      "label": "Pavimento lavorato"
+    },
+    {
+      "terrain": "🌲",
+      "rect": [
+        0,
+        0,
+        31,
+        4
+      ],
+      "label": "Foresta densa (Furtività +5, copertura)"
+    },
+    {
+      "terrain": "🌲",
+      "rect": [
+        34,
+        0,
+        31,
+        4
+      ],
+      "label": "Foresta densa (Furtività +5, copertura)"
+    },
+    {
+      "terrain": "🌲",
+      "rect": [
+        0,
+        4,
+        3,
+        49
+      ],
+      "label": "Foresta densa (Furtività +5, copertura)"
+    },
+    {
+      "terrain": "🌲",
+      "rect": [
+        62,
+        4,
+        3,
+        49
+      ],
+      "label": "Foresta densa (Furtività +5, copertura)"
+    },
+    {
+      "terrain": "🌲",
+      "rect": [
+        3,
+        49,
+        28,
+        4
+      ],
+      "label": "Foresta densa (Furtività +5, copertura)"
+    },
+    {
+      "terrain": "🌲",
+      "rect": [
+        34,
+        49,
+        28,
+        4
+      ],
+      "label": "Foresta densa (Furtività +5, copertura)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        14,
+        11,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        18,
+        11,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        22,
+        11,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        26,
+        11,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        37,
+        11,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        41,
+        11,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        45,
+        11,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        49,
+        11,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        14,
+        16,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        18,
+        16,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        22,
+        16,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        26,
+        16,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        37,
+        16,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        41,
+        16,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        45,
+        16,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        49,
+        16,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        14,
+        21,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        18,
+        21,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        22,
+        21,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        26,
+        21,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        41,
+        21,
+        2,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        14,
+        30,
+        3,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        20,
+        30,
+        3,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        29,
+        30,
+        3,
+        1
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        33,
+        30,
+        3,
+        1
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        29,
+        31,
+        1,
+        4
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        35,
+        31,
+        1,
+        4
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        20,
+        34,
+        3,
+        2
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🎪",
+      "rect": [
+        30,
+        34,
+        5,
+        1
+      ],
+      "label": "Telo di tenda (parete o tenda intera vista dall'alto: blocca la vista, si taglia)"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        12,
+        7,
+        19,
+        1
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        34,
+        7,
+        19,
+        1
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        10,
+        9,
+        1,
+        36
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        54,
+        9,
+        1,
+        36
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        12,
+        46,
+        19,
+        1
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🏰",
+      "rect": [
+        34,
+        46,
+        19,
+        1
+      ],
+      "label": "Muro / roccia solida"
+    },
+    {
+      "terrain": "🟪",
+      "rect": [
+        31,
+        32,
+        1,
+        1
+      ],
+      "label": "Pilastro / mithral"
+    },
+    {
+      "terrain": "🟪",
+      "rect": [
+        33,
+        32,
+        1,
+        1
+      ],
+      "label": "Pilastro / mithral"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        31,
+        0,
+        3,
+        7
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        12,
+        8,
+        18,
+        2
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        31,
+        8,
+        3,
+        22
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        35,
+        8,
+        18,
+        2
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        11,
+        9,
+        1,
+        36
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        53,
+        9,
+        1,
+        36
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        12,
+        10,
+        1,
+        10
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        52,
+        10,
+        1,
+        24
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        12,
+        21,
+        1,
+        25
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        13,
+        25,
+        18,
+        3
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        34,
+        25,
+        18,
+        3
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        26,
+        28,
+        5,
+        2
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        34,
+        28,
+        5,
+        2
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        26,
+        30,
+        3,
+        7
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        36,
+        30,
+        3,
+        7
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        41,
+        31,
+        3,
+        3
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        29,
+        35,
+        7,
+        2
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        52,
+        35,
+        1,
+        11
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        31,
+        37,
+        3,
+        9
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        45,
+        37,
+        6,
+        1
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        44,
+        38,
+        2,
+        2
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        48,
+        38,
+        3,
+        2
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        45,
+        40,
+        4,
+        1
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        46,
+        41,
+        3,
+        1
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        13,
+        44,
+        17,
+        2
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        35,
+        44,
+        17,
+        2
+      ],
+      "label": "Terra battuta / sentiero"
+    },
+    {
+      "terrain": "🟫",
+      "rect": [
+        31,
+        47,
+        3,
+        6
+      ],
+      "label": "Terra battuta / sentiero"
+    }
+  ],
+  "structures": [
+    {
+      "type": "⛓",
+      "rect": [
+        40,
+        30,
+        5,
+        1
+      ]
+    },
+    {
+      "type": "⛓",
+      "at": [
+        40,
+        31
+      ]
+    },
+    {
+      "type": "⛓",
+      "rect": [
+        44,
+        31,
+        1,
+        4
+      ]
+    },
+    {
+      "type": "⛓",
+      "rect": [
+        40,
+        33,
+        1,
+        2
+      ]
+    },
+    {
+      "type": "⛓",
+      "rect": [
+        41,
+        34,
+        3,
+        1
+      ]
+    },
+    {
+      "type": "💎",
+      "at": [
+        34,
+        33
+      ]
+    },
+    {
+      "type": "🗼",
+      "rect": [
+        10,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🗼",
+      "rect": [
+        10,
+        45,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🗼",
+      "rect": [
+        36,
+        20,
+        3,
+        3
+      ]
+    },
+    {
+      "type": "🗼",
+      "rect": [
+        53,
+        7,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🗼",
+      "rect": [
+        53,
+        45,
+        2,
+        2
+      ]
+    },
+    {
+      "type": "🚪",
+      "rect": [
+        31,
+        7,
+        3,
+        1
+      ]
+    },
+    {
+      "type": "🚪",
+      "rect": [
+        31,
+        46,
+        3,
+        1
+      ]
+    },
+    {
+      "type": "🚪",
+      "at": [
+        32,
+        30
+      ]
+    },
+    {
+      "type": "🛏",
+      "at": [
+        30,
+        33
+      ]
+    },
+    {
+      "type": "🛢",
+      "at": [
+        17,
+        32
+      ]
+    },
+    {
+      "type": "🥅",
+      "at": [
+        40,
+        32
+      ]
+    },
+    {
+      "type": "🦴",
+      "at": [
+        45,
+        41
+      ]
+    },
+    {
+      "type": "🪑",
+      "at": [
+        32,
+        33
+      ]
+    },
+    {
+      "type": "🪨",
+      "rect": [
+        44,
+        36,
+        8,
+        1
+      ]
+    },
+    {
+      "type": "🪨",
+      "at": [
+        44,
+        37
+      ]
+    },
+    {
+      "type": "🪨",
+      "rect": [
+        51,
+        37,
+        1,
+        6
+      ]
+    },
+    {
+      "type": "🪨",
+      "rect": [
+        44,
+        40,
+        1,
+        3
+      ]
+    },
+    {
+      "type": "🪨",
+      "rect": [
+        45,
+        42,
+        6,
+        1
+      ]
+    }
+  ],
+  "hazards": [
+    {
+      "type": "🔥",
+      "at": [
+        15,
+        35
+      ]
+    }
+  ],
+  "units": [
+    {
+      "token": "⚫",
+      "at": [
+        32,
+        31
+      ],
+      "name": "Boss / comandante"
+    },
+    {
+      "token": "🔴",
+      "at": [
+        12,
+        20
+      ],
+      "name": "Nemico standard"
+    },
+    {
+      "token": "🔴",
+      "area": {
+        "rect": [
+          30,
+          8,
+          1,
+          2
+        ]
+      },
+      "quantity": 2,
+      "name": "Nemico standard"
+    },
+    {
+      "token": "🔴",
+      "area": {
+        "rect": [
+          30,
+          44,
+          1,
+          2
+        ]
+      },
+      "quantity": 2,
+      "name": "Nemico standard"
+    },
+    {
+      "token": "🔴",
+      "area": {
+        "rect": [
+          34,
+          8,
+          1,
+          2
+        ]
+      },
+      "quantity": 2,
+      "name": "Nemico standard"
+    },
+    {
+      "token": "🔴",
+      "area": {
+        "rect": [
+          34,
+          44,
+          1,
+          2
+        ]
+      },
+      "quantity": 2,
+      "name": "Nemico standard"
+    },
+    {
+      "token": "🔴",
+      "at": [
+        52,
+        34
+      ],
+      "name": "Nemico standard"
+    },
+    {
+      "token": "🟢",
+      "area": {
+        "rect": [
+          46,
+          38,
+          2,
+          2
+        ]
+      },
+      "quantity": 4,
+      "name": "Creatura evocata / bestia"
+    },
+    {
+      "token": "🟢",
+      "area": {
+        "rect": [
+          49,
+          40,
+          2,
+          2
+        ]
+      },
+      "quantity": 4,
+      "name": "Creatura evocata / bestia"
+    }
+  ],
+  "notes": [
+    "Contratto ricavato il 2026-11-09 dalla griglia di `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/SUPPLEMENTO-P1C-MAPPE-CAMPI-DROW-COMPLETO.md` (mappa 2) con `import_ultraclear.py`. Griglia e contratto restano identici: lo controlla `scripts/tests/test_contratti_mappe.py`. Chi cambia la mappa cambia questo file e rigenera la griglia con `compile_map_json.py`."
+  ]
+}

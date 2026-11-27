@@ -38,9 +38,15 @@ $DRY_RUN && warn "DRY RUN mode"
 source "${SCRIPT_DIR}/agents.conf"
 
 # Discover all skills (any skills/* with a SKILL.md)
+# Le skill di un sistema né attivo né di rinforzo in sistemi.toml si saltano
+# (ADR-0111, L6, D5), come in build-skills.sh.
+ESCLUSE=" $("${PYTHON_BIN:-python3}" "${SCRIPT_DIR}/sistemi.py" --skill-escluse | tr '\n' ' ') "
 declare -a SKILL_NAMES=()
 for d in "${REPO_ROOT}/skills"/*/; do
-  [[ -f "${d}SKILL.md" ]] && SKILL_NAMES+=("$(basename "${d%/}")")
+  [[ -f "${d}SKILL.md" ]] || continue
+  n="$(basename "${d%/}")"
+  [[ "${ESCLUSE}" == *" ${n} "* ]] && continue
+  SKILL_NAMES+=("${n}")
 done
 
 echo ""

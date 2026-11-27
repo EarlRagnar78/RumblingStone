@@ -1,0 +1,50 @@
+# sistemi/d20/dati/taglie.toml — taglia, spazio e portata (ADR-0128)
+#
+# La tabella «Creature Size and Scale» dell'SRD 3.5 (d20srd.org, Combat →
+# Movement, Position, and Distance → Big and Little Creatures in Combat),
+# uguale nel PRD di PF1e (Combat → Big and Little Creatures in Combat).
+# 5 ft. = 1,5 m = un quadretto. Lo spazio è il lato del quadrato occupato.
+# Portata «alta»: bipedi e chi sta eretto; «lunga»: quadrupedi e chi sta steso.
+# Le creature fino a Minuscola non minacciano i quadretti accanto: per
+# attaccare entrano nel quadretto del bersaglio (portata 0).
+
+# l'ordine è quello delle taglie, dalla più piccola
+ordine = ["Piccolissima", "Minuta", "Minuscola", "Piccola", "Media", "Grande", "Enorme", "Mastodontica", "Colossale"]
+
+[taglie]
+"Piccolissima" = { spazio = 0.15, alta = 0.0, lunga = 0.0, srd = "Fine" }
+"Minuta" = { spazio = 0.3, alta = 0.0, lunga = 0.0, srd = "Diminutive" }
+"Minuscola" = { spazio = 0.75, alta = 0.0, lunga = 0.0, srd = "Tiny" }
+"Piccola" = { spazio = 1.5, alta = 1.5, lunga = 1.5, srd = "Small" }
+"Media" = { spazio = 1.5, alta = 1.5, lunga = 1.5, srd = "Medium" }
+"Grande" = { spazio = 3.0, alta = 3.0, lunga = 1.5, srd = "Large" }
+"Enorme" = { spazio = 4.5, alta = 4.5, lunga = 3.0, srd = "Huge" }
+"Mastodontica" = { spazio = 6.0, alta = 6.0, lunga = 4.5, srd = "Gargantuan" }
+"Colossale" = { spazio = 9.0, alta = 9.0, lunga = 6.0, srd = "Colossal" }
+
+# come le schede scrivono la taglia (maschile, inglese, PF1e)
+[alias]
+"fine" = "Piccolissima"
+"piccolissimo" = "Piccolissima"
+"piccolissima" = "Piccolissima"
+"diminutive" = "Minuta"
+"minuto" = "Minuta"
+"minuta" = "Minuta"
+"tiny" = "Minuscola"
+"minuscolo" = "Minuscola"
+"minuscola" = "Minuscola"
+"small" = "Piccola"
+"piccolo" = "Piccola"
+"piccola" = "Piccola"
+"medium" = "Media"
+"medio" = "Media"
+"media" = "Media"
+"large" = "Grande"
+"grande" = "Grande"
+"huge" = "Enorme"
+"enorme" = "Enorme"
+"gargantuan" = "Mastodontica"
+"mastodontico" = "Mastodontica"
+"mastodontica" = "Mastodontica"
+"colossal" = "Colossale"
+"colossale" = "Colossale"

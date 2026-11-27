@@ -1,0 +1,44 @@
+{
+ "_cos_e": "Soglie dello standard del volume (ADR-0122), prese dai riferimenti misurati il 2026-11-10 con `misura_distanza_pagine.py --volume --riferimento`: Burnt Offerings intero e l'estratto di Red Hand of Doom. Per ogni soglia il valore più basso dei due riferimenti. Canale testing (ADR-0099): `--check` avvisa, la CI non blocca.",
+ "riferimenti": {
+  "burnt-offerings": {
+   "S1_intro_caratteri": [
+    574,
+    3631,
+    4119,
+    4366
+   ],
+   "S1_intro_volume": true,
+   "S2": "88 su 91 codici del testo sulla mappa (0,967), 0 solo sulla mappa; fuori: C24-C26, grotte marine senza pianta",
+   "S3_entro_una": 0.545,
+   "S3_mediana": 1,
+   "S4": "22 pp. regione (Sandpoint, Thassilon) + 11 pp. creature e personaggi su 100",
+   "S5": "8 PNG su 15 con ritratto accanto alla scheda",
+   "S6_parole_ripetute": "777 su 72.497 (0,011), 100 pp.; passi di almeno 8 parole già stampati prima, testatine e piè di pagina esclusi riga per riga (`misura_stampa.parole_ripetute`, rimisurato il 2026-11-13 dopo la correzione delle testatine dei capitoli corti; prima 0,012)"
+  },
+  "red-hand-of-doom-estratto": {
+   "S1_intro_caratteri": [
+    1320
+   ],
+   "S1_intro_volume": true,
+   "S2": "9 su 9 (Drellin's Ferry)",
+   "S3_entro_una": 1.0,
+   "S3_mediana": 0,
+   "S4": "non misurabile sull'estratto",
+   "S5": "non misurabile sull'estratto",
+   "S6_parole_ripetute": "69 su 15.368 (0,004) sull'estratto"
+  }
+ },
+ "soglie": {
+  "S1_intro_min_caratteri": 500,
+  "S1_quota_capitoli_con_intro": 1.0,
+  "S1_intro_volume": true,
+  "S2_quota_testo_con_mappa": 0.96,
+  "S2_solo_mappa_max": 0,
+  "S3_quota_entro_una": 0.54,
+  "S4_appendice_regione": true,
+  "S4_appendice_png": true,
+  "S5_quota_con_ritratto": 0.53
+ },
+ "_S6": "Ripetizioni (in prova, 2026-11-13): i due riferimenti stanno fra 0,004 e 0,011; nessuna soglia. Una parte delle copie dei booklet è voluta (schede e mappe in appendice), e sotto le 13 parole la misura prende soprattutto formule di scheda («Taglia Media · Spazio 1,5 m…») e scritte delle mappe. I valori dei booklet stanno in `docs/audit/stampa-booklet.json`, colonna `quota_parole_ripetute`."
+}

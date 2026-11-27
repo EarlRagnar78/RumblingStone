@@ -37,12 +37,22 @@ done
 
 $DRY_RUN && log_warn "DRY RUN — no files written"
 
+# ── Skill dei sistemi spenti (ADR-0111, L6, D5) ────────────────────────────
+# sistemi.toml dice quali sistemi sono attivi o di rinforzo; le skill di un
+# sistema che non è né l'uno né l'altro non si costruiscono. Le skill che
+# nessun plugin dichiara si costruiscono sempre. --skill=<nome> vince.
+ESCLUSE=" $("${PYTHON}" "${SCRIPT_DIR}/sistemi.py" --skill-escluse | tr '\n' ' ') "
+
 # ── Discover skills ─────────────────────────────────────────────────────────
 declare -a SKILLS=()
 for skill_dir in "${REPO_ROOT}/skills"/*/; do
   [[ -f "${skill_dir}SKILL.md" ]] || continue
   name="$(basename "${skill_dir%/}")"
   if [[ -n "${SKILL_FILTER}" && "${name}" != "${SKILL_FILTER}" ]]; then continue; fi
+  if [[ -z "${SKILL_FILTER}" && "${ESCLUSE}" == *" ${name} "* ]]; then
+    log_warn "${name}: sistema né attivo né di rinforzo in sistemi.toml — saltata"
+    continue
+  fi
   SKILLS+=("${name}")
 done
 

@@ -92,7 +92,7 @@
 > - la **rotta di marcia** dell'Orda, waypoint per waypoint, fino a **Rethmar**;
 > - i villaggi già caduti (Vraath, Drellin, **Terrelton**) segnati con una croce
 >   di cenere, e quelli minacciati (Talar, Witchcross) con un cerchio;
-> - **Rhest**, a nord, marcata con l'occhio di un drago;
+> - **Lhesper**, a nord, marcata con l'occhio di un drago;
 > - le mura di Rethmar, con **tre settori** annotati a margine in grafia minuta:
 >   *"qui Halveth ha tagliato i fondi"*, *"qui Lorana tiene i profughi"*, *"qui
 >   cederà per primo se nessuno arriva"*;
@@ -178,7 +178,7 @@
 **Carta I — L'acqua nera**
 > *Una città annegata sotto un cielo di canne. Su una guglia spezzata, un arco.
 > Sotto l'acqua, lungo come un molo, qualcosa che respira acido e aspetta.*
-> — *(È **Rhest**: la base settentrionale della Mano Rossa. Saarvith e il drago.)*
+> — *(È **Lhesper**: la base settentrionale della Mano Rossa. Saarvith e il drago.)*
 
 **Carta II — La bocca sotto la quercia**
 > *Sotto la Quercia Vecchia, tra le radici, un'ombra senza forma con molti piccoli
@@ -193,15 +193,78 @@
 > — *(È **Talar**, già saccheggiata: il conto alla rovescia dell'Orda è reale.)*
 
 > **Nota DM**: le carte sono **premonizioni**, non certezze. Danno ai giocatori
-> agganci proattivi (sanno di Rhest e della minaccia fungina **prima** di
+> agganci proattivi (sanno di Lhesper e della minaccia fungina **prima** di
 > arrivarci). Saraah non spiega: *"Non c'è bisogno che spieghi. Tu sai già le cose."*
+
+---
+
+## HANDOUT 7 — La carta del cielo di Zalkatar
+
+> **Quando darlo** (deciso dal DM il 2026-11-14, sulla card: «tutte e due»). La
+> carta sta addosso al mago della **squadra di piromanti drow** (tabella del
+> Cannath Vale, 56-70, `INCONTRI-VIAGGIO-CANNATH-VALE`), prima di fine Flamerule.
+> La squadra è una scena fissa fra il Day 22 e il 26 sulla strada che il gruppo
+> fa davvero: Witchwood se va alla Foresta Sacra, Vale centrale se Artemis va
+> solo verso nord [DM 2026-11-14, dossier delle piste §13 S1].
+> Se i PG non lo incontrano o non lo perquisiscono, **Sethrax** ne dà una copia
+> quando si smaschera al Torneo, come indizio gratuito sull'arco della Torre
+> (`P2B-Torneo-DAUTH-SUBQUEST-Artemis` §4.1): arriva dopo il 30 Flamerule, quindi
+> la carta dice dove la Torre **è già andata**.
+> Un foglio rotondo di pelle sottile, inchiostro bruno, nessuna firma.
+
+![Carta del cielo di Zalkatar: cielo di mezzanotte visto dall'alto, con il meridiano nord-sud, nove costellazioni con i loro nomi, una stella cerchiata al centro esatto, in cima al Sigillo, e un cerchio più grande che passa per quella stella e per l'angolo ovest del Sigillo](Immagini-Handout/carta-del-cielo/carta-del-cielo-zalkatar-stampa.png)
+
+> *Le stelle sono puntini d'inchiostro, i nomi in Comune in una grafia piccola e
+> diritta. Una riga taglia il cerchio da nord a sud. Al centro, dove la riga
+> passa, qualcuno ha ripassato tre volte un anello intorno a una stella sola.
+> Un secondo cerchio, tirato col compasso, parte da quella stella e gira largo
+> verso nord.*
+
+> **Nota DM: l'indizio a tre strati** (skill `rumblingstone-indagine`).
+> - **Fatto osservabile**: è il cielo di mezzanotte. La riga è il meridiano; il
+>   centro del cerchio è il punto sopra la testa di chi guarda. La stella
+>   cerchiata è la più alta del **Sigillo** ed è esattamente lì.
+> - **Lettura 1, la notte** (nessun tiro: basta guardare il cielo vero a
+>   mezzanotte). Il cielo gira di un grado per notte: ogni notte il Sigillo
+>   arriva al meridiano quattro minuti prima. Il 22 Flamerule a mezzanotte è ancora
+>   a est della riga, di circa nove gradi; sulla riga ci arriva a mezzanotte il
+>   **30 Flamerule**, il Giorno di Marcia 30 (mese deciso dal DM il 2026-11-18,
+>   sull'ancora del calendario del 2026-07-12). È la notte in cui «la torre
+>   cammina». Una prova di
+>   Conoscenze (geografia) o Sopravvivenza CD 15 conta le notti a colpo d'occhio.
+> - **Lettura 2, il luogo**. Una stella passa esattamente sopra la testa solo
+>   alla latitudine uguale alla sua altezza in cielo: la carta è disegnata **dal
+>   luogo del passo**, non da dove sta la Torre oggi. Da dove sono i PG la stella
+>   cerchiata culmina un po' a sud (o a nord) dello zenit; ogni grado di scarto è
+>   circa 110 km in quella direzione. Misurare un grado a occhio non si può:
+>   serve un astrolabio, un quadrante o Conoscenze (geografia) CD 20.
+>   Deciso dal DM il 2026-11-14: il passo va **un grado più a sud** del pianoro
+>   della Torre, cioè circa 110 km (tre giorni di marcia a 9 m, fra quattro e cinque a 6 m).
+>   La carta non dipende da questa scelta: se cambia, cambia solo questa riga.
+> - **Il cerchio grande** è il parallelo del Sigillo: le stelle che ci stanno sopra
+>   passano tutte sopra la testa di chi è nel luogo del passo, una dopo l'altra.
+>   Ci sta sopra anche la stella all'angolo ovest del **Sigillo**, la seconda che
+>   passa allo zenit quella notte: per un PG che misura, è la conferma che il
+>   cerchio non è un ornamento (Conoscenze (geografia) CD 15 lo capisce a colpo d'occhio).
+> - **Nome**: «il Sigillo si chiude sulla Torre». È il calcolo del rito di
+>   spostamento di Zalkatar, la stessa vibrazione che sente l'Anello di Artemis.
+> - **Perché non si falsifica**: il cielo è lo stesso per tutti. Una copia con
+>   le stelle spostate non combacia col cielo della notte, e chiunque la confronti
+>   se ne accorge.
+
+> **Nota DM: stampa e provenienza**. Due versioni: inchiostro su carta
+> (`carta-del-cielo-zalkatar-stampa.png`, da stampare) e cielo notturno
+> (`carta-del-cielo-zalkatar.png`, da mostrare a schermo). Le costellazioni hanno
+> nomi del repo, non di Faerûn (ADR-0005). Sulla carta le figure sono nove: a
+> quell'ora il Ragno è già tramontato. Come si rifà l'immagine sta in
+> `Immagini-Handout/carta-del-cielo/PROVENIENZA.txt`.
 
 ---
 
 ## Nota di stampa
 
 - Una pagina per handout; consegna **al momento indicato** in "quando darlo".
-- Gli handout 1, 3 e 6 sono i più "fisici" (busta di pelle, mappa, carte): valgono
+- Gli handout 1, 3, 6 e 7 sono i più "fisici" (busta di pelle, mappa, carte): valgono
   molto se preparati davvero (una busta chiusa, un foglio invecchiato).
 - Riferimenti canonici in testa a ogni handout: non improvvisare contenuti nuovi
   senza marcarli `[INFERRED]`.

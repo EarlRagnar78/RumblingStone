@@ -34,7 +34,7 @@ Specchi, nebbia, colonne fluttuanti
 ### Chi è davvero (info DM, NON svelare)
 
 - **Sethrax il Velato** — Mind Flayer **emissario diretto di Zalkatar**, l’Illithid Warlock Drow della **Torre Invisibile** (arco P2A di Artemis).
-- Missione: **non vincere il torneo**, ma **arrivare in finale** per essere **vicino all’Orbe nel momento del suo picco di risonanza** (Giorno 3, Fase 1 o 2). Compito: aprirne una breccia psionica e **estrarne un frammento di risonanza** (un “seme di Porta”) da riportare a Zalkatar per i suoi **esperimenti planari** nella Torre Invisibile.
+- Missione: **non vincere il torneo**, ma **arrivare in finale** per essere **vicino all’Orbe nel momento del suo picco di risonanza** (Giorno 3, Fase 1 o 2). Compito: aprirne una breccia psionica ed **estrarne un frammento di risonanza** (un “seme di Porta”) da riportare a Zalkatar per i suoi **esperimenti planari** nella Torre Invisibile.
 - Zalkatar e Xal’thor **non collaborano**: sono fazioni illithid rivali. Sethrax non sa dell’invasione di Xal’thor del Giorno 3 — la scoprirà sul momento, e questo crea le condizioni per **una scelta inattesa** (vedi `PARTE3`).
 - Camuffamento: usa *Disguise Self* psionico (DC Volontà 17 per individuare con interazione prolungata) + cappa + maschera. Mantiene *Detect Thoughts* sempre attivo entro 18 m, ma **lo filtra** per non destare sospetti (chi è bersaglio percepisce solo un vago disagio, non una pressione mentale).
 

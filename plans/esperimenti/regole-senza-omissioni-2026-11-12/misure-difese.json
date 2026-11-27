@@ -1,0 +1,47 @@
+{
+ "conto": {
+  "RI": {
+   "schede che la scrivono": 26,
+   "giudicate": 6,
+   "già fuori regola": 1,
+   "dubbie": 1
+  },
+  "RD": {
+   "schede che la scrivono": 4,
+   "giudicate": 3,
+   "già fuori regola": 0,
+   "dubbie": 0
+  },
+  "immunità": {
+   "schede del tipo": 21,
+   "in regola": 18,
+   "già fuori regola": 3
+  }
+ },
+ "esiti": {
+  "RI più 1": {
+   "trovate": 6,
+   "scritte": 6
+  },
+  "RI meno 1": {
+   "trovate": 6,
+   "scritte": 6
+  },
+  "RD più 1": {
+   "trovate": 3,
+   "scritte": 3
+  },
+  "RD meno 1": {
+   "trovate": 3,
+   "scritte": 3
+  },
+  "immunità tolta": {
+   "trovate": 16,
+   "scritte": 18
+  }
+ },
+ "perse": [
+  "Bestiario/villain/phantom-fungus-cr3.md: immunità tolta",
+  "Bestiario/villain/retriever-cr11.md: immunità tolta"
+ ]
+}

@@ -1,0 +1,23 @@
+# Scritto da plans/esperimenti/regole-senza-omissioni-2026-11-12/estrai_prestigio.py:
+# non si modifica a mano. Requisiti delle classi di prestigio, solo nomi e numeri.
+# 10 classi dal PRD PF1e (Core Rulebook).
+# `non_verificati` conta i requisiti che non si riducono a un numero (speciali, divinità, lingue).
+# `avanza` = i livelli della classe che danno +1 livello d'incantatore a una classe che si aveva già
+# (tipo: arcane, divine, both, any, o il nome della classe); senza `avanza` la classe non ne dà.
+
+# descrizioni delle classi: chi lancia incantesimi arcani e chi divini
+[tipi_di_magia]
+arcane = ["bard", "sorcerer", "wizard"]
+divine = ["cleric", "druid", "paladin", "ranger"]
+
+[prestigio]
+"arcane archer" = { fonte = "PRD PF1e, Core Rulebook, Prestige Classes", non_verificati = 0, bab = 6, talenti = [{ quanti = 1, fra = ["point blank shot"] }, { quanti = 1, fra = ["precise shot"] }, { quanti = 1, fra = ["weapon focus (longbow or shortbow)"] }], incantesimi = [{ tipo = "arcane", livello = 1 }], avanza = { tipo = "any", livelli = [2, 3, 4, 6, 7, 8, 10] } }
+"arcane trickster" = { fonte = "PRD PF1e, Core Rulebook, Prestige Classes", non_verificati = 2, allineamento = ["NG", "CG", "N", "CN", "NE", "CE"], abilita = [{ quanti = 3, fra = { "disable device" = 4, "escape artist" = 4, "knowledge (arcana)" = 4 } }], avanza = { tipo = "any", livelli = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] } }
+"assassin" = { fonte = "PRD PF1e, Core Rulebook, Prestige Classes", non_verificati = 1, allineamento = ["LE", "NE", "CE"], abilita = [{ quanti = 2, fra = { disguise = 2, stealth = 5 } }] }
+"dragon disciple" = { fonte = "PRD PF1e, Core Rulebook, Prestige Classes", non_verificati = 3, abilita = [{ quanti = 1, fra = { "knowledge (arcana)" = 5 } }], incantesimi = [{ tipo = "arcane", livello = 1 }], avanza = { tipo = "arcane", livelli = [2, 3, 4, 6, 7, 8, 10] } }
+"duelist" = { fonte = "PRD PF1e, Core Rulebook, Prestige Classes", non_verificati = 0, bab = 6, abilita = [{ quanti = 2, fra = { acrobatics = 2, perform = 2 } }], talenti = [{ quanti = 1, fra = ["dodge"] }, { quanti = 1, fra = ["mobility"] }, { quanti = 1, fra = ["weapon finesse"] }] }
+"eldritch knight" = { fonte = "PRD PF1e, Core Rulebook, Prestige Classes", non_verificati = 1, incantesimi = [{ tipo = "arcane", livello = 3 }], avanza = { tipo = "arcane", livelli = [2, 3, 4, 5, 6, 7, 8, 9, 10] } }
+"loremaster" = { fonte = "PRD PF1e, Core Rulebook, Prestige Classes", non_verificati = 3, abilita = [{ quanti = 1, fra = { "knowledge (any two)" = 7 } }], avanza = { tipo = "any", livelli = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] } }
+"mystic theurge" = { fonte = "PRD PF1e, Core Rulebook, Prestige Classes", non_verificati = 0, abilita = [{ quanti = 2, fra = { "knowledge (arcana)" = 3, "knowledge (religion)" = 3 } }], incantesimi = [{ tipo = "divine", livello = 2 }, { tipo = "arcane", livello = 2 }], avanza = { tipo = "both", livelli = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] } }
+"pathfinder chronicler" = { fonte = "PRD PF1e, Core Rulebook, Prestige Classes", non_verificati = 1, abilita = [{ quanti = 3, fra = { linguistics = 3, "perform (oratory)" = 5, "profession (scribe)" = 5 } }] }
+"shadowdancer" = { fonte = "PRD PF1e, Core Rulebook, Prestige Classes", non_verificati = 0, abilita = [{ quanti = 2, fra = { stealth = 5, "perform (dance)" = 2 } }], talenti = [{ quanti = 1, fra = ["combat reflexes"] }, { quanti = 1, fra = ["dodge"] }, { quanti = 1, fra = ["mobility"] }] }

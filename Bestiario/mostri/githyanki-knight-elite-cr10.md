@@ -1,10 +1,13 @@
-# githyanki-knight-elite-cr10 [ACCEPTED — DM-canon 2026-05-05]
+# githyanki-knight-elite-cr10 [CANONE — DM 2026-05-05]
 
 **Faction**: githyanki-vaereth | **Role**: elite-psi-warrior | **Environment**: urban,plains | **CR**: 10
 
 ```statblocco
 gs: 10
 tipo: Medium monstrous humanoid, 10d10
+taglia: Media
+spazio: 1,5 m
+portata: 1,5 m
 ca: 21
 ca-dettaglio: (+1 Des, +10 armatura)
 pf: 75
@@ -14,7 +17,7 @@ velocita: 9 m
 iniziativa: +1
 attributi: For 17 Cos 14 Des 13 Sag 12 Car 10 Int 8
 attacchi:
-  - Mischia mazzafrusto pesante +13 (1d10+3)
+  - Mischia mazzafrusto pesante +13 (1d10+4/19-20)
 voci:
   - Spada d'argento: 2d6 + For; con un critico dissolve la connessione psichica (Volontà CD 17)
   - Punti potere 20; Spostamento Planare 1/giorno per il gruppo
@@ -36,3 +39,5 @@ Silver sword wielder (2d6+str, crits disjunction DC 17); PP 20; Plane Shift 1/da
 - Advance via HD, class levels, or templates before adding new unique powers.
 - For upscaled variants, apply the Advanced Creature template (MM p.294) or class levels preserving CR math.
 - AP canon names preserved; mechanics derived from SRD/MM/FRCS only.
+
+> correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12, lotto 2 di ADR-0126): critico di «Mischia mazzafrusto pesante» scritto (19-20, tabella delle armi dell'SRD); danno +3 → +4 (arma a due mani: Forza +3 per una volta e mezza).

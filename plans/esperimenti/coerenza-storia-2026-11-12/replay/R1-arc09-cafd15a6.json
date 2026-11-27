@@ -1,0 +1,195 @@
+{
+ "violazioni": [
+  {
+   "regola": "S1 arrivo dell'orda",
+   "atteso": "Giorno 42",
+   "ha": "Giorno 38",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-HOOKS-INTEGRATION-MASTER.md",
+   "riga": 244,
+   "testo": "Giorno 38  Azarr Kul arriva a Rethmar."
+  },
+  {
+   "regola": "S4 livello del party",
+   "atteso": "13-14",
+   "ha": "11",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1A-Timeline-Quest-Hellas-COMPLETA.md",
+   "riga": 52,
+   "testo": "- EL target: 13 per gruppo di 3–4 PG di livello 11–12.[file:20]"
+  },
+  {
+   "regola": "S4 livello del party",
+   "atteso": "13-14",
+   "ha": "11",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1B-Cerchio-Treant-COMPLETO.md",
+   "riga": 10,
+   "testo": "- EL consigliato: 13 (4 PG di livello 11–12). [file:21]"
+  },
+  {
+   "regola": "S4 livello del party",
+   "atteso": "13-14",
+   "ha": "11",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2A-Torre-PARTE1.md",
+   "riga": 15,
+   "testo": "- EL medio: 11–12 per gruppo di 4 PG di livello 11–12."
+  },
+  {
+   "regola": "S4 livello del party",
+   "atteso": "13-14",
+   "ha": "11",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md",
+   "riga": 8,
+   "testo": "Tutti i valori sono pensati per un party di livello 11–12. Adatta leggermente pf o talenti se necessario."
+  },
+  {
+   "regola": "S1 arrivo dell'orda",
+   "atteso": "Giorno 42",
+   "ha": "Giorno 40",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md",
+   "riga": 3,
+   "testo": "**Scopo**: allineare i numeri dell'Orda della Mano Rossa che raggiungono Rethmar al **Day 40** del March Clock ufficiale RHoD (adattato Channath Vale / Dalelands, 1372 DR) con la struttura di battaglia in `Arco-Post-Hammerfist-P3-BATTAGLIA-"
+  },
+  {
+   "regola": "S2 giorno del waypoint",
+   "atteso": "Vraath: Giorno 6",
+   "ha": "Giorno 1",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md",
+   "riga": 11,
+   "testo": "- **Baseline Orda al Day 1 (Vraath Keep)**: ~**10.000** combattenti (6.600 core hobgoblin + 430 supporto + 2.910 alleati razziali + 5 draghi nominati + 8 Razorfiend Draconic Spawn sui Wyrmlord upscalati)."
+  },
+  {
+   "regola": "S1 arrivo dell'orda",
+   "atteso": "Giorno 42",
+   "ha": "Giorno 40",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md",
+   "riga": 20,
+   "testo": "## 2. Composizione Orda in Arrivo a Rethmar (Day 40)"
+  },
+  {
+   "regola": "S1 arrivo dell'orda",
+   "atteso": "Giorno 42",
+   "ha": "Giorno 40",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-RETHMAN-STRUTTURA.md",
+   "riga": 12,
+   "testo": "- **Forza Orda in arrivo (Day 40 March Clock)**: ~5.800–7.400 effettivi su baseline ~10.000, modulato dagli hook Arc-09. Vedi `Arco-Post-Hammerfist-P3-BATTAGLIA-FINALE-ARMATE-SYNC.md` §3 per i 5 scenari (worst/baseline/medio/ottimale/leggen"
+  },
+  {
+   "regola": "S4 livello del party",
+   "atteso": "13-14",
+   "ha": "12",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Sabotaggio-Campi-Drow-Upscale-CR12.md",
+   "riga": 7,
+   "testo": "- Pensato per party di 4–5 PG di **livello 12**."
+  },
+  {
+   "regola": "S3 finestra della quest",
+   "atteso": "P2A Torre: Giorno 28-35",
+   "ha": "Giorno 21-23",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 158,
+   "testo": "**Durata:** 2–3 sessioni (Day 21–23)"
+  },
+  {
+   "regola": "S3 finestra della quest",
+   "atteso": "P2 Rhest: Giorno 25-32",
+   "ha": "Giorno 23-25",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 191,
+   "testo": "**Source:** Red Hand pag 67–80 | **Durata:** 2–3 sessioni (Day 23–25)"
+  },
+  {
+   "regola": "S3 finestra della quest",
+   "atteso": "P2B Torneo: Giorno 25-34",
+   "ha": "Giorno 22-24",
+   "file": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/INDICE-GENERALE-COMPLETO-CAMPAGNA.md",
+   "riga": 216,
+   "testo": "**Durata:** 2–3 sessioni (Day 22–24)"
+  },
+  {
+   "regola": "S2 giorno del waypoint",
+   "atteso": "Skull Gorge: Giorno 8-9",
+   "ha": "Giorno 5",
+   "file": "campaign/DM-CAMPAIGN-PLAYBOOK.md",
+   "riga": 332,
+   "testo": "- Day 5: PG non interferiscono a Skull Gorge ✓"
+  },
+  {
+   "regola": "S1 arrivo dell'orda",
+   "atteso": "Giorno 42",
+   "ha": "Giorno 40",
+   "file": "campaign/DM-CAMPAIGN-PLAYBOOK.md",
+   "riga": 334,
+   "testo": "- Day 40: Orda arriva a Rethmar"
+  }
+ ],
+ "file_letti": 107,
+ "non_verificabili": {
+  "conoscenze senza tempo (chi sa cosa)": 0
+ },
+ "ancore": {
+  "giorno_arrivo": 42,
+  "waypoint": {
+   "Vraath": [
+    6,
+    6
+   ],
+   "Skull Gorge": [
+    8,
+    9
+   ],
+   "Drellin": [
+    12,
+    13
+   ],
+   "Terrelton": [
+    19,
+    19
+   ],
+   "Marth Fen / Blackfens": [
+    25,
+    25
+   ],
+   "Elsir": [
+    33,
+    35
+   ]
+  },
+  "quest": {
+   "P2A Torre": [
+    28,
+    35
+   ],
+   "P2 Rhest": [
+    25,
+    32
+   ],
+   "P2B Torneo": [
+    25,
+    34
+   ],
+   "P3 Starsong": [
+    30,
+    35
+   ],
+   "P3 Ghostlord": [
+    25,
+    32
+   ]
+  },
+  "livelli": {
+   "07": [
+    13,
+    13
+   ],
+   "08": [
+    13,
+    13
+   ],
+   "09": [
+    13,
+    14
+   ]
+  },
+  "portatori": {},
+  "modifiche": {}
+ }
+}

@@ -64,13 +64,16 @@ The party has no rogue. They handle traps via Tordek's high Monk saves, arcane u
   - the **necromancer of Castel Wrath** raises the giants' skeletons and the remains of the Death Moon tribe (the ogres stay skeletons, the orcs become zombies);
   - a **cyclops giant** and a **mantimera** replace the chimera;
   - the goblins fight alongside orcs, ogres, orc shamans and ogre magi **enslaved by the hobgoblins**, with two orc barbarians in the major fights.
+- **Jorr Natherson**, the NPC companion (8th level), **dies in the vale** before the descent `[DM 2026-11-05]`. Moradin brings Thorik back with no level lost (the XP ledger: «Thorik il grigio, Thorik il bianco», −4,000 and +4,000) `[DM 2026-11-05]`.
 - Source files: `00_Red Hand Of Doom/`, `PG/Artefatti/Artefatti-Pg/Aegis Fang/`, `Bestiario/png/Lorana/Lorana/Lorana.md`, `Bestiario/png/Tempestas/Tempestas.md`
 
 ### Phase B: Hammerfist Hills & The Quest for the Corona (Level 8)
 
 After Drellin's Ferry, the party travels to **Hammerfist Holds** in The North Wall mountains. There, dwarven clerical oracles — guided by visions from Moradin — explain that an ancient artifact, the **Corona di Adamantio**, must be found to save the dwarven kingdom from the imminent horde battle. The **Hammerfist King** gives the party a quest to descend into the Underdark and recover it.
 
-### Phase C: Underdark Descent (Levels 8–12, Arcs 01–06)
+### Phase C: Underdark Descent (Levels 9–13, Arcs 01–06)
+
+> `[DM 2026-11-05]` Levels from the XP ledger (`campaign/REGISTRO-PX.md`): 9th entering the Underdark, 10th–11th at the mine, 11th at the Scala d'Ossa and the Citadel, 12th at Belkram's Tomb and the Runic Room, 13th at the Crown.
 
 The party descends through a chain of connected underground locations:
 
@@ -186,7 +189,7 @@ The party descends through a chain of connected underground locations:
 #### Arc 01 — La Miniera (Ancient Dwarven Mine)
 
 - **Source:** `01_LaMiniera/`
-- **Enemies:** Grell Necromancer lair, Grell Patriarch (aberration, defeated)
+- **Enemies:** Grell Necromancer lair, Grell Patriarch (aberration, defeated). The **Grell Patriarch** is the «grell filosofo» of the XP ledger (row 36, written there out of order) and is fought **at the very start of the descent into the mine, where the defensive turrets are** `[DM 2026-11-05]`
 - **Cristal Warriors** — Encountered in this area (source: *Underdark* p.93)
 - **Notes:** First part of the ancient dwarven mine. Cristal Warriors encountered in early rooms after portal arrival to the mine complex.
 - **Arrival** `[DM 2026-07-26]`: the party reaches this area through the **one-way
@@ -273,7 +276,9 @@ The party descends through a chain of connected underground locations:
   - Hella's corpse is preserved by the party
   - Party opens the portal to the Eternal Forge
 
-### Phase D: The Eternal Forge (Levels 12–13, Arc 07)
+### Phase D: The Eternal Forge (Levels 13–14, Arc 07)
+
+> `[DM 2026-11-05]` Thorik, Tordek and Artemis reach the XP for 14th during Arc 07 and stop at 104,999 (one level at a time); Hella, dead from the Crown to the ritual, reaches it during the night of DEF-4. The level is taken at the first rest after the battle of Hammerfist.
 
 #### Arc 07 — Il Portale Della Forgia Eterna (Eternal Forge Portal)
 
@@ -294,10 +299,10 @@ The party descends through a chain of connected underground locations:
     │   └── Rituale Gemma Terra → EMERALD activated
     ├── Hella Resurrection Ritual (Part 3B)
     │   ├── Moradin's divine intervention + party sacrifices
-    │   ├── Thorik sacrifices 2 permanent HP
-    │   ├── Tordek sacrifices 500 XP
-    │   ├── Artemis sacrifices invocation slot for 24h
-    │   └── Hella returns as Treant Hybrid (-1 level → restored by story XP)
+    │   ├── Thorik gives the Crown's +2 deflection (Guardian's Shield)
+    │   ├── Tordek gives the Mountain's Anchorage (no XP paid, DM correction 2026-09-12)
+    │   ├── Artemis gives 1d6 of Eldritch Blast (Eldritch Bramble)
+    │   └── Hella returns as Treant Hybrid, no level lost: the Heart of Moradin pays (played 2026-09-25)
     └── Temporal Portal (Part 5, requires Topaz + Emerald active)
         ├── Portal to Year -1000 DR
         ├── Battle at ancient Hammerfist
@@ -309,7 +314,7 @@ The party descends through a chain of connected underground locations:
 1. **"Il Momento del Risveglio"** (COMPLETED) — Thorik passes trial, wears Corona. All 3 gems present but ALL DARK.
 2. **Sala Forgia Eterna (Part 2)** — Entry, exploration, preparation
 3. **Piano Fuoco (Part 3)** — Elemental fire combats → **TOPAZ ACTIVATED** via Rituale Gemma del Tempo
-4. Return to Sala → **Rituale Cuore di Moradin** (between Parts 3 and 4) — Activates Cuore di Moradin artifact (separate). **HELLA RESURRECTION** possible (-1 level)
+4. Return to Sala → **Rituale Cuore di Moradin** (between Parts 3 and 4) — Activates Cuore di Moradin artifact (separate). **HELLA RESURRECTION** (no level lost: the Heart pays)
 5. **Piano Terra (Part 4)** — Elemental earth combats → **EMERALD ACTIVATED** via Rituale Gemma Terra
 6. Return to Sala → **Temporal Portal opens** (requires Topaz + Emerald)
 7. **Viaggio Temporale (Part 5)** — Battle at year -1000 DR → At dawn → **RUBY ACTIVATED** (3rd gem)
@@ -324,7 +329,7 @@ The party descends through a chain of connected underground locations:
 - **Future Hook:** Can appear as NPC ally during the Notte dei Drow assault on Rethmar (arc 09, Phase 0), attacking drow from within.
 - **Source files:** `Bestiario/png/Therysol/`
 
-### Phase E: Return to RHoD Mainline (Level 13+, Arcs 08–09)
+### Phase E: Return to RHoD Mainline (Level 14, Arcs 08–09)
 
 #### Arc 08 — La Battaglia di Hammerfist (4 Sessions)
 
@@ -343,7 +348,7 @@ The party descends through a chain of connected underground locations:
 | Force | Units | Commander(s) |
 |---|---|---|
 | **Red Hand Army** | 900 (7:1 numerical advantage) | Fauci di Palude (Black Dragon CR 15), Generale Grimjaw (Orog Fighter 10/Warlord 3, CR 14), Gorthak il Trifronte (3-Headed Ettin, CR 12) |
-| **Hammerfist Dwarves** | 300 | Re Thorek Hammerfist (Fighter 15/Noble 2, CR 16), Madre Superiora Dana Forgiapietra (Cleric 12/Divine Singer 3, CR 14) |
+| **Hammerfist Dwarves** | 300 | Re Thorek Hammerfist (Fighter 15/Noble 2, CR 16), Madre Superiora Dagmar Forgiapietra (Cleric 12/Divine Singer 3, CR 14) |
 | **External Allies** | ~20 | Signore Ventolesto (Celestial Giant Owl, CR 8), 12 Ranger Elfici su Gufi (CR 8 each), Orion Pelleorsa (Druid 14, CR 14), Maestro Tempestas (Bard 12/Stormsinger 2, CR 14) |
 
 **Red Hand Structure:** 4 assault lines — 1st Wave (450 hobgoblin/orc infantry), 2nd Wave (233 heavy infantry + sergeants), 3rd Line (45 giants/artiglieria + mages), 4th Line (66 command/reserve), Aerial (Fauci di Palude + rider), Flanks (50 Worg Riders)
@@ -351,7 +356,7 @@ The party descends through a chain of connected underground locations:
 **Session Structure (4 Sessions):**
 
 - **Session 1 — L'Ombra sulla Montagna:**
-  - Players control **4 temporary dwarven PNGs**: Borin Ferropugno (Fighter 10/Champion 3, CR 13), Dara Occhiolesto (Ranger 8/Mountain Scout 4, CR 12), Thorin Runaforte (Cleric 9/Runepriest 3, CR 12), Nala Cantapietre (Bard 8/Spymaster 4, CR 12)
+  - Players control **4 temporary dwarven PNGs**: Borin Giuraferro (Fighter 10/Champion 3, CR 13), Dara Occhiolesto (Ranger 8/Mountain Scout 4, CR 12), Harbek Runaforte (Cleric 9/Runepriest 3, CR 12), Nala Cantapietre (Bard 8/Spymaster 4, CR 12)
   - Reconnaissance mission, Council of War, fortify defenses
   - PNG actions determine initial battle bonuses/maluses
 
@@ -387,7 +392,7 @@ The party descends through a chain of connected underground locations:
 
 - Borin → Fighter PC: +2 morale to attacks with dwarven weapons (permanent)
 - Dara → Druid/Ranger: +4 competence to Survival/Spot in mountains (permanent)
-- Thorin → Monk/Paladin: +2 sacred AC when defending ally (permanent)
+- Harbek → Monk/Paladin: +2 sacred AC when defending ally (permanent)
 - Nala → Warlock/Rogue: 1/day *Invisibility* as swift action (permanent)
 
 **Rewards:** 50,000gp each in gems, Thane titles, personal fortress, legendary fame across Faerûn
@@ -421,15 +426,15 @@ The party descends through a chain of connected underground locations:
 - Ring powers undergo further awakening (Ultimate Chaos abilities)
 - Source: `Arco-Post-Hammerfist-P2A-Torre-*` (12 files)
 
-##### Part 2 — Rhest: Città Sommersa & Drago Nero
+##### Part 2 — Lhesper: Città Sommersa & Drago Nero
 
 - **Source:** Red Hand pag 67–80, adapted to Cannath Vale
-- Lake Rhest exploration — sunken city ruins, boat/underwater mechanics
+- Lhesper exploration — sunken city ruins, boat/underwater mechanics
 - Razorfiend encounters in the swamp
 - **Wyrmlord Saarvith** (CR 12, fighter/dragon disciple) commands the area
-- Boss: **Regiarix** Adult Black Dragon (CR 13)
+- Boss: **Regiarix** drago nero giovane adulto (GS 9, SRD) `[CANONE — DM 2026-11-15]`
 - Consequences: Slows horde 3 days, critical intelligence gathered
-- Source: `Arco-Post-Hammerfist-P2-RHEST-*` (8 files)
+- Source: `Arco-Post-Hammerfist-P2-LHESPER-*` (8 files)
 
 ##### Part 2B (P2B): Tordek's Personal Quest — Torneo Epico di Dauth
 
@@ -454,7 +459,7 @@ The party descends through a chain of connected underground locations:
   - **Phase 0 — Notte dei Drow:** Night infiltration by drow + fungal aberrations → attack Rethmar temple to steal evil artifact. Connection to Sonjak/Il Collezionista/Mother of Fungi faction. Therysol may appear as ally here.
   - **Phase 1 — Assedio Esterno:** Red Hand horde (hobgoblins, ogres, bugbears, Giants, etc) + Githyanki red dragon faction (if not defeated at Dauth) + drow faction. Multiple dragon colors.
   - **Phase 2 — Ritualisti Draconici:** 10-round ritual to summon Avatar of Tiamat + Azarr Kul
-  - **Phase 3 — Azarr Kul & Avatar of Tiamat:** Epic boss fight. Azarr Kul (CR 15 Cleric 10/Fighter 4, half-blue-dragon hobgoblin), fighting on foot — **Tyrgarun** (Old Blue Dragon, CR 18) is NOT his mount (D11 v2); it's a separate sky-terror encounter, grounded and killable only once the Phase 4 Mythal completes
+  - **Phase 3 — Azarr Kul & Avatar of Tiamat:** Epic boss fight. Azarr Kul (CR 15 Cleric 10/Fighter 4, half-blue-dragon hobgoblin), fighting on foot — **Tyrgarun** (Very Old Blue Dragon, CR 19) is NOT his mount (D11 v2); it's a separate sky-terror encounter, grounded and killable only once the Phase 4 Mythal completes
   - **Phase 4 — Circolo degli Otto & Mythal:** 8 archmages create mythal barrier in 7 rounds, animate city statues as stone golems (à la Harry Potter Battle of Hogwarts)
 - **Allied reinforcements (conditional):**
   - Hammerfist dwarves: 90 survivors of Arc 08 + Re Thorek
@@ -571,7 +576,7 @@ and back to the surface for the Red Hand campaign mainline.
   │   └── Battle at year -1000 DR → RUBY gem activated at dawn
   └── Return to Present (Part 6) → all 3 gems active
         ↓
-[Hammerfist Holds (Surface Return)] ← Party emerges Level 13
+[Hammerfist Holds (Surface Return)] ← Party emerges Level 13, takes 14th at the first rest after the battle
         ↓
 [08_La Battaglia Di Hammerfist — Battle of Hammerfist]
   ├── Pre-battle: dwarven PNGs fight early siege phases
@@ -583,7 +588,7 @@ and back to the surface for the Red Hand campaign mainline.
   ├── P1: Hella's Quest — Cerchio Sacro della Foresta
   ├── P2A: Artemis's Quest — Torre Invisibile (vs Zalkatar)
   ├── P2B: Tordek's Quest — Torneo Epico di Dauth
-  ├── P2 Rhest: Città Sommersa & Regiarix (Black Dragon)
+  ├── P2 Lhesper: Città Sommersa & Regiarix (Black Dragon)
   ├── P3 Alliances: Starsong Hill, Ghostlord, Sabotaggio Drow
   └── P3 FINALE: Battle of Rethmar (5 phases → Azarr Kul + Avatar of Tiamat)
 ```

@@ -24,7 +24,7 @@
 **Incontro:** difesa ed evacuazione — 90 nani superstiti vs 200+ orchi che sfondano da TRE lati (Porta Interna a sud + brecce est/ovest)
 **Quando si usa:** subito dopo il soffio del drago (guida: `../ARC08-01-GUIDA-DM.md` § "La Ritirata Disperata"); il master narrativo dell'atlante la chiama MAPPA 3X
 **Dove sta nella 2A:** è il cortile interno della MAPPA 2A REVISED (L2) con la Porta Interna e l'inizio del cortile esterno: colonne Y-CR e righe 18-53 della 2A (colonna H3-1 = colonna 2A − 24, riga H3-1 = riga 2A − 17). Le misure sono quelle della tabella MISURE DI RIFERIMENTO in testa a L2.
-**Quote (decise dal DM il 2026-10-22):** il cortile interno sta a +100 m sulla piana (970 m s.l.m. `[INFERRED]`), il cortile esterno a +80 m; fra i due c'è la scarpa di 20 m (🏰 riga 28) su cui poggia la Porta Interna. Dal cortile esterno si sale per le due scale della scarpa (🪜 O-AH e AM-BF, righe 26-27, 30 m di rampa ciascuna) fino al pianerottolo 🔳 AI-AL 26-27 davanti alla porta. I bastioni nord B1 e B2 stanno a +120 m, contro la roccia.
+**Quote (decise dal DM il 2026-10-22):** il cortile interno sta a +100 m sulla piana (620 m s.l.m. `[CANONE — DM 2026-11-04, P16, quota sul mare]`), il cortile esterno a +80 m; fra i due c'è la scarpa di 20 m (🏰 riga 28) su cui poggia la Porta Interna. Dal cortile esterno si sale per le due scale della scarpa (🪜 O-AH e AM-BF, righe 26-27, 30 m di rampa ciascuna) fino al pianerottolo 🔳 AI-AL 26-27 davanti alla porta. I bastioni nord B1 e B2 stanno a +120 m, contro la roccia.
 
 ### 🎯 COMPRENSIONE: il cortile esterno è perduto e la Porta Interna è sfondata. L'orda entra dalla porta a sud e dalle brecce aperte nella cinta est e ovest; i 90 nani sono in ANELLO DIFENSIVO attorno a Re Thorek, fra la porta e la statua del Re Antenato (nord). Bisogna evacuare nella montagna PRIMA di essere travolti. Nord = la statua e il tunnel, che scende nelle viscere della montagna fino al Cuore (MAPPA 5); Sud = Porta Interna sfondata (fronte).
 
@@ -76,7 +76,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @north N
 @tipo tattica esterno
 @luogo Hammerfist, cortile interno
-@quota 970 m ; s.l.m., il cortile interno
+@quota 620 m ; s.l.m., il cortile interno
 @dislivello +20 m ; sul cortile esterno, oltre la scarpa
 @deroga oggetti/fuoco-enorme ; sono incendi delle baracche ai lati della Porta Interna, non fuochi da campo: 6 × 3 m ciascuno
 @deroga oggetti/porta-enorme ; la porta dell'atrio è il portone della cittadella, 6 m come nella tabella MISURE in testa alla L2
@@ -85,8 +85,8 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @mark 3 ; AP11 ; Anello difensivo — arco EST (guerrieri)
 @mark 4 ; AE16 ; Anello difensivo — arco SUD (verso la Porta Interna) (guerrieri)
 @mark 5 ; AF10 ; Re Thorek XIII (barella) (8 PF, morente)
-@mark 6 ; AG10 ; Thorin Runaforte (Clr)
-@mark 7 ; AE5 ; Borin Ferropugno (Ftr)
+@mark 6 ; AG10 ; Harbek Runaforte (Clr)
+@mark 7 ; AE5 ; Borin Giuraferro (Ftr)
 @mark 8 ; AD5 ; Dara Occhiolesto (Rgr)
 @mark 9 ; AB4 ; Nala Cantapietre (Brd)
 @mark 10 ; AK32 ; Orda salita dalle scale della scarpa (SUD) (GS 1/2)
@@ -126,7 +126,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 **4 PG (pregen):**
 - **Borin 🔵** (AE05): retroguardia al chokepoint del tunnel
 - **Dara 🔵** (AD05): sulla base della statua (elevata), tiro di copertura sulla ritirata
-- **Thorin 🔵** (AG10): fianco del Re, lo tiene in vita (*Cura Ferite Serie*)
+- **Harbek 🔵** (AG10): fianco del Re, lo tiene in vita (*Cura Ferite Serie*)
 - **Nala 🔵** (AB04): instrada i nani nel tunnel, luci e trappole
 
 **200+ ORCHI CHE HANNO SFONDATO 🔴 (tre fronti):**
@@ -143,7 +143,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 - **90 nani ÷ 5/round = 18 round** minimi alla bocca del tunnel
 - **Orchi a contatto ~round 4** (sud: la scala, poi dalla porta all'arco sud 12 m); i fiancheggiatori (est/ovest) premono dai lati dal round 2
 - **Servono ~15 round di ritardo** mentre l'evacuazione prosegue
-- **Ruoli:** Borin tiene il chokepoint del tunnel · Dara cecchina i capi dalle brecce · Thorin *Muro di Pietra* per tappare una breccia + tiene vivo il Re · Nala *Polvere Luccicante* e instrada la colonna
+- **Ruoli:** Borin tiene il chokepoint del tunnel · Dara cecchina i capi dalle brecce · Harbek *Muro di Pietra* per tappare una breccia + tiene vivo il Re · Nala *Polvere Luccicante* e instrada la colonna
 
 ### 🌍 AMBIENTE (companion — regole, non prosa)
 | Elemento | Dove | Effetto meccanico 3.5 |
@@ -220,9 +220,9 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 
 @north N
 @tipo tattica caverna
-@mark 1 ; Q18 ; Borin Ferropugno (Ftr), testa di ponte sud
+@mark 1 ; Q18 ; Borin Giuraferro (Ftr), testa di ponte sud
 @mark 2 ; M5 ; Dara Occhiolesto (Rgr)
-@mark 3 ; U5 ; Thorin Runaforte (Clr)
+@mark 3 ; U5 ; Harbek Runaforte (Clr)
 @mark 4 ; Q4 ; Nala Cantapietre (Brd)
 @mark 5 ; M4 ; Colonna superstiti in marcia (85 nani, un quadretto ogni quattro)
 @mark 6 ; S4 ; Colonna superstiti in marcia
@@ -241,7 +241,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 ### 📍 POSIZIONI PRECISE:
 - **Borin:** Q18 (testa di ponte sud — 1-contro-1 forzato, nessun fiancheggiamento possibile)
 - **Dara:** M05 (sponda nord, dietro roccia 🪨 +4 CA — fuoco d'arco sul ponte)
-- **Thorin:** U05 (sponda nord, dietro roccia — cure a distanza su Borin)
+- **Harbek:** U05 (sponda nord, dietro roccia — cure a distanza su Borin)
 - **Nala:** Q04 (instrada la colonna verso l'uscita nord P-R 01, il tunnel largo 4,5 m che porta all'Incrocio)
 - **Colonna (85 superstiti + Re Thorek P03 su barella):** righe 03-04, in marcia; i quadretti disegnati sono la testa della colonna, il resto è già nel tunnel o sul ponte
 - **Colonne di roccia ⛰** F5-H7 e Z5-AB7 (sponda nord), I20-K22 e W20-Y22 (sponda sud): ci si gira attorno, e chi tiene la sponda sud ha dove ripararsi dai tiri
@@ -263,7 +263,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 ### ⚔️ TATTICHE
 - **Inseguitori:** caricano il ponte in colonna per 2; i più feroci provano la **Spinta** su Borin per buttarlo di sotto (contrapposta; ricordare il +4 di stabilità nanica)
 - **Borin:** Difesa Totale quando è a <50% PF; ogni round guadagnato = più colonna al sicuro
-- **Contromossa nanica:** Bull Rush sugli inseguitori a bordo ponte → Riflessi CD 18 o baratro; Thorin può *Pietra Sagomata* per rompere il bordo sud del ponte quando l'ultimo nano è passato
+- **Contromossa nanica:** Bull Rush sugli inseguitori a bordo ponte → Riflessi CD 18 o baratro; Harbek può *Pietra Sagomata* per rompere il bordo sud del ponte quando l'ultimo nano è passato
 - **Morale:** gli orchi smettono di caricare il ponte dopo ~10 caduti nel baratro e aspettano i bugbear (aggancio a MAPPA 3Z)
 
 ### 🔄 EVOLUZIONE
@@ -272,13 +272,13 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 | A — Colonna in transito | — | com'è disegnata | 1-vs-1 sul ponte |
 | B — Ondata successiva | ogni 1d4 round | +30 inseguitori da sud | pressione crescente |
 | C — Ritirata di Borin | colonna al sicuro | Borin attraversa; eventuale rottura del bordo del ponte | inseguimento rallentato di 10+ min |
-| D — Borin cade nel baratro | spinta riuscita | perdita del PNG (ARC08-03) | la retroguardia passa a Dara/Thorin |
+| D — Borin cade nel baratro | spinta riuscita | perdita del PNG (ARC08-03) | la retroguardia passa a Dara/Harbek |
 
 ---
 
 ## MAPPA 3Z REVISED: L'INCROCIO SILENZIOSO - ULTRA CHIARA
 **SVG**: `rendered/Hammerfist-L3-REVISED-Ultra-Clear_map03_mappa-3z-revised-l-incrocio-silenzioso-imboscata.svg` (rigenerare dopo ogni modifica)
-**Dimensioni:** 50m × 50m (33 colonne × 33 righe, 1,5 m/quadretto); la caverna è un ottagono di 40 m da parete a parete `[INFERRED]`, sei tunnel larghi 4,5 m (il nord-ovest e il nord-est 3 m)
+**Dimensioni:** 50m × 50m (33 colonne × 33 righe, 1,5 m/quadretto); la caverna è un ottagono di 40 m da parete a parete (misurato sulla griglia: 27 quadretti da ovest a est, colonne D-AD, 40,5 m; 26 da nord a sud, 39 m), sei tunnel larghi 4,5 m (il nord-ovest e il nord-est 3 m)
 **Contratto:** `fortezza-json/HF-3Z-incrocio-silenzioso.json` (si rigenera con `compile_map_json.py`)
 **Incontro:** imboscata — 8 Bugbear Assassini (Rog5/Asn2, GS 9 cad., scheda `Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md`) + 7 hobgoblin di diversione (+ eventuali 30 orchi al round 4)
 **Quando si usa:** ~30 minuti dopo l'ingresso nei tunnel (guida narrativa completa: `../ARC08-01-GUIDA-DM.md` § Incontro 2F — read-aloud, sequenza round-per-round, esiti)
@@ -338,8 +338,8 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @mark 9 ; Q19 ; Re Thorek XIII sulla barella (8 PF, morente)
 @mark 10 ; P19 ; Portatori della barella
 @mark 11 ; R19 ; Portatori della barella
-@mark 12 ; Q15 ; Borin Ferropugno (Ftr)
-@mark 13 ; O19 ; Thorin Runaforte (Clr), accanto al Re
+@mark 12 ; Q15 ; Borin Giuraferro (Ftr)
+@mark 13 ; O19 ; Harbek Runaforte (Clr), accanto al Re
 @mark 14 ; O15 ; Nala Cantapietre (Brd)
 @mark 15 ; L9 ; Dara Occhiolesto (Rgr), ai piedi della stalagmite S5
 @mark 16 ; AF17 ; Bugbear Assassini, tunnel EST (Rog5/Asn2) (GS 9 cad.)
@@ -361,7 +361,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 - **Pilastro dell'Incrocio ⛰ P16-R18:** colonna di roccia viva di 4,5 m, incisa di rune di direzione; copertura totale, e il giro attorno al Re.
 - **Re Thorek Q19** (barella, 8 PF) fra i due portatori P19 e R19, a sud del pilastro — bersaglio dei 4 bugbear EST
 - **Borin Q15** (a nord del pilastro: la sua **Osservare CD 25 al round 1** è la migliore occasione di scoprire l'imboscata → azione preparata)
-- **Thorin O19** (fianco del Re: *Barriera di Lame* per sigillare un tunnel; poi cure di massa; priorità assoluta = Thorek vivo)
+- **Harbek O19** (fianco del Re: *Barriera di Lame* per sigillare un tunnel; poi cure di massa; priorità assoluta = Thorek vivo)
 - **Nala O15** (*Polvere Luccicante* CD 16 per rivelare i bugbear; Controcanto; Ispirare Coraggio +2)
 - **Dara L9**, ai piedi della stalagmite S5 (L7): ci sale con Scalare CD 10, +2 circostanza a Osservare; Nemico Prescelto goblinoidi +4; Tiro Preciso
 - **Stalagmiti S1-S8 🔺** (copertura, 2-3 m): S1 L8 · S5 L7 (scalabile) · S2 V7 · S3 F13 · S4 AB12 · S6 G22 · S7 AA23 · S8 U28
@@ -404,7 +404,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 **Incontro:** Incontri 3A/3B — ultima resistenza a ondate + APPARIZIONE DEI RUMBLING STONES (round 9-10, come la guida)
 **Quando si usa:** Sessione 3 (guida: `../ARC08-01-GUIDA-DM.md` § Sessione 3; la "MAPPA 3A: Caverna Sacra" e la "MAPPA 3B: La Svolta" della guida sono gli stati A e F di questa griglia)
 
-### 🎯 COMPRENSIONE: caverna-cattedrale con l'altare di Moradin al centro (+3 m), 10 statue di re ancestrali in cerchio, quattro pilastri che reggono la volta; l'ingresso è la porta di mithral a nord, e dal fondo esce solo il condotto della sorgente, stretto per un nano carponi `[INFERRED]`. Le ondate entrano dal tunnel; al round 9-10 la Sfera dorata esplode sopra l'altare.
+### 🎯 COMPRENSIONE: caverna-cattedrale con l'altare di Moradin al centro (+3 m), 10 statue di re ancestrali in cerchio, quattro pilastri che reggono la volta; l'ingresso è la porta di mithral a nord, e dal fondo esce solo il condotto della sorgente, largo 1,5 m, da fare in fila indiana `[CANONE — DM 2026-11-04, P16, condotto della sorgente]`. Le ondate entrano dal tunnel; al round 9-10 la Sfera dorata esplode sopra l'altare.
 
 ### VISTA 1: GRIGLIA COMPLETA CON COORDINATE (67×53)
 
@@ -473,11 +473,11 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @mark 5 ; AE22 ; I 12 balestrieri del centro, dietro le file: sparano sopra le teste
 @mark 6 ; AH23 ; I 6 capi del centro
 @mark 7 ; AH29 ; Re Thorek XIII (8 PF, avvelenato: Guarigione CD 25 ogni round, al terzo fallimento muore)
-@mark 8 ; AG30 ; Madre Dana Forgiapietra (Clr 14: 20 pf, un solo Muro di Pietra)
+@mark 8 ; AG30 ; Madre Dagmar Forgiapietra (Clr 14: 20 pf, un solo Muro di Pietra)
 @mark 9 ; AK30 ; Cantitrici della Pietra (se sopravvissute) (Clr/Brd 11)
-@mark 10 ; AF29 ; Borin Ferropugno (Ftr)
+@mark 10 ; AF29 ; Borin Giuraferro (Ftr)
 @mark 11 ; BA27 ; Dara Occhiolesto (Rgr)
-@mark 12 ; AI29 ; Thorin Runaforte (Clr)
+@mark 12 ; AI29 ; Harbek Runaforte (Clr)
 @mark 13 ; O27 ; Nala Cantapietre (Brd)
 @mark 14 ; AH2 ; ONDATA 1 (round 3-4): Orchi Berserker (GS 1/2 (furia +4 For))
 @mark 15 ; AH3 ; ONDATA 2 (round 5-6): Hobgoblin + Sergente (GS 1/2-1)
@@ -502,11 +502,11 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 - **Altare di Moradin:** piattaforma 6 m, +3 m — AF26-AJ30; punto di manifestazione ✨ AH27 (3 m sopra l'altare)
 - **Re Thorek AH29** (8 PF, avvelenato dall'acido di Fauci: una prova di Guarigione CD 25 a ogni round finché nessuno lo cura per magia; al terzo fallimento muore. La cura segue l'SRD: *neutralizzare veleno* o *guarigione* fanno finire l'avvelenamento e fermano le prove `[CANONE — DM 2026-10-19, D12]`)
 - **Madre Dana AG30** (ha speso quasi tutto sulle mura: 20 pf e un solo *Muro di Pietra* per tutto il 3B, scheda nella guida; niente *guarigione* al round 1. La sua scheda completa vale per Dana riposata, cioè il mattino della battaglia `[CANONE — DM 2026-10-18]`, confermato dal D12 `[CANONE — DM 2026-10-19, D12]`) · **Cantitrici AJ30-AL30** (se sopravvissute)
-- **Borin AF29** (difesa altare) · **Thorin AI29** (accanto all'altare: +2 LI sacro) · **Dara BA27** (terrazzo EST +1,5 m) · **Nala O27** (terrazzo OVEST)
+- **Borin AF29** (difesa altare) · **Harbek AI29** (accanto all'altare: +2 LI sacro) · **Dara BA27** (terrazzo EST +1,5 m) · **Nala O27** (terrazzo OVEST)
 - **Lo schieramento** `[CANONE — DM 2026-10-30]`, rivolto all'unico ingresso: al centro, davanti alla porta, 40 guerrieri su quattro file (righe 18-21), 12 balestrieri dietro (riga 22) e 6 capi (riga 23); ai lati due ali piegate verso l'altare (W-Z e AO-AR, righe 22-25), ciascuna con 10 guerrieri, 4 balestrieri e 2 capi. Il sud dell'altare resta scoperto
 - **Porta di Mithral 🚪 AF05-AI05** (6 m a due battenti, ward collassati; l'unico ingresso per un esercito) — tunnel di 6 m di larghezza e 10 m di lunghezza alle spalle
 - **Pilastri della volta 🟪** U12-W14, AQ12-AS14, U42-W44, AQ42-AS44: 4,5 m di lato, copertura totale; gli assassini dell'ondata 3 li usano per aggirare le ali dello schieramento
-- **Condotto della sorgente 💧 AH49-AH53** `[INFERRED]`: largo 1,5 m, acqua alla caviglia, esce nei tunnel bassi. Ci passa una fila indiana: è la via di fuga se lo schieramento cede, e la strada di un terzo fianco se il DM la dà ai bugbear
+- **Condotto della sorgente 💧 AH49-AH53** `[CANONE — DM 2026-11-04, P16, condotto della sorgente]`: largo 1,5 m, acqua alla caviglia, esce nei tunnel bassi. Ci passa una fila indiana: è la via di fuga se lo schieramento cede. Nell'ondata 3 i bugbear lo usano: 5 dei 15 risalgono il condotto e sbucano alle spalle dell'altare, sul lato sud che nessuno guarda
 - **10 statue 🗿** in cerchio (~20 m dall'altare): occhi di rubino
 
 ### ⚔️ ONDATE (agganciate alle unità in griglia, rotte tratteggiate):
@@ -514,7 +514,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 |---|---|---|---|
 | 1 | 3-4 | 30 Orchi Berserker (furia +4 For, −2 CA) | carica cieca sul centro dello schieramento — imbuto alla porta |
 | 2 | 5-6 | 20 Hobgoblin + Sergente (immuni paura) | muro di scudi, fiancheggiamento coordinato (+2), sergente +1 att entro 6 m |
-| 3 | 7-8 | 15 Bugbear Assassini (`Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md`: furtivo +4d6, Nascondersi +17) | aggiramento sui fianchi (rotte viola), bersaglio Re Thorek — INTERROTTI dall'Apparizione (round 9-10) |
+| 3 | 7-8 | 15 Bugbear Assassini (`Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md`: furtivo +4d6, Nascondersi +17) | aggiramento sui fianchi (rotte viola) e, con 5 di loro, dal condotto della sorgente alle spalle dell'altare; bersaglio Re Thorek — INTERROTTI dall'Apparizione (round 9-10) |
 | Finale | corno all'11, ingresso al 12 | Grimjaw + 10 Guardie Nere orog (`Bestiario/mostri/orog-guardia-nera-guerriero6-cr7.md`) se vivo; altrimenti capitano hobgoblin → auto-ritirata | entra dalla porta sulla rotta nera, punta l'altare; sfida personale o ritirata strategica `[CANONE — DM 2026-10-19, D11]` |
 
 ### ✨ ROUND 9-10 — L'APPARIZIONE (climax):
@@ -552,10 +552,10 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 
 | Quota | Chi/cosa | Meccanica |
 |---|---|---|
-| +80 m (950 m s.l.m. `[INFERRED]`) | Fronte sud della fortezza / cancello riconquistato, fossato e ponte (righe 01-04 della MAPPA 4) | punto di partenza della carica |
-| +80 → +50 m | Pendio di circa il 27% fra le mura e la linea hobgoblin (riga 39, ~110 m più a sud) `[INFERRED]`; la strada a tornanti larga 6 m scende al 15% e la carica la taglia di traverso sul prato | **carica in discesa:** velocità +50% (contatto in 2 round invece di 3); carica +2 al tiro per colpire e nessun bonus ai danni (SRD), altura +1; i bonus morali non si sommano, vale il più alto (guida § Carica, totale +7, +11 con la benedizione sacra); nemici in mentalità di ritirata **−2 CA** |
+| +80 m (600 m s.l.m. `[CANONE — DM 2026-11-04, P16, quota sul mare]`) | Fronte sud della fortezza / cancello riconquistato, fossato e ponte (righe 01-04 della MAPPA 4) | punto di partenza della carica |
+| +80 → +50 m | Pendio di circa il 27% fra le mura e la linea hobgoblin (riga 39, ~110 m più a sud; 30 m su 110 m); la strada a tornanti larga 6 m scende al 15% e la carica la taglia di traverso sul prato | **carica in discesa:** velocità +50% (contatto in 2 round invece di 3); carica +2 al tiro per colpire e nessun bonus ai danni (SRD), altura +1; i bonus morali non si sommano, vale il più alto (guida § Carica, totale +7, +11 con la benedizione sacra); nemici in mentalità di ritirata **−2 CA** |
 | +50 → +20 m | Resti Mano Rossa (~400) schierati sul pendio, righe 39-55; la riga 68 è a circa +20 m | morale −6 dopo il Cuore della Montagna |
-| 0 m (870 m s.l.m. `[INFERRED]`) | La piana, 300 m a sud delle mura, fuori mappa; gli accampamenti dell'orda stanno a 500 m-1 km dalle mura | dove finisce la rotta |
+| 0 m (520 m s.l.m. `[CANONE — DM 2026-11-04, P16, quota sul mare]`) | La piana, 300 m a sud delle mura, fuori mappa; gli accampamenti dell'orda stanno a 500 m-1 km dalle mura | dove finisce la rotta |
 | 0-60 m (verticale) | Battaglia aerea | vedi VISTA ALTITUDINI nella MAPPA 4 REVISED |
 
 **Preparazione (read-aloud e discorso di Re Thorek):** guida § Sessione 4 — "FRATELLI! Oggi non moriamo — oggi VINCIAMO!" (+4 morale; non si somma ad altri bonus morali, vale il più alto: SRD).
@@ -565,7 +565,7 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 ## MAPPA 4 REVISED: BATTAGLIA FINALE TERRESTRE + AEREA - ULTRA CHIARA
 **SVG**: `rendered/Hammerfist-L3-REVISED-Ultra-Clear_map05_mappa-4-revised-battaglia-finale-terrestre-caric.svg` (rigenerare dopo ogni modifica)
 **Dimensioni:** 180m × 204m (60 colonne × 68 righe · 3 m/quadretto) — **mappa strategica** (`@tipo strategica`): la regia della carica, non un tappeto per le miniature
-**Quote:** le mura a 950 m s.l.m., +80 m sulla piana; la linea hobgoblin a ~920 m; il fondo della mappa a ~890 m `[INFERRED]`. La strada a tornanti 🟫 scende dal ponte (AD05) con i gomiti in AW16, M35, AW54 e arriva alla riga 68 in AD
+**Quote:** le mura a 600 m s.l.m., +80 m sulla piana; la linea hobgoblin a ~570 m; il fondo della mappa a ~540 m `[CANONE — DM 2026-11-04, P16, quota sul mare]`. La strada a tornanti 🟫 scende dal ponte (AD05) con i gomiti in AW16, M35, AW54 e arriva alla riga 68 in AD
   ⚠️ Regia della carica finale ("MAPPA 4A/4B" della guida): per il duello col drago a terra passare a scala tattica sul punto di crash. Non mischiare quadretti di scale diverse.
 **Incontro:** Incontri 4A + 4B — carica del cuneo + Fauci di Palude + Gorthak
 **Quando si usa:** Sessione 4, round 1-23 (guida: `../ARC08-01-GUIDA-DM.md` § Sessione 4)
@@ -668,18 +668,18 @@ COLONNE:  A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AA AB AC AD AE AF 
 @path Ala destra (Hella + 2 Treant + 30) ; AI9 AI37 ; #1d6fd8
 @path Picchiata e presa di Fauci su Thorik (vendetta di sangue) ; G17 AD37 AD31 ; #8c2fb8
 @path Rotta degli orchi verso sud ; AD47 AD65 ; #d62828
-@zone N1-AU2 ; Hammerfist - fronte sud riconquistato, 102 m (950 m s.l.m., +80 m sulla piana; misure: tabella MISURE in L2)
+@zone N1-AU2 ; Hammerfist - fronte sud riconquistato, 102 m (600 m s.l.m., +80 m sulla piana; misure: tabella MISURE in L2)
 @zone AB30-AG32 ; Zona dove cade Thorik e atterra Fauci (round 20-21)
 @tipo strategica esterno
 @luogo Hammerfist, pendio sud
-@quota 920 m ; s.l.m., la linea hobgoblin alla riga 39
+@quota 570 m ; s.l.m., la linea hobgoblin alla riga 39
 @dislivello +50 m ; sulla piana, che comincia 300 m a sud delle mura, fuori mappa
 ```
 
 ### 🦅 VISTA ALTITUDINI (battaglia aerea simultanea, 0-60 m):
 | Quota | Chi | Azioni chiave |
 |---|---|---|
-| 60 m | **Maestro Tempestas** (LI 14: bardo 12°/cantore delle tempeste 2°, `ARC08-02` §2) `[CANONE — DM 2026-10-19, D14]` | La tempesta l'ha lanciata **Orion** con *controllare tempo* prima della battaglia (SRD: lui dirige il vento, non i fulmini). Tempestas apre con la **Cantata della Tempesta Tonante**: ostili entro 18 m, 2d6 elettrici a inizio turno per 3 round, Riflessi CD 23; alleati entro 18 m +2 di morale per 10 round. Poi *fulmine* ed *esplosione sonora*. Venti 80 km/h (vento violento: Tempra CD 15 solo per le creature Piccole, SRD); pioggia −4 al tiro a distanza; insieme una *tempesta* SRD, dove gli attacchi a distanza con armi sono impossibili, salvo dall'occhio sopra i bastioni (deroga dichiarata) |
+| 60 m | **Maestro Tempestas** (LI 15: bardo 12°/cantore delle tempeste 3°, `ARC08-02` §2) `[CANONE — DM 2026-10-19, D14]` | La tempesta l'ha lanciata **Orion** con *controllare tempo* prima della battaglia (SRD: lui dirige il vento, non i fulmini). Tempestas apre con la **Cantata della Tempesta Tonante**: ostili entro 18 m, 2d6 elettrici a inizio turno per 3 round, Riflessi CD 23; alleati entro 18 m +2 di morale per 10 round. Poi *fulmine* ed *esplosione sonora*. Venti 80 km/h (vento violento: Tempra CD 15 solo per le creature Piccole, SRD); pioggia −4 al tiro a distanza; insieme una *tempesta* SRD, dove gli attacchi a distanza con armi sono impossibili, salvo dall'occhio sopra i bastioni (deroga dichiarata) |
 | 30-45 m | **Fauci di Palude** (PF 337 se il P5 non è stato giocato; altrimenti 337 meno il carry-over di `../ARC08-10-ESITI-E-CONTINGENZE.md` §4.1) `[CANONE — DM 2026-10-19, D9]` | soffio e *nube maleodorante* dall'alto; ai round 18-20 la picchiata e la presa di Thorik (Odio della stirpe, +4: ignora i gufi): lo morde, sale a 30-35 m con lui in bocca, soffia sui compagni e lo lascia cadere sulla zona ⚡ (`../ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md` §1, «La presa di Thorik»). Contro i PG in volo resta in aria: Fluttuare, soffio in linea, e *Ghermire* solo su Thorik (guida § Incontro 4A, «ROUND 18-23») |
 | 30-50 m | **Signore Ventolesto + 12 Ranger Elfici** su gufi | 6 alti (distrazione) + 6 bassi (intercetto); archi compositi +16, 1d8+6 +2d6 *Bane* draghi; Ventolesto Punire il Male +10 |
 | variabile | **Orion Pelleorsa** | SALTA sul dorso del drago (movimento) già in Forma Selvatica Orso Crudele, presa il round prima (azione standard): salto, forma e presa non stanno in un round solo (SRD, guida § Orion). Lotta +24 contro +43: la lotta è contrapposta (SRD) e Fauci se ne libera quasi sempre, quindi il peso da solo non forza la discesa. Quando non è sul drago, *chiamare fulmini*: 3d10 a fulmine nella tempesta, Riflessi CD 20 (SRD) `[CANONE — DM 2026-10-19, D14]` |

@@ -1,0 +1,21 @@
+Build skill packages                     | Install dependencies                     n=79 media=5 mediana=4 max=14 {'success': 79}
+Build skill packages                     | JOB                                      n=81 media=33 mediana=29 max=196 {'success': 79, 'skipped': 2}
+Convertitori in prova (import su 3.13) — | Dipendenze dei convertitori (torch per C n=81 media=11 mediana=11 max=47 {'success': 81}
+Convertitori in prova (import su 3.13) — | Installa uv (versione fissata)           n=81 media=3 mediana=3 max=12 {'success': 81}
+Convertitori in prova (import su 3.13) — | JOB                                      n=81 media=52 mediana=51 max=100 {'success': 81}
+Convertitori in prova (import su 3.13) — | Ogni modulo del motore PDF si importa    n=81 media=20 mediana=21 max=27 {'success': 81}
+Misure di stampa dei booklet (misura_sta | Install dependencies                     n=55 media=24 mediana=24 max=30 {'success': 55}
+Misure di stampa dei booklet (misura_sta | JOB                                      n=55 media=164 mediana=152 max=438 {'success': 52, 'failure': 3}
+Piattaforma in prova (uv, pytest-xdist)  | Installa con uv                          n=81 media=3 mediana=2 max=5 {'success': 81}
+Piattaforma in prova (uv, pytest-xdist)  | Installa uv (versione fissata)           n=81 media=3 mediana=3 max=10 {'success': 81}
+Piattaforma in prova (uv, pytest-xdist)  | JOB                                      n=81 media=191 mediana=187 max=534 {'success': 81}
+Piattaforma in prova (uv, pytest-xdist)  | Stessi pacchetti di pip (nomi e versioni n=81 media=26 mediana=26 max=38 {'success': 81}
+Piattaforma in prova (uv, pytest-xdist)  | pytest -n auto                           n=81 media=132 mediana=133 max=201 {'success': 81}
+Riscontro SRD in prova (ARC-08) — non bl | Install dependencies                     n=72 media=6 mediana=4 max=18 {'success': 72}
+Riscontro SRD in prova (ARC-08) — non bl | JOB                                      n=72 media=41 mediana=35 max=190 {'success': 72}
+Strumenti con mise — stessi byte di stru | JOB                                      n=3 media=247 mediana=106 max=533 {'failure': 3}
+Termini ufficiali 3.5 e PF1e (ADR-0110)  | JOB                                      n=37 media=33 mediana=34 max=45 {'success': 37}
+Validate skills & scripts                | Install dependencies                     n=81 media=24 mediana=24 max=34 {'success': 81}
+Validate skills & scripts                | JOB                                      n=81 media=540 mediana=558 max=859 {'success': 79, 'failure': 2}
+Validate skills & scripts                | Unit tests — pytest (ADR-0037 em. 2026-0 n=81 media=205 mediana=207 max=268 {'success': 79, 'skipped': 2}
+Validate skills & scripts                | ruff — nomi non definiti, codice morto,  n=81 media=0 mediana=0 max=1 {'success': 81}

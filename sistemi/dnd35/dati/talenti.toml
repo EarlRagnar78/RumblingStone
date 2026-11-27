@@ -1,0 +1,2376 @@
+# sistemi/dnd35/dati/talenti.toml — talenti SRD 3.5 e talenti bonus delle classi.
+# Generato da plans/esperimenti/regole-complete-2026-11-10/estrai_talenti.py (non a mano).
+# Fonte: olimot/srd-v3.5-md@c7f30a0c, feats.md e character-classes-i/ii.md. OGL 1.0a.
+
+# [capacita]: classi che hanno la capacità chiesta da un talento, e da quale livello
+# (colonna «Special» delle tabelle; per «cast … spells» la prima riga della griglia).
+[capacita]
+"cast arcane spells" = { "bardo" = 1, "mago" = 1, "stregone" = 1 }
+"cast divine spells" = { "chierico" = 1, "druido" = 1, "paladino" = 5, "ranger" = 5 }
+"cast spells" = { "bardo" = 1, "chierico" = 1, "druido" = 1, "mago" = 1, "paladino" = 5, "ranger" = 5, "stregone" = 1 }
+"lay on hands" = { "paladino" = 2 }
+"rage" = { "barbaro" = 1 }
+"turn or rebuke creatures" = { "chierico" = 1, "paladino" = 4 }
+"wild shape" = { "druido" = 5 }
+
+# [talenti."Nome inglese"]: it, tipi, prerequisiti (car, bab, lic, talenti, classe, gradi).
+# `altro` = prerequisiti che il testo dice e la regola non sa leggere: il generatore salta il talento.
+# [bonus."classe"]: livelli dei talenti bonus, lista (tipi e nomi; nomi per livello d'ingresso),
+# senza_prerequisiti se la classe li ignora, concessi = talenti dati per nome dalla tabella o dal
+# testo delle capacità; tipi_livello e scelte = la lista di quel solo livello (tattico del cavaliere,
+# compagno preciso del cacciatore); stili = liste per stile di combattimento o stirpe.
+
+[bonus."barbaro"]
+livelli = []
+tipi = []
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = { "20" = ["Mighty Rage"] }
+fonte = "SRD 3.5 character-classes-i.md, tabella e testo «barbarian»"
+
+[bonus."guerriero"]
+livelli = [1, 2, 4, 6, 8, 10, 12, 14, 16, 18, 20]
+tipi = ["Fighter"]
+nomi = {  }
+senza_prerequisiti = false
+cumulativa = true
+concessi = {  }
+fonte = "SRD 3.5 character-classes-i.md, tabella e testo «fighter»"
+
+[bonus."mago"]
+livelli = [5, 10, 15, 20]
+tipi = ["Item Creation", "Metamagic"]
+nomi = { "1" = ["Spell Mastery"] }
+senza_prerequisiti = false
+cumulativa = true
+concessi = { "1" = ["Scribe Scroll"] }
+fonte = "SRD 3.5 character-classes-ii.md, tabella e testo «wizard»"
+
+[bonus."monaco"]
+livelli = [1, 2, 6]
+tipi = []
+nomi = { "1" = ["Improved Grapple", "Stunning Fist"], "2" = ["Combat Reflexes", "Deflect Arrows"], "6" = ["Improved Disarm", "Improved Trip"] }
+senza_prerequisiti = true
+cumulativa = false
+concessi = { "1" = ["Improved Unarmed Strike"] }
+fonte = "SRD 3.5 character-classes-i.md, tabella e testo «monk»"
+
+[bonus."ranger"]
+livelli = [2, 6, 11]
+tipi = []
+nomi = {  }
+senza_prerequisiti = true
+cumulativa = false
+concessi = { "1" = ["Track"], "3" = ["Endurance"] }
+stili."Archery" = { "2" = ["Rapid Shot"], "6" = ["Manyshot"], "11" = ["Improved Precise Shot"] }
+stili."Two-Weapon" = { "2" = ["Two-Weapon Fighting"], "6" = ["Improved Two-Weapon Fighting"], "11" = ["Greater Two-Weapon Fighting"] }
+fonte = "SRD 3.5 character-classes-ii.md, tabella e testo «ranger»"
+
+[talenti."Ability Focus"]
+it = "Capacità focalizzata"
+tipi = ["General"]
+libro = "srd-mostri"
+altro = ["Special attack"]
+
+[talenti."Acrobatic"]
+it = "Acrobatico"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Additional Magic Item Space"]
+it = "Spazio per Oggetti Magici Aggiuntivi"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Agile"]
+it = "Agile"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Alertness"]
+it = "Allerta"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Aligned Attack"]
+it = "Attacco Allineato"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+bab = 6
+
+[talenti."Animal Affinity"]
+it = "Affinità animale"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Antipsionic Magic"]
+it = "Magia Antipsionica"
+tipi = ["General"]
+libro = "srd-psionici"
+gradi = { "spellcraft" = 5 }
+
+[talenti."Armor Proficiency (Heavy)"]
+it = "Competenza nelle Armature (Pesanti)"
+tipi = ["General"]
+libro = "srd"
+talenti = ["Armor Proficiency (Light)", "Armor Proficiency (Medium)"]
+
+[talenti."Armor Proficiency (Light)"]
+it = "Competenza nelle armature (leggere)"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Armor Proficiency (Medium)"]
+it = "Competenza nelle Armature (Medie)"
+tipi = ["General"]
+libro = "srd"
+talenti = ["Armor Proficiency (Light)"]
+
+[talenti."Armor Skin"]
+it = "Pelle Corazzata"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Athletic"]
+it = "Atletico"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Augment Summoning"]
+it = "Aumentare evocazione"
+tipi = ["General"]
+libro = "srd"
+talenti = ["Spell Focus"]
+
+[talenti."Augmented Alchemy"]
+it = "Alchimia Accresciuta"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Int" = 21 }
+gradi = { "craft(alchemy)" = 24 }
+
+[talenti."Automatic Quicken Spell"]
+it = "Incantesimi Rapidi Automatici"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "spellcraft" = 30 }
+talenti = ["Quicken Spell"]
+altro = ["ability to cast 9th-level arcane or divine spells"]
+
+[talenti."Automatic Silent Spell"]
+it = "Incantesimi Silenziosi Automatici"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "spellcraft" = 24 }
+talenti = ["Silent Spell"]
+altro = ["ability to cast 9th-level arcane or divine spells"]
+
+[talenti."Automatic Still Spell"]
+it = "Incantesimi Immobili Automatici"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "spellcraft" = 27 }
+talenti = ["Still Spell"]
+altro = ["ability to cast 9th-level arcane or divine spells"]
+
+[talenti."Autonomous"]
+it = "Autonomo"
+tipi = ["General"]
+libro = "srd-psionici"
+
+[talenti."Awesome Blow"]
+it = "Colpo terrificante"
+tipi = ["Fighter", "General"]
+libro = "srd-mostri"
+car = { "For" = 25 }
+talenti = ["Power Attack", "Improved Bull Rush"]
+altro = ["size Large or larger"]
+
+[talenti."Bane of Enemies"]
+it = "Anatema dei Nemici"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "survival" = 24 }
+altro = ["five or more favored enemies"]
+
+[talenti."Blind-Fight"]
+it = "Combattere alla cieca"
+tipi = ["Fighter", "General"]
+libro = "srd"
+
+[talenti."Blinding Speed"]
+it = "Velocità Accecante"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 25 }
+
+[talenti."Body Fuel"]
+it = "Alimentazione Corporea"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+
+[talenti."Bonus Domain"]
+it = "Dominio Bonus"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Sag" = 21 }
+altro = ["ability to cast 9th-level divine spells"]
+
+[talenti."Boost Construct"]
+it = "Incrementare Costrutto"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+
+[talenti."Brew Potion"]
+it = "Mescere pozioni"
+tipi = ["Item Creation"]
+libro = "srd"
+lic = 3
+
+[talenti."Bulwark of Defense"]
+it = "Baluardo di Difesa"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Cos" = 25 }
+altro = ["defensive stance 3/day"]
+
+[talenti."Burrowing Power"]
+it = "Poteri Scavanti"
+tipi = ["Metapsionic"]
+libro = "srd-psionici"
+
+[talenti."Chain Power"]
+it = "Poteri Concatenati"
+tipi = ["Metapsionic"]
+libro = "srd-psionici"
+
+[talenti."Chaotic Mind"]
+it = "Mente Caotica"
+tipi = ["General"]
+libro = "srd-psionici"
+car = { "Car" = 15 }
+altro = ["Chaotic alignment"]
+
+[talenti."Chaotic Rage"]
+it = "Ira Caotica"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Rage 5/day", "chaotic alignment"]
+
+[talenti."Cleave"]
+it = "Incalzare"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "For" = 13 }
+talenti = ["Power Attack"]
+
+[talenti."Cloak Dance"]
+it = "Danza Ammantata"
+tipi = ["General"]
+libro = "srd-psionici"
+gradi = { "hide" = 10, "perform (dance)" = 2 }
+
+[talenti."Closed Mind"]
+it = "Mente Chiusa"
+tipi = ["General"]
+libro = "srd-psionici"
+
+[talenti."Colossal Wild Shape"]
+it = "Forma Selvatica Colossale"
+tipi = ["Wild][Epic"]
+libro = "srd-epici"
+altro = ["The ability to _wild shape_ into a Gargantuan creature"]
+
+[talenti."Combat Archery"]
+it = "Arciere da Combattimento"
+tipi = ["Epic"]
+libro = "srd-epici"
+talenti = ["Dodge", "Mobility", "Point Blank Shot"]
+
+[talenti."Combat Casting"]
+it = "Incantare in combattimento"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Combat Expertise"]
+it = "Maestria in combattimento"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Int" = 13 }
+
+[talenti."Combat Manifestation"]
+it = "Manifestare in Combattimento"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+
+[talenti."Combat Reflexes"]
+it = "Riflessi in combattimento"
+tipi = ["Fighter", "General"]
+libro = "srd"
+
+[talenti."Craft Cognizance Crystal"]
+it = "Creare Cristalli Coscienti"
+tipi = ["Item Creation"]
+libro = "srd-psionici"
+classe = { "manifester" = 3 }
+
+[talenti."Craft Construct"]
+it = "Creare costrutti"
+tipi = ["Item Creation"]
+libro = "srd-mostri"
+talenti = ["Craft Wondrous Item"]
+altro = ["Craft Magic Arms", "Armor"]
+
+[talenti."Craft Dorje"]
+it = "Creare Dorje"
+tipi = ["Item Creation"]
+libro = "srd-psionici"
+classe = { "manifester" = 5 }
+
+[talenti."Craft Epic Magic Arms and Armor"]
+it = "Creare Armi e Armature Magiche Epiche"
+tipi = ["Item Creation][Epic"]
+libro = "srd-epici"
+gradi = { "knowledge (arcana)" = 28, "spellcraft" = 28 }
+altro = ["Craft Magic Arms", "Armor"]
+
+[talenti."Craft Epic Rod"]
+it = "Creare Verghe Epiche"
+tipi = ["Item Creation][Epic"]
+libro = "srd-epici"
+gradi = { "knowledge (arcana)" = 32, "spellcraft" = 32 }
+talenti = ["Craft Rod"]
+
+[talenti."Craft Epic Staff"]
+it = "Creare Bastoni Epici"
+tipi = ["Item Creation][Epic"]
+libro = "srd-epici"
+gradi = { "knowledge (arcana)" = 35, "spellcraft" = 35 }
+talenti = ["Craft Staff"]
+
+[talenti."Craft Epic Wondrous Item"]
+it = "Creare Oggetti Meravigliosi Epici"
+tipi = ["Item Creation][Epic"]
+libro = "srd-epici"
+gradi = { "knowledge (arcana)" = 26, "spellcraft" = 26 }
+talenti = ["Craft Wondrous Item"]
+
+[talenti."Craft Magic Arms and Armor"]
+it = "Creare armi e armature magiche"
+tipi = ["Item Creation"]
+libro = "srd"
+lic = 5
+
+[talenti."Craft Psicrown"]
+it = "Creare Psicorone"
+tipi = ["Item Creation"]
+libro = "srd-psionici"
+classe = { "manifester" = 12 }
+
+[talenti."Craft Psionic Arms and Armor"]
+it = "Creare Armi e Armature Psioniche"
+tipi = ["Item Creation"]
+libro = "srd-psionici"
+classe = { "manifester" = 5 }
+
+[talenti."Craft Psionic Construct"]
+it = "Creare Costrutti Psionici"
+tipi = ["Item Creation"]
+libro = "srd-psionici"
+talenti = ["Craft Universal Item"]
+altro = ["Craft Psionic Arms", "Armor"]
+
+[talenti."Craft Rod"]
+it = "Creare verghe"
+tipi = ["Item Creation"]
+libro = "srd"
+lic = 9
+
+[talenti."Craft Staff"]
+it = "Creare bastoni"
+tipi = ["Item Creation"]
+libro = "srd"
+lic = 12
+
+[talenti."Craft Universal Item"]
+it = "Creare Oggetti Universali"
+tipi = ["Item Creation"]
+libro = "srd-psionici"
+classe = { "manifester" = 3 }
+
+[talenti."Craft Wand"]
+it = "Creare bacchette"
+tipi = ["Item Creation"]
+libro = "srd"
+lic = 5
+
+[talenti."Craft Wondrous Item"]
+it = "Creare oggetti meravigliosi"
+tipi = ["Item Creation"]
+libro = "srd"
+lic = 3
+
+[talenti."Damage Reduction"]
+it = ""
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Cos" = 21 }
+
+[talenti."Deadly Precision"]
+it = "Precisione Mortale"
+tipi = ["General"]
+libro = "srd-psionici"
+car = { "Des" = 15 }
+bab = 5
+
+[talenti."Deafening Song"]
+it = "Canto Assordante"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "perform" = 24 }
+altro = ["bardic music class feature"]
+
+[talenti."Death of Enemies"]
+it = "Morte dei Nemici"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "survival" = 30 }
+talenti = ["Bane of Enemies"]
+altro = ["five or more favored enemies"]
+
+[talenti."Deceitful"]
+it = "Ingannevole"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Deep Impact"]
+it = "Impatto Profondo"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "For" = 13 }
+bab = 5
+talenti = ["Psionic Weapon"]
+
+[talenti."Deflect Arrows"]
+it = "Deviare frecce"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 13 }
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Deft Hands"]
+it = "Manolesta"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Delay Power"]
+it = "Poteri Ritardati"
+tipi = ["Metapsionic"]
+libro = "srd-psionici"
+
+[talenti."Devastating Critical"]
+it = "Critico Devastante"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "For" = 25 }
+talenti = ["Cleave", "Great Cleave", "Improved Critical", "Power Attack", "Weapon Focus"]
+altro = ["Overwhelming Critical (chosen weapon)"]
+
+[talenti."Dexterous Fortitude"]
+it = "Tempra Scattante"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 25 }
+altro = ["slippery mind class feature"]
+
+[talenti."Dexterous Will"]
+it = "Volontà Scattante"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 25 }
+altro = ["slippery mind class feature"]
+
+[talenti."Diehard"]
+it = "Duro a morire"
+tipi = ["General"]
+libro = "srd"
+talenti = ["Endurance"]
+
+[talenti."Diligent"]
+it = "Diligente"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Diminutive Wild Shape"]
+it = "Forma Selvatica Minuta"
+tipi = ["Wild][Epic"]
+libro = "srd-epici"
+altro = ["Ability to _wild shape_ into a Huge animal"]
+
+[talenti."Dire Charge"]
+it = "Carica Crudele"
+tipi = ["Epic"]
+libro = "srd-epici"
+talenti = ["Improved Initiative"]
+
+[talenti."Distant Shot"]
+it = "Tiro Distante"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 25 }
+gradi = { "spot" = 20 }
+talenti = ["Far Shot", "Point Blank Shot"]
+
+[talenti."Dodge"]
+it = "Schivare"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 13 }
+
+[talenti."Dragon Wild Shape"]
+it = "Forma Selvatica Draghesca"
+tipi = ["Wild][Epic"]
+libro = "srd-epici"
+car = { "Sag" = 30 }
+gradi = { "knowledge (nature)" = 30 }
+altro = ["_wild shape_ 6/day"]
+
+[talenti."Efficient Item Creation"]
+it = "Creazione Oggetto Efficiente"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "knowledge (arcana)" = 24, "spellcraft" = 24 }
+altro = ["Item creation feat to be selected"]
+
+[talenti."Empower Power"]
+it = "Poteri Potenziati"
+tipi = ["Metapsionic"]
+libro = "srd-psionici"
+
+[talenti."Empower Spell"]
+it = "Incantesimi potenziati"
+tipi = ["Metamagic"]
+libro = "srd"
+
+[talenti."Empower Spell-Like Ability"]
+it = "Capacità magica potenziata"
+tipi = ["General"]
+libro = "srd-mostri"
+lic = 6
+
+[talenti."Endurance"]
+it = "Resistenza fisica"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Energy Resistance"]
+it = "Resistenza all’Energia"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Enhance Spell"]
+it = "Incantesimi Aumentati"
+tipi = ["Metamagic][Epic"]
+libro = "srd-epici"
+talenti = ["Maximize Spell"]
+
+[talenti."Enlarge Power"]
+it = "Poteri Ingranditi"
+tipi = ["Metapsionic"]
+libro = "srd-psionici"
+
+[talenti."Enlarge Spell"]
+it = "Incantesimi ingranditi"
+tipi = ["Metamagic"]
+libro = "srd"
+
+[talenti."Epic Dodge"]
+it = "Schivare Epico"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 25 }
+gradi = { "tumble" = 30 }
+talenti = ["Dodge"]
+altro = ["improved evasion", "defensive roll class feature"]
+
+[talenti."Epic Endurance"]
+it = "Resistenza Fisica Epica"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Cos" = 25 }
+talenti = ["Endurance"]
+
+[talenti."Epic Expanded Knowledge"]
+it = "Espandere Conoscenza Epica"
+tipi = ["Epic", "Psionic"]
+libro = "srd-epici"
+classe = { "character" = 21 }
+altro = ["ability to manifest powers of the normal maximum power level in at least one psionic class"]
+
+[talenti."Epic Fortitude"]
+it = "Tempra Epica"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Epic Inspiration"]
+it = "Ispirazione Epica"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Car" = 25 }
+gradi = { "perform" = 30 }
+altro = ["bardic music class feature"]
+
+[talenti."Epic Leadership"]
+it = "Autorità Epica"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Car" = 25 }
+talenti = ["Leadership"]
+altro = ["Leadership score 25"]
+
+[talenti."Epic Prowess"]
+it = "Prodezza Epica"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Epic Psionic Focus"]
+it = "Potere Focalizzato Epico"
+tipi = ["Epic", "Psionic"]
+libro = "srd-epici"
+classe = { "character" = 21 }
+altro = ["ability to manifest powers of the normal maximum power level in at least one psionic class"]
+
+[talenti."Epic Reflexes"]
+it = "Riflessi Epici"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Epic Reputation"]
+it = "Reputazione Epica"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Epic Skill Focus"]
+it = "Abilità Focalizzata Epica"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["20 ranks in the skill selected"]
+
+[talenti."Epic Speed"]
+it = "Velocità Epica"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 21 }
+talenti = ["Run"]
+
+[talenti."Epic Spell Focus"]
+it = "Incantesimo Focalizzato Epico"
+tipi = ["Epic"]
+libro = "srd-epici"
+talenti = ["Greater Spell Focus"]
+altro = ["Spell Focus in the school selected", "ability to cast at least one 9th-level spell of the school to be chosen"]
+
+[talenti."Epic Spell Penetration"]
+it = "Incantesimi Inarrestabili Epici"
+tipi = ["Epic"]
+libro = "srd-epici"
+talenti = ["Greater Spell Penetration", "Spell Penetration"]
+
+[talenti."Epic Spellcasting"]
+it = "Incantatore Epico"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "spellcraft" = 24, "knowledge (arcana)" = 24, "knowledge (religion)" = 24, "knowledge (nature)" = 24 }
+altro = ["ability to cast 9th-level arcane spells. OR Spellcraft 24 ranks", "ability to cast 9th-level divine spells. OR Spellcraft 24 ranks", "ability to cast 9th-level divine spells"]
+
+[talenti."Epic Toughness"]
+it = "Robustezza Epica"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Epic Weapon Focus"]
+it = "Arma Focalizzata Epica"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Weapon Focus in the chosen weapon"]
+
+[talenti."Epic Weapon Specialization"]
+it = "Specializzazione Epica in un'Arma"
+tipi = ["Epic"]
+libro = "srd-epici"
+talenti = ["Epic Weapon Focus", "Weapon Focus", "Weapon Specialization"]
+
+[talenti."Epic Will"]
+it = "Volontà Epica"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Eschew Materials"]
+it = "Escludere materiali"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Exceptional Deflection"]
+it = "Deviare Straordinario"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 21, "Sag" = 19 }
+talenti = ["Deflect Arrows", "Improved Unarmed Strike"]
+
+[talenti."Exotic Weapon Proficiency"]
+it = "Competenza nelle armi esotiche"
+tipi = ["Fighter", "General"]
+libro = "srd"
+bab = 1
+
+[talenti."Expanded Knowledge"]
+it = "Espandere Conoscenza"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+classe = { "manifester" = 3 }
+
+[talenti."Extend Power"]
+it = "Poteri Estesi"
+tipi = ["Metapsionic"]
+libro = "srd-psionici"
+
+[talenti."Extend Spell"]
+it = "Incantesimi estesi"
+tipi = ["Metamagic"]
+libro = "srd"
+
+[talenti."Extended Life Span"]
+it = "Arco Vitale Prolungato"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Extra Music"]
+it = "Musica Extra"
+tipi = ["General"]
+libro = "srd-divini"
+altro = ["Bardic music"]
+
+[talenti."Extra Turning"]
+it = "Scacciare extra"
+tipi = ["General"]
+libro = "srd"
+capacita = ["turn or rebuke creatures"]
+
+[talenti."Familiar Spell"]
+it = "Incantesimo del Famiglio"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Int 25 (if the character’s spellcasting is controlled by Intelligence) or Cha 25 (if the character’s spellcasting is controlled by Charisma)"]
+
+[talenti."Far Shot"]
+it = "Tiro lontano"
+tipi = ["Fighter", "General"]
+libro = "srd"
+talenti = ["Point Blank Shot"]
+
+[talenti."Fast Healing"]
+it = "Guarigione Rapida"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Cos" = 25 }
+
+[talenti."Fell Shot"]
+it = "Tiro Perforante"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "Des" = 13 }
+bab = 5
+talenti = ["Point Blank Shot", "Psionic Shot"]
+
+[talenti."Fine Wild Shape"]
+it = "Forma Selvatica Piccolissima"
+tipi = ["Wild][Epic"]
+libro = "srd-epici"
+altro = ["Ability to _wild shape_ into a Diminutive creature"]
+
+[talenti."Flyby Attack"]
+it = "Attacco in volo"
+tipi = ["General"]
+libro = "srd-mostri"
+altro = ["Fly speed"]
+
+[talenti."Focused Sunder"]
+it = "Spezzare Focalizzato"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "For" = 13 }
+talenti = ["Power Attack", "Improved Sunder"]
+
+[talenti."Force of Will"]
+it = "Forza di Volontà"
+tipi = ["General"]
+libro = "srd-psionici"
+talenti = ["Iron Will"]
+
+[talenti."Forge Epic Ring"]
+it = "Forgiare Anelli Epici"
+tipi = ["Item Creation][Epic"]
+libro = "srd-epici"
+gradi = { "knowledge (arcana)" = 35, "spellcraft" = 35 }
+talenti = ["Forge Ring"]
+
+[talenti."Forge Ring"]
+it = "Forgiare anelli"
+tipi = ["Item Creation"]
+libro = "srd"
+lic = 12
+
+[talenti."Gargantuan Wild Shape"]
+it = "Forma Selvatica Mastodontica"
+tipi = ["Wild][Epic"]
+libro = "srd-epici"
+altro = ["Ability to _wild shape_ into a Huge animal"]
+
+[talenti."Ghost Attack"]
+it = "Attacco Fantasma"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+bab = 3
+
+[talenti."Great Charisma"]
+it = "Carisma Possente"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Great Cleave"]
+it = "Incalzare potenziato"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "For" = 13 }
+bab = 4
+talenti = ["Cleave", "Power Attack"]
+
+[talenti."Great Constitution"]
+it = "Costituzione Possente"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Great Dexterity"]
+it = "Destrezza Possente"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Great Fortitude"]
+it = "Tempra possente"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Great Intelligence"]
+it = "Intelligenza Possente"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Great Smiting"]
+it = "Punire Possente"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Car" = 25 }
+altro = ["smite ability (from class feature or domain granted power)"]
+
+[talenti."Great Strength"]
+it = "Forza Possente"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Great Wisdom"]
+it = "Saggezza Possente"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Greater Manyshot"]
+it = "Tiro Multiplo Superiore"
+tipi = ["Fighter", "General"]
+libro = "srd-psionici"
+car = { "Des" = 17 }
+bab = 6
+talenti = ["Manyshot", "Point Blank Shot", "Rapid Shot"]
+
+[talenti."Greater Multiweapon Fighting"]
+it = "Combattere con Più Armi Superiore"
+tipi = ["General"]
+libro = "srd-epici"
+car = { "Des" = 19 }
+bab = 15
+talenti = ["Multiweapon Fighting"]
+altro = ["three or more arms", "Improved Multiweapon Fighting"]
+
+[talenti."Greater Power Penetration"]
+it = "Poteri Inarrestabili Superiore"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+talenti = ["Power Penetration"]
+
+[talenti."Greater Power Specialization"]
+it = "Poteri Specializzati Superiore"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+classe = { "manifester" = 12 }
+talenti = ["Power Specialization", "Weapon Focus"]
+
+[talenti."Greater Psionic Endowment"]
+it = "Dono Psionico Superiore"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+talenti = ["Psionic Endowment"]
+
+[talenti."Greater Psionic Fist"]
+it = "Pugno Psionico Superiore"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "For" = 13 }
+bab = 5
+talenti = ["Psionic Fist"]
+
+[talenti."Greater Psionic Shot"]
+it = "Tiro Psionico Superiore"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+bab = 5
+talenti = ["Point Blank Shot", "Psionic Shot"]
+
+[talenti."Greater Psionic Weapon"]
+it = "Arma Psionica Superiore"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "For" = 13 }
+bab = 5
+talenti = ["Psionic Weapon"]
+
+[talenti."Greater Spell Focus"]
+it = "Incantesimi focalizzati superiore"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Greater Spell Penetration"]
+it = "Incantesimi inarrestabili superiore"
+tipi = ["General"]
+libro = "srd"
+talenti = ["Spell Penetration"]
+
+[talenti."Greater Two-Weapon Fighting"]
+it = "Combattere con due armi superiore"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 19 }
+bab = 11
+talenti = ["Improved Two-Weapon Fighting", "Two-Weapon Fighting"]
+
+[talenti."Greater Weapon Focus"]
+it = "Arma focalizzata superiore"
+tipi = ["Fighter", "General"]
+libro = "srd"
+classe = { "fighter" = 8 }
+talenti = ["Weapon Focus"]
+
+[talenti."Greater Weapon Specialization"]
+it = "Arma specializzata superiore"
+tipi = ["Fighter", "General"]
+libro = "srd"
+classe = { "fighter" = 12 }
+talenti = ["Greater Weapon Focus", "Weapon Focus", "Weapon Specialization"]
+
+[talenti."Group Inspiration"]
+it = "Ispirazione di Gruppo"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "perform" = 30 }
+altro = ["bardic music class feature"]
+
+[talenti."Heighten Spell"]
+it = "Incantesimi intensificati"
+tipi = ["Metamagic"]
+libro = "srd"
+
+[talenti."Hindering Song"]
+it = "Canto di Interferenza"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "perform" = 27 }
+talenti = ["Deafening Song"]
+altro = ["bardic music class feature"]
+
+[talenti."Hold the Line"]
+it = "Resistere alla Carica"
+tipi = ["General"]
+libro = "srd-divini"
+bab = 2
+talenti = ["Combat Reflexes"]
+
+[talenti."Holy Strike"]
+it = "Colpo Sacro"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Smite evil class feature", "any good alignment"]
+
+[talenti."Hostile Mind"]
+it = "Mente Ostile"
+tipi = ["General"]
+libro = "srd-psionici"
+car = { "Car" = 15 }
+
+[talenti."Hover"]
+it = "Fluttuare"
+tipi = ["General"]
+libro = "srd-mostri"
+altro = ["Fly speed"]
+
+[talenti."Ignore Material Components"]
+it = "Ignorare Componenti Materiali"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "spellcraft" = 25 }
+talenti = ["Eschew Materials"]
+altro = ["ability to cast 9th-level arcane or divine spells"]
+
+[talenti."Imprint Stone"]
+it = "Preparare Pietre"
+tipi = ["Item Creation"]
+libro = "srd-psionici"
+classe = { "manifester" = 1 }
+
+[talenti."Improved Alignment-Based Casting"]
+it = "Incantesimi Migliorati Basati sull'Allineamento"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Access to domain of Chaos", "Evil", "Good", "or Law", "alignment must match domain chosen", "ability to cast 9th-level divine spells"]
+
+[talenti."Improved Arrow of Death"]
+it = "Freccia della Morte Migliorata"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 19, "Sag" = 19 }
+talenti = ["Point Blank Shot", "Precise Shot"]
+altro = ["arrow of death class feature"]
+
+[talenti."Improved Aura of Courage"]
+it = "Aura di Coraggio Migliorata"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Car" = 25 }
+altro = ["aura of courage class ability"]
+
+[talenti."Improved Aura of Despair"]
+it = "Aura di Disperazione Migliorata"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Car" = 25 }
+altro = ["aura of despair class ability"]
+
+[talenti."Improved Bull Rush"]
+it = "Spingere migliorato"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "For" = 13 }
+talenti = ["Power Attack"]
+
+[talenti."Improved Combat Casting"]
+it = "Incantesimi in Combattimento Migliorati"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "concentration" = 25 }
+talenti = ["Combat Casting"]
+
+[talenti."Improved Combat Reflexes"]
+it = "Riflessi da Combattimento Migliorati"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 21 }
+talenti = ["Combat Reflexes"]
+
+[talenti."Improved Counterspell"]
+it = "Controincantesimo migliorato"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Improved Critical"]
+it = "Critico migliorato"
+tipi = ["Fighter", "General"]
+libro = "srd"
+bab = 8
+
+[talenti."Improved Darkvision"]
+it = "Scurovisione Migliorata"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Darkvision"]
+
+[talenti."Improved Death Attack"]
+it = "Attacco Mortale Migliorato"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Death attack class feature", "sneak attack +5d6"]
+
+[talenti."Improved Disarm"]
+it = "Disarmare migliorato"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise"]
+
+[talenti."Improved Elemental Wild Shape"]
+it = "Forma Selvatica Elementale Migliorata"
+tipi = ["Wild][Epic"]
+libro = "srd-epici"
+car = { "Sag" = 25 }
+altro = ["ability to _wild shape_ into an elemental"]
+
+[talenti."Improved Familiar"]
+it = "Famiglio Migliorato"
+tipi = ["General"]
+libro = "srd"
+altro = ["Ability to acquire a new familiar", "compatible alignment", "sufficiently high level (see below)"]
+
+[talenti."Improved Favored Enemy"]
+it = "Nemico Prescelto Migliorato"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Five or more favored enemies"]
+
+[talenti."Improved Feint"]
+it = "Fintare migliorato"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise"]
+
+[talenti."Improved Flyby Attack"]
+it = "Attacco in Volo Migliorato"
+tipi = ["General"]
+libro = "srd-epici"
+talenti = ["Dodge", "Flyby Attack", "Mobility"]
+altro = ["Fly speed"]
+
+[talenti."Improved Grapple"]
+it = "Lottare migliorato"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 13 }
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Improved Heighten Spell"]
+it = "Incantesimi Intensificati Migliorati"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "spellcraft" = 20 }
+talenti = ["Heighten Spell"]
+
+[talenti."Improved Initiative"]
+it = "Iniziativa migliorata"
+tipi = ["Fighter", "General"]
+libro = "srd"
+
+[talenti."Improved Ki Strike"]
+it = "Colpo Ki Migliorato"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Sag" = 21 }
+altro = ["_Ki_ strike (adamantine)"]
+
+[talenti."Improved Low-Light Vision"]
+it = "Visione Crepuscolare Migliorata"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Low-light vision"]
+
+[talenti."Improved Manyshot"]
+it = "Tiro Multiplo Migliorato"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 19 }
+bab = 21
+talenti = ["Point Blank Shot", "Rapid Shot"]
+altro = ["Many-shot"]
+
+[talenti."Improved Metamagic"]
+it = "Metamagia Migliorata"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "spellcraft" = 30 }
+altro = ["Four metamagic feats"]
+
+[talenti."Improved Natural Armor"]
+it = "Armatura naturale migliorata"
+tipi = ["General"]
+libro = "srd-mostri"
+car = { "Cos" = 13 }
+altro = ["Natural armor"]
+
+[talenti."Improved Natural Attack"]
+it = "Attacco naturale migliorato"
+tipi = ["General"]
+libro = "srd-mostri"
+bab = 4
+altro = ["Natural weapon"]
+
+[talenti."Improved Overrun"]
+it = "Oltrepassare migliorato"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "For" = 13 }
+talenti = ["Power Attack"]
+
+[talenti."Improved Precise Shot"]
+it = "Tiro preciso migliorato"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 19 }
+bab = 11
+talenti = ["Point Blank Shot", "Precise Shot"]
+
+[talenti."Improved Psicrystal"]
+it = "Psicocristallo Migliorato"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+talenti = ["Psicrystal Affinity"]
+
+[talenti."Improved Shield Bash"]
+it = "Attacco con lo scudo migliorato"
+tipi = ["Fighter", "General"]
+libro = "srd"
+talenti = ["Shield Proficiency"]
+
+[talenti."Improved Sneak Attack"]
+it = "Attacco Furtivo Migliorato"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Sneak attack +8d6"]
+
+[talenti."Improved Spell Capacity"]
+it = "Capienza di Incantesimi Migliorata"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Ability to cast spells of the normal maximum spell level in at least one spellcasting class"]
+
+[talenti."Improved Spell Resistance"]
+it = "Resistenza agli Incantesimi Migliorata"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Must have spell resistance from a feat", "class feature", "or other permanent effect"]
+
+[talenti."Improved Stunning Fist"]
+it = "Pugno Stordente Migliorato"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 19, "Sag" = 19 }
+talenti = ["Improved Unarmed Strike", "Stunning Fist"]
+
+[talenti."Improved Sunder"]
+it = "Spezzare migliorato"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "For" = 13 }
+talenti = ["Power Attack"]
+
+[talenti."Improved Trip"]
+it = "Sbilanciare migliorato"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Int" = 13 }
+talenti = ["Combat Expertise"]
+
+[talenti."Improved Turning"]
+it = "Scacciare migliorato"
+tipi = ["General"]
+libro = "srd"
+capacita = ["turn or rebuke creatures"]
+
+[talenti."Improved Two-Weapon Fighting"]
+it = "Combattere con due armi migliorato"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 17 }
+bab = 6
+talenti = ["Two-Weapon Fighting"]
+
+[talenti."Improved Unarmed Strike"]
+it = "Colpo senz'armi migliorato"
+tipi = ["Fighter", "General"]
+libro = "srd"
+
+[talenti."Improved Whirlwind Attack"]
+it = "Attacco Turbinante Migliorato"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Int" = 13, "Des" = 23 }
+talenti = ["Combat Expertise", "Dodge", "Mobility", "Spring Attack", "Whirlwind Attack"]
+
+[talenti."Incite Rage"]
+it = "Incitare Ira"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Car" = 25 }
+altro = ["greater rage class feature"]
+
+[talenti."Infinite Deflection"]
+it = "Deviazione Infinita"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 25 }
+talenti = ["Combat Reflexes", "Deflect Arrows", "Improved Unarmed Strike"]
+
+[talenti."Inquisitor"]
+it = "Inquisitore"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "Sag" = 13 }
+
+[talenti."Inspire Excellence"]
+it = "Ispirare Eccellenza"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "perform" = 30 }
+altro = ["bardic music class feature"]
+
+[talenti."Instant Reload"]
+it = "Ricarica Istantanea"
+tipi = ["Epic"]
+libro = "srd-epici"
+talenti = ["Quick Draw", "Rapid Reload", "Weapon Focus"]
+
+[talenti."Intensify Spell \\[Metamagic\\]"]
+it = "Incantesimi Rinforzati"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "spellcraft" = 30 }
+talenti = ["Empower Spell", "Maximize Spell"]
+altro = ["ability to cast 9th-level arcane or divine spells"]
+
+[talenti."Investigator"]
+it = "Indagatore"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Iron Will"]
+it = "Volontà di ferro"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Keen Strike"]
+it = "Colpo Affilato"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "For" = 23, "Sag" = 23 }
+talenti = ["Improved Critical", "Improved Unarmed Strike", "Stunning Fist"]
+altro = ["_ki_ strike (adamantine)"]
+
+[talenti."Lasting Inspiration"]
+it = "Ispirazione Duratura"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "perform" = 25 }
+altro = ["bardic music class feature"]
+
+[talenti."Leadership"]
+it = "Autorità"
+tipi = ["General"]
+libro = "srd"
+classe = { "character" = 6 }
+
+[talenti."Legendary Climber"]
+it = "Scalatore Leggendario"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 21 }
+gradi = { "balance" = 12, "climb" = 24 }
+
+[talenti."Legendary Commander"]
+it = "Comandante Leggendario"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Car" = 25 }
+gradi = { "diplomacy" = 30 }
+talenti = ["Epic Leadership", "Leadership"]
+altro = ["must rule own kingdom", "have a stronghold"]
+
+[talenti."Legendary Leaper"]
+it = "Saltatore Leggendario"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "jump" = 24 }
+
+[talenti."Legendary Rider"]
+it = "Cavalcatore Leggendario"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "ride" = 24 }
+
+[talenti."Legendary Tracker"]
+it = "Segugio Leggendario"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Sag" = 25 }
+gradi = { "knowledge (nature)" = 30, "survival" = 30 }
+talenti = ["Track"]
+
+[talenti."Legendary Wrestler"]
+it = "Lottatore Leggendario"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "For" = 21, "Des" = 21 }
+gradi = { "escape artist" = 15 }
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Lightning Reflexes"]
+it = "Riflessi fulminei"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Lingering Damage"]
+it = "Danno Persistente"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Sneak attack +8d6", "crippling strike class feature"]
+
+[talenti."Magical Aptitude"]
+it = "Vocazione magica"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Magical Beast Companion"]
+it = "Compagno Bestiale Magico"
+tipi = ["Wild][Epic"]
+libro = "srd-epici"
+gradi = { "knowledge (nature)" = 24 }
+altro = ["_wild shape_ 6/day"]
+
+[talenti."Magical Beast Wild Shape"]
+it = "Forma Selvatica Bestia Magica"
+tipi = ["Wild][Epic"]
+libro = "srd-epici"
+car = { "Sag" = 25 }
+gradi = { "knowledge (nature)" = 27 }
+altro = ["_wild shape_ 6/day"]
+
+[talenti."Manyshot"]
+it = "Tiro multiplo"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 17 }
+bab = 6
+talenti = ["Point Blank Shot", "Rapid Shot"]
+
+[talenti."Martial Weapon Proficiency"]
+it = "Competenza nelle armi da guerra"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Master Staff"]
+it = "Padronanza dei Bastoni"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "spellcraft" = 15 }
+talenti = ["Craft Staff"]
+
+[talenti."Master Wand"]
+it = "Padronanza delle Bacchette"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "spellcraft" = 15 }
+talenti = ["Craft Wand"]
+
+[talenti."Maximize Power"]
+it = "Poteri Massimizzati"
+tipi = ["Metapsionic"]
+libro = "srd-psionici"
+
+[talenti."Maximize Spell"]
+it = "Incantesimi massimizzati"
+tipi = ["Metamagic"]
+libro = "srd"
+
+[talenti."Mental Leap"]
+it = "Salto Mentale"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "For" = 13 }
+gradi = { "jump" = 5 }
+
+[talenti."Mental Resistance"]
+it = "Resistenza Mentale"
+tipi = ["General"]
+libro = "srd-psionici"
+altro = ["Base Will save bonus +2"]
+
+[talenti."Metamorphic Transfer"]
+it = "Trasferimento Metamorfico"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "Sag" = 13 }
+classe = { "manifester" = 5 }
+
+[talenti."Mighty Rage"]
+it = ""
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "For" = 21, "Cos" = 21 }
+altro = ["greater rage class feature", "rage 5/day"]
+
+[talenti."Mind Over Body"]
+it = "Mente sul Corpo"
+tipi = ["General"]
+libro = "srd-psionici"
+car = { "Cos" = 13 }
+
+[talenti."Mobile Defense"]
+it = ""
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 15 }
+talenti = ["Dodge", "Mobility", "Spring Attack"]
+altro = ["defensive stance 3/day class feature"]
+
+[talenti."Mobility"]
+it = "Mobilità"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 13 }
+talenti = ["Dodge"]
+
+[talenti."Mounted Archery"]
+it = "Tirare in sella"
+tipi = ["Fighter", "General"]
+libro = "srd"
+gradi = { "ride" = 1 }
+talenti = ["Mounted Combat"]
+
+[talenti."Mounted Combat"]
+it = "Combattere in sella"
+tipi = ["Fighter", "General"]
+libro = "srd"
+gradi = { "ride" = 1 }
+
+[talenti."Multiattack"]
+it = "Multiattacco"
+tipi = ["General"]
+libro = "srd-mostri"
+altro = ["Three or more natural attacks"]
+
+[talenti."Multispell"]
+it = "Multincantesimo"
+tipi = ["Epic"]
+libro = "srd-epici"
+talenti = ["Quicken Spell"]
+altro = ["ability to cast 9th-level arcane or divine spells"]
+
+[talenti."Multiweapon Fighting"]
+it = "Combattere con più armi"
+tipi = ["General"]
+libro = "srd-mostri"
+car = { "Des" = 13 }
+altro = ["three or more hands"]
+
+[talenti."Multiweapon Rend"]
+it = "Lacerare con Più Armi"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 15 }
+bab = 9
+talenti = ["Multiweapon Fighting"]
+altro = ["three or more hands"]
+
+[talenti."Music of the Gods"]
+it = "Musica degli Dei"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Car" = 25 }
+gradi = { "perform" = 30 }
+altro = ["bardic music class feature"]
+
+[talenti."Narrow Mind"]
+it = "Mente Affinata"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "Sag" = 13 }
+
+[talenti."Natural Spell"]
+it = "Incantesimi naturali"
+tipi = ["General"]
+libro = "srd"
+car = { "Sag" = 13 }
+capacita = ["wild shape"]
+
+[talenti."Negative Energy Burst"]
+it = "Esplosione di Energia Negativa"
+tipi = ["Divine][Epic"]
+libro = "srd-epici"
+car = { "Car" = 25 }
+altro = ["ability to rebuke or command undead", "ability to cast \\_inflict critical wounds", "\\_any evil alignment"]
+
+[talenti."Negotiator"]
+it = "Negoziatore"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Nimble Fingers"]
+it = "Dita sottili"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Open Minded"]
+it = "Mente Aperta"
+tipi = ["General"]
+libro = "srd-psionici"
+
+[talenti."Opportunity Power"]
+it = "Poteri di Opportunità"
+tipi = ["Metapsionic"]
+libro = "srd-psionici"
+
+[talenti."Overchannel"]
+it = "Sovraccaricare"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+
+[talenti."Penetrate Damage Reduction"]
+it = "Penetrare Riduzione del Danno"
+tipi = ["Epic"]
+libro = "srd-epici"
+
+[talenti."Perfect Health"]
+it = "Salute Perfetta"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Cos" = 25 }
+talenti = ["Great Fortitude"]
+
+[talenti."Perfect Multiweapon Fighting"]
+it = "Combattere con Più Armi Perfetto"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 25 }
+talenti = ["Greater Multiweapon Fighting", "Multiweapon Fighting"]
+altro = ["three or more hands"]
+
+[talenti."Perfect Two-Weapon Fighting"]
+it = "Combattere con Due Armi Perfetto"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 25 }
+talenti = ["Greater Two-Weapon Fighting", "Improved Two-Weapon Fighting", "Two-Weapon Fighting"]
+
+[talenti."Permanent Emanation"]
+it = "Emanazione Permanente"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "spellcraft" = 25 }
+altro = ["ability to cast the spell to be made permanent"]
+
+[talenti."Persuasive"]
+it = "Persuasivo"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Planar Turning"]
+it = "Scacciare Planare"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Sag" = 25, "Car" = 25 }
+altro = ["ability to turn or rebuke undead"]
+
+[talenti."Plant Control"]
+it = "Controllare Vegetali"
+tipi = ["General"]
+libro = "srd-divini"
+altro = ["Plant Defiance", "ability to cast _speak with plants._"]
+
+[talenti."Plant Wild Shape"]
+it = "Forma Selvatica Vegetale"
+tipi = ["Wild][Epic"]
+libro = "srd-epici"
+gradi = { "knowledge (nature)" = 24 }
+altro = ["_wild shape_ 4/day"]
+
+[talenti."Point Blank Shot"]
+it = "Tiro ravvicinato"
+tipi = ["Fighter", "General"]
+libro = "srd"
+
+[talenti."Polyglot"]
+it = "Poliglotta"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Int" = 25 }
+altro = ["Speak Language (five languages)"]
+
+[talenti."Positive Energy Aura"]
+it = "Aura di Energia Positiva"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Car" = 25 }
+altro = ["ability to turn undead", "ability to cast _dispel evil._"]
+
+[talenti."Power Attack"]
+it = "Attacco poderoso"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "For" = 13 }
+
+[talenti."Power Knowledge"]
+it = "Conoscenza Poderosa"
+tipi = ["Epic", "Psionic"]
+libro = "srd-epici"
+classe = { "character" = 21 }
+altro = ["ability to manifest powers of the normal maximum power level in at least one psionic class"]
+
+[talenti."Power Penetration"]
+it = "Poteri Inarrestabili"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+
+[talenti."Power Specialization"]
+it = "Poteri Specializzati"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+classe = { "manifester" = 4 }
+talenti = ["Weapon Focus"]
+
+[talenti."Precise Shot"]
+it = "Tiro preciso"
+tipi = ["Fighter", "General"]
+libro = "srd"
+talenti = ["Point Blank Shot"]
+
+[talenti."Psicrystal Affinity"]
+it = "Affinità allo Psicocristallo"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+classe = { "manifester" = 1 }
+
+[talenti."Psicrystal Containment"]
+it = "Contenmento dello Psicocristallo"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+classe = { "manifester" = 3 }
+talenti = ["Psicrystal Affinity"]
+
+[talenti."Psicrystal Power"]
+it = "Potere dello Psicocristallo"
+tipi = ["Epic", "Psionic"]
+libro = "srd-epici"
+classe = { "character" = 21 }
+altro = ["Intelligence 25 or Charisma 25 (depending on which is your key ability score for manifesting)"]
+
+[talenti."Psionic Affinity"]
+it = "Affinità Psionica"
+tipi = ["General"]
+libro = "srd-psionici"
+
+[talenti."Psionic Body"]
+it = "Corpo Psionico"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+
+[talenti."Psionic Charge"]
+it = "Carica Psionica"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "Des" = 13 }
+talenti = ["Speed of Thought"]
+
+[talenti."Psionic Dodge"]
+it = "Schivare Psionico"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "Des" = 13 }
+talenti = ["Dodge"]
+
+[talenti."Psionic Endowment"]
+it = "Dono Psionico"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+
+[talenti."Psionic Fist"]
+it = "Pugno Psionico"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "For" = 13 }
+
+[talenti."Psionic Hole"]
+it = "Buco Psionico"
+tipi = ["General"]
+libro = "srd-psionici"
+car = { "Cos" = 15 }
+
+[talenti."Psionic Meditation"]
+it = "Meditazione Psionica"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "Sag" = 13 }
+gradi = { "concentration" = 7 }
+
+[talenti."Psionic Shot"]
+it = "Tiro Psionico"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+talenti = ["Point Blank Shot"]
+
+[talenti."Psionic Talent"]
+it = "Dote Psionica"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+altro = ["Having a power point reserve"]
+
+[talenti."Psionic Weapon"]
+it = "Arma Psionica"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "For" = 13 }
+
+[talenti."Quick Draw"]
+it = "Estrazione rapida"
+tipi = ["Fighter", "General"]
+libro = "srd"
+bab = 1
+
+[talenti."Quicken Power"]
+it = "Poteri Rapidi"
+tipi = ["Metapsionic"]
+libro = "srd-psionici"
+
+[talenti."Quicken Spell"]
+it = "Incantesimi rapidi"
+tipi = ["Metamagic"]
+libro = "srd"
+
+[talenti."Quicken Spell-Like Ability"]
+it = "Capacità magica rapida"
+tipi = ["General"]
+libro = "srd-mostri"
+lic = 10
+
+[talenti."Ranged Inspiration"]
+it = "Ispirazione a Distanza"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "perform" = 25 }
+altro = ["Bardic music class feature"]
+
+[talenti."Rapid Inspiration"]
+it = "Ispirazione Rapida"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "perform" = 25 }
+altro = ["bardic music class feature"]
+
+[talenti."Rapid Metabolism"]
+it = "Metabolismo Rapido"
+tipi = ["General"]
+libro = "srd-psionici"
+car = { "Cos" = 13 }
+
+[talenti."Rapid Reload"]
+it = "Ricarica rapida"
+tipi = ["Fighter", "General"]
+libro = "srd"
+
+[talenti."Rapid Shot"]
+it = "Tiro rapido"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 13 }
+talenti = ["Point Blank Shot"]
+
+[talenti."Reactive Countersong"]
+it = "Controcanto Reattivo"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "perform" = 30 }
+talenti = ["Combat Reflexes"]
+altro = ["bardic music class feature"]
+
+[talenti."Reckless Offense"]
+it = "Attacco Temerario"
+tipi = ["General"]
+libro = "srd-psionici"
+bab = 1
+
+[talenti."Reflect Arrows"]
+it = "Deflettere Frecce"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 25 }
+talenti = ["Deflect Arrows", "Improved Unarmed Strike"]
+
+[talenti."Return Shot"]
+it = "Tiro Respinto"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+bab = 3
+talenti = ["Point Blank Shot", "Psionic Shot", "Fell Shot"]
+
+[talenti."Ride-by Attack"]
+it = "Attacco in sella"
+tipi = ["Fighter", "General"]
+libro = "srd"
+gradi = { "ride" = 1 }
+talenti = ["Mounted Combat"]
+
+[talenti."Righteous Strike"]
+it = "Giusto Colpo"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Sag" = 19 }
+talenti = ["Improved Unarmed Strike", "Stunning Fist"]
+altro = ["any lawful alignment"]
+
+[talenti."Ruinous Rage"]
+it = "Ira Demolitrice"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "For" = 25 }
+talenti = ["Improved Sunder", "Power Attack"]
+altro = ["rage 5/day"]
+
+[talenti."Run"]
+it = "Correre"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Scribe Epic Scroll"]
+it = "Scrivere Pergamene Epiche"
+tipi = ["Item Creation][Epic"]
+libro = "srd-epici"
+gradi = { "knowledge (arcana)" = 24, "spellcraft" = 24 }
+talenti = ["Scribe Scroll"]
+
+[talenti."Scribe Scroll"]
+it = "Scrivere pergamene"
+tipi = ["Item Creation"]
+libro = "srd"
+lic = 1
+
+[talenti."Scribe Tattoo"]
+it = "Incidere Tatuaggi"
+tipi = ["Item Creation"]
+libro = "srd-psionici"
+classe = { "manifester" = 3 }
+
+[talenti."Self-Concealment"]
+it = "Auto-Occultamento"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 30 }
+gradi = { "hide" = 30, "tumble" = 30 }
+altro = ["improved evasion"]
+
+[talenti."Self-Sufficient"]
+it = "Autosufficiente"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Shattering Strike"]
+it = "Colpo Frantumatore"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "concentration" = 25 }
+talenti = ["Epic Weapon Focus", "Weapon Focus"]
+altro = ["_ki_ strike (adamantine)"]
+
+[talenti."Shield Proficiency"]
+it = "Competenza negli scudi"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Shot on the Run"]
+it = "Tiro in movimento"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 13 }
+bab = 4
+talenti = ["Dodge", "Mobility", "Point Blank Shot"]
+
+[talenti."Sidestep Charge"]
+it = ""
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "Des" = 13 }
+talenti = ["Dodge"]
+
+[talenti."Silent Spell"]
+it = "Incantesimi silenziosi"
+tipi = ["Metamagic"]
+libro = "srd"
+
+[talenti."Simple Weapon Proficiency"]
+it = "Competenza nelle armi semplici"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Skill Focus"]
+it = "Abilità Focalizzata"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Snatch"]
+it = "Ghermire"
+tipi = ["General"]
+libro = "srd-mostri"
+altro = ["Size Huge or larger"]
+
+[talenti."Snatch Arrows"]
+it = "Afferrare frecce"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 15 }
+talenti = ["Deflect Arrows", "Improved Unarmed Strike"]
+
+[talenti."Sneak Attack of Opportunity"]
+it = "Attacco di Opportunità Furtivo"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Sneak attack +8d6", "opportunist class feature"]
+
+[talenti."Spectral Strike"]
+it = "Colpo Spettrale"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Sag" = 19 }
+altro = ["ability to turn or rebuke undead"]
+
+[talenti."Speed of Thought"]
+it = "Velocità di Pensiero"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "Sag" = 13 }
+
+[talenti."Spell Focus"]
+it = "Incantesimi focalizzati"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Spell Knowledge"]
+it = "Conoscenza di Incantesimi"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Ability to cast spells of the maximum normal spell level of an arcane spellcasting class"]
+
+[talenti."Spell Mastery"]
+it = "Padronanza degli incantesimi"
+tipi = ["Special"]
+libro = "srd"
+classe = { "wizard" = 1 }
+
+[talenti."Spell Opportunity"]
+it = "Incantesimo di Opportunità"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "spellcraft" = 25 }
+talenti = ["Combat Casting", "Combat Reflexes", "Quicken Spell"]
+
+[talenti."Spell Penetration"]
+it = "Incantesimi inarrestabili"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Spell Stowaway"]
+it = "Incantesimo Clandestino"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "spellcraft" = 24 }
+lic = 12
+
+[talenti."Spellcasting Harrier"]
+it = "Assaltatore di Incantatori"
+tipi = ["Epic"]
+libro = "srd-epici"
+talenti = ["Combat Reflexes"]
+
+[talenti."Spirited Charge"]
+it = "Carica devastante"
+tipi = ["Fighter", "General"]
+libro = "srd"
+gradi = { "ride" = 1 }
+talenti = ["Mounted Combat", "Ride-by Attack"]
+
+[talenti."Split Psionic Ray"]
+it = "Dividere Raggio Psionico"
+tipi = ["Metapsionic"]
+libro = "srd-psionici"
+altro = ["Any other metapsionic feat"]
+
+[talenti."Spontaneous Domain Access"]
+it = "Accesso Spontaneo al Dominio"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Sag" = 25 }
+gradi = { "spellcraft" = 30 }
+altro = ["ability to cast 9th-level divine spells"]
+
+[talenti."Spontaneous Spell"]
+it = "Incantesimi Spontanei"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "spellcraft" = 25 }
+altro = ["ability to cast the maximum normal spell level of at least one spell-casting class"]
+
+[talenti."Spring Attack"]
+it = "Attacco rapido"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 13 }
+bab = 4
+talenti = ["Dodge", "Mobility"]
+
+[talenti."Stand Still"]
+it = "Mantenere la Posizione"
+tipi = ["General"]
+libro = "srd-psionici"
+car = { "For" = 13 }
+
+[talenti."Stealthy"]
+it = "Furtivo"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Still Spell"]
+it = "Incantesimi immobili"
+tipi = ["Metamagic"]
+libro = "srd"
+
+[talenti."Storm of Throws"]
+it = "Tempesta di Lanci"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 23 }
+talenti = ["Point Blank Shot", "Quick Draw", "Rapid Shot"]
+
+[talenti."Stunning Fist"]
+it = "Pugno stordente"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 13, "Sag" = 13 }
+bab = 8
+talenti = ["Improved Unarmed Strike"]
+
+[talenti."Superior Initiative"]
+it = "Iniziativa Superiore"
+tipi = ["Epic"]
+libro = "srd-epici"
+talenti = ["Improved Initiative"]
+
+[talenti."Swarm of Arrows"]
+it = "Sciame di Frecce"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 23 }
+talenti = ["Point Blank Shot", "Rapid Shot", "Weapon Focus"]
+
+[talenti."Talented"]
+it = "Dotato Psionicamente"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+talenti = ["Overchannel"]
+
+[talenti."Tenacious Magic"]
+it = "Magia Tenace"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "spellcraft" = 15 }
+
+[talenti."Terrifying Rage"]
+it = "Ira Terrificante"
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "intimidate" = 25 }
+altro = ["rage 5/day"]
+
+[talenti."Thundering Rage"]
+it = "Ira Tonante"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "For" = 25 }
+altro = ["rage 5/day"]
+
+[talenti."Toughness"]
+it = "Robustezza"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Tower Shield Proficiency"]
+it = "Competenza negli scudi torre"
+tipi = ["General"]
+libro = "srd"
+talenti = ["Shield Proficiency"]
+
+[talenti."Track"]
+it = "Seguire tracce"
+tipi = ["General"]
+libro = "srd"
+
+[talenti."Trample"]
+it = "Travolgere"
+tipi = ["Fighter", "General"]
+libro = "srd"
+gradi = { "ride" = 1 }
+talenti = ["Mounted Combat"]
+
+[talenti."Trap Sense"]
+it = ""
+tipi = ["Epic"]
+libro = "srd-epici"
+gradi = { "search" = 25, "spot" = 25 }
+altro = ["trapfinding class ability"]
+
+[talenti."Twin Power"]
+it = "Poteri Raddoppiati"
+tipi = ["Metapsionic"]
+libro = "srd-psionici"
+
+[talenti."Two-Weapon Defense"]
+it = "Difendere con due armi"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 15 }
+talenti = ["Two-Weapon Fighting"]
+
+[talenti."Two-Weapon Fighting"]
+it = "Combattere con due armi"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 15 }
+
+[talenti."Two-Weapon Rend"]
+it = "Lacerare con Due Armi"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 15 }
+bab = 9
+talenti = ["Improved Two-Weapon Fighting", "Two-Weapon Fighting"]
+
+[talenti."Unavoidable Strike"]
+it = "Colpo inevitabile"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "For" = 13 }
+bab = 5
+talenti = ["Psionic Fist"]
+
+[talenti."Uncanny Accuracy"]
+it = "Accuratezza Prodigiosa"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Des" = 21 }
+gradi = { "spot" = 20 }
+bab = 11
+talenti = ["Point Blank Shot", "Precise Shot", "Improved Precise Shot"]
+
+[talenti."Unconditional Power"]
+it = "Poteri Incondizionati"
+tipi = ["Metapsionic"]
+libro = "srd-psionici"
+
+[talenti."Undead Mastery"]
+it = "Padronanza dei Non Morti"
+tipi = ["Divine][Epic"]
+libro = "srd-epici"
+car = { "Car" = 21 }
+altro = ["ability to rebuke or command undead"]
+
+[talenti."Unholy Strike"]
+it = "Colpo Sacrilego"
+tipi = ["Epic"]
+libro = "srd-epici"
+altro = ["Smite good class feature", "any evil alignment"]
+
+[talenti."Up the Walls"]
+it = "Corsa sulle Pareti"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+car = { "Sag" = 13 }
+
+[talenti."Vermin Wild Shape"]
+it = "Forma Selvatica Parassita"
+tipi = ["Wild][Epic"]
+libro = "srd-epici"
+gradi = { "knowledge (nature)" = 24 }
+altro = ["_wild shape_ 6/day"]
+
+[talenti."Vorpal Strike"]
+it = "Colpo Vorpal"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "For" = 25, "Sag" = 25 }
+talenti = ["Improved Critical", "Improved Unarmed Strike", "Keen Strike", "Stunning Fist"]
+altro = ["_ki_ strike (adamantine)"]
+
+[talenti."Weapon Finesse"]
+it = "Arma accurata"
+tipi = ["Fighter", "General"]
+libro = "srd"
+bab = 1
+
+[talenti."Weapon Focus"]
+it = "Arma focalizzata"
+tipi = ["Fighter", "General"]
+libro = "srd"
+bab = 1
+
+[talenti."Weapon Specialization"]
+it = "Arma specializzata"
+tipi = ["Fighter", "General"]
+libro = "srd"
+classe = { "fighter" = 4 }
+talenti = ["Weapon Focus"]
+
+[talenti."Whirlwind Attack"]
+it = "Attacco turbinante"
+tipi = ["Fighter", "General"]
+libro = "srd"
+car = { "Des" = 13, "Int" = 13 }
+bab = 4
+talenti = ["Combat Expertise", "Dodge", "Mobility", "Spring Attack"]
+
+[talenti."Widen Aura of Courage"]
+it = "Aura di Coraggio Ampliata"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Car" = 25 }
+altro = ["aura of courage class ability"]
+
+[talenti."Widen Aura of Despair"]
+it = "Aura di Disperazione Ampliata"
+tipi = ["Epic"]
+libro = "srd-epici"
+car = { "Car" = 25 }
+altro = ["aura of despair class ability"]
+
+[talenti."Widen Power"]
+it = "Poteri Ampliati"
+tipi = ["Metapsionic"]
+libro = "srd-psionici"
+
+[talenti."Widen Spell"]
+it = "Incantesimi ampliati"
+tipi = ["Metamagic"]
+libro = "srd"
+
+[talenti."Wild Talent"]
+it = "Dote Naturale"
+tipi = ["General"]
+libro = "srd-psionici"
+
+[talenti."Wingover"]
+it = "Virare"
+tipi = ["General"]
+libro = "srd-mostri"
+altro = ["Fly speed"]
+
+[talenti."Wounding Attack"]
+it = "Ferita Profonda"
+tipi = ["Psionic"]
+libro = "srd-psionici"
+bab = 8
+
+[talenti."Zone of Animation"]
+it = "Zona di Animazione"
+tipi = ["Divine][Epic"]
+libro = "srd-epici"
+car = { "Car" = 25 }
+talenti = ["Undead Mastery"]
+altro = ["ability to rebuke or command undead"]

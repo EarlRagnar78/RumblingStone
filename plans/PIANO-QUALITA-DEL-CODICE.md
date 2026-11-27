@@ -275,7 +275,7 @@ invece di avere la propria lista.
 quarta fonte accanto alle tre che c'erano. Ora dichiara `PYTHON_MINIMO`, i due
 binari accettati con un ADR, **sette opzionali** con il loro ripiego, le **due
 librerie** e **nove catene** di lavoro con cosa serve a ciascuna. `dm.py doctor`
-e `docs/guides/GUIDA-SETUP-MACCHINA.md` leggono da lì; `python3 scripts/binari.py`
+e `docs/tutorials/GUIDA-SETUP-MACCHINA.md` leggono da lì; `python3 scripts/binari.py`
 stampa il quadro e, nell'ultima sezione, la riga che serve davvero prima di una
 sessione: **quali catene partono stasera**.
 

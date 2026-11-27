@@ -270,7 +270,11 @@ I Githyanki non attaccano per caso. Il loro comandante, **Xal'thor** (Illithid C
 
 **L'obiettivo militare di Xal'thor**: Non *rubare* i Bracieri — **convincere** Tordek che il Piano della Terra è in pericolo, e che deve aprire un portale verso di esso. Questo porterebbe all'Hammerfist temporale dove i Githyanki hanno già posizionato forze. Vogliono colpire gli Hammerfist al -1000 DR.
 
-**La rivelazione**: C'è un'ambiguità. Xal'thor *potrebbe* avere ragione riguardo al pericolo nel Piano della Terra. O potrebbe mentire. Il Psionic usa Detect Thoughts e Suggestion — se Tordek non supera un Will save DC 20, crede che il pericolo sia reale per 1 ora.
+**La rivelazione**: C'è un'ambiguità. Xal'thor *potrebbe* avere ragione riguardo al pericolo nel Piano della Terra. O potrebbe mentire. Il Psionic usa Detect Thoughts e Suggestion — se Tordek non supera un Will save DC 16 (la *Suggestion* della scheda di Xal'thor, scelta del DM del 19/11), crede che il pericolo sia reale per 1 ora.
+
+<!-- storico -->
+- era: «Will save DC 20» (fino al 2026-11-19; la scheda di Xal'thor dà CD 16, card del DM)
+<!-- /storico -->
 
 **Triangolo**:
 
@@ -497,11 +501,11 @@ La terza opzione richiede 6 ore di Tordek (che ha altre priorità) e produce un 
 **Allineamento**: LG
 
 **Stats D&D 3.5**:
-
+- Car 17: lo chiede Inspirational Leadership (*Heroes of Battle* p. 98, verificato su dnd.arkalseif.info il 2026-11-19; scelta del DM sulla card del 2026-11-19). Le altre caratteristiche la scheda non le dice.
 - HP: 65 | AC: 18 (full plate, shield)
 - BAB: +7/+2 | Fort +9, Ref +3, Will +3
 - Atk: Longsword +10/+5 (1d8+4) o Shortbow +8/+3 (1d6+2)
-- Feats: Leadership, Weapon Focus (longsword), Power Attack, Iron Will, Tactician (non-SRD: +1 alle truppe sotto comando quando vede l'azione del nemico)
+- Feats: Leadership, Weapon Focus (longsword), Power Attack, Iron Will, Inspirational Leadership (⚠ Non SRD [Private source — Heroes of Battle]; al posto di «Tactician», che come talento non esiste: Expert Tactician e Combat Tactician sono vantaggi personali, il bonus alle truppe sotto comando è questo; confermato dal DM il 2026-11-07)
 
 **Personalità**: Pragmatica ma con profondo senso etico. Non ha mai visto una guerra vera prima dell'invasione della Mano Rossa — la sua esperienza è di polizia cittadina e ordine. È terrificata ma non lo mostra. È esattamente il tipo di persona che Thorik può rispettare perché fa cose difficili senza lamentarsi.
 
@@ -570,7 +574,7 @@ La terza opzione richiede 6 ore di Tordek (che ha altre priorità) e produce un 
 
 **Connessione alla Notte dei Drow**: Therysol sa che sua madre è nel Prisma di Dorak Ferropietra (l'ha visto in un frammento di sogno condiviso che attribuisce alla cristallizzazione nel suo braccio). Questo spiega perché è nel tempio quando il party arriva — non per combattere i drow, ma per liberare sua madre.
 
-**Differenza dalle aspettative**: Non è un'alleata di combattimento affidabile in questo arco — è ferita e emotivamente instabile. È un'alleata di **informazione** e di **peso narrativo**. Il suo punto di forza è che ha fatto sacrifici enormi e che il party lo sa.
+**Differenza dalle aspettative**: Non è un'alleata di combattimento affidabile in questo arco — è ferita ed emotivamente instabile. È un'alleata di **informazione** e di **peso narrativo**. Il suo punto di forza è che ha fatto sacrifici enormi e che il party lo sa.
 
 ---
 

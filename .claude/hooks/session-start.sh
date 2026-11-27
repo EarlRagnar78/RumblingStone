@@ -21,7 +21,10 @@ set -uo pipefail
 
 echo '{"async": true, "asyncTimeout": 300000}'
 
-cd "${CLAUDE_PROJECT_DIR:-$(git rev-parse --show-toplevel)}"
+# The repo root comes from the hook's own path, not from CLAUDE_PROJECT_DIR:
+# in project threads Claude starts in the folder that CONTAINS the clone and
+# reaches this hook through scripts/claude-progetto.sh (ADR-0140).
+cd "$(dirname "${BASH_SOURCE[0]}")/../.."
 STATUS_FILE=".claude/.skills-sync-status"
 mkdir -p .claude
 echo "syncing $(date -u +%FT%TZ)" > "${STATUS_FILE}"
@@ -40,6 +43,15 @@ fi
 # Test runner for scripts/tests/ (web sessions only; cached after first run)
 if [ "${CLAUDE_CODE_REMOTE:-}" = "true" ]; then
   python3 -c "import pytest" 2>/dev/null || pip install --quiet pytest || true
+fi
+
+# ── Git hooks in cloud sessions (ADR-0143) ─────────────────────────────
+# The pre-push hook runs the blocking, fast CI gates before every push. Only
+# in remote containers: on a personal machine it is a one-time choice
+# (./scripts/install-git-hooks.sh), never installed behind the user's back.
+if [ "${CLAUDE_CODE_REMOTE:-}" = "true" ]; then
+  ./scripts/install-git-hooks.sh >/dev/null 2>&1 \
+    || echo "RumblingStone hook: git hooks not installed — run ./scripts/install-git-hooks.sh"
 fi
 
 # ── Rebuild + deploy skills ──────────────────────────────────────────────

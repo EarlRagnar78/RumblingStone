@@ -5,6 +5,9 @@
 ```statblocco
 gs: 14
 tipo: Large undead (augmented aberration), death tyrant mezzo-illithid, 16d12
+taglia: Grande
+spazio: 3 m
+portata: 1,5 m
 ca: 22
 ca-dettaglio: (-1 taglia, +13 naturale), contatto 9, colto alla sprovvista 22
 pf: 104
@@ -36,7 +39,16 @@ Large undead (augmented aberration), death tyrant mezzo-illithid avanzato, 16d12
 
 **Difesa** **CA 22** (-1 taglia, +13 naturale), contatto 9, colto alla sprovvista 22 · **pf 104** (16 DV) · TS Temp +5, Rifl +5, Vol +12 · **RI 26**, **RD 5/tagliente**, resistenza allo scacciare +2, tratti dei non morti
 
-**Attacco** Vel Volare 6 m (buona) · Spazio 3 m, portata 3 m (4,5 m coi tentacoli) · **Mischia** 4 tentacoli +11 (1d4+4) e morso +6 (2d4+2) · **Distanza** raggi degli occhi +7 contatto (45 m) · **Esplosione mentale** · **Afferrare migliorato** · **Estrarre**
+**Attacco** Vel Volare 6 m (buona) · Spazio 3 m, portata 1,5 m · **Mischia** 4 tentacoli +11 (1d4+4) e morso +6 (2d4+2) · **Distanza** raggi degli occhi +7 contatto (45 m) · **Esplosione mentale** · **Afferrare migliorato** · **Estrarre**
+
+**Tattiche**
+- *Prima del combattimento*: sta nell'ombra accanto a un pilastro del lato destro, a circa 9 m d'altezza e 22-23 m dall'entrata, coi tre wraith nei pilastri e il warlock drow in fondo (arco 03, la Cittadella, «Il Guardiano», nella nota sul tempio nanico). Non si muove finché i PG non sono dentro.
+- *Durante il combattimento*:
+  - **Round 1**: dall'alto, esplosione mentale sul gruppo ancora raccolto vicino all'entrata; nello stesso round i raggi partono sui PG fuori dal cono, *disintegrazione* e *carne in pietra* su chi porta l'armatura più pesante.
+  - **Round 2-3**: resta in quota e fa piovere raggi, un occhio per bersaglio. È lento e fa una cosa sola per round: o si sposta, o morde.
+  - **Round 4 e seguenti**: scende sui PG storditi, li afferra coi tentacoli e prova a estrarre il cervello, mentre i raggi rimasti tengono lontani gli altri.
+  - Contro chi vola: *lentezza* e *sonno*. Contro chi si rende invisibile: niente, non ha modo di vederlo, e attacca chi vede.
+- *Morale*: nessuno. È un non morto senza mente col suo ordine: combatte finché non viene distrutto, e non insegue oltre la soglia del tempio.
 
 **Statistiche** For 18, Des 10, Cos —, Int —, Sag 15, Car 17 · BAB +8; Lotta +16 · senza mente: niente abilità né talenti
 
@@ -47,15 +59,6 @@ Large undead (augmented aberration), death tyrant mezzo-illithid avanzato, 16d12
 - **Estrarre** (Str): contro un avversario immobilizzato coi tentacoli, un'azione di round completo gli strappa il cervello. Morte istantanea.
 - **Solo azioni singole** (Str): si muove o attacca; fa entrambe le cose solo con una carica. I raggi non contano: partono comunque.
 - **Programmato**: senza mente, esegue l'ordine ricevuto quando fu creato (difendere i livelli sotto il tempio), ma usa gli occhi come se pensasse.
-
-**Tattiche**
-- *Prima del combattimento*: sta nell'ombra accanto a un pilastro del lato destro, a circa 9 m d'altezza e 22-23 m dall'entrata, coi tre wraith nei pilastri e il warlock drow in fondo (arco 03, la Cittadella, «Il Guardiano», nella nota sul tempio nanico). Non si muove finché i PG non sono dentro.
-- *Durante il combattimento*:
-  - **Round 1**: dall'alto, esplosione mentale sul gruppo ancora raccolto vicino all'entrata; nello stesso round i raggi partono sui PG fuori dal cono, *disintegrazione* e *carne in pietra* su chi porta l'armatura più pesante.
-  - **Round 2-3**: resta in quota e fa piovere raggi, un occhio per bersaglio. È lento e fa una cosa sola per round: o si sposta, o morde.
-  - **Round 4 e seguenti**: scende sui PG storditi, li afferra coi tentacoli e prova a estrarre il cervello, mentre i raggi rimasti tengono lontani gli altri.
-  - Contro chi vola: *lentezza* e *sonno*. Contro chi si rende invisibile: niente, non ha modo di vederlo, e attacca chi vede.
-- *Morale*: nessuno. È un non morto senza mente col suo ordine: combatte finché non viene distrutto, e non insegue oltre la soglia del tempio.
 
 **Benchmark** PF T1-1 riga 14 (CA 29, pf 200, att. +23, danno medio 65, CD 22): CA 22 ✗ · pf 104 ✗ molto sotto · att. +11 ✗ · CD 21 ≈ (1 sotto). Difesa e attacco da GS 9-10: il GS lo pagano otto effetti salva-o-muori a CD 21, lo stordimento di gruppo e l'estrazione. È swingy: o li ferma al round 1, o cade al round 3.
 

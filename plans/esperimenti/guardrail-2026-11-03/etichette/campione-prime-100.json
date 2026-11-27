@@ -1,0 +1,802 @@
+[
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:182",
+  "b": "Bestiario/png/lomyn-redtongue-bardo8-cr8.md:25",
+  "prima": "Iniziativa: +1; Sensi: Scurovisione 18m; Ascoltare +4, Osservare +4",
+  "dopo": "Iniziativa +5 · Sensi visione crepuscolare; Ascoltare +5",
+  "sim": 0.65,
+  "nli": 0.999
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-BATTLE-STATS-e-VILLAIN-ICONICI.md:146",
+  "b": "Bestiario/mostri/hobgoblin-bladebearer-ftr6-cr6.md:19",
+  "prima": "TS: Temp +9, Rif +7, Vol +15 (mantello della resistenza +2, Tempra Possente)",
+  "dopo": "TS Temp +7, Rifl +5/+6, Vol +5 (Volontà di Ferro).",
+  "sim": 0.56,
+  "nli": 0.999
+ },
+ {
+  "a": "Bestiario/png/lomyn-redtongue-bardo8-cr8.md:25",
+  "b": "Bestiario/villain/abbathor-blackguard-cr10.md:33",
+  "prima": "Iniziativa +5 · Sensi visione crepuscolare; Ascoltare +5",
+  "dopo": "Iniziativa +1 · Sensi scurovisione 18 m; individuare il bene a volontà",
+  "sim": 0.56,
+  "nli": 0.999
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:4241",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:235",
+  "prima": "Iniziativa +2 · Sensi scurovisione 18 m; Ascoltare +5, Osservare +5",
+  "dopo": "Iniziativa: +5; Sensi: Scurovisione 18m; Ascoltare +13, Osservare +13",
+  "sim": 0.88,
+  "nli": 0.999
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:432",
+  "b": "Bestiario/mostri/spezzamente-kulkor-zhul-cr12.md:22",
+  "prima": "Sensi: Scurovisione 18m; Ascoltare +21, Osservare +21",
+  "dopo": "Iniziativa +6 · Sensi scurovisione 18 m; Ascoltare +3, Osservare +3 (Allerta dal famiglio)",
+  "sim": 0.66,
+  "nli": 0.999
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:1076",
+  "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:1632",
+  "prima": "Read-aloud (Salvatore lead) — il ritorno del fedele. Un rumore di pietra",
+  "dopo": "Read-aloud (Salvatore lead) — il campo. Fuori dalle mura il buio è vivo.",
+  "sim": 0.56,
+  "nli": 0.999
+ },
+ {
+  "a": "10-stand-alone/Il Giardino di Sale e Calce PF1e/Mappe/QM-3-QUOTA-MEDIA-E-FONDO.md:43",
+  "b": "10-stand-alone/Il Giardino di Sale e Calce/Mappe/GSC-4-TORRE-DELLE-VOLTE.md:29",
+  "prima": "@luogo Qasr al-Milah, la Grande Cisterna di Tufo sotto la piazza del Pozzo dei Sospiri",
+  "dopo": "@luogo Rethmar, la Grande Cisterna, dentro la Torre delle Volte",
+  "sim": 0.59,
+  "nli": 0.999
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:647",
+  "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:535",
+  "prima": "Read-aloud (LotR lead, Salvatore support) — la foresta. Le piattaforme",
+  "dopo": "Read-aloud (Salvatore lead, Casa di Davide support) — gli affreschi, A3. Questo",
+  "sim": 0.59,
+  "nli": 0.999
+ },
+ {
+  "a": "Bestiario/villain/minotauro-karkilan-cr5.md:36",
+  "b": "Bestiario/villain/Avatar_Tiamat/avatar-tiamat-cr17.md:32",
+  "prima": "Iniziativa +0 · Sensi scurovisione 18 m, fiuto; Ascoltare +8, Osservare +7, Cercare +2",
+  "dopo": "Iniziativa +8 · Sensi scurovisione 18 m; Ascoltare +28, Osservare +28",
+  "sim": 0.85,
+  "nli": 0.999
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE.md:328",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/ERRATA-PARTE1-Quest-Hellas-35-Verification.md:119",
+  "prima": "Drow Poison: Fort DC 18, unconscious 1d4 hours + 2d4 Str damage",
+  "dopo": "Dagger (masterwork, poisoned: Drow poison DC 13 Fort, unconscious 1 minute + 2d4 Str damage)",
+  "sim": 0.63,
+  "nli": 0.999
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:182",
+  "b": "Bestiario/mostri/gufo-gigante-celestiale-cr6.md:23",
+  "prima": "Iniziativa: +1; Sensi: Scurovisione 18m; Ascoltare +4, Osservare +4",
+  "dopo": "Iniziativa +4 · Sensi scurovisione 18 m, visione crepuscolare superiore; Ascoltare +20, Osservare +13",
+  "sim": 0.71,
+  "nli": 0.999
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:327",
+  "b": "Bestiario/mostri/lucertola-del-tuono-cr10.md:23",
+  "prima": "Iniziativa: +1; Sensi: Scurovisione 18m; Ascoltare +16, Osservare +16",
+  "dopo": "Iniziativa +4 · Sensi scurovisione 18 m, visione crepuscolare, percezione cieca 9 m; Ascoltare +9, Osservare +9",
+  "sim": 0.67,
+  "nli": 0.999
+ },
+ {
+  "a": "10-stand-alone/L'abbazia Della Rotta Sicura/appendice_b_oppressione.md:197",
+  "b": "10-stand-alone/L'abbazia Della Rotta Sicura/appendice_corsari_borgo.md:197",
+  "prima": "Difesa CA 15 · pf 6 (1d12) · TS Tempra +0, Riflessi +2, Volontà +2 · RD 5/contundente, immune al freddo, tratti dei non-morti",
+  "dopo": "Difesa CA 17 · pf 52 · TS Tempra +8, Riflessi +2, Volontà +2",
+  "sim": 0.62,
+  "nli": 0.999
+ },
+ {
+  "a": "Bestiario/png/rurik-gorunn-cr10.md:29",
+  "b": "Bestiario/villain/Avatar_Tiamat/avatar-tiamat-cr17.md:32",
+  "prima": "Iniziativa −1 · Sensi scurovisione 18 m; individuazione del male a volontà; Ascoltare +2, Osservare +2 · Aura di coraggio (3 m)",
+  "dopo": "Iniziativa +8 · Sensi scurovisione 18 m; Ascoltare +28, Osservare +28",
+  "sim": 0.66,
+  "nli": 0.999
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:3993",
+  "b": "Bestiario/villain/phantom-fungus-cr3.md:32",
+  "prima": "Iniziativa +6 · Sensi percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4; Ascoltare +29, Osservare +29",
+  "dopo": "Iniziativa +0 · Sensi visione crepuscolare, scurovisione 18 m (non SRD); Ascoltare +4, Osservare +4",
+  "sim": 0.63,
+  "nli": 0.999
+ },
+ {
+  "a": "Bestiario/mostri/gnoll-ranger4-cr5.md:2",
+  "b": "Bestiario/mostri/rethmar-city-guard-cr2.md:2",
+  "prima": "Faction: gnoll | Role: ranged-scout | Environment: forest/plain | CR: 5 | Source: MM Gnoll + PHB Ranger 4 | Status: inferred",
+  "dopo": "Faction: rethmar-defender | Role: melee-defender | Environment: urban | CR: 2 | Source: PHB Fighter 2 | Status: inferred",
+  "sim": 0.69,
+  "nli": 0.999
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md:100",
+  "b": "Bestiario/mostri/kulkorzhul-war-adept-cr7.md:25",
+  "prima": "TS: Temp +15 (+17 rage), Rif +10, Vol +6 (+8 rage).",
+  "dopo": "TS Temp +5, Rifl +6, Vol +5 (+3 vs sonno/paralisi ed elettricità).",
+  "sim": 0.56,
+  "nli": 0.998
+ },
+ {
+  "a": "Bestiario/mostri/kulkorzhul-war-adept-cr7.md:7",
+  "b": "Bestiario/png/Lorana/capitana-lorana-cr7.md:7",
+  "prima": "tipo: Medium humanoid (goblinoid, dragonblood), Sorcerer 7, LE",
+  "dopo": "tipo: Medium humanoid (human), Guerriero 6 / Esperto 2, LG",
+  "sim": 0.58,
+  "nli": 0.998
+ },
+ {
+  "a": "Bestiario/mostri/drow-wizard7-cr8.md:20",
+  "b": "Bestiario/mostri/razorfiend-red-cr9.md:20",
+  "prima": "Saves: Fort +3, Ref +5, Will +7 (+2 vs enchant) | BAB/Grapple: +3/+3",
+  "dopo": "Saves: Fort +12, Ref +8, Will +9 | BAB/Grapple: +10/+20",
+  "sim": 0.76,
+  "nli": 0.998
+ },
+ {
+  "a": "Bestiario/mostri/razorfiend-blue-cr9.md:18",
+  "b": "Bestiario/mostri/drow-wizard7-cr8.md:20",
+  "prima": "Saves: Fort +12, Ref +8, Will +9 | BAB/Grapple: +10/+20",
+  "dopo": "Saves: Fort +3, Ref +5, Will +7 (+2 vs enchant) | BAB/Grapple: +3/+3",
+  "sim": 0.76,
+  "nli": 0.998
+ },
+ {
+  "a": "10-stand-alone/Il-Drappo-di-Tarsilia/STATBLOCCHI-PF1E.md:232",
+  "b": "10-stand-alone/L'abbazia Della Rotta Sicura/appendice_corsari_borgo.md:150",
+  "prima": "Difesa CA 11 · pf 15 (2d8+6) · TS Tempra +6, Riflessi +5, Volontà +1",
+  "dopo": "Difesa CA 20 · pf 58 · TS Tempra +8, Riflessi +8, Volontà +3",
+  "sim": 0.86,
+  "nli": 0.998
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:259",
+  "b": "Bestiario/villain/Ushgar_Occhio_Reso/ushgar-occhio-reso-cr13.md:21",
+  "prima": "Iniziativa: +1; Sensi: Scurovisione 18m; Ascoltare +4, Osservare +4",
+  "dopo": "Iniziativa +6 · Sensi scurovisione 18 m; Osservare e Cercare −2 (Occhio Reso)",
+  "sim": 0.64,
+  "nli": 0.998
+ },
+ {
+  "a": "Bestiario/villain/Avatar_Tiamat/avatar-tiamat-cr17.md:32",
+  "b": "Bestiario/villain/Ushgar_Occhio_Reso/ushgar-occhio-reso-cr13.md:21",
+  "prima": "Iniziativa +8 · Sensi scurovisione 18 m; Ascoltare +28, Osservare +28",
+  "dopo": "Iniziativa +6 · Sensi scurovisione 18 m; Osservare e Cercare −2 (Occhio Reso)",
+  "sim": 0.7,
+  "nli": 0.998
+ },
+ {
+  "a": "Bestiario/villain/draxoksus-shamano-draconico-cr8.md:21",
+  "b": "Bestiario/mostri/razorfiend-blackspawn-alfa-cr13.md:43",
+  "prima": "Soffio: linea di 9 m, 3d6 elettricità, Rifl CD 16 dimezza, 1d4 round di ricarica",
+  "dopo": "Soffio: linea 18 m di acido, 12d8, Rifl CD 25 dimezza, 1/1d4 round.",
+  "sim": 0.67,
+  "nli": 0.998
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE.md:328",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/ERRATA-PARTE1-Quest-Hellas-35-Verification.md:307",
+  "prima": "Drow Poison: Fort DC 18, unconscious 1d4 hours + 2d4 Str damage",
+  "dopo": "Drow Poison: Fort DC 13 (NOT 18!), unconscious 1 minute + 2d4 Str damage (secondary)",
+  "sim": 0.78,
+  "nli": 0.998
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:4124",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:259",
+  "prima": "Iniziativa +9 · Sensi scurovisione 18 m (ogre e mezzorco, SRD); Ascoltare +11, Osservare +3",
+  "dopo": "Iniziativa: +1; Sensi: Scurovisione 18m; Ascoltare +4, Osservare +4",
+  "sim": 0.76,
+  "nli": 0.998
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:364",
+  "b": "Bestiario/mostri/spezzamente-kulkor-zhul-cr12.md:22",
+  "prima": "Iniziativa: +1; Sensi: Scurovisione 18m; Ascoltare +21, Osservare +21",
+  "dopo": "Iniziativa +6 · Sensi scurovisione 18 m; Ascoltare +3, Osservare +3 (Allerta dal famiglio)",
+  "sim": 0.75,
+  "nli": 0.998
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:432",
+  "b": "Bestiario/png/morlin-coalhewer-cr12.md:31",
+  "prima": "Sensi: Scurovisione 18m; Ascoltare +21, Osservare +21",
+  "dopo": "Iniziativa −1 · Sensi scurovisione 18 m; Ascoltare +4, Osservare +4 · Aura di bene e di legge (travolgente)",
+  "sim": 0.59,
+  "nli": 0.998
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-2-RITORNO-E-AFFRESCHI.md:1003",
+  "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:1151",
+  "prima": "Read-aloud (Andor lead, BG3 support) — la Sala, il sogno di Artemis, 1 di 2. Il bazar te lo",
+  "dopo": "Read-aloud (Salvatore lead, Andor support) — la fucina e il banco. La",
+  "sim": 0.56,
+  "nli": 0.998
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:1047",
+  "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:1632",
+  "prima": "Read-aloud (Salvatore lead, solo per Artemis) — il corridoio, 1 di 2. Il corridoio riprende",
+  "dopo": "Read-aloud (Salvatore lead) — il campo. Fuori dalle mura il buio è vivo.",
+  "sim": 0.56,
+  "nli": 0.998
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:1883",
+  "b": "Bestiario/png/Khorn/khorn-ufficiale-hammerfist-cr8.md:28",
+  "prima": "Iniziativa −1 (DES 8) · Sensi scurovisione 18 m, percezione tremorica 18 m; Ascoltare +20, Osservare +20",
+  "dopo": "Iniziativa +5 · Sensi scurovisione 18 m; Ascoltare +2, Osservare +2",
+  "sim": 0.76,
+  "nli": 0.998
+ },
+ {
+  "a": "Bestiario/villain/minotauro-karkilan-cr5.md:36",
+  "b": "Bestiario/mostri/abishai-azzurro-mano-cr11.md:24",
+  "prima": "Iniziativa +0 · Sensi scurovisione 18 m, fiuto; Ascoltare +8, Osservare +7, Cercare +2",
+  "dopo": "Iniziativa +8 · Sensi scurovisione 18 m, vedere nell'oscurità; Ascoltare +20, Osservare +20",
+  "sim": 0.78,
+  "nli": 0.998
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:280",
+  "b": "Bestiario/villain/Azarr_Kul/azarr-kul-final-cr17.md:34",
+  "prima": "Iniziativa: +6; Sensi: Scurovisione 18m, Visione Crepuscolare; Ascoltare +12, Osservare +12",
+  "dopo": "Iniziativa +1 · Sensi scurovisione 18 m, visione crepuscolare; Ascoltare +6, Osservare +6",
+  "sim": 0.89,
+  "nli": 0.998
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:3993",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:327",
+  "prima": "Iniziativa +6 · Sensi percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4; Ascoltare +29, Osservare +29",
+  "dopo": "Iniziativa: +1; Sensi: Scurovisione 18m; Ascoltare +16, Osservare +16",
+  "sim": 0.62,
+  "nli": 0.998
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-19-SEGRETI-DELL-ORDA.md:85",
+  "b": "Bestiario/png/jorr-natherson-cr8.md:31",
+  "prima": "colto alla sprovvista 20 · pf 50 (6d10+12) · Temp +7, Rifl +6, Vol +5 ·",
+  "dopo": "Difesa CA 17, contatto 13, colto alla sprovvista 14 · pf 53 (8 DV: 5d8+3d6+16) · TS Temp +7, Rifl +10, Vol +3 (+1 contro le trappole) · eludere",
+  "sim": 0.58,
+  "nli": 0.998
+ },
+ {
+  "a": "Bestiario/mostri/drow-warrior-cr1.md:2",
+  "b": "Bestiario/mostri/sentinella-drow-ranger-cr8.md:4",
+  "prima": "Faction: drow-sonjak | Role: fodder-melee | Environment: underdark | CR: 1 | Source: FRCS p.17 drow traits + MM p.103 Elf Warrior 1 | Status: inferred",
+  "dopo": "Faction: drow-sonjak | Role: ranged | Environment: underdark | CR: 8",
+  "sim": 0.57,
+  "nli": 0.998
+ },
+ {
+  "a": "Bestiario/mostri/drow-warrior-cr1.md:2",
+  "b": "Bestiario/mostri/drow-guerriero-campi-cr6.md:4",
+  "prima": "Faction: drow-sonjak | Role: fodder-melee | Environment: underdark | CR: 1 | Source: FRCS p.17 drow traits + MM p.103 Elf Warrior 1 | Status: inferred",
+  "dopo": "Faction: drow-sonjak | Role: melee-heavy | Environment: underdark | CR: 6",
+  "sim": 0.59,
+  "nli": 0.998
+ },
+ {
+  "a": "Bestiario/mostri/drow-guerriero-avamposto-cr7.md:4",
+  "b": "Bestiario/mostri/drow-warrior-cr1.md:2",
+  "prima": "Faction: drow-sonjak | Role: melee-heavy | Environment: underdark | CR: 7",
+  "dopo": "Faction: drow-sonjak | Role: fodder-melee | Environment: underdark | CR: 1 | Source: FRCS p.17 drow traits + MM p.103 Elf Warrior 1 | Status: inferred",
+  "sim": 0.6,
+  "nli": 0.998
+ },
+ {
+  "a": "Bestiario/mostri/rethmar-militia-cr05.md:2",
+  "b": "Bestiario/mostri/razorfiend-green-cr9.md:2",
+  "prima": "Faction: rethmar-defender | Role: fodder-defender | Environment: urban | CR: 0.5 | Source: PHB Warrior 1 | Status: inferred",
+  "dopo": "Faction: red-hand | Role: ambusher-gas | Environment: forest/wetland | CR: 9 | Source: RHoD Razorfiend + Draconomicon green | Status: inferred",
+  "sim": 0.67,
+  "nli": 0.998
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:4080",
+  "b": "Bestiario/villain/beholder-death-tyrant-cr14.md:41",
+  "prima": "Statistiche For 33, Des 14, Cos 25, Int 18, Sag 19, Car 18 · BAB +25; Lotta +44 · Talenti quelli di A.1 (Virata, non Ghermire), più Allerta · Abilità e il resto: come A.1",
+  "dopo": "Statistiche For 18, Des 10, Cos —, Int —, Sag 15, Car 17 · BAB +8; Lotta +16 · senza mente: niente abilità né talenti",
+  "sim": 0.61,
+  "nli": 0.998
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:397",
+  "b": "Bestiario/villain/balvar-fuocospento-cr13.md:16",
+  "prima": "Sensi: Scurovisione 18m; Ascoltare +16, Osservare +16",
+  "dopo": "sensi: scurovisione 18 m; Ascoltare +5, Osservare +5",
+  "sim": 0.9,
+  "nli": 0.997
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:182",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2-RHEST-ENCOUNTER-SAARVITH-REGIARIX-STATBLOCCHI.md:56",
+  "prima": "Danni 14d4 acido, TS Riflessi CD 29 per dimezzare.",
+  "dopo": "Soffio: linea di acido 18 m, 12d4 danni, Riflessi CD ~25 per metà.",
+  "sim": 0.55,
+  "nli": 0.997
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:397",
+  "b": "Bestiario/villain/balvar-fuocospento-cr13.md:40",
+  "prima": "Sensi: Scurovisione 18m; Ascoltare +16, Osservare +16",
+  "dopo": "Iniziativa +2 · Sensi scurovisione 18 m; Ascoltare +5, Osservare +5",
+  "sim": 0.78,
+  "nli": 0.997
+ },
+ {
+  "a": "10-stand-alone/Il Giardino di Sale e Calce/appendice_creature.md:19",
+  "b": "Bestiario/png/Khorn/khorn-ufficiale-hammerfist-cr8.md:28",
+  "prima": "sensi: scurovisione 18 m, Ascoltare +32, Osservare +32",
+  "dopo": "Iniziativa +5 · Sensi scurovisione 18 m; Ascoltare +2, Osservare +2",
+  "sim": 0.81,
+  "nli": 0.997
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:327",
+  "b": "Bestiario/png/lomyn-redtongue-bardo8-cr8.md:25",
+  "prima": "Iniziativa: +1; Sensi: Scurovisione 18m; Ascoltare +16, Osservare +16",
+  "dopo": "Iniziativa +5 · Sensi visione crepuscolare; Ascoltare +5",
+  "sim": 0.64,
+  "nli": 0.997
+ },
+ {
+  "a": "Bestiario/villain/saarvith-regiarix-cr13.md:4",
+  "b": "Bestiario/mostri/presentatore-arena-cr2.md:4",
+  "prima": "Faction: red-hand | Role: boss | Environment: swamp | CR: 13",
+  "dopo": "Faction: dauth-defender | Role: fodder | Environment: urban | CR: 2",
+  "sim": 0.72,
+  "nli": 0.997
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-OTTO-PORTE.md:150",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-Tordek-OTTO-PORTE-e-ORBE.md:218",
+  "prima": "Requisito: Monaco 16, meditazione trascendentale (arco mistico).",
+  "dopo": "Requisito: Monaco 18, ripetuto uso sopravvissuto delle Porte 5–6.",
+  "sim": 0.56,
+  "nli": 0.997
+ },
+ {
+  "a": "Bestiario/villain/koth-signore-dei-dragoni-cr8.md:7",
+  "b": "Bestiario/png/Lorana/capitana-lorana-cr7.md:7",
+  "prima": "tipo: Medium humanoid (goblinoid), Bugbear (Humanoid 3) / Sorcerer 8, LE",
+  "dopo": "tipo: Medium humanoid (human), Guerriero 6 / Esperto 2, LG",
+  "sim": 0.58,
+  "nli": 0.997
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:540",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:331",
+  "prima": "TS: Tempra +12, Riflessi +10, Volontà +8 (+10 contro i malvagi)",
+  "dopo": "TS: Tempra +17, Riflessi +8, Volontà +13 (+2 vs veleni, +4 vs magie)",
+  "sim": 0.73,
+  "nli": 0.997
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md:1177",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md:503",
+  "prima": "Read-aloud (Casa di Davide lead) — il cortile esterno, la riserva. Il",
+  "dopo": "Read-aloud (Casa di Davide lead) — la Porta Interna. La porta è più",
+  "sim": 0.71,
+  "nli": 0.997
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md:627",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md:589",
+  "prima": "Read-aloud (Salvatore lead) — le mura, il primo urto. Il terzo corno",
+  "dopo": "Read-aloud (Salvatore lead) — il sentiero. Il canyon sale verso nord",
+  "sim": 0.68,
+  "nli": 0.997
+ },
+ {
+  "a": "10-stand-alone/L'abbazia Della Rotta Sicura/appendice_b_oppressione.md:282",
+  "b": "10-stand-alone/L'abbazia Della Rotta Sicura/appendice_corsari_borgo.md:197",
+  "prima": "Difesa CA 14 · pf 26 (4d8+8) · TS Tempra +3, Riflessi +3, Volontà +4 · RI 14",
+  "dopo": "Difesa CA 17 · pf 52 · TS Tempra +8, Riflessi +2, Volontà +2",
+  "sim": 0.81,
+  "nli": 0.997
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:235",
+  "b": "Bestiario/villain/koth-signore-dei-dragoni-cr8.md:34",
+  "prima": "Iniziativa: +5; Sensi: Scurovisione 18m; Ascoltare +13, Osservare +13",
+  "dopo": "Iniziativa +6 · Sensi scurovisione 18 m; Ascoltare +3, Osservare +0",
+  "sim": 0.9,
+  "nli": 0.997
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:440",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md:627",
+  "prima": "Read-aloud (Salvatore lead) — l'attraversamento. Il passaggio è fango",
+  "dopo": "Read-aloud (Salvatore lead) — le mura, il primo urto. Il terzo corno",
+  "sim": 0.67,
+  "nli": 0.997
+ },
+ {
+  "a": "Bestiario/mostri/presentatore-arena-cr2.md:4",
+  "b": "Bestiario/mostri/carcassa-vivente-cr9.md:4",
+  "prima": "Faction: dauth-defender | Role: fodder | Environment: urban | CR: 2",
+  "dopo": "Faction: aberration | Role: melee-heavy | Environment: underdark | CR: 9",
+  "sim": 0.69,
+  "nli": 0.997
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md:477",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md:463",
+  "prima": "Read-aloud (Salvatore lead) — la caverna, sono tornati. Nani e orchi si",
+  "dopo": "Read-aloud (Salvatore lead) — le mura, di notte. Prima arriva l'odore.",
+  "sim": 0.6,
+  "nli": 0.997
+ },
+ {
+  "a": "Bestiario/villain/abbathor-cleric11-cr11.md:31",
+  "b": "Bestiario/villain/Ushgar_Occhio_Reso/ushgar-occhio-reso-cr13.md:21",
+  "prima": "Iniziativa +4 · Sensi scurovisione 18 m; Ascoltare +4, Osservare +4",
+  "dopo": "Iniziativa +6 · Sensi scurovisione 18 m; Osservare e Cercare −2 (Occhio Reso)",
+  "sim": 0.69,
+  "nli": 0.997
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:489",
+  "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md:650",
+  "prima": "Read-aloud (Salvatore lead) — l'Altare, il reliquiario. Sotto le mani di Thorik il",
+  "dopo": "Read-aloud (Salvatore lead) — la caverna, il primo round. Gli orchi",
+  "sim": 0.6,
+  "nli": 0.997
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:489",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md:627",
+  "prima": "Read-aloud (Salvatore lead) — l'Altare, il reliquiario. Sotto le mani di Thorik il",
+  "dopo": "Read-aloud (Salvatore lead) — le mura, il primo urto. Il terzo corno",
+  "sim": 0.63,
+  "nli": 0.997
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:527",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-DEF-1-OMBRA-SULLA-MONTAGNA.md:914",
+  "prima": "In scena — Dove: il bosco — Chi: Durin · i sei veterani",
+  "dopo": "In scena — Dove: il cortile interno — Chi: la Madre Superiora · i capitani · il mastro armaiolo",
+  "sim": 0.57,
+  "nli": 0.997
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:489",
+  "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:1151",
+  "prima": "Read-aloud (Salvatore lead) — l'Altare, il reliquiario. Sotto le mani di Thorik il",
+  "dopo": "Read-aloud (Salvatore lead, Andor support) — la fucina e il banco. La",
+  "sim": 0.56,
+  "nli": 0.997
+ },
+ {
+  "a": "10-stand-alone/L'abbazia Della Rotta Sicura/appendice_b_oppressione.md:304",
+  "b": "10-stand-alone/L'abbazia Della Rotta Sicura/abbazia_rotta_sicura.md:133",
+  "prima": "Difesa CA 22 · pf 45 (9d8+9) · TS Tempra +4, Riflessi +6, Volontà +7 · RI 18, RD 5/freddo ferro",
+  "dopo": "Difesa CA 20 · pf 58 · TS Tempra +8, Riflessi +8, Volontà +3",
+  "sim": 0.72,
+  "nli": 0.997
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:235",
+  "b": "Bestiario/villain/Azarr_Kul/azarr-kul-final-cr17.md:34",
+  "prima": "Iniziativa: +5; Sensi: Scurovisione 18m; Ascoltare +13, Osservare +13",
+  "dopo": "Iniziativa +1 · Sensi scurovisione 18 m, visione crepuscolare; Ascoltare +6, Osservare +6",
+  "sim": 0.76,
+  "nli": 0.997
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:492",
+  "b": "Bestiario/mostri/abishai-azzurro-mano-cr11.md:24",
+  "prima": "Iniziativa: +4; Sensi: Visione Crepuscolare; Ascoltare +14, Osservare +14",
+  "dopo": "Iniziativa +8 · Sensi scurovisione 18 m, vedere nell'oscurità; Ascoltare +20, Osservare +20",
+  "sim": 0.7,
+  "nli": 0.997
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:813",
+  "b": "10-stand-alone/L'abbazia Della Rotta Sicura/appendice_b_oppressione.md:240",
+  "prima": "Attacco Scavare 6 m · Mischia morso +10 (4d6+3) e 3 artigli +8 (1d4+1)",
+  "dopo": "Attacco Vel 9 m, nuotare 9 m · Mischia morso +2 (1d6+1 più paralisi) e 2 artigli +0 (1d3 più paralisi)",
+  "sim": 0.65,
+  "nli": 0.997
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:3993",
+  "b": "Bestiario/villain/balvar-fuocospento-cr13.md:40",
+  "prima": "Iniziativa +6 · Sensi percezione cieca 18 m, scurovisione 36 m, visione crepuscolare ×4; Ascoltare +29, Osservare +29",
+  "dopo": "Iniziativa +2 · Sensi scurovisione 18 m; Ascoltare +5, Osservare +5",
+  "sim": 0.67,
+  "nli": 0.997
+ },
+ {
+  "a": "Bestiario/png/grom-skullcrusher-cr14.md:4",
+  "b": "Bestiario/mostri/thayan-heavy-infantry-cr3.md:2",
+  "prima": "Faction: zhentarim | Role: melee-heavy | Environment: urban | CR: 14",
+  "dopo": "Faction: teschio-nero-thay | Role: melee-heavy | Environment: any | CR: 3 | Source: FRCS Thay + PHB Fighter 3 | Status: inferred",
+  "sim": 0.59,
+  "nli": 0.997
+ },
+ {
+  "a": "Bestiario/png/ironclad-bruiser-cr12.md:4",
+  "b": "Bestiario/mostri/thayan-heavy-infantry-cr3.md:2",
+  "prima": "Faction: zhentarim | Role: melee-heavy | Environment: urban | CR: 12",
+  "dopo": "Faction: teschio-nero-thay | Role: melee-heavy | Environment: any | CR: 3 | Source: FRCS Thay + PHB Fighter 3 | Status: inferred",
+  "sim": 0.59,
+  "nli": 0.997
+ },
+ {
+  "a": "Bestiario/png/druid-bear-ally-cr12.md:3",
+  "b": "Bestiario/mostri/cerchio-druid7-cr7.md:2",
+  "prima": "Faction: cerchio-druid | Role: ally-wildshape-tank | Environment: forest | CR: 12",
+  "dopo": "Faction: cerchio-druid | Role: divine-caster | Environment: forest | CR: 7 | Source: PHB Druid 7 | Status: inferred",
+  "sim": 0.65,
+  "nli": 0.997
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-3-RESURREZIONE-HELLA.md:1553",
+  "b": "Bestiario/png/rurik-gorunn-cr10.md:29",
+  "prima": "Iniziativa +0 · Sensi visione crepuscolare; Ascoltare +8, Osservare +8",
+  "dopo": "Iniziativa −1 · Sensi scurovisione 18 m; individuazione del male a volontà; Ascoltare +2, Osservare +2 · Aura di coraggio (3 m)",
+  "sim": 0.58,
+  "nli": 0.997
+ },
+ {
+  "a": "Bestiario/mostri/pillar-golem-arena-cr8.md:4",
+  "b": "Bestiario/mostri/dauth-dwarf-defender-cr6.md:2",
+  "prima": "Faction: dauth-defender | Role: melee-heavy | Environment: urban | CR: 8",
+  "dopo": "Faction: dauth-defender | Role: melee-heavy | Environment: urban/dungeon | CR: 6 | Source: FRCS Dauth + PHB Fighter 6 | Status: inferred",
+  "sim": 0.68,
+  "nli": 0.997
+ },
+ {
+  "a": "Bestiario/mostri/thayan-heavy-infantry-cr3.md:2",
+  "b": "Bestiario/mostri/marea-annis-cr6.md:4",
+  "prima": "Faction: teschio-nero-thay | Role: melee-heavy | Environment: any | CR: 3 | Source: FRCS Thay + PHB Fighter 3 | Status: inferred",
+  "dopo": "Faction: abbazia-rotta-sicura | Role: melee-heavy | Environment: coastal | CR: 6",
+  "sim": 0.57,
+  "nli": 0.997
+ },
+ {
+  "a": "Bestiario/mostri/drow-assassina-lolth-cr10.md:2",
+  "b": "Bestiario/villain/Urialle/Urialle.md:6",
+  "prima": "Faction: drow-sonjak | Role: caster-subdolo/infiltratrice | Environment: underdark/urban | CR: 10 | Source: SRD drow + Ladro 4 + CdP Assassino (SRD) | Status: accepted",
+  "dopo": "Faction: drow-sonjak | Role: caster-divine | Environment: underdark | CR: 14",
+  "sim": 0.61,
+  "nli": 0.997
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:703",
+  "b": "10-stand-alone/Il Giardino di Sale e Calce/appendice_creature.md:19",
+  "prima": "Sensi: Scurovisione 18m; Ascoltare +2, Osservare +2",
+  "dopo": "sensi: scurovisione 18 m, Ascoltare +32, Osservare +32",
+  "sim": 0.91,
+  "nli": 0.996
+ },
+ {
+  "a": "Bestiario/png/Maewen/Maewen.md:6",
+  "b": "Bestiario/png/Varis_Seta_Argento/Varis_Seta_Argento.md:6",
+  "prima": "tipo: Medium humanoid (elf), Monaco 9 / Chierico 2, LB",
+  "dopo": "tipo: Medium humanoid (human), Ladro 4 / Esperto 4, N",
+  "sim": 0.71,
+  "nli": 0.996
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P3-Ghostlord-LICH-ALLEANZA-STATBLOCCHI.md:75",
+  "b": "Bestiario/villain/Avatar_Tiamat/avatar-tiamat-cr17.md:43",
+  "prima": "Gemito Terrificante: Volontà CD 21 o panico 2d4 round.",
+  "dopo": "Aura di terrore (Sop): 18 m, Volontà CD 29 o spaventato per 1d4 round.",
+  "sim": 0.6,
+  "nli": 0.996
+ },
+ {
+  "a": "Bestiario/mostri/bugbear-assassino-ladro5-assassino2-cr9.md:23",
+  "b": "Bestiario/villain/Ghaurush_Cenerevento/ghaurush-cenerevento-cr16.md:30",
+  "prima": "Iniziativa +7 · Sensi scurovisione 18 m, fiuto; Ascoltare +13, Osservare +13",
+  "dopo": "Iniziativa +4 · Sensi scurovisione 27 m, visione crepuscolare",
+  "sim": 0.69,
+  "nli": 0.996
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:440",
+  "b": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:1632",
+  "prima": "Read-aloud (Salvatore lead) — l'attraversamento. Il passaggio è fango",
+  "dopo": "Read-aloud (Salvatore lead) — il campo. Fuori dalle mura il buio è vivo.",
+  "sim": 0.62,
+  "nli": 0.996
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/hammerfist_encounters-La Battaglia-di-Hammerfist-Guida-agli-Scontri-final.md:577",
+  "b": "08_La Battaglia Di Hammerfist/Mappe/Hammerfist-L2-REVISED-Ultra-Clear.md:769",
+  "prima": "Bersagli nell'Area: Re Thorek + Borin + 15 Guardie Reali",
+  "dopo": "Bersagli tipici: Re Thorek + Borin + 12 Guardie Reali sulla piattaforma (6-8 guardie KO probabili)",
+  "sim": 0.6,
+  "nli": 0.996
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:4241",
+  "b": "Bestiario/png/jorr-natherson-cr8.md:29",
+  "prima": "Iniziativa +2 · Sensi scurovisione 18 m; Ascoltare +5, Osservare +5",
+  "dopo": "Iniziativa +7 · Sensi Ascoltare +12, Osservare +8 (+4 contro i giganti, +2 contro i goblinoidi)",
+  "sim": 0.56,
+  "nli": 0.996
+ },
+ {
+  "a": "Bestiario/png/jorr-natherson-cr8.md:29",
+  "b": "Bestiario/villain/balvar-fuocospento-cr13.md:40",
+  "prima": "Iniziativa +7 · Sensi Ascoltare +12, Osservare +8 (+4 contro i giganti, +2 contro i goblinoidi)",
+  "dopo": "Iniziativa +2 · Sensi scurovisione 18 m; Ascoltare +5, Osservare +5",
+  "sim": 0.56,
+  "nli": 0.996
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-5-RITORNO-HAMMERFIST.md:426",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md:546",
+  "prima": "In scena — Dove: la caverna — Chi: Re Thorek · Madre Superiora Dana · i novanta nani · gli orchi e il loro capo",
+  "dopo": "In scena — Dove: le mura — Chi: Re Thorek · i capitani",
+  "sim": 0.56,
+  "nli": 0.996
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-1-PIANO-TERRA-TERROS.md:1883",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:492",
+  "prima": "Iniziativa −1 (DES 8) · Sensi scurovisione 18 m, percezione tremorica 18 m; Ascoltare +20, Osservare +20",
+  "dopo": "Iniziativa: +4; Sensi: Visione Crepuscolare; Ascoltare +14, Osservare +14",
+  "sim": 0.62,
+  "nli": 0.996
+ },
+ {
+  "a": "Bestiario/mostri/drow-fighter3-cr4.md:2",
+  "b": "Bestiario/mostri/half-illithid-yochlol-cr11.md:4",
+  "prima": "Faction: drow-sonjak | Role: melee-skirmisher | Environment: underdark | CR: 4 | Source: FRCS drow + PHB Fighter 3 | Status: inferred",
+  "dopo": "Faction: drow-sonjak | Role: caster-divine | Environment: underdark | CR: 11",
+  "sim": 0.61,
+  "nli": 0.996
+ },
+ {
+  "a": "Bestiario/mostri/bruto-deforme-sottosuolo-cr11.md:30",
+  "b": "Bestiario/villain/Zin_thara_Vel_Ryn/zin-thara-vel-ryn-cr12.md:51",
+  "prima": "Qualità speciali Scurovisione 18 m, vista crepuscolare, cattura massi, ira 1/giorno, schivare prodigioso.",
+  "dopo": "Qualità speciali Scurovisione 36 m, cecità alla luce solare, nascondersi in piena vista, elusione, schivare prodigioso.",
+  "sim": 0.71,
+  "nli": 0.996
+ },
+ {
+  "a": "Bestiario/mostri/drow-trickster-arcano-cr11.md:2",
+  "b": "Bestiario/villain/Urialle/Urialle.md:6",
+  "prima": "Faction: drow-sonjak | Role: caster-subdolo/saboteur | Environment: underdark/urban | CR: 11 | Source: SRD drow + Ladro/Mago + CdP Trickster Arcano (SRD) | Status: accepted",
+  "dopo": "Faction: drow-sonjak | Role: caster-divine | Environment: underdark | CR: 14",
+  "sim": 0.57,
+  "nli": 0.996
+ },
+ {
+  "a": "Bestiario/mostri/drow-fighter3-cr4.md:2",
+  "b": "Bestiario/mostri/cultista-rakshasa-cr3.md:2",
+  "prima": "Faction: drow-sonjak | Role: melee-skirmisher | Environment: underdark | CR: 4 | Source: FRCS drow + PHB Fighter 3 | Status: inferred",
+  "dopo": "Faction: rakshasa | Role: skirmisher-stealth | Environment: urban | CR: 3 | Source: MM Rakshasa + PHB Rogue 3 | Status: inferred",
+  "sim": 0.75,
+  "nli": 0.996
+ },
+ {
+  "a": "Bestiario/mostri/warpriest-tiamat-cr7.md:2",
+  "b": "Bestiario/mostri/razorfiend-green-cr9.md:2",
+  "prima": "Faction: red-hand | Role: divine-caster | Environment: any | CR: 7 | Source: PHB Cleric + FRCS Tiamat faith | Status: inferred",
+  "dopo": "Faction: red-hand | Role: ambusher-gas | Environment: forest/wetland | CR: 9 | Source: RHoD Razorfiend + Draconomicon green | Status: inferred",
+  "sim": 0.69,
+  "nli": 0.996
+ },
+ {
+  "a": "Bestiario/mostri/loxo-shaman6-cr7.md:2",
+  "b": "Bestiario/mostri/skeletal-dire-lion-cr6.md:2",
+  "prima": "Faction: loxo-centaur-corrupted | Role: divine-caster | Environment: plain | CR: 7 | Source: MM II Loxo + PHB Druid 6 | Status: inferred",
+  "dopo": "Faction: ghostlord-undead | Role: melee-shock | Environment: any | CR: 6 | Source: MM Dire Lion + Skeleton template | Status: inferred",
+  "sim": 0.68,
+  "nli": 0.996
+ },
+ {
+  "a": "Bestiario/mostri/skeletal-dire-lion-cr6.md:2",
+  "b": "Bestiario/mostri/razorfiend-red-cr9.md:2",
+  "prima": "Faction: ghostlord-undead | Role: melee-shock | Environment: any | CR: 6 | Source: MM Dire Lion + Skeleton template | Status: inferred",
+  "dopo": "Faction: red-hand | Role: melee-heavy | Environment: any | CR: 9 | Source: RHoD Razorfiend base + Draconomicon color variants | Status: inferred",
+  "sim": 0.68,
+  "nli": 0.996
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1C-Rituale-COMPLETO-SCALE.md:629",
+  "b": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P1B-Cerchio-Treant-COMPLETO-maps.md:319",
+  "prima": "🔵 Hella: Col T, Riga 20 (TRANCE, defenseless AC 10!)",
+  "dopo": "🔵 Hella: Col T, Riga 05 (frontline, deve reach centro!)",
+  "sim": 0.6,
+  "nli": 0.995
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:432",
+  "b": "Bestiario/png/avarthel-druido-cr9.md:28",
+  "prima": "Sensi: Scurovisione 18m; Ascoltare +21, Osservare +21",
+  "dopo": "Iniziativa +2 · Sensi visione crepuscolare; Ascoltare +18, Osservare +18",
+  "sim": 0.67,
+  "nli": 0.995
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/RUMBLINGSTONE — ESPANSIONE NARRATIVA POST-HAMMERFIST.md:503",
+  "b": "Bestiario/mostri/goblin-warrior1-cr05.md:25",
+  "prima": "Atk: Longsword +10/+5 (1d8+4) o Shortbow +8/+3 (1d6+2)",
+  "dopo": "Attacks: Short sword +2 melee (1d6/19-20) | Shortbow +3 ranged (1d6/x3)",
+  "sim": 0.59,
+  "nli": 0.995
+ },
+ {
+  "a": "09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2B-Torneo-STATBLOCCHI-COMPLETO.md:210",
+  "b": "Bestiario/mostri/kulkorzhul-war-adept-cr7.md:25",
+  "prima": "TS: Temp +5, Rif +6, Vol +15 (Iron Will, Lightning Reflexes).",
+  "dopo": "TS Temp +5, Rifl +6, Vol +5 (+3 vs sonno/paralisi ed elettricità).",
+  "sim": 0.58,
+  "nli": 0.995
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:259",
+  "b": "Bestiario/villain/retriever-cr11.md:35",
+  "prima": "Iniziativa: +1; Sensi: Scurovisione 18m; Ascoltare +4, Osservare +4",
+  "dopo": "Iniziativa +3 · Sensi scurovisione 18 m, visione crepuscolare",
+  "sim": 0.66,
+  "nli": 0.995
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-02-SCHEDE-PERSONAGGI-REGOLAMENTO.md:182",
+  "b": "Bestiario/villain/retriever-cr11.md:35",
+  "prima": "Iniziativa: +1; Sensi: Scurovisione 18m; Ascoltare +4, Osservare +4",
+  "dopo": "Iniziativa +3 · Sensi scurovisione 18 m, visione crepuscolare",
+  "sim": 0.66,
+  "nli": 0.995
+ },
+ {
+  "a": "Bestiario/mostri/underdark-dovil-runecaster-cr7.md:12",
+  "b": "Bestiario/png/Maewen/Maewen.md:6",
+  "prima": "tipo: Medium humanoid (dwarf, hill), Diviner 5 / Deep Diviner 1 / Fighter 1, N",
+  "dopo": "tipo: Medium humanoid (elf), Monaco 9 / Chierico 2, LB",
+  "sim": 0.58,
+  "nli": 0.995
+ },
+ {
+  "a": "07_il Portale Della Forgia Eterna/ARC07-DEF-4-VIAGGIO-MILLE-ANNI.md:1632",
+  "b": "08_La Battaglia Di Hammerfist/ARC08-DEF-2-TRE-GIORNI-DI-SANGUE.md:627",
+  "prima": "Read-aloud (Salvatore lead) — il campo. Fuori dalle mura il buio è vivo.",
+  "dopo": "Read-aloud (Salvatore lead) — le mura, il primo urto. Il terzo corno",
+  "sim": 0.66,
+  "nli": 0.995
+ },
+ {
+  "a": "08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md:537",
+  "b": "Bestiario/villain/abbathor-cleric11-cr11.md:31",
+  "prima": "Sensi: Visione Crepuscolare, Scurovisione 18m; Ascoltare +16, Osservare +20",
+  "dopo": "Iniziativa +4 · Sensi scurovisione 18 m; Ascoltare +4, Osservare +4",
+  "sim": 0.68,
+  "nli": 0.995
+ },
+ {
+  "a": "Bestiario/mostri/drow-warrior-cr1.md:19",
+  "b": "Bestiario/mostri/goblin-warrior1-cr05.md:23",
+  "prima": "AC: 17 (+4 chain shirt, +2 Dex, +1 light shield) | Init: +2 | Speed: 30 ft",
+  "dopo": "AC: 15 (+1 size, +1 Dex, +2 leather, +1 light shield) | Init: +1 | Speed: 30 ft",
+  "sim": 0.78,
+  "nli": 0.995
+ }
+]

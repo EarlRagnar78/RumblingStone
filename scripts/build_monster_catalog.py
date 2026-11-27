@@ -34,6 +34,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from dmcore.testo import slug  # noqa: E402
+from dmcore.sistemi import sistema_di as _sistema_di, predefinito as _predefinito  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = Path(__file__).resolve().parent / "monster_catalog.yaml"
@@ -85,7 +86,7 @@ FACTION_KEYWORDS = {
     # due fazioni da un membro solo (`rhod-allies`, `rakshasa-hunter`) che
     # descrivevano uno **scopo**, non uno schieramento: quello sta in `Role`.
     "alleati-del-vale": ["jorr natherson", "therysol", "therisol"],
-    "hammerfist-hero": ["borin ferropugno", "dara occhiolesto", "thorin runaforte", "nala cantapietre", "tempestas", "dana forgiapietra", "lunapiena", "ventolesto", "orion pelleorsa"],
+    "hammerfist-hero": ["borin giuraferro", "dara occhiolesto", "harbek runaforte", "nala cantapietre", "ragnhild mantoferro", "yrsa portastendardo", "tempestas", "dagmar forgiapietra", "lunapiena", "ventolesto", "orion pelleorsa"],
     "red-hand": ["hobgoblin", "red hand", "mano rossa", "wyrmlord", "goblin", "worg", "bugbear", "orc", "ogre", "ettin", "hell hound", "kulkor", "draxoksus", "koth", "azarr kul", "tiamat", "saarvith"],
     # ⚠️ «zalkatar» stava in questo elenco: e' un illithid warlock della
     # Torre Invisibile, non un comandante della Mano Rossa.
@@ -347,9 +348,6 @@ def should_skip(path):
     # 'docs' = documentazione (guide, ADR renderizzati, contratti tool): può
     # CITARE uno statblock d'esempio, non ne è mai la fonte — indicizzarla
     # inquinerebbe il catalogo (es. GUIDA-BESTIARIO.md letta come mostro CR 10).
-    # 'Il-Drappo-di-Tarsilia' = modulo autoconclusivo (altro sistema, altra ambientazione):
-    # i loro statblock sono locali al modulo e non appartengono al Bestiario della
-    # campagna — indicizzarli mescolerebbe PF1e e 3.5 nello stesso catalogo.
     # '_ARCHIVIO' = istantanee e sorgenti assorbiti: sono COPIE di file vivi, e
     # indicizzarle duplica ogni statblock che contengono. Trovato il 2026-09-12,
     # nel momento esatto in cui si archiviarono 12 file: il catalogo passo' a
@@ -360,10 +358,16 @@ def should_skip(path):
     # '_testi-altrui' = conversioni in markdown dei .txt/.pdf altrui (RICERCA-ARCHI-SENZA-TESTO
     # D12): i sorgenti sono gia' nel catalogo, contarli due volte darebbe doppioni.
     skip_dirs = {'.git', 'node_modules', '.claude', '.cursor', '.windsurf', '.gemini', '.chatgpt', '.agents', '.github', 'Immagini', 'immage_campaign', 'Mappe', 'Musica', 'skills', 'Script', 'Old', 'png_La_mano_rossa_del_destino_files', 'tokens', 'homebrew', 'docs', 'campaign',
-                 '_ARCHIVIO', '_testi-altrui', 'Il-Drappo-di-Tarsilia'}
+                 '_ARCHIVIO', '_testi-altrui'}
     for part in path.parts:
         if part in skip_dirs or part.endswith('_files'):
             return True
+    # Un modulo di un altro sistema (PF1e: il Drappo, il Giardino PF1e) non entra
+    # nel catalogo della campagna: lo dice sistemi.toml [moduli], un posto solo
+    # (ADR-0111, L2). Prima si escludeva il Drappo per nome, e il Giardino PF1e
+    # ci era finito dentro con un boss GS 16 che suggest_encounter proponeva in 3.5.
+    if _sistema_di(str(path)) != _predefinito():
+        return True
     # 'docs' e 'campaign' = documentazione e diari: CITANO statblock (esempi,
     # tabelle di GS, log di sessione) ma non ne sono la fonte. Le fonti sono
     # Bestiario/ e le cartelle d'arco.

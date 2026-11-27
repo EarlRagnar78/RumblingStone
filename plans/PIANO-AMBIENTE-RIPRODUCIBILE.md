@@ -31,7 +31,7 @@
 | [ADR-0007](adr/ADR-0007-scritture-canone-triplo-vincolo.md) | il canone si scrive solo sul ramo del gruppo | vincolo: il setup non tocca mai `campaign/` |
 | [ADR-0020](adr/ADR-0020-edizione-da-stampa-su-un-secondo-binario.md), [ADR-0027](adr/ADR-0027-imposizione-con-pdfcpu.md) | typst e pdfcpu accettati come binari | il piano ne fissa versione e checksum, non rimette in discussione la scelta |
 | [PIANO-PRATICHE-DI-INGEGNERIA](PIANO-PRATICHE-DI-INGEGNERIA.md) PI-3, PI-3b | Dependabot raggruppato, `pip-audit`, `dipendenze.yml` (audit e test sulle versioni minime), runner fissato a `ubuntu-24.04`, immagine Docker per digest | **non si rifà**. A3 fa convivere il lock con Dependabot e con il test delle minime |
-| [`docs/guides/GUIDA-SETUP-MACCHINA.md`](../docs/guides/GUIDA-SETUP-MACCHINA.md) | la guida di setup, 234 righe | si riscrive in A7 attorno a `dm.py ambiente`. Il `SETUP.md` del brief sarebbe un doppione |
+| [`docs/tutorials/GUIDA-SETUP-MACCHINA.md`](../docs/tutorials/GUIDA-SETUP-MACCHINA.md) | la guida di setup, 234 righe | si riscrive in A7 attorno a `dm.py ambiente`. Il `SETUP.md` del brief sarebbe un doppione |
 | `scripts/install-git-hooks.sh`, `.claude/hooks/session-start.sh` | hook `post-merge` e `pre-push`; il sync delle skill all'avvio | A4 ridisegna gli hook; il sync delle skill all'avvio di Claude Code resta com'è |
 | `scripts/booklet-container/` | Chromium di Debian in container | resta per chi lo vuole; con D10 la versione di riferimento di Chromium è Chrome for Testing |
 

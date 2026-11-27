@@ -1,10 +1,13 @@
-# Ghaurush «Cenerevento» — Secondo Incontro, «il preventivo è scaduto» [ACCEPTED — DM-canon]
+# Ghaurush «Cenerevento» — Secondo Incontro, «il preventivo è scaduto» [CANONE — DM 2026-08-05]
 **Faction**: mano-rossa | **Role**: boss-caster/negazione-del-contatto | **Environment**: any (quota, rovine, assedio) | **CR**: 18 | **Source**: SRD *Ogre Mage* (base GS 8) + **Stregone 10** (SRD PHB), classe associata GS +1/liv | **Status**: accepted
 
 
 ```statblocco
 gs: 18
 tipo: Large giant (ogre magi), LE
+taglia: Grande
+spazio: 3 m
+portata: 3 m
 ca: 24
 ca-dettaglio: (−1 taglia, +5 naturale, +7 giaco di maglia +3 Large, +3 deflessione), contatto 12, colto alla sprovvista 24 — 28 con *scudo* attivo
 pf: 137
@@ -13,7 +16,7 @@ ts: Temp +13, Rifl +4, Vol +12
 attributi: For 21 Des 10 Cos 23 Int 14 Sag 14 Car 24
 velocita: 12 m (9 m in armatura), volo 12 m (buono, Sop, a volontà)
 attacchi:
-  - Mischia spadone Large +13/+8 (3d6+7)
+  - Mischia spadone Large perfetto +13/+8 (3d6+7/19-20)
 ```
 
 
@@ -32,7 +35,7 @@ Large giant (ogre magi), LE.
 
 **Difesa** **CA 24** (−1 taglia, +5 naturale, +7 giaco di maglia +3 Large, +3 deflessione), contatto 12, colto alla sprovvista 24 — **28 con *scudo* attivo** · **hp 137** (**DV 5d8 + 10d4**, Stregone 10; Cos 23 con *amuleto di salute +6*) · **TS** Temp +13, Rifl +4, Vol +12 · **RI 19**, **Rigenerazione 5** (fuoco e acido infliggono danni normali)
 
-**Attacco** Vel 12 m (9 m in armatura), **volo 12 m (buono, Sop, a volontà)** · **Mischia** spadone Large perfetto +13/+8 (3d6+7).
+**Attacco** Vel 12 m (9 m in armatura), **volo 12 m (buono, Sop, a volontà)** · **Mischia** spadone Large perfetto +13/+8 (3d6+7/19-20).
 
 **Incantesimi da Stregone 10** (CL 10; **CD 17 + livello**, **+2 per le invocazioni**)
 | Liv | Al giorno | Conosciuti (SRD) |
@@ -45,7 +48,24 @@ Large giant (ogre magi), LE.
 | 5 | 3+1 | **muro di forza** |
 
 
-**Statistiche** For 21, Des 10, Cos 23, Int 14, Sag 14, Car 24 (20 base + *mantello del carisma +4*) · **BAB/Lotta** +8/**+17** · **Talenti** Iniziativa Migliorata, Volontà di Ferro, Incantesimi in Combattimento, Incantesimo Esteso, Incantesimi Focalizzati (Invocazione), **Incantesimi Focalizzati Superiori (Invocazione)** · **Qualità speciali** tratti dei giganti
+**Tattiche** — *stesso mestiere del primo incontro, corretto sugli errori.*
+
+*Prima del combattimento*
+
+1. **Pre-scontro**: *pelle di pietra* estesa, *scudo*, **resistere all'energia (fuoco)**. Ghaurush non viene mai sorpreso: se lo si sorprende comunque, salta il punto 2 e va al 3.
+
+*Durante il combattimento*
+
+2. **Round 1 — muro di forza**, piazzato in modo da lasciare **Thorik e Tordek da una parte** e **Hella e Artemis dall'altra**. Non lo piazza addosso a nessuno: lo piazza dove il gruppo *non è ancora arrivato*.
+3. **Round 2 — assorbimento vitale** sul bersaglio rimasto scoperto. Tocco a distanza: i tiri salvezza del gruppo non contano.
+4. **Round 3 — muro di fuoco** (bastone) sul secondo asse, oppure *cono di freddo* se due PG si sono raggruppati. Se Artemis ha superato il muro volando, **dissolvi magie sull'Anello** prima di tutto il resto.
+5. **Se viene agganciato**: *forma gassosa*. Se ha già speso la forma gassosa: *teletrasporto* (pergamena) e lo scontro finisce lì.
+
+*Morale*
+
+6. **Uscita**: sotto il 30% dei pf **tratta di nuovo**, e stavolta l'offerta è peggiore per i PG. Se rifiutano, teletrasporto.
+
+**Statistiche** For 21, Des 10, Cos 23, Int 14, Sag 14, Car 24 (20 base + *mantello del carisma +4*) · **BAB/Lotta** +8/**+17** · **Talenti** Iniziativa Migliorata, Volontà di Ferro, Incantare in Combattimento, Incantesimi Estesi, Incantesimi Focalizzati (Invocazione), **Incantesimi Focalizzati Superiore (Invocazione)** · **Qualità speciali** tratti dei giganti
 
 **Equipaggiamento** (tabella PNG livello 18): *amuleto di salute +6*, *mantello del carisma +4*, giaco di maglia +3 (Large), *anello di protezione +3*, **bastone del fuoco** (*mani brucianti*, *palla di fuoco*, **muro di fuoco** — 10 cariche), 2 pergamene di *teletrasporto*, spadone Large perfetto (tiene il +13 della scheda, che con BAB +8 e For 21 tornerebbe +12). Il **registro rilegato in pelle di worg** è ancora addosso a lui, e vale più del resto (vedi dossier).
 
@@ -90,23 +110,6 @@ viene inflitto nulla e la rigenerazione non si interrompe**.
 
 **Il puzzle dell'adamantio, invariato**: con *pelle di pietra* ha **RD 10/adamantio**. Aegis Fang non buca; i pugni di Tordek e i Treant della Collana sì.
 
-**Tattiche** — *stesso mestiere del primo incontro, corretto sugli errori.*
-
-*Prima del combattimento*
-
-1. **Pre-scontro**: *pelle di pietra* estesa, *scudo*, **resistere all'energia (fuoco)**. Ghaurush non viene mai sorpreso: se lo si sorprende comunque, salta il punto 2 e va al 3.
-
-*Durante il combattimento*
-
-2. **Round 1 — muro di forza**, piazzato in modo da lasciare **Thorik e Tordek da una parte** e **Hella e Artemis dall'altra**. Non lo piazza addosso a nessuno: lo piazza dove il gruppo *non è ancora arrivato*.
-3. **Round 2 — assorbimento vitale** sul bersaglio rimasto scoperto. Tocco a distanza: i tiri salvezza del gruppo non contano.
-4. **Round 3 — muro di fuoco** (bastone) sul secondo asse, oppure *cono di freddo* se due PG si sono raggruppati. Se Artemis ha superato il muro volando, **dissolvi magie sull'Anello** prima di tutto il resto.
-5. **Se viene agganciato**: *forma gassosa*. Se ha già speso la forma gassosa: *teletrasporto* (pergamena) e lo scontro finisce lì.
-
-*Morale*
-
-6. **Uscita**: sotto il 30% dei pf **tratta di nuovo**, e stavolta l'offerta è peggiore per i PG. Se rifiutano, teletrasporto.
-
 ---
 
 ## Uso: leggere prima di metterlo in campo
@@ -147,3 +150,5 @@ Boost log: correzione dei conti (armatura naturale +5 e scurovisione 27 m dell'o
 - era: spadone Large +13/+8 senza qualità perfetta (con BAB +8, For 21 e taglia Large torna +12)
 - era: benchmark «estrapolato dalla riga 16»: CA 33, 280 pf, att +26, CD 26
 <!-- /storico -->
+
+> correzione 3.5 da `scripts/verifica_scheda.py` (2026-11-12, lotto 2 di ADR-0126): critico di «Mischia spadone Large perfetto» scritto (19-20, tabella delle armi dell'SRD).

@@ -1,0 +1,81 @@
+# sistemi/dnd35/dati/gs.toml — il grado di sfida (ADR-0126, lotto 5, seconda parte). Scritto a mano, con la fonte di ogni voce.
+
+[gs]  # grado di sfida di chi è fatto di livelli di classe (ADR-0126, lotto 5, seconda parte)
+# 3.5: classe da PG = livello; classe da PNG = livello −1 (regola del manuale del DM
+# [Private source — Dungeon Master's Guide 3.5, solo numeri]; l'SRD la mostra nei blocchi:
+# hobgoblin combattente di 1° GS 1/2). Sotto 1 si scende per gradini: 1/2, 1/3, 1/4, 1/6, 1/8.
+# Le razze qui sotto hanno la loro riga «Challenge Rating» nell'SRD (monsters-*.md).
+classi_png = ["warrior", "adept", "expert", "aristocrat", "commoner"]
+pg = 0
+png = -1
+gradini = ["1/2", "1/3", "1/4", "1/6", "1/8"]
+# creatura con dadi vita razziali (SRD, improving-monsters.md): livello associato +1;
+# non associato +1/2 finché i livelli non pareggiano i DV d'origine, poi +1
+non_associato = 0.5
+modelli = ["half-(?!orc|elf)", "mezz[oa]?[- ]?(?:immond|drag|celest|demon|diavol|ogre|fatat)", "template", "archetipo", "advanced", "avanzat", "skeleton", "scheletr", "zombi", "celestial", "fiendish", "immond", "augmented", "lycanthrop", "licantrop", "mannar", "vampir", "\\blich\\b", "\\bghost\\b", "fantasma", "in sella", "graft", "innest", "pseudonatural", "spettral"]  # espressioni regolari
+# le razze da un dado vita della fonte (SRD 3.5) a cui la regola generale si applica; una razza che
+# non è qui (o è in `fuori_fonte`) ha la sua riga in un manuale che i dati non hanno: non verificabile
+razze_fonte = ["human", "uman[oaie]", "dwarf", "nan[oaie]", "elf", "elf[oaie]", "gnome", "gnom[oaie]", "halfling", "half-elf", "mezzelf[oaie]", "half-orc", "mezzorc[ohie]+", "orc", "orc[ohie]+", "hobgoblin", "goblin", "kobold", "cobold[oi]", "drow", "duergar", "svirfneblin", "aasimar", "tiefling"]
+fuori_fonte = ["orog", "githyanki", "githzerai", "tanarukk", "fey'ri", "loxo", "gigante"]
+
+[gs.avanzamento]  # dadi vita aggiunti per +1 al grado di sfida, per tipo d'origine
+# SRD, improving-monsters.md, «Table: Improved Monster CR Increase». Vale solo se la scheda dichiara
+# la base e non ha livelli di classe («Do not stack this CR increase with any increase from class levels»).
+# La crescita di taglia dà +1 a parte; le capacità speciali aggiunte non sono nei dati.
+aberration = 4
+construct = 4
+elemental = 4
+fey = 4
+giant = 4
+humanoid = 4
+ooze = 4
+plant = 4
+undead = 4
+vermin = 4
+animal = 3
+"magical beast" = 3
+"monstrous humanoid" = 3
+dragon = 2
+outsider = 2
+
+[gs.nomi_base]  # come una scheda nomina una creatura base → la sua chiave in creature_base.toml
+# Solo dove il nome della scheda non è quello del blocco dell'SRD (che scrive «Hellhound» sotto il titolo «Hell Hound»).
+"hell hound" = "hellhound"
+"segugio infernale" = "hellhound"
+"gufo gigante" = "owl, giant"
+
+[gs.modelli_gs]  # i modelli dell'SRD col loro conto del grado di sfida (lotto 5, settima parte)
+# SRD, riga «Challenge Rating» di ogni «Creating a …» (monsters-b-c, e-f, g, h-i, k-l, s, t-z).
+# `soglie`: [dadi vita fino a, aumento]; `piu`: aumento fisso; `per_dv`: [dadi vita fino a, grado]
+# (scheletro e zombi: il grado viene dai dadi vita, la base non serve). L'ordine conta: prima i «mezzi».
+# Il licantropo conta i dadi vita dell'animale, che la scheda non separa: resta non verificabile.
+# `naturale` (lotto 5, nona parte): la riga «Armor Class» dello stesso «Creating a …». `piu`: sopra la base
+# (mezzo-celestiale e mezzo-immondo +1, mezzo-drago +4, vampiro +6); `almeno`: +5 o la base se è più alta (lich);
+# `taglia`: il numero che sostituisce la base (scheletro); `piu_taglia`: sopra la base, per taglia (zombi).
+# Il fantasma tiene la base solo sul piano etereo e prende un bonus di deviazione: non è qui.
+# `caratteristiche` (lotto 5, decima parte): la riga «Abilities» dello stesso «Creating a …». `piu`: aumento sopra
+# la base (serve la base dichiarata nella fonte); `senza`: punteggi che il modello toglie («—»); `fisse`: punteggi
+# che il modello fissa (scheletro e zombi: Sag 10, Car 1); `almeno`: il minimo (celestiale e immondo: Int 3).
+# Il licantropo cambia le caratteristiche per forma: non è qui.
+# `naturale_razze`: le sole razze di `razze_fonte` che hanno armatura naturale (coboldo +1, monsters-k-l.md);
+# le altre hanno 0, e con soli livelli di classe la base è quella.
+naturale_razze = [["kobold|cobold[oi]", 1]]
+ordine = ["half-celestial", "half-fiend", "half-dragon", "celestial", "fiendish", "lich", "vampire", "ghost", "skeleton", "zombie"]
+neutri = ["template", "archetipo", "augmented"]  # parole che accompagnano un modello riconosciuto
+"half-celestial" = { nomi = ["half-celestial", "mezz[oa]?[- ]?celest\\w*"], soglie = [[5, 1], [10, 2], [999, 3]], naturale = { piu = 1 }, caratteristiche = { piu = { for = 4, des = 2, cos = 4, int = 2, sag = 4, car = 4 } } }
+"half-fiend" = { nomi = ["half-fiend", "mezz[oa]?[- ]?(?:immond|demon|diavol)\\w*"], soglie = [[4, 1], [10, 2], [999, 3]], naturale = { piu = 1 }, caratteristiche = { piu = { for = 4, des = 4, cos = 2, int = 4, car = 2 } } }
+"half-dragon" = { nomi = ["half-dragon", "mezz[oa]?[- ]?drag\\w*"], piu = 2, minimo = 3, naturale = { piu = 4 }, caratteristiche = { piu = { for = 8, cos = 2, int = 2, car = 2 } } }
+celestial = { nomi = ["celestial\\w*"], soglie = [[3, 0], [7, 1], [999, 2]], caratteristiche = { almeno = { int = 3 } } }
+fiendish = { nomi = ["fiendish", "immond\\w*"], soglie = [[3, 0], [7, 1], [999, 2]], caratteristiche = { almeno = { int = 3 } } }
+lich = { nomi = ["\\blich\\b"], piu = 2, naturale = { almeno = 5 }, caratteristiche = { piu = { int = 2, sag = 2, car = 2 }, senza = ["cos"] } }
+vampire = { nomi = ["vampir\\w*\\b(?!\\s+spawn)"], piu = 2, naturale = { piu = 6 }, caratteristiche = { piu = { for = 6, des = 4, int = 2, sag = 2, car = 4 }, senza = ["cos"] } }
+ghost = { nomi = ["\\bghost\\b", "fantasma"], piu = 2, caratteristiche = { piu = { car = 4 }, senza = ["cos"] } }
+skeleton = { nomi = ["skeleton", "skeletal", "scheletr\\w*"], per_dv = [[1, "1/3"], [3, "1"], [5, "2"], [7, "3"], [9, "4"], [11, "5"], [14, "6"], [17, "7"], [20, "8"]], naturale = { taglia = { Fine = 0, Diminutive = 0, Tiny = 0, Small = 1, Medium = 2, Large = 2, Huge = 3, Gargantuan = 6, Colossal = 10 } }, caratteristiche = { piu = { des = 2 }, senza = ["cos", "int"], fisse = { sag = 10, car = 1 } } }
+zombie = { nomi = ["zombi\\w*"], per_dv = [[1, "1/4"], [2, "1/2"], [4, "1"], [6, "2"], [10, "3"], [14, "4"], [16, "5"], [20, "6"]], naturale = { piu_taglia = { Fine = 0, Diminutive = 0, Tiny = 0, Small = 1, Medium = 2, Large = 3, Huge = 4, Gargantuan = 7, Colossal = 11 } }, caratteristiche = { piu = { for = 2, des = -2 }, senza = ["cos", "int"], fisse = { sag = 10, car = 1 } } }
+
+[gs.razze]  # {pg, png, come la scheda la nomina}
+drow = { pg = 1, png = 0, nomi = ["drow"], fonte = "monsters-e-f.md" }
+duergar = { pg = 1, png = 0, nomi = ["duergar"], fonte = "monsters-dr-dw.md" }
+svirfneblin = { pg = 1, png = 0, nomi = ["svirfneblin"], fonte = "monsters-g.md" }
+goblin = { png = -2, nomi = ["goblin"], fonte = "monsters-g.md" }
+kobold = { png = -3, nomi = ["kobold", "coboldo"], fonte = "monsters-k-l.md" }

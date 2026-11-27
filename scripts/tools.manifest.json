@@ -14521,7 +14521,7 @@
       "category": "G-orchestration-governance",
       "language": "python",
       "invocation": "python3 scripts/instradamento_agenti.py --riepilogo",
-      "summary": "Gli hook UserPromptSubmit, PreToolUse e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e suggerisce agente e catena; se le istruzioni scrivono una riga «Catena: …», ferma push e PR finché la sessione non ha chiamato quegli agenti e autore-documenti, salvo una deroga con motivo; ferma sempre, anche nei sottoagenti, un push (comandi git, sh -c, opzioni globali, HEAD risolto) o una scrittura con gli strumenti MCP di GitHub che riscrive o cancella un ramo campaign-group-*, tocca un ramo morto del registro o porta canone su main (ADR-0007, ADR-0090); a fine turno registra se gli agenti sono stati chiamati (ADR-0146).",
+      "summary": "Gli hook UserPromptSubmit, PreToolUse e Stop di Claude Code nei thread: riconosce il tipo di lavoro del messaggio che arriva (riusando i trigger delle skill) e suggerisce agente e catena; se le istruzioni scrivono una riga «Catena: …», ferma push e PR finché la sessione non ha chiamato quegli agenti e autore-documenti, salvo una deroga con motivo; ferma sempre, anche nei sottoagenti, un push (comandi git, sh -c, opzioni globali, HEAD risolto) o una scrittura con gli strumenti MCP di GitHub che riscrive o cancella un ramo campaign-group-*, tocca un ramo morto del registro o porta canone su main (ADR-0007, ADR-0090); a fine turno registra se gli agenti sono stati chiamati (ADR-0146); con --eval e --check misura il primo agente suggerito contro il set d'oro di plans/instradamento/agenti-oro.json, a cricchetto sullo split test (ADR-0154).",
       "use_case": "«Il thread chiama l'agente giusto per questo lavoro?»",
       "stability": "beta",
       "stdlib_only": true,
@@ -14580,6 +14580,42 @@
           "choices": null,
           "repeatable": false,
           "desc": "Suggerimenti dati e quanti seguiti."
+        },
+        {
+          "name": "--eval",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Misura il primo agente suggerito contro il set d'oro, per split dev, test e tutto (accuracy con Wilson, indulgente, macro-F1, baseline maggioritaria, matrice, P/R/F1)."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Cricchetto sullo split test: esce 1 se giusti, giusti indulgenti o macro-F1 scendono sotto il tetto del set d'oro; avvisa se salgono."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --eval: l'uscita in JSON, identica byte per byte fra due esecuzioni."
+        },
+        {
+          "name": "--oro",
+          "type": "path",
+          "required": false,
+          "default": "plans/instradamento/agenti-oro.json",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il set d'oro da usare."
         }
       ],
       "inputs": [
@@ -14587,6 +14623,12 @@
           "path": "skills/*/SKILL.md",
           "kind": "markdown",
           "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/instradamento/agenti-oro.json",
+          "kind": "json",
+          "required": false,
           "schema": null
         }
       ],
@@ -14601,7 +14643,7 @@
       ],
       "exit_codes": {
         "0": "passa (con o senza suggerimento)",
-        "1": "deroga senza motivo",
+        "1": "deroga senza motivo; --check: regressione sotto il tetto o tetto mancante",
         "2": "push o PR bloccati (--cancello)"
       },
       "determinism": {
@@ -14622,7 +14664,54 @@
         "scripts/tests/test_instradamento_agenti.py"
       ],
       "docs": [
-        "plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md"
+        "plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md",
+        "plans/adr/ADR-0154-l-instradamento-degli-agenti-si-misura-su-messaggi-veri.md"
+      ]
+    },
+    {
+      "id": "eval_metriche",
+      "path": "scripts/eval_metriche.py",
+      "category": "lib",
+      "language": "python",
+      "invocation": "python3 scripts/eval_metriche.py",
+      "summary": "Libreria di sola stdlib per misurare un classificatore del repo (instradamento, rilevatori, verificatori) contro un set d'oro: matrice di confusione multiclasse a etichette ordinate, precision/recall/F1 per classe con supporto (0/0 vale 0, come sklearn zero_division=0), macro-F1 sull'unione delle classi di oro e predizioni, micro-F1, accuracy e accuracy indulgente, intervallo di Wilson al 95%, kappa di Cohen, bootstrap con seme della macro-F1 e baseline della classe maggioritaria. I valori sono Fraction, così i cancelli non confrontano float (ADR-0154). Eseguita da sola stampa l'esempio a tre classi dei test.",
+      "use_case": "«Quanto sbaglia davvero questo rilevatore, e il numero regge con così pochi casi?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [],
+      "args": [],
+      "inputs": [],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "json",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "esempio stampato"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "bootstrap con random.Random(seme) e indici int(rng.random()*n): stesso risultato fra Python 3.13 e 3.14"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": null,
+      "tests": [
+        "scripts/tests/test_eval_metriche.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0154-l-instradamento-degli-agenti-si-misura-su-messaggi-veri.md"
       ]
     },
     {

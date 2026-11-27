@@ -4553,6 +4553,57 @@
       "deterministic": true
     },
     {
+      "name": "milestone_pronte",
+      "description": "«Quale milestone è pronta per il rilascio?»\n\nValuta i criteri d'uscita delle milestone della roadmap registrati in plans/milestone.json (comando che esce 0, regex che compaiono o mancano in un file, conferma del DM con data e luogo) e dice per ognuna pronta, non pronta (con gli id dei criteri falsi) o rilasciata; pronta vuol dire tutto vero tranne fatto-changelog, fatto-versione e fatto-tag. Esce 2 se il registro è rotto. Misura, non scrive niente (ADR-0099, canale testing).",
+      "use_case": "«Quale milestone è pronta per il rilascio?»",
+      "invocation": "python3 scripts/milestone_pronte.py --json",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "json": {
+            "type": "boolean",
+            "description": "Ogni milestone con stato, criteri ed esito, in JSON."
+          },
+          "pronte": {
+            "type": "boolean",
+            "description": "Solo le versioni pronte e non rilasciate, una per riga."
+          },
+          "check": {
+            "type": "boolean",
+            "description": "Esce 2 se il registro è rotto, 0 altrimenti (anche se niente è pronto)."
+          },
+          "solo-integrita": {
+            "type": "boolean",
+            "description": "Controlla il registro senza eseguire i comandi dei criteri."
+          },
+          "github": {
+            "type": "boolean",
+            "description": "Confronta numero e titolo con le milestone di GitHub via gh; senza gh, non misurato."
+          },
+          "registro": {
+            "type": "string",
+            "description": "Il registro delle milestone."
+          },
+          "radice": {
+            "type": "string",
+            "description": "La radice del repo da cui si lanciano i comandi e si leggono i file."
+          },
+          "timeout": {
+            "type": "number",
+            "description": "Secondi per ogni comando; oltre, il criterio è falso."
+          }
+        },
+        "required": [],
+        "additionalProperties": false
+      },
+      "outputs": [],
+      "exit_codes": {
+        "0": "registro integro (qualunque sia lo stato delle milestone)",
+        "2": "registro rotto o errore d'uso"
+      },
+      "deterministic": true
+    },
+    {
       "name": "misura_craft",
       "description": "«Lo stile e i congegni nuovi sono arrivati in questa parte, o e' rimasta indietro?»\n\nConta i congegni di mestiere dichiarati (read-aloud, echi, pilastro lead/support, regia, [HDYWTDT]...) in ogni arco e li confronta con i due banchi: Abbazia e Palio.",
       "use_case": "«Lo stile e i congegni nuovi sono arrivati in questa parte, o e' rimasta indietro?»",

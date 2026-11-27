@@ -1,6 +1,6 @@
 # PIANO — La piattaforma di sviluppo: una versione stabile, componenti misurati
 
-> **Stato**: 🟡 in corso (2026-10-23). Fatti P0, P3, P4, P7, P9, P10 e P11 (P10 e P11 con il loro componente ancora in testing); P5 a metà (uv installa, manca il lock di A3); P8 avviata (job 3.14 non bloccante dal 2026-11-09). Restano P1, P2, P5, P6 e P8. D1-D8 decise. Il 2026-11-08 ruff, uv e `converters/` salgono a stable ([misura](esperimenti/promozioni-2026-11-08/MISURE.md)); il 2026-11-25 salgono pytest-xdist e cinque cancelli del repo (ADR-0109, 0114, 0118, 0119, 0120), scelta del DM D8 ([misura](esperimenti/promozioni-2026-11-25/MISURE.md)) · **Classe**: G per la regola, C per i lotti
+> **Stato**: 🟡 in corso (2026-10-23). Fatti P0, P3, P4, P7, P9, P10, P11 e P12 (P10, P11 e P12 con il loro componente ancora in testing); P5 a metà (uv installa, manca il lock di A3); P8 avviata (job 3.14 non bloccante dal 2026-11-09). Restano P1, P2, P5, P6 e P8. D1-D8 decise. Il 2026-11-08 ruff, uv e `converters/` salgono a stable ([misura](esperimenti/promozioni-2026-11-08/MISURE.md)); il 2026-11-25 salgono pytest-xdist e cinque cancelli del repo (ADR-0109, 0114, 0118, 0119, 0120), scelta del DM D8 ([misura](esperimenti/promozioni-2026-11-25/MISURE.md)) · **Classe**: G per la regola, C per i lotti
 > **Nasce da**: tre messaggi del DM del 2026-10-23 (citati in
 > [ADR-0099](adr/ADR-0099-la-piattaforma-ha-tre-canali-come-debian.md)): una
 > versione sola di Python, stabile e supportata, scelta come Debian sceglie il
@@ -70,6 +70,7 @@ colonna lo dice e il lotto che la fissa è A1 o A3 di AMBIENTE.
 | verifica del registro dei PX (`verifica_px.py`, ADR-0148) | stdlib | — | 16 test, 366 mutanti su 366, 0 falsi allarmi su 3 versioni storiche del registro | **stable** dal 2026-11-20, bloccante da subito per scelta del DM (ciò che un controllo trova diventa cancello) |
 | verifica dei rimandi per sezione (`verifica_rimandi.py`, ADR-0148) | stdlib | — | 1.744 rimandi, 1.026 giudicati giusti, 717 non giudicabili; sullo storico 2 rotture vere e 0 falsi allarmi; 435 mutanti su 435 | **testing** dal 2026-11-20 (`continue-on-error`); stable non prima del 2026-12-04 |
 | cricchetto degli agenti (`prove_skill.py cricchetto --rigoroso`, ADR-0148) | stdlib | — | solo sulle PR che toccano un agente, le skill che precarica o i suoi casi; quanto oscilla l'esito fra due esecuzioni non è misurato | **testing** dal 2026-11-20 (`continue-on-error`); stable solo dopo la misura dell'oscillazione e i 14 giorni |
+| milestone pronte (`milestone_pronte.py` sul registro `plans/milestone.json`, ADR-0152) | stdlib e git | — | 2,6 s sull'albero del 2026-11-27 (`--check --solo-integrita` 0,06 s), 26 test; nessuna milestone pronta, v1.1.0 ferma su tre criteri | **testing** dal merge (workflow `milestone.yml`, push su main e lunedì 06:35 UTC, solo riepilogo); stable dopo 14 giorni e 10 run su main senza falsi allarmi, con determinismo, idempotenza, mutazione e durata sotto i 2 minuti provati, e l'ok del DM: allora apre una issue per versione (`issues: write`) |
 
 ### Librerie Python
 
@@ -271,6 +272,19 @@ bloccante; il flusso di tutti gli strumenti di qualità in
 [RISCONTRO-ARC08](esperimenti/ricerca-rete-2026-10-23/RISCONTRO-ARC08.md), 53
 regole, 3 discordanze lasciate al DM. Sale a stable non prima del 2026-11-06.
 
+### P12 · La milestone pronta si misura ✅ in testing
+`[engine: Opus 5.5 · effort: medio · qualità: il rilevatore dà lo stesso esito su due run dello stesso commit, non cambia niente nel repo, vede un criterio falsificato di proposito, e gira sotto i 2 minuti]`
+Jfs, 2026-11-27: l'agente `piattaforma` scatta da solo quando una milestone
+è raggiunta? No: i criteri stavano in prosa su GitHub e nessuno li misurava.
+[ADR-0152](adr/ADR-0152-la-milestone-pronta-si-misura-su-main.md) (proposta):
+il registro [`plans/milestone.json`](milestone.json), il rilevatore
+`scripts/milestone_pronte.py`, il workflow `.github/workflows/milestone.yml`
+su main e di lunedì; il segnale arriva alla routine del lunedì, che chiede un
+thread al coordinatore per ogni versione pronta (scelta su card a Jfs). Come
+si usa: [RILASCIO](../docs/how-to/RILASCIO.md) § «Sapere se una milestone è
+pronta». Sale a stable non prima di 14 giorni dal merge, con i criteri della
+riga in §2; da allora il workflow apre una issue per versione.
+
 ### P8 · La prova generale della prossima migrazione 🟡 job acceso il 2026-11-09
 `[engine: Sonnet 5.5 · effort: medio · qualità: un job non bloccante su Python 3.14 verde per un mese prima del salto]`
 - Parte quando Debian 14 entra nel congelamento (atteso nel 2027): un job CI
@@ -354,3 +368,4 @@ A2 → P7 → P8 quando Debian 14 si congela.
 - [x] P9 · `converters/` nella piattaforma, in testing (D6)
 - [x] P10 · il rilascio è una PR (ADR-0100), workflow in testing; primo rilascio 1.0.0 (D7 ✅)
 - [x] P11 · il riscontro SRD (ADR-0103) in testing, job `riscontro-srd`; stable non prima del 2026-11-06
+- [x] P12 · le milestone pronte (ADR-0152) in testing: registro, `milestone_pronte.py`, workflow `milestone.yml`; stable non prima di 14 giorni dal merge

@@ -24,6 +24,39 @@ dei file (JSON delle mappe, `campaign/group.yaml`, le regioni `auto` di
 - **Minore**: uno strumento, una skill, un arco o un modulo nuovi.
 - **Correzione**: un bug, un'errata, un documento.
 
+## Sapere se una milestone è pronta
+
+Le milestone della roadmap (v1.1.0…v1.5.0) stanno su GitHub, e i loro criteri
+d'uscita in [`plans/milestone.json`](../../plans/milestone.json), in forma che
+una macchina legge ([ADR-0152](../../plans/adr/ADR-0152-la-milestone-pronta-si-misura-su-main.md)).
+Lo schema è in testa al file.
+
+```bash
+python3 scripts/milestone_pronte.py                          # una riga per milestone, con i criteri falsi
+python3 scripts/milestone_pronte.py --pronte                 # solo le versioni pronte
+python3 scripts/milestone_pronte.py --check --solo-integrita # il registro, senza lanciare i comandi
+python3 scripts/milestone_pronte.py --github                 # numeri e titoli confrontati con GitHub
+```
+
+Una milestone è **pronta** quando tutti i criteri sono veri tranne
+`fatto-changelog`, `fatto-versione` e `fatto-tag`: quelli li rende veri la
+PR di rilascio qui sotto, e allora la milestone è **rilasciata**. Il comando
+esce 2 se il registro è rotto, 0 altrimenti, anche se niente è pronto.
+
+Il workflow [`milestone.yml`](../../.github/workflows/milestone.yml) lo lancia
+a ogni push su main e ogni lunedì alle 06:35 UTC, e scrive l'esito nel
+riepilogo del run. Finché è in testing scrive «Aprirebbe la issue: milestone
+vX.Y.Z pronta» senza aprirla; da stable apre una issue per versione.
+
+Il registro si aggiorna a mano, in una PR, quando:
+
+- cambia la descrizione di una milestone su GitHub, o se ne apre una nuova;
+- un criterio cambia (un passo di `ci.yml` rinominato, un file spostato, un
+  ADR che entra nella milestone);
+- Jfs conferma un criterio `dm`: `confermato` prende
+  `{"data": "AAAA-MM-GG", "dove": "file e riga, o voce MS, dove l'ha detto"}`.
+  Una conferma senza il posto in cui è scritta non vale.
+
 ## Fare un rilascio
 
 È una PR come le altre:

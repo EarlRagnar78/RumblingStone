@@ -1,4 +1,4 @@
-# ADR-0155 — Il giocato sta sul ramo di gruppo, e main resta rigiocabile
+# ADR-0156 — Il giocato sta sul ramo di gruppo, e main resta rigiocabile
 
 **Stato**: accettata (2026-11-27, parola di Jfs)
 **Data**: 2026-11-27

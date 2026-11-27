@@ -1,6 +1,6 @@
 # PIANO — Misurare agenti, skill e automatismi su casi veri
 
-> **Stato**: 🟡 in corso (2026-11-27). M1 fatto sul ramo della PR 1 (set d'oro, `eval_metriche.py` su scikit-learn e scipy, `--eval` e `--check`, cancello in testing); M2, M3 e M3-bis da fare; M4-M7 solo elencati · **Classe**: G per le etichette e la scelta della tecnica, C per il codice
+> **Stato**: 🟡 in corso (2026-11-27). M1 fatto (PR 1, #531); M2 fatto sul ramo della PR 2 (le buste senza lavoro tacciono, gli omonimi dei trigger non scattano; macro-F1 del test da 41/252 a 58/315, esatti fermi a 4/17); M3 e M3-bis da fare; M4-M7 solo elencati · **Classe**: G per le etichette e la scelta della tecnica, C per il codice
 > **Nasce da**: il thread «Misurare e migliorare agenti, skill e automatismi» del 2026-11-27, aperto da Jfs.
 > **Decisione**: [ADR-0154](adr/ADR-0154-l-instradamento-degli-agenti-si-misura-su-messaggi-veri.md), proposta, con l'emendamento del 2026-11-27 (Jfs: le librerie standard di fatto della comunità al posto della sola stdlib).
 > **Audit**: `/mnt/project-files/agenti-eval-2026-11-27/AUDIT.md` (fuori dal repo; i numeri che servono sono qui e nell'ADR).
@@ -63,14 +63,56 @@ usa. Numeri del cancello invariati (4/18, baseline 6/18, macro-F1 107/1155);
 il bootstrap esce dal JSON. `--check` da 0,19 a 1,28 s, l'hook `--prompt`
 resta a 0,06 s. 92 test verdi.
 
-### M2 · Gli omonimi e i messaggi che non chiedono lavoro ⬜ PR 2
+### M2 · Gli omonimi e i messaggi che non chiedono lavoro ✅ PR 2 (2026-11-27)
 
-`[engine: Opus 5, sessione principale per la scelta, Sonnet 5 per il codice · effort: alto · qualità: sul test la misura sale sopra main in esatti o macro-F1 senza scendere nell'altra, con le regole tarate solo sul dev, e il tetto si alza]`
+Due tecniche, due commit, ognuna con i test scritti prima del codice (8 rossi
+per la prima, 13 per la seconda):
 
-Una tecnica sola: disambiguare i trigger omonimi («coordinate», «hook»,
-«master», «caso», «corredo», «png», «avventura», «Canva») e riconoscere i
-messaggi che non chiedono uno specialista (avvisi del coordinatore, resoconti
-dei sottoagenti) perché diano «nessuno».
+1. `testo_di_lavoro()` in `scripts/instradamento_agenti.py` (commit
+   `32b48545`): l'hook `--prompt` instrada sul solo testo che chiede lavoro.
+   Tace sui tocchi delle card, sugli inoltri del coordinatore (`<relay>`),
+   sulle notifiche, sui resoconti dei sottoagenti (due segni della forma su
+   cinque) e sui via libera brevi (al più 12 parole, un assenso, nessun verbo
+   di lavoro); di una busta `<wake>` legge solo i messaggi `trust="principal"`,
+   e il `<session-context>` in testa al primo messaggio si toglie.
+2. `OMONIMI` in `scripts/instradamento_skill.py`, usati da `raggiunte()`
+   (commit `7cee6d8d`): per «coordinate», «hook», «caso», «png», «master»,
+   «corredo», «Canva» e «Canva AI», una regex degli usi che parlano d'altro
+   (tolti dal testo) e una del contesto che spegne il trigger nel messaggio;
+   l'estensione `.png` di un nome di file non conta come parola.
+
+**La misura.**
+
+| | main `4f713551` | ramo |
+|---|---|---|
+| test (n=17), esatti | 4/17 | 4/17 |
+| test, indulgenti | 4/17 | 4/17 |
+| test, macro-F1 | 41/252 ≈ 0,163 | 58/315 ≈ 0,184 |
+| dev (n=11), esatti | 4/11 | 4/11 |
+| suggerimenti dell'hook sui 103 prompt veri del thread | 57/103 | 1/103 |
+| di cui tocchi sulle card | 36/39 | 0/39 |
+| di cui messaggi di Jfs | 3/10 | 1/10 |
+
+La macro-F1 sale solo per la seconda tecnica. La prima non muove il set
+d'oro, che conserva il testo nudo dei messaggi e non la busta che l'hook
+riceve; la sua misura sono i prompt veri del thread, presi dalla trascrizione
+della sessione con uno script dello scratchpad che non è nel repo. Il
+suggerimento rimasto fra i messaggi di Jfs è una richiesta vera di lavoro.
+Tetto del set d'oro alzato a 58/315. `instradamento_skill.py --check`
+invariato (17 omissioni su 50, 1 violazione). 116 test verdi su
+`test_instradamento_agenti`, `test_instradamento_skill` e `test_eval_metriche`.
+
+**I limiti.**
+
+- Il set d'oro non misura le buste: la prima tecnica non ha un cricchetto.
+  Proposta: un set di prompt grezzi, raccolti con la raccolta settimanale.
+- Gli errori che restano nel dev sono vocabolario che manca («tattiche» per
+  regolista, «immagini» e «pose» per art-director), non omonimi.
+- Ogni `<relay>` del coordinatore ora tace, anche quando apre lavoro; la riga
+  «Catena:» scritta nell'inoltro la legge ancora il cancello del push.
+- Le regex degli omonimi sono euristiche: i falsi positivi possibili sono nei
+  commenti accanto a ciascuna.
+- «avventura» non è trattata come omonimo.
 
 ### M3 · Un modello classico di scikit-learn contro le regole ⬜ PR 3
 
@@ -128,7 +170,7 @@ mutanti (ADR-0148) e non entrano.
 ## Checklist di avanzamento
 
 - [x] M1 · set d'oro, `eval_metriche.py`, `--eval` e `--check`, cancello in testing (PR 1)
-- [ ] M2 · omonimi e messaggi senza lavoro (PR 2)
+- [x] M2 · omonimi e messaggi senza lavoro (PR 2): macro-F1 del test 41/252 → 58/315, suggerimenti sui prompt veri 57/103 → 1/103
 - [ ] M3 · TF-IDF con MultinomialNB o LogisticRegression di scikit-learn contro le regole (PR 3)
 - [ ] M3-bis · rete con sentence-transformers, solo con ≥ 200 casi e M3 che non basta (PR 4)
 - [ ] M4 · recall dell'instradamento delle skill

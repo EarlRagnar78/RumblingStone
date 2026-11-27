@@ -29,6 +29,13 @@ delle skill (``instradamento_skill.raggiunte``, *una norma, un rilevatore*) e
 porta ogni skill all'agente che la tiene. Le sole parole proprie sono quelle
 dei due agenti le cui skill non le hanno (piattaforma e sviluppo della CI).
 
+Prima delle parole, la forma (M2 di PIANO-MISURA-AGENTI-E-AUTOMATISMI):
+``testo_di_lavoro`` toglie quello che non chiede lavoro. L'hook tace su un
+tocco di card, un inoltro ``<relay>`` del coordinatore, una notifica, il
+resoconto di un sottoagente e un via libera breve; di una busta ``<wake>``
+legge solo i messaggi ``trust="principal"``. Gli omonimi dei trigger
+(«coordinate», «hook», «master»…) li toglie ``instradamento_skill.OMONIMI``.
+
 ⚠️ Il limite: è un riconoscimento per parole. Sbaglia su un messaggio che parla
 d'altro, e tace su uno che non usa le parole dei trigger. Per questo suggerisce
 e non obbliga; il blocco vero resta quello di ``vincolo_skill.py`` sulla prosa.
@@ -54,6 +61,7 @@ scipy si importano solo qui: ``--prompt``, ``--stop`` e ``--cancello`` no.
 from __future__ import annotations
 
 import argparse
+import html
 import json
 import re
 import shlex
@@ -156,6 +164,74 @@ def _skill() -> "dict[str, list[str]]":
     return _SKILL
 
 
+# M2, tecnica 1: i messaggi che non chiedono lavoro. L'hook riceve come prompt anche i tocchi
+# sulle card, gli inoltri del coordinatore, le notifiche e i resoconti dei sottoagenti, e
+# suggeriva una catena a ognuno. Si riconoscono dalla forma, non dalle parole del lavoro.
+_BUSTE_SENZA_LAVORO = re.compile(
+    r"^\s*(?:<task-notification\b|\[SYSTEM NOTIFICATION|<system-note>|<system-reminder>|"
+    r"<relay\b|<coordinator-relay\b|"
+    r"Another Claude session sent a message:|<agent-message\b|\[Subagent hand-back\]|"
+    r"This session is being continued from a previous conversation)", re.I)
+# Il contesto del progetto in testa al primo messaggio del thread: si chiude con il suo nonce.
+_CONTESTO_SESSIONE = re.compile(
+    r"^\s*<session-context\b[^>]*?(?:\bnonce=\"([^\"]*)\")?[^>]*>.*?"
+    r"</session-context\b(?(1)[^>]*\bnonce=\"\1\")[^>]*>", re.S | re.I)
+_WAKE = re.compile(r"^\s*<wake\b([^>]*)>", re.I)
+_MESSAGGIO_PRINCIPALE = re.compile(
+    r"<message\b[^>]*\btrust=\"principal\"[^>]*>(.*?)</message>", re.S | re.I)
+_CARD = re.compile(r"^\s*Chose\s+\"[^\"\n]*\"\s+on the decision card\b", re.I)
+# Il resoconto di un sottoagente: almeno due segni della sua forma. Uno solo non basta:
+# «Ho visto che la CI è rossa: sistemala» è una richiesta.
+_PARTICIPIO = (r"(?:\w+(?:ato|ito|uto)|scritto|fatto|deciso|messo|aperto|chiuso|letto|corretto|"
+               r"preso|rimosso|tolto|aggiunto|risolto|tradotto|ridotto|diviso|esteso)")
+_SEGNI_RESOCONTO = (
+    re.compile(rf"^\s*Ho\s+{_PARTICIPIO}\b", re.I),
+    re.compile(r"^\s*Documentazione da aggiornare\s*:", re.I | re.M),
+    re.compile(r"\b(?:niente|nessun) (?:commit|push)\b", re.I),
+    re.compile(r"^\s*#{1,4}\s+\S", re.M),
+    re.compile(r"^\s*\*\*[^*\n]{2,40}:\*\*", re.M),
+)
+# Il via libera breve: una parola d'assenso e nessun verbo di lavoro, in poche parole.
+_ASSENSO = re.compile(
+    r"\b(?:ok(?:ay)?|s[iì]|grazie|perfetto|ottimo|confermo|approvo|procedi|procedere|prosegui|"
+    r"continua|vai|avanti|fallo|va bene|d'accordo|go ahead|proceed|yes)\b", re.I)
+_VERBO_DI_LAVORO = re.compile(
+    r"\b(?:scrivi|riscrivi|crea|aggiungi|disegna|sistema|correggi|rivedi|genera|rigenera|"
+    r"prepara|fammi|controlla|verifica|cerca|apri|chiudi|misura|impagina|potenzia|"
+    r"promuovi|rilascia|unisci|applica|valuta|togli|elimina|cancella|sposta|rinomina|"
+    r"(?:stampa|porta) (?:il|lo|la|i|gli|le|un|una|tutt\w)|esporta|aggiorna|traduci|lancia|esegui|metti|usa|cambia|rifai|ricontrolla|"
+    r"(?:sistem|corregg|rived|aggiung|toglie?|apr|chiud|aggiorn)[aei]l[aeio]|"
+    # «fai», e l'imperativo con il pronome attaccato («scrivimi», «preparamelo»; Codex, #534)
+    r"fai|fate|progetta|proponi|definisci|implementa|documenta|"
+    r"(?:scriv|riscriv|cre|aggiung|disegn|sistem|corregg|rived|gener|prepar|controll|"
+    r"verific|cerc|apr|misur|impagin|aggiorn|traduc|lanc|esegu|mett|cambi|rif)"
+    r"[aei](?:mi|ci|ti|vi)(?:lo|la|li|le|ne)?|(?:scriv|prepar|cre|rif)[aei]melo)\b", re.I)
+PAROLE_VIA_LIBERA = 12
+
+
+def testo_di_lavoro(testo: str) -> str:
+    """Il testo su cui instradare: vuoto se il messaggio non chiede lavoro.
+
+    Una busta ``<wake>`` vale per i soli messaggi ``trust="principal"`` che porta, non per
+    le note di sistema intorno; un tocco su una card, un inoltro del coordinatore, una
+    notifica, il resoconto di un sottoagente e un via libera breve non chiedono lavoro. Il
+    ``<session-context>`` in testa al primo messaggio del thread non è il messaggio."""
+    testo = _CONTESTO_SESSIONE.sub("", testo, count=1)
+    m = _WAKE.match(testo)
+    if m:
+        if 'reason="decision-chosen"' in m.group(1):
+            return ""
+        testo = "\n".join(html.unescape(x).strip() for x in _MESSAGGIO_PRINCIPALE.findall(testo))
+    if not testo.strip() or _BUSTE_SENZA_LAVORO.match(testo) or _CARD.match(testo):
+        return ""
+    if sum(bool(rx.search(testo)) for rx in _SEGNI_RESOCONTO) >= 2:
+        return ""
+    if (len(testo.split()) <= PAROLE_VIA_LIBERA and _ASSENSO.search(testo)
+            and not _VERBO_DI_LAVORO.search(testo)):
+        return ""
+    return testo
+
+
 def voti(testo: str) -> "dict[str, int]":
     """Quante prove porta ogni agente: una per skill raggiunta, una per parola propria."""
     out: "dict[str, int]" = {}
@@ -171,7 +247,11 @@ def voti(testo: str) -> "dict[str, int]":
 
 def scegli(testo: str) -> "list[str]":
     """Al più due agenti: il primo per voti, poi per priorità; il secondo se ha almeno un voto
-    e non è un verificatore che la catena del primo chiama già."""
+    e non è un verificatore che la catena del primo chiama già. Nessuno se il messaggio non
+    chiede lavoro (``testo_di_lavoro``)."""
+    testo = testo_di_lavoro(testo)
+    if not testo:
+        return []
     v = voti(testo)
     if not v:
         return []
@@ -703,6 +783,7 @@ def hook_prompt(dati: str) -> int:
         agenti = scegli(testo)
         if not agenti:
             return 0
+        testo = testo_di_lavoro(testo)  # l'avviso della sincronia legge il messaggio, non la busta
         if agenti == _ultimo_suggerito(ev.get("session_id")):
             return 0  # già detto in questa sessione: non ripeterlo a ogni messaggio
         _registra({"evento": "suggerito", "sessione": ev.get("session_id"), "agenti": agenti})

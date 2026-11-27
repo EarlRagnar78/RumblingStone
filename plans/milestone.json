@@ -1,0 +1,607 @@
+{
+  "_cos_e": "Il registro delle milestone della roadmap (GitHub Milestones 1-5, v1.1.0…v1.5.0), con i criteri d'uscita in forma che una macchina legge. Nasce il 2026-11-27 dal thread che fa scattare il lavoro dell'agente piattaforma quando una milestone è pronta: i criteri stavano solo nella descrizione delle milestone su GitHub e nello specchio della roadmap fuori dal repo («Milestone della roadmap» e «Ogni milestone chiude con la documentazione», regola di Jfs del 2026-11-09). Le milestone vivono su GitHub; questo file ne tiene i criteri, e chi cambia la descrizione di una milestone cambia anche qui. Il rilascio resta la PR di ADR-0100 (docs/how-to/RILASCIO.md). Una milestone è pronta quando tutti i suoi criteri sono veri tranne fatto-changelog, fatto-versione e fatto-tag, che sono il rilascio stesso; è rilasciata quando lo sono anche quelli. I criteri con \"comune\": true sono la «Definizione di fatto», uguale per tutte, scritta per la versione di ognuna.",
+  "_schema": {
+    "milestone": "numero (della milestone su GitHub), versione, titolo, criteri",
+    "criterio": "id breve, unico nella milestone; testo; tipo; comune (true se viene dalla Definizione di fatto); nota facoltativa",
+    "tipo comando": "campo comando: si lancia dalla radice del repo con shlex, senza shell (niente pipe né &&); vero se esce 0",
+    "tipo file": "campi file (un percorso o una lista), regex (una o una lista, sintassi re di Python con re.MULTILINE) e deve. deve = comparire: vero se ogni file esiste e ogni regex vi trova almeno una riga. deve = mancare: vero se nessuna regex trova niente in nessun file (un file assente è un errore del registro, non un vero)",
+    "tipo dm": "campo confermato: null, oppure {\"data\": \"AAAA-MM-GG\", \"dove\": \"file e riga, o voce della memoria storica, dove Jfs l'ha detto\"}. Vero solo se confermato non è null. misura_mancante, se c'è, dice quale misura renderebbe il criterio un comando: non è ancora scritta"
+  },
+  "aggiornato": "2026-11-27",
+  "milestone": [
+    {
+      "numero": 1,
+      "versione": "1.1.0",
+      "titolo": "v1.1.0 · Motore delle regole e cancelli",
+      "criteri": [
+        {
+          "id": "architettura-adr",
+          "tipo": "file",
+          "testo": "docs/explanation/ARCHITETTURA.md cita ogni ADR accettata della milestone (0109-0121, tranne 0113 superata e 0115 mai scritta; 0123 Diátaxis)",
+          "file": "docs/explanation/ARCHITETTURA.md",
+          "regex": [
+            "ADR-0109",
+            "ADR-0110",
+            "ADR-0111",
+            "ADR-0112",
+            "ADR-0114",
+            "ADR-0116",
+            "ADR-0117",
+            "ADR-0118",
+            "ADR-0119",
+            "ADR-0120",
+            "ADR-0121",
+            "ADR-0123"
+          ],
+          "deve": "comparire",
+          "nota": "la descrizione dice «ogni ADR accettata»; qui sono quelle della milestone. Che ARCHITETTURA citi tutte le ADR del repo non lo misura nessuno"
+        },
+        {
+          "id": "architettura-motore",
+          "tipo": "file",
+          "testo": "ARCHITETTURA ha i diagrammi del motore: un blocco Mermaid nel capitolo «Il motore delle regole e i sistemi di gioco»",
+          "file": "docs/explanation/ARCHITETTURA.md",
+          "regex": "^## \\d+\\. Il motore delle regole[\\s\\S]*?^```mermaid[\\s\\S]*?^## \\d+\\.",
+          "deve": "comparire"
+        },
+        {
+          "id": "guida-plugin",
+          "tipo": "file",
+          "testo": "Guida d'uso e riferimento per chi scrive un plugin di sistema",
+          "file": [
+            "docs/how-to/GUIDA-SISTEMI-DI-GIOCO.md",
+            "docs/reference/RIFERIMENTO-PLUGIN-DI-SISTEMA.md"
+          ],
+          "regex": "^# ",
+          "deve": "comparire"
+        },
+        {
+          "id": "dm-sistemi",
+          "tipo": "comando",
+          "testo": "dm.py ha il comando per i sistemi di gioco, e il suo cancello passa",
+          "comando": "python3 scripts/dm.py sistemi --check"
+        },
+        {
+          "id": "readme-adr",
+          "tipo": "dm",
+          "confermato": null,
+          "testo": "README col numero di ADR vero",
+          "misura_mancante": "nessuno script confronta il «N ADR» del README con plans/adr/. Oggi il README dice 123, sul disco ce ne sono 145 (template escluso): il criterio è falso. Un controllo in validate_docs lo renderebbe un comando (da chiedere a sviluppatore)"
+        },
+        {
+          "id": "fatto-link",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "Documentazione: nessun link o percorso rotto nei markdown scritti a mano",
+          "comando": "python3 scripts/validate_docs.py --sorgenti"
+        },
+        {
+          "id": "fatto-indici",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "Documentazione: README, AGENTS.md e docs/INDEX.md senza percorsi inesistenti, e ogni ADR del disco nell'indice di docs/INDEX.md §4",
+          "comando": "python3 scripts/validate_docs.py"
+        },
+        {
+          "id": "fatto-guide",
+          "comune": true,
+          "tipo": "dm",
+          "confermato": null,
+          "testo": "Documentazione dell'area completa: diagrammi Mermaid di docs/explanation/ARCHITETTURA.md, guida d'uso e guida di sviluppo, comando dm.py per gli strumenti nuovi della milestone",
+          "misura_mancante": "nessun comando dice se una guida copre l'area: validate_docs controlla solo che i percorsi esistano. Lo dice chi rilegge (thread padre), poi Jfs sulla PR di rilascio"
+        },
+        {
+          "id": "fatto-adr-stato",
+          "comune": true,
+          "tipo": "file",
+          "testo": "Stato degli ADR della milestone portato da proposta ad accettata (o superata)",
+          "file": [
+            "plans/adr/ADR-0109-una-marcatura-sola-e-il-dm-decide-il-canone.md",
+            "plans/adr/ADR-0110-i-termini-ufficiali-hanno-una-tabella-e-un-cancello.md",
+            "plans/adr/ADR-0111-il-sistema-di-gioco-e-un-plugin-di-dati.md",
+            "plans/adr/ADR-0112-il-motore-e-agnostico-e-le-regole-d20-sono-dati-e-formule.md",
+            "plans/adr/ADR-0113-gli-strumenti-binari-si-installano-da-un-lockfile.md",
+            "plans/adr/ADR-0114-ogni-prompt-ha-una-scheda-e-le-sue-prove.md",
+            "plans/adr/ADR-0116-typst-si-installa-da-pypi.md",
+            "plans/adr/ADR-0117-ogni-mappa-ha-il-suo-contratto-json.md",
+            "plans/adr/ADR-0118-un-numero-entra-solo-se-la-regola-lo-calcola.md",
+            "plans/adr/ADR-0119-le-regole-pf1e-del-cancello-vengono-dal-prd.md",
+            "plans/adr/ADR-0120-la-d-eufonica-si-misura-con-una-regex-tarata-su-languagetool.md",
+            "plans/adr/ADR-0121-un-plugin-di-regole-si-misura-contro-la-fonte.md",
+            "plans/adr/ADR-0123-la-documentazione-segue-diataxis.md"
+          ],
+          "regex": "^\\*\\*Stato\\*\\*:\\s*(\\*\\*)?(accettata|superata)",
+          "deve": "comparire"
+        },
+        {
+          "id": "fatto-canali",
+          "comune": true,
+          "tipo": "file",
+          "testo": "I controlli nuovi della milestone (ADR-0109, 0114, 0118, 0119, 0120 e pytest-xdist) promossi da testing a stable con ADR-0099",
+          "file": "plans/PIANO-PIATTAFORMA-DI-SVILUPPO.md",
+          "regex": "^\\| ~~D8~~ \\| .*Decisa il 2026-11-25",
+          "deve": "comparire",
+          "nota": "D8 di PIANO-PIATTAFORMA, card del DM del 2026-11-25, PR #516"
+        },
+        {
+          "id": "fatto-changelog",
+          "comune": true,
+          "tipo": "file",
+          "testo": "CHANGELOG.md: «Non rilasciato» spostato sotto ## [1.1.0] con la data",
+          "file": "CHANGELOG.md",
+          "regex": "^## \\[1\\.1\\.0\\] - \\d{4}-\\d{2}-\\d{2}$",
+          "deve": "comparire"
+        },
+        {
+          "id": "fatto-versione",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "PR di rilascio unita: sulla linea principale c'è il commit in cui __version__ dice per la prima volta 1.1.0",
+          "comando": "python3 scripts/release_plan.py 1.1.0",
+          "nota": "legge la storia first-parent: in CI serve il checkout con fetch-depth: 0. Resta vero anche dopo i rilasci successivi, a differenza di una regex su scripts/dmcore/__init__.py"
+        },
+        {
+          "id": "fatto-tag",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "Workflow Release verde: il tag v1.1.0 esiste (lo crea solo release.yml, ADR-0100)",
+          "comando": "git rev-parse -q --verify refs/tags/v1.1.0",
+          "nota": "in CI serve il checkout con i tag (fetch-tags o fetch-depth: 0). È l'ultimo criterio a diventare vero: il rilevatore lo usa per dire «già rilasciata», non «pronta»"
+        }
+      ]
+    },
+    {
+      "numero": 2,
+      "versione": "1.2.0",
+      "titolo": "v1.2.0 · Regole complete: 3.5, SRD e PF1e",
+      "criteri": [
+        {
+          "id": "inventario",
+          "tipo": "file",
+          "testo": "Inventario delle aree che la misura dei plugin non copriva, scritto",
+          "file": "plans/esperimenti/regole-complete-2026-11-10/INVENTARIO.md",
+          "regex": "^# ",
+          "deve": "comparire"
+        },
+        {
+          "id": "misura-plugin-100",
+          "tipo": "dm",
+          "confermato": null,
+          "testo": "misura_plugin_regole.py al 100% sulle aree dichiarate per 3.5 e PF1e, o il limite scritto nell'ADR (ADR-0121)",
+          "misura_mancante": "plans/esperimenti/plugin-regole-2026-11-09/misura_plugin_regole.py esce 0 anche senza le fonti in cache e non ha un --check con soglia. Il thread delle regole lo dà fatto il 2026-11-10 (specchio della roadmap), ma è una misura riferita, non una conferma di Jfs. Servirebbe un --check che esca 1 sotto il 100% delle aree dichiarate fuori dai limiti di ADR-0121, con la cache dell'SRD in CI (riscontro_srd.py)"
+        },
+        {
+          "id": "promozioni",
+          "tipo": "file",
+          "testo": "Promozioni del 22-24/11 decise: check_schede, cancello dei numeri, 14 conti PF1e, «d» eufonica",
+          "file": "plans/PIANO-PIATTAFORMA-DI-SVILUPPO.md",
+          "regex": "^\\| ~~D8~~ \\| .*Decisa il 2026-11-25",
+          "deve": "comparire"
+        },
+        {
+          "id": "fatto-link",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "Documentazione: nessun link o percorso rotto nei markdown scritti a mano",
+          "comando": "python3 scripts/validate_docs.py --sorgenti"
+        },
+        {
+          "id": "fatto-indici",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "Documentazione: README, AGENTS.md e docs/INDEX.md senza percorsi inesistenti, e ogni ADR del disco nell'indice di docs/INDEX.md §4",
+          "comando": "python3 scripts/validate_docs.py"
+        },
+        {
+          "id": "fatto-guide",
+          "comune": true,
+          "tipo": "dm",
+          "confermato": null,
+          "testo": "Documentazione dell'area completa: diagrammi Mermaid di docs/explanation/ARCHITETTURA.md, guida d'uso e guida di sviluppo, comando dm.py per gli strumenti nuovi della milestone",
+          "misura_mancante": "nessun comando dice se una guida copre l'area: validate_docs controlla solo che i percorsi esistano. Lo dice chi rilegge (thread padre), poi Jfs sulla PR di rilascio"
+        },
+        {
+          "id": "fatto-adr-stato",
+          "comune": true,
+          "tipo": "file",
+          "testo": "Stato degli ADR della milestone portato da proposta ad accettata (o superata)",
+          "file": [
+            "plans/adr/ADR-0124-le-regole-si-verificano-in-python-e-l-llm-riceve-regola-e-controesempio.md",
+            "plans/adr/ADR-0125-la-coerenza-della-storia-si-verifica-contro-state-yaml-solo-sui-fatti-strutturati.md",
+            "plans/adr/ADR-0126-una-scheda-si-verifica-senza-omissioni-e-col-motore-dichiarato.md",
+            "plans/adr/ADR-0134-l-equipaggiamento-standard-viene-dai-codex-pf1e-entro-il-valore-del-3-5.md"
+          ],
+          "regex": "^\\*\\*Stato\\*\\*:\\s*(\\*\\*)?(accettata|superata)",
+          "deve": "comparire"
+        },
+        {
+          "id": "fatto-canali",
+          "comune": true,
+          "tipo": "file",
+          "testo": "I controlli nuovi della milestone promossi da testing a stable con ADR-0099",
+          "file": "plans/PIANO-PIATTAFORMA-DI-SVILUPPO.md",
+          "regex": "^\\| ~~D8~~ \\| .*Decisa il 2026-11-25",
+          "deve": "comparire",
+          "nota": "i controlli nati in v1.2.0 fuori da D8 (verifica_scheda di ADR-0126, coerenza di ADR-0125) girano già bloccanti in ci.yml; il registro dei canali di P1 non c'è ancora, quindi nessuno misura che siano passati da testing"
+        },
+        {
+          "id": "fatto-changelog",
+          "comune": true,
+          "tipo": "file",
+          "testo": "CHANGELOG.md: «Non rilasciato» spostato sotto ## [1.2.0] con la data",
+          "file": "CHANGELOG.md",
+          "regex": "^## \\[1\\.2\\.0\\] - \\d{4}-\\d{2}-\\d{2}$",
+          "deve": "comparire"
+        },
+        {
+          "id": "fatto-versione",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "PR di rilascio unita: sulla linea principale c'è il commit in cui __version__ dice per la prima volta 1.2.0",
+          "comando": "python3 scripts/release_plan.py 1.2.0",
+          "nota": "legge la storia first-parent: in CI serve il checkout con fetch-depth: 0. Resta vero anche dopo i rilasci successivi, a differenza di una regex su scripts/dmcore/__init__.py"
+        },
+        {
+          "id": "fatto-tag",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "Workflow Release verde: il tag v1.2.0 esiste (lo crea solo release.yml, ADR-0100)",
+          "comando": "git rev-parse -q --verify refs/tags/v1.2.0",
+          "nota": "in CI serve il checkout con i tag (fetch-tags o fetch-depth: 0). È l'ultimo criterio a diventare vero: il rilevatore lo usa per dire «già rilasciata», non «pronta»"
+        }
+      ]
+    },
+    {
+      "numero": 3,
+      "versione": "1.3.0",
+      "titolo": "v1.3.0 · Standard del volume e booklet di serata",
+      "criteri": [
+        {
+          "id": "s1-s5-tarate",
+          "tipo": "file",
+          "testo": "S1-S5 tarate su Red Hand of Doom e Burnt Offerings",
+          "file": "docs/audit/volume-booklet.json",
+          "regex": [
+            "\\\"burnt-offerings\\\"",
+            "\\\"red-hand-of-doom-estratto\\\""
+          ],
+          "deve": "comparire"
+        },
+        {
+          "id": "s1-s5-in-ci",
+          "tipo": "file",
+          "testo": "S1-S5 in CI nel canale testing",
+          "file": ".github/workflows/ci.yml",
+          "regex": "misura_distanza_pagine\\.py --volume --tutti --check",
+          "deve": "comparire"
+        },
+        {
+          "id": "card-contenuti",
+          "tipo": "dm",
+          "confermato": {
+            "data": "2026-11-10",
+            "dove": "plans/PIANO-STANDARD-STAMPA.md, VOL-3: «Le quattro card hanno la risposta del DM dal 2026-11-10 (prima opzione)»"
+          },
+          "testo": "Card a Jfs su dove va ogni contenuto attuale dei booklet nella struttura nuova"
+        },
+        {
+          "id": "volume-letto-dm",
+          "tipo": "dm",
+          "confermato": null,
+          "testo": "Un volume d'avventura letto da Jfs scena per scena",
+          "nota": "regola di Jfs del 2026-11-02 (MS-0048): un booklet è pronto solo dopo la lettura del DM scena per scena. Il 21/11 Jfs ha letto l'appendice della regione del volume d'arco ARC-07 (MS-0224), non il volume intero"
+        },
+        {
+          "id": "serata-letta-dm",
+          "tipo": "dm",
+          "confermato": null,
+          "testo": "Un booklet di serata letto da Jfs scena per scena",
+          "nota": "il booklet di serata c'è (per esempio 07_il Portale Della Forgia Eterna/homebrew/sessione-resurrezione-mille-anni/ARC07-SERATA-RESURREZIONE-BOOKLET.manifest.json); la casella VOL-4 di PIANO-STANDARD-STAMPA è ancora vuota"
+        },
+        {
+          "id": "fatto-link",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "Documentazione: nessun link o percorso rotto nei markdown scritti a mano",
+          "comando": "python3 scripts/validate_docs.py --sorgenti"
+        },
+        {
+          "id": "fatto-indici",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "Documentazione: README, AGENTS.md e docs/INDEX.md senza percorsi inesistenti, e ogni ADR del disco nell'indice di docs/INDEX.md §4",
+          "comando": "python3 scripts/validate_docs.py"
+        },
+        {
+          "id": "fatto-guide",
+          "comune": true,
+          "tipo": "dm",
+          "confermato": null,
+          "testo": "Documentazione dell'area completa: diagrammi Mermaid di docs/explanation/ARCHITETTURA.md, guida d'uso e guida di sviluppo, comando dm.py per gli strumenti nuovi della milestone",
+          "misura_mancante": "nessun comando dice se una guida copre l'area: validate_docs controlla solo che i percorsi esistano. Lo dice chi rilegge (thread padre), poi Jfs sulla PR di rilascio"
+        },
+        {
+          "id": "fatto-adr-stato",
+          "comune": true,
+          "tipo": "file",
+          "testo": "Stato degli ADR della milestone portato da proposta ad accettata (o superata)",
+          "file": [
+            "plans/adr/ADR-0122-il-volume-segue-lo-schema-degli-adventure-path.md",
+            "plans/adr/ADR-0128-ogni-scheda-dichiara-taglia-spazio-e-portata.md",
+            "plans/adr/ADR-0129-il-volume-da-stampa-e-pdf-ua-1.md",
+            "plans/adr/ADR-0130-le-emoji-del-volume-vengono-dal-repo.md",
+            "plans/adr/ADR-0131-il-volume-da-stampa-e-anche-pdf-a-2a.md",
+            "plans/adr/ADR-0132-le-copie-delle-immagini-tengono-la-provenienza.md",
+            "plans/adr/ADR-0133-la-scheda-a-tutta-pagina-va-su-due-colonne.md",
+            "plans/adr/ADR-0144-due-stampe-per-arco-e-rimandi-con-la-pagina.md",
+            "plans/adr/ADR-0145-l-ordine-del-booklet-della-serata-si-misura.md",
+            "plans/adr/ADR-0147-l-introduzione-del-capitolo-promette-e-non-conta.md"
+          ],
+          "regex": "^\\*\\*Stato\\*\\*:\\s*(\\*\\*)?(accettata|superata)",
+          "deve": "comparire"
+        },
+        {
+          "id": "fatto-canali",
+          "comune": true,
+          "tipo": "file",
+          "testo": "Le misure del volume (S1-S5, ADR-0122) promosse a stable: il passo non è più non bloccante",
+          "file": ".github/workflows/ci.yml",
+          "regex": "Standard del volume — non bloccante",
+          "deve": "mancare",
+          "nota": "VOL-5 di PIANO-STANDARD-STAMPA. Promuovere vuol dire togliere continue-on-error e rinominare il passo; se il passo cambia nome restando non bloccante questa regex sbaglia"
+        },
+        {
+          "id": "fatto-changelog",
+          "comune": true,
+          "tipo": "file",
+          "testo": "CHANGELOG.md: «Non rilasciato» spostato sotto ## [1.3.0] con la data",
+          "file": "CHANGELOG.md",
+          "regex": "^## \\[1\\.3\\.0\\] - \\d{4}-\\d{2}-\\d{2}$",
+          "deve": "comparire"
+        },
+        {
+          "id": "fatto-versione",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "PR di rilascio unita: sulla linea principale c'è il commit in cui __version__ dice per la prima volta 1.3.0",
+          "comando": "python3 scripts/release_plan.py 1.3.0",
+          "nota": "legge la storia first-parent: in CI serve il checkout con fetch-depth: 0. Resta vero anche dopo i rilasci successivi, a differenza di una regex su scripts/dmcore/__init__.py"
+        },
+        {
+          "id": "fatto-tag",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "Workflow Release verde: il tag v1.3.0 esiste (lo crea solo release.yml, ADR-0100)",
+          "comando": "git rev-parse -q --verify refs/tags/v1.3.0",
+          "nota": "in CI serve il checkout con i tag (fetch-tags o fetch-depth: 0). È l'ultimo criterio a diventare vero: il rilevatore lo usa per dire «già rilasciata», non «pronta»"
+        }
+      ]
+    },
+    {
+      "numero": 4,
+      "versione": "1.4.0",
+      "titolo": "v1.4.0 · Indice dei piani P19-P30",
+      "criteri": [
+        {
+          "id": "voci-chiuse",
+          "tipo": "file",
+          "testo": "Ogni voce P19, P20, P21, P22-P25, P27, P30 dell'indice §0 chiusa con prova o superata con motivo: nessuna resta ⬜",
+          "file": "plans/STATO-E-ORDINE-DEI-PIANI.md",
+          "regex": "^\\| ⬜ \\| \\*\\*P(19|20|21|22|23|24|25|27|30) ",
+          "deve": "mancare",
+          "nota": "misura lo stato scritto nell'indice, non la prova: che la prova ci sia lo controlla chi chiude la voce. P29 è del DM e resta fuori, come nella descrizione della milestone"
+        },
+        {
+          "id": "decisioni-allineate",
+          "tipo": "comando",
+          "testo": "decisioni_dm.py --check verde: l'aggregato combacia coi piani",
+          "comando": "python3 scripts/decisioni_dm.py --check"
+        },
+        {
+          "id": "aperte-solo-tavolo",
+          "tipo": "dm",
+          "confermato": null,
+          "testo": "Nessuna decisione aperta al DM che non sia del tavolo",
+          "misura_mancante": "--check dice solo che l'aggregato è allineato; il numero delle aperte sta in STATO-E-ORDINE §4 («**N aperte**»), ma «del tavolo» non è un campo delle tabelle. Oggi 1 aperta: RIPRESA-PR#D2, che aspetta il collaudo con FLUX.2 klein 4B e non è del tavolo"
+        },
+        {
+          "id": "fatto-link",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "Documentazione: nessun link o percorso rotto nei markdown scritti a mano",
+          "comando": "python3 scripts/validate_docs.py --sorgenti"
+        },
+        {
+          "id": "fatto-indici",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "Documentazione: README, AGENTS.md e docs/INDEX.md senza percorsi inesistenti, e ogni ADR del disco nell'indice di docs/INDEX.md §4",
+          "comando": "python3 scripts/validate_docs.py"
+        },
+        {
+          "id": "fatto-guide",
+          "comune": true,
+          "tipo": "dm",
+          "confermato": null,
+          "testo": "Documentazione dell'area completa: diagrammi Mermaid di docs/explanation/ARCHITETTURA.md, guida d'uso e guida di sviluppo, comando dm.py per gli strumenti nuovi della milestone",
+          "misura_mancante": "nessun comando dice se una guida copre l'area: validate_docs controlla solo che i percorsi esistano. Lo dice chi rilegge (thread padre), poi Jfs sulla PR di rilascio"
+        },
+        {
+          "id": "fatto-canali",
+          "comune": true,
+          "tipo": "dm",
+          "confermato": null,
+          "testo": "Ogni controllo nuovo della milestone nato in testing e promosso con ADR-0099",
+          "misura_mancante": "la milestone non ha ancora controlli nuovi; quando una voce ne porta uno, il criterio diventa la regex sul suo passo in ci.yml, come in v1.3.0"
+        },
+        {
+          "id": "fatto-changelog",
+          "comune": true,
+          "tipo": "file",
+          "testo": "CHANGELOG.md: «Non rilasciato» spostato sotto ## [1.4.0] con la data",
+          "file": "CHANGELOG.md",
+          "regex": "^## \\[1\\.4\\.0\\] - \\d{4}-\\d{2}-\\d{2}$",
+          "deve": "comparire"
+        },
+        {
+          "id": "fatto-versione",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "PR di rilascio unita: sulla linea principale c'è il commit in cui __version__ dice per la prima volta 1.4.0",
+          "comando": "python3 scripts/release_plan.py 1.4.0",
+          "nota": "legge la storia first-parent: in CI serve il checkout con fetch-depth: 0. Resta vero anche dopo i rilasci successivi, a differenza di una regex su scripts/dmcore/__init__.py"
+        },
+        {
+          "id": "fatto-tag",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "Workflow Release verde: il tag v1.4.0 esiste (lo crea solo release.yml, ADR-0100)",
+          "comando": "git rev-parse -q --verify refs/tags/v1.4.0",
+          "nota": "in CI serve il checkout con i tag (fetch-tags o fetch-depth: 0). È l'ultimo criterio a diventare vero: il rilevatore lo usa per dire «già rilasciata», non «pronta»"
+        }
+      ]
+    },
+    {
+      "numero": 5,
+      "versione": "1.5.0",
+      "titolo": "v1.5.0 · Piattaforma",
+      "criteri": [
+        {
+          "id": "shellcheck-bloccante",
+          "tipo": "file",
+          "testo": "shellcheck bloccante in CI",
+          "file": ".github/workflows/ci.yml",
+          "regex": [
+            "shellcheck[^\\n]*\\|\\| true",
+            "\\(shellcheck\\)[^\\n]*non-blocking"
+          ],
+          "deve": "mancare"
+        },
+        {
+          "id": "convertitori-test",
+          "tipo": "file",
+          "testo": "Convertitori allo standard, con i test in CI",
+          "file": ".github/workflows/ci.yml",
+          "regex": "pytest[^\\n]*converters",
+          "deve": "comparire",
+          "nota": "oggi il job convertitori prova solo che i moduli si importino; i test di converters/pdf-to-md-engine leggono PDF che non stanno nel repo (ADR-0099 §9)"
+        },
+        {
+          "id": "impronte-ci",
+          "tipo": "file",
+          "testo": "Il banco d'invarianza impronte.py --confronta (ADR-0111) in CI",
+          "file": ".github/workflows/ci.yml",
+          "regex": "impronte\\.py --confronta",
+          "deve": "comparire"
+        },
+        {
+          "id": "conflitti-ci",
+          "tipo": "file",
+          "testo": "Controllo dei segni di conflitto nei file tracciati in CI",
+          "file": ".github/workflows/ci.yml",
+          "regex": "(?i)segni di conflitto|conflict.marker|merge.conflict",
+          "deve": "comparire",
+          "nota": "la regex cerca il nome del passo, non la sequenza dei segni, perché questo file non deve contenerla"
+        },
+        {
+          "id": "xdist-flake",
+          "tipo": "file",
+          "testo": "Flake di pytest-xdist chiuso",
+          "file": "plans/PIANO-PIATTAFORMA-DI-SVILUPPO.md",
+          "regex": "^### P4 · .*✅",
+          "deve": "comparire",
+          "nota": "P4 chiuso il 2026-11-25: i moduli che scrivono nel repo girano in serie (marcatore scrive_nel_repo in ci.yml), 168 run su 168 uguali al passo seriale"
+        },
+        {
+          "id": "strict-predefinito",
+          "tipo": "dm",
+          "confermato": null,
+          "testo": "--strict predefinito per render_map_svg (se rompe la superficie pubblica il rilascio diventa 2.0.0)",
+          "misura_mancante": "nessun test rende una mappa con le dimensioni dell'intestazione sbagliate senza --strict e si aspetta l'uscita 1. Una regex sulla riga argparse sarebbe una finta misura. Va misurato anche prima (roadmap del 2026-11-09)"
+        },
+        {
+          "id": "fatto-link",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "Documentazione: nessun link o percorso rotto nei markdown scritti a mano",
+          "comando": "python3 scripts/validate_docs.py --sorgenti"
+        },
+        {
+          "id": "fatto-indici",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "Documentazione: README, AGENTS.md e docs/INDEX.md senza percorsi inesistenti, e ogni ADR del disco nell'indice di docs/INDEX.md §4",
+          "comando": "python3 scripts/validate_docs.py"
+        },
+        {
+          "id": "fatto-guide",
+          "comune": true,
+          "tipo": "dm",
+          "confermato": null,
+          "testo": "Documentazione dell'area completa: diagrammi Mermaid di docs/explanation/ARCHITETTURA.md, guida d'uso e guida di sviluppo, comando dm.py per gli strumenti nuovi della milestone",
+          "misura_mancante": "nessun comando dice se una guida copre l'area: validate_docs controlla solo che i percorsi esistano. Lo dice chi rilegge (thread padre), poi Jfs sulla PR di rilascio"
+        },
+        {
+          "id": "fatto-adr-stato",
+          "comune": true,
+          "tipo": "file",
+          "testo": "Stato degli ADR della milestone portato da proposta ad accettata (o superata)",
+          "file": [
+            "plans/adr/ADR-0127-la-memoria-corta-archivia-nel-repo-prima-di-togliere.md",
+            "plans/adr/ADR-0136-il-kit-delle-prove-4050-e-uno-solo-per-quattro-sistemi.md",
+            "plans/adr/ADR-0137-la-memoria-storica-si-scrive-a-ogni-blocco-di-lavoro-non-solo-al-merge.md",
+            "plans/adr/ADR-0138-la-coda-della-memoria-storica-ha-un-cancello.md",
+            "plans/adr/ADR-0139-la-memoria-corta-ha-un-tetto-misurato.md",
+            "plans/adr/ADR-0140-la-configurazione-claude-del-repo-arriva-anche-nei-thread.md",
+            "plans/adr/ADR-0141-le-regole-di-agents-arrivano-con-i-file.md",
+            "plans/adr/ADR-0142-claudeignore-diventa-regole-deny.md",
+            "plans/adr/ADR-0143-i-gate-veloci-girano-prima-del-push.md",
+            "plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md",
+            "plans/adr/ADR-0148-i-fatti-si-verificano-con-script-e-gli-agenti-con-prove-fisse.md",
+            "plans/adr/ADR-0149-il-giocato-arriva-sul-ramo-di-gruppo-con-un-agente-e-una-misura.md"
+          ],
+          "regex": "^\\*\\*Stato\\*\\*:\\s*(\\*\\*)?(accettata|superata)",
+          "deve": "comparire"
+        },
+        {
+          "id": "fatto-canali",
+          "comune": true,
+          "tipo": "file",
+          "testo": "I controlli nuovi della milestone (ADR-0148: rimandi per sezione, cricchetto degli agenti) promossi da testing a stable",
+          "file": ".github/workflows/ci.yml",
+          "regex": [
+            "Rimandi per sezione — non bloccante",
+            "Agenti toccati senza esito registrato — non bloccante"
+          ],
+          "deve": "mancare",
+          "nota": "verifica_rimandi.py sale non prima del 2026-12-04; il cricchetto degli agenti solo dopo la misura dell'oscillazione. Python 3.14 in prova resta testing per scelta (P8) e non conta"
+        },
+        {
+          "id": "fatto-changelog",
+          "comune": true,
+          "tipo": "file",
+          "testo": "CHANGELOG.md: «Non rilasciato» spostato sotto ## [1.5.0] con la data",
+          "file": "CHANGELOG.md",
+          "regex": "^## \\[1\\.5\\.0\\] - \\d{4}-\\d{2}-\\d{2}$",
+          "deve": "comparire"
+        },
+        {
+          "id": "fatto-versione",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "PR di rilascio unita: sulla linea principale c'è il commit in cui __version__ dice per la prima volta 1.5.0",
+          "comando": "python3 scripts/release_plan.py 1.5.0",
+          "nota": "legge la storia first-parent: in CI serve il checkout con fetch-depth: 0. Resta vero anche dopo i rilasci successivi, a differenza di una regex su scripts/dmcore/__init__.py"
+        },
+        {
+          "id": "fatto-tag",
+          "comune": true,
+          "tipo": "comando",
+          "testo": "Workflow Release verde: il tag v1.5.0 esiste (lo crea solo release.yml, ADR-0100)",
+          "comando": "git rev-parse -q --verify refs/tags/v1.5.0",
+          "nota": "in CI serve il checkout con i tag (fetch-tags o fetch-depth: 0). È l'ultimo criterio a diventare vero: il rilevatore lo usa per dire «già rilasciata», non «pronta»"
+        }
+      ]
+    }
+  ]
+}

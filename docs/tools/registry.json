@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 156,
+  "tool_count": 157,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -11769,6 +11769,128 @@
         "plans/esperimenti/qualita-misurabile-2026-10-22/pipeline/README.md",
         "plans/adr/ADR-0093-la-prosa-migliora-se-la-sceglie-il-dm-alla-cieca.md",
         "plans/esperimenti/qualita-misurabile-2026-10-22/languagetool/README.md"
+      ]
+    },
+    {
+      "id": "milestone_pronte",
+      "path": "scripts/milestone_pronte.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/milestone_pronte.py --json",
+      "summary": "Valuta i criteri d'uscita delle milestone della roadmap registrati in plans/milestone.json (comando che esce 0, regex che compaiono o mancano in un file, conferma del DM con data e luogo) e dice per ognuna pronta, non pronta (con gli id dei criteri falsi) o rilasciata; pronta vuol dire tutto vero tranne fatto-changelog, fatto-versione e fatto-tag. Esce 2 se il registro è rotto. Misura, non scrive niente (ADR-0099, canale testing).",
+      "use_case": "«Quale milestone è pronta per il rilascio?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Ogni milestone con stato, criteri ed esito, in JSON."
+        },
+        {
+          "name": "--pronte",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Solo le versioni pronte e non rilasciate, una per riga."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Esce 2 se il registro è rotto, 0 altrimenti (anche se niente è pronto)."
+        },
+        {
+          "name": "--solo-integrita",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Controlla il registro senza eseguire i comandi dei criteri."
+        },
+        {
+          "name": "--github",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Confronta numero e titolo con le milestone di GitHub via gh; senza gh, non misurato."
+        },
+        {
+          "name": "--registro",
+          "type": "path",
+          "required": false,
+          "default": "plans/milestone.json",
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il registro delle milestone."
+        },
+        {
+          "name": "--radice",
+          "type": "path",
+          "required": false,
+          "default": ".",
+          "choices": null,
+          "repeatable": false,
+          "desc": "La radice del repo da cui si lanciano i comandi e si leggono i file."
+        },
+        {
+          "name": "--timeout",
+          "type": "float",
+          "required": false,
+          "default": 300,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Secondi per ogni comando; oltre, il criterio è falso."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/milestone.json",
+          "kind": "json",
+          "required": true,
+          "schema": null
+        }
+      ],
+      "outputs": [],
+      "exit_codes": {
+        "0": "registro integro (qualunque sia lo stato delle milestone)",
+        "2": "registro rotto o errore d'uso"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "dipende dall'albero e dai tag del clone; --github dalla rete"
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": true
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/milestone_pronte.py --check --solo-integrita",
+      "tests": [
+        "scripts/tests/test_milestone_pronte.py"
+      ],
+      "docs": [
+        "plans/milestone.json",
+        ".github/workflows/milestone.yml"
       ]
     },
     {

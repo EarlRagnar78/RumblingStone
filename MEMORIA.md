@@ -84,7 +84,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
-| 2026-11-27 | PIATTAFORMA-DI-SVILUPPO | P12, ADR-0152 (proposta), la milestone pronta si misura su main (domanda di Jfs… | 🟡 in testing: nessuna milestone pronta, v1.1.0 ferma su `readme-adr`, `fatto-guide`, `fatto-adr-stato`; 2,6 s (`--check --solo-integrita` 0,06 s); test raccolt… |
+| 2026-11-27 | PIATTAFORMA-DI-SVILUPPO | P12, ADR-0152 (accettata), la milestone pronta si misura su main (domanda di Jf… | 🟡 in testing: nessuna milestone pronta, v1.1.0 ferma su `readme-adr`, `fatto-guide`, `fatto-adr-stato`; 2,6 s (`--check --solo-integrita` 0,06 s); test raccolt… |
 | 2026-11-26 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Le quindici domande aperte dei pregen decise dal DM | INFERRED aperti 38 → 23 |
 | 2026-11-26 | REGOLE-SENZA-OMISSIONI | Grimjaw rinforzato e i quattro punti aperti della #523 (card di Jfs del 26/11).… | 🟡 rampa chiusa con Borin e Yrsa: ripiega 54, a 0 pf 19, un eroe a terra 73 (a 100 pf erano 53 · 27 · 67; accettato a 178: 62 · 8 · 82); `verifica_scheda.py` 0… |
 | 2026-11-26 | RICERCA-PROSA-PECULIARE | Cieco A sul ritmo della frase (card del DM del 19/11 «Solo A per ora»): 24 copp… | ✅ nessuna differenza dimostrata (13 a 7, soglia 14): non cambia niente |

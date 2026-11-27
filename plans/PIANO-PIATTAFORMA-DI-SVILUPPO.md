@@ -276,7 +276,7 @@ regole, 3 discordanze lasciate al DM. Sale a stable non prima del 2026-11-06.
 `[engine: Opus 5.5 · effort: medio · qualità: il rilevatore dà lo stesso esito su due run dello stesso commit, non cambia niente nel repo, vede un criterio falsificato di proposito, e gira sotto i 2 minuti]`
 Jfs, 2026-11-27: l'agente `piattaforma` scatta da solo quando una milestone
 è raggiunta? No: i criteri stavano in prosa su GitHub e nessuno li misurava.
-[ADR-0152](adr/ADR-0152-la-milestone-pronta-si-misura-su-main.md) (proposta):
+[ADR-0152](adr/ADR-0152-la-milestone-pronta-si-misura-su-main.md) (accettata, card di Jfs del 2026-11-27):
 il registro [`plans/milestone.json`](milestone.json), il rilevatore
 `scripts/milestone_pronte.py`, il workflow `.github/workflows/milestone.yml`
 su main e di lunedì; il segnale arriva alla routine del lunedì, che chiede un

@@ -1,8 +1,8 @@
 # ADR-0152 — La milestone pronta si misura su main, e il segnale arriva alla routine del lunedì
 
-**Stato**: proposta (2026-11-27)
+**Stato**: accettata (2026-11-27, card di Jfs: «Workflow, issue e routine del lunedì»)
 **Data**: 2026-11-27
-**Decisione-fonte**: la domanda di Jfs del 2026-11-27 nel thread del progetto: l'agente `piattaforma` scatta da solo quando una milestone è raggiunta? Il modo in cui il segnale arriva a un thread è su una card a Jfs (routine del lunedì, controllo giornaliero, solo hook); questo ADR scrive la consigliata, la routine del lunedì, e lo accetta o lo respinge Jfs.
+**Decisione-fonte**: la domanda di Jfs del 2026-11-27 nel thread del progetto: l'agente `piattaforma` scatta da solo quando una milestone è raggiunta? Il modo in cui il segnale arriva a un thread è su una card a Jfs (routine del lunedì, controllo giornaliero, solo hook); Jfs ha scelto la consigliata, la routine del lunedì, sulla card del 2026-11-27.
 **Rapporti**: applica [ADR-0099](ADR-0099-la-piattaforma-ha-tre-canali-come-debian.md) (lo strumento nuovo entra in testing e sale con i suoi criteri) e [ADR-0100](ADR-0100-il-rilascio-e-una-pr.md) (il rilascio resta una PR, e il tag lo crea solo `release.yml`); segue il modello del workflow del lunedì di [ADR-0149](ADR-0149-il-giocato-arriva-sul-ramo-di-gruppo-con-un-agente-e-una-misura.md); riguarda l'agente `piattaforma` di [ADR-0146](ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md).
 
 > Il numero 0152 non è in `plans/adr-prenotati.json`, che si scrive solo su

@@ -100,6 +100,7 @@
         "9."
       ],
       "quando": "**la serata comincia qui**: la scheda da tavolo, i numeri in sintesi, poi le quote e le tattiche round per round",
+      "apertura": "apertura-V.md", "chiusura": "chiusura-V.md",
       "ruolo": "gioco",
       "scena": 1
     },
@@ -109,6 +110,7 @@
       "tag": "dm",
       "capolettera": false,
       "quando": "al ritorno, se non è ancora stato giocato",
+      "apertura": "apertura-VI.md",
       "ruolo": "gioco"
     },
     {
@@ -126,6 +128,7 @@
       ],
       "quando": "il ritorno fra le tende, la tenda se scendono, Vatore; la versione in dieci minuti è in testa",
       "principale": true,
+      "apertura": "apertura-VII.md", "chiusura": "chiusura-VII.md",
       "ruolo": "gioco"
     },
     {
@@ -137,6 +140,7 @@
         "SCENA 10"
       ],
       "quando": "le mura all'alba, una via su tre",
+      "apertura": "apertura-VIII.md", "chiusura": "chiusura-VIII.md",
       "ruolo": "gioco"
     },
     {
@@ -156,6 +160,7 @@
         "§6 —"
       ],
       "quando": "il duello; la versione in tre scambi è in testa. Con l'esito ci si ferma",
+      "apertura": "apertura-X.md", "chiusura": "chiusura-X.md",
       "ruolo": "gioco"
     },
     {
@@ -167,6 +172,7 @@
         "A. Budget"
       ],
       "quando": "a fine serata: che cosa resta, e i PX",
+      "apertura": "apertura-XI.md", "chiusura": "chiusura-XI.md",
       "ruolo": "fuori-serata"
     },
     {
@@ -185,6 +191,7 @@
         "13."
       ],
       "quando": "a mente fredda, dopo il tavolo",
+      "apertura": "apertura-XIII.md",
       "ruolo": "fuori-serata"
     },
     {

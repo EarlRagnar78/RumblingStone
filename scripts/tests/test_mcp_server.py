@@ -133,6 +133,27 @@ class TestDifese(unittest.TestCase):
             self.assertEqual(r["error"]["code"], M.PARAMETRI)
             self.assertIn("dalla shell", r["error"]["message"])
 
+    def test_S7_il_motivo_viene_dal_manifest_del_tool(self):
+        # Il messaggio era scritto per prove_skill: su memoria_custode diceva il falso.
+        r = chiama("memoria_custode", {"comando": "archivia"})
+        msg = r["error"]["message"]
+        self.assertEqual(r["error"]["code"], M.PARAMETRI)
+        self.assertIn("memoria_custode archivia", msg)
+        self.assertIn("mcp_vietati", msg)
+        self.assertIn("coda", msg)                   # dalle note del suo manifest
+        self.assertNotIn("altro agente", msg)
+        self.assertIn("claude -p", chiama("prove_skill", {"comando": "esegui"})["error"]["message"])
+
+    def test_S7_senza_note_nel_manifest_una_frase_neutra(self):
+        t = {"id": "finto", "args": [{"name": "comando", "type": "subcommand"}],
+             "side_effects": {"writes_canon": False, "git_commit": False, "network": False,
+                              "mcp_vietati": ["scrivi"]}}
+        with self.assertRaises(M.Rifiuto) as e:
+            M.Server({"finto": t}).tools_call({"name": "finto", "arguments": {"comando": "scrivi"}})
+        self.assertIn("fuori dalla sola lettura", str(e.exception))
+        self.assertIn("dalla shell", str(e.exception))
+        self.assertNotIn("altro agente", str(e.exception))
+
     def test_S7_gli_altri_sottocomandi_partono(self):
         argv = M.costruisci(M.carica()["prove_skill"], {"comando": "controlla", "agenti": True})
         self.assertEqual(argv[-2:], ["controlla", "--agenti"])

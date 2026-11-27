@@ -4496,9 +4496,9 @@
     },
     {
       "name": "memoria_custode",
-      "description": "«Sto per togliere righe dalla memoria del progetto o per fare il merge di un thread: ogni riga tolta è archiviata da qualche parte, e che cosa sanno insieme memoria, file storico e coda di questo tema?»\n\nADR-0151: la memoria del progetto dei thread (MEMORY.md e note, cartella fuori dal repo) ha uno specchio e un custode. specchia scrive un'istantanea completa con MANIFEST.json (sha256) in /mnt/project-files/memoria-progetto-specchio/ quando il contenuto cambia, in modo atomico e con un lucchetto. verifica confronta la memoria con l'ultima istantanea: ogni riga tolta deve avere i suoi gettoni nel repo, nel file storico o in coda, e le sue parole sparite (al più 2) in una voce MS o di coda (almeno il 70%); esce 1 se no, o se MEMORY.md supera 16 KB, e se passa fa avanzare l'istantanea; tetto di 12 KB e forma della coda sono avvisi. archivia scrive in coda la voce con le righe tolte (rifiuta le righe con termini riservati o email, che restano nello specchio). cerca risponde da memoria del progetto, file storico e coda con il campo fonte. redigi copia la memoria con le righe riservate sostituite da un'impronta. --hook-merge (PreToolUse sul merge di gsamuele78/RumblingStone) esce 2 se la verifica fallisce; --hook-scrittura (Write/Edit/MultiEdit dentro la memoria) avvisa senza bloccare (canale testing). Gli esiti degli hook vanno in .claude/.custode-memoria.jsonl.",
+      "description": "«Sto per togliere righe dalla memoria del progetto o per fare il merge di un thread: ogni riga tolta è archiviata da qualche parte, e che cosa sanno insieme memoria, file storico e coda di questo tema?»\n\nADR-0151: la memoria del progetto dei thread (MEMORY.md e note, cartella fuori dal repo) ha uno specchio e un custode. specchia scrive un'istantanea completa con MANIFEST.json (sha256) in /mnt/project-files/memoria-progetto-specchio/ quando il contenuto cambia, in modo atomico e con un lucchetto. verifica confronta la memoria con l'ultima istantanea: ogni riga tolta deve avere i suoi gettoni nel repo, nel file storico o in coda, e le sue parole sparite (al più 2) in una voce MS o di coda (almeno il 70%); esce 1 se no, o se MEMORY.md supera 16 KB, e se passa fa avanzare l'istantanea; tetto di 12 KB e forma della coda sono avvisi. archivia scrive in coda la voce con le righe tolte (rifiuta le righe con termini riservati o email, che restano nello specchio) e fallisce chiuso, uscita 1 senza toccare la coda, se RISERVATI.txt manca, è vuoto o non si legge; verifica lo dice fra gli avvisi, insieme ai link [[nome]] rotti fra le note (leciti, non cambiano l'uscita). cerca risponde da memoria del progetto, file storico e coda con il campo fonte, e per ogni nota trovata aggiunge le note collegate a un passo con [[nome]], in uscita e in entrata (fonte memoria-link; --senza-link le toglie). redigi copia la memoria con le righe riservate sostituite da un'impronta. --hook-merge (PreToolUse sul merge di gsamuele78/RumblingStone, da mcp__github__merge_pull_request o da Bash con gh pr merge o gh api -X PUT .../pulls/N/merge; ogni altro Bash esce 0 senza leggere niente) esce 2 se la verifica fallisce; --hook-scrittura (Write/Edit/MultiEdit dentro la memoria) avvisa senza bloccare (canale testing). Gli esiti degli hook vanno in .claude/.custode-memoria.jsonl.",
       "use_case": "«Sto per togliere righe dalla memoria del progetto o per fare il merge di un thread: ogni riga tolta è archiviata da qualche parte, e che cosa sanno insieme memoria, file storico e coda di questo tema?»",
-      "invocation": "python3 scripts/memoria_custode.py specchia | verifica [--json] | archivia [--thread TITOLO] | cerca PAROLE... [--tema T] [--json] | redigi --uscita DIR | --hook-merge | --hook-scrittura | --riepilogo",
+      "invocation": "python3 scripts/memoria_custode.py specchia | verifica [--json] | archivia [--thread TITOLO] | cerca PAROLE... [--tema T] [--senza-link] [--json] | redigi --uscita DIR | --hook-merge | --hook-scrittura | --riepilogo",
       "inputSchema": {
         "type": "object",
         "properties": {
@@ -4521,6 +4521,10 @@
             "type": "string",
             "description": "Con cerca: un tema (campo Temi nel file storico e in coda; una parola in più nella memoria)."
           },
+          "senza-link": {
+            "type": "boolean",
+            "description": "Con cerca: non aggiungere le note collegate a un passo con [[nome]] (fonte memoria-link)."
+          },
           "json": {
             "type": "boolean",
             "description": "Uscita per un agente."
@@ -4537,7 +4541,7 @@
       ],
       "exit_codes": {
         "0": "verifica passata, istantanea scritta o invariata, ricerca eseguita; nei modi hook anche cartella assente o errore interno",
-        "1": "verifica: righe tolte non archiviate o MEMORY.md oltre 16 KB; redigi: RISERVATI.txt manca o è vuoto",
+        "1": "verifica: righe tolte non archiviate o MEMORY.md oltre 16 KB; archivia e redigi: RISERVATI.txt manca, è vuoto o non si legge",
         "2": "--hook-merge: merge fermato; errore d'uso (cartella della memoria assente fuori dai modi hook)"
       },
       "deterministic": true

@@ -79,6 +79,10 @@ class Base(unittest.TestCase):
         f = self.mem / file
         f.write_text(f.read_text(encoding="utf-8").replace(testo + "\n", ""), encoding="utf-8")
 
+    def scrivi_riservati(self, testo: str = "Gianlupo\n") -> None:
+        self.spe.mkdir(parents=True, exist_ok=True)
+        (self.spe / "RISERVATI.txt").write_text(testo, encoding="utf-8")
+
     def istantanee(self) -> "list[Path]":
         d = self.spe / "istantanee"
         return sorted(p for p in d.iterdir() if p.is_dir()) if d.is_dir() else []
@@ -128,6 +132,7 @@ class TestVerifica(Base):
         self.assertEqual(len(self.istantanee()), 1)
 
     def test_hook_merge_esce_2_con_il_rimedio(self):
+        self.scrivi_riservati()
         self.gira("specchia")
         self.togli("- Lavoro aperto: correggere la forgia sommersa entro venerdi con il fabbro anziano.")
         ev = {"tool_name": "mcp__github__merge_pull_request",
@@ -174,6 +179,7 @@ class TestVerifica(Base):
 
 class TestArchivia(Base):
     def test_archivia_poi_verifica_passa(self):
+        self.scrivi_riservati()
         self.gira("specchia")
         riga = "- Lavoro aperto: correggere la forgia sommersa entro venerdi con il fabbro anziano."
         self.togli(riga)
@@ -187,6 +193,7 @@ class TestArchivia(Base):
         self.assertEqual(self.gira("verifica")[0], 0)
 
     def test_titolo_predefinito(self):
+        self.scrivi_riservati()
         self.gira("specchia")
         self.togli("- Lavoro aperto: correggere la forgia sommersa entro venerdi con il fabbro anziano.")
         self.gira("archivia")
@@ -337,6 +344,218 @@ class TestCerca(Base):
         codice, out, _ = self.gira("cerca", "cisterna")
         self.assertEqual(codice, 0)
         self.assertIn("nessun risultato", out)
+
+
+class TestRiservatiFallisceChiuso(Base):
+    """Senza un RISERVATI.txt leggibile e non vuoto, archivia non copia niente in coda."""
+
+    RIGA = "- Lavoro aperto: correggere la forgia sommersa entro venerdi con il fabbro anziano."
+
+    def prepara(self):
+        self.gira("specchia")
+        self.togli(self.RIGA)
+
+    def coda_intatta(self):
+        self.assertEqual(sorted(p.name for p in self.coda.iterdir()), [])
+
+    def test_archivia_senza_riservati_esce_1_e_non_tocca_la_coda(self):
+        self.prepara()
+        codice, out, err = self.gira("archivia")
+        self.assertEqual(codice, 1, out + err)
+        self.assertIn("RISERVATI.txt", err)
+        self.coda_intatta()
+
+    def test_archivia_con_riservati_vuoto_o_solo_commenti_esce_1(self):
+        self.scrivi_riservati("# solo un commento\n\n   \n")
+        self.prepara()
+        codice, _, err = self.gira("archivia")
+        self.assertEqual(codice, 1)
+        self.assertIn("vuoto", err)
+        self.coda_intatta()
+
+    def test_archivia_con_riservati_illeggibile_esce_1(self):
+        (self.spe / "RISERVATI.txt").mkdir(parents=True)     # una cartella: read_text fallisce
+        self.prepara()
+        codice, _, err = self.gira("archivia", "--json")
+        self.assertEqual(codice, 1)
+        self.assertIn("non si legge", err)
+        self.coda_intatta()
+
+    def test_verifica_senza_riservati_avvisa_senza_cambiare_l_uscita(self):
+        codice, out, _ = self.gira("verifica", "--json")
+        self.assertEqual(codice, 0)
+        self.assertTrue(any("RISERVATI.txt" in a for a in json.loads(out)["avvisi"]))
+        self.scrivi_riservati()
+        codice, out, _ = self.gira("verifica", "--json")
+        self.assertFalse(any("RISERVATI.txt" in a for a in json.loads(out)["avvisi"]))
+
+    def test_hook_merge_senza_riservati_dice_di_crearlo_e_non_suggerisce_archivia(self):
+        self.prepara()
+        ev = {"tool_name": "mcp__github__merge_pull_request",
+              "tool_input": {"owner": "gsamuele78", "repo": "RumblingStone", "pullNumber": 9}}
+        codice, _, err = self.gira("--hook-merge", stdin=json.dumps(ev))
+        self.assertEqual(codice, 2)
+        self.assertIn("RISERVATI.txt", err)
+        self.assertIn("crea", err.lower())
+        self.assertNotIn("memoria_custode.py archivia", err)
+
+
+class TestHookMergeDaBash(Base):
+    RIGA = "- Lavoro aperto: correggere la forgia sommersa entro venerdi con il fabbro anziano."
+
+    def setUp(self):
+        super().setUp()
+        self.scrivi_riservati()
+        self.gira("specchia")
+        self.togli(self.RIGA)
+        self.fuori = Path(self.t.name) / "altrove"
+        self.fuori.mkdir()
+
+    def bash(self, comando: str, cwd: "Path | None" = None) -> "tuple[int, str]":
+        ev = {"tool_name": "Bash", "tool_input": {"command": comando},
+              "cwd": str(cwd if cwd is not None else self.rad)}
+        codice, _, err = self.gira("--hook-merge", stdin=json.dumps(ev))
+        return codice, err
+
+    def test_gh_pr_merge_nella_cartella_del_repo_verifica(self):
+        codice, err = self.bash("gh pr merge 12 --squash")
+        self.assertEqual(codice, 2, err)
+        self.assertIn("ADR-0151", err)
+        registro = self.rad / ".claude" / ".custode-memoria.jsonl"
+        riga = json.loads(registro.read_text(encoding="utf-8").splitlines()[-1])
+        self.assertEqual((riga["esito"], riga["pr"], riga["via"]), ("blocca", "12", "bash"))
+
+    def test_gh_pr_merge_senza_numero_nel_repo(self):
+        self.assertEqual(self.bash("gh pr merge --merge --delete-branch")[0], 2)
+
+    def test_gh_pr_merge_con_repo_esplicito_da_fuori(self):
+        for c in ("gh pr merge 3 -R gsamuele78/RumblingStone",
+                  "gh pr merge 3 --repo=GSamuele78/rumblingstone",
+                  "gh pr merge 3 --repo github.com/gsamuele78/RumblingStone",
+                  "GH_REPO=gsamuele78/RumblingStone gh pr merge 3",
+                  "gh pr merge https://github.com/gsamuele78/RumblingStone/pull/3",
+                  f"cd {self.rad} && gh pr merge 3",
+                  "bash -c 'gh pr merge 3 -R gsamuele78/RumblingStone'"):
+            with self.subTest(c=c):
+                self.assertEqual(self.bash(c, cwd=self.fuori)[0], 2)
+
+    def test_gh_api_merge_con_put(self):
+        for c in ("gh api -X PUT repos/gsamuele78/RumblingStone/pulls/7/merge",
+                  "gh api --method put /repos/gsamuele78/rumblingstone/pulls/7/merge -f merge_method=squash"):
+            with self.subTest(c=c):
+                self.assertEqual(self.bash(c, cwd=self.fuori)[0], 2)
+
+    def test_gh_api_in_lettura_non_e_un_merge(self):
+        # GET su /merge dice solo se la PR è unita (204/404).
+        self.assertEqual(self.bash("gh api repos/gsamuele78/RumblingStone/pulls/7/merge")[0], 0)
+
+    def test_altri_repo_escono_0(self):
+        for c in ("gh pr merge 5 -R altri/RumblingStone",
+                  "gh pr merge https://github.com/altri/RumblingStone/pull/5",
+                  "gh api -X PUT repos/altri/RumblingStone/pulls/5/merge"):
+            with self.subTest(c=c):
+                self.assertEqual(self.bash(c)[0], 0)
+
+    def test_senza_repo_fuori_dal_repo_esce_0(self):
+        self.assertEqual(self.bash("gh pr merge 5", cwd=self.fuori)[0], 0)
+
+    def test_senza_repo_in_un_clone_del_repo_verifica(self):
+        import subprocess
+        clone = Path(self.t.name) / "clone"
+        clone.mkdir()
+        subprocess.run(["git", "init", "-q", str(clone)], check=True)
+        subprocess.run(["git", "-C", str(clone), "remote", "add", "origin",
+                        "https://github.com/gsamuele78/RumblingStone.git"], check=True)
+        self.assertEqual(self.bash("gh pr merge 5", cwd=clone)[0], 2)
+
+    def test_comandi_che_non_uniscono_escono_0_senza_leggere_la_memoria(self):
+        for c in ("git status", "gh pr view 12", "gh pr list", "echo 'gh pr merge 3'",
+                  "grep -r 'gh pr merge' scripts", "ls"):
+            with self.subTest(c=c), \
+                    mock.patch.object(cu, "cartella_memoria", side_effect=AssertionError("letta")), \
+                    mock.patch.object(cu, "verifica", side_effect=AssertionError("letta")):
+                self.assertEqual(self.bash(c)[0], 0)
+        self.assertFalse((self.rad / ".claude" / ".custode-memoria.jsonl").exists())
+
+    def test_riconosce_merge_puro(self):
+        self.assertEqual(cu.merge_da_bash("git status", None, self.rad), None)
+        self.assertEqual(cu.merge_da_bash("gh pr merge 12", str(self.rad), self.rad), "12")
+        self.assertEqual(cu.merge_da_bash("gh pr merge", str(self.rad), self.rad), "")
+
+
+NOTA_LINK = """---
+name: nota-forgia
+description: La forgia sommersa e le sue chiavi
+---
+La forgia sommersa ha tre chiavi d'ottone nascoste nella cisterna.
+Vedi [[nota-chiavi]] e [[da-scrivere]]; il simbolo `[[link]]` in codice non conta.
+"""
+
+
+def _nota(nome: str, descr: str, corpo: str) -> str:
+    return f"---\nname: {nome}\ndescription: {descr}\n---\n{corpo}\n"
+
+
+class TestLink(Base):
+    def setUp(self):
+        super().setUp()
+        (self.mem / "nota-forgia.md").write_text(NOTA_LINK, encoding="utf-8")
+        (self.mem / "nota-chiavi.md").write_text(
+            _nota("nota-chiavi", "Le chiavi d'ottone", "Le chiavi aprono la porta. Vedi [[nota-porta]]."),
+            encoding="utf-8")
+        (self.mem / "nota-porta.md").write_text(
+            _nota("nota-porta", "La porta del molo", "La porta del molo resta chiusa."), encoding="utf-8")
+        (self.mem / "nota-molo.md").write_text(
+            _nota("nota-molo", "Il molo vecchio", "Dal molo si scende alla [[nota-forgia]]."),
+            encoding="utf-8")
+        (self.mem / "MEMORY.md").write_text(MEMORY + "- Forgia sommersa: [[nota-forgia]]\n",
+                                             encoding="utf-8")
+
+    def link(self, out: str) -> "list[dict]":
+        return [r for r in json.loads(out)["risultati"] if r["fonte"] == "memoria-link"]
+
+    def test_cerca_aggiunge_le_note_a_un_passo_in_uscita_e_in_entrata(self):
+        codice, out, _ = self.gira("cerca", "cisterna", "--json")
+        self.assertEqual(codice, 0)
+        visti = {(r["file"], r["verso"], r["da"]) for r in self.link(out)}
+        self.assertEqual(visti, {("nota-chiavi.md", "uscita", "nota-forgia.md"),
+                                 ("nota-molo.md", "entrata", "nota-forgia.md")})
+        chiavi = [r for r in self.link(out) if r["file"] == "nota-chiavi.md"][0]
+        self.assertEqual(chiavi["testo"], "Le chiavi d'ottone")
+
+    def test_senza_link(self):
+        out = self.gira("cerca", "cisterna", "--senza-link", "--json")[1]
+        self.assertEqual(self.link(out), [])
+
+    def test_riga_dell_indice_porta_solo_i_suoi_link(self):
+        out = self.gira("cerca", "Forgia sommersa:", "--json")[1]
+        self.assertEqual([(r["file"], r["da"]) for r in self.link(out)],
+                         [("nota-forgia.md", "MEMORY.md")])
+
+    def test_nota_gia_trovata_non_si_ripete(self):
+        out = self.gira("cerca", "chiavi", "--json")[1]
+        trovati = {r["file"] for r in json.loads(out)["risultati"] if r["fonte"] == "memoria"}
+        self.assertFalse(trovati & {r["file"] for r in self.link(out)})
+
+    def test_stampa_testuale(self):
+        out = self.gira("cerca", "cisterna")[1]
+        self.assertIn("[memoria-link]", out)
+
+    def test_verifica_avvisa_dei_link_rotti_senza_cambiare_l_uscita(self):
+        codice, out, _ = self.gira("verifica", "--json")
+        self.assertEqual(codice, 0)
+        v = json.loads(out)
+        self.assertEqual(v["link"]["totali"], 5)
+        self.assertEqual(v["link"]["rotti"], [{"file": "nota-forgia.md", "nome": "da-scrivere"}])
+        self.assertTrue(any("1 link" in a and "da-scrivere" in a for a in v["avvisi"]))
+
+    def test_nome_dal_frontmatter(self):
+        (self.mem / "altro-file.md").write_text(_nota("nome-vero", "x", "corpo"), encoding="utf-8")
+        (self.mem / "cita.md").write_text(_nota("cita", "y", "[[nome-vero]] [[altro-file]]"),
+                                          encoding="utf-8")
+        rotti = cu.link_memoria(cu.leggi_memoria(self.mem))["rotti"]
+        self.assertNotIn({"file": "cita.md", "nome": "nome-vero"}, rotti)
+        self.assertIn({"file": "cita.md", "nome": "altro-file"}, rotti)
 
 
 if __name__ == "__main__":

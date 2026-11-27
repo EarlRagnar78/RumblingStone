@@ -14,3 +14,7 @@ Jfs, 2026-11-08 (thread regolamenti plugin), poi esteso nello stesso giorno: la 
 
 **Why:** Jfs vuole un repo professionale, verificabile e automatizzabile, con meno errori veri.
 [riga riservata · sha256:3e6bda34]
+
+2026-11-27 07:22 Jfs (thread «Misurare e migliorare agenti, skill e automatismi»): «Non usare solo la stdlib ma tutte le librerie utilizzate come standard de facto della community». Vale anche per eval e metriche ML: scikit-learn (sklearn.metrics, DummyClassifier, MultinomialNB) e scipy, non reimplementazioni a mano. Entrano comunque per i canali di ADR-0099; l'hook che gira a ogni messaggio le importa solo in --eval/--check.
+
+2026-11-27 (Jfs, thread «Misurare e migliorare agenti, skill e automatismi»): superata la parte «solo stdlib». Si usano le librerie standard di fatto della community senza reinventare la ruota, con il miglioramento misurato contro main. La riga vecchia dell indice è archiviata in coda (thread «Creare l agente custode della memoria»).

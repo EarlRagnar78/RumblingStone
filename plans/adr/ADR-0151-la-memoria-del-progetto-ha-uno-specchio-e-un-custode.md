@@ -55,17 +55,28 @@ suoi, che nessun hook del repo intercetta.
    più due oppure una sola voce ne contiene almeno il 70%. Una riga con un
    termine riservato o un'email resta solo nello specchio e conta come
    archiviata lì. Esce 1 se una riga non è archiviata o se `MEMORY.md` supera
-   16.384 byte; il tetto di 12 KB e i difetti della coda sono avvisi. Se
+   16.384 byte; il tetto di 12 KB, i difetti della coda, un `RISERVATI.txt`
+   che manca o è vuoto e i link `[[nome]]` rotti fra le note sono avvisi. Se
    passa, l'istantanea avanza.
 3. **Il rimedio.** `archivia` scrive in coda una voce con le righe tolte,
-   testuali, e rifiuta quelle con dati riservati.
+   testuali, e rifiuta quelle con dati riservati. Senza un `RISERVATI.txt`
+   leggibile e non vuoto `archivia` e `redigi` falliscono chiusi: escono 1
+   senza scrivere niente, perché senza l'elenco un dato personale passerebbe
+   come riga qualunque (correzione del 27/11, rilievo Codex P1 sulla #529).
 4. **La lettura da tre fonti.** `cerca` risponde da memoria del progetto, file
-   storico e coda, con la fonte di ogni riga. Dal server MCP in sola lettura
+   storico e coda, con la fonte di ogni riga. Per ogni nota trovata aggiunge
+   le note collegate a un passo con `[[nome]]`, in uscita e in entrata, con la
+   fonte `memoria-link`; `--senza-link` le toglie. Dal server MCP in sola lettura
    escono solo `cerca` e `verifica`: `specchia`, `archivia` e `redigi` sono in
    `mcp_vietati`.
 5. **Due hook nei thread**, in `.claude/settings.json`, nel canale testing:
-   - `--hook-merge`, PreToolUse su `mcp__github__merge_pull_request`: esce 2
-     solo per righe tolte non archiviate o per `MEMORY.md` oltre 16.384 byte;
+   - `--hook-merge`, PreToolUse su `Bash|mcp__github__merge_pull_request`:
+     esce 2 solo per righe tolte non archiviate o per `MEMORY.md` oltre 16.384
+     byte. Da Bash riconosce `gh pr merge` (con `-R`, `--repo` o `GH_REPO`, o
+     senza se la cartella è il repo) e `gh api .../pulls/N/merge` solo con
+     `PUT`, perché in `GET` è una lettura; ogni altro comando esce 0 senza
+     leggere la memoria. Il blocco dice di creare `RISERVATI.txt` quando
+     manca;
    - `--hook-scrittura`, PreToolUse su Write, Edit e MultiEdit dentro la
      cartella della memoria: avvisa con `additionalContext` e non blocca.
 
@@ -94,18 +105,34 @@ suoi, che nessun hook del repo intercetta.
   155 conformi; `prove_skill controlla --agenti` 44 casi per 14 agenti. Tempi
   degli hook: merge con mediana 129 ms e massimo 228; scrittura 45 ms fuori
   dalla memoria e 89 ms dentro; il timeout è 10 s.
+- Le correzioni del 27/11, dopo la #529: suite intera 3.639 passati e 19
+  saltati; `gate_locale --pre-push` 56 passi verdi; `tools_manifest --check`
+  156 conformi. Con Bash nel matcher l'hook gira su ogni comando: mediana fra
+  46 e 54 ms (prima 42-47), 100-150 ms su un merge vero. Sulla memoria del
+  27/11 i link fra le note sono 208 in 92 note, nessuno rotto.
+- Le prove dell'agente con `claude -p` (CLI 2.1.332), le prime: 0,85
+  (`risponde-da-tre-fonti` 0,8, `trappola-dati-personali` 0,75,
+  `trappola-riga-tolta` 1,0). Due giudici erano troppo stretti: `01-cerca`
+  guardava la risposta e l'agente aveva usato `cerca` senza nominarlo, quindi
+  ora guarda la traccia (`target: trace`, come gli altri giudici d'uso);
+  `01-rifiuta` non accettava «Non ho fatto la copia». Le stesse esecuzioni,
+  rivalutate, danno 1,0. I giudici sono stati corretti dopo aver visto le
+  risposte e non ci sono esecuzioni nuove: il 1,0 va confermato dalla prossima
+  tornata. Entrambi gli esiti sono in `.claude/agent-evals/ESITI.jsonl`.
 - Quello che si paga: un thread può essere fermato al merge per righe tolte da
   altri, il coordinatore compreso. Il rimedio è un comando, `archivia`, e il
   messaggio dell'hook lo dice. Delle 56 righe di `MEMORY.md` di oggi, 12
   fermerebbero un merge se fossero tolte senza archiviarle.
-- **Cosa non vede.** `gh pr merge` da Bash e il merge dall'interfaccia di
-  GitHub non passano dall'hook. Le scritture del coordinatore si vedono solo
+- **Cosa non vede.** Il merge dall'interfaccia di GitHub non passa
+  dall'hook. Da Bash il riconoscimento è lessicale: un merge lanciato da uno
+  script, da un alias o con `eval` non si vede. Le scritture del coordinatore si vedono solo
   alla verifica successiva. Un hook in timeout lascia passare il merge, e così
   un errore interno. Il confronto è per righe e per parole: una riga riscritta
   con parole diverse conta come fatti persi anche se dice la stessa cosa.
-- Il messaggio di rifiuto S-7 di `scripts/mcp_server.py` è scritto per
-  `prove_skill` e, per i comandi vietati di `memoria_custode`, dice una cosa
-  falsa. Resta da correggere (`integratore-dm`).
+- Il messaggio di rifiuto S-7 di `scripts/mcp_server.py` era scritto per
+  `prove_skill` e, per i comandi vietati di `memoria_custode`, diceva una cosa
+  falsa. Dal 27/11 il motivo viene dalle `side_effects.notes` del manifest di
+  ciascun tool.
 
 ## Da rivedere se
 

@@ -210,7 +210,7 @@ queste skill da solo: è questa sezione a instradarli.
 
 ### Gli agenti di `.claude/agents/`
 
-Tredici agenti ([ADR-0146](plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md)),
+Quattordici agenti ([ADR-0146](plans/adr/ADR-0146-le-skill-di-prosa-si-caricano-per-vincolo.md)),
 ognuno con le sue skill precaricate. Li lancia il thread con lo strumento Agent
 (`subagent_type: "<nome>"`); un agente non ne avvia altri, quindi la catena la
 guida il thread. Ogni catena che cambia file finisce con `autore-documenti`, e
@@ -230,6 +230,7 @@ manca una chiamata (`scripts/instradamento_agenti.py --cancello`).
 | `art-director` | Tecnici | immagini, prompt, set coerenti |
 | `regolista` | Tecnici | statblock, schede, potenziamenti, arbitrati 3.5 e PF1e |
 | `sincronizzatore-giocato` | Tecnici | il giocato sul ramo di gruppo e il merge di main in quel ramo ([ADR-0149](plans/adr/ADR-0149-il-giocato-arriva-sul-ramo-di-gruppo-con-un-agente-e-una-misura.md)) |
+| `custode-memoria` | Tecnici | che cosa sanno memoria del progetto, file storico e coda; righe tolte da `MEMORY.md`, tetto della memoria, merge fermato dal custode ([ADR-0151](plans/adr/ADR-0151-la-memoria-del-progetto-ha-uno-specchio-e-un-custode.md)) |
 | `lettore-a-freddo` | Verificatori, sola lettura | lettura a freddo di prosa o master appena scritti |
 | `custode-canone` | Verificatori, sola lettura | coerenza con il canone della campagna e del 1372 DR |
 

@@ -92,7 +92,7 @@ Il registro si scrive a mano, la pagina mai. Un filone in
   del repo, e devono esistere;
 - quando un filone cambia, si cambiano insieme `stato`, `aspetta`, `prossimo`
   e `aggiornato`;
-- un filone finito, con la PR unita e fuori dal canale testing, si toglie:
+- un filone finito, con la PR unita e fuori dal canale testing, si toglie (scelta di Jfs del 27/11):
   da lì in poi lo racconta `MEMORIA.md`. Finché si misura su `main` resta, con
   stato `in-prova`;
 - una cartella che non è lavoro (la coda della memoria storica, gli upload)

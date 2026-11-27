@@ -10,7 +10,7 @@
 >
 > **Fasi chiave:** Giorno 1 (Assalto alle mura esterne), Giorno 2 (La breccia e il drago), Giorno 3 (L'ultima resistenza nelle profondità), Giorno 4 (Il ritorno dei PG e la controffensiva).
 >
-> **Tono:** Helm's Deep (Le Due Torri) + La Battaglia dei Campi del Pelennor (Il Ritorno del Re). Scala massiccia di guerra, disperazione, eroismo disperato e salvataggio epico.
+> **Tono:** L'assedio notturno di una fortezza sotto la pioggia, fino alla breccia nelle mura + una carica di cavalleria che arriva all'alba su una pianura aperta e rovescia una battaglia perduta. Scala massiccia di guerra, disperazione, eroismo disperato e salvataggio epico.
 
 ---
 
@@ -20,8 +20,9 @@
 
 ```
 [STILE] Cinematic epic war fantasy, massive scale, overcast 
-gloomy lighting, 4K, Lord of the Rings: The Two Towers 
-(Helm's Deep) visual influence.
+gloomy lighting, 4K, night-siege war cinematography: driving rain, torchlight 
+on wet stone, 
+thousands of soldiers, sweeping aerial shots.
 
 [SCENA] A sweeping aerial view of a massive dwarven mountain fortress 
 (Hammerfist) built into the side of a sheer grey cliff. Below the 
@@ -47,8 +48,8 @@ total war.
 ```
 
 ### 🎵 NOTE MUSICA/MOOD (video intro)
-- Strumenti: Corni da guerra baritonali (tipo Uruk-hai) + tamburi martellanti + coro maschile basso
-- Riferimento: "The Uruk-hai" (Howard Shore) o colonna sonora "Warcraft"
+- Strumenti: Corni da guerra baritonali (ottoni gravi, rauchi, a canna dritta) + tamburi martellanti + coro maschile basso
+- Riferimento: ostinato percussivo in 5/4 su incudini e tamburi, ottoni bassi in ottava, coro maschile gutturale; marcia pesante (circa 90 bpm)
 - Marcia militare inesorabile, terrore puro alla comparsa dell'ombra del drago
 - **Per il tema completo dell'arco** (5 movimenti, brief da generazione audio): §4 di questo file
 
@@ -72,8 +73,9 @@ with a bloody red hand. Siege weapons (catapults and towers) loom in
 the mist behind the army. The sky is dark with storm clouds.
 
 [STILE] Epic military fantasy, dark fantasy villain portrait, 
-gritty realism. Warhammer Fantasy chaos army aesthetic mixed 
-with Tolkien.
+gritty realism. Grimdark war-horde aesthetic (spikes, rust, 
+fur, crude trophies) mixed 
+with mythic epic gravitas.
 
 [PALETTE] Iron grey, blood red, mud brown, black spiked armor, 
 stormy sky.
@@ -99,7 +101,8 @@ crossbowmen fire into the horde below. The air is thick with rain,
 arrows, and smoke. 
 
 [STILE] Gritty battle painting, close-quarters combat, dynamic 
-action. Romanticism battle art (like Delacroix) adapted to 
+action. French Romantic battle painting (swirling 
+diagonals, smoke, saturated reds) adapted to 
 gritty fantasy.
 
 [PALETTE] Cold rain, grey stone, flashing silver and gold weapons, 
@@ -128,7 +131,8 @@ arrows. The scene captures the terrifying power of an ancient
 dragon breaking a siege.
 
 [STILE] Epic monster fantasy, dramatic low-angle perspective, 
-terrifying scale. Classic D&D 3.5 cover art style modernized.
+terrifying scale. Early-2000s painted tabletop-fantasy cover: 
+saturated digital oils, hard rim light, heroic foreshortening.
 
 [PALETTE] Toxic acid green (bright, glowing), obsidian black, 
 stone grey melting into sludge, silver celestial owl light in 
@@ -248,7 +252,7 @@ leitmotiv è un drago che il tavolo impara ad aspettarsi.
 - **Ritmo**: tamburi di guerra (taiko, bodhrán) in **5/4** — pulsazione primordiale che non si lascia marciare dietro.
 - **Tessitura**: cluster dissonanti agli archi (tremoli *sul ponticello*) come nebbia che sale. Un **duduk** solo espone un frammento della Marea; gli rispondono corni di guerra dal lato nanico (timbro **carnyx**, ottone dritto).
 - **Produzione**: sub-basso 30 Hz sotto tutto — il terrore tettonico si sente nello sterno prima che nell'orecchio.
-- **Riferimenti**: Shore, *The Uruk-hai* · Zimmer, tensione da *Time* · il registro basso di *Gladiator*.
+- **Riferimenti**: ostinato di percussioni e ottoni in 5/4 · una sola figura d'archi ripetuta che cresce per strati senza cambiare armonia · il registro basso di ottoni e corni in ottava, lento e marziale.
 
 ### 4.2 II movimento — *L'Urto*
 **Aggancio**: Sessione 2, Giorni 1-2 (assalto alle mura, breccia orientale, duello Thorek/Grimjaw).
@@ -262,7 +266,7 @@ leitmotiv è un drago che il tavolo impara ad aspettarsi.
 **Aggancio**: Sessione 2 Giorno 3 (il soffio sul comando, Thorek ferito) + Sessione 3 (ritirata nei tunnel, 2F Incrocio Silenzioso, Cantitrici della Pietra, la Sfera).
 
 - **Il taglio**: al soffio del drago **l'orchestra si ferma**. Restano sub-basso e il sibilo dell'acido. Da qui in poi il movimento non recupera mai il pieno organico.
-- **Ritmi della Marea**: poliritmia stravinskiana (7/8 su 4/4) con timpani, tom e **foley di maglia metallica** che tintinna. Coro in sillabe staccate e gutturali.
+- **Ritmi della Marea**: poliritmia primitivista ad accenti spostati (7/8 su 4/4) con timpani, tom e **foley di maglia metallica** che tintinna. Coro in sillabe staccate e gutturali.
 - **Contrappunto nanico**: violino popolare nordico (**hardanger d'amore**) su armonie quartali; coro femminile — sono le **Cantitrici della Pietra**, e cantano **senza strumenti** quando entrano in scena.
 - **Sottrazione (2F, l'Incrocio Silenzioso)**: **silenzio quasi totale.** Gocciolio e riverbero di caverna. Il read-aloud costruisce la trappola sul silenzio: riempirlo la disinnesca.
 - **La Sfera**: cimbalom e basso distorto in duello, poi **stacco netto** → **tre pulsazioni** distanziate, e una **voce bianca sola** che espone il Martello per intero, **per la prima volta e a cappella**. È il secondo picco dell'arco, ed è il più silenzioso.
@@ -296,21 +300,21 @@ leitmotiv è un drago che il tavolo impara ad aspettarsi.
 - **Ibrido**: sub-basso sintetico (20-30 Hz) sotto l'orchestra dal vivo per il peso cinematografico.
 - **Consegna**: per ogni movimento, **due mix** — pieno e "sottrazione" (organico ridotto, niente coro, niente ottoni bassi). Il DM userà il secondo per quasi tutto l'arco.
 - **Lingue**: sillabe inventate senza semantica per l'orda; **nessuna lingua costruita di proprietà altrui cantata nelle tracce** — la scelta è di igiene IP ([ADR-0005](../../plans/adr/ADR-0005-confini-ip-uso-non-commerciale.md)) e regge anche artisticamente, perché il grido nanico deve venire dal tavolo, non dagli altoparlanti.
-- **Riferimenti di stile** (mai da copiare, solo da puntare): il mistero del canto di Moria in Shore, la tensione di *Time* in Zimmer, la minaccia della *Marcia Imperiale* in Williams.
+- **Riferimenti di stile** (descritti, mai con titoli o autori; ADR-0015 §5): il mistero di un coro maschile basso in sillabe senza senso sotto archi gravi; la tensione di un ostinato che cresce per strati e non risolve; la minaccia di una marcia in minore per ottoni pieni, ritmo puntato, tempo lento e pesante.
 
 > **Sorgenti Lore:** `08_La Battaglia Di Hammerfist/ARC08-01-GUIDA-DM.md`. Unità nemiche: Fauci di Palude (drago nero GS 15), Generale Grimjaw, Gorthak il Trifronte. Alleati: Re Thorek, Madre Superiora Dana, Cantitrici della Pietra, Signore Ventolesto (Gufo Celestiale).
 
 ## 5. PROMPT DELLE MAPPE PER I GIOCATORI
 
-Migrati il 2026-10-16 da `08_La Battaglia Di Hammerfist/_ARCHIVIO/ARC08-92-DEPRECATO-atlante-visivo-v3-complete.md`, l'unico file che li conteneva. Il testo è quello originale; la griglia tattica di ogni mappa sta in `Mappe/Hammerfist-L{1,2,3}-REVISED-Ultra-Clear.md`. Il prompt della 3Y è già nell'atlante `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`.
+Migrati il 2026-10-16 da `08_La Battaglia Di Hammerfist/_ARCHIVIO/ARC08-92-DEPRECATO-atlante-visivo-v3-complete.md`, l'unico file che li conteneva. Il testo è quello originale, tolto il nome del gioco come etichetta di stile (igiene IP, lotto D4); la griglia tattica di ogni mappa sta in `Mappe/Hammerfist-L{1,2,3}-REVISED-Ultra-Clear.md`. Il prompt della 3Y è già nell'atlante `Mappe/Atlante-Hammerfist-Mappe-COMPLETE.md`.
 
 ### 🗺️ 1A-1 · Il Sentiero Nascosto
 
-> *"Arte fantasy digitale, stile D&D. Un canyon roccioso e stretto al crepuscolo. Un sentiero appena visibile si arrampica tra massi aguzzi e ombre profonde. In basso, tre orchi brutali in sella a lupi mostruosi delle dimensioni di cavalli pattugliano il passaggio. La scena è tesa, dominata dalla necessità di muoversi senza essere visti."*
+> *"Arte fantasy digitale, illustrazione pittorica da gioco di ruolo. Un canyon roccioso e stretto al crepuscolo. Un sentiero appena visibile si arrampica tra massi aguzzi e ombre profonde. In basso, tre orchi brutali in sella a lupi mostruosi delle dimensioni di cavalli pattugliano il passaggio. La scena è tesa, dominata dalla necessità di muoversi senza essere visti."*
 
 ### 🗺️ 1A-2 · Il Torrione di Vedetta
 
-> *"Arte fantasy, D&D. Le rovine di un'antica torre di guardia in pietra si ergono sul bordo di un dirupo. Una ranger nana si è appostata in cima, scrutando con un cannocchiale. Sotto, in un piccolo spiazzo, un gruppo di dieci soldati hobgoblin corazzati è accampato attorno a un fuoco, ignaro della sua presenza. La tensione è palpabile."*
+> *"Arte fantasy pittorica. Le rovine di un'antica torre di guardia in pietra si ergono sul bordo di un dirupo. Una ranger nana si è appostata in cima, scrutando con un cannocchiale. Sotto, in un piccolo spiazzo, un gruppo di dieci soldati hobgoblin corazzati è accampato attorno a un fuoco, ignaro della sua presenza. La tensione è palpabile."*
 
 ### 🗺️ MAPPA 1 · Disposizione generale della battaglia
 
@@ -322,7 +326,7 @@ Migrati il 2026-10-16 da `08_La Battaglia Di Hammerfist/_ARCHIVIO/ARC08-92-DEPRE
 
 ### 🗺️ 2B · La fortezza, vista frontale dall'attaccante
 
-> *"Arte fantasy epica, D&D, vista dal basso. Un'imponente fortezza nanica di pietra grigia è incastonata nel fianco di una montagna. La visuale è quella di un'armata attaccante che guarda verso l'alto lungo un pendio fangoso e roccioso. Un profondo fossato difende mura alte e spesse. Un ponte levatoio è l'unico accesso a un cancello di ferro e legno. Due torri massicce e squadrate fiancheggiano le mura, irte di baliste e difensori. La fortezza appare inespugnabile, una sfida arrogante alla guerra stessa."*
+> *"Arte fantasy epica, pittura digitale, vista dal basso. Un'imponente fortezza nanica di pietra grigia è incastonata nel fianco di una montagna. La visuale è quella di un'armata attaccante che guarda verso l'alto lungo un pendio fangoso e roccioso. Un profondo fossato difende mura alte e spesse. Un ponte levatoio è l'unico accesso a un cancello di ferro e legno. Due torri massicce e squadrate fiancheggiano le mura, irte di baliste e difensori. La fortezza appare inespugnabile, una sfida arrogante alla guerra stessa."*
 
 ### 🗺️ MAPPA 4 · Evoluzione dei danni (tre schizzi)
 
@@ -334,19 +338,19 @@ Migrati il 2026-10-16 da `08_La Battaglia Di Hammerfist/_ARCHIVIO/ARC08-92-DEPRE
 
 ### 🗺️ 3X · L'ingresso ai passaggi antichi
 
-> *"Arte fantasy, D&D. Un cortile di una fortezza nanica in rovina. Il terreno è coperto di macerie e pozze di acido fumante. Un gruppo di nani sopravvissuti, che trasportano il loro re ferito, si affretta verso un passaggio segreto appena aperto alla base di una grande statua. Alle loro spalle, un'orda di orchi sta per fare irruzione nel cortile."*
+> *"Arte fantasy pittorica. Un cortile di una fortezza nanica in rovina. Il terreno è coperto di macerie e pozze di acido fumante. Un gruppo di nani sopravvissuti, che trasportano il loro re ferito, si affretta verso un passaggio segreto appena aperto alla base di una grande statua. Alle loro spalle, un'orda di orchi sta per fare irruzione nel cortile."*
 
 ### 🗺️ 3Z · L'incrocio silenzioso
 
-> *"Arte fantasy oscura, D&D. Una caverna buia piena di stalagmiti che proiettano ombre lunghe e inquietanti alla luce delle torce. I nani sopravvissuti si raggruppano al centro, proteggendo il loro re ferito, mentre scrutano nervosamente le molteplici aperture dei tunnel che si diramano dall'incrocio. Dalle ombre, occhi malevoli li osservano, in attesa del momento giusto per colpire."*
+> *"Arte fantasy oscura, pittura digitale. Una caverna buia piena di stalagmiti che proiettano ombre lunghe e inquietanti alla luce delle torce. I nani sopravvissuti si raggruppano al centro, proteggendo il loro re ferito, mentre scrutano nervosamente le molteplici aperture dei tunnel che si diramano dall'incrocio. Dalle ombre, occhi malevoli li osservano, in attesa del momento giusto per colpire."*
 
 ### 🗺️ MAPPA 5 · Il Cuore della Montagna
 
-> *"Arte fantasy epica, D&D. Una caverna sotterranea immensa e maestosa. Il soffitto è coperto di stalattiti di cristallo che brillano di luce propria. Al centro, su una piattaforma rialzata, si trova un altare runico circondato da statue colossali di antichi re nani. Un piccolo gruppo di guerrieri nani sopravvissuti ha formato un cerchio difensivo attorno all'altare, preparandosi per l'assalto finale che sta per arrivare dall'unico tunnel d'ingresso."*
+> *"Arte fantasy epica, pittura digitale. Una caverna sotterranea immensa e maestosa. Il soffitto è coperto di stalattiti di cristallo che brillano di luce propria. Al centro, su una piattaforma rialzata, si trova un altare runico circondato da statue colossali di antichi re nani. Un piccolo gruppo di guerrieri nani sopravvissuti ha formato un cerchio difensivo attorno all'altare, preparandosi per l'assalto finale che sta per arrivare dall'unico tunnel d'ingresso."*
 
 ### 🗺️ 4X · Il campo finale, vista laterale prima della carica
 
-> *"Arte fantasy, D&D, inquadratura laterale. A sinistra, le mura di una fortezza nanica si ergono su un'altura. Un esercito di novanta nani, guidati da eroi scintillanti, è schierato appena fuori dal cancello, pronti a caricare giù per un pendio. A destra, a circa cento metri di distanza in una valle sottostante, i resti demoralizzati di un'armata di hobgoblin si preparano a ricevere l'impatto. Il cielo sopra di loro è nero e tempestoso."*
+> *"Arte fantasy pittorica, inquadratura laterale. A sinistra, le mura di una fortezza nanica si ergono su un'altura. Un esercito di novanta nani, guidati da eroi scintillanti, è schierato appena fuori dal cancello, pronti a caricare giù per un pendio. A destra, a circa cento metri di distanza in una valle sottostante, i resti demoralizzati di un'armata di hobgoblin si preparano a ricevere l'impatto. Il cielo sopra di loro è nero e tempestoso."*
 
 ### 🗺️ MAPPA 4 · La battaglia finale aerea e terrestre
 

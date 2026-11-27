@@ -10,7 +10,7 @@
 >
 > **Atmosfera visiva:** Le praterie infinite dello Shaar — erba dorata alta fino alla vita, cielo sconfinato con nuvole di polvere all'orizzonte. Carovane di mercanti lungo strade polverose. Tribù nomadi Shaarane a cavallo. In lontananza, la sagoma scura delle Montagne del Fuoco (Firesteap Mountains). L'aria vibra di calore. Lontani rulli di tamburi goblinoidi risuonano dalle foreste.
 >
-> **Tono:** Viaggio epico alla Signore degli Anelli (la Compagnia lascia Rivendell) + gladiatore romano (mercenari veterani in terra straniera) + savana africana (le praterie dello Shaar).
+> **Tono:** Partenza di un viaggio epico (una piccola compagnia lascia l'ultimo rifugio sicuro e si avvia in un paesaggio sterminato) + gladiatore romano (mercenari veterani in terra straniera) + savana africana (le praterie dello Shaar).
 >
 > **PG presenti:** Artemis (Warlock umano), Thorik (Guerriero nano), Tordek (Guerriero/Monaco nano), Hella (Ranger/Druida nana con rinoceronte di pietra).
 
@@ -22,7 +22,8 @@
 
 ```
 [STILE] Cinematic dark fantasy, realistic golden-hour lighting, 4K, film grain, 
-epic landscape cinematography in the style of Lord of the Rings extended edition.
+epic landscape cinematography: sweeping aerial crane shots over vast wild terrain, 
+tiny figures against immense horizons, natural light.
 
 [SCENA] A vast golden grassland stretching to the horizon under a burning amber sky. 
 The camera begins at ground level among tall swaying grass, then slowly cranes upward 
@@ -48,7 +49,7 @@ castles. This is African savanna meets ancient Silk Road.
 
 ### 🎵 NOTE MUSICA/MOOD
 - Strumenti consigliati: Tamburi tribali africani + flauto traverso + corde basse
-- Riferimento: Colonna sonora "Gladiator" (Hans Zimmer — "The Battle"), toni bassi
+- Riferimento: archi bassi e ottoni gravi su ostinato percussivo marziale (tempo medio, circa 100 bpm), coro maschile lontano, dinamica che sale a ondate; registro basso
 - Crescendo lento verso la fine quando il fumo appare all'orizzonte
 
 ---
@@ -69,7 +70,9 @@ In the far distance, the dark silhouette of the Firesteap Mountains against the
 sunset. Camel-like pack animals carry supplies. Dust rises from the road.
 
 [STILE] Epic fantasy landscape painting, realistic, warm golden palette, 
-in the style of Alan Lee and John Howe. Wide panoramic composition.
+soft pencil-and-watercolor wash with muted earthy glazes, romantic 
+19th-century landscape sensibility, atmospheric haze on the distance. 
+Wide panoramic composition.
 
 [PALETTE] Golden wheat, burnt sienna, warm amber, dusty rose sky, 
 dark mountain silhouettes.
@@ -96,7 +99,8 @@ in patches. A broken merchant's wagon lies overturned, goods scattered.
 A single hobgoblin war-drum sits abandoned, its leather skin stained dark.
 
 [STILE] Dark fantasy illustration, ominous atmosphere, dramatic contrast 
-between warm grassland and cold dark forest. Frazetta-style dramatic lighting.
+between warm grassland and cold dark forest. Heavy oil-painting look: low raking 
+light, deep crushed shadows, figures emerging from darkness, warm-cold rim light.
 
 [PALETTE] Warm gold in foreground transitioning to cold dark greens, 
 charcoal shadows, blood red accents (the Red Hand symbol).

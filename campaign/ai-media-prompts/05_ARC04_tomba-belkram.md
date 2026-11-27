@@ -10,7 +10,7 @@
 >
 > **Creature chiave:** Grimlock-celebromorfi (umanoidi ciechi con innesti illithid), Xorn (creature multi-braccia che mangiano minerali), Cubo Gelatinoso potenziato, Gargoyle torretta, Antenato Nanico (CR 13 — spirito guardiano della tomba).
 >
-> **Tono:** Body horror (Alien, Cronenberg) per la Cerebromorphosis + esplorazione archeologica (Indiana Jones nelle trappole) + risveglio antico (il fantasma di Belkram che sorveglia da millenni).
+> **Tono:** Body horror clinico (carne che muta, innesti, corpi violati con freddezza chirurgica) per la Cerebromorphosis + avventura archeologica pulp anni Trenta (trappole, polvere, torce nelle tombe) + risveglio antico (il fantasma di Belkram che sorveglia da millenni).
 
 ---
 
@@ -20,7 +20,8 @@
 
 ```
 [STILE] Cinematic body-horror fantasy, sickly yellow-green lighting, 
-clinical dread, 4K, influenced by Alien (1979) and Guillermo del Toro.
+clinical dread, 4K, slow-burn creature horror with practical-effect 
+prosthetics and wet biomechanical textures.
 
 [SCENA] A hidden underground laboratory carved into stone. Rows of 
 stone slabs hold humanoid bodies — grimlocks, blind cave-dwellers — 
@@ -46,7 +47,7 @@ violet illithid bio-luminescence, surgical steel.
 
 ### 🎵 NOTE MUSICA/MOOD
 - Strumenti: Strings dissonanti + suoni organici umidi + heartbeat accelerato
-- Riferimento: "Alien" (Jerry Goldsmith) + "Annihilation" (Ben Salisbury)
+- Riferimento: archi atonali in pianissimo con glissandi e armonici, fiati in registro estremo, droni elettronici che mutano lentamente; suoni organici trattati fino a diventare musica
 - Il suono dei girini che si muovono nei contenitori
 
 ---
@@ -73,7 +74,8 @@ from still-functioning dwarven rune-lights on the ceiling.
 
 [STILE] Body-horror fantasy, clinical nightmare, emphasis on the 
 violation of dwarven sacred spaces by alien biology. 
-HR Giger meets Tolkien.
+Biomechanical alien growth 
+spreading over ancient mythic dwarven stonework.
 
 [PALETTE] Sickly yellow-green specimen glow, violet illithid 
 organic matter, cold blue dwarven rune-light, grey stone, 
@@ -135,7 +137,8 @@ blue-gold divine light.
 
 [STILE] Sacred fantasy art, spectral divine presence, 
 emphasis on the weight of ancestral judgment. 
-Tolkien meets Byzantine icon painting.
+Byzantine icon painting: gold-leaf ground, frontal hieratic figure, 
+flat picture plane, set against carved Northern European dwarven stone.
 
 [PALETTE] Ghostly blue-gold, ancient stone grey, 
 star-white crown light, warm amber of the tomb keys' 

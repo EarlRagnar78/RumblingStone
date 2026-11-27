@@ -18,6 +18,21 @@
             "type": "command",
             "command": "python3 $CLAUDE_PROJECT_DIR/scripts/vincolo_skill.py --hook",
             "timeout": 10
+          },
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/memoria_custode.py --hook-scrittura",
+            "timeout": 10
+          }
+        ]
+      },
+      {
+        "matcher": "mcp__github__merge_pull_request",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 $CLAUDE_PROJECT_DIR/scripts/memoria_custode.py --hook-merge",
+            "timeout": 10
           }
         ]
       },

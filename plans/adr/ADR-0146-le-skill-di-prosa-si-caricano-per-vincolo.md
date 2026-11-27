@@ -105,6 +105,10 @@ disturbato 2.944 volte; uno su prosa e box disturba circa 200 volte.
    avvia altri agenti: la catena (per esempio `integratore-dm`, poi
    `regolista` sui numeri) la guida il thread principale, e ogni agente
    scrive nel resoconto chi va chiamato dopo.
+
+   Gli agenti sono poi diventati quattordici: il tredicesimo,
+   `sincronizzatore-giocato`, viene da [ADR-0149](ADR-0149-il-giocato-arriva-sul-ramo-di-gruppo-con-un-agente-e-una-misura.md); il quattordicesimo,
+   `custode-memoria` (Tecnici), da [ADR-0151](ADR-0151-la-memoria-del-progetto-ha-uno-specchio-e-un-custode.md).
 5. **Nei thread** `claude-progetto.sh` collega `<cartella>/.claude/agents` alla
    cartella del repo e scrive nel CLAUDE.md una riga con l'albero di decisione
    (chi legge, quale skill, quale agente).

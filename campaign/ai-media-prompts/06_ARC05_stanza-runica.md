@@ -10,7 +10,7 @@
 >
 > **Creature/PNG chiave:** La Chierica (chierico guardiana della gemma, figure con vesti sacerdotali e armi divine), trappole runiche e prove di conoscenza arcana.
 >
-> **Tono:** La Sala delle Profezie (Harry Potter 5) + il Tesoro della Caverna di Aladdin (una singola gemma di potere immenso al centro di una stanza ipnotica) + prova del tempio (Indiana Jones e l'Ultima Crociata — solo il degno può toccare).
+> **Tono:** Un archivio sterminato e silenzioso, scaffali di sfere luminose a perdita d'occhio (il sapere come luogo fisico) + la caverna del tesoro delle fiabe orientali (una singola gemma di potere immenso al centro di una stanza ipnotica) + la prova del tempio (una sequenza di trappole che solo chi è umile e attento attraversa: solo il degno può toccare).
 
 ---
 
@@ -20,7 +20,8 @@
 
 ```
 [STILE] Cinematic arcane fantasy, blue-white magical lighting, 
-crystal clarity, 4K, influence of Doctor Strange (MCU) visual 
+crystal clarity, 4K, kaleidoscopic geometric spell-light (rotating sigil 
+mandalas, mirrored folding space): a visual 
 language applied to dwarven/underground setting.
 
 [SCENA] A perfectly circular underground chamber. Every surface — 
@@ -47,7 +48,7 @@ warm stone grey, the guardian's iron-grey robes with golden trim.
 
 ### 🎵 NOTE MUSICA/MOOD
 - Strumenti: Coro monastico maschile (dwarven chant) + cristalli percossi + arpa bassa
-- Riferimento: "Interstellar" (Hans Zimmer) per il senso di mistero cosmico
+- Riferimento: organo a canne in accordi lenti e ripetuti, ostinato minimale che cresce per strati, riverbero lunghissimo; dinamica dal pianissimo al pieno organo, per il senso di mistero cosmico
 - Tono: Sacro, ipnotico, antico
 
 ---
@@ -74,8 +75,8 @@ of profound arcane weight — this room IS magic, crystallized
 into architecture.
 
 [STILE] Arcane sacred geometry illustration, emphasis on 
-mathematical beauty and divine engineering. M.C. Escher meets 
-Tolkien's dwarven craftsmanship.
+mathematical beauty and divine engineering. impossible tessellated geometry meets 
+mythic dwarven craftsmanship.
 
 [PALETTE] Blue-white rune glow, warm gold accents, prismatic 
 rainbow refractions from the central gem, grey stone base.

@@ -10,7 +10,7 @@
 >
 > **Obiettivo:** Mantenere una coerenza visiva ("Visual Consistency") assoluta attraverso tutte le generazioni AI. Usa questi prompt come "base" e aggiungi l'ambiente o l'azione desiderata alla fine del prompt.
 >
-> **Stile Globale:** Dark fantasy realistico, ritrattistica di alta qualità, ispirazione D&D 3.5 cover art mischiata a realismo cinematografico (es. Weta Workshop concept art).
+> **Stile Globale:** Dark fantasy realistico, ritrattistica di alta qualità, pittura a olio digitale da copertina fantasy dei primi anni Duemila mescolata a realismo cinematografico (concept art da produzione: materiali fisici credibili, armature forgiate, cuoio vissuto, protesi pratiche).
 
 ---
 
@@ -149,7 +149,8 @@ polite, toothy smile.
 
 [STILE] Luxurious dark fantasy, opulent but deeply sinister. 
 Rich colors (purple, gold, white) contrasted with a menacing atmosphere. 
-Moriarty meets aristocratic demon.
+Victorian criminal mastermind (calm, cultured, always three 
+moves ahead) meets aristocratic demon.
 
 [ASPECT RATIO] 4:3 (Portrait)
 ```
@@ -169,7 +170,7 @@ shadows) mixed with alien, organic illithid armor. His pale, pupil-less
 eyes glow with terrifying psionic violet energy. He floats slightly off 
 the ground in a dark, reality-warping environment.
 
-[STILE] Lovecraftian horror meets dark fantasy. Unsettling, 
+[STILE] Cosmic horror meets dark fantasy. Unsettling, 
 alien geometry, sickly violet and deep black color palette. 
 Extreme focus on the wet, organic texture of the tentacles.
 
@@ -192,7 +193,8 @@ It is perched aggressively on shattered dwarven stone ruins,
 wings half-spread, preparing to unleash a devastating breath of acid.
 
 [STILE] Epic monster illustration, terrifying scale, toxic atmosphere. 
-Classic D&D 3.5 monster manual art modernized into cinematic realism.
+Classic bestiary-plate monster illustration (full body, clear 
+silhouette) modernized into cinematic realism.
 
 [PALETTE] Obsidian black, toxic acid green, sickly yellow, dark mud.
 
@@ -278,7 +280,8 @@ of woven mithral, painted black, with the eight-legged emblem of Lolth the
 Spider Queen set into the chest. She holds a wicked dark-steel flail. 
 The lighting is cold and oppressive, emphasizing her absolute, silent authority.
 
-[STILE] High fantasy villain portrait, R.A. Salvatore dark elf aesthetic, 
+[STILE] High fantasy villain portrait, Underdark dark elf aesthetic 
+(obsidian skin, white hair, spider-silk and black mithral), 
 menacing and coldly elegant.
 
 [ASPECT RATIO] 4:3 (Portrait)
@@ -298,7 +301,8 @@ deformed, screaming heads. Gorthak wears pieced-together rusted plate armor
 and holds three massive wooden clubs wrapped in spiked iron chains. 
 They stand amidst a burning battlefield.
 
-[STILE] Warhammer Fantasy chaos army aesthetic, extremely gritty, brutal 
+[STILE] Grimdark war-horde aesthetic (spikes, rust, crude trophies, 
+filth), extremely gritty, brutal 
 and intimidating.
 
 [ASPECT RATIO] 16:9 (Landscape to fit both)
@@ -317,7 +321,7 @@ to actively absorb the light around it, decorated with the unholy symbols of
 Abbathor. He sits upon a massive throne constructed entirely of humanoid bones, 
 which glows with a sickly, pale green necromantic light.
 
-[STILE] Gothic horror meets dwarven fantasy, Bram Stoker vampire aesthetic 
+[STILE] Gothic horror meets dwarven fantasy, Victorian gothic vampire aesthetic 
 mixed with underground dark fantasy.
 
 [ASPECT RATIO] 4:3 (Portrait)
@@ -358,7 +362,8 @@ and black velvet, without a single wrinkle. She is sitting at the head of a
 heavy mahogany council table, her hands steepled together. Her expression 
 is one of cold, calculating intelligence—she is analyzing you mathematically.
 
-[STILE] Political fantasy portrait, Game of Thrones aesthetic, moody and 
+[STILE] Political fantasy portrait, grounded medieval court-intrigue 
+aesthetic (heavy fabrics, candlelit stone, muted palette), moody and 
 formal lighting, emphasizing intellect over physical strength.
 
 [ASPECT RATIO] 4:3 (Portrait)
@@ -473,7 +478,7 @@ writhing, barbed tentacles that drip with paralytic venom. The creature
 is hovering silently in the pitch-black darkness of an ancient dwarven 
 mine shaft, illuminated only by its own sickly green light.
 
-[STILE] Lovecraftian horror, D&D Underdark classic, disgusting organic 
+[STILE] Cosmic horror, classic subterranean aberration, disgusting organic 
 textures, high-contrast dark background.
 
 [ASPECT RATIO] 4:3 (Portrait)
@@ -493,7 +498,8 @@ glowing, golden "rapport spores" into the air, which float like magical
 fireflies. The atmosphere is not scary, but alien, deeply ancient, 
 and strangely serene.
 
-[STILE] Peaceful bioluminescent fantasy, Avatar-inspired colors, 
+[STILE] Peaceful bioluminescent fantasy, night-glowing rainforest colors 
+(cyan, violet, magenta bioluminescence), 
 organic shapes, mystical lighting.
 
 [ASPECT RATIO] 4:3 (Portrait)
@@ -512,7 +518,8 @@ limbs: instead of hands, it has massive, razor-sharp, scythe-like bone blades
 dripping with swamp water and blood. A sharp dorsal fin runs down its back. 
 It is violently lunging out of murky, fog-covered swamp water toward the viewer.
 
-[STILE] Creature design, Jurassic Park horror meets D&D dragon-kin, 
+[STILE] Creature design, Predatory dinosaur horror (stalking raptor, 
+glistening scaled hide) meets draconic swamp-beast, 
 dynamic lunge action, splash of swamp water.
 
 [ASPECT RATIO] 16:9 (Landscape for action pose)

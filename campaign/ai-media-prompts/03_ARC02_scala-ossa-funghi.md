@@ -20,7 +20,8 @@
 
 ```
 [STILE] Cinematic horror-fantasy underground, sickly green-amber 
-lighting, 4K, film grain, Guillermo del Toro creature design influence.
+lighting, 4K, film grain, dark fairy-tale creature design with a 
+practical-prosthetic look: pale wrinkled skin, elongated fingers.
 
 [SCENA] Inside a vast vertical shaft, an impossible structure of bone 
 platforms and walkways descends into darkness. The platforms are 
@@ -48,7 +49,7 @@ unsettling. The bones are real — not decorative.
 
 ### 🎵 NOTE MUSICA/MOOD
 - Strumenti: Organo a canne distorto + ossa percorse come xilofono + sussurri
-- Riferimento: Colonna sonora "Pan's Labyrinth" (Javier Navarrete)
+- Riferimento: ninna nanna in minore canticchiata da una voce femminile sola, valzer lento in 3/4, archi e celesta in pianissimo dove si insinuano dissonanze
 - Tono: Inquietante ma con grandiosità malata
 
 ---
@@ -71,7 +72,7 @@ another platform, four dwarven warriors in dark plate armor sit playing
 cards at a table made of bones. The void of the shaft stretches both 
 above and below into darkness.
 
-[STILE] Dark fantasy engineering illustration, Giger-inspired organic 
+[STILE] Dark fantasy engineering illustration, biomechanical, ribbed organic 
 architecture, emphasizing the grotesque precision of bone construction.
 
 [PALETTE] Bone white, necromantic green glow, amber sinew, 
@@ -100,7 +101,8 @@ bioluminescent algae. The overall impression is of alien beauty
 and peaceful intelligence in a world of stone and darkness.
 
 [STILE] Fantastical bioluminescent underground ecosystem, 
-Avatar (James Cameron) inspired colors, serene yet alien atmosphere.
+night-glowing rainforest colors (saturated cyan, violet and magenta 
+bioluminescence against deep blue darkness), serene yet alien atmosphere.
 
 [PALETTE] Electric blue, soft violet, pale green bioluminescence, 
 golden spore clouds, dark earth tones for myconid skin, 
@@ -128,7 +130,8 @@ atmosphere is one of ancient, corrupted dwarven royalty — Moradin's
 children turned to undeath and evil.
 
 [STILE] Dark fantasy villain portrait, dramatic low-angle composition, 
-vampire horror meets dwarven craftsmanship. Bram Stoker meets Tolkien.
+vampire horror meets dwarven craftsmanship. Victorian gothic vampire 
+aristocrat enthroned in a mythic Northern European dwarven hall.
 
 [PALETTE] Pale luminescent bone, absorbing-black armor, 
 porcelain white skin, blood red eyes, green necromantic 

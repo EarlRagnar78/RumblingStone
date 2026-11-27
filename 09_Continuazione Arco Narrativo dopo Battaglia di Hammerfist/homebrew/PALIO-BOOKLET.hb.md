@@ -1718,6 +1718,9 @@ Il fantino è un mercenario: **corruttibile**. Durante la Cena:
   (Diplomazia: trattarlo da persona, non da strumento — molto Salvatore).
 - **Rapimento**: se la corruzione fallisce, i rivali tentano di **rapire** il fantino
   (combattimento urbano notturno, GS 10–11: 2–3 sicari + 1 mago di supporto).
+  Un solo rapimento a notte: lo fa chi arriva prima. Se i rivali hanno già preso il fantino,
+  i drow puntano solo al cavallo, anche se nella stalla dorme la riserva (§3.3, MAPPE); se
+  l'hanno preso i drow, i rivali non tentano.
 - **Posta — Fantino fuggito o rapito dai rivali** →
   come per il rapimento dei drow (§3.3): se i PG non lo riprendono prima della corsa, corre il
   **fantino di riserva**, e quella notte dorme lui nella stalla, accanto al box, al posto del
@@ -1756,6 +1759,7 @@ invia **sicari drow** a Channathgate per **avvelenare** il cavallo dell'Istrice/
   - Fantino rapito →
     se i PG non lo riprendono prima della corsa, si corre con un fantino di riserva; se lo
     riprendono, vale «rapito e salvato» per l'Onore del Fantino (§5).
+    Un solo rapimento a notte: se i rivali l'hanno già preso (§3.2), i drow puntano solo al cavallo.
   - **Catturare un drow vivo** → intel su **Fase 0 (Notte dei Drow)** di Rethmar e
     **−1 clock Sonjak** (INTEGRAZIONE §3.2).
   - Fallire del tutto → **+1 clock Sonjak**, e la coalizione parte demoralizzata.
@@ -2165,7 +2169,7 @@ Morale del Rione**; l'**Onore del Fantino** è il TS contro le offerte di corruz
 | S2 mezzogiorno | La Tratta pubblica del Gonfaloniere | Truffa dell'urna |
 | S2 sera | Prima staffetta ferita da Rethmar | Pressione temporale |
 | S3 sera | La Cena; **tentata corruzione del fantino** (GIORNO2 §3.2) | Sorveglianza/ricatto |
-| S3 notte | **Assalto drow di Sonjak** alla stalla (GIORNO2 §3.3) | Difesa cavallo/fantino |
+| S3 notte | **Assalto drow di Sonjak** alla stalla (GIORNO2 §3.3); eventuale rapimento dei rivali, uno solo a notte (GIORNO2 §3.2) | Difesa cavallo/fantino |
 | S4 alba | Benedizione + corteo + sbandierata | Morale finale |
 | S4 mezzogiorno | **La Mossa** | Finte, nerbate, iniziativa |
 | S4 pomeriggio | **La Corsa** (3 giri) | Chase set-piece |
@@ -2902,7 +2906,7 @@ EL 12 con i due sicari, EL 13 se c'è anche la chierica di §3.2 (tre creature d
 
 **Talenti** Iniziativa Migliorata, Tiro Ravvicinato, Tiro Preciso, Arma Accurata (spada corta)
 
-**Tattiche** **Obiettivo**: **il cavallo** o **il fantino**, quale dei due lo sceglie il DM; gli altri PG non sono il bersaglio. Il cavallo prende il *sangue nero di Lolth*, il fantino l'Attacco Mortale con la paralisi: il veleno drow (CD 13) resta per le guardie. Colpire e sparire. Se scoperti, coprono la fuga.
+**Tattiche** **Obiettivo**: **il cavallo** o **il fantino**, quale dei due lo sceglie il DM; se i rivali hanno già rapito il fantino, solo il cavallo (GIORNO2 §3.2); gli altri PG non sono il bersaglio. Il cavallo prende il *sangue nero di Lolth*, il fantino l'Attacco Mortale con la paralisi: il veleno drow (CD 13) resta per le guardie. Colpire e sparire. Se scoperti, coprono la fuga.
 
 **Capacità speciali**
 - **Attacco Mortale**: dopo 3 round di studio, Tempra CD 17 o morte, oppure paralisi per 1d6+4 round.
@@ -3071,7 +3075,7 @@ La **sincronizzazione** col fronte (INTEGRAZIONE §3): due vie per i rinforzi vi
 Griglia **1 quadretto = 5 ft**, EL 12–13 (statblocchi in cap. XIII §3).
 - I drow entrano dalla **botola/fogna** (angolo SO) con *Oscurità*; puntano al **BOX** del
   cavallo (obiettivo: avvelenare il cavallo o rapire il fantino), usano *Silenzio* per soffocare gli allarmi.
-- Il **Barbaresco (B)** è accanto al cavallo; il **fantino (F)**, se è un PNG ancora lì, dorme nella stalla, accanto al box: se è fuggito o i rivali l'hanno rapito, al suo posto dorme il fantino di riserva (GIORNO2 §3.2); se nella stalla non dorme nessun fantino, ignora la F della mappa e i drow puntano solo al cavallo; se è un PG il segnalino va dove lo mette il giocatore; la **scorta PG (P)** copre la porta principale.
+- Il **Barbaresco (B)** è accanto al cavallo; il **fantino (F)**, se è un PNG ancora lì, dorme nella stalla, accanto al box: se è fuggito o i rivali l'hanno rapito, al suo posto dorme il fantino di riserva (GIORNO2 §3.2), e se i rivali l'hanno rapito i drow puntano solo al cavallo, anche con la riserva lì (un solo rapimento a notte); se nella stalla non dorme nessun fantino, ignora la F della mappa e i drow puntano solo al cavallo; se è un PG il segnalino va dove lo mette il giocatore; la **scorta PG (P)** copre la porta principale.
   Sorpresa se non di guardia: Ascoltare DC 20.
 - Buio totale (torce spente): **Scurovisione**/luce = cruciale.
 - Token in mappa: **D** Drow Assassina di Lolth · **C** Chierica di Lolth · **S** Servitore della Spora · **F** fantino.

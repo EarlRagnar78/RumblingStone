@@ -2657,7 +2657,7 @@ repo scritto con altre parole.
 ### MS-0236 · 2026-11-27 · La milestone pronta si misura su main: registro, rilevatore, workflow del lunedì
 
 - **Data:** 2026-11-27
-- **PR:** —
+- **PR:** #528
 - **ADR:** ADR-0152 ADR-0099 ADR-0100 ADR-0149 ADR-0146
 - **Temi:** milestone roadmap rilascio piattaforma agente workflow lunedì routine testing stable issue registro criteri decisione-dm card
 - **Origine:** riga del 2026-11-27 «P12, ADR-0152 (proposta), la milestone pronta si misura su main» in `plans/CHANGELOG.md`

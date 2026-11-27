@@ -112,6 +112,7 @@ Due regole valgono per ogni ritorno:
 | uso delle skill di prosa (blocchi, passaggi, promemoria dell'hook) | `python3 scripts/vincolo_skill.py --riepilogo` |
 | agenti suggeriti, quanti thread li hanno chiamati, push passati, bloccati e in deroga | `python3 scripts/instradamento_agenti.py --riepilogo` |
 | agenti, script, workflow e hook che il loro indice non cita | `python3 scripts/documentazione_allineata.py --debito` |
+| se serve un thread di `autore-documenti`, con motivi, lavoro e stima in token | `python3 scripts/documentazione_allineata.py --attiva --json` |
 
 `claude -p` non vede i connettori di claude.ai: il loro peso si misura solo in
 un thread vero.

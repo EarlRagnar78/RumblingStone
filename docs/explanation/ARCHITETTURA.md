@@ -963,11 +963,14 @@ flowchart LR
 | `cricchetto_prosa.py` in CI | una norma di prosa che peggiora sui file di gioco cambiati | ADR-0146 |
 | `verifica_px.py`, `verifica_rimandi.py`, `.claude/agent-evals/` in CI | somme di PX e rimandi sbagliati; un agente che non passa i suoi tre casi | ADR-0148 |
 | `documentazione_allineata.py` in CI | un agente, uno script, un workflow o un hook aggiunto senza la riga nel suo indice; il debito vecchio sta sotto un tetto che scende | ADR-0153 |
+| `documentazione_allineata.py --attiva` nella routine del lunedì | niente: se una delle quattro regole scatta (debito oltre il tetto; agente, workflow o hook scoperto; ARCHITETTURA indietro di 3 ADR o di uno con più di 14 giorni; un indice fermo da 30 giorni) chiede al coordinatore un thread con `autore-documenti` e la lista del lavoro | ADR-0153 |
 
 I registri degli hook (`.claude/.uso-*.jsonl`) restano nel container del
 thread e muoiono con lui: dicono cosa è successo in un thread, non nella
 storia del repo. Il cancello della documentazione controlla che un elemento
-sia citato, non che la descrizione sia giusta.
+sia citato, non che la descrizione sia giusta. Un documento che resta indietro
+senza che una PR aggiunga niente di scoperto lo trova la routine del lunedì,
+che spende token solo quando `--attiva` dice che serve.
 
 ## 15. Le decisioni del DM
 

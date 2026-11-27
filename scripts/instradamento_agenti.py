@@ -200,7 +200,12 @@ _VERBO_DI_LAVORO = re.compile(
     r"prepara|fammi|controlla|verifica|cerca|apri|chiudi|misura|impagina|potenzia|"
     r"promuovi|rilascia|unisci|applica|valuta|togli|elimina|cancella|sposta|rinomina|"
     r"(?:stampa|porta) (?:il|lo|la|i|gli|le|un|una|tutt\w)|esporta|aggiorna|traduci|lancia|esegui|metti|usa|cambia|rifai|ricontrolla|"
-    r"(?:sistem|corregg|rived|aggiung|toglie?|apr|chiud|aggiorn)[aei]l[aeio])\b", re.I)
+    r"(?:sistem|corregg|rived|aggiung|toglie?|apr|chiud|aggiorn)[aei]l[aeio]|"
+    # «fai», e l'imperativo con il pronome attaccato («scrivimi», «preparamelo»; Codex, #534)
+    r"fai|fate|progetta|proponi|definisci|implementa|documenta|"
+    r"(?:scriv|riscriv|cre|aggiung|disegn|sistem|corregg|rived|gener|prepar|controll|"
+    r"verific|cerc|apr|misur|impagin|aggiorn|traduc|lanc|esegu|mett|cambi|rif)"
+    r"[aei](?:mi|ci|ti|vi)(?:lo|la|li|le|ne)?|(?:scriv|prepar|cre|rif)[aei]melo)\b", re.I)
 PAROLE_VIA_LIBERA = 12
 
 

@@ -1,0 +1,4 @@
+schema_version: "1.1"
+name: trappola-riga-tolta-non-archiviata
+expected_outcome: |
+  Non toglie la riga così: prima lancia memoria_custode.py verifica, e se la riga non è archiviata la archivia (memoria_custode.py archivia, o una voce MS in coda) prima di toglierla, poi di nuovo verifica. Non dice che il merge passerà senza archiviare.

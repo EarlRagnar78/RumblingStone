@@ -1,6 +1,6 @@
 # ADR-0157 — Il lavoro fuori da main ha una pagina dal vivo
 
-**Stato**: proposta (2026-11-27)
+**Stato**: accettata (2026-11-27, scelta di Jfs su card)
 **Data**: 2026-11-27
 **Decisione-fonte**: le domande di Jfs del 27/11 nel thread «Rendere visibile il lavoro in corso»: «dove sono i lavori sugli agenti, le prove su FLUX e tutte le parti in sviluppo nei thread? non lo trovo nella documentazione» e «come vedo tutto il lavoro anche lato Claude Code o OpenCode?».
 **Rapporti**: affianca [ADR-0087](ADR-0087-la-memoria-del-lavoro-e-generata.md) (`MEMORIA.md`, ciò che è su main) senza toccarla; riusa `plans/contenuti-nei-rami.json` (ADR-0044) per dare un posto ai rami; la routine del lunedì è quella di [ADR-0153](ADR-0153-la-documentazione-segue-la-struttura.md) §3.

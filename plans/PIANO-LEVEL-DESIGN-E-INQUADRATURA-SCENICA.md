@@ -5,7 +5,7 @@
 > `PIANO-RIPRESA-PR-ABBANDONATE`. ADR-0048 lo nominava come fonte del proprio
 > lotto A1, e il file non c'era.
 >
-> **Stato oggi**: 🟡 **in corso**, rami C e D: D4 ✅ il 2026-11-27, gli altri sei lotti da fare. Rimisurati il 2026-09-24:
+> **Stato oggi**: 🟡 **in corso**, rami C e D: D4 🟡 riscritto il 2026-11-27, si chiude dopo la verifica a occhio del DM; gli altri sei lotti da fare. Rimisurati il 2026-09-24:
 >
 > | Lotto | Oggi | Cosa cambia |
 > |---|---|---|
@@ -17,7 +17,7 @@
 > | D1 scheda-inquadratura | la skill `rumblingstone-art-direction` ha un **brief d'inquadratura** (§5: cosa c'è e perché), ma nessun prompt dichiara focale, altezza di camera o figura di scala | valido, **dentro la skill** e non come template a parte |
 > | D2 ordine percettivo nel read-aloud | 0 occorrenze nelle skill | valido; è una norma nuova, quindi va registrata (G3) |
 > | D3 modalità 4, blockout 3D | non c'è `scripts/blockout/`; c'è `render_map_blender.py`, che estrude la pianta e la riprende in ortografica (per le mappe, non per le illustrazioni) | valido; la pipeline Blender esistente è la base <!-- validate-docs: ignore --> |
-> | D4 igiene IP dei prompt | 10 riferimenti a film e marchi in 7 file di `campaign/ai-media-prompts/`; il 2026-11-27, contando anche artisti e compositori, 57 righe in 12 file | ✅ **fatto il 2026-11-27**: 0 righe, cancello `scripts/tests/test_prompt_media_senza_ip.py` |
+> | D4 igiene IP dei prompt | 10 riferimenti a film e marchi in 7 file di `campaign/ai-media-prompts/`; il 2026-11-27, contando anche artisti e compositori, 57 righe in 12 file | 🟡 **riscritto il 2026-11-27**, verifica a occhio del DM aperta: 0 righe, cancello `scripts/tests/test_prompt_media_senza_ip.py` |
 >
 > I link agli ADR della #72 portano ai numeri di oggi; quelli a file mai
 > arrivati portano all'ultimo commit della PR su GitHub.
@@ -31,7 +31,7 @@
 > [ADR-0014, oggi ADR-0048](adr/ADR-0048-legenda-funzionale-fonte-unica.md) · [ADR-0015, rifiutato](https://github.com/gsamuele78/RumblingStone/blob/960c62185bb24e82da0de251228bbbd027c3d5a9/plans/adr/ADR-0015-dipendenze-a-livelli-e-pacchettizzazione.md)
 > · [ADR-0016, oggi ADR-0039](adr/ADR-0039-profili-regole-multisistema.md) · [ADR-0017, oggi ADR-0040](adr/ADR-0040-separazione-prodotto-e-toolkit-estraibile.md)
 > — **tutte accettate** (decisioni DM 2026-07-26).
-> **Stato**: 🟡 in corso · **Data**: 2026-07-26, D4 chiuso il 2026-11-27 · **% completamento**: 14% (un lotto su sette: D4)
+> **Stato**: 🟡 in corso · **Data**: 2026-07-26, D4 riscritto il 2026-11-27, aperto finché il DM non verifica a occhio i prompt · **% completamento**: 0% (nessun lotto chiuso su sette; D4 🟡)
 > **Rev. 2** (2026-07-26): aggiunti §0-bis (architettura bersaglio) e §2-bis
 > (integrare invece di riscrivere) + **Ramo 0** su richiesta DM.
 > **Rev. 3 — CONSOLIDAMENTO** (2026-07-26): i rami **0, A, B sono delegati** a
@@ -352,7 +352,7 @@ fuori da `validate_maps.py`; script a manifest se committato.
 **Gate**: GPU e Blender sulla macchina del DM. ⚠️ I nomi dei modelli ControlNet
 cambiano rapidamente: verificare licenza e nome **al momento del download**.
 
-#### ✅ D4 — Igiene IP dei prompt versionati (2026-11-27)
+#### 🟡 D4 — Igiene IP dei prompt versionati (riscritto il 2026-11-27, verifica a occhio del DM aperta)
 
 *Rimedia*: audit §4.4. I prompt contengono riferimenti in chiaro a IP protette
 («visual style of Doctor Strange», «Lord of the Rings dwarven aesthetics»,
@@ -483,7 +483,7 @@ Ramo C — contenuto mappe
 Ramo D — inquadratura e prosa
 □ D2  ⭐ ordine percettivo nel read-aloud (narrative-style)
 □ D1  scheda-inquadratura + campo ## Inquadratura (pilota: 3 scene ARC-07)
-☑ D4  igiene IP dei prompt versionati (2026-11-27: 57 righe → 0, test_prompt_media_senza_ip.py)
+□ D4  igiene IP dei prompt versionati (2026-11-27: 57 righe → 0, test_prompt_media_senza_ip.py; si spunta dopo la verifica a occhio del DM)
 □ D3  Modalità 4 — blockout 3D → depth → ControlNet (gated: GPU DM)
 ```
 

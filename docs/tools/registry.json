@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 155,
+  "tool_count": 156,
   "tools": [
     {
       "id": "suggest_encounter",

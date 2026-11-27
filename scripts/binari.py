@@ -264,6 +264,18 @@ LIBRERIE = (
         ripiego="nessuno: `misura_resa.py` esce con 2 e la CI lo installa. Le mappe "
                 "si disegnano e si renderizzano senza.",
     ),
+    # ADR-0154: le metriche dell'instradamento (F1, kappa, baseline) sono di
+    # scikit-learn, fissata in requirements-dev.txt (canale testing, ADR-0099).
+    Libreria(
+        nome="scikit-learn", modulo="sklearn",
+        a_cosa_serve="le metriche di `eval_metriche.py` per l'instradamento degli "
+                     "agenti e la raccolta dei casi (macro-F1, kappa di Cohen, "
+                     "DummyClassifier)",
+        installa="  pip install -r requirements-dev.txt",
+        obbligatoria=False,
+        ripiego="nessuno: `instradamento_agenti.py --eval` e `raccogli_casi_agenti.py` "
+                "non misurano senza; l'hook dei prompt gira lo stesso.",
+    ),
     Libreria(
         nome="torch", modulo="torch",
         a_cosa_serve="il secondo parere della misura della resa (`misura_resa_appresa.py`, D26)",

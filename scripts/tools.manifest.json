@@ -2624,6 +2624,153 @@
       ]
     },
     {
+      "id": "memoria_custode",
+      "path": "scripts/memoria_custode.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/memoria_custode.py specchia | verifica [--json] | archivia [--thread TITOLO] | cerca PAROLE... [--tema T] [--json] | redigi --uscita DIR | --hook-merge | --hook-scrittura | --riepilogo",
+      "summary": "ADR-0151: la memoria del progetto dei thread (MEMORY.md e note, cartella fuori dal repo) ha uno specchio e un custode. specchia scrive un'istantanea completa con MANIFEST.json (sha256) in /mnt/project-files/memoria-progetto-specchio/ quando il contenuto cambia, in modo atomico e con un lucchetto. verifica confronta la memoria con l'ultima istantanea: ogni riga tolta deve avere i suoi gettoni nel repo, nel file storico o in coda, e le sue parole sparite (al più 2) in una voce MS o di coda (almeno il 70%); esce 1 se no, o se MEMORY.md supera 16 KB, e se passa fa avanzare l'istantanea; tetto di 12 KB e forma della coda sono avvisi. archivia scrive in coda la voce con le righe tolte (rifiuta le righe con termini riservati o email, che restano nello specchio). cerca risponde da memoria del progetto, file storico e coda con il campo fonte. redigi copia la memoria con le righe riservate sostituite da un'impronta. --hook-merge (PreToolUse sul merge di gsamuele78/RumblingStone) esce 2 se la verifica fallisce; --hook-scrittura (Write/Edit/MultiEdit dentro la memoria) avvisa senza bloccare (canale testing). Gli esiti degli hook vanno in .claude/.custode-memoria.jsonl.",
+      "use_case": "«Sto per togliere righe dalla memoria del progetto o per fare il merge di un thread: ogni riga tolta è archiviata da qualche parte, e che cosa sanno insieme memoria, file storico e coda di questo tema?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "python3",
+        "git"
+      ],
+      "external_deps": [],
+      "args": [
+        {
+          "name": "comando",
+          "type": "subcommand",
+          "required": false,
+          "default": null,
+          "choices": [
+            "specchia",
+            "verifica",
+            "archivia",
+            "cerca",
+            "redigi"
+          ],
+          "repeatable": false,
+          "desc": "specchia · verifica · archivia · cerca · redigi (specchia, archivia e redigi non partono dal server MCP)."
+        },
+        {
+          "name": "parole",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": true,
+          "desc": "Con cerca: le parole, tutte presenti (senza badare a maiuscole e accenti)."
+        },
+        {
+          "name": "--tema",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con cerca: un tema (campo Temi nel file storico e in coda; una parola in più nella memoria)."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Uscita per un agente."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "/tmp/claude/memory/team/<mount>/*.md",
+          "kind": "markdown",
+          "required": true,
+          "schema": null
+        },
+        {
+          "path": "plans/MEMORIA-STORICA.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "/mnt/project-files/memoria-storica-coda/*.md",
+          "kind": "markdown",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": "/mnt/project-files/memoria-progetto-specchio/RISERVATI.txt",
+          "kind": "text",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "<stdout>",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "/mnt/project-files/memoria-progetto-specchio/istantanee/<AAAAMMGGTHHMMSSZ>/",
+          "kind": "markdown",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": "/mnt/project-files/memoria-storica-coda/<thread>.md",
+          "kind": "markdown",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        },
+        {
+          "path": ".claude/.custode-memoria.jsonl",
+          "kind": "json",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "verifica passata, istantanea scritta o invariata, ricerca eseguita; nei modi hook anche cartella assente o errore interno",
+        "1": "verifica: righe tolte non archiviate o MEMORY.md oltre 16 KB; redigi: RISERVATI.txt manca o è vuoto",
+        "2": "--hook-merge: merge fermato; errore d'uso (cartella della memoria assente fuori dai modi hook)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": "Confronto per righe e parole con soglie fisse; il nome dell'istantanea e la data della voce di coda vengono dall'orologio."
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false,
+        "notes": "Scrive fuori dal repo: le istantanee nello specchio (specchia, e verifica quando passa), la voce di coda (archivia), il registro degli hook in .claude/ (ignorato da git). redigi scrive la cartella data con --uscita, pensata per plans/memoria-progetto/ in una PR di sola storia. Dal server MCP in sola lettura escono solo cerca e verifica: specchia, archivia e redigi sono in mcp_vietati, e le cartelle (--memoria, --specchio, --coda, --radice, --uscita) non sono fra gli argomenti esposti, quindi un client non può puntarle altrove.",
+        "mcp_vietati": [
+          "specchia",
+          "archivia",
+          "redigi"
+        ]
+      },
+      "idempotent": false,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python3 scripts/memoria_custode.py --help",
+      "tests": [
+        "scripts/tests/test_memoria_custode.py"
+      ],
+      "docs": [
+        "plans/adr/ADR-0151-la-memoria-del-progetto-ha-uno-specchio-e-un-custode.md"
+      ]
+    },
+    {
       "id": "derive_statblocks",
       "path": "scripts/derive_statblocks.py",
       "category": "E-bestiary-catalog",

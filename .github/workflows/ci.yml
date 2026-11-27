@@ -393,6 +393,7 @@ jobs:
           python scripts/dm_dossier.py --help > /dev/null
           python scripts/validate_modules.py --help > /dev/null
           python scripts/tools_manifest.py --help > /dev/null
+          python scripts/memoria_custode.py --help > /dev/null
           python scripts/decisioni_dm.py --help > /dev/null
           python scripts/validate_docs.py --help > /dev/null
           # Catena editoriale e da stampa: questi sette dichiaravano `ci_smoke`

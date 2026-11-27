@@ -88,13 +88,18 @@ PAROLE_AGENTE = {
         r"\b(rami? di gruppo|campaign-group-[\w-]+|patch ferm\w*|"
         r"sincronizz\w*\s+(?:\w+\s+){0,3}?(?:giocato|ram[oi]|serat\w*|session\w*|patch)|"
         r"serata giocata|sessione giocata|(?:il|del|al) giocato)\b", re.I),
+    # «coda» da sola è «in coda al file»: serve che sia la coda della memoria (ADR-0151).
+    "custode-memoria": re.compile(
+        r"\b(memoria del progetto|memoria storica|memory\.md|archiviar\w*|archiviat\w*|"
+        r"archivia|specchio|coda della memoria(?: storica)?|memoria-storica-coda|file di coda)\b",
+        re.I),
 }
 
 # A parità di voti vince chi produce, poi chi verifica.
 PRIORITA = ("autore-master", "autore-prosa-gioco", "integratore-dm", "sincronizzatore-giocato",
             "piattaforma",
             "cartografo", "impaginatore", "art-director", "regolista", "sviluppatore",
-            "autore-documenti", "custode-canone", "lettore-a-freddo")
+            "custode-memoria", "autore-documenti", "custode-canone", "lettore-a-freddo")
 
 CATENE = {
     "autore-prosa-gioco": ("autore-prosa-gioco", "custode-canone", "lettore-a-freddo"),
@@ -114,6 +119,7 @@ CATENE = {
     "custode-canone": ("custode-canone",),
     "sincronizzatore-giocato": ("sincronizzatore-giocato", "custode-canone", "autore-documenti"),
     "lettore-a-freddo": ("lettore-a-freddo",),
+    "custode-memoria": ("custode-memoria", "autore-documenti"),
 }
 
 _SKILL = None

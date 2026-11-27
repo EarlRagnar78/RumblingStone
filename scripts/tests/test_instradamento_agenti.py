@@ -34,10 +34,15 @@ class TestScelta(unittest.TestCase):
             "porta il giocato della serata sul ramo di gruppo": "sincronizzatore-giocato",
             "ci sono patch ferme da sincronizzare su campaign-group-rumblingstone?":
                 "sincronizzatore-giocato",
+            "togli dal MEMORY.md la riga della PR unita": "custode-memoria",
+            "cosa dice la memoria storica sul tetto della memoria del progetto?": "custode-memoria",
         }
         for testo, atteso in casi.items():
             with self.subTest(testo=testo):
                 self.assertEqual(ia.scegli(testo)[:1], [atteso])
+
+    def test_in_coda_al_file_non_e_la_coda_della_memoria(self) -> None:
+        self.assertNotIn("custode-memoria", ia.scegli("aggiungi la funzione in coda al file"))
 
     def test_il_pronome_ci_non_e_la_ci(self) -> None:
         self.assertNotIn("sviluppatore", ia.scegli("ci sono altri PNG negli archi?"))

@@ -57,7 +57,7 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from dmcore.testo import capitoli_del_volume, fondi_contratto_e_scheda, leggi_per_la_stampa, riscala_link, togli_storico  # noqa: E402
+from dmcore.testo import capitoli_del_volume, con_apertura, con_chiusura, fondi_contratto_e_scheda, leggi_per_la_stampa, riscala_link, togli_storico  # noqa: E402
 from dmcore.statblock import (  # noqa: E402
     FASCE, StatblockError, accosta_parte_leggibile, caratteristiche, etichetta_gs, ingombro, leggi as leggi_statblocco,
     sezioni_leggibili, senza_caratteristiche,
@@ -823,7 +823,12 @@ def build(manifest_path: Path, out_override: Path | None = None) -> Path:
     tabs = ['<button role="tab" aria-selected="true" data-pane="c0">Copertina</button>']
     for k, ch in enumerate(mf["chapters"], 1):
         p = base / ch["file"]
-        body = md_to_html(spoglia_homebrewery(_letto(p, capitoli, ch.get("sezioni"))), p.parent)
+        md = _letto(p, capitoli, ch.get("sezioni"))
+        if ch.get("apertura"):   # ADR-0122, S1: l'introduzione del capitolo
+            md = con_apertura(md, (base / ch["apertura"]).read_text(encoding="utf-8"))
+        if ch.get("chiusura"):   # i PX del capitolo, in fondo
+            md = con_chiusura(md, (base / ch["chiusura"]).read_text(encoding="utf-8"))
+        body = md_to_html(spoglia_homebrewery(md), p.parent)
         tag = TAGS.get(ch.get("tag", ""), "")
         foot = player_footer if ch.get("tag") == "player" else footer
         tabs.append(f'<button role="tab" aria-selected="false" data-pane="c{k}">'
@@ -965,7 +970,12 @@ def testo_hb(manifest_path: Path, out_override: Path | None = None) -> tuple[Pat
         tag = HB_TAGS.get(ch.get("tag", ""))
         if tag:
             parts.append(tag + "\n")
-        parts.append(_incorpora(base / ch["file"], ch.get("sezioni")))
+        corpo = _incorpora(base / ch["file"], ch.get("sezioni"))
+        if ch.get("apertura"):   # ADR-0122, S1: l'introduzione del capitolo
+            corpo = con_apertura(corpo, (base / ch["apertura"]).read_text(encoding="utf-8"))
+        if ch.get("chiusura"):
+            corpo = con_chiusura(corpo, (base / ch["chiusura"]).read_text(encoding="utf-8"))
+        parts.append(corpo)
     if APPENDICE_HB:
         parts += ["\n\\page\n", "# Appendice: le creature\n"]
         parts += [r for _, r in sorted(APPENDICE_HB.values(), key=lambda v: v[0].lower())]

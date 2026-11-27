@@ -747,6 +747,41 @@ def estrai_sezioni(md: str, voci: "list[str]") -> str:
     return "\n".join(pezzi)
 
 
+def con_apertura(md: str, apertura: str) -> str:
+    """Il capitolo con la sua introduzione (chiave `apertura`, ADR-0122, S1).
+
+    Va in testa, prima del riquadro «Chi si incontra», come negli AP;
+    se il master comincia con il suo titolo `# `, va subito dopo il titolo.
+
+    >>> con_apertura("## §5\\ntesto", "Intro.")
+    'Intro.\\n\\n## §5\\ntesto'
+    >>> con_apertura("\\n# Il barile\\n\\n### Chi si incontra", "Intro.")
+    '\\n# Il barile\\n\\nIntro.\\n\\n### Chi si incontra'
+
+    Come il testo del master, l'introduzione si stampa senza le etichette dei
+    pilastri (#504), che restano nel sorgente per chi scrive e per la misura:
+
+    >>> con_apertura("## §5", "> **Read-aloud (Salvatore lead) — ai giocatori.** *Il fumo.*")
+    '> **Read-aloud — ai giocatori.** *Il fumo.*\\n\\n## §5'
+    """
+    apertura = togli_etichette_pilastri(apertura.strip())
+    m = re.match(r"\s*# [^\n]*\n", md)
+    if m:
+        return md[:m.end()] + "\n" + apertura + "\n\n" + md[m.end():].lstrip("\n")
+    return apertura + "\n\n" + md
+
+
+def con_chiusura(md: str, chiusura: str) -> str:
+    """Il capitolo con la sua nota di chiusura (chiave `chiusura`): i PX del
+    capitolo e chi sale di livello, in fondo, come l'«Advancement Track» degli
+    AP Paizo (read-aloud-adulti §2-quater, punto 5).
+
+    >>> con_chiusura("## §5\\ntesto\\n\\n", " ## I PX\\nTabella. ")
+    '## §5\\ntesto\\n\\n## I PX\\nTabella.\\n'
+    """
+    return md.rstrip("\n") + "\n\n" + chiusura.strip() + "\n"
+
+
 def leggi_per_la_stampa(f: "Path", capitoli: "dict[Path, str]",
                         sezioni: "list[str] | None" = None) -> str:
     """Il sorgente di un capitolo con i rimandi già tradotti per questo volume.

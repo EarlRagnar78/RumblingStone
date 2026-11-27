@@ -7,6 +7,7 @@
 - 2. Lunghezza: la finestra reale è più corta di quanto sembri
 - 2-bis. Il box di luogo: poche frasi, un ordine, niente creature
 - 2-ter. Riscrivere un box che c'è: si taglia il superfluo, non ciò che si sente
+- 2-quater. L'apertura del capitolo: il box che promette
 - 3. Cosa premia questo pubblico
 - 4. Cosa li fa staccare (e sono tutti errori di genere, non di lingua)
 - 5. Il registro alto senza il ridicolo
@@ -192,7 +193,35 @@ ARC-08, `plans/esperimenti/qualita-misurabile-2026-10-22/riscrittura/ESITO-VOTO.
    «ritmo». Il soggetto messo dopo il verbo, quando il calco è vero, ha
    vinto.
 
----
+## 2-quater. L'apertura del capitolo: il box che promette
+
+Il DM, 2026-11-20: *«non è un libro di ragioneria, ci vuole estro e stile»*.
+Ogni capitolo di gioco si apre con un box per i giocatori che **mette voglia di
+giocare quello che viene**: il registro del trailer, della scritta che scorre
+all'inizio di un film di guerre fra le stelle (contesto, posta, minaccia), o
+dell'apertura a freddo. Le emozioni si fanno nascere, non si nominano (§3).
+
+1. **Promette, non svela**: solo ciò che gli eroi sentono o sanno adesso.
+2. **Finisce aperto**: l'ultima riga è un'immagine o un suono sospeso, mai un
+   esito, una scelta degli eroi (P1) o una morale.
+3. **Almeno due sensi**; la paura passa dal corpo di un altro (il vecchio nano
+   che lascia cadere la balestra), non da «avete paura».
+4. **Niente contabilità** nel box e nella prosa d'apertura: mappe, tacche,
+   registri, PX, «il capitolo dà al DM» stanno nella regia. La prosa per il DM
+   apre sul mondo, come le parti degli AP Paizo.
+5. **Note generiche, come l'«Advancement Track» Paizo**: in fondo
+   all'introduzione il livello a cui gli eroi dovrebbero essere e dove il
+   capitolo li porta; in fondo al capitolo i PX con tutte le quest e senza le
+   facoltative. I PX di un gruppo preciso stanno nel suo registro.
+6. **Gli eroi, non i PG del tavolo**: un modulo che nomina Thorik non lo gioca
+   un altro gruppo. Un aggancio legato a un oggetto nomina l'oggetto («chi porta
+   la Corona»); i PNG mantengono il nome.
+7. **L'epico non si gonfia** (§4): il box è attesa, non culmine; due aperture
+   di fila non usano la stessa emozione. 8-12 righe, un solo nome nuovo (§2).
+
+Diverge dagli editori: Paizo non ha box nelle parti, *Red Hand of Doom* uno
+solo. Lo standard è l'ADR-0147, scelto dal DM alla cieca (ADR-0093).
+Misura, a indicatori: `python3 scripts/misura_craft.py --apertura FILE…`.
 
 ## 3. Cosa premia questo pubblico
 
@@ -243,7 +272,7 @@ camminare»*, che decideva proprio questo (D14).
 | Difetto | Come suona | Rimedio |
 |---|---|---|
 | **Voce YA** | battute, ironia costante, personaggi che si prendono in giro sotto pressione | il registro floor della campagna: adulto, lento, nessuna strizzata d'occhio |
-| **Tutto epico** | ogni scena è la più importante di sempre | **inflazione**: se tutto è epico, l'epico non esiste. Massimo **un** picco a sessione |
+| **Tutto epico** | ogni scena è la più importante di sempre | **inflazione**: se tutto è epico, l'epico non esiste. Massimo **un** picco a sessione; il box d'apertura del capitolo promette, non è un picco (§2-quater) |
 | **Esposizione travestita da dialogo** | *«Come sai, Thorik, la Corona fu forgiata…»* | nessuno spiega a un altro cose che sa già. Se serve l'informazione, che la dia il mondo |
 | **Aggettivi viola** | «un'oscurità pulsante e malevola» | un sostantivo concreto batte due aggettivi. Sempre |
 | **Il predestinato senza costo** | il party è speciale e basta | in questa campagna nessuna vittoria è gratis: è la regola di coerenza §4 |

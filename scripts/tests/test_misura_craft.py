@@ -489,3 +489,23 @@ class TestFasciaUmana(unittest.TestCase):
 
     def test_campione_piccolo_non_si_giudica(self):
         self.assertEqual(MC.rispetto_alla_fascia(0.0, MC.FASCIA_MENTE, 400), "–")
+
+
+class TestLAperturaDelCapitolo(unittest.TestCase):
+    """read-aloud-adulti §2-quater: il box che promette, senza contabilità."""
+
+    def test_la_contabilita_si_conta_fuori_dalla_nota_del_livello(self):
+        testo = ("Servono le mappe M7-C e il foglio delle tacche.\n\n"
+                 "> **Read-aloud (Salvatore lead).** *Il fumo sale.\n> I tamburi tacciono.*\n\n"
+                 "**Il livello degli eroi.** Si comincia al 13°, con i PX del capitolo VII.")
+        d = MC.misura_apertura(testo)
+        self.assertEqual((d["box"], d["righe"], d["nota del livello"]), (1, 2, True))
+        self.assertEqual(d["ultima riga"], "I tamburi tacciono.")
+        # «mappe», «M7-C», «tacche»: tre su ventuno parole, la nota non conta
+        self.assertGreater(d["contabilità /100"], 10)
+        senza = MC.misura_apertura(testo.split("\n\n", 1)[1])
+        self.assertEqual(senza["contabilità /100"], 0.0)
+
+    def test_il_doctest(self):
+        import doctest
+        self.assertEqual(doctest.testmod(MC).failed, 0)

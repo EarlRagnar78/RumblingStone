@@ -238,6 +238,14 @@
             "type": "boolean",
             "description": "Sovrascrive il valore del volume per questo capitolo."
           },
+          "apertura": {
+            "type": "string",
+            "description": "Un file markdown, relativo al manifest, stampato in testa al capitolo prima delle sezioni: l'introduzione del capitolo, quando il master letto per `sezioni` non ne ha una (ADR-0122, S1). Catene: tutte e due."
+          },
+          "chiusura": {
+            "type": "string",
+            "description": "Un file markdown, relativo al manifest, stampato in fondo al capitolo: i PX del capitolo, divisi fra storia e facoltativi, e chi sale di livello (read-aloud-adulti §2-quater, punto 5). Catene: tutte e due."
+          },
           "principale": {
             "type": "boolean",
             "description": "Per un master diviso in più capitoli (`sezioni`): questo capitolo prende i rimandi al master che non dicono la parte. Senza, li prende il primo capitolo del master. Catene: tutte e due."

@@ -146,7 +146,7 @@ voci:
 
 **Talenti** Iniziativa Migliorata, Tiro Ravvicinato, Tiro Preciso, Arma Accurata (spada corta)
 
-**Tattiche** **Obiettivo**: **il cavallo** o **il fantino**, quale dei due lo sceglie il DM; gli altri PG non sono il bersaglio. Il cavallo prende il *sangue nero di Lolth*, il fantino l'Attacco Mortale con la paralisi: il veleno drow (CD 13) resta per le guardie. `[CANONE — DM 2026-11-26, card «Sangue nero e Attacco Mortale»]` Colpire e sparire. Se scoperti, coprono la fuga.
+**Tattiche** **Obiettivo**: **il cavallo** o **il fantino**, quale dei due lo sceglie il DM; se i rivali hanno già rapito il fantino, solo il cavallo (GIORNO2 §3.2); gli altri PG non sono il bersaglio. Il cavallo prende il *sangue nero di Lolth*, il fantino l'Attacco Mortale con la paralisi: il veleno drow (CD 13) resta per le guardie. `[CANONE — DM 2026-11-26, card «Sangue nero e Attacco Mortale»]` Colpire e sparire. Se scoperti, coprono la fuga.
 
 **Capacità speciali**
 - **Attacco Mortale**: dopo 3 round di studio, Tempra CD 17 o morte, oppure paralisi per 1d6+4 round.
@@ -163,6 +163,7 @@ Fino al 2026-11-19 l'obiettivo era solo il cavallo; il DM ha scelto (card del 19
 Era (17/11, corretto il 18/11): «Se trovano un PG di guardia, il primo colpo va su di lui, non sul cavallo», che contraddiceva l'obiettivo scritto sopra (il cavallo, non i PG); «la giornata delle prove» (il Giorno 2 è la Cena e i Partiti) e «senza incantesimi preparati per l'indomani» (gli incantesimi si preparano al mattino: di notte resta quello che non si è speso).
 Fino al 2026-11-26 i sicari erano «Drow Assassino ×2, GS 9» con numeri propri (CA 21, pf 58, Rifl +12, furtivo +6d6, Morte Improvvisa CD 18, veleno del sonno CD 17, Nascondersi nelle Ombre, che è dell'Assassino di 8°), e l'incontro «GS 11–12». Il DM ha scelto (card del 26/11 «Copia dell'assassina del Bestiario») di usare la scheda del Bestiario: il recinto si copia con `componenti.py --includi`, l'EL è ricontato con la tabella della DMG (due GS 10 = 12, tre = 13).
 Con la copia dell'assassina il veleno passava a quello drow (Tempra CD 13, solo privo di sensi per qualche ora), che non spiegava il −4 del cavallo in corsa e che il fantino supera quasi sempre. Il DM ha scelto (card del 26/11 «Sangue nero e Attacco Mortale»): *sangue nero di Lolth* sul cavallo, Attacco Mortale con la paralisi sul fantino.
+- era: fino al 2026-11-27 le tattiche dei drow non dicevano che cosa fanno se i rivali hanno già rapito il fantino. Card del DM del 2026-11-27 «No, i drow puntano solo al cavallo».
 <!-- /storico -->
 
 ### 3.2 Drow Chierica di Lolth (GS 10)

@@ -80,7 +80,7 @@ La **sincronizzazione** col fronte (INTEGRAZIONE §3): due vie per i rinforzi vi
 Griglia **1 quadretto = 5 ft**, EL 12–13 (statblocchi in `...P2D-PALIO-STATBLOCCHI.md` §3).
 - I drow entrano dalla **botola/fogna** (angolo SO) con *Oscurità*; puntano al **BOX** del
   cavallo (obiettivo: avvelenare il cavallo o rapire il fantino), usano *Silenzio* per soffocare gli allarmi.
-- Il **Barbaresco (B)** è accanto al cavallo; il **fantino (F)**, se è un PNG ancora lì, dorme nella stalla, accanto al box `[CANONE — DM 2026-11-27, card «Dove dorme il fantino»]`: se è fuggito o i rivali l'hanno rapito, al suo posto dorme il fantino di riserva (GIORNO2 §3.2) `[CANONE — DM 2026-11-27, card «Chi corre se il fantino fugge o lo rapiscono i rivali»]`; se nella stalla non dorme nessun fantino, ignora la F della mappa e i drow puntano solo al cavallo `[CANONE — DM 2026-11-27, card «Senza fantino, solo il cavallo»]`; se è un PG il segnalino va dove lo mette il giocatore `[CANONE — DM 2026-11-27, card «Fantino PG o già fuggito»]`; la **scorta PG (P)** copre la porta principale.
+- Il **Barbaresco (B)** è accanto al cavallo; il **fantino (F)**, se è un PNG ancora lì, dorme nella stalla, accanto al box `[CANONE — DM 2026-11-27, card «Dove dorme il fantino»]`: se è fuggito o i rivali l'hanno rapito, al suo posto dorme il fantino di riserva (GIORNO2 §3.2) `[CANONE — DM 2026-11-27, card «Chi corre se il fantino fugge o lo rapiscono i rivali»]`, e se i rivali l'hanno rapito i drow puntano solo al cavallo, anche con la riserva lì (un solo rapimento a notte) `[CANONE — DM 2026-11-27, card «La riserva si può rapire?»]`; se nella stalla non dorme nessun fantino, ignora la F della mappa e i drow puntano solo al cavallo `[CANONE — DM 2026-11-27, card «Senza fantino, solo il cavallo»]`; se è un PG il segnalino va dove lo mette il giocatore `[CANONE — DM 2026-11-27, card «Fantino PG o già fuggito»]`; la **scorta PG (P)** copre la porta principale.
   Sorpresa se non di guardia: Ascoltare DC 20.
 - Buio totale (torce spente): **Scurovisione**/luce = cruciale.
 - Token in mappa: **D** Drow Assassina di Lolth · **C** Chierica di Lolth · **S** Servitore della Spora · **F** fantino.
@@ -91,6 +91,7 @@ Griglia **1 quadretto = 5 ft**, EL 12–13 (statblocchi in `...P2D-PALIO-STATBLO
 - era: fino al 2026-11-27 la riga diceva che il fantino dorme nella stalla in ogni caso. Card del DM del 2026-11-27 «Solo se PNG e ancora lì»: se è fuggito o rapito dai rivali non c'è, se è un PG lo mette il giocatore.
 - era: fino al 2026-11-27 la riga non diceva chi puntano i drow senza fantino. Card del DM del 2026-11-27 «Sì, solo il cavallo»: la F stampata si ignora e il bersaglio è solo il cavallo.
 - era: fino al 2026-11-27 la riga non diceva chi dorme nella stalla se il fantino è fuggito o rapito dai rivali. Card del DM del 2026-11-27 «La riserva, come per i drow»: al suo posto dorme il fantino di riserva.
+- era: fino al 2026-11-27 la riga lasciava ai drow il fantino di riserva come bersaglio anche dopo il rapimento dei rivali. Card del DM del 2026-11-27 «No, i drow puntano solo al cavallo» (rilievo di Codex sulla #536).
 <!-- /storico -->
 
 ---

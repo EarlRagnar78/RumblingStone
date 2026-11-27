@@ -2654,7 +2654,19 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/misura_distanza_pagine.py` · `scripts/dmcore/testo.py` · `07_il Portale Della Forgia Eterna/homebrew/sessione-notte-e-alba/apertura-VIII.md`
 - **Solo qui:** le tabelle dentro un capitolo galleggiano a fine capitolo, per questo le note dei PX sono elenchi; il cieco del secondo giro non era cieco del tutto, perché solo il secondo giro aveva il box; restano senza introduzione i capitoli di preparazione e di consultazione, per scelta di Jfs; il numero MS va rinumerato da chi entra dopo; le tabelle che `find_tables` non vede si riconoscono da una regola sulle celle, che su un PDF diverso dal nostro tema può sbagliare
 
-### MS-0236 · 2026-11-27 · La milestone pronta si misura su main: registro, rilevatore, workflow del lunedì
+### MS-0236 · 2026-11-27 · Il fantino entra nella mappa della stalla del Palio
+
+- **Data:** 2026-11-27
+- **PR:** #527
+- **ADR:** ADR-0109
+- **Temi:** Palio stalla mappa fantino segnalino legenda drow assalto
+- **Origine:** riga del 2026-11-27 «Il fantino nella mappa della stalla del Palio» in `plans/CHANGELOG.md`
+- **Testo:** Con la #526 (MS-0233) il fantino era entrato come obiettivo dei drow solo nella legenda della mappa della stalla e nelle Poste, senza un posto sulla mappa. Codex l'aveva segnalato come P2. La card a Jfs «Dove dorme il fantino la notte dell'assalto» ha avuto risposta il 2026-11-27 alle 05:19 UTC: «Nella stalla, accanto al box». La mappa ha ora un segnalino F a destra del box, con l'etichetta «fantino» in corpo 10 (in corpo 9 `misura_stampa` contava un testo sotto il minimo, 98 contro il tetto di 97), e la legenda e MAPPE lo nominano. Il cartografo, rileggendo la mappa resa, ha trovato che la legenda era larga 745 px su una tela di 640, così la voce «F = fantino» non si vedeva, e che la legenda si accavallava con l'etichetta della porta: la tela è passata a 530 px di altezza, con legenda e tattica su due righe ciascuna.
+- **Trovato nel repo:** `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/P2D-Palio-Allegati/mappe/stalla-assalto-drow.svg` · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md` · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/homebrew/PALIO-BOOKLET.hb.md`
+- **Fuori dal repo:** `/mnt/project-files/regole-razze-dv-2026-11-20/SCELTE-CARD-2026-11-26.md`
+- **Solo qui:** Restano aperti per il DM, come in MS-0233: se il rapimento dei rivali (GIORNO2 §3.2) e quello dei drow (§3.3) si escludono, e che cosa vuol dire «fantino di riserva» quando il fantino è un PG. Il custode del canone aggiunge che se il fantino ha ceduto alla corruzione o è già stato rapito dai rivali (GIORNO2 §3.2) quella notte non è nella stalla, e che `Arco-Post-Hammerfist-P2D-PALIO-DM-MASTER-REFERENCE.md` r.150-151 mette corruzione e assalto drow nell'ordine inverso rispetto a GIORNO2. Card del 2026-11-27 alle 06:23 UTC, «Ordine di GIORNO2»: la griglia dei milestone del DM-MASTER-REFERENCE ora mette la corruzione alla Cena e l'assalto drow nella notte. E se il fantino è un PG, «dorme nella stalla» decide per il giocatore (AVVENTURA r.263, STATBLOCCHI r.158). MAPPE r.83 resta assoluta finché il DM non sceglie.
+
+### MS-0237 · 2026-11-27 · La milestone pronta si misura su main: registro, rilevatore, workflow del lunedì
 
 - **Data:** 2026-11-27
 - **PR:** #528

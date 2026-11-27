@@ -2159,12 +2159,14 @@ Morale del Rione**; l'**Onore del Fantino** è il TS contro le offerte di corruz
 | S1 sera | Gli 8 emissari fanno la loro offerta | Scelta della contrada |
 | S2 mezzogiorno | La Tratta pubblica del Gonfaloniere | Truffa dell'urna |
 | S2 sera | Prima staffetta ferita da Rethmar | Pressione temporale |
-| S3 sera | La Cena; **assalto drow di Sonjak** alla stalla | Difesa cavallo/fantino |
-| S3 notte | Tentata corruzione del fantino | Sorveglianza/ricatto |
+| S3 sera | La Cena; **tentata corruzione del fantino** (GIORNO2 §3.2) | Sorveglianza/ricatto |
+| S3 notte | **Assalto drow di Sonjak** alla stalla (GIORNO2 §3.3) | Difesa cavallo/fantino |
 | S4 alba | Benedizione + corteo + sbandierata | Morale finale |
 | S4 mezzogiorno | **La Mossa** | Finte, nerbate, iniziativa |
 | S4 pomeriggio | **La Corsa** (3 giri) | Chase set-piece |
 | S4 tramonto | Esito → decreto del Gonfaloniere | Meraviglia + rinforzi + voto |
+
+
 
 ---
 
@@ -3064,11 +3066,12 @@ La **sincronizzazione** col fronte (INTEGRAZIONE §3): due vie per i rinforzi vi
 Griglia **1 quadretto = 5 ft**, EL 12–13 (statblocchi in cap. XIII §3).
 - I drow entrano dalla **botola/fogna** (angolo SO) con *Oscurità*; puntano al **BOX** del
   cavallo (obiettivo: avvelenare il cavallo o rapire il fantino), usano *Silenzio* per soffocare gli allarmi.
-- Il **Barbaresco (B)** è accanto al cavallo; la **scorta PG (P)** copre la porta principale.
+- Il **Barbaresco (B)** è accanto al cavallo; il **fantino (F)** dorme nella stalla, accanto al box; la **scorta PG (P)** copre la porta principale.
   Sorpresa se non di guardia: Ascoltare DC 20.
 - Buio totale (torce spente): **Scurovisione**/luce = cruciale.
-- Token in mappa: **D** Drow Assassina di Lolth · **C** Chierica di Lolth · **S** Servitore della Spora.
+- Token in mappa: **D** Drow Assassina di Lolth · **C** Chierica di Lolth · **S** Servitore della Spora · **F** fantino.
 - **Catturare un drow vivo** = intel Fase 0 Rethmar **−1 clock Sonjak** (INTEGRAZIONE §3.2).
+
 
 ---
 

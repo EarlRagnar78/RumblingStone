@@ -8,9 +8,11 @@
 
 > **Vincoli globali (applicati a TUTTI i prompt):**
 > - **Setting:** Faerûn, 1372 DR, Shining South / Shaar / Channath Vale
-> - **Stile visivo:** Dark fantasy realistico, ispirato a LOTR (Peter Jackson), Gladiator (Ridley Scott), e R.A. Salvatore
+> - **Stile visivo:** Dark fantasy realistico: paesaggi in campo lunghissimo con figure minuscole contro orizzonti immensi, luce naturale radente (ora dorata, cieli coperti, torce), materiali consumati e sporchi (armature ammaccate, cuoio, polvere, sangue), grana di pellicola; come ancora, la pittura a olio europea fra Seicento e Ottocento (chiaroscuro, paesaggio e battaglia romantici)
 > - **Palette:** Toni caldi desertici (Shaar), pietra scura e lava (dwarven halls), verde profondo (foreste sacre), rosso sangue e nero (Red Hand)
 > - **NO:** Nessuna invenzione fuori dal lore di campagna. NO 5e. NO Spellplague. NO elementi post-1385 DR.
+
+> **Promemoria di distribuzione:** le immagini (e i video e l'audio) prodotti con questi prompt, se escono dal repo, vanno etichettati come contenuto generato da IA sulle piattaforme che lo chiedono.
 
 ---
 
@@ -66,7 +68,7 @@
 
 - Prompt descrittivi con dettagli ambientali
 - Specificare illuminazione, prospettiva, scala
-- Usare riferimenti pittorici (es. "in the style of Alan Lee", "Frazetta lighting")
+- Mai titoli di opere (film, serie, videogiochi, colonne sonore), nomi di artisti o compositori, marchi: né «in the style of…» né «…-inspired». Si descrivono le convenzioni: luce, palette, scala, camera, materiali, tecnica, epoca; per l'audio strumenti, tempo, registro, dinamica. Le scuole pittoriche storiche in pubblico dominio sono ammesse come ancora (es. "Byzantine icon painting", "Dutch Golden Age chiaroscuro"). Regola: [ADR-0015 §5](../../plans/adr/ADR-0015-standard-prompt-immagine.md)
 - Aspect ratio: 16:9 per splash, 4:3 per portrait scene
 
 ---

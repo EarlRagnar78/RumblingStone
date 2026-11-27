@@ -10,7 +10,7 @@
 >
 > **Evento chiave:** Hella muore — stordita da attacco psionico, poi colpo critico dalla spada del yochlol le attraversa il cuore. La sua morte è il catalizzatore emotivo dell'intera campagna successiva (Arco 07). Dopo la vittoria, Thorik tocca la Corona e ha una visione divina di Moradin che gli ordina tre prove planari per completare l'artefatto e riportare Hella in vita.
 >
-> **Tono:** Tragedia epica (la morte di Boromir in LOTR) + orrore abissale (i demoni yochlol di Lolth) + sacralità divina (la visione di Moradin e la Corona). Il contrasto emotivo tra la perdita devastante e la speranza divina.
+> **Tono:** Tragedia epica (la morte di un guerriero orgoglioso che si riscatta cadendo per gli altri) + orrore abissale (i demoni yochlol di Lolth) + sacralità divina (la visione di Moradin e la Corona). Il contrasto emotivo tra la perdita devastante e la speranza divina.
 
 ---
 
@@ -21,7 +21,8 @@
 ```
 [STILE] Cinematic epic fantasy tragedy, high contrast between 
 golden divine light and abyssal darkness, 4K, emotional intensity 
-of Lord of the Rings death scenes.
+of slow-motion heroic death scenes: sound drops 
+out, close-ups on faces, light failing.
 
 [SCENA] A grand rectangular underground chamber. The floor is 
 polished stone with golden geometric veins. Four massive mithral 
@@ -53,7 +54,7 @@ red blood on gold stone, blue-white crystal ceiling light.
 
 ### 🎵 NOTE MUSICA/MOOD
 - Strumenti: Solo violoncello + dwarven female choir (lament) + single anvil strike at the end
-- Riferimento: LOTR "The Breaking of the Fellowship" (Howard Shore) — devastation + hope
+- Riferimento: lamento per voce femminile sola su archi sostenuti in minore, tempo lentissimo, che per un attimo si apre in maggiore: devastazione + speranza
 - Il singolo colpo di incudine alla fine quando la scena taglia al nero
 
 ---
@@ -154,7 +155,8 @@ ghostly figure — the spirit of the fallen druid Hella —
 watches the exchange.
 
 [STILE] Divine fantasy vision, cathedral-scale composition, 
-overwhelming divine presence. Michelangelo's Sistine Chapel 
+overwhelming divine presence. High Renaissance ceiling fresco (monumental 
+foreshortened sculptural figures) 
 crossed with dwarven metallurgy. The god is IMMENSE and 
 INTIMATE simultaneously.
 

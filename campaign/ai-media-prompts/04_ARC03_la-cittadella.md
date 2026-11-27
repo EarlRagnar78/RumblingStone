@@ -12,7 +12,7 @@
 >
 > **Atmosfera:** L'oscurità assoluta dell'Underdark + la corruzione della Shadow Marsh (veleno Darklight Ore che emana radiazione viola dalle vene minerali) + la sacralità violata del Tempio di Moradin sotto assedio drow.
 >
-> **Tono:** Helm's Deep sotterraneo (la difesa del tempio) + la palude dei morti LOTR + arena gladiatoria (lo scontro con le casate drow è un combattimento formale e rituale per loro).
+> **Tono:** L'ultima difesa di una fortezza sotto assedio notturno, portata sottoterra (la difesa del tempio) + una palude di caduti, volti pallidi sotto l'acqua scura + arena gladiatoria (lo scontro con le casate drow è un combattimento formale e rituale per loro).
 
 ---
 
@@ -22,8 +22,9 @@
 
 ```
 [STILE] Cinematic underground horror-fantasy, purple-tinted darkness, 
-volumetric mist, 4K, influence of Alien (Ridley Scott) crossed with 
-Lord of the Rings Moria sequence.
+volumetric mist, 4K, claustrophobic slow-burn horror dread (hard 
+shadows, wet surfaces, threat glimpsed, never seen) crossed with 
+colossal ruined dwarven halls vanishing into darkness.
 
 [SCENA] A vast underground cavern where a once-proud dwarven city 
 lies in ruin. Through the shattered streets, a thick violet-tinged 
@@ -48,7 +49,7 @@ drow obsidian black, distant warm gold of Moradin's temple.
 
 ### 🎵 NOTE MUSICA/MOOD
 - Strumenti: Violoncello basso + percussioni metalliche + sussurri in lingua drow
-- Riferimento: "Aliens" soundtrack (James Horner) per tensione + LOTR "Moria" per scale
+- Riferimento: per la tensione, ostinato militare di rullante e colpi metallici con ottoni stridenti in crescendo; per la scala, coro maschile basso e lento su percussioni profonde
 - Contrasto: la musica si addolcisce quando la luce dorata del tempio appare
 
 ---
@@ -71,7 +72,7 @@ Broken dwarven columns and archways rise from the swamp, remnants
 of ancient streets now flooded. Faint spider webs connect the 
 upper portions. The atmosphere is toxic and primordial.
 
-[STILE] Horror-fantasy swamp illustration, Lovecraftian underwater 
+[STILE] Horror-fantasy swamp illustration, cosmic-horror underwater 
 menace, bioluminescent toxic environment.
 
 [PALETTE] Black water, purple Darklight glow, grey-green dead 
@@ -130,7 +131,8 @@ by the golden glow, facing the darkness full of red drow eyes.
 
 [STILE] Sacred fantasy architecture, divine light versus 
 underground darkness. Cathedral-like grandeur in miniature. 
-Inspired by illustrations of Khazad-dûm's sacred halls.
+Monumental rock-hewn halls with soaring carved pillars, 
+muted pencil-and-watercolor glazes.
 
 [PALETTE] Warm gold (divine light, runes), cold grey-purple 
 (Underdark beyond), dark obsidian (drow), amber (torches).

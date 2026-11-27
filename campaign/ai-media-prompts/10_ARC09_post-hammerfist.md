@@ -10,7 +10,7 @@
 >
 > **Atmosfera visiva:** Il lutto solenne nanico, silenzioso e dignitoso (rosso sangue e cera nera sulle asce). Il contrasto con l'urgenza imminente (il resto dell'Orda della Mano Rossa marcia verso Rethmar). Foreste bruciate, messaggeri segreti in locande buie, e torri invisibili in brughiere desolate.
 >
-> **Tono:** House of the Dragon (la politica e le cerimonie) + The Witcher (le quest personali oscure e misteriose) + Andor (spionaggio e movimenti segreti prima della grande guerra).
+> **Tono:** Dramma politico di corte (cerimonie fastose, alleanze sussurrate, troni contesi) + fantasy cupo del cacciatore errante (quest personali oscure e misteriose, villaggi nel fango, contratti ambigui) + spy thriller sobrio e desaturato (spionaggio e movimenti segreti prima della grande guerra, gente comune che sceglie da che parte stare).
 
 ---
 
@@ -20,7 +20,8 @@
 
 ```
 [STILE] Cinematic solemn fantasy, low key lighting, somber mood, 
-4K, film grain, Lord of the Rings (Return of the King ending) mood.
+4K, film grain, bittersweet epic-ending mood: victory paid for, 
+quiet farewells.
 
 [SCENA] The Grand Atrium of a dwarven mountain fortress, dimly lit. 
 In the center of the hall, a perfect circle of one hundred ceremonial 
@@ -45,7 +46,7 @@ gleaming gold axe blades, somber shadows. No bright or cheerful colors.
 
 ### 🎵 NOTE MUSICA/MOOD
 - Strumenti: Coro maschile nanico basso, lento e cantilenante (senza strumenti musicali)
-- Riferimento: Canti liturgici ortodossi / russi o il canto nanico "Far Over the Misty Mountains Cold" a cappella
+- Riferimento: Canti liturgici ortodossi / russi o un canto di lavoro nanico a cappella per voci basse all'unisono, lento e in minore
 - Nessuna esplosione, nessuna azione. Pura gravitas.
 
 ---
@@ -67,7 +68,7 @@ and black wax. The heroes look humbled and serious. In the shadowy
 background, two mysterious figures watch silently: a half-elf bard 
 (Tempestas) and an elven ranger (Lythiel). 
 
-[STILE] Historical painting style (like Rembrandt's Night Watch), 
+[STILE] Dutch Golden Age group portrait painting, 
 chiaroscuro lighting, emphasizing the solemn weight of the honor 
 bestowed upon outsiders.
 
@@ -120,7 +121,8 @@ profoundly respectful — two servants of nature from very
 different cultures sharing a sacred burden. 
 
 [STILE] Poetic fantasy illustration, soft lighting, cultural 
-exchange. Pre-Raphaelite aesthetic mixed with D&D.
+exchange. Pre-Raphaelite aesthetic (jewel tones, botanical precision, 
+flowing hair) mixed with painted tabletop fantasy.
 
 [PALETTE] Twilight blue sky, grey stone, soft glowing green 
 magic from the acorn, forest greens and browns of their clothing.
@@ -172,7 +174,7 @@ using its light to reveal the tower's entrance. Above the invisible
 tower, the sky is unnatural, hinting at planar overlapping.
 
 [STILE] Dark fantasy mystery, eerie and surreal landscape. 
-Lovecraftian geometry that doesn't quite fit the physical world.
+Non-Euclidean geometry that doesn't quite fit the physical world.
 
 [PALETTE] Muted wasteland greys and browns, translucent violet 
 arcane lines, gold/silver ring light.
@@ -222,7 +224,8 @@ hang from the balconies. The lighting is dramatic, coming from
 massive braziers hanging from chains above the arena.
 
 [STILE] Bloodsport fantasy action, dynamic combat pose, 
-Gladiator arena atmosphere mixed with dwarven architecture.
+Roman amphitheatre bloodsport atmosphere (sand, 
+roaring tiers, shafts of dusty light) mixed with dwarven architecture.
 
 [PALETTE] Sand yellow, iron grey, firelight orange, 
 sweat-glistening skin, vibrant clan banners.
@@ -248,7 +251,7 @@ erupts. In the arena below, the dwarf monk who was just fighting
 looks up, readying his gauntlets to fight the impossible threat.
 
 [STILE] Catastrophic fantasy event, epic scale combat, 
-classic D&D cover art energy. Chaos and destruction.
+classic painted tabletop-fantasy cover energy. Chaos and destruction.
 
 [PALETTE] Brilliant dragon-fire orange and red, alien astral silver 
 of the Githyanki sword, dark red dragon scales, chaotic shadows.
@@ -275,7 +278,8 @@ Four adventurers in a small wooden rowboat approach cautiously through
 the mist.
 
 [STILE] Swamp horror fantasy, tense atmosphere, muted colors. 
-Like the Dead Marshes from LOTR but with a sunken city.
+Like a drowned battlefield marsh, pale shapes beneath still 
+water, but with a sunken city.
 
 [PALETTE] Muted swamp greens, dark brown water, fog-grey, 
 black dragon scales, toxic acid green highlights.
@@ -370,7 +374,7 @@ rose petals, warm inviting sunlight masking a cold intent.
 >
 > **Atmosfera visiva:** Apocalittica. Un cielo oscurato dalle ali di cinque draghi, magia arcana accecante contro magia abissale/draconica. La cupola azzurro-dorata del Mythal che resiste ai soffi dei draghi.
 >
-> **Tono:** Avengers: Endgame (la battaglia finale con portali e schieramenti enormi) + La Battaglia dei Cinque Eserciti (Hobbit). Magia di alto livello e scontri tra avatar e titani.
+> **Tono:** Battaglia finale corale (portali che si aprono, tutti gli alleati che arrivano insieme, schieramenti enormi) + battaglia campale fra più eserciti ai piedi di una montagna (fronti che si scontrano e si alleano in corsa). Magia di alto livello e scontri tra avatar e titani.
 
 ---
 
@@ -380,7 +384,8 @@ rose petals, warm inviting sunlight masking a cold intent.
 
 ```
 [STILE] Cinematic epic fantasy siege, high-magic warfare, apocalyptic 
-sky, 4K, VFX-heavy (Marvel's Endgame crossed with Lord of the Rings).
+sky, 4K, VFX-heavy (massive multi-army CGI battle crossed with 
+grounded, muddy medieval siege realism).
 
 [SCENA] A massive, fortified human-dwarven city (Damarath) under 
 catastrophic siege. The city is enclosed by a glowing, translucent 
@@ -403,8 +408,8 @@ colors (dragon breath), dark ash-filled sky, obsidian and iron horde.
 ```
 
 ### 🎵 NOTE MUSICA/MOOD
-- Strumenti: Orchestra sinfonica completa + coro apocalittico (Carmina Burana style) + brass pesanti
-- Riferimento: "Avengers: Endgame - Portals" (Alan Silvestri) o "O Fortuna"
+- Strumenti: Orchestra sinfonica completa + coro apocalittico (coro misto in fortissimo, sillabe latine scandite all'unisono) + brass pesanti
+- Riferimento: tema eroico di ottoni che rientra lento e trionfale su archi in tremolo, poi coro e percussioni in fortissimo con un accento martellato su ogni sillaba
 - Azione frenetica, massima posta in gioco, magia viscerale.
 
 ---
@@ -455,7 +460,8 @@ stone guardians. The battle is ferocious, mixing dark magic,
 tentacles, and crushing stone.
 
 [STILE] Epic war clash, dark fantasy meets high fantasy construct 
-magic. Warhammer-style chaotic melee.
+magic. Grimdark chaotic melee: packed 
+bodies, spikes, mud and smoke.
 
 [PALETTE] Obsidian and purple (drow/aberrations), grey stone 
 and golden runes (dwarven golems), dust, blood, and smoke.
@@ -480,7 +486,7 @@ lightning, and ice gathering in their respective maws. The sheer
 scale of the monsters dwarfs the city towers beneath them.
 
 [STILE] Legendary monster art, terrifying aerial supremacy, 
-classic Dungeons & Dragons draconic threat maximized.
+classic chromatic-dragon threat maximized.
 
 [PALETTE] The vibrant colors of the five dragons (red, black, 
 green, blue, white) contrasting against a charcoal-black, 

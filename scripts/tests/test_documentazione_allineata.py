@@ -179,3 +179,140 @@ def test_l_adr_si_conta_con_validate_docs() -> None:
     import validate_docs as vd
     attesi = [x["path"] for x in vd.indice_adr()]
     assert da.adr_fuori_indice(da.ROOT) == attesi
+
+
+# --- --attiva: la routine del lunedì chiama autore-documenti solo se serve ---
+
+OGGI = "2026-11-27"
+
+
+def _commit_il(radice: Path, data: str, messaggio: str = "x") -> str:
+    """Un commit con la data scritta, per i conti a 14 e 30 giorni."""
+    import os
+    env = dict(os.environ, GIT_AUTHOR_DATE=f"{data}T12:00:00", GIT_COMMITTER_DATE=f"{data}T12:00:00")
+    subprocess.run(["git", "-C", str(radice), "add", "-A"], check=True, env=env)
+    subprocess.run(["git", "-C", str(radice), "-c", "user.name=t", "-c", "user.email=t@t",
+                    "commit", "-q", "-m", messaggio], check=True, env=env)
+    return _git(radice, "rev-parse", "HEAD")
+
+
+def _adr(radice: Path, n: int, data: str) -> None:
+    _scrivi(radice, f"plans/adr/ADR-{n:04d}-titolo-{n}.md",
+            f"# ADR-{n:04d} — titolo {n}\n\n**Data**: {data}\n")
+
+
+@pytest.fixture
+def allineato(tmp_path: Path) -> Path:
+    """Un repo tutto in ordine il giorno OGGI: niente da attivare."""
+    r = tmp_path / "allineato"
+    r.mkdir()
+    _git(r, "init", "-q")
+    _scrivi(r, ".claude/agents/vecchio-agente.md", "x\n")
+    _scrivi(r, "scripts/vecchio.py", "print()\n")
+    _scrivi(r, ".github/workflows/ci.yml", "on: push\n")
+    _scrivi(r, ".claude/settings.json", json.dumps(SETTINGS))
+    _scrivi(r, "scripts/vecchio_hook.py", "print()\n")
+    _adr(r, 1, "2026-10-01")
+    _adr(r, 2, "2026-10-02")
+    _scrivi(r, "AGENTS.md", "`vecchio-agente`\n")
+    _scrivi(r, "docs/INDEX.md", "`vecchio.py` `vecchio_hook.py` `ci.yml`\n"
+                                "[a](../plans/adr/ADR-0001-titolo-1.md) [b](../plans/adr/ADR-0002-titolo-2.md)\n")
+    _scrivi(r, "docs/how-to/GUIDA-CONFIGURAZIONE-CLAUDE.md", "`vecchio_hook.py`\n")
+    _scrivi(r, "docs/explanation/ARCHITETTURA.md", "ADR-0001, ADR-0002\n")
+    _scrivi(r, "plans/debito-documentazione.json", json.dumps(
+        {"tetto": 0, "misurato": "t", "token_per_attivazione": 174239, "token_fonte": "misura"}))
+    _commit_il(r, "2026-10-02", "base")
+    return r
+
+
+def _attiva(r: Path) -> dict:
+    codice, out = _esegui("--attiva", "--json", "--oggi", OGGI, "--radice", str(r))
+    assert codice == 0
+    return json.loads(out)
+
+
+def test_attiva_tutto_in_ordine_non_attiva(allineato) -> None:
+    d = _attiva(allineato)
+    assert d == {"attiva": False, "motivi": [], "lavoro": [], "stima_token": 0}
+
+
+def test_attiva_un_agente_scoperto_attiva(allineato) -> None:
+    r = allineato
+    _scrivi(r, ".claude/agents/nuovo-agente.md", "x\n")
+    _commit_il(r, "2026-11-26")
+    d = _attiva(r)
+    assert d["attiva"] is True
+    assert d["stima_token"] == 174239
+    assert any("agente" in m for m in d["motivi"])
+    assert {"file": "AGENTS.md", "cosa": "citare `nuovo-agente` (.claude/agents/nuovo-agente.md)"} in d["lavoro"]
+
+
+def test_attiva_architettura_indietro_di_tre(allineato) -> None:
+    r = allineato
+    for n in (3, 4, 5):
+        _adr(r, n, "2026-11-26")
+    _scrivi(r, "docs/INDEX.md", (r / "docs/INDEX.md").read_text() + "".join(
+        f"[x](../plans/adr/ADR-{n:04d}-titolo-{n}.md)\n" for n in (3, 4, 5)))
+    _commit_il(r, "2026-11-26")
+    d = _attiva(r)
+    assert d["attiva"] is True
+    assert any("ARCHITETTURA" in m for m in d["motivi"])
+    cose = [x["cosa"] for x in d["lavoro"] if x["file"] == "docs/explanation/ARCHITETTURA.md"]
+    assert any("ADR-0003" in c and "ADR-0005" in c for c in cose)
+
+
+def test_attiva_un_adr_indietro_vecchio_attiva_uno_recente_no(allineato) -> None:
+    r = allineato
+    _adr(r, 3, "2026-11-20")
+    _scrivi(r, "docs/INDEX.md", (r / "docs/INDEX.md").read_text()
+            + "[x](../plans/adr/ADR-0003-titolo-3.md)\n")
+    # ARCHITETTURA toccata nel periodo, senza citare ADR-0003: vale solo l'età.
+    _scrivi(r, "docs/explanation/ARCHITETTURA.md", "ADR-0001, ADR-0002, rivista\n")
+    _commit_il(r, "2026-11-20")
+    assert _attiva(r)["attiva"] is False          # 7 giorni
+    _adr(r, 3, "2026-11-01")
+    _commit_il(r, "2026-11-21")
+    assert _attiva(r)["attiva"] is True           # 26 giorni
+
+
+def test_attiva_solo_script_vecchi_scoperti_non_attiva(allineato) -> None:
+    r = allineato
+    _scrivi(r, "scripts/scordato.py", "print()\n")
+    _scrivi(r, "scripts/scordato2.py", "print()\n")
+    _scrivi(r, "docs/INDEX.md", (r / "docs/INDEX.md").read_text() + "\n")
+    _scrivi(r, "plans/debito-documentazione.json", json.dumps(
+        {"tetto": 2, "misurato": "t", "token_per_attivazione": 174239, "token_fonte": "misura"}))
+    _commit_il(r, "2026-11-20")
+    assert _attiva(r)["attiva"] is False
+
+
+def test_attiva_debito_oltre_il_tetto(allineato) -> None:
+    r = allineato
+    _scrivi(r, "scripts/scordato.py", "print()\n")
+    _scrivi(r, "docs/INDEX.md", (r / "docs/INDEX.md").read_text() + "\n")
+    _commit_il(r, "2026-11-20")
+    d = _attiva(r)
+    assert d["attiva"] is True
+    assert any("tetto" in m for m in d["motivi"])
+    assert any("scordato.py" in x["cosa"] for x in d["lavoro"] if x["file"] == "docs/INDEX.md")
+
+
+def test_attiva_indice_fermo_da_30_giorni_con_struttura_nuova(allineato) -> None:
+    # Uno script aggiunto 10 giorni fa, docs/INDEX.md fermo dal 2 ottobre: anche
+    # sotto il tetto (alzato a 1) serve un'occhiata all'indice.
+    r = allineato
+    _scrivi(r, "plans/debito-documentazione.json", json.dumps(
+        {"tetto": 1, "misurato": "t", "token_per_attivazione": 174239, "token_fonte": "misura"}))
+    _scrivi(r, "scripts/nuovo.py", "print()\n")
+    _commit_il(r, "2026-11-17")
+    d = _attiva(r)
+    assert d["attiva"] is True
+    assert any("docs/INDEX.md" in m and "30 giorni" in m for m in d["motivi"])
+
+
+def test_attiva_testo_dice_il_motivo(allineato) -> None:
+    _scrivi(allineato, ".claude/agents/nuovo-agente.md", "x\n")
+    _commit_il(allineato, "2026-11-26")
+    codice, out = _esegui("--attiva", "--oggi", OGGI, "--radice", str(allineato))
+    assert codice == 0
+    assert "autore-documenti" in out and "AGENTS.md" in out

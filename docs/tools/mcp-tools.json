@@ -3891,8 +3891,8 @@
     },
     {
       "name": "documentazione_allineata",
-      "description": "«Questa PR aggiunge struttura che nessun indice cita? Quanto debito di documentazione ha il repo?»\n\nLa documentazione segue la struttura (ADR-0153): un agente, uno script, un workflow o un hook aggiunti rispetto a una revisione sono citati nel loro indice (AGENTS.md, docs/INDEX.md, GUIDA-CONFIGURAZIONE-CLAUDE.md), o esce 1; con --debito conta tutto il repo, gli ADR fuori indice di validate_docs e l'ultimo ADR citato in ARCHITETTURA.md, e con --check lo confronta con il tetto di plans/debito-documentazione.json.",
-      "use_case": "«Questa PR aggiunge struttura che nessun indice cita? Quanto debito di documentazione ha il repo?»",
+      "description": "«Questa PR aggiunge struttura che nessun indice cita? Quanto debito di documentazione ha il repo? Questa settimana serve chiamare autore-documenti?»\n\nLa documentazione segue la struttura (ADR-0153): un agente, uno script, un workflow o un hook aggiunti rispetto a una revisione sono citati nel loro indice (AGENTS.md, docs/INDEX.md, GUIDA-CONFIGURAZIONE-CLAUDE.md), o esce 1; con --debito conta tutto il repo, gli ADR fuori indice di validate_docs e l'ultimo ADR citato in ARCHITETTURA.md, e con --check lo confronta con il tetto di plans/debito-documentazione.json. Con --attiva (la routine del lunedì) dice se serve chiamare autore-documenti, perché e con quale lista di lavoro, e stima il costo in token; esce sempre 0.",
+      "use_case": "«Questa PR aggiunge struttura che nessun indice cita? Quanto debito di documentazione ha il repo? Questa settimana serve chiamare autore-documenti?»",
       "invocation": "python3 scripts/documentazione_allineata.py --rispetto-a origin/main",
       "inputSchema": {
         "type": "object",
@@ -3912,6 +3912,10 @@
           "check": {
             "type": "boolean",
             "description": "Con --debito: esce 1 se il totale supera il tetto."
+          },
+          "attiva": {
+            "type": "boolean",
+            "description": "Se serve un'attivazione di autore-documenti: motivi, lista di lavoro e stima_token (esce 0; leggere il campo attiva)."
           }
         },
         "required": [],
@@ -3921,7 +3925,7 @@
         "stdout"
       ],
       "exit_codes": {
-        "0": "niente di nuovo scoperto, o debito entro il tetto",
+        "0": "niente di nuovo scoperto, o debito entro il tetto; con --attiva sempre",
         "1": "un elemento nuovo non citato, o debito oltre il tetto",
         "2": "errore d'uso (revisione inesistente, git assente, tetto illeggibile)"
       },

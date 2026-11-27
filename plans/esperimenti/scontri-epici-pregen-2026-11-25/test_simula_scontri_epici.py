@@ -125,6 +125,30 @@ def test_orog_avanzato_e_la_scheda_con_l_archetipo_pf1e():
         assert o.attacchi == poi
 
 
+# --- il punto eroe speso per muovere: un attacco solo ---------------------
+# Card del DM del 2026-11-26, «movimento col punto eroe e attacco completo»:
+# chi compra l'azione di movimento e si muove per arrivare sul nemico fa un
+# attacco solo in quel turno (SRD 3.5, movimento + azione standard), non
+# l'attacco completo. Il punto non tira dadi: i duelli restano quelli di oggi.
+def _duelli_punto(politica, titolo, eroi, n=300):
+    fn, giganti = {t: (f, g) for t, f, _c, g in sim.SCENARI}[titolo]
+    sim.PUNTO = politica
+    try:
+        sim.R.seed(f"prova|{titolo}|{'+'.join(eroi)}")
+        return [sim.duello(fn, eroi, giganti=bool(giganti)) for _ in range(n)]
+    finally:
+        sim.PUNTO = None
+
+
+def test_il_movimento_comprato_col_punto_lascia_un_attacco_solo():
+    for titolo, eroi in [("Gorthak, oggi, con lo sportello", ["Borin", "Yrsa"]),
+                         ("Grimjaw e quattro orog, oggi: la guardia si aggira", ["Borin", "Yrsa"]),
+                         ("Grimjaw e quattro orog, variante: la rampa chiusa, se ne abbatte uno",
+                          ["Borin", "Yrsa"]),
+                         ("Sergente, oggi (A.4; la scorta non entra)", ["Yrsa"])]:
+        assert _duelli_punto("movimento", titolo, eroi) == _duelli_punto(None, titolo, eroi), titolo
+
+
 # --- Grimjaw del simulatore e' quello del Bestiario --------------------
 _GRIMJAW = _RADICE / "Bestiario/villain/Generale_Grimjaw.md"
 

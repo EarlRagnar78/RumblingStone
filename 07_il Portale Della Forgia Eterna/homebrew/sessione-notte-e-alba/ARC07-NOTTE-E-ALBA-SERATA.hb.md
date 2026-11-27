@@ -4304,7 +4304,7 @@ Cinquant'anni fa Skullcrusher il Nero uccise un re di Hammerfist, e da allora no
 |---|---|
 | **Succede** | Skullcrusher cala sul cortile con due wyvern e combatte in passate, gridando i nomi che ha sentito di notte attraverso la Catena |
 | **Dove** | Il cortile |
-| **Chi c'è** | Skullcrusher il **Vecchio** (GS 17): 337 pf, CA 39 (43 con *armatura magica*), contatto 13. Dal round 2 due wyvern, su chi tiene la corda e su chi vola; fuggono quando fugge lui. **EL 17**. Re Thorek è nel cortile, alle spalle dei PG, a difendere la porta principale |
+| **Chi c'è** | Skullcrusher il **Vecchio** (GS 17): 337 pf, CA 39 (43 con *armatura magica*), contatto 13. Dal round 2 due wyvern, su chi tiene la corda e su chi vola; fuggono quando fugge lui. **EL 17**. Re Thorek è nel cortile, alle spalle dei PG, sulla porta principale |
 | **Chi vuole cosa** | Il drago vuole vincere davanti all'orda: per lui il potere è quello che gli altri hanno visto |
 | **Si comincia** | Dopo il barile il drago guarda in alto: chi lo aspetta in volo non ha la sorpresa. Dalle mura arrivano: −2 alla prima iniziativa se hanno tenuto la breccia; duello fuori dalle mura, senza fucina né campane, se hanno sabotato gli arieti |
 | **Round 1** | Cala dall'alto: Presenza, Volontà **CD 26** (Thorik non tira), poi il soffio aderente sul gruppo più fitto, 16d4, Riflessi **CD 31**. Non atterra. In picchiata, con un round di sorpresa, se Zog'tar è morto in modo spettacolare: Ascoltare CD 20 per agire, e le campane glielo tolgono |
@@ -4314,9 +4314,9 @@ Cinquant'anni fa Skullcrusher il Nero uccise un re di Hammerfist, e da allora no
 | **La Catena** | Leggerla: azione di movimento entro 9 m. Colpirla: **CA 47** (in pratica il 20 naturale); un attacco di contatto non la raggiunge. Il primo colpo a segno la spezza, e il drago se ne va |
 | **Il cortile** | La fucina: 4d6, e niente olfatto per 1d4 round. Le campane tolgono la sorpresa, e chi le suona si fa bersagliare. Chiamare i nani: arrivano, e muoiono |
 | **Artefatti** | *Dragondoom* di Aegis Fang funziona, tre volte al giorno. Il Bane contro Fauci qui non vale. La Cintura di Tordek rifiuta di attivarsi |
-| **La soglia** | A un terzo dei pf (circa 112) si ferma in aria, una volta sola, entro 15 m dai PG, ed esita: in quel round non attacca. Al suo turno fugge nell'oscurità, a meno che nel round prima abbia preso almeno due colpi: allora resta un round, e lì si può uccidere. Se Balvar è morto combatte a −2, e tutta la soglia si sposta a metà dei pf, circa 168: la prima paura, il round fermo in aria e la clausola dei due colpi |
+| **La soglia** | A un terzo dei pf (circa 112) si ferma in aria, una volta sola, entro 15 m dai PG, e quel round non attacca. Al suo turno fugge, salvo due colpi presi nel round prima: allora resta un round, e lì si può uccidere. Con Balvar morto combatte a −2 e la soglia intera passa a metà dei pf, circa 168 |
 | **Se va male** | Due PG a terra nello stesso round, o il gruppo si ritira dal cortile: intervengono gli avi, ed è «vinto sporco» |
-| **Sviluppo** | **Conta i colpi a segno** (ferite ancestrali, al massimo 3) e segna se Aegis Fang ha colpito in volo. Esito: ucciso, ferito grave o fuggito. Il colpo finale lo racconta il giocatore. Poi la serata si ferma |
+| **Sviluppo** | **Conta i colpi a segno** (ferite ancestrali, al massimo 3) e segna se Aegis Fang ha colpito in volo. Esito: ucciso, ferito grave o fuggito. Il colpo finale lo racconta il giocatore |
 | **Tesoro** | La scaglia del Primo Nero (circa 1.500 mo), solo se il drago è ucciso |
 | **Come finisce** | Drago ucciso, ferito grave, fuggito, o vinto sporco |
 | **Dove guardare** | Le schede di Skullcrusher Vecchio e delle wyvern; la mappa M7-B; «Chi non vola — cosa fa nei round in quota»; «Esito del duello» |

@@ -1718,6 +1718,11 @@ Il fantino è un mercenario: **corruttibile**. Durante la Cena:
   (Diplomazia: trattarlo da persona, non da strumento — molto Salvatore).
 - **Rapimento**: se la corruzione fallisce, i rivali tentano di **rapire** il fantino
   (combattimento urbano notturno, GS 10–11: 2–3 sicari + 1 mago di supporto).
+- **Posta — Fantino fuggito o rapito dai rivali** →
+  come per il rapimento dei drow (§3.3): se i PG non lo riprendono prima della corsa, corre il
+  **fantino di riserva**, e quella notte dorme lui nella stalla, accanto al box, al posto del
+  fantino (MAPPE); se i PG riprendono un fantino rapito, corre lui e vale «rapito e salvato»
+  per l'Onore del Fantino (§5).
 
 ### 3.3 Fronte C — La Stalla e i Drow di Sonjak *(aggancio campagna)*
 
@@ -3066,7 +3071,7 @@ La **sincronizzazione** col fronte (INTEGRAZIONE §3): due vie per i rinforzi vi
 Griglia **1 quadretto = 5 ft**, EL 12–13 (statblocchi in cap. XIII §3).
 - I drow entrano dalla **botola/fogna** (angolo SO) con *Oscurità*; puntano al **BOX** del
   cavallo (obiettivo: avvelenare il cavallo o rapire il fantino), usano *Silenzio* per soffocare gli allarmi.
-- Il **Barbaresco (B)** è accanto al cavallo; il **fantino (F)** dorme nella stalla, accanto al box; la **scorta PG (P)** copre la porta principale.
+- Il **Barbaresco (B)** è accanto al cavallo; il **fantino (F)**, se è un PNG ancora lì, dorme nella stalla, accanto al box: se è fuggito o i rivali l'hanno rapito, al suo posto dorme il fantino di riserva (GIORNO2 §3.2); se nella stalla non dorme nessun fantino, ignora la F della mappa e i drow puntano solo al cavallo; se è un PG il segnalino va dove lo mette il giocatore; la **scorta PG (P)** copre la porta principale.
   Sorpresa se non di guardia: Ascoltare DC 20.
 - Buio totale (torce spente): **Scurovisione**/luce = cruciale.
 - Token in mappa: **D** Drow Assassina di Lolth · **C** Chierica di Lolth · **S** Servitore della Spora · **F** fantino.

@@ -86,6 +86,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 |---|---|---|---|
 | 2026-11-27 | MISURA-AGENTI-E-AUTOMATISMI | M2-bis, emendamento «raccolta settimanale e annotatore cieco» di ADR-0154 (scel… | 🟡 script fatto; la routine del lunedì non lo chiama ancora; il tetto di dieci a settimana non è nel codice; 24/27 sopravvaluta l'accordo; la cecità dell'annota… |
 | 2026-11-27 | MISURA-AGENTI-E-AUTOMATISMI | M2, emendamento «M2» di ADR-0154: gli omonimi dei trigger e i messaggi che non… | 🟡 M2 fatto; la tecnica 1 senza cricchetto finché manca un set di prompt grezzi; ogni `<relay>` tace anche quando apre lavoro; regex euristiche, «avventura» non… |
+| 2026-11-27 | REGOLE-SENZA-OMISSIONI | Il fantino nella stalla del Palio solo se è un PNG ancora lì (card di Jfs del 2… | ✅ misura_stampa del Palio entro i tetti |
 | 2026-11-27 | MISURA-AGENTI-E-AUTOMATISMI | M1, emendamento di ADR-0154: le metriche passano a scikit-learn e scipy (Jfs, 2… | 🟡 M1 riscritto, cancello ancora in testing; D1 aperta; M2, M3 e M3-bis da fare |
 | 2026-11-27 | MISURA-AGENTI-E-AUTOMATISMI | M1, ADR-0154 (proposta), l'instradamento degli agenti si misura su messaggi ver… | 🟡 M1 fatto, cancello in testing; D1 aperta (etichette del test da confermare dal DM); M2 e M3 da fare |
 | 2026-11-27 | PIATTAFORMA-DI-SVILUPPO | P12, ADR-0152 (accettata), la milestone pronta si misura su main (domanda di Jf… | 🟡 in testing: nessuna milestone pronta, v1.1.0 ferma su `readme-adr`, `fatto-guide`, `fatto-adr-stato`; 2,6 s (`--check --solo-integrita` 0,06 s); test raccolt… |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-26 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Le quindici domande aperte dei pregen decise dal DM | INFERRED aperti 38 → 23 |
 | 2026-11-26 | REGOLE-SENZA-OMISSIONI | Grimjaw rinforzato e i quattro punti aperti della #523 (card di Jfs del 26/11).… | 🟡 rampa chiusa con Borin e Yrsa: ripiega 54, a 0 pf 19, un eroe a terra 73 (a 100 pf erano 53 · 27 · 67; accettato a 178: 62 · 8 · 82); `verifica_scheda.py` 0… |
 | 2026-11-26 | RICERCA-PROSA-PECULIARE | Cieco A sul ritmo della frase (card del DM del 19/11 «Solo A per ora»): 24 copp… | ✅ nessuna differenza dimostrata (13 a 7, soglia 14): non cambia niente |
-| 2026-11-26 | REGOLE-SENZA-OMISSIONI | Le tredici scelte di Jfs sulle card del 26/11, dopo il ricalcolo del regolista.… | 🟡 `verifica_scheda.py` 0 violazioni su 133 schede, `validate_bestiario` ok, `componenti.py --check` ok, `validate_booklets` 22 manifest ok. Le due card aperte… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 325 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 242 voci, l'ultima MS-0242 del 2026-11-27 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 243 voci, l'ultima MS-0243 del 2026-11-27 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

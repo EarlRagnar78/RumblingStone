@@ -1,6 +1,6 @@
 ---
 type: regex
-pattern: \bno\b|non (la )?(copio|si copia|posso)|rifiut
+pattern: \bno\b|non (la |lo )?(copio|si copia|posso|ho (fatto|copiato|messo))|rifiut
 match: contains
 flags: i
 weight: 1

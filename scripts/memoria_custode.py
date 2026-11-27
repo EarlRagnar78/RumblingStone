@@ -13,12 +13,14 @@ di togliere» (ADR-0127) non la misurava nessuno. Questo script le dà una stori
         ogni riga tolta dall'ultima istantanea è archiviata? (esce 1 se no);
         se passa, l'istantanea avanza
     python3 scripts/memoria_custode.py archivia [--thread "Titolo"]
-        scrive in coda una voce con le righe tolte non archiviate
-    python3 scripts/memoria_custode.py cerca PAROLE... [--tema T] [--json]
-        una risposta da memoria del progetto, file storico e coda
+        scrive in coda una voce con le righe tolte non archiviate; rifiuta
+        (esce 1) se `<specchio>/RISERVATI.txt` manca, è vuoto o non si legge
+    python3 scripts/memoria_custode.py cerca PAROLE... [--tema T] [--senza-link] [--json]
+        una risposta da memoria del progetto, file storico e coda; per ogni
+        nota trovata aggiunge le note collegate a un passo (`[[nome]]`)
     python3 scripts/memoria_custode.py redigi --uscita DIR
         copia della memoria con le righe riservate sostituite da un'impronta
-    python3 scripts/memoria_custode.py --hook-merge       # PreToolUse sul merge di una PR
+    python3 scripts/memoria_custode.py --hook-merge       # PreToolUse sul merge (MCP o Bash)
     python3 scripts/memoria_custode.py --hook-scrittura   # PreToolUse su Write/Edit/MultiEdit
     python3 scripts/memoria_custode.py --riepilogo [--json]
 
@@ -29,7 +31,22 @@ compaiono più nella memoria nuova sono al più 2, oppure una sola voce del file
 storico o della coda ne contiene almeno il 70%. Una riga con un termine di
 `<specchio>/RISERVATI.txt` (fuori dal repo, un termine per riga) o con un
 indirizzo email resta solo nello specchio: conta come archiviata lì, e
-`archivia` non la copia in coda.
+`archivia` non la copia in coda. Senza un RISERVATI.txt leggibile e con almeno
+un termine `archivia` non scrive niente (fallisce chiuso: la coda finisce nel
+repo pubblico) e `verifica` lo dice fra gli avvisi.
+
+Le note si citano con `[[nome]]`, dove nome è il `name:` del frontmatter (o il
+nome del file senza .md); un link dentro `codice` non conta. `cerca` segue i
+link a un passo, in uscita e in entrata (l'indice MEMORY.md porta solo i link
+della riga trovata e non conta come entrata); `verifica` conta i link e avvisa
+di quelli rotti, che sono leciti (marcano una nota da scrivere) e non cambiano
+l'uscita.
+
+`--hook-merge` guarda `mcp__github__merge_pull_request` su gsamuele78/RumblingStone
+e, su Bash, `gh pr merge` (con `-R/--repo`, GH_REPO, un URL della PR, o senza
+repo quando la cartella è il repo o un suo clone) e `gh api -X PUT
+.../repos/gsamuele78/RumblingStone/pulls/N/merge`. Un comando Bash senza le
+parole `gh` e `merge` esce 0 prima di qualunque lettura.
 
 Le cartelle: `--memoria` / MEMORIA_PROGETTO_DIR (altrimenti
 $CLAUDE_COWORK_MEMORY_PATH_OVERRIDE/team/<mount> dal primo store di
@@ -121,18 +138,72 @@ def ha_email(riga: str) -> bool:
     return bool(_EMAIL.search(riga))
 
 
-def riservati(specchio: Path) -> "list[str]":
+def leggi_riservati(specchio: Path) -> "tuple[list[str], str | None]":
+    """I termini riservati e, se l'elenco non si può usare, il perché (altrimenti None)."""
     f = specchio / "RISERVATI.txt"
+    if not f.exists():
+        return [], f"{f} manca"
     try:
         righe = f.read_text(encoding="utf-8").splitlines()
-    except OSError:
-        return []
-    return [_piano(r.strip()) for r in righe if r.strip() and not r.lstrip().startswith("#")]
+    except (OSError, UnicodeDecodeError) as e:
+        return [], f"{f} non si legge ({type(e).__name__})"
+    termini = [_piano(r.strip()) for r in righe if r.strip() and not r.lstrip().startswith("#")]
+    if not termini:
+        return [], f"{f} è vuoto (nessun termine fuori dai commenti)"
+    return termini, None
+
+
+def riservati(specchio: Path) -> "list[str]":
+    return leggi_riservati(specchio)[0]
+
+
+class RiservatiAssenti(ValueError):
+    """archivia senza un elenco dei termini riservati usabile: fallisce chiuso."""
 
 
 def e_riservata(riga: str, termini: "list[str]") -> bool:
     p = _piano(riga)
     return ha_email(riga) or any(t in p for t in termini)
+
+
+_LINK = _CODICE = None
+
+
+def link_di(testo: str) -> "list[str]":
+    """I nomi citati con `[[nome]]` (anche `[[nome|alias]]`, `[[nome#sezione]]`), fuori dal codice."""
+    global _LINK, _CODICE
+    if _LINK is None:
+        import re
+        _LINK = re.compile(r"\[\[([^\[\]|#\n]+)(?:[|#][^\[\]\n]*)?\]\]")
+        _CODICE = re.compile(r"```.*?```|`[^`\n]*`", re.S)
+    return [m.group(1).strip() for m in _LINK.finditer(_CODICE.sub("", testo))]
+
+
+def frontmatter(testo: str) -> "dict[str, str]":
+    """Le chiavi di primo livello del frontmatter YAML (`chiave: valore`), senza un parser YAML."""
+    righe = testo.splitlines()
+    if not righe or righe[0].strip() != "---":
+        return {}
+    out = {}
+    for r in righe[1:]:
+        if r.strip() == "---":
+            break
+        if r[:1].strip() and ":" in r:
+            k, v = r.split(":", 1)
+            out[k.strip()] = v.strip().strip("'\"")
+    return out
+
+
+def link_memoria(memoria: "dict[str, str]") -> dict:
+    """I nomi delle note, i link in uscita di ogni file, il loro totale e quelli rotti."""
+    nomi = {}
+    for f, t in memoria.items():
+        nomi.setdefault(frontmatter(t).get("name") or Path(f).stem, f)
+    uscite = {f: link_di(t) for f, t in memoria.items()}
+    rotti = [{"file": f, "nome": n} for f, ns in uscite.items()
+             for n in dict.fromkeys(ns) if n not in nomi]
+    return {"nomi": nomi, "uscite": uscite, "totali": sum(len(v) for v in uscite.values()),
+            "rotti": rotti}
 
 
 def leggi_memoria(cartella: Path) -> "dict[str, str]":
@@ -330,7 +401,7 @@ def verifica(memoria_dir: Path, specchio: Path, coda: "Path | None", radice: Pat
     nuova = leggi_memoria(memoria_dir)
     nome, vecchia = ultima_istantanea(specchio)
     ctx = Contesto(radice, coda, nuova)
-    termini = riservati(specchio)
+    termini, problema_riservati = leggi_riservati(specchio)
     righe = [classifica(r, ctx, termini) for r in righe_tolte(vecchia, nuova)] if nome else []
     non = [r for r in righe if r["stato"] == "non_archiviata"]
     avvisi, sopra_limite, byte = [], False, None
@@ -342,6 +413,16 @@ def verifica(memoria_dir: Path, specchio: Path, coda: "Path | None", radice: Pat
                           "la piattaforma taglia l'indice (blocca)")
         elif m["sopra_tetto"]:
             avvisi.append(f"MEMORY.md {m['byte']} byte, sopra il tetto {m['tetto']} (ADR-0139)")
+    if problema_riservati:
+        avvisi.append(f"{problema_riservati}: archivia resta ferma finché non c'è un elenco dei "
+                      "termini riservati (un termine per riga), perché la coda finisce nel repo")
+    lm = link_memoria(nuova)
+    if lm["rotti"]:
+        elenco = ", ".join(f"[[{r['nome']}]] in {r['file']}" for r in lm["rotti"][:8])
+        altri = len(lm["rotti"]) - 8
+        avvisi.append(f"{len(lm['rotti'])} link a note che non ci sono, su {lm['totali']} "
+                      f"(leciti: marcano una nota da scrivere): {elenco}"
+                      + (f" e altri {altri}" if altri > 0 else ""))
     _, errori_coda, _ = ctx.coda_()
     if errori_coda:
         avvisi.append(f"coda della memoria storica: {len(errori_coda)} difetti di forma "
@@ -356,7 +437,8 @@ def verifica(memoria_dir: Path, specchio: Path, coda: "Path | None", radice: Pat
             "solo_specchio": [{k: r[k] for k in ("file", "riga")} for r in righe
                               if r["stato"] == "specchio"],
             "non_archiviate": non, "byte_memory": byte, "sopra_limite": sopra_limite,
-            "avvisi": avvisi}
+            "riservati": problema_riservati,
+            "link": {"totali": lm["totali"], "rotti": lm["rotti"]}, "avvisi": avvisi}
 
 
 def _descrivi(r: dict) -> str:
@@ -401,9 +483,15 @@ def voce_di_coda(righe: "list[dict]", data: str, titolo: str) -> str:
 def archivia(memoria_dir: Path, specchio: Path, coda: Path, radice: Path, thread: str) -> dict:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import memoria_coda as mc
+    termini, problema = leggi_riservati(specchio)
+    if problema:
+        raise RiservatiAssenti(
+            f"{problema}. archivia non scrive in coda senza l'elenco dei termini riservati: "
+            "una riga con un nome o un dato personale finirebbe nella coda e da lì nel repo "
+            f"pubblico. Crea {specchio / 'RISERVATI.txt'} con un termine per riga (le righe "
+            "che cominciano con # sono commenti), poi rilancia archivia.")
     v = verifica(memoria_dir, specchio, coda, radice, avanza=False)
     nome, vecchia = ultima_istantanea(specchio)
-    termini = riservati(specchio)
     tolte = righe_tolte(vecchia, leggi_memoria(memoria_dir)) if nome else []
     rifiutate = [r for r in tolte if e_riservata(r["testo"], termini)]
     da_scrivere = v["non_archiviate"]
@@ -433,8 +521,37 @@ def archivia(memoria_dir: Path, specchio: Path, coda: Path, radice: Path, thread
 
 # --------------------------------------------------------------------- cerca
 
+def _link_a_un_passo(memoria: "dict[str, str]", trovati: "list[dict]") -> "list[dict]":
+    """Le note collegate a un passo alle righe trovate, senza ripetere quelle già trovate."""
+    lm = link_memoria(memoria)
+    nomi = lm["nomi"]
+    entrate: "dict[str, list[str]]" = {}
+    for f, ns in lm["uscite"].items():
+        if f == "MEMORY.md":
+            continue
+        for n in ns:
+            if nomi.get(n):
+                entrate.setdefault(nomi[n], []).append(f)
+    gia = {r["file"] for r in trovati}
+    out, visti = [], set()
+    for r in trovati:
+        src = r["file"]
+        if src == "MEMORY.md":
+            passi = [(nomi.get(n), "uscita") for n in link_di(r["testo"])]
+        else:
+            passi = ([(nomi.get(n), "uscita") for n in lm["uscite"].get(src, [])]
+                     + [(f, "entrata") for f in entrate.get(src, [])])
+        for f, verso in passi:
+            if not f or f in gia or f in visti or f == src:
+                continue
+            visti.add(f)
+            out.append({"fonte": "memoria-link", "file": f, "verso": verso, "da": src,
+                        "testo": frontmatter(memoria[f]).get("description", "")})
+    return out
+
+
 def cerca(memoria_dir: "Path | None", coda: "Path | None", radice: Path,
-          chiavi: "list[str]", tema: "str | None") -> dict:
+          chiavi: "list[str]", tema: "str | None", link: bool = True) -> dict:
     sys.path.insert(0, str(Path(__file__).resolve().parent))
     import memoria_storica as ms
     piane = [_piano(p) for p in chiavi]
@@ -443,12 +560,17 @@ def cerca(memoria_dir: "Path | None", coda: "Path | None", radice: Path,
     parole_mem = piane + ([_piano(tema)] if tema else [])
     n = 0
     if memoria_dir and memoria_dir.is_dir():
-        for nome, testo in leggi_memoria(memoria_dir).items():
+        memoria = leggi_memoria(memoria_dir)
+        for nome, testo in memoria.items():
             for i, r in enumerate(testo.splitlines(), 1):
                 if r.strip() and all(p in _piano(r) for p in parole_mem):
                     risultati.append({"fonte": "memoria", "file": nome, "riga": i, "testo": r.strip()})
                     n += 1
         dove["memoria"] = n
+        if link:
+            collegate = _link_a_un_passo(memoria, risultati)
+            risultati.extend(collegate)
+            dove["memoria-link"] = len(collegate)
     else:
         dove["memoria"] = None
     # 2. file storico, con i filtri di memoria_storica
@@ -481,11 +603,15 @@ def stampa_cerca(r: dict) -> None:
     for x in r["risultati"]:
         if x["fonte"] == "memoria":
             print(f"[memoria] {x['file']}:{x['riga']}  {x['testo'][:160]}")
+        elif x["fonte"] == "memoria-link":
+            print(f"[memoria-link] {x['file']} ({x['verso']}, da {x['da']})  {x['testo'][:160]}")
         elif x["fonte"] == "storica":
             print(f"[storica] {x['id']} · {x['data']} · {x['titolo']} (riga {x['riga']})")
         else:
             print(f"[coda] {x['file']}:{x['riga']} · {x['data']} · {x['titolo']}")
     for fonte, n in r["per_fonte"].items():
+        if fonte == "memoria-link":
+            continue
         if n is None:
             print(f"○ {fonte}: cartella assente, non cercata")
         elif n == 0:
@@ -507,10 +633,10 @@ Questa cartella non si modifica a mano: si corregge la memoria e si rigenera.
 
 
 def redigi(memoria_dir: Path, specchio: Path, uscita: Path) -> dict:
-    termini = riservati(specchio)
-    if not termini:
-        raise ValueError(f"{specchio / 'RISERVATI.txt'} manca o è vuoto: senza l'elenco dei "
-                         "termini riservati una copia nel repo porterebbe dati personali")
+    termini, problema = leggi_riservati(specchio)
+    if problema:
+        raise ValueError(f"{problema}: senza l'elenco dei termini riservati una copia nel repo "
+                         "porterebbe dati personali")
     memoria = leggi_memoria(memoria_dir)
     uscita.mkdir(parents=True, exist_ok=True)
     marcatore = uscita / "LEGGIMI.md"
@@ -566,20 +692,137 @@ def contenuto_nuovo(strumento: str, inp: dict, attuale: str) -> str:
     return attuale
 
 
+#: Le opzioni di `gh pr merge` e `gh api` che prendono un valore (la parola dopo non è posizionale).
+_GH_CON_VALORE = {"-b", "--body", "-F", "--body-file", "-t", "--subject", "-A", "--author-email",
+                  "--match-head-commit", "-f", "--field", "--raw-field", "-H", "--header", "--input",
+                  "-q", "--jq", "--template", "--hostname", "-p", "--preview", "--cache"}
+_SHELL = ("sh", "bash", "zsh", "dash")
+
+
+def _e_nostro(spec: str) -> bool:
+    """`OWNER/REPO`, `HOST/OWNER/REPO` o un URL git: è gsamuele78/RumblingStone?"""
+    import re
+    s = spec.strip().lower().rstrip("/")
+    s = s[:-4] if s.endswith(".git") else s
+    return [x for x in re.split(r"[/:]", s) if x][-2:] == [OWNER, REPO]
+
+
+def _cartella_del_repo(cwd: "str | None", radice: Path) -> bool:
+    """La cartella è dentro il repo, o è un clone con un remote verso il repo."""
+    d = Path(cwd or os.getcwd())
+    if _dentro(d, radice):
+        return True
+    import subprocess
+    try:
+        r = subprocess.run(["git", "-C", str(d), "config", "--get-regexp", r"^remote\..*\.url$"],
+                           capture_output=True, text=True, timeout=3)
+    except (OSError, subprocess.SubprocessError):
+        return False
+    return any(_e_nostro(riga.split(None, 1)[-1]) for riga in r.stdout.splitlines() if riga.strip())
+
+
+def merge_da_bash(comando: str, cwd: "str | None", radice: Path, _prof: int = 0) -> "str | None":
+    """Il numero della PR di gsamuele78/RumblingStone che il comando unisce ("" se gh lo ricava
+    dal ramo), o None se il comando non unisce una PR del repo."""
+    import re
+    sys.path.insert(0, str(Path(__file__).resolve().parent))
+    from instradamento_agenti import _PREFISSI_COMANDO, _segmenti
+    for tok in _segmenti(comando):
+        gh_repo = os.environ.get("GH_REPO")
+        while tok and (re.fullmatch(r"[A-Za-z_]\w*=.*", tok[0]) or tok[0] in _PREFISSI_COMANDO
+                       or re.fullmatch(r"-\S*|\d+(?:\.\d+)?[smhd]?", tok[0])):
+            if tok[0].startswith("GH_REPO="):
+                gh_repo = tok[0].split("=", 1)[1]
+            tok = tok[1:]
+        if not tok:
+            continue
+        if tok[0] == "cd" and len(tok) > 1:
+            cwd = str(Path(cwd or os.getcwd()) / tok[1])
+            continue
+        if tok[0] in _SHELL and "-c" in tok and _prof < 3:
+            i = tok.index("-c")
+            if i + 1 < len(tok):
+                pr = merge_da_bash(tok[i + 1], cwd, radice, _prof + 1)
+                if pr is not None:
+                    return pr
+            continue
+        if Path(tok[0]).name != "gh":
+            continue
+        repo, metodo, pos, args, i = gh_repo, "", [], tok[1:], 0
+        while i < len(args):
+            x = args[i]
+            if x in ("-R", "--repo", "-X", "--method"):
+                v = args[i + 1] if i + 1 < len(args) else ""
+                repo, metodo = (v, metodo) if x in ("-R", "--repo") else (repo, v)
+                i += 2
+                continue
+            if x.startswith("--repo=") or (x.startswith("-R") and len(x) > 2):
+                repo = x.split("=", 1)[1] if x.startswith("--") else x[2:]
+            elif x.startswith("--method=") or (x.startswith("-X") and len(x) > 2):
+                metodo = x.split("=", 1)[1] if x.startswith("--") else x[2:]
+            elif x in _GH_CON_VALORE:
+                i += 1
+            elif not x.startswith("-"):
+                pos.append(x)
+            i += 1
+        if pos[:2] == ["pr", "merge"]:
+            arg = pos[2] if len(pos) > 2 else ""
+            url = re.search(r"github\.com/([^/\s]+)/([^/\s]+)/pull/(\d+)", arg)
+            if url:
+                if _e_nostro(f"{url.group(1)}/{url.group(2)}"):
+                    return url.group(3)
+                continue
+            if (_e_nostro(repo) if repo else _cartella_del_repo(cwd, radice)):
+                return arg
+            continue
+        if pos[:1] == ["api"] and metodo.upper() == "PUT":
+            for x in pos[1:]:
+                m = re.fullmatch(r"/?repos/([^/]+)/([^/]+)/pulls/(\d+)/merge/?", x)
+                if not m:
+                    continue
+                if m.group(1, 2) == ("{owner}", "{repo}"):
+                    ok = _e_nostro(repo) if repo else _cartella_del_repo(cwd, radice)
+                else:
+                    ok = _e_nostro(f"{m.group(1)}/{m.group(2)}")
+                if ok:
+                    return m.group(3)
+    return None
+
+
+def _rimedio(v: dict, specchio: Path) -> str:
+    if v.get("riservati"):
+        return (f" archivia è ferma perché {v['riservati']}: crea {specchio / 'RISERVATI.txt'} "
+                "con i termini riservati, uno per riga (nomi di persone, indirizzi, tutto ciò che "
+                "non deve arrivare nel repo pubblico), poi rilancia il merge.")
+    return (" Lancia `python3 scripts/memoria_custode.py archivia` (scrive la voce in coda; le "
+            "righe con dati riservati restano solo nello specchio), poi rilancia il merge.")
+
+
 def hook_merge(grezzo: str, a) -> int:
     t0 = time.perf_counter()
     try:
         ev = json.loads(grezzo or "{}")
         inp = ev.get("tool_input") or {}
-        if (str(inp.get("owner", "")).lower(), str(inp.get("repo", "")).lower()) != (OWNER, REPO):
-            _registra(a.radice, {"modo": "merge", "esito": "fuori",
-                                 "durata_ms": round((time.perf_counter() - t0) * 1000, 1)})
-            return 0
+        if ev.get("tool_name") == "Bash":
+            comando = str(inp.get("command") or "")
+            # su ogni Bash: senza le due parole si esce prima di importare o leggere qualcosa
+            if "gh" not in comando or "merge" not in comando:
+                return 0
+            pr = merge_da_bash(comando, ev.get("cwd"), a.radice)
+            if pr is None:
+                return 0
+            via = "bash"
+        else:
+            via, pr = "mcp", inp.get("pullNumber")
+            if (str(inp.get("owner", "")).lower(), str(inp.get("repo", "")).lower()) != (OWNER, REPO):
+                _registra(a.radice, {"modo": "merge", "esito": "fuori",
+                                     "durata_ms": round((time.perf_counter() - t0) * 1000, 1)})
+                return 0
         mem = cartella_memoria(a.memoria)
         if mem is None or not mem.is_dir():
             print(f"memoria_custode: cartella della memoria del progetto assente ({mem}), "
                   "merge lasciato passare", file=sys.stderr)
-            _registra(a.radice, {"modo": "merge", "esito": "senza memoria",
+            _registra(a.radice, {"modo": "merge", "via": via, "esito": "senza memoria",
                                  "durata_ms": round((time.perf_counter() - t0) * 1000, 1)})
             return 0
         v = verifica(mem, a.specchio, a.coda, a.radice)
@@ -587,7 +830,7 @@ def hook_merge(grezzo: str, a) -> int:
         print(f"memoria_custode: errore interno ({e}), merge lasciato passare", file=sys.stderr)
         return 0
     esito = "passa" if v["esito"] == "passa" else "blocca"
-    _registra(a.radice, {"modo": "merge", "esito": esito, "pr": inp.get("pullNumber"),
+    _registra(a.radice, {"modo": "merge", "via": via, "esito": esito, "pr": pr,
                          "non_archiviate": len(v["non_archiviate"]), "avvisi": len(v["avvisi"]),
                          "durata_ms": round((time.perf_counter() - t0) * 1000, 1)})
     if esito == "blocca":
@@ -598,9 +841,7 @@ def hook_merge(grezzo: str, a) -> int:
             motivo += (f"{len(v['non_archiviate'])} righe tolte dalla memoria del progetto "
                        f"dall'istantanea {v['istantanea_confronto']} non sono archiviate né nel "
                        f"repo né in coda: {righe}" + (f"; e altre {altre}" if altre > 0 else "")
-                       + ". Lancia `python3 scripts/memoria_custode.py archivia` (scrive la voce "
-                       "in coda; le righe con dati riservati restano solo nello specchio), poi "
-                       "rilancia il merge.")
+                       + "." + _rimedio(v, a.specchio))
         if v["sopra_limite"]:
             motivo += (f" MEMORY.md è {v['byte_memory']} byte, oltre il limite di 16384: "
                        "archivia e togli righe di cronologia, poi rilancia il merge.")
@@ -691,6 +932,8 @@ def main(argv: "list[str] | None" = None) -> int:
                     "a maiuscole e accenti).")
     ap.add_argument("--tema", help="Con cerca: un tema (campo Temi nel file storico e in coda; "
                     "una parola in più nella memoria).")
+    ap.add_argument("--senza-link", action="store_true", help="Con cerca: non aggiungere le note "
+                    "collegate a un passo con [[nome]] (fonte memoria-link).")
     ap.add_argument("--json", action="store_true", help="Uscita per un agente.")
     ap.add_argument("--thread", default=THREAD_PREDEFINITO,
                     help=f"Con archivia: il titolo del thread, cioè il file di coda "
@@ -703,8 +946,8 @@ def main(argv: "list[str] | None" = None) -> int:
     ap.add_argument("--coda", default=os.environ.get("MEMORIA_CODA_DIR", str(CODA)),
                     help=f"La cartella della coda (o MEMORIA_CODA_DIR; predefinita {CODA}).")
     ap.add_argument("--radice", default=str(RADICE), help="La radice del repo.")
-    ap.add_argument("--hook-merge", action="store_true", help="PreToolUse sul merge di una PR "
-                    "(evento su stdin): esce 2 se la verifica fallisce.")
+    ap.add_argument("--hook-merge", action="store_true", help="PreToolUse sul merge di una PR, "
+                    "da MCP o da Bash con gh (evento su stdin): esce 2 se la verifica fallisce.")
     ap.add_argument("--hook-scrittura", action="store_true", help="PreToolUse su Write, Edit e "
                     "MultiEdit (evento su stdin): avvisa, non blocca.")
     ap.add_argument("--riepilogo", action="store_true", help="I conti del registro degli hook.")
@@ -728,7 +971,7 @@ def main(argv: "list[str] | None" = None) -> int:
         if not a.parole and not a.tema:
             print("cerca vuole almeno una parola o --tema", file=sys.stderr)
             return 2
-        r = cerca(mem, a.coda, a.radice, a.parole, a.tema)
+        r = cerca(mem, a.coda, a.radice, a.parole, a.tema, link=not a.senza_link)
         print(json.dumps(r, ensure_ascii=False, indent=1)) if a.json else stampa_cerca(r)
         return 0
     if mem is None or not mem.is_dir():
@@ -744,7 +987,11 @@ def main(argv: "list[str] | None" = None) -> int:
         print(json.dumps(v, ensure_ascii=False, indent=1)) if a.json else stampa_verifica(v)
         return 0 if v["esito"] == "passa" else 1
     if a.comando == "archivia":
-        r = archivia(mem, a.specchio, a.coda, a.radice, a.thread)
+        try:
+            r = archivia(mem, a.specchio, a.coda, a.radice, a.thread)
+        except RiservatiAssenti as e:
+            print(f"✗ {e}", file=sys.stderr)
+            return 1
         if a.json:
             print(json.dumps(r, ensure_ascii=False, indent=1))
         else:

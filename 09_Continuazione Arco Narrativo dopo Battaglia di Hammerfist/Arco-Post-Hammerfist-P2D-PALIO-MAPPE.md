@@ -87,7 +87,7 @@ Griglia **1 quadretto = 5 ft**, EL 12–13 (statblocchi in `...P2D-PALIO-STATBLO
 - **Catturare un drow vivo** = intel Fase 0 Rethmar **−1 clock Sonjak** (INTEGRAZIONE §3.2).
 
 <!-- storico -->
-- era: fino al 2026-11-27 la mappa della stalla aveva solo il cavallo come obiettivo, senza il fantino. Card del DM del 2026-11-27 «Nella stalla, accanto al box»: segnalino F accanto al box, nella mappa e nella legenda.
+- era: fino al 2026-11-27 la mappa della stalla aveva solo il cavallo come obiettivo, senza il fantino. Card del DM del 2026-11-27 «Nella stalla, accanto al box»: segnalino F accanto al box, nella mappa e nella legenda. Nella stessa modifica la legenda dell'SVG va su due righe e la tattica su due, con la tela alta 530: prima uscivano oltre il bordo e si accavallavano con l'etichetta della porta.
 <!-- /storico -->
 
 ---

@@ -147,12 +147,17 @@ Morale del Rione**; l'**Onore del Fantino** è il TS contro le offerte di corruz
 | S1 sera | Gli 8 emissari fanno la loro offerta | Scelta della contrada |
 | S2 mezzogiorno | La Tratta pubblica del Gonfaloniere | Truffa dell'urna |
 | S2 sera | Prima staffetta ferita da Rethmar | Pressione temporale |
-| S3 sera | La Cena; **assalto drow di Sonjak** alla stalla | Difesa cavallo/fantino |
-| S3 notte | Tentata corruzione del fantino | Sorveglianza/ricatto |
+| S3 sera | La Cena; **tentata corruzione del fantino** (GIORNO2 §3.2) | Sorveglianza/ricatto |
+| S3 notte | **Assalto drow di Sonjak** alla stalla (GIORNO2 §3.3) | Difesa cavallo/fantino |
 | S4 alba | Benedizione + corteo + sbandierata | Morale finale |
 | S4 mezzogiorno | **La Mossa** | Finte, nerbate, iniziativa |
 | S4 pomeriggio | **La Corsa** (3 giri) | Chase set-piece |
 | S4 tramonto | Esito → decreto del Gonfaloniere | Meraviglia + rinforzi + voto |
+
+
+<!-- storico -->
+- era: fino al 2026-11-27 la griglia metteva l'assalto drow alla sera e la corruzione del fantino alla notte, al contrario di GIORNO2 §3.2-3.3. Card del DM del 2026-11-27 «Ordine di GIORNO2»: prima la corruzione alla Cena, poi i drow nella notte.
+<!-- /storico -->
 
 ---
 

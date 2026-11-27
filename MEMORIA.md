@@ -87,6 +87,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 |---|---|---|---|
 | 2026-11-27 | MISURA-AGENTI-E-AUTOMATISMI | M1, emendamento di ADR-0154: le metriche passano a scikit-learn e scipy (Jfs, 2… | 🟡 M1 riscritto, cancello ancora in testing; D1 aperta; M2, M3 e M3-bis da fare |
 | 2026-11-27 | MISURA-AGENTI-E-AUTOMATISMI | M1, ADR-0154 (proposta), l'instradamento degli agenti si misura su messaggi ver… | 🟡 M1 fatto, cancello in testing; D1 aperta (etichette del test da confermare dal DM); M2 e M3 da fare |
+| 2026-11-27 | REGOLE-SENZA-OMISSIONI | Il fantino nella mappa della stalla del Palio (card di Jfs del 27/11 «Nella sta… | ✅ misura_stampa del Palio entro i tetti, booklet rigenerato |
 | 2026-11-26 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Le quindici domande aperte dei pregen decise dal DM | INFERRED aperti 38 → 23 |
 | 2026-11-26 | REGOLE-SENZA-OMISSIONI | Grimjaw rinforzato e i quattro punti aperti della #523 (card di Jfs del 26/11).… | 🟡 rampa chiusa con Borin e Yrsa: ripiega 54, a 0 pf 19, un eroe a terra 73 (a 100 pf erano 53 · 27 · 67; accettato a 178: 62 · 8 · 82); `verifica_scheda.py` 0… |
 | 2026-11-26 | RICERCA-PROSA-PECULIARE | Cieco A sul ritmo della frase (card del DM del 19/11 «Solo A per ora»): 24 copp… | ✅ nessuna differenza dimostrata (13 a 7, soglia 14): non cambia niente |
@@ -96,12 +97,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-25 | PIANO-REVISIONE-ARC09-COERENZA-E-QUALITA | I nomi della Cannath Vale nei file di gioco (scelta di Jfs su card del 25/11, t… | 🟡 `git grep -w` su tutto il repo: Rhest 358 + RHEST 135 in 89/46 file, Blackfens 63 + 8, Brindol 167 in 36 → restano in archivi e storia, log e recap del 05/20… |
 | 2026-11-25 | STATO-E-ORDINE | ADR-0142, aggiunta: la voce `**/rendered-*/` in `.claudeignore` (scelta di Jfs… | 🟡 file tracciati coperti 881 → 1.136; `rg -n -M 500 --ignore-file .claudeignore`, `main` → ramo: byte da −0,4% (Skullcrusher) a −2,7% (Belkram), file da −0,9%… |
 | 2026-11-25 | STATO-E-ORDINE | ADR-0146, correzione: la configurazione Claude arriva anche a livello utente. D… | 🟡 sessione headless nuova in `/home/user` nello stesso container: con la configurazione utente scattano UserPromptSubmit e PreToolUse su Bash,… |
-| 2026-11-25 | PIATTAFORMA-DI-SVILUPPO | P4 e P7, promozioni da testing a stable (D8, card del DM del 2026-11-25: «Tutti… | ✅ P4, P7. Su `main` 168 run su 168 con le stesse prove nei due job; mediana del passo pytest negli ultimi 10 run 1.127 s, sul run della #516 761 s (−32%; la st… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 2 aperte, 324 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 236 voci, l'ultima MS-0236 del 2026-11-27 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 237 voci, l'ultima MS-0237 del 2026-11-27 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa

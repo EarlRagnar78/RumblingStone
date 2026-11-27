@@ -236,5 +236,22 @@ class TestBaseline(unittest.TestCase):
             self.assertIs(type(v), float)
 
 
+class TestEsecuzioneDaSola(unittest.TestCase):
+    """Il manifest dichiara stdout JSON: senza opzioni l'uscita si legge con json.loads (Codex, #531)."""
+
+    def _esegui(self, *argomenti: str) -> str:
+        return subprocess.run([sys.executable, str(Path(em.__file__)), *argomenti],
+                              capture_output=True, text=True, check=True).stdout
+
+    def test_senza_opzioni_esce_solo_json(self) -> None:
+        dati = json.loads(self._esegui())
+        self.assertIn("macro_f1", dati)
+
+    def test_il_testo_si_chiede_a_parte(self) -> None:
+        uscita = self._esegui("--testo")
+        self.assertRaises(ValueError, json.loads, uscita)
+        self.assertIn("precision", uscita)
+
+
 if __name__ == "__main__":
     unittest.main()

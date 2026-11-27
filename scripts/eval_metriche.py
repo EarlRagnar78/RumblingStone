@@ -280,11 +280,18 @@ def rapporto(oro: Sequence[str], pred: Sequence[str],
     return out
 
 
-def main() -> int:
+def main(argv: "list[str] | None" = None) -> int:
+    """L'esempio a tre classi dei test: JSON su stdout (come dichiara il manifest), o testo con --testo."""
+    import argparse
+    ap = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    ap.add_argument("--testo", action="store_true", help="il rapporto leggibile invece del JSON")
+    args = ap.parse_args(argv)
     oro = ["a", "a", "a", "b", "b", "c"]
     pred = ["a", "a", "b", "b", "c", "c"]
-    print(rapporto_testo(oro, pred))
-    print(json.dumps(rapporto(oro, pred, campioni=200), ensure_ascii=False, indent=2))
+    if args.testo:
+        print(rapporto_testo(oro, pred))
+    else:
+        print(json.dumps(rapporto(oro, pred, campioni=200), ensure_ascii=False, indent=2))
     return 0
 
 

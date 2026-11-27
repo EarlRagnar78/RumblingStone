@@ -14679,7 +14679,17 @@
       "stability": "beta",
       "stdlib_only": false,
       "external_bins": [],
-      "args": [],
+      "args": [
+        {
+          "name": "--testo",
+          "type": "bool",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Il rapporto leggibile invece del JSON."
+        }
+      ],
       "inputs": [],
       "outputs": [
         {
@@ -14696,7 +14706,7 @@
       "determinism": {
         "deterministic": true,
         "seed_flag": null,
-        "notes": "bootstrap con random.Random(seme) e indici int(rng.random()*n): stesso risultato fra Python 3.13 e 3.14"
+        "notes": "bootstrap di scipy.stats.bootstrap con numpy default_rng(seme): stabile a parità di numpy; per questo resta fuori dal JSON dei cancelli"
       },
       "side_effects": {
         "writes_canon": false,

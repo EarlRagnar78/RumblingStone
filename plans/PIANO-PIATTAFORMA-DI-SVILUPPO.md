@@ -70,7 +70,8 @@ colonna lo dice e il lotto che la fissa è A1 o A3 di AMBIENTE.
 | verifica del registro dei PX (`verifica_px.py`, ADR-0148) | stdlib | — | 16 test, 366 mutanti su 366, 0 falsi allarmi su 3 versioni storiche del registro | **stable** dal 2026-11-20, bloccante da subito per scelta del DM (ciò che un controllo trova diventa cancello) |
 | verifica dei rimandi per sezione (`verifica_rimandi.py`, ADR-0148) | stdlib | — | 1.744 rimandi, 1.026 giudicati giusti, 717 non giudicabili; sullo storico 2 rotture vere e 0 falsi allarmi; 435 mutanti su 435 | **testing** dal 2026-11-20 (`continue-on-error`); stable non prima del 2026-12-04 |
 | cricchetto degli agenti (`prove_skill.py cricchetto --rigoroso`, ADR-0148) | stdlib | — | solo sulle PR che toccano un agente, le skill che precarica o i suoi casi; quanto oscilla l'esito fra due esecuzioni non è misurato | **testing** dal 2026-11-20 (`continue-on-error`); stable solo dopo la misura dell'oscillazione e i 14 giorni |
-| instradamento degli agenti (`instradamento_agenti.py --check`, ADR-0154) | stdlib | — | primo agente sul set d'oro di 29 messaggi veri: sul test 4 su 18 (Wilson 0,09-0,45), macro-F1 107/1155, sotto la costante «sviluppatore» (6 su 18); kappa fra due etichettature cieche 0,78 | **testing** dal merge (`continue-on-error`); stable non prima di 14 giorni, con le sette condizioni di ADR-0154 (10 run su main, 3 su PR che cambiano l'ingresso, rossi classificati, etichette confermate, JSON identico anche su 3.14, passo < 2 s, ok del DM); revisione se ancora in testing verso il 2027-02-26 |
+| instradamento degli agenti (`instradamento_agenti.py --check`, ADR-0154) | del repo, metriche con scikit-learn e scipy (solo in `--eval` e `--check`: l'hook resta senza dipendenze) | — | primo agente sul set d'oro di 29 messaggi veri: sul test 4 su 18 (Wilson 0,09-0,45), macro-F1 107/1155, sotto la costante «sviluppatore» (6 su 18); kappa fra due etichettature cieche 0,78 | **testing** dal merge (`continue-on-error`); stable non prima di 14 giorni, con le sette condizioni di ADR-0154 (10 run su main, 3 su PR che cambiano l'ingresso, rossi classificati, etichette confermate, JSON identico anche su 3.14, passo < 2 s, ok del DM); revisione se ancora in testing verso il 2027-02-26 |
+| metriche dei classificatori (`eval_metriche.py`, ADR-0154) | del repo, involucro di `sklearn.metrics` e `scipy.stats` | scikit-learn sì (`==1.9.1`) | le convenzioni sono quelle di sklearn per costruzione; rifatto il confronto col valore stdlib di M1 sul set d'oro dopo la riscrittura: stessi numeri (4 su 18, baseline 6 su 18, macro-F1 107/1155); il bootstrap cambia (0,0185-0,2159 contro 0,0222-0,2222) ed è uscito dal JSON | **testing** con il cancello che la usa, e sale con lui |
 
 ### Librerie Python
 
@@ -85,6 +86,7 @@ colonna lo dice e il lotto che la fissa è A1 o A3 di AMBIENTE.
 | scikit-image | ≥ 0.25 | resa delle mappe | **stable** |
 | fonttools | ≥ 4.66.1 | font delle mappe | **stable** |
 | shapely | = 2.2.0 | piante delle città, `scripts/piante/` (ADR-0102) | **testing** dal 2026-10-23 |
+| scikit-learn | = 1.9.1 | metriche dei classificatori (`eval_metriche.py`) e baseline statistica di M3 (ADR-0154); porta joblib, threadpoolctl (BSD-3-Clause) e narwhals (MIT). BSD-3-Clause. Import a freddo 1,2 s, solo fuori dall'hook | **testing** dal 2026-11-27 (Jfs: «le librerie standard de facto della community») |
 | bpy, torch, piq | `requirements-completo.txt` | 3D e seconda misura della resa, fuori CI | **testing** locale (non girano in CI: ADR-0084) |
 | spaCy, Stanza | — | `misura_sintassi` (PR #264, #270) | **unstable** |
 | `import fitz` di pymupdf | — | deprecato: pymupdf avvisa che sparirà | da migrare a `import pymupdf` prima che salga la versione maggiore |
@@ -122,6 +124,7 @@ tutti i componenti che la fanno passare in CI.
 | prosa: sintassi | spaCy, Stanza | unstable |
 | bestiario e statblocchi | Python, pyyaml | stable |
 | skill: build, validazione, scanner | Python, pyyaml, tiktoken, bash | stable |
+| agenti: instradamento misurato (`--eval`, `--check`) | Python, scikit-learn, scipy | testing |
 | piani e documenti | Python, git | stable |
 | server MCP | Python | stable |
 | `converters/` | PyMuPDF, docling, torch, EasyOCR, magika | **testing** dal 2026-10-23 (D6, P9): Python 3.13, ruff, Dependabot, import di ogni modulo in CI |

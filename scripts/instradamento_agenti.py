@@ -37,10 +37,14 @@ e non obbliga; il blocco vero resta quello di ``vincolo_skill.py`` sulla prosa.
 La misura (ADR-0154): ``--eval`` confronta il primo agente suggerito con il set
 d'oro di ``plans/instradamento/agenti-oro.json`` (messaggi veri, «nessuno» se
 il messaggio non chiede uno specialista), per split dev, test e tutto, con le
-metriche di ``eval_metriche`` e la baseline della classe maggioritaria del dev.
+metriche di ``eval_metriche`` (scikit-learn e scipy) e la baseline della classe
+maggioritaria del dev. Il JSON di ``--eval --json`` non porta il bootstrap, che
+dipende dal generatore di numpy: lo stampa solo il rapporto di testo.
 ``--check`` legge il campo ``tetto`` del set d'oro (giusti esatti, giusti
 indulgenti e macro-F1 sul test) ed esce 1 se uno scende sotto; se sale avvisa,
-e il tetto si alza a mano.
+e il tetto si alza a mano. Confronta interi e la macro-F1 come frazione esatta
+ricavata dai conteggi di ``confusion_matrix``, mai i float di sklearn. sklearn e
+scipy si importano solo qui: ``--prompt``, ``--stop`` e ``--cancello`` no.
 """
 from __future__ import annotations
 
@@ -699,25 +703,31 @@ def _leggi_oro(percorso: Path) -> dict:
     return json.loads(Path(percorso).read_text(encoding="utf-8"))
 
 
-def valuta(percorso: Path = ORO, scegli_=None) -> dict:
-    """Le metriche per split; la baseline è la classe maggioritaria del dev, applicata a tutti."""
+def valuta(percorso: Path = ORO, scegli_=None, campioni: int = 1000) -> dict:
+    """Le metriche per split; la baseline è la classe maggioritaria del dev, applicata a tutti.
+
+    La baseline è ``DummyClassifier(strategy="most_frequent")`` addestrato sul dev.
+    Con ``campioni=0`` niente bootstrap: il cancello e il JSON non lo portano."""
     scegli_ = scegli_ or scegli
     casi = _leggi_oro(percorso)["casi"]
     pred = [predici(c["testo"], scegli_) for c in casi]
-    base = em.maggioritaria([c["atteso"] for c in casi if c["split"] == "dev"])
-    out: dict = {"baseline": {"classe": base, "regola": "classe maggioritaria del dev"}}
+    dev = [c["atteso"] for c in casi if c["split"] == "dev"]
+    base = em.maggioritaria(dev)
+    out: dict = {"baseline": {"classe": base, "regola": "classe maggioritaria del dev, "
+                              "DummyClassifier most_frequent"}}
     for split in SPLIT:
         idx = [i for i, c in enumerate(casi) if split == "tutto" or c["split"] == split]
         oro = [casi[i]["atteso"] for i in idx]
         acc = [casi[i].get("accettabili", []) for i in idx]
         pr = [pred[i] for i in idx]
-        r = em.rapporto(oro, pr, acc)
-        costante = [base] * len(oro) if base is not None else [NESSUNO] * len(oro)
+        r = em.rapporto(oro, pr, acc, campioni=campioni)
+        costante = em.baseline_maggioritaria(dev, len(oro)) or [NESSUNO] * len(oro)
+        k = em.giusti(oro, costante)
         r["baseline"] = {
-            "giusti": em.giusti(oro, costante),
-            "accuracy": em.frazione(em.accuracy(oro, costante)),
+            "giusti": k,
+            "accuracy": em.frazione(k, len(oro)),
             "giusti_indulgenti": em.giusti_indulgenti(oro, costante, acc),
-            "macro_f1": em.frazione(em.macro_f1(oro, costante)),
+            "macro_f1": em.frazione(em.macro_f1_esatta(oro, costante)),
         }
         out[split] = r
     return out
@@ -730,7 +740,7 @@ def _frazione_tetto(v) -> Fraction:
 def controlla(percorso: Path = ORO, scegli_=None) -> "tuple[int, list[str]]":
     """Il cricchetto: 1 se una misura del test scende sotto il tetto, 0 altrimenti."""
     tetto = _leggi_oro(percorso).get("tetto") or {}
-    v = valuta(percorso, scegli_)["test"]
+    v = valuta(percorso, scegli_, campioni=0)["test"]  # interi e frazioni: niente bootstrap
     mancano = [k for k in ("giusti", "giusti_indulgenti", "macro_f1") if k not in tetto]
     if mancano:
         return 1, [f"✗ instradamento_agenti: nel set d'oro manca il tetto per {', '.join(mancano)} "
@@ -766,14 +776,16 @@ def _stampa_eval(v: dict) -> None:
         n = r["n"]
         lo, hi = r["wilson95"]
         b = r["baseline"]
-        bo = r["macro_f1_bootstrap95"]
+        bo = r.get("macro_f1_bootstrap95")
         print(f"\n== {split} · n {n}")
         print(f"  accuracy             {r['giusti']}/{n} = {r['accuracy']['valore']:.4f}"
               f"  (Wilson 95%: {lo:.4f}-{hi:.4f})")
         print(f"  accuracy indulgente  {r['giusti_indulgenti']}/{n} = "
               f"{r['accuracy_indulgente']['valore']:.4f}")
-        print(f"  macro-F1             {r['macro_f1']['frazione']} = {r['macro_f1']['valore']:.4f}"
-              f"  (bootstrap 95%: {bo['basso']:.4f}-{bo['alto']:.4f}, seme {bo['seme']})")
+        boot = (f"  (bootstrap 95%: {bo['basso']:.4f}-{bo['alto']:.4f}, seme {bo['seme']})"
+                if bo else "")
+        print(f"  macro-F1             {r['macro_f1']['frazione']} = "
+              f"{r['macro_f1']['valore']:.4f}{boot}")
         print(f"  baseline             {b['giusti']}/{n} esatti, {b['giusti_indulgenti']}/{n} "
               f"indulgenti, macro-F1 {b['macro_f1']['valore']:.4f}")
         classi = r["classi"]
@@ -808,11 +820,10 @@ def main(argv: "list[str] | None" = None) -> int:
     ap.add_argument("--oro", type=Path, default=ORO, help="il set d'oro (default: plans/instradamento/agenti-oro.json)")
     a = ap.parse_args(argv)
     if a.eval:
-        v = valuta(a.oro)
-        if a.json:
-            print(json.dumps(v, ensure_ascii=False, indent=2))
+        if a.json:  # senza bootstrap: l'intervallo cambia fra versioni di numpy
+            print(json.dumps(valuta(a.oro, campioni=0), ensure_ascii=False, indent=2))
         else:
-            _stampa_eval(v)
+            _stampa_eval(valuta(a.oro))
         return 0
     if a.check:
         codice, msg = controlla(a.oro)

@@ -39,6 +39,8 @@ l'hook fa peggio di chi risponde sempre «sviluppatore».
    sull'unione di oro e predizioni) e i valori sono `Fraction`, così un
    cancello non confronta float. scipy, già stable, serve solo da oracolo di
    Wilson nei test, che si saltano se manca. Nessuna libreria nuova.
+   *Emendato il 2026-11-27 da Jfs: le metriche sono di scikit-learn e scipy,
+   vedi l'emendamento in fondo.*
 3. **La misura è un comando.** `instradamento_agenti.py --eval [--json]`
    confronta il primo agente suggerito con il set d'oro per dev, test e
    tutto; `--oro` sceglie un altro file.
@@ -94,7 +96,7 @@ Le cause osservate caso per caso, non ancora corrette:
 |---|---|
 | Rimisurare su `casi.json` | etichette di skill e non di agente, e casi usati anche per tarare |
 | Aspettare `--riepilogo` dopo una settimana | i registri non sopravvivono al container |
-| scikit-learn per le metriche | una dipendenza nuova per poche funzioni; le sue convenzioni si copiano e i test le confrontano |
+| scikit-learn per le metriche | una dipendenza nuova per poche funzioni; le sue convenzioni si copiano e i test le confrontano. **Ribaltata da Jfs il 2026-11-27**: scikit-learn entra (emendamento in fondo) |
 | Cancello bloccante subito | ADR-0099: un cancello nuovo passa da testing, e n = 18 è poco |
 | Correggere i trigger nella stessa PR | una tecnica per PR: la correzione (PR 2) si misura contro questa base |
 
@@ -138,3 +140,27 @@ cricchetto; `--eval` e il set d'oro restano come misura a mano.
   per split.
 - `python3 scripts/instradamento_agenti.py --check`: il cricchetto.
 - Promozione: le condizioni del punto 5, contate dai log della CI.
+
+---
+
+## Emendamento del 2026-11-27 — le metriche sono di scikit-learn e scipy
+
+**Stato**: chiesto da Jfs il 2026-11-27 nel thread, prima del merge della PR 1 · **Dettaglio**: `requirements-dev.txt` (la riga di scikit-learn) e §2 di [PIANO-PIATTAFORMA-DI-SVILUPPO](../PIANO-PIATTAFORMA-DI-SVILUPPO.md).
+
+Jfs, alle 07:22: *«Non usare solo la stdlibi ma tutte le librerie utilizzate come standard de facto della community per favore e aggiorna tutto»*. Alle 07:27: *«Se serve usa anche numpy e panda keras e tensorflow se ha senso e segue le best pratices per verificare e risolvere le problematiche e migliora l audit ed i fix da fare nelle varie partindel progetto»*.
+
+Il punto 2 della Decisione diventa questo. `eval_metriche.py` avvolge `sklearn.metrics` (`confusion_matrix`, `precision_recall_fscore_support`, `f1_score`, `accuracy_score`, `cohen_kappa_score`, `classification_report`, sempre con `zero_division=0` e con `labels=` l'unione di oro e predizioni), usa `DummyClassifier(strategy="most_frequent")` per la baseline e `scipy.stats` per l'intervallo di Wilson (`binomtest`) e per il bootstrap. Del repo resta quello che le librerie non danno: l'accuracy indulgente, l'insieme vuoto che sklearn rifiuta, il formato del rapporto e `macro_f1_esatta`, la macro-F1 come frazione ricavata dai conteggi interi della matrice. Un test la confronta con `f1_score`, e il cancello usa lei e non il float. scikit-learn entra fissato a `==1.9.1` in `requirements-dev.txt`, canale testing dal 2026-11-27, licenza BSD-3-Clause; porta con sé joblib, threadpoolctl e narwhals. Sta sul piano di sviluppo di [ADR-0037](ADR-0037-stdlib-only-e-le-sue-eccezioni.md), come tcod: CI e chi sviluppa, mai la catena della sessione. sklearn e scipy si importano solo in `--eval` e `--check`; l'hook `--prompt` resta a 0,06 s, e un test lo verifica.
+
+La riga «scikit-learn per le metriche» fra le alternative scartate è ribaltata da Jfs. Il motivo scritto allora, una dipendenza nuova per poche funzioni, pesa meno della regola di partire dallo standard di fatto della comunità (regola 6 di «Quando un agente risponde» in [`AGENTS.md`](../../AGENTS.md)).
+
+**I numeri.** Il cancello non si muove: sul test 4 su 18, baseline 6 su 18, macro-F1 107/1155, gli stessi della versione stdlib. Le convenzioni dove sklearn sceglie per noi: il kappa indefinito vale 1 (`replace_undefined_by=1.0`), e lo spareggio della baseline segue l'ordine di `np.unique`, lo stesso che usava la versione stdlib. L'intervallo bootstrap della macro-F1 sul test passa da 0,0222-0,2222 a 0,0185-0,2159, perché `scipy.stats.bootstrap` ricampiona in un altro modo. Siccome dipende dalla versione di numpy, il bootstrap esce dal JSON di `--eval --json` e dal cancello, e resta nel rapporto di testo. 92 test verdi.
+
+**Il deep learning, deciso nel thread.** Keras e TensorFlow per ora no: con 29 casi una rete impara a memoria. Lo ha detto il thread a Jfs alle 07:28, e Jfs può ribaltarlo. L'ordine è quello delle buone pratiche di ML: prima la baseline costante (fatta), poi un modello classico di scikit-learn (M3, PR 3: TF-IDF con `MultinomialNB` o `LogisticRegression`, validazione incrociata sul dev), e una rete solo se il classico non basta e con almeno 200 casi etichettati (PR 4: PyTorch e sentence-transformers, lo standard di fatto per il testo, con un modello di embedding piccolo e multilingue che stia nei 6 GB della RTX 4050; non è ancora stato provato su quella GPU). pandas entra solo se servono le tabelle dell'audit; numpy arriva già con scikit-learn.
+
+**Quello che si paga.**
+
+- `--check` passa da 0,19 s a 1,28 s per l'import di sklearn. Sta ancora sotto i 2 s della condizione 6, con meno margine; quanto pesa sul job principale non è misurato.
+- `--eval` in testo ci mette 6,5 s, quasi tutti di bootstrap; `--eval --json` 1,35 s.
+- La condizione 5 (JSON identico anche su Python 3.14) ora chiede anche che scikit-learn 1.9.1 si installi su 3.14.
+- Un pacchetto in più nell'installazione di sviluppo, con tre dipendenze sue.
+

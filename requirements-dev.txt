@@ -68,6 +68,20 @@ numpy>=2.5.3
 # Dalla 1.18 scipy chiede Python 3.12 o piu', come numpy dalla 2.5.
 scipy>=1.18.1
 
+# ADR-0154 (Jfs, 2026-11-27: «non usare solo la stdlib ma le librerie standard
+# de facto della community»). Le metriche di un classificatore contro un set
+# d'oro (`scripts/eval_metriche.py`, involucro di `sklearn.metrics`: matrice di
+# confusione, P/R/F1, kappa di Cohen) e la baseline statistica di M3; gli
+# intervalli di Wilson e il bootstrap li da' scipy, gia' qui sopra. Licenza
+# BSD-3-Clause; porta joblib e threadpoolctl (BSD-3-Clause) e narwhals (MIT),
+# e i pavimenti che chiede a numpy e scipy sono sotto i nostri. Canale TESTING
+# (ADR-0099): versione esatta, perche' un numero del set d'oro deve rifarsi
+# uguale finche' il cancello `instradamento_agenti.py --check` e' in prova.
+# Solo sviluppo e CI: l'hook di `instradamento_agenti.py` gira a ogni messaggio
+# e sul portatile del DM, quindi sklearn va importato solo in `--eval`/`--check`
+# (import a freddo 1,2 s contro i 59 ms dell'hook intero).
+scikit-learn==1.9.1
+
 # ADR-0102 (DM, 2026-10-23: «lo strumento delle mappe nel repo»). Le piante di
 # Rethmar, Dauth e Channathgate si disegnano con `scripts/piante/` (poligoni,
 # offset delle mura, lotti), che lavora con shapely sopra numpy e scipy; la

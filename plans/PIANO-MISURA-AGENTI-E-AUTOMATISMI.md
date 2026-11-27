@@ -1,8 +1,8 @@
 # PIANO — Misurare agenti, skill e automatismi su casi veri
 
-> **Stato**: 🟡 in corso (2026-11-27). M1 fatto sul ramo della PR 1 (set d'oro, `eval_metriche.py`, `--eval` e `--check`, cancello in testing); M2 e M3 da fare; M4-M7 solo elencati · **Classe**: G per le etichette e la scelta della tecnica, C per il codice
+> **Stato**: 🟡 in corso (2026-11-27). M1 fatto sul ramo della PR 1 (set d'oro, `eval_metriche.py` su scikit-learn e scipy, `--eval` e `--check`, cancello in testing); M2, M3 e M3-bis da fare; M4-M7 solo elencati · **Classe**: G per le etichette e la scelta della tecnica, C per il codice
 > **Nasce da**: il thread «Misurare e migliorare agenti, skill e automatismi» del 2026-11-27, aperto da Jfs.
-> **Decisione**: [ADR-0154](adr/ADR-0154-l-instradamento-degli-agenti-si-misura-su-messaggi-veri.md), proposta.
+> **Decisione**: [ADR-0154](adr/ADR-0154-l-instradamento-degli-agenti-si-misura-su-messaggi-veri.md), proposta, con l'emendamento del 2026-11-27 (Jfs: le librerie standard di fatto della comunità al posto della sola stdlib).
 > **Audit**: `/mnt/project-files/agenti-eval-2026-11-27/AUDIT.md` (fuori dal repo; i numeri che servono sono qui e nell'ADR).
 >
 > **In breve**: gli hook e gli agenti di ADR-0146 decidono qualcosa su ogni
@@ -51,6 +51,16 @@ passo CI con `continue-on-error`. 68 test verdi (`test_eval_metriche`,
 `test_instradamento_agenti`, con una regressione iniettata che fa uscire
 `--check` con 1).
 
+Riscritto lo stesso giorno, su richiesta di Jfs, sopra le librerie che la
+comunità usa (emendamento di ADR-0154): `sklearn.metrics` per matrice, P/R/F1,
+accuracy e kappa, `DummyClassifier(strategy="most_frequent")` per la baseline,
+`scipy.stats` per Wilson e bootstrap; scikit-learn `==1.9.1` in
+`requirements-dev.txt`, canale testing. Del repo restano l'accuracy
+indulgente, l'insieme vuoto, il formato e `macro_f1_esatta`, che il cancello
+usa. Numeri del cancello invariati (4/18, baseline 6/18, macro-F1 107/1155);
+il bootstrap esce dal JSON. `--check` da 0,19 a 1,28 s, l'hook `--prompt`
+resta a 0,06 s. 92 test verdi.
+
 ### M2 · Gli omonimi e i messaggi che non chiedono lavoro ⬜ PR 2
 
 `[engine: Opus 5, sessione principale per la scelta, Sonnet 5 per il codice · effort: alto · qualità: sul test la misura sale sopra main in esatti o macro-F1 senza scendere nell'altra, con le regole tarate solo sul dev, e il tetto si alza]`
@@ -60,22 +70,40 @@ Una tecnica sola: disambiguare i trigger omonimi («coordinate», «hook»,
 messaggi che non chiedono uno specialista (avvisi del coordinatore, resoconti
 dei sottoagenti) perché diano «nessuno».
 
-### M3 · Una baseline statistica contro le regole ⬜ PR 3
+### M3 · Un modello classico di scikit-learn contro le regole ⬜ PR 3
 
-`[engine: Sonnet 5 · effort: medio · qualità: Naive Bayes multinomiale stdlib addestrato sul dev, misurato sul test; entra solo se batte M2 sul test, altrimenti il resoconto lo dice e il codice resta in esperimenti]`
+`[engine: Sonnet 5 · effort: medio · qualità: TF-IDF con MultinomialNB o LogisticRegression di scikit-learn, scelto con la validazione incrociata sul solo dev e misurato una volta sul test; entra solo se batte M2 sul test, altrimenti il resoconto lo dice e il codice resta in esperimenti]`
+
+Con 11 casi di dev la validazione incrociata ha pieghe minuscole: il
+resoconto dice quante e con che varianza. Il modello gira solo in `--eval` e
+`--check`, mai nell'hook, che resta senza dipendenze.
+
+### M3-bis · Una rete, solo se il classico non basta ⬜ PR 4, con condizione
+
+`[engine: Opus 5 per decidere se aprirlo, Sonnet 5 per il codice · effort: alto · qualità: con almeno 200 casi etichettati e M3 che non basta, un modello di embedding piccolo e multilingue (PyTorch e sentence-transformers) batte M3 sul test; gira nei 6 GB della RTX 4050 e fuori dalla CI]`
+
+Non si apre prima che valgano tutte e due le condizioni: con 29 casi una rete
+impara a memoria. Keras e TensorFlow, nominati da Jfs, sono scartati dal
+thread il 27/11 a favore di PyTorch e sentence-transformers, lo standard di
+fatto per il testo; Jfs può ribaltare la scelta. Sulla 4050 non è ancora stato
+provato niente di questo lotto.
 
 ### M4-M7 · Gli altri componenti che classificano ⬜
 
 Elencati dall'audit, ognuno con la metrica che il costo dell'errore chiede.
-Nessuno è ancora tagliato in lotto.
+Nessuno è ancora tagliato in lotto. Jfs ha chiesto il 27/11 di allargare
+l'audit e i fix a tutte le parti del progetto: ogni componente segue la
+strada di M1 e M2, cioè un set etichettato con split dev e test, la misura
+con `eval_metriche.py`, un cricchetto in testing e poi un fix per PR, tarato
+sul dev e misurato sul test contro main.
 
-| Lotto | Componente | Che cosa decide | Metrica | Etichette |
-|---|---|---|---|---|
-| M4 | instradamento delle skill | skill obbligatorie | recall, con precision a fianco | `casi.json`, solo «verifica» |
-| M5 | `vincolo_skill` | blocca la scrittura | precision del blocco, recall a fianco | da costruire dai commit |
-| M6 | rilevatori di prosa del cricchetto | difetto sì o no, per norma | precision per norma | box votati e `CONGELATI.json` |
-| M6-bis | riconoscimento del push nel cancello | è un push? | recall | i 144 comandi del thread della #510 |
-| M7 | prove degli agenti (ADR-0148) | caso passato | pass^k su due esecuzioni | i 36 casi di oggi |
+| Lotto | Componente | Che cosa decide | Metrica (da `sklearn.metrics`) | Set etichettato | Fix |
+|---|---|---|---|---|---|
+| M4 | instradamento delle skill | skill obbligatorie | recall, con precision a fianco | `casi.json`, solo «verifica»; da rifare con split dev e test, perché quei casi tarano anche i trigger | gli omonimi dei trigger sono gli stessi di M2: il fix di M2 si rimisura qui prima di scriverne un altro |
+| M5 | `vincolo_skill` | blocca la scrittura | precision del blocco, recall a fianco | da costruire dai commit | da scegliere dopo la misura |
+| M6 | rilevatori di prosa del cricchetto | difetto sì o no, per norma | precision per norma | box votati e `CONGELATI.json` | da scegliere dopo la misura, norma per norma |
+| M6-bis | riconoscimento del push nel cancello | è un push? | recall | i 144 comandi del thread della #510 | da scegliere dopo la misura |
+| M7 | prove degli agenti (ADR-0148) | caso passato | pass^k su due esecuzioni (non è di sklearn) | i 36 casi di oggi | prima due esecuzioni per caso, come già scritto in ADR-0148 |
 
 I verificatori `verifica_px` e `verifica_rimandi` sono già misurati con i
 mutanti (ADR-0148) e non entrano.
@@ -83,7 +111,8 @@ mutanti (ADR-0148) e non entrano.
 ## §4 · Validazione
 
 - `python3 scripts/instradamento_agenti.py --check` verde contro il tetto.
-- `python3 -m pytest scripts/tests/test_eval_metriche.py scripts/tests/test_instradamento_agenti.py -q`.
+- `python3 -m pytest scripts/tests/test_eval_metriche.py scripts/tests/test_instradamento_agenti.py -q`,
+  con `requirements-dev.txt` installato (scikit-learn 1.9.1, scipy).
 - Promozione del passo: le condizioni di ADR-0154, contate dai log.
 
 ## §5 · Decisioni
@@ -98,7 +127,8 @@ mutanti (ADR-0148) e non entrano.
 
 - [x] M1 · set d'oro, `eval_metriche.py`, `--eval` e `--check`, cancello in testing (PR 1)
 - [ ] M2 · omonimi e messaggi senza lavoro (PR 2)
-- [ ] M3 · Naive Bayes contro le regole (PR 3)
+- [ ] M3 · TF-IDF con MultinomialNB o LogisticRegression di scikit-learn contro le regole (PR 3)
+- [ ] M3-bis · rete con sentence-transformers, solo con ≥ 200 casi e M3 che non basta (PR 4)
 - [ ] M4 · recall dell'instradamento delle skill
 - [ ] M5 · precision del blocco di `vincolo_skill`
 - [ ] M6 · precision per norma dei rilevatori, recall del riconoscimento del push

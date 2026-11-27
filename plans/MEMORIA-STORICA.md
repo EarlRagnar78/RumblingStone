@@ -2686,3 +2686,15 @@ repo scritto con altre parole.
 - **Trovato nel repo:** `scripts/memoria_custode.py` · `scripts/tests/test_memoria_custode.py` · `.claude/agents/custode-memoria.md` · `.claude/agent-evals/custode-memoria/` · `.claude/settings.json` · `plans/adr/ADR-0151-la-memoria-del-progetto-ha-uno-specchio-e-un-custode.md`
 - **Fuori dal repo:** `/mnt/project-files/custode-memoria-2026-11-27/AUDIT.md` · `/mnt/project-files/memoria-progetto-specchio/istantanee/` · `/mnt/project-files/memoria-progetto-specchio/RISERVATI.txt`
 - **Solo qui:** Scelte di Jfs sulle due card del 2026-11-27: copia della memoria redatta nel repo (`plans/memoria-progetto/`, prima copia in questa PR: 87 file, 25 righe riservate) con quella completa nelle istantanee in `/mnt`; hook di merge bloccante. Scartate la copia solo in `/mnt`, quella integrale (repo pubblico) e il solo avviso. Buchi dichiarati: `gh pr merge` da Bash e il merge dall'interfaccia di GitHub non passano dall'hook; le scritture del coordinatore si vedono solo alla verifica successiva; un thread può essere fermato per righe tolte da altri (rimedio: `archivia`); un hook in timeout o in errore lascia passare il merge. Delle 56 righe di `MEMORY.md` del 27/11, 12 fermerebbero un merge se tolte senza archiviarle. Residuo per `integratore-dm`: il messaggio di rifiuto S-7 di `scripts/mcp_server.py` è scritto per `prove_skill` e per i comandi vietati di `memoria_custode` dice una cosa falsa. Il numero MS va rinumerato al merge, perché altri thread aggiungono voci; ADR-0150 è della PR aperta #519.
+
+### MS-0239 · 2026-11-27 · Il fantino dorme nella stalla solo se è un PNG ancora lì
+
+- **Data:** 2026-11-27
+- **PR:** —
+- **ADR:** ADR-0109
+- **Temi:** Palio stalla mappa fantino segnalino PG corruzione rapimento drow
+- **Origine:** riga del 2026-11-27 «Il fantino nella stalla del Palio solo se è un PNG ancora lì» in `plans/CHANGELOG.md`
+- **Testo:** Dopo la #527 (MS-0236) la riga della stalla in MAPPE diceva che il fantino dorme accanto al box in ogni caso. Il custode del canone aveva notato due casi in cui non regge: il fantino che ha ceduto alla corruzione o è stato rapito dai rivali (GIORNO2 §3.2) quella notte non c'è, e un fantino PG lo muove il giocatore (AVVENTURA r.263, STATBLOCCHI r.158). Card a Jfs del 2026-11-27, risposta alle 08:25 UTC: «Solo se PNG e ancora lì». La riga ora dice le due eccezioni, con la marca CANONE e una riga nel blocco storico; il booklet del Palio è rigenerato.
+- **Trovato nel repo:** `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/Arco-Post-Hammerfist-P2D-PALIO-MAPPE.md` · `09_Continuazione Arco Narrativo dopo Battaglia di Hammerfist/homebrew/PALIO-BOOKLET.hb.md`
+- **Fuori dal repo:** —
+- **Solo qui:** Restano aperti al DM, come in MS-0233: se il rapimento dei rivali e quello dei drow si escludono, e che cosa vuol dire «fantino di riserva» quando il fantino è un PG.

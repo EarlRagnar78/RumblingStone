@@ -80,7 +80,7 @@ La **sincronizzazione** col fronte (INTEGRAZIONE §3): due vie per i rinforzi vi
 Griglia **1 quadretto = 5 ft**, EL 12–13 (statblocchi in `...P2D-PALIO-STATBLOCCHI.md` §3).
 - I drow entrano dalla **botola/fogna** (angolo SO) con *Oscurità*; puntano al **BOX** del
   cavallo (obiettivo: avvelenare il cavallo o rapire il fantino), usano *Silenzio* per soffocare gli allarmi.
-- Il **Barbaresco (B)** è accanto al cavallo; il **fantino (F)** dorme nella stalla, accanto al box `[CANONE — DM 2026-11-27, card «Dove dorme il fantino»]`; la **scorta PG (P)** copre la porta principale.
+- Il **Barbaresco (B)** è accanto al cavallo; il **fantino (F)**, se è un PNG ancora lì, dorme nella stalla, accanto al box `[CANONE — DM 2026-11-27, card «Dove dorme il fantino»]`: se è fuggito o i rivali l'hanno già rapito (GIORNO2 §3.2) togli il segnalino, se è un PG il segnalino va dove lo mette il giocatore `[CANONE — DM 2026-11-27, card «Fantino PG o già fuggito»]`; la **scorta PG (P)** copre la porta principale.
   Sorpresa se non di guardia: Ascoltare DC 20.
 - Buio totale (torce spente): **Scurovisione**/luce = cruciale.
 - Token in mappa: **D** Drow Assassina di Lolth · **C** Chierica di Lolth · **S** Servitore della Spora · **F** fantino.
@@ -88,6 +88,7 @@ Griglia **1 quadretto = 5 ft**, EL 12–13 (statblocchi in `...P2D-PALIO-STATBLO
 
 <!-- storico -->
 - era: fino al 2026-11-27 la mappa della stalla aveva solo il cavallo come obiettivo, senza il fantino. Card del DM del 2026-11-27 «Nella stalla, accanto al box»: segnalino F accanto al box, nella mappa e nella legenda. Nella stessa modifica la legenda dell'SVG va su due righe e la tattica su due, con la tela alta 530: prima uscivano oltre il bordo e si accavallavano con l'etichetta della porta.
+- era: fino al 2026-11-27 la riga diceva che il fantino dorme nella stalla in ogni caso. Card del DM del 2026-11-27 «Solo se PNG e ancora lì»: se è fuggito o rapito dai rivali non c'è, se è un PG lo mette il giocatore.
 <!-- /storico -->
 
 ---

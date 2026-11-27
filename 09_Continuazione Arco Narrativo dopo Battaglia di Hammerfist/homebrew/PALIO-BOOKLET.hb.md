@@ -1719,8 +1719,10 @@ Il fantino è un mercenario: **corruttibile**. Durante la Cena:
 - **Rapimento**: se la corruzione fallisce, i rivali tentano di **rapire** il fantino
   (combattimento urbano notturno, GS 10–11: 2–3 sicari + 1 mago di supporto).
 - **Posta — Fantino fuggito o rapito dai rivali** →
-  corre il **fantino di riserva**, come per il rapimento dei drow (§3.3), e quella notte dorme
-  lui nella stalla, accanto al box, al posto del fantino (MAPPE).
+  come per il rapimento dei drow (§3.3): se i PG non lo riprendono prima della corsa, corre il
+  **fantino di riserva**, e quella notte dorme lui nella stalla, accanto al box, al posto del
+  fantino (MAPPE); se i PG riprendono un fantino rapito, corre lui e vale «rapito e salvato»
+  per l'Onore del Fantino (§5).
 
 ### 3.3 Fronte C — La Stalla e i Drow di Sonjak *(aggancio campagna)*
 

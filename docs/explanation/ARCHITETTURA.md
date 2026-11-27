@@ -27,6 +27,7 @@ Chi cerca **perché** una cosa è fatta così trova la decisione negli ADR
 12. [La catena dei booklet](#12-la-catena-dei-booklet)
 13. [La catena delle skill](#13-la-catena-delle-skill)
 14. [Il giro di una modifica: dal thread al merge](#14-il-giro-di-una-modifica-dal-thread-al-merge)
+    - 14.1 [Agenti, hook e cancelli del thread](#141-agenti-hook-e-cancelli-del-thread)
 15. [Le decisioni del DM](#15-le-decisioni-del-dm)
 16. [La piattaforma e i suoi tre canali](#16-la-piattaforma-e-i-suoi-tre-canali)
 17. [Il rilascio](#17-il-rilascio)
@@ -931,6 +932,46 @@ statblocchi, test. Nella stessa PR il piano, la riga in `plans/INDEX.md` e
 quella in `plans/CHANGELOG.md` vanno insieme (regola d'oro,
 `check_plans_discipline.py`).
 
+### 14.1 Agenti, hook e cancelli del thread
+
+Un thread di progetto parte fuori dal repo, nella cartella che contiene il
+clone. `scripts/claude-progetto.sh` gli porta la configurazione del repo
+(ADR-0140), e le regole di `AGENTS.md` arrivano divise in `.claude/rules/`,
+ognuna con i file a cui serve (ADR-0141). Il lavoro lo fanno i tredici agenti
+di `.claude/agents/`, che il thread lancia uno dopo l'altro: un agente non ne
+avvia altri. Gli hook stanno intorno a ogni passo, e alcuni fermano.
+
+```mermaid
+flowchart LR
+    I[Istruzioni del thread<br/>riga «Catena:»] --> P[UserPromptSubmit<br/>instradamento_agenti --prompt]
+    P -->|suggerisce agente e catena<br/>registro locale| T[Thread]
+    T -->|Agent| A[Agenti di .claude/agents/<br/>Autori · Tecnici · Verificatori]
+    A -->|Edit, Write| V[PreToolUse<br/>vincolo_skill]
+    V -->|prosa senza skill| X1[bloccata]
+    T -->|git push, PR| C[PreToolUse<br/>instradamento_agenti --cancello]
+    C -->|catena dal registro<br/>o dalla trascrizione| X2[bloccato se manca un agente<br/>o autore-documenti]
+    C -->|canone su main,<br/>ramo di gruppo riscritto| X3[bloccato]
+    C --> PR[PR]
+    PR --> CI[ci.yml: cricchetto della prosa,<br/>verifica_px, verifica_rimandi,<br/>prove degli agenti,<br/>documentazione_allineata]
+```
+
+| Anello | Cosa ferma | ADR |
+|---|---|---|
+| `vincolo_skill.py` (PreToolUse su Edit e Write) | la prosa di gioco scritta senza `rumblingstone-narrative-style` | ADR-0146 |
+| `instradamento_agenti.py --prompt`, `--stop` | niente: suggerisce e misura | ADR-0146 |
+| `instradamento_agenti.py --cancello` | push e PR finché manca un agente della riga «Catena:», letta dal registro o, per il messaggio di avvio del thread, dalla trascrizione; il canone fuori dal ramo di gruppo | ADR-0146, ADR-0149, ADR-0153 |
+| `cricchetto_prosa.py` in CI | una norma di prosa che peggiora sui file di gioco cambiati | ADR-0146 |
+| `verifica_px.py`, `verifica_rimandi.py`, `.claude/agent-evals/` in CI | somme di PX e rimandi sbagliati; un agente che non passa i suoi tre casi | ADR-0148 |
+| `documentazione_allineata.py` in CI | un agente, uno script, un workflow o un hook aggiunto senza la riga nel suo indice; il debito vecchio sta sotto un tetto che scende | ADR-0153 |
+| `documentazione_allineata.py --attiva` nella routine del lunedì | niente: se una delle quattro regole scatta (debito oltre il tetto; agente, workflow o hook scoperto; ARCHITETTURA indietro di 3 ADR o di uno con più di 14 giorni; un indice fermo da 30 giorni) chiede al coordinatore un thread con `autore-documenti` e la lista del lavoro | ADR-0153 |
+
+I registri degli hook (`.claude/.uso-*.jsonl`) restano nel container del
+thread e muoiono con lui: dicono cosa è successo in un thread, non nella
+storia del repo. Il cancello della documentazione controlla che un elemento
+sia citato, non che la descrizione sia giusta. Un documento che resta indietro
+senza che una PR aggiunga niente di scoperto lo trova la routine del lunedì,
+che spende token solo quando `--attiva` dice che serve.
+
 ## 15. Le decisioni del DM
 
 ```mermaid
@@ -1361,3 +1402,4 @@ Riferimenti: [ADR-0109](../../plans/adr/ADR-0109-una-marcatura-sola-e-il-dm-deci
 | una guida, un riferimento, una spiegazione | `docs/how-to/`, `docs/reference/`, `docs/explanation/`, `docs/tutorials/`, indice in [`docs/INDEX.md`](../INDEX.md) §3 (Diátaxis, ADR-0123) |
 | come si prepara una macchina | [`tutorials/GUIDA-SETUP-MACCHINA.md`](../tutorials/GUIDA-SETUP-MACCHINA.md) |
 | le regole per gli agenti | [`AGENTS.md`](../../AGENTS.md), [`skills/ORCHESTRAZIONE.md`](../../skills/ORCHESTRAZIONE.md) |
+| quale agente per un lavoro, e gli hook che lo accompagnano | [`AGENTS.md`](../../AGENTS.md) «Gli agenti di `.claude/agents/`», [`how-to/GUIDA-CONFIGURAZIONE-CLAUDE.md`](../how-to/GUIDA-CONFIGURAZIONE-CLAUDE.md), §14.1 qui sopra (ADR-0146, ADR-0153) |

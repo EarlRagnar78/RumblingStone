@@ -2,7 +2,7 @@
   "generated_by": "scripts/tools_manifest.py",
   "source": "scripts/tools.manifest.json",
   "manifest_version": "1.0.0",
-  "tool_count": 154,
+  "tool_count": 155,
   "tools": [
     {
       "id": "suggest_encounter",
@@ -9817,6 +9817,115 @@
       ],
       "docs": [
         "scripts/README-automation.md"
+      ]
+    },
+    {
+      "id": "documentazione_allineata",
+      "path": "scripts/documentazione_allineata.py",
+      "category": "G-orchestration-governance",
+      "language": "python",
+      "invocation": "python3 scripts/documentazione_allineata.py --rispetto-a origin/main",
+      "summary": "La documentazione segue la struttura (ADR-0153): un agente, uno script, un workflow o un hook aggiunti rispetto a una revisione sono citati nel loro indice (AGENTS.md, docs/INDEX.md, GUIDA-CONFIGURAZIONE-CLAUDE.md), o esce 1; con --debito conta tutto il repo, gli ADR fuori indice di validate_docs e l'ultimo ADR citato in ARCHITETTURA.md, e con --check lo confronta con il tetto di plans/debito-documentazione.json. Con --attiva (la routine del lunedì) dice se serve chiamare autore-documenti, perché e con quale lista di lavoro, e stima il costo in token; esce sempre 0.",
+      "use_case": "«Questa PR aggiunge struttura che nessun indice cita? Quanto debito di documentazione ha il repo? Questa settimana serve chiamare autore-documenti?»",
+      "stability": "beta",
+      "stdlib_only": true,
+      "external_bins": [
+        "git"
+      ],
+      "args": [
+        {
+          "name": "--rispetto-a",
+          "type": "str",
+          "required": false,
+          "default": null,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Solo gli elementi aggiunti rispetto a questa revisione (CI sulle PR)."
+        },
+        {
+          "name": "--debito",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Tutto il repo."
+        },
+        {
+          "name": "--json",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --debito: uscita JSON."
+        },
+        {
+          "name": "--check",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Con --debito: esce 1 se il totale supera il tetto."
+        },
+        {
+          "name": "--attiva",
+          "type": "bool",
+          "required": false,
+          "default": false,
+          "choices": null,
+          "repeatable": false,
+          "desc": "Se serve un'attivazione di autore-documenti: motivi, lista di lavoro e stima_token (esce 0; leggere il campo attiva)."
+        }
+      ],
+      "inputs": [
+        {
+          "path": "plans/debito-documentazione.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        },
+        {
+          "path": ".claude/settings.json",
+          "kind": "json",
+          "required": false,
+          "schema": null
+        }
+      ],
+      "outputs": [
+        {
+          "path": "stdout",
+          "kind": "text",
+          "overwrites": false,
+          "generated_header": false,
+          "schema": null
+        }
+      ],
+      "exit_codes": {
+        "0": "niente di nuovo scoperto, o debito entro il tetto; con --attiva sempre",
+        "1": "un elemento nuovo non citato, o debito oltre il tetto",
+        "2": "errore d'uso (revisione inesistente, git assente, tetto illeggibile)"
+      },
+      "determinism": {
+        "deterministic": true,
+        "seed_flag": null,
+        "notes": ""
+      },
+      "side_effects": {
+        "writes_canon": false,
+        "git_commit": false,
+        "network": false
+      },
+      "idempotent": true,
+      "consumes_schema": null,
+      "produces_schema": null,
+      "ci_smoke": "python scripts/documentazione_allineata.py --help",
+      "tests": [
+        "scripts/tests/test_documentazione_allineata.py"
+      ],
+      "docs": [
+        "docs/INDEX.md"
       ]
     },
     {

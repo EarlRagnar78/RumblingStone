@@ -279,7 +279,7 @@ case, misura di oggi contro il corpus, lettura dei voti già dati.
 - I confini dei box italiani del corpus sono sbagliati in circa un caso su
   sette: le lunghezze sono approssimate, i tassi per mille no.
 
-## 8 · Le scelte del DM (card del 2026-11-19, voto del 2026-11-26)
+## 8 · Le scelte del DM (card del 2026-11-19, voto del 2026-11-26, card del 2026-11-27)
 
 | Card | Scelta |
 |---|---|
@@ -291,6 +291,7 @@ case, misura di oggi contro il corpus, lettura dei voti già dati.
 | ordine dei cieco A, B, C | **solo A per ora** (card del 2026-11-19): B e C restano senza prova e fuori dallo standard |
 | cieco A, ritmo della frase | **nessuna differenza dimostrata**: breve 13, lunga 7, soglia 14 su 20 ([ESITO-RITMO-2026-11-26](esperimenti/prosa-cieco/ESITO-RITMO-2026-11-26.md)). Il ritmo del repo resta com'è e non diventa caratteristica |
 | tecnica 4, voce per l'orecchio, a misura | i box con due o più nomi nuovi a quel punto del file sono 10 in ARC-08 e ARC-09, quasi tutti handout, e nessuno in ARC-07 fuori dai congelati: la norma è già rispettata, e il cieco dovrà usare coppie costruite apposta |
+| tecnica 4, voce per l'orecchio, il cieco | **chiusa senza cieco** (card del 2026-11-27): la regola resta com'è, senza prova, e non diventa caratteristica dello standard. Il campione di `cieco_versioni.py campione` (seme 20261127, 8 box per file da DEF-1 e DEF-2 di ARC-08 e da cinque file Lhesper di ARC-09) dà 24 box, 15 mai usati nel cieco A; solo 3 reggono una versione con tre nomi nuovi veri nel canone, e tutti e 3 aggiungono le stesse due torri di Hammerfist. Negli altri i nomi sono già noti al tavolo o stanno dietro una prova (Tiamat dietro la CD 23 di Harbek in `ARC08-DEF-1`:871, Razorfiend dietro Conoscenze CD 18), e inventarli non si può. Sul Palio, stesso seme e 5 per file su sette file, i box sono 4. Nessun box del repo viola la regola, quindi il voto non avrebbe cambiato un testo. La prima scelta, «Allargo ai file del Palio», è stata ritirata dopo questa misura |
 
 Le regole che il DM ha chiesto di scrivere perché il voto dei cieco non sia
 falsato: una sola cosa cambia per coppia; le due versioni sono entrambe

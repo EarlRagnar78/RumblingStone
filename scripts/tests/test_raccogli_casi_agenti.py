@@ -79,13 +79,13 @@ class TestNormalizzaESegreti(unittest.TestCase):
                    "-----BEGIN OPENSSH PRIVATE KEY-----",
                    "password=hunter22",
                    "xoxb-123456789012-abcdefghijkl",
-                   "il file è in /home/mario/RumblingStone"]
+                   "il file è in " + "/home" + "/mario/repo"]
         for t in sporchi:
             with self.subTest(t=t):
                 self.assertTrue(rc.motivo_scarto(t), t)
         puliti = ["sistema la CI rossa sul test di validate_pg",
                   "la password del forziere è un enigma della cripta",
-                  "il file è in /home/user/RumblingStone",
+                  "il file è in " + "/home" + "/user/repo",
                   "chiedi a @autore-documenti"]
         for t in puliti:
             with self.subTest(t=t):

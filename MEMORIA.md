@@ -85,6 +85,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | Data | Piano | Lotto | Esito |
 |---|---|---|---|
 | 2026-11-27 | P16 · REGOLE | DEF-4 di ARC-07 allineato alla scheda A.1-bis di Skullcrusher il Vecchio (canon… | 🟡 numeri allineati alla scheda; aperti al DM: C.3 contro CA 43 dà «fuggito» nel 99,9% dei casi (misura del regolista, problema dichiarato e non risolto), quand… |
+| 2026-11-27 | PIATTAFORMA-DI-SVILUPPO | Il lavoro fuori da main ha una pagina dal vivo (ADR-0157, domande di Jfs del 27… | 🟡 25 test; pagina del 27/11: 8 filoni, canali 36 stable · 19 testing · 11 unstable, 4 PR senza filone (#543 #537 #519 #459), 3 rami `claude/*` senza posto, 28… |
 | 2026-11-27 | LEVEL-DESIGN-E-INQUADRATURA | D4, igiene IP dei prompt versionati (scelta di Jfs sulla card dell'audit settim… | 🟡 57 righe con opere protette in 12 file → 0 (l'audit ne contava 31, il piano 10 in 7: artisti e compositori non contati); 128 righe aggiunte e 91 tolte; resta… |
 | 2026-11-27 | PIANO-REVISIONE-ARC08-COERENZA-E-QUALITA | Le due frasi oscure che il DM aveva segnalato nel cieco A sul ritmo (MS-0231),… | ✅ `cricchetto_prosa --rispetto-a origin/main` 0 peggiorati; `ciclo_prosa misura` 1 → 1 (DEF-1) e 0 → 0 (DEF-2). Non controllate fedeltà NLI e ripetizioni con e… |
 | 2026-11-27 | REGOLE-SENZA-OMISSIONI | Palio: un solo rapimento del fantino a notte (card di Jfs del 27/11 «Si escludo… | ✅ misura_stampa del Palio entro i tetti |
@@ -95,12 +96,11 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | 2026-11-27 | MISURA-AGENTI-E-AUTOMATISMI | M1, emendamento di ADR-0154: le metriche passano a scikit-learn e scipy (Jfs, 2… | 🟡 M1 riscritto, cancello ancora in testing; D1 aperta; M2, M3 e M3-bis da fare |
 | 2026-11-27 | MISURA-AGENTI-E-AUTOMATISMI | M1, ADR-0154 (proposta), l'instradamento degli agenti si misura su messaggi ver… | 🟡 M1 fatto, cancello in testing; D1 aperta (etichette del test da confermare dal DM); M2 e M3 da fare |
 | 2026-11-27 | PIATTAFORMA-DI-SVILUPPO | P12, ADR-0152 (accettata), la milestone pronta si misura su main (domanda di Jf… | 🟡 in testing: nessuna milestone pronta, v1.1.0 ferma su `readme-adr`, `fatto-guide`, `fatto-adr-stato`; 2,6 s (`--check --solo-integrita` 0,06 s); test raccolt… |
-| 2026-11-27 | STATO-E-ORDINE | ADR-0151 (accettata), la memoria del progetto ha uno specchio e un custode (ric… | 🟡 su main `076a74d1`: 56 righe di `MEMORY.md`, 12 non archiviate; `MEMORY.md` 15.324 B (tetto 12.288); coda `--check` 5 difetti; 27 test nuovi, suite 3.588 pas… |
 
 ## Le misure che si portano dietro
 
 - **Decisioni**: 1 aperte, 325 chiuse (`decisioni_dm.py`).
-- **Memoria storica**: 248 voci, l'ultima MS-0248 del 2026-11-27 (`memoria_storica.py`, ADR-0127).
+- **Memoria storica**: 249 voci, l'ultima MS-0249 del 2026-11-27 (`memoria_storica.py`, ADR-0127).
 - **Prosa**: 11 revisioni applicate, segnalazioni -28, MQM +2.52 punti (`ciclo_prosa.py registro`).
 
 ## Dove vive ogni cosa
@@ -114,6 +114,7 @@ Fonte: [`plans/CHANGELOG.md`](plans/CHANGELOG.md), una riga per lotto chiuso.
 | Che piani esistono | [`plans/INDEX.md`](plans/INDEX.md) |
 | Perché si è deciso così | [`plans/adr/`](plans/adr/) |
 | Cosa sapevano le sessioni prima, la storia dietro una scelta | [`plans/MEMORIA-STORICA.md`](plans/MEMORIA-STORICA.md), si cerca con `scripts/memoria_storica.py` (ADR-0127) |
+| Il lavoro che non è ancora su `main` (PR, rami, cartelle dei thread) | [`plans/LAVORO-IN-CORSO.md`](plans/LAVORO-IN-CORSO.md), istantanea dal registro `plans/lavoro-in-corso.json`: `python3 scripts/lavoro_in_corso.py --fetch` (ADR-0157) |
 | Le norme e chi le misura | [`skills/REGISTRO-NORME-EDITORIALI.md`](skills/REGISTRO-NORME-EDITORIALI.md) |
 | Le regole per gli agenti | [`AGENTS.md`](AGENTS.md) |
 | Questa pagina | `scripts/memoria.py`, mai a mano |
